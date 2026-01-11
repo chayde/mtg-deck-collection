@@ -1,0 +1,93 @@
+# Karametra, God of Harvests: Pilot's Handbook
+
+This guide is tailored for the **Budget Angel/Landfall** version of the deck. Unlike "Combo Karametra" decks that use bouncing creatures (*Whitemane Lion*) to strip-mine the library, this deck is a **Midrange Stompy** deck. It wins by creating an insurmountable board state of high-value Angels and massive Landfall armies.
+
+## 1. The Core Philosophy: "Inevitable Growth"
+Your goal is to reach "Critical Mana Mass" faster than the table. Once Karametra is out, every creature spell you cast doubles as a ramp spell. This thins your deck of lands, ensuring that your late-game draws are pure gas (spells), while your opponents are still drawing basic lands.
+
+**The Golden Rule:**
+> *If you have the choice between casting a 5-drop Angel or casting Karametra... **Cast Karametra**.*
+> Even if you do nothing else that turn, you need her online to turn every subsequent play into value.
+
+---
+
+## 2. Mulligan Strategy
+This deck is **heavy**. Your average mana value (CMC) is high. You cannot keep a slow hand.
+
+### The "Snap Keep" (Perfect Hand)
+*   3 Lands (at least 1 Green, 1 White).
+*   1 Ramp piece (Sol Ring, Birds of Paradise, Avacyn's Pilgrim).
+*   1 Mid-game Engine (Tireless Provisioner, Lotus Cobra, Guardian Project).
+*   1 Protection spell or Removal (Swords to Plowshares).
+
+### The "Trap" Hand (Do Not Keep)
+*   4 Lands.
+*   *Avacyn, Angel of Hope*.
+*   *Elesh Norn, Grand Cenobite*.
+*   *Akroma's Will*.
+*   **Why it fails:** You have nothing to play until Turn 7. You will die before you cast a single spell.
+
+**Rule of Thumb:** If you cannot cast a spell by Turn 3, mulligan.
+
+---
+
+## 3. Game Phases
+
+### Phase 1: Establishment (Turns 1-4)
+**Goal:** Ramp into Karametra (5 Mana).
+*   Play your dorks (*Birds of Paradise, Llanowar Elves*) and rocks (*Sol Ring, Arcane Signet*).
+*   Don't be afraid to use *Path to Exile* on an early threat if it stops you from taking massive damage, but try to save removal.
+*   **Target:** Cast Karametra by Turn 4 at the latest.
+
+### Phase 2: The Engine (Turns 5-7)
+**Goal:** Thin the deck and establish board presence.
+*   Now that Karametra is out, cast **creatures**, even small ones.
+*   **Trigger Order:** When you cast an Angel:
+    1.  Karametra triggers (Search for Forest/Plains).
+    2.  Land enters battlefield.
+    3.  *Landfall* triggers happen (**Lotus Cobra** adds mana, **Tireless Provisioner** makes a treasure, **Emeria Shepherd** recurs a card).
+    4.  The Angel resolves.
+*   **Tutor Targets:** Use *Eladamri's Call* or *Worldly Tutor* to find:
+    *   *Avenger of Zendikar* (if you have many lands).
+    *   *Sigarda, Font of Blessings* (if you fear removal).
+    *   *Elesh Norn* (if opponents are playing tokens/Slivers).
+
+### Phase 3: Dominance (Turn 8+)
+**Goal:** Close the game.
+*   By now, you should have 10+ lands.
+*   **The Lock:** Assemble *Avacyn, Angel of Hope* + *Sigarda, Host of Herons/Font of Blessings*. Your board is now Indestructible and Hexproof.
+*   **The Wipe:** If you are behind, cast *Farewell* or *Austere Command*. If Avacyn is out, you destroy their board while keeping yours.
+*   **The Finisher:** Cast *Akroma's Will*. It usually reads: "Creatures you control gain Double Strike, Lifelink, Indestructible, Protection from all colors, and Flying." This is almost always lethal.
+
+---
+
+## 4. Key Interactions & Synergies
+
+### The "Sliver Killer" Package
+Since this deck was designed to compete with *The Hive* (Slivers), you have specific tools:
+*   **Elesh Norn, Grand Cenobite:** Give -2/-2 to opponents. This kills small Slivers, mana dorks, and tokens instantly. It turns off "Go Wide" decks.
+*   **Linvala, Keeper of Silence:** Stops Slivers from using activated abilities (e.g., *Sliver Overlord* cannot search, *Gemhide Sliver* cannot tap for mana).
+*   **Authority of the Consuls:** Slivers rely on Haste (`Heart Sliver`, `Cloudshredder Sliver`). This forces them to enter tapped, buying you a full turn to answer them.
+
+### Emeria Shepherd + Fetch Lands
+*   *Emeria Shepherd* reads: "Landfall -> Return target nonland permanent from GY to hand. If that land is a **Plains**, return it to the **Battlefield** instead."
+*   **The Play:** Play *Windswept Heath* (or any fetch/ramp spell finding a Plains).
+*   **Result:** You get a trigger to bring back *anything* from your graveyard directly to play.
+*   *Sakura-Tribe Elder* (if added) or *Burnished Hart* can be looped this way for massive ramp.
+
+### Aura Shards
+*   This is the "Fun Police" card.
+*   Every time a creature enters (even a token from *Avenger of Zendikar*!), you destroy an Artifact or Enchantment.
+*   **Political Tip:** You can hold the table hostage. "I won't blow up your Sol Ring if you attack Player C."
+
+### Mosswort Bridge (Hideaway)
+*   **Condition:** "Power 10 or greater."
+*   This is trivial in this deck. A single *Avacyn* (8 power) plus *Karametra* (6 power) activates it.
+*   Use this to "hide" a board wipe (*Farewell*) or a surprise blocker (*Teferi's Protection*) and cast it for 1 green mana at instant speed (technically timing rules apply, but it cheats mana cost).
+
+---
+
+## 5. Weaknesses & Protection
+*   **Torpor Orb / Hushbringer:** These stop your Karametra triggers and Angel ETBs. You must remove these immediately with *Beast Within* or *Generous Gift*.
+*   **Mass Exile:** *Farewell* hits you hard. *Teferi's Protection* is your only true safety net against exile wipes.
+*   **Too Slow:** If you keep a hand with only big Angels, you will be overrun by fast decks (like Goblins or aggressive Slivers). Respect the curve.

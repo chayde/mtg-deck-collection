@@ -86,8 +86,8 @@ This version of the deck maintains all the core power and consistency of the ori
     *   1x [Brushland](https://scryfall.com/card/bro/259/brushland)
     *   1x [Command Tower](https://scryfall.com/card/c21/284/command-tower)
 *   **Basics:**
-    *   10x [Snow-Covered Plains](https://scryfall.com/card/khm/277/snow-covered-plains)
-    *   9x [Snow-Covered Forest](https://scryfall.com/card/khm/285/snow-covered-forest)
+    *   11x [Snow-Covered Plains](https://scryfall.com/card/khm/277/snow-covered-plains)
+    *   10x [Snow-Covered Forest](https://scryfall.com/card/khm/285/snow-covered-forest)
 
 ---
 
@@ -156,8 +156,8 @@ This version of the deck maintains all the core power and consistency of the ori
 1 Canopy Vista
 1 Brushland
 1 Command Tower
-10 Snow-Covered Plains
-9 Snow-Covered Forest
+11 Snow-Covered Plains
+10 Snow-Covered Forest
 1 Cultivate
 1 Kodama's Reach
 1 Farseek
