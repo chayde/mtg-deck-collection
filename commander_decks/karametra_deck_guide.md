@@ -87,7 +87,8 @@ Since this deck was designed to compete with *The Hive* (Slivers), you have spec
 
 ---
 
-## 5. Weaknesses & Protection
+### 5. Weaknesses & Protection
 *   **Torpor Orb / Hushbringer:** These stop your Karametra triggers and Angel ETBs. You must remove these immediately with *Beast Within* or *Generous Gift*.
-*   **Mass Exile:** *Farewell* hits you hard. *Teferi's Protection* is your only true safety net against exile wipes.
+*   **Mass Exile:** *Farewell* hits you hard. **Perch Protection** is your best safety net. 
+    *   **The Gift Strategy:** Only "Gift" the extra turn if you are facing a board-state reset (like *Farewell* or *Toxic Deluge*) that you cannot recover from. Giving an opponent a turn is better than losing your entire board of Angels. If you just need the tokens, cast it without the gift!
 *   **Too Slow:** If you keep a hand with only big Angels, you will be overrun by fast decks (like Goblins or aggressive Slivers). Respect the curve.

@@ -56,7 +56,7 @@ This version of the deck maintains all the core power and consistency of the ori
 *   1x [Generous Gift](https://scryfall.com/card/mh1/11/generous-gift)
 *   1x [Farewell](https://scryfall.com/card/neo/13/farewell)
 *   1x [Austere Command](https://scryfall.com/card/cmr/12/austere-command)
-*   1x [Teferi's Protection](https://scryfall.com/card/sta/11/teferis-protection)
+*   1x [Perch Protection](https://scryfall.com/card/blc/62/perch-protection)
 *   1x [Heroic Intervention](https://scryfall.com/card/m21/188/heroic-intervention)
 *   1x [Akroma's Will](https://scryfall.com/card/cmr/3/akromas-will)
 *   1x [Eladamri's Call](https://scryfall.com/card/mh1/197/eladamris-call)
@@ -132,7 +132,7 @@ This version of the deck maintains all the core power and consistency of the ori
 1 Generous Gift
 1 Farewell
 1 Austere Command
-1 Teferi's Protection
+1 Perch Protection
 1 Heroic Intervention
 1 Akroma's Will
 1 Eladamri's Call
