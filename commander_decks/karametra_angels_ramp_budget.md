@@ -45,7 +45,7 @@ This version of the deck maintains all the core power and consistency of the ori
 *   1x [Sanctum Weaver](https://scryfall.com/card/mh2/171/sanctum-weaver)
 *   1x [Sol Ring](https://scryfall.com/card/c21/263/sol-ring)
 *   1x [Arcane Signet](https://scryfall.com/card/c21/234/arcane-signet)
-*   1x [Smothering Tithe](https://scryfall.com/card/rna/22/smothering-tithe)
+*   1x [Zendikar Resurgent](https://scryfall.com/card/c17/160/zendikar-resurgent)
 *   1x [Mirari's Wake](https://scryfall.com/card/mh2/291/miraris-wake)
 *   1x [Luminarch Aspirant](https://scryfall.com/card/znr/24/luminarch-aspirant)
 
@@ -124,7 +124,7 @@ This version of the deck maintains all the core power and consistency of the ori
 1 Sanctum Weaver
 1 Sol Ring
 1 Arcane Signet
-1 Smothering Tithe
+1 Zendikar Resurgent
 1 Mirari's Wake
 1 Swords to Plowshares
 1 Path to Exile
