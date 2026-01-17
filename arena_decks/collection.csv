@@ -51,7 +51,7 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 18892,"Dragonstorm",HA5,Red,Rare,0,0
 18902,"Stifle",HA5,Blue,Rare,0,0
 18932,"Brain Freeze",SCG,Blue,Uncommon,0,0
-19577,"Phyrexian Arena",HA1,Black,Rare,2,0
+19577,"Phyrexian Arena",HA1,Black,Rare,4,0
 19677,"Talisman of Progress",AA1,Colorless,Uncommon,0,0
 19679,"Talisman of Dominance",AA1,Colorless,Uncommon,0,0
 19681,"Talisman of Indulgence",AA1,Colorless,Uncommon,0,0
@@ -96,8 +96,8 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 24113,"Spell Snare",DIS,Blue,Uncommon,0,0
 24207,"Tidespout Tyrant",AA4,Blue,Rare,0,0
 24255,"Ghost Quarter",DIS,Colorless,Uncommon,0,0
-24529,"Coldsteel Heart",HA4,Colorless,Uncommon,0,0
-24649,"Into the North",HA5,Green,Common,0,0
+24529,"Coldsteel Heart",HA4,Colorless,Uncommon,1,1
+24649,"Into the North",HA5,Green,Common,1,1
 25533,"Momentary Blink",HA3,White,Common,0,0
 27212,"Colossus of Sardia",AA4,Colorless,Rare,0,0
 28215,"Lys Alana Huntmaster",HA4,Green,Common,0,0
@@ -147,7 +147,7 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 37354,"Frost Titan",HA7,Blue,Mythic,0,0
 37374,"Grave Titan",HA7,Black,Mythic,0,0
 37388,"Preordain",M11,Blue,Common,0,0
-37400,"Primeval Titan",HA7,Green,Mythic,0,0
+37400,"Primeval Titan",HA7,Green,Mythic,1,1
 37406,"Sun Titan",HA7,White,Mythic,0,0
 37428,"Inferno Titan",HA7,Red,Mythic,0,0
 37456,"Fauna Shaman",HA1,Green,Rare,0,0
@@ -229,7 +229,7 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 51619,"Grisly Salvage",HA5,Gold,Common,0,0
 51633,"Izzet Charm",EA3,Gold,Uncommon,0,0
 51683,"Slaughter Games",EA1,Gold,Rare,0,0
-51691,"Supreme Verdict",EA1,Gold,Rare,0,0
+51691,"Supreme Verdict",EA1,Gold,Rare,1,1
 51715,"Deathrite Shaman",EA3,Gold,Rare,0,0
 51725,"Judge's Familiar",EA3,Gold,Uncommon,0,0
 52781,"Iona, Shield of Emeria",AA4,White,Mythic,0,0
@@ -273,7 +273,7 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 55339,"Eidolon of the Great Revel",EA2,Red,Rare,0,0
 55395,"Eidolon of Blossoms",EA3,Green,Rare,0,0
 55457,"Nyx Weaver",JOU,Gold,Uncommon,0,0
-55477,"Mana Confluence",EA2,Colorless,Rare,0,0
+55477,"Mana Confluence",EA2,Colorless,Rare,1,1
 55531,"Unexpectedly Absent",C13,White,Rare,0,0
 55621,"Baleful Force",AA4,Black,Rare,0,0
 56493,"Flame Slash",AA2,Red,Common,0,0
@@ -288,7 +288,7 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 57721,"Shrapnel Blast",EA3,Red,Uncommon,0,0
 57737,"Back to Nature",EA1,Green,Uncommon,0,0
 57743,"Chord of Calling",EA3,Green,Rare,0,0
-57821,"Sliver Hivelord",EA2,Gold,Mythic,0,0
+57821,"Sliver Hivelord",EA2,Gold,Mythic,1,1
 57883,"Darksteel Citadel",EA1,Colorless,Uncommon,0,0
 57939,"Abzan Battle Priest",KTK,White,Uncommon,0,0
 57941,"Abzan Falconer",KTK,White,Uncommon,0,0
@@ -519,16 +519,16 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 58391,"Ugin's Nexus",KTK,Colorless,Mythic,0,0
 58393,"Witness of the Ages",KTK,Colorless,Uncommon,0,0
 58395,"Bloodfell Caves",KTK,Colorless,Common,4,0
-58397,"Bloodstained Mire",KTK,Colorless,Rare,0,0
+58397,"Bloodstained Mire",KTK,Colorless,Rare,1,1
 58399,"Blossoming Sands",KTK,Colorless,Common,4,0
 58401,"Dismal Backwater",KTK,Colorless,Common,4,0
-58403,"Flooded Strand",KTK,Colorless,Rare,0,0
+58403,"Flooded Strand",KTK,Colorless,Rare,1,1
 58405,"Frontier Bivouac",KTK,Colorless,Uncommon,0,0
 58407,"Jungle Hollow",KTK,Colorless,Common,4,0
 58409,"Mystic Monastery",KTK,Colorless,Uncommon,0,0
 58411,"Nomad Outpost",KTK,Colorless,Uncommon,0,0
 58413,"Opulent Palace",KTK,Colorless,Uncommon,0,0
-58415,"Polluted Delta",KTK,Colorless,Rare,0,0
+58415,"Polluted Delta",KTK,Colorless,Rare,1,1
 58417,"Rugged Highlands",KTK,Colorless,Common,4,0
 58419,"Sandsteppe Citadel",KTK,Colorless,Uncommon,0,0
 58421,"Scoured Barrens",KTK,Colorless,Common,4,0
@@ -537,8 +537,8 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 58427,"Tomb of the Spirit Dragon",KTK,Colorless,Uncommon,0,0
 58429,"Tranquil Cove",KTK,Colorless,Common,4,0
 58431,"Wind-Scarred Crag",KTK,Colorless,Common,4,0
-58433,"Windswept Heath",KTK,Colorless,Rare,0,0
-58435,"Wooded Foothills",KTK,Colorless,Rare,0,0
+58433,"Windswept Heath",KTK,Colorless,Rare,1,0
+58435,"Wooded Foothills",KTK,Colorless,Rare,1,1
 59193,"Rally the Ancestors",EA1,White,Rare,0,0
 59329,"Alesha, Who Smiles at Death",EA1,Red,Rare,0,0
 59381,"Temur Battle Rage",EA1,Red,Common,0,0
@@ -551,7 +551,7 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 59683,"Mox Pearl",VMA,Colorless,Mythic,0,0
 59687,"Mox Sapphire",VMA,Colorless,Mythic,0,0
 59697,"Balance",VMA,White,Mythic,0,0
-59771,"Swords to Plowshares",VMA,White,Uncommon,0,0
+59771,"Swords to Plowshares",VMA,White,Uncommon,1,0
 59795,"Control Magic",VMA,Blue,Rare,0,0
 59877,"Animate Dead",VMA,Black,Uncommon,0,0
 59913,"Hymn to Tourach",VMA,Black,Uncommon,0,0
@@ -706,7 +706,7 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 66097,"Pirate's Prize",XLN,Blue,Common,0,0
 66099,"Prosperous Pirates",XLN,Blue,Common,0,0
 66101,"River Sneak",XLN,Blue,Uncommon,0,0
-66103,"River's Rebuke",XLN,Blue,Rare,0,0
+66103,"River's Rebuke",XLN,Blue,Rare,1,1
 66105,"Run Aground",XLN,Blue,Common,0,0
 66107,"Sailor of Means",XLN,Blue,Common,0,0
 66109,"Search for Azcanta",XLN,Blue,Rare,0,0
@@ -998,13 +998,13 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 66799,"Voracious Vampire",RIX,Black,Common,0,0
 66801,"Blood Sun",RIX,Red,Rare,0,0
 66803,"Bombard",RIX,Red,Common,0,0
-66805,"Brass's Bounty",RIX,Red,Rare,2,0
+66805,"Brass's Bounty",RIX,Red,Rare,4,0
 66807,"Brazen Freebooter",RIX,Red,Common,0,0
 66809,"Buccaneer's Bravado",RIX,Red,Common,0,0
 66811,"Charging Tuskodon",RIX,Red,Uncommon,0,0
 66813,"Daring Buccaneer",RIX,Red,Uncommon,0,0
 66815,"Dire Fleet Daredevil",RIX,Red,Rare,0,0
-66817,"Etali, Primal Storm",RIX,Red,Rare,3,0
+66817,"Etali, Primal Storm",RIX,Red,Rare,4,0
 66819,"Fanatical Firebrand",RIX,Red,Common,4,0
 66821,"Forerunner of the Empire",RIX,Red,Uncommon,0,0
 66823,"Form of the Dinosaur",RIX,Red,Rare,0,0
@@ -1034,7 +1034,7 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 66871,"Deeproot Elite",RIX,Green,Rare,0,0
 66873,"Enter the Unknown",RIX,Green,Uncommon,0,0
 66875,"Forerunner of the Heralds",RIX,Green,Uncommon,0,0
-66877,"Ghalta, Primal Hunger",RIX,Green,Rare,3,1
+66877,"Ghalta, Primal Hunger",RIX,Green,Rare,4,1
 66879,"Giltgrove Stalker",RIX,Green,Common,0,0
 66881,"Hardy Veteran",RIX,Green,Common,0,0
 66883,"Hunt the Weak",RIX,Green,Common,0,0
@@ -1171,7 +1171,7 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 67232,"Sage of Lat-Nam",DAR,Blue,Uncommon,0,0
 67234,"Sentinel of the Pearl Trident",DAR,Blue,Uncommon,0,0
 67236,"Slinn Voda, the Rising Deep",DAR,Blue,Uncommon,0,0
-67238,"Syncopate",DAR,Blue,Common,0,0
+67238,"Syncopate",DAR,Blue,Common,4,0
 67240,"Tempest Djinn",DAR,Blue,Rare,1,1
 67242,"Tetsuko Umezawa, Fugitive",DAR,Blue,Uncommon,0,0
 67244,"Time of Ice",DAR,Blue,Uncommon,0,0
@@ -1303,7 +1303,7 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 67496,"Hallar, the Firefletcher",DAR,Gold,Uncommon,0,0
 67498,"Jhoira, Weatherlight Captain",DAR,Gold,Mythic,0,0
 67500,"Jodah, Archmage Eternal",DAR,Gold,Rare,0,0
-67502,"Muldrotha, the Gravetide",DAR,Gold,Mythic,1,0
+67502,"Muldrotha, the Gravetide",DAR,Gold,Mythic,2,0
 67504,"Oath of Teferi",DAR,Gold,Rare,0,0
 67506,"Primevals' Glorious Rebirth",DAR,Gold,Rare,0,0
 67508,"Raff Capashen, Ship's Mage",DAR,Gold,Uncommon,0,0
@@ -1326,7 +1326,7 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 67542,"Icy Manipulator",DAR,Colorless,Uncommon,0,0
 67544,"Jhoira's Familiar",DAR,Colorless,Uncommon,0,0
 67546,"Jousting Lance",DAR,Colorless,Common,0,0
-67548,"Juggernaut",DAR,Colorless,Uncommon,1,0
+67548,"Juggernaut",DAR,Colorless,Uncommon,2,0
 67550,"Mishra's Self-Replicator",DAR,Colorless,Rare,0,0
 67552,"Mox Amber",DAR,Colorless,Mythic,0,0
 67554,"Navigator's Compass",DAR,Colorless,Common,0,0
@@ -1428,7 +1428,7 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 67804,"Mistcaller",M19,Blue,Rare,0,0
 67806,"Mystic Archaeologist",M19,Blue,Rare,0,0
 67808,"Omenspeaker",M19,Blue,Common,0,0
-67810,"Omniscience",M19,Blue,Mythic,1,0
+67810,"Omniscience",M19,Blue,Mythic,2,0
 67812,"One with the Machine",M19,Blue,Rare,0,0
 67814,"Patient Rebuilding",M19,Blue,Rare,1,1
 67816,"Psychic Corrosion",M19,Blue,Uncommon,0,0
@@ -1532,7 +1532,7 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 68012,"Viashino Pyromancer",M19,Red,Common,2,2
 68014,"Volcanic Dragon",M19,Red,Uncommon,2,2
 68016,"Volley Veteran",M19,Red,Uncommon,0,0
-68018,"Blanchwood Armor",M19,Green,Uncommon,3,2
+68018,"Blanchwood Armor",M19,Green,Uncommon,4,2
 68020,"Bristling Boar",M19,Green,Common,4,4
 68022,"Centaur Courser",M19,Green,Common,4,4
 68024,"Colossal Dreadmaw",M19,Green,Common,3,3
@@ -1571,7 +1571,7 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 68090,"Titanic Growth",M19,Green,Common,4,4
 68092,"Vigilant Baloth",M19,Green,Uncommon,2,2
 68094,"Vine Mare",M19,Green,Uncommon,0,0
-68096,"Vivien Reid",M19,Green,Mythic,2,0
+68096,"Vivien Reid",M19,Green,Mythic,3,0
 68098,"Vivien's Invocation",M19,Green,Rare,0,0
 68100,"Wall of Vines",M19,Green,Common,1,1
 68102,"Aerial Engineer",M19,Gold,Uncommon,1,1
@@ -1643,7 +1643,7 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 68276,"Kargan Dragonrider",M19,Red,Common,3,3
 68278,"Sarkhan's Dragonfire",M19,Red,Rare,0,0
 68280,"Sarkhan's Whelp",M19,Red,Uncommon,0,0
-68282,"Shivan Dragon",M19,Red,Rare,1,0
+68282,"Shivan Dragon",M19,Red,Rare,4,0
 68284,"Vivien of the Arkbow",M19,Green,Mythic,0,0
 68286,"Aggressive Mammoth",M19,Green,Rare,1,1
 68288,"Skalla Wolf",M19,Green,Rare,0,0
@@ -1866,11 +1866,11 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 68661,"Sumala Woodshaper",GRN,Gold,Common,0,0
 68662,"Swarm Guildmage",GRN,Gold,Uncommon,0,0
 68663,"Swathcutter Giant",GRN,Gold,Uncommon,0,0
-68664,"Swiftblade Vindicator",GRN,Gold,Rare,1,0
+68664,"Swiftblade Vindicator",GRN,Gold,Rare,4,0
 68665,"Tajic, Legion's Edge",GRN,Gold,Rare,0,0
 68666,"Thief of Sanity",GRN,Gold,Rare,0,0
 68667,"Thought Erasure",GRN,Gold,Uncommon,0,0
-68668,"Thousand-Year Storm",GRN,Gold,Mythic,2,0
+68668,"Thousand-Year Storm",GRN,Gold,Mythic,4,0
 68669,"Trostani Discordant",GRN,Gold,Mythic,0,0
 68670,"Truefire Captain",GRN,Gold,Uncommon,0,0
 68671,"Undercity Uprising",GRN,Gold,Common,0,0
@@ -1896,7 +1896,7 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 68709,"Status // Statue",GRN,Gold,Uncommon,0,0
 68712,"Boros Locket",GRN,Colorless,Common,0,0
 68713,"Chamber Sentry",GRN,Colorless,Rare,0,0
-68714,"Chromatic Lantern",GRN,Colorless,Rare,0,0
+68714,"Chromatic Lantern",GRN,Colorless,Rare,1,0
 68715,"Dimir Locket",GRN,Colorless,Common,0,0
 68716,"Gatekeeper Gargoyle",GRN,Colorless,Uncommon,0,0
 68717,"Glaive of the Guildpact",GRN,Colorless,Uncommon,0,0
@@ -1916,12 +1916,12 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 68731,"Guildmages' Forum",GRN,Colorless,Rare,0,0
 68732,"Izzet Guildgate",GRN,Colorless,Common,4,4
 68733,"Izzet Guildgate",GRN,Colorless,Common,4,0
-68734,"Overgrown Tomb",GRN,Colorless,Rare,0,0
+68734,"Overgrown Tomb",GRN,Colorless,Rare,1,1
 68735,"Sacred Foundry",GRN,Colorless,Rare,2,0
 68736,"Selesnya Guildgate",GRN,Colorless,Common,4,4
 68737,"Selesnya Guildgate",GRN,Colorless,Common,4,0
-68738,"Steam Vents",GRN,Colorless,Rare,0,0
-68739,"Temple Garden",GRN,Colorless,Rare,0,0
+68738,"Steam Vents",GRN,Colorless,Rare,1,1
+68739,"Temple Garden",GRN,Colorless,Rare,1,1
 68740,"Watery Grave",GRN,Colorless,Rare,4,4
 68746,"Ral, Caller of Storms",GRN,Gold,Mythic,0,0
 68747,"Ral's Dispersal",GRN,Blue,Rare,0,0
@@ -1959,7 +1959,7 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 68803,"Renegade Demon",ANA,Black,Common,0,0
 68804,"Sanctuary Cat",ANA,White,Common,2,0
 68806,"Altar's Reap",ANA,Black,Common,0,0
-68811,"Seismic Rupture",ANA,Red,Uncommon,1,0
+68811,"Seismic Rupture",ANA,Red,Uncommon,4,0
 68814,"Doublecast",ANA,Red,Uncommon,1,0
 69108,"Angelic Reward",ANA,White,Uncommon,2,1
 69110,"Inspiring Commander",ANA,White,Rare,2,1
@@ -2148,7 +2148,7 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 69303,"Galloping Lizrog",RNA,Gold,Uncommon,0,0
 69304,"Get the Point",RNA,Gold,Common,0,0
 69305,"Grasping Thrull",RNA,Gold,Common,0,0
-69306,"Growth Spiral",RNA,Gold,Common,0,0
+69306,"Growth Spiral",RNA,Gold,Common,1,1
 69307,"Gruul Spellbreaker",RNA,Gold,Rare,0,0
 69308,"Gyre Engineer",RNA,Gold,Uncommon,0,0
 69309,"Hackrobat",RNA,Gold,Uncommon,0,0
@@ -2215,13 +2215,13 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 69390,"Tome of the Guildpact",RNA,Colorless,Rare,0,0
 69391,"Azorius Guildgate",RNA,Colorless,Common,4,0
 69392,"Azorius Guildgate",RNA,Colorless,Common,4,0
-69393,"Blood Crypt",RNA,Colorless,Rare,0,0
-69394,"Breeding Pool",RNA,Colorless,Rare,0,0
+69393,"Blood Crypt",RNA,Colorless,Rare,1,1
+69394,"Breeding Pool",RNA,Colorless,Rare,1,1
 69395,"Gateway Plaza",RNA,Colorless,Common,0,0
-69396,"Godless Shrine",RNA,Colorless,Rare,0,0
+69396,"Godless Shrine",RNA,Colorless,Rare,1,1
 69397,"Gruul Guildgate",RNA,Colorless,Common,4,0
 69398,"Gruul Guildgate",RNA,Colorless,Common,4,0
-69399,"Hallowed Fountain",RNA,Colorless,Rare,0,0
+69399,"Hallowed Fountain",RNA,Colorless,Rare,1,1
 69400,"Orzhov Guildgate",RNA,Colorless,Common,4,0
 69401,"Orzhov Guildgate",RNA,Colorless,Common,4,0
 69402,"Plaza of Harmony",RNA,Colorless,Rare,0,0
@@ -2310,7 +2310,7 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 69516,"Rescuer Sphinx",WAR,Blue,Uncommon,0,0
 69517,"Silent Submersible",WAR,Blue,Rare,0,0
 69518,"Sky Theater Strix",WAR,Blue,Common,0,0
-69519,"Spark Double",WAR,Blue,Rare,0,0
+69519,"Spark Double",WAR,Blue,Rare,1,1
 69520,"Spellkeeper Weird",WAR,Blue,Common,0,0
 69521,"Stealth Mission",WAR,Blue,Common,0,0
 69522,"Tamiyo's Epiphany",WAR,Blue,Common,0,0
@@ -2339,7 +2339,7 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 69545,"Kaya's Ghostform",WAR,Black,Common,0,0
 69546,"Lazotep Behemoth",WAR,Black,Common,0,0
 69547,"Lazotep Reaver",WAR,Black,Common,0,0
-69548,"Liliana, Dreadhorde General",WAR,Black,Mythic,1,0
+69548,"Liliana, Dreadhorde General",WAR,Black,Mythic,3,0
 69549,"Liliana's Triumph",WAR,Black,Uncommon,0,0
 69550,"Massacre Girl",WAR,Black,Rare,0,0
 69551,"Ob Nixilis, the Hate-Twisted",WAR,Black,Uncommon,0,0
@@ -2580,8 +2580,8 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 69858,"Sage's Row Denizen",M20,Blue,Common,0,0
 69859,"Scholar of the Ages",M20,Blue,Uncommon,0,0
 69860,"Sleep Paralysis",M20,Blue,Common,0,0
-69861,"Spectral Sailor",M20,Blue,Uncommon,3,0
-69862,"Tale's End",M20,Blue,Rare,0,0
+69861,"Spectral Sailor",M20,Blue,Uncommon,4,0
+69862,"Tale's End",M20,Blue,Rare,1,1
 69863,"Unsummon",M20,Blue,Common,3,0
 69864,"Warden of Evos Isle",M20,Blue,Uncommon,3,0
 69865,"Winged Words",M20,Blue,Common,1,0
@@ -2640,7 +2640,7 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 69918,"Daggersail Aeronaut",M20,Red,Common,0,0
 69919,"Destructive Digger",M20,Red,Common,0,0
 69920,"Dragon Mage",M20,Red,Uncommon,0,0
-69921,"Drakuseth, Maw of Flames",M20,Red,Rare,3,0
+69921,"Drakuseth, Maw of Flames",M20,Red,Rare,4,0
 69922,"Ember Hauler",M20,Red,Uncommon,0,0
 69923,"Fire Elemental",M20,Red,Common,0,0
 69924,"Flame Sweep",M20,Red,Uncommon,0,0
@@ -2818,7 +2818,7 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 70116,"Immortal Phoenix",M20,Red,Rare,0,0
 70117,"Nimble Birdsticker",M20,Red,Common,0,0
 70118,"Rubblebelt Recluse",M20,Red,Common,0,0
-70119,"Shivan Dragon",M20,Red,Rare,1,0
+70119,"Shivan Dragon",M20,Red,Rare,4,0
 70120,"Volcanic Dragon",M20,Red,Uncommon,2,0
 70121,"Aggressive Mammoth",M20,Green,Rare,1,0
 70122,"Bristling Boar",M20,Green,Common,4,0
@@ -2829,7 +2829,7 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 70127,"Titanic Growth",M20,Green,Common,4,0
 70128,"Woodland Mystic",M20,Green,Common,2,0
 70139,"Rienne, Angel of Rebirth",M20,Gold,Mythic,0,0
-70140,"Ghalta, Primal Hunger",RIX,Green,Rare,3,0
+70140,"Ghalta, Primal Hunger",RIX,Green,Rare,4,0
 70141,"Duress",M19,Black,Common,0,0
 70148,"Acclaimed Contender",ELD,White,Rare,0,0
 70149,"All That Glitters",ELD,White,Uncommon,0,0
@@ -2915,7 +2915,7 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 70229,"The Cauldron of Eternity",ELD,Black,Mythic,0,0
 70230,"Cauldron's Gift",ELD,Black,Uncommon,0,0
 70231,"Clackbridge Troll",ELD,Black,Rare,0,0
-70232,"Epic Downfall",ELD,Black,Uncommon,0,0
+70232,"Epic Downfall",ELD,Black,Uncommon,1,0
 70233,"Eye Collector",ELD,Black,Common,0,0
 70234,"Festive Funeral",ELD,Black,Common,0,0
 70235,"Foreboding Fruit",ELD,Black,Common,0,0
@@ -2937,7 +2937,7 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 70251,"Revenge of Ravens",ELD,Black,Uncommon,0,0
 70252,"Smitten Swordmaster",ELD,Black,Common,0,0
 70253,"Specter's Shriek",ELD,Black,Uncommon,0,0
-70254,"Syr Konrad, the Grim",ELD,Black,Uncommon,0,0
+70254,"Syr Konrad, the Grim",ELD,Black,Uncommon,1,0
 70255,"Tempting Witch",ELD,Black,Common,0,0
 70256,"Wicked Guardian",ELD,Black,Common,0,0
 70257,"Wishclaw Talisman",ELD,Black,Rare,0,0
@@ -2950,7 +2950,7 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 70264,"Burning-Yard Trainer",ELD,Red,Uncommon,0,0
 70265,"Claim the Firstborn",ELD,Red,Uncommon,0,0
 70266,"Crystal Slipper",ELD,Red,Common,0,0
-70267,"Embercleave",ELD,Red,Mythic,0,0
+70267,"Embercleave",ELD,Red,Mythic,1,0
 70268,"Embereth Paladin",ELD,Red,Common,0,0
 70269,"Embereth Shieldbreaker",ELD,Red,Uncommon,0,0
 70270,"Ferocity of the Wilds",ELD,Red,Uncommon,0,0
@@ -2990,7 +2990,7 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 70304,"Garenbrig Paladin",ELD,Green,Common,0,0
 70305,"Garenbrig Squire",ELD,Green,Common,0,0
 70306,"Giant Opportunity",ELD,Green,Uncommon,0,0
-70307,"Gilded Goose",ELD,Green,Rare,0,0
+70307,"Gilded Goose",ELD,Green,Rare,1,1
 70308,"The Great Henge",ELD,Green,Mythic,0,0
 70309,"Insatiable Appetite",ELD,Green,Common,0,0
 70310,"Keeper of Fables",ELD,Green,Uncommon,0,0
@@ -3108,9 +3108,9 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 70461,"Knights' Charge",ELD,Gold,Rare,0,0
 70462,"Korvold, Fae-Cursed King",ELD,Gold,Mythic,0,0
 70463,"Syr Gwyn, Hero of Ashvale",ELD,Gold,Mythic,0,0
-70464,"Arcane Signet",ELD,Colorless,Common,0,0
+70464,"Arcane Signet",ELD,Colorless,Common,1,0
 70465,"Tome of Legends",ELD,Colorless,Rare,0,0
-70466,"Command Tower",ELD,Colorless,Common,0,0
+70466,"Command Tower",ELD,Colorless,Common,1,0
 70512,"Alseid of Life's Bounty",THB,White,Uncommon,0,0
 70513,"Archon of Falling Stars",THB,White,Uncommon,0,0
 70514,"Archon of Sun's Grace",THB,White,Rare,0,0
@@ -3315,7 +3315,7 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 70713,"Skola Grovedancer",THB,Green,Common,0,0
 70714,"Voracious Typhon",THB,Green,Common,0,0
 70715,"Warbriar Blessing",THB,Green,Common,0,0
-70716,"Wolfwillow Haven",THB,Green,Uncommon,0,0
+70716,"Wolfwillow Haven",THB,Green,Uncommon,1,1
 70717,"Acolyte of Affliction",THB,Gold,Uncommon,0,0
 70718,"Allure of the Unknown",THB,Gold,Rare,0,0
 70719,"Ashiok, Nightmare Muse",THB,Gold,Mythic,0,0
@@ -3339,7 +3339,7 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 70737,"Siona, Captain of the Pyleas",THB,Gold,Uncommon,0,0
 70738,"Slaughter-Priest of Mogis",THB,Gold,Uncommon,0,0
 70739,"Staggering Insight",THB,Gold,Uncommon,0,0
-70740,"Uro, Titan of Nature's Wrath",THB,Gold,Mythic,0,0
+70740,"Uro, Titan of Nature's Wrath",THB,Gold,Mythic,1,1
 70741,"Warden of the Chained",THB,Gold,Uncommon,0,0
 70742,"Altar of the Pantheon",THB,Colorless,Common,0,0
 70743,"Bronze Sword",THB,Colorless,Common,0,0
@@ -3563,11 +3563,11 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 71249,"Death's Oasis",IKO,Gold,Rare,0,0
 71250,"Dire Tactics",IKO,Gold,Uncommon,0,0
 71251,"Eerie Ultimatum",IKO,Gold,Rare,0,0
-71252,"Emergent Ultimatum",IKO,Gold,Rare,0,0
+71252,"Emergent Ultimatum",IKO,Gold,Rare,1,1
 71253,"Frondland Felidar",IKO,Gold,Rare,0,0
 71254,"General Kudro of Drannith",IKO,Gold,Mythic,0,0
 71255,"General's Enforcer",IKO,Gold,Uncommon,0,0
-71256,"Genesis Ultimatum",IKO,Gold,Rare,0,0
+71256,"Genesis Ultimatum",IKO,Gold,Rare,1,1
 71257,"Illuna, Apex of Wishes",IKO,Gold,Mythic,0,0
 71258,"Inspired Ultimatum",IKO,Gold,Rare,0,0
 71259,"Kinnan, Bonder Prodigy",IKO,Gold,Mythic,0,0
@@ -3626,18 +3626,18 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 71312,"Bonders' Enclave",IKO,Colorless,Rare,0,0
 71313,"Dismal Backwater",IKO,Colorless,Common,4,0
 71314,"Evolving Wilds",IKO,Colorless,Common,4,0
-71315,"Indatha Triome",IKO,Colorless,Rare,0,0
+71315,"Indatha Triome",IKO,Colorless,Rare,1,1
 71316,"Jungle Hollow",IKO,Colorless,Common,4,0
-71317,"Ketria Triome",IKO,Colorless,Rare,0,0
-71318,"Raugrin Triome",IKO,Colorless,Rare,0,0
+71317,"Ketria Triome",IKO,Colorless,Rare,1,1
+71318,"Raugrin Triome",IKO,Colorless,Rare,1,1
 71319,"Rugged Highlands",IKO,Colorless,Common,4,0
-71320,"Savai Triome",IKO,Colorless,Rare,0,0
+71320,"Savai Triome",IKO,Colorless,Rare,1,1
 71321,"Scoured Barrens",IKO,Colorless,Common,4,0
 71322,"Swiftwater Cliffs",IKO,Colorless,Common,4,0
 71323,"Thornwood Falls",IKO,Colorless,Common,4,0
 71324,"Tranquil Cove",IKO,Colorless,Common,4,0
 71325,"Wind-Scarred Crag",IKO,Colorless,Common,4,0
-71326,"Zagoth Triome",IKO,Colorless,Rare,0,0
+71326,"Zagoth Triome",IKO,Colorless,Rare,1,1
 71341,"Zilortha, Strength Incarnate",IKO,Gold,Mythic,0,0
 71345,"Battle Screech",J21,White,Uncommon,0,0
 71347,"Enduring Sliver",J21,White,Common,0,0
@@ -3725,10 +3725,10 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 71529,"Twin-Silk Spider",J21,Green,Common,0,0
 71533,"Webweaver Changeling",J21,Green,Uncommon,0,0
 71534,"Winding Way",J21,Green,Common,0,0
-71536,"Cloudshredder Sliver",J21,Gold,Rare,0,0
+71536,"Cloudshredder Sliver",J21,Gold,Rare,1,1
 71537,"Collected Conjuring",HA4,Gold,Rare,0,0
 71539,"Etchings of the Chosen",J21,Gold,Uncommon,0,0
-71541,"The First Sliver",J21,Gold,Mythic,0,0
+71541,"The First Sliver",J21,Gold,Mythic,1,1
 71542,"Good-Fortune Unicorn",J21,Gold,Uncommon,4,0
 71545,"Ingenious Infiltrator",J21,Gold,Uncommon,0,0
 71548,"Lavabelly Sliver",J21,Gold,Uncommon,0,0
@@ -3784,7 +3784,7 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 71806,"Legion's Judgment",M21,White,Common,0,0
 71807,"Light of Promise",M21,White,Uncommon,0,0
 71808,"Makeshift Battalion",M21,White,Common,0,0
-71809,"Mangara, the Diplomat",M21,White,Mythic,0,0
+71809,"Mangara, the Diplomat",M21,White,Mythic,1,0
 71810,"Nine Lives",M21,White,Rare,0,0
 71811,"Pack Leader",M21,White,Rare,0,0
 71812,"Rambunctious Mutt",M21,White,Common,0,0
@@ -3930,11 +3930,11 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 71952,"Unleash Fury",M21,Red,Uncommon,0,0
 71953,"Volcanic Geyser",M21,Red,Uncommon,0,0
 71954,"Volcanic Salvo",M21,Red,Rare,0,0
-71955,"Azusa, Lost but Seeking",M21,Green,Rare,0,0
+71955,"Azusa, Lost but Seeking",M21,Green,Rare,1,0
 71956,"Burlfist Oak",M21,Green,Uncommon,0,0
 71957,"Canopy Stalker",M21,Green,Uncommon,0,0
 71958,"Colossal Dreadmaw",M21,Green,Common,3,0
-71959,"Cultivate",M21,Green,Uncommon,0,0
+71959,"Cultivate",M21,Green,Uncommon,1,0
 71960,"Drowsing Tyrannodon",M21,Green,Common,0,0
 71961,"Elder Gargaroth",M21,Green,Mythic,0,0
 71962,"Feline Sovereign",M21,Green,Rare,0,0
@@ -3945,7 +3945,7 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 71967,"Garruk's Harbinger",M21,Green,Rare,0,0
 71968,"Garruk's Uprising",M21,Green,Uncommon,4,0
 71969,"Gnarled Sage",M21,Green,Common,0,0
-71970,"Heroic Intervention",M21,Green,Rare,0,0
+71970,"Heroic Intervention",M21,Green,Rare,1,1
 71971,"Hunter's Edge",M21,Green,Common,0,0
 71972,"Invigorating Surge",M21,Green,Uncommon,0,0
 71973,"Jolrael, Mwonvuli Recluse",M21,Green,Rare,0,0
@@ -3971,7 +3971,7 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 71993,"Track Down",M21,Green,Common,0,0
 71994,"Trufflesnout",M21,Green,Common,0,0
 71995,"Warden of the Woods",M21,Green,Uncommon,0,0
-71996,"Wildwood Scourge",M21,Green,Uncommon,1,0
+71996,"Wildwood Scourge",M21,Green,Uncommon,3,0
 71997,"Alpine Houndmaster",M21,Gold,Uncommon,0,0
 71998,"Conclave Mentor",M21,Gold,Uncommon,0,0
 71999,"Dire Fleet Warmonger",M21,Gold,Uncommon,0,0
@@ -4072,9 +4072,9 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 72135,"Lightning-Core Excavator",JMP,Colorless,Common,0,0
 72136,"Thriving Bluff",JMP,Colorless,Common,0,0
 72137,"Thriving Grove",JMP,Colorless,Common,0,0
-72138,"Thriving Heath",JMP,Colorless,Common,0,0
-72139,"Thriving Isle",JMP,Colorless,Common,0,0
-72140,"Thriving Moor",JMP,Colorless,Common,0,0
+72138,"Thriving Heath",JMP,Colorless,Common,2,0
+72139,"Thriving Isle",JMP,Colorless,Common,1,0
+72140,"Thriving Moor",JMP,Colorless,Common,1,0
 72141,"Aegis of the Heavens",JMP,White,Uncommon,0,0
 72142,"Aerial Assault",JMP,White,Common,0,0
 72143,"Affa Guard Hound",JMP,White,Uncommon,0,0
@@ -4095,7 +4095,7 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 72160,"Cradle of Vitality",JMP,White,Rare,0,0
 72161,"Dauntless Onslaught",JMP,White,Uncommon,0,0
 72162,"Divine Arrow",JMP,White,Common,0,0
-72163,"Duelist's Heritage",JMP,White,Rare,0,0
+72163,"Duelist's Heritage",JMP,White,Rare,1,0
 72164,"Emancipation Angel",JMP,White,Uncommon,0,0
 72165,"Face of Divinity",JMP,White,Uncommon,0,0
 72166,"Forced Worship",JMP,White,Common,0,0
@@ -4137,7 +4137,7 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 72203,"Belltower Sphinx",JMP,Blue,Uncommon,0,0
 72204,"Chart a Course",JMP,Blue,Uncommon,3,0
 72205,"Cloudreader Sphinx",JMP,Blue,Common,0,0
-72206,"Coastal Piracy",JMP,Blue,Uncommon,0,0
+72206,"Coastal Piracy",JMP,Blue,Uncommon,1,0
 72207,"Crookclaw Transmuter",JMP,Blue,Common,0,0
 72208,"Cryptic Serpent",JMP,Blue,Uncommon,0,0
 72209,"Curiosity",JMP,Blue,Uncommon,0,0
@@ -4169,7 +4169,7 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 72237,"Serendib Efreet",JMP,Blue,Rare,0,0
 72238,"Sharding Sphinx",JMP,Blue,Rare,0,0
 72239,"Sigiled Starfish",JMP,Blue,Uncommon,0,0
-72240,"Spectral Sailor",JMP,Blue,Uncommon,3,0
+72240,"Spectral Sailor",JMP,Blue,Uncommon,4,0
 72241,"Storm Sculptor",JMP,Blue,Common,0,0
 72242,"Sweep Away",JMP,Blue,Common,0,0
 72243,"Talrand, Sky Summoner",JMP,Blue,Rare,0,0
@@ -4258,7 +4258,7 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 72329,"Phyrexian Reclamation",JMP,Black,Uncommon,0,0
 72330,"Plagued Rusalka",JMP,Black,Common,0,0
 72331,"Ravenous Chupacabra",JMP,Black,Uncommon,0,0
-72333,"Rise of the Dark Realms",JMP,Black,Mythic,3,0
+72333,"Rise of the Dark Realms",JMP,Black,Mythic,4,0
 72334,"Sangromancer",JMP,Black,Rare,0,0
 72335,"Sanitarium Skeleton",JMP,Black,Common,2,0
 72337,"Sengir Vampire",JMP,Black,Uncommon,3,0
@@ -4296,7 +4296,7 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 72373,"Dragonlord's Servant",JMP,Red,Uncommon,0,0
 72374,"Dragonspeaker Shaman",JMP,Red,Uncommon,0,0
 72375,"Dualcaster Mage",JMP,Red,Rare,0,0
-72376,"Etali, Primal Storm",JMP,Red,Rare,3,0
+72376,"Etali, Primal Storm",JMP,Red,Rare,4,0
 72377,"Fanatical Firebrand",JMP,Red,Common,4,0
 72378,"Flame Lash",JMP,Red,Common,0,0
 72379,"Flames of the Firebrand",JMP,Red,Uncommon,0,0
@@ -4370,19 +4370,19 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 72450,"Drover of the Mighty",JMP,Green,Uncommon,0,0
 72451,"Dwynen's Elite",JMP,Green,Uncommon,4,0
 72452,"Elemental Uprising",JMP,Green,Common,0,0
-72453,"Elvish Archdruid",JMP,Green,Rare,3,0
+72453,"Elvish Archdruid",JMP,Green,Rare,4,0
 72454,"Enlarge",JMP,Green,Uncommon,0,0
-72455,"Explore",JMP,Green,Common,0,0
+72455,"Explore",JMP,Green,Common,1,1
 72457,"Feral Hydra",JMP,Green,Uncommon,0,0
 72458,"Feral Invocation",JMP,Green,Common,0,0
 72459,"Feral Prowler",JMP,Green,Common,0,0
 72460,"Fertilid",JMP,Green,Common,0,0
-72461,"Ghalta, Primal Hunger",JMP,Green,Rare,3,0
+72461,"Ghalta, Primal Hunger",JMP,Green,Rare,4,0
 72462,"Ghirapur Guide",JMP,Green,Uncommon,1,0
 72463,"Grave Bramble",JMP,Green,Common,0,0
 72464,"Hunter's Insight",JMP,Green,Uncommon,0,0
 72465,"Initiate's Companion",JMP,Green,Common,0,0
-72466,"Inspiring Call",JMP,Green,Uncommon,2,0
+72466,"Inspiring Call",JMP,Green,Uncommon,4,0
 72467,"Ironshell Beetle",JMP,Green,Common,0,0
 72468,"Irresistible Prey",JMP,Green,Uncommon,0,0
 72469,"Keeper of Fables",JMP,Green,Uncommon,0,0
@@ -4445,9 +4445,9 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 72528,"Gingerbrute",JMP,Colorless,Common,0,0
 72529,"Guardian Idol",JMP,Colorless,Uncommon,0,0
 72530,"Hedron Archive",JMP,Colorless,Uncommon,0,0
-72531,"Herald's Horn",JMP,Colorless,Uncommon,0,0
+72531,"Herald's Horn",JMP,Colorless,Uncommon,1,0
 72532,"Jousting Dummy",JMP,Colorless,Common,0,0
-72533,"Juggernaut",JMP,Colorless,Uncommon,1,0
+72533,"Juggernaut",JMP,Colorless,Uncommon,2,0
 72534,"Mana Geode",JMP,Colorless,Common,0,0
 72535,"Marauder's Axe",JMP,Colorless,Common,0,0
 72536,"Meteor Golem",JMP,Colorless,Uncommon,4,0
@@ -4866,7 +4866,7 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 73902,"Soulstinger",AKR,Black,Common,0,0
 73903,"Splendid Agony",AKR,Black,Common,0,0
 73904,"Supernatural Stamina",AKR,Black,Common,0,0
-73905,"Thoughtseize",AKR,Black,Rare,0,0
+73905,"Thoughtseize",AKR,Black,Rare,1,1
 73906,"Torment of Hailfire",AKR,Black,Rare,0,0
 73907,"Trespasser's Curse",AKR,Black,Common,0,0
 73908,"Trial of Ambition",AKR,Black,Uncommon,0,0
@@ -5576,7 +5576,7 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 75659,"Die Young",KLR,Black,Common,0,0
 75660,"Embraal Bruiser",KLR,Black,Uncommon,0,0
 75661,"Essence Extraction",KLR,Black,Uncommon,0,0
-75662,"Fatal Push",KLR,Black,Uncommon,0,0
+75662,"Fatal Push",KLR,Black,Uncommon,1,1
 75663,"Fen Hauler",KLR,Black,Common,0,0
 75664,"Fortuitous Find",KLR,Black,Common,0,0
 75665,"Foundry Hornet",KLR,Black,Uncommon,0,0
@@ -5653,7 +5653,7 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 75736,"Creeping Mold",KLR,Green,Uncommon,0,0
 75737,"Druid of the Cowl",KLR,Green,Common,4,0
 75738,"Greenbelt Rampager",KLR,Green,Rare,0,0
-75739,"Heroic Intervention",KLR,Green,Rare,0,0
+75739,"Heroic Intervention",KLR,Green,Rare,1,0
 75740,"Highspire Artisan",KLR,Green,Common,0,0
 75741,"Highspire Infusion",KLR,Green,Common,0,0
 75742,"Hunt the Weak",KLR,Green,Common,0,0
@@ -6166,7 +6166,7 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 76664,"Letter of Acceptance",STX,Colorless,Common,0,0
 76665,"Reflective Golem",STX,Colorless,Uncommon,0,0
 76666,"Spell Satchel",STX,Colorless,Uncommon,0,0
-76667,"Strixhaven Stadium",STX,Colorless,Rare,0,0
+76667,"Strixhaven Stadium",STX,Colorless,Rare,1,0
 76668,"Team Pennant",STX,Colorless,Uncommon,0,0
 76669,"Zephyr Boots",STX,Colorless,Uncommon,0,0
 76670,"Access Tunnel",STX,Colorless,Uncommon,0,0
@@ -6202,18 +6202,18 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 77008,"Chatterfang, Squirrel General",J21,Green,Mythic,0,0
 77009,"Chatterstorm",J21,Green,Common,0,0
 77012,"Glimmer Bairn",J21,Green,Common,0,0
-77014,"Ignoble Hierarch",AA2,Green,Rare,0,0
+77014,"Ignoble Hierarch",AA2,Green,Rare,1,1
 77021,"Squirrel Sovereign",J21,Green,Uncommon,0,0
 77028,"Goblin Anarchomancer",J21,Gold,Common,0,0
 77034,"Terminal Agony",J21,Gold,Common,0,0
 77035,"Territorial Kavu",J21,Gold,Rare,0,0
 77042,"Monoskelion",J21,Colorless,Uncommon,0,0
 77043,"Ornithopter of Paradise",J21,Colorless,Common,0,0
-77054,"Arid Mesa",MH2,Colorless,Rare,0,0
-77056,"Marsh Flats",MH2,Colorless,Rare,0,0
-77058,"Misty Rainforest",MH2,Colorless,Rare,0,0
-77062,"Scalding Tarn",MH2,Colorless,Rare,0,0
-77063,"Verdant Catacombs",MH2,Colorless,Rare,0,0
+77054,"Arid Mesa",MH2,Colorless,Rare,1,1
+77056,"Marsh Flats",MH2,Colorless,Rare,1,1
+77058,"Misty Rainforest",MH2,Colorless,Rare,1,1
+77062,"Scalding Tarn",MH2,Colorless,Rare,1,1
+77063,"Verdant Catacombs",MH2,Colorless,Rare,1,1
 77064,"Yavimaya, Cradle of Growth",AA3,Colorless,Rare,0,0
 77067,"Titania, Protector of Argoth",MH2,Green,Mythic,0,0
 77068,"Chainer, Nightmare Adept",J21,Gold,Rare,0,0
@@ -6310,7 +6310,7 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 77196,"The Book of Vile Darkness",AFR,Black,Mythic,0,0
 77197,"Check for Traps",AFR,Black,Uncommon,0,0
 77198,"Clattering Skeletons",AFR,Black,Common,0,0
-77199,"Deadly Dispute",AFR,Black,Common,2,2
+77199,"Deadly Dispute",AFR,Black,Common,3,2
 77200,"Death-Priest of Myrkul",AFR,Black,Uncommon,0,0
 77201,"Demogorgon's Clutches",AFR,Black,Uncommon,0,0
 77202,"Devour Intellect",AFR,Black,Common,1,1
@@ -6479,7 +6479,7 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 77365,"Temple of the Dragon Queen",AFR,Colorless,Uncommon,0,0
 77366,"Treasure Vault",AFR,Colorless,Rare,0,0
 77480,"Approach of the Second Sun",STA,White,Mythic,0,0
-77481,"Day of Judgment",STA,White,Mythic,2,0
+77481,"Day of Judgment",STA,White,Mythic,4,0
 77482,"Defiant Strike",STA,White,Uncommon,0,0
 77483,"Divine Gambit",STA,White,Uncommon,0,0
 77484,"Ephemerate",STA,White,Rare,0,0
@@ -6487,19 +6487,19 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 77486,"Gods Willing",STA,White,Rare,0,0
 77487,"Mana Tithe",STA,White,Rare,0,0
 77488,"Revitalize",STA,White,Uncommon,3,0
-77489,"Swords to Plowshares",STA,White,Rare,0,0
-77490,"Teferi's Protection",STA,White,Mythic,0,0
+77489,"Swords to Plowshares",STA,White,Rare,1,1
+77490,"Teferi's Protection",STA,White,Mythic,1,1
 77491,"Blue Sun's Zenith",STA,Blue,Mythic,0,0
-77492,"Brainstorm",STA,Blue,Rare,0,0
+77492,"Brainstorm",STA,Blue,Rare,1,0
 77493,"Compulsive Research",STA,Blue,Rare,0,0
-77494,"Counterspell",STA,Blue,Rare,0,0
-77495,"Memory Lapse",STA,Blue,Rare,0,0
+77494,"Counterspell",STA,Blue,Rare,1,0
+77495,"Memory Lapse",STA,Blue,Rare,1,1
 77496,"Mind's Desire",STA,Blue,Mythic,0,0
 77497,"Negate",STA,Blue,Uncommon,1,0
 77498,"Opt",STA,Blue,Uncommon,4,0
 77499,"Strategic Planning",STA,Blue,Uncommon,0,0
 77500,"Tezzeret's Gambit",STA,Blue,Rare,0,0
-77501,"Time Warp",STA,Blue,Mythic,0,0
+77501,"Time Warp",STA,Blue,Mythic,1,1
 77502,"Whirlwind Denial",STA,Blue,Uncommon,0,0
 77503,"Agonizing Remorse",STA,Black,Uncommon,0,0
 77504,"Crux of Fate",STA,Black,Mythic,0,0
@@ -6508,7 +6508,7 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 77507,"Doom Blade",STA,Black,Rare,0,0
 77508,"Duress",STA,Black,Uncommon,0,0
 77509,"Eliminate",STA,Black,Uncommon,0,0
-77510,"Inquisition of Kozilek",STA,Black,Rare,0,0
+77510,"Inquisition of Kozilek",STA,Black,Rare,1,1
 77511,"Sign in Blood",STA,Black,Rare,0,0
 77512,"Tainted Pact",STA,Black,Mythic,0,0
 77513,"Tendrils of Agony",STA,Black,Rare,0,0
@@ -6519,7 +6519,7 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 77518,"Grapeshot",STA,Red,Rare,0,0
 77519,"Increasing Vengeance",STA,Red,Mythic,0,0
 77520,"Infuriate",STA,Red,Uncommon,0,0
-77521,"Lightning Bolt",STA,Red,Rare,0,0
+77521,"Lightning Bolt",STA,Red,Rare,1,0
 77522,"Mizzix's Mastery",STA,Red,Mythic,0,0
 77523,"Shock",STA,Red,Uncommon,4,0
 77524,"Stone Rain",STA,Red,Rare,0,0
@@ -6528,7 +6528,7 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 77527,"Abundant Harvest",STA,Green,Rare,0,0
 77528,"Adventurous Impulse",STA,Green,Uncommon,0,0
 77529,"Channel",STA,Green,Mythic,0,0
-77530,"Cultivate",STA,Green,Uncommon,0,0
+77530,"Cultivate",STA,Green,Uncommon,1,1
 77531,"Harmonize",STA,Green,Rare,0,0
 77532,"Krosan Grip",STA,Green,Rare,0,0
 77533,"Natural Order",STA,Green,Mythic,0,0
@@ -6538,8 +6538,8 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 77537,"Weather the Storm",STA,Green,Rare,0,0
 77538,"Despark",STA,Gold,Rare,0,0
 77539,"Electrolyze",STA,Gold,Rare,0,0
-77540,"Growth Spiral",STA,Gold,Rare,0,0
-77541,"Lightning Helix",STA,Gold,Rare,0,0
+77540,"Growth Spiral",STA,Gold,Rare,1,0
+77541,"Lightning Helix",STA,Gold,Rare,1,1
 77542,"Putrefy",STA,Gold,Rare,0,0
 77657,"Triumphant Reckoning",HA4,White,Mythic,0,0
 77679,"Hullbreacher",CMR,Blue,Rare,0,0
@@ -6559,7 +6559,7 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 78331,"Brutal Cathar",MID,White,Rare,0,0
 78333,"Candlegrove Witch",MID,White,Common,0,0
 78334,"Candletrap",MID,White,Common,1,1
-78335,"Cathar Commando",MID,White,Common,1,0
+78335,"Cathar Commando",MID,White,Common,4,0
 78336,"Cathar's Call",MID,White,Uncommon,0,0
 78337,"Celestus Sanctifier",MID,White,Common,0,0
 78338,"Chaplain of Alms",MID,White,Uncommon,0,0
@@ -6593,7 +6593,7 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 78370,"Vanquish the Horde",MID,White,Rare,0,0
 78371,"Baithook Angler",MID,Blue,Common,0,0
 78373,"Component Collector",MID,Blue,Common,0,0
-78374,"Consider",MID,Blue,Common,0,0
+78374,"Consider",MID,Blue,Common,1,0
 78375,"Covetous Castaway",MID,Blue,Uncommon,0,0
 78377,"Curse of Surveillance",MID,Blue,Rare,0,0
 78378,"Delver of Secrets",MID,Blue,Uncommon,0,0
@@ -6672,7 +6672,7 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 78465,"Shady Traveler",MID,Black,Common,0,0
 78467,"Siege Zombie",MID,Black,Common,1,1
 78468,"Slaughter Specialist",MID,Black,Rare,0,0
-78469,"Stromkirk Bloodthief",MID,Black,Uncommon,2,0
+78469,"Stromkirk Bloodthief",MID,Black,Uncommon,4,0
 78470,"Tainted Adversary",MID,Black,Mythic,0,0
 78471,"Vampire Interloper",MID,Black,Common,0,0
 78472,"Vengeful Strangler",MID,Black,Uncommon,1,1
@@ -6899,11 +6899,11 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 78872,"Steelclad Spirit",VOW,Blue,Common,0,0
 78873,"Stitched Assistant",VOW,Blue,Common,0,0
 78874,"Stormchaser Drake",VOW,Blue,Uncommon,0,0
-78875,"Syncopate",VOW,Blue,Common,0,0
+78875,"Syncopate",VOW,Blue,Common,4,0
 78876,"Syphon Essence",VOW,Blue,Common,0,0
 78877,"Thirst for Discovery",VOW,Blue,Uncommon,0,0
 78878,"Wanderlight Spirit",VOW,Blue,Common,0,0
-78879,"Wash Away",VOW,Blue,Uncommon,0,0
+78879,"Wash Away",VOW,Blue,Uncommon,1,1
 78880,"Whispering Wizard",VOW,Blue,Uncommon,0,0
 78881,"Winged Portent",VOW,Blue,Rare,0,0
 78882,"Witness the Future",VOW,Blue,Uncommon,0,0
@@ -7235,8 +7235,8 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 79387,"Skyshroud Ambush",J21,Green,Common,0,0
 79388,"Skyshroud Lookout",J21,Green,Uncommon,0,0
 79389,"Veteran Charger",J21,Green,Common,0,0
-79416,"Arcane Signet",ANB,Colorless,Common,0,0
-79417,"Command Tower",ANB,Colorless,Common,0,0
+79416,"Arcane Signet",ANB,Colorless,Common,1,0
+79417,"Command Tower",ANB,Colorless,Common,1,0
 79418,"Ancestral Katana",NEO,White,Common,0,0
 79419,"Ao, the Dawn Sky",NEO,White,Mythic,0,0
 79420,"Banishing Slash",NEO,White,Uncommon,0,0
@@ -7249,7 +7249,7 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 79428,"Eiganjo Exemplar",NEO,White,Common,0,0
 79429,"Era of Enlightenment",NEO,White,Common,0,0
 79431,"The Fall of Lord Konda",NEO,White,Uncommon,0,0
-79433,"Farewell",NEO,White,Rare,0,0
+79433,"Farewell",NEO,White,Rare,1,1
 79434,"Go-Shintai of Shared Purpose",NEO,White,Uncommon,0,0
 79435,"Golden-Tail Disciple",NEO,White,Common,0,0
 79436,"Hotshot Mechanic",NEO,White,Uncommon,0,0
@@ -7377,7 +7377,7 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 79567,"Experimental Synthesizer",NEO,Red,Common,0,0
 79568,"Explosive Entry",NEO,Red,Common,0,0
 79569,"Explosive Singularity",NEO,Red,Mythic,0,0
-79570,"Fable of the Mirror-Breaker",NEO,Red,Rare,0,0
+79570,"Fable of the Mirror-Breaker",NEO,Red,Rare,1,1
 79572,"Flame Discharge",NEO,Red,Uncommon,0,0
 79573,"Gift of Wrath",NEO,Red,Common,0,0
 79574,"Go-Shintai of Ancient Wars",NEO,Red,Uncommon,0,0
@@ -7502,22 +7502,22 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 79703,"Walking Skyscraper",NEO,Colorless,Uncommon,0,0
 79704,"Bloodfell Caves",NEO,Colorless,Common,4,0
 79705,"Blossoming Sands",NEO,Colorless,Common,4,0
-79706,"Boseiju, Who Endures",NEO,Colorless,Rare,0,0
+79706,"Boseiju, Who Endures",NEO,Colorless,Rare,1,1
 79707,"Dismal Backwater",NEO,Colorless,Common,4,0
 79708,"Eiganjo, Seat of the Empire",NEO,Colorless,Rare,0,0
 79709,"Jungle Hollow",NEO,Colorless,Common,4,0
 79710,"Mech Hangar",NEO,Colorless,Uncommon,0,0
-79711,"Otawara, Soaring City",NEO,Colorless,Rare,0,0
+79711,"Otawara, Soaring City",NEO,Colorless,Rare,1,1
 79712,"Roadside Reliquary",NEO,Colorless,Uncommon,0,0
 79713,"Rugged Highlands",NEO,Colorless,Common,4,0
 79714,"Scoured Barrens",NEO,Colorless,Common,4,0
 79715,"Secluded Courtyard",NEO,Colorless,Uncommon,4,0
 79716,"Sokenzan, Crucible of Defiance",NEO,Colorless,Rare,0,0
 79717,"Swiftwater Cliffs",NEO,Colorless,Common,4,0
-79718,"Takenuma, Abandoned Mire",NEO,Colorless,Rare,0,0
+79718,"Takenuma, Abandoned Mire",NEO,Colorless,Rare,1,1
 79719,"Thornwood Falls",NEO,Colorless,Common,4,0
 79720,"Tranquil Cove",NEO,Colorless,Common,4,0
-79721,"Uncharted Haven",NEO,Colorless,Common,0,0
+79721,"Uncharted Haven",NEO,Colorless,Common,4,0
 79722,"Wind-Scarred Crag",NEO,Colorless,Common,4,0
 79900,"Zilortha, Strength Incarnate",IKO,Gold,Mythic,0,0
 79906,"Angel of Eternal Dawn",YMID,White,Rare,0,0
@@ -7578,7 +7578,7 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 79962,"Tenacious Pup",YMID,Green,Uncommon,0,0
 79963,"Begin Anew",YMID,Gold,Rare,0,0
 79964,"Gitrog, Horror of Zhava",YMID,Gold,Rare,0,0
-79965,"Key to the Archive",YMID,Colorless,Rare,0,0
+79965,"Key to the Archive",YMID,Colorless,Rare,1,1
 79966,"Soulstealer Axe",YMID,Colorless,Uncommon,0,0
 79967,"Wickerwing Effigy",YMID,Colorless,Rare,0,0
 79968,"Ominous Traveler",YMID,Colorless,Rare,0,0
@@ -7601,7 +7601,7 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 80162,"Elspeth Resplendent",SNC,White,Mythic,0,0
 80163,"Extraction Specialist",SNC,White,Rare,0,0
 80164,"Gathering Throng",SNC,White,Common,0,0
-80165,"Giada, Font of Hope",SNC,White,Rare,3,0
+80165,"Giada, Font of Hope",SNC,White,Rare,4,0
 80166,"Halo Fountain",SNC,White,Mythic,0,0
 80167,"Hold for Ransom",SNC,White,Common,0,0
 80168,"Illuminator Virtuoso",SNC,White,Uncommon,0,0
@@ -7837,18 +7837,18 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 80398,"Botanical Plaza",SNC,Colorless,Common,0,0
 80399,"Brokers Hideout",SNC,Colorless,Common,0,0
 80400,"Cabaretti Courtyard",SNC,Colorless,Common,0,0
-80401,"Jetmir's Garden",SNC,Colorless,Rare,0,0
+80401,"Jetmir's Garden",SNC,Colorless,Rare,1,1
 80402,"Maestros Theater",SNC,Colorless,Common,0,0
 80403,"Obscura Storefront",SNC,Colorless,Common,0,0
 80404,"Racers' Ring",SNC,Colorless,Common,0,0
-80405,"Raffine's Tower",SNC,Colorless,Rare,0,0
+80405,"Raffine's Tower",SNC,Colorless,Rare,1,1
 80406,"Riveteers Overlook",SNC,Colorless,Common,0,0
 80407,"Skybridge Towers",SNC,Colorless,Common,0,0
-80408,"Spara's Headquarters",SNC,Colorless,Rare,0,0
+80408,"Spara's Headquarters",SNC,Colorless,Rare,1,1
 80409,"Tramway Station",SNC,Colorless,Common,0,0
 80410,"Waterfront District",SNC,Colorless,Common,0,0
-80411,"Xander's Lounge",SNC,Colorless,Rare,0,0
-80412,"Ziatora's Proving Ground",SNC,Colorless,Rare,0,0
+80411,"Xander's Lounge",SNC,Colorless,Rare,1,1
+80412,"Ziatora's Proving Ground",SNC,Colorless,Rare,1,1
 80853,"A-Alrund's Epiphany",KHM,Blue,Mythic,0,0
 80858,"A-Omnath, Locus of Creation",ZNR,Gold,Mythic,0,0
 81072,"A-Demilich",AFR,Blue,Mythic,1,1
@@ -7879,7 +7879,7 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 81100,"Bellowsbreath Ogre",YNEO,Red,Rare,0,0
 81101,"Molten Impact",YNEO,Red,Rare,0,0
 81102,"Forgeborn Phoenix",YNEO,Red,Mythic,0,0
-81103,"Kami of Bamboo Groves",YNEO,Green,Uncommon,0,0
+81103,"Kami of Bamboo Groves",YNEO,Green,Uncommon,1,1
 81104,"Chronicler of Worship",YNEO,Green,Rare,0,0
 81105,"Boseiju Pathlighter",YNEO,Green,Rare,0,0
 81106,"Jukai Liberator",YNEO,Green,Rare,0,0
@@ -8055,7 +8055,7 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 81737,"Bonecaller Cleric",HBG,Black,Uncommon,0,0
 81738,"Cast Down",HBG,Black,Uncommon,0,0
 81739,"Chain Devil",HBG,Black,Common,0,0
-81740,"Deadly Dispute",HBG,Black,Common,2,0
+81740,"Deadly Dispute",HBG,Black,Common,3,0
 81741,"Demogorgon's Clutches",HBG,Black,Common,0,0
 81742,"Drider",HBG,Black,Uncommon,0,0
 81743,"Eldritch Pact",HBG,Black,Rare,0,0
@@ -8148,7 +8148,7 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 81838,"Lozhan, Dragons' Legacy",HBG,Gold,Uncommon,0,0
 81839,"Mazzy, Truesword Paladin",HBG,Gold,Rare,0,0
 81840,"Miirym, Sentinel Wyrm",HBG,Gold,Rare,0,0
-81841,"Minsc & Boo, Timeless Heroes",HBG,Gold,Mythic,0,0
+81841,"Minsc & Boo, Timeless Heroes",HBG,Gold,Mythic,1,1
 81842,"Nalia de'Arnise",HBG,Gold,Mythic,0,0
 81843,"Neera, Wild Mage",HBG,Gold,Rare,0,0
 81844,"Oji, the Exquisite Blade",HBG,Gold,Uncommon,0,0
@@ -8174,7 +8174,7 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 81865,"Baldur's Gate",HBG,Colorless,Rare,0,0
 81888,"A-Sepulcher Ghoul",HBG,Black,Common,1,0
 81890,"A-Earthquake Dragon",HBG,Green,Rare,0,0
-81893,"A-Minsc & Boo, Timeless Heroes",HBG,Gold,Mythic,0,0
+81893,"A-Minsc & Boo, Timeless Heroes",HBG,Gold,Mythic,1,1
 81902,"Seek New Knowledge",HBG,Blue,Uncommon,0,0
 81906,"Yuan-Ti Scaleshield",HBG,Green,Rare,0,0
 81907,"A-Goma Fada Vanguard",ZNR,Red,Uncommon,0,0
@@ -8253,7 +8253,7 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 82073,"Join Forces",DMU,White,Uncommon,0,0
 82074,"Juniper Order Rootweaver",DMU,White,Common,0,0
 82075,"Knight of Dawn's Light",DMU,White,Uncommon,0,0
-82076,"Leyline Binding",DMU,White,Rare,0,0
+82076,"Leyline Binding",DMU,White,Rare,1,1
 82077,"Love Song of Night and Day",DMU,White,Uncommon,0,0
 82078,"Mesa Cavalier",DMU,White,Common,0,0
 82079,"Phyrexian Missionary",DMU,White,Uncommon,0,0
@@ -8336,7 +8336,7 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 82156,"Sengir Connoisseur",DMU,Black,Uncommon,0,0
 82157,"Shadow Prophecy",DMU,Black,Common,0,0
 82158,"Shadow-Rite Priest",DMU,Black,Rare,0,0
-82159,"Sheoldred, the Apocalypse",DMU,Black,Mythic,0,0
+82159,"Sheoldred, the Apocalypse",DMU,Black,Mythic,1,1
 82160,"Sheoldred's Restoration",DMU,Black,Uncommon,0,0
 82161,"Splatter Goblin",DMU,Black,Common,0,0
 82162,"Stronghold Arena",DMU,Black,Rare,0,0
@@ -8432,7 +8432,7 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 82252,"Garna, Bloodfist of Keld",DMU,Gold,Uncommon,0,0
 82253,"Ivy, Gleeful Spellthief",DMU,Gold,Rare,0,0
 82254,"Jhoira, Ageless Innovator",DMU,Gold,Rare,0,0
-82255,"Jodah, the Unifier",DMU,Gold,Mythic,0,0
+82255,"Jodah, the Unifier",DMU,Gold,Mythic,1,0
 82256,"King Darien XLVIII",DMU,Gold,Rare,0,0
 82257,"Lagomos, Hand of Hatred",DMU,Gold,Uncommon,0,0
 82258,"Meria, Scholar of Antiquity",DMU,Gold,Rare,0,0
@@ -8465,7 +8465,7 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 82285,"Jodah's Codex",DMU,Colorless,Uncommon,0,0
 82286,"Karn's Sylex",DMU,Colorless,Mythic,0,0
 82287,"Meteorite",DMU,Colorless,Common,0,0
-82288,"Relic of Legends",DMU,Colorless,Uncommon,0,0
+82288,"Relic of Legends",DMU,Colorless,Uncommon,1,1
 82289,"Salvaged Manaworker",DMU,Colorless,Common,0,0
 82290,"Shield-Wall Sentinel",DMU,Colorless,Common,0,0
 82291,"Timeless Lotus",DMU,Colorless,Mythic,0,0
@@ -8481,7 +8481,7 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 82301,"Idyllic Beachfront",DMU,Colorless,Common,0,0
 82302,"Karplusan Forest",DMU,Colorless,Rare,0,0
 82303,"Molten Tributary",DMU,Colorless,Common,0,0
-82304,"Plaza of Heroes",DMU,Colorless,Rare,0,0
+82304,"Plaza of Heroes",DMU,Colorless,Rare,1,1
 82305,"Radiant Grove",DMU,Colorless,Common,0,0
 82306,"Sacred Peaks",DMU,Colorless,Common,0,0
 82307,"Shivan Reef",DMU,Colorless,Rare,0,0
@@ -8606,7 +8606,7 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 82592,"Moment of Defiance",BRO,Black,Common,0,0
 82593,"No One Left Behind",BRO,Black,Uncommon,0,0
 82594,"Overwhelming Remorse",BRO,Black,Common,0,0
-82595,"Painful Quandary",BRO,Black,Rare,3,0
+82595,"Painful Quandary",BRO,Black,Rare,4,0
 82596,"Powerstone Fracture",BRO,Black,Common,1,1
 82597,"Ravenous Gigamole",BRO,Black,Common,0,0
 82598,"Thran Vigil",BRO,Black,Uncommon,0,0
@@ -8666,7 +8666,7 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 82653,"Argothian Sprite",BRO,Green,Common,0,0
 82654,"Audacity",BRO,Green,Uncommon,0,0
 82655,"Awaken the Woods",BRO,Green,Mythic,0,0
-82656,"Blanchwood Armor",BRO,Green,Uncommon,3,0
+82656,"Blanchwood Armor",BRO,Green,Uncommon,4,0
 82657,"Blanchwood Prowler",BRO,Green,Common,0,0
 82658,"Burrowing Razormaw",BRO,Green,Common,0,0
 82659,"Bushwhack",BRO,Green,Uncommon,4,0
@@ -8777,7 +8777,7 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 82806,"Bone Saw",BRR,Colorless,Uncommon,0,0
 82807,"Burnished Hart",BRR,Colorless,Uncommon,4,0
 82808,"Caged Sun",BRR,Colorless,Mythic,0,0
-82809,"Chromatic Lantern",BRR,Colorless,Rare,0,0
+82809,"Chromatic Lantern",BRR,Colorless,Rare,1,0
 82810,"Chromatic Star",BRR,Colorless,Uncommon,0,0
 82811,"Cloud Key",BRR,Colorless,Rare,0,0
 82812,"Defense Grid",BRR,Colorless,Rare,0,0
@@ -8825,7 +8825,7 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 82854,"Springleaf Drum",BRR,Colorless,Uncommon,0,0
 82855,"Staff of Domination",BRR,Colorless,Mythic,0,0
 82856,"Sundering Titan",BRR,Colorless,Mythic,0,0
-82857,"Swiftfoot Boots",BRR,Colorless,Uncommon,1,1
+82857,"Swiftfoot Boots",BRR,Colorless,Uncommon,4,1
 82858,"Sword of the Meek",BRR,Colorless,Rare,1,1
 82859,"Thorn of Amethyst",BRR,Colorless,Rare,0,0
 82860,"Unwinding Clock",BRR,Colorless,Rare,0,0
@@ -8874,7 +8874,7 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 83514,"Benalish Knight-Counselor",YDMU,White,Uncommon,0,0
 83515,"Priest of Possibility",YDMU,White,Rare,0,0
 83516,"Pull of the Mist Moon",YDMU,White,Uncommon,0,0
-83517,"Oracle of the Alpha",YDMU,Blue,Mythic,0,0
+83517,"Oracle of the Alpha",YDMU,Blue,Mythic,1,1
 83518,"Skywriter Djinn",YDMU,Blue,Rare,0,0
 83519,"Trove Mage",YDMU,Blue,Uncommon,0,0
 83520,"Vesuvan Mist",YDMU,Blue,Uncommon,0,0
@@ -8937,7 +8937,7 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 83707,"Compleat Devotion",ONE,White,Common,1,1
 83708,"Crawling Chorus",ONE,White,Common,0,0
 83709,"Duelist of Deep Faith",ONE,White,Common,0,0
-83710,"Elesh Norn, Mother of Machines",ONE,White,Mythic,0,0
+83710,"Elesh Norn, Mother of Machines",ONE,White,Mythic,1,1
 83711,"The Eternal Wanderer",ONE,White,Rare,0,0
 83712,"Flensing Raptor",ONE,White,Common,0,0
 83713,"Goldwarden's Helm",ONE,White,Common,2,2
@@ -9031,7 +9031,7 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 83801,"Nimraiser Paladin",ONE,Black,Uncommon,0,0
 83802,"Offer Immortality",ONE,Black,Common,0,0
 83803,"Pestilent Syphoner",ONE,Black,Common,0,0
-83804,"Phyrexian Arena",ONE,Black,Rare,2,0
+83804,"Phyrexian Arena",ONE,Black,Rare,4,0
 83805,"Phyrexian Obliterator",ONE,Black,Mythic,0,0
 83806,"Ravenous Necrotitan",ONE,Black,Uncommon,0,0
 83807,"Scheming Aspirant",ONE,Black,Uncommon,0,0
@@ -9123,7 +9123,7 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 83893,"Venomous Brutalizer",ONE,Green,Uncommon,0,0
 83894,"Viral Spawning",ONE,Green,Uncommon,0,0
 83895,"Zopandrel, Hunger Dominus",ONE,Green,Mythic,0,0
-83896,"Atraxa, Grand Unifier",ONE,Gold,Mythic,1,1
+83896,"Atraxa, Grand Unifier",ONE,Gold,Mythic,2,1
 83897,"Bladehold War-Whip",ONE,Gold,Uncommon,2,2
 83898,"Cephalopod Sentry",ONE,Gold,Uncommon,0,0
 83899,"Charforger",ONE,Gold,Uncommon,0,0
@@ -9254,13 +9254,13 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 84182,"Sylvan Smite",YBRO,Green,Uncommon,0,0
 84183,"Argivian Welcome",YBRO,Gold,Uncommon,1,1
 84184,"Assemble the Team",YBRO,Gold,Uncommon,3,3
-84185,"Crucias, Titan of the Waves",YBRO,Gold,Mythic,0,0
+84185,"Crucias, Titan of the Waves",YBRO,Gold,Mythic,1,1
 84186,"Great Desert Hellion",YBRO,Gold,Rare,0,0
 84187,"Jarsyl, Dark Age Scion",YBRO,Gold,Mythic,1,1
 84188,"Perilous Iteration",YBRO,Gold,Uncommon,1,1
 84189,"Raddic, Tal Zealot",YBRO,Gold,Rare,1,1
 84190,"Richlau, Headmaster",YBRO,Gold,Mythic,0,0
-84191,"Rusko, Clockmaker",YBRO,Gold,Rare,0,0
+84191,"Rusko, Clockmaker",YBRO,Gold,Rare,1,1
 84192,"Yotian Courier",YBRO,Gold,Rare,1,1
 84193,"Forgefire Automaton",YBRO,Colorless,Mythic,0,0
 84195,"Gixian Recycler",YBRO,Colorless,Rare,0,0
@@ -9306,7 +9306,7 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 84291,"Sigiled Sentinel",MOM,White,Common,1,1
 84292,"Sun-Blessed Guardian",MOM,White,Uncommon,0,0
 84294,"Sunder the Gateway",MOM,White,Common,0,0
-84295,"Sunfall",MOM,White,Rare,0,0
+84295,"Sunfall",MOM,White,Rare,1,1
 84296,"Surge of Salvation",MOM,White,Uncommon,0,0
 84297,"Swordsworn Cavalier",MOM,White,Common,1,1
 84298,"Tarkir Duneshaper",MOM,White,Common,0,0
@@ -9403,7 +9403,7 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 84408,"Chandra, Hope's Beacon",MOM,Red,Mythic,1,1
 84409,"City on Fire",MOM,Red,Rare,0,0
 84410,"Coming In Hot",MOM,Red,Common,0,0
-84411,"Etali, Primal Conqueror",MOM,Red,Rare,0,0
+84411,"Etali, Primal Conqueror",MOM,Red,Rare,1,1
 84413,"Fearless Skald",MOM,Red,Uncommon,0,0
 84414,"Furnace Gremlin",MOM,Red,Uncommon,0,0
 84415,"Furnace Host Charger",MOM,Red,Common,0,0
@@ -9568,7 +9568,7 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 84715,"Nimble Hobbit",LTR,White,Common,0,0
 84716,"Now for Wrath, Now for Ruin!",LTR,White,Common,0,0
 84717,"Protector of Gondor",LTR,White,Common,0,0
-84718,"Reprieve",LTR,White,Uncommon,0,0
+84718,"Reprieve",LTR,White,Uncommon,1,1
 84719,"Rosie Cotton of South Lane",LTR,White,Uncommon,0,0
 84720,"Samwise the Stouthearted",LTR,White,Uncommon,0,0
 84721,"Second Breakfast",LTR,White,Common,1,1
@@ -9700,7 +9700,7 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 84847,"Brandywine Farmer",LTR,Green,Common,0,0
 84848,"Celeborn the Wise",LTR,Green,Uncommon,0,0
 84849,"Chance-Met Elves",LTR,Green,Common,0,0
-84850,"Delighted Halfling",LTR,Green,Rare,0,0
+84850,"Delighted Halfling",LTR,Green,Rare,1,1
 84851,"Dúnedain Rangers",LTR,Green,Uncommon,0,0
 84852,"Elven Chorus",LTR,Green,Rare,0,0
 84853,"Elven Farsight",LTR,Green,Common,0,0
@@ -9788,7 +9788,7 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 84935,"Lembas",LTR,Colorless,Common,0,0
 84936,"Mirror of Galadriel",LTR,Colorless,Uncommon,0,0
 84937,"Mithril Coat",LTR,Colorless,Rare,0,0
-84938,"The One Ring",LTR,Colorless,Mythic,0,0
+84938,"The One Ring",LTR,Colorless,Mythic,1,1
 84939,"Palantír of Orthanc",LTR,Colorless,Mythic,0,0
 84940,"Phial of Galadriel",LTR,Colorless,Rare,0,0
 84941,"Shire Scarecrow",LTR,Colorless,Common,0,0
@@ -9938,7 +9938,7 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 85558,"Firja, Judge of Valor",MUL,Gold,Uncommon,0,0
 85559,"Grimgrin, Corpse-Born",MUL,Gold,Mythic,0,0
 85560,"Gyruda, Doom of Depths",MUL,Gold,Rare,0,0
-85561,"Imoti, Celebrant of Bounty",MUL,Gold,Uncommon,0,0
+85561,"Imoti, Celebrant of Bounty",MUL,Gold,Uncommon,1,1
 85562,"Jegantha, the Wellspring",MUL,Gold,Rare,0,0
 85563,"Judith, the Scourge Diva",MUL,Gold,Rare,0,0
 85564,"Juri, Master of the Revue",MUL,Gold,Uncommon,0,0
@@ -10393,7 +10393,7 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 86714,"Solitary Sanctuary",WOE,White,Uncommon,0,0
 86715,"Spellbook Vendor",WOE,White,Rare,0,0
 86716,"Stockpiling Celebrant",WOE,White,Common,0,0
-86717,"Stroke of Midnight",WOE,White,Uncommon,3,1
+86717,"Stroke of Midnight",WOE,White,Uncommon,4,1
 86718,"A Tale for the Ages",WOE,White,Rare,0,0
 86719,"Three Blind Mice",WOE,White,Rare,0,0
 86720,"Tuinvale Guide",WOE,White,Common,0,0
@@ -10660,7 +10660,7 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 87059,"Intruder Alarm",WOT,Blue,Rare,0,0
 87060,"Kindred Discovery",WOT,Blue,Mythic,0,0
 87061,"Leyline of Anticipation",WOT,Blue,Rare,0,0
-87062,"Omniscience",WOT,Blue,Mythic,1,0
+87062,"Omniscience",WOT,Blue,Mythic,2,0
 87063,"Rhystic Study",WOT,Blue,Mythic,0,0
 87064,"Spreading Seas",WOT,Blue,Uncommon,1,1
 87065,"Bitterblossom",WOT,Black,Mythic,0,0
@@ -10688,7 +10688,7 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 87087,"Shared Animosity",WOT,Red,Rare,0,0
 87088,"Sneak Attack",WOT,Red,Mythic,0,0
 87089,"Defense of the Heart",WOT,Green,Mythic,0,0
-87090,"Doubling Season",WOT,Green,Mythic,1,0
+87090,"Doubling Season",WOT,Green,Mythic,3,0
 87091,"Garruk's Uprising",WOT,Green,Uncommon,4,0
 87092,"Ground Seal",WOT,Green,Uncommon,0,0
 87093,"Hardened Scales",WOT,Green,Rare,0,0
@@ -10721,7 +10721,7 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 87133,"Adaptive Gemguard",LCI,White,Common,1,1
 87134,"Attentive Sunscribe",LCI,White,Common,1,1
 87135,"Bat Colony",LCI,White,Uncommon,0,0
-87136,"Clay-Fired Bricks",LCI,White,Uncommon,0,0
+87136,"Clay-Fired Bricks",LCI,White,Uncommon,4,4
 87138,"Cosmium Blast",LCI,White,Common,0,0
 87139,"Dauntless Dismantler",LCI,White,Uncommon,2,2
 87140,"Deconstruction Hammer",LCI,White,Common,1,1
@@ -10740,7 +10740,7 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 87153,"Market Gnome",LCI,White,Uncommon,0,0
 87154,"Might of the Ancestors",LCI,White,Uncommon,0,0
 87155,"Miner's Guidewing",LCI,White,Common,0,0
-87156,"Mischievous Pup",LCI,White,Uncommon,2,0
+87156,"Mischievous Pup",LCI,White,Uncommon,4,0
 87157,"Ojer Taq, Deepest Foundation",LCI,White,Mythic,0,0
 87159,"Oltec Archaeologists",LCI,White,Common,0,0
 87160,"Oltec Cloud Guard",LCI,White,Common,0,0
@@ -10751,7 +10751,7 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 87166,"Ruin-Lurker Bat",LCI,White,Uncommon,0,0
 87167,"Sanguine Evangelist",LCI,White,Rare,0,0
 87168,"Soaring Sandwing",LCI,White,Common,0,0
-87169,"Spring-Loaded Sawblades",LCI,White,Uncommon,0,0
+87169,"Spring-Loaded Sawblades",LCI,White,Uncommon,4,4
 87171,"Thousand Moons Crackshot",LCI,White,Common,1,1
 87172,"Thousand Moons Infantry",LCI,White,Common,0,0
 87173,"Thousand Moons Smithy",LCI,White,Rare,0,0
@@ -10769,7 +10769,7 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 87188,"Council of Echoes",LCI,Blue,Uncommon,0,0
 87190,"Didact Echo",LCI,Blue,Common,0,0
 87191,"Eaten by Piranhas",LCI,Blue,Uncommon,0,0
-87192,"The Enigma Jewel",LCI,Blue,Mythic,0,0
+87192,"The Enigma Jewel",LCI,Blue,Mythic,1,1
 87194,"The Everflowing Well",LCI,Blue,Rare,0,0
 87196,"Frilled Cave-Wurm",LCI,Blue,Common,1,1
 87197,"Hermitic Nautilus",LCI,Blue,Uncommon,0,0
@@ -10974,7 +10974,7 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 87430,"Throne of the Grim Captain",LCI,Colorless,Rare,0,0
 87432,"Treasure Map",LCI,Colorless,Rare,0,0
 87434,"Captivating Cave",LCI,Colorless,Common,0,0
-87435,"Cavern of Souls",LCI,Colorless,Mythic,0,0
+87435,"Cavern of Souls",LCI,Colorless,Mythic,1,1
 87436,"Cavernous Maw",LCI,Colorless,Uncommon,0,0
 87437,"Echoing Deeps",LCI,Colorless,Rare,0,0
 87438,"Forgotten Monument",LCI,Colorless,Uncommon,0,0
@@ -11027,7 +11027,7 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 88913,"Fabricate",SPG,Blue,Mythic,0,0
 88914,"Show and Tell",SPG,Blue,Mythic,0,0
 88915,"Tragic Slip",SPG,Black,Mythic,0,0
-88916,"Victimize",SPG,Black,Mythic,0,0
+88916,"Victimize",SPG,Black,Mythic,1,0
 88917,"Gamble",SPG,Red,Mythic,0,0
 88918,"Crashing Footfalls",SPG,Green,Mythic,0,0
 88919,"Tireless Tracker",SPG,Green,Mythic,0,0
@@ -11241,7 +11241,7 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 89128,"Kylox's Voltstrider",MKM,Gold,Mythic,0,0
 89129,"Lazav, Wearer of Faces",MKM,Gold,Rare,0,0
 89130,"Leyline of the Guildpact",MKM,Gold,Rare,0,0
-89131,"Lightning Helix",MKM,Gold,Uncommon,0,0
+89131,"Lightning Helix",MKM,Gold,Uncommon,1,0
 89132,"Meddling Youths",MKM,Gold,Uncommon,0,0
 89133,"Niv-Mizzet, Guildpact",MKM,Gold,Rare,0,0
 89134,"No More Lies",MKM,Gold,Uncommon,0,0
@@ -11285,8 +11285,8 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 89182,"Elegant Parlor",MKM,Colorless,Rare,0,0
 89183,"Escape Tunnel",MKM,Colorless,Common,0,0
 89184,"Hedge Maze",MKM,Colorless,Rare,0,0
-89185,"Lush Portico",MKM,Colorless,Rare,0,0
-89186,"Meticulous Archive",MKM,Colorless,Rare,0,0
+89185,"Lush Portico",MKM,Colorless,Rare,1,1
+89186,"Meticulous Archive",MKM,Colorless,Rare,2,2
 89187,"Public Thoroughfare",MKM,Colorless,Common,1,1
 89188,"Raucous Theater",MKM,Colorless,Rare,0,0
 89189,"Scene of the Crime",MKM,Colorless,Uncommon,1,1
@@ -11342,7 +11342,7 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 90147,"Captivating Crossroads",YWOE,Colorless,Rare,0,0
 90148,"Loch Larent",YWOE,Colorless,Uncommon,1,1
 90246,"A-Orcish Bowmasters",LTR,Black,Rare,0,0
-90247,"A-The One Ring",LTR,Colorless,Mythic,0,0
+90247,"A-The One Ring",LTR,Colorless,Mythic,1,1
 90248,"Snow-Covered Plains",SLD,Colorless,Rare,2,0
 90249,"Snow-Covered Island",SLD,Colorless,Rare,2,0
 90250,"Snow-Covered Swamp",SLD,Colorless,Rare,2,0
@@ -11664,7 +11664,7 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 90664,"Oltec Matterweaver",BIG,White,Mythic,0,0
 90665,"Rest in Peace",BIG,White,Mythic,0,0
 90666,"Esoteric Duplicator",BIG,Blue,Mythic,0,0
-90667,"Simulacrum Synthesizer",BIG,Blue,Mythic,0,0
+90667,"Simulacrum Synthesizer",BIG,Blue,Mythic,4,4
 90668,"Worldwalker Helm",BIG,Blue,Mythic,0,0
 90669,"Greed's Gambit",BIG,Black,Mythic,0,0
 90670,"Harvester of Misery",BIG,Black,Mythic,0,0
@@ -11687,12 +11687,12 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 90687,"Sword of Wealth and Power",BIG,Colorless,Mythic,0,0
 90688,"Torpor Orb",BIG,Colorless,Mythic,0,0
 90689,"Transmutation Font",BIG,Colorless,Mythic,0,0
-90690,"Fomori Vault",BIG,Colorless,Mythic,0,0
+90690,"Fomori Vault",BIG,Colorless,Mythic,1,1
 90691,"Tarnation Vista",BIG,Colorless,Mythic,0,0
 90699,"Fell the Mighty",OTP,White,Rare,0,0
 90700,"Fierce Retribution",OTP,White,Uncommon,1,1
 90701,"Journey to Nowhere",OTP,White,Uncommon,0,0
-90702,"Leyline Binding",OTP,White,Mythic,0,0
+90702,"Leyline Binding",OTP,White,Mythic,1,0
 90703,"Pariah",OTP,White,Rare,0,0
 90704,"Path to Exile",OTP,White,Rare,1,1
 90705,"Archive Trap",OTP,Blue,Rare,0,0
@@ -11708,7 +11708,7 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 90715,"Overwhelming Forces",OTP,Black,Mythic,0,0
 90716,"Reanimate",OTP,Black,Rare,0,0
 90717,"Surgical Extraction",OTP,Black,Rare,0,0
-90718,"Thoughtseize",OTP,Black,Mythic,0,0
+90718,"Thoughtseize",OTP,Black,Mythic,1,0
 90719,"Collective Defiance",OTP,Red,Rare,0,0
 90720,"Crackle with Power",OTP,Red,Mythic,0,0
 90721,"Electrodominance",OTP,Red,Rare,0,0
@@ -11766,7 +11766,7 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 90806,"Hydroelectric Specimen",MH3,Blue,Uncommon,0,0
 90808,"Sink into Stupor",MH3,Blue,Uncommon,0,0
 90810,"Tamiyo, Inquisitive Student",MH3,Blue,Mythic,0,0
-90812,"Boggart Trawler",MH3,Black,Uncommon,0,0
+90812,"Boggart Trawler",MH3,Black,Uncommon,1,1
 90814,"Fell the Profane",MH3,Black,Uncommon,0,0
 90816,"Sorin of House Markov",MH3,Black,Mythic,0,0
 90818,"Pinnacle Monk",MH3,Red,Uncommon,0,0
@@ -11774,7 +11774,7 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 90822,"Sundering Eruption",MH3,Red,Uncommon,0,0
 90824,"Bridgeworks Battle",MH3,Green,Uncommon,0,0
 90826,"Disciple of Freyalise",MH3,Green,Uncommon,0,0
-90828,"Grist, Voracious Larva",MH3,Green,Mythic,0,0
+90828,"Grist, Voracious Larva",MH3,Green,Mythic,1,1
 90830,"Bloodsoaked Insight",MH3,Gold,Uncommon,0,0
 90832,"Drowner of Truth",MH3,Gold,Uncommon,0,0
 90834,"Glasswing Grace",MH3,Gold,Uncommon,0,0
@@ -11834,7 +11834,7 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 90896,"White Orchid Phantom",MH3,White,Rare,0,0
 90897,"Wing It",MH3,White,Common,0,0
 90898,"Wrath of the Skies",MH3,White,Rare,0,0
-90899,"Aether Spike",MH3,Blue,Common,0,0
+90899,"Aether Spike",MH3,Blue,Common,1,1
 90900,"Amphibian Downpour",MH3,Blue,Rare,0,0
 90901,"Bespoke Battlewagon",MH3,Blue,Uncommon,0,0
 90902,"Brainsurge",MH3,Blue,Uncommon,0,0
@@ -11857,12 +11857,12 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 90919,"Shadow of the Second Sun",MH3,Blue,Mythic,0,0
 90920,"Strix Serenade",MH3,Blue,Rare,0,0
 90921,"Tamiyo Meets the Story Circle",MH3,Blue,Uncommon,0,0
-90922,"Tempest Harvester",MH3,Blue,Common,0,0
+90922,"Tempest Harvester",MH3,Blue,Common,1,1
 90923,"Triton Wavebreaker",MH3,Blue,Uncommon,0,0
 90924,"Tune the Narrative",MH3,Blue,Common,0,0
 90925,"Ugin's Binding",MH3,Blue,Mythic,0,0
 90926,"Unfathomable Truths",MH3,Blue,Common,0,0
-90927,"Utter Insignificance",MH3,Blue,Common,0,0
+90927,"Utter Insignificance",MH3,Blue,Common,1,1
 90928,"Volatile Stormdrake",MH3,Blue,Rare,0,0
 90929,"Accursed Marauder",MH3,Black,Common,0,0
 90930,"Arcbound Condor",MH3,Black,Uncommon,0,0
@@ -11874,7 +11874,7 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 90936,"Dreadmobile",MH3,Black,Uncommon,0,0
 90937,"Dreamdrinker Vampire",MH3,Black,Common,0,0
 90938,"Drossclaw",MH3,Black,Common,0,0
-90939,"Emperor of Bones",MH3,Black,Rare,0,0
+90939,"Emperor of Bones",MH3,Black,Rare,1,1
 90940,"Etched Slith",MH3,Black,Uncommon,0,0
 90941,"Etherium Pteramander",MH3,Black,Uncommon,0,0
 90942,"Eviscerator's Insight",MH3,Black,Common,0,0
@@ -11884,7 +11884,7 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 90946,"Grim Servant",MH3,Black,Uncommon,0,0
 90947,"Kami of Jealous Thirst",MH3,Black,Common,0,0
 90948,"Lethal Throwdown",MH3,Black,Uncommon,0,0
-90949,"Marionette Apprentice",MH3,Black,Uncommon,0,0
+90949,"Marionette Apprentice",MH3,Black,Uncommon,1,1
 90950,"Mindless Conscription",MH3,Black,Uncommon,0,0
 90951,"Necrodominance",MH3,Black,Mythic,0,0
 90952,"Nethergoyf",MH3,Black,Mythic,0,0
@@ -11902,16 +11902,16 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 90964,"Ashling, Flame Dancer",MH3,Red,Mythic,0,0
 90965,"Detective's Phoenix",MH3,Red,Rare,0,0
 90966,"Eldrazi Linebreaker",MH3,Red,Rare,0,0
-90967,"Fanged Flames",MH3,Red,Common,0,0
+90967,"Fanged Flames",MH3,Red,Common,1,1
 90968,"Flare of Duplication",MH3,Red,Rare,0,0
 90969,"Frogmyr Enforcer",MH3,Colorless,Uncommon,0,0
 90971,"Furnace Hellkite",MH3,Red,Uncommon,0,0
-90972,"Galvanic Discharge",MH3,Red,Common,0,0
+90972,"Galvanic Discharge",MH3,Red,Common,1,1
 90973,"Ghostfire Slice",MH3,Red,Uncommon,0,0
 90974,"Glimpse the Impossible",MH3,Red,Common,0,0
 90975,"Infernal Captor",MH3,Red,Common,0,0
 90976,"Inventor's Axe",MH3,Red,Common,0,0
-90977,"Mogg Mob",MH3,Red,Uncommon,0,0
+90977,"Mogg Mob",MH3,Red,Uncommon,1,1
 90978,"Molten Gatekeeper",MH3,Red,Common,0,0
 90979,"Party Thrasher",MH3,Red,Rare,0,0
 90980,"Phyrexian Ironworks",MH3,Red,Uncommon,0,0
@@ -11920,21 +11920,21 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 90983,"Reckless Pyrosurfer",MH3,Red,Uncommon,0,0
 90984,"Reiterating Bolt",MH3,Red,Uncommon,0,0
 90985,"Sarpadian Simulacrum",MH3,Red,Common,0,0
-90986,"Siege Smash",MH3,Red,Common,0,0
-90987,"Skittering Precursor",MH3,Red,Uncommon,0,0
+90986,"Siege Smash",MH3,Red,Common,1,1
+90987,"Skittering Precursor",MH3,Red,Uncommon,1,1
 90988,"Skoa, Embermage",MH3,Red,Common,0,0
 90989,"Smelted Chargebug",MH3,Red,Common,0,0
 90990,"Spawn-Gang Commander",MH3,Red,Uncommon,0,0
 90991,"Thriving Skyclaw",MH3,Red,Common,0,0
 90992,"Unstable Amulet",MH3,Red,Uncommon,0,0
 90993,"Voidpouncer",MH3,Red,Common,0,0
-90994,"Wheel of Potential",MH3,Red,Rare,0,0
+90994,"Wheel of Potential",MH3,Red,Rare,1,1
 90995,"Basking Broodscale",MH3,Green,Common,0,0
 90996,"Birthing Ritual",MH3,Green,Mythic,0,0
 90997,"Collective Resistance",MH3,Green,Uncommon,0,0
 90998,"Colossal Dreadmask",MH3,Green,Common,0,0
 90999,"Eladamri, Korvecdal",MH3,Green,Mythic,0,0
-91000,"Eldrazi Repurposer",MH3,Green,Common,0,0
+91000,"Eldrazi Repurposer",MH3,Green,Common,1,1
 91001,"Evolution Witness",MH3,Green,Common,0,0
 91002,"Fanatic of Rhonas",MH3,Green,Rare,0,0
 91003,"Fangs of Kalonia",MH3,Green,Uncommon,0,0
@@ -11966,20 +11966,20 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 91029,"Conduit Goblin",MH3,Gold,Common,0,0
 91030,"Cranial Ram",MH3,Gold,Common,0,0
 91031,"Cursed Wombat",MH3,Gold,Uncommon,0,0
-91032,"Cyclops Superconductor",MH3,Gold,Common,0,0
+91032,"Cyclops Superconductor",MH3,Gold,Common,2,2
 91033,"Emissary of Soulfire",MH3,Gold,Uncommon,0,0
 91034,"Expanding Ooze",MH3,Gold,Common,0,0
 91035,"Faithful Watchdog",MH3,Gold,Common,0,0
 91036,"Genku, Future Shaper",MH3,Gold,Rare,0,0
 91037,"Golden-Tail Trainer",MH3,Gold,Uncommon,0,0
-91038,"Horrid Shadowspinner",MH3,Gold,Uncommon,0,0
+91038,"Horrid Shadowspinner",MH3,Gold,Uncommon,1,1
 91039,"Imskir Iron-Eater",MH3,Gold,Rare,0,0
 91040,"Invert Polarity",MH3,Gold,Rare,0,0
 91041,"Izzet Generatorium",MH3,Gold,Uncommon,0,0
 91042,"Kudo, King Among Bears",MH3,Gold,Rare,0,0
 91043,"Nadu, Winged Wisdom",MH3,Gold,Rare,0,0
 91044,"The Necrobloom",MH3,Gold,Rare,0,0
-91045,"Obstinate Gargoyle",MH3,Gold,Common,0,0
+91045,"Obstinate Gargoyle",MH3,Gold,Common,1,1
 91046,"Ondu Knotmaster",MH3,Gold,Uncommon,0,0
 91048,"Phlage, Titan of Fire's Fury",MH3,Gold,Mythic,0,0
 91049,"Planar Genesis",MH3,Gold,Uncommon,0,0
@@ -12000,15 +12000,15 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 91064,"Winter Moon",MH3,Colorless,Rare,0,0
 91065,"Archway of Innovation",MH3,Colorless,Rare,0,0
 91066,"Arena of Glory",MH3,Colorless,Rare,0,0
-91067,"Bloodstained Mire",MH3,Colorless,Rare,0,0
+91067,"Bloodstained Mire",MH3,Colorless,Rare,1,0
 91068,"Bountiful Landscape",MH3,Colorless,Common,0,0
 91069,"Contaminated Landscape",MH3,Colorless,Common,0,0
 91070,"Deceptive Landscape",MH3,Colorless,Common,0,0
-91071,"Flooded Strand",MH3,Colorless,Rare,0,0
+91071,"Flooded Strand",MH3,Colorless,Rare,1,0
 91072,"Foreboding Landscape",MH3,Colorless,Common,0,0
 91073,"Monumental Henge",MH3,Colorless,Rare,0,0
 91074,"Perilous Landscape",MH3,Colorless,Common,0,0
-91075,"Polluted Delta",MH3,Colorless,Rare,0,0
+91075,"Polluted Delta",MH3,Colorless,Rare,1,0
 91076,"Seething Landscape",MH3,Colorless,Common,0,0
 91077,"Shattered Landscape",MH3,Colorless,Common,0,0
 91078,"Sheltering Landscape",MH3,Colorless,Common,0,0
@@ -12016,12 +12016,12 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 91080,"Snow-Covered Wastes",MH3,Colorless,Uncommon,0,0
 91081,"Spymaster's Vault",MH3,Colorless,Rare,0,0
 91082,"Tranquil Landscape",MH3,Colorless,Common,0,0
-91083,"Twisted Landscape",MH3,Colorless,Common,0,0
+91083,"Twisted Landscape",MH3,Colorless,Common,1,1
 91084,"Ugin's Labyrinth",MH3,Colorless,Mythic,0,0
 91085,"Urza's Cave",MH3,Colorless,Uncommon,0,0
-91086,"Windswept Heath",MH3,Colorless,Rare,0,0
-91087,"Wooded Foothills",MH3,Colorless,Rare,0,0
-91088,"Angel of the Ruins",MH3,White,Uncommon,0,0
+91086,"Windswept Heath",MH3,Colorless,Rare,1,1
+91087,"Wooded Foothills",MH3,Colorless,Rare,1,0
+91088,"Angel of the Ruins",MH3,White,Uncommon,1,1
 91089,"Decree of Justice",MH3,White,Uncommon,0,0
 91090,"Distinguished Conjurer",MH3,White,Uncommon,0,0
 91091,"Orim's Chant",MH3,White,Rare,0,0
@@ -12033,11 +12033,11 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 91097,"Reef Worm",MH3,Blue,Uncommon,0,0
 91098,"Shrieking Drake",MH3,Blue,Uncommon,0,0
 91099,"Buried Alive",MH3,Black,Uncommon,0,0
-91100,"K'rrik, Son of Yawgmoth",MH3,Black,Rare,0,0
+91100,"K'rrik, Son of Yawgmoth",MH3,Black,Rare,2,1
 91101,"Nadier's Nightblade",MH3,Black,Uncommon,0,0
 91102,"Ophiomancer",MH3,Black,Rare,0,0
 91103,"Toxic Deluge",MH3,Black,Rare,0,0
-91104,"Victimize",MH3,Black,Uncommon,0,0
+91104,"Victimize",MH3,Black,Uncommon,1,1
 91105,"Cursed Mirror",MH3,Red,Rare,0,0
 91106,"Fledgling Dragon",MH3,Red,Uncommon,0,0
 91107,"Laelia, the Blade Reforged",MH3,Red,Rare,0,0
@@ -12169,7 +12169,7 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 91521,"Triumphant Getaway",YOTJ,Gold,Rare,0,0
 91522,"Nashi, Illusion Gadgeteer",YOTJ,Gold,Rare,0,0
 91537,"Banishing Light",BLB,White,Common,4,1
-91538,"Beza, the Bounding Spring",BLB,White,Mythic,0,0
+91538,"Beza, the Bounding Spring",BLB,White,Mythic,1,1
 91539,"Brave-Kin Duo",BLB,White,Common,1,1
 91540,"Brightblade Stoat",BLB,White,Uncommon,0,0
 91541,"Builder's Talent",BLB,White,Uncommon,0,0
@@ -12185,7 +12185,7 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 91551,"Harvestrite Host",BLB,White,Uncommon,0,0
 91552,"Hop to It",BLB,White,Uncommon,0,0
 91553,"Intrepid Rabbit",BLB,White,Common,1,1
-91554,"Jackdaw Savior",BLB,White,Rare,1,1
+91554,"Jackdaw Savior",BLB,White,Rare,2,2
 91555,"Jolly Gerbils",BLB,White,Uncommon,0,0
 91556,"Lifecreed Duo",BLB,White,Common,0,0
 91557,"Mabel's Mettle",BLB,White,Uncommon,1,1
@@ -12235,7 +12235,7 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 91601,"Plumecreed Escort",BLB,Blue,Uncommon,0,0
 91602,"Portent of Calamity",BLB,Blue,Rare,0,0
 91603,"Run Away Together",BLB,Blue,Common,4,0
-91604,"Season of Weaving",BLB,Blue,Mythic,1,1
+91604,"Season of Weaving",BLB,Blue,Mythic,2,2
 91605,"Shore Up",BLB,Blue,Common,0,0
 91606,"Shoreline Looter",BLB,Blue,Uncommon,0,0
 91607,"Skyskipper Duo",BLB,Blue,Common,1,1
@@ -12258,7 +12258,7 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 91624,"Cruelclaw's Heist",BLB,Black,Rare,0,0
 91625,"Daggerfang Duo",BLB,Black,Common,1,1
 91626,"Darkstar Augur",BLB,Black,Rare,1,1
-91627,"Diresight",BLB,Black,Common,0,0
+91627,"Diresight",BLB,Black,Common,1,0
 91628,"Downwind Ambusher",BLB,Black,Uncommon,1,1
 91629,"Early Winter",BLB,Black,Common,0,0
 91630,"Feed the Cycle",BLB,Black,Uncommon,0,0
@@ -12266,7 +12266,7 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 91632,"Glidedive Duo",BLB,Black,Common,1,1
 91633,"Hazel's Nocturne",BLB,Black,Uncommon,0,0
 91634,"Huskburster Swarm",BLB,Black,Uncommon,0,0
-91635,"Iridescent Vinelasher",BLB,Black,Rare,1,1
+91635,"Iridescent Vinelasher",BLB,Black,Rare,2,2
 91636,"Maha, Its Feathers Night",BLB,Black,Mythic,0,0
 91637,"Moonstone Harbinger",BLB,Black,Uncommon,0,0
 91638,"Nocturnal Hunger",BLB,Black,Common,0,0
@@ -12291,7 +12291,7 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 91657,"Wick's Patrol",BLB,Black,Uncommon,0,0
 91658,"Agate Assault",BLB,Red,Common,0,0
 91659,"Alania's Pathmaker",BLB,Red,Common,0,0
-91660,"Artist's Talent",BLB,Red,Rare,0,0
+91660,"Artist's Talent",BLB,Red,Rare,1,1
 91661,"Blacksmith's Talent",BLB,Red,Uncommon,0,0
 91662,"Blooming Blast",BLB,Red,Uncommon,0,0
 91663,"Brambleguard Captain",BLB,Red,Uncommon,0,0
@@ -12299,14 +12299,14 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 91665,"Byway Barterer",BLB,Red,Rare,0,0
 91666,"Coruscation Mage",BLB,Red,Uncommon,0,0
 91667,"Conduct Electricity",BLB,Red,Common,1,1
-91668,"Emberheart Challenger",BLB,Red,Rare,0,0
+91668,"Emberheart Challenger",BLB,Red,Rare,1,1
 91669,"Festival of Embers",BLB,Red,Rare,0,0
 91670,"Flamecache Gecko",BLB,Red,Uncommon,0,0
 91671,"Dragonhawk, Fate's Tempest",BLB,Red,Mythic,0,0
 91672,"Frilled Sparkshooter",BLB,Red,Common,0,0
 91673,"Harnesser of Storms",BLB,Red,Uncommon,0,0
 91674,"Heartfire Hero",BLB,Red,Uncommon,0,0
-91675,"Hearthborn Battler",BLB,Red,Rare,0,0
+91675,"Hearthborn Battler",BLB,Red,Rare,1,1
 91676,"Hired Claw",BLB,Red,Rare,0,0
 91677,"Hoarder's Overflow",BLB,Red,Uncommon,0,0
 91678,"Kindlespark Duo",BLB,Red,Common,0,0
@@ -12338,7 +12338,7 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 91704,"Clifftop Lookout",BLB,Green,Uncommon,0,0
 91705,"Curious Forager",BLB,Green,Uncommon,0,0
 91706,"Druid of the Spade",BLB,Green,Common,0,0
-91707,"Fecund Greenshell",BLB,Green,Rare,0,0
+91707,"Fecund Greenshell",BLB,Green,Rare,1,1
 91708,"For the Common Good",BLB,Green,Rare,0,0
 91709,"Galewind Moose",BLB,Green,Uncommon,0,0
 91710,"Hazardroot Herbalist",BLB,Green,Uncommon,1,1
@@ -12350,7 +12350,7 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 91716,"Innkeeper's Talent",BLB,Green,Rare,0,0
 91717,"Keen-Eyed Curator",BLB,Green,Rare,0,0
 91718,"Longstalk Brawl",BLB,Green,Common,0,0
-91719,"Lumra, Bellow of the Woods",BLB,Green,Mythic,1,1
+91719,"Lumra, Bellow of the Woods",BLB,Green,Mythic,2,2
 91720,"Mistbreath Elder",BLB,Green,Rare,0,0
 91721,"Overprotect",BLB,Green,Uncommon,0,0
 91722,"Pawpatch Formation",BLB,Green,Uncommon,0,0
@@ -12364,7 +12364,7 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 91730,"Stocking the Pantry",BLB,Green,Uncommon,0,0
 91731,"Sunshower Druid",BLB,Green,Common,0,0
 91732,"Tender Wildguide",BLB,Green,Rare,0,0
-91733,"Thornvault Forager",BLB,Green,Rare,0,0
+91733,"Thornvault Forager",BLB,Green,Rare,1,1
 91734,"Three Tree Rootweaver",BLB,Green,Common,0,0
 91735,"Three Tree Scribe",BLB,Green,Uncommon,0,0
 91736,"Treeguard Duo",BLB,Green,Common,0,0
@@ -12382,7 +12382,7 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 91748,"Finneas, Ace Archer",BLB,Gold,Rare,0,0
 91749,"Fireglass Mentor",BLB,Gold,Uncommon,0,0
 91750,"Gev, Scaled Scorch",BLB,Gold,Rare,0,0
-91751,"Glarb, Calamity's Augur",BLB,Gold,Mythic,1,1
+91751,"Glarb, Calamity's Augur",BLB,Gold,Mythic,2,2
 91752,"Head of the Homestead",BLB,Gold,Common,0,0
 91753,"Helga, Skittish Seer",BLB,Gold,Mythic,0,0
 91754,"Hugs, Grisly Guardian",BLB,Gold,Mythic,0,0
@@ -12397,7 +12397,7 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 91763,"Muerra, Trash Tactician",BLB,Gold,Rare,1,1
 91764,"Plumecreed Mentor",BLB,Gold,Uncommon,0,0
 91765,"Pond Prophet",BLB,Gold,Common,1,1
-91766,"Ral, Crackling Wit",BLB,Gold,Mythic,1,1
+91766,"Ral, Crackling Wit",BLB,Gold,Mythic,2,2
 91767,"Seedglaive Mentor",BLB,Gold,Uncommon,0,0
 91768,"Seedpod Squire",BLB,Gold,Common,0,0
 91769,"Starseer Mentor",BLB,Gold,Uncommon,0,0
@@ -12428,7 +12428,7 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 91794,"Oakhollow Village",BLB,Colorless,Uncommon,0,0
 91795,"Rockface Village",BLB,Colorless,Uncommon,0,0
 91796,"Three Tree City",BLB,Colorless,Rare,0,0
-91797,"Uncharted Haven",BLB,Colorless,Common,0,0
+91797,"Uncharted Haven",BLB,Colorless,Common,4,0
 91798,"Bria, Riptide Rogue",BLB,Gold,Mythic,0,0
 91799,"Byrke, Long Ear of the Law",BLB,Gold,Mythic,0,0
 91800,"Serra Redeemer",BLB,White,Rare,0,0
@@ -12442,7 +12442,7 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 91808,"Sword of Vengeance",BLB,Colorless,Rare,0,0
 91809,"Blossoming Sands",BLB,Colorless,Common,4,0
 91810,"Swiftwater Cliffs",BLB,Colorless,Common,4,0
-91870,"Swords to Plowshares",SPG,White,Mythic,0,0
+91870,"Swords to Plowshares",SPG,White,Mythic,1,0
 91871,"Ledger Shredder",SPG,Blue,Mythic,0,0
 91872,"Rat Colony",SPG,Black,Mythic,0,0
 91873,"Relentless Rats",SPG,Black,Mythic,0,0
@@ -12460,15 +12460,15 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 91885,"Liliana of the Dark Realms",BLC,Black,Mythic,0,0
 91886,"Marrow-Gnawer",BLC,Black,Rare,0,0
 91887,"Ant Queen",BLC,Green,Rare,0,0
-91888,"Birds of Paradise",BLC,Green,Rare,0,0
+91888,"Birds of Paradise",BLC,Green,Rare,1,1
 91889,"Chatterfang, Squirrel General",BLC,Green,Mythic,0,0
-91890,"Gilded Goose",BLC,Green,Rare,0,0
+91890,"Gilded Goose",BLC,Green,Rare,1,0
 91891,"Nissa, Who Shakes the World",BLC,Green,Rare,0,0
 91892,"Squirrel Mob",BLC,Green,Rare,0,0
 91893,"Baleful Strix",BLC,Gold,Rare,0,0
 91894,"Derevi, Empyrial Tactician",BLC,Gold,Rare,0,0
 91895,"The Gitrog Monster",BLC,Gold,Mythic,0,0
-91896,"Ishai, Ojutai Dragonspeaker",BLC,Gold,Mythic,0,0
+91896,"Ishai, Ojutai Dragonspeaker",BLC,Gold,Mythic,1,0
 91897,"Kwain, Itinerant Meddler",BLC,Gold,Rare,0,0
 91898,"Kykar, Wind's Fury",BLC,Gold,Mythic,0,0
 91899,"Teferi, Time Raveler",BLC,Gold,Rare,0,0
@@ -12479,7 +12479,7 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 92057,"Dazzling Theater // Prop Room",DSK,White,Rare,0,0
 92060,"Dollmaker's Shop // Porcelain Gallery",DSK,White,Mythic,0,0
 92063,"Emerge from the Cocoon",DSK,White,Common,0,0
-92064,"Enduring Innocence",DSK,White,Rare,1,1
+92064,"Enduring Innocence",DSK,White,Rare,2,2
 92065,"Ethereal Armor",DSK,White,Uncommon,0,0
 92066,"Exorcise",DSK,White,Uncommon,0,0
 92067,"Fear of Abduction",DSK,White,Uncommon,0,0
@@ -12496,7 +12496,7 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 92080,"Living Phone",DSK,White,Common,0,0
 92081,"Optimistic Scavenger",DSK,White,Uncommon,0,0
 92082,"Orphans of the Wheat",DSK,White,Uncommon,0,0
-92083,"Overlord of the Mistmoors",DSK,White,Mythic,0,0
+92083,"Overlord of the Mistmoors",DSK,White,Mythic,1,1
 92084,"Patched Plaything",DSK,White,Uncommon,0,0
 92085,"Possessed Goat",DSK,White,Common,0,0
 92086,"Reluctant Role Model",DSK,White,Rare,0,0
@@ -12539,9 +12539,9 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 92129,"Leyline of Transformation",DSK,Blue,Rare,0,0
 92130,"Marina Vendrell's Grimoire",DSK,Blue,Rare,0,0
 92131,"Meat Locker // Drowned Diner",DSK,Blue,Common,1,1
-92134,"The Mindskinner",DSK,Blue,Rare,0,0
+92134,"The Mindskinner",DSK,Blue,Rare,1,1
 92135,"Mirror Room // Fractured Realm",DSK,Blue,Mythic,0,0
-92138,"Overlord of the Floodpits",DSK,Blue,Mythic,0,0
+92138,"Overlord of the Floodpits",DSK,Blue,Mythic,1,1
 92139,"Paranormal Analyst",DSK,Blue,Uncommon,0,0
 92140,"Piranha Fly",DSK,Blue,Common,0,0
 92141,"Scrabbling Skullcrab",DSK,Blue,Uncommon,0,0
@@ -12567,13 +12567,13 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 92163,"Defiled Crypt // Cadaver Lab",DSK,Black,Uncommon,0,0
 92166,"Demonic Counsel",DSK,Black,Rare,0,0
 92167,"Derelict Attic // Widow's Walk",DSK,Black,Common,0,0
-92170,"Doomsday Excruciator",DSK,Black,Rare,0,0
+92170,"Doomsday Excruciator",DSK,Black,Rare,1,1
 92171,"Enduring Tenacity",DSK,Black,Rare,0,0
 92172,"Fanatic of the Harrowing",DSK,Black,Common,0,0
 92173,"Fear of Lost Teeth",DSK,Black,Common,1,1
 92174,"Fear of the Dark",DSK,Black,Common,0,0
 92175,"Final Vengeance",DSK,Black,Common,0,0
-92176,"Funeral Room // Awakening Hall",DSK,Black,Mythic,0,0
+92176,"Funeral Room // Awakening Hall",DSK,Black,Mythic,1,1
 92179,"Give In to Violence",DSK,Black,Common,0,0
 92180,"Grievous Wound",DSK,Black,Rare,0,0
 92181,"Innocuous Rat",DSK,Black,Common,0,0
@@ -12604,7 +12604,7 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 92208,"Chainsaw",DSK,Red,Rare,0,0
 92209,"Charred Foyer // Warped Space",DSK,Red,Mythic,1,1
 92212,"Clockwork Percussionist",DSK,Red,Common,1,1
-92213,"Cursed Recording",DSK,Red,Rare,1,1
+92213,"Cursed Recording",DSK,Red,Rare,2,2
 92214,"Diversion Specialist",DSK,Red,Uncommon,0,0
 92215,"Enduring Courage",DSK,Red,Rare,0,0
 92216,"Fear of Being Hunted",DSK,Red,Uncommon,0,0
@@ -12630,7 +12630,7 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 92240,"Ripchain Razorkin",DSK,Red,Common,1,1
 92241,"The Rollercrusher Ride",DSK,Red,Mythic,0,0
 92242,"Scorching Dragonfire",DSK,Red,Common,3,1
-92243,"Screaming Nemesis",DSK,Red,Mythic,0,0
+92243,"Screaming Nemesis",DSK,Red,Mythic,1,1
 92244,"Ticket Booth // Tunnel of Hate",DSK,Red,Common,0,0
 92247,"Trial of Agony",DSK,Red,Uncommon,0,0
 92248,"Turn Inside Out",DSK,Red,Common,0,0
@@ -12656,7 +12656,7 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 92268,"Grasping Longneck",DSK,Green,Common,0,0
 92269,"Greenhouse // Rickety Gazebo",DSK,Green,Uncommon,0,0
 92272,"Hauntwoods Shrieker",DSK,Green,Mythic,0,0
-92273,"Hedge Shredder",DSK,Green,Rare,0,0
+92273,"Hedge Shredder",DSK,Green,Rare,1,1
 92274,"Horrid Vigor",DSK,Green,Common,0,0
 92275,"House Cartographer",DSK,Green,Uncommon,0,0
 92276,"Insidious Fungus",DSK,Green,Uncommon,0,0
@@ -12693,17 +12693,17 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 92311,"Inquisitive Glimmer",DSK,Gold,Uncommon,0,0
 92312,"Intruding Soulrager",DSK,Gold,Uncommon,0,0
 92313,"The Jolly Balloon Man",DSK,Gold,Rare,0,0
-92314,"Kaito, Bane of Nightmares",DSK,Gold,Mythic,3,3
+92314,"Kaito, Bane of Nightmares",DSK,Gold,Mythic,4,4
 92315,"Marina Vendrell",DSK,Gold,Rare,0,0
 92316,"Midnight Mayhem",DSK,Gold,Uncommon,0,0
 92317,"Nashi, Searcher in the Dark",DSK,Gold,Rare,0,0
 92318,"Niko, Light of Hope",DSK,Gold,Mythic,0,0
 92319,"Oblivious Bookworm",DSK,Gold,Uncommon,0,0
-92320,"Peer Past the Veil",DSK,Gold,Rare,0,0
+92320,"Peer Past the Veil",DSK,Gold,Rare,1,1
 92321,"Restricted Office // Lecture Hall",DSK,Gold,Rare,0,0
 92324,"Rip, Spawn Hunter",DSK,Gold,Rare,0,0
 92325,"Rite of the Moth",DSK,Gold,Uncommon,0,0
-92326,"Roaring Furnace // Steaming Sauna",DSK,Gold,Rare,1,1
+92326,"Roaring Furnace // Steaming Sauna",DSK,Gold,Rare,2,2
 92329,"Sawblade Skinripper",DSK,Gold,Uncommon,0,0
 92330,"Shrewd Storyteller",DSK,Gold,Uncommon,0,0
 92331,"Shroudstomper",DSK,Gold,Uncommon,0,0
@@ -12714,7 +12714,7 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 92338,"Victor, Valgavoth's Seneschal",DSK,Gold,Rare,0,0
 92339,"Wildfire Wickerfolk",DSK,Gold,Uncommon,0,0
 92340,"Winter, Misanthropic Guide",DSK,Gold,Rare,0,0
-92341,"Zimone, All-Questioning",DSK,Gold,Rare,1,1
+92341,"Zimone, All-Questioning",DSK,Gold,Rare,2,2
 92342,"Attack-in-the-Box",DSK,Colorless,Uncommon,0,0
 92343,"Bear Trap",DSK,Colorless,Common,0,0
 92344,"Conductive Machete",DSK,Colorless,Uncommon,0,0
@@ -12726,15 +12726,15 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 92350,"Haunted Screen",DSK,Colorless,Uncommon,0,0
 92351,"Keys to the House",DSK,Colorless,Uncommon,0,0
 92352,"Malevolent Chandelier",DSK,Colorless,Common,0,0
-92353,"Marvin, Murderous Mimic",DSK,Colorless,Rare,0,0
+92353,"Marvin, Murderous Mimic",DSK,Colorless,Rare,1,1
 92354,"Saw",DSK,Colorless,Uncommon,0,0
 92355,"Abandoned Campground",DSK,Colorless,Common,0,0
 92356,"Blazemire Verge",DSK,Colorless,Rare,0,0
 92357,"Bleeding Woods",DSK,Colorless,Common,0,0
 92358,"Etched Cornfield",DSK,Colorless,Common,0,0
-92359,"Floodfarm Verge",DSK,Colorless,Rare,1,1
+92359,"Floodfarm Verge",DSK,Colorless,Rare,4,4
 92360,"Gloomlake Verge",DSK,Colorless,Rare,4,4
-92361,"Hushwood Verge",DSK,Colorless,Rare,0,0
+92361,"Hushwood Verge",DSK,Colorless,Rare,1,1
 92362,"Lakeside Shack",DSK,Colorless,Common,0,0
 92363,"Murky Sewer",DSK,Colorless,Common,0,0
 92364,"Neglected Manor",DSK,Colorless,Common,0,0
@@ -12816,8 +12816,8 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 92901,"Uncomfortable Chill",J25,Blue,Common,2,0
 92902,"Bonecaller Cleric",J25,Black,Uncommon,0,0
 92903,"Dark Bargain",J25,Black,Common,0,0
-92904,"Dark Confidant",J25,Black,Mythic,0,0
-92905,"Deadly Dispute",J25,Black,Common,2,0
+92904,"Dark Confidant",J25,Black,Mythic,1,0
+92905,"Deadly Dispute",J25,Black,Common,3,0
 92906,"Eaten Alive",J25,Black,Common,4,0
 92907,"Eternal Taskmaster",J25,Black,Uncommon,0,0
 92908,"Grim Bounty",J25,Black,Common,2,0
@@ -12848,12 +12848,12 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 92933,"Zealous Conscripts",J25,Red,Rare,0,0
 92934,"Biogenic Upgrade",J25,Green,Uncommon,0,0
 92935,"Elvish Visionary",J25,Green,Common,0,0
-92936,"Explore",J25,Green,Common,0,0
+92936,"Explore",J25,Green,Common,1,0
 92937,"Forgotten Ancient",J25,Green,Rare,0,0
 92938,"Gift of the Gargantuan",J25,Green,Common,0,0
 92939,"Llanowar Elves",J25,Green,Common,4,0
 92940,"Undercellar Myconid",J25,Green,Common,0,0
-92941,"Chromatic Lantern",J25,Colorless,Rare,0,0
+92941,"Chromatic Lantern",J25,Colorless,Rare,1,0
 92942,"Leonin Scimitar",J25,Colorless,Common,0,0
 92943,"Ornithopter of Paradise",J25,Colorless,Common,0,0
 92944,"Ash Barrens",J25,Colorless,Common,0,0
@@ -13057,7 +13057,7 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 93142,"Slimebind",J25,Blue,Common,0,0
 93143,"Smoke Shroud",J25,Blue,Common,0,0
 93144,"Soul Read",J25,Blue,Common,0,0
-93145,"Spectral Sailor",J25,Blue,Uncommon,3,0
+93145,"Spectral Sailor",J25,Blue,Uncommon,4,0
 93146,"Sphinx of Enlightenment",J25,Blue,Mythic,0,0
 93147,"Sprite Noble",J25,Blue,Rare,0,0
 93148,"Starlit Mantle",J25,Blue,Common,0,0
@@ -13125,7 +13125,7 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 93210,"Druid of the Anima",J25,Green,Common,0,0
 93211,"Duskshell Crawler",J25,Green,Common,0,0
 93212,"Dwynen's Elite",J25,Green,Uncommon,4,0
-93213,"Elvish Archdruid",J25,Green,Rare,3,0
+93213,"Elvish Archdruid",J25,Green,Rare,4,0
 93214,"Fierce Witchstalker",J25,Green,Common,0,0
 93215,"For the Family",J25,Green,Common,0,0
 93216,"Fungal Plots",J25,Green,Uncommon,0,0
@@ -13247,9 +13247,9 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 93332,"Secluded Steppe",J25,Colorless,Uncommon,0,0
 93333,"Thriving Bluff",J25,Colorless,Common,0,0
 93334,"Thriving Grove",J25,Colorless,Common,0,0
-93335,"Thriving Heath",J25,Colorless,Common,0,0
-93336,"Thriving Isle",J25,Colorless,Common,0,0
-93337,"Thriving Moor",J25,Colorless,Common,0,0
+93335,"Thriving Heath",J25,Colorless,Common,2,0
+93336,"Thriving Isle",J25,Colorless,Common,1,0
+93337,"Thriving Moor",J25,Colorless,Common,1,0
 93338,"Vault of Whispers",J25,Colorless,Common,0,0
 93339,"Abandon Reason",J25,Red,Uncommon,0,0
 93340,"Ahn-Crop Crasher",J25,Red,Uncommon,0,0
@@ -13485,7 +13485,7 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 93570,"Adeline, Resplendent Cathar",J25,White,Rare,0,0
 93571,"Brimaz, King of Oreskos",J25,White,Mythic,0,0
 93572,"Danitha Capashen, Paragon",J25,White,Uncommon,0,0
-93573,"Giada, Font of Hope",J25,White,Rare,3,0
+93573,"Giada, Font of Hope",J25,White,Rare,4,0
 93574,"Naban, Dean of Iteration",J25,Blue,Rare,0,0
 93575,"Padeem, Consul of Innovation",J25,Blue,Rare,0,0
 93576,"Sai, Master Thopterist",J25,Blue,Rare,2,0
@@ -13502,7 +13502,7 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 93587,"Lathliss, Dragon Queen",J25,Red,Rare,2,0
 93588,"Rionya, Fire Dancer",J25,Red,Rare,0,0
 93589,"Zada, Hedron Grinder",J25,Red,Rare,1,0
-93590,"Ghalta, Primal Hunger",J25,Green,Rare,3,0
+93590,"Ghalta, Primal Hunger",J25,Green,Rare,4,0
 93591,"Kodama of the West Tree",J25,Green,Mythic,0,0
 93592,"Mowu, Loyal Companion",J25,Green,Uncommon,0,0
 93593,"Averna, the Chaos Bloom",J25,Gold,Rare,0,0
@@ -13625,74 +13625,74 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 93710,"Wildheart Invoker",FDN,Green,Common,0,0
 93711,"Goblin Firebomb",FDN,Colorless,Common,1,0
 93712,"Pirate's Cutlass",FDN,Colorless,Common,0,0
-93713,"Uncharted Haven",FDN,Colorless,Common,0,0
-93714,"Sire of Seven Deaths",FDN,Colorless,Mythic,2,2
-93715,"Arahbo, the First Fang",FDN,White,Rare,2,2
+93713,"Uncharted Haven",FDN,Colorless,Common,4,4
+93714,"Sire of Seven Deaths",FDN,Colorless,Mythic,3,3
+93715,"Arahbo, the First Fang",FDN,White,Rare,4,4
 93716,"Armasaur Guide",FDN,White,Common,4,4
 93717,"Cat Collector",FDN,White,Uncommon,4,4
 93718,"Celestial Armor",FDN,White,Rare,4,4
 93719,"Claws Out",FDN,White,Uncommon,4,4
-93720,"Crystal Barricade",FDN,White,Rare,3,3
+93720,"Crystal Barricade",FDN,White,Rare,4,4
 93721,"Dauntless Veteran",FDN,White,Uncommon,4,4
 93722,"Dazzling Angel",FDN,White,Common,4,4
-93723,"Divine Resilience",FDN,White,Uncommon,2,2
-93724,"Exemplar of Light",FDN,White,Rare,2,2
+93723,"Divine Resilience",FDN,White,Uncommon,3,3
+93724,"Exemplar of Light",FDN,White,Rare,4,4
 93725,"Felidar Savior",FDN,White,Common,4,4
 93726,"Fleeting Flight",FDN,White,Common,4,4
 93727,"Guarded Heir",FDN,White,Uncommon,4,4
 93728,"Hare Apparent",FDN,White,Common,4,4
 93729,"Helpful Hunter",FDN,White,Common,4,4
-93730,"Herald of Eternal Dawn",FDN,White,Mythic,2,2
+93730,"Herald of Eternal Dawn",FDN,White,Mythic,4,4
 93731,"Inspiring Paladin",FDN,White,Common,4,4
 93732,"Joust Through",FDN,White,Uncommon,4,4
 93733,"Luminous Rebuke",FDN,White,Common,4,4
 93734,"Prideful Parent",FDN,White,Common,4,4
-93735,"Raise the Past",FDN,White,Rare,2,2
+93735,"Raise the Past",FDN,White,Rare,4,4
 93736,"Skyknight Squire",FDN,White,Rare,4,4
 93737,"Squad Rallier",FDN,White,Common,4,4
 93738,"Sun-Blessed Healer",FDN,White,Uncommon,4,4
-93739,"Twinblade Blessing",FDN,White,Uncommon,3,3
-93740,"Valkyrie's Call",FDN,White,Mythic,1,1
+93739,"Twinblade Blessing",FDN,White,Uncommon,4,4
+93740,"Valkyrie's Call",FDN,White,Mythic,2,2
 93741,"Vanguard Seraph",FDN,White,Common,4,4
 93742,"Arcane Epiphany",FDN,Blue,Uncommon,4,4
-93743,"Archmage of Runes",FDN,Blue,Rare,3,3
+93743,"Archmage of Runes",FDN,Blue,Rare,4,4
 93744,"Bigfin Bouncer",FDN,Blue,Common,4,4
-93745,"Cephalid Inkmage",FDN,Blue,Uncommon,3,3
-93746,"Clinquant Skymage",FDN,Blue,Uncommon,2,2
+93745,"Cephalid Inkmage",FDN,Blue,Uncommon,4,4
+93746,"Clinquant Skymage",FDN,Blue,Uncommon,4,4
 93747,"Curator of Destinies",FDN,Blue,Rare,4,4
-93748,"Drake Hatcher",FDN,Blue,Rare,2,2
+93748,"Drake Hatcher",FDN,Blue,Rare,4,4
 93749,"Elementalist Adept",FDN,Blue,Common,4,4
 93750,"Erudite Wizard",FDN,Blue,Common,4,4
 93751,"Faebloom Trick",FDN,Blue,Uncommon,4,4
-93752,"Grappling Kraken",FDN,Blue,Uncommon,2,2
+93752,"Grappling Kraken",FDN,Blue,Uncommon,4,4
 93753,"High Fae Trickster",FDN,Blue,Rare,4,4
-93754,"Homunculus Horde",FDN,Blue,Rare,3,3
+93754,"Homunculus Horde",FDN,Blue,Rare,4,4
 93755,"Icewind Elemental",FDN,Blue,Common,4,4
-93756,"Inspiration from Beyond",FDN,Blue,Uncommon,3,3
-93757,"Kaito, Cunning Infiltrator",FDN,Blue,Mythic,1,1
-93758,"Kiora, the Rising Tide",FDN,Blue,Rare,3,3
-93759,"Lunar Insight",FDN,Blue,Rare,3,3
+93756,"Inspiration from Beyond",FDN,Blue,Uncommon,4,4
+93757,"Kaito, Cunning Infiltrator",FDN,Blue,Mythic,2,2
+93758,"Kiora, the Rising Tide",FDN,Blue,Rare,4,4
+93759,"Lunar Insight",FDN,Blue,Rare,4,4
 93760,"Mischievous Mystic",FDN,Blue,Uncommon,4,4
 93761,"Refute",FDN,Blue,Common,4,4
-93762,"Rune-Sealed Wall",FDN,Blue,Uncommon,3,3
+93762,"Rune-Sealed Wall",FDN,Blue,Uncommon,4,4
 93763,"Skyship Buccaneer",FDN,Blue,Uncommon,4,4
-93764,"Sphinx of Forgotten Lore",FDN,Blue,Mythic,1,1
+93764,"Sphinx of Forgotten Lore",FDN,Blue,Mythic,2,2
 93765,"Strix Lookout",FDN,Blue,Common,4,4
 93766,"Uncharted Voyage",FDN,Blue,Common,4,4
-93767,"Abyssal Harvester",FDN,Black,Rare,1,1
+93767,"Abyssal Harvester",FDN,Black,Rare,4,4
 93768,"Arbiter of Woe",FDN,Black,Uncommon,4,4
 93769,"Billowing Shriekmass",FDN,Black,Uncommon,4,4
-93770,"Blasphemous Edict",FDN,Black,Rare,2,2
-93771,"Bloodthirsty Conqueror",FDN,Black,Mythic,1,1
+93770,"Blasphemous Edict",FDN,Black,Rare,4,4
+93771,"Bloodthirsty Conqueror",FDN,Black,Mythic,2,2
 93772,"Crypt Feaster",FDN,Black,Common,4,4
 93773,"Gutless Plunderer",FDN,Black,Common,4,4
 93774,"High-Society Hunter",FDN,Black,Rare,4,4
 93775,"Hungry Ghoul",FDN,Black,Common,4,4
 93776,"Infernal Vessel",FDN,Black,Uncommon,4,4
 93777,"Infestation Sage",FDN,Black,Common,4,4
-93778,"Midnight Snack",FDN,Black,Uncommon,1,1
+93778,"Midnight Snack",FDN,Black,Uncommon,4,4
 93779,"Nine-Lives Familiar",FDN,Black,Rare,4,4
-93780,"Revenge of the Rats",FDN,Black,Uncommon,2,2
+93780,"Revenge of the Rats",FDN,Black,Uncommon,4,4
 93781,"Sanguine Syphoner",FDN,Black,Common,4,4
 93782,"Seeker's Folly",FDN,Black,Uncommon,4,4
 93783,"Soul-Shackled Zombie",FDN,Black,Common,4,4
@@ -13702,78 +13702,78 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 93787,"Vampire Gourmand",FDN,Black,Uncommon,4,4
 93788,"Vampire Soulcaller",FDN,Black,Common,4,4
 93789,"Vengeful Bloodwitch",FDN,Black,Uncommon,4,4
-93790,"Zul Ashur, Lich Lord",FDN,Black,Rare,3,3
+93790,"Zul Ashur, Lich Lord",FDN,Black,Rare,4,4
 93791,"Battlesong Berserker",FDN,Red,Uncommon,4,4
 93792,"Boltwave",FDN,Red,Uncommon,4,4
-93793,"Bulk Up",FDN,Red,Uncommon,1,1
-93794,"Chandra, Flameshaper",FDN,Red,Mythic,2,2
+93793,"Bulk Up",FDN,Red,Uncommon,2,2
+93794,"Chandra, Flameshaper",FDN,Red,Mythic,4,4
 93795,"Courageous Goblin",FDN,Red,Common,4,4
 93796,"Crackling Cyclops",FDN,Red,Common,4,4
-93797,"Dragon Trainer",FDN,Red,Uncommon,0,0
+93797,"Dragon Trainer",FDN,Red,Uncommon,3,3
 93798,"Electroduplicate",FDN,Red,Rare,4,4
 93799,"Fiery Annihilation",FDN,Red,Uncommon,4,4
 93800,"Goblin Boarders",FDN,Red,Common,4,4
 93801,"Goblin Negotiation",FDN,Red,Uncommon,4,4
 93802,"Gorehorn Raider",FDN,Red,Common,4,4
 93803,"Incinerating Blast",FDN,Red,Common,4,4
-93804,"Kellan, Planar Trailblazer",FDN,Red,Rare,3,3
+93804,"Kellan, Planar Trailblazer",FDN,Red,Rare,4,4
 93805,"Rite of the Dragoncaller",FDN,Red,Mythic,1,1
-93806,"Searslicer Goblin",FDN,Red,Rare,2,2
+93806,"Searslicer Goblin",FDN,Red,Rare,4,4
 93807,"Slumbering Cerberus",FDN,Red,Uncommon,4,4
 93808,"Sower of Chaos",FDN,Red,Common,4,4
 93809,"Strongbox Raider",FDN,Red,Uncommon,4,4
-93810,"Twinflame Tyrant",FDN,Red,Mythic,1,1
+93810,"Twinflame Tyrant",FDN,Red,Mythic,3,3
 93811,"Ambush Wolf",FDN,Green,Common,4,4
 93812,"Apothecary Stomper",FDN,Green,Common,4,4
 93813,"Beast-Kin Ranger",FDN,Green,Common,4,4
 93814,"Cackling Prowler",FDN,Green,Common,4,4
 93815,"Eager Trufflesnout",FDN,Green,Uncommon,4,4
 93816,"Elfsworn Giant",FDN,Green,Common,4,4
-93817,"Elvish Regrower",FDN,Green,Uncommon,2,2
+93817,"Elvish Regrower",FDN,Green,Uncommon,3,3
 93818,"Felling Blow",FDN,Green,Uncommon,4,4
-93819,"Loot, Exuberant Explorer",FDN,Green,Rare,3,3
+93819,"Loot, Exuberant Explorer",FDN,Green,Rare,4,4
 93820,"Mossborn Hydra",FDN,Green,Rare,4,4
 93821,"Needletooth Pack",FDN,Green,Uncommon,4,4
-93822,"Preposterous Proportions",FDN,Green,Rare,3,3
+93822,"Preposterous Proportions",FDN,Green,Rare,4,4
 93823,"Quakestrider Ceratops",FDN,Green,Uncommon,4,4
-93824,"Quilled Greatwurm",FDN,Green,Mythic,3,3
-93825,"Spinner of Souls",FDN,Green,Rare,2,2
-93826,"Sylvan Scavenging",FDN,Green,Rare,2,2
+93824,"Quilled Greatwurm",FDN,Green,Mythic,4,4
+93825,"Spinner of Souls",FDN,Green,Rare,4,4
+93826,"Sylvan Scavenging",FDN,Green,Rare,4,4
 93827,"Treetop Snarespinner",FDN,Green,Common,4,4
 93828,"Alesha, Who Laughs at Fate",FDN,Gold,Rare,4,4
 93829,"Anthem of Champions",FDN,Gold,Rare,4,4
 93830,"Ashroot Animist",FDN,Gold,Rare,4,4
 93831,"Dreadwing Scavenger",FDN,Gold,Uncommon,4,4
-93832,"Elenda, Saint of Dusk",FDN,Gold,Rare,3,3
+93832,"Elenda, Saint of Dusk",FDN,Gold,Rare,4,4
 93833,"Fiendish Panda",FDN,Gold,Uncommon,4,4
-93834,"Koma, World-Eater",FDN,Gold,Rare,1,1
-93835,"Kykar, Zephyr Awakener",FDN,Gold,Rare,3,3
-93836,"Niv-Mizzet, Visionary",FDN,Gold,Mythic,2,2
-93837,"Perforating Artist",FDN,Gold,Uncommon,3,3
+93834,"Koma, World-Eater",FDN,Gold,Rare,4,4
+93835,"Kykar, Zephyr Awakener",FDN,Gold,Rare,4,4
+93836,"Niv-Mizzet, Visionary",FDN,Gold,Mythic,3,3
+93837,"Perforating Artist",FDN,Gold,Uncommon,4,4
 93838,"Wardens of the Cycle",FDN,Gold,Uncommon,4,4
-93839,"Zimone, Paradox Sculptor",FDN,Gold,Mythic,1,1
-93840,"Banner of Kinship",FDN,Colorless,Rare,1,1
-93841,"Fishing Pole",FDN,Colorless,Uncommon,2,2
-93842,"Leyline Axe",FDN,Colorless,Rare,1,1
+93839,"Zimone, Paradox Sculptor",FDN,Gold,Mythic,2,2
+93840,"Banner of Kinship",FDN,Colorless,Rare,4,4
+93841,"Fishing Pole",FDN,Colorless,Uncommon,4,4
+93842,"Leyline Axe",FDN,Colorless,Rare,4,4
 93843,"Quick-Draw Katana",FDN,Colorless,Common,4,4
 93844,"Ravenous Amulet",FDN,Colorless,Uncommon,4,4
 93845,"Scrawling Crawler",FDN,Colorless,Rare,4,4
 93846,"Soulstone Sanctuary",FDN,Colorless,Rare,4,4
-93847,"Ajani, Caller of the Pride",FDN,White,Mythic,1,1
+93847,"Ajani, Caller of the Pride",FDN,White,Mythic,2,2
 93848,"Ajani's Pridemate",FDN,White,Uncommon,4,4
-93849,"Angel of Finality",FDN,White,Uncommon,1,1
+93849,"Angel of Finality",FDN,White,Uncommon,2,2
 93850,"Authority of the Consuls",FDN,White,Rare,4,4
 93851,"Banishing Light",FDN,White,Common,4,2
-93852,"Cathar Commando",FDN,White,Common,1,1
-93853,"Day of Judgment",FDN,White,Rare,2,2
-93854,"Giada, Font of Hope",FDN,White,Rare,3,3
+93852,"Cathar Commando",FDN,White,Common,4,4
+93853,"Day of Judgment",FDN,White,Rare,4,4
+93854,"Giada, Font of Hope",FDN,White,Rare,4,4
 93855,"Healer's Hawk",FDN,White,Common,4,4
 93856,"Make Your Move",FDN,White,Common,4,4
-93857,"Mischievous Pup",FDN,White,Uncommon,2,2
+93857,"Mischievous Pup",FDN,White,Uncommon,4,4
 93858,"Resolute Reinforcements",FDN,White,Uncommon,4,4
 93859,"Savannah Lions",FDN,White,Uncommon,4,4
 93860,"Serra Angel",FDN,White,Uncommon,4,1
-93861,"Stroke of Midnight",FDN,White,Uncommon,3,2
+93861,"Stroke of Midnight",FDN,White,Uncommon,4,3
 93862,"Youthful Valkyrie",FDN,White,Uncommon,4,4
 93863,"Aegis Turtle",FDN,Blue,Common,4,4
 93864,"Aetherize",FDN,Blue,Uncommon,4,4
@@ -13786,12 +13786,12 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 93871,"Micromancer",FDN,Blue,Uncommon,4,4
 93872,"Mocking Sprite",FDN,Blue,Common,4,4
 93873,"An Offer You Can't Refuse",FDN,Blue,Uncommon,4,4
-93874,"Omniscience",FDN,Blue,Mythic,1,1
+93874,"Omniscience",FDN,Blue,Mythic,2,2
 93875,"Run Away Together",FDN,Blue,Common,4,4
 93876,"Self-Reflection",FDN,Blue,Uncommon,4,4
-93877,"Spectral Sailor",FDN,Blue,Uncommon,3,3
+93877,"Spectral Sailor",FDN,Blue,Uncommon,4,4
 93878,"Think Twice",FDN,Blue,Common,4,4
-93879,"Time Stop",FDN,Blue,Rare,1,1
+93879,"Time Stop",FDN,Blue,Rare,4,4
 93880,"Tolarian Terror",FDN,Blue,Common,4,1
 93881,"Witness Protection",FDN,Blue,Common,4,4
 93882,"Bake into a Pie",FDN,Black,Common,4,4
@@ -13801,89 +13801,89 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 93886,"Exsanguinate",FDN,Black,Uncommon,4,4
 93887,"Fake Your Own Death",FDN,Black,Common,4,4
 93888,"Hero's Downfall",FDN,Black,Uncommon,4,4
-93889,"Liliana, Dreadhorde General",FDN,Black,Mythic,1,1
+93889,"Liliana, Dreadhorde General",FDN,Black,Mythic,3,3
 93890,"Macabre Waltz",FDN,Black,Common,4,4
 93891,"Marauding Blight-Priest",FDN,Black,Common,4,4
-93892,"Painful Quandary",FDN,Black,Rare,3,3
-93893,"Phyrexian Arena",FDN,Black,Rare,2,2
+93892,"Painful Quandary",FDN,Black,Rare,4,4
+93893,"Phyrexian Arena",FDN,Black,Rare,4,4
 93894,"Pilfer",FDN,Black,Common,4,4
 93895,"Reassembling Skeleton",FDN,Black,Uncommon,4,4
-93896,"Rise of the Dark Realms",FDN,Black,Mythic,3,3
-93897,"Rune-Scarred Demon",FDN,Black,Rare,1,1
-93898,"Stromkirk Bloodthief",FDN,Black,Uncommon,2,2
+93896,"Rise of the Dark Realms",FDN,Black,Mythic,4,4
+93897,"Rune-Scarred Demon",FDN,Black,Rare,4,4
+93898,"Stromkirk Bloodthief",FDN,Black,Uncommon,4,4
 93899,"Vampire Nighthawk",FDN,Black,Uncommon,4,4
 93900,"Zombify",FDN,Black,Uncommon,4,4
 93901,"Abrade",FDN,Red,Uncommon,4,4
 93902,"Axgard Cavalry",FDN,Red,Common,4,4
-93903,"Brass's Bounty",FDN,Red,Rare,2,2
-93904,"Brazen Scourge",FDN,Red,Uncommon,2,2
+93903,"Brass's Bounty",FDN,Red,Rare,4,4
+93904,"Brazen Scourge",FDN,Red,Uncommon,4,4
 93905,"Burst Lightning",FDN,Red,Common,4,4
-93906,"Drakuseth, Maw of Flames",FDN,Red,Rare,3,3
-93907,"Etali, Primal Storm",FDN,Red,Rare,3,3
+93906,"Drakuseth, Maw of Flames",FDN,Red,Rare,4,4
+93907,"Etali, Primal Storm",FDN,Red,Rare,4,4
 93908,"Fanatical Firebrand",FDN,Red,Common,4,4
 93909,"Firebrand Archer",FDN,Red,Common,4,4
 93910,"Firespitter Whelp",FDN,Red,Uncommon,4,4
-93911,"Flamewake Phoenix",FDN,Red,Rare,3,3
-93912,"Frenzied Goblin",FDN,Red,Uncommon,3,3
+93911,"Flamewake Phoenix",FDN,Red,Rare,4,4
+93912,"Frenzied Goblin",FDN,Red,Uncommon,4,4
 93913,"Goblin Surprise",FDN,Red,Common,4,4
 93914,"Heartfire Immolator",FDN,Red,Uncommon,4,4
 93915,"Hidetsugu's Second Rite",FDN,Red,Uncommon,4,4
 93916,"Involuntary Employment",FDN,Red,Common,4,4
 93917,"Krenko, Mob Boss",FDN,Red,Rare,4,4
-93918,"Seismic Rupture",FDN,Red,Uncommon,1,1
-93919,"Shivan Dragon",FDN,Red,Uncommon,1,1
-93920,"Slagstorm",FDN,Red,Rare,2,2
+93918,"Seismic Rupture",FDN,Red,Uncommon,4,4
+93919,"Shivan Dragon",FDN,Red,Uncommon,4,4
+93920,"Slagstorm",FDN,Red,Rare,4,4
 93921,"Spitfire Lagac",FDN,Red,Common,4,4
 93922,"Sure Strike",FDN,Red,Common,4,1
 93923,"Thrill of Possibility",FDN,Red,Common,4,4
 93924,"Affectionate Indrik",FDN,Green,Uncommon,4,2
 93925,"Bite Down",FDN,Green,Common,4,4
-93926,"Blanchwood Armor",FDN,Green,Uncommon,3,1
+93926,"Blanchwood Armor",FDN,Green,Uncommon,4,2
 93927,"Broken Wings",FDN,Green,Common,4,4
 93928,"Bushwhack",FDN,Green,Common,4,4
-93929,"Doubling Season",FDN,Green,Mythic,1,1
-93930,"Dwynen, Gilt-Leaf Daen",FDN,Green,Uncommon,1,1
+93929,"Doubling Season",FDN,Green,Mythic,3,3
+93930,"Dwynen, Gilt-Leaf Daen",FDN,Green,Uncommon,4,4
 93931,"Dwynen's Elite",FDN,Green,Common,4,4
-93932,"Elvish Archdruid",FDN,Green,Rare,3,3
+93932,"Elvish Archdruid",FDN,Green,Rare,4,4
 93933,"Garruk's Uprising",FDN,Green,Uncommon,4,4
-93934,"Genesis Wave",FDN,Green,Rare,2,2
-93935,"Ghalta, Primal Hunger",FDN,Green,Rare,3,2
+93934,"Genesis Wave",FDN,Green,Rare,4,4
+93935,"Ghalta, Primal Hunger",FDN,Green,Rare,4,3
 93936,"Giant Growth",FDN,Green,Common,4,4
 93937,"Gnarlid Colony",FDN,Green,Common,4,4
 93938,"Grow from the Ashes",FDN,Green,Common,4,4
-93939,"Inspiring Call",FDN,Green,Uncommon,2,2
+93939,"Inspiring Call",FDN,Green,Uncommon,4,4
 93940,"Llanowar Elves",FDN,Green,Common,4,2
 93941,"Mild-Mannered Librarian",FDN,Green,Uncommon,4,4
 93942,"Nessian Hornbeetle",FDN,Green,Uncommon,4,4
-93943,"Overrun",FDN,Green,Uncommon,1,1
+93943,"Overrun",FDN,Green,Uncommon,3,3
 93944,"Reclamation Sage",FDN,Green,Uncommon,4,4
 93945,"Scavenging Ooze",FDN,Green,Rare,4,4
 93946,"Snakeskin Veil",FDN,Green,Uncommon,4,3
-93947,"Vivien Reid",FDN,Green,Mythic,2,2
+93947,"Vivien Reid",FDN,Green,Mythic,3,3
 93948,"Wary Thespian",FDN,Green,Common,4,4
-93949,"Wildwood Scourge",FDN,Green,Uncommon,1,1
+93949,"Wildwood Scourge",FDN,Green,Uncommon,3,3
 93950,"Balmor, Battlemage Captain",FDN,Gold,Uncommon,4,4
-93951,"Consuming Aberration",FDN,Gold,Rare,2,2
+93951,"Consuming Aberration",FDN,Gold,Rare,4,4
 93952,"Empyrean Eagle",FDN,Gold,Uncommon,4,4
 93953,"Good-Fortune Unicorn",FDN,Gold,Uncommon,4,4
 93954,"Heroic Reinforcements",FDN,Gold,Uncommon,4,4
 93955,"Lathril, Blade of the Elves",FDN,Gold,Rare,4,4
-93956,"Muldrotha, the Gravetide",FDN,Gold,Mythic,1,1
-93957,"Progenitus",FDN,Gold,Mythic,1,1
+93956,"Muldrotha, the Gravetide",FDN,Gold,Mythic,2,2
+93957,"Progenitus",FDN,Gold,Mythic,3,3
 93958,"Ruby, Daring Tracker",FDN,Gold,Uncommon,4,4
-93959,"Swiftblade Vindicator",FDN,Gold,Rare,1,1
+93959,"Swiftblade Vindicator",FDN,Gold,Rare,4,4
 93960,"Tatyova, Benthic Druid",FDN,Gold,Uncommon,4,4
-93961,"Thousand-Year Storm",FDN,Gold,Rare,2,2
+93961,"Thousand-Year Storm",FDN,Gold,Rare,4,4
 93962,"Adventuring Gear",FDN,Colorless,Uncommon,4,4
 93963,"Burnished Hart",FDN,Colorless,Uncommon,4,4
 93964,"Campus Guide",FDN,Colorless,Common,4,4
 93965,"Gleaming Barrier",FDN,Colorless,Common,4,4
 93966,"Goldvein Pick",FDN,Colorless,Common,4,4
 93967,"Heraldic Banner",FDN,Colorless,Uncommon,0,0
-93968,"Juggernaut",FDN,Colorless,Uncommon,1,1
+93968,"Juggernaut",FDN,Colorless,Uncommon,2,2
 93969,"Meteor Golem",FDN,Colorless,Uncommon,4,3
 93970,"Solemn Simulacrum",FDN,Colorless,Rare,4,4
-93971,"Swiftfoot Boots",FDN,Colorless,Uncommon,1,0
+93971,"Swiftfoot Boots",FDN,Colorless,Uncommon,4,3
 93972,"Bloodfell Caves",FDN,Colorless,Common,4,1
 93973,"Blossoming Sands",FDN,Colorless,Common,4,1
 93974,"Dismal Backwater",FDN,Colorless,Common,4,1
@@ -13900,10 +13900,10 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 93985,"Condemn",SPG,White,Uncommon,0,0
 93986,"Sphinx's Tutelage",SPG,Blue,Uncommon,0,0
 93987,"Grim Tutor",SPG,Black,Mythic,0,0
-93988,"Goblin Bushwhacker",SPG,Red,Common,0,0
-93989,"Embercleave",SPG,Red,Mythic,0,0
+93988,"Goblin Bushwhacker",SPG,Red,Common,1,1
+93989,"Embercleave",SPG,Red,Mythic,1,1
 93990,"Paradise Druid",SPG,Green,Uncommon,0,0
-93991,"Bloom Tender",SPG,Green,Rare,0,0
+93991,"Bloom Tender",SPG,Green,Rare,1,1
 93992,"Akroma's Memorial",SPG,Colorless,Mythic,0,0
 93993,"Angelic Destiny",FDN,White,Mythic,1,1
 93994,"Archway Angel",FDN,White,Uncommon,0,0
@@ -13935,7 +13935,7 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 94020,"Gateway Sneak",FDN,Blue,Uncommon,0,0
 94021,"Harbinger of the Tides",FDN,Blue,Rare,0,0
 94022,"Mystical Teachings",FDN,Blue,Uncommon,0,0
-94023,"River's Rebuke",FDN,Blue,Rare,0,0
+94023,"River's Rebuke",FDN,Blue,Rare,1,0
 94024,"Shipwreck Dowser",FDN,Blue,Uncommon,0,0
 94025,"Sphinx of the Final Word",FDN,Blue,Mythic,0,0
 94026,"Tempest Djinn",FDN,Blue,Rare,1,0
@@ -14150,7 +14150,7 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 94275,"Brineborn Cutthroat",PIO,Blue,Uncommon,4,0
 94276,"Chasm Skulker",PIO,Blue,Rare,0,0
 94277,"Cloudfin Raptor",PIO,Blue,Common,0,0
-94278,"Consider",PIO,Blue,Common,0,0
+94278,"Consider",PIO,Blue,Common,1,0
 94279,"Crush of Tentacles",PIO,Blue,Rare,0,0
 94280,"Day's Undoing",PIO,Blue,Mythic,0,0
 94281,"Essence Scatter",PIO,Blue,Common,4,0
@@ -14520,11 +14520,11 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 94822,"Lightwheel Enhancements",DFT,White,Common,0,0
 94823,"Lotusguard Disciple",DFT,White,Common,3,3
 94824,"Nesting Bot",DFT,White,Uncommon,0,0
-94825,"Perilous Snare",DFT,White,Rare,0,0
+94825,"Perilous Snare",DFT,White,Rare,4,4
 94826,"Pride of the Road",DFT,White,Uncommon,0,0
 94827,"Ride's End",DFT,White,Common,2,2
 94828,"Roadside Assistance",DFT,White,Uncommon,0,0
-94829,"Salvation Engine",DFT,White,Mythic,0,0
+94829,"Salvation Engine",DFT,White,Mythic,1,1
 94830,"Skyseer's Chariot",DFT,White,Rare,0,0
 94831,"Spectacular Pileup",DFT,White,Rare,0,0
 94832,"Spotcycle Scouter",DFT,White,Common,0,0
@@ -14553,8 +14553,8 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 94855,"Nimble Thopterist",DFT,Blue,Common,0,0
 94856,"Possession Engine",DFT,Blue,Rare,0,0
 94857,"Rangers' Refueler",DFT,Blue,Uncommon,0,0
-94858,"Repurposing Bay",DFT,Blue,Rare,0,0
-94859,"Riverchurn Monument",DFT,Blue,Rare,0,0
+94858,"Repurposing Bay",DFT,Blue,Rare,4,4
+94859,"Riverchurn Monument",DFT,Blue,Rare,1,1
 94860,"Roadside Blowout",DFT,Blue,Uncommon,0,0
 94861,"Sabotage Strategist",DFT,Blue,Uncommon,0,0
 94862,"Scrounging Skyray",DFT,Blue,Uncommon,0,0
@@ -14569,9 +14569,9 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 94871,"Trade the Helm",DFT,Blue,Uncommon,0,0
 94872,"Transit Mage",DFT,Blue,Uncommon,0,0
 94873,"Trip Up",DFT,Blue,Common,0,0
-94874,"Unstoppable Plan",DFT,Blue,Rare,1,1
-94875,"Vnwxt, Verbose Host",DFT,Blue,Rare,0,0
-94876,"Waxen Shapethief",DFT,Blue,Rare,0,0
+94874,"Unstoppable Plan",DFT,Blue,Rare,2,2
+94875,"Vnwxt, Verbose Host",DFT,Blue,Rare,1,1
+94876,"Waxen Shapethief",DFT,Blue,Rare,1,1
 94877,"Ancient Vendetta",DFT,Black,Uncommon,0,0
 94878,"Back on Track",DFT,Black,Uncommon,0,0
 94879,"Bloodghast",DFT,Black,Rare,0,0
@@ -14617,7 +14617,7 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 94919,"Clamorous Ironclad",DFT,Red,Common,0,0
 94920,"Count on Luck",DFT,Red,Rare,0,0
 94921,"Crash and Burn",DFT,Red,Common,0,0
-94922,"Daretti, Rocketeer Engineer",DFT,Red,Rare,0,0
+94922,"Daretti, Rocketeer Engineer",DFT,Red,Rare,1,1
 94923,"Draconautics Engineer",DFT,Red,Rare,0,0
 94924,"Dracosaur Auxiliary",DFT,Red,Uncommon,0,0
 94925,"Dynamite Diver",DFT,Red,Common,0,0
@@ -14680,7 +14680,7 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 94982,"Silken Strength",DFT,Green,Common,0,0
 94983,"Stampeding Scurryfoot",DFT,Green,Common,0,0
 94984,"Terrian, World Tyrant",DFT,Green,Uncommon,0,0
-94985,"Thunderous Velocipede",DFT,Green,Mythic,0,0
+94985,"Thunderous Velocipede",DFT,Green,Mythic,1,1
 94986,"Veloheart Bike",DFT,Green,Common,0,0
 94987,"Venomsac Lagac",DFT,Green,Common,0,0
 94988,"Webstrike Elite",DFT,Green,Rare,0,0
@@ -14699,8 +14699,8 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 95001,"Debris Beetle",DFT,Gold,Rare,0,0
 95002,"Dune Drifter",DFT,Gold,Uncommon,0,0
 95003,"Embalmed Ascendant",DFT,Gold,Uncommon,0,0
-95004,"Explosive Getaway",DFT,Gold,Rare,1,1
-95005,"Far Fortune, End Boss",DFT,Gold,Rare,1,1
+95004,"Explosive Getaway",DFT,Gold,Rare,2,2
+95005,"Far Fortune, End Boss",DFT,Gold,Rare,2,2
 95006,"Fearless Swashbuckler",DFT,Gold,Rare,1,1
 95007,"Gastal Thrillseeker",DFT,Gold,Uncommon,0,0
 95008,"Guidelight Pathmaker",DFT,Gold,Uncommon,0,0
@@ -14715,10 +14715,10 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 95017,"Oildeep Gearhulk",DFT,Gold,Mythic,0,0
 95018,"Pyrewood Gearhulk",DFT,Gold,Mythic,0,0
 95019,"Rangers' Aetherhive",DFT,Gold,Uncommon,0,0
-95020,"Redshift, Rocketeer Chief",DFT,Gold,Rare,0,0
-95021,"Riptide Gearhulk",DFT,Gold,Mythic,0,0
+95020,"Redshift, Rocketeer Chief",DFT,Gold,Rare,1,1
+95021,"Riptide Gearhulk",DFT,Gold,Mythic,1,1
 95022,"Rocketeer Boostbuggy",DFT,Gold,Uncommon,0,0
-95023,"Sab-Sunen, Luxa Embodied",DFT,Gold,Mythic,1,1
+95023,"Sab-Sunen, Luxa Embodied",DFT,Gold,Mythic,2,2
 95024,"Samut, the Driving Force",DFT,Gold,Rare,0,0
 95025,"Sita Varma, Masked Racer",DFT,Gold,Rare,0,0
 95026,"Skyserpent Seeker",DFT,Gold,Uncommon,0,0
@@ -14754,7 +14754,7 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 95056,"Dismal Backwater",DFT,Colorless,Common,4,1
 95057,"Foul Roads",DFT,Colorless,Uncommon,0,0
 95058,"Jungle Hollow",DFT,Colorless,Common,4,0
-95059,"Muraganda Raceway",DFT,Colorless,Rare,0,0
+95059,"Muraganda Raceway",DFT,Colorless,Rare,1,1
 95060,"Night Market",DFT,Colorless,Common,1,1
 95061,"Reef Roads",DFT,Colorless,Uncommon,0,0
 95062,"Riverpyre Verge",DFT,Colorless,Rare,0,0
@@ -14779,10 +14779,10 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 95113,"Pathbreaker Ibex",SPG,Green,Rare,0,0
 95114,"Chrome Mox",SPG,Colorless,Mythic,0,0
 95115,"Skysovereign, Consul Flagship",SPG,Colorless,Mythic,0,0
-95159,"A-Galvanic Discharge",MH3,Red,Common,0,0
+95159,"A-Galvanic Discharge",MH3,Red,Common,1,1
 95161,"A-Guide of Souls",MH3,White,Rare,0,0
 95162,"A-Ocelot Pride",MH3,White,Mythic,0,0
-95282,"Temporal Manipulation",SPG,Blue,Mythic,0,0
+95282,"Temporal Manipulation",SPG,Blue,Mythic,1,1
 95283,"Fiend Artisan",SPG,Gold,Mythic,0,0
 95333,"Ethrimik, Imagined Fiend",YDSK,White,Mythic,0,0
 95334,"Improvising Aerialist",YDSK,White,Uncommon,0,0
@@ -14828,7 +14828,7 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 95523,"Descendant of Storms",TDM,White,Uncommon,0,0
 95524,"Dragonback Lancer",TDM,White,Common,0,0
 95525,"Duty Beyond Death",TDM,White,Uncommon,2,2
-95526,"Elspeth, Storm Slayer",TDM,White,Mythic,0,0
+95526,"Elspeth, Storm Slayer",TDM,White,Mythic,1,1
 95527,"Fortress Kin-Guard",TDM,White,Common,0,0
 95528,"Furious Forebear",TDM,White,Uncommon,0,0
 95529,"Lightfoot Technique",TDM,White,Common,0,0
@@ -14849,7 +14849,7 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 95545,"Sunpearl Kirin",TDM,White,Uncommon,0,0
 95546,"Teeming Dragonstorm",TDM,White,Uncommon,0,0
 95547,"Tempest Hawk",TDM,White,Common,0,0
-95548,"United Battlefront",TDM,White,Rare,0,0
+95548,"United Battlefront",TDM,White,Rare,4,4
 95549,"Voice of Victory",TDM,White,Rare,0,0
 95550,"Wayspeaker Bodyguard",TDM,White,Uncommon,2,2
 95551,"Aegis Sculptor",TDM,Blue,Uncommon,0,0
@@ -14909,7 +14909,7 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 95608,"Sandskitter Outrider",TDM,Black,Common,0,0
 95609,"Scavenger Regent",TDM,Black,Rare,0,0
 95611,"The Sibsig Ceremony",TDM,Black,Rare,0,0
-95612,"Sidisi, Regent of the Mire",TDM,Black,Rare,0,0
+95612,"Sidisi, Regent of the Mire",TDM,Black,Rare,1,1
 95613,"Sinkhole Surveyor",TDM,Black,Rare,0,0
 95614,"Strategic Betrayal",TDM,Black,Uncommon,0,0
 95615,"Unburied Earthcarver",TDM,Black,Common,0,0
@@ -14920,7 +14920,7 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 95620,"Yathan Tombguard",TDM,Black,Uncommon,0,0
 95621,"Breaching Dragonstorm",TDM,Red,Uncommon,0,0
 95622,"Channeled Dragonfire",TDM,Red,Uncommon,0,0
-95623,"Cori-Steel Cutter",TDM,Red,Rare,0,0
+95623,"Cori-Steel Cutter",TDM,Red,Rare,1,1
 95624,"Devoted Duelist",TDM,Red,Common,0,0
 95625,"Dracogenesis",TDM,Red,Mythic,0,0
 95626,"Equilibrium Adept",TDM,Red,Uncommon,0,0
@@ -14953,7 +14953,7 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 95654,"Zurgo's Vanguard",TDM,Red,Uncommon,0,0
 95655,"Ainok Wayfarer",TDM,Green,Common,2,2
 95656,"Attuned Hunter",TDM,Green,Uncommon,0,0
-95657,"Bloomvine Regent",TDM,Green,Rare,0,0
+95657,"Bloomvine Regent",TDM,Green,Rare,1,1
 95659,"Champion of Dusan",TDM,Green,Common,0,0
 95660,"Craterhoof Behemoth",TDM,Green,Mythic,0,0
 95661,"Dragon Sniper",TDM,Green,Uncommon,0,0
@@ -14983,17 +14983,17 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 95686,"Trade Route Envoy",TDM,Green,Common,0,0
 95687,"Traveling Botanist",TDM,Green,Uncommon,0,0
 95688,"Undergrowth Leopard",TDM,Green,Common,1,1
-95689,"Warden of the Grove",TDM,Green,Rare,0,0
-95690,"All-Out Assault",TDM,Gold,Mythic,0,0
+95689,"Warden of the Grove",TDM,Green,Rare,1,1
+95690,"All-Out Assault",TDM,Gold,Mythic,1,1
 95691,"Armament Dragon",TDM,Gold,Uncommon,0,0
 95692,"Auroral Procession",TDM,Gold,Uncommon,0,0
 95693,"Awaken the Honored Dead",TDM,Gold,Rare,0,0
 95694,"Barrensteppe Siege",TDM,Gold,Rare,0,0
 95695,"Betor, Kin to All",TDM,Gold,Mythic,0,0
 95696,"Bone-Cairn Butcher",TDM,Gold,Uncommon,0,0
-95697,"Call the Spirit Dragons",TDM,Gold,Mythic,0,0
+95697,"Call the Spirit Dragons",TDM,Gold,Mythic,1,1
 95698,"Cori Mountain Stalwart",TDM,Gold,Uncommon,0,0
-95699,"Death Begets Life",TDM,Gold,Mythic,0,0
+95699,"Death Begets Life",TDM,Gold,Mythic,1,1
 95700,"Defibrillating Current",TDM,Gold,Uncommon,0,0
 95701,"Disruptive Stormbrood",TDM,Green,Uncommon,0,0
 95703,"Dragonback Assault",TDM,Gold,Mythic,0,0
@@ -15026,8 +15026,8 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 95730,"Mardu Siegebreaker",TDM,Gold,Rare,0,0
 95731,"Marshal of the Lost",TDM,Gold,Uncommon,0,0
 95732,"Monastery Messenger",TDM,Gold,Common,2,2
-95733,"Narset, Jeskai Waymaster",TDM,Gold,Rare,0,0
-95734,"Neriv, Heart of the Storm",TDM,Gold,Mythic,0,0
+95733,"Narset, Jeskai Waymaster",TDM,Gold,Rare,1,1
+95734,"Neriv, Heart of the Storm",TDM,Gold,Mythic,1,1
 95735,"New Way Forward",TDM,Gold,Rare,0,0
 95736,"Perennation",TDM,Gold,Mythic,0,0
 95737,"Purging Stormbrood",TDM,Black,Uncommon,0,0
@@ -15037,12 +15037,12 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 95742,"Reputable Merchant",TDM,Gold,Common,1,1
 95743,"Revival of the Ancestors",TDM,Gold,Rare,0,0
 95744,"Riverwheel Sweep",TDM,Gold,Uncommon,0,0
-95745,"Roar of Endless Song",TDM,Gold,Rare,0,0
+95745,"Roar of Endless Song",TDM,Gold,Rare,1,1
 95746,"Runescale Stormbrood",TDM,Red,Uncommon,0,0
 95748,"Severance Priest",TDM,Gold,Rare,0,0
 95749,"Shiko, Paragon of the Way",TDM,Gold,Mythic,0,0
 95750,"Skirmish Rhino",TDM,Gold,Uncommon,0,0
-95751,"Songcrafter Mage",TDM,Gold,Rare,0,0
+95751,"Songcrafter Mage",TDM,Gold,Rare,1,1
 95752,"Sonic Shrieker",TDM,Gold,Uncommon,0,0
 95753,"Stalwart Successor",TDM,Gold,Uncommon,0,0
 95754,"Temur Battlecrier",TDM,Gold,Rare,0,0
@@ -15090,15 +15090,15 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 95798,"Tranquil Cove",TDM,Colorless,Common,4,0
 95799,"Wind-Scarred Crag",TDM,Colorless,Common,4,0
 95836,"Eerie Ultimatum",SPG,Gold,Rare,0,0
-95837,"Emergent Ultimatum",SPG,Gold,Rare,0,0
-95838,"Genesis Ultimatum",SPG,Gold,Rare,0,0
+95837,"Emergent Ultimatum",SPG,Gold,Rare,1,0
+95838,"Genesis Ultimatum",SPG,Gold,Rare,1,0
 95839,"Inspired Ultimatum",SPG,Gold,Rare,0,0
 95840,"Ruinous Ultimatum",SPG,Gold,Rare,0,0
-95841,"Arid Mesa",SPG,Colorless,Rare,0,0
-95842,"Marsh Flats",SPG,Colorless,Rare,0,0
-95843,"Misty Rainforest",SPG,Colorless,Rare,0,0
-95844,"Scalding Tarn",SPG,Colorless,Rare,0,0
-95845,"Verdant Catacombs",SPG,Colorless,Rare,0,0
+95841,"Arid Mesa",SPG,Colorless,Rare,1,0
+95842,"Marsh Flats",SPG,Colorless,Rare,1,0
+95843,"Misty Rainforest",SPG,Colorless,Rare,1,0
+95844,"Scalding Tarn",SPG,Colorless,Rare,1,0
+95845,"Verdant Catacombs",SPG,Colorless,Rare,1,0
 95846,"Snow-Covered Plains",ANA,Colorless,Common,2,0
 95847,"Snow-Covered Island",ANA,Colorless,Common,2,0
 95848,"Snow-Covered Swamp",ANA,Colorless,Common,2,0
@@ -15106,302 +15106,302 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 95850,"Snow-Covered Forest",ANA,Colorless,Common,2,0
 95853,"Summon: Bahamut",FIN,Colorless,Mythic,0,0
 95854,"Ultima, Origin of Oblivion",FIN,Colorless,Rare,0,0
-95855,"Adelbert Steiner",FIN,White,Uncommon,0,0
-95856,"Aerith Gainsborough",FIN,White,Rare,0,0
-95857,"Aerith Rescue Mission",FIN,White,Common,0,0
-95858,"Ambrosia Whiteheart",FIN,White,Uncommon,0,0
-95859,"Ashe, Princess of Dalmasca",FIN,White,Uncommon,0,0
+95855,"Adelbert Steiner",FIN,White,Uncommon,2,2
+95856,"Aerith Gainsborough",FIN,White,Rare,2,2
+95857,"Aerith Rescue Mission",FIN,White,Common,2,2
+95858,"Ambrosia Whiteheart",FIN,White,Uncommon,3,3
+95859,"Ashe, Princess of Dalmasca",FIN,White,Uncommon,3,3
 95860,"Auron's Inspiration",FIN,White,Uncommon,0,0
-95861,"Battle Menu",FIN,White,Uncommon,0,0
-95862,"Cloud, Midgar Mercenary",FIN,White,Mythic,0,0
-95863,"Cloudbound Moogle",FIN,White,Common,0,0
-95864,"Coeurl",FIN,White,Common,0,0
-95865,"Crystal Fragments",FIN,White,Uncommon,0,0
+95861,"Battle Menu",FIN,White,Uncommon,2,2
+95862,"Cloud, Midgar Mercenary",FIN,White,Mythic,1,1
+95863,"Cloudbound Moogle",FIN,White,Common,4,4
+95864,"Coeurl",FIN,White,Common,2,2
+95865,"Crystal Fragments",FIN,White,Uncommon,2,2
 95867,"The Crystal's Chosen",FIN,White,Uncommon,0,0
-95868,"Delivery Moogle",FIN,White,Uncommon,1,1
-95869,"Dion, Bahamut's Dominant",FIN,White,Rare,0,0
-95871,"Dragoon's Lance",FIN,White,Uncommon,0,0
-95872,"Dwarven Castle Guard",FIN,White,Common,0,0
-95873,"Fate of the Sun-Cryst",FIN,White,Common,1,1
-95874,"From Father to Son",FIN,White,Rare,0,0
-95875,"G'raha Tia",FIN,White,Uncommon,0,0
-95876,"Gaelicat",FIN,White,Common,0,0
+95868,"Delivery Moogle",FIN,White,Uncommon,2,2
+95869,"Dion, Bahamut's Dominant",FIN,White,Rare,2,2
+95871,"Dragoon's Lance",FIN,White,Uncommon,1,1
+95872,"Dwarven Castle Guard",FIN,White,Common,4,4
+95873,"Fate of the Sun-Cryst",FIN,White,Common,3,3
+95874,"From Father to Son",FIN,White,Rare,1,1
+95875,"G'raha Tia",FIN,White,Uncommon,1,1
+95876,"Gaelicat",FIN,White,Common,2,2
 95877,"Machinist's Arsenal",FIN,White,Rare,0,0
-95878,"Magitek Armor",FIN,White,Uncommon,0,0
-95879,"Magitek Infantry",FIN,White,Common,0,0
-95880,"Minwu, White Mage",FIN,White,Rare,0,0
-95881,"Moogles' Valor",FIN,White,Rare,0,0
-95882,"Paladin's Arms",FIN,White,Common,0,0
+95878,"Magitek Armor",FIN,White,Uncommon,1,1
+95879,"Magitek Infantry",FIN,White,Common,3,3
+95880,"Minwu, White Mage",FIN,White,Rare,2,2
+95881,"Moogles' Valor",FIN,White,Rare,2,2
+95882,"Paladin's Arms",FIN,White,Common,1,1
 95883,"Phoenix Down",FIN,White,Uncommon,0,0
-95884,"Restoration Magic",FIN,White,Uncommon,0,0
-95885,"Sidequest: Catch a Fish",FIN,White,Uncommon,0,0
-95887,"Slash of Light",FIN,White,Common,0,0
-95888,"Snow Villiers",FIN,White,Uncommon,0,0
+95884,"Restoration Magic",FIN,White,Uncommon,3,3
+95885,"Sidequest: Catch a Fish",FIN,White,Uncommon,2,2
+95887,"Slash of Light",FIN,White,Common,2,2
+95888,"Snow Villiers",FIN,White,Uncommon,3,3
 95889,"Stiltzkin, Moogle Merchant",FIN,White,Rare,1,1
-95890,"Summon: Choco/Mog",FIN,White,Common,0,0
+95890,"Summon: Choco/Mog",FIN,White,Common,3,3
 95891,"Summon: Knights of Round",FIN,White,Mythic,0,0
-95892,"Summon: Primal Garuda",FIN,White,Uncommon,0,0
-95893,"Ultima",FIN,White,Rare,0,0
-95894,"Venat, Heart of Hydaelyn",FIN,White,Rare,0,0
-95896,"Weapons Vendor",FIN,White,Common,0,0
-95897,"White Auracite",FIN,White,Common,0,0
-95898,"White Mage's Staff",FIN,White,Common,0,0
-95899,"The Wind Crystal",FIN,White,Rare,0,0
-95900,"You're Not Alone",FIN,White,Common,0,0
-95901,"Zack Fair",FIN,White,Uncommon,0,0
-95902,"Astrologian's Planisphere",FIN,Blue,Rare,0,0
+95892,"Summon: Primal Garuda",FIN,White,Uncommon,4,4
+95893,"Ultima",FIN,White,Rare,1,1
+95894,"Venat, Heart of Hydaelyn",FIN,White,Rare,2,2
+95896,"Weapons Vendor",FIN,White,Common,1,1
+95897,"White Auracite",FIN,White,Common,4,4
+95898,"White Mage's Staff",FIN,White,Common,4,4
+95899,"The Wind Crystal",FIN,White,Rare,2,2
+95900,"You're Not Alone",FIN,White,Common,2,2
+95901,"Zack Fair",FIN,White,Uncommon,1,1
+95902,"Astrologian's Planisphere",FIN,Blue,Rare,1,1
 95903,"Cargo Ship",FIN,Blue,Uncommon,0,0
-95904,"Combat Tutorial",FIN,Blue,Common,0,0
-95905,"Dragoon's Wyvern",FIN,Blue,Common,0,0
-95906,"Dreams of Laguna",FIN,Blue,Common,0,0
+95904,"Combat Tutorial",FIN,Blue,Common,2,2
+95905,"Dragoon's Wyvern",FIN,Blue,Common,1,1
+95906,"Dreams of Laguna",FIN,Blue,Common,2,2
 95907,"Edgar, King of Figaro",FIN,Blue,Rare,0,0
 95908,"Eject",FIN,Blue,Uncommon,0,0
-95909,"Ether",FIN,Blue,Uncommon,0,0
+95909,"Ether",FIN,Blue,Uncommon,2,2
 95910,"Gogo, Master of Mimicry",FIN,Blue,Mythic,0,0
-95911,"Ice Flan",FIN,Blue,Common,0,0
-95912,"Ice Magic",FIN,Blue,Common,0,0
-95913,"Il Mheg Pixie",FIN,Blue,Uncommon,0,0
+95911,"Ice Flan",FIN,Blue,Common,1,1
+95912,"Ice Magic",FIN,Blue,Common,1,1
+95913,"Il Mheg Pixie",FIN,Blue,Uncommon,1,1
 95914,"Jill, Shiva's Dominant",FIN,Blue,Rare,0,0
 95916,"Louisoix's Sacrifice",FIN,Blue,Rare,0,0
-95917,"The Lunar Whale",FIN,Blue,Rare,0,0
-95918,"Magic Damper",FIN,Blue,Common,0,0
+95917,"The Lunar Whale",FIN,Blue,Rare,1,1
+95918,"Magic Damper",FIN,Blue,Common,4,4
 95919,"Matoya, Archon Elder",FIN,Blue,Rare,0,0
 95920,"Memories Returning",FIN,Blue,Rare,0,0
-95921,"The Prima Vista",FIN,Blue,Uncommon,0,0
-95922,"Qiqirn Merchant",FIN,Blue,Common,0,0
-95923,"Quistis Trepe",FIN,Blue,Uncommon,0,0
+95921,"The Prima Vista",FIN,Blue,Uncommon,1,1
+95922,"Qiqirn Merchant",FIN,Blue,Common,1,1
+95923,"Quistis Trepe",FIN,Blue,Uncommon,1,1
 95924,"Relm's Sketching",FIN,Blue,Uncommon,0,0
-95925,"Retrieve the Esper",FIN,Blue,Common,0,0
-95926,"Rook Turret",FIN,Blue,Common,0,0
-95927,"Sage's Nouliths",FIN,Blue,Common,0,0
-95928,"Sahagin",FIN,Blue,Common,0,0
-95929,"Scorpion Sentinel",FIN,Blue,Common,0,0
-95930,"Sidequest: Card Collection",FIN,Blue,Uncommon,0,0
+95925,"Retrieve the Esper",FIN,Blue,Common,1,1
+95926,"Rook Turret",FIN,Blue,Common,4,4
+95927,"Sage's Nouliths",FIN,Blue,Common,4,4
+95928,"Sahagin",FIN,Blue,Common,1,1
+95929,"Scorpion Sentinel",FIN,Blue,Common,1,1
+95930,"Sidequest: Card Collection",FIN,Blue,Uncommon,2,2
 95932,"Sleep Magic",FIN,Blue,Uncommon,0,0
 95933,"Stolen Uniform",FIN,Blue,Uncommon,0,0
-95934,"Stuck in Summoner's Sanctum",FIN,Blue,Common,0,0
+95934,"Stuck in Summoner's Sanctum",FIN,Blue,Common,4,4
 95935,"Summon: Leviathan",FIN,Blue,Rare,0,0
-95936,"Summon: Shiva",FIN,Blue,Uncommon,0,0
-95937,"Swallowed by Leviathan",FIN,Blue,Uncommon,0,0
-95938,"Syncopate",FIN,Blue,Common,0,0
-95939,"Thief's Knife",FIN,Blue,Uncommon,0,0
+95936,"Summon: Shiva",FIN,Blue,Uncommon,1,1
+95937,"Swallowed by Leviathan",FIN,Blue,Uncommon,2,2
+95938,"Syncopate",FIN,Blue,Common,4,4
+95939,"Thief's Knife",FIN,Blue,Uncommon,1,1
 95940,"Travel the Overworld",FIN,Blue,Uncommon,0,0
 95941,"Ultros, Obnoxious Octopus",FIN,Blue,Uncommon,0,0
-95942,"Valkyrie Aerial Unit",FIN,Blue,Uncommon,0,0
+95942,"Valkyrie Aerial Unit",FIN,Blue,Uncommon,1,1
 95943,"The Water Crystal",FIN,Blue,Rare,0,0
 95944,"Y'shtola Rhul",FIN,Blue,Mythic,0,0
-95945,"Ahriman",FIN,Black,Common,0,0
-95946,"Al Bhed Salvagers",FIN,Black,Uncommon,1,1
-95947,"Ardyn, the Usurper",FIN,Black,Rare,0,0
-95948,"Black Mage's Rod",FIN,Black,Common,1,1
+95945,"Ahriman",FIN,Black,Common,4,4
+95946,"Al Bhed Salvagers",FIN,Black,Uncommon,2,2
+95947,"Ardyn, the Usurper",FIN,Black,Rare,2,2
+95948,"Black Mage's Rod",FIN,Black,Common,4,4
 95949,"Cecil, Dark Knight",FIN,Black,Rare,0,0
-95951,"Circle of Power",FIN,Black,Uncommon,0,0
-95952,"Cornered by Black Mages",FIN,Black,Common,0,0
-95953,"Dark Confidant",FIN,Black,Mythic,0,0
+95951,"Circle of Power",FIN,Black,Uncommon,3,3
+95952,"Cornered by Black Mages",FIN,Black,Common,1,1
+95953,"Dark Confidant",FIN,Black,Mythic,1,1
 95954,"Dark Knight's Greatsword",FIN,Black,Uncommon,0,0
 95955,"The Darkness Crystal",FIN,Black,Rare,0,0
 95956,"Demon Wall",FIN,Black,Uncommon,0,0
-95957,"Evil Reawakened",FIN,Black,Uncommon,0,0
-95958,"Fang, Fearless l'Cie",FIN,Black,Uncommon,0,0
-95959,"Fight On!",FIN,Black,Common,0,0
-95960,"The Final Days",FIN,Black,Uncommon,0,0
-95961,"Gaius van Baelsar",FIN,Black,Uncommon,0,0
-95962,"Hecteyes",FIN,Black,Common,0,0
-95963,"Jecht, Reluctant Guardian",FIN,Black,Rare,0,0
-95965,"Kain, Traitorous Dragoon",FIN,Black,Rare,0,0
+95957,"Evil Reawakened",FIN,Black,Uncommon,1,1
+95958,"Fang, Fearless l'Cie",FIN,Black,Uncommon,3,3
+95959,"Fight On!",FIN,Black,Common,2,2
+95960,"The Final Days",FIN,Black,Uncommon,1,1
+95961,"Gaius van Baelsar",FIN,Black,Uncommon,2,2
+95962,"Hecteyes",FIN,Black,Common,2,2
+95963,"Jecht, Reluctant Guardian",FIN,Black,Rare,1,1
+95965,"Kain, Traitorous Dragoon",FIN,Black,Rare,2,2
 95966,"Malboro",FIN,Black,Common,0,0
-95967,"Namazu Trader",FIN,Black,Common,1,1
+95967,"Namazu Trader",FIN,Black,Common,3,3
 95968,"Ninja's Blades",FIN,Black,Rare,0,0
-95969,"Overkill",FIN,Black,Uncommon,0,0
-95970,"Phantom Train",FIN,Black,Uncommon,0,0
-95971,"Poison the Waters",FIN,Black,Uncommon,0,0
-95972,"Qutrub Forayer",FIN,Black,Common,2,2
+95969,"Overkill",FIN,Black,Uncommon,3,3
+95970,"Phantom Train",FIN,Black,Uncommon,2,2
+95971,"Poison the Waters",FIN,Black,Uncommon,1,1
+95972,"Qutrub Forayer",FIN,Black,Common,4,4
 95973,"Reno and Rude",FIN,Black,Uncommon,0,0
-95974,"Resentful Revelation",FIN,Black,Common,1,1
+95974,"Resentful Revelation",FIN,Black,Common,3,3
 95975,"Sephiroth, Fabled SOLDIER",FIN,Black,Mythic,0,0
-95977,"Sephiroth's Intervention",FIN,Black,Common,1,1
-95978,"Shambling Cie'th",FIN,Black,Uncommon,0,0
-95979,"Shinra Reinforcements",FIN,Black,Common,1,1
-95980,"Sidequest: Hunt the Mark",FIN,Black,Uncommon,0,0
-95982,"Summon: Anima",FIN,Black,Uncommon,0,0
-95983,"Summon: Primal Odin",FIN,Black,Rare,0,0
-95984,"Tonberry",FIN,Black,Uncommon,0,0
-95985,"Undercity Dire Rat",FIN,Black,Common,0,0
-95986,"Vayne's Treachery",FIN,Black,Common,0,0
+95977,"Sephiroth's Intervention",FIN,Black,Common,3,3
+95978,"Shambling Cie'th",FIN,Black,Uncommon,1,1
+95979,"Shinra Reinforcements",FIN,Black,Common,2,2
+95980,"Sidequest: Hunt the Mark",FIN,Black,Uncommon,1,1
+95982,"Summon: Anima",FIN,Black,Uncommon,1,1
+95983,"Summon: Primal Odin",FIN,Black,Rare,1,1
+95984,"Tonberry",FIN,Black,Uncommon,2,2
+95985,"Undercity Dire Rat",FIN,Black,Common,4,4
+95986,"Vayne's Treachery",FIN,Black,Common,4,4
 95987,"Vincent Valentine",FIN,Black,Rare,0,0
-95989,"Vincent's Limit Break",FIN,Black,Common,0,0
-95990,"Zenos yae Galvus",FIN,Black,Rare,0,0
-95992,"Zodiark, Umbral God",FIN,Black,Rare,0,0
-95993,"Barret Wallace",FIN,Red,Uncommon,0,0
-95994,"Blazing Bomb",FIN,Red,Common,0,0
-95995,"Call the Mountain Chocobo",FIN,Red,Common,1,1
+95989,"Vincent's Limit Break",FIN,Black,Common,4,4
+95990,"Zenos yae Galvus",FIN,Black,Rare,1,1
+95992,"Zodiark, Umbral God",FIN,Black,Rare,1,1
+95993,"Barret Wallace",FIN,Red,Uncommon,2,2
+95994,"Blazing Bomb",FIN,Red,Common,1,1
+95995,"Call the Mountain Chocobo",FIN,Red,Common,2,2
 95996,"Choco-Comet",FIN,Red,Uncommon,0,0
 95997,"Clive, Ifrit's Dominant",FIN,Red,Mythic,0,0
-95999,"Coral Sword",FIN,Red,Uncommon,0,0
-96000,"The Fire Crystal",FIN,Red,Rare,0,0
-96001,"Fire Magic",FIN,Red,Uncommon,0,0
+95999,"Coral Sword",FIN,Red,Uncommon,2,2
+96000,"The Fire Crystal",FIN,Red,Rare,2,2
+96001,"Fire Magic",FIN,Red,Uncommon,2,2
 96002,"Firion, Wild Rose Warrior",FIN,Red,Rare,0,0
-96003,"Freya Crescent",FIN,Red,Uncommon,0,0
+96003,"Freya Crescent",FIN,Red,Uncommon,1,1
 96004,"Gilgamesh, Master-at-Arms",FIN,Red,Rare,0,0
-96005,"Haste Magic",FIN,Red,Common,0,0
-96006,"Hill Gigas",FIN,Red,Common,0,0
-96007,"Item Shopkeep",FIN,Red,Common,0,0
-96008,"Laughing Mad",FIN,Red,Common,0,0
-96009,"Light of Judgment",FIN,Red,Common,1,1
+96005,"Haste Magic",FIN,Red,Common,4,4
+96006,"Hill Gigas",FIN,Red,Common,4,4
+96007,"Item Shopkeep",FIN,Red,Common,1,1
+96008,"Laughing Mad",FIN,Red,Common,3,3
+96009,"Light of Judgment",FIN,Red,Common,4,4
 96010,"Mysidian Elder",FIN,Red,Common,0,0
 96011,"Nibelheim Aflame",FIN,Red,Mythic,1,1
 96012,"Opera Love Song",FIN,Red,Uncommon,0,0
-96013,"Prompto Argentum",FIN,Red,Uncommon,0,0
+96013,"Prompto Argentum",FIN,Red,Uncommon,1,1
 96014,"Queen Brahne",FIN,Red,Uncommon,0,0
 96015,"Random Encounter",FIN,Red,Uncommon,0,0
-96016,"Raubahn, Bull of Ala Mhigo",FIN,Red,Rare,0,0
-96017,"Red Mage's Rapier",FIN,Red,Common,0,0
+96016,"Raubahn, Bull of Ala Mhigo",FIN,Red,Rare,1,1
+96017,"Red Mage's Rapier",FIN,Red,Common,3,3
 96018,"Sabotender",FIN,Red,Common,0,0
 96019,"Samurai's Katana",FIN,Red,Uncommon,0,0
-96020,"Sandworm",FIN,Red,Uncommon,1,1
-96021,"Seifer Almasy",FIN,Red,Rare,0,0
+96020,"Sandworm",FIN,Red,Uncommon,2,2
+96021,"Seifer Almasy",FIN,Red,Rare,1,1
 96022,"Self-Destruct",FIN,Red,Uncommon,0,0
-96023,"Sidequest: Play Blitzball",FIN,Red,Uncommon,0,0
-96025,"Sorceress's Schemes",FIN,Red,Uncommon,1,1
-96026,"Summon: Brynhildr",FIN,Red,Rare,0,0
-96027,"Summon: Esper Ramuh",FIN,Red,Uncommon,0,0
+96023,"Sidequest: Play Blitzball",FIN,Red,Uncommon,3,3
+96025,"Sorceress's Schemes",FIN,Red,Uncommon,2,2
+96026,"Summon: Brynhildr",FIN,Red,Rare,2,2
+96027,"Summon: Esper Ramuh",FIN,Red,Uncommon,1,1
 96028,"Summon: G.F. Cerberus",FIN,Red,Rare,0,0
-96029,"Summon: G.F. Ifrit",FIN,Red,Common,0,0
-96030,"Suplex",FIN,Red,Common,0,0
-96031,"Thunder Magic",FIN,Red,Common,0,0
-96032,"Triple Triad",FIN,Red,Rare,0,0
+96029,"Summon: G.F. Ifrit",FIN,Red,Common,3,3
+96030,"Suplex",FIN,Red,Common,2,2
+96031,"Thunder Magic",FIN,Red,Common,1,1
+96032,"Triple Triad",FIN,Red,Rare,1,1
 96033,"Unexpected Request",FIN,Red,Uncommon,0,0
 96034,"Vaan, Street Thief",FIN,Red,Rare,0,0
-96035,"Warrior's Sword",FIN,Red,Common,0,0
+96035,"Warrior's Sword",FIN,Red,Common,3,3
 96036,"Zell Dincht",FIN,Red,Rare,0,0
-96037,"Airship Crash",FIN,Green,Common,0,0
-96038,"Ancient Adamantoise",FIN,Green,Mythic,0,0
-96039,"Balamb T-Rexaur",FIN,Green,Common,0,0
-96040,"Bard's Bow",FIN,Green,Common,0,0
-96041,"Bartz and Boko",FIN,Green,Rare,0,0
-96042,"Blitzball Shot",FIN,Green,Common,0,0
-96043,"Cactuar",FIN,Green,Uncommon,0,0
-96044,"Chocobo Kick",FIN,Green,Common,0,0
-96045,"Chocobo Racetrack",FIN,Green,Uncommon,0,0
-96046,"Clash of the Eikons",FIN,Green,Uncommon,0,0
-96047,"Coliseum Behemoth",FIN,Green,Uncommon,0,0
-96048,"Commune with Beavers",FIN,Green,Common,0,0
-96049,"Diamond Weapon",FIN,Green,Uncommon,0,0
-96050,"The Earth Crystal",FIN,Green,Rare,0,0
-96051,"Esper Origins",FIN,Green,Rare,0,0
-96053,"Galuf's Final Act",FIN,Green,Uncommon,0,0
-96054,"Gigantoad",FIN,Green,Common,0,0
-96055,"Goobbue Gardener",FIN,Green,Common,0,0
-96056,"Gran Pulse Ochu",FIN,Green,Common,0,0
-96057,"Gysahl Greens",FIN,Green,Common,0,0
+96037,"Airship Crash",FIN,Green,Common,4,4
+96038,"Ancient Adamantoise",FIN,Green,Mythic,1,1
+96039,"Balamb T-Rexaur",FIN,Green,Common,4,4
+96040,"Bard's Bow",FIN,Green,Common,3,3
+96041,"Bartz and Boko",FIN,Green,Rare,1,1
+96042,"Blitzball Shot",FIN,Green,Common,2,2
+96043,"Cactuar",FIN,Green,Uncommon,2,2
+96044,"Chocobo Kick",FIN,Green,Common,3,3
+96045,"Chocobo Racetrack",FIN,Green,Uncommon,1,1
+96046,"Clash of the Eikons",FIN,Green,Uncommon,1,1
+96047,"Coliseum Behemoth",FIN,Green,Uncommon,2,2
+96048,"Commune with Beavers",FIN,Green,Common,2,2
+96049,"Diamond Weapon",FIN,Green,Uncommon,1,1
+96050,"The Earth Crystal",FIN,Green,Rare,1,1
+96051,"Esper Origins",FIN,Green,Rare,1,1
+96053,"Galuf's Final Act",FIN,Green,Uncommon,2,2
+96054,"Gigantoad",FIN,Green,Common,4,4
+96055,"Goobbue Gardener",FIN,Green,Common,2,2
+96056,"Gran Pulse Ochu",FIN,Green,Common,3,3
+96057,"Gysahl Greens",FIN,Green,Common,2,2
 96058,"Jumbo Cactuar",FIN,Green,Rare,0,0
-96059,"Loporrit Scout",FIN,Green,Common,0,0
-96060,"Prishe's Wanderings",FIN,Green,Common,0,0
-96061,"Quina, Qu Gourmet",FIN,Green,Uncommon,0,0
-96062,"Reach the Horizon",FIN,Green,Uncommon,0,0
-96063,"A Realm Reborn",FIN,Green,Rare,0,0
+96059,"Loporrit Scout",FIN,Green,Common,2,2
+96060,"Prishe's Wanderings",FIN,Green,Common,4,4
+96061,"Quina, Qu Gourmet",FIN,Green,Uncommon,3,3
+96062,"Reach the Horizon",FIN,Green,Uncommon,2,2
+96063,"A Realm Reborn",FIN,Green,Rare,2,2
 96064,"Ride the Shoopuf",FIN,Green,Uncommon,0,0
 96065,"Rydia's Return",FIN,Green,Uncommon,0,0
-96066,"Sazh Katzroy",FIN,Green,Rare,0,0
-96067,"Sazh's Chocobo",FIN,Green,Uncommon,0,0
-96068,"Sidequest: Raise a Chocobo",FIN,Green,Uncommon,0,0
-96070,"Summon: Fat Chocobo",FIN,Green,Common,0,0
-96071,"Summon: Fenrir",FIN,Green,Uncommon,0,0
-96072,"Summon: Titan",FIN,Green,Rare,0,0
+96066,"Sazh Katzroy",FIN,Green,Rare,1,1
+96067,"Sazh's Chocobo",FIN,Green,Uncommon,1,1
+96068,"Sidequest: Raise a Chocobo",FIN,Green,Uncommon,2,2
+96070,"Summon: Fat Chocobo",FIN,Green,Common,3,3
+96071,"Summon: Fenrir",FIN,Green,Uncommon,1,1
+96072,"Summon: Titan",FIN,Green,Rare,1,1
 96073,"Summoner's Grimoire",FIN,Green,Rare,0,0
-96074,"Tifa Lockhart",FIN,Green,Rare,0,0
-96075,"Tifa's Limit Break",FIN,Green,Uncommon,0,0
-96076,"Torgal, A Fine Hound",FIN,Green,Uncommon,0,0
+96074,"Tifa Lockhart",FIN,Green,Rare,1,1
+96075,"Tifa's Limit Break",FIN,Green,Uncommon,1,1
+96076,"Torgal, A Fine Hound",FIN,Green,Uncommon,1,1
 96077,"Town Greeter",FIN,Green,Common,1,1
-96078,"Traveling Chocobo",FIN,Green,Mythic,0,0
-96079,"Vanille, Cheerful l'Cie",FIN,Green,Uncommon,0,0
+96078,"Traveling Chocobo",FIN,Green,Mythic,1,1
+96079,"Vanille, Cheerful l'Cie",FIN,Green,Uncommon,1,1
 96080,"Absolute Virtue",FIN,Gold,Mythic,0,0
 96081,"Balthier and Fran",FIN,Gold,Rare,0,0
-96082,"Black Waltz No. 3",FIN,Gold,Uncommon,0,0
-96083,"Choco, Seeker of Paradise",FIN,Gold,Rare,0,0
+96082,"Black Waltz No. 3",FIN,Gold,Uncommon,1,1
+96083,"Choco, Seeker of Paradise",FIN,Gold,Rare,1,1
 96084,"Cid, Timeless Artificer",FIN,Gold,Uncommon,0,0
-96085,"Cloud of Darkness",FIN,Gold,Uncommon,0,0
-96086,"Emet-Selch, Unsundered",FIN,Gold,Mythic,0,0
+96085,"Cloud of Darkness",FIN,Gold,Uncommon,1,1
+96086,"Emet-Selch, Unsundered",FIN,Gold,Mythic,1,1
 96088,"The Emperor of Palamecia",FIN,Gold,Uncommon,0,0
-96090,"Exdeath, Void Warlock",FIN,Gold,Uncommon,0,0
-96092,"Garland, Knight of Cornelia",FIN,Gold,Uncommon,0,0
-96094,"Garnet, Princess of Alexandria",FIN,Gold,Uncommon,0,0
+96090,"Exdeath, Void Warlock",FIN,Gold,Uncommon,1,1
+96092,"Garland, Knight of Cornelia",FIN,Gold,Uncommon,1,1
+96094,"Garnet, Princess of Alexandria",FIN,Gold,Uncommon,1,1
 96095,"Giott, King of the Dwarves",FIN,Gold,Uncommon,0,0
 96096,"Gladiolus Amicitia",FIN,Gold,Uncommon,1,1
 96097,"Golbez, Crystal Collector",FIN,Gold,Rare,0,0
-96098,"Hope Estheim",FIN,Gold,Rare,0,0
+96098,"Hope Estheim",FIN,Gold,Rare,1,1
 96099,"Ignis Scientia",FIN,Gold,Uncommon,0,0
 96100,"Jenova, Ancient Calamity",FIN,Gold,Rare,0,0
 96101,"Joshua, Phoenix's Dominant",FIN,Gold,Rare,0,0
-96103,"Judge Magister Gabranth",FIN,Gold,Uncommon,1,1
+96103,"Judge Magister Gabranth",FIN,Gold,Uncommon,2,2
 96104,"Kefka, Court Mage",FIN,Gold,Mythic,0,0
 96106,"Kuja, Genome Sorcerer",FIN,Gold,Rare,1,1
 96108,"Lightning, Army of One",FIN,Gold,Mythic,0,0
-96109,"Locke Cole",FIN,Gold,Uncommon,0,0
-96110,"Noctis, Prince of Lucis",FIN,Gold,Rare,0,0
-96111,"Omega, Heartless Evolution",FIN,Gold,Uncommon,0,0
-96112,"Rinoa Heartilly",FIN,Gold,Uncommon,0,0
+96109,"Locke Cole",FIN,Gold,Uncommon,1,1
+96110,"Noctis, Prince of Lucis",FIN,Gold,Rare,1,1
+96111,"Omega, Heartless Evolution",FIN,Gold,Uncommon,1,1
+96112,"Rinoa Heartilly",FIN,Gold,Uncommon,1,1
 96113,"Rufus Shinra",FIN,Gold,Uncommon,0,0
 96114,"Rydia, Summoner of Mist",FIN,Gold,Uncommon,0,0
-96115,"Serah Farron",FIN,Gold,Rare,0,0
-96117,"Shantotto, Tactician Magician",FIN,Gold,Uncommon,0,0
-96118,"Sin, Spira's Punishment",FIN,Gold,Rare,0,0
-96119,"Squall, SeeD Mercenary",FIN,Gold,Rare,0,0
-96120,"Tellah, Great Sage",FIN,Gold,Rare,0,0
+96115,"Serah Farron",FIN,Gold,Rare,1,1
+96117,"Shantotto, Tactician Magician",FIN,Gold,Uncommon,2,2
+96118,"Sin, Spira's Punishment",FIN,Gold,Rare,1,1
+96119,"Squall, SeeD Mercenary",FIN,Gold,Rare,1,1
+96120,"Tellah, Great Sage",FIN,Gold,Rare,1,1
 96121,"Terra, Magical Adept",FIN,Gold,Mythic,0,0
-96123,"Tidus, Blitzball Star",FIN,Gold,Uncommon,0,0
-96124,"Ultimecia, Time Sorceress",FIN,Gold,Uncommon,0,0
+96123,"Tidus, Blitzball Star",FIN,Gold,Uncommon,1,1
+96124,"Ultimecia, Time Sorceress",FIN,Gold,Uncommon,4,4
 96126,"Vivi Ornitier",FIN,Gold,Mythic,0,0
 96127,"The Wandering Minstrel",FIN,Gold,Rare,0,0
-96128,"Yuna, Hope of Spira",FIN,Gold,Mythic,0,0
+96128,"Yuna, Hope of Spira",FIN,Gold,Mythic,2,2
 96129,"Zidane, Tantalus Thief",FIN,Gold,Uncommon,0,0
-96130,"Adventurer's Airship",FIN,Colorless,Common,0,0
-96131,"Aettir and Priwen",FIN,Colorless,Mythic,0,0
-96132,"Blitzball",FIN,Colorless,Common,0,0
-96133,"Buster Sword",FIN,Colorless,Mythic,0,0
-96134,"Elixir",FIN,Colorless,Uncommon,0,0
-96135,"Excalibur II",FIN,Colorless,Rare,0,0
-96136,"Genji Glove",FIN,Colorless,Rare,0,0
-96137,"Instant Ramen",FIN,Colorless,Common,0,0
-96138,"Iron Giant",FIN,Colorless,Common,0,0
-96139,"Lion Heart",FIN,Colorless,Uncommon,0,0
-96140,"Lunatic Pandora",FIN,Colorless,Common,0,0
-96141,"Magic Pot",FIN,Colorless,Common,1,1
+96130,"Adventurer's Airship",FIN,Colorless,Common,4,4
+96131,"Aettir and Priwen",FIN,Colorless,Mythic,1,1
+96132,"Blitzball",FIN,Colorless,Common,4,4
+96133,"Buster Sword",FIN,Colorless,Mythic,1,1
+96134,"Elixir",FIN,Colorless,Uncommon,2,2
+96135,"Excalibur II",FIN,Colorless,Rare,1,1
+96136,"Genji Glove",FIN,Colorless,Rare,1,1
+96137,"Instant Ramen",FIN,Colorless,Common,3,3
+96138,"Iron Giant",FIN,Colorless,Common,2,2
+96139,"Lion Heart",FIN,Colorless,Uncommon,1,1
+96140,"Lunatic Pandora",FIN,Colorless,Common,1,1
+96141,"Magic Pot",FIN,Colorless,Common,2,2
 96142,"The Masamune",FIN,Colorless,Rare,0,0
-96143,"Monk's Fist",FIN,Colorless,Common,1,1
+96143,"Monk's Fist",FIN,Colorless,Common,2,2
 96144,"PuPu UFO",FIN,Colorless,Uncommon,0,0
-96145,"The Regalia",FIN,Colorless,Rare,0,0
-96146,"Relentless X-ATM092",FIN,Colorless,Uncommon,0,0
+96145,"The Regalia",FIN,Colorless,Rare,1,1
+96146,"Relentless X-ATM092",FIN,Colorless,Uncommon,1,1
 96147,"Ring of the Lucii",FIN,Colorless,Uncommon,0,0
-96148,"World Map",FIN,Colorless,Common,0,0
-96149,"Adventurer's Inn",FIN,Colorless,Common,0,0
-96150,"Balamb Garden, SeeD Academy",FIN,Colorless,Rare,0,0
-96152,"Baron, Airship Kingdom",FIN,Colorless,Common,0,0
+96148,"World Map",FIN,Colorless,Common,4,4
+96149,"Adventurer's Inn",FIN,Colorless,Common,4,4
+96150,"Balamb Garden, SeeD Academy",FIN,Colorless,Rare,1,1
+96152,"Baron, Airship Kingdom",FIN,Colorless,Common,4,4
 96153,"Capital City",FIN,Colorless,Uncommon,0,0
-96154,"Clive's Hideaway",FIN,Colorless,Rare,0,0
-96155,"Crossroads Village",FIN,Colorless,Common,0,0
-96156,"Eden, Seat of the Sanctum",FIN,Colorless,Uncommon,0,0
-96157,"Gohn, Town of Ruin",FIN,Colorless,Common,0,0
-96158,"The Gold Saucer",FIN,Colorless,Uncommon,0,0
-96159,"Gongaga, Reactor Town",FIN,Colorless,Common,0,0
-96160,"Guadosalam, Farplane Gateway",FIN,Colorless,Common,0,0
-96161,"Insomnia, Crown City",FIN,Colorless,Common,0,0
+96154,"Clive's Hideaway",FIN,Colorless,Rare,1,1
+96155,"Crossroads Village",FIN,Colorless,Common,4,4
+96156,"Eden, Seat of the Sanctum",FIN,Colorless,Uncommon,2,2
+96157,"Gohn, Town of Ruin",FIN,Colorless,Common,4,4
+96158,"The Gold Saucer",FIN,Colorless,Uncommon,2,2
+96159,"Gongaga, Reactor Town",FIN,Colorless,Common,4,4
+96160,"Guadosalam, Farplane Gateway",FIN,Colorless,Common,4,4
+96161,"Insomnia, Crown City",FIN,Colorless,Common,4,4
 96162,"Ishgard, the Holy See",FIN,Colorless,Rare,0,0
-96164,"Jidoor, Aristocratic Capital",FIN,Colorless,Rare,0,0
-96166,"Lindblum, Industrial Regency",FIN,Colorless,Rare,0,0
+96164,"Jidoor, Aristocratic Capital",FIN,Colorless,Rare,2,2
+96166,"Lindblum, Industrial Regency",FIN,Colorless,Rare,1,1
 96168,"Midgar, City of Mako",FIN,Colorless,Rare,0,0
-96170,"Rabanastre, Royal City",FIN,Colorless,Common,0,0
-96171,"Sharlayan, Nation of Scholars",FIN,Colorless,Common,0,0
-96172,"Starting Town",FIN,Colorless,Rare,0,0
-96173,"Treno, Dark City",FIN,Colorless,Common,0,0
-96174,"Vector, Imperial Capital",FIN,Colorless,Common,0,0
-96175,"Windurst, Federation Center",FIN,Colorless,Common,0,0
-96176,"Zanarkand, Ancient Metropolis",FIN,Colorless,Rare,0,0
+96170,"Rabanastre, Royal City",FIN,Colorless,Common,4,4
+96171,"Sharlayan, Nation of Scholars",FIN,Colorless,Common,4,4
+96172,"Starting Town",FIN,Colorless,Rare,4,4
+96173,"Treno, Dark City",FIN,Colorless,Common,4,4
+96174,"Vector, Imperial Capital",FIN,Colorless,Common,4,4
+96175,"Windurst, Federation Center",FIN,Colorless,Common,4,4
+96176,"Zanarkand, Ancient Metropolis",FIN,Colorless,Rare,1,1
 96194,"Wastes",FIN,Colorless,Basic,2,0
 96195,"Cloud, Planet's Champion",FIN,Gold,Mythic,0,0
 96196,"Sephiroth, Planet's Heir",FIN,Gold,Mythic,0,0
 96197,"Beatrix, Loyal General",FIN,White,Rare,0,0
-96198,"Rosa, Resolute White Mage",FIN,White,Rare,0,0
+96198,"Rosa, Resolute White Mage",FIN,White,Rare,1,1
 96199,"Ultimecia, Temporal Threat",FIN,Blue,Rare,0,0
 96200,"Deadly Embrace",FIN,Black,Rare,0,0
 96201,"Seymour Flux",FIN,Black,Rare,0,0
@@ -15413,20 +15413,20 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 96230,"Adeline, Resplendent Cathar",FCA,White,Rare,0,0
 96231,"Ranger-Captain of Eos",FCA,White,Mythic,0,0
 96232,"Sram, Senior Edificer",FCA,White,Rare,0,0
-96233,"Counterspell",FCA,Blue,Uncommon,0,0
+96233,"Counterspell",FCA,Blue,Uncommon,1,1
 96234,"Urza, Lord High Artificer",FCA,Blue,Mythic,0,0
 96235,"Venser, Shaper Savant",FCA,Blue,Rare,0,0
 96236,"Bolas's Citadel",FCA,Black,Rare,0,0
 96237,"Dark Ritual",FCA,Black,Rare,0,0
-96238,"Fatal Push",FCA,Black,Uncommon,0,0
-96239,"Syr Konrad, the Grim",FCA,Black,Uncommon,0,0
+96238,"Fatal Push",FCA,Black,Uncommon,1,0
+96239,"Syr Konrad, the Grim",FCA,Black,Uncommon,1,1
 96240,"Yawgmoth, Thran Physician",FCA,Black,Mythic,0,0
 96241,"Ancient Copper Dragon",FCA,Red,Mythic,0,0
 96242,"Godo, Bandit Warlord",FCA,Red,Rare,0,0
 96243,"Purphoros, God of the Forge",FCA,Red,Mythic,0,0
-96244,"Azusa, Lost but Seeking",FCA,Green,Rare,0,0
+96244,"Azusa, Lost but Seeking",FCA,Green,Rare,1,1
 96245,"Nyxbloom Ancient",FCA,Green,Mythic,0,0
-96246,"Jodah, the Unifier",FCA,Gold,Rare,0,0
+96246,"Jodah, the Unifier",FCA,Gold,Rare,1,1
 96247,"Tymna the Weaver",FCA,Gold,Rare,0,0
 96248,"Winota, Joiner of Forces",FCA,Gold,Rare,0,0
 96249,"Traxos, Scourge of Kroog",FCA,Colorless,Rare,0,0
@@ -15434,46 +15434,46 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 96251,"Danitha Capashen, Paragon",FCA,White,Uncommon,0,0
 96252,"Kenrith, the Returned King",FCA,White,Rare,0,0
 96253,"Loran of the Third Path",FCA,White,Rare,0,0
-96254,"Mangara, the Diplomat",FCA,White,Rare,0,0
-96255,"Stroke of Midnight",FCA,White,Uncommon,3,0
+96254,"Mangara, the Diplomat",FCA,White,Rare,1,1
+96255,"Stroke of Midnight",FCA,White,Uncommon,4,1
 96256,"Wall of Omens",FCA,White,Uncommon,0,0
-96257,"Brainstorm",FCA,Blue,Uncommon,0,0
+96257,"Brainstorm",FCA,Blue,Uncommon,1,1
 96258,"Cryptic Command",FCA,Blue,Rare,0,0
-96259,"Laboratory Maniac",FCA,Blue,Uncommon,0,0
+96259,"Laboratory Maniac",FCA,Blue,Uncommon,1,1
 96260,"Rhystic Study",FCA,Blue,Mythic,0,0
 96261,"Teferi, Mage of Zhalfir",FCA,Blue,Rare,0,0
-96262,"Deadly Dispute",FCA,Black,Uncommon,2,0
+96262,"Deadly Dispute",FCA,Black,Uncommon,3,1
 96263,"Diabolic Intent",FCA,Black,Rare,0,0
 96264,"Gix, Yawgmoth Praetor",FCA,Black,Mythic,0,0
-96265,"K'rrik, Son of Yawgmoth",FCA,Black,Rare,0,0
+96265,"K'rrik, Son of Yawgmoth",FCA,Black,Rare,2,1
 96266,"Varragoth, Bloodsky Sire",FCA,Black,Rare,0,0
 96267,"Captain Lannery Storm",FCA,Red,Uncommon,0,0
 96268,"Light Up the Stage",FCA,Red,Uncommon,0,0
-96269,"Lightning Bolt",FCA,Red,Uncommon,0,0
+96269,"Lightning Bolt",FCA,Red,Uncommon,1,1
 96270,"Mizzix's Mastery",FCA,Red,Rare,0,0
 96271,"Najeela, the Blade-Blossom",FCA,Red,Mythic,0,0
 96272,"Ragavan, Nimble Pilferer",FCA,Red,Mythic,1,0
 96273,"Carpet of Flowers",FCA,Green,Rare,0,0
-96274,"Farseek",FCA,Green,Uncommon,0,0
+96274,"Farseek",FCA,Green,Uncommon,1,1
 96275,"Fynn, the Fangbearer",FCA,Green,Uncommon,0,0
 96276,"Nature's Claim",FCA,Green,Uncommon,0,0
-96277,"Primeval Titan",FCA,Green,Rare,0,0
-96278,"Atraxa, Grand Unifier",FCA,Gold,Mythic,1,0
+96277,"Primeval Titan",FCA,Green,Rare,1,0
+96278,"Atraxa, Grand Unifier",FCA,Gold,Mythic,2,1
 96279,"Bruse Tarl, Boorish Herder",FCA,Gold,Rare,0,0
 96280,"Dovin's Veto",FCA,Gold,Uncommon,0,0
 96281,"Inalla, Archmage Ritualist",FCA,Gold,Rare,0,0
-96282,"Ishai, Ojutai Dragonspeaker",FCA,Gold,Rare,0,0
+96282,"Ishai, Ojutai Dragonspeaker",FCA,Gold,Rare,1,1
 96283,"Isshin, Two Heavens as One",FCA,Gold,Rare,0,0
 96284,"Kinnan, Bonder Prodigy",FCA,Gold,Mythic,0,0
 96285,"Kraum, Ludevic's Opus",FCA,Gold,Rare,0,0
-96286,"Muldrotha, the Gravetide",FCA,Gold,Rare,1,0
+96286,"Muldrotha, the Gravetide",FCA,Gold,Rare,2,0
 96287,"Thrasios, Triton Hero",FCA,Gold,Mythic,0,0
 96288,"Vial Smasher the Fierce",FCA,Gold,Mythic,0,0
 96289,"Yuriko, the Tiger's Shadow",FCA,Gold,Rare,0,0
-96290,"Chromatic Lantern",FCA,Colorless,Rare,0,0
+96290,"Chromatic Lantern",FCA,Colorless,Rare,1,1
 96291,"Smuggler's Copter",FCA,Colorless,Rare,0,0
-96292,"Strixhaven Stadium",FCA,Colorless,Uncommon,0,0
-96293,"Command Beacon",FCA,Colorless,Rare,0,0
+96292,"Strixhaven Stadium",FCA,Colorless,Uncommon,1,1
+96293,"Command Beacon",FCA,Colorless,Rare,1,1
 96294,"A-Winota, Joiner of Forces",FCA,Gold,Rare,0,0
 96352,"A-Nadu, Winged Wisdom",MH3,Gold,Rare,0,0
 96354,"A-Heartfire Hero",BLB,Red,Uncommon,0,0
@@ -15544,8 +15544,8 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 96598,"Lightstall Inquisitor",EOE,White,Rare,0,0
 96599,"Lumen-Class Frigate",EOE,White,Rare,0,0
 96600,"Luxknight Breacher",EOE,White,Common,0,0
-96601,"Pinnacle Starcage",EOE,White,Rare,0,0
-96602,"Pulsar Squadron Ace",EOE,White,Uncommon,0,0
+96601,"Pinnacle Starcage",EOE,White,Rare,4,4
+96602,"Pulsar Squadron Ace",EOE,White,Uncommon,1,1
 96603,"Radiant Strike",EOE,White,Common,1,1
 96604,"Rayblade Trooper",EOE,White,Uncommon,0,0
 96605,"Reroute Systems",EOE,White,Uncommon,0,0
@@ -15569,7 +15569,7 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 96623,"Cloudsculpt Technician",EOE,Blue,Common,0,0
 96624,"Codecracker Hound",EOE,Blue,Uncommon,1,1
 96625,"Consult the Star Charts",EOE,Blue,Rare,0,0
-96626,"Cryogen Relic",EOE,Blue,Common,2,2
+96626,"Cryogen Relic",EOE,Blue,Common,4,4
 96627,"Cryoshatter",EOE,Blue,Common,0,0
 96628,"Desculpting Blast",EOE,Blue,Uncommon,0,0
 96629,"Divert Disaster",EOE,Blue,Common,0,0
@@ -15713,7 +15713,7 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 96767,"Intrepid Tenderfoot",EOE,Green,Common,1,1
 96768,"Larval Scoutlander",EOE,Green,Uncommon,0,0
 96769,"Lashwhip Predator",EOE,Green,Uncommon,0,0
-96770,"Loading Zone",EOE,Green,Rare,0,0
+96770,"Loading Zone",EOE,Green,Rare,1,1
 96771,"Meltstrider Eulogist",EOE,Green,Uncommon,0,0
 96772,"Meltstrider's Gear",EOE,Green,Common,1,1
 96773,"Meltstrider's Resolve",EOE,Green,Uncommon,0,0
@@ -15736,14 +15736,14 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 96790,"Dyadrine, Synthesis Amalgam",EOE,Gold,Rare,0,0
 96791,"Genemorph Imago",EOE,Gold,Rare,1,1
 96792,"Haliya, Ascendant Cadet",EOE,Gold,Uncommon,0,0
-96793,"Infinite Guideline Station",EOE,Gold,Rare,0,0
+96793,"Infinite Guideline Station",EOE,Gold,Rare,1,1
 96794,"Interceptor Mechan",EOE,Gold,Uncommon,0,0
 96795,"Mm'menon, Uthros Exile",EOE,Gold,Uncommon,1,1
 96796,"Mutinous Massacre",EOE,Gold,Rare,0,0
 96797,"Pinnacle Emissary",EOE,Gold,Rare,0,0
-96798,"Ragost, Deft Gastronaut",EOE,Gold,Rare,0,0
+96798,"Ragost, Deft Gastronaut",EOE,Gold,Rare,1,1
 96799,"Sami, Ship's Engineer",EOE,Gold,Uncommon,0,0
-96800,"Sami, Wildcat Captain",EOE,Gold,Mythic,0,0
+96800,"Sami, Wildcat Captain",EOE,Gold,Mythic,1,1
 96801,"Seedship Broodtender",EOE,Gold,Uncommon,0,0
 96802,"Singularity Rupture",EOE,Gold,Rare,0,0
 96803,"Space-Time Anomaly",EOE,Gold,Rare,0,0
@@ -15755,8 +15755,8 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 96809,"Bygone Colossus",EOE,Colorless,Uncommon,1,1
 96810,"Chrome Companion",EOE,Colorless,Common,0,0
 96811,"Dauntless Scrapbot",EOE,Colorless,Uncommon,0,0
-96812,"Dawnsire, Sunstar Dreadnought",EOE,Colorless,Mythic,0,0
-96813,"The Dominion Bracelet",EOE,Colorless,Mythic,0,0
+96812,"Dawnsire, Sunstar Dreadnought",EOE,Colorless,Mythic,1,1
+96813,"The Dominion Bracelet",EOE,Colorless,Mythic,1,1
 96814,"The Endstone",EOE,Colorless,Mythic,0,0
 96815,"The Eternity Elevator",EOE,Colorless,Rare,0,0
 96816,"Extinguisher Battleship",EOE,Colorless,Rare,0,0
@@ -15767,17 +15767,17 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 96821,"Thrumming Hivepool",EOE,Colorless,Rare,0,0
 96822,"Virulent Silencer",EOE,Colorless,Uncommon,0,0
 96823,"Wurmwall Sweeper",EOE,Colorless,Common,0,0
-96824,"Adagia, Windswept Bastion",EOE,Colorless,Mythic,0,0
-96825,"Breeding Pool",EOE,Colorless,Rare,0,0
+96824,"Adagia, Windswept Bastion",EOE,Colorless,Mythic,1,1
+96825,"Breeding Pool",EOE,Colorless,Rare,1,0
 96826,"Command Bridge",EOE,Colorless,Common,1,1
 96827,"Evendo, Waking Haven",EOE,Colorless,Mythic,0,0
-96828,"Godless Shrine",EOE,Colorless,Rare,0,0
+96828,"Godless Shrine",EOE,Colorless,Rare,1,0
 96829,"Kavaron, Memorial World",EOE,Colorless,Mythic,0,0
 96830,"Sacred Foundry",EOE,Colorless,Rare,2,2
 96831,"Secluded Starforge",EOE,Colorless,Rare,0,0
 96832,"Stomping Ground",EOE,Colorless,Rare,1,1
 96833,"Susur Secundi, Void Altar",EOE,Colorless,Mythic,0,0
-96834,"Uthros, Titanic Godcore",EOE,Colorless,Mythic,1,1
+96834,"Uthros, Titanic Godcore",EOE,Colorless,Mythic,2,2
 96835,"Watery Grave",EOE,Colorless,Rare,4,0
 96856,"Warping Wail",SPG,Colorless,Uncommon,0,0
 96857,"Deafening Silence",SPG,White,Uncommon,0,0
@@ -15811,11 +15811,11 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 96886,"Cid, Timeless Artificer",FIN,Gold,Uncommon,0,0
 96887,"Cid, Timeless Artificer",FIN,Gold,Uncommon,0,0
 96888,"Cid, Timeless Artificer",FIN,Gold,Uncommon,0,0
-97013,"Herald's Horn",FIC,Colorless,Rare,0,0
-97023,"Command Tower",FIC,Colorless,Common,0,0
-97024,"Command Tower",FIC,Colorless,Common,0,0
-97025,"Command Tower",FIC,Colorless,Common,0,0
-97026,"Command Tower",FIC,Colorless,Common,0,0
+97013,"Herald's Horn",FIC,Colorless,Rare,1,1
+97023,"Command Tower",FIC,Colorless,Common,1,0
+97024,"Command Tower",FIC,Colorless,Common,1,0
+97025,"Command Tower",FIC,Colorless,Common,1,0
+97026,"Command Tower",FIC,Colorless,Common,1,1
 97038,"Swiftspear's Teachings",YTDM,Red,Uncommon,1,1
 97039,"Hamza, Might of the Yathan",YTDM,Gold,Mythic,0,0
 97040,"Waystone's Guidance",YTDM,White,Uncommon,1,1
@@ -15870,7 +15870,7 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 97121,"Lavaclaw Reaches",EOS,Colorless,Rare,0,0
 97122,"Lotus Field",EOS,Colorless,Mythic,0,0
 97123,"Lumbering Falls",EOS,Colorless,Rare,0,0
-97124,"Mana Confluence",EOS,Colorless,Mythic,0,0
+97124,"Mana Confluence",EOS,Colorless,Mythic,1,0
 97125,"Meteor Crater",EOS,Colorless,Rare,0,0
 97126,"Mirrorpool",EOS,Colorless,Mythic,0,0
 97127,"Mutavault",EOS,Colorless,Mythic,0,0
@@ -15878,7 +15878,7 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 97129,"Needle Spires",EOS,Colorless,Rare,0,0
 97130,"Nesting Grounds",EOS,Colorless,Rare,0,0
 97131,"Petrified Field",EOS,Colorless,Mythic,0,0
-97132,"Plaza of Heroes",EOS,Colorless,Mythic,0,0
+97132,"Plaza of Heroes",EOS,Colorless,Mythic,1,0
 97133,"Power Depot",EOS,Colorless,Rare,0,0
 97134,"Raging Ravine",EOS,Colorless,Rare,0,0
 97135,"Reflecting Pool",EOS,Colorless,Mythic,0,0
@@ -15898,36 +15898,36 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 97274,"Aang's Journey",TLA,Colorless,Common,1,1
 97275,"Energybending",TLA,Colorless,Uncommon,0,0
 97276,"Zuko's Exile",TLA,Colorless,Common,1,1
-97277,"Aang, the Last Airbender",TLA,White,Uncommon,0,0
+97277,"Aang, the Last Airbender",TLA,White,Uncommon,1,1
 97278,"Aang's Iceberg",TLA,White,Rare,0,0
 97279,"Airbender Ascension",TLA,White,Rare,1,1
-97280,"Airbender's Reversal",TLA,White,Uncommon,0,0
+97280,"Airbender's Reversal",TLA,White,Uncommon,1,1
 97281,"Airbending Lesson",TLA,White,Common,0,0
-97282,"Appa, Loyal Sky Bison",TLA,White,Uncommon,1,1
-97283,"Appa, Steadfast Guardian",TLA,White,Mythic,0,0
+97282,"Appa, Loyal Sky Bison",TLA,White,Uncommon,2,2
+97283,"Appa, Steadfast Guardian",TLA,White,Mythic,1,1
 97284,"Avatar Enthusiasts",TLA,White,Common,0,0
 97285,"Avatar's Wrath",TLA,White,Rare,0,0
 97286,"Compassionate Healer",TLA,White,Common,1,1
 97287,"Curious Farm Animals",TLA,White,Common,0,0
 97288,"Destined Confrontation",TLA,White,Uncommon,0,0
 97289,"Earth Kingdom Jailer",TLA,White,Uncommon,0,0
-97290,"Earth Kingdom Protectors",TLA,White,Uncommon,0,0
+97290,"Earth Kingdom Protectors",TLA,White,Uncommon,1,1
 97291,"Enter the Avatar State",TLA,White,Uncommon,0,0
-97292,"Fancy Footwork",TLA,White,Uncommon,0,0
+97292,"Fancy Footwork",TLA,White,Uncommon,1,1
 97293,"Gather the White Lotus",TLA,White,Uncommon,0,0
-97294,"Glider Kids",TLA,White,Common,0,0
+97294,"Glider Kids",TLA,White,Common,2,2
 97295,"Glider Staff",TLA,White,Uncommon,0,0
 97296,"Hakoda, Selfless Commander",TLA,White,Rare,0,0
-97297,"Invasion Reinforcements",TLA,White,Uncommon,0,0
-97298,"Jeong Jeong's Deserters",TLA,White,Common,0,0
-97299,"Kyoshi Warriors",TLA,White,Common,0,0
+97297,"Invasion Reinforcements",TLA,White,Uncommon,1,1
+97298,"Jeong Jeong's Deserters",TLA,White,Common,1,1
+97299,"Kyoshi Warriors",TLA,White,Common,1,1
 97300,"The Legend of Yangchen",TLA,White,Mythic,0,0
-97302,"Master Piandao",TLA,White,Uncommon,0,0
-97303,"Momo, Friendly Flier",TLA,White,Rare,0,0
+97302,"Master Piandao",TLA,White,Uncommon,1,1
+97303,"Momo, Friendly Flier",TLA,White,Rare,1,1
 97304,"Momo, Playful Pet",TLA,White,Uncommon,0,0
 97305,"Path to Redemption",TLA,White,Common,0,0
 97306,"Rabaroo Troop",TLA,White,Common,0,0
-97307,"Razor Rings",TLA,White,Common,0,0
+97307,"Razor Rings",TLA,White,Common,2,2
 97308,"Sandbenders' Storm",TLA,White,Common,0,0
 97309,"South Pole Voyager",TLA,White,Rare,0,0
 97310,"Southern Air Temple",TLA,White,Uncommon,0,0
@@ -15945,15 +15945,15 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 97322,"Ember Island Production",TLA,Blue,Uncommon,0,0
 97323,"First-Time Flyer",TLA,Blue,Common,0,0
 97324,"Flexible Waterbender",TLA,Blue,Common,0,0
-97325,"Forecasting Fortune Teller",TLA,Blue,Common,0,0
+97325,"Forecasting Fortune Teller",TLA,Blue,Common,1,1
 97326,"Geyser Leaper",TLA,Blue,Common,0,0
 97327,"Giant Koi",TLA,Blue,Common,1,1
-97328,"Gran-Gran",TLA,Blue,Uncommon,0,0
-97329,"Honest Work",TLA,Blue,Uncommon,0,0
+97328,"Gran-Gran",TLA,Blue,Uncommon,1,1
+97329,"Honest Work",TLA,Blue,Uncommon,1,1
 97330,"Iguana Parrot",TLA,Blue,Common,0,0
 97331,"Invasion Submersible",TLA,Blue,Uncommon,0,0
 97332,"It'll Quench Ya!",TLA,Blue,Common,1,1
-97333,"Katara, Bending Prodigy",TLA,Blue,Uncommon,0,0
+97333,"Katara, Bending Prodigy",TLA,Blue,Uncommon,1,1
 97334,"Knowledge Seeker",TLA,Blue,Uncommon,1,1
 97335,"The Legend of Kuruk",TLA,Blue,Mythic,0,0
 97337,"Lost Days",TLA,Blue,Common,0,0
@@ -15961,8 +15961,8 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 97339,"The Mechanist, Aerial Artisan",TLA,Blue,Rare,0,0
 97340,"North Pole Patrol",TLA,Blue,Uncommon,0,0
 97341,"Octopus Form",TLA,Blue,Common,0,0
-97342,"Otter-Penguin",TLA,Blue,Common,1,1
-97343,"Rowdy Snowballers",TLA,Blue,Common,0,0
+97342,"Otter-Penguin",TLA,Blue,Common,2,2
+97343,"Rowdy Snowballers",TLA,Blue,Common,1,1
 97344,"Secret of Bloodbending",TLA,Blue,Mythic,0,0
 97345,"Serpent of the Pass",TLA,Blue,Uncommon,0,0
 97346,"Sokka's Haiku",TLA,Blue,Uncommon,0,0
@@ -15970,37 +15970,37 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 97348,"Spirit Water Revival",TLA,Blue,Rare,0,0
 97349,"Teo, Spirited Glider",TLA,Blue,Uncommon,0,0
 97350,"Tiger-Seal",TLA,Blue,Rare,1,1
-97351,"Ty Lee, Chi Blocker",TLA,Blue,Rare,0,0
+97351,"Ty Lee, Chi Blocker",TLA,Blue,Rare,1,1
 97352,"The Unagi of Kyoshi Island",TLA,Blue,Rare,1,1
-97353,"Wan Shi Tong, Librarian",TLA,Blue,Mythic,0,0
+97353,"Wan Shi Tong, Librarian",TLA,Blue,Mythic,1,1
 97354,"Waterbender Ascension",TLA,Blue,Rare,0,0
-97355,"Waterbending Lesson",TLA,Blue,Common,0,0
+97355,"Waterbending Lesson",TLA,Blue,Common,1,1
 97356,"Waterbending Scroll",TLA,Blue,Uncommon,0,0
 97357,"Watery Grasp",TLA,Blue,Common,0,0
-97358,"Yue, the Moon Spirit",TLA,Blue,Rare,1,1
+97358,"Yue, the Moon Spirit",TLA,Blue,Rare,2,2
 97359,"Azula Always Lies",TLA,Black,Common,0,0
 97360,"Azula, On the Hunt",TLA,Black,Uncommon,0,0
-97361,"Beetle-Headed Merchants",TLA,Black,Common,0,0
-97362,"Boiling Rock Rioter",TLA,Black,Rare,0,0
+97361,"Beetle-Headed Merchants",TLA,Black,Common,1,1
+97362,"Boiling Rock Rioter",TLA,Black,Rare,1,1
 97363,"Buzzard-Wasp Colony",TLA,Black,Uncommon,1,1
 97364,"Callous Inspector",TLA,Black,Common,0,0
 97365,"Canyon Crawler",TLA,Black,Common,1,1
 97366,"Cat-Gator",TLA,Black,Uncommon,0,0
 97367,"Corrupt Court Official",TLA,Black,Common,0,0
 97368,"Dai Li Indoctrination",TLA,Black,Common,1,1
-97369,"Day of Black Sun",TLA,Black,Rare,0,0
-97370,"Deadly Precision",TLA,Black,Common,0,0
-97371,"Epic Downfall",TLA,Black,Uncommon,0,0
+97369,"Day of Black Sun",TLA,Black,Rare,2,2
+97370,"Deadly Precision",TLA,Black,Common,1,1
+97371,"Epic Downfall",TLA,Black,Uncommon,1,1
 97372,"Fatal Fissure",TLA,Black,Uncommon,0,0
-97373,"The Fire Nation Drill",TLA,Black,Rare,2,2
+97373,"The Fire Nation Drill",TLA,Black,Rare,3,3
 97374,"Fire Nation Engineer",TLA,Black,Uncommon,0,0
 97375,"Fire Navy Trebuchet",TLA,Black,Uncommon,0,0
-97376,"Foggy Swamp Hunters",TLA,Black,Common,0,0
+97376,"Foggy Swamp Hunters",TLA,Black,Common,2,2
 97377,"Foggy Swamp Visions",TLA,Black,Rare,0,0
 97378,"Heartless Act",TLA,Black,Uncommon,0,0
 97379,"Hog-Monkey",TLA,Black,Common,0,0
 97380,"Joo Dee, One of Many",TLA,Black,Uncommon,1,1
-97381,"June, Bounty Hunter",TLA,Black,Uncommon,0,0
+97381,"June, Bounty Hunter",TLA,Black,Uncommon,1,1
 97382,"Koh, the Face Stealer",TLA,Black,Mythic,0,0
 97383,"Lo and Li, Twin Tutors",TLA,Black,Uncommon,0,0
 97384,"Mai, Scornful Striker",TLA,Black,Rare,0,0
@@ -16010,7 +16010,7 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 97388,"Ozai's Cruelty",TLA,Black,Uncommon,0,0
 97389,"Phoenix Fleet Airship",TLA,Black,Mythic,1,1
 97390,"Pirate Peddlers",TLA,Black,Common,0,0
-97391,"Raven Eagle",TLA,Black,Rare,0,0
+97391,"Raven Eagle",TLA,Black,Rare,1,1
 97392,"The Rise of Sozin",TLA,Black,Mythic,0,0
 97394,"Ruinous Waterbending",TLA,Black,Uncommon,0,0
 97395,"Sold Out",TLA,Black,Common,0,0
@@ -16031,7 +16031,7 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 97410,"Fire Nation Cadets",TLA,Red,Common,0,0
 97411,"Fire Nation Raider",TLA,Red,Common,0,0
 97412,"Fire Sages",TLA,Red,Uncommon,0,0
-97413,"Firebender Ascension",TLA,Red,Rare,1,1
+97413,"Firebender Ascension",TLA,Red,Rare,2,2
 97414,"Firebending Lesson",TLA,Red,Common,1,1
 97415,"Firebending Student",TLA,Red,Rare,0,0
 97416,"How to Start a Riot",TLA,Red,Common,0,0
@@ -16050,7 +16050,7 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 97430,"Solstice Revelations",TLA,Red,Uncommon,1,1
 97431,"Sozin's Comet",TLA,Red,Mythic,0,0
 97432,"Tiger-Dillo",TLA,Red,Uncommon,0,0
-97433,"Treetop Freedom Fighters",TLA,Red,Common,0,0
+97433,"Treetop Freedom Fighters",TLA,Red,Common,1,1
 97434,"Twin Blades",TLA,Red,Uncommon,0,0
 97435,"Ty Lee, Artful Acrobat",TLA,Red,Uncommon,0,0
 97436,"War Balloon",TLA,Red,Uncommon,0,0
@@ -16061,11 +16061,11 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 97441,"Allies at Last",TLA,Green,Uncommon,0,0
 97442,"Avatar Destiny",TLA,Green,Rare,0,0
 97443,"Badgermole",TLA,Green,Common,0,0
-97444,"Badgermole Cub",TLA,Green,Mythic,1,1
+97444,"Badgermole Cub",TLA,Green,Mythic,2,2
 97445,"The Boulder, Ready to Rumble",TLA,Green,Uncommon,0,0
 97446,"Bumi, King of Three Trials",TLA,Green,Uncommon,0,0
 97447,"Cycle of Renewal",TLA,Green,Common,0,0
-97448,"Diligent Zookeeper",TLA,Green,Rare,0,0
+97448,"Diligent Zookeeper",TLA,Green,Rare,1,1
 97449,"The Earth King",TLA,Green,Rare,0,0
 97450,"Earth Kingdom General",TLA,Green,Uncommon,0,0
 97451,"Earth Rumble",TLA,Green,Uncommon,0,0
@@ -16075,7 +16075,7 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 97455,"Elemental Teachings",TLA,Green,Rare,1,1
 97456,"Flopsie, Bumi's Buddy",TLA,Green,Uncommon,0,0
 97457,"Foggy Swamp Vinebender",TLA,Green,Common,0,0
-97458,"Great Divide Guide",TLA,Green,Rare,0,0
+97458,"Great Divide Guide",TLA,Green,Rare,1,1
 97459,"Haru, Hidden Talent",TLA,Green,Uncommon,0,0
 97460,"Invasion Tactics",TLA,Green,Uncommon,0,0
 97461,"Kyoshi Island Plaza",TLA,Green,Uncommon,0,0
@@ -16097,8 +16097,8 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 97478,"Turtle-Duck",TLA,Green,Common,0,0
 97479,"Unlucky Cabbage Merchant",TLA,Green,Uncommon,0,0
 97480,"Walltop Sentries",TLA,Green,Common,0,0
-97481,"Aang, at the Crossroads",TLA,Gold,Rare,1,1
-97483,"Aang, Swift Savior",TLA,Gold,Rare,0,0
+97481,"Aang, at the Crossroads",TLA,Gold,Rare,2,2
+97483,"Aang, Swift Savior",TLA,Gold,Rare,1,1
 97485,"Abandon Attachments",TLA,Gold,Common,1,1
 97486,"Air Nomad Legacy",TLA,Gold,Uncommon,0,0
 97487,"Avatar Aang",TLA,Gold,Mythic,0,0
@@ -16111,7 +16111,7 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 97495,"Dai Li Agents",TLA,Gold,Uncommon,0,0
 97496,"Dragonfly Swarm",TLA,Gold,Uncommon,0,0
 97497,"Earth Kingdom Soldier",TLA,Gold,Common,0,0
-97498,"Earth King's Lieutenant",TLA,Gold,Rare,0,0
+97498,"Earth King's Lieutenant",TLA,Gold,Rare,1,1
 97499,"Earth Rumble Wrestlers",TLA,Gold,Common,0,0
 97500,"Earth Village Ruffians",TLA,Gold,Common,1,1
 97501,"Fire Lord Azula",TLA,Gold,Rare,1,1
@@ -16121,14 +16121,14 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 97505,"Hama, the Bloodbender",TLA,Gold,Uncommon,0,0
 97506,"Hei Bai, Spirit of Balance",TLA,Gold,Uncommon,0,0
 97507,"Hermitic Herbalist",TLA,Gold,Uncommon,0,0
-97508,"Iroh, Grand Lotus",TLA,Gold,Rare,1,1
-97509,"Iroh, Tea Master",TLA,Gold,Rare,1,1
+97508,"Iroh, Grand Lotus",TLA,Gold,Rare,2,2
+97509,"Iroh, Tea Master",TLA,Gold,Rare,2,2
 97510,"Jet, Freedom Fighter",TLA,Gold,Uncommon,0,0
-97511,"Katara, the Fearless",TLA,Gold,Rare,0,0
+97511,"Katara, the Fearless",TLA,Gold,Rare,1,1
 97512,"Katara, Water Tribe's Hope",TLA,Gold,Rare,1,1
 97513,"The Lion-Turtle",TLA,Gold,Rare,1,1
 97514,"Long Feng, Grand Secretariat",TLA,Gold,Uncommon,0,0
-97515,"Messenger Hawk",TLA,Gold,Common,0,0
+97515,"Messenger Hawk",TLA,Gold,Common,2,2
 97516,"Ozai, the Phoenix King",TLA,Gold,Mythic,0,0
 97517,"Platypus-Bear",TLA,Gold,Common,0,0
 97518,"Pretending Poxbearers",TLA,Gold,Common,0,0
@@ -16151,19 +16151,19 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 97535,"Barrels of Blasting Jelly",TLA,Colorless,Common,0,0
 97536,"Bender's Waterskin",TLA,Colorless,Common,0,0
 97537,"Fire Nation Warship",TLA,Colorless,Uncommon,0,0
-97538,"Kyoshi Battle Fan",TLA,Colorless,Common,0,0
-97539,"Meteor Sword",TLA,Colorless,Uncommon,0,0
+97538,"Kyoshi Battle Fan",TLA,Colorless,Common,2,2
+97539,"Meteor Sword",TLA,Colorless,Uncommon,1,1
 97540,"Planetarium of Wan Shi Tong",TLA,Colorless,Mythic,0,0
-97541,"Trusty Boomerang",TLA,Colorless,Uncommon,0,0
+97541,"Trusty Boomerang",TLA,Colorless,Uncommon,1,1
 97542,"The Walls of Ba Sing Se",TLA,Colorless,Mythic,0,0
 97543,"White Lotus Tile",TLA,Colorless,Mythic,0,0
-97544,"Abandoned Air Temple",TLA,Colorless,Rare,0,0
+97544,"Abandoned Air Temple",TLA,Colorless,Rare,1,1
 97545,"Agna Qel'a",TLA,Colorless,Rare,1,1
 97546,"Airship Engine Room",TLA,Colorless,Common,0,0
-97547,"Ba Sing Se",TLA,Colorless,Rare,0,0
+97547,"Ba Sing Se",TLA,Colorless,Rare,1,1
 97548,"Boiling Rock Prison",TLA,Colorless,Common,0,0
 97549,"Fire Nation Palace",TLA,Colorless,Rare,1,1
-97550,"Foggy Bottom Swamp",TLA,Colorless,Common,0,0
+97550,"Foggy Bottom Swamp",TLA,Colorless,Common,1,1
 97551,"Jasmine Dragon Tea Shop",TLA,Colorless,Rare,0,0
 97552,"Kyoshi Village",TLA,Colorless,Common,0,0
 97553,"Meditation Pools",TLA,Colorless,Common,1,1
@@ -16172,23 +16172,23 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 97556,"Omashu City",TLA,Colorless,Common,0,0
 97557,"Realm of Koh",TLA,Colorless,Rare,0,0
 97558,"Rumble Arena",TLA,Colorless,Common,0,0
-97559,"Secret Tunnel",TLA,Colorless,Rare,0,0
+97559,"Secret Tunnel",TLA,Colorless,Rare,1,1
 97560,"Serpent's Pass",TLA,Colorless,Common,0,0
 97561,"Sun-Blessed Peak",TLA,Colorless,Common,0,0
 97562,"White Lotus Hideout",TLA,Colorless,Uncommon,0,0
-97590,"Angel of the Ruins",FIC,White,Uncommon,0,0
+97590,"Angel of the Ruins",FIC,White,Uncommon,1,0
 97593,"Authority of the Consuls",FIC,White,Rare,4,0
 97596,"Cleansing Nova",FIC,White,Rare,0,0
 97598,"Collective Effort",FIC,White,Rare,0,0
 97601,"Destroy Evil",FIC,White,Common,0,0
-97603,"Farewell",FIC,White,Rare,0,0
+97603,"Farewell",FIC,White,Rare,1,0
 97605,"Grateful Apparition",FIC,White,Uncommon,0,0
 97606,"Lingering Souls",FIC,White,Uncommon,0,0
 97607,"Luminous Broodmoth",FIC,White,Mythic,0,0
 97609,"Path to Exile",FIC,White,Uncommon,1,0
 97614,"Secret Rendezvous",FIC,White,Uncommon,0,0
 97615,"Sun Titan",FIC,White,Mythic,0,0
-97617,"Swords to Plowshares",FIC,White,Uncommon,0,0
+97617,"Swords to Plowshares",FIC,White,Uncommon,1,0
 97619,"Tragic Arrogance",FIC,White,Rare,0,0
 97621,"Vanquish the Horde",FIC,White,Rare,0,0
 97622,"Archmage Emeritus",FIC,Blue,Rare,1,0
@@ -16208,20 +16208,20 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 97641,"Murderous Rider",FIC,Black,Rare,0,0
 97644,"Pitiless Plunderer",FIC,Black,Uncommon,0,0
 97645,"Reanimate",FIC,Black,Rare,0,0
-97646,"Rise of the Dark Realms",FIC,Black,Mythic,3,0
+97646,"Rise of the Dark Realms",FIC,Black,Mythic,4,0
 97653,"Big Score",FIC,Red,Common,0,0
 97654,"Chaos Warp",FIC,Red,Rare,0,0
 97655,"Combustible Gearhulk",FIC,Red,Mythic,0,0
 97657,"Furious Rise",FIC,Red,Uncommon,0,0
 97659,"Professional Face-Breaker",FIC,Red,Rare,0,0
-97663,"Cultivate",FIC,Green,Common,0,0
+97663,"Cultivate",FIC,Green,Common,1,0
 97664,"Duskshell Crawler",FIC,Green,Common,0,0
 97666,"Fight Rigging",FIC,Green,Rare,0,0
 97667,"Forgotten Ancient",FIC,Green,Rare,0,0
 97670,"Hardened Scales",FIC,Green,Rare,0,0
 97671,"Harmonize",FIC,Green,Uncommon,0,0
 97672,"Incubation Druid",FIC,Green,Rare,0,0
-97673,"Inspiring Call",FIC,Green,Uncommon,2,0
+97673,"Inspiring Call",FIC,Green,Uncommon,4,0
 97675,"Path of Discovery",FIC,Green,Rare,0,0
 97676,"Rampant Growth",FIC,Green,Common,0,0
 97679,"Tireless Tracker",FIC,Green,Rare,0,0
@@ -16237,19 +16237,19 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 97691,"Priest of Fell Rites",FIC,Gold,Rare,0,0
 97692,"Ruinous Ultimatum",FIC,Gold,Rare,0,0
 97694,"Void Rend",FIC,Gold,Rare,0,0
-97695,"Arcane Signet",FIC,Colorless,Common,0,0
-97696,"Arcane Signet",FIC,Colorless,Common,0,0
-97697,"Arcane Signet",FIC,Colorless,Common,0,0
-97698,"Arcane Signet",FIC,Colorless,Common,0,0
+97695,"Arcane Signet",FIC,Colorless,Common,1,0
+97696,"Arcane Signet",FIC,Colorless,Common,1,0
+97697,"Arcane Signet",FIC,Colorless,Common,1,0
+97698,"Arcane Signet",FIC,Colorless,Common,1,1
 97701,"Colossus Hammer",FIC,Colorless,Uncommon,0,0
 97705,"Darksteel Plate",FIC,Colorless,Rare,0,0
 97710,"Inspiring Statuary",FIC,Colorless,Rare,0,0
 97711,"Key to the City",FIC,Colorless,Rare,0,0
 97714,"Meteor Golem",FIC,Colorless,Uncommon,4,0
 97716,"Mind Stone",FIC,Colorless,Uncommon,0,0
-97717,"Relic of Legends",FIC,Colorless,Uncommon,0,0
+97717,"Relic of Legends",FIC,Colorless,Uncommon,1,0
 97723,"Solemn Simulacrum",FIC,Colorless,Rare,4,0
-97724,"Swiftfoot Boots",FIC,Colorless,Uncommon,1,0
+97724,"Swiftfoot Boots",FIC,Colorless,Uncommon,4,0
 97732,"Tome of Legends",FIC,Colorless,Rare,0,0
 97737,"Ash Barrens",FIC,Colorless,Common,0,0
 97738,"Battlefield Forge",FIC,Colorless,Rare,0,0
@@ -16295,7 +16295,7 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 97802,"Vineglimmer Snarl",FIC,Colorless,Rare,0,0
 97803,"Wooded Ridgeline",FIC,Colorless,Common,0,0
 97814,"Shock",OM1,Red,Common,4,0
-97815,"Verilax the Havenskin",OM1,White,Mythic,1,1
+97815,"Verilax the Havenskin",OM1,White,Mythic,2,2
 97816,"Yera and Oski, Weaver and Guide",OM1,White,Rare,2,2
 97817,"Zora, Spider Fancier",OM1,White,Uncommon,0,0
 97818,"City Pigeon",OM1,White,Common,0,0
@@ -16304,7 +16304,7 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 97821,"Basil, Cabaretti Loudmouth",OM1,White,Uncommon,0,0
 97822,"Remarkable Readings",OM1,White,Rare,1,1
 97823,"A Most Helpful Weaver",OM1,White,Rare,0,0
-97824,"Surris, Spidersilk Innovator",OM1,White,Mythic,0,0
+97824,"Surris, Spidersilk Innovator",OM1,White,Mythic,1,1
 97826,"Confessor's Bindings",OM1,White,Rare,0,0
 97827,"Crime-Scene Instructor",OM1,White,Common,0,0
 97828,"Generous Betty Wray",OM1,White,Uncommon,0,0
@@ -16326,10 +16326,10 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 97844,"Ozor, Chronicler of Collapse",OM1,Blue,Common,0,0
 97845,"Obscura Alleylurkers",OM1,Blue,Common,1,1
 97846,"Vexed Bots",OM1,Blue,Uncommon,0,0
-97847,"Spectral Restitching",OM1,Blue,Rare,1,1
+97847,"Spectral Restitching",OM1,Blue,Rare,3,3
 97848,"Belion, the Parched",OM1,Blue,Rare,1,1
-97849,"Impostor Syndrome",OM1,Blue,Mythic,0,0
-97850,"Merata, Neuron Hacker",OM1,Blue,Rare,0,0
+97849,"Impostor Syndrome",OM1,Blue,Mythic,2,2
+97850,"Merata, Neuron Hacker",OM1,Blue,Rare,2,2
 97851,"Olx, Mouth to Many Eyes",OM1,Blue,Uncommon,0,0
 97852,"The Watcher on the Road",OM1,Blue,Rare,0,0
 97853,"Phantasmal Vision",OM1,Blue,Common,0,0
@@ -16340,21 +16340,21 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 97859,"Secret Identity",OM1,Blue,Uncommon,0,0
 97860,"Argyr, Tidal Spinner",OM1,Blue,Uncommon,0,0
 97861,"Hide in Mundanity",OM1,Blue,Common,1,1
-97862,"Detect Intrusion",OM1,Blue,Rare,1,1
+97862,"Detect Intrusion",OM1,Blue,Rare,2,2
 97863,"Unstable Experiment",OM1,Blue,Common,1,1
 97864,"Snatch Back",OM1,Blue,Common,0,0
 97865,"Rhilex the Accursed",OM1,Black,Rare,0,0
 97866,"Aggressive Symbiosis",OM1,Black,Uncommon,0,0
 97867,"Hex of Undeath",OM1,Black,Mythic,0,0
-97868,"Wrench, Speedway Saboteur",OM1,Black,Rare,0,0
+97868,"Wrench, Speedway Saboteur",OM1,Black,Rare,2,2
 97869,"Common Crook",OM1,Black,Common,0,0
 97870,"The House Grows Hungry",OM1,Black,Rare,0,0
-97871,"Viggo, Enforcer of Ig's Crossing",OM1,Black,Mythic,1,1
-97873,"Egrix the Bile Bulwark",OM1,Black,Mythic,1,1
+97871,"Viggo, Enforcer of Ig's Crossing",OM1,Black,Mythic,2,2
+97873,"Egrix the Bile Bulwark",OM1,Black,Mythic,3,3
 97874,"Caldaia Brawlers",OM1,Black,Common,0,0
 97875,"Merciless Enforcers",OM1,Black,Common,0,0
 97876,"Luis, Pompous Pillager",OM1,Black,Rare,0,0
-97877,"Duskmourn's Claim",OM1,Black,Rare,1,1
+97877,"Duskmourn's Claim",OM1,Black,Rare,2,2
 97878,"Prison Break",OM1,Black,Uncommon,1,1
 97879,"Clandestine Work",OM1,Black,Common,1,1
 97880,"Miasmic Mist",OM1,Black,Uncommon,0,0
@@ -16372,7 +16372,7 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 97892,"Galvanized Workforce",OM1,Red,Common,0,0
 97893,"Bayo, Irritable Instructor",OM1,Red,Rare,0,0
 97894,"Deathflame Burst",OM1,Red,Common,0,0
-97895,"Nia, Skysail Storyteller",OM1,Red,Mythic,0,0
+97895,"Nia, Skysail Storyteller",OM1,Red,Mythic,1,1
 97897,"Fire-Brained Scheme",OM1,Red,Uncommon,1,1
 97898,"Cam and Farrik, Havoc Duo",OM1,Red,Uncommon,0,0
 97899,"Lazlo, Enthusiastic Accuser",OM1,Red,Rare,0,0
@@ -16387,7 +16387,7 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 97908,"Sadistic String-Puller",OM1,Red,Common,1,1
 97909,"Kraza, the Swarm as One",OM1,Red,Rare,0,0
 97910,"Arachnomania",OM1,Red,Mythic,0,0
-97911,"Rizna, the Spider-Crowned",OM1,Red,Rare,0,0
+97911,"Rizna, the Spider-Crowned",OM1,Red,Rare,2,2
 97912,"Kephon, Rage Incubator",OM1,Red,Common,0,0
 97913,"Restless Razorkin",OM1,Red,Uncommon,0,0
 97914,"Full-Throttle Fanatic",OM1,Red,Common,0,0
@@ -16404,10 +16404,10 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 97925,"Cren, Undercity Dreamer",OM1,Green,Mythic,1,1
 97927,"Ancestral Carvings",OM1,Green,Uncommon,0,0
 97928,"Favored Fighter",OM1,Green,Common,0,0
-97929,"Fateweaver",OM1,Green,Rare,0,0
+97929,"Fateweaver",OM1,Green,Rare,1,1
 97930,"The Scouring Stormsoul",OM1,Green,Rare,0,0
 97931,"Scout the City",OM1,Green,Common,0,0
-97932,"Tarantusk, Unwisely Awoken",OM1,Green,Rare,1,1
+97932,"Tarantusk, Unwisely Awoken",OM1,Green,Rare,2,2
 97933,"Zan, Tunnelweb Explorer",OM1,Green,Common,1,1
 97934,"Chizak, Apex Arachnosaur",OM1,Green,Common,0,0
 97935,"The Clutter Cluster",OM1,Green,Uncommon,0,0
@@ -16416,17 +16416,17 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 97938,"Terrific Team-Up",OM1,Green,Uncommon,0,0
 97939,"Rouse the Swarm",OM1,Green,Uncommon,0,0
 97940,"Through the Omenpath",OM1,Green,Mythic,1,1
-97941,"Gloria, the Great Armorer",OM1,Gold,Rare,0,0
-97942,"Angler's Shield",OM1,Gold,Rare,0,0
+97941,"Gloria, the Great Armorer",OM1,Gold,Rare,2,2
+97942,"Angler's Shield",OM1,Gold,Rare,1,1
 97943,"Desecrex, Gift of Servitude",OM1,Gold,Rare,1,1
-97944,"Cheering Crowd",OM1,Gold,Rare,0,0
-97945,"Scions of the Ur-Spider",OM1,Gold,Mythic,0,0
+97944,"Cheering Crowd",OM1,Gold,Rare,2,2
+97945,"Scions of the Ur-Spider",OM1,Gold,Mythic,1,1
 97946,"Neach, Pinnacle Pariah",OM1,Gold,Mythic,0,0
 97947,"Gallant Citizen",OM1,Gold,Common,0,0
 97948,"Nu and Sumi, Career Criminals",OM1,Gold,Uncommon,0,0
-97949,"Druneth, Reviver of the Hive",OM1,Gold,Rare,0,0
+97949,"Druneth, Reviver of the Hive",OM1,Gold,Rare,1,1
 97950,"Dreadfang, Loathed by Fans",OM1,Gold,Uncommon,0,0
-97951,"Brako, Heartless Hunter",OM1,Gold,Rare,1,1
+97951,"Brako, Heartless Hunter",OM1,Gold,Rare,2,2
 97952,"Demera, Soul of a Spider",OM1,Gold,Rare,0,0
 97953,"Withar, Cocoon Keeper",OM1,Gold,Mythic,1,1
 97954,"Mob Lookout",OM1,Gold,Common,0,0
@@ -16450,7 +16450,7 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 97972,"Cirina Bargainspinner",OM1,Gold,Uncommon,0,0
 97973,"Kavaero, Mind-Bitten",OM1,Gold,Rare,0,0
 97974,"Skv'x the Augmenter",OM1,Gold,Rare,0,0
-97975,"Ruzic, Booed but Victorious",OM1,Gold,Rare,2,2
+97975,"Ruzic, Booed but Victorious",OM1,Gold,Rare,3,3
 97976,"Rishei, Getaway Accomplice",OM1,Gold,Uncommon,0,0
 97977,"Diligent Webkeepers",OM1,Gold,Uncommon,0,0
 97978,"Margot, On the Case",OM1,Gold,Uncommon,0,0
@@ -16458,13 +16458,13 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 97980,"Giantcraft Helm",OM1,Colorless,Rare,1,1
 97981,"Eerie Gravestone",OM1,Colorless,Common,0,0
 97982,"Treat Trolley",OM1,Colorless,Common,0,0
-97983,"Reality Fulcrum",OM1,Colorless,Rare,0,0
-97984,"Fizik, Etherium Mechanic",OM1,Colorless,Rare,1,1
+97983,"Reality Fulcrum",OM1,Colorless,Rare,1,1
+97984,"Fizik, Etherium Mechanic",OM1,Colorless,Rare,2,2
 97985,"Error-9, Viral Node",OM1,Colorless,Uncommon,0,0
 97986,"Data Scrubber",OM1,Colorless,Common,0,0
 97987,"Opulent Valet",OM1,Colorless,Common,0,0
 97988,"Carriage of Dreams",OM1,Colorless,Common,0,0
-97989,"Phenomena Recorder",OM1,Colorless,Rare,0,0
+97989,"Phenomena Recorder",OM1,Colorless,Rare,1,1
 97990,"Stitcher's Wings",OM1,Colorless,Rare,1,1
 97991,"Steelweb Surveyor",OM1,Colorless,Common,0,0
 97992,"Scuttling Spidercoach",OM1,Colorless,Uncommon,0,0
@@ -16475,22 +16475,22 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 97997,"Fearsome Ridgeline",OM1,Colorless,Uncommon,1,1
 97998,"Multiversal Passage",OM1,Colorless,Rare,4,4
 97999,"Ominous Asylum",OM1,Colorless,Common,1,1
-98000,"Exclusive Nightclub",OM1,Colorless,Rare,0,0
+98000,"Exclusive Nightclub",OM1,Colorless,Rare,1,1
 98001,"Savage Mansion",OM1,Colorless,Common,1,1
 98002,"Sinister Hideout",OM1,Colorless,Common,1,1
 98003,"Suburban Sanctuary",OM1,Colorless,Common,0,0
 98004,"University Campus",OM1,Colorless,Common,0,0
-98005,"Urban Retreat",OM1,Colorless,Rare,0,0
+98005,"Urban Retreat",OM1,Colorless,Rare,1,1
 98006,"Vibrant Cityscape",OM1,Colorless,Common,0,0
 98013,"Comeuppance",OMB,White,Rare,0,0
-98014,"Leyline Binding",OMB,White,Rare,0,0
+98014,"Leyline Binding",OMB,White,Rare,1,0
 98015,"Nine Lives",OMB,White,Rare,0,0
 98016,"Path to Exile",OMB,White,Rare,1,0
-98017,"Reprieve",OMB,White,Uncommon,0,0
+98017,"Reprieve",OMB,White,Uncommon,1,0
 98018,"Rest in Peace",OMB,White,Rare,0,0
 98019,"Wedding Ring",OMB,White,Mythic,0,0
 98020,"Clever Impersonator",OMB,Blue,Mythic,0,0
-98021,"Counterspell",OMB,Blue,Rare,0,0
+98021,"Counterspell",OMB,Blue,Rare,1,0
 98022,"Lorthos, the Tidemaker",OMB,Blue,Mythic,0,0
 98023,"Mindbreak Trap",OMB,Blue,Mythic,0,0
 98024,"Mystic Confluence",OMB,Blue,Rare,0,0
@@ -16515,7 +16515,7 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 98043,"Arachnogenesis",OMB,Green,Rare,0,0
 98044,"Arasta of the Endless Web",OMB,Green,Rare,0,0
 98045,"Beast Within",OMB,Green,Uncommon,0,0
-98046,"Heroic Intervention",OMB,Green,Rare,0,0
+98046,"Heroic Intervention",OMB,Green,Rare,1,0
 98047,"Hunter's Insight",OMB,Green,Uncommon,0,0
 98048,"Parallel Lives",OMB,Green,Mythic,0,0
 98049,"Silkguard",OMB,Green,Rare,0,0
@@ -16523,25 +16523,25 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 98051,"Alibou, Ancient Witness",OMB,Gold,Mythic,0,0
 98052,"Terminate",OMB,Gold,Uncommon,0,0
 98056,"Encroaching Wastes",PA1,Colorless,Uncommon,0,0
-98078,"Tataru Taru",FIC,White,Rare,0,0
+98078,"Tataru Taru",FIC,White,Rare,1,1
 98086,"Lulu, Stern Guardian",FIC,Blue,Rare,0,0
 98089,"Rikku, Resourceful Guardian",FIC,Blue,Rare,0,0
 98113,"Yuffie, Materia Hunter",FIC,Red,Rare,0,0
-98124,"Aerith, Last Ancient",FIC,Gold,Rare,0,0
+98124,"Aerith, Last Ancient",FIC,Gold,Rare,1,1
 98127,"Barret, Avalanche Leader",FIC,Gold,Rare,0,0
 98129,"Emet-Selch of the Third Seat",FIC,Gold,Rare,0,0
 98130,"Estinien Varlineau",FIC,Gold,Rare,0,0
 98136,"Locke, Treasure Hunter",FIC,Gold,Rare,0,0
 98138,"Mog, Moogle Warrior",FIC,Gold,Rare,0,0
-98146,"Wakka, Devoted Guardian",FIC,Gold,Rare,0,0
+98146,"Wakka, Devoted Guardian",FIC,Gold,Rare,1,1
 98172,"Aang, Air Nomad",TLE,White,Rare,0,0
 98173,"Aang's Defense",TLE,White,Common,0,0
-98174,"Aardvark Sloth",TLE,White,Common,0,0
+98174,"Aardvark Sloth",TLE,White,Common,1,1
 98175,"Allied Teamwork",TLE,White,Rare,0,0
 98176,"Appa, Aang's Companion",TLE,White,Uncommon,0,0
 98177,"Katara, Heroic Healer",TLE,White,Uncommon,0,0
 98178,"Kyoshi Warrior Guard",TLE,White,Common,0,0
-98179,"Momo, Rambunctious Rascal",TLE,White,Uncommon,0,0
+98179,"Momo, Rambunctious Rascal",TLE,White,Uncommon,1,1
 98180,"Sledding Otter-Penguin",TLE,White,Common,0,0
 98181,"Sokka, Wolf Cove's Protector",TLE,White,Uncommon,0,0
 98182,"Tundra Wall",TLE,White,Common,0,0
@@ -16550,14 +16550,14 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 98185,"Flying Dolphin-Fish",TLE,Blue,Common,0,0
 98186,"Lost in the Spirit World",TLE,Blue,Uncommon,0,0
 98187,"The Terror of Serpent's Pass",TLE,Blue,Rare,0,0
-98188,"Turtle-Seals",TLE,Blue,Common,0,0
+98188,"Turtle-Seals",TLE,Blue,Common,1,1
 98189,"Water Whip",TLE,Blue,Rare,0,0
-98190,"Elephant-Rat",TLE,Black,Common,0,0
+98190,"Elephant-Rat",TLE,Black,Common,1,1
 98191,"Fire Nation Ambushers",TLE,Black,Common,0,0
 98192,"Fire Nation Sentinels",TLE,Black,Rare,0,0
 98193,"Gilacorn",TLE,Black,Common,0,0
 98194,"Lion Vulture",TLE,Black,Rare,0,0
-98195,"Purple Pentapus",TLE,Black,Common,0,0
+98195,"Purple Pentapus",TLE,Black,Common,1,1
 98196,"Capital Guard",TLE,Red,Common,0,0
 98197,"Dragon Moose",TLE,Red,Common,0,0
 98198,"Explosive Shot",TLE,Red,Common,0,0
@@ -16584,16 +16584,16 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 98219,"Aang, Airbending Master",TLE,White,Mythic,0,0
 98220,"Air Nomad Student",TLE,White,Uncommon,0,0
 98221,"The Duke, Rebel Sentry",TLE,White,Uncommon,0,0
-98222,"Inspired Insurgent",TLE,White,Common,0,0
+98222,"Inspired Insurgent",TLE,White,Common,2,2
 98223,"Jet, Rebel Leader",TLE,White,Rare,0,0
 98224,"Kindly Customer",TLE,White,Common,0,0
 98225,"Koala-Sheep",TLE,White,Common,0,0
 98226,"Monk Gyatso",TLE,White,Rare,0,0
 98227,"Pipsqueak, Rebel Strongarm",TLE,White,Uncommon,0,0
-98228,"Sokka, Swordmaster",TLE,White,Mythic,0,0
-98229,"Sokka's Sword Training",TLE,White,Common,0,0
+98228,"Sokka, Swordmaster",TLE,White,Mythic,1,1
+98229,"Sokka's Sword Training",TLE,White,Common,1,1
 98230,"Suki, Kyoshi Captain",TLE,White,Rare,0,0
-98231,"Tale of Momo",TLE,White,Rare,0,0
+98231,"Tale of Momo",TLE,White,Rare,1,1
 98232,"That's Rough Buddy",TLE,White,Uncommon,0,0
 98233,"Toucan-Puffin",TLE,White,Common,0,0
 98234,"Baboon Spirit",TLE,Blue,Rare,0,0
@@ -16606,11 +16606,11 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 98241,"Tui and La, Moon and Ocean",TLE,Blue,Rare,0,0
 98242,"Unagi's Spray",TLE,Blue,Common,0,0
 98243,"Wan Shi Tong, All-Knowing",TLE,Blue,Mythic,0,0
-98244,"Waterbender's Restoration",TLE,Blue,Rare,0,0
-98245,"Whirlwind Technique",TLE,Blue,Uncommon,0,0
+98244,"Waterbender's Restoration",TLE,Blue,Rare,1,1
+98245,"Whirlwind Technique",TLE,Blue,Uncommon,1,1
 98246,"Azula, Ruthless Firebender",TLE,Black,Mythic,0,0
 98247,"Dai Li Censor",TLE,Black,Common,0,0
-98248,"Desperate Plea",TLE,Black,Rare,0,0
+98248,"Desperate Plea",TLE,Black,Rare,1,1
 98249,"Fire Lord Ozai",TLE,Black,Mythic,0,0
 98250,"Fire Nation Occupation",TLE,Black,Rare,0,0
 98251,"Fire Nation Salvagers",TLE,Black,Rare,0,0
@@ -16655,44 +16655,44 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 98290,"Toph, Earthbending Master",TLE,Green,Mythic,0,0
 98291,"Aang, A Lot to Learn",TLE,Gold,Uncommon,0,0
 98292,"Hook Swords",TLE,Gold,Uncommon,0,0
-98293,"Katara, Seeking Revenge",TLE,Gold,Uncommon,0,0
-98294,"Stand United",TLE,Gold,Common,0,0
+98293,"Katara, Seeking Revenge",TLE,Gold,Uncommon,1,1
+98294,"Stand United",TLE,Gold,Common,1,1
 98295,"Zuko, Seeking Honor",TLE,Gold,Uncommon,0,0
 98296,"Acrobatic Leap",TLE,White,Common,0,0
 98297,"Cloudshift",TLE,White,Common,0,0
-98298,"Duelist's Heritage",TLE,White,Rare,0,0
+98298,"Duelist's Heritage",TLE,White,Rare,1,1
 98299,"Valorous Stance",TLE,White,Uncommon,2,0
-98300,"Brainstorm",TLE,Blue,Common,0,0
-98301,"Coastal Piracy",TLE,Blue,Uncommon,0,0
-98302,"Consider",TLE,Blue,Common,0,0
+98300,"Brainstorm",TLE,Blue,Common,1,0
+98301,"Coastal Piracy",TLE,Blue,Uncommon,1,1
+98302,"Consider",TLE,Blue,Common,1,1
 98303,"Dramatic Reversal",TLE,Blue,Common,0,0
 98304,"Frantic Search",TLE,Blue,Common,0,0
 98305,"Bastion of Remembrance",TLE,Black,Uncommon,0,0
 98306,"Dark Deal",TLE,Black,Uncommon,0,0
-98307,"Diresight",TLE,Black,Common,0,0
+98307,"Diresight",TLE,Black,Common,1,1
 98308,"Bolt Bend",TLE,Red,Uncommon,0,0
 98309,"Cathartic Reunion",TLE,Red,Common,0,0
 98310,"Fiery Confluence",TLE,Red,Rare,0,0
 98311,"Fists of Flame",TLE,Red,Common,0,0
 98312,"Descendants' Path",TLE,Green,Rare,0,0
-98313,"Inspiring Call",TLE,Green,Uncommon,2,0
+98313,"Inspiring Call",TLE,Green,Uncommon,4,0
 98314,"Many Partings",TLE,Green,Common,0,0
 98315,"Suspicious Bookcase",TLE,Colorless,Uncommon,2,0
 98608,"Feed the Swarm",TLE,Black,Common,0,0
 98609,"Run Amok",TLE,Red,Common,0,0
-98610,"Explore",TLE,Green,Common,0,0
+98610,"Explore",TLE,Green,Common,1,0
 98611,"Thriving Bluff",TLE,Colorless,Common,0,0
 98612,"Thriving Grove",TLE,Colorless,Common,0,0
-98613,"Thriving Heath",TLE,Colorless,Common,0,0
-98614,"Thriving Isle",TLE,Colorless,Common,0,0
-98615,"Thriving Moor",TLE,Colorless,Common,0,0
+98613,"Thriving Heath",TLE,Colorless,Common,2,2
+98614,"Thriving Isle",TLE,Colorless,Common,1,1
+98615,"Thriving Moor",TLE,Colorless,Common,1,1
 98616,"Brought Back",TLE,White,Mythic,0,0
 98617,"Drannith Magistrate",TLE,White,Mythic,0,0
 98618,"Empty City Ruse",TLE,White,Mythic,0,0
 98619,"Lita, Mechanical Engineer",TLE,White,Mythic,0,0
 98620,"Release to Memory",TLE,White,Mythic,0,0
 98621,"Scout's Warning",TLE,White,Mythic,0,0
-98622,"Teferi's Protection",TLE,White,Mythic,0,0
+98622,"Teferi's Protection",TLE,White,Mythic,1,0
 98623,"Three Dreams",TLE,White,Mythic,0,0
 98624,"Agent of Treachery",TLE,Blue,Mythic,0,0
 98625,"Bribery",TLE,Blue,Mythic,0,0
@@ -16717,7 +16717,7 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 98644,"Fervor",TLE,Red,Mythic,0,0
 98645,"Humble Defector",TLE,Red,Mythic,0,0
 98646,"Insurrection",TLE,Red,Mythic,0,0
-98647,"Lightning Bolt",TLE,Red,Mythic,0,0
+98647,"Lightning Bolt",TLE,Red,Mythic,1,0
 98648,"Mirrorwing Dragon",TLE,Red,Mythic,0,0
 98649,"Rending Volley",TLE,Red,Mythic,0,0
 98650,"Searing Blood",TLE,Red,Mythic,0,0
@@ -16728,7 +16728,7 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 98655,"Elemental Bond",TLE,Green,Mythic,0,0
 98656,"The Great Henge",TLE,Green,Mythic,0,0
 98657,"Heartbeat of Spring",TLE,Green,Mythic,0,0
-98658,"Heroic Intervention",TLE,Green,Mythic,0,0
+98658,"Heroic Intervention",TLE,Green,Mythic,1,0
 98659,"Return of the Wildspeaker",TLE,Green,Mythic,0,0
 98660,"Rites of Flourishing",TLE,Green,Mythic,0,0
 98661,"Taunting Challenge",TLE,Green,Mythic,0,0
@@ -16757,9 +16757,9 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 98684,"Gamble",TLE,Red,Rare,0,0
 98685,"Obscuring Haze",TLE,Green,Rare,0,0
 98686,"Worldly Tutor",TLE,Green,Rare,0,0
-98687,"Arcane Signet",TLE,Colorless,Rare,0,0
+98687,"Arcane Signet",TLE,Colorless,Rare,1,0
 98688,"Sol Ring",TLE,Colorless,Rare,0,0
-98689,"Swiftfoot Boots",TLE,Colorless,Rare,1,0
+98689,"Swiftfoot Boots",TLE,Colorless,Rare,4,0
 98690,"Appa, the Vigilant",TLE,White,Rare,0,0
 98691,"Katara's Reversal",TLE,Blue,Rare,0,0
 98692,"Fire Nation Turret",TLE,Red,Rare,0,0
@@ -16835,7 +16835,7 @@ Id,Name,Set,Color,Rarity,Count,PrintCount
 100121,"Woodland Cemetery",YEOE,Colorless,Rare,0,0
 100122,"Wastes",PRM,Colorless,Common,2,0
 100133,"A-Sorin, Imperious Bloodlord",M20,Black,Mythic,0,0
-100134,"A-Cori-Steel Cutter",TDM,Red,Rare,0,0
+100134,"A-Cori-Steel Cutter",TDM,Red,Rare,1,1
 100138,"Glimmer Lens",ONC,White,Rare,0,0
 100142,"Staff of the Storyteller",AA3,White,Rare,0,0
 100171,"Broadside Bombardiers",AA3,Red,Rare,0,0

@@ -7,11 +7,12 @@ This repository manages deck lists, analysis, and upgrade plans for both Paper M
 ### 📂 `/commander_decks`
 Contains deck lists and guides for Paper Commander (EDH).
 
-*   **`TheHive-Slivers.md`**: Your primary 5-color Sliver deck (Commander: *The First Sliver*). Includes main deck, sideboard, and a "Wishlist" of upgrades (Dual Lands, Sliver Legion).
-*   **`yidris_chaos_cascade.md`**: A high-power "Value Cascade" deck (Commander: *Yidris, Maelstrom Wielder*). Optimized for combat damage and cascading into 0-cost suspend spells.
-*   **`yidris_deck_guide.md`**: A detailed strategy guide for the Yidris deck, explaining specific card interactions (like the *Blasphemous Act* cascade trick).
-*   **`karametra_angels_ramp_premium.md`**: Analysis of your wife's Selesnya Angels deck (Commander: *Karametra*). Used for power-level comparison.
-*   **`TheDrillersHives-Slivers.md`**: A reference deck list found online used for comparison against *The Hive*.
+*   **`TheHive/TheHive-Slivers.md`**: Your primary 5-color Sliver deck (Commander: *The First Sliver*). Includes main deck, sideboard, and a "Wishlist" of upgrades (Dual Lands, Sliver Legion).
+*   **`ThaliaGitrog/thalia_gitrog_abzan.md`**: Abzan Landfall & Hatebears deck (Commander: *Thalia and The Gitrog Monster*). Designed to counter Haste/Tribal strategies.
+*   **`YidrisChaos/yidris_chaos_cascade.md`**: A high-power "Value Cascade" deck (Commander: *Yidris, Maelstrom Wielder*). Optimized for combat damage and cascading into 0-cost suspend spells.
+*   **`YidrisChaos/yidris_deck_guide.md`**: A detailed strategy guide for the Yidris deck, explaining specific card interactions (like the *Blasphemous Act* cascade trick).
+*   **`KarametraAngels/karametra_angels_ramp_premium.md`**: Analysis of your wife's Selesnya Angels deck (Commander: *Karametra*). Used for power-level comparison.
+*   **`Reference_DrillersHive/TheDrillersHives-Slivers.md`**: A reference deck list found online used for comparison against *The Hive*.
 
 ### 📂 `/arena_decks`
 Contains 60-card format decks for MTG Arena (Standard, Alchemy, Historic, etc.).

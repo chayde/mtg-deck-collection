@@ -39,7 +39,7 @@ Deck
 1 Explore (JMP) 393
 1 Growth Spiral (RNA) 178
 1 Cultivate (STA) 51
-1 Kodama's Reach (CHK) 225
+1 Wolfwillow Haven (THB) 205
 1 Wash Away (VOW) 87
 1 Swords to Plowshares (STA) 10
 1 Lightning Bolt (STA) 42
@@ -59,7 +59,7 @@ Deck
 1 Cloudshredder Sliver (MH1) 195
 1 Sliver Hivelord (M15) 211
 1 Imoti, Celebrant of Bounty (CMR) 280
-1 Maelstrom Wanderer (PCA) 101
+1 Spark Double (WAR) 68
 1 Etali, Primal Conqueror (MOM) 137
 1 Atraxa, Grand Unifier (ONE) 196
 1 Primeval Titan (M11) 192
