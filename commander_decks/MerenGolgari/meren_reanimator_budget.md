@@ -70,7 +70,7 @@ Creatures that solve problems when they enter or die.
 ## Sacrifice Outlets & Spells
 *   1x [Viscera Seer](https://scryfall.com/card/cmr/158/viscera-seer)
 *   1x [Carrion Feeder](https://scryfall.com/card/mh1/81/carrion-feeder)
-*   1x [Woe Strider](https://scryfall.com/card/thb/123/woe-strider)
+*   1x [Maelstrom Pulse](https://scryfall.com/card/2xm/207/maelstrom-pulse) (Destroys any nonland permanent.)
 *   1x [Victimize](https://scryfall.com/card/cmr/157/victimize)
 *   1x [Dread Return](https://scryfall.com/card/tsr/111/dread-return)
 *   1x [Living Death](https://scryfall.com/card/tpr/109/living-death)
@@ -151,7 +151,7 @@ Creatures that solve problems when they enter or die.
 1 Hornet Queen
 1 Viscera Seer
 1 Carrion Feeder
-1 Woe Strider
+1 Maelstrom Pulse
 1 Victimize
 1 Dread Return
 1 Living Death
