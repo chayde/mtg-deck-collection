@@ -33,7 +33,7 @@ Creatures that solve problems when they enter or die.
 *   1x [Merciless Executioner](https://scryfall.com/card/frf/76/merciless-executioner)
 *   1x [Plaguecrafter](https://scryfall.com/card/grn/82/plaguecrafter) (Hits Planeswalkers too.)
 *   1x [Demon's Disciple](https://scryfall.com/card/znr/97/demons-disciple)
-*   1x [Butcher of Malakir](https://scryfall.com/card/cm2/60/butcher-of-malakir) (Grave Pact on a stick.)
+*   1x [Mikaeus, the Unhallowed](https://scryfall.com/card/uma/106/mikaeus-the-unhallowed) (Undying = Double triggers + Protection.)
 *   1x [Ravenous Chupacabra](https://scryfall.com/card/a25/104/ravenous-chupacabra) (Targeted removal.)
 *   1x [Shriekmaw](https://scryfall.com/card/afc/110/shriekmaw) (Efficiency king.)
 *   1x [Caustic Caterpillar](https://scryfall.com/card/ori/170/caustic-caterpillar) (Artifact/Enchantment removal.)
@@ -51,7 +51,7 @@ Creatures that solve problems when they enter or die.
 *   1x [Sidisi, Undead Vizier](https://scryfall.com/card/dtk/120/sidisi-undead-vizier) (Demonic Tutor on a stick.)
 *   1x [Gravebreaker Lamia](https://scryfall.com/card/thb/98/gravebreaker-lamia) (Entomb on a stick.)
 *   1x [Skullclamp](https://scryfall.com/card/clb/870/skullclamp)
-*   1x [Evolutionary Leap](https://scryfall.com/card/ori/176/evolutionary-leap) (Sacrifice to find more creatures.)
+*   1x [Birthing Pod](https://scryfall.com/card/nph/104/birthing-pod) (The ultimate value ladder.)
 *   1x [Buried Alive](https://scryfall.com/card/uma/88/buried-alive)
 *   1x [Jarad's Orders](https://scryfall.com/card/rtr/175/jarads-orders)
 *   1x [Eternal Witness](https://scryfall.com/card/c15/219/eternal-witness)
@@ -64,7 +64,7 @@ Creatures that solve problems when they enter or die.
 *   1x [Junji, the Midnight Sky](https://scryfall.com/card/neo/114/junji-the-midnight-sky)
 *   1x [Avenger of Zendikar](https://scryfall.com/card/ncc/280/avenger-of-zendikar)
 *   1x [Izoni, Thousand-Eyed](https://scryfall.com/card/grn/180/izoni-thousand-eyed) (Makes insects, sacrifices for draw.)
-*   1x [Sepulchral Primordial](https://scryfall.com/card/gtc/75/sepulchral-primordial)
+*   1x [Sheoldred, Whispering One](https://scryfall.com/card/jmp/278/sheoldred-whispering-one) (Reanimator + Edict Engine.)
 *   1x [Hornet Queen](https://scryfall.com/card/clb/799/hornet-queen)
 
 ## Sacrifice Outlets & Spells
@@ -120,7 +120,7 @@ Creatures that solve problems when they enter or die.
 1 Merciless Executioner
 1 Plaguecrafter
 1 Demon's Disciple
-1 Butcher of Malakir
+1 Mikaeus, the Unhallowed
 1 Ravenous Chupacabra
 1 Shriekmaw
 1 Caustic Caterpillar
@@ -136,7 +136,7 @@ Creatures that solve problems when they enter or die.
 1 Sidisi, Undead Vizier
 1 Gravebreaker Lamia
 1 Skullclamp
-1 Evolutionary Leap
+1 Birthing Pod
 1 Buried Alive
 1 Jarad's Orders
 1 Eternal Witness
@@ -147,7 +147,7 @@ Creatures that solve problems when they enter or die.
 1 Junji, the Midnight Sky
 1 Avenger of Zendikar
 1 Izoni, Thousand-Eyed
-1 Sepulchral Primordial
+1 Sheoldred, Whispering One
 1 Hornet Queen
 1 Viscera Seer
 1 Carrion Feeder
