@@ -1,3 +1,44 @@
+# Captain America, First Avenger (Reference List: GuysThatMagic)
+**Commander:** Captain America, First Avenger
+**Colors:** Jeskai (Red / White / Blue)
+**Power Level:** Bracket 3-4 (High Power / Optimized)
+**Budget:** High ($$$)
+**Focus:** Equipment Voltron, Infinite Combat (Godo), Efficient Tutors
+**Source:** GuysThatMagic
+
+## Deck Overview
+This is a high-budget, optimized version of the Captain America deck. It utilizes premium mana (Fetchlands, Shocklands), powerful staples (*Rhystic Study*, *Esper Sentinel*, *Cyclonic Rift*), and game-ending combos like *Godo, Bandit Warlord* + *Helm of the Host*. Unlike the budget version, this deck prioritizes speed and consistency over the specific "Throwing" gimmick, using the commander as a value engine and removal piece while assembling a Voltron kill.
+
+## Commander
+*   1x Captain America, First Avenger
+
+## The Heavy Hitters (Equipment)
+*   **Voltron Pieces:** *Commander's Plate*, *Hammer of Nazahn*, *Mithril Coat*, *Swiftfoot Boots*, *Lightning Greaves*, *Whispersilk Cloak*.
+*   **Damage:** *Colossus Hammer*, *Embercleave*, *Excalibur, Sword of Eden*, *Mjölnir, Storm Hammer*, *Shield of War and Peace*.
+*   **Utility:** *Sword of Feast and Famine* (Untap lands), *The Reaver Cleaver* (Treasures), *Lion Sash* (Graveyard hate), *Skullclamp* (Draw).
+*   **Win Con:** *Helm of the Host* (Combos with Godo).
+
+## The Support Squad (Cheating Costs & Draw)
+*   **Draw Engines:** *Esper Sentinel*, *Rhystic Study*, *Sram, Senior Edificer*, *Puresteel Paladin*, *Jhoira, Weatherlight Captain*, *Akiri, Fearless Voyager*.
+*   **Cost Reducers/Cheaters:** *Ardenn, Intrepid Archaeologist*, *Danitha Capashen, Paragon*, *Forge Anew*, *Sigarda's Aid* (Battlefield Improvisation?).
+*   **Tutors:** *Stoneforge Mystic*, *Fighter Class*, *Steelshaper's Gift*, *Open the Armory*, *Godo, Bandit Warlord*, *Stonehewer Giant*, *Fabricate*.
+
+## Interaction & Protection
+*   **Counterspells:** *Counterspell*, *Dovin's Veto*.
+*   **Removal:** *Swords to Plowshares*, *Path to Exile*, *Chaos Warp*, *Blasphemous Act*, *Cyclonic Rift*.
+*   **Protection:** *Flawless Maneuver*, *Mithril Coat*, *Hammer of Nazahn*.
+
+## Lands & Ramp (Premium Base)
+*   **Fetches/Shocks:** *Arid Mesa*, *Scalding Tarn*, *Flooded Strand*, *Steam Vents*, *Sacred Foundry*, *Hallowed Fountain*.
+*   **Utility Lands:** *Urza's Saga* (Not in list?), *Inventors' Fair*, *Academy Ruins*, *Buried Ruin*, *Rogue's Passage*.
+*   **Rocks:** *Sol Ring*, *Arcane Signet*, *Fellwar Stone*, *Talisman of...* (All 3), *Thought Vessel*.
+
+---
+
+### Moxfield Import List
+*(Copy and paste the text below directly into Moxfield to purchase specific versions)*
+
+```text
 1 Captain America, First Avenger (SLD) 1726 *F*
 1 Academy Ruins (2XM) 309
 1 Akiri, Fearless Voyager (CMM) 335
@@ -91,3 +132,4 @@
 1 Training Center (CMM) 434
 1 Training Grounds (MAT) 9
 1 Whispersilk Cloak (DSC) 257
+```
