@@ -1,79 +1,93 @@
-# Meren of Clan Nel Toth (Budget Reanimator)
+# Meren of Clan Nel Toth (Budget Generalist)
 **Commander:** Meren of Clan Nel Toth
 **Colors:** Golgari (Black / Green)
-**Power Level:** Bracket 2 (Focused)
+**Power Level:** Bracket 2 (Focused / Solid Mid-Power)
 **Budget:** ~$80 USD (Budget Optimized)
-**Focus:** Graveyard Recursion, value Grind, Sacrifice
-**Matchup Tech:** "Fog" Loops (Spore Frog), Forced Sacrifice (vs Indestructible)
+**Focus:** Value Engine, Graveyard Toolboxing, Attrition
+**Game Plan:** Grind out resources by sacrificing cheap creatures for value, then reanimate threats that answer the specific board state.
 
 ## Deck Overview
-This deck is the definition of "inevitable." It doesn't try to win fast; it tries to outlast. You use cheap creatures that sacrifice themselves to build "Experience Counters" for Meren. Once Meren is online, you reanimate a creature for free every turn. Against Angels, we use *Spore Frog* to prevent combat damage repeatedly and *Plaguecrafter* loops to force them to sacrifice their indestructible threats.
+This version of Meren is built to handle *any* table. Instead of focusing on countering specific strategies (like Angels), it builds a flexible engine of "enter the battlefield" and "death" triggers. The goal is to control the board state through attrition—forcing opponents to sacrifice creatures, destroying key artifacts, and draining life totals—while you accrue insurmountable value from your graveyard.
 
 ## Commander
 *   1x [Meren of Clan Nel Toth](https://scryfall.com/card/c15/49/meren-of-clan-nel-toth)
 
-## The "Sacrifice" Loop (Ramp & Value)
-These creatures die for profit, building experience counters.
-*   1x [Sakura-Tribe Elder](https://scryfall.com/card/c20/187/sakura-tribe-elder) (Ramp.)
-*   1x [Diligent Farmhand](https://scryfall.com/card/ody/237/diligent-farmhand) (Ramp.)
-*   1x [Dawntreader Elk](https://scryfall.com/card/dka/111/dawntreader-elk) (Ramp.)
-*   1x [Steve, the ramp guy... wait that's Sakura Tribe Elder.]
-*   1x [Yavimaya Elder](https://scryfall.com/card/mh2/288/yavimaya-elder) (Draws lands.)
-*   1x [Satyr Wayfinder](https://scryfall.com/card/znc/81/satyr-wayfinder) (Fills graveyard.)
-*   1x [Grisly Salvage](https://scryfall.com/card/c20/215/grisly-salvage) (Instant speed fill.)
+## The Early Game (Ramp & Self-Mill)
+Get Meren out early and fill the graveyard with tools.
+*   1x [Sakura-Tribe Elder](https://scryfall.com/card/c20/187/sakura-tribe-elder) (The gold standard. Ramp + Exp Counter.)
+*   1x [Diligent Farmhand](https://scryfall.com/card/ody/237/diligent-farmhand) (Muscle Steve.)
+*   1x [Dawntreader Elk](https://scryfall.com/card/dka/111/dawntreader-elk)
+*   1x [Stitcher's Supplier](https://scryfall.com/card/m19/121/stitchers-supplier) (The best graveyard filler. Mills 3 on ETB, 3 on Death.)
+*   1x [Satyr Wayfinder](https://scryfall.com/card/znc/81/satyr-wayfinder)
+*   1x [Grisly Salvage](https://scryfall.com/card/c20/215/grisly-salvage)
 *   1x [Elves of Deep Shadow](https://scryfall.com/card/ddj/47/elves-of-deep-shadow)
 *   1x [Llanowar Elves](https://scryfall.com/card/m19/314/llanowar-elves)
 *   1x [Elvish Mystic](https://scryfall.com/card/m15/173/elvish-mystic)
 *   1x [Fyndhorn Elves](https://scryfall.com/card/cmr/228/fyndhorn-elves)
 
-## The "Angel Killers" (Removal on a Stick)
-Reanimate these to clear the board.
-*   1x [Spore Frog](https://scryfall.com/card/mh1/180/spore-frog) (Sacrifice: Prevent all combat damage. Reanimate every turn to live forever vs Angels.)
-*   1x [Fleshbag Marauder](https://scryfall.com/card/cmr/128/fleshbag-marauder) (Each player sacrifices a creature.)
-*   1x [Merciless Executioner](https://scryfall.com/card/frf/76/merciless-executioner) (Redundant Fleshbag.)
-*   1x [Plaguecrafter](https://scryfall.com/card/grn/82/plaguecrafter) (Forces sac of Planeswalkers too.)
+## Board Control (The Toolbox)
+Creatures that solve problems when they enter or die.
+*   1x [Fleshbag Marauder](https://scryfall.com/card/cmr/128/fleshbag-marauder) (Solves Voltron/Indestructible.)
+*   1x [Merciless Executioner](https://scryfall.com/card/frf/76/merciless-executioner)
+*   1x [Plaguecrafter](https://scryfall.com/card/grn/82/plaguecrafter) (Hits Planeswalkers too.)
 *   1x [Demon's Disciple](https://scryfall.com/card/znr/97/demons-disciple)
-*   1x [Ravenous Chupacabra](https://scryfall.com/card/a25/104/ravenous-chupacabra) (Destroys target creature.)
-*   1x [Shriekmaw](https://scryfall.com/card/afc/110/shriekmaw) (Terror on a stick. Evoke triggers Meren!)
-*   1x [Caustic Caterpillar](https://scryfall.com/card/ori/170/caustic-caterpillar) (Destroys Artifact/Enchantment.)
-*   1x [Foundation Breaker](https://scryfall.com/card/mh2/160/foundation-breaker) (Evoke destroys Art/Ench.)
+*   1x [Ravenous Chupacabra](https://scryfall.com/card/a25/104/ravenous-chupacabra) (Targeted removal.)
+*   1x [Shriekmaw](https://scryfall.com/card/afc/110/shriekmaw) (Efficiency king.)
+*   1x [Caustic Caterpillar](https://scryfall.com/card/ori/170/caustic-caterpillar) (Artifact/Enchantment removal.)
+*   1x [Foundation Breaker](https://scryfall.com/card/mh2/160/foundation-breaker)
 *   1x [Reclamation Sage](https://scryfall.com/card/khc/72/reclamation-sage)
+*   1x [Spore Frog](https://scryfall.com/card/mh1/180/spore-frog) (Combat protection.)
+*   1x [Haywire Mite](https://scryfall.com/card/bro/199/haywire-mite) (Exiles Artifacts/Enchantments + Life gain.)
 
-## The Engines (Draw & Sacrifice Outlets)
-*   1x [Viscera Seer](https://scryfall.com/card/cmr/158/viscera-seer) (Free sac outlet. Scry 1.)
-*   1x [Carrion Feeder](https://scryfall.com/card/mh1/81/carrion-feeder) (Free sac outlet. Grows big.)
-*   1x [Woe Strider](https://scryfall.com/card/thb/123/woe-strider) (Free sac outlet + Token.)
-*   1x [Grim Haruspex](https://scryfall.com/card/clb/754/grim-haruspex) (Draw on death.)
-*   1x [Midnight Reaper](https://scryfall.com/card/mic/125/midnight-reaper) (Draw on death.)
-*   1x [Morbid Opportunist](https://scryfall.com/card/mid/113/morbid-opportunist) (Draw once per turn.)
-*   1x [Skullclamp](https://scryfall.com/card/clb/870/skullclamp) (The best draw card in the deck. Equip to x/1s.)
-*   1x [Victimize](https://scryfall.com/card/cmr/157/victimize) (Swap 1 for 2.)
+## The Value Engine (Draw & Consistency)
+*   1x [Grim Haruspex](https://scryfall.com/card/clb/754/grim-haruspex)
+*   1x [Midnight Reaper](https://scryfall.com/card/mic/125/midnight-reaper)
+*   1x [Morbid Opportunist](https://scryfall.com/card/mid/113/morbid-opportunist)
+*   1x [Braids, Arisen Nightmare](https://scryfall.com/card/dmu/84/braids-arisen-nightmare) (Sacrifice a land/creature to force opponents to sac or let you draw. Huge value.)
+*   1x [Skullclamp](https://scryfall.com/card/clb/870/skullclamp)
+*   1x [Buried Alive](https://scryfall.com/card/uma/88/buried-alive) (Tutor 3 creatures to bin.)
+*   1x [Jarad's Orders](https://scryfall.com/card/rtr/175/jarads-orders) (One to hand, one to bin.)
+*   1x [Eternal Witness](https://scryfall.com/card/c15/219/eternal-witness) (Get back anything.)
+*   1x [Timeless Witness](https://scryfall.com/card/mh2/179/timeless-witness)
+
+## Win Conditions (The Finishers)
+*   1x [Gray Merchant of Asphodel](https://scryfall.com/card/thb/99/gray-merchant-of-asphodel) (The primary win condition. Loop him.)
+*   1x [Syr Konrad, the Grim](https://scryfall.com/card/znc/56/syr-konrad-the-grim) (Damage on death/mill.)
+*   1x [Kokusho, the Evening Star](https://scryfall.com/card/ima/95/kokusho-the-evening-star) (Big flying drainer.)
+*   1x [Junji, the Midnight Sky](https://scryfall.com/card/neo/114/junji-the-midnight-sky) (Discard/Reanimation threat.)
+*   1x [Avenger of Zendikar](https://scryfall.com/card/ncc/280/avenger-of-zendikar) (Go-wide Army.)
+*   1x [Sepulchral Primordial](https://scryfall.com/card/gtc/75/sepulchral-primordial) (Uses opponents' threats against them.)
+*   1x [Hornet Queen](https://scryfall.com/card/clb/799/hornet-queen) (Defensive wall that kills attackers.)
+
+## Sacrifice Outlets & Spells
+*   1x [Viscera Seer](https://scryfall.com/card/cmr/158/viscera-seer)
+*   1x [Carrion Feeder](https://scryfall.com/card/mh1/81/carrion-feeder)
+*   1x [Woe Strider](https://scryfall.com/card/thb/123/woe-strider)
+*   1x [Victimize](https://scryfall.com/card/cmr/157/victimize)
 *   1x [Dread Return](https://scryfall.com/card/tsr/111/dread-return)
-
-## The Heavy Hitters (Win Conditions)
-*   1x [Gray Merchant of Asphodel](https://scryfall.com/card/thb/99/gray-merchant-of-asphodel) ("Gary". Reanimate him 3-4 times to drain the table.)
-*   1x [Syr Konrad, the Grim](https://scryfall.com/card/znc/56/syr-konrad-the-grim) (Damage whenever a creature dies OR leaves graveyard.)
-*   1x [Sepulchral Primordial](https://scryfall.com/card/gtc/75/sepulchral-primordial) (Steal their Angels.)
-*   1x [Terastodon](https://scryfall.com/card/c21/207/terastodon) (Blow up 3 lands/artifacts/enchantments.)
-*   1x [Hornet Queen](https://scryfall.com/card/clb/799/hornet-queen) (Makes 4 Flying Deathtouch blockers. Angels cannot attack into this.)
-*   1x [Avenger of Zendikar](https://scryfall.com/card/ncc/280/avenger-of-zendikar) (Army in a can.)
-*   1x [Izoni, Thousand-Eyed](https://scryfall.com/card/grn/180/izoni-thousand-eyed) (Insect army + Draw.)
-*   1x [Kokusho, the Evening Star](https://scryfall.com/card/ima/95/kokusho-the-evening-star) (Big drain flyer.)
+*   1x [Living Death](https://scryfall.com/card/tpr/109/living-death) (Board wipe + Mass Reanimation. Game winner.)
+*   1x [Village Rites](https://scryfall.com/card/m21/126/village-rites)
+*   1x [Corrupted Conviction](https://scryfall.com/card/mom/98/corrupted-conviction)
+*   1x [Deadly Dispute](https://scryfall.com/card/clb/124/deadly-dispute)
+*   1x [Beast Within](https://scryfall.com/card/c21/186/beast-within)
+*   1x [Tear Asunder](https://scryfall.com/card/dmu/183/tear-asunder)
+*   1x [Putrefy](https://scryfall.com/card/c20/228/putrefy)
 
 ## Lands (37 Total)
 *   **Utility:**
-    *   1x [High Market](https://scryfall.com/card/afc/246/high-market) (Sac outlet on a land.)
-    *   1x [Grim Backwoods](https://scryfall.com/card/c20/276/grim-backwoods) (Draw on a land.)
-    *   1x [Bojuka Bog](https://scryfall.com/card/c21/281/bojuka-bog) (Graveyard hate.)
+    *   1x [High Market](https://scryfall.com/card/afc/246/high-market)
+    *   1x [Grim Backwoods](https://scryfall.com/card/c20/276/grim-backwoods)
+    *   1x [Bojuka Bog](https://scryfall.com/card/c21/281/bojuka-bog)
     *   1x [Command Tower](https://scryfall.com/card/c21/284/command-tower)
     *   1x [Tainted Wood](https://scryfall.com/card/clb/921/tainted-wood)
     *   1x [Golgari Rot Farm](https://scryfall.com/card/c21/291/golgari-rot-farm)
     *   1x [Temple of Malady](https://scryfall.com/card/c21/323/temple-of-malady)
     *   1x [Jungle Hollow](https://scryfall.com/card/neo/269/jungle-hollow)
     *   1x [Myriad Landscape](https://scryfall.com/card/c21/304/myriad-landscape)
+    *   1x [Exotic Orchard](https://scryfall.com/card/c20/273/exotic-orchard)
 *   **Basics:**
     *   14x Swamp
-    *   14x Forest
+    *   13x Forest
 
 ---
 
@@ -85,14 +99,13 @@ Reanimate these to clear the board.
 1 Sakura-Tribe Elder
 1 Diligent Farmhand
 1 Dawntreader Elk
-1 Yavimaya Elder
+1 Stitcher's Supplier
 1 Satyr Wayfinder
 1 Grisly Salvage
 1 Elves of Deep Shadow
 1 Llanowar Elves
 1 Elvish Mystic
 1 Fyndhorn Elves
-1 Spore Frog
 1 Fleshbag Marauder
 1 Merciless Executioner
 1 Plaguecrafter
@@ -102,23 +115,38 @@ Reanimate these to clear the board.
 1 Caustic Caterpillar
 1 Foundation Breaker
 1 Reclamation Sage
-1 Viscera Seer
-1 Carrion Feeder
-1 Woe Strider
+1 Haywire Mite
+1 Spore Frog
 1 Grim Haruspex
 1 Midnight Reaper
 1 Morbid Opportunist
+1 Braids, Arisen Nightmare
 1 Skullclamp
-1 Victimize
-1 Dread Return
+1 Buried Alive
+1 Jarad's Orders
+1 Eternal Witness
+1 Timeless Witness
 1 Gray Merchant of Asphodel
 1 Syr Konrad, the Grim
-1 Sepulchral Primordial
-1 Terastodon
-1 Hornet Queen
-1 Avenger of Zendikar
-1 Izoni, Thousand-Eyed
 1 Kokusho, the Evening Star
+1 Junji, the Midnight Sky
+1 Avenger of Zendikar
+1 Sepulchral Primordial
+1 Hornet Queen
+1 Viscera Seer
+1 Carrion Feeder
+1 Woe Strider
+1 Victimize
+1 Dread Return
+1 Living Death
+1 Village Rites
+1 Corrupted Conviction
+1 Deadly Dispute
+1 Beast Within
+1 Tear Asunder
+1 Putrefy
+1 Blood Artist
+1 Zulaport Cutthroat
 1 High Market
 1 Grim Backwoods
 1 Bojuka Bog
@@ -128,28 +156,11 @@ Reanimate these to clear the board.
 1 Temple of Malady
 1 Jungle Hollow
 1 Myriad Landscape
+1 Exotic Orchard
 14 Swamp
-14 Forest
+13 Forest
 1 Sol Ring
 1 Arcane Signet
 1 Talisman of Resilience
 1 Golgari Signet
-1 Putrefy
-1 Beast Within
-1 Tear Asunder
-1 Eternal Witness
-1 Timeless Witness
-1 Living Death
-1 Jarad's Orders
-1 Buried Alive
-1 Village Rites
-1 Corrupted Conviction
-1 Deadly Dispute
-1 Blood Artist
-1 Zulaport Cutthroat
-1 Bastion of Remembrance
-1 Moldervine Reclamation
-1 Deathreap Ritual
-1 Dictate of Erebos
-1 Sidisi, Undead Vizier
 ```

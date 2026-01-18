@@ -14,7 +14,7 @@ Contains deck lists and guides for Paper Commander (EDH).
 *   **`KarametraAngels/karametra_angels_ramp_premium.md`**: Analysis of your wife's Selesnya Angels deck (Commander: *Karametra*). Used for power-level comparison.
 *   **`Reference_DrillersHive/TheDrillersHives-Slivers.md`**: A reference deck list found online used for comparison against *The Hive*.
 *   **`HenzieBlitz/henzie_toolbox_budget.md`**: Budget Jund Blitz deck (Commander: *Henzie "Toolbox" Torre*). Designed as a fast, interactive "Angel Killer" using sacrifice effects.
-*   **`MerenGolgari/meren_reanimator_budget.md`**: Budget Golgari Reanimator deck (Commander: *Meren of Clan Nel Toth*). Grindy value engine focusing on "Spore Frog" locks and forced sacrifice.
+*   **`MerenGolgari/meren_reanimator_budget.md`**: Budget Golgari Reanimator deck (Commander: *Meren of Clan Nel Toth*). A resilient "Generalist" build focusing on attrition, graveyard value, and draining life totals.
 *   **`budget_commander_options.md`**: Research on the top 5 budget commanders to counter Karametra Angels.
 
 ### 📂 `/arena_decks`
