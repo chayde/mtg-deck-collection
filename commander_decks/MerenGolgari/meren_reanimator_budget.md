@@ -15,7 +15,6 @@ This version of Meren is built to handle *any* table. Instead of focusing on cou
 ## The Early Game (Ramp & Self-Mill)
 Get Meren out early and fill the graveyard with tools.
 *   1x [Sakura-Tribe Elder](https://scryfall.com/card/c20/187/sakura-tribe-elder) (The gold standard. Ramp + Exp Counter.)
-*   1x [Diligent Farmhand](https://scryfall.com/card/ody/237/diligent-farmhand) (Muscle Steve.)
 *   1x [Dawntreader Elk](https://scryfall.com/card/dka/111/dawntreader-elk)
 *   1x [Wood Elves](https://scryfall.com/card/ncc/329/wood-elves) (Ramp on ETB.)
 *   1x [Farhaven Elf](https://scryfall.com/card/khc/62/farhaven-elf) (Ramp on ETB.)
@@ -106,7 +105,6 @@ Creatures that solve problems when they enter or die.
 ```text
 1 Meren of Clan Nel Toth
 1 Sakura-Tribe Elder
-1 Diligent Farmhand
 1 Dawntreader Elk
 1 Wood Elves
 1 Farhaven Elf
@@ -163,7 +161,6 @@ Creatures that solve problems when they enter or die.
 1 Beast Within
 1 Tear Asunder
 1 Putrefy
-1 Blood Artist
 1 Zulaport Cutthroat
 1 High Market
 1 Grim Backwoods
