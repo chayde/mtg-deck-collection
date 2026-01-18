@@ -2,7 +2,7 @@
 **Commander:** Meren of Clan Nel Toth
 **Colors:** Golgari (Black / Green)
 **Power Level:** Bracket 2 (Focused / Solid Mid-Power)
-**Budget:** ~$80 USD (Budget Optimized)
+**Budget:** ~$90 USD (Budget Optimized)
 **Focus:** Value Engine, Graveyard Toolboxing, Attrition
 **Game Plan:** Grind out resources by sacrificing cheap creatures for value, then reanimate threats that answer the specific board state.
 
@@ -17,6 +17,9 @@ Get Meren out early and fill the graveyard with tools.
 *   1x [Sakura-Tribe Elder](https://scryfall.com/card/c20/187/sakura-tribe-elder) (The gold standard. Ramp + Exp Counter.)
 *   1x [Diligent Farmhand](https://scryfall.com/card/ody/237/diligent-farmhand) (Muscle Steve.)
 *   1x [Dawntreader Elk](https://scryfall.com/card/dka/111/dawntreader-elk)
+*   1x [Wood Elves](https://scryfall.com/card/ncc/329/wood-elves) (Ramp on ETB.)
+*   1x [Farhaven Elf](https://scryfall.com/card/khc/62/farhaven-elf) (Ramp on ETB.)
+*   1x [Solemn Simulacrum](https://scryfall.com/card/c21/264/solemn-simulacrum) (Sad Robot draws cards.)
 *   1x [Stitcher's Supplier](https://scryfall.com/card/m19/121/stitchers-supplier) (The best graveyard filler. Mills 3 on ETB, 3 on Death.)
 *   1x [Satyr Wayfinder](https://scryfall.com/card/znc/81/satyr-wayfinder)
 *   1x [Grisly Salvage](https://scryfall.com/card/c20/215/grisly-salvage)
@@ -31,6 +34,7 @@ Creatures that solve problems when they enter or die.
 *   1x [Merciless Executioner](https://scryfall.com/card/frf/76/merciless-executioner)
 *   1x [Plaguecrafter](https://scryfall.com/card/grn/82/plaguecrafter) (Hits Planeswalkers too.)
 *   1x [Demon's Disciple](https://scryfall.com/card/znr/97/demons-disciple)
+*   1x [Butcher of Malakir](https://scryfall.com/card/cm2/60/butcher-of-malakir) (Grave Pact on a stick.)
 *   1x [Ravenous Chupacabra](https://scryfall.com/card/a25/104/ravenous-chupacabra) (Targeted removal.)
 *   1x [Shriekmaw](https://scryfall.com/card/afc/110/shriekmaw) (Efficiency king.)
 *   1x [Caustic Caterpillar](https://scryfall.com/card/ori/170/caustic-caterpillar) (Artifact/Enchantment removal.)
@@ -43,21 +47,26 @@ Creatures that solve problems when they enter or die.
 *   1x [Grim Haruspex](https://scryfall.com/card/clb/754/grim-haruspex)
 *   1x [Midnight Reaper](https://scryfall.com/card/mic/125/midnight-reaper)
 *   1x [Morbid Opportunist](https://scryfall.com/card/mid/113/morbid-opportunist)
-*   1x [Braids, Arisen Nightmare](https://scryfall.com/card/dmu/84/braids-arisen-nightmare) (Sacrifice a land/creature to force opponents to sac or let you draw. Huge value.)
+*   1x [Braids, Arisen Nightmare](https://scryfall.com/card/dmu/84/braids-arisen-nightmare)
+*   1x [Disciple of Bolas](https://scryfall.com/card/ncc/247/disciple-of-bolas) (Sacrifice huge creature, draw cards, gain life.)
+*   1x [Sidisi, Undead Vizier](https://scryfall.com/card/dtk/120/sidisi-undead-vizier) (Demonic Tutor on a stick.)
+*   1x [Gravebreaker Lamia](https://scryfall.com/card/thb/98/gravebreaker-lamia) (Entomb on a stick.)
 *   1x [Skullclamp](https://scryfall.com/card/clb/870/skullclamp)
-*   1x [Buried Alive](https://scryfall.com/card/uma/88/buried-alive) (Tutor 3 creatures to bin.)
-*   1x [Jarad's Orders](https://scryfall.com/card/rtr/175/jarads-orders) (One to hand, one to bin.)
-*   1x [Eternal Witness](https://scryfall.com/card/c15/219/eternal-witness) (Get back anything.)
+*   1x [Evolutionary Leap](https://scryfall.com/card/ori/176/evolutionary-leap) (Sacrifice to find more creatures.)
+*   1x [Buried Alive](https://scryfall.com/card/uma/88/buried-alive)
+*   1x [Jarad's Orders](https://scryfall.com/card/rtr/175/jarads-orders)
+*   1x [Eternal Witness](https://scryfall.com/card/c15/219/eternal-witness)
 *   1x [Timeless Witness](https://scryfall.com/card/mh2/179/timeless-witness)
 
 ## Win Conditions (The Finishers)
-*   1x [Gray Merchant of Asphodel](https://scryfall.com/card/thb/99/gray-merchant-of-asphodel) (The primary win condition. Loop him.)
-*   1x [Syr Konrad, the Grim](https://scryfall.com/card/znc/56/syr-konrad-the-grim) (Damage on death/mill.)
-*   1x [Kokusho, the Evening Star](https://scryfall.com/card/ima/95/kokusho-the-evening-star) (Big flying drainer.)
-*   1x [Junji, the Midnight Sky](https://scryfall.com/card/neo/114/junji-the-midnight-sky) (Discard/Reanimation threat.)
-*   1x [Avenger of Zendikar](https://scryfall.com/card/ncc/280/avenger-of-zendikar) (Go-wide Army.)
-*   1x [Sepulchral Primordial](https://scryfall.com/card/gtc/75/sepulchral-primordial) (Uses opponents' threats against them.)
-*   1x [Hornet Queen](https://scryfall.com/card/clb/799/hornet-queen) (Defensive wall that kills attackers.)
+*   1x [Gray Merchant of Asphodel](https://scryfall.com/card/thb/99/gray-merchant-of-asphodel)
+*   1x [Syr Konrad, the Grim](https://scryfall.com/card/znc/56/syr-konrad-the-grim)
+*   1x [Kokusho, the Evening Star](https://scryfall.com/card/ima/95/kokusho-the-evening-star)
+*   1x [Junji, the Midnight Sky](https://scryfall.com/card/neo/114/junji-the-midnight-sky)
+*   1x [Avenger of Zendikar](https://scryfall.com/card/ncc/280/avenger-of-zendikar)
+*   1x [Izoni, Thousand-Eyed](https://scryfall.com/card/grn/180/izoni-thousand-eyed) (Makes insects, sacrifices for draw.)
+*   1x [Sepulchral Primordial](https://scryfall.com/card/gtc/75/sepulchral-primordial)
+*   1x [Hornet Queen](https://scryfall.com/card/clb/799/hornet-queen)
 
 ## Sacrifice Outlets & Spells
 *   1x [Viscera Seer](https://scryfall.com/card/cmr/158/viscera-seer)
@@ -65,7 +74,7 @@ Creatures that solve problems when they enter or die.
 *   1x [Woe Strider](https://scryfall.com/card/thb/123/woe-strider)
 *   1x [Victimize](https://scryfall.com/card/cmr/157/victimize)
 *   1x [Dread Return](https://scryfall.com/card/tsr/111/dread-return)
-*   1x [Living Death](https://scryfall.com/card/tpr/109/living-death) (Board wipe + Mass Reanimation. Game winner.)
+*   1x [Living Death](https://scryfall.com/card/tpr/109/living-death)
 *   1x [Village Rites](https://scryfall.com/card/m21/126/village-rites)
 *   1x [Corrupted Conviction](https://scryfall.com/card/mom/98/corrupted-conviction)
 *   1x [Deadly Dispute](https://scryfall.com/card/clb/124/deadly-dispute)
@@ -99,6 +108,9 @@ Creatures that solve problems when they enter or die.
 1 Sakura-Tribe Elder
 1 Diligent Farmhand
 1 Dawntreader Elk
+1 Wood Elves
+1 Farhaven Elf
+1 Solemn Simulacrum
 1 Stitcher's Supplier
 1 Satyr Wayfinder
 1 Grisly Salvage
@@ -110,6 +122,7 @@ Creatures that solve problems when they enter or die.
 1 Merciless Executioner
 1 Plaguecrafter
 1 Demon's Disciple
+1 Butcher of Malakir
 1 Ravenous Chupacabra
 1 Shriekmaw
 1 Caustic Caterpillar
@@ -121,7 +134,11 @@ Creatures that solve problems when they enter or die.
 1 Midnight Reaper
 1 Morbid Opportunist
 1 Braids, Arisen Nightmare
+1 Disciple of Bolas
+1 Sidisi, Undead Vizier
+1 Gravebreaker Lamia
 1 Skullclamp
+1 Evolutionary Leap
 1 Buried Alive
 1 Jarad's Orders
 1 Eternal Witness
@@ -131,6 +148,7 @@ Creatures that solve problems when they enter or die.
 1 Kokusho, the Evening Star
 1 Junji, the Midnight Sky
 1 Avenger of Zendikar
+1 Izoni, Thousand-Eyed
 1 Sepulchral Primordial
 1 Hornet Queen
 1 Viscera Seer
