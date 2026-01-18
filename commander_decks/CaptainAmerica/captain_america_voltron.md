@@ -27,6 +27,7 @@ These equipment hit hard when attached, and hit hard when thrown (based on CMC).
 *   1x [Anduril, Flame of the West](https://scryfall.com/card/ltr/236/anduril-flame-of-the-west) (Spirit tokens.)
 *   1x [Robe of Stars](https://scryfall.com/card/afc/11/robe-of-stars) (Phase out protection.)
 *   1x [Mithril Coat](https://scryfall.com/card/ltr/245/mithril-coat) (Instant speed Indestructible.)
+*   1x [Hammer of Nazahn](https://scryfall.com/card/2xm/259/hammer-of-nazahn) (Indestructible + Autoe-quip engine.)
 
 ## The Support Squad (Cost Reducers & Draw)
 *   1x [Akiri, Fearless Voyager](https://scryfall.com/card/znr/220/akiri-fearless-voyager) (Draws cards, protects equipped creatures.)
@@ -201,4 +202,5 @@ Since we run Sunforger, we need a toolbox of Red/White instants to cast for free
 1 Fighter Class
 1 All That Glitters
 1 Dispatch
+1 Hammer of Nazahn
 ```
