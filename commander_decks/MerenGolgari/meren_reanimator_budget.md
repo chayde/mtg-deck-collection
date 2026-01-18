@@ -99,6 +99,24 @@ Creatures that solve problems when they enter or die.
 
 ---
 
+## Upgrades: Bracket 3 Tuned (<$50/card)
+These cards increase consistency and interaction without breaking into "cEDH" territory.
+
+*   **[Assassin's Trophy](https://scryfall.com/card/2x2/175/assassins-trophy)** (~$8) -> Replaces **Putrefy**: Instant speed removal for *any* permanent (including Lands/Tron pieces).
+*   **[Toxic Deluge](https://scryfall.com/card/cc2/6/toxic-deluge)** (~$18) -> Replaces **Beast Within**: The best board wipe in black. Gets around Indestructible.
+*   **[Yawgmoth, Thran Physician](https://scryfall.com/card/mh1/116/yawgmoth-thran-physician)** (~$40) -> Replaces **Grim Haruspex**: Sacrifice outlet + Draw engine + Removal (Proactively places -1/-1 counters).
+*   **[Reanimate](https://scryfall.com/card/cc2/5/reanimate)** (~$14) -> Replaces **Dread Return**: The most efficient reanimation spell ever printed. 1 mana vs 4 mana.
+*   **[Agadeem's Awakening](https://scryfall.com/card/znr/90/agadeems-awakening)** (~$18) -> Replaces **Swamp**: A land that can also act as a massive mass-reanimation spell late game.
+*   **[Rise of the Dark Realms](https://scryfall.com/card/jmp/271/rise-of-the-dark-realms)** (~$20) -> Replaces **Izoni, Thousand-Eyed**: The ultimate finisher. Reanimates *all* graveyards.
+*   **[Altar of Dementia](https://scryfall.com/card/mh1/218/altar-of-dementia)** (~$5) -> Replaces **Viscera Seer**: Free sacrifice outlet that also fills your graveyard (self-mill) to find more targets.
+*   **[Pattern of Rebirth](https://scryfall.com/card/uma/176/pattern-of-rebirth)** (~$4) -> Replaces **Jarad's Orders**: Enchant a creature, sacrifice it, and put *any* creature from your deck onto the battlefield.
+*   **[Pitiless Plunderer](https://scryfall.com/card/rix/81/pitiless-plunderer)** (~$9) -> Replaces **Satyr Wayfinder**: Generates treasure tokens on every death. Massive ramp engine.
+*   **[Boseiju, Who Endures](https://scryfall.com/card/neo/266/boseiju-who-endures)** (~$35) -> Replaces **Forest**: Uncounterable removal for Artifacts/Enchantments/Lands that is also a land.
+*   **[Takenuma, Abandoned Mire](https://scryfall.com/card/neo/278/takenuma-abandoned-mire)** (~$8) -> Replaces **Swamp**: Land that can mill you and return a creature to hand.
+*   **[Ophiomancer](https://scryfall.com/card/cc2/3/ophiomancer)** (~$4) -> Replaces **Carrion Feeder**: Creates a Deathtouch snake *every upkeep*. Infinite fodder for Meren/Sacrifice outlets.
+
+---
+
 ### Moxfield Import List
 *(Copy and paste the text below directly into Moxfield)*
 
