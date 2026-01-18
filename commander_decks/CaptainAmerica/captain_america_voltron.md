@@ -27,7 +27,7 @@ These equipment hit hard when attached, and hit hard when thrown (based on CMC).
 *   1x [Anduril, Flame of the West](https://scryfall.com/card/ltr/236/anduril-flame-of-the-west) (Spirit tokens.)
 *   1x [Robe of Stars](https://scryfall.com/card/afc/11/robe-of-stars) (Phase out protection.)
 *   1x [Mithril Coat](https://scryfall.com/card/ltr/245/mithril-coat) (Instant speed Indestructible.)
-*   1x [Hammer of Nazahn](https://scryfall.com/card/2xm/259/hammer-of-nazahn) (Indestructible + Autoe-quip engine.)
+*   1x [Hammer of Nazahn](https://scryfall.com/card/2xm/259/hammer-of-nazahn) (Indestructible + Auto-equip.)
 
 ## The Support Squad (Cost Reducers & Draw)
 *   1x [Akiri, Fearless Voyager](https://scryfall.com/card/znr/220/akiri-fearless-voyager) (Draws cards, protects equipped creatures.)
@@ -109,6 +109,22 @@ Since we run Sunforger, we need a toolbox of Red/White instants to cast for free
     *   6x Plains
     *   5x Island
     *   5x Mountain
+
+---
+
+## Upgrades: Top 10 High-Power Additions
+These are the best cards to add from the "GuysThatMagic" list to push this deck towards Bracket 3/4.
+
+*   **[Stoneforge Mystic](https://scryfall.com/card/2xm/31/stoneforge-mystic)** (~$30) -> Replaces **Open the Armory**: The gold standard for equipment tutors. Puts equipment into play uncounterably.
+*   **[Esper Sentinel](https://scryfall.com/card/mh2/12/esper-sentinel)** (~$25) -> Replaces **Etherium Sculptor**: Premium card draw. Scales with equipment buffs (Sentinel power = tax amount).
+*   **[Inventory Management](https://scryfall.com/card/pip/105/inventory-management)** (~$5) -> Replaces **Sejiri Shelter**: Instant speed "Catch". Allows you to split split second equip everything to Cap (or anyone) mid-combat.
+*   **[The Reaver Cleaver](https://scryfall.com/card/dmc/8/the-reaver-cleaver)** (~$15) -> Replaces **Sword of the Animist**: Animist ramps basics; Cleaver generates massive Treasure mana to fuel "Throwing" costs.
+*   **[Cyclonic Rift](https://scryfall.com/card/2xm/47/cyclonic-rift)** (~$35) -> Replaces **Rip Apart**: The ultimate reset button. One-sided board wipe that wins games.
+*   **[Commander's Plate](https://scryfall.com/card/cmr/305/commanders-plate)** (~$40) -> Replaces **Robe of Stars**: Protection from Black and Green (and others if you run fewer colors, but in Jeskai it procs B/G). Massive stat boost.
+*   **[Helm of the Host](https://scryfall.com/card/dom/217/helm-of-the-host)** (~$8) -> Replaces **Masterwork of Ingenuity**: Creates non-legendary copies of Captain America. Multiple Caps = Multiple Throws per turn.
+*   **[Godo, Bandit Warlord](https://scryfall.com/card/2xm/128/godo-bandit-warlord)** (~$4) -> Replaces **Stonehewer Giant**: Finds *Helm of the Host* immediately. Infinite combat steps if you have the mana.
+*   **[Fighter Class](https://scryfall.com/card/afr/222/fighter-class)** (~$4) -> Replaces **Danitha Capashen, Paragon**: Level 1 tutors. Level 2 reduces equip. Level 3 forces bad blocks.
+*   **[Codsworth, Handy Helper](https://scryfall.com/card/pip/14/codsworth-handy-helper)** (~$5) -> Replaces **Foundry Inspector**: Ramps, attaches for free, and gives Ward to the Commander.
 
 ---
 
