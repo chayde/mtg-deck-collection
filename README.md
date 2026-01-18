@@ -16,6 +16,7 @@ Contains deck lists and guides for Paper Commander (EDH).
 *   **`HenzieBlitz/henzie_toolbox_budget.md`**: Budget Jund Blitz deck (Commander: *Henzie "Toolbox" Torre*). Designed as a fast, interactive "Angel Killer" using sacrifice effects.
 *   **`MerenGolgari/meren_reanimator_budget.md`**: Budget Golgari Reanimator deck (Commander: *Meren of Clan Nel Toth*). A resilient "Generalist" build focusing on attrition, graveyard value, and draining life totals.
 *   **`CaptainAmerica/captain_america_voltron.md`**: Jeskai Equipment Voltron deck (Commander: *Captain America, First Avenger*). Focuses on "Throwing" heavy equipment for damage and cheating equip costs.
+*   **`CaptainNghathrod/horrors_mill_budget.md`**: Budget Dimir Horror/Mill deck (Commander: *Captain N'ghathrod*). Steals artifacts and creatures from opponents' graveyards.
 *   **`budget_commander_options.md`**: Research on the top 5 budget commanders to counter Karametra Angels.
 
 ### 📂 `/arena_decks`
