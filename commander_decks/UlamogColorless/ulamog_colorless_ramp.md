@@ -46,7 +46,7 @@ Since we are ramping to 10+ mana, we need other bombs besides Ulamog.
 
 ## The Rocks (Ramp)
 We need ~15-20 ramp sources.
-*   1x [Sol Ring](https://scryfall.com/card/c21/263/sol-ring)
+*   1x [Cloud Key](https://scryfall.com/card/tsr/265/cloud-key) (Naming Artifacts makes the whole deck cheaper.)
 *   1x [Arcane Signet](https://scryfall.com/card/c21/234/arcane-signet) (Taps for C in this deck.)
 *   1x [Mind Stone](https://scryfall.com/card/c21/251/mind-stone)
 *   1x [Thought Vessel](https://scryfall.com/card/cmr/346/thought-vessel)
@@ -139,7 +139,7 @@ We need ~15-20 ramp sources.
 1 Mirage Mirror
 1 Karn, Scion of Urza
 1 Karn, the Great Creator
-1 Sol Ring
+1 Cloud Key
 1 Arcane Signet
 1 Mind Stone
 1 Thought Vessel
