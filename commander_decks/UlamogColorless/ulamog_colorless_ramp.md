@@ -13,16 +13,16 @@
 Since we are ramping to 10+ mana, we need other bombs besides Ulamog.
 *   1x [Kozilek, the Great Distortion](https://scryfall.com/card/ogw/4/kozilek-the-great-distortion) (Draws cards, Counters spells.)
 *   1x [Platinum Angel](https://scryfall.com/card/cn2/214/platinum-angel) (Classic staple. You can't lose the game.)
-*   1x [Artisan of Kozilek](https://scryfall.com/card/ncc/191/artisan-of-kozilek) (Reanimates a creature on cast.)
-*   1x [Bane of Bala Ged](https://scryfall.com/card/bfz/1/bane-of-bala-ged) (Exiles 2 per attack.)
+*   1x [Phyrexian Triniform](https://scryfall.com/card/cmr/331/phyrexian-triniform) (3 bodies in one. Encore.)
+*   1x [Metalwork Colossus](https://scryfall.com/card/kld/222/metalwork-colossus) (Usually free 10/10.)
 *   1x [Meteor Golem](https://scryfall.com/card/clb/323/meteor-golem) (Destroy target permanent.)
 *   1x [Cityscape Leveler](https://scryfall.com/card/bro/233/cityscape-leveler) (Destroy target nonland on cast/attack. Unearth.)
 *   1x [Steel Hellkite](https://scryfall.com/card/clb/874/steel-hellkite) (Mana sink board wipe.)
 *   1x [Wurmcoil Engine](https://scryfall.com/card/2xm/308/wurmcoil-engine) (Lifelink/Deathtouch/Tokens.)
 *   1x [Myr Battlesphere](https://scryfall.com/card/c21/253/myr-battlesphere) (Direct damage + Tokens.)
-*   1x [Sandstone Oracle](https://scryfall.com/card/c21/258/sandstone-oracle) (Refill hand.)
-*   1x [Endbringer](https://scryfall.com/card/ogw/3/endbringer) (Ping, draw, or stun.)
-*   1x [Breaker of Armies](https://scryfall.com/card/bfz/3/breaker-of-armies) (Lure effect.)
+*   1x [The Mightstone and Weakstone](https://scryfall.com/card/bro/238/the-mightstone-and-weakstone) (Draw 2 or Removal.)
+*   1x [Mazemind Tome](https://scryfall.com/card/m21/232/mazemind-tome) (Scry/Draw engine.)
+*   1x [Stonecoil Serpent](https://scryfall.com/card/eld/235/stonecoil-serpent) (Reach, Trample, Protection from Multicolor.)
 *   1x [Portal to Phyrexia](https://scryfall.com/card/bro/240/portal-to-phyrexia) (Edict every turn + Reanimation.)
 
 ## The Engine (Cost Reducers & Value)
@@ -36,7 +36,7 @@ Since we are ramping to 10+ mana, we need other bombs besides Ulamog.
 *   1x [Solemn Simulacrum](https://scryfall.com/card/c21/264/solemn-simulacrum)
 *   1x [Burnished Hart](https://scryfall.com/card/clb/303/burnished-hart)
 *   1x [Introduction to Annihilation](https://scryfall.com/card/stx/3/introduction-to-annihilation) (Exile removal.)
-*   1x [Scour from Existence](https://scryfall.com/card/bfz/4/scour-from-existence) (Exile removal.)
+*   1x [Unstable Obelisk](https://scryfall.com/card/c18/227/unstable-obelisk) (Ramp + Destroy Permanent.)
 *   1x [Environmental Sciences](https://scryfall.com/card/stx/1/environmental-sciences) (Fetch a Wastes.)
 *   1x [Chromatic Orrery](https://scryfall.com/card/m21/228/chromatic-orrery) (Big mana + Draw.)
 *   1x [Lithoform Engine](https://scryfall.com/card/znr/245/lithoform-engine) (Copy abilities/spells.)
@@ -59,10 +59,10 @@ We need ~15-20 ramp sources.
 *   1x [Thran Dynamo](https://scryfall.com/card/c19/225/thran-dynamo)
 *   1x [Gilded Lotus](https://scryfall.com/card/dom/215/gilded-lotus)
 *   1x [Dreamstone Hedron](https://scryfall.com/card/cmr/307/dreamstone-hedron)
-*   1x [Stonespeaker Crystal](https://scryfall.com/card/clb/338/stonespeaker-crystal)
+*   1x [Network Terminal](https://scryfall.com/card/neo/251/network-terminal) (Ramp + Loot.)
 *   1x [Firemind Vessel](https://scryfall.com/card/war/237/firemind-vessel)
 *   1x [Expedition Map](https://scryfall.com/card/2xm/255/expedition-map) (Tutors ANY land - finds Tron.)
-*   1x [Ur-Golem's Eye](https://scryfall.com/card/c18/288/ur-golems-eye)
+*   1x [The Irencrag](https://scryfall.com/card/woe/248/the-irencrag) (Ramp -> Equipment.)
 
 ## Interaction & Protection
 *   1x [Swiftfoot Boots](https://scryfall.com/card/clb/339/swiftfoot-boots)
@@ -111,16 +111,16 @@ We need ~15-20 ramp sources.
 1 Ulamog, the Ceaseless Hunger
 1 Kozilek, the Great Distortion
 1 Platinum Angel
-1 Artisan of Kozilek
-1 Bane of Bala Ged
+1 Phyrexian Triniform
+1 Metalwork Colossus
 1 Meteor Golem
 1 Cityscape Leveler
 1 Steel Hellkite
 1 Wurmcoil Engine
 1 Myr Battlesphere
-1 Sandstone Oracle
-1 Endbringer
-1 Breaker of Armies
+1 The Mightstone and Weakstone
+1 Mazemind Tome
+1 Stonecoil Serpent
 1 Portal to Phyrexia
 1 Forsaken Monument
 1 Ugin, the Ineffable
@@ -132,7 +132,7 @@ We need ~15-20 ramp sources.
 1 Solemn Simulacrum
 1 Burnished Hart
 1 Introduction to Annihilation
-1 Scour from Existence
+1 Unstable Obelisk
 1 Environmental Sciences
 1 Chromatic Orrery
 1 Lithoform Engine
@@ -152,10 +152,10 @@ We need ~15-20 ramp sources.
 1 Thran Dynamo
 1 Gilded Lotus
 1 Dreamstone Hedron
-1 Stonespeaker Crystal
+1 Network Terminal
 1 Firemind Vessel
 1 Expedition Map
-1 Ur-Golem's Eye
+1 The Irencrag
 1 Swiftfoot Boots
 1 Lightning Greaves
 1 Mirror Shield
