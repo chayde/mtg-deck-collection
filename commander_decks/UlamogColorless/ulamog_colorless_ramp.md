@@ -87,7 +87,7 @@ We need ~15-20 ramp sources.
     *   1x [Arch of Orazca](https://scryfall.com/card/rix/185/arch-of-orazca) (Draw a card if you have the City's Blessing.)
     *   1x [Scavenger Grounds](https://scryfall.com/card/c21/314/scavenger-grounds) (GY Hate.)
     *   1x [Buried Ruin](https://scryfall.com/card/c21/281/buried-ruin)
-    *   1x [Sequestered Stash](https://scryfall.com/card/kld/248/sequestered-stash)
+    *   1x [Tocasia's Dig Site](https://scryfall.com/card/bro/266/tocasias-dig-site) (Surveil and late-game card draw.)
     *   1x [Inventors' Fair](https://scryfall.com/card/kld/247/inventors-fair)
     *   1x [Darksteel Citadel](https://scryfall.com/card/c21/285/darksteel-citadel)
     *   1x [Radiant Fountain](https://scryfall.com/card/c21/310/radiant-fountain)
@@ -175,7 +175,7 @@ We need ~15-20 ramp sources.
 1 Arch of Orazca
 1 Scavenger Grounds
 1 Buried Ruin
-1 Sequestered Stash
+1 Tocasia's Dig Site
 1 Inventors' Fair
 1 Darksteel Citadel
 1 Radiant Fountain
