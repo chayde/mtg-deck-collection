@@ -53,7 +53,7 @@ We need ~15-20 ramp sources.
 *   1x [Coldsteel Heart](https://scryfall.com/card/2x2/301/coldsteel-heart) (Choose any color (Colorless).)
 *   1x [Guardian Idol](https://scryfall.com/card/jmp/467/guardian-idol)
 *   1x [Collector's Vault](https://scryfall.com/card/woe/244/collectors-vault) (Ramp + Loot/Treasure engine.)
-*   1x [Liquimetal Torque](https://scryfall.com/card/mh2/228/liquimetal-torque)
+*   1x [Letter of Acceptance](https://scryfall.com/card/vow/254/letter-of-acceptance) (Ramp + Card Draw option.)
 *   1x [Worn Powerstone](https://scryfall.com/card/c18/230/worn-powerstone)
 *   1x [Hedron Archive](https://scryfall.com/card/c21/244/hedron-archive)
 *   1x [Replicating Ring](https://scryfall.com/card/khm/244/replicating-ring) (Snow ramp that multiplies later.)
@@ -146,7 +146,7 @@ We need ~15-20 ramp sources.
 1 Coldsteel Heart
 1 Guardian Idol
 1 Collector's Vault
-1 Liquimetal Torque
+1 Letter of Acceptance
 1 Worn Powerstone
 1 Hedron Archive
 1 Replicating Ring
