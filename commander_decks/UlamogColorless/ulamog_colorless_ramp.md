@@ -12,7 +12,7 @@
 ## The Titans (Top End Threats)
 Since we are ramping to 10+ mana, we need other bombs besides Ulamog.
 *   1x [Kozilek, the Great Distortion](https://scryfall.com/card/ogw/4/kozilek-the-great-distortion) (Draws cards, Counters spells.)
-*   1x [Ulamog's Crusher](https://scryfall.com/card/uma/8/ulamogs-crusher) (Annihilator 2.)
+*   1x [Platinum Angel](https://scryfall.com/card/cn2/214/platinum-angel) (Classic staple. You can't lose the game.)
 *   1x [Artisan of Kozilek](https://scryfall.com/card/ncc/191/artisan-of-kozilek) (Reanimates a creature on cast.)
 *   1x [Bane of Bala Ged](https://scryfall.com/card/bfz/1/bane-of-bala-ged) (Exiles 2 per attack.)
 *   1x [Meteor Golem](https://scryfall.com/card/clb/323/meteor-golem) (Destroy target permanent.)
@@ -110,7 +110,7 @@ We need ~15-20 ramp sources.
 ```text
 1 Ulamog, the Ceaseless Hunger
 1 Kozilek, the Great Distortion
-1 Ulamog's Crusher
+1 Platinum Angel
 1 Artisan of Kozilek
 1 Bane of Bala Ged
 1 Meteor Golem
