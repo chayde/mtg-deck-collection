@@ -70,7 +70,7 @@ We need ~15-20 ramp sources.
 *   1x [Mirror Shield](https://scryfall.com/card/thb/234/mirror-shield)
 *   1x [Soul-Guide Lantern](https://scryfall.com/card/thb/237/soul-guide-lantern) (GY Hate.)
 *   1x [Relic of Progenitus](https://scryfall.com/card/ema/231/relic-of-progenitus)
-*   1x [Nevinyrral's Disk](https://scryfall.com/card/mh2/298/nevinyrrals-disk) (Board wipe.)
+*   1x [Ratchet Bomb](https://scryfall.com/card/2xm/284/ratchet-bomb) (Destroy nonland permanents with CMC = X.)
 *   1x [Ugin's Mastery](https://scryfall.com/card/cmm/64/ugins-mastery) (Manifest/Flip.)
 *   1x [Ugin, the Spirit Dragon](https://scryfall.com/card/m21/1/ugin-the-spirit-dragon) (-X exiles colored permanents. Win con.)
 *   1x [Perilous Vault](https://scryfall.com/card/m15/224/perilous-vault)
@@ -161,7 +161,7 @@ We need ~15-20 ramp sources.
 1 Mirror Shield
 1 Soul-Guide Lantern
 1 Relic of Progenitus
-1 Nevinyrral's Disk
+1 Ratchet Bomb
 1 Ugin's Mastery
 1 Ugin, the Spirit Dragon
 1 Perilous Vault
