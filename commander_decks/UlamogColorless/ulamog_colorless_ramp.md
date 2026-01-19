@@ -52,7 +52,7 @@ We need ~15-20 ramp sources.
 *   1x [Moonsilver Key](https://scryfall.com/card/mid/255/moonsilver-key) (Finds ANY artifact with a mana ability.)
 *   1x [Coldsteel Heart](https://scryfall.com/card/2x2/301/coldsteel-heart) (Choose any color (Colorless).)
 *   1x [Guardian Idol](https://scryfall.com/card/jmp/467/guardian-idol)
-*   1x [Prismatic Lens](https://scryfall.com/card/c21/256/prismatic-lens)
+*   1x [Collector's Vault](https://scryfall.com/card/woe/244/collectors-vault) (Ramp + Loot/Treasure engine.)
 *   1x [Liquimetal Torque](https://scryfall.com/card/mh2/228/liquimetal-torque)
 *   1x [Worn Powerstone](https://scryfall.com/card/c18/230/worn-powerstone)
 *   1x [Hedron Archive](https://scryfall.com/card/c21/244/hedron-archive)
@@ -145,7 +145,7 @@ We need ~15-20 ramp sources.
 1 Moonsilver Key
 1 Coldsteel Heart
 1 Guardian Idol
-1 Prismatic Lens
+1 Collector's Vault
 1 Liquimetal Torque
 1 Worn Powerstone
 1 Hedron Archive
