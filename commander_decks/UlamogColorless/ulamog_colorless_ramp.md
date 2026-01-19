@@ -50,13 +50,13 @@ We need ~15-20 ramp sources.
 *   1x [Arcane Signet](https://scryfall.com/card/c21/234/arcane-signet) (Taps for C in this deck.)
 *   1x [Mind Stone](https://scryfall.com/card/c21/251/mind-stone)
 *   1x [Thought Vessel](https://scryfall.com/card/cmr/346/thought-vessel)
-*   1x [Everflowing Chalice](https://scryfall.com/card/clb/859/everflowing-chalice)
+*   1x [Coldsteel Heart](https://scryfall.com/card/2x2/301/coldsteel-heart) (Choose any color (Colorless).)
 *   1x [Guardian Idol](https://scryfall.com/card/jmp/467/guardian-idol)
 *   1x [Prismatic Lens](https://scryfall.com/card/c21/256/prismatic-lens)
 *   1x [Liquimetal Torque](https://scryfall.com/card/mh2/228/liquimetal-torque)
 *   1x [Worn Powerstone](https://scryfall.com/card/c18/230/worn-powerstone)
 *   1x [Hedron Archive](https://scryfall.com/card/c21/244/hedron-archive)
-*   1x [Thran Dynamo](https://scryfall.com/card/c19/225/thran-dynamo)
+*   1x [Replicating Ring](https://scryfall.com/card/khm/244/replicating-ring) (Snow ramp that multiplies later.)
 *   1x [Gilded Lotus](https://scryfall.com/card/dom/215/gilded-lotus)
 *   1x [Dreamstone Hedron](https://scryfall.com/card/cmr/307/dreamstone-hedron)
 *   1x [Network Terminal](https://scryfall.com/card/neo/251/network-terminal) (Ramp + Loot.)
@@ -72,7 +72,7 @@ We need ~15-20 ramp sources.
 *   1x [Relic of Progenitus](https://scryfall.com/card/ema/231/relic-of-progenitus)
 *   1x [Nevinyrral's Disk](https://scryfall.com/card/mh2/298/nevinyrrals-disk) (Board wipe.)
 *   1x [Ugin's Mastery](https://scryfall.com/card/cmm/64/ugins-mastery) (Manifest/Flip.)
-*   1x [All Is Dust](https://scryfall.com/card/uma/1/all-is-dust) (The best colorless wipe.)
+*   1x [Ugin, the Spirit Dragon](https://scryfall.com/card/m21/1/ugin-the-spirit-dragon) (-X exiles colored permanents. Win con.)
 *   1x [Perilous Vault](https://scryfall.com/card/m15/224/perilous-vault)
 *   1x [Blast Zone](https://scryfall.com/card/cm2/227/blast-zone)
 
@@ -143,13 +143,13 @@ We need ~15-20 ramp sources.
 1 Arcane Signet
 1 Mind Stone
 1 Thought Vessel
-1 Everflowing Chalice
+1 Coldsteel Heart
 1 Guardian Idol
 1 Prismatic Lens
 1 Liquimetal Torque
 1 Worn Powerstone
 1 Hedron Archive
-1 Thran Dynamo
+1 Replicating Ring
 1 Gilded Lotus
 1 Dreamstone Hedron
 1 Network Terminal
@@ -163,7 +163,7 @@ We need ~15-20 ramp sources.
 1 Relic of Progenitus
 1 Nevinyrral's Disk
 1 Ugin's Mastery
-1 All Is Dust
+1 Ugin, the Spirit Dragon
 1 Perilous Vault
 1 Blast Zone
 1 Shrine of the Forsaken Gods
