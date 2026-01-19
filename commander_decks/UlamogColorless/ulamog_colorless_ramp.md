@@ -62,7 +62,16 @@ We need ~15-20 ramp sources.
 *   1x [Network Terminal](https://scryfall.com/card/neo/251/network-terminal) (Ramp + Loot.)
 *   1x [Firemind Vessel](https://scryfall.com/card/war/237/firemind-vessel)
 *   1x [Relic of Legends](https://scryfall.com/card/dmu/236/relic-of-legends) (Premium ramp, especially with a WUBRG commander.)
-*   1x [The Irencrag](https://scryfall.com/card/woe/248/the-irencrag) (Ramp -> Equipment.)
+*   1x [Relic of Legends](https://scryfall.com/card/dmu/236/relic-of-legends) (Premium ramp.)
+*   1x [Energy Refractor](https://scryfall.com/card/bro/234/energy-refractor) (Cantrip + Filter.)
+*   1x [Chaos Wand](https://scryfall.com/card/m19/228/chaos-wand) (Steal spells.)
+*   1x [Transmogrifying Wand](https://scryfall.com/card/m19/247/transmogrifying-wand) (Creature removal.)
+*   1x [Key to the Archive](https://scryfall.com/card/ymid/59/key-to-the-archive) (Drafts powerful spells.)
+*   1x [Palantir of Orthanc](https://scryfall.com/card/ltr/247/palantir-of-orthanc) (Punisher mechanic: Mill or Draw.)
+*   1x [Staff of Domination](https://scryfall.com/card/cmr/343/staff-of-domination) (Mana sink: Life, Draw, Tap/Untap.)
+*   1x [The Stasis Coffin](https://scryfall.com/card/bro/245/the-stasis-coffin) (Protection from everything.)
+*   1x [Skittering Cicada](https://scryfall.com/card/cmm/717/skittering-cicada) (Flash + Ramp.)
+*   1x [It That Heralds the End](https://scryfall.com/card/mh3/9/it-that-heralds-the-end) (Cost reducer.)
 
 ## Interaction & Protection
 *   1x [Swiftfoot Boots](https://scryfall.com/card/clb/339/swiftfoot-boots)
@@ -153,6 +162,16 @@ We need ~15-20 ramp sources.
 1 Firemind Vessel
 1 Relic of Legends
 1 The Irencrag
+1 Relic of Legends
+1 Energy Refractor
+1 Chaos Wand
+1 Transmogrifying Wand
+1 Key to the Archive
+1 Palantir of Orthanc
+1 Staff of Domination
+1 The Stasis Coffin
+1 Skittering Cicada
+1 It That Heralds the End
 1 Swiftfoot Boots
 1 Lightning Greaves
 1 Mirror Shield
