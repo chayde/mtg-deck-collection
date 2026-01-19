@@ -61,7 +61,7 @@ We need ~15-20 ramp sources.
 *   1x [Dreamstone Hedron](https://scryfall.com/card/cmr/307/dreamstone-hedron)
 *   1x [Network Terminal](https://scryfall.com/card/neo/251/network-terminal) (Ramp + Loot.)
 *   1x [Firemind Vessel](https://scryfall.com/card/war/237/firemind-vessel)
-*   1x [Expedition Map](https://scryfall.com/card/2xm/255/expedition-map) (Tutors ANY land - finds Tron.)
+*   1x [Relic of Legends](https://scryfall.com/card/dmu/236/relic-of-legends) (Premium ramp, especially with a WUBRG commander.)
 *   1x [The Irencrag](https://scryfall.com/card/woe/248/the-irencrag) (Ramp -> Equipment.)
 
 ## Interaction & Protection
@@ -97,10 +97,7 @@ We need ~15-20 ramp sources.
     *   1x [Field of Ruin](https://scryfall.com/card/mid/262/field-of-ruin)
     *   1x [Demolition Field](https://scryfall.com/card/bro/260/demolition-field)
 *   **Basics:**
-    *   1x [Urza's Mine](https://scryfall.com/card/2xm/329/urzas-mine)
-    *   1x [Urza's Power Plant](https://scryfall.com/card/2xm/330/urzas-power-plant)
-    *   1x [Urza's Tower](https://scryfall.com/card/2xm/331/urzas-tower)
-    *   15x [Wastes](https://scryfall.com/card/ogw/183/wastes) (Required for "Colorless" basic fetch.)
+    *   18x [Wastes](https://scryfall.com/card/ogw/183/wastes) (Required for "Colorless" basic fetch.)
 
 ---
 
@@ -154,7 +151,7 @@ We need ~15-20 ramp sources.
 1 Dreamstone Hedron
 1 Network Terminal
 1 Firemind Vessel
-1 Expedition Map
+1 Relic of Legends
 1 The Irencrag
 1 Swiftfoot Boots
 1 Lightning Greaves
@@ -162,7 +159,7 @@ We need ~15-20 ramp sources.
 1 Soul-Guide Lantern
 1 Relic of Progenitus
 1 Ratchet Bomb
-1 Chimil, the Inner Sun
+1 Ugin's Mastery
 1 Kozilek, the Broken Reality
 1 Perilous Vault
 1 Blast Zone
@@ -184,8 +181,5 @@ We need ~15-20 ramp sources.
 1 Faceless Haven
 1 Field of Ruin
 1 Demolition Field
-15 Wastes
-1 Urza's Mine
-1 Urza's Power Plant
-1 Urza's Tower
+18 Wastes
 ```
