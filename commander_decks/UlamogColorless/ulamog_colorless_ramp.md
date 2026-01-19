@@ -70,7 +70,7 @@ We need ~15-20 ramp sources.
 *   1x [Palantir of Orthanc](https://scryfall.com/card/ltr/247/palantir-of-orthanc) (Punisher mechanic: Mill or Draw.)
 *   1x [Staff of Domination](https://scryfall.com/card/cmr/343/staff-of-domination) (Mana sink: Life, Draw, Tap/Untap.)
 *   1x [The Stasis Coffin](https://scryfall.com/card/bro/245/the-stasis-coffin) (Protection from everything.)
-*   1x [Skittering Cicada](https://scryfall.com/card/cmm/717/skittering-cicada) (Flash + Ramp.)
+*   1x [The Immortal Sun](https://scryfall.com/card/rix/180/the-immortal-sun) (Massive value: Draw, Ramp, and shuts down Planeswalkers.)
 *   1x [It That Heralds the End](https://scryfall.com/card/mh3/9/it-that-heralds-the-end) (Cost reducer.)
 
 ## Interaction & Protection
@@ -170,7 +170,7 @@ We need ~15-20 ramp sources.
 1 Palantir of Orthanc
 1 Staff of Domination
 1 The Stasis Coffin
-1 Skittering Cicada
+1 The Immortal Sun
 1 It That Heralds the End
 1 Swiftfoot Boots
 1 Lightning Greaves
