@@ -78,7 +78,7 @@ We need ~15-20 ramp sources.
 
 ## Lands (36 Total)
 *   **Utility:**
-    *   1x [Shrine of the Forsaken Gods](https://scryfall.com/card/bfz/245/shrine-of-the-forsaken-gods) (2 mana for Eldrazi.)
+    *   1x [Mirrex](https://scryfall.com/card/one/254/mirrex) (Makes tokens for defense/sac fodder.)
     *   1x [Temple of the False God](https://scryfall.com/card/c20/319/temple-of-the-false-god)
     *   1x [Tomb of the Spirit Dragon](https://scryfall.com/card/ktk/227/tomb-of-the-spirit-dragon) (Life gain.)
     *   1x [Zhalfirin Void](https://scryfall.com/card/dom/249/zhalfirin-void) (Scry 1.)
@@ -166,7 +166,7 @@ We need ~15-20 ramp sources.
 1 Kozilek, the Broken Reality
 1 Perilous Vault
 1 Blast Zone
-1 Shrine of the Forsaken Gods
+1 Mirrex
 1 Temple of the False God
 1 Tomb of the Spirit Dragon
 1 Zhalfirin Void
