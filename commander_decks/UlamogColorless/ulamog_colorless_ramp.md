@@ -72,7 +72,7 @@ We need ~15-20 ramp sources.
 *   1x [Relic of Progenitus](https://scryfall.com/card/ema/231/relic-of-progenitus)
 *   1x [Ratchet Bomb](https://scryfall.com/card/2xm/284/ratchet-bomb) (Destroy nonland permanents with CMC = X.)
 *   1x [Chimil, the Inner Sun](https://scryfall.com/card/lci/249/chimil-the-inner-sun) (Uncounterable spells + Free spell every turn!)
-*   1x [Ugin, the Spirit Dragon](https://scryfall.com/card/m21/1/ugin-the-spirit-dragon) (-X exiles colored permanents. Win con.)
+*   1x [Kozilek, the Broken Reality](https://scryfall.com/card/mh3/3/kozilek-the-broken-reality) (Exile removal + Body + Buffs Eldrazi.)
 *   1x [Perilous Vault](https://scryfall.com/card/m15/224/perilous-vault)
 *   1x [Blast Zone](https://scryfall.com/card/cm2/227/blast-zone)
 
@@ -163,7 +163,7 @@ We need ~15-20 ramp sources.
 1 Relic of Progenitus
 1 Ratchet Bomb
 1 Chimil, the Inner Sun
-1 Ugin, the Spirit Dragon
+1 Kozilek, the Broken Reality
 1 Perilous Vault
 1 Blast Zone
 1 Shrine of the Forsaken Gods
