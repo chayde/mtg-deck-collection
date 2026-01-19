@@ -13,7 +13,7 @@
 Since we are ramping to 10+ mana, we need other bombs besides Ulamog.
 *   1x [Kozilek, the Great Distortion](https://scryfall.com/card/ogw/4/kozilek-the-great-distortion) (Draws cards, Counters spells.)
 *   1x [Platinum Angel](https://scryfall.com/card/cn2/214/platinum-angel) (Classic staple. You can't lose the game.)
-*   1x [Phyrexian Triniform](https://scryfall.com/card/cmr/331/phyrexian-triniform) (3 bodies in one. Encore.)
+*   1x [Roaming Throne](https://scryfall.com/card/lci/258/roaming-throne) (Naming Eldrazi = Double Attack Triggers!)
 *   1x [Metalwork Colossus](https://scryfall.com/card/kld/222/metalwork-colossus) (Usually free 10/10.)
 *   1x [Meteor Golem](https://scryfall.com/card/clb/323/meteor-golem) (Destroy target permanent.)
 *   1x [Cityscape Leveler](https://scryfall.com/card/bro/233/cityscape-leveler) (Destroy target nonland on cast/attack. Unearth.)
@@ -111,7 +111,7 @@ We need ~15-20 ramp sources.
 1 Ulamog, the Ceaseless Hunger
 1 Kozilek, the Great Distortion
 1 Platinum Angel
-1 Phyrexian Triniform
+1 Roaming Throne
 1 Metalwork Colossus
 1 Meteor Golem
 1 Cityscape Leveler
