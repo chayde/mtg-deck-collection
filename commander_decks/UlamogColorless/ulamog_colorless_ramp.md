@@ -15,7 +15,7 @@ Since we are ramping to 10+ mana, we need other bombs besides Ulamog.
 *   1x [Platinum Angel](https://scryfall.com/card/cn2/214/platinum-angel) (Classic staple. You can't lose the game.)
 *   1x [Roaming Throne](https://scryfall.com/card/lci/258/roaming-throne) (Naming Eldrazi = Double Attack Triggers!)
 *   1x [Metalwork Colossus](https://scryfall.com/card/kld/222/metalwork-colossus) (Usually free 10/10.)
-*   1x [Meteor Golem](https://scryfall.com/card/clb/323/meteor-golem) (Destroy target permanent.)
+*   1x [Akroma's Memorial](https://scryfall.com/card/tsr/262/akromas-memorial) (Grants Flying, Haste, Protection, and more to all creatures.)
 *   1x [Cityscape Leveler](https://scryfall.com/card/bro/233/cityscape-leveler) (Destroy target nonland on cast/attack. Unearth.)
 *   1x [Steel Hellkite](https://scryfall.com/card/clb/874/steel-hellkite) (Mana sink board wipe.)
 *   1x [Wurmcoil Engine](https://scryfall.com/card/2xm/308/wurmcoil-engine) (Lifelink/Deathtouch/Tokens.)
@@ -119,7 +119,7 @@ We need ~15-20 ramp sources.
 1 Platinum Angel
 1 Roaming Throne
 1 Metalwork Colossus
-1 Meteor Golem
+1 Akroma's Memorial
 1 Cityscape Leveler
 1 Steel Hellkite
 1 Wurmcoil Engine
