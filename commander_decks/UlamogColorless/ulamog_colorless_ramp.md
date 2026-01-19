@@ -84,7 +84,7 @@ We need ~15-20 ramp sources.
     *   1x [Zhalfirin Void](https://scryfall.com/card/dom/249/zhalfirin-void) (Scry 1.)
     *   1x [Rogue's Passage](https://scryfall.com/card/c21/312/rogues-passage)
     *   1x [Bonder's Enclave](https://scryfall.com/card/iko/245/bonders-enclave) (Draw.)
-    *   1x [War Room](https://scryfall.com/card/cmr/361/war-room) (Draw.)
+    *   1x [Arch of Orazca](https://scryfall.com/card/rix/185/arch-of-orazca) (Draw a card if you have the City's Blessing.)
     *   1x [Scavenger Grounds](https://scryfall.com/card/c21/314/scavenger-grounds) (GY Hate.)
     *   1x [Buried Ruin](https://scryfall.com/card/c21/281/buried-ruin)
     *   1x [Sequestered Stash](https://scryfall.com/card/kld/248/sequestered-stash)
@@ -172,7 +172,7 @@ We need ~15-20 ramp sources.
 1 Zhalfirin Void
 1 Rogue's Passage
 1 Bonder's Enclave
-1 War Room
+1 Arch of Orazca
 1 Scavenger Grounds
 1 Buried Ruin
 1 Sequestered Stash
