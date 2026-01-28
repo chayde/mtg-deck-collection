@@ -1,106 +1,69 @@
-# Thalia and The Gitrog Monster (Abzan Landfall & Hatebears) - Budget Version
-**Commander:** Thalia and The Gitrog Monster
-**Colors:** Abzan (White / Green / Black)
-**Power Level:** Bracket 3 (High Power / Optimized)
-**Budget:** ~$500 - $600 USD (Cost Optimized)
-**Focus:** Landfall, Creature Sacrifice, Combat Control
-**Anti-Sliver Tech:** Forced Sacrifice, Deathtouch, Land Destruction
+# Thalia and Gitrog Deck Guide: "Land, Tax, and Sacrifice"
 
-## Deck Overview
-This is the budget-optimized version of the deck. It retains the core Landfall engine and control elements but swaps out the most expensive "staple" cards for highly effective alternatives that fit the strategy perfectly (e.g., using *Tireless Tracker* instead of *Esper Sentinel*).
+## Commander Strategy
+**Thalia and The Gitrog Monster**
+*   **Role:** A value, control, and combat powerhouse all in one.
+*   **Abilities:** First Strike and Deathtouch make it a terrifying attacker and blocker. It forces opponents' creatures and non-basic lands to enter tapped. It lets you play an extra land on your turn. When you play a land, you can sacrifice a creature or land to draw a card.
+*   **Goal:** Control the board with "stax" and "hatebear" effects while generating massive value through landfall and graveyard synergies, ultimately winning through combat or draining opponents.
 
-## Commander
-*   1x [Thalia and The Gitrog Monster](https://scryfall.com/card/mom/255/thalia-and-the-gitrog-monster)
+## 1. The Core Engine: Lands Matter
+*These cards allow you to maximize the "play an extra land" and "draw a card when a land hits the graveyard" abilities of your commander.*
+*   **Ramunap Excavator / Crucible of Worlds:** Allow you to play lands from your graveyard. This turns your fetch lands and sacrificed lands into repeatable value.
+*   **Azusa, Lost but Seeking:** Lets you play two additional lands on your turn.
+*   **The Gitrog Monster:** The original! Gives you an additional land drop and lets you draw a card whenever a land is put into your graveyard.
+*   **Ancient Greenwarden:** Doubles all your landfall triggers and lets you play lands from your graveyard.
+*   **Tireless Provisioner / Lotus Cobra:** Generate mana (as Treasure/Food) or a burst of mana whenever a land enters the battlefield.
+*   **Tireless Tracker:** Generates Clue tokens on landfall, which can be sacrificed for card draw.
+*   **Knight of the Reliquary:** A powerful creature that can sacrifice a land to search your library for another land and put it directly into play.
 
-## The "Sliver Killers" (Removal & Control)
-*   1x [Toxic Deluge](https://scryfall.com/card/cc2/6/toxic-deluge)
-*   1x [Damn](https://scryfall.com/card/mh2/80/damn)
-*   1x [Assassin's Trophy](https://scryfall.com/card/2x2/175/assassins-trophy)
-*   1x [Anguished Unmaking](https://scryfall.com/card/2x2/170/anguished-unmaking)
-*   1x [Despark](https://scryfall.com/card/moc/326/despark)
-*   1x [Drana and Linvala](https://scryfall.com/card/mom/222/drana-and-linvala)
-*   1x [Opposition Agent](https://scryfall.com/card/cmr/141/opposition-agent)
-*   1x [Dauthi Voidwalker](https://scryfall.com/card/mh2/81/dauthi-voidwalker)
-*   1x [Authority of the Consuls](https://scryfall.com/card/kld/5/authority-of-the-consuls)
+## 2. Landfall Payoffs: Winning the Game
+*These cards turn your land plays into a dominant board state and a direct path to victory.*
+*   **Scute Swarm:** Creates an exponentially growing army of insect tokens with every land drop.
+*   **Avenger of Zendikar:** Creates an army of plant tokens that get permanently buffed every time you play a land.
+*   **Rampaging Baloths:** Creates a 4/4 beast token for every land drop.
+*   **Ob Nixilis, the Fallen:** Drains an opponent for 3 life every time a land enters the battlefield under your control.
+*   **Felidar Retreat:** Either creates a 2/2 cat token or puts a +1/+1 counter on your whole team with each land drop.
+*   **Elesh Norn, Grand Cenobite:** A massive "anthem" for your creatures while shrinking your opponents' creatures. An asymmetrical board wipe and a win condition in one.
 
-## The Landfall & Graveyard Engine
-*   1x [Ramunap Excavator](https://scryfall.com/card/cmr/433/ramunap-excavator)
-*   1x [Crucible of Worlds](https://scryfall.com/card/2x2/303/crucible-of-worlds)
-*   1x [Ancient Greenwarden](https://scryfall.com/card/znr/178/ancient-greenwarden)
-*   1x [Azusa, Lost but Seeking](https://scryfall.com/card/m21/173/azusa-lost-but-seeking)
-*   1x [The Gitrog Monster](https://scryfall.com/card/soi/245/the-gitrog-monster)
-*   1x [Titania, Protector of Argoth](https://scryfall.com/card/mh2/287/titania-protector-of-argoth)
-*   1x [Ob Nixilis, the Fallen](https://scryfall.com/card/ima/101/ob-nixilis-the-fallen)
-*   1x [Rampaging Baloths](https://scryfall.com/card/c21/203/rampaging-baloths)
-*   1x [Scute Swarm](https://scryfall.com/card/znr/203/scute-swarm)
-*   1x [Avenger of Zendikar](https://scryfall.com/card/ncc/280/avenger-of-zendikar)
-*   1x [Tireless Provisioner](https://scryfall.com/card/mh2/180/tireless-provisioner)
-*   1x [Lotus Cobra](https://scryfall.com/card/znr/193/lotus-cobra)
-*   1x [Tireless Tracker](https://scryfall.com/card/c21/204/tireless-tracker)
-*   1x [Braids, Arisen Nightmare](https://scryfall.com/card/dmu/84/braids-arisen-nightmare)
+## 3. "Hatebears" & Control: Slowing Down Opponents
+*Small, disruptive creatures and enchantments that slow down your opponents and interfere with their game plans.*
+*   **Drana and Linvala:** Shuts off all activated abilities of your opponents' creatures. Devastating against many strategies.
+*   **Opposition Agent:** Steals your opponents' tutors, letting you search their library for a card instead.
+*   **Dauthi Voidwalker:** Exiles any card that would go to an opponent's graveyard and lets you cast one of them for free.
+*   **Authority of the Consuls / Blind Obedience:** Forces opponents' creatures to enter tapped and gains you life. Blind Obedience also affects artifacts.
+*   **Deafening Silence:** Limits each player to casting only one noncreature spell per turn.
+*   **Collector Ouphe:** Shuts off all activated abilities of artifacts.
+*   **Kambal, Consul of Allocation:** Drains opponents whenever they cast a noncreature spell.
 
-## Heavy Hitters & Value
-*   1x [Elesh Norn, Grand Cenobite](https://scryfall.com/card/ima/18/elesh-norn-grand-cenobite)
-*   1x [Felidar Retreat](https://scryfall.com/card/znr/16/felidar-retreat)
-*   1x [Luminarch Aspirant](https://scryfall.com/card/znr/24/luminarch-aspirant)
-*   1x [Toski, Bearer of Secrets](https://scryfall.com/card/khm/197/toski-bearer-of-secrets)
-*   1x [Guardian Project](https://scryfall.com/card/rna/130/guardian-project)
+## 4. The "Sliver Killers": Targeted & Mass Removal
+*Powerful, efficient spells to answer any threat on the board, especially creature-heavy decks.*
+*   **Toxic Deluge / Damn:** The best black board wipes. Toxic Deluge gets around indestructible by giving -X/-X. Damn can be a single-target spell or a full board wipe.
+*   **Swords to Plowshares / Path to Exile:** The most efficient single-target creature removal spells.
+*   **Assassin's Trophy / Anguished Unmaking / Despark:** Flexible, instant-speed removal that can hit almost any permanent.
+*   **Manglehorn:** Destroys an artifact upon entering the battlefield and forces opposing artifacts to enter tapped.
 
-## Ramp & Consistency
-*   1x [Sol Ring](https://scryfall.com/card/c21/263/sol-ring)
-*   1x [Arcane Signet](https://scryfall.com/card/c21/234/arcane-signet)
-*   1x [Talisman of Hierarchy](https://scryfall.com/card/mh1/233/talisman-of-hierarchy)
-*   1x [Talisman of Resilience](https://scryfall.com/card/mh1/234/talisman-of-resilience)
-*   1x [Talisman of Unity](https://scryfall.com/card/mrd/257/talisman-of-unity)
-*   1x [Birds of Paradise](https://scryfall.com/card/cn2/176/birds-of-paradise)
-*   1x [Deathrite Shaman](https://scryfall.com/card/ema/215/deathrite-shaman)
-*   1x [Elves of Deep Shadow](https://scryfall.com/card/ddj/47/elves-of-deep-shadow)
-*   1x [Avacyn's Pilgrim](https://scryfall.com/card/mm3/119/avacyns-pilgrim)
-*   1x [Three Visits](https://scryfall.com/card/cmr/261/three-visits)
-*   1x [Nature's Lore](https://scryfall.com/card/clb/244/natures-lore)
-*   1x [Farseek](https://scryfall.com/card/ncc/290/farseek)
-*   1x [Smothering Tithe](https://scryfall.com/card/rna/22/smothering-tithe)
+## 5. Value & Card Draw
+*   **Braids, Arisen Nightmare:** A sacrifice outlet that either draws you cards or forces opponents to sacrifice their permanents.
+*   **Toski, Bearer of Secrets:** An indestructible creature that draws you a card whenever one of your creatures deals combat damage to a player.
+*   **Guardian Project:** Draws you a card whenever a nontoken creature enters the battlefield under your control.
+*   **Smothering Tithe:** A powerhouse enchantment that generates a massive amount of treasure tokens.
+*   **Demonic Tutor / Diabolic Intent / Eladamri's Call:** Powerful tutors to find any creature or card you need.
 
-## Instants & Protection
-*   1x [Swords to Plowshares](https://scryfall.com/card/cmr/387/swords-to-plowshares)
-*   1x [Path to Exile](https://scryfall.com/card/jmp/127/path-to-exile)
-*   1x [Teferi's Protection](https://scryfall.com/card/sta/11/teferis-protection)
-*   1x [Heroic Intervention](https://scryfall.com/card/m21/188/heroic-intervention)
-*   1x [Diabolic Intent](https://scryfall.com/card/bbd/141/diabolic-intent)
-*   1x [Demonic Tutor](https://scryfall.com/card/uma/93/demonic-tutor)
-*   1x [Eladamri's Call](https://scryfall.com/card/mh1/197/eladamris-call)
+## 6. Ramp & Mana Fixing
+*   **Sol Ring / Arcane Signet / Talismans:** Standard artifact ramp to accelerate your game plan.
+*   **Birds of Paradise / Deathrite Shaman / Elves of Deep Shadow / Avacyn's Pilgrim:** One-mana dorks that produce all the colors you need.
+*   **Three Visits / Nature's Lore / Farseek:** Two-mana ramp spells that search for lands and put them directly into play.
+*   **Springbloom Druid / Roiling Regrowth / Harrow / Crop Rotation:** Spells that sacrifice a land to find more lands, triggering your commander and other abilities.
 
-## Lands (37 Total)
-*   **Fetches:**
-    *   1x [Verdant Catacombs](https://scryfall.com/card/mh2/260/verdant-catacombs)
-    *   1x [Windswept Heath](https://scryfall.com/card/ktk/248/windswept-heath)
-    *   1x [Marsh Flats](https://scryfall.com/card/mh2/248/marsh-flats)
-    *   1x [Fabled Passage](https://scryfall.com/card/m21/246/fabled-passage)
-*   **Shock Lands:**
-    *   1x [Temple Garden](https://scryfall.com/card/grn/258/temple-garden)
-    *   1x [Overgrown Tomb](https://scryfall.com/card/grn/253/overgrown-tomb)
-    *   1x [Godless Shrine](https://scryfall.com/card/rna/248/godless-shrine)
-*   **Utility:**
-    *   1x [Ghost Quarter](https://scryfall.com/card/isd/240/ghost-quarter)
-    *   1x [Takenuma, Abandoned Mire](https://scryfall.com/card/neo/278/takenuma-abandoned-mire)
-    *   1x [Bojuka Bog](https://scryfall.com/card/c21/281/bojuka-bog)
-    *   1x [Urborg, Tomb of Yawgmoth](https://scryfall.com/card/tsr/287/urborg-tomb-of-yawgmoth)
-    *   1x [Yavimaya, Cradle of Growth](https://scryfall.com/card/mh2/261/yavimaya-cradle-of-growth)
-    *   1x [Indatha Triome](https://scryfall.com/card/iko/248/indatha-triome)
-*   **Command:**
-    *   1x [Command Tower](https://scryfall.com/card/c21/284/command-tower)
-    *   1x [Murmuring Bosk](https://scryfall.com/card/cmc/263/murmuring-bosk)
-*   **Basics:**
-    *   6x [Forest](https://scryfall.com/card/khm/398/forest)
-    *   4x [Swamp](https://scryfall.com/card/khm/396/swamp)
-    *   4x [Plains](https://scryfall.com/card/khm/394/plains)
+## 7. The Mana Base: Utility & Fetches
+*The mana base is critical, filled with lands that are also spells.*
+*   **Fetch Lands (Verdant Catacombs, Windswept Heath, Marsh Flats):** The core of the mana base. They find your shock lands or triomes and trigger landfall twice (once on sacrifice, once on the new land entering).
+*   **Utility Lands (Ghost Quarter, Bojuka Bog):** Provide land destruction and graveyard hate.
+*   **"Fixer" Lands (Urborg, Tomb of Yawgmoth / Yavimaya, Cradle of Growth):** Make all your lands into Swamps or Forests, ensuring perfect mana.
+*   **Shock Lands & Triomes:** The best dual/tri-color lands in the game.
 
----
+## Plain Text Copy/Paste
 
-### Moxfield Import List
-*(Copy and paste the text below directly into Moxfield)*
-
-```text
 1 Thalia and The Gitrog Monster
 1 Toxic Deluge
 1 Damn
@@ -189,4 +152,3 @@ This is the budget-optimized version of the deck. It retains the core Landfall e
 1 Brushland
 1 Sylvan Safekeeper
 1 Knight of the Reliquary
-```

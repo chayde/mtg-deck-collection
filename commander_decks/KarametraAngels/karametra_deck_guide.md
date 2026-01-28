@@ -9,8 +9,6 @@ Your goal is to reach "Critical Mana Mass" faster than the table. Once Karametra
 > *If you have the choice between casting a 5-drop Angel or casting Karametra... **Cast Karametra**.*
 > Even if you do nothing else that turn, you need her online to turn every subsequent play into value.
 
----
-
 ## 2. Mulligan Strategy
 This deck is **heavy**. Your average mana value (CMC) is high. You cannot keep a slow hand.
 
@@ -28,8 +26,6 @@ This deck is **heavy**. Your average mana value (CMC) is high. You cannot keep a
 *   **Why it fails:** You have nothing to play until Turn 7. You will die before you cast a single spell.
 
 **Rule of Thumb:** If you cannot cast a spell by Turn 3, mulligan.
-
----
 
 ## 3. Game Phases
 
@@ -59,8 +55,6 @@ This deck is **heavy**. Your average mana value (CMC) is high. You cannot keep a
 *   **The Wipe:** If you are behind, cast *Farewell* or *Austere Command*. If Avacyn is out, you destroy their board while keeping yours.
 *   **The Finisher:** Cast *Akroma's Will*. It usually reads: "Creatures you control gain Double Strike, Lifelink, Indestructible, Protection from all colors, and Flying." This is almost always lethal.
 
----
-
 ## 4. Key Interactions & Synergies
 
 ### The "Sliver Killer" Package
@@ -85,10 +79,92 @@ Since this deck was designed to compete with *The Hive* (Slivers), you have spec
 *   This is trivial in this deck. A single *Avacyn* (8 power) plus *Karametra* (6 power) activates it.
 *   Use this to "hide" a board wipe (*Farewell*) or a surprise blocker (*Teferi's Protection*) and cast it for 1 green mana at instant speed (technically timing rules apply, but it cheats mana cost).
 
----
-
 ### 5. Weaknesses & Protection
 *   **Torpor Orb / Hushbringer:** These stop your Karametra triggers and Angel ETBs. You must remove these immediately with *Beast Within* or *Generous Gift*.
-*   **Mass Exile:** *Farewell* hits you hard. **Perch Protection** is your best safety net. 
+*   **Mass Exile:** *Farewell* hits you hard. **Perch Protection** is your best safety net.
     *   **The Gift Strategy:** Only "Gift" the extra turn if you are facing a board-state reset (like *Farewell* or *Toxic Deluge*) that you cannot recover from. Giving an opponent a turn is better than losing your entire board of Angels. If you just need the tokens, cast it without the gift!
 *   **Too Slow:** If you keep a hand with only big Angels, you will be overrun by fast decks (like Goblins or aggressive Slivers). Respect the curve.
+
+## Plain Text Copy/Paste
+
+1 Karametra, God of Harvests
+1 Elesh Norn, Grand Cenobite
+1 Linvala, Keeper of Silence
+1 Authority of the Consuls
+1 Aura Shards
+1 Archangel of Tithes
+1 Giada, Font of Hope
+1 Avacyn, Angel of Hope
+1 Sigarda, Font of Blessings
+1 Shalai, Voice of Plenty
+1 Lyra Dawnbringer
+1 Angel of Vitality
+1 Righteous Valkyrie
+1 Bishop of Wings
+1 Angel of Serenity
+1 Admonition Angel
+1 Platinum Angel
+1 Emeria Shepherd
+1 Battle Angels of Tyr
+1 Sunblast Angel
+1 Avenger of Zendikar
+1 Scute Swarm
+1 Lotus Cobra
+1 Tireless Provisioner
+1 Birds of Paradise
+1 Avacyn's Pilgrim
+1 Sanctum Weaver
+1 Sol Ring
+1 Arcane Signet
+1 Zendikar Resurgent
+1 Mirari's Wake
+1 Swords to Plowshares
+1 Path to Exile
+1 Beast Within
+1 Generous Gift
+1 Farewell
+1 Austere Command
+1 Perch Protection
+1 Heroic Intervention
+1 Akroma's Will
+1 Eladamri's Call
+1 Three Visits
+1 Nature's Lore
+1 Abundance
+1 Tocasia's Welcome
+1 Tribute to the World Tree
+1 Guardian Project
+1 Luminarch Aspirant
+1 Worldly Tutor
+1 Harmonize
+1 Ghost Quarter
+1 Mosswort Bridge
+1 Reliquary Tower
+1 Selesnya Sanctuary
+1 Windswept Heath
+1 Temple Garden
+1 Bountiful Promenade
+1 Overgrown Farmland
+1 Canopy Vista
+1 Brushland
+1 Command Tower
+11 Snow-Covered Plains
+10 Snow-Covered Forest
+1 Cultivate
+1 Kodama's Reach
+1 Farseek
+1 Rampant Growth
+1 Starnheim Aspirant
+1 Resplendent Angel
+1 Herald of War
+1 Segovian Angel
+1 Eternal Witness
+1 Bala Ged Recovery
+1 Wooded Bastion
+1 Yavimaya, Cradle of Growth
+1 Gavony Township
+1 Krosan Verge
+1 Swiftfoot Boots
+1 Lightning Greaves
+1 Angelic Arbiter
+1 Serra's Emissary

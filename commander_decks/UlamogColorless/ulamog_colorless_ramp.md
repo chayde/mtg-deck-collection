@@ -1,119 +1,60 @@
-# Ulamog, the Ceaseless Hunger (Colorless Ramp)
-**Commander:** Ulamog, the Ceaseless Hunger
-**Colors:** Colorless
-**Power Level:** Bracket 3 (Optimized)
-**Budget:** ~$150 USD (Excluding Commander)
-**Format:** Legal in Paper Commander & MTG Arena Historic Brawl
-**Game Plan:** Ramp aggressively using mana rocks and cost reducers. Cast Ulamog to exile two key threats. Attack to exile the opponent's library.
+# Ulamog Deck Guide: "The Great Distortion"
 
-## Commander
-*   1x [Ulamog, the Ceaseless Hunger](https://scryfall.com/card/bfz/15/ulamog-the-ceaseless-hunger)
+## Commander Strategy
+**Ulamog, the Ceaseless Hunger**
+*   **Role:** The Ultimate Threat.
+*   **Goal:** To ramp aggressively into 10+ mana as quickly as possible to cast Ulamog.
+*   **The Reward:** When you cast Ulamog, you exile two target permanents. He is indestructible and attacks for 10 damage. When he attacks, the defending player exiles the top twenty cards of their library. He wins the game by either removing all threats, milling your opponents' decks, or through sheer combat damage.
 
-## The Titans (Top End Threats)
-Since we are ramping to 10+ mana, we need other bombs besides Ulamog.
-*   1x [Kozilek, the Great Distortion](https://scryfall.com/card/ogw/4/kozilek-the-great-distortion) (Draws cards, Counters spells.)
-*   1x [Platinum Angel](https://scryfall.com/card/cn2/214/platinum-angel) (Classic staple. You can't lose the game.)
-*   1x [Roaming Throne](https://scryfall.com/card/lci/258/roaming-throne) (Naming Eldrazi = Double Attack Triggers!)
-*   1x [Metalwork Colossus](https://scryfall.com/card/kld/222/metalwork-colossus) (Usually free 10/10.)
-*   1x [Akroma's Memorial](https://scryfall.com/card/tsr/262/akromas-memorial) (Grants Flying, Haste, Protection, and more to all creatures.)
-*   1x [Cityscape Leveler](https://scryfall.com/card/bro/233/cityscape-leveler) (Destroy target nonland on cast/attack. Unearth.)
-*   1x [Steel Hellkite](https://scryfall.com/card/clb/874/steel-hellkite) (Mana sink board wipe.)
-*   1x [Wurmcoil Engine](https://scryfall.com/card/2xm/308/wurmcoil-engine) (Lifelink/Deathtouch/Tokens.)
-*   1x [Myr Battlesphere](https://scryfall.com/card/c21/253/myr-battlesphere) (Direct damage + Tokens.)
-*   1x [The Mightstone and Weakstone](https://scryfall.com/card/bro/238/the-mightstone-and-weakstone) (Draw 2 or Removal.)
-*   1x [Mazemind Tome](https://scryfall.com/card/m21/232/mazemind-tome) (Scry/Draw engine.)
-*   1x [Stonecoil Serpent](https://scryfall.com/card/eld/235/stonecoil-serpent) (Reach, Trample, Protection from Multicolor.)
-*   1x [Portal to Phyrexia](https://scryfall.com/card/bro/240/portal-to-phyrexia) (Edict every turn + Reanimation.)
+## 1. The Ramp Package: Mana Rocks
+*The heart of the deck. The goal is to generate a massive amount of mana. We need a critical mass of mana rocks to ensure we can cast our expensive spells ahead of schedule.*
+*   **Cost Reducers (Cloud Key, Foundry Inspector, Jhoira's Familiar, It That Heralds the End):** These make your artifact spells cheaper, which is often better than a mana rock. Cloud Key naming "Artifact" is particularly powerful.
+*   **Two-Mana Rocks (Arcane Signet, Mind Stone, Coldsteel Heart, Guardian Idol):** The foundation of your early game ramp.
+*   **Three/Four-Mana Rocks (Worn Powerstone, Hedron Archive, Firemind Vessel, Gilded Lotus):** The next step up, providing a significant mana advantage.
+*   **Large Mana Rocks (Dreamstone Hedron, Chromatic Orrery):** These produce a huge amount of mana and provide other benefits like card draw.
+*   **Utility Ramp (Moonsilver Key, Collector's Vault, Letter of Acceptance, Network Terminal):** Rocks that provide extra value like tutoring, looting, or card draw.
 
-## The Engine (Cost Reducers & Value)
-*   1x [Forsaken Monument](https://scryfall.com/card/znr/244/forsaken-monument) (THE MVP. +2/+2, Rocks tap for extra, Gain life.)
-*   1x [Ugin, the Ineffable](https://scryfall.com/card/war/2/ugin-the-ineffable) (Spells cost {2} less. Removal. Draw.)
-*   1x [Mystic Forge](https://scryfall.com/card/m20/233/mystic-forge) (Play from top of deck.)
-*   1x [Liberator, Urza's Battlethopter](https://scryfall.com/card/bro/237/liberator-urzas-battlethopter) (Flash speed!)
-*   1x [Foundry Inspector](https://scryfall.com/card/nec/152/foundry-inspector) (Cost reducer.)
-*   1x [Jhoira's Familiar](https://scryfall.com/card/2xm/265/jhoiras-familiar) (Cost reducer.)
-*   1x [Palladium Myr](https://scryfall.com/card/cmr/324/palladium-myr) (Dork for {2}.)
-*   1x [Solemn Simulacrum](https://scryfall.com/card/c21/264/solemn-simulacrum)
-*   1x [Burnished Hart](https://scryfall.com/card/clb/303/burnished-hart)
-*   1x [Introduction to Annihilation](https://scryfall.com/card/stx/3/introduction-to-annihilation) (Exile removal.)
-*   1x [Unstable Obelisk](https://scryfall.com/card/c18/227/unstable-obelisk) (Ramp + Destroy Permanent.)
-*   1x [Environmental Sciences](https://scryfall.com/card/stx/1/environmental-sciences) (Fetch a Wastes.)
-*   1x [Chromatic Orrery](https://scryfall.com/card/m21/228/chromatic-orrery) (Big mana + Draw.)
-*   1x [Lithoform Engine](https://scryfall.com/card/znr/245/lithoform-engine) (Copy abilities/spells.)
-*   1x [Mirage Mirror](https://scryfall.com/card/nec/154/mirage-mirror) (Copy anything.)
-*   1x [Karn, Scion of Urza](https://scryfall.com/card/dom/1/karn-scion-of-urza) (Draw/Tokens.)
-*   1x [Karn, the Great Creator](https://scryfall.com/card/war/1/karn-the-great-creator) (Stops enemy artifacts. Wishes from sideboard in Arena!)
+## 2. The Engine: Cost Reducers & Value
+*These cards provide consistent value, reduce costs, or let you play cards in unconventional ways, keeping you ahead of your opponents.*
+*   **Forsaken Monument:** The single best card in the deck. It's a lord for your colorless creatures, a ramp spell for your lands, and a life gain engine all in one.
+*   **Ugin, the Ineffable:** Makes all your colorless spells cost 2 less, provides removal, and can create spirit tokens for defense or card draw.
+*   **Mystic Forge:** Allows you to play cards from the top of your library, generating incredible card advantage.
+*   **Liberator, Urza's Battlethopter:** Gives all your colorless spells and artifact spells Flash, allowing you to play at instant speed.
+*   **The Immortal Sun:** A massive value engine that shuts down planeswalkers, makes your spells cheaper, draws you an extra card, and buffs your creatures.
+*   **Chimil, the Inner Sun:** Makes your spells uncounterable and discovers a free spell for you at your end step.
+*   **Karn, Scion of Urza / Karn, the Great Creator:** Planeswalkers that provide card advantage, create threats, or act as a "wishboard" in formats where that is legal.
 
-## The Rocks (Ramp)
-We need ~15-20 ramp sources.
-*   1x [Cloud Key](https://scryfall.com/card/tsr/265/cloud-key) (Naming Artifacts makes the whole deck cheaper.)
-*   1x [Arcane Signet](https://scryfall.com/card/c21/234/arcane-signet) (Taps for C in this deck.)
-*   1x [Mind Stone](https://scryfall.com/card/c21/251/mind-stone)
-*   1x [Moonsilver Key](https://scryfall.com/card/mid/255/moonsilver-key) (Finds ANY artifact with a mana ability.)
-*   1x [Coldsteel Heart](https://scryfall.com/card/2x2/301/coldsteel-heart) (Choose any color (Colorless).)
-*   1x [Guardian Idol](https://scryfall.com/card/jmp/467/guardian-idol)
-*   1x [Collector's Vault](https://scryfall.com/card/woe/244/collectors-vault) (Ramp + Loot/Treasure engine.)
-*   1x [Letter of Acceptance](https://scryfall.com/card/vow/254/letter-of-acceptance) (Ramp + Card Draw option.)
-*   1x [Worn Powerstone](https://scryfall.com/card/c18/230/worn-powerstone)
-*   1x [Hedron Archive](https://scryfall.com/card/c21/244/hedron-archive)
-*   1x [Replicating Ring](https://scryfall.com/card/khm/244/replicating-ring) (Snow ramp that multiplies later.)
-*   1x [Gilded Lotus](https://scryfall.com/card/dom/215/gilded-lotus)
-*   1x [Dreamstone Hedron](https://scryfall.com/card/cmr/307/dreamstone-hedron)
-*   1x [Network Terminal](https://scryfall.com/card/neo/251/network-terminal) (Ramp + Loot.)
-*   1x [Firemind Vessel](https://scryfall.com/card/war/237/firemind-vessel)
-*   1x [Relic of Legends](https://scryfall.com/card/dmu/236/relic-of-legends) (Premium ramp, especially with a WUBRG commander.)
-*   1x [Relic of Legends](https://scryfall.com/card/dmu/236/relic-of-legends) (Premium ramp.)
-*   1x [Energy Refractor](https://scryfall.com/card/bro/234/energy-refractor) (Cantrip + Filter.)
-*   1x [Chaos Wand](https://scryfall.com/card/m19/228/chaos-wand) (Steal spells.)
-*   1x [Transmogrifying Wand](https://scryfall.com/card/m19/247/transmogrifying-wand) (Creature removal.)
-*   1x [Key to the Archive](https://scryfall.com/card/ymid/59/key-to-the-archive) (Drafts powerful spells.)
-*   1x [Palantir of Orthanc](https://scryfall.com/card/ltr/247/palantir-of-orthanc) (Punisher mechanic: Mill or Draw.)
-*   1x [Staff of Domination](https://scryfall.com/card/cmr/343/staff-of-domination) (Mana sink: Life, Draw, Tap/Untap.)
-*   1x [The Stasis Coffin](https://scryfall.com/card/bro/245/the-stasis-coffin) (Protection from everything.)
-*   1x [The Immortal Sun](https://scryfall.com/card/rix/180/the-immortal-sun) (Massive value: Draw, Ramp, and shuts down Planeswalkers.)
-*   1x [It That Heralds the End](https://scryfall.com/card/mh3/9/it-that-heralds-the-end) (Cost reducer.)
+## 3. The Titans: Win Conditions
+*Once you have the mana, you need game-ending threats to close out the game.*
+*   **Ulamog, the Ceaseless Hunger:** The commander and primary win condition.
+*   **Kozilek, the Great Distortion:** Refills your hand when you cast him and allows you to counter spells by discarding cards.
+*   **Kozilek, the Broken Reality:** Exiles a permanent on ETB and can Manifest your hand, turning your uncastable lands into creatures.
+*   **Cityscape Leveler:** Repeatable removal on a huge body. Unearth provides extra value from the graveyard.
+*   **Portal to Phyrexia:** A one-sided board wipe every turn that also reanimates creatures from any graveyard.
+*   **Wurmcoil Engine:** A classic threat that is difficult to deal with due to its lifelink, deathtouch, and ability to split into two smaller tokens on death.
+*   **Akroma's Memorial:** Gives your entire team a suite of powerful keywords, making them nearly unstoppable in combat.
+*   **Roaming Throne:** Should be set to "Eldrazi." This will double the "on cast" trigger of Ulamog and Kozilek, and also double Ulamog's attack trigger.
 
-## Interaction & Protection
-*   1x [Swiftfoot Boots](https://scryfall.com/card/clb/339/swiftfoot-boots)
-*   1x [Lightning Greaves](https://scryfall.com/card/clb/324/lightning-greaves)
-*   1x [Mirror Shield](https://scryfall.com/card/thb/234/mirror-shield)
-*   1x [Soul-Guide Lantern](https://scryfall.com/card/thb/237/soul-guide-lantern) (GY Hate.)
-*   1x [Relic of Progenitus](https://scryfall.com/card/ema/231/relic-of-progenitus)
-*   1x [Ratchet Bomb](https://scryfall.com/card/2xm/284/ratchet-bomb) (Destroy nonland permanents with CMC = X.)
-*   1x [Chimil, the Inner Sun](https://scryfall.com/card/lci/249/chimil-the-inner-sun) (Uncounterable spells + Free spell every turn!)
-*   1x [Kozilek, the Broken Reality](https://scryfall.com/card/mh3/3/kozilek-the-broken-reality) (Exile removal + Body + Buffs Eldrazi.)
-*   1x [Perilous Vault](https://scryfall.com/card/m15/224/perilous-vault)
-*   1x [Blast Zone](https://scryfall.com/card/cm2/227/blast-zone)
+## 4. Interaction & Protection
+*Even a colorless deck has access to powerful removal and ways to protect its threats.*
+*   **Swiftfoot Boots / Lightning Greaves:** Essential for protecting your commander and giving it haste.
+*   **Soul-Guide Lantern / Relic of Progenitus:** Efficient graveyard hate.
+*   **Perilous Vault / Ratchet Bomb:** Colorless board wipes that can clear the board of problematic permanents.
+*   **Unstable Obelisk / Introduction to Annihilation:** Single-target removal options.
+*   **The Stasis Coffin:** A panic button that can protect you from a lethal attack or a game-losing spell.
+*   **Staff of Domination:** An infinite mana outlet and a versatile tool for tapping creatures, gaining life, or drawing cards.
 
-## Lands (36 Total)
-*   **Utility:**
-    *   1x [Mirrex](https://scryfall.com/card/one/254/mirrex) (Makes tokens for defense/sac fodder.)
-    *   1x [Temple of the False God](https://scryfall.com/card/c20/319/temple-of-the-false-god)
-    *   1x [Tomb of the Spirit Dragon](https://scryfall.com/card/ktk/227/tomb-of-the-spirit-dragon) (Life gain.)
-    *   1x [Zhalfirin Void](https://scryfall.com/card/dom/249/zhalfirin-void) (Scry 1.)
-    *   1x [Rogue's Passage](https://scryfall.com/card/c21/312/rogues-passage)
-    *   1x [Bonder's Enclave](https://scryfall.com/card/iko/245/bonders-enclave) (Draw.)
-    *   1x [Arch of Orazca](https://scryfall.com/card/rix/185/arch-of-orazca) (Draw a card if you have the City's Blessing.)
-    *   1x [Scavenger Grounds](https://scryfall.com/card/c21/314/scavenger-grounds) (GY Hate.)
-    *   1x [Buried Ruin](https://scryfall.com/card/c21/281/buried-ruin)
-    *   1x [Tocasia's Dig Site](https://scryfall.com/card/bro/266/tocasias-dig-site) (Surveil and late-game card draw.)
-    *   1x [Inventors' Fair](https://scryfall.com/card/kld/247/inventors-fair)
-    *   1x [Darksteel Citadel](https://scryfall.com/card/c21/285/darksteel-citadel)
-    *   1x [Radiant Fountain](https://scryfall.com/card/c21/310/radiant-fountain)
-    *   1x [Labyrinth of Skophos](https://scryfall.com/card/thb/243/labyrinth-of-skophos)
-    *   1x [Crawling Barrens](https://scryfall.com/card/znr/262/crawling-barrens)
-    *   1x [Faceless Haven](https://scryfall.com/card/khm/255/faceless-haven)
-    *   1x [Field of Ruin](https://scryfall.com/card/mid/262/field-of-ruin)
-    *   1x [Demolition Field](https://scryfall.com/card/bro/260/demolition-field)
-*   **Basics:**
-    *   18x [Wastes](https://scryfall.com/card/ogw/183/wastes) (Required for "Colorless" basic fetch.)
+## 5. The Mana Base: Utility Lands
+*In a colorless deck, every land can provide extra value.*
+*   **Card Draw (Bonder's Enclave, Arch of Orazca, War Room):** Lands that can be tapped to draw cards in the late game.
+*   **Removal (Blast Zone, Field of Ruin, Demolition Field):** Lands that can destroy problematic permanents.
+*   **Recursion (Buried Ruin):** Can bring back a key artifact from your graveyard.
+*   **Graveyard Hate (Scavenger Grounds):** The best land-based graveyard hate.
+*   **Evasion (Rogue's Passage):** Makes your commander unblockable.
+*   **Wastes:** You need basic Wastes to be able to search for them with cards like Burnished Hart and Environmental Sciences.
 
----
+## Plain Text Copy/Paste
 
-### Moxfield Import List
-*(Copy and paste the text below directly into Moxfield)*
-
-```text
 1 Ulamog, the Ceaseless Hunger
 1 Kozilek, the Great Distortion
 1 Platinum Angel
@@ -160,9 +101,7 @@ We need ~15-20 ramp sources.
 1 Dreamstone Hedron
 1 Network Terminal
 1 Firemind Vessel
-1 Relic of Legends
-1 The Irencrag
-1 Relic of Legends
+2 Relic of Legends
 1 Energy Refractor
 1 Chaos Wand
 1 Transmogrifying Wand
@@ -178,7 +117,6 @@ We need ~15-20 ramp sources.
 1 Soul-Guide Lantern
 1 Relic of Progenitus
 1 Ratchet Bomb
-1 Ugin's Mastery
 1 Kozilek, the Broken Reality
 1 Perilous Vault
 1 Blast Zone
@@ -201,4 +139,3 @@ We need ~15-20 ramp sources.
 1 Field of Ruin
 1 Demolition Field
 18 Wastes
-```

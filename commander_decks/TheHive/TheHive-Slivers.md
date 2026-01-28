@@ -1,3 +1,104 @@
+# Sliver Deck Guide: "The Hive"
+
+## Commander Strategy
+**The First Sliver**
+*   **Role:** The Value Engine.
+*   **Goal:** To cast Slivers from your hand.
+*   **The Reward:** Every Sliver spell you cast gains **Cascade**, which means you reveal cards from the top of your library until you hit a nonland card that costs less, and you cast that spell for free. This allows you to build a massive board presence out of nowhere. The deck's primary commander is The First Sliver, but it can be swapped with other 5-color slivers.
+
+## 1. The Commanders: Leaders of the Hive
+*These are the legendary 5-color slivers that can lead the swarm. This deck is built to easily swap between them depending on the game plan.*
+*   **The First Sliver:** The primary commander. Provides Cascade to all your sliver spells, generating immense value.
+*   **Sliver Overlord:** The toolbox commander. Acts as a tutor, allowing you to pay 3 mana to search your library for any sliver card.
+*   **Sliver Hivelord:** The defensive commander. Gives all Slivers "Indestructible," making your board incredibly resilient.
+*   **Sliver Gravemother:** The recursion commander. Gives your slivers "Encore," allowing you to create token copies from the graveyard for a final, massive attack.
+
+## 2. The Core: Mana Slivers
+*These slivers are the foundation of your mana base, allowing a 5-color deck to function smoothly.*
+*   **Gemhide Sliver / Manaweft Sliver:** The most important slivers in the deck. They give every sliver the ability to tap for one mana of any color.
+*   **Birds of Paradise:** A classic one-mana dork that taps for any color.
+
+## 3. Offensive Slivers: Power & Evasion
+*These slivers make your board a lethal threat, boosting power and making your creatures difficult to block.*
+*   **Sinew Sliver / Predatory Sliver / Muscle Sliver:** The basic "lord" effects. Each gives all other Slivers +1/+1.
+*   **Megantic Sliver:** A huge lord, giving all other Slivers +3/+3.
+*   **Bonescythe Sliver:** Gives all Slivers "Double Strike."
+*   **Cloudshredder Sliver:** Gives all Slivers Flying and Haste.
+*   **Galerider Sliver / Winged Sliver:** Cheaper ways to give all your Slivers Flying.
+*   **Shifting Sliver:** The ultimate evasion. Makes all Slivers unblockable unless the defending player also controls a Sliver.
+*   **Horned Sliver:** Gives all Slivers Trample.
+*   **Heart Sliver / Blur Sliver:** Give all Slivers Haste.
+*   **Spiteful Sliver:** A strange form of offense. Whenever a Sliver is dealt damage, it deals that much damage to a target player. A great deterrent for blockers.
+
+## 4. Defensive Slivers: Protection & Resilience
+*These slivers protect your board from removal and make combat difficult for your opponents.*
+*   **Crystalline Sliver:** Gives all Slivers "Shroud," preventing them from being targeted.
+*   **Diffusion Sliver:** Makes opponents pay an additional 2 mana to target a Sliver.
+*   **Sentinel Sliver:** Gives all Slivers Vigilance.
+*   **Syphon Sliver:** Gives all Slivers Lifelink.
+*   **Venom Sliver / Toxin Sliver:** Gives all Slivers Deathtouch.
+*   **Root Sliver:** Makes all your Sliver spells uncounterable.
+*   **Hibernation Sliver:** Allows you to pay 2 life to return a Sliver to your hand, saving it from removal.
+*   **Ward Sliver:** Allows you to choose a color and give your Slivers protection from it.
+
+## 5. Utility Slivers: The Toolbox
+*These slivers provide unique and powerful effects that can be tutored up with Sliver Overlord.*
+*   **Necrotic Sliver:** The ultimate removal. Allows you to sacrifice a Sliver to destroy any target permanent.
+*   **Harmonic Sliver:** Destroys an artifact or enchantment whenever a Sliver enters the battlefield.
+*   **Brood Sliver:** Creates a 1/1 Sliver token whenever a nontoken Sliver deals combat damage to a player.
+*   **Hatchery Sliver:** Gives your slivers "Encore," similar to the Gravemother.
+*   **Homing Sliver:** Gives all Sliver cards in your hand "Slivercycling," allowing you to pay 3 mana to discard it and search your library for a Sliver card.
+*   **Lavabelly Sliver:** Pings a player for 1 damage or gains you 1 life whenever a Sliver enters the battlefield.
+*   **Lazotep Sliver:** Gives your Slivers "Afflict," causing opponents to lose life even when they block.
+*   **Quick Sliver:** Allows you to cast Sliver spells as though they had flash.
+*   **Synapse Sliver:** Lets you draw a card whenever a Sliver deals combat damage to a player.
+*   **Virulent Sliver:** Gives all Slivers "Poisonous 1," putting you on an alternate win condition.
+
+## 6. Non-Sliver Support: Value & Tutors
+*   **Vanquisher's Banner / Herald's Horn / Urza's Incubator:** Tribal support artifacts that make your Slivers cheaper and/or draw you cards.
+*   **Descendants' Path / Guardian Project / Reflections of Littjara:** Enchantments that provide card advantage by casting creatures of the same type.
+*   **Rhythm of the Wild:** Gives your creatures Haste or a +1/+1 counter and makes them uncounterable.
+*   **Patriarch's Bidding:** A powerful spell that can bring back all of your dead Slivers at once.
+*   **Eladamri's Call:** An instant-speed tutor for a creature.
+
+## 7. Ramp & Mana Fixing
+*   **Sol Ring / Arcane Signet:** The best artifact ramp.
+*   **Chromatic Lantern / Pillar of Origins:** Artifacts that help fix your 5 colors of mana.
+*   **Cultivate / Kodama's Reach / Nature's Lore / Three Visits / Farseek:** Green ramp spells that search for lands.
+
+## 8. Interaction & Removal
+*   **Swords to Plowshares / Path to Exile:** The most efficient single-target creature removal.
+*   **Beast Within:** Destroys any permanent at instant speed.
+*   **Blasphemous Act:** A cheap board wipe in creature-heavy games.
+*   **Heroic Intervention:** Protects your board from a board wipe or targeted removal.
+
+## 9. The Mana Base
+*A 5-color mana base built on Fetch lands, Triomes, and Shock lands for perfect color fixing.*
+*   **Fetch Lands (Arid Mesa, Bloodstained Mire, etc.):** The core of the mana base.
+*   **Triomes (Ketria, Jetmir's Garden, etc.):** Lands that tap for three different colors.
+*   **Shock Lands (Blood Crypt, Breeding Pool, etc.):** Lands that tap for two different colors.
+*   **Utility Lands:** Sliver Hive, Command Tower, Path of Ancestry, Unclaimed Territory.
+
+## Sideboard Options
+*These are cards to consider swapping in to adapt to different opponents or game situations.*
+*   **Amoeboid Changeling:** Can turn an opponent's creature into a Sliver, allowing you to steal it with Sliver Overlord.
+*   **Coat of Arms / Door of Destinies:** More "anthem" effects if you need to go bigger.
+*   **Distant Melody / Beast Whisperer:** Additional card draw engines.
+*   **Training Grounds / Heartstone:** Reduce the cost of Sliver Overlord's tutoring ability.
+*   **An Offer You Can't Refuse / Swan Song:** Cheap counterspells to protect your combos.
+*   **Sliver Queen:** Include in the 99 if you want a token-making subtheme.
+
+## Wishlist / Upgrade Path
+*The most powerful and expensive upgrades for the deck.*
+*   **Sliver Legion / Mana Echoes / Kindred Discovery / Cover of Darkness:** The best support enchantments and artifacts for the tribe.
+*   **Cyclonic Rift:** The best blue board wipe.
+*   **Original Dual Lands (Tundra, Underground Sea, etc.):** The absolute best, most expensive lands for a 5-color deck.
+
+## Plain Text Copy/Paste
+
+COMMANDER:
+1 The First Sliver
+
 MAIN DECK:
 1 Arcane Signet
 1 Arid Mesa
@@ -93,43 +194,3 @@ MAIN DECK:
 1 Wooded Foothills
 1 Zagoth Triome
 1 Ziatora's Proving Ground
-
-SIDEBOARD:
-1 Amoeboid Changeling
-1 An Offer You Can't Refuse
-1 Aphetto Dredging
-1 Beast Whisperer
-1 Biomancer's Familiar
-1 Coat of Arms
-1 Distant Melody
-1 Door of Destinies
-1 Dragonskull Summit
-1 Dromar's Cavern
-1 Heartstone
-1 Orzhov Basilica
-1 Profane Tutor
-1 Sliver Queen
-1 Swan Song
-1 Symmetry Matrix
-1 Training Grounds
-
-COMMANDER:
-1 The First Sliver
-
-WISHLIST:
-1 Sliver Legion
-1 Mana Echoes
-1 Cyclonic Rift
-1 Cover of Darkness
-1 Kindred Discovery
-1 Intruder Alarm
-1 Tundra
-1 Underground Sea
-1 Badlands
-1 Taiga
-1 Savannah
-1 Scrubland
-1 Volcanic Island
-1 Bayou
-1 Plateau
-1 Tropical Island

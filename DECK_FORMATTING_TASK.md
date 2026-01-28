@@ -34,19 +34,19 @@ To resume, simply ask me to continue the deck formatting task. I will pick up wh
 *   [completed] Format commander_decks/CaptainAmerica/captainAmerica_guysthatmagic.md
 *   [completed] Format commander_decks/CaptainNghathrod/horrors_mill_budget.md
 *   [completed] Format commander_decks/HenzieBlitz/henzie_toolbox_budget.md
-*   [cancelled] Format commander_decks/KarametraAngels/karametra_angels_ramp_budget.md
-*   [cancelled] Format commander_decks/KarametraAngels/karametra_angels_ramp_premium.md
-*   [cancelled] Format commander_decks/KarametraAngels/karametra_angels_ramp.md
-*   [cancelled] Format commander_decks/KarametraAngels/karametra_deck_guide.md
-*   [pending] Format commander_decks/MerenGolgari/meren_reanimator_budget.md
-*   [pending] Format commander_decks/RafiqBant/rafiq_voltron_budget.md
-*   [pending] Format commander_decks/RafiqBant/rafiq_voltron_premium.md
-*   [pending] Format commander_decks/Reference_DrillersHive/TheDrillersHives-Slivers.md
-*   [pending] Format commander_decks/ThaliaGitrog/thalia_gitrog_abzan_budget.md
-*   [pending] Format commander_decks/ThaliaGitrog/thalia_gitrog_abzan_premium.md
-*   [pending] Format commander_decks/ThaliaGitrog/thalia_gitrog_abzan.md
-*   [pending] Format commander_decks/TheHive/TheHive-Slivers.md
-*   [pending] Format commander_decks/UlamogColorless/ulamog_colorless_ramp.md
-*   [pending] Format commander_decks/YidrisChaos/yidris_chaos_cascade.md
-*   [pending] Check compliance of commander_decks/YidrisChaos/yidris_deck_guide.md
-*   [pending] Check compliance of arena_decks/AtraxaPraetorsVoice/atraxa_brawl_converted.md
+*   [completed] Format commander_decks/KarametraAngels/karametra_angels_ramp_budget.md
+*   [completed] Format commander_decks/KarametraAngels/karametra_angels_ramp_premium.md
+*   [completed] Format commander_decks/KarametraAngels/karametra_angels_ramp.md
+*   [completed] Format commander_decks/KarametraAngels/karametra_deck_guide.md
+*   [completed] Format commander_decks/MerenGolgari/meren_reanimator_budget.md
+*   [completed] Format commander_decks/RafiqBant/rafiq_voltron_budget.md
+*   [completed] Format commander_decks/RafiqBant/rafiq_voltron_premium.md
+*   [completed] Format commander_decks/Reference_DrillersHive/TheDrillersHives-Slivers.md
+*   [completed] Format commander_decks/ThaliaGitrog/thalia_gitrog_abzan_budget.md
+*   [completed] Format commander_decks/ThaliaGitrog/thalia_gitrog_abzan_premium.md
+*   [completed] Format commander_decks/ThaliaGitrog/thalia_gitrog_abzan.md
+*   [completed] Format commander_decks/TheHive/TheHive-Slivers.md
+*   [completed] Format commander_decks/UlamogColorless/ulamog_colorless_ramp.md
+*   [completed] Format commander_decks/YidrisChaos/yidris_chaos_cascade.md
+*   [completed] Check compliance of commander_decks/YidrisChaos/yidris_deck_guide.md
+*   [completed] Check compliance of arena_decks/AtraxaPraetorsVoice/atraxa_brawl_converted.md
