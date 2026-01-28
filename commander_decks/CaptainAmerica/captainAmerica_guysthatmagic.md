@@ -1,135 +1,129 @@
-# Captain America, First Avenger (Reference List: GuysThatMagic)
-**Commander:** Captain America, First Avenger
-**Colors:** Jeskai (Red / White / Blue)
-**Power Level:** Bracket 3-4 (High Power / Optimized)
-**Budget:** High ($$$)
-**Focus:** Equipment Voltron, Infinite Combat (Godo), Efficient Tutors
-**Source:** GuysThatMagic
+# Captain America Deck Guide (High Power Version)
 
-## Deck Overview
-This is a high-budget, optimized version of the Captain America deck. It utilizes premium mana (Fetchlands, Shocklands), powerful staples (*Rhystic Study*, *Esper Sentinel*, *Cyclonic Rift*), and game-ending combos like *Godo, Bandit Warlord* + *Helm of the Host*. Unlike the budget version, this deck prioritizes speed and consistency over the specific "Throwing" gimmick, using the commander as a value engine and removal piece while assembling a Voltron kill.
+**A Note on the Commander:** "Captain America, First Avenger" is a custom commander. In this high-power build, its abilities are used as a value engine and removal piece while assembling a primary Voltron or combo kill.
 
-## Commander
-*   1x Captain America, First Avenger
+## Deck Strategy
+**Archetype:** Jeskai (Blue/Red/White) Equipment Voltron/Combo
+**Focus:** Efficient Tutors, Infinite Combats, Equipment
 
-## The Heavy Hitters (Equipment)
-*   **Voltron Pieces:** *Commander's Plate*, *Hammer of Nazahn*, *Mithril Coat*, *Swiftfoot Boots*, *Lightning Greaves*, *Whispersilk Cloak*.
-*   **Damage:** *Colossus Hammer*, *Embercleave*, *Excalibur, Sword of Eden*, *Mjölnir, Storm Hammer*, *Shield of War and Peace*.
-*   **Utility:** *Sword of Feast and Famine* (Untap lands), *The Reaver Cleaver* (Treasures), *Lion Sash* (Graveyard hate), *Skullclamp* (Draw).
-*   **Win Con:** *Helm of the Host* (Combos with Godo).
+*   **Goal:** This is a high-budget, optimized version of the deck that aims to win as quickly and consistently as possible. It has two primary win conditions: a traditional "Voltron" kill by equipping Captain America with powerful equipment, and an infinite combat combo with **Godo, Bandit Warlord** and **Helm of the Host**.
+*   **How it Plays:** The deck is much faster and more streamlined than the budget version. It uses premium tutors and card draw to assemble its win condition quickly. While it can still use Captain America's abilities for value, it is less reliant on them, often preferring to use him as a platform for a swift Voltron kill.
 
-## The Support Squad (Cheating Costs & Draw)
-*   **Draw Engines:** *Esper Sentinel*, *Rhystic Study*, *Sram, Senior Edificer*, *Puresteel Paladin*, *Jhoira, Weatherlight Captain*, *Akiri, Fearless Voyager*.
-*   **Cost Reducers/Cheaters:** *Ardenn, Intrepid Archaeologist*, *Danitha Capashen, Paragon*, *Forge Anew*, *Sigarda's Aid* (Battlefield Improvisation?).
-*   **Tutors:** *Stoneforge Mystic*, *Fighter Class*, *Steelshaper's Gift*, *Open the Armory*, *Godo, Bandit Warlord*, *Stonehewer Giant*, *Fabricate*.
+## 1. The Heavy Hitters (Equipment)
+*A suite of the most powerful equipment in the game.*
+*   **Voltron Pieces (Commander's Plate, Hammer of Nazahn, etc.):** The best equipment for protecting your commander and making it a lethal threat.
+*   **Damage (Colossus Hammer, Embercleave, etc.):** Equipment that provides a massive power boost to end the game quickly.
+*   **Utility (Sword of Feast and Famine, The Reaver Cleaver):** Equipment that provides mana advantage and other powerful effects.
+*   **The Combo (Helm of the Host):** The key piece for the infinite combat combo with Godo.
 
-## Interaction & Protection
-*   **Counterspells:** *Counterspell*, *Dovin's Veto*.
-*   **Removal:** *Swords to Plowshares*, *Path to Exile*, *Chaos Warp*, *Blasphemous Act*, *Cyclonic Rift*.
-*   **Protection:** *Flawless Maneuver*, *Mithril Coat*, *Hammer of Nazahn*.
+## 2. The Support Squad
+*The most efficient creatures for tutoring, cost reduction, and card draw.*
+*   **Draw Engines (Esper Sentinel, Rhystic Study, Sram):** The best card draw engines in the format for this type of strategy.
+*   **Tutors (Stoneforge Mystic, Godo, Bandit Warlord, Steelshaper's Gift):** A powerful tutor package to find your key equipment or combo pieces.
+*   **Cost Reducers & Cheaters (Forge Anew, Sigarda's Aid):** Spells that allow you to play and equip your artifacts at instant speed and for free.
 
-## Lands & Ramp (Premium Base)
-*   **Fetches/Shocks:** *Arid Mesa*, *Scalding Tarn*, *Flooded Strand*, *Steam Vents*, *Sacred Foundry*, *Hallowed Fountain*.
-*   **Utility Lands:** *Urza's Saga* (Not in list?), *Inventors' Fair*, *Academy Ruins*, *Buried Ruin*, *Rogue's Passage*.
-*   **Rocks:** *Sol Ring*, *Arcane Signet*, *Fellwar Stone*, *Talisman of...* (All 3), *Thought Vessel*.
+## 3. Interaction & Protection
+*A premium suite of interaction to protect your combo and disrupt your opponents.*
+*   **Counterspells (Counterspell, Dovin's Veto, Flawless Maneuver):** Efficient counterspells, including a "free" one if your commander is in play.
+*   **Removal (Swords to Plowshares, Path to Exile, Cyclonic Rift):** The best and most efficient removal spells in the format.
 
----
+## 4. The Mana Base
+*A premium mana base for maximum speed and consistency.*
+*   **Fetches/Shocks/Duals:** The best lands available to ensure perfect mana fixing.
+*   **Utility Lands (Urza's Saga, Inventors' Fair, Academy Ruins):** Powerful lands that can tutor for artifacts or recur them from the graveyard.
 
-### Moxfield Import List
-*(Copy and paste the text below directly into Moxfield to purchase specific versions)*
+## Copy/Paste Decklist (Moxfield Format)
 
-```text
-1 Captain America, First Avenger (SLD) 1726 *F*
-1 Academy Ruins (2XM) 309
-1 Akiri, Fearless Voyager (CMM) 335
-1 Archway of Innovation (MH3) 214
-1 Ardenn, Intrepid Archaeologist (CMR) 10
-1 Arid Mesa (MH2) 244
-1 Axgard Armory (KHM) 250
-1 Battlefield Improvisation (ACR) 276
-1 Blasphemous Act (DSC) 160
-1 Bureau Headmaster (ACR) 296
-1 Buried Ruin (2XM) 312
-1 Captain America's Aid (SLD) 1727 *F*
-1 Chaos Warp (DSC) 162
-1 Clifftop Retreat (OTC) 278
-1 Codsworth, Handy Helper (PIP) 14
-1 Colossus Hammer (AFC) 202
-1 Command Tower (DSC) 96
-1 Commander's Plate (SLD) 1733 *F*
-1 Counterspell (DSC) 114
-1 Cyclonic Rift (RVR) 40
-1 Dalakos, Crafter of Wonders (THB) 212
-1 Danitha Capashen, Paragon (CMM) 20
-1 Deserted Beach (MID) 260
-1 Dovin's Veto (WAR) 193
-1 Earth's Mightiest Emblem (SLD) 908 *F*
-1 Embercleave (ELD) 120
-1 Esper Sentinel (MH2) 12
-1 Excalibur, Sword of Eden (ACR) 72
-1 Exotic Orchard (DSC) 275
-1 Fabled Passage (BLB) 252
-1 Fabricate (HOP) 9
-1 Fellwar Stone (DSC) 245
-1 Fiery Emancipation (M21) 143
-1 Fighter Class (AFR) 222
-1 Flawless Maneuver (SLD) 1728 *F*
-1 Flooded Strand (MH3) 220
-1 Forge Anew (LTR) 17
-1 Glacial Fortress (XLN) 255
-1 Godo, Bandit Warlord (CMM) 227
-1 Grafted Exoskeleton (SOM) 162
-1 Hallowed Fountain (RVR) 280
-1 Halvar, God of Battle / Sword of the Realms (KHM) 15
-1 Hammer of Nazahn (CMM) 388
-1 Helm of the Host (DOM) 217
-1 Hexplate Wallbreaker (ONC) 14
-1 In the Trenches (SLD) 1729 *F*
-1 Inventors' Fair (SLD) 1735 *F*
-1 Inventory Management (PIP) 105
-3 Island (DDM) 41
-1 Jhoira, Weatherlight Captain (2XM) 203
-1 Kaldra Compleat (CMM) 958
-1 Lightning Greaves (DSC) 93
-1 Lion Sash (NEO) 26
-1 Lizard Blades (NEO) 153
-1 Mithril Coat (LTR) 245
-1 Mjölnir, Storm Hammer (ACR) 74
-3 Mountain (MKM) 284
-1 Ornithopter of Paradise (MH2) 430
-1 Path to Exile (OTC) 85
-4 Plains (MH3) 311
-1 Puresteel Paladin (CMM) 51
-1 Raugrin Triome (IKO) 251
-1 Reliquary Tower (DSC) 295
-1 Rhystic Study (JMP) 169
-1 Rogue's Passage (FDN) 264
-1 Sacred Foundry (RVR) 285
-1 Scalding Tarn (MH2) 254
-1 Sea of Clouds (CLB) 360
-1 Shield of War and Peace (SLD) 1730 *F*
-1 Sol Ring (SLD) 1734 *F*
-1 Spectator Seating (CMM) 427
-1 Sram, Senior Edificer (NEC) 88
-1 Steam Vents (RVR) 288
-1 Steelshaper's Gift (CMM) 59
-1 Stoneforge Mystic (2XM) 31
-1 Stonehewer Giant (2XM) 32
-1 Stormcarved Coast (VOW) 265
-1 Stroke of Midnight (FDN) 148
-1 Sulfur Falls (OTC) 322
-1 Sundown Pass (VOW) 266
-1 Swiftfoot Boots (FDN) 258
-1 Sword of Feast and Famine (2XM) 296
-1 Swords to Plowshares (DSC) 106
-1 Talisman of Conviction (MKC) 240
-1 Talisman of Creativity (CMM) 979
-1 Talisman of Progress (MKC) 243
-1 The Reaver Cleaver (DMC) 8
-1 Thought Vessel (DSC) 256
-1 Thoughtcast (MOC) 242
-1 Thran Power Suit (BRO) 253
-1 Training Center (CMM) 434
-1 Training Grounds (MAT) 9
-1 Whispersilk Cloak (DSC) 257
-```
+1 Captain America, First Avenger
+1 Academy Ruins
+1 Akiri, Fearless Voyager
+1 Archway of Innovation
+1 Ardenn, Intrepid Archaeologist
+1 Arid Mesa
+1 Axgard Armory
+1 Battlefield Improvisation
+1 Blasphemous Act
+1 Bureau Headmaster
+1 Buried Ruin
+1 Captain America's Aid
+1 Chaos Warp
+1 Clifftop Retreat
+1 Codsworth, Handy Helper
+1 Colossus Hammer
+1 Command Tower
+1 Commander's Plate
+1 Counterspell
+1 Cyclonic Rift
+1 Dalakos, Crafter of Wonders
+1 Danitha Capashen, Paragon
+1 Deserted Beach
+1 Dovin's Veto
+1 Earth's Mightiest Emblem
+1 Embercleave
+1 Esper Sentinel
+1 Excalibur, Sword of Eden
+1 Exotic Orchard
+1 Fabled Passage
+1 Fabricate
+1 Fellwar Stone
+1 Fiery Emancipation
+1 Fighter Class
+1 Flawless Maneuver
+1 Flooded Strand
+1 Forge Anew
+1 Glacial Fortress
+1 Godo, Bandit Warlord
+1 Grafted Exoskeleton
+1 Hallowed Fountain
+1 Halvar, God of Battle
+1 Hammer of Nazahn
+1 Helm of the Host
+1 Hexplate Wallbreaker
+1 In the Trenches
+1 Inventors' Fair
+1 Inventory Management
+3 Island
+1 Jhoira, Weatherlight Captain
+1 Kaldra Compleat
+1 Lightning Greaves
+1 Lion Sash
+1 Lizard Blades
+1 Mithril Coat
+1 Mjölnir, Storm Hammer
+3 Mountain
+1 Ornithopter of Paradise
+1 Path to Exile
+4 Plains
+1 Puresteel Paladin
+1 Raugrin Triome
+1 Reliquary Tower
+1 Rhystic Study
+1 Rogue's Passage
+1 Sacred Foundry
+1 Scalding Tarn
+1 Sea of Clouds
+1 Shield of War and Peace
+1 Sol Ring
+1 Spectator Seating
+1 Sram, Senior Edificer
+1 Steam Vents
+1 Steelshaper's Gift
+1 Stoneforge Mystic
+1 Stonehewer Giant
+1 Stormcarved Coast
+1 Stroke of Midnight
+1 Sulfur Falls
+1 Sundown Pass
+1 Swiftfoot Boots
+1 Sword of Feast and Famine
+1 Swords to Plowshares
+1 Talisman of Conviction
+1 Talisman of Creativity
+1 Talisman of Progress
+1 The Reaver Cleaver
+1 Thought Vessel
+1 Thoughtcast
+1 Thran Power Suit
+1 Training Center
+1 Training Grounds
+1 Whispersilk Cloak

@@ -1,101 +1,44 @@
-# Karametra's Heavenly Host (Angels & Landfall) - Premium Version
-**Commander:** Karametra, God of Harvests
-**Colors:** Selesnya (White / Green)
-**Power Level:** Bracket 3+ (Optimized / High Power)
-**Budget:** ~$750+ USD
+# Karametra Deck Guide: "Heavenly Host" (Premium)
+
+## Deck Strategy
+**Archetype:** Selesnya (Green/White) Angels & Landfall
 **Focus:** Ramp, Angel Tribal, Board Control
-**Anti-Sliver Tech:** Mass Exile, Ability Suppression, Stat Reduction
 
-## Deck Overview
-This is the uncompromised version of the deck. It uses the most efficient and powerful mana rocks, draw engines, and utility lands available in the format. It is designed to be as fast and consistent as possible.
+*   **Goal:** This is the uncompromised version of the Karametra Angels deck. It aims to win by assembling a powerful army of Angels as quickly and consistently as possible, using the most efficient ramp, tutors, and threats available.
+*   **How it Plays:** The deck uses **Karametra, God of Harvests**, as a powerful ramp engine to cast expensive, high-impact Angel creatures far ahead of the curve. This version includes premium card advantage engines like **Sylvan Library** and **The Great Henge**, and powerful protection like **Teferi's Protection**, making it more resilient and explosive than its budget counterpart.
 
-## Commander
-*   1x [Karametra, God of Harvests](https://scryfall.com/card/c20/218/karametra-god-of-harvests)
+## 1. The Commander
+*   **Karametra, God of Harvests:** The heart of the deck's ramp engine. Every time you cast a creature spell, she lets you search your library for a Forest or Plains and put it directly onto the battlefield.
 
-## The "Sliver Killers" (Anti-Tribal Tech)
-*   1x [Elesh Norn, Grand Cenobite](https://scryfall.com/card/ima/18/elesh-norn-grand-cenobite)
-*   1x [Linvala, Keeper of Silence](https://scryfall.com/card/jmp/119/linvala-keeper-of-silence)
-*   1x [Authority of the Consuls](https://scryfall.com/card/kld/5/authority-of-the-consuls)
-*   1x [Aura Shards](https://scryfall.com/card/cmd/182/aura-shards)
-*   1x [Archangel of Tithes](https://scryfall.com/card/ori/4/archangel-of-tithes) (Taxing attacks - devastating vs Slivers.)
+## 2. The Angelic Army
+*The most powerful Angels in the game.*
+*   **Avacyn, Angel of Hope:** The ultimate protector. She makes all of your other permanents indestructible.
+*   **Elesh Norn, Grand Cenobite:** A "Sliver Killer." She gives all of your creatures +2/+2 while giving all of your opponents' creatures -2/-2.
+*   **Archangel of Thune:** A powerful threat that grows your entire team whenever you gain life.
+*   **Giada, Font of Hope:** An essential two-drop that ramps you and makes every subsequent Angel you play even larger.
+*   **Lyra Dawnbringer / Righteous Valkyrie:** Powerful "lords" that give all of your other Angels a power/toughness boost and lifelink.
 
-## The Angelic Army (Threats & Synergies)
-*   1x [Giada, Font of Hope](https://scryfall.com/card/snc/14/giada-font-of-hope)
-*   1x [Avacyn, Angel of Hope](https://scryfall.com/card/2xm/8/avacyn-angel-of-hope)
-*   1x [Sigarda, Font of Blessings](https://scryfall.com/card/mat/47/sigarda-font-of-blessings)
-*   1x [Shalai, Voice of Plenty](https://scryfall.com/card/dom/35/shalai-voice-of-plenty)
-*   1x [Lyra Dawnbringer](https://scryfall.com/card/dom/26/lyra-dawnbringer)
-*   1x [Archangel of Thune](https://scryfall.com/card/2xm/5/archangel-of-thune)
-*   1x [Righteous Valkyrie](https://scryfall.com/card/khm/24/righteous-valkyrie)
-*   1x [Bishop of Wings](https://scryfall.com/card/m20/8/bishop-of-wings)
-*   1x [Angel of Serenity](https://scryfall.com/card/c21/83/angel-of-serenity)
-*   1x [Admonition Angel](https://scryfall.com/card/zen/1/admonition-angel)
-*   1x [Platinum Angel](https://scryfall.com/card/cn2/214/platinum-angel)
-*   1x [Emeria Shepherd](https://scryfall.com/card/znc/16/emeria-shepherd)
-*   1x [Battle Angels of Tyr](https://scryfall.com/card/clb/9/battle-angels-of-tyr)
-*   1x [Sunblast Angel](https://scryfall.com/card/c21/107/sunblast-angel) (Wipes attacking slivers.)
+## 3. Landfall & Ramp Engine
+*A premium package of ramp and landfall synergies.*
+*   **The Great Henge:** An incredibly powerful artifact that provides ramp, card draw, lifegain, and a power boost to your creatures.
+*   **Smothering Tithe:** A powerful enchantment that generates a massive amount of treasure tokens, giving you a huge mana advantage.
+*   **Mirari's Wake:** A powerful enchantment that doubles your mana and gives all of your creatures +1/+1.
+*   **Avenger of Zendikar / Scute Swarm:** Creatures that create a massive army of tokens based on the number of lands you have in play.
 
-## Landfall & Ramp Engine
-*   1x [Avenger of Zendikar](https://scryfall.com/card/ncc/280/avenger-of-zendikar)
-*   1x [Scute Swarm](https://scryfall.com/card/znr/203/scute-swarm)
-*   1x [Lotus Cobra](https://scryfall.com/card/znr/193/lotus-cobra)
-*   1x [Tireless Provisioner](https://scryfall.com/card/mh2/180/tireless-provisioner)
-*   1x [Birds of Paradise](https://scryfall.com/card/cn2/176/birds-of-paradise)
-*   1x [Avacyn's Pilgrim](https://scryfall.com/card/mm3/119/avacyns-pilgrim)
-*   1x [Sanctum Weaver](https://scryfall.com/card/mh2/171/sanctum-weaver)
-*   1x [Sol Ring](https://scryfall.com/card/c21/263/sol-ring)
-*   1x [Arcane Signet](https://scryfall.com/card/c21/234/arcane-signet)
-*   1x [Smothering Tithe](https://scryfall.com/card/rna/22/smothering-tithe)
-*   1x [The Great Henge](https://scryfall.com/card/eld/161/the-great-henge)
-*   1x [Mirari's Wake](https://scryfall.com/card/mh2/291/miraris-wake)
-*   1x [Luminarch Aspirant](https://scryfall.com/card/znr/24/luminarch-aspirant)
+## 4. Card Advantage & Tutors
+*The most efficient spells for finding your threats and keeping your hand full.*
+*   **Sylvan Library:** A powerful enchantment that lets you draw two extra cards each turn.
+*   **Esper Sentinel:** A premium one-drop creature that can draw you a huge number of cards.
+*   **Worldly Tutor / Eladamri's Call:** Efficient tutors to find the exact creature you need.
 
-## Instants & Sorceries (Removal & Protection)
-*   1x [Swords to Plowshares](https://scryfall.com/card/cmr/387/swords-to-plowshares)
-*   1x [Path to Exile](https://scryfall.com/card/jmp/127/path-to-exile)
-*   1x [Beast Within](https://scryfall.com/card/c21/186/beast-within)
-*   1x [Generous Gift](https://scryfall.com/card/mh1/11/generous-gift)
-*   1x [Farewell](https://scryfall.com/card/neo/13/farewell)
-*   1x [Austere Command](https://scryfall.com/card/cmr/12/austere-command)
-*   1x [Teferi's Protection](https://scryfall.com/card/sta/11/teferis-protection)
-*   1x [Heroic Intervention](https://scryfall.com/card/m21/188/heroic-intervention)
-*   1x [Akroma's Will](https://scryfall.com/card/cmr/3/akromas-will)
-*   1x [Eladamri's Call](https://scryfall.com/card/mh1/197/eladamris-call)
-*   1x [Three Visits](https://scryfall.com/card/cmr/261/three-visits)
-*   1x [Nature's Lore](https://scryfall.com/card/clb/244/natures-lore)
-*   1x [Worldly Tutor](https://scryfall.com/card/cc1/6/worldly-tutor)
-*   1x [Harmonize](https://scryfall.com/card/ncc/295/harmonize)
+## 5. Interaction & Protection
+*The best spells available for protecting your board and interacting with your opponents.*
+*   **Teferi's Protection:** The ultimate protection spell, phasing out all of your permanents until your next turn.
+*   **Swords to Plowshares / Path to Exile / Beast Within:** A suite of the most efficient single-target removal spells in the format.
+*   **Farewell / Austere Command:** Powerful and flexible board wipes.
 
-## Card Advantage
-*   1x [Sylvan Library](https://scryfall.com/card/cc1/5/sylvan-library)
-*   1x [Esper Sentinel](https://scryfall.com/card/mh2/12/esper-sentinel)
-*   1x [Tribute to the World Tree](https://scryfall.com/card/mom/211/tribute-to-the-world-tree)
-*   1x [Guardian Project](https://scryfall.com/card/rna/130/guardian-project)
+## Copy/Paste Decklist (Moxfield Format)
 
-## Lands (36 Total)
-*   **Utility:**
-    *   1x [Boseiju, Who Endures](https://scryfall.com/card/neo/266/boseiju-who-endures)
-    *   1x [Nykthos, Shrine to Nyx](https://scryfall.com/card/ths/223/nykthos-shrine-to-nyx)
-    *   1x [Reliquary Tower](https://scryfall.com/card/c21/311/reliquary-tower)
-    *   1x [Selesnya Sanctuary](https://scryfall.com/card/c21/315/selesnya-sanctuary)
-*   **Duals/Fetches:**
-    *   1x [Windswept Heath](https://scryfall.com/card/ktk/248/windswept-heath)
-    *   1x [Temple Garden](https://scryfall.com/card/grn/258/temple-garden)
-    *   1x [Bountiful Promenade](https://scryfall.com/card/bbd/81/bountiful-promenade)
-    *   1x [Overgrown Farmland](https://scryfall.com/card/mid/265/overgrown-farmland)
-    *   1x [Canopy Vista](https://scryfall.com/card/bfz/234/canopy-vista)
-    *   1x [Brushland](https://scryfall.com/card/bro/259/brushland)
-    *   1x [Command Tower](https://scryfall.com/card/c21/284/command-tower)
-*   **Basics:**
-    *   10x [Snow-Covered Plains](https://scryfall.com/card/khm/277/snow-covered-plains)
-    *   9x [Snow-Covered Forest](https://scryfall.com/card/khm/285/snow-covered-forest)
-
----
-
-### Moxfield Import List
-*(Copy and paste the text below directly into Moxfield)*
-
-```text
 1 Karametra, God of Harvests
 1 Elesh Norn, Grand Cenobite
 1 Linvala, Keeper of Silence
@@ -178,4 +121,3 @@ This is the uncompromised version of the deck. It uses the most efficient and po
 1 Lightning Greaves
 1 Angelic Arbiter
 1 Serra's Emissary
-```

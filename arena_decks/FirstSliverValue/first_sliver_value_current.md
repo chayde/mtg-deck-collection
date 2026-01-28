@@ -1,9 +1,49 @@
-# First Sliver - Current Value Version
+# The First Sliver Deck Guide: "Current Value Engine"
 
-**Commander**
+## Deck Strategy
+**Archetype:** 5-Color Cascade Value
+**Format:** Historic
+
+*   **Goal:** This deck aims to win through overwhelming value and a flexible, interactive game plan. The goal is to control the early game with cheap removal and counterspells, ramp into powerful threats, and use The First Sliver's cascade ability to generate a continuous stream of value and build a dominant board presence.
+*   **How it Plays:** This is a "5-Color Good Stuff" deck. You will spend the early turns interacting with your opponent, disrupting their plan while developing your own mana. In the mid-game, you'll start deploying powerful creatures and planeswalkers. Once you cast The First Sliver, each subsequent cascade will help you pull further ahead, eventually overwhelming your opponent with a board full of threats.
+
+## 1. The Commander
+*   **The First Sliver:** The ultimate value engine. In this deck, its cascade ability is used to hit a wide range of powerful spells, from ramp and removal to game-ending threats.
+
+## 2. Ramp & Mana Fixing
+*A comprehensive package to ensure you can cast your spells on time in a 5-color deck.*
+*   **Mana Dorks (Paradise Druid, Ornithopter of Paradise):** Cheap creatures that tap for mana.
+*   **Ramp Spells (Cultivate, Growth Spiral, Farseek):** Spells that search for lands and accelerate your mana development.
+*   **Mana Rocks (Arcane Signet, Chromatic Lantern, Skyclave Relic):** Artifacts that tap for mana and fix your colors.
+*   **Dryad of the Ilysian Grove / The World Tree:** Powerful enchantments that turn all of your lands into "rainbow" lands, solving all mana-fixing issues.
+
+## 3. Tutors & Card Advantage
+*A powerful suite of tutors to find the exact card you need for any situation.*
+*   **Beseech the Mirror:** A powerful tutor that can put a spell directly onto the stack if you have a high enough bargain cost.
+*   **Solve the Equation:** A tutor specifically for instants or sorceries.
+*   **The One Ring:** An incredible source of card draw that also provides protection.
+*   **Rusko, Clockmaker:** A creature that generates a stream of artifact tokens.
+
+## 4. The Payoffs & Win-Conditions
+*The powerful threats that will close out the game.*
+*   **Omniscience / One with the Multiverse:** The best possible hits from a cascade, allowing you to cast spells from your hand for free.
+*   **Etali, Primal Conqueror / Jin-Gitaxias, Progress Tyrant:** Massive creatures that generate huge value and can take over the game.
+*   **Ulamog, the Ceaseless Hunger:** A game-ending Eldrazi titan.
+*   **Portal to Phyrexia:** A powerful artifact that reanimates creatures from any graveyard each turn.
+*   **Ultimatums (Emergent, Genesis, Ruinous):** Powerful, game-ending spells.
+*   **Extra Turn Spells (Time Warp, Karn's Temporal Sundering, A-Alrund's Epiphany):** Taking an extra turn is often enough to secure a victory.
+
+## 5. Interaction & Removal
+*A suite of efficient spells to control the board.*
+*   **Board Wipes (Farewell, Supreme Verdict):** Powerful spells to reset the board.
+*   **Targeted Removal (The Cruelty of Gix, Binding the Old Gods, Casualties of War):** Versatile sagas and spells that can deal with multiple types of permanents.
+
+## Copy/Paste Decklist (MTG Arena Format)
+
+Commander
 1 The First Sliver (MH1) 200
 
-**Deck**
+Deck
 1 Forest (THB) 254
 1 Plains (THB) 250
 1 Island (THB) 251

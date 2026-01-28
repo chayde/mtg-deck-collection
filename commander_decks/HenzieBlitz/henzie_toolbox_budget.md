@@ -1,112 +1,45 @@
-# Henzie "Toolbox" Torre (Budget Blitz)
-**Commander:** Henzie "Toolbox" Torre
-**Colors:** Jund (Black / Red / Green)
-**Power Level:** Bracket 2 (Focused / Upgraded Precon)
-**Budget:** ~$100 USD (Budget Optimized)
+# Henzie "Toolbox" Torre Deck Guide: "Budget Blitz"
+
+## Deck Strategy
+**Archetype:** Jund (Black/Red/Green) Midrange/Sacrifice
 **Focus:** Blitz, Sacrifice Value, Graveyard Recursion
-**Matchup Tech:** Forced Sacrifice (vs Indestructible), Deathtouch
 
-## Deck Overview
-This deck is designed to be a fast, aggressive, and highly interactive "Monster Truck" that runs over opponents with value. The goal is to cast Henzie on Turn 2 or 3, then start "Blitzing" big creatures every turn. Blitz gives them Haste and draws a card when they die. We use "Enter the Battlefield" (ETB) and "Death" triggers to generate massive advantage while bypassing traditional defenses like Indestructible by forcing opponents to sacrifice creatures.
+*   **Goal:** This deck is a fast and aggressive "Monster Truck" that aims to run over opponents with value. The goal is to cast Henzie on Turn 2 or 3, then start "Blitzing" big creatures every turn. Blitz gives them Haste and draws you a card when they die, turning every creature into a valuable, one-shot effect.
+*   **How it Plays:** You'll use your ramp to get Henzie out as early as possible. From there, you'll blitz out creatures with powerful "Enter the Battlefield" (ETB) and "Death" triggers. At the end of your turn, the blitzed creature will die, triggering even more abilities and drawing you a card. The deck uses sacrifice and recursion synergies to generate massive advantage.
 
-## Commander
-*   1x [Henzie "Toolbox" Torre](https://scryfall.com/card/ncc/2/henzie-toolbox-torre)
+## 1. The Commander
+*   **Henzie "Toolbox" Torre:** He gives all of your creatures with mana value 4 or greater Blitz, and he reduces their Blitz cost each time you cast him from the command zone.
 
-## The "Blitz" Brigade (Creatures)
-The core of the deck. These creatures provide value when they enter or die.
-*   1x [Daemogoth Woe-Eater](https://scryfall.com/card/stx/175/daemogoth-woe-eater) (Huge stats, discard/draw on death.)
-*   1x [Treeshaker Chimera](https://scryfall.com/card/ths/297/treeshaker-chimera) (Forces bad blocks/sacrifices.)
-*   1x [Ravenous Chupacabra](https://scryfall.com/card/a25/104/ravenous-chupacabra) (Removal on a stick.)
-*   1x [Plaguecrafter](https://scryfall.com/card/grn/82/plaguecrafter) (The "Angel Killer" - forces sacrifice.)
-*   1x [Demon's Disciple](https://scryfall.com/card/znr/97/demons-disciple) (Redundant Plaguecrafter.)
-*   1x [Gravelighter](https://scryfall.com/card/neo/98/gravelighter) (More sacrifice.)
-*   1x [Solemn Simulacrum](https://scryfall.com/card/c21/264/solemn-simulacrum) (Ramp + Draw.)
-*   1x [Timeless Witness](https://scryfall.com/card/mh2/179/timeless-witness) (Recursion.)
-*   1x [Etali, Primal Storm](https://scryfall.com/card/rix/100/etali-primal-storm) (Free spells.)
-*   1x [Giant Adephage](https://scryfall.com/card/c19/169/giant-adephage) (Clones itself.)
-*   1x [Inferno Titan](https://scryfall.com/card/c13/113/inferno-titan) (Direct damage.)
-*   1x [Noxious Gearhulk](https://scryfall.com/card/kld/96/noxious-gearhulk) (Kill + Lifegain.)
-*   1x [Sepulchral Primordial](https://scryfall.com/card/gtc/75/sepulchral-primordial) (Steal from graves.)
-*   1x [Molten Primordial](https://scryfall.com/card/gtc/101/molten-primordial) (Steal creatures.)
-*   1x [Woodfall Primus](https://scryfall.com/card/mma/174/woodfall-primus) (Destroy non-creature permanent. Persist brings it back!)
-*   1x [Feldon of the Third Path](https://scryfall.com/card/c21/169/feldon-of-the-third-path) (Reanimates creatures as temporary tokens - mimics Blitz!)
-*   1x [Kura, the Boundless Sky](https://scryfall.com/card/neo/200/kura-the-boundless-sky) (Finds lands/makes token.)
-*   1x [Junji, the Midnight Sky](https://scryfall.com/card/neo/114/junji-the-midnight-sky) (Recursion/Discard.)
-*   1x [Atsushi, the Blazing Sky](https://scryfall.com/card/neo/134/atsushi-the-blazing-sky) (Treasures/Cards.)
-*   1x [Seedguide Ash](https://scryfall.com/card/lrw/235/seedguide-ash) (Ramp 3 forests on death!)
-*   1x [Gamekeeper](https://scryfall.com/card/c16/151/gamekeeper) (Free creature on death.)
-*   1x [Mitotic Slime](https://scryfall.com/card/pca/68/mitotic-slime) (Token army on death.)
-*   1x [Thragtusk](https://scryfall.com/card/jmp/436/thragtusk) (Life + Token.)
-*   1x [First Responder](https://scryfall.com/card/ncc/60/first-responder) (Returns creatures to hand to re-blitz.)
-*   1x [Ognis, the Dragon's Lash](https://scryfall.com/card/snc/210/ognis-the-dragons-lash) (Treasures on haste attacks.)
-*   1x [Ziatora, the Incinerator](https://scryfall.com/card/snc/231/ziatora-the-incinerator) (Fling damage + Treasures.)
+## 2. The "Blitz" Brigade
+*The core of the deck. These creatures provide powerful effects when they enter the battlefield or die.*
+*   **Forced Sacrifice (Plaguecrafter, Demon's Disciple, Gravelighter):** A suite of creatures that force each player to sacrifice a creature when they enter. This is a great way to deal with indestructible or hexproof threats.
+*   **Removal on a Stick (Ravenous Chupacabra, Noxious Gearhulk):** Creatures that destroy a creature when they enter the battlefield.
+*   **Value Creatures (Solemn Simulacrum, Timeless Witness):** Creatures that provide ramp, card draw, or recursion.
+*   **Big Finishers (Etali, Primal Storm, Woodfall Primus, Sepulchral Primordial):** Powerful creatures that can take over the game if they stick around or generate huge value when blitzed.
+*   **Recursion & Reanimation (Feldon of the Third Path, Junji, the Midnight Sky):** Creatures that can bring back other creatures from your graveyard.
 
-## Value Engines (Draw & Sacrifice)
-*   1x [Garruk's Uprising](https://scryfall.com/card/m21/186/garruks-uprising) (Draw on ETB + Trample.)
-*   1x [Industrial Advancement](https://scryfall.com/card/ncc/47/industrial-advancement) (Sacrifice a blitzed creature to get another one for free!)
-*   1x [Evolutionary Leap](https://scryfall.com/card/ori/176/evolutionary-leap) (Filter creatures.)
-*   1x [Riveteers Ascendancy](https://scryfall.com/card/snc/216/riveteers-ascendancy) (Recursion.)
-*   1x [Deathreap Ritual](https://scryfall.com/card/c16/244/deathreap-ritual) (Draw cards on death.)
-*   1x [Moldervine Reclamation](https://scryfall.com/card/m20/214/moldervine-reclamation) (Draw + Life on death.)
-*   1x [Warstorm Surge](https://scryfall.com/card/pca/54/warstorm-surge) (Damage on ETB. Win con.)
-*   1x [Grave Pact](https://scryfall.com/card/cm2/65/grave-pact) (OR *Dictate of Erebos* if budget allows. Otherwise *Butcher of Malakir*).
-    *   *Budget Swap:* [Butcher of Malakir](https://scryfall.com/card/cm2/60/butcher-of-malakir) (Creature version, works with Henzie discount!)
+## 3. Value Engines
+*Enchantments and artifacts that generate value from your creatures entering and dying.*
+*   **Garruk's Uprising:** Gives your creatures trample and draws you a card whenever a large creature enters the battlefield.
+*   **Industrial Advancement:** A powerful enchantment that lets you sacrifice a blitzed creature at the end of your turn to cheat another, potentially larger creature into play for free.
+*   **Deathreap Ritual / Moldervine Reclamation:** Enchantments that draw you cards whenever your creatures die.
+*   **Warstorm Surge:** An enchantment that turns every creature you play into a direct damage spell, often acting as a win condition.
+*   **Grave Pact / Butcher of Malakir:** A powerful enchantment (or creature) that forces your opponents to sacrifice a creature whenever one of your creatures dies.
 
-## Ramp (Crucial for Turn 3 Henzie)
-*   1x [Sol Ring](https://scryfall.com/card/c21/263/sol-ring)
-*   1x [Arcane Signet](https://scryfall.com/card/c21/234/arcane-signet)
-*   1x [Rampant Growth](https://scryfall.com/card/dds/48/rampant-growth)
-*   1x [Farseek](https://scryfall.com/card/ncc/290/farseek)
-*   1x [Nature's Lore](https://scryfall.com/card/clb/244/natures-lore)
-*   1x [Sakura-Tribe Elder](https://scryfall.com/card/c20/187/sakura-tribe-elder)
-*   1x [Elves of Deep Shadow](https://scryfall.com/card/ddj/47/elves-of-deep-shadow)
-*   1x [Llanowar Elves](https://scryfall.com/card/m19/314/llanowar-elves)
-*   1x [Elvish Mystic](https://scryfall.com/card/m15/173/elvish-mystic)
-*   1x [Fyndhorn Elves](https://scryfall.com/card/cmr/228/fyndhorn-elves)
-*   1x [Ignoble Hierarch](https://scryfall.com/card/mh2/166/ignoble-hierarch) (If budget allows, otherwise *Paradise Druid*).
+## 4. Recursion
+*Spells to bring your creatures back from the graveyard for another round of blitzing.*
+*   **Victimize:** An incredibly efficient spell that sacrifices one creature to bring back two others from your graveyard.
+*   **Living Death:** A massive board wipe and reanimation spell that can win the game on the spot.
+*   **Cauldron of Souls:** An artifact that can give your creatures Persist, allowing them to come back immediately after being sacrificed at the end of a blitz.
 
-## Recursion (Bring 'em back)
-*   1x [Victimize](https://scryfall.com/card/cmr/157/victimize) (Sac 1, get 2 back.)
-*   1x [Dread Return](https://scryfall.com/card/tsr/111/dread-return)
-*   1x [Living Death](https://scryfall.com/card/tpr/109/living-death) (Mass reanimation. Finisher.)
-*   1x [Cauldron of Souls](https://scryfall.com/card/cm2/180/cauldron-of-souls) (Gives Persist. Blitz creatures die, then come back immediately!)
+## 5. Ramp
+*A crucial package of ramp to cast Henzie early and consistently.*
+*   **Mana Dorks (Llanowar Elves, Elvish Mystic, etc.):** A suite of one-mana creatures that tap for mana.
+*   **Ramp Spells (Rampant Growth, Farseek, Nature's Lore):** Spells that search for lands to accelerate your mana.
+*   **Mana Rocks (Sol Ring, Arcane Signet):** The most efficient mana rocks in the format.
 
-## Interaction (Removal)
-*   1x [Beast Within](https://scryfall.com/card/c21/186/beast-within)
-*   1x [Chaos Warp](https://scryfall.com/card/c20/146/chaos-warp)
-*   1x [Terminate](https://scryfall.com/card/c20/231/terminate)
-*   1x [Putrefy](https://scryfall.com/card/c20/228/putrefy)
-*   1x [Blasphemous Act](https://scryfall.com/card/c21/268/blasphemous-act) (Board wipe.)
+## Copy/Paste Decklist (Moxfield Format)
 
-## Lands (36 Total)
-*   **Utility:**
-    *   1x [Kessig Wolf Run](https://scryfall.com/card/isd/243/kessig-wolf-run) (Trample/Pump.)
-    *   1x [Mosswort Bridge](https://scryfall.com/card/c20/291/mosswort-bridge)
-    *   1x [Temple of the False God](https://scryfall.com/card/c20/319/temple-of-the-false-god)
-    *   1x [Command Tower](https://scryfall.com/card/c21/284/command-tower)
-    *   1x [Savage Lands](https://scryfall.com/card/c18/275/savage-lands) (Tri-land.)
-    *   1x [Riveteers Overlook](https://scryfall.com/card/snc/255/riveteers-overlook)
-*   **Duals (Budget):**
-    *   1x [Cinder Glade](https://scryfall.com/card/bfz/235/cinder-glade)
-    *   1x [Smoldering Marsh](https://scryfall.com/card/bfz/247/smoldering-marsh)
-    *   1x [Exotic Orchard](https://scryfall.com/card/c20/273/exotic-orchard)
-    *   1x [Foreboding Ruins](https://scryfall.com/card/soi/272/foreboding-ruins)
-    *   1x [Game Trail](https://scryfall.com/card/soi/276/game-trail)
-    *   1x [Necroblossom Snarl](https://scryfall.com/card/stx/269/necroblossom-snarl)
-    *   1x [Llanowar Wastes](https://scryfall.com/card/bro/264/llanowar-wastes)
-    *   1x [Karplusan Forest](https://scryfall.com/card/dmu/250/karplusan-forest)
-    *   1x [Sulfurous Springs](https://scryfall.com/card/dmu/256/sulfurous-springs)
-*   **Basics:**
-    *   7x Forest
-    *   5x Swamp
-    *   5x Mountain
-
----
-
-### Moxfield Import List
-*(Copy and paste the text below directly into Moxfield)*
-
-```text
 1 Henzie "Toolbox" Torre
 1 Daemogoth Woe-Eater
 1 Treeshaker Chimera
@@ -193,4 +126,3 @@ The core of the deck. These creatures provide value when they enter or die.
 1 Golgari Charm
 1 Rhythm of the Wild
 1 Temur Sabertooth
-```

@@ -1,137 +1,55 @@
-# Captain America, First Avenger (Shield Throw Voltron)
-**Commander:** Captain America, First Avenger
-**Colors:** Jeskai (Red / White / Blue)
-**Power Level:** Bracket 2 (Focused)
-**Budget:** ~$150 USD
-**Focus:** Equipment Voltron, Fling Damage, Cost Cheating
-**Game Plan:** Cast high-CMC equipment for cheap (or cheat them into play), attach them to Cap for free using his combat trigger, then "Throw" them (unattach) to deal massive damage to creatures or players.
+# Captain America Voltron Deck Guide
 
-## Commander
-*   1x [Captain America, First Avenger](https://scryfall.com/card/acr/4/captain-america-first-avenger)
+**A Note on the Commander:** "Captain America, First Avenger" is a custom commander. Based on the deck's description, its abilities likely involve cheating equipment into play, attaching it for free upon attacking, and "throwing" (unattaching) it to deal damage.
 
-## The "Throwing" Arsenal (High CMC / High Impact)
-These equipment hit hard when attached, and hit hard when thrown (based on CMC).
-*   1x [Argentum Armor](https://scryfall.com/card/afc/198/argentum-armor) (CMC 6. Destroys permanent on attack. Cap cheats the equip cost!)
-*   1x [Dissection Tools](https://scryfall.com/card/bro/235/dissection-tools) (CMC 5. Lifelink/Deathtouch/Unearth.)
-*   1x [Leyline Axe](https://scryfall.com/card/mkm/214/leyline-axe) (CMC 4. Starts in hand? No, starts on battlefield if in opener!)
-*   1x [Excalibur, Sword of Eden](https://scryfall.com/card/acr/66/excalibur-sword-of-eden) (CMC 12! Deals 12 damage when thrown. Costs less to cast based on historic permanents.)
-*   1x [Loxodon Warhammer](https://scryfall.com/card/c21/249/loxodon-warhammer) (CMC 3. Trample + Lifelink.)
-*   1x [Blackblade Reforged](https://scryfall.com/card/clb/848/blackblade-reforged) (CMC 2. Huge stats.)
-*   1x [Colossus Hammer](https://scryfall.com/card/afc/202/colossus-hammer) (CMC 1. +10/+10. Cap cheats the equip cost to make him a 1-hit killer.)
-*   1x [Basilisk Collar](https://scryfall.com/card/clb/300/basilisk-collar) (Deathtouch + Lifelink. When thrown, 1 damage kills any creature.)
-*   1x [Sunforger](https://scryfall.com/card/cmr/473/sunforger) (CMC 3. Tutors instants. Unattach to tutor is the "Throw" mechanic!)
-*   1x [Masterwork of Ingenuity](https://scryfall.com/card/afc/209/masterwork-of-ingenuity) (Clones your best equipment.)
-*   1x [Swiftfoot Boots](https://scryfall.com/card/clb/339/swiftfoot-boots) (Hexproof/Haste.)
-*   1x [Lightning Greaves](https://scryfall.com/card/clb/324/lightning-greaves) (Shroud/Haste.)
-*   1x [Sword of the Animist](https://scryfall.com/card/afc/218/sword-of-the-animist) (Ramp.)
-*   1x [Anduril, Flame of the West](https://scryfall.com/card/ltr/236/anduril-flame-of-the-west) (Spirit tokens.)
-*   1x [Robe of Stars](https://scryfall.com/card/afc/11/robe-of-stars) (Phase out protection.)
-*   1x [Mithril Coat](https://scryfall.com/card/ltr/245/mithril-coat) (Instant speed Indestructible.)
-*   1x [Hammer of Nazahn](https://scryfall.com/card/2xm/259/hammer-of-nazahn) (Indestructible + Auto-equip.)
+## Deck Strategy
+**Archetype:** Jeskai (Blue/Red/White) Equipment Voltron
+**Focus:** Equipment, "Fling" Damage, Cost Reduction
 
-## The Support Squad (Cost Reducers & Draw)
-*   1x [Akiri, Fearless Voyager](https://scryfall.com/card/znr/220/akiri-fearless-voyager) (Draws cards, protects equipped creatures.)
-*   1x [Sram, Senior Edificer](https://scryfall.com/card/nec/88/sram-senior-edificer) (Draw on cast.)
-*   1x [Puresteel Paladin](https://scryfall.com/card/afc/69/puresteel-paladin) (Draw + Free Equip 0.)
-*   1x [Ardenn, Intrepid Archaeologist](https://scryfall.com/card/cmr/10/ardenn-intrepid-archaeologist) (Moves equipment for free.)
-*   1x [Danitha Capashen, Paragon](https://scryfall.com/card/cmr/370/danitha-capashen-paragon) (Cost reducer.)
-*   1x [Starnheim Courser](https://scryfall.com/card/cmr/34/starnheim-courser) (Cost reducer.)
-*   1x [Etherium Sculptor](https://scryfall.com/card/nec/92/etherium-sculptor) (Cost reducer.)
-*   1x [Foundry Inspector](https://scryfall.com/card/nec/152/foundry-inspector)
-*   1x [Dalakos, Crafter of Wonders](https://scryfall.com/card/thb/212/dalakos-crafter-of-wonders) (Ramp + Flying/Haste.)
-*   1x [Bruenor Battlehammer](https://scryfall.com/card/afr/219/bruenor-battlehammer) (Free equip 0 once per turn + Buff.)
-*   1x [Mantle of the Ancients](https://scryfall.com/card/afc/8/mantle-of-the-ancients) (Mass recursion aura + Buff.)
-*   1x [Stonehewer Giant](https://scryfall.com/card/2xm/32/stonehewer-giant) (Tutors equipment directly to play attached.)
-*   1x [Trophy Mage](https://scryfall.com/card/ddu/42/trophy-mage) (Tutors CMC 3 - Finds Sunforger/Loxodon.)
-*   1x [Tribute Mage](https://scryfall.com/card/mh1/73/tribute-mage) (Tutors CMC 2 - Finds Boots/Blackblade.)
-*   1x [Open the Armory](https://scryfall.com/card/cmr/34/open-the-armory) (Tutor.)
+*   **Goal:** The deck's primary goal is to win by "suiting up" Captain America with powerful equipment and dealing 21 commander damage. A secondary win condition is to use his inferred "throw" ability to deal direct damage to opponents based on the mana cost of the equipment.
+*   **How it Plays:** The deck spends the early game ramping and casting cheap support creatures that reduce the cost of equipment or draw cards when you cast them. The mid-game is focused on casting Captain America and starting to attach equipment for free when he attacks. The deck uses a "Sunforger" package of instants to provide interaction and protection.
 
-## The "Sunforger" Package (Instants to Tutor)
-Since we run Sunforger, we need a toolbox of Red/White instants to cast for free.
-*   1x [Swords to Plowshares](https://scryfall.com/card/cmr/387/swords-to-plowshares)
-*   1x [Path to Exile](https://scryfall.com/card/jmp/127/path-to-exile)
-*   1x [Generous Gift](https://scryfall.com/card/mh1/11/generous-gift)
-*   1x [Chaos Warp](https://scryfall.com/card/c20/146/chaos-warp)
-*   1x [Boros Charm](https://scryfall.com/card/cmr/442/boros-charm) (Indestructible board or Double Strike.)
-*   1x [Deflecting Palm](https://scryfall.com/card/cmr/444/deflecting-palm) (Reflect damage.)
-*   1x [Counterspell](https://scryfall.com/card/mh2/267/counterspell) (Wait, Sunforger only finds Red or White. Use *Dovin's Veto*.)
-*   1x [Dovin's Veto](https://scryfall.com/card/war/193/dovins-veto) (Uncounterable counter.)
-*   1x [Wear // Tear](https://scryfall.com/card/cmr/456/wear-tear)
-*   1x [Sejiri Shelter](https://scryfall.com/card/znr/37/sejiri-shelter) (Protection.)
+## 1. The "Throwing" Arsenal (Equipment)
+*High-impact equipment to attach to Captain America.*
+*   **Argentum Armor:** Destroys a permanent when the equipped creature attacks.
+*   **Colossus Hammer:** Provides a massive +10/+10 boost.
+*   **Excalibur, Sword of Eden:** A custom card with a very high mana value, likely dealing huge damage when "thrown."
+*   **Sunforger:** A key piece that acts as a repeatable tutor for your red and white instants.
+*   **Hammer of Nazahn:** Makes your commander indestructible and auto-equips itself.
+*   **Protection (Swiftfoot Boots, Lightning Greaves, Mithril Coat, Robe of Stars):** A package of equipment to give Captain America hexproof, shroud, or indestructible to protect him from removal.
 
-## Interaction & Utility
-*   1x [Fierce Guardianship](https://scryfall.com/card/c20/35/fierce-guardianship) (Wait, $40. Budget cut -> *Negate*.)
-*   1x [Negate](https://scryfall.com/card/znr/71/negate)
-*   1x [Blasphemous Act](https://scryfall.com/card/c21/268/blasphemous-act)
-*   1x [Vandalblast](https://scryfall.com/card/cmr/413/vandalblast)
-*   1x [Austere Command](https://scryfall.com/card/cmr/12/austere-command) (Flexible wipe.)
-*   1x [Rip Apart](https://scryfall.com/card/stx/225/rip-apart)
-*   1x [Brainstorm](https://scryfall.com/card/afc/83/brainstorm)
-*   1x [Ponder](https://scryfall.com/card/c21/125/ponder)
-*   1x [Preordain](https://scryfall.com/card/cmr/84/preordain)
-*   1x [Valduk, Keeper of the Flame](https://scryfall.com/card/cmr/206/valduk-keeper-of-the-flame) (Token generator.)
-*   1x [Kediss, Emberclaw Familiar](https://scryfall.com/card/cmr/188/kediss-emberclaw-familiar) (Damage multiplier - kills all opponents at once!)
+## 2. The Support Squad
+*Creatures and spells that find your equipment, reduce their cost, or draw you cards.*
+*   **Tutors (Stonehewer Giant, Trophy Mage, Tribute Mage, Open the Armory):** A suite of creatures and spells to search your library for the exact equipment you need.
+*   **Cost Reducers (Danitha Capashen, Etherium Sculptor, Foundry Inspector):** Creatures that make your artifacts and equipment cheaper to cast.
+*   **Card Draw (Akiri, Fearless Voyager, Sram, Senior Edificer, Puresteel Paladin):** Creatures that draw you cards whenever you cast equipment or attack with an equipped creature.
+*   **Free Equips (Ardenn, Intrepid Archaeologist, Bruenor Battlehammer):** Creatures that let you move your equipment around for free.
 
-## Ramp
-*   1x [Sol Ring](https://scryfall.com/card/c21/263/sol-ring)
-*   1x [Arcane Signet](https://scryfall.com/card/c21/234/arcane-signet)
-*   1x [Azorius Signet](https://scryfall.com/card/c21/234/azorius-signet)
-*   1x [Boros Signet](https://scryfall.com/card/c21/236/boros-signet)
-*   1x [Izzet Signet](https://scryfall.com/card/c21/243/izzet-signet)
-*   1x [Talisman of Conviction](https://scryfall.com/card/mh1/230/talisman-of-conviction)
-*   1x [Talisman of Creativity](https://scryfall.com/card/mh1/231/talisman-of-creativity)
-*   1x [Talisman of Progress](https://scryfall.com/card/mrd/256/talisman-of-progress)
-*   1x [Mind Stone](https://scryfall.com/card/c21/251/mind-stone)
+## 3. The "Sunforger" Package
+*A toolbox of powerful red and white instants that can be tutored and cast with Sunforger.*
+*   **Removal (Swords to Plowshares, Path to Exile, Generous Gift, Chaos Warp):** A versatile suite of instant-speed removal.
+*   **Protection (Boros Charm, Deflecting Palm, Sejiri Shelter):** Spells to protect your commander or redirect damage.
+*   **Counters (Dovin's Veto):** An uncounterable counterspell to protect your game plan.
+*   **Utility (Wear // Tear):** A flexible spell to destroy an artifact or enchantment.
 
-## Lands (36 Total)
-*   **Utility:**
-    *   1x [Rogue's Passage](https://scryfall.com/card/c21/312/rogues-passage) (Unblockable.)
-    *   1x [Slayers' Stronghold](https://scryfall.com/card/avr/229/slayers-stronghold) (Haste/Vigilance.)
-    *   1x [Axgard Armory](https://scryfall.com/card/khm/250/axgard-armory) (Tutor on a land.)
-    *   1x [Buried Ruin](https://scryfall.com/card/c21/281/buried-ruin) (Recursion.)
-    *   1x [Academy Ruins](https://scryfall.com/card/2xm/309/academy-ruins) (Recursion - Pricy? Check budget. Swap for *Inventors' Fair* if cheaper? Inventors is also pricey. Stick to Buried Ruin + *Sequestered Stash*.)
-    *   1x [Inventors' Fair](https://scryfall.com/card/kld/247/inventors-fair) (Passive life + Tutor.)
-    *   1x [Command Tower](https://scryfall.com/card/c21/284/command-tower)
-    *   1x [Exotic Orchard](https://scryfall.com/card/c20/273/exotic-orchard)
-    *   1x [Mystic Monastery](https://scryfall.com/card/c20/293/mystic-monastery)
-*   **Duals:**
-    *   1x [Prairie Stream](https://scryfall.com/card/bfz/241/prairie-stream)
-    *   1x [Glacial Fortress](https://scryfall.com/card/xln/255/glacial-fortress)
-    *   1x [Sulfur Falls](https://scryfall.com/card/dom/247/sulfur-falls)
-    *   1x [Clifftop Retreat](https://scryfall.com/card/dom/239/clifftop-retreat)
-    *   1x [Battlefield Forge](https://scryfall.com/card/bro/257/battlefield-forge)
-    *   1x [Adarkar Wastes](https://scryfall.com/card/dmu/243/adarkar-wastes)
-    *   1x [Shivan Reef](https://scryfall.com/card/dmu/255/shivan-reef)
-    *   1x [Sundown Pass](https://scryfall.com/card/vow/266/sundown-pass)
-    *   1x [Deserted Beach](https://scryfall.com/card/mid/260/deserted-beach)
-    *   1x [Stormcarved Coast](https://scryfall.com/card/vow/265/stormcarved-coast)
-*   **Basics:**
-    *   6x Plains
-    *   5x Island
-    *   5x Mountain
+## 4. Interaction & Utility
+*Other spells to round out the deck.*
+*   **Board Wipes (Blasphemous Act, Austere Command):** To reset the board when you fall behind.
+*   **Card Selection (Brainstorm, Ponder, Preordain):** Cheap cantrips to smooth out your draws.
+*   **Damage Multiplier (Kediss, Emberclaw Familiar):** Allows you to deal damage to all of your opponents when your commander hits one of them.
 
----
+## Upgrades: High-Power Additions
+*These are powerful cards that can be added to increase the deck's power level.*
+*   **Stoneforge Mystic:** The best equipment tutor in the game.
+*   **Esper Sentinel:** A premium source of card draw.
+*   **The Reaver Cleaver:** Generates a massive amount of treasure tokens.
+*   **Cyclonic Rift:** A one-sided board wipe that often wins the game on the spot.
+*   **Commander's Plate:** Provides a huge stat boost and protection.
+*   **Helm of the Host:** Creates copies of your commander.
+*   **Godo, Bandit Warlord:** Can tutor for Helm of the Host and provides extra combat steps.
 
-## Upgrades: Top 10 High-Power Additions
-These are the best cards to add from the "GuysThatMagic" list to push this deck towards Bracket 3/4.
+## Copy/Paste Decklist (Moxfield Format)
 
-*   **[Stoneforge Mystic](https://scryfall.com/card/2xm/31/stoneforge-mystic)** (~$30) -> Replaces **Open the Armory**: The gold standard for equipment tutors. Puts equipment into play uncounterably.
-*   **[Esper Sentinel](https://scryfall.com/card/mh2/12/esper-sentinel)** (~$25) -> Replaces **Etherium Sculptor**: Premium card draw. Scales with equipment buffs (Sentinel power = tax amount).
-*   **[Inventory Management](https://scryfall.com/card/pip/105/inventory-management)** (~$5) -> Replaces **Sejiri Shelter**: Instant speed "Catch". Allows you to split split second equip everything to Cap (or anyone) mid-combat.
-*   **[The Reaver Cleaver](https://scryfall.com/card/dmc/8/the-reaver-cleaver)** (~$15) -> Replaces **Sword of the Animist**: Animist ramps basics; Cleaver generates massive Treasure mana to fuel "Throwing" costs.
-*   **[Cyclonic Rift](https://scryfall.com/card/2xm/47/cyclonic-rift)** (~$35) -> Replaces **Rip Apart**: The ultimate reset button. One-sided board wipe that wins games.
-*   **[Commander's Plate](https://scryfall.com/card/cmr/305/commanders-plate)** (~$40) -> Replaces **Robe of Stars**: Protection from Black and Green (and others if you run fewer colors, but in Jeskai it procs B/G). Massive stat boost.
-*   **[Helm of the Host](https://scryfall.com/card/dom/217/helm-of-the-host)** (~$8) -> Replaces **Masterwork of Ingenuity**: Creates non-legendary copies of Captain America. Multiple Caps = Multiple Throws per turn.
-*   **[Godo, Bandit Warlord](https://scryfall.com/card/2xm/128/godo-bandit-warlord)** (~$4) -> Replaces **Stonehewer Giant**: Finds *Helm of the Host* immediately. Infinite combat steps if you have the mana.
-*   **[Fighter Class](https://scryfall.com/card/afr/222/fighter-class)** (~$4) -> Replaces **Danitha Capashen, Paragon**: Level 1 tutors. Level 2 reduces equip. Level 3 forces bad blocks.
-*   **[Codsworth, Handy Helper](https://scryfall.com/card/pip/14/codsworth-handy-helper)** (~$5) -> Replaces **Foundry Inspector**: Ramps, attaches for free, and gives Ward to the Commander.
-
----
-
-### Moxfield Import List
-*(Copy and paste the text below directly into Moxfield)*
-
-```text
 1 Captain America, First Avenger
 1 Argentum Armor
 1 Dissection Tools
@@ -218,5 +136,4 @@ These are the best cards to add from the "GuysThatMagic" list to push this deck 
 1 Fighter Class
 1 All That Glitters
 1 Dispatch
-1 Hammer of Nazahn
-```
+1 Hammer of Nazahn

@@ -1,79 +1,90 @@
-# The First Sliver (Tibalt's Casino Combo)
+# The First Sliver Deck Guide: "Tibalt's Casino Combo"
 
-**Commander**
+## Deck Strategy
+**Archetype:** Cascade Combo
+**Format:** Historic
+
+*   **Goal:** This is an "all-in" combo deck that aims to cheat a massive, game-winning spell into play as early as turn 5. The entire deck is constructed to make this combo as consistent as possible.
+*   **The Combo:** The deck is built around a single, guaranteed interaction:
+    1.  Your commander is **The First Sliver**, which has Cascade.
+    2.  The **only** non-land card in the entire deck with a mana value less than 5 is **Tibalt's Trickery**.
+    3.  You cast The First Sliver. Its Cascade ability triggers and, since Tibalt's Trickery is the only legal target, you are **guaranteed** to hit it.
+    4.  You cast Tibalt's Trickery for free, targeting your own First Sliver.
+    5.  Tibalt's Trickery counters your First Sliver and lets you exile cards from the top of your library until you hit a non-land card, which you can then cast for free.
+    6.  Since every other non-land card is a huge "Payoff," you are guaranteed to put a game-ending threat onto the battlefield.
+
+## 1. The Combo Pieces
+*   **The First Sliver:** Your commander. Its only role is to be a 5-mana spell with Cascade that you can always cast.
+*   **Tibalt's Trickery:** The engine. This is the only card in the deck with a mana cost less than 5, making it the guaranteed target.
+
+## 2. The Payoffs
+*The massive, game-winning spells you are hoping to hit with Tibalt's Trickery. This list uses the powerful spells you already own.*
+*   **Etali, Primal Conqueror:** An incredible threat that casts free spells from both players' libraries.
+*   **Imoti, Celebrant of Bounty:** Gives your other big spells cascade.
+*   **Trumpeting Carnosaur:** A big body that can also act as removal.
+*   **Atraxa, Grand Unifier:** Refills your hand with a huge number of cards.
+*   **Emrakul, the Promised End / Ulamog, the Ceaseless Hunger:** Game-ending Eldrazi titans.
+*   **Emergent Ultimatum:** A spell that lets you cast two of three powerful mono-colored spells for free.
+*   **Omniscience / One with the Multiverse:** The best possible hits, allowing you to cast spells from your hand for free.
+*   **Ugin's Labyrinth:** A land that can also be a mana source.
+*   **Etali, Primal Storm:** A budget-friendly threat that casts spells from the top of each player's library.
+*   **Brass's Bounty:** Can create a huge number of treasure tokens, giving you a massive mana advantage.
+*   **Gilded Lotus / Chromatic Orrery:** Powerful mana rocks that ramp you significantly if you hit them.
+
+## 3. The Mana Base
+*The deck runs a high land count and zero mana rocks to ensure the combo is not interrupted.*
+*   **Triomes, Shock Lands, and Fetch Lands:** The core of the mana base, providing perfect 5-color fixing.
+*   **"Rainbow" Lands (Command Tower, Mana Confluence, etc.):** Ensure you can cast The First Sliver on turn 5.
+
+## Upgrades & Budget Options
+
+*This section lists potential upgrades if you acquire the wildcards, and budget-friendly fillers.*
+
+*   **High-Priority Crafting Targets:**
+    *   Ulamog, the Infinite Gyre
+    *   Kozilek, Butcher of Truth
+    *   Jin-Gitaxias, Core Augur
+    *   Portal to Phyrexia
+    *   Cityscape Leveler
+    *   Koma, Cosmos Serpent
+    *   Ruinous Ultimatum
+    *   Genesis Ultimatum
+*   **Budget Filler (Any non-land card with Mana Value 5+):**
+    *   Annoyed Altisaur
+    *   Maelstrom Colossus
+    *   Boarding Party
+    *   Titanoth Rex
+    *   Beanstalk Giant (The adventure has a low MV, but the card itself is 7, so it is safe for the combo)
+
+## Copy/Paste Decklist (MTG Arena Format)
+
+Commander
 1 The First Sliver
 
-**The Combo Piece (The ONLY card with MV < 5)**
+Deck
 1 Tibalt's Trickery
-
-**The Payoffs (Must be MV 5+)**
-// --- Owned High-Value Targets ---
-1 Etali, Primal Conqueror // Owned
-1 Imoti, Celebrant of Bounty // Owned (MV 5, Safe)
-1 Trumpeting Carnosaur // Owned
-1 Atraxa, Grand Unifier // Owned
-1 Emrakul, the Promised End // Owned
-1 Ulamog, the Ceaseless Hunger // Owned
-1 Emergent Ultimatum // Owned
-1 Omniscience // Owned
-1 One with the Multiverse // Owned
-1 Ugin's Labyrinth // Owned (Land/Mana source)
-1 Etali, Primal Storm // Owned (Budget Swap)
-1 Brass's Bounty // Owned (Budget Swap)
-1 Gilded Lotus // Owned (MV 5, Safe Ramp)
-1 Chromatic Orrery // Owned? (Check, MV 7) - Assuming generic big stuff if not.
-
-// --- Crafting Targets (High Priority) ---
-// You are short wildcards, so we will use Owned Big Spells first.
-// If you have these, use them. If not, swap for ANY card with MV >= 5.
-
-1 Ulamog, the Infinite Gyre // (If owned)
-1 Kozilek, Butcher of Truth // (If owned)
-1 Jin-Gitaxias, Core Augur // (If owned)
-1 Vorinclex, Voice of Hunger // (If owned)
-1 Portal to Phyrexia // (If owned)
-1 Cityscape Leveler // (If owned)
-1 Sundering Titan // (If owned)
-1 Koma, Cosmos Serpent // (If owned)
-1 Hullbreaker Horror // (If owned)
-1 Toxrill, the Corrosive // (If owned)
-1 Ruinous Ultimatum // (If owned)
-1 Genesis Ultimatum // (If owned)
-1 Inspired Ultimatum // (If owned)
-1 Eerie Ultimatum // (If owned)
-1 Volcanic Vision // (If owned)
-1 Magma Opus // (If owned)
-1 Sublime Epiphany // (If owned)
-1 Alrund's Epiphany // (If owned)
-1 Sea Gate Restoration // Owned (Land/Spell)
-1 Turntimber Symbiosis // Owned (Land/Spell)
-1 Shatterskull Smashing // Owned (Land/Spell)
-1 Emeria's Call // Owned (Land/Spell)
-
-// --- Budget Filler (MV 6+ Common/Uncommon) ---
-// Use these to fill slots until you craft better bombs.
-// All must be MV 6+.
-1 Annoyed Altisaur // Need to Craft (U)
-1 Maelstrom Colossus // Need to Craft (C)
-1 Boarding Party // Need to Craft (C)
-1 Hand of Emrakul
-1 Ulamog's Crusher
-1 Greater Sandwurm
-1 Titanoth Rex
-1 Void Beckoner
-1 Krosan Tusker
-1 Beanstalk Giant // (Adventure is MV 3, but Card is MV 7. Cascade sees 7. Trickery sees 7. SAFE)
-1 Virtue of Persistence // (Adventure MV 2... DANGER. Do not use Adventure cards with MV < 5 if casting Trickery)
-// CORRECTION: Tibalt's Trickery casts the spell. Beanstalk Giant is safe.
-// BUT The First Sliver Cascade sees the card.
-// Rule: Cascade checks the CARD's mana value. Beanstalk Giant is 7. Safe.
-// However, Tibalt's Trickery allows you to cast it.
-// Adventure Rules: You can cast the Adventure part.
-// But we want BIG impacts.
-
-// --- The Mana Base (42 Lands) ---
-// NO MANA ROCKS (Sol Ring, Arcane Signet are BANNED in this deck)
-// You need to hit 5 lands naturally.
+1 Etali, Primal Conqueror
+1 Imoti, Celebrant of Bounty
+1 Trumpeting Carnosaur
+1 Atraxa, Grand Unifier
+1 Emrakul, the Promised End
+1 Ulamog, the Ceaseless Hunger
+1 Emergent Ultimatum
+1 Omniscience
+1 One with the Multiverse
+1 Ugin's Labyrinth
+1 Etali, Primal Storm
+1 Brass's Bounty
+1 Gilded Lotus
+1 Chromatic Orrery
+1 Sea Gate Restoration
+1 Turntimber Symbiosis
+1 Shatterskull Smashing
+1 Emeria's Call
+1 Annoyed Altisaur
+1 Maelstrom Colossus
+1 Boarding Party
+1 Beanstalk Giant
 1 Command Tower
 1 Mana Confluence
 1 Cavern of Souls
@@ -115,12 +126,3 @@
 1 Snow-Covered Swamp
 1 Snow-Covered Mountain
 1 Snow-Covered Forest
-
-// --- Instructions ---
-// 1. MULLIGAN AGGRESSIVELY for lands. You do nothing until turn 5.
-// 2. Turn 5: Cast The First Sliver.
-// 3. Cascade triggers -> Reveals deck. The ONLY card < MV 5 is Tibalt's Trickery.
-// 4. Cast Tibalt's Trickery targeting The First Sliver.
-// 5. Trickery resolves -> Exiles 1-3 cards, then reveals until non-land.
-// 6. Cast that card (Usually an Ultimatum or Eldrazi).
-// 7. Win.
