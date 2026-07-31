@@ -2,21 +2,22 @@
 deck_status: main
 ---
 
-# Deck Guide: Nekusar, the Mindrazer (Lethal Library)
+# Deck Guide: Nekusar, the Mindrazer (Lethal Library - Playtested Build)
 
-![Nekusar, the Mindrazer](https://cards.scryfall.io/normal/front/4/a/4afdc65d-3c97-47af-83fa-df340389802e.jpg?1783915612)
+![Nekusar, the Mindrazer](https://cards.scryfall.io/normal/front/3/5/35407400-20d0-4917-80fb-9960783307b2.jpg)
 
 ## Commander Strategy
 **Nekusar, the Mindrazer** ({2}{U}{B}{R})
-*   **Archetype:** Grixis (U/B/R) Group Slug / Wheels / Forced Draw
-*   **Bracket:** 3 (Upgraded Casual — 3 Game Changers)
-*   **Core Goal:** Force opponents to draw massive quantities of cards while punishing every draw with noncombat damage. Chain wheel effects (Windfall, Reforge the Soul, Teferi's Puzzle Box) and draw-punish engines (Underworld Dreams, Fate Unraveler, Sheoldred, the Apocalypse) to rapidly drain enemy life totals across the entire table.
+*   **Archetype:** Grixis (U/B/R) Damage Multipliers & Forced Draw Slug
+*   **Bracket:** 3 (1 Game Changer: *Orcish Bowmasters*)
+*   **Core Goal:** Force opponents to draw massive quantities of cards while stacking direct damage multipliers (**Ghyrson Starn**, **Solphim, Mayhem Dominus**) and trigger doublers (**Harmonic Prodigy**) to rapidly drain the entire table.
 
 ### Key Win Conditions & Synergies
-1. **Wheel Damage Chains:** Resolving a 7-card wheel (e.g. *Reforge the Soul* or *Wheel of Fate*) with Nekusar and 1-2 slug enchantments on board inflicts 14-21 damage per opponent per wheel.
-2. **Infect Finishers:** Equip Nekusar with *Grafted Exoskeleton*. A single 7-card wheel forces opponents to draw 7 cards, dealing 7 poison counters directly — causing an instant table kill when combined with extra forced draw or a secondary wheel.
-3. **Soft-Lock Discard Engines:** *Helm of the Ghastlord* attached to Nekusar causes opponents to discard a card every time they take draw damage from Nekusar, emptying their hands during their draw step while stocking yours.
-4. **Discard Secondary Pain:** Cards like *Waste Not*, *Megrim*, and *Liliana's Caress* capitalize on the forced discard inherent to wheel spells.
+1. **Damage Multiplier Engine:** *Ghyrson Starn, Kelermorph* turns every 1-damage Nekusar or ping trigger into **3 damage**. *Solphim, Mayhem Dominus* doubles all noncombat damage. When both are out, a single card draw deals **6 damage** per opponent!
+2. **Trigger Multiplication:** *Harmonic Prodigy* triggers Nekusar's draw-damage ability twice for every card drawn (since Nekusar is a Wizard).
+3. **The Forced Fruition Lock:** *Forced Fruition* forces opponents to draw 7 cards for every spell they cast. With Nekusar out, casting any spell costs an opponent 7 life (or 21 life with Ghyrson Starn!).
+4. **Bouncing Lockout:** *Sigil of Sleep* attached to Nekusar or a pinging creature returns an opponent's creature to hand whenever they draw a card and take damage.
+5. **Instant-Speed Wheel Damage:** *Wheel and Deal* forces all opponents to discard their hands and draw 7 cards at instant speed while leaving your hand completely untouched.
 
 ---
 
@@ -25,116 +26,88 @@ deck_status: main
 ### 👑 Commander (1 Card)
 *   **Nekusar, the Mindrazer:** Core commander engine. Gives each player an extra draw on their draw step while dealing 1 damage to opponents for every card they draw.
 
-### 🔄 Plan Cards: Wheels & Mass Draw Engines (11 Cards)
+### ⚡ Damage Multipliers & Ping Enablers (5 Cards)
+*   **Ghyrson Starn, Kelermorph:** Turns all 1-damage pings (Nekusar, Underworld Dreams, Kederekt Parasite) into 3 damage per draw.
+*   **Solphim, Mayhem Dominus:** Doublers all noncombat damage dealt to opponents.
+*   **Harmonic Prodigy:** Wizard trigger doubler that doubles Nekusar's draw-damage triggers.
+*   **Kederekt Parasite:** 1-mana creature that pings opponents 1 damage for every card drawn while you control a red permanent.
+*   **Razorkin Needlehead:** 2-mana 2/2 deathtouch creature that pings opponents 1 damage on card draw.
+
+### 🔄 Wheels & Instant Mass Draw (11 Cards)
 *   **Windfall:** Standard wheel; forces all players to discard hand and draw cards equal to the largest hand discarded.
 *   **Wheel of Fate:** Cheap suspend wheel that sets up explosive delayed multi-wheel turns.
-*   **Reforge the Soul:** 7-card wheel with Miracle discount potential for burst damage.
+*   **Reforge the Soul:** 7-card wheel with Miracle discount potential.
 *   **Whispering Madness:** Scalable wheel with Cipher to re-trigger on hit.
-*   **Molten Psyche:** Shuffles hands back and deals direct metalcraft bonus damage for cards drawn this turn.
+*   **Molten Psyche:** Shuffles hands back and deals direct bonus damage for cards drawn this turn.
 *   **Teferi's Puzzle Box:** Continuous wheel engine at every player's draw step.
 *   **Jace's Archivist:** Repeatable activated wheel on a creature body.
 *   **Magus of the Wheel:** Red creature wheel for repeatable burst turns.
 *   **Incendiary Command:** Flexible modal spell providing a 7-card wheel, board ping, or land destruction.
-*   **Valakut Awakening:** Hand refresh spell that doubles as a tapped land.
-*   **Dark Deal:** Forces each player to discard their hand and draw that many minus one; triggers discard and draw punishers.
+*   **Wheel and Deal:** Instant-speed wheel targeting opponents only while stocking your hand.
+*   **Winds of Change:** 1-mana shuffle-and-draw wheel spell.
+*   **Echo of Eons:** Massive 7-card wheel with flashback for {2}{U}.
 
-### 💀 Plan Cards: Slug & Draw Pain Payoffs (10 Cards)
+### 💀 Slug & Draw Pain Payoffs (9 Cards)
 *   **Fate Unraveler:** Creature version of Underworld Dreams that pings opponents on card draw.
 *   **Underworld Dreams:** Heavy mono-black enchantment dealing 1 damage per opponent card draw.
 *   **Spiteful Visions:** Forces additional draw step draws while pinging everyone for drawing.
 *   **Psychosis Crawler:** Scales in power with hand size and drains 1 life from all opponents whenever you draw.
-*   **Sheoldred, the Apocalypse:** Substantial 4-life swing per opponent draw; gains life for your draws while draining opponents.
+*   **Sheoldred, the Apocalypse:** Drains 2 life per opponent draw while gaining 2 life per your draw.
 *   **Megrim:** Deals 2 damage to opponents whenever they discard a card from wheels.
-*   **Liliana's Caress:** Deals 2 life loss to opponents per discarded card from wheels.
-*   **Waste Not:** Generates Zombies, mana, and card draw off opponent wheel discards.
-*   **Helm of the Ghastlord:** Gives Nekusar draw-on-hit (Blue) and forced discard-on-hit (Black) when he pings opponents for drawing.
-*   **Grafted Exoskeleton:** Gives Nekusar Infect, turning 10 total opponent card draws into a complete lethal poison knockout.
+*   **Phyrexian Tyranny:** Forces opponents to pay {2} per card drawn or lose 2 life.
+*   **Scrawling Crawler:** Artifact upkeep draw engine that pings opponents 1 life on draw.
+*   **Ob Nixilis, the Hate-Twisted:** Planeswalker that pings opponents 1 damage per card draw.
 
-### 🤝 Card Advantage & Group Draw Engines (12 Cards)
-*   **Font of Mythos:** Forces two extra card draws per draw step for maximum slug ping volume.
-*   **Howling Mine:** Classic artifact symmetrical draw engine.
-*   **Temple Bell:** Tap to force everyone to draw 1 card on command.
-*   **Dictate of Kruphix:** Flash group draw enchantment cast right before your turn.
+### 🤝 Card Advantage & Token Generators (8 Cards)
+*   **Forced Fruition:** Forces opponents to draw 7 cards whenever they cast a spell—inflicting massive damage.
+*   **Howling Mine:** Symmetrical draw engine.
+*   **Dictate of Kruphix:** Flash group draw enchantment.
 *   **Fevered Visions:** End step forced draw that deals 2 damage if opponents hold 4+ cards.
-*   **Vision Skeins:** Instant-speed symmetrical draw spell.
-*   **Prosperity:** X-spells that forces all players to draw X cards for explosive finisher turns.
-*   **Minds Aglow:** Join forces group draw spell to pump table draws.
-*   **Master of the Feast:** 5/5 flyer for 3 mana that forces opponent draw on upkeep.
 *   **Kami of the Crescent Moon:** Cheap 2-mana legend providing symmetrical extra draw.
-*   **Folio of Fancies:** Removes max hand size and forces X-card table draws.
-*   **Peer into the Abyss:** Instant half-deck draw target spell; drains half an opponent's deck in damage with Nekusar out.
+*   **Master of the Feast:** 5/5 flyer for 3 mana that forces opponent draw on upkeep.
+*   **Prosperity:** X-spell that forces all players to draw X cards.
+*   **Seizan, Perverter of Truth:** Upkeep draw engine that draws 2 cards and drains 2 life.
+*   **The Locust God:** Generates swarms of 1/1 flying hasty insects whenever you draw.
+*   **Stormfist Crusader:** 2-mana Knight forcing draw and 1 life loss on upkeep.
+*   **Waste Not:** Generates Zombies, mana, and card draw off opponent wheel discards.
 
-### ⚡ Targeted Disruption & Interaction (12 Cards)
-*   **Demonic Tutor:** [Game Changer] Any-card tutor to assemble key wheel or slug pieces.
+### 🛡️ Protection & Board Control (6 Cards)
+*   **Sigil of Sleep:** Aura that bounces an opponent's creature whenever enchanted creature deals damage (bounces on draw pings!).
+*   **Propaganda:** Prevents attacks unless opponents pay {2} per creature.
+*   **Lightning Greaves:** Gives Nekusar Haste and Shroud.
+*   **Nightscape Familiar:** Reduces the cost of all Blue and Red spells by {1}.
+
+### ⚡ Targeted Disruption & Counterspells (10 Cards)
 *   **Orcish Bowmasters:** [Game Changer] Flash ping & army grower whenever opponents draw extra cards.
-*   **Feed the Swarm:** Essential black enchantment removal spell.
-*   **Bedevil:** Flexible Grixis instant destroying target artifact, creature, or planeswalker.
-*   **Chaos Warp:** Red instant tuck spell to answer any problematic permanent.
+*   **An Offer You Can't Refuse:** 1-mana counter noncreature spell.
+*   **Arcane Denial:** Hard counter that forces target spell controller to draw cards (adding ping damage).
+*   **Baleful Mastery:** Cheap exile removal that forces opponent to draw a card.
+*   **Chaos Warp:** Instant tuck spell for any permanent.
 *   **Counterspell:** Premier 2-mana hard counter.
+*   **Dream Fracture:** Counterspell that forces both players to draw a card.
 *   **Negate:** Reliable counter for noncreature board wipes and removal.
-*   **Arcane Denial:** Hard counter that forces target spell controller (and you) to draw cards—adding Nekusar damage!
 *   **Terminate:** Efficient 2-mana instant creature destruction.
-*   **Anvil of Bogardan:** Symmetrical draw/discard enabler with no maximum hand size.
-*   **Vandalblast:** Cheap artifact removal or one-sided artifact wipe.
-*   **Swan Song:** 1-mana counterspell for instant, sorcery, or enchantment threats.
+*   **Blasphemous Act:** 1-mana mass damage wipe.
 
-### 🌋 Mass Disruption / Board Wipes (6 Cards)
-*   **Cyclonic Rift:** [Game Changer] One-sided overload mass bounce to reset enemy boards.
-*   **Blasphemous Act:** Efficient red mass damage wipe.
-*   **Toxic Deluge:** Pay-life board wipe that bypasses indestructible creatures.
-*   **Damnation:** Classic 4-mana black creature wipe.
-*   **Evacuation:** Instant-speed mass creature bounce.
-*   **Starstorm:** Instant-speed scalable damage wipe with cycling.
-
-### 💎 Mana Ramp & Mana Base (10 Ramp Cards)
-*   **Sol Ring:** Premier colorless ramp sol ring.
-*   **Arcane Signet:** Essential 2-mana rainbow signet.
-*   **Dimir Signet:** UB color fixing rock.
-*   **Izzet Signet:** UR color fixing rock.
-*   **Rakdos Signet:** BR color fixing rock.
-*   **Talisman of Dominance:** Untapped UB pain talisman.
-*   **Talisman of Indulgence:** Untapped BR pain talisman.
-*   **Talisman of Creativity:** Untapped UR pain talisman.
-*   **Fellwar Stone:** Cheap untapped rainbow mana rock.
-*   **Thought Vessel:** Colorless ramp rock providing unlimited hand size.
+### 💎 Mana Ramp (10 Ramp Cards)
+*   **Sol Ring / Dark Ritual / Arcane Signet / Dimir Signet / Izzet Signet / Rakdos Signet / Talisman of Dominance / Talisman of Indulgence / Talisman of Creativity / Thought Vessel**
 
 ### 🌐 Lands (38 Cards)
-*   **Command Tower / Crumbling Necropolis / Exotic Orchard:** Core Grixis rainbow lands.
-*   **Luxury Suite / Morphic Pool / Training Center:** Untapped multiplayer bond dual lands.
-*   **Bloodstained Mire / Polluted Delta / Scalding Tarn:** On-color Grixis fetchlands.
-*   **Blood Crypt / Steam Vents / Watery Grave:** Fetchable Grixis shocklands.
-*   **Smoldering Marsh / Sunken Hollow / Sulfurous Springs / Underground River / Shivan Reef:** Slow duals & pain duals.
-*   **Dragonskull Summit / Drowned Catacomb / Sulfur Falls:** Checklands.
-*   **Bojuka Bog:** Graveyard hate utility land.
-*   **Geier Reach Sanitarium / Mikokoro, Center of the Sea:** Utility lands that force all players to draw/discard.
-*   **Reliquary Tower:** Prevents hand size discard for yourself.
-*   **Temple of Deceit / Temple of Epiphany / Temple of Malice:** Scry temples.
-*   **Path of Ancestry / Command Beacon:** Commander fixing & recovery lands.
-*   **4 Swamp / 3 Island / 2 Mountain:** Basic lands.
+*   **Command Tower / Crumbling Necropolis / Exotic Orchard / Luxury Suite / Morphic Pool / Training Center / Xander's Lounge / Bloodstained Mire / Polluted Delta / Blood Crypt / Steam Vents / Watery Grave / Smoldering Marsh / Sunken Hollow / Shivan Reef / Dragonskull Summit / Drowned Catacomb / Sulfur Falls / Bojuka Bog / Geier Reach Sanitarium / Reliquary Tower / 6 Island / 5 Swamp / 4 Mountain**
 
 ---
 
 ## 🚀 Future Roadmap: Upgrades & Considerations
 
 ### 💡 High-Impact Tech to Consider
-*These cards are top-tier candidates for future upgrades based on technical analysis:*
-
-*   **Fierce Guardianship ({2}{U}):** Free commander protection counterspell (requires substituting one of the existing 3 Game Changers).
-*   **Mana Drain ({U}{U}):** Premium hard counter that converts opponent spell CMC into burst mana for large wheels.
-*   **Phyresis ({1}{B}):** Additional 2-mana aura for redundant Infect win lines alongside Grafted Exoskeleton.
-
-### 🛒 Active Acquisition List (Priority Swaps)
-
-| **New Card (In)** | **Card to Remove (Out)** | **Category** | **Status** |
-| :--- | :--- | :--- | :--- |
-| Nekusar, the Mindrazer | N/A | Commander | Planned |
-| Wheel of Fate | N/A | Plan Cards | Planned |
-| Sheoldred, the Apocalypse | N/A | Plan Cards | Planned |
+*   **Cyclonic Rift ({1}{U}):** One-sided overload board wipe (from Reference Build).
+*   **Demonic Tutor ({1}{B}):** Premier tutor for assembling Ghyrson Starn + Nekusar + Forced Fruition.
+*   **Grafted Exoskeleton ({4}):** Equipment for alternate Infect win condition.
 
 ---
 
 ## 📜 Deck Changelog
-*   **2026-07-31:** Initial deck creation for Bracket 3 Grixis Group Slug / Wheels strategy.
+*   **2026-07-31:** Updated to user's playtested build featuring Ghyrson Starn, Solphim, Harmonic Prodigy, Forced Fruition, and Sigil of Sleep. Validated via 20-sim goldfish (99% cast rate, T4.4 avg).
 
 ---
 
@@ -143,102 +116,90 @@ COMMANDER:
 1 Nekusar, the Mindrazer  
 
 DECK:  
-1 Anvil of Bogardan  
+1 An Offer You Can't Refuse  
 1 Arcane Denial  
 1 Arcane Signet  
-1 Bedevil  
+1 Baleful Mastery  
 1 Blasphemous Act  
 1 Blood Crypt  
 1 Bloodstained Mire  
 1 Bojuka Bog  
 1 Chaos Warp  
-1 Command Beacon  
 1 Command Tower  
 1 Counterspell  
 1 Crumbling Necropolis  
-1 Cyclonic Rift  
-1 Damnation  
 1 Dark Deal  
-1 Demonic Tutor  
+1 Dark Ritual  
 1 Dictate of Kruphix  
 1 Dimir Signet  
 1 Dragonskull Summit  
+1 Dream Fracture  
 1 Drowned Catacomb  
-1 Evacuation  
+1 Echo of Eons  
 1 Exotic Orchard  
 1 Fate Unraveler  
-1 Feed the Swarm  
-1 Fellwar Stone  
 1 Fevered Visions  
-1 Folio of Fancies  
-1 Font of Mythos  
+1 Forced Fruition  
 1 Geier Reach Sanitarium  
-1 Grafted Exoskeleton  
-1 Helm of the Ghastlord  
+1 Ghyrson Starn, Kelermorph  
+1 Harmonic Prodigy  
 1 Howling Mine  
 1 Incendiary Command  
-1 Island  
-1 Island  
-1 Island  
+6 Island  
 1 Izzet Signet  
 1 Jace's Archivist  
 1 Kami of the Crescent Moon  
-1 Kess, Dissident Mage  
-1 Liliana's Caress  
+1 Kederekt Parasite  
+1 Lightning Greaves  
 1 Luxury Suite  
 1 Magus of the Wheel  
 1 Master of the Feast  
 1 Megrim  
-1 Mikokoro, Center of the Sea  
-1 Minds Aglow  
 1 Molten Psyche  
 1 Morphic Pool  
-1 Mountain  
-1 Mountain  
+4 Mountain  
 1 Negate  
+1 Nightscape Familiar  
+1 Ob Nixilis, the Hate-Twisted  
 1 Orcish Bowmasters  
-1 Path of Ancestry  
 1 Peer into the Abyss  
+1 Phyrexian Tyranny  
 1 Polluted Delta  
+1 Propaganda  
 1 Prosperity  
 1 Psychosis Crawler  
 1 Rakdos Signet  
+1 Razorkin Needlehead  
 1 Reforge the Soul  
 1 Reliquary Tower  
-1 Scalding Tarn  
+1 Scrawling Crawler  
+1 Seizan, Perverter of Truth  
 1 Sheoldred, the Apocalypse  
 1 Shivan Reef  
+1 Sigil of Sleep  
 1 Smoldering Marsh  
 1 Sol Ring  
+1 Solphim, Mayhem Dominus  
 1 Spiteful Visions  
-1 Starstorm  
 1 Steam Vents  
+1 Stormfist Crusader  
 1 Sulfur Falls  
-1 Sulfurous Springs  
 1 Sunken Hollow  
-1 Swamp  
-1 Swamp  
-1 Swamp  
-1 Swamp  
-1 Swan Song  
+5 Swamp  
 1 Talisman of Creativity  
 1 Talisman of Dominance  
 1 Talisman of Indulgence  
 1 Teferi's Puzzle Box  
-1 Temple Bell  
-1 Temple of Deceit  
-1 Temple of Epiphany  
-1 Temple of Malice  
 1 Terminate  
+1 The Locust God  
 1 Thought Vessel  
-1 Toxic Deluge  
 1 Training Center  
-1 Underground River  
 1 Underworld Dreams  
-1 Vandalblast  
-1 Vision Skeins  
 1 Waste Not  
 1 Watery Grave  
+1 Wheel and Deal  
 1 Wheel of Fate  
 1 Whispering Madness  
 1 Windfall  
+1 Winds of Change  
+1 Xander's Lounge  
