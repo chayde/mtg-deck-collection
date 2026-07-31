@@ -99,10 +99,23 @@ deck_status: main
 
 ## 🚀 Future Roadmap: Upgrades & Considerations
 
-### 💡 High-Impact Tech to Consider
-*   **Cyclonic Rift ({1}{U}):** One-sided overload board wipe (from Reference Build).
-*   **Demonic Tutor ({1}{B}):** Premier tutor for assembling Ghyrson Starn + Nekusar + Forced Fruition.
-*   **Grafted Exoskeleton ({4}):** Equipment for alternate Infect win condition.
+### 💡 High-Impact Tech & Upgrade Options
+*   **Helm of the Ghastlord ({3}{U/B}):** Aura on Nekusar that grants +2/+2, draws you a card per ping, and forces target opponent to discard a card on every draw ping—creating a total hand-stripping draw step lock.
+*   **Cyclonic Rift ({1}{U}):** One-sided overload board wipe ({6}{U}) that resets opponents' boards while leaving your damage engines intact.
+*   **Demonic Tutor ({1}{B}):** Premier tutor to fetch *Ghyrson Starn*, *Forced Fruition*, or *Helm of the Ghastlord* on demand.
+*   **Grafted Exoskeleton ({4}):** Equipment granting Infect ({2} equip), converting a single 7-card wheel into 7 poison counters for an instant table kill.
+
+### 💰 Budget Substitutions (Cost-Reduction Swap Options)
+*If you want to reduce the purchase price of the paper build without losing synergy, use these direct budget swaps:*
+
+| **High-Cost Card** | **Approx. Price** | **Budget Swap Option** | **Budget Cost** | **Function / Synergy** |
+| :--- | :--- | :--- | :--- | :--- |
+| **Sheoldred, the Apocalypse** | ~$97.00 | **Elder Mastery** | ~$0.35 | Aura on Nekusar (+3/+3, Flying, forces opponent to discard 2 cards on hit/ping). |
+| **Orcish Bowmasters** | ~$40.00 | **Helm of the Ghastlord** | ~$11.80 | Drops Game Changer count to 0 (Bracket 2 legal) while locking draw steps. |
+| **Solphim, Mayhem Dominus** | ~$27.00 | **Torbran, Thane of Red Fell** | ~$2.50 | Adds +2 damage to all Red damage sources (Nekusar, Incendiary Command, Molten Psyche). |
+| **Wheel and Deal** | ~$17.00 | **Commit // Memory** | ~$0.50 | 7-card graveyard-shuffling wheel on the *Memory* half. |
+| **Teferi's Puzzle Box** | ~$17.00 | **Geth's Grimoire** | ~$3.50 | Draws a card for YOU every time an opponent discards a card during wheels. |
+| **Fetches/Shocks/Bonds** | ~$100+ total | **Painlands & Checklands** | ~$0.50/ea | Use *Choked Estuary*, *Foreboding Ruins*, *Frostboil Snarl*, *Sulfurous Springs*, *Shivan Reef*. |
 
 ---
 
