@@ -50,6 +50,7 @@ Decks under development, research, or being optimized.
 *   **Ulamog Ramp:** Colorless high-power ramp.
 *   **Zimone Engine:** Simic Landfall for **Christina**.
 *   **Ramses, Assassin Lord:** Dimir Assassin Tribal alt-win condition (Shadow Brotherhood).
+*   **Nekusar, the Mindrazer:** Grixis Group Slug & Forced Draw / Wheels (Lethal Library).
 
 ### 🎮 `/arena_decks`
 Optimized lists for MTG Arena formats (Standard, Brawl, Timeless).

@@ -1,6 +1,12 @@
 # Project History: MTG Deck Collection
 
-## 🗓️ July 2026: Incredible Hulk Build & Promotion
+## 🗓️ July 2026: Nekusar Mindrazer & Incredible Hulk Build
+
+### 2026-07-31: Nekusar, the Mindrazer — New Grixis Group Slug / Wheels Deck Added to Planning
+*   **New Deck:** Added `commander_decks/Planning/NekusarMindrazer/` with a full 100-card list.
+*   **Strategy:** Grixis (U/B/R) Group Slug & Forced Draw. Forces all players to draw massive cards through wheel spells (*Windfall*, *Reforge the Soul*, *Teferi's Puzzle Box*, *Molten Psyche*) while dealing continuous noncombat damage with Nekusar and slug enchantments (*Underworld Dreams*, *Fate Unraveler*, *Sheoldred, the Apocalypse*, *Spiteful Visions*).
+*   **Key Includes:** Nekusar, the Mindrazer, Demonic Tutor, Orcish Bowmasters, Cyclonic Rift, Sheoldred the Apocalypse, Helm of the Ghastlord, Grafted Exoskeleton (Infect win-con), Waste Not, Peer into the Abyss.
+*   **Bracket:** 3 — 3 Game Changers (Demonic Tutor, Orcish Bowmasters, Cyclonic Rift).
 
 ### 2026-07-17: Bruce Banner, the Incredible Hulk — Physically Complete
 *   **Physical completeness:** Received the final package (Package #1560635 from The Wasteland Gaming) of Order #438440. All cards (including Herald of Secret Streams, Pyrewood Gearhulk, Ram Through, and Verdurous Gearhulk) are now in hand. The deck is 100% physically built.

@@ -4,6 +4,8 @@ deck_status: main
 
 # Deck Guide: Ramses, Assassin Lord (Shadow Brotherhood)
 
+![Ramses, Assassin Lord](https://cards.scryfall.io/normal/front/9/e/9e5f168c-4f56-4d06-bef1-db10fdfbe657.jpg?1783921463)
+
 ![Ramses, Assassin Lord](https://cards.scryfall.io/normal/front/9/e/9e5f168c-4f56-4d06-bef1-db10fdfbe657.jpg?1674174868)
 
 ## Commander Strategy

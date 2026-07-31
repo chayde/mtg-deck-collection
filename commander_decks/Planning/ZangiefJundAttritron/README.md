@@ -4,6 +4,8 @@ deck_status: main
 
 # Deck Guide: Zangief, the Red Cyclone (The Siberian Blizzard)
 
+![Zangief, the Red Cyclone](https://cards.scryfall.io/normal/front/9/9/9976eb70-0d39-4882-8041-a4d29527c292.jpg?1783924005)
+
 ![Zangief, the Red Cyclone](https://cards.scryfall.io/normal/front/9/9/9976eb70-0d39-4882-8041-a4d29527c292.jpg?1757465727)
 
 ## Commander Strategy

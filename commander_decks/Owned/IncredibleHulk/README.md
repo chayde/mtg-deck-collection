@@ -4,6 +4,8 @@ deck_status: main
 
 # Deck Guide: Bruce Banner, the Incredible Hulk (Gamma Smash)
 
+![Bruce Banner // The Incredible Hulk](https://cards.scryfall.io/normal/front/e/0/e0dbbdcf-84e1-494f-8b8c-0a094f603fa9.jpg?1783902972)
+
 ![Bruce Banner](https://cards.scryfall.io/normal/front/e/0/e0dbbdcf-84e1-494f-8b8c-0a094f603fa9.jpg)
 
 ## Commander Strategy

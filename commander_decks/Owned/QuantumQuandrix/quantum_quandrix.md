@@ -4,6 +4,8 @@ deck_status: main
 
 # Deck Guide: Quantum Quandrix (Upgraded Precon)
 
+![Adrix and Nev, Twincasters](https://cards.scryfall.io/normal/front/b/9/b9c11061-bb34-4904-b9f1-ea106b517bbe.jpg?1783912983)
+
 ![Adrix and Nev, Twincasters](https://cards.scryfall.io/normal/front/b/9/b9c11061-bb34-4904-b9f1-ea106b517bbe.jpg?1706240967)
 ### Commander: Adrix and Nev, Twincasters
 
