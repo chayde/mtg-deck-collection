@@ -4,7 +4,7 @@ deck_status: main
 
 # Deck Guide: Nekusar, the Mindrazer (Lethal Library - Playtested Build)
 
-![Nekusar, the Mindrazer](https://cards.scryfall.io/normal/front/3/5/35407400-20d0-4917-80fb-9960783307b2.jpg)
+![Nekusar, the Mindrazer](https://cards.scryfall.io/normal/front/4/a/4afdc65d-3c97-47af-83fa-df340389802e.jpg?1783915612)
 
 ## Commander Strategy
 **Nekusar, the Mindrazer** ({2}{U}{B}{R})
