@@ -41,7 +41,7 @@ deck_status: main
 
 ### 🔄 Stack Engines, Trigger Doublers & Copy Multipliers (6 Cards)
 *   **Echoes of Eternity (6):** Kindred enchantment that copies all colorless spells and doubles all colorless triggered abilities.
-*   **Roaming Throne (4):** Chosen type Eldrazi; doubles all Eldrazi triggered abilities including Ulalek's copy trigger.
+*   **Sowing Mycospawn (4):** Devoid Eldrazi; on cast tutors ANY land (Eye of Ugin, Eldrazi Temple, Tron lands) directly into play; kicker exiles an opponent's land. Ulalek copies the trigger to tutor 2 lands!
 *   **Glaring Fleshraker (3):** Generates a 0/1 Eldrazi Spawn (sacrifices for {C}) on every colorless cast and pings each opponent for 1.
 *   **Eldrazi Displacer (3):** Instant-speed {2}{C} blink to protect your board, remove blockers, or reset ETB effects.
 *   **Liberator, Urza's Battlethopter (3):** Grants flash to all colorless and artifact spells, enabling instant-speed Eldrazi drops and stack tricks.
@@ -90,7 +90,7 @@ deck_status: main
 ### 🌪️ Mass Disruption & Finishers (7 Cards)
 *   **Raise the Palisade (5):** 5-mana asymmetric tribal bounce; names Eldrazi to return all non-Eldrazi creatures to opponents' hands while leaving your army untouched.
 *   **All Is Dust (7):** Asymmetric Eldrazi board wipe forcing all players to sacrifice all colored permanents.
-*   **Selective Obliteration (5):** Color-based board wipe that spares your colorless permanents while wiping opponents' boards.
+*   **Ugin's Binding (3):** 3-mana instant bounce; exiles from graveyard on casting any 7+ colorless spell to return ALL nonland permanents you don't control to owners' hands.
 *   **Kozilek's Return (3):** 2-damage instant wipe that triggers from graveyard for a free 5-damage board sweep when casting a 7+ Eldrazi.
 *   **Farewell (6):** Modal exile board wipe addressing artifacts, creatures, enchantments, and graveyards.
 *   **Eldrazi Monument (5):** Grants flying, indestructible, and +1/+1 to your army in exchange for one creature sacrifice per upkeep.
@@ -145,6 +145,7 @@ deck_status: main
 ## 🚀 Future Roadmap: Upgrades & Considerations
 
 ### 💡 High-Impact Tech to Consider
+*   **Roaming Throne (4):** Chosen type Eldrazi; doubles all Eldrazi triggered abilities including Ulalek's copy trigger.
 *   **Silent Arbiter (4):** Colorless 1/5 artifact creature restricting combat so only one creature can attack and one creature can block each turn; completely shuts down go-wide swarm decks while letting your 10/10 Eldrazi titans dominate 1-on-1 combat.
 *   **Crawlspace (3):** Colorless 3-mana artifact limiting opponents to attacking you with at most two creatures per combat; buys crucial setup turns against aggressive decks.
 *   **Cavern of Souls (Land):** Premium uncounterable tribal fixing land.
@@ -173,7 +174,7 @@ deck_status: main
 | Up the Beanstalk | Imprisoned in the Moon | Card Advantage | Pending |
 | Elemental Bond | Suffer the Past | Card Advantage | Pending |
 | Echoes of Eternity | Awakening Zone | Multipliers | Pending |
-| Roaming Throne | Titans' Vanguard | Multipliers | Pending |
+| Sowing Mycospawn | Titans' Vanguard | Ramp & Tutor | Pending |
 | Strionic Resonator | Everflowing Chalice | Multipliers | Pending |
 | Liberator, Urza's Battlethopter | Vile Redeemer | Multipliers | Pending |
 | Ulamog, the Defiler | Ulamog's Crusher | Payoffs | Pending |
@@ -187,6 +188,7 @@ deck_status: main
 | Swords to Plowshares | Skittering Invasion | Disruption | Pending |
 | Path to Exile | Sifter of Skulls | Disruption | Pending |
 | Null Elemental Blast | Ulamog's Nullifier | Disruption | Pending |
+| Ugin's Binding | Selective Obliteration | Board Wipes | Pending |
 | Raise the Palisade | Deepfathom Skulker | Board Wipes | Pending |
 | Farewell | Drowner of Hope | Board Wipes | Pending |
 | Lightning Greaves | Temple of Malady | Utility | Pending |
@@ -195,6 +197,10 @@ deck_status: main
 ---
 
 ## 📜 Deck Changelog
+*   **2026-08-11:** Swapped Roaming Throne for Sowing Mycospawn and Selective Obliteration for Ugin's Binding.
+    *   **In:** Sowing Mycospawn, Ugin's Binding.
+    *   **Out:** Roaming Throne, Selective Obliteration.
+    *   **Reason:** Shaved $44.63 by replacing Roaming Throne with Sowing Mycospawn ($1.99) to tutor nonbasic Sol/Tron lands directly into play, and upgraded Selective Obliteration to Ugin's Binding ($0.43) for a free asymmetric board bounce from the graveyard.
 *   **2026-08-11:** Substituted Cavern of Souls for Opal Palace from PreCon inventory.
     *   **In:** Opal Palace.
     *   **Out:** Cavern of Souls.
@@ -278,15 +284,14 @@ DECK:
 1 Reliquary Tower  
 1 Return of the Wildspeaker  
 1 Rishkar's Expertise  
-1 Roaming Throne  
 1 Sanctum of Ugin  
 1 Secluded Courtyard  
-1 Selective Obliteration  
 1 Shivan Reef  
 1 Shrine of the Forsaken Gods  
 1 Sire of Stagnation  
 1 Snapping Voidcraw  
 1 Sol Ring  
+1 Sowing Mycospawn  
 1 Spawnbed Protector  
 1 Spawning Bed  
 1 Strionic Resonator  
@@ -301,6 +306,7 @@ DECK:
 1 Talisman of Resilience  
 1 Temple of the False God  
 1 Tomb of the Spirit Dragon  
+1 Ugin's Binding  
 1 Ugin, the Ineffable  
 1 Ulamog's Dreadsire  
 1 Ulamog, the Ceaseless Hunger  

@@ -61,15 +61,14 @@ DECK:
 1 Reliquary Tower
 1 Return of the Wildspeaker
 1 Rishkar's Expertise
-1 Roaming Throne
 1 Sanctum of Ugin
 1 Secluded Courtyard
-1 Selective Obliteration
 1 Shivan Reef
 1 Shrine of the Forsaken Gods
 1 Sire of Stagnation
 1 Snapping Voidcraw
 1 Sol Ring
+1 Sowing Mycospawn
 1 Spawnbed Protector
 1 Spawning Bed
 1 Strionic Resonator
@@ -84,6 +83,7 @@ DECK:
 1 Talisman of Resilience
 1 Temple of the False God
 1 Tomb of the Spirit Dragon
+1 Ugin's Binding
 1 Ugin, the Ineffable
 1 Ulamog's Dreadsire
 1 Ulamog, the Ceaseless Hunger

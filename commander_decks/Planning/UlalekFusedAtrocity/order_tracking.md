@@ -2,12 +2,12 @@
 
 ## Overview
 *   **Total Deck Size:** 100 Cards
-*   **In-Hand / Owned:** 68 cards
-*   **Pending Acquisition / Singles to Order:** 32 cards
+*   **In-Hand / Owned:** 67 cards
+*   **Pending Acquisition / Singles to Order:** 33 cards
 
 ---
 
-## 📦 Singles to Acquire / Order List (32 Cards)
+## 📦 Singles to Acquire / Order List (33 Cards)
 
 ### Lands (8 Cards)
 - [ ] Eye of Ugin
@@ -24,7 +24,7 @@
 - [ ] Kozilek, the Broken Reality
 - [ ] Kozilek, the Great Distortion
 - [ ] Liberator, Urza's Battlethopter
-- [ ] Roaming Throne
+- [ ] Sowing Mycospawn
 - [ ] Ulamog, the Ceaseless Hunger
 - [ ] Ulamog, the Defiler
 - [ ] Zhulodok, Void Gorger
@@ -37,13 +37,14 @@
 - [ ] Talisman of Progress
 - [ ] Urza's Incubator
 
-### Spells & Interaction (6 Cards)
+### Spells & Interaction (7 Cards)
 - [ ] Farewell
 - [ ] Heroic Intervention
 - [ ] Null Elemental Blast
 - [ ] Path to Exile
 - [ ] Raise the Palisade
 - [ ] Swords to Plowshares
+- [ ] Ugin's Binding
 
 ### Enchantments & Planeswalkers (4 Cards)
 - [ ] Echoes of Eternity
@@ -53,7 +54,7 @@
 
 ---
 
-## 🛡️ Inventory In-Hand (68 Cards)
+## 🛡️ Inventory In-Hand (67 Cards)
 - [x] Adarkar Wastes
 - [x] All Is Dust
 - [x] Ancient Stirrings
@@ -97,7 +98,6 @@
 - [x] Return of the Wildspeaker
 - [x] Rishkar's Expertise
 - [x] Secluded Courtyard
-- [x] Selective Obliteration
 - [x] Shivan Reef
 - [x] Shrine of the Forsaken Gods
 - [x] Sire of Stagnation
