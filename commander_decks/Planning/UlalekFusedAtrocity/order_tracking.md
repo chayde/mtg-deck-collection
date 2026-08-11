@@ -39,10 +39,10 @@
 - [ ] Urza's Incubator
 
 ### Spells & Interaction (6 Cards)
-- [ ] Beast Within
 - [ ] Farewell
 - [ ] Heroic Intervention
 - [ ] Null Elemental Blast
+- [ ] Path to Exile
 - [ ] Raise the Palisade
 - [ ] Swords to Plowshares
 

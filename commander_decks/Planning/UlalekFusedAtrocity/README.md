@@ -79,7 +79,7 @@ deck_status: main
 *   **Heroic Intervention (2):** Grants all permanents you control indestructible and hexproof.
 *   **Warping Wail (2):** Flexible instant: exiles a 1-power creature, counters a sorcery, or creates an Eldrazi Scion.
 *   **Null Elemental Blast (1):** 1-mana instant to destroy a multicolored permanent or counter a multicolored spell.
-*   **Beast Within (3):** Instant-speed unconditional permanent removal.
+*   **Path to Exile (1):** Premier 1-mana instant creature exile; controller searches for a basic land tapped.
 *   **Swords to Plowshares (1):** Premier 1-mana exile spot removal for problem creatures.
 *   **Eldrazi Confluence (4):** Modal instant to exile a permanent, grant +3/-3, or create an Eldrazi Scion token.
 *   **Lightning Greaves (2):** 0-equip equipment giving haste and shroud to Ulalek or Eldrazi titans.
@@ -183,7 +183,7 @@ deck_status: main
 | Talisman of Progress | Temple of Silence | Ramp | Pending |
 | Heroic Intervention | Crib Swap | Protection | Pending |
 | Swords to Plowshares | Skittering Invasion | Disruption | Pending |
-| Beast Within | Sifter of Skulls | Disruption | Pending |
+| Path to Exile | Sifter of Skulls | Disruption | Pending |
 | Null Elemental Blast | Ulamog's Nullifier | Disruption | Pending |
 | Raise the Palisade | Deepfathom Skulker | Board Wipes | Pending |
 | Farewell | Drowner of Hope | Board Wipes | Pending |
@@ -193,6 +193,10 @@ deck_status: main
 ---
 
 ## 📜 Deck Changelog
+*   **2026-08-11:** Optimized single-target removal suite.
+    *   **In:** Path to Exile.
+    *   **Out:** Beast Within.
+    *   **Reason:** Paired Path to Exile with Swords to Plowshares for two premier 1-mana instant exile effects.
 *   **2026-08-11:** Replaced 3 high-dollar Game Changers with synergistic non-Game-Changer equivalents, shifting to 0 Game Changers.
     *   **In:** Temple of the False God, Kozilek's Unsealing, Raise the Palisade.
     *   **Out:** Ancient Tomb, The One Ring, Cyclonic Rift.
@@ -216,7 +220,6 @@ DECK:
 1 Artisan of Kozilek  
 1 Azlask, the Swelling Scourge  
 1 Battlefield Forge  
-1 Beast Within  
 1 Benthic Anomaly  
 1 Bonders' Enclave  
 1 Brushland  
@@ -261,6 +264,7 @@ DECK:
 1 Null Elemental Blast  
 1 Oblivion Sower  
 1 Path of Ancestry  
+1 Path to Exile  
 1 Plains  
 1 Plaza of Heroes  
 1 Raise the Palisade  
