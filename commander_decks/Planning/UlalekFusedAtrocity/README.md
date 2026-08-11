@@ -4,14 +4,12 @@ deck_status: main
 
 # Deck Guide: Ulalek, Fused Atrocity (Eldrazi Stack Incursion)
 
-![Ulalek, Fused Atrocity](https://cards.scryfall.io/normal/front/f/d/fdad1b0e-d3cc-4d76-ae7e-fee12558cf2c.jpg?1783911439)
-
 ![Ulalek, Fused Atrocity](https://cards.scryfall.io/normal/front/f/d/fdad1b0e-d3cc-4dd4-ae32-9fce59d047e1.jpg)
 
 ## Commander Strategy
 **Ulalek, Fused Atrocity** ({C/W}{C/U}{C/B}{C/R}{C/G})
 *   **Archetype:** 5-Color Devoid / Eldrazi Tribal & Stack Duplication Engine
-*   **Bracket:** 3 (3 Game Changers: *Ancient Tomb*, *The One Ring*, *Cyclonic Rift*)
+*   **Bracket:** 3 (0 Game Changers — 100% Pure Synergy & Velocity)
 *   **Core Goal:** Ramp into huge colorless and devoid Eldrazi spells, then use Ulalek's {C}{C} trigger to copy all spells and abilities on the stack, creating exponential board states, double on-cast triggers, and overwhelming annihilator combat steps.
 
 ### The Stack Multiplier Engine
@@ -50,7 +48,7 @@ deck_status: main
 *   **Strionic Resonator (2):** Taps for {2} to duplicate Ulalek's copy trigger or any on-cast Eldrazi ability.
 
 ### 📚 Card Advantage & Draw Engines (10 Cards)
-*   **The One Ring (4):** [Game Changer] Protection from everything on cast and escalating tap-to-draw card advantage.
+*   **Kozilek's Unsealing (3):** Devoid enchantment; creates two 0/1 Spawn tokens ({C}{C}) when casting 4–6 CMC creatures (like Ulalek), and draws 3 cards when casting 7+ CMC Eldrazi.
 *   **Sire of Stagnation (6):** Punishes opponents' land drops by exiling 2 cards and drawing you 2 cards each time.
 *   **Mystic Forge (4):** Casts colorless cards directly from the top of your library and exiles unwanted top cards.
 *   **Kozilek, the Great Distortion (10):** Refills your hand back up to 7 cards on cast and discards cards to counter spells.
@@ -90,10 +88,10 @@ deck_status: main
 *   **Chittering Dispatcher (3):** Myriad creature generating Eldrazi Spawn on leaving the battlefield.
 
 ### 🌪️ Mass Disruption & Finishers (7 Cards)
+*   **Raise the Palisade (5):** 5-mana asymmetric tribal bounce; names Eldrazi to return all non-Eldrazi creatures to opponents' hands while leaving your army untouched.
 *   **All Is Dust (7):** Asymmetric Eldrazi board wipe forcing all players to sacrifice all colored permanents.
 *   **Selective Obliteration (5):** Color-based board wipe that spares your colorless permanents while wiping opponents' boards.
 *   **Kozilek's Return (3):** 2-damage instant wipe that triggers from graveyard for a free 5-damage board sweep when casting a 7+ Eldrazi.
-*   **Cyclonic Rift (2):** [Game Changer] One-sided instant-speed board bounce via Overload ({6}{U}).
 *   **Farewell (6):** Modal exile board wipe addressing artifacts, creatures, enchantments, and graveyards.
 *   **Eldrazi Monument (5):** Grants flying, indestructible, and +1/+1 to your army in exchange for one creature sacrifice per upkeep.
 *   **Return of the Wildspeaker (5):** Instant-speed choice between massive card draw based on highest power or a +3/+3 team overrun.
@@ -118,7 +116,7 @@ deck_status: main
 *   **Shrine of the Forsaken Gods:** Taps for {C} or {C}{C} for colorless spells when controlling 7+ lands.
 *   **Sanctum of Ugin:** Taps for {C}; sacrifices on casting a 7+ spell to tutor for an Eldrazi creature.
 *   **Tomb of the Spirit Dragon:** Taps for {C} and gains life for each colorless creature you control.
-*   **Ancient Tomb:** [Game Changer] Taps for {C}{C} at the cost of 2 life.
+*   **Temple of the False God:** Taps for {C}{C} once controlling 5 or more lands.
 *   **Cavern of Souls:** Taps for uncounterable mana for Eldrazi creatures or {C}.
 *   **Reflecting Pool:** Produces any color of mana that your other lands can produce.
 *   **Command Tower:** Taps for any color in your commander's color identity.
@@ -147,16 +145,18 @@ deck_status: main
 ## 🚀 Future Roadmap: Upgrades & Considerations
 
 ### 💡 High-Impact Tech to Consider
-*   **Kozilek, Butcher of Truth (10):** Annihilator 4 titan with 4-card draw on cast; premium alternative/upgrade to Artisan of Kozilek.
-*   **Ulamog, the Infinite Gyre (11):** Destroys target permanent on cast with Annihilator 4 and indestructible; top-tier titan payoff.
-*   **Chandra's Ignition (5):** Board wipe / win condition on massive 10/10 Eldrazi.
-*   **All Will Be One (5):** Combos with Azlask's experience counter accumulation for massive burn damage.
+*   **Ancient Tomb (Land):** Premium fast 2-mana land (Game Changer).
+*   **The One Ring (4):** Premier recurring draw engine (Game Changer).
+*   **Cyclonic Rift (2):** Instant-speed board bounce via overload (Game Changer).
+*   **Kozilek, Butcher of Truth (10):** Annihilator 4 titan with 4-card draw on cast.
+*   **Ulamog, the Infinite Gyre (11):** Destroys target permanent on cast with Annihilator 4 and indestructible.
+*   **Chandra's Ignition (5):** Asymmetric board wipe and burn finisher on massive 10/10 Eldrazi.
 
 ### 🛒 Active Acquisition List (Priority Swaps)
 
 | **New Card (In)** | **Card to Remove (Out)** | **Category** | **Status** |
 | :--- | :--- | :--- | :--- |
-| Ancient Tomb | Forest (Basic) | Lands | Pending |
+| Temple of the False God | Forest (Basic) | Lands | Pending |
 | Cavern of Souls | Plains (Basic) | Lands | Pending |
 | Reflecting Pool | Tendo Ice Bridge | Lands | Pending |
 | Eye of Ugin | Ruins of Oran-Rief | Lands | Pending |
@@ -165,7 +165,7 @@ deck_status: main
 | Urza's Power Plant | Tranquil Landscape | Lands | Pending |
 | Urza's Tower | Twisted Landscape | Lands | Pending |
 | Plaza of Heroes | Opal Palace | Lands | Pending |
-| The One Ring | Idol of Oblivion | Card Advantage | Pending |
+| Kozilek's Unsealing | Idol of Oblivion | Card Advantage | Pending |
 | Kozilek, the Great Distortion | Ugin's Insight | Card Advantage | Pending |
 | Kozilek, the Broken Reality | Inversion Behemoth | Card Advantage | Pending |
 | Up the Beanstalk | Imprisoned in the Moon | Card Advantage | Pending |
@@ -185,7 +185,7 @@ deck_status: main
 | Swords to Plowshares | Skittering Invasion | Disruption | Pending |
 | Beast Within | Sifter of Skulls | Disruption | Pending |
 | Null Elemental Blast | Ulamog's Nullifier | Disruption | Pending |
-| Cyclonic Rift | Deepfathom Skulker | Board Wipes | Pending |
+| Raise the Palisade | Deepfathom Skulker | Board Wipes | Pending |
 | Farewell | Drowner of Hope | Board Wipes | Pending |
 | Lightning Greaves | Temple of Malady | Utility | Pending |
 | Swiftfoot Boots | Mutated Cultist | Utility | Pending |
@@ -193,10 +193,14 @@ deck_status: main
 ---
 
 ## 📜 Deck Changelog
+*   **2026-08-11:** Replaced 3 high-dollar Game Changers with synergistic non-Game-Changer equivalents, shifting to 0 Game Changers.
+    *   **In:** Temple of the False God, Kozilek's Unsealing, Raise the Palisade.
+    *   **Out:** Ancient Tomb, The One Ring, Cyclonic Rift.
+    *   **Reason:** Eliminated $280 in luxury staple cost and dropped all Game Changers to 0 for a pure synergy build; Kozilek's Unsealing provides dedicated Eldrazi Spawn ramp & 3-card draws, Raise the Palisade provides a one-sided tribal bounce wipe, and Temple of the False God provides clean 2-mana acceleration.
 *   **2026-08-11:** Initial deck architecture for Ulalek, Fused Atrocity (Bracket 3 Upgraded Eldrazi Stack Incursion).
     *   **In:** Full 100-card list upgraded from the Modern Horizons 3 Eldrazi Incursion precon base.
     *   **Out:** 33 precon filler cards (slow taplands, vanilla Eldrazi, low-impact removal).
-    *   **Reason:** Created a high-synergy Bracket 3 build optimizing Ulalek's stack duplication engine, integrating 3 Game Changers (Ancient Tomb, The One Ring, Cyclonic Rift), adding elite Eldrazi titans (Ulamog the Defiler, Ulamog the Ceaseless Hunger, Kozilek the Great Distortion), and building a robust 38-land pain-land and utility mana base.
+    *   **Reason:** Created a high-synergy Bracket 3 build optimizing Ulalek's stack duplication engine.
 
 ---
 
@@ -208,7 +212,6 @@ DECK:
 1 Adarkar Wastes  
 1 All Is Dust  
 1 Ancient Stirrings  
-1 Ancient Tomb  
 1 Arcane Signet  
 1 Artisan of Kozilek  
 1 Azlask, the Swelling Scourge  
@@ -224,7 +227,6 @@ DECK:
 1 Cityscape Leveler  
 1 Command Tower  
 1 Corrupted Crossroads  
-1 Cyclonic Rift  
 1 Darksteel Monolith  
 1 Echoes of Eternity  
 1 Elder Deep-Fiend  
@@ -247,6 +249,7 @@ DECK:
 1 Island  
 1 Karplusan Forest  
 1 Kozilek's Return  
+1 Kozilek's Unsealing  
 1 Kozilek, the Broken Reality  
 1 Kozilek, the Great Distortion  
 1 Liberator, Urza's Battlethopter  
@@ -260,6 +263,7 @@ DECK:
 1 Path of Ancestry  
 1 Plains  
 1 Plaza of Heroes  
+1 Raise the Palisade  
 1 Reflecting Pool  
 1 Reliquary Tower  
 1 Return of the Wildspeaker  
@@ -285,7 +289,7 @@ DECK:
 1 Talisman of Impulse  
 1 Talisman of Progress  
 1 Talisman of Resilience  
-1 The One Ring  
+1 Temple of the False God  
 1 Tomb of the Spirit Dragon  
 1 Ugin, the Ineffable  
 1 Ulamog's Dreadsire  

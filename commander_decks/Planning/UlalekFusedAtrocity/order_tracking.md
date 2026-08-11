@@ -10,12 +10,12 @@
 ## 📦 Singles to Acquire / Order List (33 Cards)
 
 ### Lands (9 Cards)
-- [ ] Ancient Tomb
 - [ ] Cavern of Souls
 - [ ] Eye of Ugin
 - [ ] Plaza of Heroes
 - [ ] Reflecting Pool
 - [ ] Sanctum of Ugin
+- [ ] Temple of the False God
 - [ ] Urza's Mine
 - [ ] Urza's Power Plant
 - [ ] Urza's Tower
@@ -30,26 +30,26 @@
 - [ ] Ulamog, the Defiler
 - [ ] Zhulodok, Void Gorger
 
-### Artifacts & Ramp (7 Cards)
+### Artifacts & Ramp (6 Cards)
 - [ ] Darksteel Monolith
 - [ ] Lightning Greaves
 - [ ] Strionic Resonator
 - [ ] Swiftfoot Boots
 - [ ] Talisman of Progress
-- [ ] The One Ring
 - [ ] Urza's Incubator
 
 ### Spells & Interaction (6 Cards)
 - [ ] Beast Within
-- [ ] Cyclonic Rift
 - [ ] Farewell
 - [ ] Heroic Intervention
 - [ ] Null Elemental Blast
+- [ ] Raise the Palisade
 - [ ] Swords to Plowshares
 
-### Enchantments & Planeswalkers (3 Cards)
+### Enchantments & Planeswalkers (4 Cards)
 - [ ] Echoes of Eternity
 - [ ] Elemental Bond
+- [ ] Kozilek's Unsealing
 - [ ] Up the Beanstalk
 
 ---

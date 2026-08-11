@@ -6,9 +6,9 @@
 *   **New Deck:** Added `commander_decks/Planning/UlalekFusedAtrocity/` with a full 100-card Bracket 3 list (`deck_status: main`).
 *   **Source:** Built as a comprehensive upgrade path from the user's owned Modern Horizons 3 *Eldrazi Incursion* preconstructed deck (67 owned cards retained, 33 targeted singles added).
 *   **Strategy:** 5-Color Devoid Eldrazi Tribal & Stack Multiplication. Leverages Ulalek's {C}{C} on-cast trigger to copy all spells and triggered/activated abilities on the stack. Combines heavy Eldrazi cast triggers (*Ulamog the Defiler*, *Artisan of Kozilek*, *Benthic Anomaly*) with trigger doublers (*Echoes of Eternity*, *Roaming Throne*) and flash enablers (*Liberator, Urza's Battlethopter*) for exponential stack value.
-*   **Key Includes:** Ulamog, the Defiler; Ulamog, the Ceaseless Hunger; Kozilek, the Great Distortion; Kozilek, the Broken Reality; Darksteel Monolith; Echoes of Eternity; Roaming Throne; Zhulodok, Void Gorger; Glaring Fleshraker; Sire of Stagnation; Up the Beanstalk; Eldritch Immunity; 10 Pain Lands + Urza Tron suite.
-*   **Bracket:** 3 — 3 Game Changers (*Ancient Tomb*, *The One Ring*, *Cyclonic Rift*).
-*   **Validation:** 20-sim goldfish check — **100% commander cast rate (80/80)**, **T3.7 avg**, 3.5 avg creatures/seat by T10.
+*   **Key Includes:** Ulamog, the Defiler; Ulamog, the Ceaseless Hunger; Kozilek, the Great Distortion; Kozilek, the Broken Reality; Darksteel Monolith; Echoes of Eternity; Roaming Throne; Zhulodok, Void Gorger; Glaring Fleshraker; Sire of Stagnation; Kozilek's Unsealing; Raise the Palisade; Up the Beanstalk; Eldritch Immunity; 10 Pain Lands + Urza Tron suite.
+*   **Bracket:** 3 — 0 Game Changers (pure synergy and tribal velocity; Ancient Tomb, The One Ring, and Cyclonic Rift replaced by Temple of the False God, Kozilek's Unsealing, and Raise the Palisade).
+*   **Validation:** 20-sim goldfish check — **100% commander cast rate (80/80)**, **T3.7 avg**, 3.4 avg creatures/seat by T10.
 
 ## 🗓️ July 2026: Nekusar Mindrazer & Incredible Hulk Build
 
