@@ -145,6 +145,8 @@ deck_status: main
 ## 🚀 Future Roadmap: Upgrades & Considerations
 
 ### 💡 High-Impact Tech to Consider
+*   **Silent Arbiter (4):** Colorless 1/5 artifact creature restricting combat so only one creature can attack and one creature can block each turn; completely shuts down go-wide swarm decks while letting your 10/10 Eldrazi titans dominate 1-on-1 combat.
+*   **Crawlspace (3):** Colorless 3-mana artifact limiting opponents to attacking you with at most two creatures per combat; buys crucial setup turns against aggressive decks.
 *   **Ancient Tomb (Land):** Premium fast 2-mana land (Game Changer).
 *   **The One Ring (4):** Premier recurring draw engine (Game Changer).
 *   **Cyclonic Rift (2):** Instant-speed board bounce via overload (Game Changer).
