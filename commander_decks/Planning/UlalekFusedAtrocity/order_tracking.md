@@ -2,20 +2,23 @@
 
 ## Overview
 *   **Total Deck Size:** 100 Cards
-*   **In-Hand / Owned:** 70 cards
-*   **Pending Acquisition / Singles to Order:** 30 cards
+*   **In-Hand / Owned:** 67 cards
+*   **Pending Acquisition / Singles to Order:** 33 cards
 
 ---
 
-## 📦 Singles to Acquire / Order List (30 Cards)
+## 📦 Singles to Acquire / Order List (33 Cards)
 
-### Lands (6 Cards)
+### Lands (9 Cards)
 - [ ] Ancient Tomb
 - [ ] Cavern of Souls
 - [ ] Eye of Ugin
 - [ ] Plaza of Heroes
 - [ ] Reflecting Pool
 - [ ] Sanctum of Ugin
+- [ ] Urza's Mine
+- [ ] Urza's Power Plant
+- [ ] Urza's Tower
 
 ### Creatures (8 Cards)
 - [ ] Cityscape Leveler
@@ -51,7 +54,7 @@
 
 ---
 
-## 🛡️ Inventory In-Hand (70 Cards)
+## 🛡️ Inventory In-Hand (67 Cards)
 - [x] Adarkar Wastes
 - [x] All Is Dust
 - [x] Ancient Stirrings
@@ -114,9 +117,6 @@
 - [x] Ulamog's Dreadsire
 - [x] Unclaimed Territory
 - [x] Underground River
-- [x] Urza's Mine
-- [x] Urza's Power Plant
-- [x] Urza's Tower
 - [x] Warping Wail
 - [x] Wastes
 - [x] Wastescape Battlemage
