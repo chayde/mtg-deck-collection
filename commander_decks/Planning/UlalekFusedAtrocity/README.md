@@ -117,7 +117,7 @@ deck_status: main
 *   **Sanctum of Ugin:** Taps for {C}; sacrifices on casting a 7+ spell to tutor for an Eldrazi creature.
 *   **Tomb of the Spirit Dragon:** Taps for {C} and gains life for each colorless creature you control.
 *   **Temple of the False God:** Taps for {C}{C} once controlling 5 or more lands.
-*   **Cavern of Souls:** Taps for uncounterable mana for Eldrazi creatures or {C}.
+*   **Ash Barrens:** Taps for {C} or basic landcycles for {1} to fix any color.
 *   **Reflecting Pool:** Produces any color of mana that your other lands can produce.
 *   **Command Tower:** Taps for any color in your commander's color identity.
 *   **Exotic Orchard:** Taps for any color an opponent's lands can produce.
@@ -147,6 +147,7 @@ deck_status: main
 ### 💡 High-Impact Tech to Consider
 *   **Silent Arbiter (4):** Colorless 1/5 artifact creature restricting combat so only one creature can attack and one creature can block each turn; completely shuts down go-wide swarm decks while letting your 10/10 Eldrazi titans dominate 1-on-1 combat.
 *   **Crawlspace (3):** Colorless 3-mana artifact limiting opponents to attacking you with at most two creatures per combat; buys crucial setup turns against aggressive decks.
+*   **Cavern of Souls (Land):** Premium uncounterable tribal fixing land.
 *   **Ancient Tomb (Land):** Premium fast 2-mana land (Game Changer).
 *   **The One Ring (4):** Premier recurring draw engine (Game Changer).
 *   **Cyclonic Rift (2):** Instant-speed board bounce via overload (Game Changer).
@@ -159,7 +160,6 @@ deck_status: main
 | **New Card (In)** | **Card to Remove (Out)** | **Category** | **Status** |
 | :--- | :--- | :--- | :--- |
 | Temple of the False God | Forest (Basic) | Lands | Pending |
-| Cavern of Souls | Plains (Basic) | Lands | Pending |
 | Reflecting Pool | Tendo Ice Bridge | Lands | Pending |
 | Eye of Ugin | Ruins of Oran-Rief | Lands | Pending |
 | Sanctum of Ugin | Tectonic Edge | Lands | Pending |
@@ -195,6 +195,10 @@ deck_status: main
 ---
 
 ## 📜 Deck Changelog
+*   **2026-08-11:** Substituted Cavern of Souls for Ash Barrens from PreCon inventory.
+    *   **In:** Ash Barrens.
+    *   **Out:** Cavern of Souls.
+    *   **Reason:** Saved $44.54 with zero loss in consistency since Secluded Courtyard & Unclaimed Territory provide 5-color tribal fixing and Ulalek triggers on-cast.
 *   **2026-08-11:** Optimized single-target removal suite.
     *   **In:** Path to Exile.
     *   **Out:** Beast Within.
@@ -220,13 +224,13 @@ DECK:
 1 Ancient Stirrings  
 1 Arcane Signet  
 1 Artisan of Kozilek  
+1 Ash Barrens  
 1 Azlask, the Swelling Scourge  
 1 Battlefield Forge  
 1 Benthic Anomaly  
 1 Bonders' Enclave  
 1 Brushland  
 1 Cascading Cataracts  
-1 Cavern of Souls  
 1 Caves of Koilos  
 1 Chittering Dispatcher  
 1 Cityscape Leveler  

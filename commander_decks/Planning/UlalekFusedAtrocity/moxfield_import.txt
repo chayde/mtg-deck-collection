@@ -7,13 +7,13 @@ DECK:
 1 Ancient Stirrings
 1 Arcane Signet
 1 Artisan of Kozilek
+1 Ash Barrens
 1 Azlask, the Swelling Scourge
 1 Battlefield Forge
 1 Benthic Anomaly
 1 Bonders' Enclave
 1 Brushland
 1 Cascading Cataracts
-1 Cavern of Souls
 1 Caves of Koilos
 1 Chittering Dispatcher
 1 Cityscape Leveler

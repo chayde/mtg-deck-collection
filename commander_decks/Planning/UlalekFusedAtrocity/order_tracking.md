@@ -2,15 +2,14 @@
 
 ## Overview
 *   **Total Deck Size:** 100 Cards
-*   **In-Hand / Owned:** 67 cards
-*   **Pending Acquisition / Singles to Order:** 33 cards
+*   **In-Hand / Owned:** 68 cards
+*   **Pending Acquisition / Singles to Order:** 32 cards
 
 ---
 
-## 📦 Singles to Acquire / Order List (33 Cards)
+## 📦 Singles to Acquire / Order List (32 Cards)
 
-### Lands (9 Cards)
-- [ ] Cavern of Souls
+### Lands (8 Cards)
 - [ ] Eye of Ugin
 - [ ] Plaza of Heroes
 - [ ] Reflecting Pool
@@ -54,12 +53,13 @@
 
 ---
 
-## 🛡️ Inventory In-Hand (67 Cards)
+## 🛡️ Inventory In-Hand (68 Cards)
 - [x] Adarkar Wastes
 - [x] All Is Dust
 - [x] Ancient Stirrings
 - [x] Arcane Signet
 - [x] Artisan of Kozilek
+- [x] Ash Barrens
 - [x] Azlask, the Swelling Scourge
 - [x] Battlefield Forge
 - [x] Benthic Anomaly
