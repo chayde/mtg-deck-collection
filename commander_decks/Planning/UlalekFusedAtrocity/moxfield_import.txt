@@ -59,7 +59,6 @@ DECK:
 1 Plaza of Heroes
 1 Raise the Palisade
 1 Reflecting Pool
-1 Reliquary Tower
 1 Return of the Wildspeaker
 1 Rishkar's Expertise
 1 Sanctum of Ugin
@@ -84,6 +83,7 @@ DECK:
 1 Thran Dynamo
 1 Tomb of the Spirit Dragon
 1 Ugin's Binding
+1 Ugin's Labyrinth
 1 Ugin, the Ineffable
 1 Ulamog's Dreadsire
 1 Ulamog, the Ceaseless Hunger

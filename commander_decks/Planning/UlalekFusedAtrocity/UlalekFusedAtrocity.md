@@ -128,7 +128,7 @@ deck_status: main
 *   **Cascading Cataracts:** Indestructible land filtering 5 mana into any 5-color combination.
 *   **Corrupted Crossroads:** Taps for {C} or pays 1 life for any color to cast Devoid spells.
 *   **Bonders' Enclave:** Taps for {C} and draws cards when controlling a 4+ power creature.
-*   **Reliquary Tower:** Taps for {C} and gives no maximum hand size.
+*   **Ugin's Labyrinth:** Fast land; imprints a 7+ colorless card to tap for {C}{C} on Turn 1 with zero life loss.
 *   **Urza's Cave:** Urza land that taps for {C} and sacrifices for {3} to tutor ANY land directly to the battlefield.
 *   **Urza's Mine:** Urza tron land ({C} or {C}{C} with the full trio).
 *   **Urza's Power Plant:** Urza tron land ({C} or {C}{C} with the full trio).
@@ -145,6 +145,7 @@ deck_status: main
 ## 🚀 Future Roadmap: Upgrades & Considerations
 
 ### 💡 High-Impact Tech to Consider
+*   **Ugin, Eye of the Storms (7):** Planeswalker that exiles target colored permanent on cast and whenever you cast any colorless spell; generates +3 colorless mana, gains life/draws, and ult casts all colorless cards from library for free.
 *   **Roaming Throne (4):** Chosen type Eldrazi; doubles all Eldrazi triggered abilities including Ulalek's copy trigger.
 *   **Silent Arbiter (4):** Colorless 1/5 artifact creature restricting combat so only one creature can attack and one creature can block each turn; completely shuts down go-wide swarm decks while letting your 10/10 Eldrazi titans dominate 1-on-1 combat.
 *   **Crawlspace (3):** Colorless 3-mana artifact limiting opponents to attacking you with at most two creatures per combat; buys crucial setup turns against aggressive decks.
@@ -164,6 +165,7 @@ deck_status: main
 | Reflecting Pool | Tendo Ice Bridge | Lands | Pending |
 | Eye of Ugin | Ruins of Oran-Rief | Lands | Pending |
 | Sanctum of Ugin | Tectonic Edge | Lands | Pending |
+| Ugin's Labyrinth | Reliquary Tower | Lands | Pending |
 | Urza's Cave | Spawning Bed | Lands | Pending |
 | Urza's Mine | Ash Barrens | Lands | Pending |
 | Urza's Power Plant | Tranquil Landscape | Lands | Pending |
@@ -200,6 +202,10 @@ deck_status: main
 ---
 
 ## 📜 Deck Changelog
+*   **2026-08-11:** Substituted Reliquary Tower for Ugin's Labyrinth.
+    *   **In:** Ugin's Labyrinth.
+    *   **Out:** Reliquary Tower.
+    *   **Reason:** Ugin's Labyrinth ($12.90) imprints a 7+ colorless titan to tap for {C}{C} on Turn 1 with zero life loss, accelerating early Ulalek deployment.
 *   **2026-08-11:** Substituted Wastescape Battlemage for Thran Dynamo.
     *   **In:** Thran Dynamo.
     *   **Out:** Wastescape Battlemage.
@@ -293,7 +299,6 @@ DECK:
 1 Plaza of Heroes  
 1 Raise the Palisade  
 1 Reflecting Pool  
-1 Reliquary Tower  
 1 Return of the Wildspeaker  
 1 Rishkar's Expertise  
 1 Sanctum of Ugin  
@@ -318,6 +323,7 @@ DECK:
 1 Thran Dynamo  
 1 Tomb of the Spirit Dragon  
 1 Ugin's Binding  
+1 Ugin's Labyrinth  
 1 Ugin, the Ineffable  
 1 Ulamog's Dreadsire  
 1 Ulamog, the Ceaseless Hunger  

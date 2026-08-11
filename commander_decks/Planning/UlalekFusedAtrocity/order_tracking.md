@@ -2,19 +2,20 @@
 
 ## Overview
 *   **Total Deck Size:** 100 Cards
-*   **In-Hand / Owned:** 64 cards
-*   **Pending Acquisition / Singles to Order:** 36 cards
+*   **In-Hand / Owned:** 63 cards
+*   **Pending Acquisition / Singles to Order:** 37 cards
 
 ---
 
-## 📦 Singles to Acquire / Order List (36 Cards)
+## 📦 Singles to Acquire / Order List (37 Cards)
 
-### Lands (9 Cards)
+### Lands (10 Cards)
 - [ ] Eye of Ugin
 - [ ] Plaza of Heroes
 - [ ] Reflecting Pool
 - [ ] Sanctum of Ugin
 - [ ] Temple of the False God
+- [ ] Ugin's Labyrinth
 - [ ] Urza's Cave
 - [ ] Urza's Mine
 - [ ] Urza's Power Plant
@@ -57,7 +58,7 @@
 
 ---
 
-## 🛡️ Inventory In-Hand (64 Cards)
+## 🛡️ Inventory In-Hand (63 Cards)
 - [x] Adarkar Wastes
 - [x] All Is Dust
 - [x] Ancient Stirrings
@@ -97,7 +98,6 @@
 - [x] Opal Palace
 - [x] Path of Ancestry
 - [x] Plains
-- [x] Reliquary Tower
 - [x] Return of the Wildspeaker
 - [x] Rishkar's Expertise
 - [x] Secluded Courtyard
