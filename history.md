@@ -1,5 +1,15 @@
 # Project History: MTG Deck Collection
 
+## 🗓️ August 2026: Ulalek, Fused Atrocity Planning & PreCon Upgrade
+
+### 2026-08-11: Ulalek, Fused Atrocity — New 5-Color Eldrazi Stack Deck Added to Planning
+*   **New Deck:** Added `commander_decks/Planning/UlalekFusedAtrocity/` with a full 100-card Bracket 3 list (`deck_status: main`).
+*   **Source:** Built as a comprehensive upgrade path from the user's owned Modern Horizons 3 *Eldrazi Incursion* preconstructed deck (67 owned cards retained, 33 targeted singles added).
+*   **Strategy:** 5-Color Devoid Eldrazi Tribal & Stack Multiplication. Leverages Ulalek's {C}{C} on-cast trigger to copy all spells and triggered/activated abilities on the stack. Combines heavy Eldrazi cast triggers (*Ulamog the Defiler*, *Artisan of Kozilek*, *Benthic Anomaly*) with trigger doublers (*Echoes of Eternity*, *Roaming Throne*) and flash enablers (*Liberator, Urza's Battlethopter*) for exponential stack value.
+*   **Key Includes:** Ulamog, the Defiler; Ulamog, the Ceaseless Hunger; Kozilek, the Great Distortion; Kozilek, the Broken Reality; Darksteel Monolith; Echoes of Eternity; Roaming Throne; Zhulodok, Void Gorger; Glaring Fleshraker; Sire of Stagnation; Up the Beanstalk; Eldritch Immunity; 10 Pain Lands + Urza Tron suite.
+*   **Bracket:** 3 — 3 Game Changers (*Ancient Tomb*, *The One Ring*, *Cyclonic Rift*).
+*   **Validation:** 20-sim goldfish check — **100% commander cast rate (80/80)**, **T3.7 avg**, 3.5 avg creatures/seat by T10.
+
 ## 🗓️ July 2026: Nekusar Mindrazer & Incredible Hulk Build
 
 ### 2026-07-31: Nekusar, the Mindrazer — Playtested Build Integrated into Planning

@@ -31,9 +31,9 @@ BASIC_LANDS = {"Plains", "Island", "Swamp", "Mountain", "Forest"}
 CONDITION_LABELS = {"NM": "NM", "LP": "LP", "MP": "MP", "HP": "HP", "DMG": "DMG"}
 FINISH_LABELS = {"NF": "", "FO": " (Foil)", "ET": " (Etched)"}
 
-# Priority Order: If we have multiple choices, we prefer Near Mint (NM) 
-# over Lightly Played (LP), etc. We avoid Damaged (DMG) by default.
-CONDITION_PREFERENCE = ["NM", "LP", "MP", "HP"]
+# Acceptable conditions: Near Mint (NM), Lightly Played (LP), Moderately Played (MP).
+# Heavily Played (HP) and Damaged (DMG) are excluded.
+CONDITION_PREFERENCE = ["NM", "LP", "MP"]
 
 # --- Network & Performance Settings ---
 # APIs have 'Rate Limits'. If we call them too fast, they will block us.
@@ -189,13 +189,13 @@ def query_manapool_batch(scryfall_ids):
 
 def best_available_variant(product):
     """
-    Given a card on Manapool, find the specific listing we want.
+    Given a card on Manapool, find the cheapest in-stock acceptable listing (NM, LP, MP).
     
     Logic:
     1. Filter out variants that are out of stock.
-    2. Ignore 'Damaged' cards unless specified.
-    3. Find the cheapest 'Near Mint' version.
-    4. If no NM, find the next best condition (LP, MP...).
+    2. Exclude 'Damaged' (DMG) and 'Heavily Played' (HP).
+    3. Accept 'Near Mint' (NM), 'Lightly Played' (LP), and 'Moderately Played' (MP).
+    4. Choose whichever has the lowest price. Tie-break by condition quality (NM > LP > MP) and Non-Foil.
     """
     url = product.get("url", "")
     if not product.get("available_quantity"):
@@ -212,28 +212,25 @@ def best_available_variant(product):
             continue
             
         condition = v.get("condition_id", "")
-        if condition == "DMG":
+        if condition in ("DMG", "HP"):
             dmg_only = True
-        else:
+        elif condition in CONDITION_PREFERENCE:
             acceptable.append(v)
 
     if not acceptable:
-        # If we only found Damaged cards, return a special flag
-        return (None, "DMG_ONLY", url) if dmg_only else (None, None, url)
+        return (None, "DMG/HP_ONLY", url) if dmg_only else (None, None, url)
 
-    # Search for cheapest Near Mint
-    nm_variants = [v for v in acceptable if v.get("condition_id") == "NM"]
-    if nm_variants:
-        best = min(nm_variants, key=lambda v: v["low_price"])
-    else:
-        # If no NM, sort by our Condition Preference list
-        def sort_key(v):
-            cond = v.get("condition_id", "")
-            pref = CONDITION_PREFERENCE.index(cond) if cond in CONDITION_PREFERENCE else 99
-            return (pref, v["low_price"])
-        best = min(acceptable, key=sort_key)
+    # Find the absolute cheapest price among NM, LP, and MP
+    def sort_key(v):
+        price = v["low_price"]
+        cond = v.get("condition_id", "")
+        pref = CONDITION_PREFERENCE.index(cond) if cond in CONDITION_PREFERENCE else 99
+        finish = 0 if v.get("finish_id") == "NF" else 1
+        return (price, pref, finish)
 
-    # Format the price and label (e.g. "NM (Foil)")
+    best = min(acceptable, key=sort_key)
+
+    # Format the price and label (e.g. "LP", "NM (Foil)")
     price_dollars = best["low_price"] / 100.0
     condition = CONDITION_LABELS.get(best.get("condition_id", ""), "?")
     finish = FINISH_LABELS.get(best.get("finish_id", "NF"), "")
@@ -299,7 +296,7 @@ def main():
 
         for product in products:
             price, label, url = best_available_variant(product)
-            if label == "DMG_ONLY":
+            if label in ("DMG_ONLY", "DMG/HP_ONLY"):
                 has_dmg_only = True
                 continue
             if price is not None:
