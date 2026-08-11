@@ -117,7 +117,7 @@ deck_status: main
 *   **Sanctum of Ugin:** Taps for {C}; sacrifices on casting a 7+ spell to tutor for an Eldrazi creature.
 *   **Tomb of the Spirit Dragon:** Taps for {C} and gains life for each colorless creature you control.
 *   **Temple of the False God:** Taps for {C}{C} once controlling 5 or more lands.
-*   **Ash Barrens:** Taps for {C} or basic landcycles for {1} to fix any color.
+*   **Opal Palace:** Taps for {C} or filters mana to cast Ulalek while buffing him with +1/+1 counters.
 *   **Reflecting Pool:** Produces any color of mana that your other lands can produce.
 *   **Command Tower:** Taps for any color in your commander's color identity.
 *   **Exotic Orchard:** Taps for any color an opponent's lands can produce.
@@ -195,10 +195,10 @@ deck_status: main
 ---
 
 ## 📜 Deck Changelog
-*   **2026-08-11:** Substituted Cavern of Souls for Ash Barrens from PreCon inventory.
-    *   **In:** Ash Barrens.
+*   **2026-08-11:** Substituted Cavern of Souls for Opal Palace from PreCon inventory.
+    *   **In:** Opal Palace.
     *   **Out:** Cavern of Souls.
-    *   **Reason:** Saved $44.54 with zero loss in consistency since Secluded Courtyard & Unclaimed Territory provide 5-color tribal fixing and Ulalek triggers on-cast.
+    *   **Reason:** Saved $44.54 by retaining owned Opal Palace for color filtration and commander buffing.
 *   **2026-08-11:** Optimized single-target removal suite.
     *   **In:** Path to Exile.
     *   **Out:** Beast Within.
@@ -224,7 +224,6 @@ DECK:
 1 Ancient Stirrings  
 1 Arcane Signet  
 1 Artisan of Kozilek  
-1 Ash Barrens  
 1 Azlask, the Swelling Scourge  
 1 Battlefield Forge  
 1 Benthic Anomaly  
@@ -269,6 +268,7 @@ DECK:
 1 Mystic Forge  
 1 Null Elemental Blast  
 1 Oblivion Sower  
+1 Opal Palace  
 1 Path of Ancestry  
 1 Path to Exile  
 1 Plains  

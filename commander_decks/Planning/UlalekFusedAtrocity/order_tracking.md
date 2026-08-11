@@ -59,7 +59,6 @@
 - [x] Ancient Stirrings
 - [x] Arcane Signet
 - [x] Artisan of Kozilek
-- [x] Ash Barrens
 - [x] Azlask, the Swelling Scourge
 - [x] Battlefield Forge
 - [x] Benthic Anomaly
@@ -91,6 +90,7 @@
 - [x] Mountain
 - [x] Mystic Forge
 - [x] Oblivion Sower
+- [x] Opal Palace
 - [x] Path of Ancestry
 - [x] Plains
 - [x] Reliquary Tower
