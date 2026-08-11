@@ -412,6 +412,28 @@ python3 scripts/forge_exporter.py <path/to/deck_file.md>
 
 ---
 
+### `scripts/deck_diff.py` — Deck Cross-Referencer & Acquisition Tracker
+**What it does:** Cross-references a target deck list against source decks, precon lists, and/or the physical card database (`collection.csv`). Computes owned vs. missing cards, categorizes them automatically, and can generate or update a formatted `order_tracking.md` checklist.
+
+**When to use:**
+- When upgrading a PreCon or adapting a deck list to see what cards you already own.
+- When generating or refreshing `order_tracking.md` for any deck.
+- When checking a new build against physical card inventory in `collection.csv`.
+
+**Usage:**
+```bash
+# Compare a deck against a precon:
+python3 scripts/deck_diff.py "<path/to/moxfield_import.txt>" --source "<path/to/precon.txt>"
+
+# Compare a deck against physical collection.csv:
+python3 scripts/deck_diff.py "<path/to/moxfield_import.txt>" --collection collection.csv
+
+# Auto-generate or update order_tracking.md:
+python3 scripts/deck_diff.py "<path/to/moxfield_import.txt>" --source "<path/to/precon.txt>" --collection collection.csv --output-tracking "<path/to/order_tracking.md>"
+```
+
+---
+
 ### `scripts/add_commander_images.py` — Commander Image Linker
 **What it does:** Scans all `deck_status: main` deck files (and their `README.md` files) in `commander_decks/Owned/` and `commander_decks/Planning/`, fetches the commander's card image from Scryfall, and inserts a Markdown image embed directly after the file's H1 title. Skips files that already have the image. Has built-in name overrides for double-faced cards and Universes Beyond commanders.
 

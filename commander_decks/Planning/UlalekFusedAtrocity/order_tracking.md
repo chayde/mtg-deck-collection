@@ -1,63 +1,57 @@
-# Order Tracking: Ulalek, Fused Atrocity (Eldrazi Stack Incursion)
+# Order Tracking: UlalekFusedAtrocity
 
 ## Overview
-*   **Total Deck Size:** 100 Cards (1 Commander + 99 Main)
-*   **In-Hand / Owned from PreCon:** 67 cards
-*   **Pending Acquisition / Singles to Order:** 33 cards
+*   **Total Deck Size:** 100 Cards
+*   **In-Hand / Owned:** 70 cards
+*   **Pending Acquisition / Singles to Order:** 30 cards
 
 ---
 
-## 📦 Singles to Acquire / Order List (33 Cards)
+## 📦 Singles to Acquire / Order List (30 Cards)
 
-### Lands (9 Cards)
+### Lands (6 Cards)
 - [ ] Ancient Tomb
 - [ ] Cavern of Souls
 - [ ] Eye of Ugin
 - [ ] Plaza of Heroes
 - [ ] Reflecting Pool
 - [ ] Sanctum of Ugin
-- [ ] Urza's Mine
-- [ ] Urza's Power Plant
-- [ ] Urza's Tower
 
-### Ramp & Fast Artifacts (4 Cards)
-- [ ] Darksteel Monolith
-- [ ] Talisman of Progress
-- [ ] Urza's Incubator
-- [ ] Zhulodok, Void Gorger
-
-### Stack Multipliers & Engines (4 Cards)
-- [ ] Echoes of Eternity
-- [ ] Liberator, Urza's Battlethopter
-- [ ] Roaming Throne
-- [ ] Strionic Resonator
-
-### Card Advantage (5 Cards)
-- [ ] Elemental Bond
+### Creatures (8 Cards)
+- [ ] Cityscape Leveler
 - [ ] Kozilek, the Broken Reality
 - [ ] Kozilek, the Great Distortion
-- [ ] The One Ring
-- [ ] Up the Beanstalk
-
-### Titans & Payoffs (3 Cards)
-- [ ] Cityscape Leveler
+- [ ] Liberator, Urza's Battlethopter
+- [ ] Roaming Throne
 - [ ] Ulamog, the Ceaseless Hunger
 - [ ] Ulamog, the Defiler
+- [ ] Zhulodok, Void Gorger
 
-### Disruption & Protection (6 Cards)
+### Artifacts & Ramp (7 Cards)
+- [ ] Darksteel Monolith
+- [ ] Lightning Greaves
+- [ ] Strionic Resonator
+- [ ] Swiftfoot Boots
+- [ ] Talisman of Progress
+- [ ] The One Ring
+- [ ] Urza's Incubator
+
+### Spells & Interaction (6 Cards)
 - [ ] Beast Within
 - [ ] Cyclonic Rift
 - [ ] Farewell
 - [ ] Heroic Intervention
-- [ ] Lightning Greaves
 - [ ] Null Elemental Blast
-- [ ] Swiftfoot Boots
 - [ ] Swords to Plowshares
+
+### Enchantments & Planeswalkers (3 Cards)
+- [ ] Echoes of Eternity
+- [ ] Elemental Bond
+- [ ] Up the Beanstalk
 
 ---
 
-## 🛡️ PreCon Inventory (67 Cards In-Hand)
-- [x] Ulalek, Fused Atrocity (Commander)
+## 🛡️ Inventory In-Hand (70 Cards)
 - [x] Adarkar Wastes
 - [x] All Is Dust
 - [x] Ancient Stirrings
@@ -116,9 +110,13 @@
 - [x] Talisman of Resilience
 - [x] Tomb of the Spirit Dragon
 - [x] Ugin, the Ineffable
+- [x] Ulalek, Fused Atrocity
 - [x] Ulamog's Dreadsire
 - [x] Unclaimed Territory
 - [x] Underground River
+- [x] Urza's Mine
+- [x] Urza's Power Plant
+- [x] Urza's Tower
 - [x] Warping Wail
 - [x] Wastes
 - [x] Wastescape Battlemage
