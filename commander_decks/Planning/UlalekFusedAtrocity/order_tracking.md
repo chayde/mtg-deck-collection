@@ -2,12 +2,12 @@
 
 ## Overview
 *   **Total Deck Size:** 100 Cards
-*   **In-Hand / Owned:** 65 cards
-*   **Pending Acquisition / Singles to Order:** 35 cards
+*   **In-Hand / Owned:** 64 cards
+*   **Pending Acquisition / Singles to Order:** 36 cards
 
 ---
 
-## 📦 Singles to Acquire / Order List (35 Cards)
+## 📦 Singles to Acquire / Order List (36 Cards)
 
 ### Lands (9 Cards)
 - [ ] Eye of Ugin
@@ -31,12 +31,13 @@
 - [ ] Ulamog, the Defiler
 - [ ] Zhulodok, Void Gorger
 
-### Artifacts & Ramp (6 Cards)
+### Artifacts & Ramp (7 Cards)
 - [ ] Darksteel Monolith
 - [ ] Lightning Greaves
 - [ ] Strionic Resonator
 - [ ] Swiftfoot Boots
 - [ ] Talisman of Progress
+- [ ] Thran Dynamo
 - [ ] Urza's Incubator
 
 ### Spells & Interaction (7 Cards)
@@ -56,7 +57,7 @@
 
 ---
 
-## 🛡️ Inventory In-Hand (65 Cards)
+## 🛡️ Inventory In-Hand (64 Cards)
 - [x] Adarkar Wastes
 - [x] All Is Dust
 - [x] Ancient Stirrings
@@ -119,6 +120,5 @@
 - [x] Underground River
 - [x] Warping Wail
 - [x] Wastes
-- [x] Wastescape Battlemage
 - [x] World Breaker
 - [x] Yavimaya Coast

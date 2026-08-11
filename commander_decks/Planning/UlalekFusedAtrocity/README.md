@@ -37,6 +37,7 @@ deck_status: main
 *   **Urza's Incubator (3):** Reduces all Eldrazi creature spells by {2}.
 *   **Forsaken Monument (5):** Doubles mana produced by colorless sources, grants +2/+2 to colorless creatures, and gains life on colorless cast.
 *   **Morophon, the Boundless (7):** Reduces colored mana costs of Eldrazi to zero, effectively letting you cast Ulalek for {0}.
+*   **Thran Dynamo (4):** Taps for {C}{C}{C} to pay for Ulalek's copy trigger with 1 mana to spare.
 *   **Darksteel Monolith (8):** Indestructible artifact allowing you to cast one colorless spell from hand for {0} mana on each player's turn.
 
 ### 🔄 Stack Engines, Trigger Doublers & Copy Multipliers (6 Cards)
@@ -85,7 +86,6 @@ deck_status: main
 *   **Eldrazi Confluence (4):** Modal instant to exile a permanent, grant +3/-3, or create an Eldrazi Scion token.
 *   **Lightning Greaves (2):** 0-equip equipment giving haste and shroud to Ulalek or Eldrazi titans.
 *   **Swiftfoot Boots (2):** 1-equip equipment granting hexproof and haste.
-*   **Wastescape Battlemage (3):** Modal Eldrazi kicker to bounce a creature and/or exile an artifact/enchantment.
 *   **Chittering Dispatcher (3):** Myriad creature generating Eldrazi Spawn on leaving the battlefield.
 
 ### 🌪️ Mass Disruption & Finishers (7 Cards)
@@ -184,6 +184,7 @@ deck_status: main
 | Cityscape Leveler | Dreamstone Hedron | Payoffs | Pending |
 | Zhulodok, Void Gorger | Bismuth Mindrender | Payoffs | Pending |
 | Darksteel Monolith | Hedron Archive | Ramp | Pending |
+| Thran Dynamo | Wastescape Battlemage | Ramp | Pending |
 | Urza's Incubator | Talisman of Dominance (Alt) | Ramp | Pending |
 | Talisman of Progress | Temple of Silence | Ramp | Pending |
 | Heroic Intervention | Crib Swap | Protection | Pending |
@@ -199,6 +200,10 @@ deck_status: main
 ---
 
 ## 📜 Deck Changelog
+*   **2026-08-11:** Substituted Wastescape Battlemage for Thran Dynamo.
+    *   **In:** Thran Dynamo.
+    *   **Out:** Wastescape Battlemage.
+    *   **Reason:** Thran Dynamo ($4.14) taps for {C}{C}{C}, accelerating into titans a full 2 turns faster and completely funding Ulalek's copy trigger on demand.
 *   **2026-08-11:** Added Urza's Cave and Eldrazi Linebreaker.
     *   **In:** Urza's Cave, Eldrazi Linebreaker.
     *   **Out:** Spawning Bed, Snapping Voidcraw.
@@ -310,6 +315,7 @@ DECK:
 1 Talisman of Progress  
 1 Talisman of Resilience  
 1 Temple of the False God  
+1 Thran Dynamo  
 1 Tomb of the Spirit Dragon  
 1 Ugin's Binding  
 1 Ugin, the Ineffable  
@@ -326,7 +332,6 @@ DECK:
 1 Urza's Tower  
 1 Warping Wail  
 1 Wastes  
-1 Wastescape Battlemage  
 1 World Breaker  
 1 Yavimaya Coast  
 1 Zhulodok, Void Gorger  

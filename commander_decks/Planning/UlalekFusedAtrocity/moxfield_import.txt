@@ -81,6 +81,7 @@ DECK:
 1 Talisman of Progress
 1 Talisman of Resilience
 1 Temple of the False God
+1 Thran Dynamo
 1 Tomb of the Spirit Dragon
 1 Ugin's Binding
 1 Ugin, the Ineffable
@@ -97,7 +98,6 @@ DECK:
 1 Urza's Tower
 1 Warping Wail
 1 Wastes
-1 Wastescape Battlemage
 1 World Breaker
 1 Yavimaya Coast
 1 Zhulodok, Void Gorger
