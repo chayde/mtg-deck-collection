@@ -2,25 +2,27 @@
 
 ## Overview
 *   **Total Deck Size:** 100 Cards
-*   **In-Hand / Owned:** 67 cards
-*   **Pending Acquisition / Singles to Order:** 33 cards
+*   **In-Hand / Owned:** 65 cards
+*   **Pending Acquisition / Singles to Order:** 35 cards
 
 ---
 
-## 📦 Singles to Acquire / Order List (33 Cards)
+## 📦 Singles to Acquire / Order List (35 Cards)
 
-### Lands (8 Cards)
+### Lands (9 Cards)
 - [ ] Eye of Ugin
 - [ ] Plaza of Heroes
 - [ ] Reflecting Pool
 - [ ] Sanctum of Ugin
 - [ ] Temple of the False God
+- [ ] Urza's Cave
 - [ ] Urza's Mine
 - [ ] Urza's Power Plant
 - [ ] Urza's Tower
 
-### Creatures (8 Cards)
+### Creatures (9 Cards)
 - [ ] Cityscape Leveler
+- [ ] Eldrazi Linebreaker
 - [ ] Kozilek, the Broken Reality
 - [ ] Kozilek, the Great Distortion
 - [ ] Liberator, Urza's Battlethopter
@@ -54,7 +56,7 @@
 
 ---
 
-## 🛡️ Inventory In-Hand (67 Cards)
+## 🛡️ Inventory In-Hand (65 Cards)
 - [x] Adarkar Wastes
 - [x] All Is Dust
 - [x] Ancient Stirrings
@@ -101,10 +103,8 @@
 - [x] Shivan Reef
 - [x] Shrine of the Forsaken Gods
 - [x] Sire of Stagnation
-- [x] Snapping Voidcraw
 - [x] Sol Ring
 - [x] Spawnbed Protector
-- [x] Spawning Bed
 - [x] Sulfurous Springs
 - [x] Swamp
 - [x] Talisman of Curiosity

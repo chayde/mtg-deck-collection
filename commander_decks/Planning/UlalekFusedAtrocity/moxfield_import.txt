@@ -23,6 +23,7 @@ DECK:
 1 Elder Deep-Fiend
 1 Eldrazi Confluence
 1 Eldrazi Displacer
+1 Eldrazi Linebreaker
 1 Eldrazi Monument
 1 Eldrazi Temple
 1 Eldritch Immunity
@@ -66,11 +67,9 @@ DECK:
 1 Shivan Reef
 1 Shrine of the Forsaken Gods
 1 Sire of Stagnation
-1 Snapping Voidcraw
 1 Sol Ring
 1 Sowing Mycospawn
 1 Spawnbed Protector
-1 Spawning Bed
 1 Strionic Resonator
 1 Sulfurous Springs
 1 Swamp
@@ -91,6 +90,7 @@ DECK:
 1 Unclaimed Territory
 1 Underground River
 1 Up the Beanstalk
+1 Urza's Cave
 1 Urza's Incubator
 1 Urza's Mine
 1 Urza's Power Plant

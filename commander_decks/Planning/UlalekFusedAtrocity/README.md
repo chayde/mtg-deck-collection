@@ -42,6 +42,7 @@ deck_status: main
 ### 🔄 Stack Engines, Trigger Doublers & Copy Multipliers (6 Cards)
 *   **Echoes of Eternity (6):** Kindred enchantment that copies all colorless spells and doubles all colorless triggered abilities.
 *   **Sowing Mycospawn (4):** Devoid Eldrazi; on cast tutors ANY land (Eye of Ugin, Eldrazi Temple, Tron lands) directly into play; kicker exiles an opponent's land. Ulalek copies the trigger to tutor 2 lands!
+*   **Eldrazi Linebreaker (3):** 3/3 Devoid with trample; gives target creature Haste and +X/+0 (X = Eldrazi count) every combat to attack immediately with titans.
 *   **Glaring Fleshraker (3):** Generates a 0/1 Eldrazi Spawn (sacrifices for {C}) on every colorless cast and pings each opponent for 1.
 *   **Eldrazi Displacer (3):** Instant-speed {2}{C} blink to protect your board, remove blockers, or reset ETB effects.
 *   **Liberator, Urza's Battlethopter (3):** Grants flash to all colorless and artifact spells, enabling instant-speed Eldrazi drops and stack tricks.
@@ -96,8 +97,7 @@ deck_status: main
 *   **Eldrazi Monument (5):** Grants flying, indestructible, and +1/+1 to your army in exchange for one creature sacrifice per upkeep.
 *   **Return of the Wildspeaker (5):** Instant-speed choice between massive card draw based on highest power or a +3/+3 team overrun.
 
-### 🔮 Additional Synergy Pieces (2 Cards)
-*   **Snapping Voidcraw (3):** Devoid 1/3 turtle that taps for {C}{C} and draws cards in the late game.
+### 🔮 Additional Synergy Pieces (1 Card)
 *   **Ugin, the Ineffable (6):** Reduces colorless spells by {2}, generates 2/2 Spirit tokens that draw cards on death, and destroys colored permanents.
 
 ### 🌍 Mana Base (38 Lands)
@@ -129,7 +129,7 @@ deck_status: main
 *   **Corrupted Crossroads:** Taps for {C} or pays 1 life for any color to cast Devoid spells.
 *   **Bonders' Enclave:** Taps for {C} and draws cards when controlling a 4+ power creature.
 *   **Reliquary Tower:** Taps for {C} and gives no maximum hand size.
-*   **Spawning Bed:** Taps for {C}; sacrifices to create three 1/1 Eldrazi Scions.
+*   **Urza's Cave:** Urza land that taps for {C} and sacrifices for {3} to tutor ANY land directly to the battlefield.
 *   **Urza's Mine:** Urza tron land ({C} or {C}{C} with the full trio).
 *   **Urza's Power Plant:** Urza tron land ({C} or {C}{C} with the full trio).
 *   **Urza's Tower:** Urza tron land ({C} or {C}{C}{C} with the full trio).
@@ -164,6 +164,7 @@ deck_status: main
 | Reflecting Pool | Tendo Ice Bridge | Lands | Pending |
 | Eye of Ugin | Ruins of Oran-Rief | Lands | Pending |
 | Sanctum of Ugin | Tectonic Edge | Lands | Pending |
+| Urza's Cave | Spawning Bed | Lands | Pending |
 | Urza's Mine | Ash Barrens | Lands | Pending |
 | Urza's Power Plant | Tranquil Landscape | Lands | Pending |
 | Urza's Tower | Twisted Landscape | Lands | Pending |
@@ -174,6 +175,7 @@ deck_status: main
 | Up the Beanstalk | Imprisoned in the Moon | Card Advantage | Pending |
 | Elemental Bond | Suffer the Past | Card Advantage | Pending |
 | Echoes of Eternity | Awakening Zone | Multipliers | Pending |
+| Eldrazi Linebreaker | Snapping Voidcraw | Haste Enabler | Pending |
 | Sowing Mycospawn | Titans' Vanguard | Ramp & Tutor | Pending |
 | Strionic Resonator | Everflowing Chalice | Multipliers | Pending |
 | Liberator, Urza's Battlethopter | Vile Redeemer | Multipliers | Pending |
@@ -197,6 +199,10 @@ deck_status: main
 ---
 
 ## 📜 Deck Changelog
+*   **2026-08-11:** Added Urza's Cave and Eldrazi Linebreaker.
+    *   **In:** Urza's Cave, Eldrazi Linebreaker.
+    *   **Out:** Spawning Bed, Snapping Voidcraw.
+    *   **Reason:** Urza's Cave ($1.55) tutors key Sol/Tron/Eye of Ugin lands directly to play, while Eldrazi Linebreaker ($0.31) provides continuous free haste and +X/+0 buffs every combat.
 *   **2026-08-11:** Swapped Roaming Throne for Sowing Mycospawn and Selective Obliteration for Ugin's Binding.
     *   **In:** Sowing Mycospawn, Ugin's Binding.
     *   **Out:** Roaming Throne, Selective Obliteration.
@@ -246,6 +252,7 @@ DECK:
 1 Elder Deep-Fiend  
 1 Eldrazi Confluence  
 1 Eldrazi Displacer  
+1 Eldrazi Linebreaker  
 1 Eldrazi Monument  
 1 Eldrazi Temple  
 1 Eldritch Immunity  
@@ -289,11 +296,9 @@ DECK:
 1 Shivan Reef  
 1 Shrine of the Forsaken Gods  
 1 Sire of Stagnation  
-1 Snapping Voidcraw  
 1 Sol Ring  
 1 Sowing Mycospawn  
 1 Spawnbed Protector  
-1 Spawning Bed  
 1 Strionic Resonator  
 1 Sulfurous Springs  
 1 Swamp  
@@ -314,6 +319,7 @@ DECK:
 1 Unclaimed Territory  
 1 Underground River  
 1 Up the Beanstalk  
+1 Urza's Cave  
 1 Urza's Incubator  
 1 Urza's Mine  
 1 Urza's Power Plant  
