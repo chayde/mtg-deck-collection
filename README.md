@@ -52,6 +52,7 @@ Decks under development, research, or being optimized.
 *   **Ramses, Assassin Lord:** Dimir Assassin Tribal alt-win condition (Shadow Brotherhood).
 *   **Nekusar, the Mindrazer:** Grixis Group Slug & Forced Draw / Wheels (Lethal Library).
 *   **Ulalek, Fused Atrocity:** 5-Color Devoid / Eldrazi Tribal & Stack Duplication (Eldrazi Stack Incursion). Bracket 3.
+*   **Mahadi, Emporium Master:** Rakdos Treasure Aristocrats & Sacrifice Control ("The Blood Market"). Bracket 3.
 
 ### 🎮 `/arena_decks`
 Optimized lists for MTG Arena formats (Standard, Brawl, Timeless).
