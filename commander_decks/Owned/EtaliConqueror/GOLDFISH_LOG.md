@@ -1,5 +1,66 @@
 # Goldfish Simulation Log — Etali, Primal Dominion
 
+## [2026-08-20] — Enhanced Protocol Test (Hand Quality & Bracket 2 Alignment) (20 sims, T10 turns, Bracket 2)
+
+**Command:**
+```bash
+python3 scripts/multiplayer_goldfish.py "commander_decks/Owned/EtaliConqueror/moxfield_import.txt" --sims 20 --turns 10 --bracket 2 --html commander_decks/Owned/EtaliConqueror/goldfish_report.html
+```
+
+**Results:**
+```text
+====================================================================
+RUNNING 20 × 4-PLAYER SIMULATIONS
+Commander: Etali, Primal Conqueror (CMC 7)  |  Target: Bracket 2 (Core) (Target T9)
+====================================================================
+
+--------------------------------------------------------------------
+AGGREGATE DEPLOYMENT & MULLIGAN PROFILE
+--------------------------------------------------------------------
+  Commander cast rate: 79/80 (99%)
+  Commander Cast Range: T2 - T8
+  Commander Cast Avg:   T4.9
+  Commander Cast Distribution:
+    T 2: ## (2)
+    T 3: ############# (13)
+    T 4: #################### (20)
+    T 5: ################## (18)
+    T 6: ################ (16)
+    T 7: ##### (5)
+    T 8: ##### (5)
+
+  Opening Hand Quality Breakdown (80 hands evaluated):
+    Gold Keep (Mana + Ramp + Enabler):   49/80 (61%)
+    Silver Keep (Mana + Curve):          31/80 (39%)
+    Desperation Keep (Mulligan to <=5):   0/80 (0%)
+    Average Starting Hand Size:          6.96 cards
+
+--------------------------------------------------------------------
+BRACKET READINESS (Bracket 2 (Core) — Target T9)
+--------------------------------------------------------------------
+  Target Window Readiness Rate (T<=9): 79/80 (99%)
+  Engine Readiness Avg:  T4.9
+  Engine Readiness Distribution:
+    T 2: ## (2)
+    T 3: ############# (13)
+    T 4: #################### (20)
+    T 5: ################## (18)
+    T 6: ################ (16)
+    T 7: ##### (5)
+    T 8: ##### (5)
+
+  [BRACKET COMPLIANCE CHECK] Status: WARNING (Hyper-Fast Engine)
+  Deck deploys its engine by T4.9 (hyper-fast for Bracket 2 (Core)). Check if early explosive mana or combo tutors leak into a higher bracket.
+```
+
+**Notes:**
+- **Incredible Opening Hand Quality:** **61% Gold Keeps** (Mana + 1-drop Dork/Ramp + Enabler) with **0% desperation keeps** and an average hand size of **6.96 cards**. The 1-drop dork suite (*Arbor Elf*, *Elvish Mystic*, *Fyndhorn Elves*, *Llanowar Elves*) makes opening hands hyper-consistent.
+- **Bracket 2 vs. Bracket 3 Power Level Signal:** While the deck contains zero Game Changers (legal in Bracket 2), its mana dork density and *Somberwald Sage* engine accelerate 7-CMC Etali onto the table on **Turn 4.9 on average**. For Bracket 2 (where expected game length is 9+ turns), this speed is hyper-fast, signaling that Etali effectively plays as a **Bracket 3 (Upgraded)** deck at actual tables.
+
+---
+
+**Deck:** Etali, Primal Dominion (`etali_primal_dominion.md`)
+
 **Deck:** Etali, Primal Dominion (`etali_primal_dominion.md`)
 **Date:** 2026-03-20
 **Purpose:** Validate the budget-optimized build's mana consistency and average Etali cast turn after completing the Round 1–3 budget swaps.

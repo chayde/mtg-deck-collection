@@ -982,13 +982,14 @@ def _parse_card_names(section_text: str) -> List[str]:
         if match:
             count = int(match.group(1))
             name  = match.group(2).strip()
+            name = re.sub(r'\s*\*CMDR\*.*$', '', name).strip()
             names.extend([name] * count)
     return names
 
 
 def parse_deck_file(file_path: str):
     """
-    Reads the Markdown deck file and extracts the COMMANDER and DECK sections.
+    Reads the Markdown or text deck file and extracts the COMMANDER and DECK sections.
     """
     try:
         content = Path(file_path).read_text()
@@ -996,11 +997,11 @@ def parse_deck_file(file_path: str):
         print(f"Error: '{file_path}' not found.")
         return None, None
 
-    # Use Regex to find sections
-    cm = re.search(r'COMMANDER:\s*(.*?)(?=\n\n|\n[A-Z]+:|\Z)', content, re.DOTALL)
+    # Use Regex to find sections (case-insensitive for Commander/Deck with or without colons)
+    cm = re.search(r'(?:COMMANDER|Commander):?\s*(.*?)(?=\n\n|\n[A-Za-z]+:|\Z)', content, re.DOTALL)
     commander_name = _parse_card_names(cm.group(1))[0] if cm else None
     
-    dm = re.search(r'DECK:\s*(.*?)(?=\n\n|\n[A-Z]+:|\Z)', content, re.DOTALL)
+    dm = re.search(r'(?:DECK|Deck):?\s*(.*?)(?=\n\n|\n[A-Za-z]+:|\Z)', content, re.DOTALL)
     if not dm:
         print(f"Error: Could not find DECK: section in {file_path}")
         return None, None
