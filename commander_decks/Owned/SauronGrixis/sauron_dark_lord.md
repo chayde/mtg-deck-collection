@@ -138,6 +138,10 @@ Each time "The Ring tempts you," the Ring emblem levels up (up to Level 4) and y
 ---
 
 ## 📜 Deck Changelog
+*   **2026-08-20:** Confirmed target Bracket classification as Bracket 3 (Upgraded).
+    *   **In:** N/A (Metadata / Power Level audit)
+    *   **Out:** N/A
+    *   **Reason:** Goldfish simulation results (20 sims, 59% Gold Keeps, avg T5.4 commander cast, T5.4 engine readiness) confirmed Bracket 3 (Upgraded) compliance with 1 Game Changer (*The One Ring*).
 *   **2026-03-03:** Physical Integration of High-Power Mana Base & Finishers.
     *   **In:** Polluted Delta, Bloodstained Mire, Scalding Tarn, Morphic Pool, Luxury Suite, Shipwreck Marsh, Haunted Ridge, Stormcarved Coast, Drowned Catacomb, Dragonskull Summit, Sulfur Falls, Takenuma (Abandoned Mire), Kess (Dissident Mage), Chandra's Ignition, Gravitic Punch, Soul's Fire, Widespread Brutality.
     *   **Out:** Evolving Wilds, Terramorphic Expanse, Crumbling Necropolis, Temple of Deceit, Temple of Malice, Choked Estuary, Foreboding Ruins, Temple of Epiphany, 2x Swamp, 1x Island, 1x Mountain, Grishnákh (Brash Instigator), Soothing of Smeagol, Orcish Medicine, Gollum (Patient Plotter), Languish.
