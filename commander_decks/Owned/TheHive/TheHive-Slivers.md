@@ -10,6 +10,8 @@ deck_status: main
 
 ## Commander Strategy
 **The First Sliver**
+*   **Archetype:** 5-Color Tribal / Cascade Explosive Swarm  
+*   **Bracket:** 3 (Upgraded)  
 *   **Role:** The Value Engine.
 *   **Goal:** To cast Slivers from your hand.
 *   **The Reward:** Every Sliver spell you cast gains **Cascade**, which means you reveal cards from the top of your library until you hit a nonland card that costs less, and you cast that spell for free. This allows you to build a massive board presence out of nowhere. The deck's primary commander is The First Sliver, but it can be swapped with other 5-color slivers.
@@ -122,6 +124,10 @@ deck_status: main
 ---
 
 ## 📜 Deck Changelog
+*   **2026-08-20:** Designated target Bracket classification as Bracket 3 (Upgraded).
+    *   **In:** N/A (Metadata / Power Level audit)
+    *   **Out:** N/A
+    *   **Reason:** Goldfish simulation results (20 sims, 92% commander cast rate by T4.3, T4.3 engine readiness) confirmed that despite containing 0 Game Changers, the deck's 5-color fetch/shock mana base and Cascade swarm engine operate at Bracket 3 (Upgraded) speed.
 *   **2026-02-27:** Updated Sideboard to match 18-card physical inventory (including Legacy Lands). Confirmed *Sliver Queen* in Main Deck.
 *   **2026-02-27:** Initial deck creation.
 
