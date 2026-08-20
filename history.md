@@ -2,6 +2,10 @@
 
 ## 🗓️ August 2026: Ulalek, Fused Atrocity & Goldfish Simulator Protocol Upgrade
 
+### 2026-08-20: The Ur-Dragon (Kibler's Flight) — Audit Completed (Bracket 3 Reclassification Validated)
+*   **Bracket Audit:** Audited `commander_decks/Owned/UrDragonKibler/ur_dragon_bracket2.md` and reclassified from Bracket 2 to **Bracket 3 (Upgraded)**.
+*   **Validation:** 20-sim goldfish check — **64% hard-cast rate (T7.3 avg)** for 9-CMC commander refuel engine, 32% Gold Keeps, powered by 10 fetch + 10 shock mana base and passive Eminence cost reduction. Timestamped HTML report written to `commander_decks/Owned/UrDragonKibler/goldfish_audit_20260820_182632.html`.
+
 ### 2026-08-20: The First Sliver (The Hive) — Audit Completed (Bracket 3 Validated)
 *   **Bracket Audit:** Audited `commander_decks/Owned/TheHive/TheHive-Slivers.md` and confirmed **Bracket 3 (Upgraded)** classification (0 Game Changers).
 *   **Validation:** 20-sim goldfish check — **92% commander cast rate**, **T4.3 avg commander cast**, **T4.3 engine readiness**, 45% Gold Keeps. Timestamped HTML report written to `commander_decks/Owned/TheHive/goldfish_audit_20260820_182446.html`.

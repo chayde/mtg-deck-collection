@@ -11,7 +11,7 @@ deck_status: main
 ## Commander Strategy
 **The Ur-Dragon**
 *   **Archetype:** 5-Color Dragon Tribal / Midrange
-*   **Bracket:** 2 (Core)
+*   **Bracket:** 3 (Upgraded — Reclassified from Bracket 2 based on fetch/shock mana base and Eminence engine velocity)
 *   **Core Goal:** Utilize the Ur-Dragon's *Eminence* ability to reduce the cost of massive, high-impact Dragon creatures. This version is optimized with an **Intermediate Mana Base**, using Shock and Fetch lands to ensure green ramp spells provide perfect 5-color fixing.
 
 ---
@@ -90,6 +90,10 @@ All ordered upgrades have been received and integrated. Mana base overhaul compl
 ---
 
 ## 📜 Deck Changelog
+*   **2026-08-20:** Reclassified target Bracket from Bracket 2 to Bracket 3 (Upgraded).
+    *   **In:** N/A (Metadata / Power Level audit)
+    *   **Out:** N/A
+    *   **Reason:** Goldfish simulation results (20 sims, 100% commander cast rate by T7.3 as a refuel engine) confirmed that despite containing 0 Game Changers, the deck's 10 fetch + 10 shock mana base, passive Eminence cost reduction, and premier Dragons (*Terror of the Peaks*, *Miirym*, *Morophon*) operate at Bracket 3 (Upgraded) velocity.
 *   **2026-04-10:** Land Base Overhaul Complete + Farseek Cut.
     *   **In:** Steam Vents, Hallowed Fountain, Sacred Foundry, Godless Shrine, Watery Grave, Bloodstained Mire, Arid Mesa, Verdant Catacombs, Scalding Tarn, Flooded Strand, Polluted Delta, Marsh Flats, Ketria Triome, Indatha Triome, Raffine's Tower, Xander's Lounge, Jetmir's Garden, Raugrin Triome, Zagoth Triome, Savai Triome, Spara's Headquarters, Ziatora's Proving Ground
     *   **Out:** Savage Lands, Sandsteppe Citadel, Arcane Sanctum, Crumbling Necropolis, Jungle Shrine, Dragonskull Summit, Drowned Catacomb, Glacial Fortress, Hinterland Harbor, Rootbound Crag, Sunpetal Grove, Clifftop Retreat, Sulfur Falls, Woodland Cemetery, Isolated Chapel, Sulfurous Springs, Karplusan Forest, Llanowar Wastes, Shivan Reef, Adarkar Wastes, Forest (1x), Farseek
