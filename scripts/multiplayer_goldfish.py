@@ -76,6 +76,10 @@ class CardData:
     mdfc_produces: List[str] = field(default_factory=list)
     mdfc_tapped: bool = False
 
+    # Enabler and Payoff logic
+    is_enabler: bool = False                        # Low CMC draw, tutor, filter, or key engine setup
+    is_payoff: bool = False                         # High CMC or win-condition payoff
+
     # Transform / flip DFCs where the back is a non-land face
     # (e.g. Bruce Banner // The Incredible Hulk). The cheap front is what the sim
     # casts by default, but the meaningful deployment is often the back face —
@@ -364,6 +368,19 @@ def classify_card(name: str) -> CardData:
         card.ramp_untapped = ru
         return card
 
+    # --- Enabler & Payoff Classification ---
+    if not card.is_land and not card.is_mdfc_land and not card.is_mana_perm and not card.is_ramp and not card.is_burst:
+        is_draw_or_tutor = bool(re.search(
+            r'draw|search your library|look at the top|scry|surveil|exile.*top.*play|return.*from your graveyard',
+            oracle, re.I))
+        if card.cmc <= 3 and is_draw_or_tutor:
+            card.is_enabler = True
+        elif card.cmc >= 4:
+            card.is_payoff = True
+        elif card.cmc <= 3:
+            if re.search(r'whenever|sacrific|token|counter|damage|cost.*less|pinger|target', oracle, re.I):
+                card.is_enabler = True
+
     return card
 
 
@@ -381,27 +398,53 @@ class Player:
         lib = deck[:]
         random.shuffle(lib)
 
-        # --- Commander Mulligan Logic ---
-        # 1. First mulligan is free (draw 7).
-        # 2. Subsequent mulligans draw one fewer card (6, 5, 4...).
-        # 3. Simulator triggers mulligan if < 2 lands are found (greedy setting).
+        # --- Smart Synergy-Aware Mulligan Logic ---
         def _land_count(hand):
             return sum(1 for c in hand if c.is_land or c.is_mdfc_land)
 
-        hand_size = 7
-        self.hand = [lib.pop(0) for _ in range(hand_size)]
-        mull_count = 0
-        while _land_count(self.hand) < 2 and mull_count < 3:
-            lib2 = self.hand + lib
-            random.shuffle(lib2)
-            if mull_count == 0:
-                new_size = 7
-            else:
-                new_size = 7 - mull_count
-            self.hand = [lib2.pop(0) for _ in range(new_size)]
-            lib = lib2
-            mull_count += 1
+        def _ramp_count(hand):
+            return sum(1 for c in hand if c.is_ramp or c.is_mana_perm or c.is_burst)
 
+        def _enabler_count(hand):
+            return sum(1 for c in hand if c.is_enabler)
+
+        def _payoff_count(hand):
+            return sum(1 for c in hand if c.is_payoff)
+
+        hand = [lib.pop(0) for _ in range(7)]
+        mull_count = 0
+        quality = "Silver"
+
+        while mull_count < 4:
+            lc = _land_count(hand)
+            rc = _ramp_count(hand)
+            ec = _enabler_count(hand)
+            pc = _payoff_count(hand)
+
+            # Detect Synergy Trap: 3+ lands, 0 ramp, 0 enablers, and 3+ expensive payoffs
+            is_trap = (lc >= 3 and rc == 0 and ec == 0 and pc >= 3)
+
+            if 2 <= lc <= 5 and not is_trap:
+                if 2 <= lc <= 4 and rc >= 1 and ec >= 1:
+                    quality = "Gold"
+                else:
+                    quality = "Silver"
+                break
+
+            lib2 = hand + lib
+            random.shuffle(lib2)
+            mull_count += 1
+            new_size = 7 if mull_count == 1 else max(1, 7 - (mull_count - 1))
+            hand = [lib2.pop(0) for _ in range(new_size)]
+            lib = lib2
+
+        if mull_count > 0 and quality != "Gold":
+            quality = "Desperation" if len(hand) <= 5 else "Silver"
+
+        self.mulligan_count = mull_count
+        self.starting_hand_size = len(hand)
+        self.hand_quality = quality
+        self.hand = hand
         self.library: List[CardData] = lib
         self.lands: List[CardData] = []
         self.mana_perms: List[tuple] = []   # Format: (CardData, turn_it_becomes_ready)
@@ -415,6 +458,11 @@ class Player:
         self.commander_cast_turn: Optional[int] = None
         self.hellkite_cast_turn: Optional[int] = None
         
+        # Engine Readiness & Synergy Tracking
+        self.enablers_cast: int = 0
+        self.cards_drawn: int = 0
+        self.engine_readiness_turn: Optional[int] = None
+
         # Scaling creature tracking
         self.creature_count: int = 0         
         self.marwyn_cast_turn: Optional[int] = None
@@ -424,6 +472,7 @@ class Player:
         """Draws one card from library to hand."""
         if self.library:
             self.hand.append(self.library.pop(0))
+            self.cards_drawn += 1
 
 
 # ---------------------------------------------------------------------------
@@ -702,6 +751,8 @@ def simulate_turn(player: Player, turn: int, opponents: List[Player],
                 # Record the mana as 'spent' so we don't double-dip
                 player.mana_perms.append((CardData(name=f'_spent_{cd.cmc}', cmc=cd.cmc,
                                                    is_mana_perm=True, perm_amount=0), turn))
+                if cd.is_enabler:
+                    player.enablers_cast += 1
                 if cd.is_creature:
                     player.creature_count += 1
                     if player.marwyn_cast_turn is not None:
@@ -713,6 +764,13 @@ def simulate_turn(player: Player, turn: int, opponents: List[Player],
     # Record turn-end stats
     t, r, g, w, u, b = compute_mana(player, turn, opponents, frac)
     player.mana_per_turn.append(t)
+
+    # Evaluate Engine Readiness (Commander deployed + Enabler/Draw velocity + Mana >= 5)
+    if player.engine_readiness_turn is None:
+        cmd_ready = (player.commander_cast_turn is not None and player.commander_cast_turn <= turn)
+        has_velocity = (player.enablers_cast >= 1 or player.cards_drawn >= 3)
+        if cmd_ready and has_velocity and t >= 5:
+            player.engine_readiness_turn = turn
 
     return f"  T{turn:2d}: " + (" | ".join(log) if log else "(no plays)")
 
@@ -743,28 +801,57 @@ def _run_one(deck_data: List[CardData], commander: CardData, num_turns: int,
     return players
 
 
+BRACKET_TARGET_TURNS = {
+    1: 10,
+    2: 9,
+    3: 7,
+    4: 5,
+    5: 2
+}
+
+BRACKET_NAMES = {
+    1: "Bracket 1 (Exhibition)",
+    2: "Bracket 2 (Core)",
+    3: "Bracket 3 (Upgraded)",
+    4: "Bracket 4 (Optimized)",
+    5: "Bracket 5 (cEDH)"
+}
+
 def run_sims(deck_data: List[CardData], commander: CardData,
-             num_sims: int, num_turns: int, frac: float):
+             num_sims: int, num_turns: int, frac: float, bracket: int = 3):
     """
-    Runs many simulations and aggregates the statistics.
-    This is what calculates the 'Average Turn' and 'Cast Rate'.
+    Runs many simulations and aggregates statistics, including:
+    - Commander Cast Rate & Distribution
+    - Mulligan / Opening Hand Quality (Gold, Silver, Desperation Keeps)
+    - Bracket-Aware Engine Readiness Turn & Compliance Check
     """
     all_turns = []
     all_creature_counts = []
+    all_hand_sizes = []
+    all_hand_qualities = []
+    all_readiness_turns = []
     last_players = []
     sim_records = []
 
+    target_turn = BRACKET_TARGET_TURNS.get(bracket, 7)
+    bracket_label = BRACKET_NAMES.get(bracket, f"Bracket {bracket}")
+
     print(f"\n{'='*68}\nRUNNING {num_sims} × 4-PLAYER SIMULATIONS")
-    print(f"Commander: {commander.name} (CMC {commander.cmc})\n{'='*68}\n")
+    print(f"Commander: {commander.name} (CMC {commander.cmc})  |  Target: {bracket_label} (Target T{target_turn})\n{'='*68}\n")
 
     for sim in range(1, num_sims + 1):
-        # Verbose output only if running 1 simulation
         verbose = (num_sims == 1)
         players = _run_one(deck_data, commander, num_turns, frac, verbose)
         last_players = players
 
         sim_turns = [p.commander_cast_turn for p in players if p.commander_cast_turn]
         sim_creatures = [p.creature_count for p in players]
+
+        for p in players:
+            all_hand_sizes.append(p.starting_hand_size)
+            all_hand_qualities.append(p.hand_quality)
+            if p.engine_readiness_turn:
+                all_readiness_turns.append(p.engine_readiness_turn)
 
         all_turns.extend(sim_turns)
         all_creature_counts.extend(sim_creatures)
@@ -784,23 +871,63 @@ def run_sims(deck_data: List[CardData], commander: CardData,
     for t in all_turns: buckets[t] += 1
     agg_avg_cr = (sum(all_creature_counts) / len(all_creature_counts)) if all_creature_counts else None
 
-    print(f"\n{'-'*68}\nAGGREGATE\n{'-'*68}")
+    # Mulligan & Hand Quality Metrics
+    gold_keeps = sum(1 for q in all_hand_qualities if q == "Gold")
+    silver_keeps = sum(1 for q in all_hand_qualities if q == "Silver")
+    desp_keeps = sum(1 for q in all_hand_qualities if q == "Desperation")
+    avg_hand_size = (sum(all_hand_sizes) / len(all_hand_sizes)) if all_hand_sizes else 7.0
+
+    print(f"\n{'-'*68}\nAGGREGATE DEPLOYMENT & MULLIGAN PROFILE\n{'-'*68}")
     print(f"  Commander cast rate: {len(all_turns)}/{total_slots} ({len(all_turns)/total_slots*100:.0f}%)")
 
     if all_turns:
-        print(f"  Range:     T{min(all_turns)} - T{max(all_turns)}")
-        print(f"  Average:   T{sum(all_turns)/len(all_turns):.1f}")
-        print("  Distribution:")
+        print(f"  Commander Cast Range: T{min(all_turns)} - T{max(all_turns)}")
+        print(f"  Commander Cast Avg:   T{sum(all_turns)/len(all_turns):.1f}")
+        print("  Commander Cast Distribution:")
         for t in sorted(buckets):
             print(f"    T{t:2d}: {'#' * buckets[t]} ({buckets[t]})")
 
-    if agg_avg_cr is not None:
-        print(f"\n  Avg creatures per seat (end T{num_turns}): {agg_avg_cr:.1f}")
+    print(f"\n  Opening Hand Quality Breakdown ({total_slots} hands evaluated):")
+    print(f"    Gold Keep (Mana + Ramp + Enabler):   {gold_keeps}/{total_slots} ({gold_keeps/total_slots*100:.0f}%)")
+    print(f"    Silver Keep (Mana + Curve):          {silver_keeps}/{total_slots} ({silver_keeps/total_slots*100:.0f}%)")
+    print(f"    Desperation Keep (Mulligan to <=5):   {desp_keeps}/{total_slots} ({desp_keeps/total_slots*100:.0f}%)")
+    print(f"    Average Starting Hand Size:          {avg_hand_size:.2f} cards")
 
-    # --- Structured results (for HTML report / callers) ---
+    # Engine Readiness & Bracket Compliance Metrics
+    readiness_buckets = defaultdict(int)
+    for rt in all_readiness_turns: readiness_buckets[rt] += 1
+    on_target_count = sum(1 for rt in all_readiness_turns if rt <= target_turn)
+    readiness_rate = (on_target_count / total_slots * 100) if total_slots else 0.0
+    avg_readiness = (sum(all_readiness_turns) / len(all_readiness_turns)) if all_readiness_turns else None
+
+    print(f"\n{'-'*68}\nBRACKET READINESS ({bracket_label} — Target T{target_turn})\n{'-'*68}")
+    print(f"  Target Window Readiness Rate (T<={target_turn}): {on_target_count}/{total_slots} ({readiness_rate:.0f}%)")
+    if all_readiness_turns:
+        print(f"  Engine Readiness Avg:  T{avg_readiness:.1f}")
+        print("  Engine Readiness Distribution:")
+        for t in sorted(readiness_buckets):
+            print(f"    T{t:2d}: {'#' * readiness_buckets[t]} ({readiness_buckets[t]})")
+
+    # Compliance Evaluation
+    compliance_status = "PASS"
+    readiness_str = f"Turn {avg_readiness:.1f}" if avg_readiness is not None else f"Turn {target_turn}"
+    compliance_msg = f"Deck hits engine readiness consistently around {readiness_str}, aligning with {bracket_label} expectations."
+    if avg_readiness and avg_readiness < (target_turn - 1.5):
+        compliance_status = "WARNING (Over-performing)"
+        compliance_msg = f"Deck reaches engine readiness by T{avg_readiness:.1f} (well ahead of {bracket_label} target T{target_turn}). Potential bracket leakage!"
+    elif avg_readiness and avg_readiness > (target_turn + 1.5):
+        compliance_status = "NOTICE (Slow)"
+        compliance_msg = f"Deck reaches engine readiness by T{avg_readiness:.1f} (behind {bracket_label} target T{target_turn}). Consider adding more ramp/enablers."
+
+    print(f"\n  [BRACKET COMPLIANCE CHECK] Status: {compliance_status}")
+    print(f"  {compliance_msg}")
+
     return {
         'commander': commander.name,
         'commander_cmc': commander.cmc,
+        'bracket': bracket,
+        'bracket_label': bracket_label,
+        'target_turn': target_turn,
         'num_sims': num_sims,
         'num_turns': num_turns,
         'total_slots': total_slots,
@@ -810,6 +937,19 @@ def run_sims(deck_data: List[CardData], commander: CardData,
         'average': (sum(all_turns) / len(all_turns)) if all_turns else None,
         'distribution': dict(buckets),
         'avg_creatures': agg_avg_cr,
+        'hand_quality': {
+            'gold': gold_keeps,
+            'silver': silver_keeps,
+            'desperation': desp_keeps,
+            'avg_hand_size': avg_hand_size,
+        },
+        'engine_readiness': {
+            'target_rate': readiness_rate,
+            'average_turn': avg_readiness,
+            'distribution': dict(readiness_buckets),
+            'compliance_status': compliance_status,
+            'compliance_msg': compliance_msg,
+        },
         'sims': sim_records,
     }
 
@@ -947,13 +1087,21 @@ def write_html_report(path: str, results: dict, meta: dict):
     avgcr = f'{results["avg_creatures"]:.1f}' if results['avg_creatures'] is not None else '—'
     rate  = f'{results["cast_rate"]*100:.0f}%'
 
+    hq = results.get('hand_quality', {})
+    er = results.get('engine_readiness', {})
+    gold_pct = f"{(hq.get('gold', 0) / results['total_slots'] * 100):.0f}%" if results.get('total_slots') else '—'
+    avg_hs = f"{hq.get('avg_hand_size', 7.0):.2f}"
+    target_rate_str = f"{er.get('target_rate', 0.0):.0f}%"
+    comp_status = esc(er.get('compliance_status', 'PASS'))
+    comp_msg = esc(er.get('compliance_msg', ''))
+
     doc = f"""<!DOCTYPE html>
 <html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Goldfish Report — {esc(results['commander'])}</title>
 <style>
   :root {{ --bg:#0f1420; --card:#1a2130; --ink:#e6ebf2; --muted:#8b97ab;
-          --accent:#4ade80; --accent2:#38bdf8; --line:#2a3346; }}
+          --accent:#4ade80; --accent2:#38bdf8; --line:#2a3346; --warn:#f59e0b; }}
   * {{ box-sizing:border-box; }}
   body {{ margin:0; background:var(--bg); color:var(--ink);
           font:15px/1.5 system-ui,-apple-system,Segoe UI,Roboto,sans-serif; }}
@@ -969,9 +1117,13 @@ def write_html_report(path: str, results: dict, meta: dict):
               letter-spacing:.05em; }}
   .stat .v {{ font-size:30px; font-weight:700; margin-top:6px; }}
   .stat .v.accent {{ color:var(--accent); }}
+  .stat .v.accent2 {{ color:var(--accent2); }}
   h2 {{ font-size:15px; text-transform:uppercase; letter-spacing:.06em;
         color:var(--muted); border-bottom:1px solid var(--line);
         padding-bottom:8px; margin:34px 0 16px; }}
+  .badge {{ display:inline-block; padding:4px 10px; border-radius:6px; font-weight:600; font-size:13px; margin-bottom:16px; }}
+  .badge.pass {{ background:#166534; color:#86efac; }}
+  .badge.warn {{ background:#78350f; color:#fde68a; }}
   table {{ width:100%; border-collapse:collapse; }}
   td, th {{ padding:7px 10px; text-align:left; }}
   .dist td {{ border:0; }}
@@ -990,17 +1142,23 @@ def write_html_report(path: str, results: dict, meta: dict):
 </style></head><body><div class="wrap">
   <h1>🐟 Goldfish Report — {esc(results['commander'])}</h1>
   <p class="sub">Deck: <code>{esc(meta['deck_file'])}</code> &nbsp;·&nbsp;
+     Target: {esc(results.get('bracket_label', 'Bracket 3'))} &nbsp;·&nbsp;
      Measuring: {esc(meta['measured_label'])} &nbsp;·&nbsp;
      {results['num_sims']} sims × T{results['num_turns']} &nbsp;·&nbsp;
      {esc(meta['timestamp'])}</p>
+
+  <div class="badge {'warn' if 'WARNING' in comp_status else 'pass'}">
+    Bracket Check: {comp_status} — {comp_msg}
+  </div>
 
   <div class="cards">
     <div class="stat"><div class="k">Deploy rate</div><div class="v accent">{rate}</div>
       <div class="muted">{results['cast_count']}/{results['total_slots']} seats</div></div>
     <div class="stat"><div class="k">Average turn</div><div class="v">{avg}</div></div>
-    <div class="stat"><div class="k">Range</div><div class="v">{rng}</div></div>
-    <div class="stat"><div class="k">Avg creatures / seat</div><div class="v">{avgcr}</div>
-      <div class="muted">end of T{results['num_turns']}</div></div>
+    <div class="stat"><div class="k">Gold Keep Rate</div><div class="v accent2">{gold_pct}</div>
+      <div class="muted">Avg Hand: {avg_hs} cards</div></div>
+    <div class="stat"><div class="k">Target Readiness (T&le;{results.get('target_turn',7)})</div><div class="v">{target_rate_str}</div>
+      <div class="muted">Avg: T{er.get('average_turn', 0):.1f}</div></div>
   </div>
 
   <h2>Deployment turn distribution</h2>
@@ -1033,6 +1191,9 @@ def main():
     parser.add_argument('--commander-cost', type=str, default=None,
         help='Override the commander cost used for the cast check, e.g. "{2}{R}{R}{G}{G}". '
              'Takes priority over --commander-back; useful for any flip/DFC/odd commander.')
+    parser.add_argument('--bracket', type=int, choices=[1, 2, 3, 4, 5], default=None,
+        help='Target Commander Bracket (1=Exhibition T10, 2=Core T9, 3=Upgraded T7, 4=Optimized T5, 5=cEDH T1-3). '
+             'MANDATORY in goldfish testing protocol.')
     parser.add_argument('--html', nargs='?', const='__AUTO__', default=None, metavar='PATH',
         help='Write a formatted HTML report. With no path, auto-names it next to the deck file '
              '(goldfish_report_<timestamp>.html).')
@@ -1053,7 +1214,12 @@ def main():
     measured_label = apply_commander_cost_override(
         commander_data, args.commander_cost, args.commander_back)
 
-    results = run_sims(deck_data, commander_data, args.sims, args.turns, args.tapped)
+    bracket = args.bracket
+    if bracket is None:
+        print("[bracket] NOTE: --bracket [1-5] flag was not specified. Defaulting to Bracket 3 (Upgraded, Target T7) for readiness checks. Official protocol requires passing --bracket X.")
+        bracket = 3
+
+    results = run_sims(deck_data, commander_data, args.sims, args.turns, args.tapped, bracket=bracket)
 
     if args.html is not None:
         if args.html == '__AUTO__':

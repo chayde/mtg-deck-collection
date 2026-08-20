@@ -187,36 +187,40 @@ When a card is received, update both `order_tracking.md` and integrate the card 
 
 After **any major overhaul** (5+ card changes or a full rebuild), a goldfish simulation is **required**. The standard run is **20 simulations** — not 5. Use `scripts/multiplayer_goldfish.py` with the deck's `moxfield_import.txt` file as input (not the main `.md` file).
 
+> ⚠️ **MANDATORY RULE:** The `--bracket <1-5>` flag is **REQUIRED** for every goldfish run. If the target Bracket is not specified in the deck file or is unknown for whatever reason, **STOP and ask the user for clarification** before running the simulation.
+
 **Standard run:**
-```
-python scripts/multiplayer_goldfish.py "<path/to/moxfield_import.txt>" --sims 20 --turns 10
+```bash
+python scripts/multiplayer_goldfish.py "<path/to/moxfield_import.txt>" --sims 20 --turns 10 --bracket <1-5>
 ```
 
 **Quick single-game sanity check:**
-```
-python scripts/multiplayer_goldfish.py "<path/to/moxfield_import.txt>" --sims 1 --turns 10
+```bash
+python scripts/multiplayer_goldfish.py "<path/to/moxfield_import.txt>" --sims 1 --turns 10 --bracket <1-5>
 ```
 
 ### How the Simulator Works
 - Auto-classifies every card via Scryfall on first run (cached at `scripts/.card_cache.json` — shared across machines via git)
+- Identifies lands, ramp, rocks/dorks, burst mana, **enablers** (cheap draw/tutors), and **payoffs**
 - Simulates a full 4-player pod; all 4 seats run the same deck
-- Tracks commander tax, mana curves, and turn-by-turn play priority (lands → rocks/dorks → ramp → commander → generic spells)
-- Exotic Orchard and Fellwar Stone produce any color (opponents assumed to have all 5 colors)
+- Evaluates **Smart Synergy-Aware Mulligans** (Gold/Silver keeps, Synergy Traps)
+- Tracks commander tax, mana curves, and turn-by-turn play priority
+- Calculates **Bracket-Aware Engine Readiness** (Commander + Enabler/Draw velocity + Target Mana threshold) and evaluates **Bracket Compliance**
 
 ### Validation Goals
-- Mana stability — does the deck hit its colors and curve out by turn 4–5?
-- Commander deployment — what is the average turn the commander hits the table?
-- Synergy check — does the Plan section actually form an engine?
+- Mana & Opening Hand Quality — Gold Keep rate, average starting hand size, and curve stability.
+- Commander deployment — average turn the commander hits the table.
+- Engine Readiness & Bracket Alignment — does the deck achieve engine readiness on the target turn expected for its bracket (B1=T10, B2=T9, B3=T7, B4=T5, B5=T1-3)?
 
 ### Logging Results
 Append results to `GOLDFISH_LOG.md` in the deck's directory using this format — do not overwrite prior sessions:
 
 ```markdown
-## [YYYY-MM-DD] — [Test goal] ([N] sims, T[X] turns)
+## [YYYY-MM-DD] — [Test goal] ([N] sims, T[X] turns, Bracket [X])
 
 **Command:**
 \`\`\`
-python scripts/multiplayer_goldfish.py "..." --sims N --turns N
+python scripts/multiplayer_goldfish.py "..." --sims N --turns N --bracket X
 \`\`\`
 
 **Results:**
@@ -305,7 +309,7 @@ All runnable scripts live in `scripts/`. Run them from the **repository root** (
 ---
 
 ### `scripts/multiplayer_goldfish.py` — Goldfish Simulator
-**What it does:** Simulates a 4-player Commander pod to measure how quickly a deck can deploy its commander. Uses the Scryfall API to automatically classify cards (ramp, rocks, dorks, MDFCs, burst mana, etc.) — no manual tagging required.
+**What it does:** Simulates a 4-player Commander pod to measure opening hand quality, commander deployment speed, and bracket engine readiness. Uses the Scryfall API to automatically classify cards (ramp, rocks, dorks, enablers, payoffs, MDFCs, burst mana) — no manual tagging required.
 
 **When to use:** After any major overhaul (5+ card changes or a full rebuild). Required per the Goldfish Validation protocol (Section 9). Full protocol in `GOLDFISH.md`.
 
@@ -313,17 +317,19 @@ All runnable scripts live in `scripts/`. Run them from the **repository root** (
 
 **Usage:**
 ```bash
-python3 scripts/multiplayer_goldfish.py <path/to/moxfield_import.txt> [--sims N] [--turns N] [--tapped F]
+python3 scripts/multiplayer_goldfish.py <path/to/moxfield_import.txt> --bracket <1-5> [--sims N] [--turns N] [--tapped F]
 ```
 
 **Key flags:**
+- `--bracket X` — **MANDATORY** target bracket: `1` (T10), `2` (T9), `3` (T7), `4` (T5), `5` (T1-3).
 - `--sims N` — number of simulations (default protocol: **20**)
 - `--turns N` — turns to simulate per game (default protocol: **10**)
 - `--tapped F` — fraction of opponent lands assumed tapped, for cards like Mana Geyser (default: 0.60)
+- `--html [PATH]` — generates a visual HTML report with summary cards and distributions.
 
 **Cache:** `scripts/.card_cache.json` — committed to the repo and shared across machines. First run on a new deck fetches from Scryfall; all subsequent runs are instant.
 
-**Output:** Per-sim commander cast rate, aggregate statistics, turn distribution chart, and multiplayer card value snapshot. Log results to `GOLDFISH_LOG.md` in the deck's directory.
+**Output:** Opening hand quality breakdown (Gold Keeps, Avg Hand Size), Commander cast rate, Engine Readiness distribution, and Bracket Compliance evaluation. Log results to `GOLDFISH_LOG.md` in the deck's directory.
 
 ---
 
