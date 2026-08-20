@@ -2,6 +2,10 @@
 
 ## 🗓️ August 2026: Ulalek, Fused Atrocity & Goldfish Simulator Protocol Upgrade
 
+### 2026-08-20: Bruce Banner // The Incredible Hulk — Audit Completed (Bracket 3 Validated)
+*   **Bracket Audit:** Audited `commander_decks/Owned/IncredibleHulk/README.md` and confirmed **Bracket 3 (Upgraded)** classification (1 Game Changer: *Cyclonic Rift*).
+*   **Validation:** 20-sim goldfish check — **100% commander cast rate** (Avg T2.4 front face / T5.6 flip face), **T4.4 avg engine readiness**, 56% Gold Keeps. Timestamped HTML report written to `commander_decks/Owned/IncredibleHulk/goldfish_audit_20260820_180817.html`.
+
 ### 2026-08-20: Captain America, First Avenger — Audit Completed (Bracket 3 Validated)
 *   **Bracket Audit:** Audited `commander_decks/Owned/CaptainAmerica/captain_america_voltron.md` and confirmed **Bracket 3 (Upgraded)** classification.
 *   **Validation:** 20-sim goldfish check — **98% commander cast rate**, **T3.3 avg commander cast**, **T3.8 engine readiness**, 71% Gold Keeps. Timestamped HTML report written to `commander_decks/Owned/CaptainAmerica/goldfish_audit_20260820_180633.html`.

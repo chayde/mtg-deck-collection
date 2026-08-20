@@ -1,5 +1,46 @@
 # Goldfish Log — Bruce Banner, the Incredible Hulk (Gamma Smash)
 
+## [2026-08-20] — Bracket Audit Test (Bracket 3 Validated) (20 sims, T10 turns, Bracket 3)
+
+**Command:**
+```bash
+python3 scripts/multiplayer_goldfish.py commander_decks/Owned/IncredibleHulk/moxfield_import.txt --sims 20 --turns 10 --bracket 3 --html commander_decks/Owned/IncredibleHulk/goldfish_audit_20260820_180817.html
+```
+
+**Results:**
+```text
+====================================================================
+RUNNING 20 × 4-PLAYER SIMULATIONS
+Commander: Bruce Banner // The Incredible Hulk (CMC 1)  |  Target: Bracket 3 (Upgraded) (Target T7)
+====================================================================
+
+--------------------------------------------------------------------
+AGGREGATE DEPLOYMENT & MULLIGAN PROFILE
+--------------------------------------------------------------------
+  Commander cast rate: 80/80 (100%)
+  Commander Cast Range: T1 - T8
+  Commander Cast Avg:   T2.4 (Front Face) / T5.6 (Flip Face {2}{R}{R}{G}{G})
+  Opening Hand Quality Breakdown (80 hands evaluated):
+    Gold Keep (Mana + Ramp + Enabler):   45/80 (56%)
+    Silver Keep (Mana + Curve):          35/80 (44%)
+    Desperation Keep (Mulligan to <=5):   0/80 (0%)
+    Average Starting Hand Size:          6.97 cards
+
+--------------------------------------------------------------------
+BRACKET READINESS (Bracket 3 (Upgraded) — Target T7)
+--------------------------------------------------------------------
+  Target Window Readiness Rate (T<=7): 77/80 (96%)
+  Engine Readiness Avg:  T4.4
+  [BRACKET COMPLIANCE CHECK] Status: PASS
+  Deck deploys its engine around Turn 4.4, perfectly positioned to execute and threaten a win on Bracket 3 (Upgraded)'s target (Turn 7+).
+```
+
+**Notes:**
+- **Validated Bracket 3 Position:** Front face Bruce Banner ({U}) drops on T1–T2 to draw cards, and the 6-CMC flip face lands on **Turn 5.6 on average**, positioning the deck to threaten lethal counter/trample/fling wins on Turn 7+.
+- **1 Game Changer:** *Cyclonic Rift* confirmed as sole Game Changer in active list.
+
+---
+
 ## [2026-07-04] — Back-face deployment (Hulk online) — 20 sims, T12
 Measures when the deck can put **The Incredible Hulk** online — hard-cast or flip, both `{2}{R}{R}{G}{G}` — using the new `--commander-back` flag. The default run measures only the {U} Bruce Banner front (a 1-drop), which is not the meaningful threat.
 
