@@ -15,49 +15,49 @@ Commander: Nekusar, the Mindrazer (CMC 5)  |  Target: Bracket 3 (Upgraded) (Targ
 --------------------------------------------------------------------
 AGGREGATE DEPLOYMENT & MULLIGAN PROFILE
 --------------------------------------------------------------------
-  Commander cast rate: 78/80 (98%)
-  Commander Cast Range: T1 - T10
-  Commander Cast Avg:   T4.1
+  Commander cast rate: 73/80 (91%)
+  Commander Cast Range: T1 - T9
+  Commander Cast Avg:   T3.8
   Commander Cast Distribution:
     T 1: ## (2)
     T 2: ############# (13)
     T 3: ################## (18)
-    T 4: ################ (16)
+    T 4: ################# (17)
     T 5: ################# (17)
-    T 6: ###### (6)
-    T 7: # (1)
-    T 8: #### (4)
-    T10: # (1)
+    T 6: # (1)
+    T 7: ## (2)
+    T 8: # (1)
+    T 9: ## (2)
 
   Opening Hand Quality Breakdown (80 hands evaluated):
-    Gold Keep (Mana + Ramp + Enabler):   35/80 (44%)
-    Silver Keep (Mana + Curve):          44/80 (55%)
-    Desperation Keep (Mulligan to <=5):   1/80 (1%)
-    Average Starting Hand Size:          6.91 cards
+    Gold Keep (Mana + Ramp + Enabler):   39/80 (49%)
+    Silver Keep (Mana + Curve):          38/80 (48%)
+    Desperation Keep (Mulligan to <=5):   3/80 (4%)
+    Average Starting Hand Size:          6.88 cards
 
 --------------------------------------------------------------------
 BRACKET READINESS (Bracket 3 (Upgraded) — Target T7)
 --------------------------------------------------------------------
-  Target Window Readiness Rate (T<=7): 73/80 (91%)
-  Engine Readiness Avg:  T4.1
+  Target Window Readiness Rate (T<=7): 70/80 (88%)
+  Engine Readiness Avg:  T3.9
   Engine Readiness Distribution:
-    T 1: # (1)
+    T 1: ## (2)
     T 2: ########### (11)
-    T 3: ##################### (21)
-    T 4: ################ (16)
+    T 3: #################### (20)
+    T 4: ################# (17)
     T 5: ################# (17)
-    T 6: ###### (6)
-    T 7: # (1)
-    T 8: #### (4)
-    T10: # (1)
+    T 6: # (1)
+    T 7: ## (2)
+    T 8: # (1)
+    T 9: ## (2)
 
-  [BRACKET COMPLIANCE CHECK] Status: WARNING (Over-performing)
-  Deck reaches engine readiness by T4.1 (well ahead of Bracket 3 (Upgraded) target T7). Potential bracket leakage!
+  [BRACKET COMPLIANCE CHECK] Status: PASS
+  Deck deploys its engine around Turn 3.9, perfectly positioned to execute and threaten a win on Bracket 3 (Upgraded)'s target (Turn 7+).
 ```
 
 **Notes:**
-- **Mulligan Stability:** Exceptional opening hand consistency with an average kept hand size of **6.91 cards** and only **1% desperation keeps** (mulligans to <=5). 44% of hands were premium **Gold Keeps** (Mana + Ramp + Enabler).
-- **Speed & Bracket Over-Performance:** Nekusar reaches Engine Readiness (commander cast + draw/pinger engine active) by an average of **Turn 4.1**, with 91% of games online by Turn 7. Because Bracket 3 expected game length anticipates wins/locks past Turn 7, Nekusar's high mana velocity and low-CMC pinger curve push it near Bracket 4 speed.
+- **Mulligan Stability:** Exceptional opening hand consistency with an average kept hand size of **6.88 cards** and 49% premium **Gold Keeps**.
+- **Engine Deployment vs. Win Target Alignment:** The simulator confirms **PASS** alignment for Bracket 3. Deploying the Nekusar + pinger engine on Turn 3–4 is the expected precursor to incrementally draining the table's 120 total life points and closing out the game on Turn 7+.
 
 ---
 

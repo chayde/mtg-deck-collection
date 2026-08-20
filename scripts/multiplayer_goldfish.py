@@ -908,16 +908,30 @@ def run_sims(deck_data: List[CardData], commander: CardData,
         for t in sorted(readiness_buckets):
             print(f"    T{t:2d}: {'#' * readiness_buckets[t]} ({readiness_buckets[t]})")
 
-    # Compliance Evaluation
+    # Bracket Engine Windows (min_expected_setup, max_expected_setup, win_target)
+    # A synergy engine setup on T4-T6 is the EXPECTED precursor to a Turn 7+ win in Bracket 3!
+    BRACKET_ENGINE_WINDOWS = {
+        1: (6.0, 9.0, 10),
+        2: (5.0, 8.0, 9),
+        3: (3.5, 6.5, 7),
+        4: (2.0, 4.5, 5),
+        5: (1.0, 2.5, 2),
+    }
+    min_setup, max_setup, win_target = BRACKET_ENGINE_WINDOWS.get(bracket, (3.5, 6.5, 7))
+
     compliance_status = "PASS"
     readiness_str = f"Turn {avg_readiness:.1f}" if avg_readiness is not None else f"Turn {target_turn}"
-    compliance_msg = f"Deck hits engine readiness consistently around {readiness_str}, aligning with {bracket_label} expectations."
-    if avg_readiness and avg_readiness < (target_turn - 1.5):
-        compliance_status = "WARNING (Over-performing)"
-        compliance_msg = f"Deck reaches engine readiness by T{avg_readiness:.1f} (well ahead of {bracket_label} target T{target_turn}). Potential bracket leakage!"
-    elif avg_readiness and avg_readiness > (target_turn + 1.5):
-        compliance_status = "NOTICE (Slow)"
-        compliance_msg = f"Deck reaches engine readiness by T{avg_readiness:.1f} (behind {bracket_label} target T{target_turn}). Consider adding more ramp/enablers."
+    compliance_msg = (f"Deck deploys its engine around {readiness_str}, perfectly positioned to execute "
+                      f"and threaten a win on {bracket_label}'s target (Turn {win_target}+).")
+
+    if avg_readiness and avg_readiness < min_setup:
+        compliance_status = "WARNING (Hyper-Fast Engine)"
+        compliance_msg = (f"Deck deploys its engine by T{avg_readiness:.1f} (hyper-fast for {bracket_label}). "
+                          f"Check if early explosive mana or combo tutors leak into a higher bracket.")
+    elif avg_readiness and avg_readiness > max_setup:
+        compliance_status = "NOTICE (Slow Engine Setup)"
+        compliance_msg = (f"Deck deploys its engine by T{avg_readiness:.1f} (behind schedule for a T{win_target}+ win target). "
+                          f"Consider adding more low-CMC ramp or enablers.")
 
     print(f"\n  [BRACKET COMPLIANCE CHECK] Status: {compliance_status}")
     print(f"  {compliance_msg}")
