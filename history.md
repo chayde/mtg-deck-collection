@@ -2,6 +2,10 @@
 
 ## 🗓️ August 2026: Ulalek, Fused Atrocity & Goldfish Simulator Protocol Upgrade
 
+### 2026-08-20: Captain America, First Avenger — Audit Completed (Bracket 3 Validated)
+*   **Bracket Audit:** Audited `commander_decks/Owned/CaptainAmerica/captain_america_voltron.md` and confirmed **Bracket 3 (Upgraded)** classification.
+*   **Validation:** 20-sim goldfish check — **98% commander cast rate**, **T3.3 avg commander cast**, **T3.8 engine readiness**, 71% Gold Keeps. Timestamped HTML report written to `commander_decks/Owned/CaptainAmerica/goldfish_audit_20260820_180633.html`.
+
 ### 2026-08-20: Etali, Primal Conqueror — Reclassified from Bracket 2 to Bracket 3
 *   **Bracket Alignment:** Updated `commander_decks/Owned/EtaliConqueror/etali_primal_dominion.md` and `README.md` from Bracket 2 to **Bracket 3 (Upgraded)**.
 *   **Reason:** Goldfish testing (20 sims, 61% Gold Keeps, 0% desperation keeps, avg T4.9 commander cast) confirmed that despite containing zero Game Changers, the deck's 1-drop mana dork suite and *Somberwald Sage* engine accelerate 7-CMC Etali onto the battlefield by Turn 4–5, generating 3–6 stolen spells per entry. This construction quality and velocity play at Bracket 3 (Upgraded) level.

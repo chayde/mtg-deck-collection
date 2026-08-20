@@ -11,7 +11,8 @@ deck_status: main
 **The Commander:** **[Captain America, First Avenger](https://scryfall.com/search?q=!Captain+America,+First+Avenger)** is a {R}{W}{U} Human Soldier Hero. At the beginning of combat on your turn, you can **Catch** an Equipment you control and attach it to him for free. For {3} and unattaching an Equipment, he can **Throw** it to deal damage equal to its mana value divided among up to three targets, then he taps.
 
 ## Deck Strategy
-**Archetype:** Jeskai (Blue/Red/White) Equipment Voltron
+**Archetype:** Jeskai (Blue/Red/White) Equipment Voltron  
+**Bracket:** 3 (Upgraded)  
 **Focus:** Equipment, "Fling" Damage, Cost Reduction
 
 *   **Goal:** The deck's primary goal is to win by "suiting up" Captain America with powerful equipment and dealing 21 commander damage. A secondary win condition is to use his inferred "throw" ability to deal direct damage to opponents based on the mana cost of the equipment.
@@ -60,6 +61,10 @@ deck_status: main
 ---
 
 ## 📜 Deck Changelog
+*   **2026-08-20:** Designated target Bracket classification as Bracket 3 (Upgraded).
+    *   **In:** N/A (Metadata / Power Level classification audit)
+    *   **Out:** N/A
+    *   **Reason:** Goldfish simulation results (20 sims, 71% Gold Keeps, avg T3.3 commander cast, T3.8 engine readiness) confirmed that despite containing 0 Game Changers, the deck's high equipment tutor density, Sunforger toolbox, and 3-CMC commander curve execute at Bracket 3 (Upgraded) speed.
 *   **2026-02-27:** Initial deck creation.
 
 ## Copy/Paste Decklist (Moxfield Format)

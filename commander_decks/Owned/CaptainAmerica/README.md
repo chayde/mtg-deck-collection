@@ -11,7 +11,8 @@ deck_status: main
 **The Commander:** **[Captain America, First Avenger](https://scryfall.com/search?q=!Captain+America,+First+Avenger)** is a {R}{W}{U} Human Soldier Hero. At the beginning of combat on your turn, you can **Catch** an Equipment you control and attach it to him for free. For {3} and unattaching an Equipment, he can **Throw** it to deal damage equal to its mana value divided among up to three targets, then he taps.
 
 ## Deck Strategy
-**Archetype:** Jeskai (Blue/Red/White) Equipment Voltron
+**Archetype:** Jeskai (Blue/Red/White) Equipment Voltron  
+**Bracket:** 3 (Upgraded)  
 **Focus:** Equipment, "Fling" Damage, Cost Reduction
 
 *   **Goal:** The deck's primary goal is to win by "suiting up" Captain America with powerful equipment and dealing 21 commander damage. A secondary win condition is to use his inferred "throw" ability to deal direct damage to opponents based on the mana cost of the equipment.

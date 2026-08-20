@@ -1109,11 +1109,19 @@ def write_html_report(path: str, results: dict, meta: dict):
     target_rate_str = f"{er.get('target_rate', 0.0):.0f}%"
     comp_status = esc(er.get('compliance_status', 'PASS'))
     comp_msg = esc(er.get('compliance_msg', ''))
+    notes_html = ''
+    if meta.get('notes'):
+        notes_formatted = esc(meta['notes']).replace('\n', '<br>')
+        notes_html = f'''
+  <div class="stat" style="margin-bottom:24px; border-left:4px solid var(--accent2);">
+    <div class="k">Deck Audit Summary &amp; Strategy Analysis</div>
+    <div style="margin-top:8px; font-size:14px; white-space:pre-wrap;">{esc(meta['notes'])}</div>
+  </div>'''
 
     doc = f"""<!DOCTYPE html>
 <html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Goldfish Report — {esc(results['commander'])}</title>
+<title>Goldfish Audit Report — {esc(results['commander'])}</title>
 <style>
   :root {{ --bg:#0f1420; --card:#1a2130; --ink:#e6ebf2; --muted:#8b97ab;
           --accent:#4ade80; --accent2:#38bdf8; --line:#2a3346; --warn:#f59e0b; }}
@@ -1155,12 +1163,14 @@ def write_html_report(path: str, results: dict, meta: dict):
   .muted {{ color:var(--muted); }}
   footer {{ margin-top:40px; color:var(--muted); font-size:12px; }}
 </style></head><body><div class="wrap">
-  <h1>🐟 Goldfish Report — {esc(results['commander'])}</h1>
+  <h1>🐟 Goldfish Audit Report — {esc(results['commander'])}</h1>
   <p class="sub">Deck: <code>{esc(meta['deck_file'])}</code> &nbsp;·&nbsp;
      Target: {esc(results.get('bracket_label', 'Bracket 3'))} &nbsp;·&nbsp;
      Measuring: {esc(meta['measured_label'])} &nbsp;·&nbsp;
      {results['num_sims']} sims × T{results['num_turns']} &nbsp;·&nbsp;
      {esc(meta['timestamp'])}</p>
+
+  {notes_html}
 
   <div class="badge {'warn' if 'WARNING' in comp_status else 'pass'}">
     Bracket Check: {comp_status} — {comp_msg}
@@ -1209,6 +1219,8 @@ def main():
     parser.add_argument('--bracket', type=int, choices=[1, 2, 3, 4, 5], default=None,
         help='Target Commander Bracket (1=Exhibition T10, 2=Core T9, 3=Upgraded T7, 4=Optimized T5, 5=cEDH T1-3). '
              'MANDATORY in goldfish testing protocol.')
+    parser.add_argument('--notes', type=str, default=None,
+        help='Optional audit notes / strategy summary text to embed into the HTML report.')
     parser.add_argument('--html', nargs='?', const='__AUTO__', default=None, metavar='PATH',
         help='Write a formatted HTML report. With no path, auto-names it next to the deck file '
              '(goldfish_report_<timestamp>.html).')
@@ -1246,7 +1258,8 @@ def main():
         write_html_report(html_path, results, {
             'deck_file': args.deck_file,
             'measured_label': measured_label,
-            'timestamp': time.strftime('%Y-%m-%d %H:%M'),
+            'timestamp': time.strftime('%Y-%m-%d %H:%M:%S %Z'),
+            'notes': args.notes
         })
 
 
