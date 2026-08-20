@@ -2,6 +2,10 @@
 
 ## 🗓️ August 2026: Ulalek, Fused Atrocity & Goldfish Simulator Protocol Upgrade
 
+### 2026-08-20: Marchesa, the Black Rose — Audit Completed (Bracket 3 Validated)
+*   **Bracket Audit:** Audited `commander_decks/Owned/MarchesaBlackRose/README.md` and confirmed **Bracket 3 (Upgraded)** classification (0 Game Changers).
+*   **Validation:** 20-sim goldfish check — **96% commander cast rate**, **T3.2 avg commander cast**, **T3.9 engine readiness**, 50% Gold Keeps. Timestamped HTML report written to `commander_decks/Owned/MarchesaBlackRose/goldfish_audit_20260820_181239.html`.
+
 ### 2026-08-20: Karametra, God of Harvests — Audit Completed (Bracket 4 Validated)
 *   **Bracket Audit:** Audited `commander_decks/Owned/KarametraAngels/karametra_angels_ramp.md` and confirmed **Bracket 4 (Optimized)** classification (4 Game Changers: *Smothering Tithe*, *Aura Shards*, *Teferi's Protection*, *Worldly Tutor*).
 *   **Validation:** 20-sim goldfish check — **99% commander cast rate**, **T3.9 avg commander cast**, **T3.9 engine readiness**, 60% Gold Keeps. Timestamped HTML report written to `commander_decks/Owned/KarametraAngels/goldfish_audit_20260820_180922.html`.
