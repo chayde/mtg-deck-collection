@@ -10,7 +10,8 @@ deck_status: main
 
 ## Commander Strategy
 **Karametra, God of Harvests**
-*   **Archetype:** Selesnya (Green/White) Angels & Landfall
+*   **Archetype:** Selesnya (Green/White) Angels & Landfall  
+*   **Bracket:** 4 (Optimized — 4 Game Changers: Smothering Tithe, Aura Shards, Teferi's Protection, Worldly Tutor)
 *   **Goal:** This deck aims to win by assembling a powerful army of Angels. It uses its commander, Karametra, as a powerful ramp engine to cast expensive, high-impact Angel creatures far ahead of the curve.
 *   **How it Plays:** The early game is dedicated to ramping and casting small creatures to trigger Karametra's ability. This thins the deck of lands and ensures you never miss a land drop. Once you have a significant mana advantage, you'll start deploying your powerful Angel threats, which control the board and present a formidable flying army.
 

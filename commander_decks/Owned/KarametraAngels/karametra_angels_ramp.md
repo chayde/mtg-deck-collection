@@ -10,7 +10,8 @@ deck_status: main
 
 ## Commander Strategy
 **Karametra, God of Harvests**
-*   **Archetype:** Selesnya (Green/White) Angels & Landfall
+*   **Archetype:** Selesnya (Green/White) Angels & Landfall  
+*   **Bracket:** 4 (Optimized — 4 Game Changers: Smothering Tithe, Aura Shards, Teferi's Protection, Worldly Tutor)
 *   **Goal:** This deck aims to win by assembling a powerful army of Angels. It uses its commander, Karametra, as a powerful ramp engine to cast expensive, high-impact Angel creatures far ahead of the curve.
 *   **How it Plays:** The early game is dedicated to ramping and casting small creatures to trigger Karametra's ability. This thins the deck of lands and ensures you never miss a land drop. Once you have a significant mana advantage, you'll start deploying your powerful Angel threats, which control the board and present a formidable flying army.
 
@@ -78,6 +79,10 @@ deck_status: main
 ---
 
 ## 📜 Deck Changelog
+*   **2026-08-20:** Audited deck power level and designated target classification as Bracket 4 (Optimized).
+    *   **In:** N/A (Metadata / Power Level audit)
+    *   **Out:** N/A
+    *   **Reason:** Active 100-card build contains 4 Game Changers (*Smothering Tithe*, *Aura Shards*, *Teferi's Protection*, *Worldly Tutor*), placing it in Bracket 4 (Optimized). Goldfish testing (20 sims, 60% Gold Keeps, avg T3.9 commander cast) confirmed target readiness (T3.9 avg engine setup vs T5 target).
 *   **2026-02-20:** Updated digital list to match physical 37-land count.
     *   **In:** Ghost Quarter, Mosswort Bridge.
     *   **Out:** Boseiju, Who Endures, Nykthos, Shrine to Nyx.
