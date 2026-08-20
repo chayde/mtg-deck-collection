@@ -1,6 +1,10 @@
 # Project History: MTG Deck Collection
 
-## 🗓️ August 2026: Ulalek, Fused Atrocity Planning & PreCon Upgrade
+## 🗓️ August 2026: Ulalek, Fused Atrocity & Goldfish Simulator Protocol Upgrade
+
+### 2026-08-20: Etali, Primal Conqueror — Reclassified from Bracket 2 to Bracket 3
+*   **Bracket Alignment:** Updated `commander_decks/Owned/EtaliConqueror/etali_primal_dominion.md` and `README.md` from Bracket 2 to **Bracket 3 (Upgraded)**.
+*   **Reason:** Goldfish testing (20 sims, 61% Gold Keeps, 0% desperation keeps, avg T4.9 commander cast) confirmed that despite containing zero Game Changers, the deck's 1-drop mana dork suite and *Somberwald Sage* engine accelerate 7-CMC Etali onto the battlefield by Turn 4–5, generating 3–6 stolen spells per entry. This construction quality and velocity play at Bracket 3 (Upgraded) level.
 
 ### 2026-08-11: Ulalek, Fused Atrocity — New 5-Color Eldrazi Stack Deck Added to Planning
 *   **New Deck:** Added `commander_decks/Planning/UlalekFusedAtrocity/` with a full 100-card Bracket 3 list (`deck_status: main`).

@@ -11,7 +11,7 @@ deck_status: main
 ## Commander Strategy
 **Etali, Primal Conqueror**
 *   **Archetype:** Gruul (Red/Green) Ramp + Clones / ETB Copy Engine
-*   **Bracket:** 2
+*   **Bracket:** 3 (Upgraded)
 *   **Core Goal:** Accelerate into Etali as fast as possible — often turns 4–5 — then copy her ETB trigger repeatedly in the same turn cycle. Each copy of Etali that enters the battlefield fires its own ETB, exiling and casting a free nonland card from every opponent's library. With 15 dedicated copy effects, a single Etali cast routinely generates 3–6 stolen spells in one turn. Protect her with hexproof/indestructible effects, recur her with Temur Sabertooth and Conjurer's Closet, and close out games with stolen haymakers.
 
 ### The Copy Engine

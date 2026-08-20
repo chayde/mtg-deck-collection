@@ -11,7 +11,7 @@ deck_status: main
 ## Commander Strategy
 **Etali, Primal Conqueror**
 *   **Archetype:** Gruul (Red/Green) Ramp + Clones / ETB Copy Engine
-*   **Bracket:** 2
+*   **Bracket:** 3 (Upgraded)
 *   **Core Goal:** Accelerate into Etali as fast as possible — often turns 4–5 — then copy her ETB trigger repeatedly in the same turn cycle. Each copy of Etali that enters the battlefield fires its own ETB, exiling and casting a free nonland card from every opponent's library. With 15 dedicated copy effects, a single Etali cast routinely generates 3–6 stolen spells in one turn. Protect her with hexproof/indestructible effects, recur her with Temur Sabertooth and Conjurer's Closet, and close out games with stolen haymakers.
 
 ### The Copy Engine
@@ -142,6 +142,11 @@ Etali's ETB fires **when she enters the battlefield**, not when she attacks — 
 ---
 
 ## 📜 Deck Changelog
+
+*   **2026-08-20:** Updated bracket classification from Bracket 2 to Bracket 3.
+    *   **In:** N/A (Metadata / Power Level reclassification)
+    *   **Out:** N/A
+    *   **Reason:** Goldfish simulation results (20 sims, 61% Gold Keeps, avg T4.9 commander cast) confirmed that despite containing zero Game Changers, the deck's 1-drop mana dork suite and Somberwald Sage engine accelerate 7-CMC Etali onto the battlefield by Turn 4–5. This speed and clone-ETB velocity play at Bracket 3 (Upgraded) level.
 *   **2026-03-28:** Swapped Gruul Turf for Rugged Highlands.
     *   **In:** Rugged Highlands
     *   **Out:** Gruul Turf
