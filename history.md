@@ -2,6 +2,10 @@
 
 ## 🗓️ August 2026: Ulalek, Fused Atrocity & Goldfish Simulator Protocol Upgrade
 
+### 2026-08-20: Adrix and Nev, Twincasters (Quantum Quandrix) — Audit Completed (Bracket 3 Reclassification Validated)
+*   **Bracket Audit:** Audited `commander_decks/Owned/QuantumQuandrix/quantum_quandrix.md` and reclassified from Bracket 2 to **Bracket 3 (Upgraded)**.
+*   **Validation:** 20-sim goldfish check — **100% commander cast rate**, **T4.1 avg commander cast**, **T4.7 engine readiness**, 31% Gold Keeps. Timestamped HTML report written to `commander_decks/Owned/QuantumQuandrix/goldfish_audit_20260820_181541.html`.
+
 ### 2026-08-20: Marchesa, the Black Rose — Audit Completed (Bracket 3 Validated)
 *   **Bracket Audit:** Audited `commander_decks/Owned/MarchesaBlackRose/README.md` and confirmed **Bracket 3 (Upgraded)** classification (0 Game Changers).
 *   **Validation:** 20-sim goldfish check — **96% commander cast rate**, **T3.2 avg commander cast**, **T3.9 engine readiness**, 50% Gold Keeps. Timestamped HTML report written to `commander_decks/Owned/MarchesaBlackRose/goldfish_audit_20260820_181239.html`.

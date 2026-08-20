@@ -15,7 +15,7 @@ deck_status: main
 **Adrix and Nev, Twincasters**
 *   **Archetype:** Simic Counters / Fractal Tokens / Token Doubling
 *   **Origin:** Quantum Quandrix precon (C21 / Strixhaven), significantly upgraded
-*   **Bracket:** 2 (no Game Changers present)
+*   **Bracket:** 3 (Upgraded — Reclassified from Bracket 2 based on token doubling velocity)
 *   **Core Goal:** Adrix and Nev sit in the command zone and double every token created — Fractals, Insects, Plants, Beasts, Koma Coils, Blob copies, Scute Swarms — all of it gets doubled automatically. The deck then layers a counters engine and a landfall package on top, each of which feeds the others, producing an exponentially growing board that quickly overwhelms opponents.
 
 ### Three Interlocking Engines
@@ -177,7 +177,10 @@ deck_status: main
     *   **In:** Adrix and Nev, Twincasters (as commander)
     *   **Out:** Zimone, Quandrix Prodigy (removed)
     *   **Reason:** Adrix and Nev is the face commander of the Quantum Quandrix precon. Their token-doubling ability fundamentally drives the deck strategy. Zimone omitted rather than moved to the 99 to maintain the 100-card count.
-*   **2026-03-18:** 9-card upgrade pass from cards purchased by Jamie.
+*   **2026-08-20:** Reclassified target Bracket from Bracket 2 to Bracket 3 (Upgraded).
+    *   **In:** N/A (Metadata / Power Level reclassification audit)
+    *   **Out:** N/A
+    *   **Reason:** Goldfish simulation results (20 sims, 100% commander cast rate by T4.1, T4.7 engine readiness) confirmed that despite containing 0 Game Changers, the upgraded token-doubling engine (*Adrix and Nev*, *Esix*, *Koma*, *Scute Swarm*, *Second Harvest*) operates at Bracket 3 (Upgraded) velocity.
     *   **In:** Avenger of Zendikar, Biowaste Blob, Combine Chrysalis, Double Major, Koma Cosmos Serpent, Scute Swarm, Tireless Provisioner, Zimone All-Questioning, Zimone Paradox Sculptor
     *   **Out:** Arashi the Sky Asunder, Crafty Cutpurse, Desolation Twin, Kaseto Orochi Archmage, Kazandu Tuskcaller, Ruxa Patient Professor, Spawning Kraken, Theoretical Duplication, Trygon Predator
     *   **Reason:** Added landfall package (Avenger, Scute Swarm, Tireless Provisioner), counter-doubling engine piece (Zimone PS), thematic Fractal generators (Zimone AQ, Biowaste Blob), evasion for tokens (Combine Chrysalis), and premier copy spell (Double Major). Removed cards with narrow combo requirements (Kaseto+Spawning Kraken), slow level-up payoffs (Kazandu), and high-CMC underperformers (Desolation Twin at 10 mana, Arashi as niche anti-air).
