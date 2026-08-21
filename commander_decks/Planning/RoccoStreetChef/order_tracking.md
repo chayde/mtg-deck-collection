@@ -1,13 +1,13 @@
 # Order Tracking: RoccoStreetChef
 
 ## Overview
-*   **Total Deck Size:** 92 Cards
+*   **Total Deck Size:** 88 Cards
 *   **In-Hand / Owned:** 4 cards
-*   **Pending Acquisition / Singles to Order:** 88 cards
+*   **Pending Acquisition / Singles to Order:** 84 cards
 
 ---
 
-## 📦 Singles to Acquire / Order List (88 Cards)
+## 📦 Singles to Acquire / Order List (84 Cards)
 
 ### Lands (25 Cards)
 - [ ] Battlefield Forge
@@ -36,12 +36,11 @@
 - [ ] Sunpetal Grove
 - [ ] Temple Garden
 
-### Creatures (30 Cards)
+### Creatures (29 Cards)
 - [ ] Academy Manufactor
 - [ ] Avacyn's Pilgrim
 - [ ] Banquet Guests
 - [ ] Baylen, the Haymaker
-- [ ] Bess, Soul Nourisher
 - [ ] Bilbo, Fellow Conspirator
 - [ ] Birds of Paradise
 - [ ] Butterbur, Bree Innkeeper
@@ -78,7 +77,7 @@
 - [ ] Talisman of Impulse
 - [ ] Talisman of Unity
 
-### Spells & Interaction (19 Cards)
+### Spells & Interaction (17 Cards)
 - [ ] Austere Command
 - [ ] Beast Within
 - [ ] Blasphemous Act
@@ -90,19 +89,16 @@
 - [ ] Farewell
 - [ ] Farseek
 - [ ] Generous Gift
-- [ ] Heroic Intervention
 - [ ] Inspiring Call
 - [ ] Nature's Claim
 - [ ] Path to Exile
 - [ ] Swords to Plowshares
 - [ ] Three Visits
-- [ ] Tibalt's Trickery
 - [ ] Vandalblast
 
-### Enchantments & Planeswalkers (4 Cards)
+### Enchantments & Planeswalkers (3 Cards)
 - [ ] All Will Be One
 - [ ] Night of the Sweets' Revenge
-- [ ] Showdown of the Skalds
 - [ ] Valakut Exploration
 
 ### Other (2 Cards)

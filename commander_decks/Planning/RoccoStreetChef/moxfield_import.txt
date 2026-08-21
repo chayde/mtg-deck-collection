@@ -11,7 +11,6 @@ Deck
 1 Battlefield Forge
 1 Baylen, the Haymaker
 1 Beast Within
-1 Bess, Soul Nourisher
 1 Bilbo, Fellow Conspirator
 1 Birds of Paradise
 1 Blasphemous Act
@@ -41,7 +40,6 @@ Deck
 1 Gilded Goose
 1 Gwaihir, Greatest of the Eagles
 1 High Market
-1 Heroic Intervention
 1 Inspiring Call
 1 Inspiring Statuary
 1 Inspiring Vantage
@@ -70,7 +68,6 @@ Deck
 1 Sacred Foundry
 1 Sam, Loyal Attendant
 1 Shalai and Hallar
-1 Showdown of the Skalds
 1 Skullclamp
 1 Sol Ring
 1 Sovereign Okinec Ahau
@@ -84,7 +81,6 @@ Deck
 1 Talisman of Unity
 1 Temple Garden
 1 Three Visits
-1 Tibalt's Trickery
 1 Tireless Provisioner
 1 Tireless Tracker
 1 Tough Cookie
