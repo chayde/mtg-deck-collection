@@ -8,6 +8,7 @@ Deck
 1 Arcane Signet
 1 Austere Command
 1 Avacyn's Pilgrim
+1 Banquet Guests
 1 Battlefield Forge
 1 Baylen, the Haymaker
 1 Beast Within
@@ -15,7 +16,6 @@ Deck
 1 Bilbo, Fellow Conspirator
 1 Birds of Paradise
 1 Blasphemous Act
-1 Blossoming Bogbeast
 1 Bolt Bend
 1 Boros Charm
 1 Bountiful Promenade
@@ -26,6 +26,7 @@ Deck
 1 City of Brass
 1 Clifftop Retreat
 1 Command Tower
+1 Conclave Mentor
 1 Copperline Gorge
 1 Deflecting Palm
 1 Delayed Blast Fireball
@@ -50,7 +51,6 @@ Deck
 1 Karplusan Forest
 1 Kodama of the West Tree
 1 Laelia, the Blade Reforged
-1 Lathiel, the Bounteous Dawn
 1 Managorger Hydra
 4 Mountain
 1 Nature's Claim

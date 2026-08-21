@@ -49,13 +49,15 @@ deck_status: main
 *   **Skullclamp:** Classic equipment draw engine for 1-toughness tokens.
 
 ### 💥 +1/+1 Counter Scaling & Finishers (21 Cards)
+*   **Banquet Guests:** **S-TIER FOOD FINISHER ($0.34).** Has *Affinity for Foods*, Trample, enters with **twice X +1/+1 counters** (e.g. 10/10 for {G}{W}), and sacrifices a Food to gain Indestructible!
+*   **Conclave Mentor:** **2-DROP COUNTER BOOSTER ($0.73).** Adds +1 extra counter whenever +1/+1 counters are put on a creature you control!
 *   **Kami of Whispered Hopes:** **S-TIER COUNTER & MANA ENGINE.** Adds +1 extra counter to all permanents AND taps for mana equal to its power!
 *   **Treebeard, Gracious Host:** Creates 2 Foods on ETB and puts +1/+1 counters equal to life gained on target Halfling or Treefolk.
 *   **Feasting Hobbit:** Devours any number of Foods on ETB, gaining +3/+3 per Food sacrificed, becoming an unblockable 14/14+ threat.
 *   **Shalai and Hallar:** Deals damage to target opponent equal to the number of +1/+1 counters put on any creature you control!
 *   **All Will Be One:** Deals damage equal to the number of counters put on any permanent.
 *   **Rosie Cotton of South Lane:** Creates a Food on ETB and puts +1/+1 counters on target creature whenever a token enters.
-*   **Sovereign Okinec Ahau / Bess, Soul Nourisher / Lathiel, the Bounteous Dawn / Blossoming Bogbeast:** Mass counter multipliers and overrun finishers.
+*   **Sovereign Okinec Ahau / Bess, Soul Nourisher:** Mass counter multipliers and overrun finishers.
 *   **Hardened Scales / Ozolith, the Shattered Spire / Botanical Brawler / Managorger Hydra / Evolution Sage:** Counter doubling and proliferate engines.
 *   **Inspiring Call:** Draws cards for every creature with a +1/+1 counter and grants team Indestructible.
 *   **Abzan Falconer / Kodama of the West Tree:** Grants Flying and Trample to all modified (+1/+1 counter) creatures.
