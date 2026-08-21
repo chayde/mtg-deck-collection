@@ -40,7 +40,6 @@
 - [ ] Garna, Bloodfist of Keld
 - [ ] Goldspan Dragon
 - [ ] Gravecrawler
-- [ ] Judith, the Scourge Diva
 - [ ] Juri, Master of the Revue
 - [ ] Marionette Apprentice
 - [ ] Marionette Master
@@ -50,6 +49,7 @@
 - [ ] Morbid Opportunist
 - [ ] Nadier's Nightblade
 - [ ] Nether Traitor
+- [ ] Ophiomancer
 - [ ] Pawn of Ulamog
 - [ ] Pitiless Plunderer
 - [ ] Plaguecrafter
@@ -98,16 +98,16 @@
 - [ ] Unexpected Windfall
 - [ ] Vandalblast
 
-### Enchantments & Planeswalkers (4 Cards)
+### Enchantments & Planeswalkers (5 Cards)
 - [ ] Goblin Bombardment
+- [ ] Grave Pact
 - [ ] Impact Tremors
 - [ ] Revel in Riches
 - [ ] There and Back Again
 
-### Other (3 Cards)
+### Other (2 Cards)
 - [ ] Deck
 - [ ] Mahadi, Emporium Master *CMDR*
-- [ ] Zoyowa Lava-Tongue
 
 ---
 

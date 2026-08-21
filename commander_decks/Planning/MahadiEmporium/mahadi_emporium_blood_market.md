@@ -42,6 +42,8 @@ deck_status: main
 *   **Sol Ring / Arcane Signet / Talisman of Indulgence / Rakdos Signet / Fellwar Stone:** Essential early Rakdos mana ramp.
 
 ### 🩸 Artifact & Treasure Drain Payoffs (31 Cards)
+*   **Ophiomancer:** **S-TIER FODDER.** Generates a 1/1 Deathtouch Snake token at the beginning of *each upkeep* (yours and all 3 opponents'). Provides up to 4 free deathtouch blockers and sacrifice fodder per turn cycle.
+*   **Grave Pact:** **S-TIER ENGINE.** Whenever a creature you control dies, each opponent must sacrifice a creature of their choice. Turning 1 sacrificed Snake or Skeleton into 3 opponent deaths $\rightarrow$ 4 Treasures at end step.
 *   **Mayhem Devil:** Deals 1 damage to ANY target whenever ANY player sacrifices ANY permanent. Sacrificing 10 Treasures deals 10 free ping damage.
 *   **Mirkwood Bats:** Drains opponents for 1 life whenever you CREATE or SACRIFICE a token. (5 Treasures created + 5 sacrificed = 10 damage to all opponents!).
 *   **Marionette Master / Marionette Apprentice:** Drains opponents whenever artifacts or creatures enter the graveyard. Sacrificing 10 Treasures with Marionette Master deals 20 damage to every opponent.
@@ -119,12 +121,12 @@ MAIN DECK:
 1 Garna, Bloodfist of Keld  
 1 Goblin Bombardment  
 1 Goldspan Dragon  
+1 Grave Pact  
 1 Gravecrawler  
 1 Graven Cairns  
 1 Haunted Ridge  
 1 High Market  
 1 Impact Tremors  
-1 Judith, the Scourge Diva  
 1 Juri, Master of the Revue  
 1 Lightning Bolt  
 1 Luxury Suite  
@@ -136,12 +138,12 @@ MAIN DECK:
 1 Mirkwood Bats  
 1 Morbid Opportunist  
 1 Mount Doom  
-1 Mountain  
 6 Mountain  
 1 Myriad Landscape  
 1 Nadier's Nightblade  
 1 Nether Traitor  
 1 Night's Whisper  
+1 Ophiomancer  
 1 Pawn of Ulamog  
 1 Phyrexian Altar  
 1 Phyrexian Tower  
@@ -161,7 +163,6 @@ MAIN DECK:
 1 Snuff Out  
 1 Sol Ring  
 1 Species Specialist  
-1 Swamp  
 6 Swamp  
 1 Szat's Will  
 1 Tainted Peak  
@@ -179,4 +180,3 @@ MAIN DECK:
 1 Warren Soultrader  
 1 Wooded Foothills  
 1 Xorn  
-1 Zoyowa Lava-Tongue  

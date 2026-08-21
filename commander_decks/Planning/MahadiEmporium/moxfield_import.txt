@@ -39,12 +39,12 @@ Deck
 1 Garna, Bloodfist of Keld
 1 Goblin Bombardment
 1 Goldspan Dragon
+1 Grave Pact
 1 Gravecrawler
 1 Graven Cairns
 1 Haunted Ridge
 1 High Market
 1 Impact Tremors
-1 Judith, the Scourge Diva
 1 Juri, Master of the Revue
 1 Lightning Bolt
 1 Luxury Suite
@@ -61,6 +61,7 @@ Deck
 1 Nadier's Nightblade
 1 Nether Traitor
 1 Night's Whisper
+1 Ophiomancer
 1 Pawn of Ulamog
 1 Phyrexian Altar
 1 Phyrexian Tower
@@ -97,4 +98,3 @@ Deck
 1 Warren Soultrader
 1 Wooded Foothills
 1 Xorn
-1 Zoyowa Lava-Tongue
