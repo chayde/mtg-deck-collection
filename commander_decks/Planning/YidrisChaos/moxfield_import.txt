@@ -4,12 +4,13 @@ COMMANDER:
 MAIN DECK:
 1 Abaddon the Despoiler
 1 Ancestral Vision
+1 Ancient Cellarspawn
+1 An Offer You Can't Refuse
 1 Apex Devastator
 1 Arcane Signet
 1 Arid Mesa
 1 Assassin's Trophy
 1 Averna, the Chaos Bloom
-1 Baral's Expertise
 1 Bear Umbra
 1 Beast Within
 1 Birds of Paradise
@@ -23,7 +24,6 @@ MAIN DECK:
 1 Chaos Warp
 1 Chimil, the Inner Sun
 1 Command Tower
-1 Counterspell
 1 Cyclonic Rift
 1 Deadly Rollick
 1 Deflecting Swat
@@ -33,7 +33,6 @@ MAIN DECK:
 1 Exotic Orchard
 1 Farseek
 1 Felix Five-Boots
-1 Fellwar Stone
 1 Flame of Anor
 1 Flaming Tyrannosaurus
 1 Forest
@@ -41,13 +40,14 @@ MAIN DECK:
 1 Heroic Intervention
 1 Ignoble Hierarch
 1 Imoti, Celebrant of Bounty
-1 Inevitable Betrayal
 1 Island
 1 Jeska's Will
 1 Keeper of Secrets
 1 Ketria Triome
+1 Laelia, the Blade Reforged
 1 Lightning Greaves
 1 Lizard Blades
+1 Lotus Bloom
 1 Luxury Suite
 1 Maelstrom Wanderer
 1 Marsh Flats
@@ -64,14 +64,12 @@ MAIN DECK:
 1 Prismatic Vista
 1 Profane Tutor
 1 Prosper, Tome-Bound
-1 Rakdos Charm
 1 Reflecting Pool
 1 Rejuvenating Springs
-1 Reliquary Tower
 1 Return of the Wildspeaker
 1 Rishkar's Expertise
-1 Rogue's Passage
 1 Scalding Tarn
+1 Selvala, Heart of the Wilds
 1 Sensei's Divining Top
 1 Shizo, Death's Storehouse
 1 Sink into Stupor

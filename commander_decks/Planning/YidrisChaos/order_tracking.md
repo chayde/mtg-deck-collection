@@ -1,15 +1,15 @@
 # Order Tracking: YidrisChaos
 
 ## Overview
-*   **Total Deck Size:** 102 Cards
+*   **Total Deck Size:** 100 Cards
 *   **In-Hand / Owned:** 6 cards
-*   **Pending Acquisition / Singles to Order:** 96 cards
+*   **Pending Acquisition / Singles to Order:** 94 cards
 
 ---
 
-## 📦 Singles to Acquire / Order List (96 Cards)
+## 📦 Singles to Acquire / Order List (94 Cards)
 
-### Lands (34 Cards)
+### Lands (33 Cards)
 - [ ] Arid Mesa
 - [ ] Blood Crypt
 - [ ] Bloodstained Mire
@@ -28,7 +28,6 @@
 - [ ] Prismatic Vista
 - [ ] Reflecting Pool
 - [ ] Rejuvenating Springs
-- [ ] Reliquary Tower
 - [ ] Scalding Tarn
 - [ ] Shizo, Death's Storehouse
 - [ ] Sink into Stupor
@@ -45,8 +44,9 @@
 - [ ] Xander's Lounge
 - [ ] Ziatora's Proving Ground
 
-### Creatures (18 Cards)
+### Creatures (21 Cards)
 - [ ] Abaddon the Despoiler
+- [ ] Ancient Cellarspawn
 - [ ] Apex Devastator
 - [ ] Averna, the Chaos Bloom
 - [ ] Birds of Paradise
@@ -58,18 +58,19 @@
 - [ ] Ignoble Hierarch
 - [ ] Imoti, Celebrant of Bounty
 - [ ] Keeper of Secrets
+- [ ] Laelia, the Blade Reforged
 - [ ] Lizard Blades
 - [ ] Maelstrom Wanderer
 - [ ] Nalfeshnee
 - [ ] Prosper, Tome-Bound
+- [ ] Selvala, Heart of the Wilds
 - [ ] Wild-Magic Sorcerer
 - [ ] Yidris, Maelstrom Wielder
 
-### Artifacts & Ramp (10 Cards)
+### Artifacts & Ramp (9 Cards)
 - [ ] Arcane Signet
 - [ ] Brotherhood Regalia
 - [ ] Chimil, the Inner Sun
-- [ ] Fellwar Stone
 - [ ] Lightning Greaves
 - [ ] Sensei's Divining Top
 - [ ] Sol Ring
@@ -77,15 +78,13 @@
 - [ ] Sword of Feast and Famine
 - [ ] Whispersilk Cloak
 
-### Spells & Interaction (27 Cards)
+### Spells & Interaction (23 Cards)
 - [ ] Ancestral Vision
 - [ ] Assassin's Trophy
-- [ ] Baral's Expertise
 - [ ] Beast Within
 - [ ] Bituminous Blast
 - [ ] Blasphemous Act
 - [ ] Chaos Warp
-- [ ] Counterspell
 - [ ] Cyclonic Rift
 - [ ] Deadly Rollick
 - [ ] Deflecting Swat
@@ -94,10 +93,8 @@
 - [ ] Farseek
 - [ ] Flame of Anor
 - [ ] Heroic Intervention
-- [ ] Inevitable Betrayal
 - [ ] Jeska's Will
 - [ ] Ponder
-- [ ] Rakdos Charm
 - [ ] Return of the Wildspeaker
 - [ ] Rishkar's Expertise
 - [ ] Three Visits
@@ -112,7 +109,8 @@
 - [ ] Sylvan Library
 - [ ] Up the Beanstalk
 
-### Other (3 Cards)
+### Other (4 Cards)
+- [ ] Lotus Bloom
 - [ ] Windswept Heath
 - [ ] Wooded Foothills
 - [ ] Zagoth Triome
@@ -120,9 +118,9 @@
 ---
 
 ## 🛡️ Inventory In-Hand (6 Cards)
+- [x] An Offer You Can't Refuse
 - [x] Command Tower
 - [x] Exotic Orchard
 - [x] Nature's Lore
 - [x] Profane Tutor
-- [x] Rogue's Passage
 - [x] Treasure Cruise
