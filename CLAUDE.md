@@ -284,7 +284,7 @@ Examples:
 ### Communication Style
 - Be concise and direct. Do not pad responses with preamble or trailing summaries.
 - When referencing cards, include the mana cost in parentheses on first mention, e.g., **Sol Ring** (1).
-- When discussing or recommending cards, provide a Scryfall link or Markdown image render so the user can visually inspect them.
+- When discussing, referencing, or recommending cards in chat, ALWAYS provide a clickable Scryfall link and render the card image scaled down to 50% width (using `<img src="..." width="240" alt="..." />`) so the user can visually inspect them easily without overflowing the screen.
 - When recommending a swap, always name both the card going in **and** the card coming out.
 - Flag bracket or legality concerns as blockers, not suggestions.
 
