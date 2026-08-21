@@ -8,15 +8,16 @@ Deck
 1 Arcane Signet
 1 Arid Mesa
 1 Austere Command
+1 Avacyn's Pilgrim
 1 Beast Within
 1 Bess, Soul Nourisher
 1 Bilbo, Fellow Conspirator
+1 Birds of Paradise
 1 Blasphemous Act
 1 Bloodstained Mire
 1 Blossoming Bogbeast
 1 Boros Charm
 1 Boseiju, Who Endures
-1 Botanical Brawler
 1 Bountiful Promenade
 1 Chaos Warp
 1 Command Tower
@@ -28,6 +29,7 @@ Deck
 1 Evolution Sage
 1 Exotic Orchard
 1 Farewell
+1 Farseek
 1 Feasting Hobbit
 1 Flawless Maneuver
 6 Forest
@@ -50,11 +52,11 @@ Deck
 3 Mountain
 1 Myriad Landscape
 1 Nature's Claim
+1 Nature's Lore
 1 Night of the Sweets' Revenge
 1 Nuka-Cola Vending Machine
 1 Overgrown Farmland
 1 Ozolith, the Shattered Spire
-1 Passionate Archaeologist
 1 Path of Ancestry
 1 Path to Exile
 1 Peregrin Took
@@ -82,11 +84,11 @@ Deck
 1 Talisman of Unity
 1 Temple Garden
 1 The Ozolith
+1 Three Visits
 1 Tibalt's Trickery
 1 Tireless Provisioner
 1 Tireless Tracker
 1 Treebeard, Gracious Host
-1 Urza's Ruinous Blast
 1 Valakut Exploration
 1 Vandalblast
 1 Verdant Catacombs

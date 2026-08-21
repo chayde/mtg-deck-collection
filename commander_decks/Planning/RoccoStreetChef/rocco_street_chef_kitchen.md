@@ -35,6 +35,8 @@ deck_status: main
 *   **Night of the Sweets' Revenge:** Turns all Food tokens into green mana dorks and provides a massive game-ending +X/+X Overrun ability.
 *   **Jaheira, Friend of the Forest:** Taps all your Food, Treasure, and Clue tokens for {G} mana.
 *   **Inspiring Statuary:** Grants Improvise to non-artifact spells, allowing your Food tokens to help pay for spells.
+*   **Birds of Paradise / Avacyn's Pilgrim:** 1-drop mana dorks that fix 3-color mana on Turn 1 for a Turn 2 Rocco deployment.
+*   **Nature's Lore / Three Visits / Farseek:** 2-drop land ramp that fetches dual lands (*Temple Garden*, *Stomping Ground*, *Sacred Foundry*, *Jetmir's Garden*) directly to the battlefield.
 *   **Sol Ring / Arcane Signet / Talisman of Impulse / Talisman of Unity / Talisman of Conviction:** Premier early Naya mana ramp.
 
 ### 🍕 Impulse & Exile Cast Engine (11 Cards)
