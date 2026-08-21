@@ -6,6 +6,7 @@ Usage:
 """
 
 import sys
+import os
 import json
 import time
 import argparse
@@ -69,35 +70,62 @@ def main():
 
     all_items = []
     print(f"Fetching details for {len(ORDER_IDS)} orders...")
-    for i, order_id in enumerate(ORDER_IDS, 1):
-        print(f"  [{i:>2}/{len(ORDER_IDS)}] Order {order_id[:8]}...", end="\r", flush=True)
-        data = fetch_order(order_id, headers)
+    for idx, oid in enumerate(ORDER_IDS, 1):
+        print(f"  [{idx:>2}/{len(ORDER_IDS)}] Fetching order {oid[:8]}...", end="\r", flush=True)
+        data = fetch_order(oid, headers)
         if not data:
             continue
-        order_num = data.get("order_number", "")
-        created_at = data.get("created_at", "")[:10]
-        for item in data.get("items", []):
-            single = item.get("single", {})
-            card = single.get("card", {})
-            card_name = card.get("name", item.get("description", "Unknown"))
-            set_code = card.get("set_code", "").upper()
-            seller = item.get("seller", {})
-            seller_name = seller.get("name", "Unknown Seller")
-            condition = single.get("condition_id", "")
-            finish = single.get("finish_id", "")
-            price_dollars = (item.get("price_cents") or 0) / 100.0
-            qty = item.get("quantity", 1)
-            all_items.append({
-                "name": card_name,
-                "set": set_code,
-                "condition": condition,
-                "finish": finish,
-                "price": price_dollars,
-                "quantity": qty,
-                "order_number": order_num,
-                "seller": seller_name,
-                "date": created_at
-            })
+        order = data.get("order", data)
+        created_at = order.get("created_at", "")[:10]
+        order_num = order.get("order_number", "")
+        
+        # Parse nested seller items
+        seller_details = order.get("order_seller_details", [])
+        if seller_details:
+            for seller in seller_details:
+                seller_name = seller.get("seller_username", "Unknown Seller")
+                for item in seller.get("items", []):
+                    single = item.get("product", {}).get("single") or item.get("single") or {}
+                    card_name = single.get("name") or item.get("product", {}).get("sealed", {}).get("name", "Unknown Item")
+                    set_code = (single.get("set") or single.get("set_code", "")).upper()
+                    condition = single.get("condition_id", "")
+                    finish = single.get("finish_id", "")
+                    price_dollars = (item.get("price_cents") or 0) / 100.0
+                    qty = item.get("quantity", 1)
+                    all_items.append({
+                        "name": card_name,
+                        "set": set_code,
+                        "condition": condition,
+                        "finish": finish,
+                        "price": price_dollars,
+                        "quantity": qty,
+                        "order_number": order_num,
+                        "seller": seller_name,
+                        "date": created_at
+                    })
+        elif "items" in order:
+            for item in order.get("items", []):
+                single = item.get("single", {})
+                card = single.get("card", {})
+                card_name = card.get("name", item.get("description", "Unknown"))
+                set_code = card.get("set_code", "").upper()
+                seller = item.get("seller", {})
+                seller_name = seller.get("name", "Unknown Seller")
+                condition = single.get("condition_id", "")
+                finish = single.get("finish_id", "")
+                price_dollars = (item.get("price_cents") or 0) / 100.0
+                qty = item.get("quantity", 1)
+                all_items.append({
+                    "name": card_name,
+                    "set": set_code,
+                    "condition": condition,
+                    "finish": finish,
+                    "price": price_dollars,
+                    "quantity": qty,
+                    "order_number": order_num,
+                    "seller": seller_name,
+                    "date": created_at
+                })
         time.sleep(0.2)
 
     all_items.sort(key=lambda x: x["price"], reverse=True)

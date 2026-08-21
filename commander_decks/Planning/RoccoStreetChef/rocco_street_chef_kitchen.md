@@ -4,7 +4,7 @@ deck_status: main
 
 # Deck Guide: Rocco, Street Chef ("The Street Chef's Kitchen")
 
-![Rocco, Street Chef](https://cards.scryfall.io/normal/front/1/d/1d0440ef-3e32-4437-9345-592728448552.jpg)
+![Rocco, Street Chef](https://cards.scryfall.io/normal/front/c/d/cdb53ce7-845c-4c62-98a9-4fc33c67a07b.jpg?1783916509)
 
 ### Commander: Rocco, Street Chef
 
