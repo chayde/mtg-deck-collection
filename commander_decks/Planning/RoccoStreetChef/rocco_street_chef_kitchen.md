@@ -26,6 +26,7 @@ deck_status: main
 ## 🛠️ Card Explanations
 
 ### 🥪 Food & Token Engines (10 Cards)
+*   **Bilbo, Fellow Conspirator:** **S-TIER TOKEN MULTIPLIER.** Whenever you create a Food token, create a Food token AND a Treasure token instead! Turns every Rocco exile play into instant mana acceleration.
 *   **Peregrin Took:** Adds an extra Food token whenever any token is created, and allows sacrificing 3 Foods to draw a card.
 *   **Sam, Loyal Attendant:** Creates a Food token at combat and reduces the activation cost of all Foods from {2} to {1} mana.
 *   **Nuka-Cola Vending Machine:** Generates a tapped Treasure token whenever you sacrifice a Food. Turns every Food sac into mana acceleration!
@@ -95,6 +96,7 @@ MAIN DECK:
 1 Austere Command  
 1 Beast Within  
 1 Bess, Soul Nourisher  
+1 Bilbo, Fellow Conspirator  
 1 Blasphemous Act  
 1 Bloodstained Mire  
 1 Blossoming Bogbeast  

@@ -1,13 +1,13 @@
 # Order Tracking: RoccoStreetChef
 
 ## Overview
-*   **Total Deck Size:** 92 Cards
+*   **Total Deck Size:** 93 Cards
 *   **In-Hand / Owned:** 4 cards
-*   **Pending Acquisition / Singles to Order:** 88 cards
+*   **Pending Acquisition / Singles to Order:** 89 cards
 
 ---
 
-## 📦 Singles to Acquire / Order List (88 Cards)
+## 📦 Singles to Acquire / Order List (89 Cards)
 
 ### Lands (25 Cards)
 - [ ] Arid Mesa
@@ -36,10 +36,11 @@
 - [ ] Windswept Heath
 - [ ] Wooded Foothills
 
-### Creatures (25 Cards)
+### Creatures (26 Cards)
 - [ ] Abzan Falconer
 - [ ] Academy Manufactor
 - [ ] Bess, Soul Nourisher
+- [ ] Bilbo, Fellow Conspirator
 - [ ] Blossoming Bogbeast
 - [ ] Botanical Brawler
 - [ ] Etali, Primal Storm
