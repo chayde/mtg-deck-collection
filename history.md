@@ -2,6 +2,13 @@
 
 ## 🗓️ August 2026: Ulalek, Fused Atrocity & Goldfish Simulator Protocol Upgrade
 
+### 2026-08-21: Yidris, Maelstrom Wielder ("The Maelstrom Engine") — Complete Overhaul & Goldfish HTML Reporting Upgrade
+*   **Complete Overhaul:** Scrapped legacy draft files (archived to `commander_decks/Planning/YidrisChaos/Archive/`) and built a brand new 100-card 4-color ({U}{B}{R}{G}) Combat Cascade & Exile-Storm deck in `commander_decks/Planning/YidrisChaos/yidris_chaos_cascade.md` (`deck_status: main`).
+*   **Synergy & Payoff Suite:** Integrated high-synergy EDHRec dataset selections: *Harmonic Prodigy* (Wizard trigger doubler), *Felix Five-Boots* (combat damage trigger doubler), *Lizard Blades* (Double Strike -> double cascade), *Brotherhood Regalia* (ward {2} + unblockable), *Passionate Archaeologist*, *Keeper of Secrets*, *Nalfeshnee*, *Flaming Tyrannosaurus*, *Prosper, Tome-Bound*, *Averna, the Chaos Bloom*, *Up the Beanstalk*, *Chimil, the Inner Sun*, *Delayed Blast Fireball*, and 0-mana suspend jackpots (*Ancestral Vision*, *Profane Tutor*, *Wheel of Fate*).
+*   **Bracket & Game Changers:** Validated for **Bracket 3 (Upgraded)** with 2 Game Changers (*Cyclonic Rift*, *Jeska's Will*).
+*   **Tooling Upgrade:** Enhanced `scripts/multiplayer_goldfish.py` HTML reporting to comprehensively embed all CLI metrics into a dark-mode dashboard (Mulligan & Hand Quality breakdown, Engine Readiness turn distributions, Scryfall deck classification, and full per-simulation breakdown).
+*   **Validation:** 20-sim goldfish check — **90% commander cast rate (72/80, T3.8 avg)**, **T4.7 engine readiness (86% on target <= T7)**, 45% Gold Keeps, 54% Silver Keeps (99% functional keeps). Generated comprehensive HTML report at `commander_decks/Planning/YidrisChaos/goldfish_report_20260821_184417.html`.
+
 ### 2026-08-21: Windows 11 Migration & Cross-Platform Script Hardening
 *   **Environment Migration:** Verified complete toolchain functionality in native Windows 11 Antigravity application following migration from WSL Ubuntu.
 *   **Verification Matrix:** Successfully validated live Scryfall API (`scryfall_lookup.py`, `scryfall_recommend.py`), live Manapool inventory pricing ($200.16 on Captain America), Multiplayer Goldfish simulator (20 sims, Bracket 3 compliance check), deck diffing against `collection.csv`, commander image linking, and Forge exporter.

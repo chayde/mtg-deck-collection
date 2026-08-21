@@ -70,7 +70,8 @@ def extract_card_name(line):
         return None
     if line.startswith("//") or line.startswith("#") or line in [
         "Commander", "Artifact", "Creature", "Enchantment", "Instant", "Sorcery",
-        "Planeswalker", "Land", "COMMANDER:", "DECK:", "SIDEBOARD:"
+        "Planeswalker", "Land", "COMMANDER:", "DECK:", "SIDEBOARD:", "MAIN DECK:",
+        "MAIN DECK", "Main Deck:", "Main Deck", "Commander:"
     ]:
         return None
 
@@ -290,7 +291,7 @@ def main():
                 for c in items:
                     print(f"    - [ ] {c}")
     else:
-        print("\n[✓] 100% of cards are in-hand and accounted for!")
+        print("\n[OK] 100% of cards are in-hand and accounted for!")
 
     if args.output_tracking:
         deck_title = os.path.basename(os.path.dirname(os.path.abspath(args.output_tracking)))
@@ -300,7 +301,7 @@ def main():
         os.makedirs(os.path.dirname(os.path.abspath(args.output_tracking)), exist_ok=True)
         with open(args.output_tracking, "w", encoding="utf-8") as f:
             f.write(md_content)
-        print(f"\n[✓] Updated order tracking file: {args.output_tracking}")
+        print(f"\n[OK] Updated order tracking file: {args.output_tracking}")
 
 if __name__ == "__main__":
     main()

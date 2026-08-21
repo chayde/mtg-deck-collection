@@ -936,6 +936,18 @@ def run_sims(deck_data: List[CardData], commander: CardData,
     print(f"\n  [BRACKET COMPLIANCE CHECK] Status: {compliance_status}")
     print(f"  {compliance_msg}")
 
+    deck_comp = {
+        'total': len(deck_data),
+        'lands': sum(1 for c in deck_data if c.is_land),
+        'mdfcs': sum(1 for c in deck_data if c.is_mdfc_land),
+        'mana_perms': sum(1 for c in deck_data if c.is_mana_perm),
+        'ramp': sum(1 for c in deck_data if c.is_ramp),
+        'burst': sum(1 for c in deck_data if c.is_burst),
+        'enablers': sum(1 for c in deck_data if c.is_enabler),
+        'payoffs': sum(1 for c in deck_data if c.is_payoff),
+        'creatures': sum(1 for c in deck_data if c.is_creature),
+    }
+
     return {
         'commander': commander.name,
         'commander_cmc': commander.cmc,
@@ -951,6 +963,7 @@ def run_sims(deck_data: List[CardData], commander: CardData,
         'average': (sum(all_turns) / len(all_turns)) if all_turns else None,
         'distribution': dict(buckets),
         'avg_creatures': agg_avg_cr,
+        'deck_composition': deck_comp,
         'hand_quality': {
             'gold': gold_keeps,
             'silver': silver_keeps,
@@ -1001,7 +1014,7 @@ def parse_deck_file(file_path: str):
     cm = re.search(r'(?:COMMANDER|Commander):?\s*(.*?)(?=\n\n|\n[A-Za-z]+:|\Z)', content, re.DOTALL)
     commander_name = _parse_card_names(cm.group(1))[0] if cm else None
     
-    dm = re.search(r'(?:DECK|Deck):?\s*(.*?)(?=\n\n|\n[A-Za-z]+:|\Z)', content, re.DOTALL)
+    dm = re.search(r'(?:DECK|Deck|MAIN DECK|Main Deck):?\s*(.*?)(?=\n\n|\n[A-Za-z]+:|\Z)', content, re.DOTALL)
     if not dm:
         print(f"Error: Could not find DECK: section in {file_path}")
         return None, None
@@ -1067,28 +1080,49 @@ def apply_commander_cost_override(cmd: CardData, commander_cost: Optional[str], 
 
 def write_html_report(path: str, results: dict, meta: dict):
     """
-    Renders a self-contained HTML report (inline CSS, no external assets) from the
-    dict returned by run_sims(). Includes summary stat cards, a bar-chart of the
-    deployment-turn distribution, and a per-simulation breakdown table.
+    Renders a comprehensive, self-contained HTML report (inline CSS, dark mode, no external assets)
+    containing all CLI statistics, hand quality breakdown, engine readiness distribution,
+    deck auto-classification breakdown, and per-simulation logs.
     """
     def esc(s):
         return (str(s).replace('&', '&amp;').replace('<', '&lt;')
                       .replace('>', '&gt;').replace('"', '&quot;'))
 
-    dist = results['distribution']
-    max_bucket = max(dist.values()) if dist else 0
+    total_slots = results.get('total_slots', 1)
+
+    # 1. Deployment Distribution Rows
+    dist = results.get('distribution', {})
+    max_deploy = max(dist.values()) if dist else 0
     dist_rows = ''
     for t in sorted(dist):
         n = dist[t]
-        pct = (n / max_bucket * 100) if max_bucket else 0
-        share = (n / results['cast_count'] * 100) if results['cast_count'] else 0
+        pct = (n / max_deploy * 100) if max_deploy else 0
+        share = (n / results['cast_count'] * 100) if results.get('cast_count') else 0
         dist_rows += (
             f'<tr><td class="turn">T{t}</td>'
-            f'<td class="barcell"><div class="bar" style="width:{pct:.1f}%"></div></td>'
+            f'<td class="barcell"><div class="bar deploy" style="width:{pct:.1f}%"></div></td>'
             f'<td class="count">{n} <span class="muted">({share:.0f}%)</span></td></tr>')
 
+    # 2. Engine Readiness Distribution Rows
+    er = results.get('engine_readiness', {})
+    er_dist = er.get('distribution', {})
+    max_er = max(er_dist.values()) if er_dist else 0
+    er_total = sum(er_dist.values()) if er_dist else 0
+    target_turn = results.get('target_turn', 7)
+    er_rows = ''
+    for t in sorted(er_dist):
+        n = er_dist[t]
+        pct = (n / max_er * 100) if max_er else 0
+        share = (n / total_slots * 100) if total_slots else 0
+        target_tag = '<span class="target-tag">Target Window</span>' if t <= target_turn else ''
+        er_rows += (
+            f'<tr><td class="turn">T{t} {target_tag}</td>'
+            f'<td class="barcell"><div class="bar engine" style="width:{pct:.1f}%"></div></td>'
+            f'<td class="count">{n} <span class="muted">({share:.0f}%)</span></td></tr>')
+
+    # 3. Per Simulation Breakdown Rows
     sim_rows = ''
-    for s in results['sims']:
+    for s in results.get('sims', []):
         turns = ', '.join(f'T{x}' for x in s['turns']) if s['turns'] else '—'
         earliest = f"T{s['earliest']}" if s['earliest'] else '—'
         miss = ' class="miss"' if s['cast'] < 4 else ''
@@ -1097,21 +1131,45 @@ def write_html_report(path: str, results: dict, meta: dict):
             f'<td>{earliest}</td><td class="turns">{turns}</td>'
             f'<td>{s["avg_creatures"]:.1f}</td></tr>')
 
-    avg   = f'T{results["average"]:.1f}' if results['average'] is not None else '—'
-    rng   = f'T{results["range"][0]}–T{results["range"][1]}' if results['range'] else '—'
-    avgcr = f'{results["avg_creatures"]:.1f}' if results['avg_creatures'] is not None else '—'
-    rate  = f'{results["cast_rate"]*100:.0f}%'
+    # 4. Stat Values
+    avg_deploy = f'T{results["average"]:.1f}' if results.get('average') is not None else '—'
+    rng_deploy = f'T{results["range"][0]}–T{results["range"][1]}' if results.get('range') else '—'
+    avgcr = f'{results["avg_creatures"]:.1f}' if results.get('avg_creatures') is not None else '—'
+    rate = f'{results.get("cast_rate", 0)*100:.0f}%'
 
     hq = results.get('hand_quality', {})
-    er = results.get('engine_readiness', {})
-    gold_pct = f"{(hq.get('gold', 0) / results['total_slots'] * 100):.0f}%" if results.get('total_slots') else '—'
+    gold_k = hq.get('gold', 0)
+    silver_k = hq.get('silver', 0)
+    desp_k = hq.get('desperation', 0)
+    gold_pct = f"{(gold_k / total_slots * 100):.0f}%" if total_slots else '—'
+    silver_pct = f"{(silver_k / total_slots * 100):.0f}%" if total_slots else '—'
+    desp_pct = f"{(desp_k / total_slots * 100):.0f}%" if total_slots else '—'
     avg_hs = f"{hq.get('avg_hand_size', 7.0):.2f}"
+
+    avg_er = f'T{er.get("average_turn", 0):.1f}' if er.get('average_turn') is not None else '—'
     target_rate_str = f"{er.get('target_rate', 0.0):.0f}%"
     comp_status = esc(er.get('compliance_status', 'PASS'))
     comp_msg = esc(er.get('compliance_msg', ''))
+
+    # 5. Deck Composition
+    comp = results.get('deck_composition', {})
+    comp_html = ''
+    if comp:
+        comp_html = f'''
+  <h2>📦 Deck Auto-Classification (Scryfall Engine)</h2>
+  <div class="comp-grid">
+    <div class="comp-item"><div class="ck">Lands</div><div class="cv">{comp.get('lands', 0)}</div></div>
+    <div class="comp-item"><div class="ck">Mana Dorks &amp; Rocks</div><div class="cv">{comp.get('mana_perms', 0)}</div></div>
+    <div class="comp-item"><div class="ck">Ramp Spells</div><div class="cv">{comp.get('ramp', 0)}</div></div>
+    <div class="comp-item"><div class="ck">Burst / Rituals</div><div class="cv">{comp.get('burst', 0)}</div></div>
+    <div class="comp-item"><div class="ck">Enablers &amp; Draw</div><div class="cv">{comp.get('enablers', 0)}</div></div>
+    <div class="comp-item"><div class="ck">High-CMC Payoffs</div><div class="cv">{comp.get('payoffs', 0)}</div></div>
+    <div class="comp-item"><div class="ck">MDFCs</div><div class="cv">{comp.get('mdfcs', 0)}</div></div>
+    <div class="comp-item"><div class="ck">Creatures</div><div class="cv">{comp.get('creatures', 0)}</div></div>
+  </div>'''
+
     notes_html = ''
     if meta.get('notes'):
-        notes_formatted = esc(meta['notes']).replace('\n', '<br>')
         notes_html = f'''
   <div class="stat" style="margin-bottom:24px; border-left:4px solid var(--accent2);">
     <div class="k">Deck Audit Summary &amp; Strategy Analysis</div>
@@ -1123,80 +1181,147 @@ def write_html_report(path: str, results: dict, meta: dict):
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Goldfish Audit Report — {esc(results['commander'])}</title>
 <style>
-  :root {{ --bg:#0f1420; --card:#1a2130; --ink:#e6ebf2; --muted:#8b97ab;
-          --accent:#4ade80; --accent2:#38bdf8; --line:#2a3346; --warn:#f59e0b; }}
+  :root {{ --bg:#0f1420; --card:#1a2130; --card-alt:#222c3f; --ink:#e6ebf2; --muted:#8b97ab;
+          --accent:#4ade80; --accent2:#38bdf8; --accent3:#a78bfa; --line:#2a3346; --warn:#f59e0b; --danger:#ef4444; }}
   * {{ box-sizing:border-box; }}
   body {{ margin:0; background:var(--bg); color:var(--ink);
           font:15px/1.5 system-ui,-apple-system,Segoe UI,Roboto,sans-serif; }}
-  .wrap {{ max-width:900px; margin:0 auto; padding:32px 20px 60px; }}
-  h1 {{ font-size:26px; margin:0 0 4px; }}
+  .wrap {{ max-width:960px; margin:0 auto; padding:32px 20px 60px; }}
+  h1 {{ font-size:26px; margin:0 0 4px; display:flex; align-items:center; gap:8px; }}
   .sub {{ color:var(--muted); margin:0 0 24px; font-size:14px; }}
   .sub code {{ background:#0009; padding:2px 6px; border-radius:5px; color:var(--accent2); }}
-  .cards {{ display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
-            gap:14px; margin-bottom:32px; }}
+  
+  .cards {{ display:grid; grid-template-columns:repeat(auto-fit,minmax(140px,1fr));
+            gap:14px; margin-bottom:24px; }}
   .stat {{ background:var(--card); border:1px solid var(--line); border-radius:12px;
-           padding:18px 20px; }}
-  .stat .k {{ color:var(--muted); font-size:12px; text-transform:uppercase;
+           padding:16px 18px; }}
+  .stat .k {{ color:var(--muted); font-size:11px; text-transform:uppercase;
               letter-spacing:.05em; }}
-  .stat .v {{ font-size:30px; font-weight:700; margin-top:6px; }}
+  .stat .v {{ font-size:26px; font-weight:700; margin-top:4px; }}
   .stat .v.accent {{ color:var(--accent); }}
   .stat .v.accent2 {{ color:var(--accent2); }}
+  .stat .v.accent3 {{ color:var(--accent3); }}
+  
   h2 {{ font-size:15px; text-transform:uppercase; letter-spacing:.06em;
         color:var(--muted); border-bottom:1px solid var(--line);
-        padding-bottom:8px; margin:34px 0 16px; }}
-  .badge {{ display:inline-block; padding:4px 10px; border-radius:6px; font-weight:600; font-size:13px; margin-bottom:16px; }}
-  .badge.pass {{ background:#166534; color:#86efac; }}
-  .badge.warn {{ background:#78350f; color:#fde68a; }}
+        padding-bottom:8px; margin:32px 0 16px; }}
+  
+  .badge {{ display:inline-block; padding:8px 14px; border-radius:8px; font-weight:600; font-size:14px; margin-bottom:20px; width:100%; }}
+  .badge.pass {{ background:#166534; color:#86efac; border:1px solid #22c55e44; }}
+  .badge.warn {{ background:#78350f; color:#fde68a; border:1px solid #f59e0b44; }}
+  .badge.notice {{ background:#1e3a8a; color:#bfdbfe; border:1px solid #3b82f644; }}
+  
+  .comp-grid {{ display:grid; grid-template-columns:repeat(auto-fit,minmax(110px,1fr)); gap:10px; margin-bottom:24px; }}
+  .comp-item {{ background:var(--card); border:1px solid var(--line); border-radius:8px; padding:10px 12px; text-align:center; }}
+  .comp-item .ck {{ font-size:11px; color:var(--muted); text-transform:uppercase; }}
+  .comp-item .cv {{ font-size:18px; font-weight:700; color:var(--accent2); margin-top:2px; }}
+
+  .section-box {{ background:var(--card); border:1px solid var(--line); border-radius:12px; padding:18px 20px; margin-bottom:24px; }}
+
   table {{ width:100%; border-collapse:collapse; }}
   td, th {{ padding:7px 10px; text-align:left; }}
+  
   .dist td {{ border:0; }}
-  .dist .turn {{ width:52px; color:var(--muted); font-variant-numeric:tabular-nums; }}
+  .dist .turn {{ width:140px; color:var(--muted); font-variant-numeric:tabular-nums; }}
   .dist .barcell {{ width:100%; }}
   .dist .count {{ width:90px; text-align:right; font-variant-numeric:tabular-nums; }}
-  .bar {{ height:20px; border-radius:5px;
-          background:linear-gradient(90deg,var(--accent2),var(--accent)); min-width:2px; }}
+  .bar {{ height:18px; border-radius:4px; min-width:2px; }}
+  .bar.deploy {{ background:linear-gradient(90deg,var(--accent2),var(--accent)); }}
+  .bar.engine {{ background:linear-gradient(90deg,var(--accent3),var(--accent2)); }}
+  .target-tag {{ font-size:10px; padding:2px 5px; border-radius:4px; background:#38bdf833; color:var(--accent2); margin-left:6px; }}
+
   .simtable {{ font-size:14px; }}
   .simtable th {{ color:var(--muted); font-weight:600; border-bottom:1px solid var(--line); }}
   .simtable td {{ border-bottom:1px solid #202839; }}
   .simtable tr.miss td {{ color:#f7a08a; }}
   .simtable .turns {{ color:var(--muted); }}
+  
+  .hq-table td {{ border-bottom:1px solid var(--line); padding:10px 12px; }}
+  .hq-table th {{ color:var(--muted); border-bottom:1px solid var(--line); padding:10px 12px; }}
+  .hq-bar {{ height:10px; border-radius:3px; }}
+  
   .muted {{ color:var(--muted); }}
-  footer {{ margin-top:40px; color:var(--muted); font-size:12px; }}
+  footer {{ margin-top:40px; color:var(--muted); font-size:12px; border-top:1px solid var(--line); padding-top:16px; }}
 </style></head><body><div class="wrap">
   <h1>🐟 Goldfish Audit Report — {esc(results['commander'])}</h1>
   <p class="sub">Deck: <code>{esc(meta['deck_file'])}</code> &nbsp;·&nbsp;
-     Target: {esc(results.get('bracket_label', 'Bracket 3'))} &nbsp;·&nbsp;
+     Target: <strong>{esc(results.get('bracket_label', 'Bracket 3'))}</strong> &nbsp;·&nbsp;
      Measuring: {esc(meta['measured_label'])} &nbsp;·&nbsp;
      {results['num_sims']} sims × T{results['num_turns']} &nbsp;·&nbsp;
      {esc(meta['timestamp'])}</p>
 
   {notes_html}
 
-  <div class="badge {'warn' if 'WARNING' in comp_status else 'pass'}">
-    Bracket Check: {comp_status} — {comp_msg}
+  <div class="badge {'warn' if 'WARNING' in comp_status else ('notice' if 'NOTICE' in comp_status else 'pass')}">
+    <strong>Bracket Compliance [{comp_status}]:</strong> {comp_msg}
   </div>
 
   <div class="cards">
-    <div class="stat"><div class="k">Deploy rate</div><div class="v accent">{rate}</div>
+    <div class="stat"><div class="k">Deploy Rate</div><div class="v accent">{rate}</div>
       <div class="muted">{results['cast_count']}/{results['total_slots']} seats</div></div>
-    <div class="stat"><div class="k">Average turn</div><div class="v">{avg}</div></div>
+    <div class="stat"><div class="k">Avg Cast Turn</div><div class="v">{avg_deploy}</div>
+      <div class="muted">Range: {rng_deploy}</div></div>
     <div class="stat"><div class="k">Gold Keep Rate</div><div class="v accent2">{gold_pct}</div>
       <div class="muted">Avg Hand: {avg_hs} cards</div></div>
-    <div class="stat"><div class="k">Target Readiness (T&le;{results.get('target_turn',7)})</div><div class="v">{target_rate_str}</div>
-      <div class="muted">Avg: T{er.get('average_turn', 0):.1f}</div></div>
+    <div class="stat"><div class="k">Target Readiness (T&le;{target_turn})</div><div class="v accent3">{target_rate_str}</div>
+      <div class="muted">Avg: {avg_er}</div></div>
+    <div class="stat"><div class="k">Avg Creatures</div><div class="v">{avgcr}</div>
+      <div class="muted">by T{results['num_turns']}</div></div>
   </div>
 
-  <h2>Deployment turn distribution</h2>
-  <table class="dist">{dist_rows or '<tr><td class="muted">No successful casts.</td></tr>'}</table>
+  {comp_html}
 
-  <h2>Per-simulation breakdown</h2>
-  <table class="simtable">
-    <tr><th>Sim</th><th>Seats cast</th><th>Earliest</th><th>Turns</th><th>Avg creatures</th></tr>
-    {sim_rows}
-  </table>
+  <h2>🃏 Opening Hand Quality &amp; Mulligan Profile ({results['total_slots']} hands evaluated)</h2>
+  <div class="section-box" style="padding:0; overflow:hidden;">
+    <table class="hq-table">
+      <thead><tr><th>Keep Category</th><th>Definition</th><th>Hands</th><th>Share</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><strong style="color:var(--accent);">Gold Keep</strong></td>
+          <td>Ideal opening hand: 2–4 lands, &ge;1 ramp piece, &ge;1 engine enabler</td>
+          <td><strong>{gold_k}</strong> / {total_slots}</td>
+          <td><strong style="color:var(--accent);">{gold_pct}</strong></td>
+        </tr>
+        <tr>
+          <td><strong style="color:var(--accent2);">Silver Keep</strong></td>
+          <td>Standard functional hand: 2–5 lands with playable curve</td>
+          <td><strong>{silver_k}</strong> / {total_slots}</td>
+          <td><strong style="color:var(--accent2);">{silver_pct}</strong></td>
+        </tr>
+        <tr>
+          <td><strong style="color:var(--warn);">Desperation Keep</strong></td>
+          <td>Forced keep after multiple mulligans (Hand size &le; 5)</td>
+          <td><strong>{desp_k}</strong> / {total_slots}</td>
+          <td><strong style="color:var(--warn);">{desp_pct}</strong></td>
+        </tr>
+        <tr>
+          <td colspan="2"><strong>Average Starting Hand Size</strong></td>
+          <td colspan="2"><strong>{avg_hs} cards</strong></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 
-  <footer>Generated by <code>scripts/multiplayer_goldfish.py</code>. A 4-player goldfish pod;
-  all seats run the same deck. "Deploy" = the measured commander cost becomes castable.</footer>
+  <h2>🚀 Commander Deployment Distribution</h2>
+  <div class="section-box">
+    <table class="dist">{dist_rows or '<tr><td class="muted">No successful casts.</td></tr>'}</table>
+  </div>
+
+  <h2>⚡ Engine Readiness Distribution ({esc(results.get('bracket_label', 'Bracket 3'))} — Target T{target_turn})</h2>
+  <div class="section-box">
+    <table class="dist">{er_rows or '<tr><td class="muted">No engine setups recorded.</td></tr>'}</table>
+  </div>
+
+  <h2>📊 Per-Simulation Breakdown ({results['num_sims']} Games)</h2>
+  <div class="section-box" style="padding:0; overflow:hidden;">
+    <table class="simtable">
+      <thead><tr><th>Sim #</th><th>Seats Cast</th><th>Earliest</th><th>Turns Deployed</th><th>Avg Creatures</th></tr></thead>
+      <tbody>{sim_rows}</tbody>
+    </table>
+  </div>
+
+  <footer>Generated by <code>scripts/multiplayer_goldfish.py</code>. A 4-player Commander pod simulation;
+  all seats run the same deck. "Deploy" = the measured commander cost becomes castable in game conditions.</footer>
 </div></body></html>"""
 
     with open(path, 'w', encoding='utf-8') as f:
