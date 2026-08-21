@@ -30,7 +30,7 @@
 - [ ] Verdant Catacombs
 - [ ] Wooded Foothills
 
-### Creatures (29 Cards)
+### Creatures (28 Cards)
 - [ ] Academy Manufactor
 - [ ] Bloodghast
 - [ ] Carrion Feeder
@@ -56,7 +56,6 @@
 - [ ] Professional Face-Breaker
 - [ ] Reassembling Skeleton
 - [ ] Sifter of Skulls
-- [ ] Species Specialist
 - [ ] Viscera Seer
 - [ ] Warren Soultrader
 - [ ] Xorn
@@ -76,10 +75,10 @@
 - [ ] Bitter Triumph
 - [ ] Blasphemous Act
 - [ ] Blood for the Blood God!
-- [ ] Chandra's Ignition
 - [ ] Chaos Warp
 - [ ] Corrupted Conviction
 - [ ] Crackle with Power
+- [ ] Damnation
 - [ ] Deadly Dispute
 - [ ] Deadly Rollick
 - [ ] Deflecting Swat
@@ -98,7 +97,8 @@
 - [ ] Unexpected Windfall
 - [ ] Vandalblast
 
-### Enchantments & Planeswalkers (5 Cards)
+### Enchantments & Planeswalkers (6 Cards)
+- [ ] Black Market Connections
 - [ ] Goblin Bombardment
 - [ ] Grave Pact
 - [ ] Impact Tremors

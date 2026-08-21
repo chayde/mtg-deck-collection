@@ -57,12 +57,14 @@ deck_status: main
 *   **Torment of Hailfire / Exsanguinate / Crackle with Power:** Game-ending X-spells powered by Mahadi's Treasure reserves.
 
 ### 🎴 Card Advantage & Draw (12 Cards)
+*   **Black Market Connections:** **S-TIER ENGINE.** At your first main phase, choose 1, 2, or all 3 options (Create a Treasure for 1 life, Draw a card for 2 life, Create a 3/2 Changeling for 3 life). Provides instant Treasures, card draw, and sacrifice fodder every turn!
 *   **Bolas's Citadel:** [Game Changer] Look at the top card of your library anytime and cast spells paying life instead of mana. Sacrificing 10 nonland artifacts deals 10 damage to each opponent.
 *   **Blood for the Blood God!:** 11-CMC instant that costs {1} less for each creature that died this turn. Deals 8 damage to all opponents, draws 8 cards, and exiles your hand!
 *   **Skullclamp:** Equip to 1-toughness fodder creatures to draw 2 cards per death.
-*   **Faithless Looting / Unexpected Windfall / Big Score / Demand Answers / Deadly Dispute / Corrupted Conviction / Night's Whisper / Morbid Opportunist / Species Specialist:** Premier Rakdos card selection, rummaging, and Treasure-generating draw.
+*   **Faithless Looting / Unexpected Windfall / Big Score / Demand Answers / Deadly Dispute / Corrupted Conviction / Night's Whisper / Morbid Opportunist:** Premier Rakdos card selection, rummaging, and Treasure-generating draw.
 
-### 🛡️ Targeted Disruption & Interaction (12 Cards)
+### 🛡️ Targeted & Mass Disruption (13 Cards)
+*   **Damnation:** **PREMIER BOARD WIPE.** {2}{B}{B} — Destroy all creatures. They can't be regenerated. Instantly converts every creature on the board into a Treasure token at your end step.
 *   **Deflecting Swat:** Free spell redirected protection when Mahadi is on the battlefield.
 *   **Deadly Rollick / Snuff Out:** Free targeted creature removal.
 *   **Terminate / Bedevil / Chaos Warp / Bitter Triumph / Abrade / Feed the Swarm / Vandalblast / Tibalt's Trickery / Rakdos Charm:** Versatile spot removal, counter-magic, artifact destruction, and graveyard exile.

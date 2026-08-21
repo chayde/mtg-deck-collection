@@ -8,6 +8,7 @@ Deck
 1 Arid Mesa
 1 Bedevil
 1 Big Score
+1 Black Market Connections
 1 Bitter Triumph
 1 Blasphemous Act
 1 Blood Crypt
@@ -18,10 +19,10 @@ Deck
 1 Bolas's Citadel
 1 Carrion Feeder
 1 Chaos Warp
-1 Chandra's Ignition
 1 Command Tower
 1 Corrupted Conviction
 1 Crackle with Power
+1 Damnation
 1 Deadly Dispute
 1 Deadly Rollick
 1 Demand Answers
@@ -80,7 +81,6 @@ Deck
 1 Smoldering Marsh
 1 Snuff Out
 1 Sol Ring
-1 Species Specialist
 6 Swamp
 1 Szat's Will
 1 Tainted Peak
