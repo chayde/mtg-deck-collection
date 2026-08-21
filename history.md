@@ -2,6 +2,11 @@
 
 ## 🗓️ August 2026: Ulalek, Fused Atrocity & Goldfish Simulator Protocol Upgrade
 
+### 2026-08-21: Windows 11 Migration & Cross-Platform Script Hardening
+*   **Environment Migration:** Verified complete toolchain functionality in native Windows 11 Antigravity application following migration from WSL Ubuntu.
+*   **Verification Matrix:** Successfully validated live Scryfall API (`scryfall_lookup.py`, `scryfall_recommend.py`), live Manapool inventory pricing ($200.16 on Captain America), Multiplayer Goldfish simulator (20 sims, Bracket 3 compliance check), deck diffing against `collection.csv`, commander image linking, and Forge exporter.
+*   **Cross-Platform Hardening:** Added explicit `encoding="utf-8"` across all file I/O operations (`add_commander_images.py`, `multiplayer_goldfish.py`, `forge_exporter.py`, `price_audit.py`, `manapool_fetch_orders.py`) to prevent Windows `cp1252` `UnicodeDecodeError` on cards with non-ASCII characters or special punctuation. Replaced shell `curl` subprocess in `add_commander_images.py` with standard library `urllib.request` and added image deduplication guard.
+
 ### 2026-08-20: Rocco, Street Chef ("The Street Chef's Kitchen") — New Deck Created (Bracket 3 Validated)
 *   **New Build:** Created 100-card Naya Impulse Gastronomy & Food Tokens deck list in `commander_decks/Planning/RoccoStreetChef/`. Integrated user-requested cards (*Peregrin Took*, *Sam, Loyal Attendant*, *Nuka-Cola Vending Machine*, *Feasting Hobbit*, *Academy Manufactor*, *Night of the Sweets' Revenge*, *Delayed Blast Fireball*, *Shalai and Hallar*).
 *   **Validation:** 20-sim goldfish check — **95% commander cast rate (T3.9 avg)**, **T4.8 engine readiness**, 51% Gold Keeps. Timestamped HTML report written to `commander_decks/Planning/RoccoStreetChef/goldfish_audit_20260820_203125.html`.

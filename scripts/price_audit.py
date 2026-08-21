@@ -45,7 +45,7 @@ def get_cheapest_prices(deck_file, db_file):
 
     # 2. Extract Card Names from the Deck File
     # We read your Markdown deck and look for the 'COMMANDER:' and 'DECK:' sections.
-    with open(deck_file, 'r') as f:
+    with open(deck_file, 'r', encoding='utf-8') as f:
         lines = f.readlines()
 
     start_collecting = False

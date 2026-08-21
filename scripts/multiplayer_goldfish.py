@@ -100,7 +100,7 @@ def _load_cache():
     global _cache
     if CACHE_FILE.exists():
         try:
-            _cache = json.loads(CACHE_FILE.read_text())
+            _cache = json.loads(CACHE_FILE.read_text(encoding="utf-8"))
         except Exception:
             _cache = {}
 
@@ -108,7 +108,7 @@ def _save_cache():
     """Writes the current memory cache to the JSON file to save API results."""
     try:
         CACHE_FILE.parent.mkdir(parents=True, exist_ok=True)
-        CACHE_FILE.write_text(json.dumps(_cache, indent=2))
+        CACHE_FILE.write_text(json.dumps(_cache, indent=2), encoding="utf-8")
     except Exception:
         pass
 
@@ -992,7 +992,7 @@ def parse_deck_file(file_path: str):
     Reads the Markdown or text deck file and extracts the COMMANDER and DECK sections.
     """
     try:
-        content = Path(file_path).read_text()
+        content = Path(file_path).read_text(encoding="utf-8")
     except FileNotFoundError:
         print(f"Error: '{file_path}' not found.")
         return None, None

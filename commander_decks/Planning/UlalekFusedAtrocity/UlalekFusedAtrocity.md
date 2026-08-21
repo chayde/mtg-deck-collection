@@ -4,7 +4,7 @@ deck_status: main
 
 # Deck Guide: Ulalek, Fused Atrocity (Eldrazi Stack Incursion)
 
-![Ulalek, Fused Atrocity](https://cards.scryfall.io/normal/front/f/d/fdad1b0e-d3cc-4dd4-ae32-9fce59d047e1.jpg)
+![Ulalek, Fused Atrocity](https://cards.scryfall.io/normal/front/f/d/fdad1b0e-d3cc-4d76-ae7e-fee12558cf2c.jpg?1783911439)
 
 ## Commander Strategy
 **Ulalek, Fused Atrocity** ({C/W}{C/U}{C/B}{C/R}{C/G})

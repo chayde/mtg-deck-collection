@@ -2,3 +2,5 @@
 db/mtg_database.json
 .firecrawl/
 logs/
+.claude/
+

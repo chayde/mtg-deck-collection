@@ -23,7 +23,7 @@ def parse_md_deck(file_path):
     Commander, Main Deck, and Sideboard.
     """
     try:
-        with open(file_path, 'r') as f:
+        with open(file_path, 'r', encoding='utf-8') as f:
             content = f.read()
     except FileNotFoundError:
         print(f"Error: File '{file_path}' not found.")
@@ -106,7 +106,7 @@ def export_to_forge(deck_data, output_path):
 
     try:
         # Write the lines to the new file, separated by newline characters
-        with open(output_path, 'w') as f:
+        with open(output_path, 'w', encoding='utf-8') as f:
             f.write('\n'.join(lines))
         print(f"Successfully exported Forge deck to: {output_path}")
     except Exception as e:
