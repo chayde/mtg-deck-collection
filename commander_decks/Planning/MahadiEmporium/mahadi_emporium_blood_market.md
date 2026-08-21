@@ -74,6 +74,13 @@ deck_status: main
 
 ---
 
+## 🔮 Future Roadmap & Flex Swaps
+
+*   **Spiteful Banditry ({X}{R}{R} Enchantment — Lord of the Rings):** Top candidate swap for *Szat's Will*. Enters as an X-damage board wipe to all creatures, and passively creates a Treasure token whenever one or more opponent creatures die. Perfect thematic synergy with Mahadi's end-step Treasure engine.
+*   **Grim Haruspex / Midnight Reaper ({2}{B}):** High-impact card draw alternative if additional creature-death draw is needed.
+
+---
+
 ## 📜 Deck Changelog
 *   **2026-08-20:** Initial deck design completed for **Bracket 3 (Upgraded)**.
     *   **In:** Full 100-card list featuring Mahadi Treasure Aristocrats engine, *Bolas's Citadel* (1 Game Changer), *Blood for the Blood God!*, *Goldspan Dragon*, *Warren Soultrader*, *Academy Manufactor*, *Revel in Riches*, and *There and Back Again*.
