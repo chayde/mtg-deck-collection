@@ -26,7 +26,6 @@ deck_status: main
 ## 🛠️ Card Explanations
 
 ### 🥪 Food & Token Engines (11 Cards)
-*   **Smothering Tithe:** [Game Changer #1] Whenever an opponent draws a card, they pay {2} or you create a Treasure token. Creates immense passive Treasure velocity.
 *   **Bilbo, Fellow Conspirator:** **S-TIER TOKEN MULTIPLIER.** Whenever you create a Food token, create a Food token AND a Treasure token instead! Turns every Rocco exile play into instant mana acceleration.
 *   **Peregrin Took:** Adds an extra Food token whenever any token is created, and allows sacrificing 3 Foods to draw a card.
 *   **Sam, Loyal Attendant:** Creates a Food token at combat and reduces the activation cost of all Foods from {2} to {1} mana.
@@ -41,40 +40,43 @@ deck_status: main
 
 ### 🍕 Impulse & Exile Cast Engine (11 Cards)
 *   **Pia Nalaar, Consul of Revival:** Creates a 1/1 flying Thopter token with Haste whenever you play a land or spell from exile.
-*   **Passionate Archaeologist:** Deals damage to target opponent equal to the CMC of any spell you cast from exile.
 *   **Wild-Magic Sorcerer:** Grants **Cascade** to the first spell you cast from exile each turn.
 *   **Laelia, the Blade Reforged:** Gains +1/+1 counters whenever cards enter exile and exiles top cards on attack.
 *   **Etali, Primal Storm:** Exiles the top card of every player's library on attack and casts them for free.
+*   **Tireless Provisioner:** Generates Food or Treasure tokens on Landfall.
 *   **Valakut Exploration / Showdown of the Skalds / Professional Face-Breaker:** High-velocity Naya exile draw engines.
 *   **Skullclamp:** Classic equipment draw engine for 1-toughness tokens.
 
 ### 💥 +1/+1 Counter Scaling & Finishers (21 Cards)
-*   **Treebeard, Gracious Host:** **PREMIER FOOD & COUNTER ENGINE.** Creates 2 Foods on ETB and puts +1/+1 counters equal to life gained on target Halfling or Treefolk.
+*   **Kami of Whispered Hopes:** **S-TIER COUNTER & MANA ENGINE.** Adds +1 extra counter to all permanents AND taps for mana equal to its power!
+*   **Treebeard, Gracious Host:** Creates 2 Foods on ETB and puts +1/+1 counters equal to life gained on target Halfling or Treefolk.
 *   **Feasting Hobbit:** Devours any number of Foods on ETB, gaining +3/+3 per Food sacrificed, becoming an unblockable 14/14+ threat.
 *   **Shalai and Hallar:** Deals damage to target opponent equal to the number of +1/+1 counters put on any creature you control!
 *   **All Will Be One:** Deals damage equal to the number of counters put on any permanent.
 *   **Rosie Cotton of South Lane:** Creates a Food on ETB and puts +1/+1 counters on target creature whenever a token enters.
 *   **Sovereign Okinec Ahau / Bess, Soul Nourisher / Lathiel, the Bounteous Dawn / Blossoming Bogbeast:** Mass counter multipliers and overrun finishers.
-*   **Hardened Scales / Ozolith, the Shattered Spire / The Ozolith / Botanical Brawler / Managorger Hydra / Forgotten Ancient / Evolution Sage:** Counter doubling, storage, and proliferate engines.
+*   **Hardened Scales / Ozolith, the Shattered Spire / Botanical Brawler / Managorger Hydra / Evolution Sage:** Counter doubling and proliferate engines.
 *   **Inspiring Call:** Draws cards for every creature with a +1/+1 counter and grants team Indestructible.
 *   **Abzan Falconer / Kodama of the West Tree:** Grants Flying and Trample to all modified (+1/+1 counter) creatures.
-*   **Tireless Provisioner / Tireless Tracker:** Landfall token and counter generators.
+*   **Tireless Tracker:** Landfall token and counter generator.
 
 ### 🛡️ Targeted & Mass Disruption (18 Cards)
-*   **Deflecting Palm:** **SURPRISE BLOWOUT.** Prevents all damage from a chosen source and deals that much damage directly to its controller!
+*   **Bolt Bend:** **BUDGET DEFLECTING SWAT.** Costs {R} if you control a 4+ power creature. Redirects single-target spells and abilities at instant speed!
+*   **Deflecting Palm:** Prevents all damage from a chosen source and deals that much damage directly to its controller!
 *   **Delayed Blast Fireball:** Deals 2 damage to all enemies, but when cast from exile (Foretell), deals **5 damage to all opponents and enemy creatures**!
-*   **Deflecting Swat / Flawless Maneuver:** Free protection spells when commander is out.
+*   **Flawless Maneuver:** Free protection spell when commander is out.
 *   **Swords to Plowshares / Path to Exile / Generous Gift / Beast Within / Chaos Warp / Tibalt's Trickery / Nature's Claim / Boros Charm / Heroic Intervention:** Premier Naya spot removal, counter-magic, and board protection.
-*   **Blasphemous Act / Vandalblast / Austere Command / Farewell / Urza's Ruinous Blast:** Asymmetric board wipes.
+*   **Blasphemous Act / Vandalblast / Austere Command / Farewell:** Asymmetric board wipes.
 
 ### 🧱 Mana Base (38 Cards)
 *   **Command Tower / City of Brass / Mana Confluence / Plaza of Heroes:** Untapped 5-color and commander mana sources. *Plaza of Heroes* also sacrifices to grant Rocco Hexproof and Indestructible at instant speed.
 *   **Sacred Foundry / Stomping Ground / Temple Garden / Jetmir's Garden:** Dual Shock lands and Naya Triome.
-*   **Arid Mesa / Wooded Foothills / Windswept Heath / Bloodstained Mire / Scalding Tarn / Misty Rainforest / Verdant Catacombs / Marsh Flats:** 8 fetch lands for 100% mana fixing.
-*   **Copperline Gorge / Razorverge Thicket / Inspiring Vantage:** Fast lands that enter **untapped on Turns 1, 2, and 3** for guaranteed early deployment.
+*   **Clifftop Retreat / Rootbound Crag / Sunpetal Grove:** Check lands that enter untapped when you control Shock/Basic lands.
+*   **Battlefield Forge / Brushland / Karplusan Forest / Cinder Glade / Canopy Vista:** Pain lands and Tango lands.
+*   **Copperline Gorge / Razorverge Thicket / Inspiring Vantage:** Fast lands that enter **untapped on Turns 1, 2, and 3**.
 *   **Spectator Seating / Bountiful Promenade / Spire Garden:** Untapped Bond lands.
 *   **Boseiju, Who Endures / Eiganjo, Seat of the Empire / High Market:** Channel utility & sacrifice lands.
-*   **6 Forest / 3 Mountain / 3 Plains:** Balanced basic land package.
+*   **7 Forest / 4 Mountain / 4 Plains:** Balanced basic land package.
 
 ---
 
