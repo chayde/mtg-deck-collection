@@ -2,6 +2,10 @@
 
 ## 🗓️ August 2026: Ulalek, Fused Atrocity & Goldfish Simulator Protocol Upgrade
 
+### 2026-08-20: Rocco, Street Chef ("The Street Chef's Kitchen") — New Deck Created (Bracket 3 Validated)
+*   **New Build:** Created 100-card Naya Impulse Gastronomy & Food Tokens deck list in `commander_decks/Planning/RoccoStreetChef/`. Integrated user-requested cards (*Peregrin Took*, *Sam, Loyal Attendant*, *Nuka-Cola Vending Machine*, *Feasting Hobbit*, *Academy Manufactor*, *Night of the Sweets' Revenge*, *Delayed Blast Fireball*, *Shalai and Hallar*).
+*   **Validation:** 20-sim goldfish check — **95% commander cast rate (T3.9 avg)**, **T4.8 engine readiness**, 51% Gold Keeps. Timestamped HTML report written to `commander_decks/Planning/RoccoStreetChef/goldfish_audit_20260820_203125.html`.
+
 ### 2026-08-20: Mahadi, Emporium Master ("The Blood Market") — New Deck Created (Bracket 3 Validated)
 *   **New Build:** Created 100-card Rakdos Treasure Aristocrats deck list in `commander_decks/Planning/MahadiEmporium/`. Integrated user-requested cards (*Bolas's Citadel*, *Goldspan Dragon*, *Warren Soultrader*, *Academy Manufactor*, *Revel in Riches*, *There and Back Again*, *Deflecting Swat*, *Blood for the Blood God!*, *Exsanguinate*).
 *   **Validation:** 20-sim goldfish check — **99% commander cast rate (T3.1 avg)**, **T4.3 engine readiness**, 62% Gold Keeps. Timestamped HTML report written to `commander_decks/Planning/MahadiEmporium/goldfish_audit_20260820_195445.html`.

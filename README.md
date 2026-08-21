@@ -53,6 +53,7 @@ Decks under development, research, or being optimized.
 *   **Nekusar, the Mindrazer:** Grixis Group Slug & Forced Draw / Wheels (Lethal Library).
 *   **Ulalek, Fused Atrocity:** 5-Color Devoid / Eldrazi Tribal & Stack Duplication (Eldrazi Stack Incursion). Bracket 3.
 *   **Mahadi, Emporium Master:** Rakdos Treasure Aristocrats & Sacrifice Control ("The Blood Market"). Bracket 3.
+*   **Rocco, Street Chef:** Naya Impulse Gastronomy & Food Tokens ("The Street Chef's Kitchen"). Bracket 3.
 
 ### 🎮 `/arena_decks`
 Optimized lists for MTG Arena formats (Standard, Brawl, Timeless).
