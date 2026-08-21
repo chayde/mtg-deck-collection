@@ -114,6 +114,13 @@ Exceeding the limit for a deck's bracket is a hard block — do not proceed with
 - Fix what was asked. Do not reorganize sections, rename files, or "improve" surrounding content unless explicitly asked.
 - If you notice a problem outside the requested scope, mention it briefly — do not act on it unilaterally.
 
+### 5.6 Atomic Command Execution — CRITICAL
+
+- **MANDATORY:** All terminal and shell commands must be executed **individually as atomic commands**.
+- **NEVER chain commands** using semicolons (`;`), logical AND (`&&`), logical OR (`||`), or piping (`|`) unless strictly required by a specific shell tool pipeline.
+- Chaining commands breaks IDE/client auto-execution allowlists (such as `command(git*)` and `command(python*)`) and forces unnecessary security prompt interruptions.
+- Execute one single command per tool call (e.g. run `git status` separately, then `git push origin master` separately).
+
 ---
 
 ## 6. Deck Building Standards
