@@ -158,7 +158,7 @@ def categorize_cards(card_names, card_cache):
 
     for name in card_names:
         lower = name.lower()
-        cached = card_cache.get(lower, {})
+        cached = card_cache.get(lower) or {}
         type_line = cached.get("type_line", "") or cached.get("type", "")
 
         if "land" in type_line.lower() or name in BASIC_LANDS:
