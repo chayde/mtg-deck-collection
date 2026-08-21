@@ -2,7 +2,6 @@ Commander
 1 Rocco, Street Chef *CMDR*
 
 Deck
-1 Abzan Falconer
 1 Academy Manufactor
 1 All Will Be One
 1 Arcane Signet
@@ -20,26 +19,27 @@ Deck
 1 Boros Charm
 1 Bountiful Promenade
 1 Brushland
+1 Butterbur, Bree Innkeeper
 1 Canopy Vista
 1 Chaos Warp
 1 Cinder Glade
 1 City of Brass
 1 Clifftop Retreat
 1 Command Tower
-1 Conclave Mentor
 1 Copperline Gorge
 1 Deflecting Palm
 1 Delayed Blast Fireball
 1 Eiganjo, Seat of the Empire
 1 Etali, Primal Storm
-1 Evolution Sage
 1 Exotic Orchard
 1 Farewell
+1 Farmer Cotton
 1 Farseek
 1 Feasting Hobbit
 8 Forest
 1 Generous Gift
-1 Hardened Scales
+1 Gilded Goose
+1 Gwaihir, Greatest of the Eagles
 1 High Market
 1 Heroic Intervention
 1 Inspiring Call
@@ -51,13 +51,12 @@ Deck
 1 Karplusan Forest
 1 Kodama of the West Tree
 1 Laelia, the Blade Reforged
-1 Managorger Hydra
 4 Mountain
+1 Motivated Pony
 1 Nature's Claim
 1 Nature's Lore
 1 Night of the Sweets' Revenge
 1 Nuka-Cola Vending Machine
-1 Ozolith, the Shattered Spire
 1 Path of Ancestry
 1 Path to Exile
 1 Peregrin Took
@@ -88,6 +87,7 @@ Deck
 1 Tibalt's Trickery
 1 Tireless Provisioner
 1 Tireless Tracker
+1 Tough Cookie
 1 Treebeard, Gracious Host
 1 Valakut Exploration
 1 Vandalblast

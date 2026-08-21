@@ -36,8 +36,7 @@
 - [ ] Sunpetal Grove
 - [ ] Temple Garden
 
-### Creatures (28 Cards)
-- [ ] Abzan Falconer
+### Creatures (30 Cards)
 - [ ] Academy Manufactor
 - [ ] Avacyn's Pilgrim
 - [ ] Banquet Guests
@@ -45,15 +44,17 @@
 - [ ] Bess, Soul Nourisher
 - [ ] Bilbo, Fellow Conspirator
 - [ ] Birds of Paradise
-- [ ] Conclave Mentor
+- [ ] Butterbur, Bree Innkeeper
 - [ ] Etali, Primal Storm
-- [ ] Evolution Sage
+- [ ] Farmer Cotton
 - [ ] Feasting Hobbit
+- [ ] Gilded Goose
+- [ ] Gwaihir, Greatest of the Eagles
 - [ ] Jaheira, Friend of the Forest
 - [ ] Kami of Whispered Hopes
 - [ ] Kodama of the West Tree
 - [ ] Laelia, the Blade Reforged
-- [ ] Managorger Hydra
+- [ ] Motivated Pony
 - [ ] Peregrin Took
 - [ ] Pia Nalaar, Consul of Revival
 - [ ] Professional Face-Breaker
@@ -63,14 +64,14 @@
 - [ ] Sovereign Okinec Ahau
 - [ ] Tireless Provisioner
 - [ ] Tireless Tracker
+- [ ] Tough Cookie
 - [ ] Treebeard, Gracious Host
 - [ ] Wild-Magic Sorcerer
 
-### Artifacts & Ramp (9 Cards)
+### Artifacts & Ramp (8 Cards)
 - [ ] Arcane Signet
 - [ ] Inspiring Statuary
 - [ ] Nuka-Cola Vending Machine
-- [ ] Ozolith, the Shattered Spire
 - [ ] Skullclamp
 - [ ] Sol Ring
 - [ ] Talisman of Conviction
@@ -98,9 +99,8 @@
 - [ ] Tibalt's Trickery
 - [ ] Vandalblast
 
-### Enchantments & Planeswalkers (5 Cards)
+### Enchantments & Planeswalkers (4 Cards)
 - [ ] All Will Be One
-- [ ] Hardened Scales
 - [ ] Night of the Sweets' Revenge
 - [ ] Showdown of the Skalds
 - [ ] Valakut Exploration

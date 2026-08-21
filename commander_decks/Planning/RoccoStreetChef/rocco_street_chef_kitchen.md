@@ -25,42 +25,38 @@ deck_status: main
 
 ## 🛠️ Card Explanations
 
-### 🥪 Food & Token Engines (12 Cards)
-*   **Baylen, the Haymaker:** **S-TIER TOKEN ENGINE ($0.23).** Taps 2 tokens for mana of any color, 3 tokens to draw a card, or 4 tokens to put 3 +1/+1 counters on Baylen + Trample. Turns Food piles into instant mana, card draw, and commander damage!
-*   **Bilbo, Fellow Conspirator:** **S-TIER TOKEN MULTIPLIER.** Whenever you create a Food token, create a Food token AND a Treasure token instead! Turns every Rocco exile play into instant mana acceleration.
-*   **Peregrin Took:** Adds an extra Food token whenever any token is created, and allows sacrificing 3 Foods to draw a card.
-*   **Sam, Loyal Attendant:** Creates a Food token at combat and reduces the activation cost of all Foods from {2} to {1} mana.
-*   **Nuka-Cola Vending Machine:** Generates a tapped Treasure token whenever you sacrifice a Food. Turns every Food sac into mana acceleration!
+### 🥪 Food Creators & Sac Engines (17 Cards)
+*   **Gilded Goose:** Premier 1-drop Food creator + taps & sacrifices Food for 5-color mana acceleration.
+*   **Farmer Cotton:** Scalable mid/late-game spell that creates **X 1/1 Halflings AND X Food tokens**!
+*   **Tough Cookie:** Creates a Food on ETB and turns passive Food tokens into **4/4 attacking artifact creatures**!
+*   **Motivated Pony:** Attacks and untaps all attacking creatures while giving them **+3/+3 and Trample** if a Food entered this turn!
+*   **Gwaihir, Greatest of the Eagles:** Creates a **3/3 Flying Bird token** at every end step if you gained 3+ life (eating 1 Food!).
+*   **Butterbur, Bree Innkeeper:** Creates a free Food token at your end step if you control no Foods.
+*   **Baylen, the Haymaker:** **S-TIER TOKEN ENGINE ($0.23).** Taps 2 tokens for mana of any color, 3 tokens to draw a card, or 4 tokens to put 3 +1/+1 counters on Baylen + Trample.
+*   **Bilbo, Fellow Conspirator:** **S-TIER TOKEN MULTIPLIER.** Whenever you create a Food token, create a Food token AND a Treasure token instead!
+*   **Peregrin Took:** Adds an extra Food token whenever any token is created + sac 3 Foods to draw a card.
+*   **Sam, Loyal Attendant:** Creates a Food token at combat and reduces Food activation costs from {2} to {1} mana.
+*   **Nuka-Cola Vending Machine:** Generates a tapped Treasure token whenever you sacrifice a Food.
 *   **Academy Manufactor:** Converts every Food token creation into 1 Food, 1 Clue, and 1 Treasure token!
 *   **Night of the Sweets' Revenge:** Turns all Food tokens into green mana dorks and provides a massive game-ending +X/+X Overrun ability.
 *   **Jaheira, Friend of the Forest:** Taps all your Food, Treasure, and Clue tokens for {G} mana.
 *   **Inspiring Statuary:** Grants Improvise to non-artifact spells, allowing your Food tokens to help pay for spells.
-*   **Birds of Paradise / Avacyn's Pilgrim:** 1-drop mana dorks that fix 3-color mana on Turn 1 for a Turn 2 Rocco deployment.
-*   **Nature's Lore / Three Visits / Farseek:** 2-drop land ramp that fetches dual lands (*Temple Garden*, *Stomping Ground*, *Sacred Foundry*, *Jetmir's Garden*) directly to the battlefield.
-*   **Sol Ring / Arcane Signet / Talisman of Impulse / Talisman of Unity / Talisman of Conviction:** Premier early Naya mana ramp.
+*   **Birds of Paradise / Avacyn's Pilgrim:** 1-drop mana dorks that fix 3-color mana on Turn 1.
+*   **Nature's Lore / Three Visits / Farseek:** 2-drop land ramp.
+*   **Sol Ring / Arcane Signet / Talisman of Impulse / Talisman of Unity / Talisman of Conviction:** Naya mana ramp.
 
-### 🍕 Impulse & Exile Cast Engine (11 Cards)
-*   **Pia Nalaar, Consul of Revival:** Creates a 1/1 flying Thopter token with Haste whenever you play a land or spell from exile.
-*   **Wild-Magic Sorcerer:** Grants **Cascade** to the first spell you cast from exile each turn.
-*   **Laelia, the Blade Reforged:** Gains +1/+1 counters whenever cards enter exile and exiles top cards on attack.
-*   **Etali, Primal Storm:** Exiles the top card of every player's library on attack and casts them for free.
-*   **Tireless Provisioner:** Generates Food or Treasure tokens on Landfall.
-*   **Valakut Exploration / Showdown of the Skalds / Professional Face-Breaker:** High-velocity Naya exile draw engines.
-*   **Skullclamp:** Classic equipment draw engine for 1-toughness tokens.
-
-### 💥 +1/+1 Counter Scaling & Finishers (21 Cards)
+### 💥 Food Payoffs & Counter Finishers (16 Cards)
 *   **Banquet Guests:** **S-TIER FOOD FINISHER ($0.34).** Has *Affinity for Foods*, Trample, enters with **twice X +1/+1 counters** (e.g. 10/10 for {G}{W}), and sacrifices a Food to gain Indestructible!
-*   **Conclave Mentor:** **2-DROP COUNTER BOOSTER ($0.73).** Adds +1 extra counter whenever +1/+1 counters are put on a creature you control!
-*   **Kami of Whispered Hopes:** **S-TIER COUNTER & MANA ENGINE.** Adds +1 extra counter to all permanents AND taps for mana equal to its power!
+*   **Kami of Whispered Hopes:** Adds +1 extra counter to all permanents AND taps for mana equal to its power!
 *   **Treebeard, Gracious Host:** Creates 2 Foods on ETB and puts +1/+1 counters equal to life gained on target Halfling or Treefolk.
 *   **Feasting Hobbit:** Devours any number of Foods on ETB, gaining +3/+3 per Food sacrificed, becoming an unblockable 14/14+ threat.
 *   **Shalai and Hallar:** Deals damage to target opponent equal to the number of +1/+1 counters put on any creature you control!
 *   **All Will Be One:** Deals damage equal to the number of counters put on any permanent.
 *   **Rosie Cotton of South Lane:** Creates a Food on ETB and puts +1/+1 counters on target creature whenever a token enters.
 *   **Sovereign Okinec Ahau / Bess, Soul Nourisher:** Mass counter multipliers and overrun finishers.
-*   **Hardened Scales / Ozolith, the Shattered Spire / Botanical Brawler / Managorger Hydra / Evolution Sage:** Counter doubling and proliferate engines.
+*   **Ozolith, the Shattered Spire / Botanical Brawler / Evolution Sage:** Counter doubling and proliferate engines.
 *   **Inspiring Call:** Draws cards for every creature with a +1/+1 counter and grants team Indestructible.
-*   **Abzan Falconer / Kodama of the West Tree:** Grants Flying and Trample to all modified (+1/+1 counter) creatures.
+*   **Kodama of the West Tree:** Grants Trample and land ramp to modified creatures.
 *   **Tireless Tracker:** Landfall token and counter generator.
 
 ### 🛡️ Targeted & Mass Disruption (18 Cards)
