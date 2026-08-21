@@ -8,7 +8,6 @@ MAIN DECK:
 1 An Offer You Can't Refuse
 1 Apex Devastator
 1 Arcane Signet
-1 Arid Mesa
 1 Assassin's Trophy
 1 Averna, the Chaos Bloom
 1 Bear Umbra
@@ -17,7 +16,6 @@ MAIN DECK:
 1 Bituminous Blast
 1 Blasphemous Act
 1 Blood Crypt
-1 Bloodstained Mire
 1 Bloom Tender
 1 Breeding Pool
 1 Brotherhood Regalia
@@ -31,6 +29,7 @@ MAIN DECK:
 1 Delighted Halfling
 1 Dig Through Time
 1 Exotic Orchard
+1 Fabled Passage
 1 Farseek
 1 Felix Five-Boots
 1 Flame of Anor
@@ -42,41 +41,43 @@ MAIN DECK:
 1 Imoti, Celebrant of Bounty
 1 Island
 1 Jeska's Will
+1 Karplusan Forest
 1 Keeper of Secrets
 1 Ketria Triome
 1 Laelia, the Blade Reforged
 1 Lightning Greaves
 1 Lizard Blades
+1 Llanowar Wastes
 1 Lotus Bloom
 1 Luxury Suite
 1 Maelstrom Wanderer
-1 Marsh Flats
-1 Misty Rainforest
 1 Morphic Pool
 1 Mountain
 1 Nalfeshnee
 1 Nature's Lore
 1 Overgrown Tomb
 1 Passionate Archaeologist
+1 Path of Ancestry
 1 Plaza of Heroes
-1 Polluted Delta
 1 Ponder
-1 Prismatic Vista
 1 Profane Tutor
 1 Prosper, Tome-Bound
 1 Reflecting Pool
 1 Rejuvenating Springs
+1 Reliquary Tower
 1 Return of the Wildspeaker
 1 Rishkar's Expertise
-1 Scalding Tarn
+1 Rogue's Passage
 1 Selvala, Heart of the Wilds
 1 Sensei's Divining Top
+1 Shivan Reef
 1 Shizo, Death's Storehouse
 1 Sink into Stupor
 1 Sol Ring
 1 Spire Garden
 1 Steam Vents
 1 Stomping Ground
+1 Sulfurous Springs
 1 Swamp
 1 Swiftfoot Boots
 1 Sword of Feast and Famine
@@ -86,18 +87,17 @@ MAIN DECK:
 1 Toxic Deluge
 1 Training Center
 1 Treasure Cruise
+1 Underground River
 1 Undergrowth Stadium
 1 Up the Beanstalk
 1 Valakut Awakening
-1 Verdant Catacombs
 1 Volcanic Torrent
 1 Watery Grave
 1 Wheel of Fate
 1 Whispersilk Cloak
 1 Wild-Magic Sorcerer
 1 Windfall
-1 Windswept Heath
-1 Wooded Foothills
 1 Xander's Lounge
+1 Yavimaya Coast
 1 Zagoth Triome
 1 Ziatora's Proving Ground

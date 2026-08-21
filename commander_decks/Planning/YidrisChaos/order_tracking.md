@@ -2,46 +2,46 @@
 
 ## Overview
 *   **Total Deck Size:** 100 Cards
-*   **In-Hand / Owned:** 6 cards
-*   **Pending Acquisition / Singles to Order:** 94 cards
+*   **In-Hand / Owned:** 8 cards
+*   **Pending Acquisition / Singles to Order:** 92 cards
 
 ---
 
-## 📦 Singles to Acquire / Order List (94 Cards)
+## 📦 Singles to Acquire / Order List (92 Cards)
 
 ### Lands (33 Cards)
-- [ ] Arid Mesa
 - [ ] Blood Crypt
-- [ ] Bloodstained Mire
 - [ ] Breeding Pool
+- [ ] Fabled Passage
 - [ ] Forest
 - [ ] Island
+- [ ] Karplusan Forest
 - [ ] Ketria Triome
+- [ ] Llanowar Wastes
 - [ ] Luxury Suite
-- [ ] Marsh Flats
-- [ ] Misty Rainforest
 - [ ] Morphic Pool
 - [ ] Mountain
 - [ ] Overgrown Tomb
 - [ ] Plaza of Heroes
-- [ ] Polluted Delta
-- [ ] Prismatic Vista
 - [ ] Reflecting Pool
 - [ ] Rejuvenating Springs
-- [ ] Scalding Tarn
+- [ ] Reliquary Tower
+- [ ] Shivan Reef
 - [ ] Shizo, Death's Storehouse
 - [ ] Sink into Stupor
 - [ ] Spire Garden
 - [ ] Steam Vents
 - [ ] Stomping Ground
+- [ ] Sulfurous Springs
 - [ ] Swamp
 - [ ] The Black Gate
 - [ ] Training Center
+- [ ] Underground River
 - [ ] Undergrowth Stadium
 - [ ] Valakut Awakening
-- [ ] Verdant Catacombs
 - [ ] Watery Grave
 - [ ] Xander's Lounge
+- [ ] Yavimaya Coast
 - [ ] Ziatora's Proving Ground
 
 ### Creatures (21 Cards)
@@ -67,11 +67,12 @@
 - [ ] Wild-Magic Sorcerer
 - [ ] Yidris, Maelstrom Wielder
 
-### Artifacts & Ramp (9 Cards)
+### Artifacts & Ramp (10 Cards)
 - [ ] Arcane Signet
 - [ ] Brotherhood Regalia
 - [ ] Chimil, the Inner Sun
 - [ ] Lightning Greaves
+- [ ] Lotus Bloom
 - [ ] Sensei's Divining Top
 - [ ] Sol Ring
 - [ ] Swiftfoot Boots
@@ -109,18 +110,17 @@
 - [ ] Sylvan Library
 - [ ] Up the Beanstalk
 
-### Other (4 Cards)
-- [ ] Lotus Bloom
-- [ ] Windswept Heath
-- [ ] Wooded Foothills
+### Other (1 Cards)
 - [ ] Zagoth Triome
 
 ---
 
-## 🛡️ Inventory In-Hand (6 Cards)
+## 🛡️ Inventory In-Hand (8 Cards)
 - [x] An Offer You Can't Refuse
 - [x] Command Tower
 - [x] Exotic Orchard
 - [x] Nature's Lore
+- [x] Path of Ancestry
 - [x] Profane Tutor
+- [x] Rogue's Passage
 - [x] Treasure Cruise
