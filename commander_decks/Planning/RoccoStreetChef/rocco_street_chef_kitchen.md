@@ -68,7 +68,13 @@ deck_status: main
 *   **Blasphemous Act / Vandalblast / Austere Command / Farewell / Urza's Ruinous Blast:** Asymmetric board wipes.
 
 ### 🧱 Mana Base (38 Cards)
-*   **Command Tower / Exotic Orchard / Sacred Foundry / Stomping Ground / Temple Garden / Arid Mesa / Wooded Foothills / Windswept Heath / Bloodstained Mire / Scalding Tarn / Misty Rainforest / Verdant Catacombs / Marsh Flats / Jetmir's Garden / Spectator Seating / Bountiful Promenade / Spire Garden / High Market / Boseiju, Who Endures / Eiganjo, Seat of the Empire / Rockfall Vale / Overgrown Farmland / Sundown Pass / Path of Ancestry / Kessig Wolf Run / Myriad Landscape / 6 Forest / 3 Mountain / 3 Plains**
+*   **Command Tower / City of Brass / Mana Confluence / Plaza of Heroes:** Untapped 5-color and commander mana sources. *Plaza of Heroes* also sacrifices to grant Rocco Hexproof and Indestructible at instant speed.
+*   **Sacred Foundry / Stomping Ground / Temple Garden / Jetmir's Garden:** Dual Shock lands and Naya Triome.
+*   **Arid Mesa / Wooded Foothills / Windswept Heath / Bloodstained Mire / Scalding Tarn / Misty Rainforest / Verdant Catacombs / Marsh Flats:** 8 fetch lands for 100% mana fixing.
+*   **Copperline Gorge / Razorverge Thicket / Inspiring Vantage:** Fast lands that enter **untapped on Turns 1, 2, and 3** for guaranteed early deployment.
+*   **Spectator Seating / Bountiful Promenade / Spire Garden:** Untapped Bond lands.
+*   **Boseiju, Who Endures / Eiganjo, Seat of the Empire / High Market:** Channel utility & sacrifice lands.
+*   **6 Forest / 3 Mountain / 3 Plains:** Balanced basic land package.
 
 ---
 
