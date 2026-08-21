@@ -9,6 +9,7 @@ Deck
 1 Austere Command
 1 Avacyn's Pilgrim
 1 Battlefield Forge
+1 Baylen, the Haymaker
 1 Beast Within
 1 Bess, Soul Nourisher
 1 Bilbo, Fellow Conspirator
@@ -17,7 +18,6 @@ Deck
 1 Blossoming Bogbeast
 1 Bolt Bend
 1 Boros Charm
-1 Boseiju, Who Endures
 1 Bountiful Promenade
 1 Brushland
 1 Canopy Vista
@@ -36,8 +36,7 @@ Deck
 1 Farewell
 1 Farseek
 1 Feasting Hobbit
-1 Flawless Maneuver
-7 Forest
+8 Forest
 1 Generous Gift
 1 Hardened Scales
 1 High Market
@@ -52,7 +51,6 @@ Deck
 1 Kodama of the West Tree
 1 Laelia, the Blade Reforged
 1 Lathiel, the Bounteous Dawn
-1 Mana Confluence
 1 Managorger Hydra
 4 Mountain
 1 Nature's Claim
@@ -60,6 +58,7 @@ Deck
 1 Night of the Sweets' Revenge
 1 Nuka-Cola Vending Machine
 1 Ozolith, the Shattered Spire
+1 Path of Ancestry
 1 Path to Exile
 1 Peregrin Took
 1 Pia Nalaar, Consul of Revival

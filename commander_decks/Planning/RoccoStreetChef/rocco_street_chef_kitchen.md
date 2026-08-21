@@ -25,7 +25,8 @@ deck_status: main
 
 ## 🛠️ Card Explanations
 
-### 🥪 Food & Token Engines (11 Cards)
+### 🥪 Food & Token Engines (12 Cards)
+*   **Baylen, the Haymaker:** **S-TIER TOKEN ENGINE ($0.23).** Taps 2 tokens for mana of any color, 3 tokens to draw a card, or 4 tokens to put 3 +1/+1 counters on Baylen + Trample. Turns Food piles into instant mana, card draw, and commander damage!
 *   **Bilbo, Fellow Conspirator:** **S-TIER TOKEN MULTIPLIER.** Whenever you create a Food token, create a Food token AND a Treasure token instead! Turns every Rocco exile play into instant mana acceleration.
 *   **Peregrin Took:** Adds an extra Food token whenever any token is created, and allows sacrificing 3 Foods to draw a card.
 *   **Sam, Loyal Attendant:** Creates a Food token at combat and reduces the activation cost of all Foods from {2} to {1} mana.
