@@ -76,16 +76,15 @@
 - [ ] Talisman of Unity
 - [ ] The Ozolith
 
-### Spells & Interaction (20 Cards)
+### Spells & Interaction (19 Cards)
 - [ ] Austere Command
 - [ ] Beast Within
 - [ ] Blasphemous Act
 - [ ] Boros Charm
 - [ ] Chaos Warp
+- [ ] Deflecting Palm
 - [ ] Deflecting Swat
 - [ ] Delayed Blast Fireball
-- [ ] Dusk // Dawn
-- [ ] Escape to the Wilds
 - [ ] Farewell
 - [ ] Flawless Maneuver
 - [ ] Generous Gift
@@ -98,12 +97,13 @@
 - [ ] Urza's Ruinous Blast
 - [ ] Vandalblast
 
-### Enchantments & Planeswalkers (6 Cards)
+### Enchantments & Planeswalkers (7 Cards)
 - [ ] All Will Be One
 - [ ] Hardened Scales
 - [ ] Night of the Sweets' Revenge
 - [ ] Passionate Archaeologist
 - [ ] Showdown of the Skalds
+- [ ] Smothering Tithe
 - [ ] Valakut Exploration
 
 ### Other (2 Cards)

@@ -25,7 +25,8 @@ deck_status: main
 
 ## 🛠️ Card Explanations
 
-### 🥪 Food & Token Engines (10 Cards)
+### 🥪 Food & Token Engines (11 Cards)
+*   **Smothering Tithe:** [Game Changer #1] Whenever an opponent draws a card, they pay {2} or you create a Treasure token. Creates immense passive Treasure velocity.
 *   **Bilbo, Fellow Conspirator:** **S-TIER TOKEN MULTIPLIER.** Whenever you create a Food token, create a Food token AND a Treasure token instead! Turns every Rocco exile play into instant mana acceleration.
 *   **Peregrin Took:** Adds an extra Food token whenever any token is created, and allows sacrificing 3 Foods to draw a card.
 *   **Sam, Loyal Attendant:** Creates a Food token at combat and reduces the activation cost of all Foods from {2} to {1} mana.
@@ -36,20 +37,20 @@ deck_status: main
 *   **Inspiring Statuary:** Grants Improvise to non-artifact spells, allowing your Food tokens to help pay for spells.
 *   **Sol Ring / Arcane Signet / Talisman of Impulse / Talisman of Unity / Talisman of Conviction:** Premier early Naya mana ramp.
 
-### 🍕 Impulse & Exile Cast Engine (12 Cards)
+### 🍕 Impulse & Exile Cast Engine (11 Cards)
 *   **Pia Nalaar, Consul of Revival:** Creates a 1/1 flying Thopter token with Haste whenever you play a land or spell from exile.
 *   **Passionate Archaeologist:** Deals damage to target opponent equal to the CMC of any spell you cast from exile.
 *   **Wild-Magic Sorcerer:** Grants **Cascade** to the first spell you cast from exile each turn.
 *   **Laelia, the Blade Reforged:** Gains +1/+1 counters whenever cards enter exile and exiles top cards on attack.
 *   **Etali, Primal Storm:** Exiles the top card of every player's library on attack and casts them for free.
-*   **Valakut Exploration / Showdown of the Skalds / Escape to the Wilds / Professional Face-Breaker:** High-velocity Naya exile draw engines.
+*   **Valakut Exploration / Showdown of the Skalds / Professional Face-Breaker:** High-velocity Naya exile draw engines.
 *   **Skullclamp:** Classic equipment draw engine for 1-toughness tokens.
 
 ### 💥 +1/+1 Counter Scaling & Finishers (21 Cards)
+*   **Treebeard, Gracious Host:** **PREMIER FOOD & COUNTER ENGINE.** Creates 2 Foods on ETB and puts +1/+1 counters equal to life gained on target Halfling or Treefolk.
 *   **Feasting Hobbit:** Devours any number of Foods on ETB, gaining +3/+3 per Food sacrificed, becoming an unblockable 14/14+ threat.
 *   **Shalai and Hallar:** Deals damage to target opponent equal to the number of +1/+1 counters put on any creature you control!
 *   **All Will Be One:** Deals damage equal to the number of counters put on any permanent.
-*   **Treebeard, Gracious Host:** Creates 2 Foods on ETB and puts +1/+1 counters on creatures on lifegain.
 *   **Rosie Cotton of South Lane:** Creates a Food on ETB and puts +1/+1 counters on target creature whenever a token enters.
 *   **Sovereign Okinec Ahau / Bess, Soul Nourisher / Lathiel, the Bounteous Dawn / Blossoming Bogbeast:** Mass counter multipliers and overrun finishers.
 *   **Hardened Scales / Ozolith, the Shattered Spire / The Ozolith / Botanical Brawler / Managorger Hydra / Forgotten Ancient / Evolution Sage:** Counter doubling, storage, and proliferate engines.
@@ -58,10 +59,11 @@ deck_status: main
 *   **Tireless Provisioner / Tireless Tracker:** Landfall token and counter generators.
 
 ### 🛡️ Targeted & Mass Disruption (18 Cards)
+*   **Deflecting Palm:** **SURPRISE BLOWOUT.** Prevents all damage from a chosen source and deals that much damage directly to its controller!
 *   **Delayed Blast Fireball:** Deals 2 damage to all enemies, but when cast from exile (Foretell), deals **5 damage to all opponents and enemy creatures**!
 *   **Deflecting Swat / Flawless Maneuver:** Free protection spells when commander is out.
 *   **Swords to Plowshares / Path to Exile / Generous Gift / Beast Within / Chaos Warp / Tibalt's Trickery / Nature's Claim / Boros Charm / Heroic Intervention:** Premier Naya spot removal, counter-magic, and board protection.
-*   **Blasphemous Act / Vandalblast / Austere Command / Farewell / Dusk // Dawn / Urza's Ruinous Blast:** Asymmetric board wipes.
+*   **Blasphemous Act / Vandalblast / Austere Command / Farewell / Urza's Ruinous Blast:** Asymmetric board wipes.
 
 ### 🧱 Mana Base (38 Cards)
 *   **Command Tower / Exotic Orchard / Sacred Foundry / Stomping Ground / Temple Garden / Arid Mesa / Wooded Foothills / Windswept Heath / Bloodstained Mire / Scalding Tarn / Misty Rainforest / Verdant Catacombs / Marsh Flats / Jetmir's Garden / Spectator Seating / Bountiful Promenade / Spire Garden / High Market / Boseiju, Who Endures / Eiganjo, Seat of the Empire / Rockfall Vale / Overgrown Farmland / Sundown Pass / Path of Ancestry / Kessig Wolf Run / Myriad Landscape / 6 Forest / 3 Mountain / 3 Plains**
@@ -106,11 +108,10 @@ MAIN DECK:
 1 Bountiful Promenade  
 1 Chaos Warp  
 1 Command Tower  
+1 Deflecting Palm  
 1 Deflecting Swat  
 1 Delayed Blast Fireball  
-1 Dusk // Dawn  
 1 Eiganjo, Seat of the Empire  
-1 Escape to the Wilds  
 1 Etali, Primal Storm  
 1 Evolution Sage  
 1 Exotic Orchard  
@@ -159,6 +160,7 @@ MAIN DECK:
 1 Shalai and Hallar  
 1 Showdown of the Skalds  
 1 Skullclamp  
+1 Smothering Tithe  
 1 Sol Ring  
 1 Sovereign Okinec Ahau  
 1 Spectator Seating  

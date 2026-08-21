@@ -20,11 +20,10 @@ Deck
 1 Bountiful Promenade
 1 Chaos Warp
 1 Command Tower
+1 Deflecting Palm
 1 Deflecting Swat
 1 Delayed Blast Fireball
-1 Dusk // Dawn
 1 Eiganjo, Seat of the Empire
-1 Escape to the Wilds
 1 Etali, Primal Storm
 1 Evolution Sage
 1 Exotic Orchard
@@ -70,6 +69,7 @@ Deck
 1 Shalai and Hallar
 1 Showdown of the Skalds
 1 Skullclamp
+1 Smothering Tithe
 1 Sol Ring
 1 Sovereign Okinec Ahau
 1 Spectator Seating
