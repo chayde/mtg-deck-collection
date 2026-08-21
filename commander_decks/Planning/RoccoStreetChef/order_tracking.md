@@ -36,7 +36,7 @@
 - [ ] Sunpetal Grove
 - [ ] Temple Garden
 
-### Creatures (29 Cards)
+### Creatures (28 Cards)
 - [ ] Academy Manufactor
 - [ ] Avacyn's Pilgrim
 - [ ] Banquet Guests
@@ -60,7 +60,6 @@
 - [ ] Rosie Cotton of South Lane
 - [ ] Sam, Loyal Attendant
 - [ ] Shalai and Hallar
-- [ ] Sovereign Okinec Ahau
 - [ ] Tireless Provisioner
 - [ ] Tireless Tracker
 - [ ] Tough Cookie
@@ -96,8 +95,9 @@
 - [ ] Three Visits
 - [ ] Vandalblast
 
-### Enchantments & Planeswalkers (3 Cards)
+### Enchantments & Planeswalkers (4 Cards)
 - [ ] All Will Be One
+- [ ] Killer Service
 - [ ] Night of the Sweets' Revenge
 - [ ] Valakut Exploration
 

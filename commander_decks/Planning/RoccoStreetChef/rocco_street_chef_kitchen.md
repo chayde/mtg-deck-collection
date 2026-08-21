@@ -25,7 +25,8 @@ deck_status: main
 
 ## 🛠️ Card Explanations
 
-### 🥪 Food Creators & Sac Engines (17 Cards)
+### 🥪 Food Creators & Sac Engines (18 Cards)
+*   **Killer Service:** **PREMIER FOOD CREATOR & RHINO GENERATOR ($0.24).** Enters creating 3 Food tokens (1 per opponent) and lets you pay {2} + sac a Food at your end step to create a **4/4 green Rhino Warrior creature token**!
 *   **Gilded Goose:** Premier 1-drop Food creator + taps & sacrifices Food for 5-color mana acceleration.
 *   **Farmer Cotton:** Scalable mid/late-game spell that creates **X 1/1 Halflings AND X Food tokens**!
 *   **Tough Cookie:** Creates a Food on ETB and turns passive Food tokens into **4/4 attacking artifact creatures**!
@@ -42,8 +43,7 @@ deck_status: main
 *   **Jaheira, Friend of the Forest:** Taps all your Food, Treasure, and Clue tokens for {G} mana.
 *   **Inspiring Statuary:** Grants Improvise to non-artifact spells, allowing your Food tokens to help pay for spells.
 *   **Birds of Paradise / Avacyn's Pilgrim:** 1-drop mana dorks that fix 3-color mana on Turn 1.
-*   **Nature's Lore / Three Visits / Farseek:** 2-drop land ramp.
-*   **Sol Ring / Arcane Signet / Talisman of Impulse / Talisman of Unity / Talisman of Conviction:** Naya mana ramp.
+*   **Nature's Lore / Three Visits / Farseek / Sol Ring / Arcane Signet / Talisman of Impulse / Talisman of Unity / Talisman of Conviction:** Naya mana ramp.
 
 ### 💥 Food Payoffs & Counter Finishers (16 Cards)
 *   **Banquet Guests:** **S-TIER FOOD FINISHER ($0.34).** Has *Affinity for Foods*, Trample, enters with **twice X +1/+1 counters** (e.g. 10/10 for {G}{W}), and sacrifices a Food to gain Indestructible!
@@ -81,8 +81,9 @@ deck_status: main
 
 ## 🔮 Future Roadmap & Flex Swaps
 
+*   **Mondrak, Glory Dominus ({2}{W}{W}):** **S-Tier Token Doubler ($41).** Doubles ALL tokens (Foods, Treasures, Clues, Thopters, Rhinos). Sacrifices 2 Foods for permanent Indestructible protection.
+*   **Krark-Clan Ironworks ({4}):** **S-Tier Food Mana Engine ($17).** Sacrifices any Food token for **{C}{C} (2 free colorless mana)** instantly without tapping.
 *   **Spiteful Banditry ({X}{R}{R}):** Enters as an X-damage board wipe and creates a Treasure token whenever an opponent creature dies.
-*   **Gwaihir, Greatest of the Eagles ({4}{W}):** Creates a 3/3 Flying Bird token at your end step whenever you gain 3+ life.
 *   **Smothering Tithe ({3}{W} — Game Changer):** Top optional Game Changer candidate if higher artifact/Treasure velocity is desired.
 
 ---
