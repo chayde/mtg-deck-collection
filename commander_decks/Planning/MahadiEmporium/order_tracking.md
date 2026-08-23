@@ -1,113 +1,101 @@
 # Order Tracking: MahadiEmporium
 
 ## Overview
-*   **Total Deck Size:** 98 Cards
+*   **Total Deck Size:** 100 Cards (1 Commander + 99 Main)
 *   **In-Hand / Owned:** 10 cards
-*   **Pending Acquisition / Singles to Order:** 88 cards
+*   **Pending Acquisition / Singles to Order:** 90 cards (80 unique singles + 10 basics)
 
 ---
 
-## 📦 Singles to Acquire / Order List (88 Cards)
+## 📦 Singles to Acquire / Order List (80 Unique Cards)
 
-### Lands (19 Cards)
+### Lands (10 Cards)
 - [ ] Arid Mesa
 - [ ] Blood Crypt
 - [ ] Bloodstained Mire
-- [ ] Bojuka Bog
-- [ ] Graven Cairns
-- [ ] Haunted Ridge
-- [ ] High Market
 - [ ] Luxury Suite
 - [ ] Marsh Flats
-- [ ] Mount Doom
 - [ ] Mountain
-- [ ] Phyrexian Tower
 - [ ] Polluted Delta
 - [ ] Scalding Tarn
 - [ ] Swamp
-- [ ] Tainted Peak
-- [ ] Takenuma, Abandoned Mire
 - [ ] Verdant Catacombs
-- [ ] Wooded Foothills
 
-### Creatures (28 Cards)
+### Artifacts & Ramp (5 Cards)
+- [ ] Arcane Signet
+- [ ] Fellwar Stone
+- [ ] Rakdos Signet
+- [ ] Sol Ring
+- [ ] Talisman of Indulgence
+
+### Spells & Interaction (7 Cards)
+- [ ] Blasphemous Act
+- [ ] Chaos Warp
+- [ ] Deadly Rollick
+- [ ] Deflecting Swat
+- [ ] Rakdos Charm
+- [ ] Toxic Deluge
+- [ ] Vandalblast
+
+### Other (59 Cards)
 - [ ] Academy Manufactor
+- [ ] Bedevil
+- [ ] Bitter Triumph
+- [ ] Black Market Connections
+- [ ] Blood for the Blood God!
 - [ ] Bloodghast
+- [ ] Bojuka Bog
+- [ ] Bolas's Citadel
 - [ ] Carrion Feeder
+- [ ] Corrupted Conviction
+- [ ] Damnation
+- [ ] Deadly Dispute
 - [ ] Demon's Disciple
 - [ ] Disciple of the Vault
+- [ ] Exsanguinate
+- [ ] Faithless Looting
+- [ ] Feed the Swarm
 - [ ] Fleshbag Marauder
-- [ ] Garna, Bloodfist of Keld
+- [ ] Goblin Bombardment
 - [ ] Goldspan Dragon
+- [ ] Grave Pact
 - [ ] Gravecrawler
+- [ ] Graven Cairns
+- [ ] Haunted Ridge
+- [ ] High Market
 - [ ] Juri, Master of the Revue
+- [ ] Mahadi, Emporium Master
 - [ ] Marionette Apprentice
 - [ ] Marionette Master
 - [ ] Mayhem Devil
-- [ ] Merciless Executioner
 - [ ] Mirkwood Bats
 - [ ] Morbid Opportunist
+- [ ] Mount Doom
 - [ ] Nadier's Nightblade
 - [ ] Nether Traitor
 - [ ] Ophiomancer
 - [ ] Pawn of Ulamog
+- [ ] Phyrexian Altar
+- [ ] Phyrexian Tower
 - [ ] Pitiless Plunderer
 - [ ] Plaguecrafter
 - [ ] Professional Face-Breaker
 - [ ] Reassembling Skeleton
-- [ ] Sifter of Skulls
-- [ ] Viscera Seer
-- [ ] Warren Soultrader
-- [ ] Xorn
-
-### Artifacts & Ramp (8 Cards)
-- [ ] Arcane Signet
-- [ ] Bolas's Citadel
-- [ ] Fellwar Stone
-- [ ] Phyrexian Altar
-- [ ] Rakdos Signet
+- [ ] Revel in Riches
 - [ ] Skullclamp
-- [ ] Sol Ring
-- [ ] Talisman of Indulgence
-
-### Spells & Interaction (25 Cards)
-- [ ] Bedevil
-- [ ] Bitter Triumph
-- [ ] Blasphemous Act
-- [ ] Blood for the Blood God!
-- [ ] Chaos Warp
-- [ ] Corrupted Conviction
-- [ ] Crackle with Power
-- [ ] Damnation
-- [ ] Deadly Dispute
-- [ ] Deadly Rollick
-- [ ] Deflecting Swat
-- [ ] Demand Answers
-- [ ] Exsanguinate
-- [ ] Faithless Looting
-- [ ] Feed the Swarm
-- [ ] Lightning Bolt
-- [ ] Rakdos Charm
 - [ ] Snuff Out
 - [ ] Szat's Will
+- [ ] Tainted Peak
+- [ ] Takenuma, Abandoned Mire
 - [ ] Terminate
+- [ ] There and Back Again
 - [ ] Tibalt's Trickery
 - [ ] Torment of Hailfire
-- [ ] Toxic Deluge
 - [ ] Unexpected Windfall
-- [ ] Vandalblast
-
-### Enchantments & Planeswalkers (6 Cards)
-- [ ] Black Market Connections
-- [ ] Goblin Bombardment
-- [ ] Grave Pact
-- [ ] Impact Tremors
-- [ ] Revel in Riches
-- [ ] There and Back Again
-
-### Other (2 Cards)
-- [ ] Deck
-- [ ] Mahadi, Emporium Master *CMDR*
+- [ ] Viscera Seer
+- [ ] Warren Soultrader
+- [ ] Wooded Foothills
+- [ ] Xorn
 
 ---
 

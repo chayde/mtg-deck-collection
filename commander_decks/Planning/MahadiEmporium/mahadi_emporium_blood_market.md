@@ -41,7 +41,7 @@ deck_status: main
 *   **Academy Manufactor:** Converts every single Treasure creation into 1 Treasure, 1 Clue, and 1 Food token!
 *   **Sol Ring / Arcane Signet / Talisman of Indulgence / Rakdos Signet / Fellwar Stone:** Essential early Rakdos mana ramp.
 
-### 🩸 Artifact & Treasure Drain Payoffs (31 Cards)
+### 🩸 Artifact & Treasure Drain Payoffs (23 Cards)
 *   **Ophiomancer:** **S-TIER FODDER.** Generates a 1/1 Deathtouch Snake token at the beginning of *each upkeep* (yours and all 3 opponents'). Provides up to 4 free deathtouch blockers and sacrifice fodder per turn cycle.
 *   **Grave Pact:** **S-TIER ENGINE.** Whenever a creature you control dies, each opponent must sacrifice a creature of their choice. Turning 1 sacrificed Snake or Skeleton into 3 opponent deaths $\rightarrow$ 4 Treasures at end step.
 *   **Mayhem Devil:** Deals 1 damage to ANY target whenever ANY player sacrifices ANY permanent. Sacrificing 10 Treasures deals 10 free ping damage.
@@ -49,19 +49,19 @@ deck_status: main
 *   **Marionette Master / Marionette Apprentice:** Drains opponents whenever artifacts or creatures enter the graveyard. Sacrificing 10 Treasures with Marionette Master deals 20 damage to every opponent.
 *   **Disciple of the Vault / Nadier's Nightblade:** Drains opponents whenever artifacts or tokens leave the battlefield.
 *   **Juri, Master of the Revue:** Gains a +1/+1 counter whenever ANY permanent is sacrificed. Fling a 15/15 Juri for lethal burn!
-*   **Pitiless Plunderer / Pawn of Ulamog / Sifter of Skulls:** Secondary death-to-token engines that stack with Mahadi.
+*   **Pitiless Plunderer / Pawn of Ulamog:** Secondary death-to-token engines that stack with Mahadi.
 *   **Reassembling Skeleton / Bloodghast / Nether Traitor / Gravecrawler:** Endless recursive fodder to sacrifice every turn cycle.
 *   **Carrion Feeder / Viscera Seer / Goblin Bombardment / Phyrexian Altar:** Free, instant-speed sacrifice outlets.
 *   **Revel in Riches:** Alternate win condition that creates Treasures on enemy deaths and wins the game on your upkeep if you control 10+ Treasures.
-*   **There and Back Again:** Saga that ramp a Mountain, tempts with the Ring, and creates a 6/6 Smaug token that drops **14 Treasures** when it dies!
-*   **Torment of Hailfire / Exsanguinate / Crackle with Power:** Game-ending X-spells powered by Mahadi's Treasure reserves.
+*   **There and Back Again:** Saga that ramps a Mountain, tempts with the Ring, and creates a 6/6 Smaug token that drops **14 Treasures** when it dies!
+*   **Torment of Hailfire / Exsanguinate:** Game-ending X-spells powered by Mahadi's Treasure reserves.
 
-### 🎴 Card Advantage & Draw (12 Cards)
+### 🎴 Card Advantage & Draw (11 Cards)
 *   **Black Market Connections:** **S-TIER ENGINE.** At your first main phase, choose 1, 2, or all 3 options (Create a Treasure for 1 life, Draw a card for 2 life, Create a 3/2 Changeling for 3 life). Provides instant Treasures, card draw, and sacrifice fodder every turn!
 *   **Bolas's Citadel:** [Game Changer] Look at the top card of your library anytime and cast spells paying life instead of mana. Sacrificing 10 nonland artifacts deals 10 damage to each opponent.
 *   **Blood for the Blood God!:** 11-CMC instant that costs {1} less for each creature that died this turn. Deals 8 damage to all opponents, draws 8 cards, and exiles your hand!
 *   **Skullclamp:** Equip to 1-toughness fodder creatures to draw 2 cards per death.
-*   **Faithless Looting / Unexpected Windfall / Big Score / Demand Answers / Deadly Dispute / Corrupted Conviction / Night's Whisper / Morbid Opportunist:** Premier Rakdos card selection, rummaging, and Treasure-generating draw.
+*   **Faithless Looting / Unexpected Windfall / Big Score / Deadly Dispute / Corrupted Conviction / Night's Whisper / Morbid Opportunist:** Premier Rakdos card selection, rummaging, and Treasure-generating draw.
 
 ### 🛡️ Targeted & Mass Disruption (13 Cards)
 *   **Damnation:** **PREMIER BOARD WIPE.** {2}{B}{B} — Destroy all creatures. They can't be regenerated. Instantly converts every creature on the board into a Treasure token at your end step.
@@ -69,8 +69,8 @@ deck_status: main
 *   **Deadly Rollick / Snuff Out:** Free targeted creature removal.
 *   **Terminate / Bedevil / Chaos Warp / Bitter Triumph / Abrade / Feed the Swarm / Vandalblast / Tibalt's Trickery / Rakdos Charm:** Versatile spot removal, counter-magic, artifact destruction, and graveyard exile.
 
-### 🧱 Mana Base (38 Cards)
-*   **Command Tower / Exotic Orchard / Luxury Suite / Blood Crypt / Bloodstained Mire / Polluted Delta / Arid Mesa / Scalding Tarn / Verdant Catacombs / Marsh Flats / Wooded Foothills / Haunted Ridge / Dragonskull Summit / Smoldering Marsh / Bojuka Bog / High Market / Phyrexian Tower / Takenuma, Abandoned Mire / Mount Doom / Rogue's Passage / Foreboding Ruins / Tainted Peak / Graven Cairns / Myriad Landscape / 7 Swamp / 6 Mountain**
+### 🧱 Mana Base (36 Cards)
+*   **Command Tower / Exotic Orchard / Luxury Suite / Blood Crypt / Bloodstained Mire / Polluted Delta / Arid Mesa / Scalding Tarn / Verdant Catacombs / Marsh Flats / Wooded Foothills / Haunted Ridge / Dragonskull Summit / Smoldering Marsh / Bojuka Bog / High Market / Phyrexian Tower / Takenuma, Abandoned Mire / Mount Doom / Rogue's Passage / Foreboding Ruins / Tainted Peak / Graven Cairns / Myriad Landscape / 6 Swamp / 6 Mountain**
 
 ---
 
@@ -82,6 +82,9 @@ deck_status: main
 ---
 
 ## 📜 Deck Changelog
+*   **2026-08-22:** Deck list aligned to 100-card singleton standard (trimmed 7 extra/redundant cards).
+    *   **Out:** *Merciless Executioner*, *Lightning Bolt*, *Impact Tremors*, *Sifter of Skulls*, *Garna, Bloodfist of Keld*, *Demand Answers*, *Crackle with Power*
+    *   **Reason:** Trimmed redundant 4th edict creature, low-impact spot burn, suboptimal 4-CMC death triggers, and redundant draw/X-finishers to enforce exact 100-card limit and improve opening hand velocity. Fully aligned main deck file, Plain Text copy/paste, and `moxfield_import.txt`.
 *   **2026-08-20:** Initial deck design completed for **Bracket 3 (Upgraded)**.
     *   **In:** Full 100-card list featuring Mahadi Treasure Aristocrats engine, *Bolas's Citadel* (1 Game Changer), *Blood for the Blood God!*, *Goldspan Dragon*, *Warren Soultrader*, *Academy Manufactor*, *Revel in Riches*, and *There and Back Again*.
 
@@ -100,6 +103,7 @@ MAIN DECK:
 1 Bedevil  
 1 Big Score  
 1 Bitter Triumph  
+1 Black Market Connections  
 1 Blasphemous Act  
 1 Blood Crypt  
 1 Blood for the Blood God!  
@@ -109,25 +113,22 @@ MAIN DECK:
 1 Bolas's Citadel  
 1 Carrion Feeder  
 1 Chaos Warp  
-1 Chandra's Ignition  
 1 Command Tower  
 1 Corrupted Conviction  
-1 Crackle with Power  
+1 Damnation  
 1 Deadly Dispute  
 1 Deadly Rollick  
-1 Demand Answers  
 1 Deflecting Swat  
 1 Demon's Disciple  
 1 Disciple of the Vault  
 1 Dragonskull Summit  
-1 Exsanguinate  
 1 Exotic Orchard  
+1 Exsanguinate  
 1 Faithless Looting  
 1 Feed the Swarm  
 1 Fellwar Stone  
 1 Fleshbag Marauder  
 1 Foreboding Ruins  
-1 Garna, Bloodfist of Keld  
 1 Goblin Bombardment  
 1 Goldspan Dragon  
 1 Grave Pact  
@@ -135,15 +136,12 @@ MAIN DECK:
 1 Graven Cairns  
 1 Haunted Ridge  
 1 High Market  
-1 Impact Tremors  
 1 Juri, Master of the Revue  
-1 Lightning Bolt  
 1 Luxury Suite  
 1 Marionette Apprentice  
 1 Marionette Master  
 1 Marsh Flats  
 1 Mayhem Devil  
-1 Merciless Executioner  
 1 Mirkwood Bats  
 1 Morbid Opportunist  
 1 Mount Doom  
@@ -166,12 +164,10 @@ MAIN DECK:
 1 Revel in Riches  
 1 Rogue's Passage  
 1 Scalding Tarn  
-1 Sifter of Skulls  
 1 Skullclamp  
 1 Smoldering Marsh  
 1 Snuff Out  
 1 Sol Ring  
-1 Species Specialist  
 6 Swamp  
 1 Szat's Will  
 1 Tainted Peak  

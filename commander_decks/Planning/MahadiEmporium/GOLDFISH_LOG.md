@@ -1,5 +1,64 @@
 # Goldfish Log — Mahadi, Emporium Master ("The Blood Market")
 
+## [2026-08-22] — 100-Card Standard Alignment & Trim (20 sims, T10 turns, Bracket 3)
+
+**Command:**
+```bash
+python scripts/multiplayer_goldfish.py commander_decks/Planning/MahadiEmporium/moxfield_import.txt --sims 20 --turns 10 --bracket 3 --html commander_decks/Planning/MahadiEmporium/goldfish_audit_20260822_234800.html
+```
+
+**Results:**
+```text
+====================================================================
+RUNNING 20 × 4-PLAYER SIMULATIONS
+Commander: Mahadi, Emporium Master (CMC 3)  |  Target: Bracket 3 (Upgraded) (Target T7)
+====================================================================
+
+--------------------------------------------------------------------
+AGGREGATE DEPLOYMENT & MULLIGAN PROFILE
+--------------------------------------------------------------------
+  Commander cast rate: 80/80 (100%)
+  Commander Cast Range: T1 - T6
+  Commander Cast Avg:   T2.9
+  Commander Cast Distribution:
+    T 1: ## (2)
+    T 2: ##################### (21)
+    T 3: ############################################## (46)
+    T 4: ##### (5)
+    T 5: #### (4)
+    T 6: ## (2)
+
+  Opening Hand Quality Breakdown (80 hands evaluated):
+    Gold Keep (Mana + Ramp + Enabler):   44/80 (55%)
+    Silver Keep (Mana + Curve):          36/80 (45%)
+    Desperation Keep (Mulligan to <=5):   0/80 (0%)
+    Average Starting Hand Size:          6.94 cards
+
+--------------------------------------------------------------------
+BRACKET READINESS (Bracket 3 (Upgraded) — Target T7)
+--------------------------------------------------------------------
+  Target Window Readiness Rate (T<=7): 77/80 (96%)
+  Engine Readiness Avg:  T4.1
+  Engine Readiness Distribution:
+    T 1: # (1)
+    T 2: ######## (8)
+    T 3: ############## (14)
+    T 4: ########################### (27)
+    T 5: ##################### (21)
+    T 6: ###### (6)
+    T 8: # (1)
+    T10: # (1)
+
+  [BRACKET COMPLIANCE CHECK] Status: PASS
+  Deck deploys its engine around Turn 4.1, perfectly positioned to execute and threaten a win on Bracket 3 (Upgraded)'s target (Turn 7+).
+```
+
+**Notes:**
+- **100-Card Singleton Standard Alignment:** Trimmed 7 redundant cards (*Merciless Executioner*, *Lightning Bolt*, *Impact Tremors*, *Sifter of Skulls*, *Garna, Bloodfist of Keld*, *Demand Answers*, *Crackle with Power*) to bring deck from 107 to exactly 100 cards (1 Commander + 99 Main).
+- **Performance Gains:** Commander cast rate reached **100% (80/80)** with average deployment moving up from T3.4 to **T2.9** (max T6 instead of T9). Target window readiness improved from 89% to **96% (77/80)**, and average engine readiness accelerated from T4.8 to **T4.1**. Desperation keeps dropped to **0%**. Bracket compliance status: **PASS**.
+
+---
+
 ## [2026-08-20] — Black Market Connections & Damnation Integration (20 sims, T10 turns, Bracket 3)
 
 **Command:**

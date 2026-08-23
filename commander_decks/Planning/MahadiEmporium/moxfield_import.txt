@@ -8,8 +8,8 @@ Deck
 1 Arid Mesa
 1 Bedevil
 1 Big Score
-1 Black Market Connections
 1 Bitter Triumph
+1 Black Market Connections
 1 Blasphemous Act
 1 Blood Crypt
 1 Blood for the Blood God!
@@ -21,23 +21,20 @@ Deck
 1 Chaos Warp
 1 Command Tower
 1 Corrupted Conviction
-1 Crackle with Power
 1 Damnation
 1 Deadly Dispute
 1 Deadly Rollick
-1 Demand Answers
 1 Deflecting Swat
 1 Demon's Disciple
 1 Disciple of the Vault
 1 Dragonskull Summit
-1 Exsanguinate
 1 Exotic Orchard
+1 Exsanguinate
 1 Faithless Looting
 1 Feed the Swarm
 1 Fellwar Stone
 1 Fleshbag Marauder
 1 Foreboding Ruins
-1 Garna, Bloodfist of Keld
 1 Goblin Bombardment
 1 Goldspan Dragon
 1 Grave Pact
@@ -45,15 +42,12 @@ Deck
 1 Graven Cairns
 1 Haunted Ridge
 1 High Market
-1 Impact Tremors
 1 Juri, Master of the Revue
-1 Lightning Bolt
 1 Luxury Suite
 1 Marionette Apprentice
 1 Marionette Master
 1 Marsh Flats
 1 Mayhem Devil
-1 Merciless Executioner
 1 Mirkwood Bats
 1 Morbid Opportunist
 1 Mount Doom
@@ -76,7 +70,6 @@ Deck
 1 Revel in Riches
 1 Rogue's Passage
 1 Scalding Tarn
-1 Sifter of Skulls
 1 Skullclamp
 1 Smoldering Marsh
 1 Snuff Out
