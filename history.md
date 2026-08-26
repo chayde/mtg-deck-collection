@@ -2,6 +2,11 @@
 
 ## 🗓️ August 2026: Ulalek, Fused Atrocity & Goldfish Simulator Protocol Upgrade
 
+### 2026-08-25: Svella, Ice Shaper ("The Icy Forge") — New Planning Deck Created (Bracket 3 Validated)
+*   **New Build:** Created 100-card Gruul ({R}{G}) Big-Mana Activated Ability & Topdeck Stompy deck list in `commander_decks/Planning/SvellaIceShaper/` (`deck_status: main`).
+*   **Synergy & Strategy:** Leverages Svella's early ability to manufacture permanent mana rock tokens (*Icy Manaliths*), supercharged by an artifact untap suite (*Unwinding Clock*, *Clock of Omens*, *Sting, the Glinting Dagger*, *Thousand-Year Elixir*, *Patriar's Seal*, *Seeker of Skybreak*), ability copiers (*Illusionist's Bracers*, *Battlemage's Bracers*, *Rings of Brighthearth*), and 1 Game Changer (*Seedborn Muse*). Spins Svella's 8-mana free-cast ability at instant speed into massive cascade, Eldrazi, and artifact threats (*Apex Devastator*, *Vaultborn Tyrant*, *Portal to Phyrexia*, *Hellkite Tyrant*, *Kozilek, Butcher of Truth*, *Ulamog, the Infinite Gyre*, *Worldspine Wurm*, *All Is Dust*). Powered by a 100% Snow basic mana base with *Skred*, *Into the North*, and *Scrying Sheets*.
+*   **Validation:** 20-sim goldfish check — **99% commander cast rate (79/80, T3.1 avg)**, **T4.8 engine readiness (90% on target <= T7)**, 31% Gold Keeps, 68% Silver Keeps (99% functional keeps, 1% desperation keep, avg hand size 6.95). Bracket compliance status: **PASS** for Bracket 3. Generated HTML report at `commander_decks/Planning/SvellaIceShaper/goldfish_report.html`.
+
 ### 2026-08-22: Mahadi, Emporium Master ("The Blood Market") — 100-Card Standard Alignment & Trim
 *   **Deck List Alignment:** Fixed 107-card count error caused by unadjusted template category targets. Cut 7 redundant cards (*Merciless Executioner*, *Lightning Bolt*, *Impact Tremors*, *Sifter of Skulls*, *Garna, Bloodfist of Keld*, *Demand Answers*, *Crackle with Power*) to bring deck to exact 100-card singleton standard (1 Commander + 99 Main).
 *   **Triple Update Synchronization:** Fully synchronized main deck explanations, category counts, Plain Text copy/paste section, and `moxfield_import.txt`.

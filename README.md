@@ -54,6 +54,7 @@ Decks under development, research, or being optimized.
 *   **Ulalek, Fused Atrocity:** 5-Color Devoid / Eldrazi Tribal & Stack Duplication (Eldrazi Stack Incursion). Bracket 3.
 *   **Mahadi, Emporium Master:** Rakdos Treasure Aristocrats & Sacrifice Control ("The Blood Market"). Bracket 3.
 *   **Rocco, Street Chef:** Naya Impulse Gastronomy & Food Tokens ("The Street Chef's Kitchen"). Bracket 3.
+*   **Svella, Ice Shaper:** Gruul Big-Mana Activated Ability & Topdeck Stompy ("The Icy Forge"). Bracket 3.
 
 ### 🎮 `/arena_decks`
 Optimized lists for MTG Arena formats (Standard, Brawl, Timeless).

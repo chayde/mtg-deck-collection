@@ -19,6 +19,9 @@ import os
 import urllib.request
 import urllib.parse
 
+if hasattr(sys.stdout, "reconfigure"):
+    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+
 # --- Configuration & API Rules ---
 HEADERS = {"User-Agent": "MTGDeckCollection/1.0", "Accept": "application/json"}
 NAMED_DELAY = 0.5    # Wait 0.5s between 'named' calls
