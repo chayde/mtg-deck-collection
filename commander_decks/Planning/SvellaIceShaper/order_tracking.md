@@ -1,18 +1,25 @@
 # Order Tracking: SvellaIceShaper
 
 ## Overview
-*   **Total Deck Size:** 86 Cards
+*   **Total Deck Size:** 87 Cards
 *   **In-Hand / Owned:** 5 cards
-*   **Pending Acquisition / Singles to Order:** 81 cards
+*   **Pending Acquisition / Singles to Order:** 82 cards
 
 ---
 
-## 📦 Singles to Acquire / Order List (81 Cards)
+## 📦 Singles to Acquire / Order List (82 Cards)
 
-### Lands (12 Cards)
+### Lands (20 Cards)
+- [ ] Bala Ged Recovery
+- [ ] Bridgeworks Battle
+- [ ] Castle Garenbrig
 - [ ] Cinder Glade
+- [ ] Commercial District
+- [ ] Cragcrown Pathway
 - [ ] Fabled Passage
 - [ ] Karplusan Forest
+- [ ] Kessig Wolf Run
+- [ ] Mosswort Bridge
 - [ ] Prismatic Vista
 - [ ] Rockfall Vale
 - [ ] Rootbound Crag
@@ -21,34 +28,38 @@
 - [ ] Snow-Covered Mountain
 - [ ] Spire Garden
 - [ ] Stomping Ground
+- [ ] Turntimber Symbiosis
 - [ ] Valakut Awakening
 
-### Creatures (23 Cards)
+### Creatures (25 Cards)
 - [ ] Agatha of the Vile Cauldron
 - [ ] Apex Devastator
 - [ ] Birds of Paradise
 - [ ] Delighted Halfling
 - [ ] Elvish Mystic
-- [ ] End-Raze Forerunners
 - [ ] Etali, Primal Conqueror
 - [ ] Etali, Primal Storm
 - [ ] Ghalta, Stampede Tyrant
 - [ ] Goblin Anarchomancer
 - [ ] Hellkite Tyrant
-- [ ] Hexing Squelcher
+- [ ] Kogla, the Titan Ape
 - [ ] Kozilek, Butcher of Truth
 - [ ] Llanowar Elves
+- [ ] Nyxbloom Ancient
+- [ ] Roxanne, Starfall Savant
+- [ ] Saryth, the Viper's Fang
 - [ ] Seedborn Muse
 - [ ] Seeker of Skybreak
 - [ ] Shang-Chi, Master of Kung Fu
 - [ ] Surrak and Goreclaw
-- [ ] Svella, Ice Shaper
+- [ ] Terastodon
 - [ ] Terror of the Peaks
 - [ ] Ulamog, the Infinite Gyre
 - [ ] Vaultborn Tyrant
 - [ ] Worldspine Wurm
 
-### Artifacts & Ramp (12 Cards)
+### Artifacts & Ramp (13 Cards)
+- [ ] Akroma's Memorial
 - [ ] Arcane Signet
 - [ ] Battlemage's Bracers
 - [ ] Clock of Omens
@@ -62,44 +73,35 @@
 - [ ] Thousand-Year Elixir
 - [ ] Unwinding Clock
 
-### Spells & Interaction (12 Cards)
+### Spells & Interaction (14 Cards)
 - [ ] All Is Dust
 - [ ] Beast Within
 - [ ] Blasphemous Act
+- [ ] Bolt Bend
 - [ ] Chaos Warp
 - [ ] Deflecting Swat
 - [ ] Heroic Intervention
 - [ ] Into the North
+- [ ] Krosan Grip
+- [ ] Last March of the Ents
 - [ ] Return of the Wildspeaker
 - [ ] Rishkar's Expertise
 - [ ] Skred
 - [ ] Tamiyo's Safekeeping
-- [ ] Tibalt's Trickery
 
-### Enchantments & Planeswalkers (5 Cards)
+### Enchantments & Planeswalkers (7 Cards)
 - [ ] Domri, Anarch of Bolas
 - [ ] Garruk's Uprising
+- [ ] Guardian Project
+- [ ] Mana Reflection
 - [ ] Rhythm of the Wild
 - [ ] Sylvan Library
 - [ ] Up the Beanstalk
 
-### Other (17 Cards)
-- [ ] Bala Ged Recovery
-- [ ] Boseiju, Who Endures
-- [ ] Bridgeworks Battle
-- [ ] Commercial District
-- [ ] Cragcrown Pathway
-- [ ] Kessig Wolf Run
-- [ ] Kogla and Yidaro
-- [ ] Kogla, the Titan Ape
-- [ ] Krosan Grip
-- [ ] Last March of the Ents
-- [ ] Mana Reflection
-- [ ] Monstrous Vortex
-- [ ] Mosswort Bridge
-- [ ] Nyxbloom Ancient
-- [ ] Roxanne, Starfall Savant
-- [ ] Turntimber Symbiosis
+### Commander (1 Card)
+- [ ] Svella, Ice Shaper
+
+### Additional Lands (1 Card)
 - [ ] Wooded Foothills
 
 ---

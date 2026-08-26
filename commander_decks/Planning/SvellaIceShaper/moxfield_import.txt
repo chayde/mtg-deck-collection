@@ -3,6 +3,7 @@ Commander
 
 Deck
 1 Agatha of the Vile Cauldron
+1 Akroma's Memorial
 1 All Is Dust
 1 Apex Devastator
 1 Arcane Signet
@@ -12,8 +13,9 @@ Deck
 1 Beast Within
 1 Birds of Paradise
 1 Blasphemous Act
-1 Boseiju, Who Endures
+1 Bolt Bend
 1 Bridgeworks Battle
+1 Castle Garenbrig
 1 Chaos Warp
 1 Cinder Glade
 1 Clock of Omens
@@ -24,30 +26,27 @@ Deck
 1 Delighted Halfling
 1 Domri, Anarch of Bolas
 1 Elvish Mystic
-1 End-Raze Forerunners
 1 Etali, Primal Conqueror
 1 Etali, Primal Storm
 1 Fabled Passage
 1 Garruk's Uprising
 1 Ghalta, Stampede Tyrant
 1 Goblin Anarchomancer
+1 Guardian Project
 1 Hellkite Tyrant
 1 Heroic Intervention
-1 Hexing Squelcher
 1 Highland Forest
 1 Idol of Oblivion
 1 Illusionist's Bracers
 1 Into the North
 1 Karplusan Forest
 1 Kessig Wolf Run
-1 Kogla and Yidaro
 1 Kogla, the Titan Ape
 1 Kozilek, Butcher of Truth
 1 Krosan Grip
 1 Last March of the Ents
 1 Llanowar Elves
 1 Mana Reflection
-1 Monstrous Vortex
 1 Mosswort Bridge
 1 Nature's Lore
 1 Nyxbloom Ancient
@@ -62,6 +61,7 @@ Deck
 1 Rogue's Passage
 1 Rootbound Crag
 1 Roxanne, Starfall Savant
+1 Saryth, the Viper's Fang
 1 Scrying Sheets
 1 Seedborn Muse
 1 Seeker of Skybreak
@@ -76,9 +76,9 @@ Deck
 1 Surrak and Goreclaw
 1 Sylvan Library
 1 Tamiyo's Safekeeping
+1 Terastodon
 1 Terror of the Peaks
 1 Thousand-Year Elixir
-1 Tibalt's Trickery
 1 Turntimber Symbiosis
 1 Ulamog, the Infinite Gyre
 1 Unwinding Clock
