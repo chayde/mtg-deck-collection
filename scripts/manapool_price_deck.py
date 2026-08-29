@@ -20,6 +20,9 @@ import urllib.request
 import urllib.parse
 from collections import defaultdict
 
+if hasattr(sys.stdout, "reconfigure"):
+    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+
 # --- Configuration & Labels ---
 SCRYFALL_HEADERS = {"User-Agent": "MTGDeckCollection/1.0", "Accept": "application/json"}
 MANAPOOL_BASE = "https://manapool.com/api/v1"

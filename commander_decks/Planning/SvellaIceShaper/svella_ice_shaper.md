@@ -14,23 +14,22 @@ deck_status: main
 **Svella, Ice Shaper**
 *   **Archetype:** Gruul ({R}{G}) Big Mana / Activated Ability Engine / Snow / Topdeck Stompy
 *   **Bracket:** 3 (Upgraded — 1 Game Changer: *Seedborn Muse*)
-*   **Core Goal:** Deploy Svella on Turn 2–3, start forging permanent Icy Manaliths on Turn 3–4, and leverage artifact untappers (**Unwinding Clock**, **Clock of Omens**, **Sting, the Glinting Dagger**, **Saryth, the Viper's Fang**) and ability copiers (**Illusionist's Bracers**, **Battlemage's Bracers**, **Rings of Brighthearth**) to activate Svella's 8-mana free-cast ability multiple times per turn cycle at instant speed.
+*   **Core Goal:** Deploy Svella on Turn 2–3, start forging permanent Icy Manaliths on Turn 3–4, and leverage artifact untappers (**Unwinding Clock**, **Sting, the Glinting Dagger**, **Saryth, the Viper's Fang**), ability copiers (**Illusionist's Bracers**, **Battlemage's Bracers**, **Rings of Brighthearth**), and topdeck manipulation (**Cream of the Crop**, **Sylvan Library**) to activate Svella's 8-mana free-cast ability multiple times per turn cycle at instant speed.
 
 ### Three Interlocking Engines
 1.  **Engine 1 — The Icy Manalith Ramp Foundry:** Svella generates permanent {T}: Add 1 mana artifact tokens for {3}. Unlike Treasures, these rocks accumulate permanently on the battlefield, ramping your mana baseline and triggering artifact and token payoffs.
-2.  **Engine 2 — Untap & Ability Multiplication:** Ability doublers (**Illusionist's Bracers**, **Battlemage's Bracers**, **Rings of Brighthearth**) double your Manalith output or let you cast two free spells per activation. Untap engines (**Unwinding Clock**, **Clock of Omens**, **Sting, the Glinting Dagger**, **Thousand-Year Elixir**, **Patriar's Seal**, **Saryth, the Viper's Fang**, **Seedborn Muse**) let you activate Svella on every opponent's turn.
-3.  **Engine 3 — High-Impact Topdeck Payoffs & Cascade Stompy:** Because Svella **casts** the spell for free, on-cast triggers fire immediately. Spells like **Apex Devastator** (4 Cascades), **Kozilek, Butcher of Truth** (Draw 4 + Annihilator 4), **Ulamog, the Infinite Gyre** (Vindicate + Annihilator 4), **Portal to Phyrexia** (each opponent sacrifices 3 creatures), **Vaultborn Tyrant**, **Terror of the Peaks**, **Akroma's Memorial**, and **Terastodon** close games in short order.
+2.  **Engine 2 — Untap & Ability Multiplication:** Ability doublers (**Illusionist's Bracers**, **Battlemage's Bracers**, **Rings of Brighthearth**) double your Manalith output or let you cast two free spells per activation. Untap engines (**Unwinding Clock**, **Sting, the Glinting Dagger**, **Thousand-Year Elixir**, **Patriar's Seal**, **Saryth, the Viper's Fang**, **Seedborn Muse**) let you activate Svella on every opponent's turn.
+3.  **Engine 3 — High-Impact Topdeck Payoffs & Topdeck Stacking:** Because Svella **casts** the spell for free, on-cast triggers fire immediately. Spells like **Apex Devastator** (4 Cascades), **Kozilek, Butcher of Truth** (Draw 4 + Annihilator 4), **Ulamog, the Infinite Gyre** (Vindicate + Annihilator 4), **Portal to Phyrexia** (each opponent sacrifices 3 creatures), **Vaultborn Tyrant**, **Terror of the Peaks**, **Akroma's Memorial**, and **Terastodon** close games in short order. **Cream of the Crop** lets entering monsters dig deep and place the exact next bomb on top of your library.
 
 ---
 
 ## 🛠️ Card Explanations
 
-### ⚡ Untappers & Ability Copiers (11 Cards)
+### ⚡ Untappers & Ability Copiers (10 Cards)
 *   **Illusionist's Bracers:** Equip to Svella to automatically copy every activation for free (2 Manaliths or 2 free spells per tap).
 *   **Battlemage's Bracers:** Grants haste to Svella and pays {1} to duplicate activated abilities.
 *   **Rings of Brighthearth:** Pay {2} to copy any activated ability (Svella, Fetchlands, Kessig Wolf Run, etc.).
 *   **Unwinding Clock:** Untaps all artifacts (including all Icy Manaliths and rocks) on every opponent's untap step.
-*   **Clock of Omens:** Tap two untapped Icy Manaliths to untap Svella, chaining extra Manaliths or free spells.
 *   **Thousand-Year Elixir:** Grants pseudo-haste for activated abilities and pays {1} to untap Svella.
 *   **Sting, the Glinting Dagger:** Grants haste and untaps equipped Svella at the beginning of *each combat* (4 untaps/turn cycle).
 *   **Patriar's Seal:** Mana rock that taps and pays {1} to untap Svella.
@@ -45,7 +44,8 @@ deck_status: main
 *   **Goblin Anarchomancer:** Reduces the cost of all Red and Green spells by {1}.
 *   **Nature's Lore / Into the North:** 2-mana land ramp. Into the North fetches Snow duals, basics, and Scrying Sheets untapped.
 
-### 🎴 Card Advantage & Velocity (10 Cards)
+### 🎴 Card Advantage & Topdeck Engines (11 Cards)
+*   **Cream of the Crop:** Whenever a creature enters, look at top X cards (equal to its power) and place the best card on top of your library to guarantee Svella hits it.
 *   **Up the Beanstalk:** Draws a card on entry and whenever you cast a 5+ CMC spell (including spells cast for free off Svella!).
 *   **Garruk's Uprising:** Grants team trample, draws on entry with high power, and cantrips on 4+ power creature ETBs.
 *   **Idol of Oblivion:** Taps to draw a card on every turn you create an Icy Manalith token.
@@ -100,13 +100,17 @@ deck_status: main
 
 ## 🔮 Future Roadmap & Flex Swaps
 
-*   **The Great Henge ({7}{G}{G}):** Outstanding acquisition candidate for future budget upgrade, offering extreme cost reduction, card draw, and +1/+1 counters.
 *   **Chimil, the Inner Sun ({6}):** Free end-step Discover 5 engine and counterspell protection.
+*   **The Great Henge ({7}{G}{G}):** Outstanding acquisition candidate for future budget upgrade, offering extreme cost reduction, card draw, and +1/+1 counters.
 *   **Worldly Tutor ({G}):** High-impact Game Changer tutor candidate if looking to utilize the 2nd Game Changer slot for Bracket 3.
 
 ---
 
 ## 📜 Deck Changelog
+*   **2026-08-29:** Replaced Clock of Omens with Cream of the Crop.
+    *   **In:** *Cream of the Crop*
+    *   **Out:** *Clock of Omens*
+    *   **Reason:** Clock of Omens cannot directly target non-artifact creature Svella without an intermediary artifact. Cream of the Crop enables topdeck stacking whenever high-power creatures enter, guaranteeing continuous bomb hits off Svella's 4-card dig.
 *   **2026-08-25:** Optimized 6 card slots for budget and synergy efficiency.
     *   **In:** *Castle Garenbrig*, *Bolt Bend*, *Saryth, the Viper's Fang*, *Akroma's Memorial*, *Guardian Project*, *Terastodon*
     *   **Out:** *Boseiju, Who Endures*, *Tibalt's Trickery*, *Hexing Squelcher*, *End-Raze Forerunners*, *Monstrous Vortex*, *Kogla and Yidaro*
@@ -137,10 +141,10 @@ deck_status: main
 1 Castle Garenbrig  
 1 Chaos Warp  
 1 Cinder Glade  
-1 Clock of Omens  
 1 Command Tower  
 1 Commercial District  
 1 Cragcrown Pathway  
+1 Cream of the Crop  
 1 Deflecting Swat  
 1 Delighted Halfling  
 1 Domri, Anarch of Bolas  

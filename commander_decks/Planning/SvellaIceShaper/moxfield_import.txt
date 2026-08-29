@@ -18,10 +18,10 @@ Deck
 1 Castle Garenbrig
 1 Chaos Warp
 1 Cinder Glade
-1 Clock of Omens
 1 Command Tower
 1 Commercial District
 1 Cragcrown Pathway
+1 Cream of the Crop
 1 Deflecting Swat
 1 Delighted Halfling
 1 Domri, Anarch of Bolas

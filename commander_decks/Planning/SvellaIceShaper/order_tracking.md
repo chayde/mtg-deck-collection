@@ -58,11 +58,10 @@
 - [ ] Vaultborn Tyrant
 - [ ] Worldspine Wurm
 
-### Artifacts & Ramp (13 Cards)
+### Artifacts & Ramp (12 Cards)
 - [ ] Akroma's Memorial
 - [ ] Arcane Signet
 - [ ] Battlemage's Bracers
-- [ ] Clock of Omens
 - [ ] Idol of Oblivion
 - [ ] Illusionist's Bracers
 - [ ] Patriar's Seal
@@ -89,7 +88,8 @@
 - [ ] Skred
 - [ ] Tamiyo's Safekeeping
 
-### Enchantments & Planeswalkers (7 Cards)
+### Enchantments & Planeswalkers (8 Cards)
+- [ ] Cream of the Crop
 - [ ] Domri, Anarch of Bolas
 - [ ] Garruk's Uprising
 - [ ] Guardian Project
