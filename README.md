@@ -55,6 +55,7 @@ Decks under development, research, or being optimized.
 *   **Mahadi, Emporium Master:** Rakdos Treasure Aristocrats & Sacrifice Control ("The Blood Market"). Bracket 3.
 *   **Rocco, Street Chef:** Naya Impulse Gastronomy & Food Tokens ("The Street Chef's Kitchen"). Bracket 3.
 *   **Svella, Ice Shaper:** Gruul Big-Mana Activated Ability & Topdeck Stompy ("The Icy Forge"). Bracket 3.
+*   **Sygg, River Cutthroat:** Dimir Group Slug, Goad & End-Step Attrition Control ("The Toll of the River"). Bracket 3.
 
 ### 🎮 `/arena_decks`
 Optimized lists for MTG Arena formats (Standard, Brawl, Timeless).
