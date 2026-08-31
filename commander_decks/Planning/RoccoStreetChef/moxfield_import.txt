@@ -11,14 +11,14 @@ Deck
 1 Battlefield Forge
 1 Baylen, the Haymaker
 1 Beast Within
+1 Belladonna Took
 1 Bilbo, Fellow Conspirator
 1 Birds of Paradise
 1 Blasphemous Act
 1 Bolt Bend
-1 Boros Charm
 1 Bountiful Promenade
 1 Brushland
-1 Butterbur, Bree Innkeeper
+1 Campsite Cuisine
 1 Canopy Vista
 1 Chaos Warp
 1 Cinder Glade
@@ -53,6 +53,7 @@ Deck
 1 Nature's Claim
 1 Nature's Lore
 1 Night of the Sweets' Revenge
+1 Ninja Pizza
 1 Nuka-Cola Vending Machine
 1 Path of Ancestry
 1 Path to Exile
@@ -68,7 +69,6 @@ Deck
 1 Sam, Loyal Attendant
 1 Samwise Gamgee
 1 Shalai and Hallar
-1 Skullclamp
 1 Sol Ring
 1 Spectator Seating
 1 Spire Garden

@@ -2,10 +2,15 @@
 
 ## 🗓️ August 2026: Ulalek, Fused Atrocity & Goldfish Simulator Protocol Upgrade
 
-### 2026-08-31: Rocco, Street Chef ("The Street Chef's Kitchen") — Thematic Hobbit & Food Optimization
-*   **Deck Refinement:** Replaced high-end off-theme creatures (*Etali, Primal Storm* [6 CMC], *Gwaihir, Greatest of the Eagles* [5 CMC]) with dedicated low-curve Hobbit/Food synergy pieces: *Samwise Gamgee* ({G}{W} — nontoken creature ETB Food generation + 3-Food historic card recursion) and *Syr Ginger, the Meal Ender* ({2} — artifact sacrifice +1/+1 counters + scry 1 filtering + emergency life burst).
+### 2026-08-31: Rocco, Street Chef ("The Street Chef's Kitchen") — Thematic Hobbit, Combat & Food Mana Overhaul
+*   **Deck Refinement:** Executed 5 targeted synergy upgrades: replaced high-end off-theme creatures (*Etali, Primal Storm* [6 CMC], *Gwaihir, Greatest of the Eagles* [5 CMC], *Butterbur, Bree Innkeeper* [4 CMC]) and low-synergy utility spells (*Skullclamp*, *Boros Charm*) with high-velocity engines:
+    *   *Samwise Gamgee* ({G}{W} — nontoken creature ETB Food generation + 3-Food historic card recursion)
+    *   *Syr Ginger, the Meal Ender* ({2} — artifact sacrifice +1/+1 counters + scry 1 filtering + emergency life burst)
+    *   *Belladonna Took* ({1}{W} — multi-tier token engine: life gain, card draw, and team +1/+1 counters)
+    *   *Campsite Cuisine* ({1}{G} — Food generation on legendary ETBs + combat sacrifice for +3/+3, trample, and indestructible)
+    *   *Ninja Pizza* ({2}{G} — passive second main phase Food generator + gives all Foods free tap-and-sacrifice mana conversion)
 *   **Triple Update Synchronization:** Fully synchronized main deck file (`rocco_street_chef_kitchen.md`), Plain Text Copy/Paste section, `moxfield_import.txt`, and `order_tracking.md`.
-*   **Validation:** 20-sim goldfish check — **100% commander cast rate (80/80, T2.9 avg)**, **T3.8 engine readiness (99% on target <= T7)**, 68% Gold Keeps, 32% Silver Keeps (100% functional keeps, 0% desperation keeps, avg hand size 6.97). Bracket compliance status: **PASS** for Bracket 3.
+
 
 ### 2026-08-31: Felothar the Steadfast ("The Iron Citadel") — New Planning Deck Created (Bracket 3 Validated)
 *   **New Build:** Created 100-card Abzan ({W}{B}{G}) Defender Beatdown, Team Vigilance & Toughness Fling deck list in `commander_decks/Planning/FelotharSteadfast/` (`deck_status: main`).

@@ -18,21 +18,21 @@ deck_status: main
 
 ### Three Interlocking Engines
 1.  **Engine 1 — Impulse & Exile Engine (Rocco & Exile Tech):** Rocco, **Passionate Archaeologist**, **Wild-Magic Sorcerer**, **Laelia, the Blade Reforged**, **Pia Nalaar, Consul of Revival**, and **Delayed Blast Fireball** reward and accelerate playing cards from exile. Every exile play grows your board and fills your kitchen with Food.
-2.  **Engine 2 — Food & Mana Multiplication:** **Nuka-Cola Vending Machine** (sac Food -> create Treasure), **Peregrin Took** (extra Food on token creation + sac 3 Foods to draw), **Sam, Loyal Attendant** (reduces Food activation cost to {1}), **Academy Manufactor** (Food -> Food + Clue + Treasure), and **Night of the Sweets' Revenge** (foods tap for {G} + Overrun finisher).
-3.  **Engine 3 — Counter Damage & Overrun Finishers:** **Shalai and Hallar** (deals damage to opponents whenever +1/+1 counters are placed!), **All Will Be One**, **Feasting Hobbit** (Devour Food 3 -> unblockable 14/14+ threat), **Blossoming Bogbeast**, and **Inspiring Call**.
+2.  **Engine 2 — Food & Mana Multiplication:** **Jaheira, Friend of the Forest**, **Ninja Pizza** (Food mana battery), **Nuka-Cola Vending Machine** (sac Food -> create Treasure), **Peregrin Took** (extra Food on token creation + sac 3 Foods to draw), **Sam, Loyal Attendant** (reduces Food activation cost to {1}), **Academy Manufactor** (Food -> Food + Clue + Treasure), and **Night of the Sweets' Revenge** (foods tap for {G} + Overrun finisher).
+3.  **Engine 3 — Counter Damage & Overrun Finishers:** **Shalai and Hallar** (deals damage to opponents whenever +1/+1 counters are placed!), **All Will Be One**, **Feasting Hobbit** (Devour Food 3 -> unblockable 14/14+ threat), **Campsite Cuisine** (sac Foods for +3/+3, trample, indestructible), **Belladonna Took**, and **Inspiring Call**.
 
 ---
 
 ## 🛠️ Card Explanations
 
-### 🥪 Food Creators & Sac Engines (18 Cards)
+### 🥪 Food Creators, Sac & Mana Engines (19 Cards)
 *   **Killer Service:** **PREMIER FOOD CREATOR & RHINO GENERATOR ($0.24).** Enters creating 3 Food tokens (1 per opponent) and lets you pay {2} + sac a Food at your end step to create a **4/4 green Rhino Warrior creature token**!
-*   **Gilded Goose:** Premier 1-drop Food creator + taps & sacrifices Food for 5-color mana acceleration.
+*   **Gilded Goose:** Premier 1-drop Food creator + taps & sacrifices Food for 5-color mana acceleration on Turns 1–2.
 *   **Farmer Cotton:** Scalable mid/late-game spell that creates **X 1/1 Halflings AND X Food tokens**!
 *   **Tough Cookie:** Creates a Food on ETB and turns passive Food tokens into **4/4 attacking artifact creatures**!
 *   **Motivated Pony:** Attacks and untaps all attacking creatures while giving them **+3/+3 and Trample** if a Food entered this turn!
 *   **Samwise Gamgee:** Creates a Food token whenever another nontoken creature enters and sacrifices 3 Foods to recur any historic card (Rocco, artifacts, legendary creatures) from your graveyard to hand.
-*   **Butterbur, Bree Innkeeper:** Creates a free Food token at your end step if you control no Foods.
+*   **Ninja Pizza:** **S-TIER FOOD MANA ENGINE ($3.58).** Gives all Foods "{T}, Sacrifice this artifact: Add one mana of any color," and creates a Food token on your second main phase every single turn.
 *   **Baylen, the Haymaker:** **S-TIER TOKEN ENGINE ($0.23).** Taps 2 tokens for mana of any color, 3 tokens to draw a card, or 4 tokens to put 3 +1/+1 counters on Baylen + Trample.
 *   **Bilbo, Fellow Conspirator:** **S-TIER TOKEN MULTIPLIER.** Whenever you create a Food token, create a Food token AND a Treasure token instead!
 *   **Peregrin Took:** Adds an extra Food token whenever any token is created + sac 3 Foods to draw a card.
@@ -46,7 +46,9 @@ deck_status: main
 *   **Tireless Provisioner:** Creates a Food or Treasure token on every land drop.
 *   **Nature's Lore / Three Visits / Farseek / Sol Ring / Arcane Signet / Talisman of Impulse / Talisman of Unity / Talisman of Conviction:** Naya mana ramp.
 
-### 💥 Food Payoffs & Counter Finishers (17 Cards)
+### 💥 Food Payoffs, Combat Overruns & Counter Finishers (19 Cards)
+*   **Belladonna Took:** **S-TIER HOBBIT ENGINE ($4.42).** Triggers on token creation: 1st time gains 1 life, 2nd time draws a card, 3rd time puts +1/+1 counters on all creatures you control.
+*   **Campsite Cuisine:** **COMBAT FINISHER & FOOD GENERATOR ($14.12).** Creates Food on entry and legendary ETBs; sacrifices X Foods on attack to give up to X attackers **+3/+3, Trample, and Indestructible**.
 *   **Syr Ginger, the Meal Ender:** Grows with a +1/+1 counter and scries 1 whenever any Food or Treasure is sacrificed, plus can be sacrificed for burst life.
 *   **Banquet Guests:** **S-TIER FOOD FINISHER ($0.34).** Has *Affinity for Foods*, Trample, enters with **twice X +1/+1 counters** (e.g. 10/10 for {G}{W}), and sacrifices a Food to gain Indestructible!
 *   **Kami of Whispered Hopes:** Adds +1 extra counter to all permanents AND taps for mana equal to its power!
@@ -64,11 +66,11 @@ deck_status: main
 *   **Valakut Exploration:** Exiles extra cards on landfall and burns opponents at end step for unused cards.
 *   **Inspiring Call:** Draws cards for every creature with a +1/+1 counter and grants team Indestructible.
 
-### 🛡️ Targeted & Mass Disruption (13 Cards)
+### 🛡️ Targeted & Mass Disruption (12 Cards)
 *   **Bolt Bend:** **BUDGET DEFLECTING SWAT.** Costs {R} if you control a 4+ power creature. Redirects single-target spells and abilities at instant speed!
 *   **Deflecting Palm:** Prevents all damage from a chosen source and deals that much damage directly to its controller!
 *   **Delayed Blast Fireball:** Deals 2 damage to all enemies, but when cast from exile (Foretell or Rocco), deals **5 damage to all opponents and enemy creatures**!
-*   **Swords to Plowshares / Path to Exile / Generous Gift / Beast Within / Chaos Warp / Nature's Claim / Boros Charm:** Premier Naya spot removal, artifact/enchantment hate, and board protection.
+*   **Swords to Plowshares / Path to Exile / Generous Gift / Beast Within / Chaos Warp / Nature's Claim:** Premier Naya spot removal and artifact/enchantment hate.
 *   **Blasphemous Act / Vandalblast / Austere Command / Farewell:** Asymmetric board wipes.
 
 ### 🧱 Mana Base (38 Cards)
@@ -88,16 +90,16 @@ deck_status: main
 *   **Mondrak, Glory Dominus ({2}{W}{W}):** **S-Tier Token Doubler ($41).** Doubles ALL tokens (Foods, Treasures, Clues, Thopters, Rhinos). Sacrifices 2 Foods for permanent Indestructible protection.
 *   **Krark-Clan Ironworks ({4}):** **S-Tier Food Mana Engine ($17).** Sacrifices any Food token for **{C}{C} (2 free colorless mana)** instantly without tapping.
 *   **The Gaffer ({2}{W}):** **Hobbit Draw Engine ($7).** Draws a card on each player's end step whenever you gain 3+ life from a Food token.
-*   **Spiteful Banditry ({X}{R}{R}):** Enters as an X-damage board wipe and creates a Treasure token whenever an opponent creature dies.
+*   **Reckless Fireweaver ({1}{R}):** Deals 1 damage to each opponent on every artifact/Food ETB.
 *   **Smothering Tithe ({3}{W} — Game Changer):** Top optional Game Changer candidate if higher artifact/Treasure velocity is desired.
 
 ---
 
 ## 📜 Deck Changelog
-*   **2026-08-31:** Replaced off-theme cards with dedicated Hobbit and Food synergy engines.
-    *   **In:** Samwise Gamgee, Syr Ginger, the Meal Ender
-    *   **Out:** Etali, Primal Storm, Gwaihir, Greatest of the Eagles
-    *   **Reason:** Lowered mana curve, added Food generation and historic recursion with Samwise, and added counter-growth, scry filtering, and lifegain with Syr Ginger.
+*   **2026-08-31:** Integrated Belladonna Took, Campsite Cuisine, and Ninja Pizza for enhanced Hobbit token draw, combat overrun, and Food mana.
+    *   **In:** Belladonna Took, Campsite Cuisine, Ninja Pizza, Samwise Gamgee, Syr Ginger, the Meal Ender
+    *   **Out:** Boros Charm, Butterbur, Bree Innkeeper, Etali, Primal Storm, Gwaihir, Greatest of the Eagles, Skullclamp
+    *   **Reason:** Replaced underperforming/awkward cards (Skullclamp unable to kill buffed creatures, Boros Charm reactive, Butterbur 0-Food condition rarely met) with proactive token engines: Belladonna for steady draw and team counters, Campsite Cuisine for Food generation and indestructible/trample alpha strikes, and Ninja Pizza for free Food-to-mana cracking.
 *   **2026-08-20:** Initial deck design completed for **Bracket 3 (Upgraded)**.
     *   **In:** Full 100-card list featuring Rocco Impulse & Food engine, *Shalai and Hallar*, *Nuka-Cola Vending Machine*, *Peregrin Took*, *Sam, Loyal Attendant*, *Feasting Hobbit*, *Delayed Blast Fireball*, *All Will Be One*, and *Academy Manufactor*.
 
@@ -118,14 +120,14 @@ MAIN DECK:
 1 Battlefield Forge  
 1 Baylen, the Haymaker  
 1 Beast Within  
+1 Belladonna Took  
 1 Bilbo, Fellow Conspirator  
 1 Birds of Paradise  
 1 Blasphemous Act  
 1 Bolt Bend  
-1 Boros Charm  
 1 Bountiful Promenade  
 1 Brushland  
-1 Butterbur, Bree Innkeeper  
+1 Campsite Cuisine  
 1 Canopy Vista  
 1 Chaos Warp  
 1 Cinder Glade  
@@ -160,6 +162,7 @@ MAIN DECK:
 1 Nature's Claim  
 1 Nature's Lore  
 1 Night of the Sweets' Revenge  
+1 Ninja Pizza  
 1 Nuka-Cola Vending Machine  
 1 Path of Ancestry  
 1 Path to Exile  
@@ -175,7 +178,6 @@ MAIN DECK:
 1 Sam, Loyal Attendant  
 1 Samwise Gamgee  
 1 Shalai and Hallar  
-1 Skullclamp  
 1 Sol Ring  
 1 Spectator Seating  
 1 Spire Garden  

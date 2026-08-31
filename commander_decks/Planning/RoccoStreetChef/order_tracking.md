@@ -41,9 +41,9 @@
 - [ ] Avacyn's Pilgrim
 - [ ] Banquet Guests
 - [ ] Baylen, the Haymaker
+- [ ] Belladonna Took
 - [ ] Bilbo, Fellow Conspirator
 - [ ] Birds of Paradise
-- [ ] Butterbur, Bree Innkeeper
 - [ ] Farmer Cotton
 - [ ] Feasting Hobbit
 - [ ] Gilded Goose
@@ -66,22 +66,20 @@
 - [ ] Treebeard, Gracious Host
 - [ ] Wild-Magic Sorcerer
 
-### Artifacts & Ramp (8 Cards)
+### Artifacts & Ramp (7 Cards)
 - [ ] Arcane Signet
 - [ ] Inspiring Statuary
 - [ ] Nuka-Cola Vending Machine
-- [ ] Skullclamp
 - [ ] Sol Ring
 - [ ] Talisman of Conviction
 - [ ] Talisman of Impulse
 - [ ] Talisman of Unity
 
-### Spells & Interaction (17 Cards)
+### Spells & Interaction (16 Cards)
 - [ ] Austere Command
 - [ ] Beast Within
 - [ ] Blasphemous Act
 - [ ] Bolt Bend
-- [ ] Boros Charm
 - [ ] Chaos Warp
 - [ ] Deflecting Palm
 - [ ] Delayed Blast Fireball
@@ -95,10 +93,12 @@
 - [ ] Three Visits
 - [ ] Vandalblast
 
-### Enchantments & Planeswalkers (4 Cards)
+### Enchantments & Planeswalkers (6 Cards)
 - [ ] All Will Be One
+- [ ] Campsite Cuisine
 - [ ] Killer Service
 - [ ] Night of the Sweets' Revenge
+- [ ] Ninja Pizza
 - [ ] Valakut Exploration
 
 ### Other (2 Cards)
