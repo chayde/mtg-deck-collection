@@ -29,7 +29,6 @@ Deck
 1 Deflecting Palm
 1 Delayed Blast Fireball
 1 Eiganjo, Seat of the Empire
-1 Etali, Primal Storm
 1 Exotic Orchard
 1 Farewell
 1 Farmer Cotton
@@ -38,7 +37,6 @@ Deck
 8 Forest
 1 Generous Gift
 1 Gilded Goose
-1 Gwaihir, Greatest of the Eagles
 1 High Market
 1 Inspiring Call
 1 Inspiring Statuary
@@ -68,6 +66,7 @@ Deck
 1 Rosie Cotton of South Lane
 1 Sacred Foundry
 1 Sam, Loyal Attendant
+1 Samwise Gamgee
 1 Shalai and Hallar
 1 Skullclamp
 1 Sol Ring
@@ -76,6 +75,7 @@ Deck
 1 Stomping Ground
 1 Sunpetal Grove
 1 Swords to Plowshares
+1 Syr Ginger, the Meal Ender
 1 Talisman of Conviction
 1 Talisman of Impulse
 1 Talisman of Unity

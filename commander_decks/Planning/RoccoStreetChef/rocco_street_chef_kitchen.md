@@ -18,8 +18,8 @@ deck_status: main
 
 ### Three Interlocking Engines
 1.  **Engine 1 — Impulse & Exile Engine (Rocco & Exile Tech):** Rocco, **Passionate Archaeologist**, **Wild-Magic Sorcerer**, **Laelia, the Blade Reforged**, **Pia Nalaar, Consul of Revival**, and **Delayed Blast Fireball** reward and accelerate playing cards from exile. Every exile play grows your board and fills your kitchen with Food.
-2.  **Engine 2 — Food & Mana Multiplication:** **Nuka-Cola Vending Machine** (sac Food $\rightarrow$ create Treasure), **Peregrin Took** (extra Food on token creation + sac 3 Foods to draw), **Sam, Loyal Attendant** (reduces Food activation cost to {1}), **Academy Manufactor** (Food $\rightarrow$ Food + Clue + Treasure), and **Night of the Sweets' Revenge** (foods tap for {G} + Overrun finisher).
-3.  **Engine 3 — Counter Damage & Overrun Finishers:** **Shalai and Hallar** (deals damage to opponents whenever +1/+1 counters are placed!), **All Will Be One**, **Feasting Hobbit** (Devour Food 3 $\rightarrow$ unblockable 14/14+ threat), **Blossoming Bogbeast**, and **Inspiring Call**.
+2.  **Engine 2 — Food & Mana Multiplication:** **Nuka-Cola Vending Machine** (sac Food -> create Treasure), **Peregrin Took** (extra Food on token creation + sac 3 Foods to draw), **Sam, Loyal Attendant** (reduces Food activation cost to {1}), **Academy Manufactor** (Food -> Food + Clue + Treasure), and **Night of the Sweets' Revenge** (foods tap for {G} + Overrun finisher).
+3.  **Engine 3 — Counter Damage & Overrun Finishers:** **Shalai and Hallar** (deals damage to opponents whenever +1/+1 counters are placed!), **All Will Be One**, **Feasting Hobbit** (Devour Food 3 -> unblockable 14/14+ threat), **Blossoming Bogbeast**, and **Inspiring Call**.
 
 ---
 
@@ -31,7 +31,7 @@ deck_status: main
 *   **Farmer Cotton:** Scalable mid/late-game spell that creates **X 1/1 Halflings AND X Food tokens**!
 *   **Tough Cookie:** Creates a Food on ETB and turns passive Food tokens into **4/4 attacking artifact creatures**!
 *   **Motivated Pony:** Attacks and untaps all attacking creatures while giving them **+3/+3 and Trample** if a Food entered this turn!
-*   **Gwaihir, Greatest of the Eagles:** Creates a **3/3 Flying Bird token** at every end step if you gained 3+ life (eating 1 Food!).
+*   **Samwise Gamgee:** Creates a Food token whenever another nontoken creature enters and sacrifices 3 Foods to recur any historic card (Rocco, artifacts, legendary creatures) from your graveyard to hand.
 *   **Butterbur, Bree Innkeeper:** Creates a free Food token at your end step if you control no Foods.
 *   **Baylen, the Haymaker:** **S-TIER TOKEN ENGINE ($0.23).** Taps 2 tokens for mana of any color, 3 tokens to draw a card, or 4 tokens to put 3 +1/+1 counters on Baylen + Trample.
 *   **Bilbo, Fellow Conspirator:** **S-TIER TOKEN MULTIPLIER.** Whenever you create a Food token, create a Food token AND a Treasure token instead!
@@ -43,9 +43,11 @@ deck_status: main
 *   **Jaheira, Friend of the Forest:** Taps all your Food, Treasure, and Clue tokens for {G} mana.
 *   **Inspiring Statuary:** Grants Improvise to non-artifact spells, allowing your Food tokens to help pay for spells.
 *   **Birds of Paradise / Avacyn's Pilgrim:** 1-drop mana dorks that fix 3-color mana on Turn 1.
+*   **Tireless Provisioner:** Creates a Food or Treasure token on every land drop.
 *   **Nature's Lore / Three Visits / Farseek / Sol Ring / Arcane Signet / Talisman of Impulse / Talisman of Unity / Talisman of Conviction:** Naya mana ramp.
 
-### 💥 Food Payoffs & Counter Finishers (16 Cards)
+### 💥 Food Payoffs & Counter Finishers (17 Cards)
+*   **Syr Ginger, the Meal Ender:** Grows with a +1/+1 counter and scries 1 whenever any Food or Treasure is sacrificed, plus can be sacrificed for burst life.
 *   **Banquet Guests:** **S-TIER FOOD FINISHER ($0.34).** Has *Affinity for Foods*, Trample, enters with **twice X +1/+1 counters** (e.g. 10/10 for {G}{W}), and sacrifices a Food to gain Indestructible!
 *   **Kami of Whispered Hopes:** Adds +1 extra counter to all permanents AND taps for mana equal to its power!
 *   **Treebeard, Gracious Host:** Creates 2 Foods on ETB and puts +1/+1 counters equal to life gained on target Halfling or Treefolk.
@@ -53,29 +55,31 @@ deck_status: main
 *   **Shalai and Hallar:** Deals damage to target opponent equal to the number of +1/+1 counters put on any creature you control!
 *   **All Will Be One:** Deals damage equal to the number of counters put on any permanent.
 *   **Rosie Cotton of South Lane:** Creates a Food on ETB and puts +1/+1 counters on target creature whenever a token enters.
-*   **Sovereign Okinec Ahau / Bess, Soul Nourisher:** Mass counter multipliers and overrun finishers.
-*   **Ozolith, the Shattered Spire / Botanical Brawler / Evolution Sage:** Counter doubling and proliferate engines.
-*   **Inspiring Call:** Draws cards for every creature with a +1/+1 counter and grants team Indestructible.
 *   **Kodama of the West Tree:** Grants Trample and land ramp to modified creatures.
-*   **Tireless Tracker:** Landfall token and counter generator.
+*   **Tireless Tracker:** Landfall clue token and counter generator.
+*   **Laelia, the Blade Reforged:** Grows rapidly whenever cards are exiled (from Rocco or impulse triggers).
+*   **Pia Nalaar, Consul of Revival:** Creates 1/1 flying Thopters with haste whenever you play spells or lands from exile.
+*   **Professional Face-Breaker:** Turns combat damage into Treasure tokens and impulse exile card advantage.
+*   **Wild-Magic Sorcerer:** Grants Cascade to the first spell cast from exile each turn.
+*   **Valakut Exploration:** Exiles extra cards on landfall and burns opponents at end step for unused cards.
+*   **Inspiring Call:** Draws cards for every creature with a +1/+1 counter and grants team Indestructible.
 
-### 🛡️ Targeted & Mass Disruption (18 Cards)
+### 🛡️ Targeted & Mass Disruption (13 Cards)
 *   **Bolt Bend:** **BUDGET DEFLECTING SWAT.** Costs {R} if you control a 4+ power creature. Redirects single-target spells and abilities at instant speed!
 *   **Deflecting Palm:** Prevents all damage from a chosen source and deals that much damage directly to its controller!
-*   **Delayed Blast Fireball:** Deals 2 damage to all enemies, but when cast from exile (Foretell), deals **5 damage to all opponents and enemy creatures**!
-*   **Flawless Maneuver:** Free protection spell when commander is out.
-*   **Swords to Plowshares / Path to Exile / Generous Gift / Beast Within / Chaos Warp / Tibalt's Trickery / Nature's Claim / Boros Charm / Heroic Intervention:** Premier Naya spot removal, counter-magic, and board protection.
+*   **Delayed Blast Fireball:** Deals 2 damage to all enemies, but when cast from exile (Foretell or Rocco), deals **5 damage to all opponents and enemy creatures**!
+*   **Swords to Plowshares / Path to Exile / Generous Gift / Beast Within / Chaos Warp / Nature's Claim / Boros Charm:** Premier Naya spot removal, artifact/enchantment hate, and board protection.
 *   **Blasphemous Act / Vandalblast / Austere Command / Farewell:** Asymmetric board wipes.
 
 ### 🧱 Mana Base (38 Cards)
-*   **Command Tower / City of Brass / Mana Confluence / Plaza of Heroes:** Untapped 5-color and commander mana sources. *Plaza of Heroes* also sacrifices to grant Rocco Hexproof and Indestructible at instant speed.
+*   **Command Tower / City of Brass / Exotic Orchard / Path of Ancestry / Plaza of Heroes:** Untapped 5-color and commander mana sources. *Plaza of Heroes* also sacrifices to grant Rocco Hexproof and Indestructible at instant speed.
 *   **Sacred Foundry / Stomping Ground / Temple Garden / Jetmir's Garden:** Dual Shock lands and Naya Triome.
 *   **Clifftop Retreat / Rootbound Crag / Sunpetal Grove:** Check lands that enter untapped when you control Shock/Basic lands.
 *   **Battlefield Forge / Brushland / Karplusan Forest / Cinder Glade / Canopy Vista:** Pain lands and Tango lands.
 *   **Copperline Gorge / Razorverge Thicket / Inspiring Vantage:** Fast lands that enter **untapped on Turns 1, 2, and 3**.
 *   **Spectator Seating / Bountiful Promenade / Spire Garden:** Untapped Bond lands.
-*   **Boseiju, Who Endures / Eiganjo, Seat of the Empire / High Market:** Channel utility & sacrifice lands.
-*   **7 Forest / 4 Mountain / 4 Plains:** Balanced basic land package.
+*   **Eiganjo, Seat of the Empire / High Market:** Channel utility & sacrifice lands.
+*   **8 Forest / 4 Mountain / 4 Plains:** Balanced basic land package.
 
 ---
 
@@ -83,12 +87,17 @@ deck_status: main
 
 *   **Mondrak, Glory Dominus ({2}{W}{W}):** **S-Tier Token Doubler ($41).** Doubles ALL tokens (Foods, Treasures, Clues, Thopters, Rhinos). Sacrifices 2 Foods for permanent Indestructible protection.
 *   **Krark-Clan Ironworks ({4}):** **S-Tier Food Mana Engine ($17).** Sacrifices any Food token for **{C}{C} (2 free colorless mana)** instantly without tapping.
+*   **The Gaffer ({2}{W}):** **Hobbit Draw Engine ($7).** Draws a card on each player's end step whenever you gain 3+ life from a Food token.
 *   **Spiteful Banditry ({X}{R}{R}):** Enters as an X-damage board wipe and creates a Treasure token whenever an opponent creature dies.
 *   **Smothering Tithe ({3}{W} — Game Changer):** Top optional Game Changer candidate if higher artifact/Treasure velocity is desired.
 
 ---
 
 ## 📜 Deck Changelog
+*   **2026-08-31:** Replaced off-theme cards with dedicated Hobbit and Food synergy engines.
+    *   **In:** Samwise Gamgee, Syr Ginger, the Meal Ender
+    *   **Out:** Etali, Primal Storm, Gwaihir, Greatest of the Eagles
+    *   **Reason:** Lowered mana curve, added Food generation and historic recursion with Samwise, and added counter-growth, scry filtering, and lifegain with Syr Ginger.
 *   **2026-08-20:** Initial deck design completed for **Bracket 3 (Upgraded)**.
     *   **In:** Full 100-card list featuring Rocco Impulse & Food engine, *Shalai and Hallar*, *Nuka-Cola Vending Machine*, *Peregrin Took*, *Sam, Loyal Attendant*, *Feasting Hobbit*, *Delayed Blast Fireball*, *All Will Be One*, and *Academy Manufactor*.
 
@@ -100,97 +109,89 @@ COMMANDER:
 1 Rocco, Street Chef  
 
 MAIN DECK:  
-1 Abzan Falconer  
 1 Academy Manufactor  
 1 All Will Be One  
 1 Arcane Signet  
-1 Arid Mesa  
 1 Austere Command  
+1 Avacyn's Pilgrim  
+1 Banquet Guests  
+1 Battlefield Forge  
+1 Baylen, the Haymaker  
 1 Beast Within  
-1 Bess, Soul Nourisher  
 1 Bilbo, Fellow Conspirator  
+1 Birds of Paradise  
 1 Blasphemous Act  
-1 Bloodstained Mire  
-1 Blossoming Bogbeast  
+1 Bolt Bend  
 1 Boros Charm  
-1 Boseiju, Who Endures  
-1 Botanical Brawler  
 1 Bountiful Promenade  
+1 Brushland  
+1 Butterbur, Bree Innkeeper  
+1 Canopy Vista  
 1 Chaos Warp  
+1 Cinder Glade  
+1 City of Brass  
+1 Clifftop Retreat  
 1 Command Tower  
+1 Copperline Gorge  
 1 Deflecting Palm  
-1 Deflecting Swat  
 1 Delayed Blast Fireball  
 1 Eiganjo, Seat of the Empire  
-1 Etali, Primal Storm  
-1 Evolution Sage  
 1 Exotic Orchard  
 1 Farewell  
+1 Farmer Cotton  
+1 Farseek  
 1 Feasting Hobbit  
-1 Flawless Maneuver  
-1 Forest  
-6 Forest  
-1 Forgotten Ancient  
+8 Forest  
 1 Generous Gift  
-1 Hardened Scales  
+1 Gilded Goose  
 1 High Market  
-1 Heroic Intervention  
 1 Inspiring Call  
 1 Inspiring Statuary  
+1 Inspiring Vantage  
 1 Jaheira, Friend of the Forest  
 1 Jetmir's Garden  
-1 Kessig Wolf Run  
+1 Kami of Whispered Hopes  
+1 Karplusan Forest  
+1 Killer Service  
 1 Kodama of the West Tree  
 1 Laelia, the Blade Reforged  
-1 Lathiel, the Bounteous Dawn  
-1 Managorger Hydra  
-1 Marsh Flats  
-1 Misty Rainforest  
-1 Mountain  
-3 Mountain  
-1 Myriad Landscape  
+4 Mountain  
+1 Motivated Pony  
 1 Nature's Claim  
+1 Nature's Lore  
 1 Night of the Sweets' Revenge  
 1 Nuka-Cola Vending Machine  
-1 Overgrown Farmland  
-1 Ozolith, the Shattered Spire  
-1 Passionate Archaeologist  
 1 Path of Ancestry  
 1 Path to Exile  
 1 Peregrin Took  
 1 Pia Nalaar, Consul of Revival  
-1 Plains  
-3 Plains  
+4 Plains  
+1 Plaza of Heroes  
 1 Professional Face-Breaker  
-1 Rockfall Vale  
+1 Razorverge Thicket  
+1 Rootbound Crag  
 1 Rosie Cotton of South Lane  
 1 Sacred Foundry  
 1 Sam, Loyal Attendant  
-1 Scalding Tarn  
+1 Samwise Gamgee  
 1 Shalai and Hallar  
-1 Showdown of the Skalds  
 1 Skullclamp  
-1 Smothering Tithe  
 1 Sol Ring  
-1 Sovereign Okinec Ahau  
 1 Spectator Seating  
 1 Spire Garden  
 1 Stomping Ground  
-1 Sundown Pass  
+1 Sunpetal Grove  
 1 Swords to Plowshares  
+1 Syr Ginger, the Meal Ender  
 1 Talisman of Conviction  
 1 Talisman of Impulse  
 1 Talisman of Unity  
 1 Temple Garden  
-1 The Ozolith  
-1 Tibalt's Trickery  
+1 Three Visits  
 1 Tireless Provisioner  
 1 Tireless Tracker  
+1 Tough Cookie  
 1 Treebeard, Gracious Host  
-1 Urza's Ruinous Blast  
 1 Valakut Exploration  
 1 Vandalblast  
-1 Verdant Catacombs  
 1 Wild-Magic Sorcerer  
-1 Windswept Heath  
-1 Wooded Foothills  

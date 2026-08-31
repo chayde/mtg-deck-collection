@@ -44,11 +44,9 @@
 - [ ] Bilbo, Fellow Conspirator
 - [ ] Birds of Paradise
 - [ ] Butterbur, Bree Innkeeper
-- [ ] Etali, Primal Storm
 - [ ] Farmer Cotton
 - [ ] Feasting Hobbit
 - [ ] Gilded Goose
-- [ ] Gwaihir, Greatest of the Eagles
 - [ ] Jaheira, Friend of the Forest
 - [ ] Kami of Whispered Hopes
 - [ ] Kodama of the West Tree
@@ -59,7 +57,9 @@
 - [ ] Professional Face-Breaker
 - [ ] Rosie Cotton of South Lane
 - [ ] Sam, Loyal Attendant
+- [ ] Samwise Gamgee
 - [ ] Shalai and Hallar
+- [ ] Syr Ginger, the Meal Ender
 - [ ] Tireless Provisioner
 - [ ] Tireless Tracker
 - [ ] Tough Cookie
