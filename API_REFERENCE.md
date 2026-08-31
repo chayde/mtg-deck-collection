@@ -89,7 +89,16 @@ Each result shows:
 ```
 --- Card Name {mana_cost} [Type Line]  P/T  $price  [Set #collector_number]
     Oracle text here
+    Scryfall: https://scryfall.com/card/set/number/name?utm_source=api
+    Image: https://cards.scryfall.io/normal/front/...jpg
 ```
+
+### Link Integrity & Scryfall URL Rules (CRITICAL)
+- **Why links break:** Scryfall routes `/card/<set>/<collector_number>/...` strictly based on the set and collector number, ignoring the card slug name at the end. If an agent guesses or hallucinates a collector number (e.g. `cmm/19` instead of `cm2/19`), the link resolves to a completely different card (Custodi Squire instead of Brave the Sands).
+- **Mandatory Link Formats:**
+  1. **Canonical Exact-Name Search (Zero-Hallucination):** `https://scryfall.com/search?q=!"Card+Name"` (e.g. `[Brave the Sands](https://scryfall.com/search?q=!"Brave+the+Sands")`). Scryfall automatically resolves this directly to the card page.
+  2. **Verified Scryfall URI:** Copy the exact `Scryfall:` URI printed by `scripts/scryfall_lookup.py`.
+  3. **Verified Image URI:** Copy the exact `Image:` URI printed by `scripts/scryfall_lookup.py`.
 
 ### Key Query Syntax
 | Query | Meaning |

@@ -145,6 +145,16 @@ def format_card(c, verbose=True):
     lines = [f"--- {name} {cost} [{type_line}]{pt}{usd}{set_name}"]
     if verbose and oracle:
         lines.append(f"    {oracle}")
+    scryfall_uri = c.get("scryfall_uri")
+    if scryfall_uri:
+        lines.append(f"    Scryfall: {scryfall_uri}")
+    img_uri = None
+    if "image_uris" in c and c["image_uris"].get("normal"):
+        img_uri = c["image_uris"]["normal"]
+    elif "card_faces" in c and len(c["card_faces"]) > 0 and c["card_faces"][0].get("image_uris", {}).get("normal"):
+        img_uri = c["card_faces"][0]["image_uris"]["normal"]
+    if img_uri:
+        lines.append(f"    Image: {img_uri}")
     return "\n".join(lines)
 
 # ---------------------------------------------------------------------------

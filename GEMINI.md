@@ -76,6 +76,7 @@ Run through this at the start of every working session:
 - **MANDATORY:** Verify all card data via the permanent scripts — `scripts/scryfall_lookup.py` for card lookups, `scripts/manapool_price_deck.py` for pricing. Do not write inline Python or call APIs directly.
 - **When you must look up a card:** Any time you are unsure of oracle text, mana cost, color identity, card type, legality, or a complex rules interaction — look it up. Do not rely on memory or assumption. The lookup takes 500ms; an incorrect assumption can invalidate an entire recommendation.
 - **Ambiguity Protocol:** If a card name is uncertain, a search result is ambiguous, or you cannot confirm a card exists, **STOP and ask the user** before proceeding. Do not make a best-guess substitution.
+- **Scryfall Link & Image Accuracy:** NEVER manually construct `/card/<set>/<number>/...` URLs from memory. Scryfall routes exclusively by `<set>/<collector_number>` and ignores card name slugs, causing links to resolve to completely different cards if the number is wrong. Always use the verified `Scryfall:` URI and `Image:` URL returned by `scripts/scryfall_lookup.py`, or use the canonical search URL format `https://scryfall.com/search?q=!"Card+Name"`.
 - When recommending new cards, state which source you verified them with.
 
 ### 5.2 The Triple Update Rule — CRITICAL
@@ -278,6 +279,10 @@ Examples:
 - Be concise and direct. Do not pad responses with preamble or trailing summaries.
 - When referencing cards, include the mana cost in parentheses on first mention, e.g., **Sol Ring** (1).
 - When discussing, referencing, or recommending cards in chat, ALWAYS provide a clickable Scryfall link and render the card image scaled down to 50% width (using `<img src="..." width="240" alt="..." />`) so the user can visually inspect them easily without overflowing the screen.
+- **Link Integrity Protocol (CRITICAL):** Never hand-type `/card/<set>/<number>/...` paths. If a collector number is off by even one digit, Scryfall routes to whatever card holds that collector number (e.g. `cmm/19` is Custodi Squire, not Brave the Sands). Links MUST use either:
+  1. The exact `Scryfall:` URI returned by `scripts/scryfall_lookup.py`, OR
+  2. The canonical exact-name search URL: `https://scryfall.com/search?q=!"Card+Name"` (which Scryfall automatically resolves directly to the card page).
+  3. For card images: Always copy the verified `Image:` URI returned directly by `scripts/scryfall_lookup.py`.
 - When recommending a swap, always name both the card going in **and** the card coming out.
 - Flag bracket or legality concerns as blockers, not suggestions.
 
