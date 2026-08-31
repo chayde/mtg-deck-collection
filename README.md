@@ -56,6 +56,7 @@ Decks under development, research, or being optimized.
 *   **Rocco, Street Chef:** Naya Impulse Gastronomy & Food Tokens ("The Street Chef's Kitchen"). Bracket 3.
 *   **Svella, Ice Shaper:** Gruul Big-Mana Activated Ability & Topdeck Stompy ("The Icy Forge"). Bracket 3.
 *   **Sygg, River Cutthroat:** Dimir Group Slug, Goad & End-Step Attrition Control ("The Toll of the River"). Bracket 3.
+*   **Felothar the Steadfast:** Abzan Defender Beatdown, Team Vigilance & Toughness Fling Reach ("The Iron Citadel"). Bracket 3.
 
 ### 🎮 `/arena_decks`
 Optimized lists for MTG Arena formats (Standard, Brawl, Timeless).
