@@ -95,7 +95,7 @@ Whenever a deck's card list changes, you **MUST** update **all three** of these 
 
 ### 5.4 Bracket Compliance
 
-Before adding any card, cross-reference the "Game Changers" list in `COMMANDER_DECKBUILDING_RULES.md`:
+Before adding any card, cross-reference the "Game Changers" list in `COMMANDER_DECKBUILDING_RULES.md` and verify it dynamically via Scryfall using `python scripts/scryfall_lookup.py --search "!\"Card Name\" is:gamechanger"`:
 
 | Bracket | Game Changers Allowed |
 |---|---|
@@ -103,6 +103,7 @@ Before adding any card, cross-reference the "Game Changers" list in `COMMANDER_D
 | 3 | Up to three |
 | 4–5 | No restriction |
 
+- **Dynamic Verification (MANDATORY):** Scryfall dynamically tracks all official Game Changers via `is:gamechanger`. Never guess whether a staple is a Game Changer; check it using `python scripts/scryfall_lookup.py --search "!\"Card Name\" is:gamechanger"`. To discover all Game Changers within a commander's color identity, run `python scripts/scryfall_lookup.py --search "is:gamechanger id<=<COLORS>"`.
 Exceeding the limit for a deck's bracket is a hard block — do not proceed without flagging it to the user.
 
 ### 5.5 No Unsolicited Scope Creep

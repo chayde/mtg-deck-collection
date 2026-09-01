@@ -100,6 +100,29 @@ Each result shows:
   2. **Verified Scryfall URI:** Copy the exact `Scryfall:` URI printed by `scripts/scryfall_lookup.py`.
   3. **Verified Image URI:** Copy the exact `Image:` URI printed by `scripts/scryfall_lookup.py`.
 
+### Game Changers Lookup (`is:gamechanger`)
+
+Scryfall tracks cards officially designated as "Game Changers" under the Commander Bracket System via the `is:gamechanger` tag. Always verify Game Changer status dynamically via `scripts/scryfall_lookup.py` rather than relying on memory or assumption.
+
+**Search all current Game Changers:**
+```bash
+python scripts/scryfall_lookup.py --search "is:gamechanger"
+```
+
+**Filter Game Changers within a commander's color identity (e.g. Jund):**
+```bash
+python scripts/scryfall_lookup.py --search "is:gamechanger id<=BRG"
+```
+
+**Verify if a specific card is a Game Changer:**
+```bash
+python scripts/scryfall_lookup.py --search "!\"Card Name\" is:gamechanger"
+```
+*(If the card is NOT a Game Changer, the query returns `Found 0 matching cards`.)*
+
+**Web Search URL:**
+`https://scryfall.com/search?as=grid&order=color&q=is:gamechanger`
+
 ### Key Query Syntax
 | Query | Meaning |
 |-------|---------|

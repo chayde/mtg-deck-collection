@@ -22,7 +22,12 @@ For detailed bracket definitions, restrictions, and decision guidance, read **[`
 
 ## Game Changers List
 
-
+> **Dynamic Scryfall Verification:**
+> Scryfall tracks all official Game Changers dynamically via the search syntax `is:gamechanger`. To inspect or verify cards:
+> - **Web:** [Scryfall Game Changers Search](https://scryfall.com/search?as=grid&order=color&q=is:gamechanger)
+> - **CLI (All Game Changers):** `python scripts/scryfall_lookup.py --search "is:gamechanger"`
+> - **CLI (By Color Identity):** `python scripts/scryfall_lookup.py --search "is:gamechanger id<=WUBRG"`
+> - **Verify Single Card:** `python scripts/scryfall_lookup.py --search "!\"Card Name\" is:gamechanger"`
 
 ##### Creature
 
