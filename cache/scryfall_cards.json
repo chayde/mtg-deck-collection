@@ -92124,5 +92124,439 @@
       }
     },
     "cached_at": 1788232616.3920865
+  },
+  "rushed rebirth": {
+    "data": {
+      "object": "card",
+      "id": "07b7c952-5ab7-4546-8369-4d213bf868bf",
+      "oracle_id": "8ee64f9d-54c4-4a75-a8ac-6bb0a060b960",
+      "multiverse_ids": [
+        513720
+      ],
+      "mtgo_id": 88963,
+      "arena_id": 76636,
+      "tcgplayer_id": 236023,
+      "cardmarket_id": 558114,
+      "name": "Rushed Rebirth",
+      "lang": "en",
+      "released_at": "2021-04-23",
+      "uri": "https://api.scryfall.com/cards/07b7c952-5ab7-4546-8369-4d213bf868bf",
+      "scryfall_uri": "https://scryfall.com/card/stx/228/rushed-rebirth?utm_source=api",
+      "layout": "normal",
+      "highres_image": true,
+      "image_status": "highres_scan",
+      "image_updated_at": "2026-07-13T07:21:35Z",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/0/7/07b7c952-5ab7-4546-8369-4d213bf868bf.jpg?1783927295",
+        "normal": "https://cards.scryfall.io/normal/front/0/7/07b7c952-5ab7-4546-8369-4d213bf868bf.jpg?1783927295",
+        "large": "https://cards.scryfall.io/large/front/0/7/07b7c952-5ab7-4546-8369-4d213bf868bf.jpg?1783927295",
+        "png": "https://cards.scryfall.io/png/front/0/7/07b7c952-5ab7-4546-8369-4d213bf868bf.png?1783927295",
+        "art_crop": "https://cards.scryfall.io/art_crop/front/0/7/07b7c952-5ab7-4546-8369-4d213bf868bf.jpg?1783927295",
+        "border_crop": "https://cards.scryfall.io/border_crop/front/0/7/07b7c952-5ab7-4546-8369-4d213bf868bf.jpg?1783927295",
+        "thumb": "https://cards.scryfall.io/thumb/front/0/7/07b7c952-5ab7-4546-8369-4d213bf868bf.webp?1783927295",
+        "grid": "https://cards.scryfall.io/grid/front/0/7/07b7c952-5ab7-4546-8369-4d213bf868bf.webp?1783927295",
+        "display": "https://cards.scryfall.io/display/front/0/7/07b7c952-5ab7-4546-8369-4d213bf868bf.webp?1783927295",
+        "art": "https://cards.scryfall.io/art/front/0/7/07b7c952-5ab7-4546-8369-4d213bf868bf.webp?1783927295",
+        "crop": "https://cards.scryfall.io/crop/front/0/7/07b7c952-5ab7-4546-8369-4d213bf868bf.webp?1783927295"
+      },
+      "mana_cost": "{B}{G}",
+      "cmc": 2.0,
+      "type_line": "Instant",
+      "oracle_text": "Choose target creature. When that creature dies this turn, search your library for a creature card with lesser mana value, put it onto the battlefield tapped, then shuffle.",
+      "colors": [
+        "B",
+        "G"
+      ],
+      "color_identity": [
+        "B",
+        "G"
+      ],
+      "keywords": [],
+      "legalities": {
+        "standard": "not_legal",
+        "future": "not_legal",
+        "historic": "legal",
+        "timeless": "legal",
+        "gladiator": "legal",
+        "pioneer": "legal",
+        "modern": "legal",
+        "legacy": "legal",
+        "pauper": "not_legal",
+        "vintage": "legal",
+        "penny": "legal",
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "standardbrawl": "not_legal",
+        "brawl": "legal",
+        "competitivebrawl": "legal",
+        "alchemy": "not_legal",
+        "paupercommander": "not_legal",
+        "duel": "legal",
+        "oldschool": "not_legal",
+        "premodern": "not_legal",
+        "predh": "not_legal",
+        "tlr": "legal"
+      },
+      "games": [
+        "arena",
+        "paper",
+        "mtgo"
+      ],
+      "reserved": false,
+      "game_changer": false,
+      "foil": true,
+      "nonfoil": true,
+      "finishes": [
+        "nonfoil",
+        "foil"
+      ],
+      "oversized": false,
+      "promo": false,
+      "reprint": false,
+      "variation": false,
+      "set_id": "541c3c28-8747-40e5-a231-8e8f33234859",
+      "set": "stx",
+      "set_name": "Strixhaven: School of Mages",
+      "set_type": "expansion",
+      "set_uri": "https://api.scryfall.com/sets/541c3c28-8747-40e5-a231-8e8f33234859",
+      "set_search_uri": "https://api.scryfall.com/cards/search?order=set&q=e%3Astx&unique=prints",
+      "scryfall_set_uri": "https://scryfall.com/sets/stx?utm_source=api",
+      "rulings_uri": "https://api.scryfall.com/cards/07b7c952-5ab7-4546-8369-4d213bf868bf/rulings",
+      "prints_search_uri": "https://api.scryfall.com/cards/search?order=released&q=oracleid%3A8ee64f9d-54c4-4a75-a8ac-6bb0a060b960&unique=prints",
+      "collector_number": "228",
+      "digital": false,
+      "rarity": "rare",
+      "watermark": "witherbloom",
+      "flavor_text": "Witherbloom students learn to see death not as tragedy, but as opportunity.",
+      "card_back_id": "0aeebaf5-8c7d-4636-9e82-8c27447861f7",
+      "artist": "Jason Kang",
+      "artist_ids": [
+        "064b9176-e325-44f6-a413-2cadb7505851"
+      ],
+      "illustration_id": "7fa8fb5e-09c1-4a2a-bc04-301de5598628",
+      "border_color": "black",
+      "frame": "2015",
+      "security_stamp": "oval",
+      "full_art": false,
+      "textless": false,
+      "booster": true,
+      "story_spotlight": false,
+      "edhrec_rank": 8574,
+      "penny_rank": 11210,
+      "prices": {
+        "usd": "0.45",
+        "usd_foil": "0.39",
+        "usd_etched": null,
+        "eur": "0.46",
+        "eur_foil": "0.73",
+        "tix": "0.02"
+      },
+      "related_uris": {
+        "gatherer": "https://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=513720&printed=false",
+        "tcgplayer_infinite_articles": "https://partner.tcgplayer.com/c/4931599/1830156/21018?subId1=api&trafcat=tcgplayer.com%2Fsearch%2Farticles&u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Farticles%3FproductLineName%3Dmagic%26q%3DRushed%2BRebirth",
+        "tcgplayer_infinite_decks": "https://partner.tcgplayer.com/c/4931599/1830156/21018?subId1=api&trafcat=tcgplayer.com%2Fsearch%2Fdecks&u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Fdecks%3FproductLineName%3Dmagic%26q%3DRushed%2BRebirth",
+        "edhrec": "https://edhrec.com/route/?cc=Rushed+Rebirth"
+      },
+      "purchase_uris": {
+        "tcgplayer": "https://partner.tcgplayer.com/c/4931599/1830156/21018?subId1=api&u=https%3A%2F%2Fwww.tcgplayer.com%2Fproduct%2F236023%3Fpage%3D1",
+        "cardmarket": "https://www.cardmarket.com/en/Magic/Products?idProduct=558114&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+        "cardhoarder": "https://www.cardhoarder.com/cards/88963?affiliate_id=scryfall&ref=card-profile&utm_campaign=affiliate&utm_medium=card&utm_source=scryfall"
+      }
+    },
+    "cached_at": 1788233529.3279946
+  },
+  "aurora awakener": {
+    "data": {
+      "object": "card",
+      "id": "913977c2-73f9-466b-bd01-827c1736e070",
+      "oracle_id": "cf9d13e2-bdcc-4c66-95ad-654ef795dbd3",
+      "multiverse_ids": [],
+      "resource_id": "BB85D95071C2C05FAC880C29977F790E87995BB2F8925C7DCDA566965CDCEB1A",
+      "mtgo_id": 146721,
+      "arena_id": 98486,
+      "tcgplayer_id": 671063,
+      "cardmarket_id": 864599,
+      "name": "Aurora Awakener",
+      "lang": "en",
+      "released_at": "2026-01-23",
+      "uri": "https://api.scryfall.com/cards/913977c2-73f9-466b-bd01-827c1736e070",
+      "scryfall_uri": "https://scryfall.com/card/ecl/165/aurora-awakener?utm_source=api",
+      "layout": "normal",
+      "highres_image": true,
+      "image_status": "highres_scan",
+      "image_updated_at": "2026-07-13T01:00:35Z",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/9/1/913977c2-73f9-466b-bd01-827c1736e070.jpg?1783904435",
+        "normal": "https://cards.scryfall.io/normal/front/9/1/913977c2-73f9-466b-bd01-827c1736e070.jpg?1783904435",
+        "large": "https://cards.scryfall.io/large/front/9/1/913977c2-73f9-466b-bd01-827c1736e070.jpg?1783904435",
+        "png": "https://cards.scryfall.io/png/front/9/1/913977c2-73f9-466b-bd01-827c1736e070.png?1783904435",
+        "art_crop": "https://cards.scryfall.io/art_crop/front/9/1/913977c2-73f9-466b-bd01-827c1736e070.jpg?1783904435",
+        "border_crop": "https://cards.scryfall.io/border_crop/front/9/1/913977c2-73f9-466b-bd01-827c1736e070.jpg?1783904435",
+        "thumb": "https://cards.scryfall.io/thumb/front/9/1/913977c2-73f9-466b-bd01-827c1736e070.webp?1783904435",
+        "grid": "https://cards.scryfall.io/grid/front/9/1/913977c2-73f9-466b-bd01-827c1736e070.webp?1783904435",
+        "display": "https://cards.scryfall.io/display/front/9/1/913977c2-73f9-466b-bd01-827c1736e070.webp?1783904435",
+        "art": "https://cards.scryfall.io/art/front/9/1/913977c2-73f9-466b-bd01-827c1736e070.webp?1783904435",
+        "crop": "https://cards.scryfall.io/crop/front/9/1/913977c2-73f9-466b-bd01-827c1736e070.webp?1783904435"
+      },
+      "mana_cost": "{6}{G}",
+      "cmc": 7.0,
+      "type_line": "Creature — Giant Druid",
+      "oracle_text": "Trample\nVivid — When this creature enters, reveal cards from the top of your library until you reveal X permanent cards, where X is the number of colors among permanents you control. Put any number of those permanent cards onto the battlefield, then put the rest of the revealed cards on the bottom of your library in a random order.",
+      "power": "7",
+      "toughness": "7",
+      "colors": [
+        "G"
+      ],
+      "color_identity": [
+        "G"
+      ],
+      "keywords": [
+        "Trample",
+        "Vivid"
+      ],
+      "legalities": {
+        "standard": "legal",
+        "future": "legal",
+        "historic": "legal",
+        "timeless": "legal",
+        "gladiator": "legal",
+        "pioneer": "legal",
+        "modern": "legal",
+        "legacy": "legal",
+        "pauper": "not_legal",
+        "vintage": "legal",
+        "penny": "legal",
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "standardbrawl": "legal",
+        "brawl": "legal",
+        "competitivebrawl": "legal",
+        "alchemy": "legal",
+        "paupercommander": "not_legal",
+        "duel": "legal",
+        "oldschool": "not_legal",
+        "premodern": "not_legal",
+        "predh": "not_legal",
+        "tlr": "not_legal"
+      },
+      "games": [
+        "paper",
+        "arena",
+        "mtgo"
+      ],
+      "reserved": false,
+      "game_changer": false,
+      "foil": true,
+      "nonfoil": true,
+      "finishes": [
+        "nonfoil",
+        "foil"
+      ],
+      "oversized": false,
+      "promo": false,
+      "reprint": false,
+      "variation": false,
+      "set_id": "5d293ad8-a749-4725-bd5c-c4e1db828bd0",
+      "set": "ecl",
+      "set_name": "Lorwyn Eclipsed",
+      "set_type": "expansion",
+      "set_uri": "https://api.scryfall.com/sets/5d293ad8-a749-4725-bd5c-c4e1db828bd0",
+      "set_search_uri": "https://api.scryfall.com/cards/search?order=set&q=e%3Aecl&unique=prints",
+      "scryfall_set_uri": "https://scryfall.com/sets/ecl?utm_source=api",
+      "rulings_uri": "https://api.scryfall.com/cards/913977c2-73f9-466b-bd01-827c1736e070/rulings",
+      "prints_search_uri": "https://api.scryfall.com/cards/search?order=released&q=oracleid%3Acf9d13e2-bdcc-4c66-95ad-654ef795dbd3&unique=prints",
+      "collector_number": "165",
+      "digital": false,
+      "rarity": "mythic",
+      "card_back_id": "0aeebaf5-8c7d-4636-9e82-8c27447861f7",
+      "artist": "Paolo Parente",
+      "artist_ids": [
+        "d48dd097-720d-476a-8722-6a02854ae28b"
+      ],
+      "illustration_id": "d7d7600c-f668-460a-9ae5-56750b90bbed",
+      "border_color": "black",
+      "frame": "2015",
+      "security_stamp": "oval",
+      "full_art": false,
+      "textless": false,
+      "booster": true,
+      "story_spotlight": false,
+      "edhrec_rank": 9780,
+      "prices": {
+        "usd": "0.75",
+        "usd_foil": "1.63",
+        "usd_etched": null,
+        "eur": "1.93",
+        "eur_foil": "2.51",
+        "tix": "0.58"
+      },
+      "related_uris": {
+        "tcgplayer_infinite_articles": "https://partner.tcgplayer.com/c/4931599/1830156/21018?subId1=api&trafcat=tcgplayer.com%2Fsearch%2Farticles&u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Farticles%3FproductLineName%3Dmagic%26q%3DAurora%2BAwakener",
+        "tcgplayer_infinite_decks": "https://partner.tcgplayer.com/c/4931599/1830156/21018?subId1=api&trafcat=tcgplayer.com%2Fsearch%2Fdecks&u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Fdecks%3FproductLineName%3Dmagic%26q%3DAurora%2BAwakener",
+        "edhrec": "https://edhrec.com/route/?cc=Aurora+Awakener"
+      },
+      "purchase_uris": {
+        "tcgplayer": "https://partner.tcgplayer.com/c/4931599/1830156/21018?subId1=api&u=https%3A%2F%2Fwww.tcgplayer.com%2Fproduct%2F671063%3Fpage%3D1",
+        "cardmarket": "https://www.cardmarket.com/en/Magic/Products?idProduct=864599&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+        "cardhoarder": "https://www.cardhoarder.com/cards/146721?affiliate_id=scryfall&ref=card-profile&utm_campaign=affiliate&utm_medium=card&utm_source=scryfall"
+      }
+    },
+    "cached_at": 1788233530.70169
+  },
+  "feldon of the third path": {
+    "data": {
+      "object": "card",
+      "id": "0360f1ff-15c9-48e3-89eb-fbc4bf140c55",
+      "oracle_id": "be094704-5232-4b10-beeb-aa9bbfae063d",
+      "multiverse_ids": [
+        612525
+      ],
+      "mtgo_id": 111010,
+      "tcgplayer_id": 491600,
+      "cardmarket_id": 705808,
+      "name": "Feldon of the Third Path",
+      "lang": "en",
+      "released_at": "2023-04-21",
+      "uri": "https://api.scryfall.com/cards/0360f1ff-15c9-48e3-89eb-fbc4bf140c55",
+      "scryfall_uri": "https://scryfall.com/card/moc/277/feldon-of-the-third-path?utm_source=api",
+      "layout": "normal",
+      "highres_image": true,
+      "image_status": "highres_scan",
+      "image_updated_at": "2026-07-13T04:32:30Z",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/0/3/0360f1ff-15c9-48e3-89eb-fbc4bf140c55.jpg?1783917150",
+        "normal": "https://cards.scryfall.io/normal/front/0/3/0360f1ff-15c9-48e3-89eb-fbc4bf140c55.jpg?1783917150",
+        "large": "https://cards.scryfall.io/large/front/0/3/0360f1ff-15c9-48e3-89eb-fbc4bf140c55.jpg?1783917150",
+        "png": "https://cards.scryfall.io/png/front/0/3/0360f1ff-15c9-48e3-89eb-fbc4bf140c55.png?1783917150",
+        "art_crop": "https://cards.scryfall.io/art_crop/front/0/3/0360f1ff-15c9-48e3-89eb-fbc4bf140c55.jpg?1783917150",
+        "border_crop": "https://cards.scryfall.io/border_crop/front/0/3/0360f1ff-15c9-48e3-89eb-fbc4bf140c55.jpg?1783917150",
+        "thumb": "https://cards.scryfall.io/thumb/front/0/3/0360f1ff-15c9-48e3-89eb-fbc4bf140c55.webp?1783917150",
+        "grid": "https://cards.scryfall.io/grid/front/0/3/0360f1ff-15c9-48e3-89eb-fbc4bf140c55.webp?1783917150",
+        "display": "https://cards.scryfall.io/display/front/0/3/0360f1ff-15c9-48e3-89eb-fbc4bf140c55.webp?1783917150",
+        "art": "https://cards.scryfall.io/art/front/0/3/0360f1ff-15c9-48e3-89eb-fbc4bf140c55.webp?1783917150",
+        "crop": "https://cards.scryfall.io/crop/front/0/3/0360f1ff-15c9-48e3-89eb-fbc4bf140c55.webp?1783917150"
+      },
+      "mana_cost": "{1}{R}{R}",
+      "cmc": 3.0,
+      "type_line": "Legendary Creature — Human Artificer",
+      "oracle_text": "{2}{R}, {T}: Create a token that's a copy of target creature card in your graveyard, except it's an artifact in addition to its other types. It gains haste. Sacrifice it at the beginning of the next end step.",
+      "power": "2",
+      "toughness": "3",
+      "colors": [
+        "R"
+      ],
+      "color_identity": [
+        "R"
+      ],
+      "keywords": [],
+      "all_parts": [
+        {
+          "object": "related_card",
+          "id": "f4e87a11-b3b1-47b2-bd73-f4c78d6fbe6c",
+          "component": "token",
+          "name": "Copy",
+          "type_line": "Token",
+          "uri": "https://api.scryfall.com/cards/f4e87a11-b3b1-47b2-bd73-f4c78d6fbe6c"
+        },
+        {
+          "object": "related_card",
+          "id": "0360f1ff-15c9-48e3-89eb-fbc4bf140c55",
+          "component": "combo_piece",
+          "name": "Feldon of the Third Path",
+          "type_line": "Legendary Creature — Human Artificer",
+          "uri": "https://api.scryfall.com/cards/0360f1ff-15c9-48e3-89eb-fbc4bf140c55"
+        }
+      ],
+      "legalities": {
+        "standard": "not_legal",
+        "future": "not_legal",
+        "historic": "not_legal",
+        "timeless": "not_legal",
+        "gladiator": "not_legal",
+        "pioneer": "not_legal",
+        "modern": "not_legal",
+        "legacy": "legal",
+        "pauper": "not_legal",
+        "vintage": "legal",
+        "penny": "not_legal",
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "standardbrawl": "not_legal",
+        "brawl": "not_legal",
+        "competitivebrawl": "not_legal",
+        "alchemy": "not_legal",
+        "paupercommander": "not_legal",
+        "duel": "legal",
+        "oldschool": "not_legal",
+        "premodern": "not_legal",
+        "predh": "not_legal",
+        "tlr": "legal"
+      },
+      "games": [
+        "paper",
+        "mtgo"
+      ],
+      "reserved": false,
+      "game_changer": false,
+      "foil": false,
+      "nonfoil": true,
+      "finishes": [
+        "nonfoil"
+      ],
+      "oversized": false,
+      "promo": false,
+      "reprint": true,
+      "variation": false,
+      "set_id": "6bba5de9-5afb-42af-a7eb-24ac854bf671",
+      "set": "moc",
+      "set_name": "March of the Machine Commander",
+      "set_type": "commander",
+      "set_uri": "https://api.scryfall.com/sets/6bba5de9-5afb-42af-a7eb-24ac854bf671",
+      "set_search_uri": "https://api.scryfall.com/cards/search?order=set&q=e%3Amoc&unique=prints",
+      "scryfall_set_uri": "https://scryfall.com/sets/moc?utm_source=api",
+      "rulings_uri": "https://api.scryfall.com/cards/0360f1ff-15c9-48e3-89eb-fbc4bf140c55/rulings",
+      "prints_search_uri": "https://api.scryfall.com/cards/search?order=released&q=oracleid%3Abe094704-5232-4b10-beeb-aa9bbfae063d&unique=prints",
+      "collector_number": "277",
+      "digital": false,
+      "rarity": "mythic",
+      "flavor_text": "\"She will come back to me.\"",
+      "card_back_id": "0aeebaf5-8c7d-4636-9e82-8c27447861f7",
+      "artist": "Chase Stone",
+      "artist_ids": [
+        "2d753f61-5f5b-468e-97ea-8e0fdd347340"
+      ],
+      "illustration_id": "20675649-b91c-46cb-a61c-a8e2e7ab2659",
+      "border_color": "black",
+      "frame": "2015",
+      "frame_effects": [
+        "legendary"
+      ],
+      "security_stamp": "oval",
+      "full_art": false,
+      "textless": false,
+      "booster": false,
+      "story_spotlight": false,
+      "edhrec_rank": 1517,
+      "prices": {
+        "usd": "1.48",
+        "usd_foil": null,
+        "usd_etched": null,
+        "eur": "1.46",
+        "eur_foil": null,
+        "tix": "4.23"
+      },
+      "related_uris": {
+        "gatherer": "https://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=612525&printed=false",
+        "tcgplayer_infinite_articles": "https://partner.tcgplayer.com/c/4931599/1830156/21018?subId1=api&trafcat=tcgplayer.com%2Fsearch%2Farticles&u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Farticles%3FproductLineName%3Dmagic%26q%3DFeldon%2Bof%2Bthe%2BThird%2BPath",
+        "tcgplayer_infinite_decks": "https://partner.tcgplayer.com/c/4931599/1830156/21018?subId1=api&trafcat=tcgplayer.com%2Fsearch%2Fdecks&u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Fdecks%3FproductLineName%3Dmagic%26q%3DFeldon%2Bof%2Bthe%2BThird%2BPath",
+        "edhrec": "https://edhrec.com/route/?cc=Feldon+of+the+Third+Path"
+      },
+      "purchase_uris": {
+        "tcgplayer": "https://partner.tcgplayer.com/c/4931599/1830156/21018?subId1=api&u=https%3A%2F%2Fwww.tcgplayer.com%2Fproduct%2F491600%3Fpage%3D1",
+        "cardmarket": "https://www.cardmarket.com/en/Magic/Products?idProduct=705808&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+        "cardhoarder": "https://www.cardhoarder.com/cards/111010?affiliate_id=scryfall&ref=card-profile&utm_campaign=affiliate&utm_medium=card&utm_source=scryfall"
+      }
+    },
+    "cached_at": 1788233531.2309558
   }
 }

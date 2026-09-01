@@ -84,7 +84,7 @@ deck_status: main
 *   **Bane of Progress:** {4}{G}{G} 2/2. ETB destroys all artifacts and enchantments and puts a +1/+1 counter on itself for each permanent destroyed.
 *   **Kogla, the Titan Ape:** {3}{G}{G}{G} 7/6. ETB fights target creature; attacking destroys an artifact or enchantment defending player controls.
 *   **Apex Devastator:** {8}{G}{G} 10/10. Cascade, cascade, cascade, cascade; blitzes for reduced cost to trigger 4 free spells from your deck with haste.
-*   **Treeshaker Chimera:** {5}{G}{G}{G} 8/5 trample. All creatures able to block it must do so; when it dies, draw three cards; clears all blockers for your other attackers.
+*   **Bringer of the Last Gift:** {6}{B}{B} 6/6 flying. When cast, each player sacrifices all other creatures, then returns all creature cards from their graveyard that weren't put there this way to the battlefield; blitzing it triggers an asymmetric Living Death on entry, attacks with haste for 6 flying damage, and draws a card on death.
 
 ### 💀 Reanimation & Recursion Suite (7 Cards)
 *   **Reanimate:** {B} sorcery. 1-mana reanimation of any creature from any graveyard directly to the battlefield.
@@ -155,6 +155,10 @@ deck_status: main
 
 ## 📜 Deck Changelog
 
+- **2026-08-31:** Mass Reanimation Upgrade.
+    - **In:** *Bringer of the Last Gift*
+    - **Out:** *Treeshaker Chimera*
+    - **Reason:** Upgraded an 8-CMC combat lure into a blitzable, creature-tutorable *Living Death* on a 6/6 flying body, providing redundant game-ending board wipe and graveyard recursion.
 - **2026-08-31:** Comprehensive Bracket 3 Overhaul & Comparative Research Integration.
     - **In:** *Survival of the Fittest*, *Demonic Tutor*, *Toxic Deluge*, *Birds of Paradise*, *Delighted Halfling*, *Ignoble Hierarch*, *Elves of Deep Shadow*, *Llanowar Elves*, *Fyndhorn Elves*, *Elvish Mystic*, *Orcish Lumberjack*, *Bloom Tender*, *Birthing Ritual*, *Greater Good*, *Industrial Advancement*, *Blossoming Tortoise*, *Druid of Purification*, *Chainer, Nightmare Adept*, *Primeval Herald*, *Kardur, Doomscourge*, *Roxanne, Starfall Savant*, *Ojer Kaslem, Deepest Growth*, *Terror of the Peaks*, *Gray Merchant of Asphodel*, *Moraug, Fury of Akoum*, *Archon of Cruelty*, *Massacre Wurm*, *Kokusho, the Evening Star*, *Etali, Primal Conqueror*, *Balefire Dragon*, *Mikaeus, the Unhallowed*, *Bane of Progress*, *Kogla, the Titan Ape*, *Apex Devastator*, *Treeshaker Chimera*, *Reanimate*, *Animate Dead*, *Eternal Witness*, *Deflecting Swat*, *Heroic Intervention*, *Tibalt's Trickery*, *Boseiju, Who Endures*, *Takenuma, Abandoned Mire*, *Phyrexian Tower*, *High Market*, *Ziatora's Proving Ground*, Fetch Lands, Shock Lands, Surveillance Lands.
     - **Out:** Budget filler ETB/death creatures (*Demon's Disciple*, *Gravelighter*, *Daemogoth Woe-Eater*, *Thragtusk*, *Sepulchral Primordial*, *Molten Primordial*, *Woodfall Primus*, *Mitotic Slime*, *Inferno Titan*, *Gamekeeper*), basic slow ramp (*Cultivate*, *Kodama's Reach*, *Rampant Growth*, *Far Wanderings*), and tapped budget taplands.
@@ -214,7 +218,7 @@ DECK:
 1 Bane of Progress  
 1 Kogla, the Titan Ape  
 1 Apex Devastator  
-1 Treeshaker Chimera  
+1 Bringer of the Last Gift  
 1 Reanimate  
 1 Animate Dead  
 1 Victimize  

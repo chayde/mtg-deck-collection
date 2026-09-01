@@ -48,7 +48,7 @@ DECK:
 1 Bane of Progress
 1 Kogla, the Titan Ape
 1 Apex Devastator
-1 Treeshaker Chimera
+1 Bringer of the Last Gift
 1 Reanimate
 1 Animate Dead
 1 Victimize

@@ -1,5 +1,70 @@
 # Goldfish Simulation Log: Henzie "Toolbox" Torre
 
+## 2026-08-31 — Bringer of the Last Gift Integration (20 sims, 10 turns, Bracket 3)
+
+**Command:**
+```bash
+python scripts/multiplayer_goldfish.py "commander_decks/Planning/HenzieBlitz/moxfield_import.txt" --sims 20 --turns 10 --bracket 3
+```
+
+**Results:**
+```
+====================================================================
+RUNNING 20 × 4-PLAYER SIMULATIONS
+Commander: Henzie "Toolbox" Torre (CMC 3)  |  Target: Bracket 3 (Upgraded) (Target T7)
+====================================================================
+
+--------------------------------------------------------------------
+AGGREGATE DEPLOYMENT & MULLIGAN PROFILE
+--------------------------------------------------------------------
+  Commander cast rate: 75/80 (94%)
+  Commander Cast Range: T2 - T10
+  Commander Cast Avg:   T3.7
+  Commander Cast Distribution:
+    T 2: ####################### (23)
+    T 3: ######################### (25)
+    T 4: ######## (8)
+    T 5: ####### (7)
+    T 6: ##### (5)
+    T 7: ## (2)
+    T 8: # (1)
+    T 9: ## (2)
+    T10: ## (2)
+
+  Opening Hand Quality Breakdown (80 hands evaluated):
+    Gold Keep (Mana + Ramp + Enabler):   36/80 (45%)
+    Silver Keep (Mana + Curve):          44/80 (55%)
+    Desperation Keep (Mulligan to <=5):   0/80 (0%)
+    Average Starting Hand Size:          6.96 cards
+
+--------------------------------------------------------------------
+BRACKET READINESS (Bracket 3 (Upgraded) — Target T7)
+--------------------------------------------------------------------
+  Target Window Readiness Rate (T<=7): 67/80 (84%)
+  Engine Readiness Avg:  T4.6
+  Engine Readiness Distribution:
+    T 2: ## (2)
+    T 3: ####################### (23)
+    T 4: #################### (20)
+    T 5: ############# (13)
+    T 6: ####### (7)
+    T 7: ## (2)
+    T 8: ## (2)
+    T 9: #### (4)
+    T10: ## (2)
+
+  [BRACKET COMPLIANCE CHECK] Status: PASS
+  Deck deploys its engine around Turn 4.6, perfectly positioned to execute and threaten a win on Bracket 3 (Upgraded)'s target (Turn 7+).
+```
+
+**Notes:**
+- Replaced *Treeshaker Chimera* with *Bringer of the Last Gift*.
+- Gold keep rate increased to 45% with 0% desperation keeps (average starting hand size 6.96).
+- T2 commander casts increased to 23 (averaging T3.7 cast turn).
+- Bracket compliance remains PASS for Bracket 3.
+
+---
+
 ## 2026-08-31 — Bracket 3 Overhaul Validation (20 sims, 10 turns, Bracket 3)
 
 **Command:**
