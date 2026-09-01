@@ -10,7 +10,7 @@ deck_status: main
 **Henzie "Toolbox" Torre**
 *   **Archetype:** Jund ({B}{R}{G}) Blitz / Sacrifice / Value Reanimation Midrange
 *   **Bracket:** 3 (Optimized Power / High Synergy — Winning Turns 6–8)
-*   **Game Changers (3/3):** [Survival of the Fittest](https://scryfall.com/search?q=!"Survival+of+the+Fittest"), [Demonic Tutor](https://scryfall.com/search?q=!"Demonic+Tutor"), [Toxic Deluge](https://scryfall.com/search?q=!"Toxic+Deluge")
+*   **Game Changers (2/3):** [Survival of the Fittest](https://scryfall.com/search?q=!"Survival+of+the+Fittest"), [Demonic Tutor](https://scryfall.com/search?q=!"Demonic+Tutor")
 *   **Core Goal:** Exploit high 1-drop mana dork density to reliably cast Henzie on Turn 2. Beginning on Turn 3, chain discounted Blitz creature spells with haste, immediate attack triggers, and death draws. Feed high-impact threats into continuous sacrifice engines (*Birthing Ritual*, *Greater Good*, *Industrial Advancement*), refueling the hand and filling the graveyard to resolve backbreaking mass reanimation (*Living Death*, *Victimize*, *Phyrexian Delver*) for lethal non-combat damage and overwhelming combat swings.
 
 ### 🏎️ Piloting the Engine
@@ -25,10 +25,9 @@ deck_status: main
 ### 👑 Commander (1 Card)
 *   **Henzie "Toolbox" Torre:** {B}{R}{G} 3/3 Devil Rogue. Gives all 4+ MV creatures Blitz with cumulative cost reduction for each commander cast. The central engine of the deck.
 
-### ⚡ Game Changers (3 Cards — Bracket 3 Max)
+### ⚡ Game Changers (2 Cards — Bracket 3 Max 3)
 *   **Survival of the Fittest:** {1}{G} enchantment. Discard a creature to tutor any creature to hand; bins reanimation targets while tutoring the exact Blitz bomb needed.
 *   **Demonic Tutor:** {1}{B} sorcery. Unconditional tutor to hand for 2 mana; grabs *Living Death*, a protection spell, or a missing engine piece.
-*   **Toxic Deluge:** {2}{B} sorcery. The premier efficient black sweeper; pays life to bypass indestructible and hexproof boards at 3 mana.
 
 ### 🌲 Turn 1 Mana Dorks (8 Cards)
 *High-density 1-drop ramp ensuring consistent Turn 2 Henzie deployment.*
@@ -96,7 +95,8 @@ deck_status: main
 *   **Timeless Witness:** {3}{G} 3/2. ETB returns any card from your graveyard to hand; has Eternalize.
 *   **Eternal Witness:** {1}{G}{G} 2/1. ETB returns any card from your graveyard to hand.
 
-### 🛡️ Interaction & Instant Protection (9 Cards)
+### 🛡️ Interaction & Board Wipes (10 Cards)
+*   **Toxic Deluge:** {2}{B} sorcery. The premier efficient black sweeper; pays life to bypass indestructible and hexproof boards at 3 mana.
 *   **Assassin's Trophy:** {B}{G} instant. Unconditional instant-speed permanent destruction.
 *   **Tear Asunder:** {1}{G} instant. Exiles target artifact or enchantment (or any nonland permanent with kicker).
 *   **Chaos Warp:** {2}{R} instant. Shuffles target permanent into its owner's library.
