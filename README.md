@@ -46,7 +46,7 @@ Decks under development, research, or being optimized.
 *   **Omnath Landfall:** 4-Color value engine (Locus of Creation).
 *   **Thalia & Gitrog:** Abzan Landfall & Hatebears.
 *   **Yidris Cascade:** 4-Color "Value Cascade".
-*   **Henzie Blitz:** Jund sacrifice and aggro.
+*   **Henzie Blitz:** Jund Blitz & Value Reanimation Engine. Bracket 3.
 *   **Ulamog Ramp:** Colorless high-power ramp.
 *   **Zimone Engine:** Simic Landfall for **Christina**.
 *   **Ramses, Assassin Lord:** Dimir Assassin Tribal alt-win condition (Shadow Brotherhood).

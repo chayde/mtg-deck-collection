@@ -2,6 +2,14 @@
 
 ## 🗓️ August 2026: Ulalek, Fused Atrocity & Goldfish Simulator Protocol Upgrade
 
+### 2026-08-31: Henzie "Toolbox" Torre ("Blitz & Reanimation Engine") — 7-Deck Comparative Research & Bracket 3 Overhaul
+*   **Research & Comparative Analysis:** Analyzed seven high-profile community Henzie decklists and the comprehensive 360k+ character Papazedruu primer. Replaced budget 2-3 CMC ramp with high 1-drop mana dork density (*Birds of Paradise*, *Delighted Halfling*, *Ignoble Hierarch*, *Elves of Deep Shadow*, *Llanowar Elves*, *Fyndhorn Elves*, *Elvish Mystic*, *Orcish Lumberjack*) to consistently enable Turn 2 Henzie deployment.
+*   **Complete Overhaul & Archival:** Archived original Bracket 2 budget list to `commander_decks/Planning/HenzieBlitz/archive/` (`deck_status: reference`). Created brand new 100-card Bracket 3 Jund ({B}{R}{G}) Blitz, Sacrifice, and Value Reanimation Midrange deck in `commander_decks/Planning/HenzieBlitz/henzie_blitz_bracket3.md` (`deck_status: main`).
+*   **Synergy & Strategy:** Chains discounted Blitz threats with immediate haste and death draws, feeding into sacrifice engines (*Birthing Ritual*, *Greater Good*, *Industrial Advancement*). Features high-impact non-combo finishers (*Archon of Cruelty*, *Terror of the Peaks*, *Etali, Primal Conqueror*, *Moraug, Fury of Akoum*, *Massacre Wurm*, *Ojer Kaslem, Deepest Growth*, *Apex Devastator*) and mass reanimation (*Living Death*, *Victimize*, *Phyrexian Delver*, *Chainer, Nightmare Adept*).
+*   **Bracket & Game Changers:** Validated for **Bracket 3 (Upgraded)** with 3 Game Changers (*Survival of the Fittest*, *Demonic Tutor*, *Toxic Deluge*).
+*   **Validation:** 20-sim goldfish check — **95% commander cast rate (76/80, T3.9 avg)**, **T4.6 engine readiness (89% on target <= T7)**, 40% Gold Keeps, 57% Silver Keeps (97% functional keeps, 2% desperation keeps, avg hand size 6.90). Bracket compliance status: **PASS** for Bracket 3. Logged to `commander_decks/Planning/HenzieBlitz/GOLDFISH_LOG.md`.
+
+
 ### 2026-08-31: Rocco, Street Chef ("The Street Chef's Kitchen") — Thematic Hobbit, Combat & Food Mana Overhaul
 *   **Deck Refinement:** Executed 5 targeted synergy upgrades: replaced high-end off-theme creatures (*Etali, Primal Storm* [6 CMC], *Gwaihir, Greatest of the Eagles* [5 CMC], *Butterbur, Bree Innkeeper* [4 CMC]) and low-synergy utility spells (*Skullclamp*, *Boros Charm*) with high-velocity engines:
     *   *Samwise Gamgee* ({G}{W} — nontoken creature ETB Food generation + 3-Food historic card recursion)
