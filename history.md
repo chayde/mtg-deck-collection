@@ -1,5 +1,15 @@
 # Project History: MTG Deck Collection
 
+## 🗓️ September 2026: Henzie Blitz Refinement & Playtesting Integration
+
+### 2026-09-01: Henzie "Toolbox" Torre ("Blitz & Reanimation Engine") — Card Velocity & Graveyard Hate Refinement
+*   **Synergy Upgrades:** Replaced 3 underperforming/redundant cards with high-velocity tech:
+    *   *In:* *Gwenom, Remorseless* ({3}{B}{B} — 5-CMC blitz body with lifelink/deathtouch; attacks with haste to cast topdeck spells for free paying life), *Author of Shadows* ({4}{B} — 5-CMC blitz body that exiles all opponents' graveyards on entry and steals a nonland spell, enabling 100% one-sided *Living Death* and *Bringer of the Last Gift* blowouts), and *Flare of Cultivation* ({1}{G}{G} — 0-mana basic land ramp via sacrificing 1-drop mana dorks or blitzed green creatures).
+    *   *Out:* *Etali, Primal Conqueror* (removed to eliminate commander redundancy with owned Etali deck), *Rampant Rejuvenator* (slow 4-mana death-only basic ramp), and *Gray Merchant of Asphodel* (ineffective in 3-color Blitz due to low persistent black devotion).
+*   **Forge MTG Integration:** Exported Forge `.dck` playtest files for Henzie and 4-player AI test pod (*The Ur-Dragon*, *Rocco, Street Chef*, *Felothar the Steadfast*).
+*   **Validation:** 20-sim goldfish check — **96% commander cast rate (77/80, T3.8 avg)**, **T4.6 engine readiness (88% on target <= T7)**, 39% Gold Keeps, 61% Silver Keeps (100% functional keeps, 0% desperation keeps, avg hand size 6.94). Bracket compliance status: **PASS** for Bracket 3. Logged to `commander_decks/Planning/HenzieBlitz/GOLDFISH_LOG.md`.
+
+
 ## 🗓️ August 2026: Ulalek, Fused Atrocity & Goldfish Simulator Protocol Upgrade
 
 ### 2026-08-31: Henzie "Toolbox" Torre ("Blitz & Reanimation Engine") — 7-Deck Comparative Research & Bracket 3 Overhaul

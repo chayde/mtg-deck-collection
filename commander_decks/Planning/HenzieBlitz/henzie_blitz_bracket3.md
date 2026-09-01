@@ -40,12 +40,13 @@ deck_status: main
 *   **Elvish Mystic:** {G} 1/1. Functional duplicate green mana dork.
 *   **Orcish Lumberjack:** {R} 1/1. Taps and sacrifices a Forest to produce 3 mana in any combination of {R} and/or {G}; enables explosive early multi-spell turns.
 
-### 🌿 Turn 2 Ramp & Fixing (5 Cards)
+### 🌿 Early Ramp & Fixing (6 Cards)
 *   **Bloom Tender:** {1}{G} 1/1. Taps for up to 3 mana ({B}{R}{G}) once Henzie is in play.
 *   **Sakura-Tribe Elder:** {1}{G} 1/1. Sacrifices itself at instant speed to fetch a basic land into play tapped.
 *   **Farseek:** {1}{G} sorcery. Searches for a Mountain, Swamp, or Forest shock/dual land into play tapped.
 *   **Nature's Lore:** {1}{G} sorcery. Searches for a Forest card (including shock/dual lands) and puts it onto the battlefield untapped.
 *   **Three Visits:** {1}{G} sorcery. Functional duplicate of *Nature's Lore*.
+*   **Flare of Cultivation:** {1}{G}{G} sorcery. Can be cast for 0 mana by sacrificing a nontoken green creature (such as a 1-drop mana dork or a blitzed creature before the end-step trigger); puts a basic land onto the battlefield tapped and another into hand.
 
 ### 🔄 Sacrifice Engines & Velocity Outlets (4 Cards)
 *   **Birthing Ritual:** {1}{G} enchantment. In your end step, sacrifice a creature that just blitzed to look at top 7 cards and put a creature with mana value X+1 directly onto the battlefield.
@@ -53,7 +54,7 @@ deck_status: main
 *   **Industrial Advancement:** {3}{R} enchantment. When a nontoken creature is sacrificed in end step, reveal cards until you hit a creature with lesser MV and put it directly into play.
 *   **Skullclamp:** {1} artifact. Equips for 1 to draw 2 cards whenever an equipped creature dies; turns 1-drop dorks or blitzed creatures into massive card advantage.
 
-### 🐉 4-CMC Blitz Enablers & Value (9 Cards)
+### 🐉 4-CMC Blitz Enablers & Value (8 Cards)
 *   **Blossoming Tortoise:** {2}{G}{G} 3/3. ETB and attack mills 3 cards and returns a land from graveyard to play; reduces land activation costs.
 *   **Druid of Purification:** {3}{G} 2/3. ETB allows each player to choose an artifact or enchantment to destroy, wiping up to 4 opposing problem permanents on entry.
 *   **Chainer, Nightmare Adept:** {2}{B}{R} 3/2. Discard a card to cast a creature from your graveyard each turn, giving blitz creatures an endless recursion loop.
@@ -61,24 +62,23 @@ deck_status: main
 *   **Kardur, Doomscourge:** {2}{B}{R} 4/3. ETB goads all opponents' creatures for a full turn cycle and drains opponents when attacking creatures die.
 *   **Ravenous Chupacabra:** {2}{B}{B} 2/2. ETB destroys target creature; blitzes for spot removal that replaces itself on death.
 *   **Solemn Simulacrum:** {4} 2/2. ETB fetches a basic land; dies to draw a card; blitzing draws two cards total.
-*   **Rampant Rejuvenator:** {3}{G} 0/0. Enters with counters equal to Henzie's power/counters; when it dies, fetches that many basic lands onto the battlefield tapped.
 *   **Disciple of Bolas:** {3}{B} 2/1. ETB sacrifices another creature to gain life and draw cards equal to its power; converts blitzed giants into a full fresh hand.
 
-### 💥 5-CMC Blitz Powerhouses (8 Cards)
+### 💥 5-CMC Blitz Powerhouses (9 Cards)
 *   **Seedguide Ash:** {4}{G} 4/4. When it dies, searches for up to three Forest cards and puts them onto the battlefield tapped; explosive mana ramp.
 *   **Junji, the Midnight Sky:** {3}{B}{B} 5/5 flying. Death trigger reanimates any non-Dragon creature from any graveyard or forces opponents to discard 2 and lose 2 life.
 *   **Atsushi, the Blazing Sky:** {3}{R}{R} 4/4 flying, trample. Death trigger creates 3 Treasures or impulsively exiles 2 cards to play.
 *   **Roxanne, Starfall Savant:** {3}{R}{G} 4/3. ETB and attack creates meteorite tokens that deal 2 damage and tap for 2 mana.
 *   **Ojer Kaslem, Deepest Growth:** {3}{G}{G} 6/5 trample. Combat damage to a player looks at top cards and cheats a creature and land directly onto the battlefield.
 *   **Terror of the Peaks:** {3}{R}{R} 5/4 flying. Whenever another creature enters, deals damage equal to its power to any target; machine-guns the table as blitzed bombs enter.
-*   **Gray Merchant of Asphodel:** {3}{B}{B} 2/4. ETB drains each opponent equal to black devotion and gains that much life; huge swing when blitzed or mass-reanimated.
+*   **Author of Shadows:** {4}{B} 3/3. ETB exiles all opponents' graveyards and allows you to cast the best exiled nonland card using mana of any color; premier one-sided graveyard hate that sets up blowouts with *Living Death* and *Bringer of the Last Gift*.
+*   **Gwenom, Remorseless:** {3}{B}{B} 4/4 deathtouch, lifelink. Whenever she attacks, lets you play cards from the top of your library for free (paying life instead of mana) for the rest of the turn; swings immediately with blitz haste to cheat multiple spells into play while lifelink recoups the life paid.
 *   **Moraug, Fury of Akoum:** {4}{R}{R} 6/6. Landfall grants additional combat phases with untaps and +1/+0 buffs to all creatures.
 
-### 🌋 6+ CMC Blitz Bombs & Win Conditions (10 Cards)
+### 🌋 6+ CMC Blitz Bombs & Win Conditions (9 Cards)
 *   **Archon of Cruelty:** {6}{B}{B} 6/6 flying. ETB and attack forces target opponent to sacrifice a creature or planeswalker, discard a card, lose 3 life, while you draw a card and gain 3 life.
 *   **Massacre Wurm:** {3}{B}{B}{B} 6/5. ETB gives opposing creatures -2/-2 and drains opponents for 2 life whenever their creatures die; obliterates token decks.
 *   **Kokusho, the Evening Star:** {4}{B}{B} 5/5 flying. When it dies, each opponent loses 5 life and you gain life equal to life lost this way (15 life gain).
-*   **Etali, Primal Conqueror:** {5}{R}{R} 7/7 trample. ETB exiles top card of each player's library and casts any number of nonland spells without paying mana costs.
 *   **Balefire Dragon:** {5}{R}{R} 6/6 flying. Combat damage to a player deals that much damage to each creature that player controls; one-sided board wipe on wings.
 *   **Mikaeus, the Unhallowed:** {3}{B}{B}{B} 5/5 intimidate. Gives non-Human creatures +1/+1 and Undying, causing blitzed creatures to return immediately after sacrifice with a +1/+1 counter.
 *   **Bane of Progress:** {4}{G}{G} 2/2. ETB destroys all artifacts and enchantments and puts a +1/+1 counter on itself for each permanent destroyed.
@@ -155,6 +155,10 @@ deck_status: main
 
 ## 📜 Deck Changelog
 
+- **2026-09-01:** Card Velocity & Graveyard Hate Refinement.
+    - **In:** *Gwenom, Remorseless*, *Author of Shadows*, *Flare of Cultivation*
+    - **Out:** *Etali, Primal Conqueror*, *Rampant Rejuvenator*, *Gray Merchant of Asphodel*
+    - **Reason:** Upgraded card velocity and interaction: Gwenom cheats spells off library with haste/lifelink, Author of Shadows provides full opponent graveyard exile to ensure one-sided *Living Death* blowouts, and Flare of Cultivation provides 0-mana basic ramp. Cut Etali (commander redundancy), Rampant Rejuvenator (death-only ramp), and Gray Merchant (low Jund devotion).
 - **2026-08-31:** Mass Reanimation Upgrade.
     - **In:** *Bringer of the Last Gift*
     - **Out:** *Treeshaker Chimera*
@@ -199,7 +203,7 @@ DECK:
 1 Kardur, Doomscourge  
 1 Ravenous Chupacabra  
 1 Solemn Simulacrum  
-1 Rampant Rejuvenator  
+1 Author of Shadows  
 1 Disciple of Bolas  
 1 Seedguide Ash  
 1 Junji, the Midnight Sky  
@@ -207,12 +211,12 @@ DECK:
 1 Roxanne, Starfall Savant  
 1 Ojer Kaslem, Deepest Growth  
 1 Terror of the Peaks  
-1 Gray Merchant of Asphodel  
+1 Gwenom, Remorseless  
 1 Moraug, Fury of Akoum  
 1 Archon of Cruelty  
 1 Massacre Wurm  
 1 Kokusho, the Evening Star  
-1 Etali, Primal Conqueror  
+1 Flare of Cultivation  
 1 Balefire Dragon  
 1 Mikaeus, the Unhallowed  
 1 Bane of Progress  

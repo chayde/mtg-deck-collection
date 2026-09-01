@@ -29,7 +29,7 @@ DECK:
 1 Kardur, Doomscourge
 1 Ravenous Chupacabra
 1 Solemn Simulacrum
-1 Rampant Rejuvenator
+1 Author of Shadows
 1 Disciple of Bolas
 1 Seedguide Ash
 1 Junji, the Midnight Sky
@@ -37,12 +37,12 @@ DECK:
 1 Roxanne, Starfall Savant
 1 Ojer Kaslem, Deepest Growth
 1 Terror of the Peaks
-1 Gray Merchant of Asphodel
+1 Gwenom, Remorseless
 1 Moraug, Fury of Akoum
 1 Archon of Cruelty
 1 Massacre Wurm
 1 Kokusho, the Evening Star
-1 Etali, Primal Conqueror
+1 Flare of Cultivation
 1 Balefire Dragon
 1 Mikaeus, the Unhallowed
 1 Bane of Progress

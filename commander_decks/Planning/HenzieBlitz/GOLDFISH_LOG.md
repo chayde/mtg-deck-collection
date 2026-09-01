@@ -1,5 +1,70 @@
 # Goldfish Simulation Log: Henzie "Toolbox" Torre
 
+## 2026-09-01 — Velocity & Graveyard Hate Refinement (20 sims, 10 turns, Bracket 3)
+
+**Command:**
+```bash
+python scripts/multiplayer_goldfish.py "commander_decks/Planning/HenzieBlitz/moxfield_import.txt" --sims 20 --turns 10 --bracket 3
+```
+
+**Results:**
+```
+====================================================================
+RUNNING 20 × 4-PLAYER SIMULATIONS
+Commander: Henzie "Toolbox" Torre (CMC 3)  |  Target: Bracket 3 (Upgraded) (Target T7)
+====================================================================
+
+--------------------------------------------------------------------
+AGGREGATE DEPLOYMENT & MULLIGAN PROFILE
+--------------------------------------------------------------------
+  Commander cast rate: 77/80 (96%)
+  Commander Cast Range: T2 - T10
+  Commander Cast Avg:   T3.8
+  Commander Cast Distribution:
+    T 2: ####################### (23)
+    T 3: ######################## (24)
+    T 4: ########### (11)
+    T 5: ####### (7)
+    T 6: #### (4)
+    T 7: # (1)
+    T 8: ## (2)
+    T 9: ### (3)
+    T10: ## (2)
+
+  Opening Hand Quality Breakdown (80 hands evaluated):
+    Gold Keep (Mana + Ramp + Enabler):   31/80 (39%)
+    Silver Keep (Mana + Curve):          49/80 (61%)
+    Desperation Keep (Mulligan to <=5):   0/80 (0%)
+    Average Starting Hand Size:          6.94 cards
+
+--------------------------------------------------------------------
+BRACKET READINESS (Bracket 3 (Upgraded) — Target T7)
+--------------------------------------------------------------------
+  Target Window Readiness Rate (T<=7): 70/80 (88%)
+  Engine Readiness Avg:  T4.6
+  Engine Readiness Distribution:
+    T 2: ### (3)
+    T 3: ###################### (22)
+    T 4: #################### (20)
+    T 5: ################ (16)
+    T 6: ####### (7)
+    T 7: ## (2)
+    T 8: ## (2)
+    T 9: ### (3)
+    T10: ## (2)
+
+  [BRACKET COMPLIANCE CHECK] Status: PASS
+  Deck deploys its engine around Turn 4.6, perfectly positioned to execute and threaten a win on Bracket 3 (Upgraded)'s target (Turn 7+).
+```
+
+**Notes:**
+- Replaced *Etali, Primal Conqueror*, *Rampant Rejuvenator*, and *Gray Merchant of Asphodel* with *Gwenom, Remorseless*, *Author of Shadows*, and *Flare of Cultivation*.
+- Commander cast rate improved to 96% (77/80) with 0% desperation keeps.
+- Target window engine readiness sits at 88% (T4.6 average).
+- Bracket compliance remains PASS for Bracket 3.
+
+---
+
 ## 2026-08-31 — Bringer of the Last Gift Integration (20 sims, 10 turns, Bracket 3)
 
 **Command:**
