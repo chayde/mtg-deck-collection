@@ -100,7 +100,7 @@ deck_status: main
 *   **Assassin's Trophy:** {B}{G} instant. Unconditional instant-speed permanent destruction.
 *   **Tear Asunder:** {1}{G} instant. Exiles target artifact or enchantment (or any nonland permanent with kicker).
 *   **Chaos Warp:** {2}{R} instant. Shuffles target permanent into its owner's library.
-*   **Beast Within:** {2}{G} instant. Destroys target permanent and gives controller a 3/3 Beast token.
+*   **Windgrace's Judgment:** {3}{B}{G} instant. For any number of opponents, destroys target nonland permanent that player controls; an instant-speed 3-for-1 blowout that cleanly removes problem threats across all opponents with zero drawbacks.
 *   **Deflecting Swat:** {2}{R} instant. Free redirect spell if Henzie is on the battlefield; protects Henzie and key permanents.
 *   **Heroic Intervention:** {1}{G} instant. Grants permanents hexproof and indestructible until end of turn.
 *   **Tibalt's Trickery:** {1}{R} instant. Hard red counterspell to stop game-winning opposing spells.
@@ -155,6 +155,10 @@ deck_status: main
 
 ## 📜 Deck Changelog
 
+- **2026-09-01:** Permanent Removal Upgrade.
+    - **In:** *Windgrace's Judgment*
+    - **Out:** *Beast Within*
+    - **Reason:** Replaced single-target removal that gives an opponent a 3/3 Beast token with an instant-speed 3-for-1 that destroys a nonland permanent from each opponent simultaneously with zero drawbacks.
 - **2026-09-01:** Card Velocity & Graveyard Hate Refinement.
     - **In:** *Gwenom, Remorseless*, *Author of Shadows*, *Flare of Cultivation*
     - **Out:** *Etali, Primal Conqueror*, *Rampant Rejuvenator*, *Gray Merchant of Asphodel*
@@ -233,7 +237,7 @@ DECK:
 1 Assassin's Trophy  
 1 Tear Asunder  
 1 Chaos Warp  
-1 Beast Within  
+1 Windgrace's Judgment  
 1 Deflecting Swat  
 1 Heroic Intervention  
 1 Tibalt's Trickery  

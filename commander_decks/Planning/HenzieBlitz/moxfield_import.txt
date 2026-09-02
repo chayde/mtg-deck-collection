@@ -59,7 +59,7 @@ DECK:
 1 Assassin's Trophy
 1 Tear Asunder
 1 Chaos Warp
-1 Beast Within
+1 Windgrace's Judgment
 1 Deflecting Swat
 1 Heroic Intervention
 1 Tibalt's Trickery

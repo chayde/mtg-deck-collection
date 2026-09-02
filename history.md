@@ -6,8 +6,9 @@
 *   **Synergy Upgrades:** Replaced 3 underperforming/redundant cards with high-velocity tech:
     *   *In:* *Gwenom, Remorseless* ({3}{B}{B} — 5-CMC blitz body with lifelink/deathtouch; attacks with haste to cast topdeck spells for free paying life), *Author of Shadows* ({4}{B} — 5-CMC blitz body that exiles all opponents' graveyards on entry and steals a nonland spell, enabling 100% one-sided *Living Death* and *Bringer of the Last Gift* blowouts), and *Flare of Cultivation* ({1}{G}{G} — 0-mana basic land ramp via sacrificing 1-drop mana dorks or blitzed green creatures).
     *   *Out:* *Etali, Primal Conqueror* (removed to eliminate commander redundancy with owned Etali deck), *Rampant Rejuvenator* (slow 4-mana death-only basic ramp), and *Gray Merchant of Asphodel* (ineffective in 3-color Blitz due to low persistent black devotion).
+*   **Permanent Removal Upgrade:** Replaced *Beast Within* ({2}{G}) with *Windgrace's Judgment* ({3}{B}{G} — instant-speed 3-for-1 that destroys target nonland permanent from each opponent simultaneously with zero tokens or drawbacks).
 *   **Forge MTG Integration:** Exported Forge `.dck` playtest files for Henzie and 4-player AI test pod (*The Ur-Dragon*, *Rocco, Street Chef*, *Felothar the Steadfast*).
-*   **Validation:** 20-sim goldfish check — **96% commander cast rate (77/80, T3.8 avg)**, **T4.6 engine readiness (88% on target <= T7)**, 39% Gold Keeps, 61% Silver Keeps (100% functional keeps, 0% desperation keeps, avg hand size 6.94). Bracket compliance status: **PASS** for Bracket 3. Logged to `commander_decks/Planning/HenzieBlitz/GOLDFISH_LOG.md`.
+*   **Validation:** 20-sim goldfish check — **94% commander cast rate (75/80, T3.7 avg)**, **T4.4 engine readiness (88% on target <= T7)**, 44% Gold Keeps, 55% Silver Keeps (99% functional keeps, 1% desperation keep, avg hand size 6.95). Bracket compliance status: **PASS** for Bracket 3. Logged to `commander_decks/Planning/HenzieBlitz/GOLDFISH_LOG.md`.
 
 
 ## 🗓️ August 2026: Ulalek, Fused Atrocity & Goldfish Simulator Protocol Upgrade
