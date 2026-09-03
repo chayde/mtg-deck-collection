@@ -1,5 +1,70 @@
 # Goldfish Simulation Log: Henzie "Toolbox" Torre
 
+## 2026-09-03 — Board Wipe Optimization: Incinerator of the Guilty In, Blasphemous Act Out (20 sims, 10 turns, Bracket 3)
+
+**Command:**
+```bash
+python scripts/multiplayer_goldfish.py "commander_decks/Planning/HenzieBlitz/moxfield_import.txt" --sims 20 --turns 10 --bracket 3
+```
+
+**Results:**
+```
+====================================================================
+RUNNING 20 × 4-PLAYER SIMULATIONS
+Commander: Henzie "Toolbox" Torre (CMC 3)  |  Target: Bracket 3 (Upgraded) (Target T7)
+====================================================================
+
+--------------------------------------------------------------------
+AGGREGATE DEPLOYMENT & MULLIGAN PROFILE
+--------------------------------------------------------------------
+  Commander cast rate: 77/80 (96%)
+  Commander Cast Range: T2 - T10
+  Commander Cast Avg:   T3.8
+  Commander Cast Distribution:
+    T 2: ################### (19)
+    T 3: ######################## (24)
+    T 4: ############# (13)
+    T 5: ########## (10)
+    T 6: ### (3)
+    T 7: #### (4)
+    T 8: # (1)
+    T 9: # (1)
+    T10: ## (2)
+
+  Opening Hand Quality Breakdown (80 hands evaluated):
+    Gold Keep (Mana + Ramp + Enabler):   22/80 (28%)
+    Silver Keep (Mana + Curve):          56/80 (70%)
+    Desperation Keep (Mulligan to <=5):   2/80 (2%)
+    Average Starting Hand Size:          6.86 cards
+
+--------------------------------------------------------------------
+BRACKET READINESS (Bracket 3 (Upgraded) — Target T7)
+--------------------------------------------------------------------
+  Target Window Readiness Rate (T<=7): 72/80 (90%)  ← All-time high 90%!
+  Engine Readiness Avg:  T4.5
+  Engine Readiness Distribution:
+    T 3: ################## (18)
+    T 4: ############################# (29)
+    T 5: ################ (16)
+    T 6: ##### (5)
+    T 7: #### (4)
+    T 8: # (1)
+    T 9: # (1)
+    T10: ## (2)
+
+  [BRACKET COMPLIANCE CHECK] Status: PASS
+  Deck deploys its engine around Turn 4.5, perfectly positioned to execute and threaten a win on Bracket 3 (Upgraded)'s target (Turn 7+).
+```
+
+**Notes:**
+- Replaced noncreature symmetrical sweeper *Blasphemous Act* ({8}{R}) with blitzable 6/6 flying/trample dragon *Incinerator of the Guilty* ({4}{R}{R}).
+- Breaks parity by wiping opposing creatures/planeswalkers on combat damage via collect evidence while leaving our board and mana dorks completely intact.
+- Searchable with *Survival of the Fittest* / *Fauna Shaman*.
+- Achieved an all-time peak **90% Target Window Readiness Rate (72/80 hands)**!
+- Bracket compliance remains PASS for Bracket 3.
+
+---
+
 ## 2026-09-03 — Engine Velocity Refinement: Birthing Ritual In, Eternal Witness Out (20 sims, 10 turns, Bracket 3)
 
 **Command:**

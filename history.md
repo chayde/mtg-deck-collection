@@ -2,6 +2,11 @@
 
 ## 🗓️ September 2026: Henzie Blitz Refinement & Playtesting Integration
 
+### 2026-09-03: Henzie "Toolbox" Torre — Board Wipe Optimization: Incinerator of the Guilty
+*   **Board Wipe Overhaul:** Replaced symmetrical noncreature sweeper *Blasphemous Act* ({8}{R}) with blitzable 6/6 flying/trample dragon *Incinerator of the Guilty* ({4}{R}{R}). Incinerator can be tutored on-demand with Survival/Fauna Shaman, blitzes for 5 mana with haste, wipes opposing creatures and planeswalkers via collect evidence on combat damage, and draws a card on death while preserving our own mana dorks and Henzie. Retained *Toxic Deluge* as a 1-mana one-sided wipe combo with *Maha, Its Feathers Night*, noting *Primaris Eliminator* ({4}{B}) as a future upgrade path.
+*   **Validation:** 20-sim goldfish check — **96% commander cast rate (77/80)**, **record 90% target window readiness (72/80, T4.5 avg)**, 28% Gold Keeps, 70% Silver Keeps (98% functional keeps, avg hand size 6.86). Bracket compliance status: **PASS** for Bracket 3. Logged to `commander_decks/Planning/HenzieBlitz/GOLDFISH_LOG.md`.
+
+
 ### 2026-09-03: Henzie "Toolbox" Torre — Engine Velocity Refinement: Birthing Ritual Reintegration
 *   **Engine Upgrade:** Replaced non-blitzable 3-CMC recursion (*Eternal Witness* {1}{G}{G}) with 2-mana repeatable sacrifice engine (*Birthing Ritual* {1}{G}). At only 2 mana, Birthing Ritual can be easily deployed and activated alongside a blitz creature on the same turn. Graveyard recursion remains deep via *Will of the Abzan*, *Damage Control Crew*, *Living Death*, *Victimize*, *Grave Researcher*, and *Timeless Witness* (which retains full blitz and Eternalize synergy).
 *   **Validation:** 20-sim goldfish check — **96% commander cast rate (77/80)**, **T4.8 engine readiness (85% on target <= T7)**, 34% Gold Keeps, 65% Silver Keeps (99% functional keeps, 1% desperation keep, avg hand size 6.90). Bracket compliance status: **PASS** for Bracket 3. Logged to `commander_decks/Planning/HenzieBlitz/GOLDFISH_LOG.md`.

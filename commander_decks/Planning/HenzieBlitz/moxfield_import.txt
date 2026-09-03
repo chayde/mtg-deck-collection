@@ -63,7 +63,7 @@ DECK:
 1 Deflecting Swat
 1 Heroic Intervention
 1 Deadly Rollick
-1 Blasphemous Act
+1 Incinerator of the Guilty
 1 Malakir Rebirth
 1 Phyrexian Tower
 1 High Market

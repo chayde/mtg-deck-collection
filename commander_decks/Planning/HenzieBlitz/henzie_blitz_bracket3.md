@@ -76,11 +76,12 @@ deck_status: main
 *   **Maha, Its Feathers Night:** {3}{B}{B} 6/5 flying, trample, ward-discard. Opponents' creatures have base toughness 1; turns *Massacre Wurm* into an instant table-wipe and lethal life drain, and makes *Toxic Deluge* for X=1 a one-sided board wipe.
 *   **Moraug, Fury of Akoum:** {4}{R}{R} 6/6. Landfall grants additional combat phases with untaps and +1/+0 buffs to all creatures.
 
-### 🌋 6+ CMC Blitz Bombs & Win Conditions (9 Cards)
+### 🌋 6+ CMC Blitz Bombs & Win Conditions (10 Cards)
 *   **Archon of Cruelty:** {6}{B}{B} 6/6 flying. ETB and attack forces target opponent to sacrifice a creature or planeswalker, discard a card, lose 3 life, while you draw a card and gain 3 life.
 *   **Massacre Wurm:** {3}{B}{B}{B} 6/5. ETB gives opposing creatures -2/-2 and drains opponents for 2 life whenever their creatures die; obliterates token decks.
 *   **Kokusho, the Evening Star:** {4}{B}{B} 5/5 flying. When it dies, each opponent loses 5 life and you gain life equal to life lost this way (15 life gain).
 *   **Balefire Dragon:** {5}{R}{R} 6/6 flying. Combat damage to a player deals that much damage to each creature that player controls; one-sided board wipe on wings.
+*   **Incinerator of the Guilty:** {4}{R}{R} 6/6 flying, trample. Whenever it deals combat damage to a player, collect evidence X to deal X damage to each creature and planeswalker that player controls; blitzes for {3}{R}{R} as a second *Balefire Dragon* that breaks parity and wipes an opposing board while drawing a card on death.
 *   **Mikaeus, the Unhallowed:** {3}{B}{B}{B} 5/5 intimidate. Gives non-Human creatures +1/+1 and Undying, causing blitzed creatures to return immediately after sacrifice with a +1/+1 counter.
 *   **Bane of Progress:** {4}{G}{G} 2/2. ETB destroys all artifacts and enchantments and puts a +1/+1 counter on itself for each permanent destroyed.
 *   **Kogla, the Titan Ape:** {3}{G}{G}{G} 7/6. ETB fights target creature; attacking destroys an artifact or enchantment defending player controls.
@@ -96,15 +97,14 @@ deck_status: main
 *   **Timeless Witness:** {3}{G} 3/2. ETB returns any card from your graveyard to hand; has Eternalize. Blitzable with Henzie for {2}{G} with haste and death draw.
 *   **Will of the Abzan:** {3}{B} sorcery. With Henzie on the battlefield, grants both modes: each opponent sacrifices their greatest-power creature and loses 3 life, AND returns target creature card from your graveyard to the battlefield.
 
-### 🛡️ Interaction & Board Wipes (9 Cards)
-*   **Toxic Deluge:** {2}{B} sorcery. The premier efficient black sweeper; pays life to bypass indestructible and hexproof boards at 3 mana.
+### 🛡️ Interaction & Board Wipes (8 Cards)
+*   **Toxic Deluge:** {2}{B} sorcery. The premier efficient black sweeper; pays life to bypass indestructible and hexproof boards at 3 mana; combines with *Maha, Its Feathers Night* for a 1-mana one-sided wipe.
 *   **Assassin's Trophy:** {B}{G} instant. Unconditional instant-speed permanent destruction.
 *   **Tear Asunder:** {1}{G} instant. Exiles target artifact or enchantment (or any nonland permanent with kicker).
 *   **Windgrace's Judgment:** {3}{B}{G} instant. For any number of opponents, destroys target nonland permanent that player controls; an instant-speed 3-for-1 blowout that cleanly removes problem threats across all opponents with zero drawbacks.
 *   **Deflecting Swat:** {2}{R} instant. Free redirect spell if Henzie is on the battlefield; protects Henzie and key permanents.
 *   **Heroic Intervention:** {1}{G} instant. Grants permanents hexproof and indestructible until end of turn.
 *   **Deadly Rollick:** {3}{B} instant. Free (0 mana) instant-speed creature exile if you control Henzie; zero mana held up.
-*   **Blasphemous Act:** {8}{R} sorcery. 1-mana 13-damage sweeper in creature-dense pods.
 *   **Malakir Rebirth // Malakir Mire:** {B} MDFC instant / land. Returns a creature to battlefield when it dies this turn, or plays as a tapped black land.
 
 ### 🗺️ Lands & Mana Base (33 Lands + 1 MDFC)
@@ -148,6 +148,7 @@ deck_status: main
 ### High-Impact Tech Considerations
 *   **Terror of the Peaks Foil / Special Art:** Alternate treatment for the primary burn engine.
 *   **Myojin of Night's Reach:** {5}{B}{B}{B} 8-drop bomb that enters with a divinity counter when cast with blitz from hand; remove counter to force all opponents to discard their entire hands simultaneously.
+*   **Primaris Eliminator:** {4}{B} 3/2 Astartes Warrior. Modal ETB: destroy target creature OR give creatures target player controls -2/-2 until end of turn. Potential future upgrade in place of *Toxic Deluge* to fully commit to creature-strapped sweepers and eliminate symmetrical board wipe drawbacks.
 *   **Classic Demonic Tutor & Reanimate (Paper Printings):** The deck runs Strixhaven Adventure creatures (*Emeritus of Woe* and *Grave Researcher*) for blitz and creature tutor synergies while keeping Game Changers at 1/3. If preferred for physical paper play or classic aesthetic, the deck can alternatively run standard non-adventure printings of *Demonic Tutor* ({1}{B}) and *Reanimate* ({B}). Note that running classic *Demonic Tutor* counts as a Game Changer (bringing the deck to 2/3).
 *   **Protean Hulk:** Optional modular combo package if upgrading toward Bracket 4.
 
@@ -155,6 +156,10 @@ deck_status: main
 
 ## 📜 Deck Changelog
 
+- **2026-09-03:** Board Wipe Optimization (Creature-Strapped Asymmetric Sweeper).
+    - **In:** *Incinerator of the Guilty* ({4}{R}{R})
+    - **Out:** *Blasphemous Act* ({8}{R})
+    - **Reason:** Replaced symmetrical noncreature board wipe (Blasphemous Act) that kills our own mana dorks and Henzie with a blitzable 6/6 flying/trample dragon (Incinerator of the Guilty). Incinerator can be tutored with Survival/Fauna Shaman, blitzes for 5 mana with haste, wipes defending player's creatures and planeswalkers via collect evidence on combat damage, and draws a card on death while keeping our board intact.
 - **2026-09-03:** Engine Velocity Refinement (Birthing Ritual Reintegration).
     - **In:** *Birthing Ritual* ({1}{G})
     - **Out:** *Eternal Witness* ({1}{G}{G})
@@ -261,7 +266,7 @@ DECK:
 1 Deflecting Swat  
 1 Heroic Intervention  
 1 Deadly Rollick  
-1 Blasphemous Act  
+1 Incinerator of the Guilty  
 1 Malakir Rebirth  
 1 Phyrexian Tower  
 1 High Market  
