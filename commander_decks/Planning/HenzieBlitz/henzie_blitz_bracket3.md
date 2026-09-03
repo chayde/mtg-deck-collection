@@ -29,7 +29,7 @@ deck_status: main
 *   **Survival of the Fittest:** {1}{G} enchantment. Discard a creature to tutor any creature to hand; bins reanimation targets while tutoring the exact Blitz bomb needed.
 *   **Demonic Tutor:** {1}{B} sorcery. Unconditional tutor to hand for 2 mana; grabs *Living Death*, a protection spell, or a missing engine piece.
 
-### 🌲 Turn 1 Mana Dorks (8 Cards)
+### 🌲 Turn 1 Ramp & Mana Dorks (8 Cards)
 *High-density 1-drop ramp ensuring consistent Turn 2 Henzie deployment.*
 *   **Birds of Paradise:** {G} 0/1 flying. Taps for any color of mana; fixes all three Jund colors on Turn 1.
 *   **Delighted Halfling:** {G} 1/2. Taps for {C} or any color for legendary spells like Henzie, making them uncounterable.
@@ -38,7 +38,7 @@ deck_status: main
 *   **Llanowar Elves:** {G} 1/1. Efficient staple green mana dork.
 *   **Fyndhorn Elves:** {G} 1/1. Functional duplicate green mana dork.
 *   **Elvish Mystic:** {G} 1/1. Functional duplicate green mana dork.
-*   **Orcish Lumberjack:** {R} 1/1. Taps and sacrifices a Forest to produce 3 mana in any combination of {R} and/or {G}; enables explosive early multi-spell turns.
+*   **Utopia Sprawl:** {G} enchantment - aura. Enchants a Forest on Turn 1 and adds an extra mana of chosen color ({B} or {R}) whenever tapped; safely guarantees Turn 2 Henzie with zero risk to your lands.
 
 ### 🌿 Early Ramp & Fixing (6 Cards)
 *   **Bloom Tender:** {1}{G} 1/1. Taps for up to 3 mana ({B}{R}{G}) once Henzie is in play.
@@ -48,8 +48,7 @@ deck_status: main
 *   **Three Visits:** {1}{G} sorcery. Functional duplicate of *Nature's Lore*.
 *   **Flare of Cultivation:** {1}{G}{G} sorcery. Can be cast for 0 mana by sacrificing a nontoken green creature (such as a 1-drop mana dork or a blitzed creature before the end-step trigger); puts a basic land onto the battlefield tapped and another into hand.
 
-### 🔄 Sacrifice Engines & Velocity Outlets (4 Cards)
-*   **Birthing Ritual:** {1}{G} enchantment. In your end step, sacrifice a creature that just blitzed to look at top 7 cards and put a creature with mana value X+1 directly onto the battlefield.
+### 🔄 Sacrifice Engines & Velocity Outlets (3 Cards)
 *   **Greater Good:** {2}{G}{G} enchantment. Free sacrifice outlet to draw cards equal to sacrificed creature's power, then discard 3; draws 6-7 cards off blitzed giants.
 *   **Industrial Advancement:** {3}{R} enchantment. When a nontoken creature is sacrificed in end step, reveal cards until you hit a creature with lesser MV and put it directly into play.
 *   **Skullclamp:** {1} artifact. Equips for 1 to draw 2 cards whenever an equipped creature dies; turns 1-drop dorks or blitzed creatures into massive card advantage.
@@ -86,7 +85,7 @@ deck_status: main
 *   **Apex Devastator:** {8}{G}{G} 10/10. Cascade, cascade, cascade, cascade; blitzes for reduced cost to trigger 4 free spells from your deck with haste.
 *   **Bringer of the Last Gift:** {6}{B}{B} 6/6 flying. When cast, each player sacrifices all other creatures, then returns all creature cards from their graveyard that weren't put there this way to the battlefield; blitzing it triggers an asymmetric Living Death on entry, attacks with haste for 6 flying damage, and draws a card on death.
 
-### 💀 Reanimation & Recursion Suite (7 Cards)
+### 💀 Reanimation & Recursion Suite (8 Cards)
 *   **Reanimate:** {B} sorcery. 1-mana reanimation of any creature from any graveyard directly to the battlefield.
 *   **Animate Dead:** {1}{B} enchantment - aura. Efficient 2-mana reanimation aura.
 *   **Victimize:** {2}{B} sorcery. Sacrifices a creature to return two target creatures from graveyard to the battlefield tapped.
@@ -94,6 +93,7 @@ deck_status: main
 *   **Living Death:** {3}{B}{B} sorcery. Board wipe and mass reanimation in one; swaps all creatures in play with all creatures in graveyards.
 *   **Timeless Witness:** {3}{G} 3/2. ETB returns any card from your graveyard to hand; has Eternalize.
 *   **Eternal Witness:** {1}{G}{G} 2/1. ETB returns any card from your graveyard to hand.
+*   **Will of the Abzan:** {3}{B} sorcery. With Henzie on the battlefield, grants both modes: each opponent sacrifices their greatest-power creature and loses 3 life, AND returns target creature card from your graveyard to the battlefield.
 
 ### 🛡️ Interaction & Board Wipes (10 Cards)
 *   **Toxic Deluge:** {2}{B} sorcery. The premier efficient black sweeper; pays life to bypass indestructible and hexproof boards at 3 mana.
@@ -103,7 +103,7 @@ deck_status: main
 *   **Windgrace's Judgment:** {3}{B}{G} instant. For any number of opponents, destroys target nonland permanent that player controls; an instant-speed 3-for-1 blowout that cleanly removes problem threats across all opponents with zero drawbacks.
 *   **Deflecting Swat:** {2}{R} instant. Free redirect spell if Henzie is on the battlefield; protects Henzie and key permanents.
 *   **Heroic Intervention:** {1}{G} instant. Grants permanents hexproof and indestructible until end of turn.
-*   **Tibalt's Trickery:** {1}{R} instant. Hard red counterspell to stop game-winning opposing spells.
+*   **Deadly Rollick:** {3}{B} instant. Free (0 mana) instant-speed creature exile if you control Henzie; zero mana held up.
 *   **Blasphemous Act:** {8}{R} sorcery. 1-mana 13-damage sweeper in creature-dense pods.
 *   **Malakir Rebirth // Malakir Mire:** {B} MDFC instant / land. Returns a creature to battlefield when it dies this turn, or plays as a tapped black land.
 
@@ -155,6 +155,10 @@ deck_status: main
 
 ## 📜 Deck Changelog
 
+- **2026-09-02:** Playtest Refinement: Acceleration, Free Interaction & Reanimation.
+    - **In:** *Utopia Sprawl*, *Deadly Rollick*, *Will of the Abzan*
+    - **Out:** *Orcish Lumberjack*, *Tibalt's Trickery*, *Birthing Ritual*
+    - **Reason:** Replaced risky land-sacrifice ramp (Orcish Lumberjack) with consistent 1-drop fixing (Utopia Sprawl); replaced clunky reactive counterspell (Tibalt's Trickery) with free 0-mana instant creature exile (Deadly Rollick); and replaced whiff-prone end-step trigger (Birthing Ritual) with modal opponent edict + direct reanimation (Will of the Abzan).
 - **2026-09-01:** Permanent Removal Upgrade.
     - **In:** *Windgrace's Judgment*
     - **Out:** *Beast Within*
@@ -190,13 +194,13 @@ DECK:
 1 Llanowar Elves  
 1 Fyndhorn Elves  
 1 Elvish Mystic  
-1 Orcish Lumberjack  
+1 Utopia Sprawl  
 1 Bloom Tender  
 1 Sakura-Tribe Elder  
 1 Farseek  
 1 Nature's Lore  
 1 Three Visits  
-1 Birthing Ritual  
+1 Will of the Abzan  
 1 Greater Good  
 1 Industrial Advancement  
 1 Skullclamp  
@@ -240,7 +244,7 @@ DECK:
 1 Windgrace's Judgment  
 1 Deflecting Swat  
 1 Heroic Intervention  
-1 Tibalt's Trickery  
+1 Deadly Rollick  
 1 Blasphemous Act  
 1 Malakir Rebirth  
 1 Phyrexian Tower  

@@ -12,13 +12,13 @@ DECK:
 1 Llanowar Elves
 1 Fyndhorn Elves
 1 Elvish Mystic
-1 Orcish Lumberjack
+1 Utopia Sprawl
 1 Bloom Tender
 1 Sakura-Tribe Elder
 1 Farseek
 1 Nature's Lore
 1 Three Visits
-1 Birthing Ritual
+1 Will of the Abzan
 1 Greater Good
 1 Industrial Advancement
 1 Skullclamp
@@ -62,7 +62,7 @@ DECK:
 1 Windgrace's Judgment
 1 Deflecting Swat
 1 Heroic Intervention
-1 Tibalt's Trickery
+1 Deadly Rollick
 1 Blasphemous Act
 1 Malakir Rebirth
 1 Phyrexian Tower

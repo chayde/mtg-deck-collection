@@ -1,5 +1,69 @@
 # Goldfish Simulation Log: Henzie "Toolbox" Torre
 
+## 2026-09-02 — Acceleration, Free Interaction & Reanimation Integration (20 sims, 10 turns, Bracket 3)
+
+**Command:**
+```bash
+python scripts/multiplayer_goldfish.py "commander_decks/Planning/HenzieBlitz/moxfield_import.txt" --sims 20 --turns 10 --bracket 3
+```
+
+**Results:**
+```
+====================================================================
+RUNNING 20 × 4-PLAYER SIMULATIONS
+Commander: Henzie "Toolbox" Torre (CMC 3)  |  Target: Bracket 3 (Upgraded) (Target T7)
+====================================================================
+
+--------------------------------------------------------------------
+AGGREGATE DEPLOYMENT & MULLIGAN PROFILE
+--------------------------------------------------------------------
+  Commander cast rate: 75/80 (94%)
+  Commander Cast Range: T2 - T10
+  Commander Cast Avg:   T3.6 (Fastest deployment speed to date!)
+  Commander Cast Distribution:
+    T 2: ######################## (24)
+    T 3: #################### (20)
+    T 4: ############## (14)
+    T 5: ######## (8)
+    T 6: #### (4)
+    T 7: # (1)
+    T 8: # (1)
+    T 9: ## (2)
+    T10: # (1)
+
+  Opening Hand Quality Breakdown (80 hands evaluated):
+    Gold Keep (Mana + Ramp + Enabler):   32/80 (40%)
+    Silver Keep (Mana + Curve):          47/80 (59%)
+    Desperation Keep (Mulligan to <=5):   1/80 (1%)
+    Average Starting Hand Size:          6.90 cards
+
+--------------------------------------------------------------------
+BRACKET READINESS (Bracket 3 (Upgraded) — Target T7)
+--------------------------------------------------------------------
+  Target Window Readiness Rate (T<=7): 69/80 (86%)
+  Engine Readiness Avg:  T4.6
+  Engine Readiness Distribution:
+    T 2: ### (3)
+    T 3: ################ (16)
+    T 4: ######################### (25)
+    T 5: ################## (18)
+    T 6: ##### (5)
+    T 7: ## (2)
+    T 8: # (1)
+    T 9: #### (4)
+    T10: # (1)
+
+  [BRACKET COMPLIANCE CHECK] Status: PASS
+  Deck deploys its engine around Turn 4.6, perfectly positioned to execute and threaten a win on Bracket 3 (Upgraded)'s target (Turn 7+).
+```
+
+**Notes:**
+- Replaced *Orcish Lumberjack* with *Utopia Sprawl*, *Tibalt's Trickery* with *Deadly Rollick*, and *Birthing Ritual* with *Will of the Abzan*.
+- Commander average cast time reached a new personal best of **Turn 3.6** with 24 Turn 2 casts.
+- Bracket compliance remains PASS for Bracket 3.
+
+---
+
 ## 2026-09-01 — Windgrace's Judgment Integration (20 sims, 10 turns, Bracket 3)
 
 **Command:**

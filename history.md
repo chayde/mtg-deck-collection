@@ -2,6 +2,13 @@
 
 ## 🗓️ September 2026: Henzie Blitz Refinement & Playtesting Integration
 
+### 2026-09-02: Henzie "Toolbox" Torre — Playtest Refinement: Acceleration, Free Interaction & Reanimation
+*   **Playtest Tuning:** Replaced 3 underperforming cards:
+    *   *In:* *Utopia Sprawl* ({G} — reliable Turn 1 Forest aura fixing {B}/{R} with zero land sacrifice risk), *Deadly Rollick* ({3}{B} — free 0-mana instant creature exile), and *Will of the Abzan* ({3}{B} — modal opponent highest-power creature sacrifice + direct graveyard reanimation).
+    *   *Out:* *Orcish Lumberjack* (risky land-loss ramp), *Tibalt's Trickery* (clunky reactive counterspell), and *Birthing Ritual* (whiff-prone end-step trigger).
+*   **Validation:** 20-sim goldfish check — **94% commander cast rate (75/80, T3.6 avg — record fast deployment)**, **T4.6 engine readiness (86% on target <= T7)**, 40% Gold Keeps, 59% Silver Keeps (99% functional keeps, 1% desperation keep, avg hand size 6.90). Bracket compliance status: **PASS** for Bracket 3. Logged to `commander_decks/Planning/HenzieBlitz/GOLDFISH_LOG.md`.
+
+
 ### 2026-09-01: Henzie "Toolbox" Torre ("Blitz & Reanimation Engine") — Card Velocity & Graveyard Hate Refinement
 *   **Synergy Upgrades:** Replaced 3 underperforming/redundant cards with high-velocity tech:
     *   *In:* *Gwenom, Remorseless* ({3}{B}{B} — 5-CMC blitz body with lifelink/deathtouch; attacks with haste to cast topdeck spells for free paying life), *Author of Shadows* ({4}{B} — 5-CMC blitz body that exiles all opponents' graveyards on entry and steals a nonland spell, enabling 100% one-sided *Living Death* and *Bringer of the Last Gift* blowouts), and *Flare of Cultivation* ({1}{G}{G} — 0-mana basic land ramp via sacrificing 1-drop mana dorks or blitzed green creatures).
