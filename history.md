@@ -2,6 +2,11 @@
 
 ## 🗓️ September 2026: Henzie Blitz Refinement & Playtesting Integration
 
+### 2026-09-03: Henzie "Toolbox" Torre — Finisher & Economy Overhaul: Vaultborn Tyrant
+*   **Finisher Upgrade & 0/3 Game Changers:** Replaced underwhelming and costly noncreature tutor *Survival of the Fittest* ({1}{G}) with premier card advantage dinosaur *Vaultborn Tyrant* ({5}{G}{G}). Dropped deck Game Changers from 1/3 to **0 / 3**, completely freeing the build from bracket friction while saving ~$380 in acquisition cost. When blitzed for 6 mana, Vaultborn Tyrant swings for 6 trample haste, gains 6 life, draws 3 cards total (ETB + token copy ETB + blitz death draw), and leaves behind a permanent 6/6 artifact token copy on end step that continues drawing cards whenever 4+ power creatures enter.
+*   **Validation:** 20-sim goldfish check — **95% commander cast rate (76/80)** with 60% Turn 2 or Turn 3 casts, **T4.5 engine readiness (89% on target <= T7)**, 29% Gold Keeps, 68% Silver Keeps (97% functional keeps, avg hand size 6.83). Bracket compliance status: **PASS** for Bracket 3. Logged to `commander_decks/Planning/HenzieBlitz/GOLDFISH_LOG.md`.
+
+
 ### 2026-09-03: Henzie "Toolbox" Torre — Mana Base Optimization: Original Revised Dual Lands
 *   **Dual Land Upgrade:** Replaced 3 conditional check lands (*Rootbound Crag* {R}/{G}, *Dragonskull Summit* {B}/{R}, *Woodland Cemetery* {B}/{G}) with the 3 original Revised Dual Lands (*Taiga*, *Badlands*, *Bayou*). This eliminates the risk of opening-hand tapped lands on Turn 1 or Turn 2, provides unconditional untapped mana with zero life loss, and gives all 7 fetch lands and land-ramp spells (*Nature's Lore*, *Three Visits*, *Farseek*, *Seedguide Ash*) pristine dual-typed targets. Documented the check lands as the official paper budget fallback in the roadmap.
 *   **Validation:** 20-sim goldfish check — **all-time record 99% commander cast rate (79/80)** with **61% Turn 2 or Turn 3 casts**, **all-time peak 95% target window readiness (76/80, T4.5 avg)**, **0% Desperation Keeps (100% functional keeps, 6.96 avg hand size)**. Bracket compliance status: **PASS** for Bracket 3. Logged to `commander_decks/Planning/HenzieBlitz/GOLDFISH_LOG.md`.

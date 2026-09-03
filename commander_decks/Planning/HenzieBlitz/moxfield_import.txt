@@ -2,7 +2,7 @@ COMMANDER:
 1 Henzie "Toolbox" Torre
 
 DECK:
-1 Survival of the Fittest
+1 Vaultborn Tyrant
 1 Emeritus of Woe
 1 Toxic Deluge
 1 Birds of Paradise

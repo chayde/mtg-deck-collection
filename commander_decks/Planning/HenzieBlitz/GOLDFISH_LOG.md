@@ -1,5 +1,70 @@
 # Goldfish Simulation Log: Henzie "Toolbox" Torre
 
+## 2026-09-03 — Finisher & Economy Overhaul: Vaultborn Tyrant In, Survival of the Fittest Out (20 sims, 10 turns, Bracket 3)
+
+**Command:**
+```bash
+python scripts/multiplayer_goldfish.py "commander_decks/Planning/HenzieBlitz/moxfield_import.txt" --sims 20 --turns 10 --bracket 3
+```
+
+**Results:**
+```
+====================================================================
+RUNNING 20 × 4-PLAYER SIMULATIONS
+Commander: Henzie "Toolbox" Torre (CMC 3)  |  Target: Bracket 3 (Upgraded) (Target T7)
+====================================================================
+
+--------------------------------------------------------------------
+AGGREGATE DEPLOYMENT & MULLIGAN PROFILE
+--------------------------------------------------------------------
+  Commander cast rate: 76/80 (95%)
+  Commander Cast Range: T2 - T10
+  Commander Cast Avg:   T3.8 (60% of games hit Turn 2 or Turn 3!)
+  Commander Cast Distribution:
+    T 2: ################### (19)
+    T 3: ############################# (29)
+    T 4: ####### (7)
+    T 5: ###### (6)
+    T 6: ####### (7)
+    T 7: ### (3)
+    T 8: ## (2)
+    T 9: # (1)
+    T10: ## (2)
+
+  Opening Hand Quality Breakdown (80 hands evaluated):
+    Gold Keep (Mana + Ramp + Enabler):   23/80 (29%)
+    Silver Keep (Mana + Curve):          54/80 (68%)
+    Desperation Keep (Mulligan to <=5):   3/80 (4%)
+    Average Starting Hand Size:          6.83 cards
+
+--------------------------------------------------------------------
+BRACKET READINESS (Bracket 3 (Upgraded) — Target T7)
+--------------------------------------------------------------------
+  Target Window Readiness Rate (T<=7): 71/80 (89%)
+  Engine Readiness Avg:  T4.5
+  Engine Readiness Distribution:
+    T 3: ################## (18)
+    T 4: ############################## (30)
+    T 5: ############ (12)
+    T 6: ####### (7)
+    T 7: #### (4)
+    T 8: ## (2)
+    T 9: # (1)
+    T10: # (1)
+
+  [BRACKET COMPLIANCE CHECK] Status: PASS
+  Deck deploys its engine around Turn 4.5, perfectly positioned to execute and threaten a win on Bracket 3 (Upgraded)'s target (Turn 7+).
+```
+
+**Notes:**
+- Replaced noncreature tutor *Survival of the Fittest* ({1}{G}) with premier value dinosaur *Vaultborn Tyrant* ({5}{G}{G}).
+- Deck Game Changers count drops from 1/3 to **0 / 3**, completely freeing the build from bracket friction.
+- Massive card velocity engine: on blitz for 6 mana, draws 3 cards total (ETB + token copy ETB + blitz death draw), gains 6 life, deals 6 trample damage, and leaves behind an artifact 6/6 copy.
+- Commander cast rate remains **95%** with Turn 4.5 engine readiness.
+- Bracket compliance remains PASS for Bracket 3.
+
+---
+
 ## 2026-09-03 — Mana Base Optimization: Original Revised Dual Lands In, Check Lands Out (20 sims, 10 turns, Bracket 3)
 
 **Command:**

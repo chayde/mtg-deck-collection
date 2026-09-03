@@ -25,8 +25,8 @@ deck_status: main
 ### 👑 Commander (1 Card)
 *   **Henzie "Toolbox" Torre:** {B}{R}{G} 3/3 Devil Rogue. Gives all 4+ MV creatures Blitz with cumulative cost reduction for each commander cast. The central engine of the deck.
 
-### ⚡ Game Changers (1 Card — Bracket 3 Max 3)
-*   **Survival of the Fittest:** {1}{G} enchantment. Discard a creature to tutor any creature to hand; bins reanimation targets while tutoring the exact Blitz bomb needed.
+### ⚡ Game Changers (0 Cards — Bracket 3 Max 3)
+*   *None (0 / 3). The deck runs zero official Game Changers, maximizing power through pure creature synergy and engine velocity without bracket restrictions.*
 
 ### 🌲 Turn 1 Ramp & Mana Dorks (8 Cards)
 *High-density 1-drop ramp ensuring consistent Turn 2 Henzie deployment.*
@@ -76,8 +76,9 @@ deck_status: main
 *   **Maha, Its Feathers Night:** {3}{B}{B} 6/5 flying, trample, ward-discard. Opponents' creatures have base toughness 1; turns *Massacre Wurm* into an instant table-wipe and lethal life drain, and makes *Toxic Deluge* for X=1 a one-sided board wipe.
 *   **Moraug, Fury of Akoum:** {4}{R}{R} 6/6. Landfall grants additional combat phases with untaps and +1/+0 buffs to all creatures.
 
-### 🌋 6+ CMC Blitz Bombs & Win Conditions (10 Cards)
+### 🌋 6+ CMC Blitz Bombs & Win Conditions (11 Cards)
 *   **Archon of Cruelty:** {6}{B}{B} 6/6 flying. ETB and attack forces target opponent to sacrifice a creature or planeswalker, discard a card, lose 3 life, while you draw a card and gain 3 life.
+*   **Vaultborn Tyrant:** {5}{G}{G} 6/6 trample. Enters to gain 3 life and draw a card; when sacrificed to blitz at end step, creates a non-token artifact copy of itself that enters to gain 3 more life and draw another card (plus the blitz death draw = 3 cards drawn total) and leaves behind a permanent 6/6 artifact dinosaur.
 *   **Massacre Wurm:** {3}{B}{B}{B} 6/5. ETB gives opposing creatures -2/-2 and drains opponents for 2 life whenever their creatures die; obliterates token decks.
 *   **Kokusho, the Evening Star:** {4}{B}{B} 5/5 flying. When it dies, each opponent loses 5 life and you gain life equal to life lost this way (15 life gain).
 *   **Balefire Dragon:** {5}{R}{R} 6/6 flying. Combat damage to a player deals that much damage to each creature that player controls; one-sided board wipe on wings.
@@ -146,16 +147,28 @@ deck_status: main
 ## 🚀 Future Roadmap & Acquisitions
 
 ### High-Impact Tech Considerations
+*   **Etali, Primal Conqueror // Etali, Primal Sickness:** {5}{R}{R} 7/7 trample. ETB exiles top cards of all libraries until hitting a nonland card and casts all 4 spells for free; blitzes for 6 mana with haste, swings for 7 trample, and draws on death; flips for {9}{P/G} into an 11/11 indestructible infect dinosaur.
+*   **Ancient Brass Dragon:** {5}{B}{B} 7/6 flying. Combat damage rolls a d20 to reanimate that much total MV of creatures from all graveyards onto the battlefield under your control; devastating mass reanimation with blitz haste.
+*   **Rottenmouth Viper:** {5}{B} 6/6 elemental snake. Enters and attacks to place blight counters, triggering twice on a blitz turn to force opponents to sacrifice nonland permanents, discard cards, or take 4 damage per counter.
+*   **Rampant Rejuvenator:** {3}{G} 0/0 plant hydra (enters as a 2/2). Blitzes for 3 mana on Turn 3, swings for 2 haste, and dies at end step to tutor 2 basic lands onto the battlefield untapped while drawing a card; launches mana from 3 to 6 on Turn 4.
+*   **Overlord of the Hauntwoods:** {3}{G}{G} 6/5 avatar horror. Enters and attacks to create "Everywhere" land tokens that tap for all colors; nets +2 permanent lands and a card draw on a 4-mana blitz turn.
+*   **Gray Merchant of Asphodel:** {3}{B}{B} 2/4 zombie. ETB drains each opponent for your devotion to black and gains that much life; lethal win condition in reanimation loops with Living Death, Victimize, or Chainer.
+*   **Kardur, Doomscourge:** {2}{B}{R} 4/3 demon berserker. Goads all opponents' creatures for a full turn cycle, preventing attacks against you and draining opponents for 1 each time an attacker dies.
+*   **Primaris Eliminator:** {4}{B} 3/2 Astartes Warrior. Modal ETB: destroy target creature OR give creatures target player controls -2/-2 until end of turn. Combines with *Maha, Its Feathers Night* to wipe opposing creatures while leaving our board intact.
+*   **Protean Hulk:** {5}{G}{G} 6/6 beast. Dies to blitz at end step to search library for up to 6 CMC worth of creatures directly onto the battlefield.
 *   **Budget Mana Base Fallback (Check Lands):** *Dragonskull Summit* ({B}/{R}), *Woodland Cemetery* ({B}/{G}), and *Rootbound Crag* ({R}/{G}) serve as affordable paper budget alternatives for the ~$1,472 Revised Dual Lands (*Badlands*, *Bayou*, *Taiga*).
 *   **Terror of the Peaks Foil / Special Art:** Alternate treatment for the primary burn engine.
 *   **Apex Devastator:** {8}{G}{G} 10/10 Chimera Hydra. Quad-cascade bomb for non-discard casual pods if wanting high-variance cascade turns.
-*   **Primaris Eliminator:** {4}{B} 3/2 Astartes Warrior. Modal ETB: destroy target creature OR give creatures target player controls -2/-2 until end of turn. Potential future upgrade in place of *Toxic Deluge* to fully commit to creature-strapped sweepers and eliminate symmetrical board wipe drawbacks.
-*   **Classic Demonic Tutor & Reanimate (Paper Printings):** The deck runs Strixhaven Adventure creatures (*Emeritus of Woe* and *Grave Researcher*) for blitz and creature tutor synergies while keeping Game Changers at 1/3. If preferred for physical paper play or classic aesthetic, the deck can alternatively run standard non-adventure printings of *Demonic Tutor* ({1}{B}) and *Reanimate* ({B}). Note that running classic *Demonic Tutor* counts as a Game Changer (bringing the deck to 2/3).
-*   **Protean Hulk:** Optional modular combo package if upgrading toward Bracket 4.
+*   **Classic Demonic Tutor & Reanimate (Paper Printings):** The deck runs Strixhaven Adventure creatures (*Emeritus of Woe* and *Grave Researcher*) for blitz and creature tutor synergies while keeping Game Changers at 0/3. If preferred for physical paper play or classic aesthetic, the deck can alternatively run standard non-adventure printings of *Demonic Tutor* ({1}{B}) and *Reanimate* ({B}). Note that running classic *Demonic Tutor* counts as a Game Changer (bringing the deck to 1/3).
 
 ---
 
 ## 📜 Deck Changelog
+
+- **2026-09-03:** Finisher & Economy Overhaul (Vaultborn Tyrant In, Survival of the Fittest Out).
+    - **In:** *Vaultborn Tyrant* ({5}{G}{G})
+    - **Out:** *Survival of the Fittest* ({1}{G})
+    - **Reason:** Replaced underwhelming and costly noncreature tutor (Survival of the Fittest) with game-winning value engine (Vaultborn Tyrant). Dropped deck Game Changers from 1/3 to 0/3. When blitzed for 6 mana, Vaultborn Tyrant deals 6 trample damage, gains 6 life, draws 3 cards total, and leaves behind a permanent 6/6 artifact dinosaur copy on end step that continues drawing cards whenever 4+ power creatures enter.
 
 - **2026-09-03:** Mana Base Optimization (Original Revised Dual Lands In, Check Lands Out).
     - **In:** *Badlands* (Swamp Mountain), *Bayou* (Swamp Forest), *Taiga* (Mountain Forest)
@@ -218,7 +231,7 @@ COMMANDER:
 1 Henzie "Toolbox" Torre  
 
 DECK:  
-1 Survival of the Fittest  
+1 Vaultborn Tyrant  
 1 Emeritus of Woe  
 1 Toxic Deluge  
 1 Birds of Paradise  
