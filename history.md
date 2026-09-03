@@ -2,6 +2,11 @@
 
 ## 🗓️ September 2026: Henzie Blitz Refinement & Playtesting Integration
 
+### 2026-09-02: Henzie "Toolbox" Torre — Budget Land Tuning: Boseiju Cut
+*   **Budget Optimization:** Cut *Boseiju, Who Endures* in favor of adding a 4th basic *Forest*. Reduces deck cost by ~$55 while improving basic land consistency for *Flare of Cultivation*, *Nature's Lore*, *Three Visits*, *Farseek*, and *Seedguide Ash*.
+*   **Validation:** 20-sim goldfish check — **95% commander cast rate (76/80, T3.7 avg)** with a record **28 Turn 2 casts (35% of all games)**, **T4.5 engine readiness (89% on target <= T7)**, 39% Gold Keeps, 57% Silver Keeps (96% functional keeps, avg hand size 6.89). Bracket compliance status: **PASS** for Bracket 3. Logged to `commander_decks/Planning/HenzieBlitz/GOLDFISH_LOG.md`.
+
+
 ### 2026-09-02: Henzie "Toolbox" Torre — Impact Creature Suite Overhaul & Velocity Optimization
 *   **Creature Base Tuning:** Replaced underperforming low-impact/stall cards and disliked removal with top-tier blitz powerhouses:
     *   *In:* *Sowing Mycospawn* ({3}{G} — uncounterable on-cast tutor for any land card directly onto the battlefield with blitz haste), *Necron Deathmark* ({3}{B}{B} — flash creature destruction + 3-card mill for reanimation setup), *Damage Control Crew* ({3}{G} — modal exile removal for artifacts/enchantments or 4+ CMC card recursion), and *Maha, Its Feathers Night* ({3}{B}{B} — reduces all opposing creatures to base toughness 1, turning *Massacre Wurm* into an instant table-kill and *Toxic Deluge* for X=1 into a one-sided wipe).

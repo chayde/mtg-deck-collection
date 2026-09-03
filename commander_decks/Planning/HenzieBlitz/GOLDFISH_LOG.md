@@ -1,5 +1,68 @@
 # Goldfish Simulation Log: Henzie "Toolbox" Torre
 
+## 2026-09-02 — Budget Land Tuning: Boseiju Out, 4th Forest In (20 sims, 10 turns, Bracket 3)
+
+**Command:**
+```bash
+python scripts/multiplayer_goldfish.py "commander_decks/Planning/HenzieBlitz/moxfield_import.txt" --sims 20 --turns 10 --bracket 3
+```
+
+**Results:**
+```
+====================================================================
+RUNNING 20 × 4-PLAYER SIMULATIONS
+Commander: Henzie "Toolbox" Torre (CMC 3)  |  Target: Bracket 3 (Upgraded) (Target T7)
+====================================================================
+
+--------------------------------------------------------------------
+AGGREGATE DEPLOYMENT & MULLIGAN PROFILE
+--------------------------------------------------------------------
+  Commander cast rate: 76/80 (95%)
+  Commander Cast Range: T2 - T10
+  Commander Cast Avg:   T3.7
+  Commander Cast Distribution:
+    T 2: ############################ (28)  ← 35% of games hit Turn 2 Henzie!
+    T 3: ################ (16)
+    T 4: ############ (12)
+    T 5: ######## (8)
+    T 6: ##### (5)
+    T 7: ### (3)
+    T 9: # (1)
+    T10: ### (3)
+
+  Opening Hand Quality Breakdown (80 hands evaluated):
+    Gold Keep (Mana + Ramp + Enabler):   31/80 (39%)
+    Silver Keep (Mana + Curve):          46/80 (57%)
+    Desperation Keep (Mulligan to <=5):   3/80 (4%)
+    Average Starting Hand Size:          6.89 cards
+
+--------------------------------------------------------------------
+BRACKET READINESS (Bracket 3 (Upgraded) — Target T7)
+--------------------------------------------------------------------
+  Target Window Readiness Rate (T<=7): 71/80 (89%)
+  Engine Readiness Avg:  T4.5
+  Engine Readiness Distribution:
+    T 2: ## (2)
+    T 3: ###################### (22)
+    T 4: ####################### (23)
+    T 5: ############## (14)
+    T 6: ####### (7)
+    T 7: ### (3)
+    T 9: # (1)
+    T10: #### (4)
+
+  [BRACKET COMPLIANCE CHECK] Status: PASS
+  Deck deploys its engine around Turn 4.5, perfectly positioned to execute and threaten a win on Bracket 3 (Upgraded)'s target (Turn 7+).
+```
+
+**Notes:**
+- Replaced *Boseiju, Who Endures* with a 4th basic *Forest*.
+- Paper acquisition cost reduced by ~$55.
+- Increased green basic consistency yielded an all-time high of **28 Turn 2 Henzie deployments (35%)** and 95% total cast rate.
+- Bracket compliance remains PASS for Bracket 3.
+
+---
+
 ## 2026-09-02 — Creature Suite Overhaul & Velocity Optimization (20 sims, 10 turns, Bracket 3)
 
 **Command:**

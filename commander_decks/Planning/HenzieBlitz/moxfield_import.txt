@@ -67,7 +67,6 @@ DECK:
 1 Malakir Rebirth
 1 Phyrexian Tower
 1 High Market
-1 Boseiju, Who Endures
 1 Takenuma, Abandoned Mire
 1 Kessig Wolf Run
 1 Wooded Foothills
@@ -95,6 +94,6 @@ DECK:
 1 Command Tower
 1 Mana Confluence
 1 City of Brass
-3 Forest
+4 Forest
 2 Swamp
 1 Mountain

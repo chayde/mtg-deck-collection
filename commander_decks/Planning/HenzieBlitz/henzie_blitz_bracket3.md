@@ -107,10 +107,9 @@ deck_status: main
 *   **Blasphemous Act:** {8}{R} sorcery. 1-mana 13-damage sweeper in creature-dense pods.
 *   **Malakir Rebirth // Malakir Mire:** {B} MDFC instant / land. Returns a creature to battlefield when it dies this turn, or plays as a tapped black land.
 
-### 🗺️ Lands & Mana Base (36 Cards)
+### 🗺️ Lands & Mana Base (33 Lands + 1 MDFC)
 *   **Phyrexian Tower:** Legendary Land. Sacrifices a creature for {B}{B}.
 *   **High Market:** Land. Sacrifices a creature for 1 life and {C}.
-*   **Boseiju, Who Endures:** Legendary Land. Channel destroys target artifact, enchantment, or nonbasic land.
 *   **Takenuma, Abandoned Mire:** Legendary Land. Channel mills 3 cards and returns a creature or planeswalker to hand.
 *   **Kessig Wolf Run:** Land. Gives a creature +X/+0 and trample for surprise combat lethality.
 *   **Wooded Foothills:** Fetch land (Forest/Mountain).
@@ -138,7 +137,7 @@ deck_status: main
 *   **Command Tower:** Rainbow commander staple land.
 *   **Mana Confluence:** Taps for any color at 1 life.
 *   **City of Brass:** Taps for any color at 1 damage.
-*   **Forest (3):** Basic Forest lands.
+*   **Forest (4):** Basic Forest lands.
 *   **Swamp (2):** Basic Swamp lands.
 *   **Mountain (1):** Basic Mountain land.
 
@@ -155,6 +154,10 @@ deck_status: main
 
 ## 📜 Deck Changelog
 
+- **2026-09-02:** Budget Land Tuning.
+    - **In:** *Forest* (4th basic Forest)
+    - **Out:** *Boseiju, Who Endures*
+    - **Reason:** Cut $55 land in favor of an additional basic Forest, reducing paper deck acquisition cost by $55 while strengthening basic fetch targets for Flare of Cultivation, Nature's Lore, Three Visits, Farseek, and Seedguide Ash.
 - **2026-09-02:** Creature Suite Overhaul & Velocity Optimization.
     - **In:** *Sowing Mycospawn*, *Necron Deathmark*, *Damage Control Crew*, *Maha, Its Feathers Night*
     - **Out:** *Kardur, Doomscourge*, *Atsushi, the Blazing Sky*, *Disciple of Bolas*, *Chaos Warp*
@@ -253,7 +256,6 @@ DECK:
 1 Malakir Rebirth  
 1 Phyrexian Tower  
 1 High Market  
-1 Boseiju, Who Endures  
 1 Takenuma, Abandoned Mire  
 1 Kessig Wolf Run  
 1 Wooded Foothills  
@@ -281,6 +283,6 @@ DECK:
 1 Command Tower  
 1 Mana Confluence  
 1 City of Brass  
-3 Forest  
+4 Forest  
 2 Swamp  
 1 Mountain  
