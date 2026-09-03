@@ -2,6 +2,11 @@
 
 ## 🗓️ September 2026: Henzie Blitz Refinement & Playtesting Integration
 
+### 2026-09-02: Henzie "Toolbox" Torre — Strixhaven Adventure Creature Integration
+*   **Adventure Synergies & Bracket Optimization:** Replaced standalone *Demonic Tutor* and *Reanimate* with Strixhaven Adventure creatures: *Emeritus of Woe // Demonic Tutor* ({3}{B} // {1}{B}) and *Grave Researcher // Reanimate* ({2}{B} // {B}). *Emeritus of Woe* provides a 4-CMC 5/4 body that blitzes with Henzie for {2}{B} with haste and card draw while providing the exact same 2-mana tutor on its adventure side (and drops official Game Changers to just 1/3). *Grave Researcher* provides creature-tutor searchability with Survival/Fauna Shaman and mass reanimation synergy with Living Death.
+*   **Validation:** 20-sim goldfish check — **94% commander cast rate (75/80, T3.5 avg — all-time personal best)**, **T4.4 engine readiness (88% on target <= T7)**, 32% Gold Keeps, 68% Silver Keeps (100% functional keeps, 0% desperation keeps, avg hand size 6.99). Bracket compliance status: **PASS** for Bracket 3. Logged to `commander_decks/Planning/HenzieBlitz/GOLDFISH_LOG.md`.
+
+
 ### 2026-09-02: Henzie "Toolbox" Torre — Budget Land Tuning: Boseiju Cut
 *   **Budget Optimization:** Cut *Boseiju, Who Endures* in favor of adding a 4th basic *Forest*. Reduces deck cost by ~$55 while improving basic land consistency for *Flare of Cultivation*, *Nature's Lore*, *Three Visits*, *Farseek*, and *Seedguide Ash*.
 *   **Validation:** 20-sim goldfish check — **95% commander cast rate (76/80, T3.7 avg)** with a record **28 Turn 2 casts (35% of all games)**, **T4.5 engine readiness (89% on target <= T7)**, 39% Gold Keeps, 57% Silver Keeps (96% functional keeps, avg hand size 6.89). Bracket compliance status: **PASS** for Bracket 3. Logged to `commander_decks/Planning/HenzieBlitz/GOLDFISH_LOG.md`.

@@ -1,5 +1,71 @@
 # Goldfish Simulation Log: Henzie "Toolbox" Torre
 
+## 2026-09-02 — Strixhaven Adventure Creature Integration (20 sims, 10 turns, Bracket 3)
+
+**Command:**
+```bash
+python scripts/multiplayer_goldfish.py "commander_decks/Planning/HenzieBlitz/moxfield_import.txt" --sims 20 --turns 10 --bracket 3
+```
+
+**Results:**
+```
+====================================================================
+RUNNING 20 × 4-PLAYER SIMULATIONS
+Commander: Henzie "Toolbox" Torre (CMC 3)  |  Target: Bracket 3 (Upgraded) (Target T7)
+====================================================================
+
+--------------------------------------------------------------------
+AGGREGATE DEPLOYMENT & MULLIGAN PROFILE
+--------------------------------------------------------------------
+  Commander cast rate: 75/80 (94%)
+  Commander Cast Range: T2 - T10
+  Commander Cast Avg:   T3.5  ← All-time personal best!
+  Commander Cast Distribution:
+    T 2: ########################## (26)
+    T 3: #################### (20)
+    T 4: ############### (15)
+    T 5: ####### (7)
+    T 6: ### (3)
+    T 7: # (1)
+    T 8: # (1)
+    T 9: # (1)
+    T10: # (1)
+
+  Opening Hand Quality Breakdown (80 hands evaluated):
+    Gold Keep (Mana + Ramp + Enabler):   26/80 (32%)
+    Silver Keep (Mana + Curve):          54/80 (68%)
+    Desperation Keep (Mulligan to <=5):   0/80 (0%)  ← Flawless keep rate!
+    Average Starting Hand Size:          6.99 cards
+
+--------------------------------------------------------------------
+BRACKET READINESS (Bracket 3 (Upgraded) — Target T7)
+--------------------------------------------------------------------
+  Target Window Readiness Rate (T<=7): 70/80 (88%)
+  Engine Readiness Avg:  T4.4
+  Engine Readiness Distribution:
+    T 2: ## (2)
+    T 3: ##################### (21)
+    T 4: ######################### (25)
+    T 5: ################# (17)
+    T 6: #### (4)
+    T 7: # (1)
+    T 8: ## (2)
+    T 9: ## (2)
+    T10: # (1)
+
+  [BRACKET COMPLIANCE CHECK] Status: PASS
+  Deck deploys its engine around Turn 4.4, perfectly positioned to execute and threaten a win on Bracket 3 (Upgraded)'s target (Turn 7+).
+```
+
+**Notes:**
+- Replaced standalone *Demonic Tutor* and *Reanimate* with Strixhaven Adventure creatures: *Emeritus of Woe* ({3}{B} // {1}{B}) and *Grave Researcher* ({2}{B} // {B}).
+- Drops official Game Changers to just **1 / 3** ([*Survival of the Fittest*]).
+- Recorded **0% desperation keeps** with an average starting hand size of **6.99 cards**.
+- Commander cast average reached an all-time fastest **Turn 3.5**.
+- Bracket compliance remains PASS for Bracket 3.
+
+---
+
 ## 2026-09-02 — Budget Land Tuning: Boseiju Out, 4th Forest In (20 sims, 10 turns, Bracket 3)
 
 **Command:**

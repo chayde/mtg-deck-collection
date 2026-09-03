@@ -10,7 +10,7 @@ deck_status: main
 **Henzie "Toolbox" Torre**
 *   **Archetype:** Jund ({B}{R}{G}) Blitz / Sacrifice / Value Reanimation Midrange
 *   **Bracket:** 3 (Optimized Power / High Synergy — Winning Turns 6–8)
-*   **Game Changers (2/3):** [Survival of the Fittest](https://scryfall.com/search?q=!"Survival+of+the+Fittest"), [Demonic Tutor](https://scryfall.com/search?q=!"Demonic+Tutor")
+*   **Game Changers (1/3):** [Survival of the Fittest](https://scryfall.com/search?q=!"Survival+of+the+Fittest") *(Note: Runs [Emeritus of Woe // Demonic Tutor](https://scryfall.com/card/sos/80/emeritus-of-woe-demonic-tutor?utm_source=api) as a blitzable creature with adventure tutor to maximize creature synergy while avoiding the Game Changer limit).*
 *   **Core Goal:** Exploit high 1-drop mana dork density to reliably cast Henzie on Turn 2. Beginning on Turn 3, chain discounted Blitz creature spells with haste, immediate attack triggers, and death draws. Feed high-impact threats into continuous sacrifice engines (*Birthing Ritual*, *Greater Good*, *Industrial Advancement*), refueling the hand and filling the graveyard to resolve backbreaking mass reanimation (*Living Death*, *Victimize*, *Phyrexian Delver*) for lethal non-combat damage and overwhelming combat swings.
 
 ### 🏎️ Piloting the Engine
@@ -25,9 +25,8 @@ deck_status: main
 ### 👑 Commander (1 Card)
 *   **Henzie "Toolbox" Torre:** {B}{R}{G} 3/3 Devil Rogue. Gives all 4+ MV creatures Blitz with cumulative cost reduction for each commander cast. The central engine of the deck.
 
-### ⚡ Game Changers (2 Cards — Bracket 3 Max 3)
+### ⚡ Game Changers (1 Card — Bracket 3 Max 3)
 *   **Survival of the Fittest:** {1}{G} enchantment. Discard a creature to tutor any creature to hand; bins reanimation targets while tutoring the exact Blitz bomb needed.
-*   **Demonic Tutor:** {1}{B} sorcery. Unconditional tutor to hand for 2 mana; grabs *Living Death*, a protection spell, or a missing engine piece.
 
 ### 🌲 Turn 1 Ramp & Mana Dorks (8 Cards)
 *High-density 1-drop ramp ensuring consistent Turn 2 Henzie deployment.*
@@ -53,7 +52,7 @@ deck_status: main
 *   **Industrial Advancement:** {3}{R} enchantment. When a nontoken creature is sacrificed in end step, reveal cards until you hit a creature with lesser MV and put it directly into play.
 *   **Skullclamp:** {1} artifact. Equips for 1 to draw 2 cards whenever an equipped creature dies; turns 1-drop dorks or blitzed creatures into massive card advantage.
 
-### 🐉 4-CMC Blitz Enablers & Value (8 Cards)
+### 🐉 4-CMC Blitz Enablers & Value (9 Cards)
 *   **Blossoming Tortoise:** {2}{G}{G} 3/3. ETB and attack mills 3 cards and returns a land from graveyard to play; reduces land activation costs.
 *   **Druid of Purification:** {3}{G} 2/3. ETB allows each player to choose an artifact or enchantment to destroy, wiping up to 4 opposing problem permanents on entry.
 *   **Chainer, Nightmare Adept:** {2}{B}{R} 3/2. Discard a card to cast a creature from your graveyard each turn, giving blitz creatures an endless recursion loop.
@@ -62,6 +61,7 @@ deck_status: main
 *   **Solemn Simulacrum:** {4} 2/2. ETB fetches a basic land; dies to draw a card; blitzing draws two cards total.
 *   **Sowing Mycospawn:** {3}{G} 3/3 devoid. On-cast trigger (uncounterable) searches for ANY land card (including *Phyrexian Tower*, *Kessig Wolf Run*, or Triomes) directly onto the battlefield; blitzes for {2}{G}, attacks with haste, and draws a card on death.
 *   **Damage Control Crew:** {3}{G} 3/3. ETB modal: exiles target artifact or enchantment (cleanly removes indestructible/darksteel/rings) OR returns any card with mana value 4 or greater from your graveyard to hand.
+*   **Emeritus of Woe // Demonic Tutor:** {3}{B} // {1}{B} 5/4. Adventure sorcery casts for {1}{B} to tutor any card to hand; front face is a 4-CMC 5/4 creature that blitzes with Henzie for {2}{B}, swings with haste, and draws a card on death. Avoids Game Changer designation while maximizing creature blitz synergy.
 
 ### 💥 5-CMC Blitz Powerhouses (10 Cards)
 *   **Seedguide Ash:** {4}{G} 4/4. When it dies, searches for up to three Forest cards and puts them onto the battlefield tapped; explosive mana ramp.
@@ -87,7 +87,7 @@ deck_status: main
 *   **Bringer of the Last Gift:** {6}{B}{B} 6/6 flying. When cast, each player sacrifices all other creatures, then returns all creature cards from their graveyard that weren't put there this way to the battlefield; blitzing it triggers an asymmetric Living Death on entry, attacks with haste for 6 flying damage, and draws a card on death.
 
 ### 💀 Reanimation & Recursion Suite (8 Cards)
-*   **Reanimate:** {B} sorcery. 1-mana reanimation of any creature from any graveyard directly to the battlefield.
+*   **Grave Researcher // Reanimate:** {2}{B} // {B} 3/3. Adventure sorcery casts for {B} to reanimate any creature from any graveyard; front face is a 3/3 creature that can be tutored by *Fauna Shaman* / *Survival of the Fittest* and reanimated by *Living Death* / *Victimize*.
 *   **Animate Dead:** {1}{B} enchantment - aura. Efficient 2-mana reanimation aura.
 *   **Victimize:** {2}{B} sorcery. Sacrifices a creature to return two target creatures from graveyard to the battlefield tapped.
 *   **Phyrexian Delver:** {3}{B}{B} 3/2. ETB reanimates a creature from your graveyard at the cost of life equal to its mana value; blitzable recursion body.
@@ -148,12 +148,17 @@ deck_status: main
 ### High-Impact Tech Considerations
 *   **Terror of the Peaks Foil / Special Art:** Alternate treatment for the primary burn engine.
 *   **Myojin of Night's Reach:** {5}{B}{B}{B} 8-drop bomb that enters with a divinity counter when cast with blitz from hand; remove counter to force all opponents to discard their entire hands simultaneously.
+*   **Classic Demonic Tutor & Reanimate (Paper Printings):** The deck runs Strixhaven Adventure creatures (*Emeritus of Woe* and *Grave Researcher*) for blitz and creature tutor synergies while keeping Game Changers at 1/3. If preferred for physical paper play or classic aesthetic, the deck can alternatively run standard non-adventure printings of *Demonic Tutor* ({1}{B}) and *Reanimate* ({B}). Note that running classic *Demonic Tutor* counts as a Game Changer (bringing the deck to 2/3).
 *   **Protean Hulk:** Optional modular combo package if upgrading toward Bracket 4.
 
 ---
 
 ## 📜 Deck Changelog
 
+- **2026-09-02:** Strixhaven Adventure Creature Integration.
+    - **In:** *Emeritus of Woe* ({3}{B} // {1}{B}), *Grave Researcher* ({2}{B} // {B})
+    - **Out:** *Demonic Tutor* (standalone sorcery), *Reanimate* (standalone sorcery)
+    - **Reason:** Upgraded standalone sorceries into their Strixhaven Adventure creature equivalents. *Emeritus of Woe* gives the deck a 4-CMC blitzable 5/4 creature with haste and death draw while providing the exact same 2-mana tutor on its adventure side (and drops deck Game Changers from 2/3 to 1/3). *Grave Researcher* provides creature-tutor searchability with Survival/Fauna Shaman and mass reanimation synergy with Living Death.
 - **2026-09-02:** Budget Land Tuning.
     - **In:** *Forest* (4th basic Forest)
     - **Out:** *Boseiju, Who Endures*
@@ -192,7 +197,7 @@ COMMANDER:
 
 DECK:  
 1 Survival of the Fittest  
-1 Demonic Tutor  
+1 Emeritus of Woe  
 1 Toxic Deluge  
 1 Birds of Paradise  
 1 Delighted Halfling  
@@ -238,7 +243,7 @@ DECK:
 1 Kogla, the Titan Ape  
 1 Apex Devastator  
 1 Bringer of the Last Gift  
-1 Reanimate  
+1 Grave Researcher  
 1 Animate Dead  
 1 Victimize  
 1 Phyrexian Delver  

@@ -3,7 +3,7 @@ COMMANDER:
 
 DECK:
 1 Survival of the Fittest
-1 Demonic Tutor
+1 Emeritus of Woe
 1 Toxic Deluge
 1 Birds of Paradise
 1 Delighted Halfling
@@ -49,7 +49,7 @@ DECK:
 1 Kogla, the Titan Ape
 1 Apex Devastator
 1 Bringer of the Last Gift
-1 Reanimate
+1 Grave Researcher
 1 Animate Dead
 1 Victimize
 1 Phyrexian Delver
