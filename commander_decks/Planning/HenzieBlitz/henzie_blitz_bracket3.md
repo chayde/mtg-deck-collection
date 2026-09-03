@@ -146,6 +146,7 @@ deck_status: main
 ## 🚀 Future Roadmap & Acquisitions
 
 ### High-Impact Tech Considerations
+*   **Original Jund Dual Lands (Revised Edition):** [Badlands](https://scryfall.com/search?q=!"Badlands") (~$566), [Bayou](https://scryfall.com/search?q=!"Bayou") (~$469), and [Taiga](https://scryfall.com/search?q=!"Taiga") (~$437). The ultimate mana base upgrade (~$1,472 total). They enter untapped unconditionally with zero life payment, carry dual basic land types fetchable by all 7 fetch lands, and serve as targets for green ramp spells (*Nature's Lore*, *Three Visits*, *Farseek*, *Seedguide Ash*).
 *   **Terror of the Peaks Foil / Special Art:** Alternate treatment for the primary burn engine.
 *   **Apex Devastator:** {8}{G}{G} 10/10 Chimera Hydra. Quad-cascade bomb for non-discard casual pods if wanting high-variance cascade turns.
 *   **Primaris Eliminator:** {4}{B} 3/2 Astartes Warrior. Modal ETB: destroy target creature OR give creatures target player controls -2/-2 until end of turn. Potential future upgrade in place of *Toxic Deluge* to fully commit to creature-strapped sweepers and eliminate symmetrical board wipe drawbacks.
