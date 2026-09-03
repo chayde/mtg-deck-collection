@@ -47,7 +47,7 @@ DECK:
 1 Mikaeus, the Unhallowed
 1 Bane of Progress
 1 Kogla, the Titan Ape
-1 Apex Devastator
+1 Myojin of Night's Reach
 1 Bringer of the Last Gift
 1 Grave Researcher
 1 Animate Dead

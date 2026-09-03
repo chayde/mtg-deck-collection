@@ -85,7 +85,7 @@ deck_status: main
 *   **Mikaeus, the Unhallowed:** {3}{B}{B}{B} 5/5 intimidate. Gives non-Human creatures +1/+1 and Undying, causing blitzed creatures to return immediately after sacrifice with a +1/+1 counter.
 *   **Bane of Progress:** {4}{G}{G} 2/2. ETB destroys all artifacts and enchantments and puts a +1/+1 counter on itself for each permanent destroyed.
 *   **Kogla, the Titan Ape:** {3}{G}{G}{G} 7/6. ETB fights target creature; attacking destroys an artifact or enchantment defending player controls.
-*   **Apex Devastator:** {8}{G}{G} 10/10. Cascade, cascade, cascade, cascade; blitzes for reduced cost to trigger 4 free spells from your deck with haste.
+*   **Myojin of Night's Reach:** {5}{B}{B}{B} 5/2. Enters with a divinity counter when blitzed from hand; attacks as an indestructible 5/2 with haste, then remove counter at instant speed to force ALL opponents to discard their entire hands simultaneously before dying at end step to draw a card.
 *   **Bringer of the Last Gift:** {6}{B}{B} 6/6 flying. When cast, each player sacrifices all other creatures, then returns all creature cards from their graveyard that weren't put there this way to the battlefield; blitzing it triggers an asymmetric Living Death on entry, attacks with haste for 6 flying damage, and draws a card on death.
 
 ### 💀 Reanimation & Recursion Suite (7 Cards)
@@ -147,7 +147,7 @@ deck_status: main
 
 ### High-Impact Tech Considerations
 *   **Terror of the Peaks Foil / Special Art:** Alternate treatment for the primary burn engine.
-*   **Myojin of Night's Reach:** {5}{B}{B}{B} 8-drop bomb that enters with a divinity counter when cast with blitz from hand; remove counter to force all opponents to discard their entire hands simultaneously.
+*   **Apex Devastator:** {8}{G}{G} 10/10 Chimera Hydra. Quad-cascade bomb for non-discard casual pods if wanting high-variance cascade turns.
 *   **Primaris Eliminator:** {4}{B} 3/2 Astartes Warrior. Modal ETB: destroy target creature OR give creatures target player controls -2/-2 until end of turn. Potential future upgrade in place of *Toxic Deluge* to fully commit to creature-strapped sweepers and eliminate symmetrical board wipe drawbacks.
 *   **Classic Demonic Tutor & Reanimate (Paper Printings):** The deck runs Strixhaven Adventure creatures (*Emeritus of Woe* and *Grave Researcher*) for blitz and creature tutor synergies while keeping Game Changers at 1/3. If preferred for physical paper play or classic aesthetic, the deck can alternatively run standard non-adventure printings of *Demonic Tutor* ({1}{B}) and *Reanimate* ({B}). Note that running classic *Demonic Tutor* counts as a Game Changer (bringing the deck to 2/3).
 *   **Protean Hulk:** Optional modular combo package if upgrading toward Bracket 4.
@@ -156,6 +156,10 @@ deck_status: main
 
 ## 📜 Deck Changelog
 
+- **2026-09-03:** High-End Finisher Optimization (Myojin of Night's Reach In, Apex Devastator Out).
+    - **In:** *Myojin of Night's Reach* ({5}{B}{B}{B})
+    - **Out:** *Apex Devastator* ({8}{G}{G})
+    - **Reason:** Replaced 9-mana cascade bomb (Apex Devastator) with 7-mana game-ending stax finisher (Myojin of Night's Reach). Lowers curve by 2 mana (deployable on Turn 5–6), eliminates long resolution delays from 4 separate cascades, and creates a devastating 10-to-15 card swing by forcing all opponents to discard their entire hands while attacking with blitz haste and drawing on death.
 - **2026-09-03:** Board Wipe Optimization (Creature-Strapped Asymmetric Sweeper).
     - **In:** *Incinerator of the Guilty* ({4}{R}{R})
     - **Out:** *Blasphemous Act* ({8}{R})
@@ -250,7 +254,7 @@ DECK:
 1 Mikaeus, the Unhallowed  
 1 Bane of Progress  
 1 Kogla, the Titan Ape  
-1 Apex Devastator  
+1 Myojin of Night's Reach  
 1 Bringer of the Last Gift  
 1 Grave Researcher  
 1 Animate Dead  

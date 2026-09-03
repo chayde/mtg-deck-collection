@@ -1,5 +1,69 @@
 # Goldfish Simulation Log: Henzie "Toolbox" Torre
 
+## 2026-09-03 — High-End Finisher Optimization: Myojin of Night's Reach In, Apex Devastator Out (20 sims, 10 turns, Bracket 3)
+
+**Command:**
+```bash
+python scripts/multiplayer_goldfish.py "commander_decks/Planning/HenzieBlitz/moxfield_import.txt" --sims 20 --turns 10 --bracket 3
+```
+
+**Results:**
+```
+====================================================================
+RUNNING 20 × 4-PLAYER SIMULATIONS
+Commander: Henzie "Toolbox" Torre (CMC 3)  |  Target: Bracket 3 (Upgraded) (Target T7)
+====================================================================
+
+--------------------------------------------------------------------
+AGGREGATE DEPLOYMENT & MULLIGAN PROFILE
+--------------------------------------------------------------------
+  Commander cast rate: 77/80 (96%)
+  Commander Cast Range: T2 - T10
+  Commander Cast Avg:   T3.8
+  Commander Cast Distribution:
+    T 2: #################### (20)
+    T 3: ####################### (23)
+    T 4: ################ (16)
+    T 5: #### (4)
+    T 6: ##### (5)
+    T 7: ### (3)
+    T 8: ##### (5)
+    T10: # (1)
+
+  Opening Hand Quality Breakdown (80 hands evaluated):
+    Gold Keep (Mana + Ramp + Enabler):   26/80 (32%)
+    Silver Keep (Mana + Curve):          51/80 (64%)
+    Desperation Keep (Mulligan to <=5):   3/80 (4%)
+    Average Starting Hand Size:          6.90 cards
+
+--------------------------------------------------------------------
+BRACKET READINESS (Bracket 3 (Upgraded) — Target T7)
+--------------------------------------------------------------------
+  Target Window Readiness Rate (T<=7): 68/80 (85%)
+  Engine Readiness Avg:  T4.6
+  Engine Readiness Distribution:
+    T 2: ## (2)
+    T 3: #################### (20)
+    T 4: ############################## (30)
+    T 5: ######## (8)
+    T 6: #### (4)
+    T 7: #### (4)
+    T 8: ####### (7)
+    T10: ## (2)
+
+  [BRACKET COMPLIANCE CHECK] Status: PASS
+  Deck deploys its engine around Turn 4.6, perfectly positioned to execute and threaten a win on Bracket 3 (Upgraded)'s target (Turn 7+).
+```
+
+**Notes:**
+- Replaced 9-mana cascade bomb *Apex Devastator* ({8}{G}{G}) with 7-mana finisher *Myojin of Night's Reach* ({5}{B}{B}{B}).
+- Lowers curve ceiling by 2 mana; eliminates slow 4-cascade resolution delays while presenting a game-winning hand wipe.
+- Retains divinity counter upon casting for blitz from hand, swinging as an indestructible 5/2 with haste before stripping all opponents' hands.
+- Commander cast rate remains **96%** with an engine readiness turn of **T4.6**.
+- Bracket compliance remains PASS for Bracket 3.
+
+---
+
 ## 2026-09-03 — Board Wipe Optimization: Incinerator of the Guilty In, Blasphemous Act Out (20 sims, 10 turns, Bracket 3)
 
 **Command:**
