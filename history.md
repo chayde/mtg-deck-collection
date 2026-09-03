@@ -2,6 +2,11 @@
 
 ## 🗓️ September 2026: Henzie Blitz Refinement & Playtesting Integration
 
+### 2026-09-03: Henzie "Toolbox" Torre — Mana Base Optimization: Original Revised Dual Lands
+*   **Dual Land Upgrade:** Replaced 3 conditional check lands (*Rootbound Crag* {R}/{G}, *Dragonskull Summit* {B}/{R}, *Woodland Cemetery* {B}/{G}) with the 3 original Revised Dual Lands (*Taiga*, *Badlands*, *Bayou*). This eliminates the risk of opening-hand tapped lands on Turn 1 or Turn 2, provides unconditional untapped mana with zero life loss, and gives all 7 fetch lands and land-ramp spells (*Nature's Lore*, *Three Visits*, *Farseek*, *Seedguide Ash*) pristine dual-typed targets. Documented the check lands as the official paper budget fallback in the roadmap.
+*   **Validation:** 20-sim goldfish check — **all-time record 99% commander cast rate (79/80)** with **61% Turn 2 or Turn 3 casts**, **all-time peak 95% target window readiness (76/80, T4.5 avg)**, **0% Desperation Keeps (100% functional keeps, 6.96 avg hand size)**. Bracket compliance status: **PASS** for Bracket 3. Logged to `commander_decks/Planning/HenzieBlitz/GOLDFISH_LOG.md`.
+
+
 ### 2026-09-03: Henzie "Toolbox" Torre — Removal Engine Upgrade: Sheoldred // The True Scriptures
 *   **Removal Overhaul:** Replaced single-target creature destruction *Ravenous Chupacabra* ({2}{B}{B}) with table-wide nontoken edict and transform finisher *Sheoldred // The True Scriptures* ({3}{B}{B}). For 1 extra mana to blitz ({2}{B}{B}), Sheoldred forces all 3 opponents to sacrifice a nontoken creature or planeswalker on ETB (bypassing hexproof, shroud, ward, and indestructible), attacks with menace and haste, draws on death, and features a {4}{B} transform ability that exiles her to dodge the blitz end-step sacrifice and flip into *The True Scriptures* for a game-winning 3-chapter saga.
 *   **Validation:** 20-sim goldfish check — **95% commander cast rate (76/80)** with 55% T2-T3 casts, **T4.4 engine readiness (88% on target <= T7)**, **40% Gold Keeps**, 57% Silver Keeps (97% functional keeps, avg hand size 6.90). Bracket compliance status: **PASS** for Bracket 3. Logged to `commander_decks/Planning/HenzieBlitz/GOLDFISH_LOG.md`.

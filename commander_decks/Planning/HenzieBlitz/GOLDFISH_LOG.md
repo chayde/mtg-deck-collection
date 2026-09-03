@@ -1,5 +1,69 @@
 # Goldfish Simulation Log: Henzie "Toolbox" Torre
 
+## 2026-09-03 — Mana Base Optimization: Original Revised Dual Lands In, Check Lands Out (20 sims, 10 turns, Bracket 3)
+
+**Command:**
+```bash
+python scripts/multiplayer_goldfish.py "commander_decks/Planning/HenzieBlitz/moxfield_import.txt" --sims 20 --turns 10 --bracket 3
+```
+
+**Results:**
+```
+====================================================================
+RUNNING 20 × 4-PLAYER SIMULATIONS
+Commander: Henzie "Toolbox" Torre (CMC 3)  |  Target: Bracket 3 (Upgraded) (Target T7)
+====================================================================
+
+--------------------------------------------------------------------
+AGGREGATE DEPLOYMENT & MULLIGAN PROFILE
+--------------------------------------------------------------------
+  Commander cast rate: 79/80 (99%)  ← All-time peak 99%!
+  Commander Cast Range: T2 - T9
+  Commander Cast Avg:   T3.7 (61% of games hit Turn 2 or Turn 3!)
+  Commander Cast Distribution:
+    T 2: #################### (20)
+    T 3: ############################# (29)
+    T 4: ######### (9)
+    T 5: ########## (10)
+    T 6: ### (3)
+    T 7: ##### (5)
+    T 8: # (1)
+    T 9: ## (2)
+
+  Opening Hand Quality Breakdown (80 hands evaluated):
+    Gold Keep (Mana + Ramp + Enabler):   28/80 (35%)
+    Silver Keep (Mana + Curve):          52/80 (65%)
+    Desperation Keep (Mulligan to <=5):   0/80 (0%)  ← 0% Desperation Keeps!
+    Average Starting Hand Size:          6.96 cards
+
+--------------------------------------------------------------------
+BRACKET READINESS (Bracket 3 (Upgraded) — Target T7)
+--------------------------------------------------------------------
+  Target Window Readiness Rate (T<=7): 76/80 (95%)  ← All-time high 95%!
+  Engine Readiness Avg:  T4.5
+  Engine Readiness Distribution:
+    T 2: ### (3)
+    T 3: ################# (17)
+    T 4: ########################## (26)
+    T 5: #################### (20)
+    T 6: ##### (5)
+    T 7: ##### (5)
+    T 8: # (1)
+    T 9: ## (2)
+
+  [BRACKET COMPLIANCE CHECK] Status: PASS
+  Deck deploys its engine around Turn 4.5, perfectly positioned to execute and threaten a win on Bracket 3 (Upgraded)'s target (Turn 7+).
+```
+
+**Notes:**
+- Replaced 3 conditional Check Lands (*Rootbound Crag*, *Dragonskull Summit*, *Woodland Cemetery*) with the original Revised Dual Lands (*Taiga*, *Badlands*, *Bayou*).
+- Completely eliminated conditional tap-land stumbles on Turn 1 and Turn 2.
+- Provided pristine dual-typed targets for all 7 fetch lands and land-ramp spells (*Nature's Lore*, *Three Visits*, *Farseek*, *Seedguide Ash*).
+- Reached **99% Commander Cast Rate (79/80)**, **0% Desperation Keeps (100% functional keeps)**, and **95% Target Window Readiness (76/80)**!
+- Bracket compliance remains PASS for Bracket 3.
+
+---
+
 ## 2026-09-03 — Removal Engine Upgrade: Sheoldred In, Ravenous Chupacabra Out (20 sims, 10 turns, Bracket 3)
 
 **Command:**

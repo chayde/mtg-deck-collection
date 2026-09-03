@@ -1,186 +1,7 @@
 {
-  "sheoldred": {
-    "data": {
-      "object": "card",
-      "id": "bf2249e6-af74-4b88-8eb7-144ce8fa7f6b",
-      "oracle_id": "97652492-7906-4d79-983c-fa1dc1239eba",
-      "multiverse_ids": [
-        607162,
-        607163
-      ],
-      "mtgo_id": 110096,
-      "arena_id": 84398,
-      "tcgplayer_id": 491202,
-      "cardmarket_id": 704371,
-      "name": "Sheoldred // The True Scriptures",
-      "lang": "en",
-      "released_at": "2023-04-21",
-      "uri": "https://api.scryfall.com/cards/bf2249e6-af74-4b88-8eb7-144ce8fa7f6b",
-      "scryfall_uri": "https://scryfall.com/card/mom/125/sheoldred-the-true-scriptures?utm_source=api",
-      "layout": "transform",
-      "highres_image": true,
-      "image_status": "highres_scan",
-      "image_updated_at": "2026-07-13T04:30:07Z",
-      "cmc": 5.0,
-      "type_line": "Legendary Creature \u2014 Phyrexian Praetor // Enchantment \u2014 Saga",
-      "color_identity": [
-        "B"
-      ],
-      "keywords": [
-        "Transform",
-        "Menace",
-        "Mill"
-      ],
-      "card_faces": [
-        {
-          "object": "card_face",
-          "name": "Sheoldred",
-          "mana_cost": "{3}{B}{B}",
-          "type_line": "Legendary Creature \u2014 Phyrexian Praetor",
-          "oracle_text": "Menace\nWhen Sheoldred enters, each opponent sacrifices a nontoken creature or planeswalker of their choice.\n{4}{B}: Exile Sheoldred, then return it to the battlefield transformed under its owner's control. Activate only as a sorcery and only if an opponent has eight or more cards in their graveyard.",
-          "colors": [
-            "B"
-          ],
-          "power": "4",
-          "toughness": "5",
-          "artist": "Ryan Pancoast",
-          "artist_id": "89cc9475-dda2-4d13-bf88-54b92867a25c",
-          "illustration_id": "bedfa581-6523-4ca3-ba1a-d9feaf07fe75",
-          "image_uris": {
-            "small": "https://cards.scryfall.io/small/front/b/f/bf2249e6-af74-4b88-8eb7-144ce8fa7f6b.jpg?1783917007",
-            "normal": "https://cards.scryfall.io/normal/front/b/f/bf2249e6-af74-4b88-8eb7-144ce8fa7f6b.jpg?1783917007",
-            "large": "https://cards.scryfall.io/large/front/b/f/bf2249e6-af74-4b88-8eb7-144ce8fa7f6b.jpg?1783917007",
-            "png": "https://cards.scryfall.io/png/front/b/f/bf2249e6-af74-4b88-8eb7-144ce8fa7f6b.png?1783917007",
-            "art_crop": "https://cards.scryfall.io/art_crop/front/b/f/bf2249e6-af74-4b88-8eb7-144ce8fa7f6b.jpg?1783917007",
-            "border_crop": "https://cards.scryfall.io/border_crop/front/b/f/bf2249e6-af74-4b88-8eb7-144ce8fa7f6b.jpg?1783917007",
-            "thumb": "https://cards.scryfall.io/thumb/front/b/f/bf2249e6-af74-4b88-8eb7-144ce8fa7f6b.webp?1783917007",
-            "grid": "https://cards.scryfall.io/grid/front/b/f/bf2249e6-af74-4b88-8eb7-144ce8fa7f6b.webp?1783917007",
-            "display": "https://cards.scryfall.io/display/front/b/f/bf2249e6-af74-4b88-8eb7-144ce8fa7f6b.webp?1783917007",
-            "art": "https://cards.scryfall.io/art/front/b/f/bf2249e6-af74-4b88-8eb7-144ce8fa7f6b.webp?1783917007",
-            "crop": "https://cards.scryfall.io/crop/front/b/f/bf2249e6-af74-4b88-8eb7-144ce8fa7f6b.webp?1783917007"
-          }
-        },
-        {
-          "object": "card_face",
-          "name": "The True Scriptures",
-          "mana_cost": "",
-          "type_line": "Enchantment \u2014 Saga",
-          "oracle_text": "(As this Saga enters and after your draw step, add a lore counter.)\nI \u2014 For each opponent, destroy up to one target creature or planeswalker that player controls.\nII \u2014 Each opponent discards three cards, then mills three cards.\nIII \u2014 Put all creature cards from all graveyards onto the battlefield under your control. Exile this Saga, then return it to the battlefield (front face up).",
-          "colors": [
-            "B"
-          ],
-          "color_indicator": [
-            "B"
-          ],
-          "artist": "Ryan Pancoast",
-          "artist_id": "89cc9475-dda2-4d13-bf88-54b92867a25c",
-          "illustration_id": "bfe179a8-e107-4752-94ea-e195fc52071d",
-          "image_uris": {
-            "small": "https://cards.scryfall.io/small/back/b/f/bf2249e6-af74-4b88-8eb7-144ce8fa7f6b.jpg?1783917007",
-            "normal": "https://cards.scryfall.io/normal/back/b/f/bf2249e6-af74-4b88-8eb7-144ce8fa7f6b.jpg?1783917007",
-            "large": "https://cards.scryfall.io/large/back/b/f/bf2249e6-af74-4b88-8eb7-144ce8fa7f6b.jpg?1783917007",
-            "png": "https://cards.scryfall.io/png/back/b/f/bf2249e6-af74-4b88-8eb7-144ce8fa7f6b.png?1783917007",
-            "art_crop": "https://cards.scryfall.io/art_crop/back/b/f/bf2249e6-af74-4b88-8eb7-144ce8fa7f6b.jpg?1783917007",
-            "border_crop": "https://cards.scryfall.io/border_crop/back/b/f/bf2249e6-af74-4b88-8eb7-144ce8fa7f6b.jpg?1783917007",
-            "thumb": "https://cards.scryfall.io/thumb/back/b/f/bf2249e6-af74-4b88-8eb7-144ce8fa7f6b.webp?1783917007",
-            "grid": "https://cards.scryfall.io/grid/back/b/f/bf2249e6-af74-4b88-8eb7-144ce8fa7f6b.webp?1783917007",
-            "display": "https://cards.scryfall.io/display/back/b/f/bf2249e6-af74-4b88-8eb7-144ce8fa7f6b.webp?1783917007",
-            "art": "https://cards.scryfall.io/art/back/b/f/bf2249e6-af74-4b88-8eb7-144ce8fa7f6b.webp?1783917007",
-            "crop": "https://cards.scryfall.io/crop/back/b/f/bf2249e6-af74-4b88-8eb7-144ce8fa7f6b.webp?1783917007"
-          }
-        }
-      ],
-      "legalities": {
-        "standard": "not_legal",
-        "future": "not_legal",
-        "historic": "legal",
-        "timeless": "legal",
-        "gladiator": "legal",
-        "pioneer": "legal",
-        "modern": "legal",
-        "legacy": "legal",
-        "pauper": "not_legal",
-        "vintage": "legal",
-        "penny": "legal",
-        "commander": "legal",
-        "oathbreaker": "legal",
-        "standardbrawl": "not_legal",
-        "brawl": "legal",
-        "competitivebrawl": "legal",
-        "alchemy": "not_legal",
-        "paupercommander": "not_legal",
-        "duel": "legal",
-        "oldschool": "not_legal",
-        "premodern": "not_legal",
-        "predh": "not_legal",
-        "tlr": "not_legal"
-      },
-      "games": [
-        "paper",
-        "arena",
-        "mtgo"
-      ],
-      "reserved": false,
-      "game_changer": false,
-      "foil": true,
-      "nonfoil": true,
-      "finishes": [
-        "nonfoil",
-        "foil"
-      ],
-      "oversized": false,
-      "promo": false,
-      "reprint": false,
-      "variation": false,
-      "set_id": "392f7315-dc53-40a3-a2cc-5482dbd498b3",
-      "set": "mom",
-      "set_name": "March of the Machine",
-      "set_type": "expansion",
-      "set_uri": "https://api.scryfall.com/sets/392f7315-dc53-40a3-a2cc-5482dbd498b3",
-      "set_search_uri": "https://api.scryfall.com/cards/search?order=set&q=e%3Amom&unique=prints",
-      "scryfall_set_uri": "https://scryfall.com/sets/mom?utm_source=api",
-      "rulings_uri": "https://api.scryfall.com/cards/bf2249e6-af74-4b88-8eb7-144ce8fa7f6b/rulings",
-      "prints_search_uri": "https://api.scryfall.com/cards/search?order=released&q=oracleid%3A97652492-7906-4d79-983c-fa1dc1239eba&unique=prints",
-      "collector_number": "125",
-      "digital": false,
-      "rarity": "mythic",
-      "artist": "Ryan Pancoast",
-      "artist_ids": [
-        "89cc9475-dda2-4d13-bf88-54b92867a25c"
-      ],
-      "border_color": "black",
-      "frame": "2015",
-      "frame_effects": [
-        "legendary"
-      ],
-      "security_stamp": "oval",
-      "full_art": false,
-      "textless": false,
-      "booster": true,
-      "story_spotlight": false,
-      "edhrec_rank": 1947,
-      "penny_rank": 3028,
-      "prices": {
-        "usd": "17.30",
-        "usd_foil": "18.86",
-        "usd_etched": null,
-        "eur": "15.84",
-        "eur_foil": "15.81",
-        "tix": "0.02"
-      },
-      "related_uris": {
-        "gatherer": "https://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=607162&printed=false",
-        "tcgplayer_infinite_articles": "https://partner.tcgplayer.com/c/4931599/1830156/21018?subId1=api&trafcat=tcgplayer.com%2Fsearch%2Farticles&u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Farticles%3FproductLineName%3Dmagic%26q%3DSheoldred%2B%252F%252F%2BThe%2BTrue%2BScriptures",
-        "tcgplayer_infinite_decks": "https://partner.tcgplayer.com/c/4931599/1830156/21018?subId1=api&trafcat=tcgplayer.com%2Fsearch%2Fdecks&u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Fdecks%3FproductLineName%3Dmagic%26q%3DSheoldred%2B%252F%252F%2BThe%2BTrue%2BScriptures",
-        "edhrec": "https://edhrec.com/route/?cc=Sheoldred"
-      },
-      "purchase_uris": {
-        "tcgplayer": "https://partner.tcgplayer.com/c/4931599/1830156/21018?subId1=api&u=https%3A%2F%2Fwww.tcgplayer.com%2Fproduct%2F491202%3Fpage%3D1",
-        "cardmarket": "https://www.cardmarket.com/en/Magic/Products?idProduct=704371&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
-        "cardhoarder": "https://www.cardhoarder.com/cards/110096?affiliate_id=scryfall&ref=card-profile&utm_campaign=affiliate&utm_medium=card&utm_source=scryfall"
-      }
-    },
-    "cached_at": 1788464947.2546933
+  "commander:": {
+    "data": null,
+    "cached_at": 1788471754.168559
   },
   "henzie \"toolbox\" torre": {
     "data": {
@@ -327,7 +148,11 @@
         "cardhoarder": "https://www.cardhoarder.com/cards?affiliate_id=scryfall&data%5Bsearch%5D=Henzie+%22Toolbox%22+Torre&ref=card-profile&utm_campaign=affiliate&utm_medium=card&utm_source=scryfall"
       }
     },
-    "cached_at": 1788464984.5795157
+    "cached_at": 1788471754.7703946
+  },
+  "deck:": {
+    "data": null,
+    "cached_at": 1788471755.768076
   },
   "survival of the fittest": {
     "data": {
@@ -437,7 +262,7 @@
       "textless": false,
       "booster": true,
       "story_spotlight": false,
-      "edhrec_rank": 2357,
+      "edhrec_rank": 2356,
       "prices": {
         "usd": null,
         "usd_foil": null,
@@ -458,7 +283,7 @@
         "cardhoarder": "https://www.cardhoarder.com/cards/56956?affiliate_id=scryfall&ref=card-profile&utm_campaign=affiliate&utm_medium=card&utm_source=scryfall"
       }
     },
-    "cached_at": 1788464985.1461008
+    "cached_at": 1788471756.6137989
   },
   "emeritus of woe": {
     "data": {
@@ -622,7 +447,7 @@
         "cardhoarder": "https://www.cardhoarder.com/cards/149659?affiliate_id=scryfall&ref=card-profile&utm_campaign=affiliate&utm_medium=card&utm_source=scryfall"
       }
     },
-    "cached_at": 1788464985.9125109
+    "cached_at": 1788471757.479048
   },
   "toxic deluge": {
     "data": {
@@ -758,7 +583,7 @@
         "cardhoarder": "https://www.cardhoarder.com/cards/150791?affiliate_id=scryfall&ref=card-profile&utm_campaign=affiliate&utm_medium=card&utm_source=scryfall"
       }
     },
-    "cached_at": 1788464986.7300565
+    "cached_at": 1788471758.0293636
   },
   "birds of paradise": {
     "data": {
@@ -906,7 +731,7 @@
         "cardhoarder": "https://www.cardhoarder.com/cards/150809?affiliate_id=scryfall&ref=card-profile&utm_campaign=affiliate&utm_medium=card&utm_source=scryfall"
       }
     },
-    "cached_at": 1788464987.2865717
+    "cached_at": 1788471758.560224
   },
   "delighted halfling": {
     "data": {
@@ -1061,7 +886,7 @@
         "cardhoarder": "https://www.cardhoarder.com/cards/112226?affiliate_id=scryfall&ref=card-profile&utm_campaign=affiliate&utm_medium=card&utm_source=scryfall"
       }
     },
-    "cached_at": 1788464988.0455122
+    "cached_at": 1788471759.3741074
   },
   "ignoble hierarch": {
     "data": {
@@ -1204,7 +1029,7 @@
         "cardhoarder": "https://www.cardhoarder.com/cards/146039?affiliate_id=scryfall&ref=card-profile&utm_campaign=affiliate&utm_medium=card&utm_source=scryfall"
       }
     },
-    "cached_at": 1788464988.5871904
+    "cached_at": 1788471760.2444582
   },
   "elves of deep shadow": {
     "data": {
@@ -1329,7 +1154,7 @@
         "usd": "5.30",
         "usd_foil": null,
         "usd_etched": null,
-        "eur": "2.94",
+        "eur": "2.82",
         "eur_foil": null,
         "tix": "0.23"
       },
@@ -1345,7 +1170,7 @@
         "cardhoarder": "https://www.cardhoarder.com/cards/46150?affiliate_id=scryfall&ref=card-profile&utm_campaign=affiliate&utm_medium=card&utm_source=scryfall"
       }
     },
-    "cached_at": 1788464989.3807392
+    "cached_at": 1788471760.7876737
   },
   "llanowar elves": {
     "data": {
@@ -1513,7 +1338,7 @@
         "cardhoarder": "https://www.cardhoarder.com/cards/133480?affiliate_id=scryfall&ref=card-profile&utm_campaign=affiliate&utm_medium=card&utm_source=scryfall"
       }
     },
-    "cached_at": 1788464989.9189363
+    "cached_at": 1788471761.327424
   },
   "fyndhorn elves": {
     "data": {
@@ -1657,7 +1482,7 @@
         "cardhoarder": "https://www.cardhoarder.com/cards/85238?affiliate_id=scryfall&ref=card-profile&utm_campaign=affiliate&utm_medium=card&utm_source=scryfall"
       }
     },
-    "cached_at": 1788464990.4526064
+    "cached_at": 1788471762.1785965
   },
   "elvish mystic": {
     "data": {
@@ -1778,9 +1603,9 @@
         "universesbeyond"
       ],
       "edhrec_rank": 103,
-      "penny_rank": 334,
+      "penny_rank": 332,
       "prices": {
-        "usd": "5.15",
+        "usd": "5.10",
         "usd_foil": null,
         "usd_etched": null,
         "eur": "5.53",
@@ -1798,7 +1623,7 @@
         "cardhoarder": "https://www.cardhoarder.com/cards/154826?affiliate_id=scryfall&ref=card-profile&utm_campaign=affiliate&utm_medium=card&utm_source=scryfall"
       }
     },
-    "cached_at": 1788464991.93603
+    "cached_at": 1788471762.73522
   },
   "utopia sprawl": {
     "data": {
@@ -1939,7 +1764,7 @@
         "cardhoarder": "https://www.cardhoarder.com/cards/120845?affiliate_id=scryfall&ref=card-profile&utm_campaign=affiliate&utm_medium=card&utm_source=scryfall"
       }
     },
-    "cached_at": 1788464992.524656
+    "cached_at": 1788471763.3121643
   },
   "bloom tender": {
     "data": {
@@ -2085,7 +1910,7 @@
         "cardhoarder": "https://www.cardhoarder.com/cards/146723?affiliate_id=scryfall&ref=card-profile&utm_campaign=affiliate&utm_medium=card&utm_source=scryfall"
       }
     },
-    "cached_at": 1788464993.309398
+    "cached_at": 1788471763.8952794
   },
   "sakura-tribe elder": {
     "data": {
@@ -2217,7 +2042,7 @@
         "cardhoarder": "https://www.cardhoarder.com/cards/149035?affiliate_id=scryfall&ref=card-profile&utm_campaign=affiliate&utm_medium=card&utm_source=scryfall"
       }
     },
-    "cached_at": 1788464993.907359
+    "cached_at": 1788471764.7547157
   },
   "farseek": {
     "data": {
@@ -2353,7 +2178,7 @@
         "cardhoarder": "https://www.cardhoarder.com/cards/150815?affiliate_id=scryfall&ref=card-profile&utm_campaign=affiliate&utm_medium=card&utm_source=scryfall"
       }
     },
-    "cached_at": 1788464994.5127878
+    "cached_at": 1788471765.3718917
   },
   "nature's lore": {
     "data": {
@@ -2489,7 +2314,7 @@
         "cardhoarder": "https://www.cardhoarder.com/cards/150823?affiliate_id=scryfall&ref=card-profile&utm_campaign=affiliate&utm_medium=card&utm_source=scryfall"
       }
     },
-    "cached_at": 1788464995.0522583
+    "cached_at": 1788471873.245017
   },
   "three visits": {
     "data": {
@@ -2624,7 +2449,7 @@
         "cardhoarder": "https://www.cardhoarder.com/cards/150831?affiliate_id=scryfall&ref=card-profile&utm_campaign=affiliate&utm_medium=card&utm_source=scryfall"
       }
     },
-    "cached_at": 1788464995.669001
+    "cached_at": 1788471873.8046095
   },
   "will of the abzan": {
     "data": {
@@ -2757,7 +2582,7 @@
         "cardhoarder": "https://www.cardhoarder.com/cards/138079?affiliate_id=scryfall&ref=card-profile&utm_campaign=affiliate&utm_medium=card&utm_source=scryfall"
       }
     },
-    "cached_at": 1788464996.7080822
+    "cached_at": 1788471874.3463807
   },
   "greater good": {
     "data": {
@@ -2897,7 +2722,7 @@
         "cardhoarder": "https://www.cardhoarder.com/cards/150817?affiliate_id=scryfall&ref=card-profile&utm_campaign=affiliate&utm_medium=card&utm_source=scryfall"
       }
     },
-    "cached_at": 1788464997.7552605
+    "cached_at": 1788471874.9673426
   },
   "industrial advancement": {
     "data": {
@@ -3028,7 +2853,7 @@
         "cardhoarder": "https://www.cardhoarder.com/cards?affiliate_id=scryfall&data%5Bsearch%5D=Industrial+Advancement&ref=card-profile&utm_campaign=affiliate&utm_medium=card&utm_source=scryfall"
       }
     },
-    "cached_at": 1788464998.5333154
+    "cached_at": 1788471875.53948
   },
   "skullclamp": {
     "data": {
@@ -3162,7 +2987,7 @@
         "cardhoarder": "https://www.cardhoarder.com/cards/150889?affiliate_id=scryfall&ref=card-profile&utm_campaign=affiliate&utm_medium=card&utm_source=scryfall"
       }
     },
-    "cached_at": 1788464999.0668876
+    "cached_at": 1788471876.0762455
   },
   "blossoming tortoise": {
     "data": {
@@ -3307,7 +3132,7 @@
         "cardhoarder": "https://www.cardhoarder.com/cards/116660?affiliate_id=scryfall&ref=card-profile&utm_campaign=affiliate&utm_medium=card&utm_source=scryfall"
       }
     },
-    "cached_at": 1788464999.8970354
+    "cached_at": 1788471876.6787374
   },
   "druid of purification": {
     "data": {
@@ -3440,7 +3265,7 @@
         "cardhoarder": "https://www.cardhoarder.com/cards?affiliate_id=scryfall&data%5Bsearch%5D=Druid+of+Purification&ref=card-profile&utm_campaign=affiliate&utm_medium=card&utm_source=scryfall"
       }
     },
-    "cached_at": 1788465000.9092212
+    "cached_at": 1788471877.2080197
   },
   "chainer, nightmare adept": {
     "data": {
@@ -3589,7 +3414,7 @@
         "cardhoarder": "https://www.cardhoarder.com/cards/91001?affiliate_id=scryfall&ref=card-profile&utm_campaign=affiliate&utm_medium=card&utm_source=scryfall"
       }
     },
-    "cached_at": 1788465001.4500048
+    "cached_at": 1788471877.8162372
   },
   "primeval herald": {
     "data": {
@@ -3724,7 +3549,7 @@
         "cardhoarder": "https://www.cardhoarder.com/cards?affiliate_id=scryfall&data%5Bsearch%5D=Primeval+Herald&ref=card-profile&utm_campaign=affiliate&utm_medium=card&utm_source=scryfall"
       }
     },
-    "cached_at": 1788465002.470055
+    "cached_at": 1788471878.5837555
   },
   "sowing mycospawn": {
     "data": {
@@ -3870,7 +3695,190 @@
         "cardhoarder": "https://www.cardhoarder.com/cards/126357?affiliate_id=scryfall&ref=card-profile&utm_campaign=affiliate&utm_medium=card&utm_source=scryfall"
       }
     },
-    "cached_at": 1788465003.3579223
+    "cached_at": 1788471879.1824698
+  },
+  "sheoldred": {
+    "data": {
+      "object": "card",
+      "id": "bf2249e6-af74-4b88-8eb7-144ce8fa7f6b",
+      "oracle_id": "97652492-7906-4d79-983c-fa1dc1239eba",
+      "multiverse_ids": [
+        607162,
+        607163
+      ],
+      "mtgo_id": 110096,
+      "arena_id": 84398,
+      "tcgplayer_id": 491202,
+      "cardmarket_id": 704371,
+      "name": "Sheoldred // The True Scriptures",
+      "lang": "en",
+      "released_at": "2023-04-21",
+      "uri": "https://api.scryfall.com/cards/bf2249e6-af74-4b88-8eb7-144ce8fa7f6b",
+      "scryfall_uri": "https://scryfall.com/card/mom/125/sheoldred-the-true-scriptures?utm_source=api",
+      "layout": "transform",
+      "highres_image": true,
+      "image_status": "highres_scan",
+      "image_updated_at": "2026-07-13T04:30:07Z",
+      "cmc": 5.0,
+      "type_line": "Legendary Creature \u2014 Phyrexian Praetor // Enchantment \u2014 Saga",
+      "color_identity": [
+        "B"
+      ],
+      "keywords": [
+        "Transform",
+        "Menace",
+        "Mill"
+      ],
+      "card_faces": [
+        {
+          "object": "card_face",
+          "name": "Sheoldred",
+          "mana_cost": "{3}{B}{B}",
+          "type_line": "Legendary Creature \u2014 Phyrexian Praetor",
+          "oracle_text": "Menace\nWhen Sheoldred enters, each opponent sacrifices a nontoken creature or planeswalker of their choice.\n{4}{B}: Exile Sheoldred, then return it to the battlefield transformed under its owner's control. Activate only as a sorcery and only if an opponent has eight or more cards in their graveyard.",
+          "colors": [
+            "B"
+          ],
+          "power": "4",
+          "toughness": "5",
+          "artist": "Ryan Pancoast",
+          "artist_id": "89cc9475-dda2-4d13-bf88-54b92867a25c",
+          "illustration_id": "bedfa581-6523-4ca3-ba1a-d9feaf07fe75",
+          "image_uris": {
+            "small": "https://cards.scryfall.io/small/front/b/f/bf2249e6-af74-4b88-8eb7-144ce8fa7f6b.jpg?1783917007",
+            "normal": "https://cards.scryfall.io/normal/front/b/f/bf2249e6-af74-4b88-8eb7-144ce8fa7f6b.jpg?1783917007",
+            "large": "https://cards.scryfall.io/large/front/b/f/bf2249e6-af74-4b88-8eb7-144ce8fa7f6b.jpg?1783917007",
+            "png": "https://cards.scryfall.io/png/front/b/f/bf2249e6-af74-4b88-8eb7-144ce8fa7f6b.png?1783917007",
+            "art_crop": "https://cards.scryfall.io/art_crop/front/b/f/bf2249e6-af74-4b88-8eb7-144ce8fa7f6b.jpg?1783917007",
+            "border_crop": "https://cards.scryfall.io/border_crop/front/b/f/bf2249e6-af74-4b88-8eb7-144ce8fa7f6b.jpg?1783917007",
+            "thumb": "https://cards.scryfall.io/thumb/front/b/f/bf2249e6-af74-4b88-8eb7-144ce8fa7f6b.webp?1783917007",
+            "grid": "https://cards.scryfall.io/grid/front/b/f/bf2249e6-af74-4b88-8eb7-144ce8fa7f6b.webp?1783917007",
+            "display": "https://cards.scryfall.io/display/front/b/f/bf2249e6-af74-4b88-8eb7-144ce8fa7f6b.webp?1783917007",
+            "art": "https://cards.scryfall.io/art/front/b/f/bf2249e6-af74-4b88-8eb7-144ce8fa7f6b.webp?1783917007",
+            "crop": "https://cards.scryfall.io/crop/front/b/f/bf2249e6-af74-4b88-8eb7-144ce8fa7f6b.webp?1783917007"
+          }
+        },
+        {
+          "object": "card_face",
+          "name": "The True Scriptures",
+          "mana_cost": "",
+          "type_line": "Enchantment \u2014 Saga",
+          "oracle_text": "(As this Saga enters and after your draw step, add a lore counter.)\nI \u2014 For each opponent, destroy up to one target creature or planeswalker that player controls.\nII \u2014 Each opponent discards three cards, then mills three cards.\nIII \u2014 Put all creature cards from all graveyards onto the battlefield under your control. Exile this Saga, then return it to the battlefield (front face up).",
+          "colors": [
+            "B"
+          ],
+          "color_indicator": [
+            "B"
+          ],
+          "artist": "Ryan Pancoast",
+          "artist_id": "89cc9475-dda2-4d13-bf88-54b92867a25c",
+          "illustration_id": "bfe179a8-e107-4752-94ea-e195fc52071d",
+          "image_uris": {
+            "small": "https://cards.scryfall.io/small/back/b/f/bf2249e6-af74-4b88-8eb7-144ce8fa7f6b.jpg?1783917007",
+            "normal": "https://cards.scryfall.io/normal/back/b/f/bf2249e6-af74-4b88-8eb7-144ce8fa7f6b.jpg?1783917007",
+            "large": "https://cards.scryfall.io/large/back/b/f/bf2249e6-af74-4b88-8eb7-144ce8fa7f6b.jpg?1783917007",
+            "png": "https://cards.scryfall.io/png/back/b/f/bf2249e6-af74-4b88-8eb7-144ce8fa7f6b.png?1783917007",
+            "art_crop": "https://cards.scryfall.io/art_crop/back/b/f/bf2249e6-af74-4b88-8eb7-144ce8fa7f6b.jpg?1783917007",
+            "border_crop": "https://cards.scryfall.io/border_crop/back/b/f/bf2249e6-af74-4b88-8eb7-144ce8fa7f6b.jpg?1783917007",
+            "thumb": "https://cards.scryfall.io/thumb/back/b/f/bf2249e6-af74-4b88-8eb7-144ce8fa7f6b.webp?1783917007",
+            "grid": "https://cards.scryfall.io/grid/back/b/f/bf2249e6-af74-4b88-8eb7-144ce8fa7f6b.webp?1783917007",
+            "display": "https://cards.scryfall.io/display/back/b/f/bf2249e6-af74-4b88-8eb7-144ce8fa7f6b.webp?1783917007",
+            "art": "https://cards.scryfall.io/art/back/b/f/bf2249e6-af74-4b88-8eb7-144ce8fa7f6b.webp?1783917007",
+            "crop": "https://cards.scryfall.io/crop/back/b/f/bf2249e6-af74-4b88-8eb7-144ce8fa7f6b.webp?1783917007"
+          }
+        }
+      ],
+      "legalities": {
+        "standard": "not_legal",
+        "future": "not_legal",
+        "historic": "legal",
+        "timeless": "legal",
+        "gladiator": "legal",
+        "pioneer": "legal",
+        "modern": "legal",
+        "legacy": "legal",
+        "pauper": "not_legal",
+        "vintage": "legal",
+        "penny": "legal",
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "standardbrawl": "not_legal",
+        "brawl": "legal",
+        "competitivebrawl": "legal",
+        "alchemy": "not_legal",
+        "paupercommander": "not_legal",
+        "duel": "legal",
+        "oldschool": "not_legal",
+        "premodern": "not_legal",
+        "predh": "not_legal",
+        "tlr": "not_legal"
+      },
+      "games": [
+        "paper",
+        "arena",
+        "mtgo"
+      ],
+      "reserved": false,
+      "game_changer": false,
+      "foil": true,
+      "nonfoil": true,
+      "finishes": [
+        "nonfoil",
+        "foil"
+      ],
+      "oversized": false,
+      "promo": false,
+      "reprint": false,
+      "variation": false,
+      "set_id": "392f7315-dc53-40a3-a2cc-5482dbd498b3",
+      "set": "mom",
+      "set_name": "March of the Machine",
+      "set_type": "expansion",
+      "set_uri": "https://api.scryfall.com/sets/392f7315-dc53-40a3-a2cc-5482dbd498b3",
+      "set_search_uri": "https://api.scryfall.com/cards/search?order=set&q=e%3Amom&unique=prints",
+      "scryfall_set_uri": "https://scryfall.com/sets/mom?utm_source=api",
+      "rulings_uri": "https://api.scryfall.com/cards/bf2249e6-af74-4b88-8eb7-144ce8fa7f6b/rulings",
+      "prints_search_uri": "https://api.scryfall.com/cards/search?order=released&q=oracleid%3A97652492-7906-4d79-983c-fa1dc1239eba&unique=prints",
+      "collector_number": "125",
+      "digital": false,
+      "rarity": "mythic",
+      "artist": "Ryan Pancoast",
+      "artist_ids": [
+        "89cc9475-dda2-4d13-bf88-54b92867a25c"
+      ],
+      "border_color": "black",
+      "frame": "2015",
+      "frame_effects": [
+        "legendary"
+      ],
+      "security_stamp": "oval",
+      "full_art": false,
+      "textless": false,
+      "booster": true,
+      "story_spotlight": false,
+      "edhrec_rank": 1947,
+      "penny_rank": 3028,
+      "prices": {
+        "usd": "17.55",
+        "usd_foil": "18.86",
+        "usd_etched": null,
+        "eur": "15.66",
+        "eur_foil": "14.92",
+        "tix": "0.02"
+      },
+      "related_uris": {
+        "gatherer": "https://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=607162&printed=false",
+        "tcgplayer_infinite_articles": "https://partner.tcgplayer.com/c/4931599/1830156/21018?subId1=api&trafcat=tcgplayer.com%2Fsearch%2Farticles&u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Farticles%3FproductLineName%3Dmagic%26q%3DSheoldred%2B%252F%252F%2BThe%2BTrue%2BScriptures",
+        "tcgplayer_infinite_decks": "https://partner.tcgplayer.com/c/4931599/1830156/21018?subId1=api&trafcat=tcgplayer.com%2Fsearch%2Fdecks&u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Fdecks%3FproductLineName%3Dmagic%26q%3DSheoldred%2B%252F%252F%2BThe%2BTrue%2BScriptures",
+        "edhrec": "https://edhrec.com/route/?cc=Sheoldred"
+      },
+      "purchase_uris": {
+        "tcgplayer": "https://partner.tcgplayer.com/c/4931599/1830156/21018?subId1=api&u=https%3A%2F%2Fwww.tcgplayer.com%2Fproduct%2F491202%3Fpage%3D1",
+        "cardmarket": "https://www.cardmarket.com/en/Magic/Products?idProduct=704371&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+        "cardhoarder": "https://www.cardhoarder.com/cards/110096?affiliate_id=scryfall&ref=card-profile&utm_campaign=affiliate&utm_medium=card&utm_source=scryfall"
+      }
+    },
+    "cached_at": 1788471880.2684946
   },
   "solemn simulacrum": {
     "data": {
@@ -4004,7 +4012,7 @@
         "cardhoarder": "https://www.cardhoarder.com/cards/150899?affiliate_id=scryfall&ref=card-profile&utm_campaign=affiliate&utm_medium=card&utm_source=scryfall"
       }
     },
-    "cached_at": 1788465003.925477
+    "cached_at": 1788471880.806776
   },
   "author of shadows": {
     "data": {
@@ -4138,7 +4146,7 @@
         "cardhoarder": "https://www.cardhoarder.com/cards/89813?affiliate_id=scryfall&ref=card-profile&utm_campaign=affiliate&utm_medium=card&utm_source=scryfall"
       }
     },
-    "cached_at": 1788465004.5339859
+    "cached_at": 1788471881.6470532
   },
   "damage control crew": {
     "data": {
@@ -4280,7 +4288,7 @@
         "cardhoarder": "https://www.cardhoarder.com/cards/153439?affiliate_id=scryfall&ref=card-profile&utm_campaign=affiliate&utm_medium=card&utm_source=scryfall"
       }
     },
-    "cached_at": 1788465005.305175
+    "cached_at": 1788471882.488589
   },
   "seedguide ash": {
     "data": {
@@ -4401,7 +4409,7 @@
         "usd": "2.72",
         "usd_foil": "17.87",
         "usd_etched": null,
-        "eur": "1.79",
+        "eur": "1.81",
         "eur_foil": "7.87",
         "tix": "0.03"
       },
@@ -4417,7 +4425,7 @@
         "cardhoarder": "https://www.cardhoarder.com/cards/28689?affiliate_id=scryfall&ref=card-profile&utm_campaign=affiliate&utm_medium=card&utm_source=scryfall"
       }
     },
-    "cached_at": 1788465006.3370607
+    "cached_at": 1788471883.045694
   },
   "junji, the midnight sky": {
     "data": {
@@ -4558,7 +4566,7 @@
         "cardhoarder": "https://www.cardhoarder.com/cards/138303?affiliate_id=scryfall&ref=card-profile&utm_campaign=affiliate&utm_medium=card&utm_source=scryfall"
       }
     },
-    "cached_at": 1788465006.9199495
+    "cached_at": 1788471883.6179903
   },
   "necron deathmark": {
     "data": {
@@ -4704,7 +4712,7 @@
         "cardhoarder": "https://www.cardhoarder.com/cards/108556?affiliate_id=scryfall&ref=card-profile&utm_campaign=affiliate&utm_medium=card&utm_source=scryfall"
       }
     },
-    "cached_at": 1788465007.454551
+    "cached_at": 1788471884.1516213
   },
   "roxanne, starfall savant": {
     "data": {
@@ -4850,19 +4858,19 @@
       "textless": false,
       "booster": true,
       "story_spotlight": false,
-      "edhrec_rank": 3458,
-      "penny_rank": 7252,
+      "edhrec_rank": 3460,
+      "penny_rank": 7326,
       "preview": {
         "source": "Dorasuta",
         "source_uri": "https://dorasuta.jp/column/detail?aid=11026",
         "previewed_at": "2024-03-27"
       },
       "prices": {
-        "usd": "0.48",
+        "usd": "0.47",
         "usd_foil": "0.57",
         "usd_etched": null,
         "eur": "0.48",
-        "eur_foil": "0.93",
+        "eur_foil": "0.90",
         "tix": "0.02"
       },
       "related_uris": {
@@ -4877,7 +4885,7 @@
         "cardhoarder": "https://www.cardhoarder.com/cards/124367?affiliate_id=scryfall&ref=card-profile&utm_campaign=affiliate&utm_medium=card&utm_source=scryfall"
       }
     },
-    "cached_at": 1788465008.0429893
+    "cached_at": 1788471884.694481
   },
   "ojer kaslem, deepest growth": {
     "data": {
@@ -5063,7 +5071,7 @@
         "cardhoarder": "https://www.cardhoarder.com/cards/118240?affiliate_id=scryfall&ref=card-profile&utm_campaign=affiliate&utm_medium=card&utm_source=scryfall"
       }
     },
-    "cached_at": 1788465008.845373
+    "cached_at": 1788471885.2808838
   },
   "terror of the peaks": {
     "data": {
@@ -5208,7 +5216,7 @@
         "cardhoarder": "https://www.cardhoarder.com/cards/124209?affiliate_id=scryfall&ref=card-profile&utm_campaign=affiliate&utm_medium=card&utm_source=scryfall"
       }
     },
-    "cached_at": 1788465009.3928647
+    "cached_at": 1788471885.821345
   },
   "gwenom, remorseless": {
     "data": {
@@ -5352,7 +5360,7 @@
         "cardhoarder": "https://www.cardhoarder.com/cards/153351?affiliate_id=scryfall&ref=card-profile&utm_campaign=affiliate&utm_medium=card&utm_source=scryfall"
       }
     },
-    "cached_at": 1788465009.9836292
+    "cached_at": 1788471886.6861446
   },
   "moraug, fury of akoum": {
     "data": {
@@ -5494,7 +5502,7 @@
         "cardhoarder": "https://www.cardhoarder.com/cards/142315?affiliate_id=scryfall&ref=card-profile&utm_campaign=affiliate&utm_medium=card&utm_source=scryfall"
       }
     },
-    "cached_at": 1788465010.9987144
+    "cached_at": 1788471887.5025685
   },
   "archon of cruelty": {
     "data": {
@@ -5637,7 +5645,7 @@
         "cardhoarder": "https://www.cardhoarder.com/cards/90523?affiliate_id=scryfall&ref=card-profile&utm_campaign=affiliate&utm_medium=card&utm_source=scryfall"
       }
     },
-    "cached_at": 1788465012.4059372
+    "cached_at": 1788471888.3686674
   },
   "massacre wurm": {
     "data": {
@@ -5772,7 +5780,7 @@
         "cardhoarder": "https://www.cardhoarder.com/cards?affiliate_id=scryfall&data%5Bsearch%5D=Massacre+Wurm&ref=card-profile&utm_campaign=affiliate&utm_medium=card&utm_source=scryfall"
       }
     },
-    "cached_at": 1788465013.2220514
+    "cached_at": 1788471889.1711788
   },
   "kokusho, the evening star": {
     "data": {
@@ -5912,7 +5920,7 @@
         "cardhoarder": "https://www.cardhoarder.com/cards/66069?affiliate_id=scryfall&ref=card-profile&utm_campaign=affiliate&utm_medium=card&utm_source=scryfall"
       }
     },
-    "cached_at": 1788465013.7640908
+    "cached_at": 1788471890.2314754
   },
   "flare of cultivation": {
     "data": {
@@ -6049,7 +6057,7 @@
         "cardhoarder": "https://www.cardhoarder.com/cards/126325?affiliate_id=scryfall&ref=card-profile&utm_campaign=affiliate&utm_medium=card&utm_source=scryfall"
       }
     },
-    "cached_at": 1788465014.2988954
+    "cached_at": 1788471890.782242
   },
   "balefire dragon": {
     "data": {
@@ -6187,7 +6195,7 @@
         "cardhoarder": "https://www.cardhoarder.com/cards/135190?affiliate_id=scryfall&ref=card-profile&utm_campaign=affiliate&utm_medium=card&utm_source=scryfall"
       }
     },
-    "cached_at": 1788465014.833161
+    "cached_at": 1788471891.3720748
   },
   "mikaeus, the unhallowed": {
     "data": {
@@ -6328,7 +6336,7 @@
         "cardhoarder": "https://www.cardhoarder.com/cards/115445?affiliate_id=scryfall&ref=card-profile&utm_campaign=affiliate&utm_medium=card&utm_source=scryfall"
       }
     },
-    "cached_at": 1788465015.44103
+    "cached_at": 1788471891.9635093
   },
   "bane of progress": {
     "data": {
@@ -6461,7 +6469,7 @@
         "cardhoarder": "https://www.cardhoarder.com/cards/146133?affiliate_id=scryfall&ref=card-profile&utm_campaign=affiliate&utm_medium=card&utm_source=scryfall"
       }
     },
-    "cached_at": 1788465016.0091
+    "cached_at": 1788471892.8254178
   },
   "kogla, the titan ape": {
     "data": {
@@ -6609,7 +6617,7 @@
         "cardhoarder": "https://www.cardhoarder.com/cards/80333?affiliate_id=scryfall&ref=card-profile&utm_campaign=affiliate&utm_medium=card&utm_source=scryfall"
       }
     },
-    "cached_at": 1788465016.5550952
+    "cached_at": 1788471893.395693
   },
   "myojin of night's reach": {
     "data": {
@@ -6752,7 +6760,7 @@
         "cardhoarder": "https://www.cardhoarder.com/cards/134556?affiliate_id=scryfall&ref=card-profile&utm_campaign=affiliate&utm_medium=card&utm_source=scryfall"
       }
     },
-    "cached_at": 1788465017.3873024
+    "cached_at": 1788471893.9499419
   },
   "bringer of the last gift": {
     "data": {
@@ -6897,7 +6905,7 @@
         "cardhoarder": "https://www.cardhoarder.com/cards/117992?affiliate_id=scryfall&ref=card-profile&utm_campaign=affiliate&utm_medium=card&utm_source=scryfall"
       }
     },
-    "cached_at": 1788465017.9963236
+    "cached_at": 1788471894.7730415
   },
   "grave researcher": {
     "data": {
@@ -7057,7 +7065,7 @@
         "cardhoarder": "https://www.cardhoarder.com/cards/149669?affiliate_id=scryfall&ref=card-profile&utm_campaign=affiliate&utm_medium=card&utm_source=scryfall"
       }
     },
-    "cached_at": 1788465018.8181689
+    "cached_at": 1788471895.399353
   },
   "animate dead": {
     "data": {
@@ -7174,10 +7182,10 @@
       "edhrec_rank": 223,
       "penny_rank": 196,
       "prices": {
-        "usd": "7.97",
+        "usd": "8.14",
         "usd_foil": null,
         "usd_etched": null,
-        "eur": "6.04",
+        "eur": "6.00",
         "eur_foil": null,
         "tix": "0.20"
       },
@@ -7192,7 +7200,7 @@
         "cardhoarder": "https://www.cardhoarder.com/cards/148883?affiliate_id=scryfall&ref=card-profile&utm_campaign=affiliate&utm_medium=card&utm_source=scryfall"
       }
     },
-    "cached_at": 1788465019.3919995
+    "cached_at": 1788471896.1949613
   },
   "victimize": {
     "data": {
@@ -7325,7 +7333,7 @@
         "cardhoarder": "https://www.cardhoarder.com/cards/138333?affiliate_id=scryfall&ref=card-profile&utm_campaign=affiliate&utm_medium=card&utm_source=scryfall"
       }
     },
-    "cached_at": 1788465019.997933
+    "cached_at": 1788471896.8032484
   },
   "phyrexian delver": {
     "data": {
@@ -7460,7 +7468,7 @@
         "cardhoarder": "https://www.cardhoarder.com/cards/110980?affiliate_id=scryfall&ref=card-profile&utm_campaign=affiliate&utm_medium=card&utm_source=scryfall"
       }
     },
-    "cached_at": 1788465020.53395
+    "cached_at": 1788471897.335726
   },
   "living death": {
     "data": {
@@ -7593,7 +7601,7 @@
         "cardhoarder": "https://www.cardhoarder.com/cards/138307?affiliate_id=scryfall&ref=card-profile&utm_campaign=affiliate&utm_medium=card&utm_source=scryfall"
       }
     },
-    "cached_at": 1788465021.1507592
+    "cached_at": 1788471897.8787947
   },
   "timeless witness": {
     "data": {
@@ -7747,7 +7755,7 @@
         "cardhoarder": "https://www.cardhoarder.com/cards/138485?affiliate_id=scryfall&ref=card-profile&utm_campaign=affiliate&utm_medium=card&utm_source=scryfall"
       }
     },
-    "cached_at": 1788465021.7026153
+    "cached_at": 1788471898.4142075
   },
   "birthing ritual": {
     "data": {
@@ -7887,7 +7895,7 @@
         "cardhoarder": "https://www.cardhoarder.com/cards/126309?affiliate_id=scryfall&ref=card-profile&utm_campaign=affiliate&utm_medium=card&utm_source=scryfall"
       }
     },
-    "cached_at": 1788465022.321882
+    "cached_at": 1788471899.0324743
   },
   "assassin's trophy": {
     "data": {
@@ -8021,7 +8029,7 @@
         "cardhoarder": "https://www.cardhoarder.com/cards/149053?affiliate_id=scryfall&ref=card-profile&utm_campaign=affiliate&utm_medium=card&utm_source=scryfall"
       }
     },
-    "cached_at": 1788465022.9037285
+    "cached_at": 1788471899.571296
   },
   "tear asunder": {
     "data": {
@@ -8160,7 +8168,7 @@
         "cardhoarder": "https://www.cardhoarder.com/cards/142355?affiliate_id=scryfall&ref=card-profile&utm_campaign=affiliate&utm_medium=card&utm_source=scryfall"
       }
     },
-    "cached_at": 1788465023.4484556
+    "cached_at": 1788471900.1100523
   },
   "maha, its feathers night": {
     "data": {
@@ -8311,7 +8319,7 @@
         "cardhoarder": "https://www.cardhoarder.com/cards/129445?affiliate_id=scryfall&ref=card-profile&utm_campaign=affiliate&utm_medium=card&utm_source=scryfall"
       }
     },
-    "cached_at": 1788465024.2963297
+    "cached_at": 1788471900.9148202
   },
   "windgrace's judgment": {
     "data": {
@@ -8449,7 +8457,7 @@
         "cardhoarder": "https://www.cardhoarder.com/cards/142395?affiliate_id=scryfall&ref=card-profile&utm_campaign=affiliate&utm_medium=card&utm_source=scryfall"
       }
     },
-    "cached_at": 1788465024.9291432
+    "cached_at": 1788471901.5129445
   },
   "deflecting swat": {
     "data": {
@@ -8588,7 +8596,7 @@
         "cardhoarder": "https://www.cardhoarder.com/cards/114655?affiliate_id=scryfall&ref=card-profile&utm_campaign=affiliate&utm_medium=card&utm_source=scryfall"
       }
     },
-    "cached_at": 1788465025.5315084
+    "cached_at": 1788471902.13234
   },
   "heroic intervention": {
     "data": {
@@ -8728,7 +8736,7 @@
         "cardhoarder": "https://www.cardhoarder.com/cards/114819?affiliate_id=scryfall&ref=card-profile&utm_campaign=affiliate&utm_medium=card&utm_source=scryfall"
       }
     },
-    "cached_at": 1788465026.0931206
+    "cached_at": 1788471902.6844513
   },
   "deadly rollick": {
     "data": {
@@ -8862,7 +8870,7 @@
         "cardhoarder": "https://www.cardhoarder.com/cards/115393?affiliate_id=scryfall&ref=card-profile&utm_campaign=affiliate&utm_medium=card&utm_source=scryfall"
       }
     },
-    "cached_at": 1788465026.6835027
+    "cached_at": 1788471903.2286901
   },
   "incinerator of the guilty": {
     "data": {
@@ -9008,7 +9016,7 @@
         "cardhoarder": "https://www.cardhoarder.com/cards/121742?affiliate_id=scryfall&ref=card-profile&utm_campaign=affiliate&utm_medium=card&utm_source=scryfall"
       }
     },
-    "cached_at": 1788465028.143067
+    "cached_at": 1788471903.8109958
   },
   "malakir rebirth": {
     "data": {
@@ -9186,7 +9194,7 @@
         "cardhoarder": "https://www.cardhoarder.com/cards/83187?affiliate_id=scryfall&ref=card-profile&utm_campaign=affiliate&utm_medium=card&utm_source=scryfall"
       }
     },
-    "cached_at": 1788465028.6859264
+    "cached_at": 1788471904.3992336
   },
   "phyrexian tower": {
     "data": {
@@ -9333,7 +9341,7 @@
         "cardhoarder": "https://www.cardhoarder.com/cards/126017?affiliate_id=scryfall&ref=card-profile&utm_campaign=affiliate&utm_medium=card&utm_source=scryfall"
       }
     },
-    "cached_at": 1788465029.2271278
+    "cached_at": 1788471905.2469094
   },
   "high market": {
     "data": {
@@ -9464,7 +9472,7 @@
         "cardhoarder": "https://www.cardhoarder.com/cards/149225?affiliate_id=scryfall&ref=card-profile&utm_campaign=affiliate&utm_medium=card&utm_source=scryfall"
       }
     },
-    "cached_at": 1788465029.774702
+    "cached_at": 1788471905.805599
   },
   "takenuma, abandoned mire": {
     "data": {
@@ -9611,7 +9619,7 @@
         "cardhoarder": "https://www.cardhoarder.com/cards/97506?affiliate_id=scryfall&ref=card-profile&utm_campaign=affiliate&utm_medium=card&utm_source=scryfall"
       }
     },
-    "cached_at": 1788465030.3132384
+    "cached_at": 1788471906.6618485
   },
   "kessig wolf run": {
     "data": {
@@ -9747,7 +9755,7 @@
         "cardhoarder": "https://www.cardhoarder.com/cards/138691?affiliate_id=scryfall&ref=card-profile&utm_campaign=affiliate&utm_medium=card&utm_source=scryfall"
       }
     },
-    "cached_at": 1788465031.7065809
+    "cached_at": 1788471907.5454667
   },
   "wooded foothills": {
     "data": {
@@ -9879,7 +9887,7 @@
         "cardhoarder": "https://www.cardhoarder.com/cards/126491?affiliate_id=scryfall&ref=card-profile&utm_campaign=affiliate&utm_medium=card&utm_source=scryfall"
       }
     },
-    "cached_at": 1788465032.2638848
+    "cached_at": 1788471908.1106856
   },
   "bloodstained mire": {
     "data": {
@@ -10011,7 +10019,7 @@
         "cardhoarder": "https://www.cardhoarder.com/cards/126451?affiliate_id=scryfall&ref=card-profile&utm_campaign=affiliate&utm_medium=card&utm_source=scryfall"
       }
     },
-    "cached_at": 1788465033.0306509
+    "cached_at": 1788471908.9463074
   },
   "verdant catacombs": {
     "data": {
@@ -10142,7 +10150,7 @@
         "cardhoarder": "https://www.cardhoarder.com/cards/90901?affiliate_id=scryfall&ref=card-profile&utm_campaign=affiliate&utm_medium=card&utm_source=scryfall"
       }
     },
-    "cached_at": 1788465033.6359293
+    "cached_at": 1788471909.48823
   },
   "windswept heath": {
     "data": {
@@ -10274,7 +10282,7 @@
         "cardhoarder": "https://www.cardhoarder.com/cards/126489?affiliate_id=scryfall&ref=card-profile&utm_campaign=affiliate&utm_medium=card&utm_source=scryfall"
       }
     },
-    "cached_at": 1788465034.179195
+    "cached_at": 1788471910.030949
   },
   "polluted delta": {
     "data": {
@@ -10406,7 +10414,7 @@
         "cardhoarder": "https://www.cardhoarder.com/cards/126467?affiliate_id=scryfall&ref=card-profile&utm_campaign=affiliate&utm_medium=card&utm_source=scryfall"
       }
     },
-    "cached_at": 1788465034.7431946
+    "cached_at": 1788471910.597565
   },
   "arid mesa": {
     "data": {
@@ -10537,7 +10545,7 @@
         "cardhoarder": "https://www.cardhoarder.com/cards/90869?affiliate_id=scryfall&ref=card-profile&utm_campaign=affiliate&utm_medium=card&utm_source=scryfall"
       }
     },
-    "cached_at": 1788465035.3362684
+    "cached_at": 1788471911.1503344
   },
   "marsh flats": {
     "data": {
@@ -10668,7 +10676,7 @@
         "cardhoarder": "https://www.cardhoarder.com/cards/90877?affiliate_id=scryfall&ref=card-profile&utm_campaign=affiliate&utm_medium=card&utm_source=scryfall"
       }
     },
-    "cached_at": 1788465035.8794668
+    "cached_at": 1788471911.7322772
   },
   "overgrown tomb": {
     "data": {
@@ -10804,7 +10812,7 @@
         "cardhoarder": "https://www.cardhoarder.com/cards?affiliate_id=scryfall&data%5Bsearch%5D=Overgrown+Tomb&ref=card-profile&utm_campaign=affiliate&utm_medium=card&utm_source=scryfall"
       }
     },
-    "cached_at": 1788465036.4181676
+    "cached_at": 1788471912.32223
   },
   "stomping ground": {
     "data": {
@@ -10920,7 +10928,7 @@
         "universesbeyond"
       ],
       "edhrec_rank": 70,
-      "penny_rank": 37,
+      "penny_rank": 36,
       "prices": {
         "usd": null,
         "usd_foil": null,
@@ -10940,7 +10948,7 @@
         "cardhoarder": "https://www.cardhoarder.com/cards?affiliate_id=scryfall&data%5Bsearch%5D=Stomping+Ground&ref=card-profile&utm_campaign=affiliate&utm_medium=card&utm_source=scryfall"
       }
     },
-    "cached_at": 1788465037.5465665
+    "cached_at": 1788471912.8746457
   },
   "blood crypt": {
     "data": {
@@ -11076,7 +11084,7 @@
         "cardhoarder": "https://www.cardhoarder.com/cards?affiliate_id=scryfall&data%5Bsearch%5D=Blood+Crypt&ref=card-profile&utm_campaign=affiliate&utm_medium=card&utm_source=scryfall"
       }
     },
-    "cached_at": 1788465038.5537727
+    "cached_at": 1788471913.4618359
   },
   "ziatora's proving ground": {
     "data": {
@@ -11220,7 +11228,7 @@
         "cardhoarder": "https://www.cardhoarder.com/cards/98741?affiliate_id=scryfall&ref=card-profile&utm_campaign=affiliate&utm_medium=card&utm_source=scryfall"
       }
     },
-    "cached_at": 1788465039.327411
+    "cached_at": 1788471913.9971974
   },
   "undergrowth stadium": {
     "data": {
@@ -11359,7 +11367,7 @@
         "cardhoarder": "https://www.cardhoarder.com/cards/147493?affiliate_id=scryfall&ref=card-profile&utm_campaign=affiliate&utm_medium=card&utm_source=scryfall"
       }
     },
-    "cached_at": 1788465040.1176677
+    "cached_at": 1788471914.8528972
   },
   "spire garden": {
     "data": {
@@ -11498,7 +11506,7 @@
         "cardhoarder": "https://www.cardhoarder.com/cards/147483?affiliate_id=scryfall&ref=card-profile&utm_campaign=affiliate&utm_medium=card&utm_source=scryfall"
       }
     },
-    "cached_at": 1788465041.6298485
+    "cached_at": 1788471915.6393461
   },
   "luxury suite": {
     "data": {
@@ -11619,10 +11627,10 @@
       ],
       "edhrec_rank": 161,
       "prices": {
-        "usd": "9.26",
+        "usd": "9.15",
         "usd_foil": null,
         "usd_etched": null,
-        "eur": "9.31",
+        "eur": "9.26",
         "eur_foil": null,
         "tix": "2.19"
       },
@@ -11637,184 +11645,44 @@
         "cardhoarder": "https://www.cardhoarder.com/cards/150973?affiliate_id=scryfall&ref=card-profile&utm_campaign=affiliate&utm_medium=card&utm_source=scryfall"
       }
     },
-    "cached_at": 1788465042.1708002
+    "cached_at": 1788471916.4928973
   },
-  "rootbound crag": {
+  "badlands": {
     "data": {
       "object": "card",
-      "id": "42d174e5-b8c2-45eb-8e08-1b94fc27cbee",
-      "oracle_id": "9516c4c1-d72d-434f-97e1-6a862434a169",
-      "multiverse_ids": [],
-      "resource_id": "0349118EB24554E5DD6F50650A5719F85FFAA530C4A0C30112206F7D67467BCC",
-      "mtgo_id": 150991,
-      "tcgplayer_id": 697522,
-      "cardmarket_id": 891884,
-      "name": "Rootbound Crag",
+      "id": "73403d04-fe97-4830-8b80-16dd1a1a6cc1",
+      "oracle_id": "13ff3222-91cb-4796-a34e-899ed817694c",
+      "multiverse_ids": [
+        382852
+      ],
+      "mtgo_id": 53077,
+      "mtgo_foil_id": 53078,
+      "name": "Badlands",
       "lang": "en",
-      "released_at": "2026-06-26",
-      "uri": "https://api.scryfall.com/cards/42d174e5-b8c2-45eb-8e08-1b94fc27cbee",
-      "scryfall_uri": "https://scryfall.com/card/msc/261/rootbound-crag?utm_source=api",
+      "released_at": "2014-06-16",
+      "uri": "https://api.scryfall.com/cards/73403d04-fe97-4830-8b80-16dd1a1a6cc1",
+      "scryfall_uri": "https://scryfall.com/card/vma/291/badlands?utm_source=api",
       "layout": "normal",
       "highres_image": true,
       "image_status": "highres_scan",
-      "image_updated_at": "2026-07-13T00:39:54Z",
+      "image_updated_at": "2026-07-13T10:40:27Z",
       "image_uris": {
-        "small": "https://cards.scryfall.io/small/front/4/2/42d174e5-b8c2-45eb-8e08-1b94fc27cbee.jpg?1783903194",
-        "normal": "https://cards.scryfall.io/normal/front/4/2/42d174e5-b8c2-45eb-8e08-1b94fc27cbee.jpg?1783903194",
-        "large": "https://cards.scryfall.io/large/front/4/2/42d174e5-b8c2-45eb-8e08-1b94fc27cbee.jpg?1783903194",
-        "png": "https://cards.scryfall.io/png/front/4/2/42d174e5-b8c2-45eb-8e08-1b94fc27cbee.png?1783903194",
-        "art_crop": "https://cards.scryfall.io/art_crop/front/4/2/42d174e5-b8c2-45eb-8e08-1b94fc27cbee.jpg?1783903194",
-        "border_crop": "https://cards.scryfall.io/border_crop/front/4/2/42d174e5-b8c2-45eb-8e08-1b94fc27cbee.jpg?1783903194",
-        "thumb": "https://cards.scryfall.io/thumb/front/4/2/42d174e5-b8c2-45eb-8e08-1b94fc27cbee.webp?1783903194",
-        "grid": "https://cards.scryfall.io/grid/front/4/2/42d174e5-b8c2-45eb-8e08-1b94fc27cbee.webp?1783903194",
-        "display": "https://cards.scryfall.io/display/front/4/2/42d174e5-b8c2-45eb-8e08-1b94fc27cbee.webp?1783903194",
-        "art": "https://cards.scryfall.io/art/front/4/2/42d174e5-b8c2-45eb-8e08-1b94fc27cbee.webp?1783903194",
-        "crop": "https://cards.scryfall.io/crop/front/4/2/42d174e5-b8c2-45eb-8e08-1b94fc27cbee.webp?1783903194"
+        "small": "https://cards.scryfall.io/small/front/7/3/73403d04-fe97-4830-8b80-16dd1a1a6cc1.jpg?1783939227",
+        "normal": "https://cards.scryfall.io/normal/front/7/3/73403d04-fe97-4830-8b80-16dd1a1a6cc1.jpg?1783939227",
+        "large": "https://cards.scryfall.io/large/front/7/3/73403d04-fe97-4830-8b80-16dd1a1a6cc1.jpg?1783939227",
+        "png": "https://cards.scryfall.io/png/front/7/3/73403d04-fe97-4830-8b80-16dd1a1a6cc1.png?1783939227",
+        "art_crop": "https://cards.scryfall.io/art_crop/front/7/3/73403d04-fe97-4830-8b80-16dd1a1a6cc1.jpg?1783939227",
+        "border_crop": "https://cards.scryfall.io/border_crop/front/7/3/73403d04-fe97-4830-8b80-16dd1a1a6cc1.jpg?1783939227",
+        "thumb": "https://cards.scryfall.io/thumb/front/7/3/73403d04-fe97-4830-8b80-16dd1a1a6cc1.webp?1783939227",
+        "grid": "https://cards.scryfall.io/grid/front/7/3/73403d04-fe97-4830-8b80-16dd1a1a6cc1.webp?1783939227",
+        "display": "https://cards.scryfall.io/display/front/7/3/73403d04-fe97-4830-8b80-16dd1a1a6cc1.webp?1783939227",
+        "art": "https://cards.scryfall.io/art/front/7/3/73403d04-fe97-4830-8b80-16dd1a1a6cc1.webp?1783939227",
+        "crop": "https://cards.scryfall.io/crop/front/7/3/73403d04-fe97-4830-8b80-16dd1a1a6cc1.webp?1783939227"
       },
       "mana_cost": "",
       "cmc": 0.0,
-      "type_line": "Land",
-      "oracle_text": "This land enters tapped unless you control a Mountain or a Forest.\n{T}: Add {R} or {G}.",
-      "colors": [],
-      "color_identity": [
-        "G",
-        "R"
-      ],
-      "keywords": [],
-      "produced_mana": [
-        "G",
-        "R"
-      ],
-      "legalities": {
-        "standard": "not_legal",
-        "future": "not_legal",
-        "historic": "legal",
-        "timeless": "legal",
-        "gladiator": "legal",
-        "pioneer": "legal",
-        "modern": "legal",
-        "legacy": "legal",
-        "pauper": "not_legal",
-        "vintage": "legal",
-        "penny": "legal",
-        "commander": "legal",
-        "oathbreaker": "legal",
-        "standardbrawl": "not_legal",
-        "brawl": "legal",
-        "competitivebrawl": "legal",
-        "alchemy": "legal",
-        "paupercommander": "not_legal",
-        "duel": "legal",
-        "oldschool": "not_legal",
-        "premodern": "not_legal",
-        "predh": "legal",
-        "tlr": "legal"
-      },
-      "games": [
-        "paper",
-        "mtgo"
-      ],
-      "reserved": false,
-      "game_changer": false,
-      "foil": true,
-      "nonfoil": true,
-      "finishes": [
-        "nonfoil",
-        "foil"
-      ],
-      "oversized": false,
-      "promo": false,
-      "reprint": true,
-      "variation": false,
-      "set_id": "9d739461-c5ac-43a1-af41-3d5a585b5c8d",
-      "set": "msc",
-      "set_name": "Marvel Super Heroes Commander",
-      "set_type": "commander",
-      "set_uri": "https://api.scryfall.com/sets/9d739461-c5ac-43a1-af41-3d5a585b5c8d",
-      "set_search_uri": "https://api.scryfall.com/cards/search?order=set&q=e%3Amsc&unique=prints",
-      "scryfall_set_uri": "https://scryfall.com/sets/msc?utm_source=api",
-      "rulings_uri": "https://api.scryfall.com/cards/42d174e5-b8c2-45eb-8e08-1b94fc27cbee/rulings",
-      "prints_search_uri": "https://api.scryfall.com/cards/search?order=released&q=oracleid%3A9516c4c1-d72d-434f-97e1-6a862434a169&unique=prints",
-      "collector_number": "261",
-      "digital": false,
-      "rarity": "rare",
-      "flavor_text": "\"I been ta space, a buncha dimensions 'n' universes . . . and I always end up right back here on Yancy Street.\"\n\u2014The Thing, Ben Grimm",
-      "card_back_id": "0aeebaf5-8c7d-4636-9e82-8c27447861f7",
-      "artist": "Eugene Maslovski",
-      "artist_ids": [
-        "60a22da8-9c86-428d-bef1-0778fe153d0d"
-      ],
-      "illustration_id": "66829990-93ba-4f4e-9d9c-2b5e8a7bc2b6",
-      "border_color": "black",
-      "frame": "2015",
-      "security_stamp": "oval",
-      "full_art": false,
-      "textless": false,
-      "booster": false,
-      "story_spotlight": false,
-      "promo_types": [
-        "surgefoil",
-        "universesbeyond"
-      ],
-      "edhrec_rank": 127,
-      "penny_rank": 316,
-      "prices": {
-        "usd": "0.29",
-        "usd_foil": null,
-        "usd_etched": null,
-        "eur": "0.35",
-        "eur_foil": null,
-        "tix": "0.02"
-      },
-      "related_uris": {
-        "tcgplayer_infinite_articles": "https://partner.tcgplayer.com/c/4931599/1830156/21018?subId1=api&trafcat=tcgplayer.com%2Fsearch%2Farticles&u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Farticles%3FproductLineName%3Dmagic%26q%3DRootbound%2BCrag",
-        "tcgplayer_infinite_decks": "https://partner.tcgplayer.com/c/4931599/1830156/21018?subId1=api&trafcat=tcgplayer.com%2Fsearch%2Fdecks&u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Fdecks%3FproductLineName%3Dmagic%26q%3DRootbound%2BCrag",
-        "edhrec": "https://edhrec.com/route/?cc=Rootbound+Crag"
-      },
-      "purchase_uris": {
-        "tcgplayer": "https://partner.tcgplayer.com/c/4931599/1830156/21018?subId1=api&u=https%3A%2F%2Fwww.tcgplayer.com%2Fproduct%2F697522%3Fpage%3D1",
-        "cardmarket": "https://www.cardmarket.com/en/Magic/Products?idProduct=891884&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
-        "cardhoarder": "https://www.cardhoarder.com/cards/150991?affiliate_id=scryfall&ref=card-profile&utm_campaign=affiliate&utm_medium=card&utm_source=scryfall"
-      }
-    },
-    "cached_at": 1788465042.7147512
-  },
-  "dragonskull summit": {
-    "data": {
-      "object": "card",
-      "id": "d20e433a-eb62-4301-bc20-bfe27468b033",
-      "oracle_id": "63398c02-6fb1-481d-9d9f-81063532fbc0",
-      "multiverse_ids": [],
-      "resource_id": "D56D98DF264411D45CA8D4C141731829A7FEA558128251B95836A521A4F05136",
-      "mtgo_id": 150945,
-      "tcgplayer_id": 698108,
-      "cardmarket_id": 892459,
-      "name": "Dragonskull Summit",
-      "lang": "en",
-      "released_at": "2026-06-26",
-      "uri": "https://api.scryfall.com/cards/d20e433a-eb62-4301-bc20-bfe27468b033",
-      "scryfall_uri": "https://scryfall.com/card/msc/238/dragonskull-summit?utm_source=api",
-      "layout": "normal",
-      "highres_image": true,
-      "image_status": "highres_scan",
-      "image_updated_at": "2026-07-13T00:40:03Z",
-      "image_uris": {
-        "small": "https://cards.scryfall.io/small/front/d/2/d20e433a-eb62-4301-bc20-bfe27468b033.jpg?1783903203",
-        "normal": "https://cards.scryfall.io/normal/front/d/2/d20e433a-eb62-4301-bc20-bfe27468b033.jpg?1783903203",
-        "large": "https://cards.scryfall.io/large/front/d/2/d20e433a-eb62-4301-bc20-bfe27468b033.jpg?1783903203",
-        "png": "https://cards.scryfall.io/png/front/d/2/d20e433a-eb62-4301-bc20-bfe27468b033.png?1783903203",
-        "art_crop": "https://cards.scryfall.io/art_crop/front/d/2/d20e433a-eb62-4301-bc20-bfe27468b033.jpg?1783903203",
-        "border_crop": "https://cards.scryfall.io/border_crop/front/d/2/d20e433a-eb62-4301-bc20-bfe27468b033.jpg?1783903203",
-        "thumb": "https://cards.scryfall.io/thumb/front/d/2/d20e433a-eb62-4301-bc20-bfe27468b033.webp?1783903203",
-        "grid": "https://cards.scryfall.io/grid/front/d/2/d20e433a-eb62-4301-bc20-bfe27468b033.webp?1783903203",
-        "display": "https://cards.scryfall.io/display/front/d/2/d20e433a-eb62-4301-bc20-bfe27468b033.webp?1783903203",
-        "art": "https://cards.scryfall.io/art/front/d/2/d20e433a-eb62-4301-bc20-bfe27468b033.webp?1783903203",
-        "crop": "https://cards.scryfall.io/crop/front/d/2/d20e433a-eb62-4301-bc20-bfe27468b033.webp?1783903203"
-      },
-      "mana_cost": "",
-      "cmc": 0.0,
-      "type_line": "Land",
-      "oracle_text": "This land enters tapped unless you control a Swamp or a Mountain.\n{T}: Add {B} or {R}.",
+      "type_line": "Land \u2014 Swamp Mountain",
+      "oracle_text": "({T}: Add {B} or {R}.)",
       "colors": [],
       "color_identity": [
         "B",
@@ -11828,21 +11696,21 @@
       "legalities": {
         "standard": "not_legal",
         "future": "not_legal",
-        "historic": "legal",
-        "timeless": "legal",
-        "gladiator": "legal",
-        "pioneer": "legal",
-        "modern": "legal",
+        "historic": "not_legal",
+        "timeless": "not_legal",
+        "gladiator": "not_legal",
+        "pioneer": "not_legal",
+        "modern": "not_legal",
         "legacy": "legal",
         "pauper": "not_legal",
         "vintage": "legal",
-        "penny": "legal",
+        "penny": "not_legal",
         "commander": "legal",
         "oathbreaker": "legal",
         "standardbrawl": "not_legal",
-        "brawl": "legal",
-        "competitivebrawl": "legal",
-        "alchemy": "legal",
+        "brawl": "not_legal",
+        "competitivebrawl": "not_legal",
+        "alchemy": "not_legal",
         "paupercommander": "not_legal",
         "duel": "legal",
         "oldschool": "not_legal",
@@ -11851,10 +11719,9 @@
         "tlr": "legal"
       },
       "games": [
-        "paper",
         "mtgo"
       ],
-      "reserved": false,
+      "reserved": true,
       "game_changer": false,
       "foil": true,
       "nonfoil": true,
@@ -11866,95 +11733,90 @@
       "promo": false,
       "reprint": true,
       "variation": false,
-      "set_id": "9d739461-c5ac-43a1-af41-3d5a585b5c8d",
-      "set": "msc",
-      "set_name": "Marvel Super Heroes Commander",
-      "set_type": "commander",
-      "set_uri": "https://api.scryfall.com/sets/9d739461-c5ac-43a1-af41-3d5a585b5c8d",
-      "set_search_uri": "https://api.scryfall.com/cards/search?order=set&q=e%3Amsc&unique=prints",
-      "scryfall_set_uri": "https://scryfall.com/sets/msc?utm_source=api",
-      "rulings_uri": "https://api.scryfall.com/cards/d20e433a-eb62-4301-bc20-bfe27468b033/rulings",
-      "prints_search_uri": "https://api.scryfall.com/cards/search?order=released&q=oracleid%3A63398c02-6fb1-481d-9d9f-81063532fbc0&unique=prints",
-      "collector_number": "238",
-      "digital": false,
+      "set_id": "a944551a-73fa-41cd-9159-e8d0e4674403",
+      "set": "vma",
+      "set_name": "Vintage Masters",
+      "set_type": "masters",
+      "set_uri": "https://api.scryfall.com/sets/a944551a-73fa-41cd-9159-e8d0e4674403",
+      "set_search_uri": "https://api.scryfall.com/cards/search?order=set&q=e%3Avma&unique=prints",
+      "scryfall_set_uri": "https://scryfall.com/sets/vma?utm_source=api",
+      "rulings_uri": "https://api.scryfall.com/cards/73403d04-fe97-4830-8b80-16dd1a1a6cc1/rulings",
+      "prints_search_uri": "https://api.scryfall.com/cards/search?order=released&q=oracleid%3A13ff3222-91cb-4796-a34e-899ed817694c&unique=prints",
+      "collector_number": "291",
+      "digital": true,
       "rarity": "rare",
-      "flavor_text": "\"I . . . have . . . awakened! After countless centuries, I live again!\"\n\u2014Fin Fang Foom",
       "card_back_id": "0aeebaf5-8c7d-4636-9e82-8c27447861f7",
-      "artist": "Jonas De Ro",
+      "artist": "Daarken",
       "artist_ids": [
-        "561ebf9e-8d93-4b57-8156-8826d0c19601"
+        "e607a0d4-fc12-4c01-9e3f-501f5269b9cb"
       ],
-      "illustration_id": "25ab7fe3-877b-4778-ae3b-d1809672843f",
+      "illustration_id": "d141b166-38a3-4dfc-80f8-778538da7927",
       "border_color": "black",
       "frame": "2015",
       "security_stamp": "oval",
       "full_art": false,
       "textless": false,
-      "booster": false,
+      "booster": true,
       "story_spotlight": false,
-      "promo_types": [
-        "surgefoil",
-        "universesbeyond"
-      ],
-      "edhrec_rank": 84,
-      "penny_rank": 155,
+      "edhrec_rank": 385,
       "prices": {
-        "usd": "0.46",
+        "usd": null,
         "usd_foil": null,
         "usd_etched": null,
-        "eur": "0.71",
+        "eur": null,
         "eur_foil": null,
-        "tix": "0.13"
+        "tix": "7.47"
       },
       "related_uris": {
-        "tcgplayer_infinite_articles": "https://partner.tcgplayer.com/c/4931599/1830156/21018?subId1=api&trafcat=tcgplayer.com%2Fsearch%2Farticles&u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Farticles%3FproductLineName%3Dmagic%26q%3DDragonskull%2BSummit",
-        "tcgplayer_infinite_decks": "https://partner.tcgplayer.com/c/4931599/1830156/21018?subId1=api&trafcat=tcgplayer.com%2Fsearch%2Fdecks&u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Fdecks%3FproductLineName%3Dmagic%26q%3DDragonskull%2BSummit",
-        "edhrec": "https://edhrec.com/route/?cc=Dragonskull+Summit"
+        "gatherer": "https://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=382852&printed=false",
+        "tcgplayer_infinite_articles": "https://partner.tcgplayer.com/c/4931599/1830156/21018?subId1=api&trafcat=tcgplayer.com%2Fsearch%2Farticles&u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Farticles%3FproductLineName%3Dmagic%26q%3DBadlands",
+        "tcgplayer_infinite_decks": "https://partner.tcgplayer.com/c/4931599/1830156/21018?subId1=api&trafcat=tcgplayer.com%2Fsearch%2Fdecks&u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Fdecks%3FproductLineName%3Dmagic%26q%3DBadlands",
+        "edhrec": "https://edhrec.com/route/?cc=Badlands"
       },
       "purchase_uris": {
-        "tcgplayer": "https://partner.tcgplayer.com/c/4931599/1830156/21018?subId1=api&u=https%3A%2F%2Fwww.tcgplayer.com%2Fproduct%2F698108%3Fpage%3D1",
-        "cardmarket": "https://www.cardmarket.com/en/Magic/Products?idProduct=892459&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
-        "cardhoarder": "https://www.cardhoarder.com/cards/150945?affiliate_id=scryfall&ref=card-profile&utm_campaign=affiliate&utm_medium=card&utm_source=scryfall"
+        "tcgplayer": "https://partner.tcgplayer.com/c/4931599/1830156/21018?subId1=api&u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Fmagic%2Fproduct%3FproductLineName%3Dmagic%26q%3DBadlands%26view%3Dgrid",
+        "cardmarket": "https://www.cardmarket.com/en/Magic/Products/Search?referrer=scryfall&searchString=Badlands&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+        "cardhoarder": "https://www.cardhoarder.com/cards/53077?affiliate_id=scryfall&ref=card-profile&utm_campaign=affiliate&utm_medium=card&utm_source=scryfall"
       }
     },
-    "cached_at": 1788465043.586125
+    "cached_at": 1788471917.1078506
   },
-  "woodland cemetery": {
+  "bayou": {
     "data": {
       "object": "card",
-      "id": "4d6f6c96-f813-4864-b4e1-b2a0aa8be1e8",
-      "oracle_id": "c9fe1383-1331-4a58-a45a-3320250221a9",
-      "multiverse_ids": [],
-      "resource_id": "3F196B0C1076443DBCFE2FE5F4FBD55E3F128B378CA27CE431EA4DD1252B17AF",
-      "mtgo_id": 149313,
-      "tcgplayer_id": 687585,
-      "cardmarket_id": 881757,
-      "name": "Woodland Cemetery",
+      "id": "bd7567df-b4d8-41a8-8eac-c05afa784bfe",
+      "oracle_id": "b76d1ae6-ad1d-4bac-b4c3-2e03e0e84d9b",
+      "multiverse_ids": [
+        382860
+      ],
+      "mtgo_id": 53079,
+      "mtgo_foil_id": 53080,
+      "name": "Bayou",
       "lang": "en",
-      "released_at": "2026-04-24",
-      "uri": "https://api.scryfall.com/cards/4d6f6c96-f813-4864-b4e1-b2a0aa8be1e8",
-      "scryfall_uri": "https://scryfall.com/card/soc/424/woodland-cemetery?utm_source=api",
+      "released_at": "2014-06-16",
+      "uri": "https://api.scryfall.com/cards/bd7567df-b4d8-41a8-8eac-c05afa784bfe",
+      "scryfall_uri": "https://scryfall.com/card/vma/293/bayou?utm_source=api",
       "layout": "normal",
       "highres_image": true,
       "image_status": "highres_scan",
-      "image_updated_at": "2026-07-13T00:48:33Z",
+      "image_updated_at": "2026-07-13T10:40:26Z",
       "image_uris": {
-        "small": "https://cards.scryfall.io/small/front/4/d/4d6f6c96-f813-4864-b4e1-b2a0aa8be1e8.jpg?1783903713",
-        "normal": "https://cards.scryfall.io/normal/front/4/d/4d6f6c96-f813-4864-b4e1-b2a0aa8be1e8.jpg?1783903713",
-        "large": "https://cards.scryfall.io/large/front/4/d/4d6f6c96-f813-4864-b4e1-b2a0aa8be1e8.jpg?1783903713",
-        "png": "https://cards.scryfall.io/png/front/4/d/4d6f6c96-f813-4864-b4e1-b2a0aa8be1e8.png?1783903713",
-        "art_crop": "https://cards.scryfall.io/art_crop/front/4/d/4d6f6c96-f813-4864-b4e1-b2a0aa8be1e8.jpg?1783903713",
-        "border_crop": "https://cards.scryfall.io/border_crop/front/4/d/4d6f6c96-f813-4864-b4e1-b2a0aa8be1e8.jpg?1783903713",
-        "thumb": "https://cards.scryfall.io/thumb/front/4/d/4d6f6c96-f813-4864-b4e1-b2a0aa8be1e8.webp?1783903713",
-        "grid": "https://cards.scryfall.io/grid/front/4/d/4d6f6c96-f813-4864-b4e1-b2a0aa8be1e8.webp?1783903713",
-        "display": "https://cards.scryfall.io/display/front/4/d/4d6f6c96-f813-4864-b4e1-b2a0aa8be1e8.webp?1783903713",
-        "art": "https://cards.scryfall.io/art/front/4/d/4d6f6c96-f813-4864-b4e1-b2a0aa8be1e8.webp?1783903713",
-        "crop": "https://cards.scryfall.io/crop/front/4/d/4d6f6c96-f813-4864-b4e1-b2a0aa8be1e8.webp?1783903713"
+        "small": "https://cards.scryfall.io/small/front/b/d/bd7567df-b4d8-41a8-8eac-c05afa784bfe.jpg?1783939226",
+        "normal": "https://cards.scryfall.io/normal/front/b/d/bd7567df-b4d8-41a8-8eac-c05afa784bfe.jpg?1783939226",
+        "large": "https://cards.scryfall.io/large/front/b/d/bd7567df-b4d8-41a8-8eac-c05afa784bfe.jpg?1783939226",
+        "png": "https://cards.scryfall.io/png/front/b/d/bd7567df-b4d8-41a8-8eac-c05afa784bfe.png?1783939226",
+        "art_crop": "https://cards.scryfall.io/art_crop/front/b/d/bd7567df-b4d8-41a8-8eac-c05afa784bfe.jpg?1783939226",
+        "border_crop": "https://cards.scryfall.io/border_crop/front/b/d/bd7567df-b4d8-41a8-8eac-c05afa784bfe.jpg?1783939226",
+        "thumb": "https://cards.scryfall.io/thumb/front/b/d/bd7567df-b4d8-41a8-8eac-c05afa784bfe.webp?1783939226",
+        "grid": "https://cards.scryfall.io/grid/front/b/d/bd7567df-b4d8-41a8-8eac-c05afa784bfe.webp?1783939226",
+        "display": "https://cards.scryfall.io/display/front/b/d/bd7567df-b4d8-41a8-8eac-c05afa784bfe.webp?1783939226",
+        "art": "https://cards.scryfall.io/art/front/b/d/bd7567df-b4d8-41a8-8eac-c05afa784bfe.webp?1783939226",
+        "crop": "https://cards.scryfall.io/crop/front/b/d/bd7567df-b4d8-41a8-8eac-c05afa784bfe.webp?1783939226"
       },
       "mana_cost": "",
       "cmc": 0.0,
-      "type_line": "Land",
-      "oracle_text": "This land enters tapped unless you control a Swamp or a Forest.\n{T}: Add {B} or {G}.",
+      "type_line": "Land \u2014 Swamp Forest",
+      "oracle_text": "({T}: Add {B} or {G}.)",
       "colors": [],
       "color_identity": [
         "B",
@@ -11968,91 +11830,224 @@
       "legalities": {
         "standard": "not_legal",
         "future": "not_legal",
-        "historic": "legal",
-        "timeless": "legal",
-        "gladiator": "legal",
-        "pioneer": "legal",
-        "modern": "legal",
+        "historic": "not_legal",
+        "timeless": "not_legal",
+        "gladiator": "not_legal",
+        "pioneer": "not_legal",
+        "modern": "not_legal",
         "legacy": "legal",
         "pauper": "not_legal",
         "vintage": "legal",
-        "penny": "legal",
+        "penny": "not_legal",
         "commander": "legal",
         "oathbreaker": "legal",
         "standardbrawl": "not_legal",
-        "brawl": "legal",
-        "competitivebrawl": "legal",
-        "alchemy": "legal",
+        "brawl": "not_legal",
+        "competitivebrawl": "not_legal",
+        "alchemy": "not_legal",
         "paupercommander": "not_legal",
         "duel": "legal",
         "oldschool": "not_legal",
         "premodern": "not_legal",
-        "predh": "not_legal",
+        "predh": "legal",
         "tlr": "legal"
       },
       "games": [
-        "paper",
         "mtgo"
       ],
-      "reserved": false,
+      "reserved": true,
       "game_changer": false,
-      "foil": false,
+      "foil": true,
       "nonfoil": true,
       "finishes": [
-        "nonfoil"
+        "nonfoil",
+        "foil"
       ],
       "oversized": false,
       "promo": false,
       "reprint": true,
       "variation": false,
-      "set_id": "97fab8d1-480a-419d-ab14-663968e29b9c",
-      "set": "soc",
-      "set_name": "Secrets of Strixhaven Commander",
-      "set_type": "commander",
-      "set_uri": "https://api.scryfall.com/sets/97fab8d1-480a-419d-ab14-663968e29b9c",
-      "set_search_uri": "https://api.scryfall.com/cards/search?order=set&q=e%3Asoc&unique=prints",
-      "scryfall_set_uri": "https://scryfall.com/sets/soc?utm_source=api",
-      "rulings_uri": "https://api.scryfall.com/cards/4d6f6c96-f813-4864-b4e1-b2a0aa8be1e8/rulings",
-      "prints_search_uri": "https://api.scryfall.com/cards/search?order=released&q=oracleid%3Ac9fe1383-1331-4a58-a45a-3320250221a9&unique=prints",
-      "collector_number": "424",
-      "digital": false,
+      "set_id": "a944551a-73fa-41cd-9159-e8d0e4674403",
+      "set": "vma",
+      "set_name": "Vintage Masters",
+      "set_type": "masters",
+      "set_uri": "https://api.scryfall.com/sets/a944551a-73fa-41cd-9159-e8d0e4674403",
+      "set_search_uri": "https://api.scryfall.com/cards/search?order=set&q=e%3Avma&unique=prints",
+      "scryfall_set_uri": "https://scryfall.com/sets/vma?utm_source=api",
+      "rulings_uri": "https://api.scryfall.com/cards/bd7567df-b4d8-41a8-8eac-c05afa784bfe/rulings",
+      "prints_search_uri": "https://api.scryfall.com/cards/search?order=released&q=oracleid%3Ab76d1ae6-ad1d-4bac-b4c3-2e03e0e84d9b&unique=prints",
+      "collector_number": "293",
+      "digital": true,
       "rarity": "rare",
-      "flavor_text": "\"They never found the body of young Josu, or that of his murderous sister.\"\n\u2014\"The Fall of the House of Vess\"",
       "card_back_id": "0aeebaf5-8c7d-4636-9e82-8c27447861f7",
-      "artist": "Christine Choi",
+      "artist": "Karl Kopinski",
       "artist_ids": [
-        "b8266529-1ffe-41e7-9969-fcf39f61426b"
+        "0fad2c48-a56e-4a0b-b512-224f6f238f20"
       ],
-      "illustration_id": "064e9e91-b862-45f2-9781-04db36ed4101",
+      "illustration_id": "0112e448-4c26-4adb-a15e-743dad3ff5ba",
       "border_color": "black",
       "frame": "2015",
       "security_stamp": "oval",
       "full_art": false,
       "textless": false,
-      "booster": false,
+      "booster": true,
       "story_spotlight": false,
-      "edhrec_rank": 111,
-      "penny_rank": 195,
+      "edhrec_rank": 423,
       "prices": {
-        "usd": "0.60",
+        "usd": null,
         "usd_foil": null,
         "usd_etched": null,
-        "eur": "0.81",
+        "eur": null,
         "eur_foil": null,
-        "tix": "0.05"
+        "tix": "8.61"
       },
       "related_uris": {
-        "tcgplayer_infinite_articles": "https://partner.tcgplayer.com/c/4931599/1830156/21018?subId1=api&trafcat=tcgplayer.com%2Fsearch%2Farticles&u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Farticles%3FproductLineName%3Dmagic%26q%3DWoodland%2BCemetery",
-        "tcgplayer_infinite_decks": "https://partner.tcgplayer.com/c/4931599/1830156/21018?subId1=api&trafcat=tcgplayer.com%2Fsearch%2Fdecks&u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Fdecks%3FproductLineName%3Dmagic%26q%3DWoodland%2BCemetery",
-        "edhrec": "https://edhrec.com/route/?cc=Woodland+Cemetery"
+        "gatherer": "https://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=382860&printed=false",
+        "tcgplayer_infinite_articles": "https://partner.tcgplayer.com/c/4931599/1830156/21018?subId1=api&trafcat=tcgplayer.com%2Fsearch%2Farticles&u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Farticles%3FproductLineName%3Dmagic%26q%3DBayou",
+        "tcgplayer_infinite_decks": "https://partner.tcgplayer.com/c/4931599/1830156/21018?subId1=api&trafcat=tcgplayer.com%2Fsearch%2Fdecks&u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Fdecks%3FproductLineName%3Dmagic%26q%3DBayou",
+        "edhrec": "https://edhrec.com/route/?cc=Bayou"
       },
       "purchase_uris": {
-        "tcgplayer": "https://partner.tcgplayer.com/c/4931599/1830156/21018?subId1=api&u=https%3A%2F%2Fwww.tcgplayer.com%2Fproduct%2F687585%3Fpage%3D1",
-        "cardmarket": "https://www.cardmarket.com/en/Magic/Products?idProduct=881757&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
-        "cardhoarder": "https://www.cardhoarder.com/cards/149313?affiliate_id=scryfall&ref=card-profile&utm_campaign=affiliate&utm_medium=card&utm_source=scryfall"
+        "tcgplayer": "https://partner.tcgplayer.com/c/4931599/1830156/21018?subId1=api&u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Fmagic%2Fproduct%3FproductLineName%3Dmagic%26q%3DBayou%26view%3Dgrid",
+        "cardmarket": "https://www.cardmarket.com/en/Magic/Products/Search?referrer=scryfall&searchString=Bayou&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+        "cardhoarder": "https://www.cardhoarder.com/cards/53079?affiliate_id=scryfall&ref=card-profile&utm_campaign=affiliate&utm_medium=card&utm_source=scryfall"
       }
     },
-    "cached_at": 1788465044.1740632
+    "cached_at": 1788471917.7071142
+  },
+  "taiga": {
+    "data": {
+      "object": "card",
+      "id": "0c2c39fc-b564-4ab5-833c-ff029760b7a7",
+      "oracle_id": "22e3cf1d-3559-4ce1-954c-8dc815342979",
+      "multiverse_ids": [
+        383122
+      ],
+      "mtgo_id": 53089,
+      "mtgo_foil_id": 53090,
+      "name": "Taiga",
+      "lang": "en",
+      "released_at": "2014-06-16",
+      "uri": "https://api.scryfall.com/cards/0c2c39fc-b564-4ab5-833c-ff029760b7a7",
+      "scryfall_uri": "https://scryfall.com/card/vma/317/taiga?utm_source=api",
+      "layout": "normal",
+      "highres_image": true,
+      "image_status": "highres_scan",
+      "image_updated_at": "2026-07-13T10:40:18Z",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/0/c/0c2c39fc-b564-4ab5-833c-ff029760b7a7.jpg?1783939218",
+        "normal": "https://cards.scryfall.io/normal/front/0/c/0c2c39fc-b564-4ab5-833c-ff029760b7a7.jpg?1783939218",
+        "large": "https://cards.scryfall.io/large/front/0/c/0c2c39fc-b564-4ab5-833c-ff029760b7a7.jpg?1783939218",
+        "png": "https://cards.scryfall.io/png/front/0/c/0c2c39fc-b564-4ab5-833c-ff029760b7a7.png?1783939218",
+        "art_crop": "https://cards.scryfall.io/art_crop/front/0/c/0c2c39fc-b564-4ab5-833c-ff029760b7a7.jpg?1783939218",
+        "border_crop": "https://cards.scryfall.io/border_crop/front/0/c/0c2c39fc-b564-4ab5-833c-ff029760b7a7.jpg?1783939218",
+        "thumb": "https://cards.scryfall.io/thumb/front/0/c/0c2c39fc-b564-4ab5-833c-ff029760b7a7.webp?1783939218",
+        "grid": "https://cards.scryfall.io/grid/front/0/c/0c2c39fc-b564-4ab5-833c-ff029760b7a7.webp?1783939218",
+        "display": "https://cards.scryfall.io/display/front/0/c/0c2c39fc-b564-4ab5-833c-ff029760b7a7.webp?1783939218",
+        "art": "https://cards.scryfall.io/art/front/0/c/0c2c39fc-b564-4ab5-833c-ff029760b7a7.webp?1783939218",
+        "crop": "https://cards.scryfall.io/crop/front/0/c/0c2c39fc-b564-4ab5-833c-ff029760b7a7.webp?1783939218"
+      },
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land \u2014 Mountain Forest",
+      "oracle_text": "({T}: Add {R} or {G}.)",
+      "colors": [],
+      "color_identity": [
+        "G",
+        "R"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "G",
+        "R"
+      ],
+      "legalities": {
+        "standard": "not_legal",
+        "future": "not_legal",
+        "historic": "not_legal",
+        "timeless": "not_legal",
+        "gladiator": "not_legal",
+        "pioneer": "not_legal",
+        "modern": "not_legal",
+        "legacy": "legal",
+        "pauper": "not_legal",
+        "vintage": "legal",
+        "penny": "not_legal",
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "standardbrawl": "not_legal",
+        "brawl": "not_legal",
+        "competitivebrawl": "not_legal",
+        "alchemy": "not_legal",
+        "paupercommander": "not_legal",
+        "duel": "legal",
+        "oldschool": "not_legal",
+        "premodern": "not_legal",
+        "predh": "legal",
+        "tlr": "legal"
+      },
+      "games": [
+        "mtgo"
+      ],
+      "reserved": true,
+      "game_changer": false,
+      "foil": true,
+      "nonfoil": true,
+      "finishes": [
+        "nonfoil",
+        "foil"
+      ],
+      "oversized": false,
+      "promo": false,
+      "reprint": true,
+      "variation": false,
+      "set_id": "a944551a-73fa-41cd-9159-e8d0e4674403",
+      "set": "vma",
+      "set_name": "Vintage Masters",
+      "set_type": "masters",
+      "set_uri": "https://api.scryfall.com/sets/a944551a-73fa-41cd-9159-e8d0e4674403",
+      "set_search_uri": "https://api.scryfall.com/cards/search?order=set&q=e%3Avma&unique=prints",
+      "scryfall_set_uri": "https://scryfall.com/sets/vma?utm_source=api",
+      "rulings_uri": "https://api.scryfall.com/cards/0c2c39fc-b564-4ab5-833c-ff029760b7a7/rulings",
+      "prints_search_uri": "https://api.scryfall.com/cards/search?order=released&q=oracleid%3A22e3cf1d-3559-4ce1-954c-8dc815342979&unique=prints",
+      "collector_number": "317",
+      "digital": true,
+      "rarity": "rare",
+      "card_back_id": "0aeebaf5-8c7d-4636-9e82-8c27447861f7",
+      "artist": "Sam Burley",
+      "artist_ids": [
+        "f89f4b78-cefb-41f7-b7cb-4f4d28de0c4f"
+      ],
+      "illustration_id": "c330690e-d54d-4944-803a-542536ce2f22",
+      "border_color": "black",
+      "frame": "2015",
+      "security_stamp": "oval",
+      "full_art": false,
+      "textless": false,
+      "booster": true,
+      "story_spotlight": false,
+      "edhrec_rank": 437,
+      "prices": {
+        "usd": null,
+        "usd_foil": null,
+        "usd_etched": null,
+        "eur": null,
+        "eur_foil": null,
+        "tix": "2.92"
+      },
+      "related_uris": {
+        "gatherer": "https://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=383122&printed=false",
+        "tcgplayer_infinite_articles": "https://partner.tcgplayer.com/c/4931599/1830156/21018?subId1=api&trafcat=tcgplayer.com%2Fsearch%2Farticles&u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Farticles%3FproductLineName%3Dmagic%26q%3DTaiga",
+        "tcgplayer_infinite_decks": "https://partner.tcgplayer.com/c/4931599/1830156/21018?subId1=api&trafcat=tcgplayer.com%2Fsearch%2Fdecks&u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Fdecks%3FproductLineName%3Dmagic%26q%3DTaiga",
+        "edhrec": "https://edhrec.com/route/?cc=Taiga"
+      },
+      "purchase_uris": {
+        "tcgplayer": "https://partner.tcgplayer.com/c/4931599/1830156/21018?subId1=api&u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Fmagic%2Fproduct%3FproductLineName%3Dmagic%26q%3DTaiga%26view%3Dgrid",
+        "cardmarket": "https://www.cardmarket.com/en/Magic/Products/Search?referrer=scryfall&searchString=Taiga&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+        "cardhoarder": "https://www.cardhoarder.com/cards/53089?affiliate_id=scryfall&ref=card-profile&utm_campaign=affiliate&utm_medium=card&utm_source=scryfall"
+      }
+    },
+    "cached_at": 1788471918.25333
   },
   "underground mortuary": {
     "data": {
@@ -12192,7 +12187,7 @@
         "cardhoarder": "https://www.cardhoarder.com/cards/122034?affiliate_id=scryfall&ref=card-profile&utm_campaign=affiliate&utm_medium=card&utm_source=scryfall"
       }
     },
-    "cached_at": 1788465044.983104
+    "cached_at": 1788471918.8396928
   },
   "commercial district": {
     "data": {
@@ -12332,7 +12327,7 @@
         "cardhoarder": "https://www.cardhoarder.com/cards/122010?affiliate_id=scryfall&ref=card-profile&utm_campaign=affiliate&utm_medium=card&utm_source=scryfall"
       }
     },
-    "cached_at": 1788465045.5360677
+    "cached_at": 1788471919.3771963
   },
   "llanowar wastes": {
     "data": {
@@ -12450,10 +12445,10 @@
       "edhrec_rank": 137,
       "penny_rank": 126,
       "prices": {
-        "usd": "0.67",
+        "usd": "0.65",
         "usd_foil": null,
         "usd_etched": null,
-        "eur": "1.04",
+        "eur": "1.05",
         "eur_foil": null,
         "tix": "0.21"
       },
@@ -12468,7 +12463,7 @@
         "cardhoarder": "https://www.cardhoarder.com/cards/149231?affiliate_id=scryfall&ref=card-profile&utm_campaign=affiliate&utm_medium=card&utm_source=scryfall"
       }
     },
-    "cached_at": 1788465046.169196
+    "cached_at": 1788471919.9185152
   },
   "karplusan forest": {
     "data": {
@@ -12609,7 +12604,7 @@
         "cardhoarder": "https://www.cardhoarder.com/cards/142465?affiliate_id=scryfall&ref=card-profile&utm_campaign=affiliate&utm_medium=card&utm_source=scryfall"
       }
     },
-    "cached_at": 1788465046.72151
+    "cached_at": 1788471921.3922012
   },
   "sulfurous springs": {
     "data": {
@@ -12750,7 +12745,7 @@
         "cardhoarder": "https://www.cardhoarder.com/cards/142507?affiliate_id=scryfall&ref=card-profile&utm_campaign=affiliate&utm_medium=card&utm_source=scryfall"
       }
     },
-    "cached_at": 1788465047.3341317
+    "cached_at": 1788471921.9412916
   },
   "command tower": {
     "data": {
@@ -12905,7 +12900,7 @@
         "cardhoarder": "https://www.cardhoarder.com/cards/150935?affiliate_id=scryfall&ref=card-profile&utm_campaign=affiliate&utm_medium=card&utm_source=scryfall"
       }
     },
-    "cached_at": 1788465047.9450548
+    "cached_at": 1788471922.4992096
   },
   "mana confluence": {
     "data": {
@@ -13023,10 +13018,10 @@
       "story_spotlight": false,
       "edhrec_rank": 119,
       "prices": {
-        "usd": "34.50",
-        "usd_foil": "47.25",
+        "usd": "34.68",
+        "usd_foil": "47.58",
         "usd_etched": null,
-        "eur": "24.29",
+        "eur": "24.27",
         "eur_foil": "44.57",
         "tix": "0.93"
       },
@@ -13042,7 +13037,7 @@
         "cardhoarder": "https://www.cardhoarder.com/cards/52120?affiliate_id=scryfall&ref=card-profile&utm_campaign=affiliate&utm_medium=card&utm_source=scryfall"
       }
     },
-    "cached_at": 1788465048.5402534
+    "cached_at": 1788471923.0618725
   },
   "city of brass": {
     "data": {
@@ -13181,7 +13176,7 @@
         "cardhoarder": "https://www.cardhoarder.com/cards/147457?affiliate_id=scryfall&ref=card-profile&utm_campaign=affiliate&utm_medium=card&utm_source=scryfall"
       }
     },
-    "cached_at": 1788465049.131465
+    "cached_at": 1788471923.5996206
   },
   "forest": {
     "data": {
@@ -13329,7 +13324,7 @@
         "cardhoarder": "https://www.cardhoarder.com/cards?affiliate_id=scryfall&data%5Bsearch%5D=Forest&ref=card-profile&utm_campaign=affiliate&utm_medium=card&utm_source=scryfall"
       }
     },
-    "cached_at": 1788465049.7185466
+    "cached_at": 1788471924.213101
   },
   "swamp": {
     "data": {
@@ -13459,7 +13454,7 @@
         "cardhoarder": "https://www.cardhoarder.com/cards?affiliate_id=scryfall&data%5Bsearch%5D=Swamp&ref=card-profile&utm_campaign=affiliate&utm_medium=card&utm_source=scryfall"
       }
     },
-    "cached_at": 1788465050.3242366
+    "cached_at": 1788471924.802046
   },
   "mountain": {
     "data": {
@@ -13589,6 +13584,6 @@
         "cardhoarder": "https://www.cardhoarder.com/cards?affiliate_id=scryfall&data%5Bsearch%5D=Mountain&ref=card-profile&utm_campaign=affiliate&utm_medium=card&utm_source=scryfall"
       }
     },
-    "cached_at": 1788465050.935271
+    "cached_at": 1788471925.3909357
   }
 }

@@ -83,9 +83,9 @@ DECK:
 1 Undergrowth Stadium
 1 Spire Garden
 1 Luxury Suite
-1 Rootbound Crag
-1 Dragonskull Summit
-1 Woodland Cemetery
+1 Badlands
+1 Bayou
+1 Taiga
 1 Underground Mortuary
 1 Commercial District
 1 Llanowar Wastes
