@@ -2,6 +2,11 @@
 
 ## 🗓️ September 2026: Henzie Blitz Refinement & Playtesting Integration
 
+### 2026-09-03: Henzie "Toolbox" Torre — Curve & Combat Control Overhaul: Rampant Rejuvenator & Kardur, Doomscourge
+*   **Curve & Velocity Upgrade:** Replaced 2-drop non-blitz ramp *Sakura-Tribe Elder* ({1}{G}) and 4-drop single-land fetcher *Solemn Simulacrum* ({4}) with *Rampant Rejuvenator* ({3}{G}) and *Kardur, Doomscourge* ({2}{B}{R}). *Rampant Rejuvenator* blitzes for 3 mana on Turn 3 and dies at end step to tutor TWO basic lands directly onto the battlefield UNTAPPED while drawing a card (accelerating straight to 6-7 mana on Turn 4). *Kardur, Doomscourge* blitzes for 3 mana to completely protect against all attacks for a full turn cycle, forcing opponents to swing into each other while draining life and drawing on death.
+*   **Validation:** 20-sim goldfish check — **95% commander cast rate (76/80)** with **record 64% Turn 2 or Turn 3 casts (T3.5 avg)**, **T4.5 engine readiness (88% on target <= T7)**, **0% Desperation Keeps (100% functional keeps, 6.97 avg hand size)**. Bracket compliance status: **PASS** for Bracket 3. Logged to `commander_decks/Planning/HenzieBlitz/GOLDFISH_LOG.md`.
+
+
 ### 2026-09-03: Henzie "Toolbox" Torre — Finisher & Economy Overhaul: Vaultborn Tyrant
 *   **Finisher Upgrade & 0/3 Game Changers:** Replaced underwhelming and costly noncreature tutor *Survival of the Fittest* ({1}{G}) with premier card advantage dinosaur *Vaultborn Tyrant* ({5}{G}{G}). Dropped deck Game Changers from 1/3 to **0 / 3**, completely freeing the build from bracket friction while saving ~$380 in acquisition cost. When blitzed for 6 mana, Vaultborn Tyrant swings for 6 trample haste, gains 6 life, draws 3 cards total (ETB + token copy ETB + blitz death draw), and leaves behind a permanent 6/6 artifact token copy on end step that continues drawing cards whenever 4+ power creatures enter.
 *   **Validation:** 20-sim goldfish check — **95% commander cast rate (76/80)** with 60% Turn 2 or Turn 3 casts, **T4.5 engine readiness (89% on target <= T7)**, 29% Gold Keeps, 68% Silver Keeps (97% functional keeps, avg hand size 6.83). Bracket compliance status: **PASS** for Bracket 3. Logged to `commander_decks/Planning/HenzieBlitz/GOLDFISH_LOG.md`.

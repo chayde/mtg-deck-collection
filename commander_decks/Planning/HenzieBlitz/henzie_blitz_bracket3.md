@@ -39,9 +39,8 @@ deck_status: main
 *   **Elvish Mystic:** {G} 1/1. Functional duplicate green mana dork.
 *   **Utopia Sprawl:** {G} enchantment - aura. Enchants a Forest on Turn 1 and adds an extra mana of chosen color ({B} or {R}) whenever tapped; safely guarantees Turn 2 Henzie with zero risk to your lands.
 
-### 🌿 Early Ramp & Fixing (6 Cards)
+### 🌿 Early Ramp & Fixing (5 Cards)
 *   **Bloom Tender:** {1}{G} 1/1. Taps for up to 3 mana ({B}{R}{G}) once Henzie is in play.
-*   **Sakura-Tribe Elder:** {1}{G} 1/1. Sacrifices itself at instant speed to fetch a basic land into play tapped.
 *   **Farseek:** {1}{G} sorcery. Searches for a Mountain, Swamp, or Forest shock/dual land into play tapped.
 *   **Nature's Lore:** {1}{G} sorcery. Searches for a Forest card (including shock/dual lands) and puts it onto the battlefield untapped.
 *   **Three Visits:** {1}{G} sorcery. Functional duplicate of *Nature's Lore*.
@@ -53,12 +52,13 @@ deck_status: main
 *   **Industrial Advancement:** {3}{R} enchantment. When a nontoken creature is sacrificed in end step, reveal cards until you hit a creature with lesser MV and put it directly into play.
 *   **Skullclamp:** {1} artifact. Equips for 1 to draw 2 cards whenever an equipped creature dies; turns 1-drop dorks or blitzed creatures into massive card advantage.
 
-### 🐉 4-CMC Blitz Enablers & Value (8 Cards)
+### 🐉 4-CMC Blitz Enablers & Value (9 Cards)
 *   **Blossoming Tortoise:** {2}{G}{G} 3/3. ETB and attack mills 3 cards and returns a land from graveyard to play; reduces land activation costs.
 *   **Druid of Purification:** {3}{G} 2/3. ETB allows each player to choose an artifact or enchantment to destroy, wiping up to 4 opposing problem permanents on entry.
 *   **Chainer, Nightmare Adept:** {2}{B}{R} 3/2. Discard a card to cast a creature from your graveyard each turn, giving blitz creatures an endless recursion loop.
 *   **Primeval Herald:** {3}{G} 3/2 trample. ETB and attack fetches basic lands directly onto the battlefield tapped.
-*   **Solemn Simulacrum:** {4} 2/2. ETB fetches a basic land; dies to draw a card; blitzing draws two cards total.
+*   **Rampant Rejuvenator:** {3}{G} 0/0 plant hydra. Enters as a 2/2; blitzes for {2}{G} (3 mana!) on Turn 3, swings for 2 haste, and dies at end step to search for TWO basic lands and put them onto the battlefield UNTAPPED while drawing a card; launches mana from 3 to 6 on Turn 4.
+*   **Kardur, Doomscourge:** {2}{B}{R} 4/3 demon berserker. Blitzes for {1}{B}{R} (3 mana) to goad all opponents' creatures for a full turn cycle, preventing attacks against you and forcing opponents to crash into each other while draining life and drawing on death.
 *   **Sowing Mycospawn:** {3}{G} 3/3 devoid. On-cast trigger (uncounterable) searches for ANY land card (including *Phyrexian Tower*, *Kessig Wolf Run*, or Triomes) directly onto the battlefield; blitzes for {2}{G}, attacks with haste, and draws a card on death.
 *   **Damage Control Crew:** {3}{G} 3/3. ETB modal: exiles target artifact or enchantment (cleanly removes indestructible/darksteel/rings) OR returns any card with mana value 4 or greater from your graveyard to hand.
 *   **Emeritus of Woe // Demonic Tutor:** {3}{B} // {1}{B} 5/4. Adventure sorcery casts for {1}{B} to tutor any card to hand; front face is a 4-CMC 5/4 creature that blitzes with Henzie for {2}{B}, swings with haste, and draws a card on death. Avoids Game Changer designation while maximizing creature blitz synergy.
@@ -150,10 +150,8 @@ deck_status: main
 *   **Etali, Primal Conqueror // Etali, Primal Sickness:** {5}{R}{R} 7/7 trample. ETB exiles top cards of all libraries until hitting a nonland card and casts all 4 spells for free; blitzes for 6 mana with haste, swings for 7 trample, and draws on death; flips for {9}{P/G} into an 11/11 indestructible infect dinosaur.
 *   **Ancient Brass Dragon:** {5}{B}{B} 7/6 flying. Combat damage rolls a d20 to reanimate that much total MV of creatures from all graveyards onto the battlefield under your control; devastating mass reanimation with blitz haste.
 *   **Rottenmouth Viper:** {5}{B} 6/6 elemental snake. Enters and attacks to place blight counters, triggering twice on a blitz turn to force opponents to sacrifice nonland permanents, discard cards, or take 4 damage per counter.
-*   **Rampant Rejuvenator:** {3}{G} 0/0 plant hydra (enters as a 2/2). Blitzes for 3 mana on Turn 3, swings for 2 haste, and dies at end step to tutor 2 basic lands onto the battlefield untapped while drawing a card; launches mana from 3 to 6 on Turn 4.
 *   **Overlord of the Hauntwoods:** {3}{G}{G} 6/5 avatar horror. Enters and attacks to create "Everywhere" land tokens that tap for all colors; nets +2 permanent lands and a card draw on a 4-mana blitz turn.
 *   **Gray Merchant of Asphodel:** {3}{B}{B} 2/4 zombie. ETB drains each opponent for your devotion to black and gains that much life; lethal win condition in reanimation loops with Living Death, Victimize, or Chainer.
-*   **Kardur, Doomscourge:** {2}{B}{R} 4/3 demon berserker. Goads all opponents' creatures for a full turn cycle, preventing attacks against you and draining opponents for 1 each time an attacker dies.
 *   **Primaris Eliminator:** {4}{B} 3/2 Astartes Warrior. Modal ETB: destroy target creature OR give creatures target player controls -2/-2 until end of turn. Combines with *Maha, Its Feathers Night* to wipe opposing creatures while leaving our board intact.
 *   **Protean Hulk:** {5}{G}{G} 6/6 beast. Dies to blitz at end step to search library for up to 6 CMC worth of creatures directly onto the battlefield.
 *   **Budget Mana Base Fallback (Check Lands):** *Dragonskull Summit* ({B}/{R}), *Woodland Cemetery* ({B}/{G}), and *Rootbound Crag* ({R}/{G}) serve as affordable paper budget alternatives for the ~$1,472 Revised Dual Lands (*Badlands*, *Bayou*, *Taiga*).
@@ -165,6 +163,10 @@ deck_status: main
 
 ## 📜 Deck Changelog
 
+- **2026-09-03:** Curve & Combat Control Overhaul (Rampant Rejuvenator & Kardur In; Sakura-Tribe Elder & Solemn Simulacrum Out).
+    - **In:** *Rampant Rejuvenator* ({3}{G}), *Kardur, Doomscourge* ({2}{B}{R})
+    - **Out:** *Sakura-Tribe Elder* ({1}{G}), *Solemn Simulacrum* ({4})
+    - **Reason:** Upgraded non-blitzing 2-drop ramp (Steve) and outdated 4-drop ramp (Sad Robot) into two elite 4-CMC blitz creatures. *Rampant Rejuvenator* blitzes for 3 mana on Turn 3 and dies at end step to tutor TWO basic lands directly onto the battlefield UNTAPPED while drawing a card (jumping from 3 to 6-7 mana on Turn 4). *Kardur, Doomscourge* blitzes for 3 mana to completely protect against all attacks for a full turn cycle, forcing opponents to swing into each other while draining life and drawing on death.
 - **2026-09-03:** Finisher & Economy Overhaul (Vaultborn Tyrant In, Survival of the Fittest Out).
     - **In:** *Vaultborn Tyrant* ({5}{G}{G})
     - **Out:** *Survival of the Fittest* ({1}{G})
@@ -243,7 +245,7 @@ DECK:
 1 Elvish Mystic  
 1 Utopia Sprawl  
 1 Bloom Tender  
-1 Sakura-Tribe Elder  
+1 Rampant Rejuvenator  
 1 Farseek  
 1 Nature's Lore  
 1 Three Visits  
@@ -257,7 +259,7 @@ DECK:
 1 Primeval Herald  
 1 Sowing Mycospawn  
 1 Sheoldred  
-1 Solemn Simulacrum  
+1 Kardur, Doomscourge  
 1 Author of Shadows  
 1 Damage Control Crew  
 1 Seedguide Ash  

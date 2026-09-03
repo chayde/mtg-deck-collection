@@ -14,7 +14,7 @@ DECK:
 1 Elvish Mystic
 1 Utopia Sprawl
 1 Bloom Tender
-1 Sakura-Tribe Elder
+1 Rampant Rejuvenator
 1 Farseek
 1 Nature's Lore
 1 Three Visits
@@ -28,7 +28,7 @@ DECK:
 1 Primeval Herald
 1 Sowing Mycospawn
 1 Sheoldred
-1 Solemn Simulacrum
+1 Kardur, Doomscourge
 1 Author of Shadows
 1 Damage Control Crew
 1 Seedguide Ash
