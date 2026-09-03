@@ -58,20 +58,21 @@ deck_status: main
 *   **Druid of Purification:** {3}{G} 2/3. ETB allows each player to choose an artifact or enchantment to destroy, wiping up to 4 opposing problem permanents on entry.
 *   **Chainer, Nightmare Adept:** {2}{B}{R} 3/2. Discard a card to cast a creature from your graveyard each turn, giving blitz creatures an endless recursion loop.
 *   **Primeval Herald:** {3}{G} 3/2 trample. ETB and attack fetches basic lands directly onto the battlefield tapped.
-*   **Kardur, Doomscourge:** {2}{B}{R} 4/3. ETB goads all opponents' creatures for a full turn cycle and drains opponents when attacking creatures die.
 *   **Ravenous Chupacabra:** {2}{B}{B} 2/2. ETB destroys target creature; blitzes for spot removal that replaces itself on death.
 *   **Solemn Simulacrum:** {4} 2/2. ETB fetches a basic land; dies to draw a card; blitzing draws two cards total.
-*   **Disciple of Bolas:** {3}{B} 2/1. ETB sacrifices another creature to gain life and draw cards equal to its power; converts blitzed giants into a full fresh hand.
+*   **Sowing Mycospawn:** {3}{G} 3/3 devoid. On-cast trigger (uncounterable) searches for ANY land card (including *Phyrexian Tower*, *Kessig Wolf Run*, or Triomes) directly onto the battlefield; blitzes for {2}{G}, attacks with haste, and draws a card on death.
+*   **Damage Control Crew:** {3}{G} 3/3. ETB modal: exiles target artifact or enchantment (cleanly removes indestructible/darksteel/rings) OR returns any card with mana value 4 or greater from your graveyard to hand.
 
-### 💥 5-CMC Blitz Powerhouses (9 Cards)
+### 💥 5-CMC Blitz Powerhouses (10 Cards)
 *   **Seedguide Ash:** {4}{G} 4/4. When it dies, searches for up to three Forest cards and puts them onto the battlefield tapped; explosive mana ramp.
 *   **Junji, the Midnight Sky:** {3}{B}{B} 5/5 flying. Death trigger reanimates any non-Dragon creature from any graveyard or forces opponents to discard 2 and lose 2 life.
-*   **Atsushi, the Blazing Sky:** {3}{R}{R} 4/4 flying, trample. Death trigger creates 3 Treasures or impulsively exiles 2 cards to play.
+*   **Necron Deathmark:** {3}{B}{B} 5/3 flash. Flash lets you cast on opponents' turns to destroy target creature and mill 3; or blitzes on your turn to kill a threat, swing for 5 haste, and draw on death.
 *   **Roxanne, Starfall Savant:** {3}{R}{G} 4/3. ETB and attack creates meteorite tokens that deal 2 damage and tap for 2 mana.
 *   **Ojer Kaslem, Deepest Growth:** {3}{G}{G} 6/5 trample. Combat damage to a player looks at top cards and cheats a creature and land directly onto the battlefield.
 *   **Terror of the Peaks:** {3}{R}{R} 5/4 flying. Whenever another creature enters, deals damage equal to its power to any target; machine-guns the table as blitzed bombs enter.
 *   **Author of Shadows:** {4}{B} 3/3. ETB exiles all opponents' graveyards and allows you to cast the best exiled nonland card using mana of any color; premier one-sided graveyard hate that sets up blowouts with *Living Death* and *Bringer of the Last Gift*.
 *   **Gwenom, Remorseless:** {3}{B}{B} 4/4 deathtouch, lifelink. Whenever she attacks, lets you play cards from the top of your library for free (paying life instead of mana) for the rest of the turn; swings immediately with blitz haste to cheat multiple spells into play while lifelink recoups the life paid.
+*   **Maha, Its Feathers Night:** {3}{B}{B} 6/5 flying, trample, ward-discard. Opponents' creatures have base toughness 1; turns *Massacre Wurm* into an instant table-wipe and lethal life drain, and makes *Toxic Deluge* for X=1 a one-sided board wipe.
 *   **Moraug, Fury of Akoum:** {4}{R}{R} 6/6. Landfall grants additional combat phases with untaps and +1/+0 buffs to all creatures.
 
 ### 🌋 6+ CMC Blitz Bombs & Win Conditions (9 Cards)
@@ -95,11 +96,10 @@ deck_status: main
 *   **Eternal Witness:** {1}{G}{G} 2/1. ETB returns any card from your graveyard to hand.
 *   **Will of the Abzan:** {3}{B} sorcery. With Henzie on the battlefield, grants both modes: each opponent sacrifices their greatest-power creature and loses 3 life, AND returns target creature card from your graveyard to the battlefield.
 
-### 🛡️ Interaction & Board Wipes (10 Cards)
+### 🛡️ Interaction & Board Wipes (9 Cards)
 *   **Toxic Deluge:** {2}{B} sorcery. The premier efficient black sweeper; pays life to bypass indestructible and hexproof boards at 3 mana.
 *   **Assassin's Trophy:** {B}{G} instant. Unconditional instant-speed permanent destruction.
 *   **Tear Asunder:** {1}{G} instant. Exiles target artifact or enchantment (or any nonland permanent with kicker).
-*   **Chaos Warp:** {2}{R} instant. Shuffles target permanent into its owner's library.
 *   **Windgrace's Judgment:** {3}{B}{G} instant. For any number of opponents, destroys target nonland permanent that player controls; an instant-speed 3-for-1 blowout that cleanly removes problem threats across all opponents with zero drawbacks.
 *   **Deflecting Swat:** {2}{R} instant. Free redirect spell if Henzie is on the battlefield; protects Henzie and key permanents.
 *   **Heroic Intervention:** {1}{G} instant. Grants permanents hexproof and indestructible until end of turn.
@@ -148,13 +148,17 @@ deck_status: main
 
 ### High-Impact Tech Considerations
 *   **Terror of the Peaks Foil / Special Art:** Alternate treatment for the primary burn engine.
-*   **Necron Deathmark:** Flash removal and mill body for instant-speed blitz disruption.
+*   **Myojin of Night's Reach:** {5}{B}{B}{B} 8-drop bomb that enters with a divinity counter when cast with blitz from hand; remove counter to force all opponents to discard their entire hands simultaneously.
 *   **Protean Hulk:** Optional modular combo package if upgrading toward Bracket 4.
 
 ---
 
 ## 📜 Deck Changelog
 
+- **2026-09-02:** Creature Suite Overhaul & Velocity Optimization.
+    - **In:** *Sowing Mycospawn*, *Necron Deathmark*, *Damage Control Crew*, *Maha, Its Feathers Night*
+    - **Out:** *Kardur, Doomscourge*, *Atsushi, the Blazing Sky*, *Disciple of Bolas*, *Chaos Warp*
+    - **Reason:** Replaced underperforming low-impact/stall cards (Kardur, Atsushi, Disciple) and disliked removal (Chaos Warp) with elite blitz powerhouses: Sowing Mycospawn (on-cast any-land tutor onto battlefield), Necron Deathmark (flash creature kill + mill), Damage Control Crew (modal artifact/enchantment exile or 4+ CMC recursion), and Maha, Its Feathers Night (sets opposing toughness to 1 for lethal Massacre Wurm and Toxic Deluge blowouts). Protected favorites Timeless Witness and Eternal Witness remain in the deck.
 - **2026-09-02:** Playtest Refinement: Acceleration, Free Interaction & Reanimation.
     - **In:** *Utopia Sprawl*, *Deadly Rollick*, *Will of the Abzan*
     - **Out:** *Orcish Lumberjack*, *Tibalt's Trickery*, *Birthing Ritual*
@@ -208,14 +212,14 @@ DECK:
 1 Druid of Purification  
 1 Chainer, Nightmare Adept  
 1 Primeval Herald  
-1 Kardur, Doomscourge  
+1 Sowing Mycospawn  
 1 Ravenous Chupacabra  
 1 Solemn Simulacrum  
 1 Author of Shadows  
-1 Disciple of Bolas  
+1 Damage Control Crew  
 1 Seedguide Ash  
 1 Junji, the Midnight Sky  
-1 Atsushi, the Blazing Sky  
+1 Necron Deathmark  
 1 Roxanne, Starfall Savant  
 1 Ojer Kaslem, Deepest Growth  
 1 Terror of the Peaks  
@@ -240,7 +244,7 @@ DECK:
 1 Eternal Witness  
 1 Assassin's Trophy  
 1 Tear Asunder  
-1 Chaos Warp  
+1 Maha, Its Feathers Night  
 1 Windgrace's Judgment  
 1 Deflecting Swat  
 1 Heroic Intervention  

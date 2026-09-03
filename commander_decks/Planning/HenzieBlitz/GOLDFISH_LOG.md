@@ -1,5 +1,70 @@
 # Goldfish Simulation Log: Henzie "Toolbox" Torre
 
+## 2026-09-02 — Creature Suite Overhaul & Velocity Optimization (20 sims, 10 turns, Bracket 3)
+
+**Command:**
+```bash
+python scripts/multiplayer_goldfish.py "commander_decks/Planning/HenzieBlitz/moxfield_import.txt" --sims 20 --turns 10 --bracket 3
+```
+
+**Results:**
+```
+====================================================================
+RUNNING 20 × 4-PLAYER SIMULATIONS
+Commander: Henzie "Toolbox" Torre (CMC 3)  |  Target: Bracket 3 (Upgraded) (Target T7)
+====================================================================
+
+--------------------------------------------------------------------
+AGGREGATE DEPLOYMENT & MULLIGAN PROFILE
+--------------------------------------------------------------------
+  Commander cast rate: 74/80 (92%)
+  Commander Cast Range: T2 - T10
+  Commander Cast Avg:   T3.7
+  Commander Cast Distribution:
+    T 2: ##################### (21)
+    T 3: ####################### (23)
+    T 4: ############ (12)
+    T 5: ####### (7)
+    T 6: ###### (6)
+    T 7: ## (2)
+    T 8: # (1)
+    T 9: # (1)
+    T10: # (1)
+
+  Opening Hand Quality Breakdown (80 hands evaluated):
+    Gold Keep (Mana + Ramp + Enabler):   32/80 (40%)
+    Silver Keep (Mana + Curve):          47/80 (59%)
+    Desperation Keep (Mulligan to <=5):   1/80 (1%)
+    Average Starting Hand Size:          6.96 cards
+
+--------------------------------------------------------------------
+BRACKET READINESS (Bracket 3 (Upgraded) — Target T7)
+--------------------------------------------------------------------
+  Target Window Readiness Rate (T<=7): 71/80 (89%)
+  Engine Readiness Avg:  T4.4
+  Engine Readiness Distribution:
+    T 2: ## (2)
+    T 3: ##################### (21)
+    T 4: ###################### (22)
+    T 5: ################# (17)
+    T 6: ###### (6)
+    T 7: ### (3)
+    T 8: # (1)
+    T 9: # (1)
+    T10: # (1)
+
+  [BRACKET COMPLIANCE CHECK] Status: PASS
+  Deck deploys its engine around Turn 4.4, perfectly positioned to execute and threaten a win on Bracket 3 (Upgraded)'s target (Turn 7+).
+```
+
+**Notes:**
+- Replaced *Kardur, Doomscourge*, *Atsushi, the Blazing Sky*, *Disciple of Bolas*, and *Chaos Warp* with *Sowing Mycospawn*, *Necron Deathmark*, *Damage Control Crew*, and *Maha, Its Feathers Night*.
+- Kept protected favorites *Timeless Witness* and *Eternal Witness*.
+- Target Window Readiness hit a new high of **89%** (71/80) with an average engine turn of **T4.4**.
+- Bracket compliance remains PASS for Bracket 3.
+
+---
+
 ## 2026-09-02 — Acceleration, Free Interaction & Reanimation Integration (20 sims, 10 turns, Bracket 3)
 
 **Command:**

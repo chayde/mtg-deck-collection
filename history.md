@@ -2,6 +2,13 @@
 
 ## 🗓️ September 2026: Henzie Blitz Refinement & Playtesting Integration
 
+### 2026-09-02: Henzie "Toolbox" Torre — Impact Creature Suite Overhaul & Velocity Optimization
+*   **Creature Base Tuning:** Replaced underperforming low-impact/stall cards and disliked removal with top-tier blitz powerhouses:
+    *   *In:* *Sowing Mycospawn* ({3}{G} — uncounterable on-cast tutor for any land card directly onto the battlefield with blitz haste), *Necron Deathmark* ({3}{B}{B} — flash creature destruction + 3-card mill for reanimation setup), *Damage Control Crew* ({3}{G} — modal exile removal for artifacts/enchantments or 4+ CMC card recursion), and *Maha, Its Feathers Night* ({3}{B}{B} — reduces all opposing creatures to base toughness 1, turning *Massacre Wurm* into an instant table-kill and *Toxic Deluge* for X=1 into a one-sided wipe).
+    *   *Out:* *Kardur, Doomscourge* (defensive stall), *Atsushi, the Blazing Sky* (low-impact treasures), *Disciple of Bolas* (conditional board-dependent draw), and *Chaos Warp* (drawback permanent flip). Protected favorites *Timeless Witness* and *Eternal Witness* retained.
+*   **Validation:** 20-sim goldfish check — **92% commander cast rate (74/80, T3.7 avg)**, **T4.4 engine readiness (record 89% on target <= T7)**, 40% Gold Keeps, 59% Silver Keeps (99% functional keeps, 1% desperation keep, avg hand size 6.96). Bracket compliance status: **PASS** for Bracket 3. Logged to `commander_decks/Planning/HenzieBlitz/GOLDFISH_LOG.md`.
+
+
 ### 2026-09-02: Henzie "Toolbox" Torre — Playtest Refinement: Acceleration, Free Interaction & Reanimation
 *   **Playtest Tuning:** Replaced 3 underperforming cards:
     *   *In:* *Utopia Sprawl* ({G} — reliable Turn 1 Forest aura fixing {B}/{R} with zero land sacrifice risk), *Deadly Rollick* ({3}{B} — free 0-mana instant creature exile), and *Will of the Abzan* ({3}{B} — modal opponent highest-power creature sacrifice + direct graveyard reanimation).
