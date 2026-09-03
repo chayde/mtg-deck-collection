@@ -1,5 +1,70 @@
 # Goldfish Simulation Log: Henzie "Toolbox" Torre
 
+## 2026-09-03 — Removal Engine Upgrade: Sheoldred In, Ravenous Chupacabra Out (20 sims, 10 turns, Bracket 3)
+
+**Command:**
+```bash
+python scripts/multiplayer_goldfish.py "commander_decks/Planning/HenzieBlitz/moxfield_import.txt" --sims 20 --turns 10 --bracket 3
+```
+
+**Results:**
+```
+====================================================================
+RUNNING 20 × 4-PLAYER SIMULATIONS
+Commander: Henzie "Toolbox" Torre (CMC 3)  |  Target: Bracket 3 (Upgraded) (Target T7)
+====================================================================
+
+--------------------------------------------------------------------
+AGGREGATE DEPLOYMENT & MULLIGAN PROFILE
+--------------------------------------------------------------------
+  Commander cast rate: 76/80 (95%)
+  Commander Cast Range: T2 - T10
+  Commander Cast Avg:   T3.8 (55% of games hit Turn 2 or Turn 3!)
+  Commander Cast Distribution:
+    T 2: ######################## (24)
+    T 3: #################### (20)
+    T 4: ############ (12)
+    T 5: ####### (7)
+    T 6: #### (4)
+    T 7: ### (3)
+    T 8: ## (2)
+    T 9: ### (3)
+    T10: # (1)
+
+  Opening Hand Quality Breakdown (80 hands evaluated):
+    Gold Keep (Mana + Ramp + Enabler):   32/80 (40%)  ← Jumped to 40%!
+    Silver Keep (Mana + Curve):          46/80 (57%)
+    Desperation Keep (Mulligan to <=5):   2/80 (2%)
+    Average Starting Hand Size:          6.90 cards
+
+--------------------------------------------------------------------
+BRACKET READINESS (Bracket 3 (Upgraded) — Target T7)
+--------------------------------------------------------------------
+  Target Window Readiness Rate (T<=7): 70/80 (88%)
+  Engine Readiness Avg:  T4.4
+  Engine Readiness Distribution:
+    T 2: ### (3)
+    T 3: ##################### (21)
+    T 4: ########################### (27)
+    T 5: ########## (10)
+    T 6: ##### (5)
+    T 7: #### (4)
+    T 8: ## (2)
+    T 9: ### (3)
+    T10: # (1)
+
+  [BRACKET COMPLIANCE CHECK] Status: PASS
+  Deck deploys its engine around Turn 4.4, perfectly positioned to execute and threaten a win on Bracket 3 (Upgraded)'s target (Turn 7+).
+```
+
+**Notes:**
+- Replaced targeted single-creature destruction *Ravenous Chupacabra* ({2}{B}{B}) with table-wide nontoken edict & transform bomb *Sheoldred // The True Scriptures* ({3}{B}{B}).
+- Guarantees an immediate 3-for-1 nontoken edict on ETB, attacks with Menace haste, and offers the post-combat flip into *The True Scriptures* (dodging the blitz death sacrifice).
+- Gold Keep rate rose to **40%**, with an engine readiness turn of **Turn 4.4** and **88%** target compliance.
+- Bracket compliance remains PASS for Bracket 3.
+
+---
+
 ## 2026-09-03 — High-End Finisher Optimization: Myojin of Night's Reach In, Apex Devastator Out (20 sims, 10 turns, Bracket 3)
 
 **Command:**

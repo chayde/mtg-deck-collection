@@ -53,21 +53,21 @@ deck_status: main
 *   **Industrial Advancement:** {3}{R} enchantment. When a nontoken creature is sacrificed in end step, reveal cards until you hit a creature with lesser MV and put it directly into play.
 *   **Skullclamp:** {1} artifact. Equips for 1 to draw 2 cards whenever an equipped creature dies; turns 1-drop dorks or blitzed creatures into massive card advantage.
 
-### 🐉 4-CMC Blitz Enablers & Value (9 Cards)
+### 🐉 4-CMC Blitz Enablers & Value (8 Cards)
 *   **Blossoming Tortoise:** {2}{G}{G} 3/3. ETB and attack mills 3 cards and returns a land from graveyard to play; reduces land activation costs.
 *   **Druid of Purification:** {3}{G} 2/3. ETB allows each player to choose an artifact or enchantment to destroy, wiping up to 4 opposing problem permanents on entry.
 *   **Chainer, Nightmare Adept:** {2}{B}{R} 3/2. Discard a card to cast a creature from your graveyard each turn, giving blitz creatures an endless recursion loop.
 *   **Primeval Herald:** {3}{G} 3/2 trample. ETB and attack fetches basic lands directly onto the battlefield tapped.
-*   **Ravenous Chupacabra:** {2}{B}{B} 2/2. ETB destroys target creature; blitzes for spot removal that replaces itself on death.
 *   **Solemn Simulacrum:** {4} 2/2. ETB fetches a basic land; dies to draw a card; blitzing draws two cards total.
 *   **Sowing Mycospawn:** {3}{G} 3/3 devoid. On-cast trigger (uncounterable) searches for ANY land card (including *Phyrexian Tower*, *Kessig Wolf Run*, or Triomes) directly onto the battlefield; blitzes for {2}{G}, attacks with haste, and draws a card on death.
 *   **Damage Control Crew:** {3}{G} 3/3. ETB modal: exiles target artifact or enchantment (cleanly removes indestructible/darksteel/rings) OR returns any card with mana value 4 or greater from your graveyard to hand.
 *   **Emeritus of Woe // Demonic Tutor:** {3}{B} // {1}{B} 5/4. Adventure sorcery casts for {1}{B} to tutor any card to hand; front face is a 4-CMC 5/4 creature that blitzes with Henzie for {2}{B}, swings with haste, and draws a card on death. Avoids Game Changer designation while maximizing creature blitz synergy.
 
-### 💥 5-CMC Blitz Powerhouses (10 Cards)
+### 💥 5-CMC Blitz Powerhouses (11 Cards)
 *   **Seedguide Ash:** {4}{G} 4/4. When it dies, searches for up to three Forest cards and puts them onto the battlefield tapped; explosive mana ramp.
 *   **Junji, the Midnight Sky:** {3}{B}{B} 5/5 flying. Death trigger reanimates any non-Dragon creature from any graveyard or forces opponents to discard 2 and lose 2 life.
 *   **Necron Deathmark:** {3}{B}{B} 5/3 flash. Flash lets you cast on opponents' turns to destroy target creature and mill 3; or blitzes on your turn to kill a threat, swing for 5 haste, and draw on death.
+*   **Sheoldred // The True Scriptures:** {3}{B}{B} 4/5 menace. ETB forces each opponent to sacrifice a nontoken creature or planeswalker (bypassing indestructible, hexproof, and tokens for an immediate 3-for-1); attacks with menace and blitz haste, and can pay {4}{B} post-combat to exile and transform into *The True Scriptures* (dodging the blitz death sacrifice) for a game-winning 3-chapter saga.
 *   **Roxanne, Starfall Savant:** {3}{R}{G} 4/3. ETB and attack creates meteorite tokens that deal 2 damage and tap for 2 mana.
 *   **Ojer Kaslem, Deepest Growth:** {3}{G}{G} 6/5 trample. Combat damage to a player looks at top cards and cheats a creature and land directly onto the battlefield.
 *   **Terror of the Peaks:** {3}{R}{R} 5/4 flying. Whenever another creature enters, deals damage equal to its power to any target; machine-guns the table as blitzed bombs enter.
@@ -157,6 +157,10 @@ deck_status: main
 
 ## 📜 Deck Changelog
 
+- **2026-09-03:** Removal Engine Upgrade (Sheoldred In, Ravenous Chupacabra Out).
+    - **In:** *Sheoldred // The True Scriptures* ({3}{B}{B})
+    - **Out:** *Ravenous Chupacabra* ({2}{B}{B})
+    - **Reason:** Replaced single-target creature destruction (Ravenous Chupacabra) with table-wide nontoken sacrifice and transform finisher (Sheoldred). For only 1 additional mana to blitz, Sheoldred forces all three opponents to sacrifice a nontoken creature/planeswalker on ETB (bypassing hexproof/indestructible), swings with menace haste, draws on death, and can transform into The True Scriptures to dodge blitz sacrifice and resurrect all graveyards.
 - **2026-09-03:** High-End Finisher Optimization (Myojin of Night's Reach In, Apex Devastator Out).
     - **In:** *Myojin of Night's Reach* ({5}{B}{B}{B})
     - **Out:** *Apex Devastator* ({8}{G}{G})
@@ -235,7 +239,7 @@ DECK:
 1 Chainer, Nightmare Adept  
 1 Primeval Herald  
 1 Sowing Mycospawn  
-1 Ravenous Chupacabra  
+1 Sheoldred  
 1 Solemn Simulacrum  
 1 Author of Shadows  
 1 Damage Control Crew  

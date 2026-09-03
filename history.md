@@ -2,6 +2,11 @@
 
 ## 🗓️ September 2026: Henzie Blitz Refinement & Playtesting Integration
 
+### 2026-09-03: Henzie "Toolbox" Torre — Removal Engine Upgrade: Sheoldred // The True Scriptures
+*   **Removal Overhaul:** Replaced single-target creature destruction *Ravenous Chupacabra* ({2}{B}{B}) with table-wide nontoken edict and transform finisher *Sheoldred // The True Scriptures* ({3}{B}{B}). For 1 extra mana to blitz ({2}{B}{B}), Sheoldred forces all 3 opponents to sacrifice a nontoken creature or planeswalker on ETB (bypassing hexproof, shroud, ward, and indestructible), attacks with menace and haste, draws on death, and features a {4}{B} transform ability that exiles her to dodge the blitz end-step sacrifice and flip into *The True Scriptures* for a game-winning 3-chapter saga.
+*   **Validation:** 20-sim goldfish check — **95% commander cast rate (76/80)** with 55% T2-T3 casts, **T4.4 engine readiness (88% on target <= T7)**, **40% Gold Keeps**, 57% Silver Keeps (97% functional keeps, avg hand size 6.90). Bracket compliance status: **PASS** for Bracket 3. Logged to `commander_decks/Planning/HenzieBlitz/GOLDFISH_LOG.md`.
+
+
 ### 2026-09-03: Henzie "Toolbox" Torre — High-End Finisher Optimization: Myojin of Night's Reach
 *   **Finisher Overhaul:** Replaced 9-mana cascade bomb *Apex Devastator* ({8}{G}{G}) with 7-mana game-closing stax finisher *Myojin of Night's Reach* ({5}{B}{B}{B}). Lowers the mana curve ceiling by 2 full mana (castable on Turn 5–6), eliminates slow four-stage cascade resolution delays, and triggers its divinity counter when cast with blitz from hand to strip all three opponents' hands simultaneously while attacking for 5 haste and drawing a card on death.
 *   **Validation:** 20-sim goldfish check — **96% commander cast rate (77/80)** with 54% T2-T3 casts, **T4.6 engine readiness (85% on target <= T7)**, 32% Gold Keeps, 64% Silver Keeps (96% functional keeps, avg hand size 6.90). Bracket compliance status: **PASS** for Bracket 3. Logged to `commander_decks/Planning/HenzieBlitz/GOLDFISH_LOG.md`.
