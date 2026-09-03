@@ -47,7 +47,8 @@ deck_status: main
 *   **Three Visits:** {1}{G} sorcery. Functional duplicate of *Nature's Lore*.
 *   **Flare of Cultivation:** {1}{G}{G} sorcery. Can be cast for 0 mana by sacrificing a nontoken green creature (such as a 1-drop mana dork or a blitzed creature before the end-step trigger); puts a basic land onto the battlefield tapped and another into hand.
 
-### 🔄 Sacrifice Engines & Velocity Outlets (3 Cards)
+### 🔄 Sacrifice Engines & Velocity Outlets (4 Cards)
+*   **Birthing Ritual:** {1}{G} enchantment. In your end step, look at top 7 cards and put a creature with mana value X+1 directly onto the battlefield by sacrificing a creature that just blitzed; efficient 2-mana deployment that enables immediate same-turn blitzing.
 *   **Greater Good:** {2}{G}{G} enchantment. Free sacrifice outlet to draw cards equal to sacrificed creature's power, then discard 3; draws 6-7 cards off blitzed giants.
 *   **Industrial Advancement:** {3}{R} enchantment. When a nontoken creature is sacrificed in end step, reveal cards until you hit a creature with lesser MV and put it directly into play.
 *   **Skullclamp:** {1} artifact. Equips for 1 to draw 2 cards whenever an equipped creature dies; turns 1-drop dorks or blitzed creatures into massive card advantage.
@@ -86,14 +87,13 @@ deck_status: main
 *   **Apex Devastator:** {8}{G}{G} 10/10. Cascade, cascade, cascade, cascade; blitzes for reduced cost to trigger 4 free spells from your deck with haste.
 *   **Bringer of the Last Gift:** {6}{B}{B} 6/6 flying. When cast, each player sacrifices all other creatures, then returns all creature cards from their graveyard that weren't put there this way to the battlefield; blitzing it triggers an asymmetric Living Death on entry, attacks with haste for 6 flying damage, and draws a card on death.
 
-### 💀 Reanimation & Recursion Suite (8 Cards)
+### 💀 Reanimation & Recursion Suite (7 Cards)
 *   **Grave Researcher // Reanimate:** {2}{B} // {B} 3/3. Adventure sorcery casts for {B} to reanimate any creature from any graveyard; front face is a 3/3 creature that can be tutored by *Fauna Shaman* / *Survival of the Fittest* and reanimated by *Living Death* / *Victimize*.
 *   **Animate Dead:** {1}{B} enchantment - aura. Efficient 2-mana reanimation aura.
 *   **Victimize:** {2}{B} sorcery. Sacrifices a creature to return two target creatures from graveyard to the battlefield tapped.
 *   **Phyrexian Delver:** {3}{B}{B} 3/2. ETB reanimates a creature from your graveyard at the cost of life equal to its mana value; blitzable recursion body.
 *   **Living Death:** {3}{B}{B} sorcery. Board wipe and mass reanimation in one; swaps all creatures in play with all creatures in graveyards.
-*   **Timeless Witness:** {3}{G} 3/2. ETB returns any card from your graveyard to hand; has Eternalize.
-*   **Eternal Witness:** {1}{G}{G} 2/1. ETB returns any card from your graveyard to hand.
+*   **Timeless Witness:** {3}{G} 3/2. ETB returns any card from your graveyard to hand; has Eternalize. Blitzable with Henzie for {2}{G} with haste and death draw.
 *   **Will of the Abzan:** {3}{B} sorcery. With Henzie on the battlefield, grants both modes: each opponent sacrifices their greatest-power creature and loses 3 life, AND returns target creature card from your graveyard to the battlefield.
 
 ### 🛡️ Interaction & Board Wipes (9 Cards)
@@ -155,6 +155,10 @@ deck_status: main
 
 ## 📜 Deck Changelog
 
+- **2026-09-03:** Engine Velocity Refinement (Birthing Ritual Reintegration).
+    - **In:** *Birthing Ritual* ({1}{G})
+    - **Out:** *Eternal Witness* ({1}{G}{G})
+    - **Reason:** Replaced non-blitzable 3-CMC recursion (Eternal Witness) with high-velocity 2-mana sacrifice engine (Birthing Ritual). With graveyard recursion already supported by Will of the Abzan, Damage Control Crew, Living Death, Victimize, Grave Researcher, and the blitzable Timeless Witness (which has Eternalize), Birthing Ritual provides a cheap 2-mana engine that can be easily cast and activated alongside a blitz creature on the same turn.
 - **2026-09-02:** Strixhaven Adventure Creature Integration.
     - **In:** *Emeritus of Woe* ({3}{B} // {1}{B}), *Grave Researcher* ({2}{B} // {B})
     - **Out:** *Demonic Tutor* (standalone sorcery), *Reanimate* (standalone sorcery)
@@ -249,7 +253,7 @@ DECK:
 1 Phyrexian Delver  
 1 Living Death  
 1 Timeless Witness  
-1 Eternal Witness  
+1 Birthing Ritual  
 1 Assassin's Trophy  
 1 Tear Asunder  
 1 Maha, Its Feathers Night  

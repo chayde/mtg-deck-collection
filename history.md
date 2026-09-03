@@ -2,6 +2,11 @@
 
 ## 🗓️ September 2026: Henzie Blitz Refinement & Playtesting Integration
 
+### 2026-09-03: Henzie "Toolbox" Torre — Engine Velocity Refinement: Birthing Ritual Reintegration
+*   **Engine Upgrade:** Replaced non-blitzable 3-CMC recursion (*Eternal Witness* {1}{G}{G}) with 2-mana repeatable sacrifice engine (*Birthing Ritual* {1}{G}). At only 2 mana, Birthing Ritual can be easily deployed and activated alongside a blitz creature on the same turn. Graveyard recursion remains deep via *Will of the Abzan*, *Damage Control Crew*, *Living Death*, *Victimize*, *Grave Researcher*, and *Timeless Witness* (which retains full blitz and Eternalize synergy).
+*   **Validation:** 20-sim goldfish check — **96% commander cast rate (77/80)**, **T4.8 engine readiness (85% on target <= T7)**, 34% Gold Keeps, 65% Silver Keeps (99% functional keeps, 1% desperation keep, avg hand size 6.90). Bracket compliance status: **PASS** for Bracket 3. Logged to `commander_decks/Planning/HenzieBlitz/GOLDFISH_LOG.md`.
+
+
 ### 2026-09-02: Henzie "Toolbox" Torre — Strixhaven Adventure Creature Integration
 *   **Adventure Synergies & Bracket Optimization:** Replaced standalone *Demonic Tutor* and *Reanimate* with Strixhaven Adventure creatures: *Emeritus of Woe // Demonic Tutor* ({3}{B} // {1}{B}) and *Grave Researcher // Reanimate* ({2}{B} // {B}). *Emeritus of Woe* provides a 4-CMC 5/4 body that blitzes with Henzie for {2}{B} with haste and card draw while providing the exact same 2-mana tutor on its adventure side (and drops official Game Changers to just 1/3). *Grave Researcher* provides creature-tutor searchability with Survival/Fauna Shaman and mass reanimation synergy with Living Death.
 *   **Validation:** 20-sim goldfish check — **94% commander cast rate (75/80, T3.5 avg — all-time personal best)**, **T4.4 engine readiness (88% on target <= T7)**, 32% Gold Keeps, 68% Silver Keeps (100% functional keeps, 0% desperation keeps, avg hand size 6.99). Bracket compliance status: **PASS** for Bracket 3. Logged to `commander_decks/Planning/HenzieBlitz/GOLDFISH_LOG.md`.

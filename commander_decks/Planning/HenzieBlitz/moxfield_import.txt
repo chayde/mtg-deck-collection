@@ -55,7 +55,7 @@ DECK:
 1 Phyrexian Delver
 1 Living Death
 1 Timeless Witness
-1 Eternal Witness
+1 Birthing Ritual
 1 Assassin's Trophy
 1 Tear Asunder
 1 Maha, Its Feathers Night
