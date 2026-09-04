@@ -8,3 +8,4 @@
 * **Status:** Planning / Main Active Build
 
 See [rocco_street_chef_kitchen.md](rocco_street_chef_kitchen.md) for the full 100-card deck list, strategy guide, card explanations, and changelog.
+See [order_tracking.md](order_tracking.md) for physical card acquisition and Manapool order delivery tracking.

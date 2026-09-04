@@ -2,6 +2,13 @@
 
 ## 🗓️ September 2026: Henzie Blitz Refinement & Playtesting Integration
 
+### 2026-09-03: Combined Acquisition Milestone: Henzie Blitz & Rocco Street Chef (Order #586788 — Manapool)
+*   **Mass Paper Singles Acquisition:** Placed Manapool Order #586788 — **171 total items** across **19 sellers / packages** for **$1,058.21**, securing virtually all remaining paper singles for both *Henzie "Toolbox" Torre* and *Rocco, Street Chef*:
+    *   **Henzie "Toolbox" Torre:** 90 cards (88 unique main deck singles + 2 alternate art Command Towers) across 19 packages. Combined with the 3 Revised dual lands ordered previously (#586657), Henzie has 91/93 nonbasic cards ordered and accounted for, leaving only *Damage Control Crew*, *Sulfurous Springs*, and basic lands.
+    *   **Rocco, Street Chef:** 81 unique singles across 19 packages. Combined with the 4 cards already in hand (*Command Tower*, *Exotic Orchard*, *Nature's Lore*, *Path of Ancestry*), Rocco has 85/87 nonbasic cards accounted for, leaving only *Arcane Signet*, *Peregrin Took*, and basic lands.
+*   **Tracking:** Fully integrated and synchronized package-level order tracking in both [`commander_decks/Planning/HenzieBlitz/order_tracking.md`](commander_decks/Planning/HenzieBlitz/order_tracking.md) and [`commander_decks/Planning/RoccoStreetChef/order_tracking.md`](commander_decks/Planning/RoccoStreetChef/order_tracking.md).
+
+
 ### 2026-09-03: Henzie "Toolbox" Torre — Acquisition Milestone: Revised Dual Lands Ordered (Manapool)
 *   **Dual Land Acquisition:** Placed Manapool Order #586657 with seller *Spellfinder* ([Package #586657-2084567](https://manapool.com/settings/orders/suborder/0cfee31b-a700-4e1e-a837-17d6d8852763)) for **$1,016.13** securing all 3 original Revised dual lands for paper play: *Badlands* (HP, $353.94), *Taiga* (MP, $340.80), and *Bayou* (HP, $321.39).
 *   **Tracking:** Established `order_tracking.md` in `commander_decks/Planning/HenzieBlitz/` to monitor package delivery status.
