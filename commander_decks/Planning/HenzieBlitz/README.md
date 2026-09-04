@@ -14,6 +14,7 @@
 
 *   [`henzie_blitz_bracket3.md`](file:///c:/Antigravity/mtg-deck-collection/commander_decks/Planning/HenzieBlitz/henzie_blitz_bracket3.md) — **Active Main Deck Guide** (`deck_status: main`). Comprehensive card breakdown, piloting guide, and Moxfield plain text copy/paste.
 *   [`moxfield_import.txt`](file:///c:/Antigravity/mtg-deck-collection/commander_decks/Planning/HenzieBlitz/moxfield_import.txt) — Pure plain text deck list formatted for immediate Moxfield import and automated simulator testing.
+*   [`order_tracking.md`](file:///c:/Antigravity/mtg-deck-collection/commander_decks/Planning/HenzieBlitz/order_tracking.md) — Physical card acquisition tracker and Manapool order status.
 *   [`GOLDFISH_LOG.md`](file:///c:/Antigravity/mtg-deck-collection/commander_decks/Planning/HenzieBlitz/GOLDFISH_LOG.md) — Goldfish simulation records and performance benchmarks across 20-game pod runs.
 *   [`archive/`](file:///c:/Antigravity/mtg-deck-collection/commander_decks/Planning/HenzieBlitz/archive) — Archived initial Bracket 2 Budget exploration (`henzie_toolbox_budget.md`).
 
