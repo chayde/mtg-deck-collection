@@ -18,6 +18,7 @@ import time
 import os
 import urllib.request
 import urllib.parse
+import argparse
 from collections import defaultdict
 
 if hasattr(sys.stdout, "reconfigure"):
@@ -190,16 +191,19 @@ def query_manapool_batch(scryfall_ids):
     data = fetch_with_retry(url, {"Accept": "application/json"}, label="Manapool batch")
     return data.get("data", []) if data else []
 
-def best_available_variant(product):
+def best_available_variant(product, condition_preference=None):
     """
-    Given a card on Manapool, find the cheapest in-stock acceptable listing (NM, LP, MP).
+    Given a card on Manapool, find the cheapest in-stock acceptable listing.
     
     Logic:
     1. Filter out variants that are out of stock.
     2. Exclude 'Damaged' (DMG) and 'Heavily Played' (HP).
-    3. Accept 'Near Mint' (NM), 'Lightly Played' (LP), and 'Moderately Played' (MP).
-    4. Choose whichever has the lowest price. Tie-break by condition quality (NM > LP > MP) and Non-Foil.
+    3. Accept conditions in condition_preference (e.g. NM, LP).
+    4. Choose whichever has the lowest price. Tie-break by condition quality and Non-Foil.
     """
+    if condition_preference is None:
+        condition_preference = CONDITION_PREFERENCE
+
     url = product.get("url", "")
     if not product.get("available_quantity"):
         return None, None, url
@@ -215,19 +219,19 @@ def best_available_variant(product):
             continue
             
         condition = v.get("condition_id", "")
-        if condition in ("DMG", "HP"):
+        if condition in ("DMG", "HP") or (condition not in condition_preference):
             dmg_only = True
-        elif condition in CONDITION_PREFERENCE:
+        elif condition in condition_preference:
             acceptable.append(v)
 
     if not acceptable:
         return (None, "DMG/HP_ONLY", url) if dmg_only else (None, None, url)
 
-    # Find the absolute cheapest price among NM, LP, and MP
+    # Find the absolute cheapest price among acceptable conditions
     def sort_key(v):
         price = v["low_price"]
         cond = v.get("condition_id", "")
-        pref = CONDITION_PREFERENCE.index(cond) if cond in CONDITION_PREFERENCE else 99
+        pref = condition_preference.index(cond) if cond in condition_preference else 99
         finish = 0 if v.get("finish_id") == "NF" else 1
         return (price, pref, finish)
 
@@ -244,13 +248,24 @@ def best_available_variant(product):
 # ---------------------------------------------------------------------------
 
 def main():
-    if len(sys.argv) < 2:
-        print("Usage: python scripts/manapool_price_deck.py <moxfield_import.txt>")
-        sys.exit(1)
+    parser = argparse.ArgumentParser(description="Manapool Price Deck — Automated Pricing & Availability Checker")
+    parser.add_argument("deck_path", help="Path to moxfield_import.txt")
+    parser.add_argument("--min-condition", choices=["NM", "LP", "MP", "HP"], default="MP",
+                        help="Minimum acceptable condition (default: MP, allowing NM, LP, MP)")
+    args = parser.parse_args()
 
-    deck_path = sys.argv[1]
+    deck_path = args.deck_path
+    if args.min_condition == "NM":
+        cond_pref = ["NM"]
+    elif args.min_condition == "LP":
+        cond_pref = ["NM", "LP"]
+    elif args.min_condition == "MP":
+        cond_pref = ["NM", "LP", "MP"]
+    else:
+        cond_pref = ["NM", "LP", "MP", "HP"]
+
     cards = parse_decklist(deck_path)
-    print(f"Loaded {len(cards)} unique non-basic cards.\n")
+    print(f"Loaded {len(cards)} unique non-basic cards (Condition: {args.min_condition} or better).\n")
 
     # PHASE 1: Find all printings for each card
     print("Step 1: Finding all card IDs on Scryfall...")
@@ -298,7 +313,7 @@ def main():
         has_dmg_only = False
 
         for product in products:
-            price, label, url = best_available_variant(product)
+            price, label, url = best_available_variant(product, condition_preference=cond_pref)
             if label in ("DMG_ONLY", "DMG/HP_ONLY"):
                 has_dmg_only = True
                 continue
