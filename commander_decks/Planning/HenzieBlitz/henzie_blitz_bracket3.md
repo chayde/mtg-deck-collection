@@ -147,6 +147,7 @@ deck_status: main
 ## 🚀 Future Roadmap & Acquisitions
 
 ### High-Impact Tech Considerations
+*   **Burning-Rune Demon:** {4}{B}{B} 6/6 flying demon berserker. ETB searches library for two differently named cards (non-Demon, non-basic land); an opponent puts one into your hand and the other into your graveyard. In Henzie, this acts as an unconditional double-tutor on a 5-mana blitz body, swinging for 6 flying haste, filling both hand and graveyard with high-synergy targets (e.g. *Archon of Cruelty* + *Animate Dead*), and drawing a card on death while remaining 100% compliant with Bracket 3 (0/3 Game Changers).
 *   **Etali, Primal Conqueror // Etali, Primal Sickness:** {5}{R}{R} 7/7 trample. ETB exiles top cards of all libraries until hitting a nonland card and casts all 4 spells for free; blitzes for 6 mana with haste, swings for 7 trample, and draws on death; flips for {9}{P/G} into an 11/11 indestructible infect dinosaur.
 *   **Ancient Brass Dragon:** {5}{B}{B} 7/6 flying. Combat damage rolls a d20 to reanimate that much total MV of creatures from all graveyards onto the battlefield under your control; devastating mass reanimation with blitz haste.
 *   **Rottenmouth Viper:** {5}{B} 6/6 elemental snake. Enters and attacks to place blight counters, triggering twice on a blitz turn to force opponents to sacrifice nonland permanents, discard cards, or take 4 damage per counter.
@@ -154,9 +155,12 @@ deck_status: main
 *   **Gray Merchant of Asphodel:** {3}{B}{B} 2/4 zombie. ETB drains each opponent for your devotion to black and gains that much life; lethal win condition in reanimation loops with Living Death, Victimize, or Chainer.
 *   **Primaris Eliminator:** {4}{B} 3/2 Astartes Warrior. Modal ETB: destroy target creature OR give creatures target player controls -2/-2 until end of turn. Combines with *Maha, Its Feathers Night* to wipe opposing creatures while leaving our board intact.
 *   **Protean Hulk:** {5}{G}{G} 6/6 beast. Dies to blitz at end step to search library for up to 6 CMC worth of creatures directly onto the battlefield.
+*   **Woodfall Primus:** {5}{G}{G}{G} 6/6 treefolk shaman with trample and persist. ETB destroys target noncreature permanent. When blitzed for 7 mana, it swings for 6 trample, dies at end step to draw a card, and persists back to the battlefield with a -1/-1 counter to trigger its ETB a second time, blowing up a second noncreature permanent and leaving behind a permanent 5/5 body. Also forms an infinite noncreature board wipe loop with *Mikaeus, the Unhallowed* (Undying +1/+1 and Persist -1/-1 counters cancel each other out).
 *   **Budget Mana Base Fallback (Check Lands):** *Dragonskull Summit* ({B}/{R}), *Woodland Cemetery* ({B}/{G}), and *Rootbound Crag* ({R}/{G}) serve as affordable paper budget alternatives for the ~$1,472 Revised Dual Lands (*Badlands*, *Bayou*, *Taiga*).
 *   **Terror of the Peaks Foil / Special Art:** Alternate treatment for the primary burn engine.
 *   **Apex Devastator:** {8}{G}{G} 10/10 Chimera Hydra. Quad-cascade bomb for non-discard casual pods if wanting high-variance cascade turns.
+*   **Blightbeetle:** {1}{B} 1/1 insect with protection from green. Static hatebear: "Creatures your opponents control can't have +1/+1 counters put on them." Hard meta-counter against Hakbal explore triggers, +1/+1 counters snowball, and Korvold growth.
+*   **Thief of Blood:** {4}{B}{B} 1/1 flying vampire. ETB: removes all counters from all permanents and enters with that many +1/+1 counters; can be blitzed with Henzie for {3}{B}{B} (5 mana) with haste to wipe all opposing counters and swing as a lethal 30/30+ flying threat, drawing a card on death.
 *   **Classic Demonic Tutor & Reanimate (Paper Printings):** The deck runs Strixhaven Adventure creatures (*Emeritus of Woe* and *Grave Researcher*) for blitz and creature tutor synergies while keeping Game Changers at 0/3. If preferred for physical paper play or classic aesthetic, the deck can alternatively run standard non-adventure printings of *Demonic Tutor* ({1}{B}) and *Reanimate* ({B}). Note that running classic *Demonic Tutor* counts as a Game Changer (bringing the deck to 1/3).
 
 ---
