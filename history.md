@@ -1,8 +1,15 @@
 # Project History: MTG Deck Collection
 
-## 🗓️ September 2026: Henzie Blitz Refinement & Playtesting Integration
+## 🗓️ September 2026: Henzie Blitz Refinement, Playtesting & The Necrobloom Inception
+
+### 2026-09-07: The Necrobloom — New Planning Deck: Abzan Lands, Dredge & Field of the Dead
+*   **Deck Inception:** Designed and scaffolded a brand new Bracket 3 Abzan ({W}{B}{G}) Lands, Dredge, and Graveyard Recursion deck in [`commander_decks/Planning/TheNecrobloom/necrobloom_abzan.md`](commander_decks/Planning/TheNecrobloom/necrobloom_abzan.md) (`deck_status: main`).
+*   **Synergy Engine:** Combines a 41-land toolbox base (utilizing snow basics, fetchlands, cycling lands, and horizon lands) with The Necrobloom's built-in **Field of the Dead** zombie army trigger and **Dredge 2** ability on all graveyard lands.
+*   **Detonation & Finishers:** Employs incremental land recursion (*Crucible of Worlds*, *Ramunap Excavator*, *Six*) and explosive mass land reanimation (*Splendid Reclamation*, *Lumra, Bellow of the Woods*, *Aftermath Analyst*, *Scapeshift*) alongside token/graveyard drain (*Syr Konrad, the Grim*, *Mirkwood Bats*).
+*   **Bracket & Game Changers:** Verified for **Bracket 3 (Upgraded)** with 1 Game Changer (*Crop Rotation* 1/3).
 
 ### 2026-09-03: Combined Acquisition Milestone: Henzie Blitz & Rocco Street Chef (Order #586788 — Manapool)
+
 *   **Mass Paper Singles Acquisition:** Placed Manapool Order #586788 — **171 total items** across **19 sellers / packages** for **$1,058.21**, securing virtually all remaining paper singles for both *Henzie "Toolbox" Torre* and *Rocco, Street Chef*:
     *   **Henzie "Toolbox" Torre:** 90 cards (88 unique main deck singles + 2 alternate art Command Towers) across 19 packages. Combined with the 3 Revised dual lands ordered previously (#586657), Henzie has 91/93 nonbasic cards ordered and accounted for, leaving only *Damage Control Crew*, *Sulfurous Springs*, and basic lands.
     *   **Rocco, Street Chef:** 81 unique singles across 19 packages. Combined with the 4 cards already in hand (*Command Tower*, *Exotic Orchard*, *Nature's Lore*, *Path of Ancestry*), Rocco has 85/87 nonbasic cards accounted for, leaving only *Arcane Signet*, *Peregrin Took*, and basic lands.
