@@ -2,6 +2,16 @@
 
 ## 🗓️ September 2026: Henzie Blitz Refinement, Playtesting & The Necrobloom Inception
 
+### 2026-09-07: Budget Commander Lands Reference Guide Created (`BudgetCommanderLands.md`)
+*   **Documentation Milestone:** Created [`BudgetCommanderLands.md`](BudgetCommanderLands.md) based on Tyler "Savesya" Bucks' EDHREC feature (*"The Big List of Budget Lands for Commander | 2026 Updated"*) and official companion database.
+*   **Catalog Scope:** Compiles over 150+ budget-friendly lands (primarily under $2, with a $2–$10 upgrade ladder), categorized by:
+    *   **Universal 5-Color & Any-Color Staples:** *Command Tower*, *Exotic Orchard*, *Path of Ancestry*, *Fabled Passage*.
+    *   **10 Two-Color Guild Suites:** Pain lands, Check lands, Tango/Battle lands, Cycling duals, Odyssey & Eventide Filter lands, Fast lands, Reveal snarls, Scry lands, and Restless creature lands (including newly completed enemy Tango, Cycling, and Filter cycles).
+    *   **3-Color Shard & Wedge Fixing:** Modern Horizons 3 Landscapes and classic Tri-lands.
+    *   **Basic Land Fetches & Karoo Bounce Lands:** 8 basic tutors + 11 bounce lands (including *Arid Archway*).
+    *   **Utility & MDFCs:** Tainted lands, colorless utility with upside, 20 MDFC spell-lands, and colored utility lands.
+    *   **Deckbuilding Cheatsheet:** Step-by-step mana base blueprints for 2-color and 3-color builds.
+
 ### 2026-09-07: The Necrobloom — New Planning Deck: Abzan Lands, Dredge & Field of the Dead
 *   **Deck Inception:** Designed and scaffolded a brand new Bracket 3 Abzan ({W}{B}{G}) Lands, Dredge, and Graveyard Recursion deck in [`commander_decks/Planning/TheNecrobloom/necrobloom_abzan.md`](commander_decks/Planning/TheNecrobloom/necrobloom_abzan.md) (`deck_status: main`).
 *   **Synergy Engine:** Combines a 41-land toolbox base (utilizing snow basics, fetchlands, cycling lands, and horizon lands) with The Necrobloom's built-in **Field of the Dead** zombie army trigger and **Dredge 2** ability on all graveyard lands.

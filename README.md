@@ -15,6 +15,7 @@ This repository manages deck lists, analysis, and upgrade plans for both Paper M
 
 ### 📜 Root Files
 *   **`COMMANDER_DECKBUILDING_RULES.md`**: The source of truth for power level brackets and "Game Changers".
+*   **`BudgetCommanderLands.md`**: Comprehensive reference guide for budget Commander lands and mana base packages.
 *   **`GEMINI.md`**: Context and instructions for AI agents.
 *   **`history.md`**: Chronological log of major decisions and match history.
 *   **`collection.csv`**: Database of card collection data.
