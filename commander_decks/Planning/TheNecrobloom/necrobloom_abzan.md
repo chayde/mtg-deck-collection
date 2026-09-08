@@ -53,7 +53,7 @@ deck_status: main
 *   **Dryad of the Ilysian Grove:** {2}{G} 2/4 Nymph Dryad. Allows an additional land drop and makes all lands every basic type for flawless mana fixing.
 *   **The Gitrog Monster:** {3}{B}{G} 6/6 Frog Horror. Grants an additional land drop; draws a card whenever one or more land cards enter your graveyard from anywhere.
 *   **Oracle of Mul Daya:** {3}{G} 2/2 Elf Shaman. Grants an additional land drop and plays lands directly off the top of your library revealed.
-*   **Wayward Swordtooth:** {2}{G} 5/5 Dinosaur. Grants an additional land drop; easily achieves City's Blessing (Ascend) with token swarms.
+*   **Thalia and The Gitrog Monster:** {1}{W}{B}{G} 4/4 Human Frog Horror. First strike, deathtouch; grants an additional land drop, forces opponents' creatures and nonbasic lands to enter tapped, and sacrifices a creature or land to draw on attack.
 
 ### 🚜 Land Tutors & Sacrifice Outlets (5 Cards)
 *Cards that voluntarily send lands to the graveyard while searching for crucial utility lands.*
@@ -178,10 +178,15 @@ deck_status: main
 ---
 
 ## 📜 Deck Changelog
+*   **[2026-09-08]:** Added combat sacrifice outlet, board stax, and attack draw engine over vanilla extra land drop.
+    *   **In:** Thalia and The Gitrog Monster
+    *   **Out:** Wayward Swordtooth
+    *   **Reason:** Replaces vanilla extra land drop dinosaur with a multi-role 4/4 first strike/deathtouch engine that slows opponents, adds an extra land drop, and provides repeatable combat sacrifice/draw to feed dredge.
 *   **[2026-09-07]:** Initial deck inception and 100-card build.
     *   **In:** 100-card full Abzan Lands, Dredge, and Graveyard Recursion list featuring The Necrobloom.
     *   **Out:** N/A (Initial build).
     *   **Reason:** Created dedicated Bracket 3 Lands/Dredge/Recursion engine deck combining 41 unique lands with Dredge 2 and mass land reanimation.
+
 
 ---
 
@@ -276,6 +281,7 @@ DECK:
 1 Talon Gates of Madara  
 1 Tear Asunder  
 1 Temple Garden  
+1 Thalia and The Gitrog Monster  
 1 The Gitrog Monster  
 1 Three Visits  
 1 Timeless Witness  
@@ -286,8 +292,8 @@ DECK:
 1 Urza's Cave  
 1 Vault of Champions  
 1 Verdant Catacombs  
-1 Wayward Swordtooth  
 1 Wight of the Reliquary  
 1 Windswept Heath  
+
 
 SIDEBOARD:  
