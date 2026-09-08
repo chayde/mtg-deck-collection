@@ -28,7 +28,7 @@ deck_status: main
 ### ⚡ Game Changers (1 Card — Bracket 3 Max 3)
 *   **Crop Rotation:** {G} instant. Sacrifices a land as an additional cost to tutor ANY land card directly onto the battlefield untapped at instant speed; feeds dredge while tutoring silver bullets like *Bojuka Bog*, *Talon Gates of Madara*, or *Dakmor Salvage*. (Official Game Changer: 1/3).
 
-### ♻️ Lands-from-Graveyard & Incremental Recursion (8 Cards)
+### ♻️ Lands-from-Graveyard & Incremental Recursion (10 Cards)
 *Reusable engines that turn your graveyard into a second hand.*
 *   **Crucible of Worlds:** {3} artifact. Allows playing lands directly from your graveyard; enables infinite fetchland cycles and continuous landfall triggers.
 *   **Ramunap Excavator:** {2}{G} 2/3 Snake Cleric. Creature-based Crucible of Worlds that is easily tutorable and reanimatable.
@@ -38,6 +38,8 @@ deck_status: main
 *   **Sevinne's Reclamation:** {2}{W} sorcery. Returns a permanent with CMC <= 3 from graveyard to battlefield; flashback copies itself to recur two permanents.
 *   **Dread Return:** {2}{B}{B} sorcery. Reanimates any creature from your graveyard; flashback sacrifices 3 tokens (trivial with Necrobloom) to cast for 0 mana.
 *   **Timeless Witness:** {3}{G} 2/1 Human Shaman. Returns any card from graveyard to hand on ETB; features Eternalize to re-cast itself from the graveyard.
+*   **Eternal Witness:** {1}{G}{G} 2/1 Human Shaman. Returns any target card from your graveyard to your hand on ETB; easily recurred with *Sevinne's Reclamation* or cast via *Six*'s Retrace.
+*   **Victimize:** {2}{B} sorcery. Sacrifices a creature (0/1 Plant or 2/2 Zombie token) to return TWO target creature cards from your graveyard to the battlefield tapped.
 
 ### 💥 Mass Land Reanimation & Detonators (4 Cards)
 *Game-ending spells that return all milled lands from the graveyard to the battlefield simultaneously.*
@@ -93,7 +95,7 @@ deck_status: main
 *   **Three Visits:** {1}{G} sorcery. Functional duplicate of *Nature's Lore*.
 *   **Farseek:** {1}{G} sorcery. Tutors a Plains or Swamp shock/dual land onto the battlefield tapped.
 
-### 🗡️ Targeted Removal & Instant Disruption (8 Cards)
+### 🗡️ Targeted Removal & Instant Disruption (7 Cards)
 *Flexible interaction answering opposing threats, hate pieces, and stax.*
 *   **Swords to Plowshares:** {W} instant. Premier 1-mana unconditional creature exile.
 *   **Path to Exile:** {W} instant. Efficient 1-mana instant creature exile.
@@ -101,7 +103,6 @@ deck_status: main
 *   **Anguished Unmaking:** {1}{W}{B} instant. Exiles any nonland permanent at instant speed at the cost of 3 life.
 *   **Tear Asunder:** {1}{G} instant. Exiles an artifact or enchantment for 2 mana, or kicks for {B} to exile any nonland permanent.
 *   **Beast Within:** {2}{G} instant. Destroys any target permanent, leaving behind a 3/3 Beast.
-*   **Stroke of Midnight:** {2}{W} instant. Destroys target nonland permanent, leaving behind a 1/1 Human token.
 *   **Deadly Rollick:** {3}{B} instant. Free 0-mana instant creature exile while The Necrobloom is on the battlefield.
 
 ### 🧹 Board Wipes & Mass Disruption (4 Cards)
@@ -113,7 +114,7 @@ deck_status: main
 
 ### 🏔️ Land Base (41 Lands)
 *Carefully calibrated with 41 differently named lands to reliably trigger The Necrobloom's 7-different-names Zombie threshold.*
-*   **Forest:** Basic land ({G}).
+*   **Bala Ged Recovery // Bala Ged Sanctuary:** {2}{G} // land. Front side returns any target card from your graveyard to hand; back side is an MDFC land (*Bala Ged Sanctuary*), which gives it Dredge 2 in your graveyard under The Necrobloom.
 *   **Snow-Covered Forest:** Snow basic land ({G}); counts as a distinct name for Zombie threshold.
 *   **Plains:** Basic land ({W}).
 *   **Snow-Covered Plains:** Snow basic land ({W}); counts as a distinct name for Zombie threshold.
@@ -178,6 +179,10 @@ deck_status: main
 ---
 
 ## 📜 Deck Changelog
+*   **[2026-09-08]:** Nonland graveyard recursion upgrade.
+    *   **In:** Bala Ged Recovery, Eternal Witness, Victimize
+    *   **Out:** Forest, Stinkweed Imp, Stroke of Midnight
+    *   **Reason:** Significantly strengthens nonland graveyard recovery so dredging feels rewarding rather than punishing. Bala Ged Recovery adds a Dredge-2 MDFC land that buys back any milled spell; Eternal Witness provides redundant full-card recursion alongside Timeless Witness and Sevinne's Reclamation; Victimize turns disposable 0/1 Plant and 2/2 Zombie tokens into 2-for-1 creature reanimation bombs. Trimmed redundant basic Forest, pure self-mill Stinkweed Imp, and 8th targeted removal Stroke of Midnight.
 *   **[2026-09-08]:** Added combat sacrifice outlet, board stax, and attack draw engine over vanilla extra land drop.
     *   **In:** Thalia and The Gitrog Monster
     *   **Out:** Wayward Swordtooth
@@ -200,6 +205,7 @@ DECK:
 1 Arcane Signet  
 1 Assassin's Trophy  
 1 Avenger of Zendikar  
+1 Bala Ged Recovery  
 1 Azusa, Lost but Seeking  
 1 Barren Moor  
 1 Beast Within  
@@ -225,10 +231,10 @@ DECK:
 1 Elvish Reclaimer  
 1 Exotic Orchard  
 1 Exploration  
+1 Eternal Witness  
 1 Fabled Passage  
 1 Farseek  
 1 Felidar Retreat  
-1 Forest  
 1 Ghost Quarter  
 1 Godless Shrine  
 1 Greater Good  
@@ -271,8 +277,6 @@ DECK:
 1 Snow-Covered Swamp  
 1 Sol Ring  
 1 Splendid Reclamation  
-1 Stinkweed Imp  
-1 Stroke of Midnight  
 1 Swamp  
 1 Swords to Plowshares  
 1 Sylvan Library  
@@ -291,6 +295,7 @@ DECK:
 1 Undergrowth Stadium  
 1 Urza's Cave  
 1 Vault of Champions  
+1 Victimize  
 1 Verdant Catacombs  
 1 Wight of the Reliquary  
 1 Windswept Heath  

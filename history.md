@@ -18,6 +18,8 @@
 *   **Detonation & Finishers:** Employs incremental land recursion (*Crucible of Worlds*, *Ramunap Excavator*, *Six*) and explosive mass land reanimation (*Splendid Reclamation*, *Lumra, Bellow of the Woods*, *Aftermath Analyst*, *Scapeshift*) alongside token/graveyard drain (*Syr Konrad, the Grim*, *Mirkwood Bats*).
 *   **Bracket & Game Changers:** Verified for **Bracket 3 (Upgraded)** with 1 Game Changer (*Crop Rotation* 1/3).
 *   **Tuning:** Replaced vanilla extra land drop *Wayward Swordtooth* with *Thalia and The Gitrog Monster* ({1}{W}{B}{G}) to provide opponent nonbasic/creature tap stax, an additional land drop, and combat sacrifice/draw velocity.
+*   **Recursion Overhaul:** Integrated *Bala Ged Recovery* ({2}{G} // Land), *Eternal Witness* ({1}{G}{G}), and *Victimize* ({2}{B}) in place of basic *Forest*, *Stinkweed Imp*, and *Stroke of Midnight*, ensuring robust nonland spell and creature recovery when dredging.
+
 
 
 ### 2026-09-03: Combined Acquisition Milestone: Henzie Blitz & Rocco Street Chef (Order #586788 — Manapool)

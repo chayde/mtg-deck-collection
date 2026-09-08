@@ -119,4 +119,69 @@ BRACKET READINESS (Bracket 3 (Upgraded) — Target T7)
 - **Enhanced Utility:** Swapping vanilla extra land drop *Wayward Swordtooth* for *Thalia and The Gitrog Monster* injects vital stax tempo and attack-triggered sacrifice/draw velocity without sacrificing curve or opening-hand reliability (0% desperation keeps, 6.97 average hand size).
 - **Bracket 3 Status:** Full PASS.
 
+---
+
+## 2026-09-08 — Nonland Graveyard Recursion Overhaul (20 sims, T10 turns, Bracket 3)
+
+**Command:**
+```
+python scripts/multiplayer_goldfish.py "commander_decks/Planning/TheNecrobloom/moxfield_import.txt" --bracket 3 --sims 20 --turns 10
+```
+
+**Results:**
+```
+====================================================================
+RUNNING 20 x 4-PLAYER SIMULATIONS
+Commander: The Necrobloom (CMC 4)  |  Target: Bracket 3 (Upgraded) (Target T7)
+====================================================================
+
+--------------------------------------------------------------------
+AGGREGATE DEPLOYMENT & MULLIGAN PROFILE
+--------------------------------------------------------------------
+  Commander cast rate: 80/80 (100%)
+  Commander Cast Range: T1 - T9
+  Commander Cast Avg:   T3.5
+  Commander Cast Distribution:
+    T 1: ### (3)
+    T 2: ############ (12)
+    T 3: ################################ (32)
+    T 4: ###################### (22)
+    T 5: ##### (5)
+    T 6: ### (3)
+    T 7: # (1)
+    T 8: # (1)
+    T 9: # (1)
+
+  Opening Hand Quality Breakdown (80 hands evaluated):
+    Gold Keep (Mana + Ramp + Enabler):   44/80 (55%)
+    Silver Keep (Mana + Curve):          36/80 (45%)
+    Desperation Keep (Mulligan to <=5):   0/80 (0%)
+    Average Starting Hand Size:          6.99 cards
+
+--------------------------------------------------------------------
+BRACKET READINESS (Bracket 3 (Upgraded) — Target T7)
+--------------------------------------------------------------------
+  Target Window Readiness Rate (T<=7): 78/80 (98%)
+  Engine Readiness Avg:  T4.0
+  Engine Readiness Distribution:
+    T 2: ###### (6)
+    T 3: ########################### (27)
+    T 4: ########################## (26)
+    T 5: ############# (13)
+    T 6: ### (3)
+    T 7: ### (3)
+    T 8: # (1)
+    T 9: # (1)
+
+  [BRACKET COMPLIANCE CHECK] Status: PASS
+  Deck deploys its engine around Turn 4.0, perfectly positioned to execute and threaten a win on Bracket 3 (Upgraded)'s target (Turn 7+).
+```
+
+**Notes:**
+- **Peak Consistency & Hand Quality:** 100% Commander cast rate (80/80) and a jump to **55% Gold Keeps** (0% desperation keeps, 6.99 starting hand size).
+- **Target Readiness:** Sustains an elite **98% (78/80)** target window readiness (average Turn 4.0 engine deployment).
+- **Recursion Quality:** Replacing basic Forest, Stinkweed Imp, and Stroke of Midnight with *Bala Ged Recovery*, *Eternal Witness*, and *Victimize* eliminates nonland milling vulnerability without impacting curve or mana availability.
+- **Bracket 3 Status:** Full PASS.
+
+
 
