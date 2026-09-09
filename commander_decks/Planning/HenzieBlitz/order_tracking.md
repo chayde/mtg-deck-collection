@@ -5,6 +5,11 @@ Condition codes: NM / LP / MP / HP · finish noted only when Foil.
 
 **Deck status:** Acquisition in progress — 91 unique singles ordered across Orders #586657 and #586788 via Manapool.
 
+## 🛡️ Inventory In-Hand (2 Cards)
+Confirmed physically in collection / in-hand:
+- [x] Damage Control Crew
+- [x] Sulfurous Springs
+
 ---
 
 ## 📦 Ordered — Order #586657 (2026-09-03) — Revised Dual Lands
@@ -25,23 +30,23 @@ Check off each card as it arrives, then tick the package's **Delivered** box whe
 Check off each card as it arrives, then tick the package's **Delivered** box when the whole shipment lands.
 
 ### [Grove Warden Games](https://manapool.com/shop/grovewardengames) — [Package #586788-2084943](https://manapool.com/settings/orders/suborder/0cc738bd-23e9-40ce-a0d8-0ef7747f1f64) · 3 Henzie cards (14 total in shipment)
-- [ ] Delivered
-- [ ] [Command Tower](https://manapool.com/card/soc/129/command-tower) — $0.20 · NM · Secrets of Strixhaven Commander (SOC #129)
-- [ ] [City of Brass](https://manapool.com/card/tmc/62/city-of-brass) — $10.55 · NM · Teenage Mutant Ninja Turtles Eternal (TMC #62)
-- [ ] [Spire Garden](https://manapool.com/card/tmc/75/spire-garden) — $6.08 · NM · Teenage Mutant Ninja Turtles Eternal (TMC #75)
+- [x] Delivered
+- [x] [Command Tower](https://manapool.com/card/soc/129/command-tower) — $0.20 · NM · Secrets of Strixhaven Commander (SOC #129)
+- [x] [City of Brass](https://manapool.com/card/tmc/62/city-of-brass) — $10.55 · NM · Teenage Mutant Ninja Turtles Eternal (TMC #62)
+- [x] [Spire Garden](https://manapool.com/card/tmc/75/spire-garden) — $6.08 · NM · Teenage Mutant Ninja Turtles Eternal (TMC #75)
 
 ### [Shirussell](https://manapool.com/shop/shirussell) — [Package #586788-2084942](https://manapool.com/settings/orders/suborder/10443544-55d1-4d93-b0b6-0cad84f149cc) · 3 Henzie cards (4 total in shipment)
-- [ ] Delivered
-- [ ] [Wooded Foothills](https://manapool.com/card/mh3/236/wooded-foothills) — $18.50 · NM · Modern Horizons 3 (MH3 #236)
-- [ ] [Primeval Herald](https://manapool.com/card/j25/702/primeval-herald) — $0.25 · NM · Foundations Jumpstart (J25 #702)
-- [ ] [Vaultborn Tyrant](https://manapool.com/card/big/20/vaultborn-tyrant) — $31.30 · NM · The Big Score (BIG #20)
+- [x] Delivered
+- [x] [Wooded Foothills](https://manapool.com/card/mh3/236/wooded-foothills) — $18.50 · NM · Modern Horizons 3 (MH3 #236)
+- [x] [Primeval Herald](https://manapool.com/card/j25/702/primeval-herald) — $0.25 · NM · Foundations Jumpstart (J25 #702)
+- [x] [Vaultborn Tyrant](https://manapool.com/card/big/20/vaultborn-tyrant) — $31.30 · NM · The Big Score (BIG #20)
 
 ### [MythicalPullsNY](https://manapool.com/shop/mythicalpullsny) — [Package #586788-2084955](https://manapool.com/settings/orders/suborder/32049901-4938-4e3d-a380-33ce0dfc22de) · 4 Henzie cards (12 total in shipment)
-- [ ] Delivered
-- [ ] [Windgrace's Judgment](https://manapool.com/card/eoc/129/windgraces-judgment) — $0.15 · NM · Edge of Eternities Commander (EOC #129)
-- [ ] [Skullclamp](https://manapool.com/card/fic/355/skullclamp) — $5.45 · NM · Final Fantasy Commander (FIC #355)
-- [ ] [Luxury Suite](https://manapool.com/card/msc/252/luxury-suite) — $7.95 · FoilNMSurge Foil · Marvel Super Heroes Commander (MSC #252)
-- [ ] [Rampant Rejuvenator](https://manapool.com/card/fic/314/rampant-rejuvenator) — $0.25 · NM · Final Fantasy Commander (FIC #314)
+- [x] Delivered
+- [x] [Windgrace's Judgment](https://manapool.com/card/eoc/129/windgraces-judgment) — $0.15 · NM · Edge of Eternities Commander (EOC #129)
+- [x] [Skullclamp](https://manapool.com/card/fic/355/skullclamp) — $5.45 · NM · Final Fantasy Commander (FIC #355)
+- [x] [Luxury Suite](https://manapool.com/card/msc/252/luxury-suite) — $7.95 · FoilNMSurge Foil · Marvel Super Heroes Commander (MSC #252)
+- [x] [Rampant Rejuvenator](https://manapool.com/card/fic/314/rampant-rejuvenator) — $0.25 · NM · Final Fantasy Commander (FIC #314)
 
 ### [On the Stack Gaming](https://manapool.com/shop/onthestackgaming) — [Package #586788-2084944](https://manapool.com/settings/orders/suborder/369de008-f67a-49a0-a951-ae13081ded1d) · 4 Henzie cards (6 total in shipment)
 - [ ] Delivered
@@ -99,10 +104,10 @@ Check off each card as it arrives, then tick the package's **Delivered** box whe
 - [ ] [Three Visits](https://manapool.com/card/msc/181/three-visits) — $4.84 · NM · Marvel Super Heroes Commander (MSC #181)
 
 ### [SimplicityCardsAndGames](https://manapool.com/shop/simplicitycardsandgames) — [Package #586788-2084954](https://manapool.com/settings/orders/suborder/6c14c20b-4145-4fe7-8452-72947d357841) · 3 Henzie cards (4 total in shipment)
-- [ ] Delivered
-- [ ] [Roxanne, Starfall Savant](https://manapool.com/card/otj/228/roxanne-starfall-savant) — $0.50 · NM · Outlaws of Thunder Junction (OTJ #228)
-- [ ] [Massacre Wurm](https://manapool.com/card/fdn/714/massacre-wurm) — $2.37 · FoilNM · Foundations (FDN #714)
-- [ ] [Fyndhorn Elves](https://manapool.com/card/cmr/228/fyndhorn-elves) — $2.48 · NM · Commander Legends (CMR #228)
+- [x] Delivered
+- [x] [Roxanne, Starfall Savant](https://manapool.com/card/otj/228/roxanne-starfall-savant) — $0.50 · NM · Outlaws of Thunder Junction (OTJ #228)
+- [x] [Massacre Wurm](https://manapool.com/card/fdn/714/massacre-wurm) — $2.37 · FoilNM · Foundations (FDN #714)
+- [x] [Fyndhorn Elves](https://manapool.com/card/cmr/228/fyndhorn-elves) — $2.48 · NM · Commander Legends (CMR #228)
 
 ### [Cape Fear Games](https://manapool.com/shop/capefeargames) — [Package #586788-2084938](https://manapool.com/settings/orders/suborder/76add916-a9eb-48d6-9615-0857986f1e53) · 3 Henzie cards (4 total in shipment)
 - [ ] Delivered
@@ -111,12 +116,12 @@ Check off each card as it arrives, then tick the package's **Delivered** box whe
 - [ ] [Kokusho, the Evening Star](https://manapool.com/card/ima/95/kokusho-the-evening-star) — $24.94 · LP · Iconic Masters (IMA #95)
 
 ### [TOAMagic](https://manapool.com/shop/toamagic) — [Package #586788-2084937](https://manapool.com/settings/orders/suborder/78590121-fd95-4723-9f59-bee863522f10) · 5 Henzie cards (7 total in shipment)
-- [ ] Delivered
-- [ ] [Command Tower](https://manapool.com/card/cc2/8/command-tower) — $3.79 · LP · Commander Collection: Black (CC2 #8) (Commander Collection: Black)
-- [ ] [Underground Mortuary](https://manapool.com/card/mkm/271/underground-mortuary) — $16.29 · FoilLP · Murders at Karlov Manor (MKM #271)
-- [ ] [Bloom Tender](https://manapool.com/card/ecl/166/bloom-tender) — $14.09 · FoilLP · Lorwyn Eclipsed (ECL #166)
-- [ ] [Blossoming Tortoise](https://manapool.com/card/woe/163/blossoming-tortoise) — $5.15 · LP · Wilds of Eldraine (WOE #163)
-- [ ] [Flare of Cultivation](https://manapool.com/card/pmh3/154s/flare-of-cultivation) — $2.79 · FoilLP · Modern Horizons 3 Promos (PMH3 #154s)
+- [x] Delivered
+- [x] [Command Tower](https://manapool.com/card/cc2/8/command-tower) — $3.79 · LP · Commander Collection: Black (CC2 #8) (Commander Collection: Black)
+- [x] [Underground Mortuary](https://manapool.com/card/mkm/271/underground-mortuary) — $16.29 · FoilLP · Murders at Karlov Manor (MKM #271)
+- [x] [Bloom Tender](https://manapool.com/card/ecl/166/bloom-tender) — $14.09 · FoilLP · Lorwyn Eclipsed (ECL #166)
+- [x] [Blossoming Tortoise](https://manapool.com/card/woe/163/blossoming-tortoise) — $5.15 · LP · Wilds of Eldraine (WOE #163)
+- [x] [Flare of Cultivation](https://manapool.com/card/pmh3/154s/flare-of-cultivation) — $2.79 · FoilLP · Modern Horizons 3 Promos (PMH3 #154s)
 
 ### [mana exchange](https://manapool.com/shop/manaexchange) — [Package #586788-2084941](https://manapool.com/settings/orders/suborder/94645a75-b785-449a-911e-9c51eef79cf8) · 3 Henzie cards (7 total in shipment)
 - [ ] Delivered
@@ -134,8 +139,8 @@ Check off each card as it arrives, then tick the package's **Delivered** box whe
 - [ ] [Nature's Lore](https://manapool.com/card/eoc/101/natures-lore) — $2.37 · NM · Edge of Eternities Commander (EOC #101)
 
 ### [Che Collects](https://manapool.com/shop/checollects) — [Package #586788-2084946](https://manapool.com/settings/orders/suborder/bad3d669-91cb-4bcf-a5e1-f2330cb8a878) · 1 Henzie card (4 total in shipment)
-- [ ] Delivered
-- [ ] [Ojer Kaslem, Deepest Growth // Temple of Cultivation](https://manapool.com/card/lci/204/ojer-kaslem-deepest-growth-temple-of-cultivation) — $7.69 · FoilNM · The Lost Caverns of Ixalan (LCI #204)
+- [x] Delivered
+- [x] [Ojer Kaslem, Deepest Growth // Temple of Cultivation](https://manapool.com/card/lci/204/ojer-kaslem-deepest-growth-temple-of-cultivation) — $7.69 · FoilNM · The Lost Caverns of Ixalan (LCI #204)
 
 ### [Meta TCG](https://manapool.com/shop/metatcg) — [Package #586788-2084939](https://manapool.com/settings/orders/suborder/dcb3782b-fec9-4d58-8df0-4f305b53bb5c) · 4 Henzie cards (5 total in shipment)
 - [ ] Delivered
@@ -145,13 +150,13 @@ Check off each card as it arrives, then tick the package's **Delivered** box whe
 - [ ] [Ignoble Hierarch](https://manapool.com/card/plst/mh2-166/ignoble-hierarch) — $1.25 · NM · The List (PLST #mh2-166)
 
 ### [White Cat Games Ohio](https://manapool.com/shop/whitecatgamesohio) — [Package #586788-2084950](https://manapool.com/settings/orders/suborder/e8e06778-5f2c-414a-925f-e8a4a2845828) · 6 Henzie cards (13 total in shipment)
-- [ ] Delivered
-- [ ] [Victimize](https://manapool.com/card/mh3/278/victimize) — $0.50 · NM · Modern Horizons 3 (MH3 #278)
-- [ ] [Author of Shadows](https://manapool.com/card/c21/35/author-of-shadows) — $0.40 · NM · Commander 2021 (C21 #35)
-- [ ] [Kardur, Doomscourge](https://manapool.com/card/khm/216/kardur-doomscourge) — $0.80 · NM · Kaldheim (KHM #216)
-- [ ] [Sowing Mycospawn](https://manapool.com/card/mh3/170/sowing-mycospawn) — $1.70 · NM · Modern Horizons 3 (MH3 #170)
-- [ ] [Phyrexian Tower](https://manapool.com/card/mh3/303/phyrexian-tower) — $27.00 · NM · Modern Horizons 3 (MH3 #303)
-- [ ] [Polluted Delta](https://manapool.com/card/mh3/224/polluted-delta) — $19.00 · NM · Modern Horizons 3 (MH3 #224)
+- [x] Delivered
+- [x] [Victimize](https://manapool.com/card/mh3/278/victimize) — $0.50 · NM · Modern Horizons 3 (MH3 #278)
+- [x] [Author of Shadows](https://manapool.com/card/c21/35/author-of-shadows) — $0.40 · NM · Commander 2021 (C21 #35)
+- [x] [Kardur, Doomscourge](https://manapool.com/card/khm/216/kardur-doomscourge) — $0.80 · NM · Kaldheim (KHM #216)
+- [x] [Sowing Mycospawn](https://manapool.com/card/mh3/170/sowing-mycospawn) — $1.70 · NM · Modern Horizons 3 (MH3 #170)
+- [x] [Phyrexian Tower](https://manapool.com/card/mh3/303/phyrexian-tower) — $27.00 · NM · Modern Horizons 3 (MH3 #303)
+- [x] [Polluted Delta](https://manapool.com/card/mh3/224/polluted-delta) — $19.00 · NM · Modern Horizons 3 (MH3 #224)
 
 ### [HoloEN](https://manapool.com/shop/holoen) — [Package #586788-2084945](https://manapool.com/settings/orders/suborder/ee3c4533-e438-47d4-8dfb-77b67386d45c) · 5 Henzie cards (8 total in shipment)
 - [ ] Delivered
@@ -162,8 +167,8 @@ Check off each card as it arrives, then tick the package's **Delivered** box whe
 - [ ] [Gwenom, Remorseless](https://manapool.com/card/spm/56/gwenom-remorseless) — $3.50 · NM · Marvel's Spider-Man (SPM #56)
 
 ### [The Acorn Vault](https://manapool.com/shop/theacornvault) — [Package #586788-2084947](https://manapool.com/settings/orders/suborder/f0c488e3-0714-48f3-a7ee-976c456e5406) · 1 Henzie card (3 total in shipment)
-- [ ] Delivered
-- [ ] [Archon of Cruelty](https://manapool.com/card/m3c/197/archon-of-cruelty) — $9.67 · NM · Modern Horizons 3 Commander (M3C #197)
+- [x] Delivered
+- [x] [Archon of Cruelty](https://manapool.com/card/m3c/197/archon-of-cruelty) — $9.67 · NM · Modern Horizons 3 Commander (M3C #197)
 
 ### [Tarkan's Cards](https://manapool.com/shop/tarkanscards) — [Package #586788-2084953](https://manapool.com/settings/orders/suborder/f230be13-a735-4e45-a375-b3413cdf5c96) · 3 Henzie cards (11 total in shipment)
 - [ ] Delivered
@@ -175,10 +180,11 @@ Check off each card as it arrives, then tick the package's **Delivered** box whe
 
 ## 📋 Status & Remaining Cards Needed (Henzie)
 *   **Total Deck Size:** 100 Cards (1 Commander + 99 Main)
+*   **In-Hand / Sourced:** 2 nonbasic cards (*Damage Control Crew*, *Sulfurous Springs*)
 *   **Ordered / In-Flight:** 91 unique cards + 2 alternate Command Towers (Orders #586657 & #586788)
-*   **Remaining to Source (9 Cards):**
+*   **Remaining to Source (7 Basics):**
     *   [ ] 4 Forest (Basic lands — available in physical collection / unassigned basics)
     *   [ ] 2 Swamp (Basic lands — available in physical collection / unassigned basics)
     *   [ ] 1 Mountain (Basic land — available in physical collection / unassigned basics)
-    *   [ ] 1 Damage Control Crew ({3}{G})
-    *   [ ] 1 Sulfurous Springs (Land)
+    *   [x] 1 Damage Control Crew ({3}{G}) (in hand)
+    *   [x] 1 Sulfurous Springs (Land) (in hand)
