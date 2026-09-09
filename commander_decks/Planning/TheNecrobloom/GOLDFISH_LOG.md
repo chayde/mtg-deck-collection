@@ -185,3 +185,68 @@ BRACKET READINESS (Bracket 3 (Upgraded) — Target T7)
 
 
 
+
+## 2026-09-09 — Comprehensive 23-Card Overhaul Validation (20 sims, T10 turns, Bracket 3)
+
+**Command:**
+```
+python scripts/multiplayer_goldfish.py "commander_decks/Planning/TheNecrobloom/moxfield_import.txt" --sims 20 --turns 10 --bracket 3
+```
+
+**Results:**
+```
+====================================================================
+RUNNING 20 × 4-PLAYER SIMULATIONS
+Commander: The Necrobloom (CMC 4)  |  Target: Bracket 3 (Upgraded) (Target T7)
+====================================================================
+
+--------------------------------------------------------------------
+AGGREGATE DEPLOYMENT & MULLIGAN PROFILE
+--------------------------------------------------------------------
+  Commander cast rate: 78/80 (98%)
+  Commander Cast Range: T1 - T10
+  Commander Cast Avg:   T3.9
+  Commander Cast Distribution:
+    T 1: # (1)
+    T 2: ############## (14)
+    T 3: ####################### (23)
+    T 4: ###################### (22)
+    T 5: ### (3)
+    T 6: ##### (5)
+    T 7: ###### (6)
+    T 8: ## (2)
+    T 9: # (1)
+    T10: # (1)
+
+  Opening Hand Quality Breakdown (80 hands evaluated):
+    Gold Keep (Mana + Ramp + Enabler):   44/80 (55%)
+    Silver Keep (Mana + Curve):          36/80 (45%)
+    Desperation Keep (Mulligan to <=5):   0/80 (0%)
+    Average Starting Hand Size:          6.99 cards
+
+--------------------------------------------------------------------
+BRACKET READINESS (Bracket 3 (Upgraded) — Target T7)
+--------------------------------------------------------------------
+  Target Window Readiness Rate (T<=7): 74/80 (92%)
+  Engine Readiness Avg:  T4.4
+  Engine Readiness Distribution:
+    T 2: #### (4)
+    T 3: ###################### (22)
+    T 4: ######################## (24)
+    T 5: ########## (10)
+    T 6: ######## (8)
+    T 7: ###### (6)
+    T 8: ## (2)
+    T 9: # (1)
+    T10: # (1)
+
+  [BRACKET COMPLIANCE CHECK] Status: PASS
+  Deck deploys its engine around Turn 4.4, perfectly positioned to execute and threaten a win on Bracket 3 (Upgraded)'s target (Turn 7+).
+```
+
+**Notes:**
+- **Outstanding Hand Stability:** Zero desperation keeps across 80 hands with an average starting hand size of 6.99 cards. 100% of hands were Gold (55%) or Silver (45%) keeps.
+- **Fast Commander Velocity:** The Necrobloom hits the board on an average of Turn 3.9, with 75% of casts occurring on or before Turn 4.
+- **Flawless Engine Readiness:** 92% of hands established full engine readiness on or before Turn 7 (averaging Turn 4.4).
+- **Synergy Transformation:** Replacing off-plan creature aristocrats and fragile mana dorks with land-centric enablers (*Spelunking*, *Ancient Greenwarden*, *Cultivator Colossus*, *Titania, Protector of Argoth*, *Hedge Shredder*, *Field of the Dead*, and the Surveil lands) eliminates dead draws and makes every turn flow seamlessly.
+- **Bracket 3 Status:** Full PASS (2/3 Game Changers: Crop Rotation + Field of the Dead).

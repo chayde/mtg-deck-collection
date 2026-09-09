@@ -309,6 +309,12 @@ def classify_card(name: str) -> CardData:
         card.is_titania = True
     elif name == 'Marwyn, the Nurturer':
         card.is_marwyn_card = True
+    elif name == 'Everflowing Chalice':
+        card.cmc = 4
+        card.is_mana_perm = True
+        card.perm_amount = 2
+        card.perm_produces = ['C']
+        return card
 
     # --- Land Classification ---
     if 'Land' in type_line:
@@ -320,6 +326,19 @@ def classify_card(name: str) -> CardData:
         if name == 'Exotic Orchard' or re.search(
                 r'could produce.*opponents|opponents.*could produce', oracle, re.I):
             card.land_produces = ['EXOTIC']
+
+        # Special Case: Fetch lands (e.g. Scalding Tarn, Flooded Strand, Prismatic Vista, etc.)
+        if re.search(r'search your library for.*land', oracle, re.I):
+            fetched = []
+            if re.search(r'Plains', oracle, re.I):   fetched.append('W')
+            if re.search(r'Island', oracle, re.I):   fetched.append('U')
+            if re.search(r'Swamp', oracle, re.I):    fetched.append('B')
+            if re.search(r'Mountain', oracle, re.I): fetched.append('R')
+            if re.search(r'Forest', oracle, re.I):   fetched.append('G')
+            if re.search(r'basic land', oracle, re.I):
+                fetched.extend(['W', 'U', 'B', 'R', 'G'])
+            if fetched:
+                card.land_produces = list(dict.fromkeys(fetched))
 
         card.land_tapped = bool(re.search(
             r'enters the battlefield tapped|enters tapped', oracle, re.I))
@@ -1037,6 +1056,29 @@ def preload_deck(names: List[str]) -> List[CardData]:
         classified[name] = classify_card(name)
         if (i + 1) % 10 == 0 and uncached:
             print(f"  {i+1}/{len(unique)} done...")
+
+    # Identify fetch lands and true typed duals (e.g. Island Mountain)
+    fetch_lands = []
+    typed_duals = []
+    for c in classified.values():
+        data = get_scryfall(c.name) or {}
+        tl = data.get('type_line', '')
+        oracle = data.get('oracle_text', '')
+        basic_types = sum(1 for bt in ['Plains', 'Island', 'Swamp', 'Mountain', 'Forest'] if bt in tl)
+        if c.is_land and basic_types >= 2:
+            typed_duals.append(c)
+        if c.is_land and re.search(r'search your library for.*land', oracle, re.I):
+            fetch_lands.append(c)
+
+    # Only fetch lands expand their produceable colors based on typed duals in the deck
+    for f in fetch_lands:
+        extra = []
+        for dual in typed_duals:
+            if any(color in f.land_produces for color in dual.land_produces):
+                extra.extend(dual.land_produces)
+        if extra:
+            f.land_produces = list(dict.fromkeys(f.land_produces + extra))
+
     return [classified[n] for n in names]
 
 

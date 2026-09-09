@@ -2,6 +2,19 @@
 
 ## 🗓️ September 2026: Henzie Blitz Refinement, Playtesting & The Necrobloom Inception
 
+### 2026-09-09: The Necrobloom — Comprehensive 23-Card Overhaul: Pure Landfall & Field of the Dead Re-Alignment
+*   **Archetype Correction:** Based on full data extraction from EDHREC's Upgraded / Bracket 3 "Lands Matter" consensus deck, eliminated the conflicting "Dredge Trap" and creature aristocrats to rebuild the deck as a dedicated **Landfall & Field of the Dead Engine** in [`commander_decks/Planning/TheNecrobloom/necrobloom_abzan.md`](commander_decks/Planning/TheNecrobloom/necrobloom_abzan.md).
+*   **The 23-Card Overhaul:**
+    *   **In (23):** *Spelunking*, *Ancient Greenwarden*, *Cultivator Colossus*, *Titania, Protector of Argoth*, *Zuran Orb*, *Hedge Shredder*, *Insidious Roots*, *Heroic Intervention*, *Walk-In Closet // Forgotten Cellar*, *World Shaper*, *Sakura-Tribe Elder*, *Field of the Dead*, *Thespian's Stage*, *Dark Depths*, *Takenuma, Abandoned Mire*, *Urborg, Tomb of Yawgmoth*, *Yavimaya, Cradle of Growth*, *Underground Mortuary*, *Shadowy Backstreet*, *Lush Portico*, *Forest* (x2), *Plains* (x1).
+    *   **Out (23):** *Morbid Opportunist*, *Painful Truths*, *Shamanic Revelation*, *Damnation*, *Delighted Halfling*, *Birds of Paradise*, *Victimize*, *Pernicious Deed*, *Crucible of Worlds*, *Timeless Witness*, *Arcane Signet*, *Bountiful Promenade*, *Vault of Champions*, *Undergrowth Stadium*, *High Market*, *Reflecting Pool*, *Prismatic Vista*, *Llanowar Wastes*, *Caves of Koilos*, *Brushland*, *Horizon Canopy*, *Silent Clearing*, *Nurturing Peatland*.
+*   **Synergy Enhancements:**
+    *   **Untapped Land Acceleration:** *Spelunking* ensures that *Splendid Reclamation*, *Lumra*, and *Scapeshift* bring all recovered lands in untapped, enabling immediate same-turn wins.
+    *   **Double Landfall & Tokens:** *Ancient Greenwarden* doubles all triggers while *Field of the Dead* stacks with The Necrobloom to generate two 2/2 Zombies per land drop.
+    *   **Marit Lage Alternate Win Con:** Assembles *Thespian's Stage* + *Dark Depths* via 4 land tutors (*Crop Rotation*, *Elvish Reclaimer*, *Knight of the Reliquary*, *Urza's Cave*) for a 20/20 flying indestructible threat.
+    *   **Fetchable Surveil Mana Base:** Integrated the 3 Surveil lands (*Underground Mortuary*, *Shadowy Backstreet*, *Lush Portico*) and basic Forests/Plains for guaranteed land ramp targets.
+*   **Bracket 3 Status:** Verified 2/3 Game Changers (*Crop Rotation* + *Field of the Dead*). Full Bracket 3 compliance.
+*   **Validation:** 20-simulation goldfish check — **98% commander cast rate (78/80, T3.9 avg)**, **92% target readiness (T4.4 avg)**, **55% Gold Keeps, 45% Silver Keeps (0% Desperation Keeps, 6.99 avg hand size)**. Logged to `commander_decks/Planning/TheNecrobloom/GOLDFISH_LOG.md`.
+
 ### 2026-09-07: Budget Commander Lands Reference Guide Created (`BudgetCommanderLands.md`)
 *   **Documentation Milestone:** Created [`BudgetCommanderLands.md`](BudgetCommanderLands.md) based on Tyler "Savesya" Bucks' EDHREC feature (*"The Big List of Budget Lands for Commander | 2026 Updated"*) and official companion database.
 *   **Catalog Scope:** Compiles over 150+ budget-friendly lands (primarily under $2, with a $2–$10 upgrade ladder), categorized by:

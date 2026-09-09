@@ -102,23 +102,30 @@ Each result shows:
 
 ### Game Changers Lookup (`is:gamechanger`)
 
-Scryfall tracks cards officially designated as "Game Changers" under the Commander Bracket System via the `is:gamechanger` tag. Always verify Game Changer status dynamically via `scripts/scryfall_lookup.py` rather than relying on memory or assumption.
+Scryfall tracks cards officially designated as "Game Changers" under the Commander Bracket System natively on every card object (`game_changer: true/false`) and via the `is:gamechanger` search tag. Always verify Game Changer status dynamically via `scripts/scryfall_lookup.py` rather than relying on memory or assumption.
+
+**Verify a single card (Fastest & Recommended):**
+`scripts/scryfall_lookup.py` automatically checks the native `game_changer` field and displays `[GAME CHANGER]` in the card header if applicable:
+```bash
+python scripts/scryfall_lookup.py "Crop Rotation"
+# Output: --- Crop Rotation {G} [Instant]  $3.90  [Dominaria Remastered #154]  [GAME CHANGER]
+```
+
+**Discover Game Changers within a commander's color identity (e.g. Abzan / WBG):**
+```bash
+python scripts/scryfall_lookup.py --search "is:gamechanger id<=wbg"
+```
 
 **Search all current Game Changers:**
 ```bash
 python scripts/scryfall_lookup.py --search "is:gamechanger"
 ```
 
-**Filter Game Changers within a commander's color identity (e.g. Jund):**
-```bash
-python scripts/scryfall_lookup.py --search "is:gamechanger id<=BRG"
-```
-
-**Verify if a specific card is a Game Changer:**
-```bash
-python scripts/scryfall_lookup.py --search "!\"Card Name\" is:gamechanger"
-```
-*(If the card is NOT a Game Changer, the query returns `Found 0 matching cards`.)*
+**Scryfall Search Syntax Rules (per https://scryfall.com/docs/syntax):**
+- **Exact card name:** Use `!"Card Name"` (e.g. `!"Crop Rotation"`). Double quotes are only needed when the name has spaces; do **not** use backslashes (`\`).
+- **Loose card name:** Plain words work without quotes (e.g. `Crop Rotation is:gamechanger`).
+- **Combining terms:** Space implies `AND` (e.g. `is:gamechanger id<=wbg`).
+- **Shell Quote Safety:** On Windows / PowerShell, avoid escaped double quotes (`\"`). Instead, wrap the entire query in single quotes or pass loose words without inner quotes (e.g. `--search '!"Crop Rotation" is:gamechanger'` or `--search "Crop Rotation is:gamechanger"`).
 
 **Web Search URL:**
 `https://scryfall.com/search?as=grid&order=color&q=is:gamechanger`

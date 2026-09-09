@@ -107,7 +107,7 @@ def fetch(url, label="request"):
     for attempt in range(MAX_RETRIES):
         try:
             req = urllib.request.Request(url, headers=HEADERS)
-            with urllib.request.urlopen(req) as r:
+            with urllib.request.urlopen(req, timeout=10) as r:
                 return json.loads(r.read())
         except urllib.error.HTTPError as e:
             if e.code == 429 or e.code >= 500:
@@ -141,8 +141,9 @@ def format_card(c, verbose=True):
     prices = c.get("prices", {})
     usd = f"  ${prices['usd']}" if prices.get("usd") else ""
     set_name = f"  [{c.get('set_name', '')} #{c.get('collector_number', '')}]"
+    gc = "  [GAME CHANGER]" if c.get("game_changer") else ""
 
-    lines = [f"--- {name} {cost} [{type_line}]{pt}{usd}{set_name}"]
+    lines = [f"--- {name} {cost} [{type_line}]{pt}{usd}{set_name}{gc}"]
     if verbose and oracle:
         lines.append(f"    {oracle}")
     scryfall_uri = c.get("scryfall_uri")
@@ -182,8 +183,15 @@ def lookup_named(name, no_cache=False):
 
     return result
 
-def lookup_search(query, unique="cards", order="name", no_cache=False):
+def lookup_search(query, unique="cards", order="name", max_pages=5, no_cache=False):
     """Search for cards using Scryfall's powerful search syntax."""
+    # Fast guard for empty or malformed wildcard searches
+    import re
+    cleaned_check = query.strip()
+    if not cleaned_check or re.match(r'^!*["\s\\]*$', cleaned_check):
+        print("  [search] Query is empty or invalid wildcard.", file=sys.stderr)
+        return []
+
     _init_caches()
     # Create a unique key for this search so we can cache it
     cache_key = f"{query}|unique={unique}|order={order}"
@@ -197,13 +205,23 @@ def lookup_search(query, unique="cards", order="name", no_cache=False):
     safe = urllib.parse.quote(query)
     url = f"https://api.scryfall.com/cards/search?q={safe}&unique={unique}&order={order}"
     
+    page = 0
     # Scryfall returns 175 cards at a time. We loop through 'pages' to get them all.
     while url:
-        time.sleep(SEARCH_DELAY)
-        data = fetch(url, label=f"search page")
+        page += 1
+        if max_pages is not None and page > max_pages:
+            print(f"  [search] Reached max page limit ({max_pages} pages). Stopping early. (Use --all to fetch all pages)", file=sys.stderr)
+            break
+        if page > 1:
+            time.sleep(SEARCH_DELAY)
+        data = fetch(url, label=f"search page {page}")
         if not data:
             break
-        results.extend(data.get("data", []))
+        total = data.get("total_cards", 0)
+        batch = data.get("data", [])
+        results.extend(batch)
+        if total > 175:
+            print(f"  [search] Page {page}: retrieved {len(results)}/{total} cards...", file=sys.stderr)
         # Check if there is a 'next_page' URL in the result
         url = data.get("next_page") if data.get("has_more") else None
 
@@ -216,6 +234,21 @@ def lookup_search(query, unique="cards", order="name", no_cache=False):
 # CLI Management
 # ---------------------------------------------------------------------------
 
+def _clean_search_query(raw_query):
+    """
+    Cleans shell quote-escaping artifacts.
+    On Windows PowerShell, commands like:
+      --search "!\"Card Name\" is:gamechanger"
+    often get parsed as !\\ Card Name\\ is:gamechanger.
+    This restores proper exact-name quote syntax for Scryfall.
+    """
+    import re
+    q = raw_query.strip()
+    q = q.replace('\\"', '"')
+    q = re.sub(r'!\\+\s*', '!"', q)
+    q = re.sub(r'\\+(\s|$)', r'"\1', q)
+    return q
+
 def main():
     """The command-line interface logic."""
     args = sys.argv[1:]
@@ -224,14 +257,17 @@ def main():
         sys.exit(0)
 
     no_cache = "--no-cache" in args
-    args = [a for a in args if a != "--no-cache"]
+    fetch_all = "--all" in args
+    args = [a for a in args if a not in ("--no-cache", "--all")]
 
     try:
         # SEARCH MODE
         if "--search" in args:
             idx = args.index("--search")
-            query = args[idx + 1]
-            results = lookup_search(query, no_cache=no_cache)
+            search_args = args[idx + 1:]
+            raw_query = " ".join(search_args)
+            query = _clean_search_query(raw_query)
+            results = lookup_search(query, max_pages=None if fetch_all else 5, no_cache=no_cache)
             print(f"=== Search Results ({len(results)}) ===")
             for c in results:
                 print(format_card(c))
