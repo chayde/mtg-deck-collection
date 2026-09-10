@@ -47,6 +47,7 @@ class CardData:
     land_produces: List[str] = field(default_factory=list)  # ['R','G'] or ['EXOTIC']
     land_tapped: bool = False
     land_amount: int = 1                            # Usually 1, but 2 for "Bounce Lands"
+    is_pure_filter: bool = False                    # True for Odyssey-style filter lands requiring {1} to activate
 
     # Mana permanent logic (Mana Dorks, Mana Rocks, Enchantments like Wild Growth)
     is_mana_perm: bool = False
@@ -54,6 +55,7 @@ class CardData:
     perm_amount: int = 1
     perm_needs_untap: bool = False                  # True for creatures (summoning sickness)
     perm_reducer: bool = False                      # Does it make spells cheaper (e.g. Goblin Anarchomancer)
+    perm_is_filter: bool = False                    # True for Signet-style filter rocks requiring {1} to activate
 
     # Creature info (Used for scaling cards like Priest of Titania)
     is_creature: bool = False                       
@@ -343,8 +345,13 @@ def classify_card(name: str) -> CardData:
         card.land_tapped = bool(re.search(
             r'enters the battlefield tapped|enters tapped', oracle, re.I))
 
-        # Check for lands that produce 2 mana (Ravnica bounce lands)
-        if re.search(r'[Aa]dd \{[RGWUBC]\}\{[RGWUBC]\}', oracle):
+        # Check for filter lands vs true 2-mana producing lands (e.g. Ravnica bounce lands)
+        is_filter = bool(re.search(r'\{[0-9CWUBRG/]+\},\s*\{T\}:', oracle))
+        has_tap_add = bool(re.search(r'(?:^|\n)\{T\}:\s*[Aa]dd', oracle))
+        if is_filter and not has_tap_add:
+            card.is_pure_filter = True
+            card.land_amount = 1
+        elif not is_filter and not re.search(r'sacrifice', oracle, re.I) and re.search(r'(?:^|\n)\{T\}:\s*[Aa]dd\s*\{[RGWUBC]\}\{[RGWUBC]\}', oracle):
             card.land_amount = 2
 
         return card
@@ -361,6 +368,10 @@ def classify_card(name: str) -> CardData:
             card.is_mana_perm    = True
             card.perm_produces   = colors
             card.perm_amount     = amount
+            # Check for filter rocks (e.g. Ravnica Signets: {1}, {T}: Add {R}{W})
+            if re.search(r'\{[0-9CWUBRG/]+\},\s*\{T\}:\s*[Aa]dd', oracle):
+                card.perm_is_filter = True
+                card.perm_amount = 1  # Filter rocks net 1 mana, NOT 2!
             # Creatures have summoning sickness
             card.perm_needs_untap = 'Creature' in type_line
             # Check for cost reducers
@@ -464,6 +475,7 @@ class Player:
         self.starting_hand_size = len(hand)
         self.hand_quality = quality
         self.hand = hand
+        self.kept_hand = [c.name for c in hand]
         self.library: List[CardData] = lib
         self.lands: List[CardData] = []
         self.mana_perms: List[tuple] = []   # Format: (CardData, turn_it_becomes_ready)
@@ -523,7 +535,11 @@ def compute_mana(player: Player, turn: int, opponents: List[Player], frac: float
     total = r = g = w = u = b = 0
 
     # 1. Process Lands
+    has_other_mana = (len(player.lands) > 1 or
+                      any(turn >= ready for (cd, ready) in player.mana_perms))
     for land in player.lands:
+        if land.is_pure_filter and not has_other_mana:
+            continue
         amt      = land.land_amount
         produces = land.land_produces
         if 'EXOTIC' in produces:
@@ -605,6 +621,65 @@ def burst_bonus(player: Player, turn: int, opponents: List[Player], frac: float,
     return bonus_t, bonus_r, bonus_g, bonus_w, bonus_u, bonus_b
 
 
+def get_card_pips_list(cd: CardData) -> List[str]:
+    pips = []
+    for c in 'RGWUBC':
+        pips.extend([c] * cd.pips.get(c, 0))
+    return pips
+
+
+def get_card_mana_units(cd: CardData, amount: int, produces: List[str]) -> List[set]:
+    """Converts a permanent's production into distinct mana units (each a set of valid colors)."""
+    if not produces:
+        return [{'C'}] * max(1, amount)
+    if amount == 1:
+        return [set(produces)]
+    if len(produces) == amount:
+        return [{c} for c in produces]
+    return [set(produces) for _ in range(amount)]
+
+
+def can_pay_and_consume(available_units: List[set], pips: List[str], generic_cost: int) -> tuple[bool, List[set]]:
+    """
+    Evaluates whether available mana units can satisfy the exact colored pips
+    and generic cost of a spell, and consumes the mana units if successful.
+    """
+    total_cost = len(pips) + generic_cost
+    if len(available_units) < total_cost:
+        return False, available_units
+
+    # Match colored pips first using backtracking constraint satisfaction
+    def match_pips(pip_idx: int, used_indices: set) -> tuple[bool, set]:
+        if pip_idx == len(pips):
+            return True, used_indices
+        req = pips[pip_idx]
+        for i, unit in enumerate(available_units):
+            if i not in used_indices:
+                if req in unit or 'ANY' in unit:
+                    ok, res_used = match_pips(pip_idx + 1, used_indices | {i})
+                    if ok:
+                        return True, res_used
+        return False, set()
+
+    ok, used = match_pips(0, set())
+    if not ok:
+        return False, available_units
+
+    remaining_indices = [i for i in range(len(available_units)) if i not in used]
+    if len(remaining_indices) < generic_cost:
+        return False, available_units
+
+    # Sort generic mana consumption so least flexible mana is spent first (e.g. {C} before multi-color)
+    def flexibility(idx):
+        u = available_units[idx]
+        if u == {'C'}: return 0
+        return len(u)
+
+    remaining_indices.sort(key=flexibility)
+    consumed = used | set(remaining_indices[:generic_cost])
+    return True, [u for i, u in enumerate(available_units) if i not in consumed]
+
+
 def _can_cast(cd: CardData, total: int, r: int, g: int, w: int, u: int, b: int,
               reducer: bool) -> bool:
     """
@@ -634,9 +709,9 @@ def _can_cast(cd: CardData, total: int, r: int, g: int, w: int, u: int, b: int,
 def simulate_turn(player: Player, turn: int, opponents: List[Player],
                   frac: float) -> str:
     """
-    Executes a single turn for a player.
-    It follows a prioritized 'Script':
-    1. Land -> 2. Mana Dorks -> 3. Ramp Spells -> 4. Special Tech -> 5. Commander -> 6. Spells
+    Executes a single turn for a player using strict mana consumption tracking:
+    1. Draw -> 2. Play Land -> 3. Cast Mana Permanents -> 4. Cast Ramp Spells ->
+    5. Hellkite Tech -> 6. Cast Commander -> 7. Spend Remaining Mana
     """
     log = []
 
@@ -645,7 +720,7 @@ def simulate_turn(player: Player, turn: int, opponents: List[Player],
     # --- 1. Play a Land ---
     # Prioritize: Untapped Duals > Untapped Singles > Tapped Lands
     def land_score(cd: CardData) -> int:
-        dual    = sum(1 for c in cd.land_produces if c in 'RG') >= 2
+        dual    = sum(1 for c in cd.land_produces if c in 'RGWUB') >= 2
         tapped  = cd.land_tapped
         if dual and not tapped: return 3
         if not tapped:          return 2
@@ -655,11 +730,16 @@ def simulate_turn(player: Player, turn: int, opponents: List[Player],
     mdfc_candidates = [(i, c) for i, c in enumerate(player.hand)
                        if c.is_mdfc_land and not c.is_land]
     
+    just_played_land = None
+    just_played_tapped = False
+
     if land_candidates:
         land_candidates.sort(key=lambda x: land_score(x[1]), reverse=True)
         idx, chosen = land_candidates[0]
         player.hand.pop(idx)
         player.lands.append(chosen)
+        just_played_land = chosen
+        just_played_tapped = chosen.land_tapped
         note = ' (tapped)' if chosen.land_tapped else ''
         log.append(f"Land: {chosen.name}{note}")
     elif mdfc_candidates: # Play MDFC as land if no real lands available
@@ -669,22 +749,79 @@ def simulate_turn(player: Player, turn: int, opponents: List[Player],
                          land_tapped=chosen.mdfc_tapped)
         player.hand.pop(idx)
         player.lands.append(proxy)
+        just_played_land = proxy
+        just_played_tapped = proxy.land_tapped
         log.append(f"Land: {chosen.name} (back face)")
 
-    # --- 2. Cast Mana Permanents ---
-    # We loop because playing one dork might enable playing another (if we have untapped mana)
+    # --- Build Available Mana Units for this Turn ---
+    available_units: List[set] = []
+    pure_filter_lands = []
+    for land in player.lands:
+        if land is just_played_land and just_played_tapped:
+            continue
+        if land.is_pure_filter:
+            pure_filter_lands.append(land)
+            continue
+        prods = land.land_produces
+        if 'EXOTIC' in prods:
+            ec = exotic_colors(opponents)
+            prods = ec if ec else ['C']
+        available_units.extend(get_card_mana_units(land, land.land_amount, prods))
+
+    for (cd, ready) in player.mana_perms:
+        if turn < ready:
+            continue
+        if cd.perm_is_filter:
+            continue  # Handled below via filtering
+        if cd.is_titania:
+            amt = player.creature_count
+            prods = ['G']
+        elif cd.is_marwyn_card:
+            amt = 1 + player.creatures_after_marwyn
+            prods = ['G']
+        else:
+            amt = cd.perm_amount
+            prods = cd.perm_produces
+        available_units.extend(get_card_mana_units(cd, amt, prods))
+
+    # Activate pure filter lands (e.g. Odyssey filters) if other mana sources are available
+    for fl in pure_filter_lands:
+        if available_units:
+            available_units.pop(0)
+            available_units.extend([{c} for c in fl.land_produces])
+
+    # Activate filter mana perms (e.g. Signets) if other mana sources are available
+    for (cd, ready) in player.mana_perms:
+        if turn >= ready and cd.perm_is_filter:
+            if available_units:
+                available_units.pop(0)
+                available_units.extend([{c} for c in cd.perm_produces])
+
+    # --- 2. Cast Mana Permanents (Rocks / Dorks) ---
     changed = True
     while changed:
         changed = False
-        t, r, g, w, u, b = compute_mana(player, turn, opponents, frac)
         for i, cd in enumerate(player.hand):
             if not cd.is_mana_perm:
                 continue
-            if _can_cast(cd, t, r, g, w, u, b, player.reducer_active):
+            pips = get_card_pips_list(cd)
+            generic = max(0, cd.cmc - (1 if player.reducer_active else 0) - len(pips))
+            can_cast, remaining = can_pay_and_consume(available_units, pips, generic)
+            if can_cast:
                 player.hand.pop(i)
-                # Mark when it becomes usable (next turn for creatures)
+                available_units = remaining
                 ready = turn + (1 if cd.perm_needs_untap else 0)
                 player.mana_perms.append((cd, ready))
+
+                # If the permanent enters untapped (e.g. Sol Ring, Signets), check if it can produce mana immediately
+                if ready <= turn:
+                    if cd.perm_is_filter:
+                        # Signets require 1 mana to activate!
+                        if available_units:
+                            available_units.pop(0)
+                            available_units.extend([{c} for c in cd.perm_produces])
+                    else:
+                        available_units.extend(get_card_mana_units(cd, cd.perm_amount, cd.perm_produces))
 
                 if cd.perm_reducer:
                     player.reducer_active = True
@@ -702,15 +839,18 @@ def simulate_turn(player: Player, turn: int, opponents: List[Player],
     changed = True
     while changed:
         changed = False
-        t, r, g, w, u, b = compute_mana(player, turn, opponents, frac)
         for i, cd in enumerate(player.hand):
             if not cd.is_ramp:
                 continue
-            if _can_cast(cd, t, r, g, w, u, b, player.reducer_active):
+            pips = get_card_pips_list(cd)
+            generic = max(0, cd.cmc - (1 if player.reducer_active else 0) - len(pips))
+            can_cast, remaining = can_pay_and_consume(available_units, pips, generic)
+            if can_cast:
                 player.hand.pop(i)
-                # Add the "ghost" lands put into play by the ramp spell
+                available_units = remaining
                 for _ in range(cd.ramp_untapped):
                     player.lands.append(CardData(name='Forest(ramp)', is_land=True, land_produces=['G']))
+                    available_units.append({'G'})
                 for _ in range(cd.ramp_tapped):
                     player.lands.append(CardData(name='Forest(ramp,tapped)', is_land=True,
                                                  land_produces=['G'], land_tapped=True))
@@ -719,17 +859,19 @@ def simulate_turn(player: Player, turn: int, opponents: List[Player],
                 changed = True
                 break
 
-    # Refresh mana pool after all ramp actions
-    t, r, g, w, u, b = compute_mana(player, turn, opponents, frac)
-
     # --- 4. Hellkite Courser Tech ---
     cmd_name = player.commander.name
     if player.commander_cast_turn is None and player.hellkite_cast_turn is None:
         hk = next((cd for cd in player.hand if cd.name == HELLKITE), None)
-        if hk and _can_cast(hk, t, r, g, w, u, b, player.reducer_active):
-            player.hand.remove(hk)
-            player.hellkite_cast_turn = turn
-            log.append(f"** CAST Hellkite Courser T{turn} -> {cmd_name} enters T{turn+1} **")
+        if hk:
+            pips = get_card_pips_list(hk)
+            generic = max(0, hk.cmc - (1 if player.reducer_active else 0) - len(pips))
+            can_cast, remaining = can_pay_and_consume(available_units, pips, generic)
+            if can_cast:
+                player.hand.remove(hk)
+                available_units = remaining
+                player.hellkite_cast_turn = turn
+                log.append(f"** CAST Hellkite Courser T{turn} -> {cmd_name} enters T{turn+1} **")
 
     if player.hellkite_cast_turn == turn - 1 and player.commander_cast_turn is None:
         player.commander_cast_turn = turn
@@ -739,37 +881,51 @@ def simulate_turn(player: Player, turn: int, opponents: List[Player],
     if player.commander_cast_turn is None:
         cmd = player.commander
         taxed_cmc = cmd.cmc + player.commander_tax
-        taxed = CardData(name=cmd.name, cmc=taxed_cmc, pips=cmd.pips)
+        pips = get_card_pips_list(cmd)
+        generic = max(0, taxed_cmc - (1 if player.reducer_active else 0) - len(pips))
 
-        # Ritual check
-        bt, br, bg, bw, bu, bb = burst_bonus(player, turn, opponents, frac, t, r, g, w, u, b)
+        # Check rituals/burst mana if needed
+        for i, cd in enumerate(player.hand):
+            if not cd.is_burst:
+                continue
+            r_pips = get_card_pips_list(cd)
+            r_gen = max(0, cd.cmc - (1 if player.reducer_active else 0) - len(r_pips))
+            can_r, r_rem = can_pay_and_consume(available_units, r_pips, r_gen)
+            if can_r:
+                player.hand.pop(i)
+                available_units = r_rem
+                if cd.burst_opp_tapped:
+                    produced = mana_geyser_val(opponents, frac)
+                    available_units.extend([{'R'}] * produced)
+                    log.append(f"Cast: {cd.name} (+{produced} R burst)")
+                else:
+                    available_units.extend([{c} for c in cd.burst_produces])
+                    log.append(f"Cast: {cd.name} (+{cd.burst_amount} burst)")
+                break
 
-        if _can_cast(taxed, t + bt, r + br, g + bg, w + bw, u + bu, b + bb,
-                     player.reducer_active):
+        can_cast, remaining = can_pay_and_consume(available_units, pips, generic)
+        if can_cast:
+            available_units = remaining
             player.commander_cast_turn = turn
             tax_note = f" (tax +{player.commander_tax})" if player.commander_tax else ""
-            burst_note = f" +{bt}burst" if bt > 0 else ""
-            log.append(f"** CAST {cmd_name} T{turn}{tax_note} "
-                       f"[{t}{burst_note}mana | {r}R {g}G {w}W {u}U {b}B] **")
+            log.append(f"** CAST {cmd_name} T{turn}{tax_note} **")
             player.commander_tax += 2
 
     # --- 6. Spend remaining mana on generic spells ---
     changed = True
     while changed:
         changed = False
-        t, r, g, w, u, b = compute_mana(player, turn, opponents, frac)
         for i, cd in enumerate(player.hand):
-            # Skip cards we already tried to play or can't play
             if cd.is_land or cd.is_mana_perm or cd.is_ramp or cd.is_burst:
                 continue
             if cd.name == HELLKITE or cd.cmc == 0:
                 continue
-
-            if _can_cast(cd, t, r, g, w, u, b, player.reducer_active):
+            pips = get_card_pips_list(cd)
+            generic = max(0, cd.cmc - (1 if player.reducer_active else 0) - len(pips))
+            can_cast, remaining = can_pay_and_consume(available_units, pips, generic)
+            if can_cast:
                 player.hand.pop(i)
-                # Record the mana as 'spent' so we don't double-dip
-                player.mana_perms.append((CardData(name=f'_spent_{cd.cmc}', cmc=cd.cmc,
-                                                   is_mana_perm=True, perm_amount=0), turn))
+                available_units = remaining
                 if cd.is_enabler:
                     player.enablers_cast += 1
                 if cd.is_creature:
@@ -851,6 +1007,8 @@ def run_sims(deck_data: List[CardData], commander: CardData,
     all_readiness_turns = []
     last_players = []
     sim_records = []
+    overall_fastest_p = None
+    overall_fastest_sim = None
 
     target_turn = BRACKET_TARGET_TURNS.get(bracket, 7)
     bracket_label = BRACKET_NAMES.get(bracket, f"Bracket {bracket}")
@@ -877,12 +1035,45 @@ def run_sims(deck_data: List[CardData], commander: CardData,
 
         avg_cr = sum(sim_creatures) / len(sim_creatures)
         earliest = min(sim_turns) if sim_turns else None
-        sim_records.append({'sim': sim, 'cast': len(sim_turns), 'earliest': earliest,
-                            'turns': sim_turns, 'avg_creatures': avg_cr})
+        earliest_p = None
+        if earliest is not None:
+            for p in players:
+                if p.commander_cast_turn == earliest:
+                    earliest_p = p
+                    break
+
+        if earliest_p is not None:
+            if overall_fastest_p is None or earliest_p.commander_cast_turn < overall_fastest_p.commander_cast_turn:
+                overall_fastest_p = earliest_p
+                overall_fastest_sim = sim
+
         earliest_s = f"T{earliest}" if earliest else "-"
-        print(f"  Sim {sim}: Commander cast {len(sim_turns)}/4  |  "
-              f"Earliest: {earliest_s:4s}  |  Turns: {sim_turns or ['none']}  |  "
-              f"Avg creatures: {avg_cr:.1f}")
+        sim_records.append({
+            'sim': sim,
+            'cast': len(sim_turns),
+            'earliest': earliest,
+            'turns': sim_turns,
+            'avg_creatures': avg_cr,
+            'earliest_seat': earliest_p.pid if earliest_p else None,
+            'earliest_hand': earliest_p.kept_hand if earliest_p else [],
+            'earliest_quality': earliest_p.hand_quality if earliest_p else None,
+            'earliest_size': earliest_p.starting_hand_size if earliest_p else None,
+            'earliest_line': [earliest_p.turn_log[t - 1].strip() for t in range(1, earliest_p.commander_cast_turn + 1) if t - 1 < len(earliest_p.turn_log)] if (earliest_p and earliest_p.commander_cast_turn) else []
+        })
+
+        if earliest_p:
+            line_parts = [earliest_p.turn_log[t - 1].strip() for t in range(1, earliest_p.commander_cast_turn + 1) if t - 1 < len(earliest_p.turn_log)]
+            line_str = " -> ".join(line_parts)
+            hand_str = ", ".join(earliest_p.kept_hand)
+            print(f"  Sim {sim:2d}: Commander cast {len(sim_turns)}/4  |  "
+                  f"Earliest: {earliest_s:4s} (Seat {earliest_p.pid}, {earliest_p.hand_quality} Keep)  |  "
+                  f"Turns: {sim_turns or ['none']}  |  Avg creatures: {avg_cr:.1f}")
+            print(f"         Hand: [{hand_str}]")
+            print(f"         Line: {line_str}")
+        else:
+            print(f"  Sim {sim:2d}: Commander cast 0/4  |  "
+                  f"Earliest: -     |  Turns: ['none']  |  "
+                  f"Avg creatures: {avg_cr:.1f}")
 
     # --- Print Aggregate Stats ---
     total_slots = num_sims * 4
@@ -895,6 +1086,15 @@ def run_sims(deck_data: List[CardData], commander: CardData,
     silver_keeps = sum(1 for q in all_hand_qualities if q == "Silver")
     desp_keeps = sum(1 for q in all_hand_qualities if q == "Desperation")
     avg_hand_size = (sum(all_hand_sizes) / len(all_hand_sizes)) if all_hand_sizes else 7.0
+
+    if overall_fastest_p:
+        print(f"\n{'-'*68}\nFASTEST COMMANDER DEPLOYMENT SHOWCASE (Sim {overall_fastest_sim}, Seat {overall_fastest_p.pid})\n{'-'*68}")
+        print(f"  Cast Turn:     Turn {overall_fastest_p.commander_cast_turn} ({overall_fastest_p.hand_quality} Keep, {overall_fastest_p.starting_hand_size} cards)")
+        print(f"  Opening Hand:  {', '.join(overall_fastest_p.kept_hand)}")
+        print("  Deployment Sequence:")
+        for t in range(1, overall_fastest_p.commander_cast_turn + 1):
+            if t - 1 < len(overall_fastest_p.turn_log):
+                print(f"    {overall_fastest_p.turn_log[t - 1].strip()}")
 
     print(f"\n{'-'*68}\nAGGREGATE DEPLOYMENT & MULLIGAN PROFILE\n{'-'*68}")
     print(f"  Commander cast rate: {len(all_turns)}/{total_slots} ({len(all_turns)/total_slots*100:.0f}%)")
@@ -997,6 +1197,15 @@ def run_sims(deck_data: List[CardData], commander: CardData,
             'compliance_msg': compliance_msg,
         },
         'sims': sim_records,
+        'fastest_deployment': {
+            'sim': overall_fastest_sim,
+            'seat': overall_fastest_p.pid,
+            'turn': overall_fastest_p.commander_cast_turn,
+            'hand_quality': overall_fastest_p.hand_quality,
+            'hand_size': overall_fastest_p.starting_hand_size,
+            'kept_hand': overall_fastest_p.kept_hand,
+            'sequence': [overall_fastest_p.turn_log[t - 1].strip() for t in range(1, overall_fastest_p.commander_cast_turn + 1) if t - 1 < len(overall_fastest_p.turn_log)]
+        } if overall_fastest_p else None,
     }
 
 
@@ -1168,10 +1377,38 @@ def write_html_report(path: str, results: dict, meta: dict):
         turns = ', '.join(f'T{x}' for x in s['turns']) if s['turns'] else '—'
         earliest = f"T{s['earliest']}" if s['earliest'] else '—'
         miss = ' class="miss"' if s['cast'] < 4 else ''
+        details = ''
+        if s.get('earliest_seat'):
+            hand_abbr = ', '.join(s.get('earliest_hand', []))
+            details = f'<br><span class="muted" style="font-size:11px;">Seat {s["earliest_seat"]} ({s.get("earliest_quality")}): {esc(hand_abbr)}</span>'
         sim_rows += (
             f'<tr{miss}><td>{s["sim"]}</td><td>{s["cast"]}/4</td>'
-            f'<td>{earliest}</td><td class="turns">{turns}</td>'
+            f'<td>{earliest}{details}</td><td class="turns">{turns}</td>'
             f'<td>{s["avg_creatures"]:.1f}</td></tr>')
+
+    fastest_html = ''
+    fd = results.get('fastest_deployment')
+    if fd:
+        seq_items = "".join(f"<li style='margin-bottom:4px;'><code>{esc(step)}</code></li>" for step in fd['sequence'])
+        hand_badges = "".join(f"<span style='display:inline-block; background:var(--card-alt); border:1px solid var(--line); border-radius:4px; padding:2px 6px; margin:2px 4px 2px 0; font-size:12px;'>{esc(card)}</span>" for card in fd['kept_hand'])
+        fastest_html = f'''
+  <h2>🚀 Fastest Commander Deployment Showcase</h2>
+  <div class="section-box" style="border-left:4px solid var(--accent);">
+    <div style="font-size:16px; font-weight:700; margin-bottom:8px;">
+      Sim {fd['sim']}, Seat {fd['seat']} &mdash; Cast on Turn {fd['turn']} 
+      <span class="target-tag" style="background:#22c55e33; color:var(--accent); font-size:12px; padding:3px 8px;">{esc(fd['hand_quality'])} Keep ({fd['hand_size']} cards)</span>
+    </div>
+    <div style="margin-bottom:12px;">
+      <div class="k" style="margin-bottom:6px;">Kept Opening Hand:</div>
+      <div>{hand_badges}</div>
+    </div>
+    <div>
+      <div class="k" style="margin-bottom:6px;">Turn-by-Turn Deployment Sequence:</div>
+      <ol style="margin:0; padding-left:20px; font-size:13px;">
+        {seq_items}
+      </ol>
+    </div>
+  </div>'''
 
     # 4. Stat Values
     avg_deploy = f'T{results["average"]:.1f}' if results.get('average') is not None else '—'
@@ -1312,6 +1549,8 @@ def write_html_report(path: str, results: dict, meta: dict):
   </div>
 
   {comp_html}
+
+  {fastest_html}
 
   <h2>🃏 Opening Hand Quality &amp; Mulligan Profile ({results['total_slots']} hands evaluated)</h2>
   <div class="section-box" style="padding:0; overflow:hidden;">
