@@ -56,10 +56,10 @@ Check off each card as it arrives, then tick the package's **Delivered** box whe
 - [ ] [Commercial District](https://manapool.com/card/mkm/259/commercial-district) — $6.99 · NM · Murders at Karlov Manor (MKM #259)
 
 ### [CashCardsUnlimited](https://manapool.com/shop/cashcardsunlimited) — [Package #586788-2084952](https://manapool.com/settings/orders/suborder/5e5687bd-6fb1-478d-bc30-5f4848e3ecd6) · 3 Henzie cards (4 total in shipment)
-- [ ] Delivered
-- [ ] [Emeritus of Woe // Demonic Tutor](https://manapool.com/card/sos/80/emeritus-of-woe-demonic-tutor) — $11.42 · LP · Secrets of Strixhaven (SOS #80)
-- [ ] [Sheoldred // The True Scriptures](https://manapool.com/card/mom/125/sheoldred-the-true-scriptures) — $16.34 · LP · March of the Machine (MOM #125)
-- [ ] [Takenuma, Abandoned Mire](https://manapool.com/card/neo/278/takenuma-abandoned-mire) — $11.23 · NM · Kamigawa: Neon Dynasty (NEO #278)
+- [x] Delivered
+- [x] [Emeritus of Woe // Demonic Tutor](https://manapool.com/card/sos/80/emeritus-of-woe-demonic-tutor) — $11.42 · LP · Secrets of Strixhaven (SOS #80)
+- [x] [Sheoldred // The True Scriptures](https://manapool.com/card/mom/125/sheoldred-the-true-scriptures) — $16.34 · LP · March of the Machine (MOM #125)
+- [x] [Takenuma, Abandoned Mire](https://manapool.com/card/neo/278/takenuma-abandoned-mire) — $11.23 · NM · Kamigawa: Neon Dynasty (NEO #278)
 
 ### [Spellfinder](https://manapool.com/shop/spellfinder) — [Package #586788-2084951](https://manapool.com/settings/orders/suborder/60761a54-a6de-426b-90fa-076738109fc9) · 21 Henzie cards (27 total in shipment)
 - [ ] Delivered
@@ -86,14 +86,14 @@ Check off each card as it arrives, then tick the package's **Delivered** box whe
 - [ ] [Henzie "Toolbox" Torre](https://manapool.com/card/ncc/2/henzie-toolbox-torre) — $0.60 · FoilLP · New Capenna Commander (NCC #2)
 
 ### [koboldtradingpost](https://manapool.com/shop/koboldtradingpost) — [Package #586788-2084940](https://manapool.com/settings/orders/suborder/6ad8dbb6-c21d-4a7b-bd21-aa245c71d419) · 7 Henzie cards (13 total in shipment)
-- [ ] Delivered
-- [ ] [Kessig Wolf Run](https://manapool.com/card/m3c/352/kessig-wolf-run) — $0.37 · NM · Modern Horizons 3 Commander (M3C #352)
-- [ ] [Druid of Purification](https://manapool.com/card/drc/49/druid-of-purification) — $0.31 · NM · Aetherdrift Commander (DRC #49)
-- [ ] [Bane of Progress](https://manapool.com/card/fic/299/bane-of-progress) — $0.25 · NM · Final Fantasy Commander (FIC #299)
-- [ ] [Tear Asunder](https://manapool.com/card/tdc/273/tear-asunder) — $0.25 · NM · Tarkir: Dragonstorm Commander (TDC #273)
-- [ ] [High Market](https://manapool.com/card/soc/380/high-market) — $0.36 · NM · Secrets of Strixhaven Commander (SOC #380)
-- [ ] [Assassin's Trophy](https://manapool.com/card/soc/294/assassins-trophy) — $1.05 · NM · Secrets of Strixhaven Commander (SOC #294)
-- [ ] [Llanowar Elves](https://manapool.com/card/fdn/227/llanowar-elves) — $0.20 · NM · Foundations (FDN #227)
+- [x] Delivered
+- [x] [Kessig Wolf Run](https://manapool.com/card/m3c/352/kessig-wolf-run) — $0.37 · NM · Modern Horizons 3 Commander (M3C #352)
+- [x] [Druid of Purification](https://manapool.com/card/drc/49/druid-of-purification) — $0.31 · NM · Aetherdrift Commander (DRC #49)
+- [x] [Bane of Progress](https://manapool.com/card/fic/299/bane-of-progress) — $0.25 · NM · Final Fantasy Commander (FIC #299)
+- [x] [Tear Asunder](https://manapool.com/card/tdc/273/tear-asunder) — $0.25 · NM · Tarkir: Dragonstorm Commander (TDC #273)
+- [x] [High Market](https://manapool.com/card/soc/380/high-market) — $0.36 · NM · Secrets of Strixhaven Commander (SOC #380)
+- [x] [Assassin's Trophy](https://manapool.com/card/soc/294/assassins-trophy) — $1.05 · NM · Secrets of Strixhaven Commander (SOC #294)
+- [x] [Llanowar Elves](https://manapool.com/card/fdn/227/llanowar-elves) — $0.20 · NM · Foundations (FDN #227)
 
 ### [Guildhall Games](https://manapool.com/shop/guildhallgames) — [Package #586788-2084948](https://manapool.com/settings/orders/suborder/6b0b52f5-d1a7-4b1e-945d-407c82472aba) · 5 Henzie cards (15 total in shipment)
 - [ ] Delivered

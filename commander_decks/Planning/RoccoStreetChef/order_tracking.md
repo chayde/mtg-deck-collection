@@ -58,8 +58,8 @@ Check off each card as it arrives, then tick the package's **Delivered** box whe
 - [ ] [Academy Manufactor](https://manapool.com/card/sld/7188/academy-manufactor) — $8.04 · FoilNMBorderless · Secret Lair Drop (SLD #7188)
 
 ### [CashCardsUnlimited](https://manapool.com/shop/cashcardsunlimited) — [Package #586788-2084952](https://manapool.com/settings/orders/suborder/5e5687bd-6fb1-478d-bc30-5f4848e3ecd6) · 1 Rocco card (4 total in shipment)
-- [ ] Delivered
-- [ ] [All Will Be One](https://manapool.com/card/pza/8/all-will-be-one) — $12.29 · NMBorderless · Teenage Mutant Ninja Turtles Source Material (PZA #8)
+- [x] Delivered
+- [x] [All Will Be One](https://manapool.com/card/pza/8/all-will-be-one) — $12.29 · NMBorderless · Teenage Mutant Ninja Turtles Source Material (PZA #8)
 
 ### [Spellfinder](https://manapool.com/shop/spellfinder) — [Package #586788-2084951](https://manapool.com/settings/orders/suborder/60761a54-a6de-426b-90fa-076738109fc9) · 6 Rocco cards (27 total in shipment)
 - [ ] Delivered
@@ -71,13 +71,13 @@ Check off each card as it arrives, then tick the package's **Delivered** box whe
 - [ ] [Farmer Cotton](https://manapool.com/card/ltc/55/farmer-cotton) — $2.63 · LP · Tales of Middle-earth Commander (LTC #55)
 
 ### [koboldtradingpost](https://manapool.com/shop/koboldtradingpost) — [Package #586788-2084940](https://manapool.com/settings/orders/suborder/6ad8dbb6-c21d-4a7b-bd21-aa245c71d419) · 6 Rocco cards (13 total in shipment)
-- [ ] Delivered
-- [ ] [Gilded Goose](https://manapool.com/card/soc/269/gilded-goose) — $0.26 · NM · Secrets of Strixhaven Commander (SOC #269)
-- [ ] [High Market](https://manapool.com/card/soc/380/high-market) — $0.36 · NM · Secrets of Strixhaven Commander (SOC #380)
-- [ ] [Cinder Glade](https://manapool.com/card/eoc/154/cinder-glade) — $0.25 · NM · Edge of Eternities Commander (EOC #154)
-- [ ] [Blasphemous Act](https://manapool.com/card/tmc/47/blasphemous-act) — $0.74 · NM · Teenage Mutant Ninja Turtles Eternal (TMC #47)
-- [ ] [Chaos Warp](https://manapool.com/card/blc/115/chaos-warp) — $0.31 · NM · Bloomburrow Commander (BLC #115)
-- [ ] [Vandalblast](https://manapool.com/card/fic/298/vandalblast) — $1.35 · NM · Final Fantasy Commander (FIC #298)
+- [x] Delivered
+- [x] [Gilded Goose](https://manapool.com/card/soc/269/gilded-goose) — $0.26 · NM · Secrets of Strixhaven Commander (SOC #269)
+- [x] [High Market](https://manapool.com/card/soc/380/high-market) — $0.36 · NM · Secrets of Strixhaven Commander (SOC #380)
+- [x] [Cinder Glade](https://manapool.com/card/eoc/154/cinder-glade) — $0.25 · NM · Edge of Eternities Commander (EOC #154)
+- [x] [Blasphemous Act](https://manapool.com/card/tmc/47/blasphemous-act) — $0.74 · NM · Teenage Mutant Ninja Turtles Eternal (TMC #47)
+- [x] [Chaos Warp](https://manapool.com/card/blc/115/chaos-warp) — $0.31 · NM · Bloomburrow Commander (BLC #115)
+- [x] [Vandalblast](https://manapool.com/card/fic/298/vandalblast) — $1.35 · NM · Final Fantasy Commander (FIC #298)
 
 ### [Guildhall Games](https://manapool.com/shop/guildhallgames) — [Package #586788-2084948](https://manapool.com/settings/orders/suborder/6b0b52f5-d1a7-4b1e-945d-407c82472aba) · 10 Rocco cards (15 total in shipment)
 - [ ] Delivered
