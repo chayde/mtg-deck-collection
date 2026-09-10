@@ -110,10 +110,10 @@ Check off each card as it arrives, then tick the package's **Delivered** box whe
 - [x] [Fyndhorn Elves](https://manapool.com/card/cmr/228/fyndhorn-elves) — $2.48 · NM · Commander Legends (CMR #228)
 
 ### [Cape Fear Games](https://manapool.com/shop/capefeargames) — [Package #586788-2084938](https://manapool.com/settings/orders/suborder/76add916-a9eb-48d6-9615-0857986f1e53) · 3 Henzie cards (4 total in shipment)
-- [ ] Delivered
-- [ ] [Living Death](https://manapool.com/card/cm2/68/living-death) — $3.99 · LP · Commander Anthology Volume II (CM2 #68)
-- [ ] [Delighted Halfling](https://manapool.com/card/ltr/158/delighted-halfling) — $28.36 · LP · The Lord of the Rings: Tales of Middle-earth (LTR #158)
-- [ ] [Kokusho, the Evening Star](https://manapool.com/card/ima/95/kokusho-the-evening-star) — $24.94 · LP · Iconic Masters (IMA #95)
+- [x] Delivered
+- [x] [Living Death](https://manapool.com/card/cm2/68/living-death) — $3.99 · LP · Commander Anthology Volume II (CM2 #68)
+- [x] [Delighted Halfling](https://manapool.com/card/ltr/158/delighted-halfling) — $28.36 · LP · The Lord of the Rings: Tales of Middle-earth (LTR #158)
+- [x] [Kokusho, the Evening Star](https://manapool.com/card/ima/95/kokusho-the-evening-star) — $24.94 · LP · Iconic Masters (IMA #95)
 
 ### [TOAMagic](https://manapool.com/shop/toamagic) — [Package #586788-2084937](https://manapool.com/settings/orders/suborder/78590121-fd95-4723-9f59-bee863522f10) · 5 Henzie cards (7 total in shipment)
 - [x] Delivered
@@ -130,13 +130,13 @@ Check off each card as it arrives, then tick the package's **Delivered** box whe
 - [ ] [Necron Deathmark](https://manapool.com/card/40k/42/necron-deathmark) — $5.91 · LP · Warhammer 40,000 Commander (40K #42)
 
 ### [Cardchef](https://manapool.com/shop/cardchef) — [Package #586788-2084949](https://manapool.com/settings/orders/suborder/a3267e71-fced-46b1-a8cc-b4e5d793e275) · 6 Henzie cards (10 total in shipment)
-- [ ] Delivered
-- [ ] [Incinerator of the Guilty](https://manapool.com/card/mkm/349/incinerator-of-the-guilty) — $0.40 · NMShowcase · Murders at Karlov Manor (MKM #349)
-- [ ] [Karplusan Forest](https://manapool.com/card/eoc/164/karplusan-forest) — $0.54 · NM · Edge of Eternities Commander (EOC #164)
-- [ ] [Myojin of Night's Reach](https://manapool.com/card/fdn/610/myojin-of-nights-reach) — $0.20 · NM · Foundations (FDN #610)
-- [ ] [Llanowar Wastes](https://manapool.com/card/eoc/165/llanowar-wastes) — $0.59 · NM · Edge of Eternities Commander (EOC #165)
-- [ ] [Elvish Mystic](https://manapool.com/card/m15/173/elvish-mystic) — $0.33 · LP · Magic 2015 (M15 #173)
-- [ ] [Nature's Lore](https://manapool.com/card/eoc/101/natures-lore) — $2.37 · NM · Edge of Eternities Commander (EOC #101)
+- [x] Delivered
+- [x] [Incinerator of the Guilty](https://manapool.com/card/mkm/349/incinerator-of-the-guilty) — $0.40 · NMShowcase · Murders at Karlov Manor (MKM #349)
+- [x] [Karplusan Forest](https://manapool.com/card/eoc/164/karplusan-forest) — $0.54 · NM · Edge of Eternities Commander (EOC #164)
+- [x] [Myojin of Night's Reach](https://manapool.com/card/fdn/610/myojin-of-nights-reach) — $0.20 · NM · Foundations (FDN #610)
+- [x] [Llanowar Wastes](https://manapool.com/card/eoc/165/llanowar-wastes) — $0.59 · NM · Edge of Eternities Commander (EOC #165)
+- [x] [Elvish Mystic](https://manapool.com/card/m15/173/elvish-mystic) — $0.33 · LP · Magic 2015 (M15 #173)
+- [x] [Nature's Lore](https://manapool.com/card/eoc/101/natures-lore) — $2.37 · NM · Edge of Eternities Commander (EOC #101)
 
 ### [Che Collects](https://manapool.com/shop/checollects) — [Package #586788-2084946](https://manapool.com/settings/orders/suborder/bad3d669-91cb-4bcf-a5e1-f2330cb8a878) · 1 Henzie card (4 total in shipment)
 - [x] Delivered

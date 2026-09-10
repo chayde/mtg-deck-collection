@@ -97,8 +97,8 @@ Check off each card as it arrives, then tick the package's **Delivered** box whe
 - [x] [Bolt Bend](https://manapool.com/card/fdn/619/bolt-bend) — $3.05 · NM · Foundations (FDN #619)
 
 ### [Cape Fear Games](https://manapool.com/shop/capefeargames) — [Package #586788-2084938](https://manapool.com/settings/orders/suborder/76add916-a9eb-48d6-9615-0857986f1e53) · 1 Rocco card (4 total in shipment)
-- [ ] Delivered
-- [ ] [Inspiring Vantage](https://manapool.com/card/kld/246/inspiring-vantage) — $2.14 · LP · Kaladesh (KLD #246)
+- [x] Delivered
+- [x] [Inspiring Vantage](https://manapool.com/card/kld/246/inspiring-vantage) — $2.14 · LP · Kaladesh (KLD #246)
 
 ### [TOAMagic](https://manapool.com/shop/toamagic) — [Package #586788-2084937](https://manapool.com/settings/orders/suborder/78590121-fd95-4723-9f59-bee863522f10) · 2 Rocco cards (7 total in shipment)
 - [x] Delivered
@@ -113,11 +113,11 @@ Check off each card as it arrives, then tick the package's **Delivered** box whe
 - [ ] [Jetmir's Garden](https://manapool.com/card/snc/250/jetmirs-garden) — $15.93 · LP · Streets of New Capenna (SNC #250)
 
 ### [Cardchef](https://manapool.com/shop/cardchef) — [Package #586788-2084949](https://manapool.com/settings/orders/suborder/a3267e71-fced-46b1-a8cc-b4e5d793e275) · 4 Rocco cards (10 total in shipment)
-- [ ] Delivered
-- [ ] [Spire Garden](https://manapool.com/card/tmc/75/spire-garden) — $6.71 · NM · Teenage Mutant Ninja Turtles Eternal (TMC #75)
-- [ ] [Karplusan Forest](https://manapool.com/card/eoc/164/karplusan-forest) — $0.54 · NM · Edge of Eternities Commander (EOC #164)
-- [ ] [Copperline Gorge](https://manapool.com/card/blc/301/copperline-gorge) — $0.74 · NM · Bloomburrow Commander (BLC #301)
-- [ ] [Nature's Lore](https://manapool.com/card/eoc/101/natures-lore) — $2.37 · NM · Edge of Eternities Commander (EOC #101)
+- [x] Delivered
+- [x] [Spire Garden](https://manapool.com/card/tmc/75/spire-garden) — $6.71 · NM · Teenage Mutant Ninja Turtles Eternal (TMC #75)
+- [x] [Karplusan Forest](https://manapool.com/card/eoc/164/karplusan-forest) — $0.54 · NM · Edge of Eternities Commander (EOC #164)
+- [x] [Copperline Gorge](https://manapool.com/card/blc/301/copperline-gorge) — $0.74 · NM · Bloomburrow Commander (BLC #301)
+- [x] [Nature's Lore](https://manapool.com/card/eoc/101/natures-lore) — $2.37 · NM · Edge of Eternities Commander (EOC #101)
 
 ### [Che Collects](https://manapool.com/shop/checollects) — [Package #586788-2084946](https://manapool.com/settings/orders/suborder/bad3d669-91cb-4bcf-a5e1-f2330cb8a878) · 3 Rocco cards (4 total in shipment)
 - [x] Delivered
