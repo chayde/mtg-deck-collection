@@ -2,6 +2,10 @@
 
 ## 🗓️ September 2026: Henzie Blitz Refinement, Playtesting & The Necrobloom Inception
 
+### 2026-09-10: The Necrobloom — Playtest Conclusion & Shelved in Planning
+*   **Status Update:** Following extensive playtesting in Forge MTG, the 23-card overhaul proved the deck's mechanical engine and explosive overrun capabilities (*Lumra* + *Spelunking* + *Field of the Dead* + *Insidious Roots*). However, concluding that the core premise and play pattern (heavy bookkeeping of lands, triggers, and Field of the Dead swarms) was not an enjoyable fit, the deck has been formally shelved in [`commander_decks/Planning/TheNecrobloom/`](commander_decks/Planning/TheNecrobloom/) as a fully documented Bracket 3 reference build.
+*   **Documentation Alignment:** Synchronized [`README.md`](README.md) and [`commander_decks/Planning/TheNecrobloom/README.md`](commander_decks/Planning/TheNecrobloom/README.md) to record the deck's status as shelved reference material for future Abzan or lands-matter exploration.
+
 ### 2026-09-09: The Necrobloom — Comprehensive 23-Card Overhaul: Pure Landfall & Field of the Dead Re-Alignment
 *   **Archetype Correction:** Based on full data extraction from EDHREC's Upgraded / Bracket 3 "Lands Matter" consensus deck, eliminated the conflicting "Dredge Trap" and creature aristocrats to rebuild the deck as a dedicated **Landfall & Field of the Dead Engine** in [`commander_decks/Planning/TheNecrobloom/necrobloom_abzan.md`](commander_decks/Planning/TheNecrobloom/necrobloom_abzan.md).
 *   **The 23-Card Overhaul:**

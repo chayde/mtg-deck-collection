@@ -80,7 +80,8 @@ deck_status: main
 *   **Boseiju, Who Endures:** Replaces a Forest. Uncounterable removal that is also a land.
 *   **Takenuma, Abandoned Mire:** Replaces a Swamp. A land that can mill you and return a creature to your hand.
 *   **Ophiomancer:** Replaces Carrion Feeder. Creates a deathtouch snake every upkeep, providing infinite fodder.
-
+*   **Blightbeetle:** Replaces Caustic Caterpillar or Dawntreader Elk. {1}{B} 1/1 insect with protection from green; completely stops opponents from placing +1/+1 counters on their creatures (hard meta-counter to Hakbal, Korvold, and counters strategies).
+*   **Thief of Blood:** Replaces Hornet Queen or Avenger of Zendikar. {4}{B}{B} 1/1 flying vampire. ETB removes all counters from all permanents and enters with that many +1/+1 counters; loops with Meren's end-step reanimation to repeatedly strip all opponent counters and swing with an evasive 30/30+ flyer.
 
 ---
 

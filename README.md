@@ -58,7 +58,7 @@ Decks under development, research, or being optimized.
 *   **Svella, Ice Shaper:** Gruul Big-Mana Activated Ability & Topdeck Stompy ("The Icy Forge"). Bracket 3.
 *   **Sygg, River Cutthroat:** Dimir Group Slug, Goad & End-Step Attrition Control ("The Toll of the River"). Bracket 3.
 *   **Felothar the Steadfast:** Abzan Defender Beatdown, Team Vigilance & Toughness Fling Reach ("The Iron Citadel"). Bracket 3.
-*   **The Necrobloom:** Abzan Lands, Dredge & Field of the Dead Engine ("Dredge & Field of the Dead Engine"). Bracket 3.
+*   **The Necrobloom:** Abzan Landfall, Token Swarm & Field of the Dead Engine ("Field of the Dead Landfall Overrun"). Bracket 3 (Shelved/Reference).
 
 
 ### 🎮 `/arena_decks`
