@@ -52,10 +52,9 @@
 - [ ] Thrummingbird
 - [ ] Vorinclex, Monstrous Raider
 
-### Artifacts & Ramp (9 Cards)
+### Artifacts & Ramp (8 Cards)
 - [ ] Arcane Signet
 - [ ] Astral Cornucopia
-- [ ] Chromatic Lantern
 - [ ] Contagion Engine
 - [ ] Everflowing Chalice
 - [ ] Fellwar Stone
@@ -79,7 +78,7 @@
 - [ ] Tezzeret's Gambit
 - [ ] Three Visits
 
-### Enchantments & Planeswalkers (25 Cards)
+### Enchantments & Planeswalkers (26 Cards)
 - [ ] Ajani Steadfast
 - [ ] Ajani, Sleeper Agent
 - [ ] Ashiok, Dream Render
@@ -103,6 +102,7 @@
 - [ ] Teferi, Temporal Archmage
 - [ ] Teferi, Time Raveler
 - [ ] The Eternal Wanderer
+- [ ] The Wandering Emperor
 - [ ] Ugin, the Spirit Dragon
 - [ ] Vraska, Betrayal's Sting
 

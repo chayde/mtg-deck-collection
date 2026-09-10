@@ -16,7 +16,6 @@ DECK:
 1 Breeding Pool
 1 Brokers Ascendancy
 1 Carth the Lion
-1 Chromatic Lantern
 1 Command Tower
 1 Contagion Engine
 1 Counterspell
@@ -86,6 +85,7 @@ DECK:
 1 Tezzeret's Gambit
 1 The Chain Veil
 1 The Eternal Wanderer
+1 The Wandering Emperor
 1 Three Visits
 1 Thrummingbird
 1 Ugin, the Spirit Dragon

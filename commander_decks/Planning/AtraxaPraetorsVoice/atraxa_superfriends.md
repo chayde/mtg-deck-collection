@@ -24,7 +24,7 @@ In a 4-player multiplayer game, planeswalkers are uniquely vulnerable to combat 
 ### 👑 Commander (1 Card)
 *   **Atraxa, Praetors' Voice:** 4/4 Flying, vigilance, deathtouch, and lifelink anchor that proliferates all permanents on every end step.
 
-### 🧙 Planeswalker Suite (18 Cards)
+### 🧙 Planeswalker Suite (19 Cards)
 *   **Ajani Steadfast:** Minus ability adds loyalty to all other planeswalkers while +1 gives vigilance and lifelink.
 *   **Ajani, Sleeper Agent:** Digs for creatures/walkers, distributes counters/vigilance, and gifts opponents lethal poison emblems.
 *   **Ashiok, Dream Render:** Static completely shuts down opponent search libraries (fetchlands, tutors); exiles all opponent graveyards.
@@ -41,6 +41,7 @@ In a 4-player multiplayer game, planeswalkers are uniquely vulnerable to combat 
 *   **Teferi, Temporal Archmage:** Untaps four permanents (lands/mana rocks/The Chain Veil) to enable infinite activation loops.
 *   **Teferi, Time Raveler:** Forces opponents to cast spells strictly at sorcery speed, completely shutting down counterspells and flash.
 *   **The Eternal Wanderer:** Restricts opponents to attacking her with at most one creature; board wipes leaving each player with 1 creature.
+*   **The Wandering Emperor:** Flash speed enables instant-speed ambush; exiles tapped creatures while gaining life, creates 2/2 vigilance Samurai blockers, and buffs creatures.
 *   **Ugin, the Spirit Dragon:** The ultimate colorless reset button; -X exiles all colored permanents while preserving your colorless rocks.
 *   **Vraska, Betrayal's Sting:** Draws cards, proliferates, and hands out poison counters to turn into an alternate win condition.
 
@@ -75,10 +76,9 @@ In a 4-player multiplayer game, planeswalkers are uniquely vulnerable to combat 
 *   **Oath of Nissa:** Digs 3 cards deep for a creature, land, or planeswalker; allows mana of any color to cast planeswalkers.
 *   **Oath of Teferi:** Blinks a permanent on ETB and allows you to activate every planeswalker twice each turn.
 
-### 💎 Mana Acceleration (11 Cards)
+### 💎 Mana Acceleration (10 Cards)
 *   **Arcane Signet:** Untapped 2-drop fixing for all 4 colors.
 *   **Astral Cornucopia:** Scales with proliferate counters to tap for massive amounts of mana.
-*   **Chromatic Lantern:** Provides flawless mana fixing by turning all lands into any-color sources.
 *   **Cultivate:** Basic land acceleration and hand fixing.
 *   **Everflowing Chalice:** Colorless rock that scales exponentially with proliferate counters.
 *   **Farseek:** Fetches fetchable Shocklands and Triomes directly to the battlefield.
@@ -131,6 +131,10 @@ In a 4-player multiplayer game, planeswalkers are uniquely vulnerable to combat 
 ---
 
 ## 📜 Deck Changelog
+*   **2026-09-10:** Eliminated 3-mana filter/fixing crutch for instant-speed planeswalker interaction.
+    *   **In:** The Wandering Emperor
+    *   **Out:** Chromatic Lantern
+    *   **Reason:** Chromatic Lantern's 3-mana fixing is redundant with a pristine 4-color fetch/shock/dual mana base. Replaced with The Wandering Emperor to provide flash-speed combat ambushing, creature exile, life buffer, and 2/2 vigilance Samurai blockers while holding up instant interaction.
 *   **2026-09-10:** Integrated user-owned Revised dual land (Bayou).
     *   **In:** Bayou
     *   **Out:** Opulent Palace
@@ -160,7 +164,6 @@ DECK:
 1 Breeding Pool  
 1 Brokers Ascendancy  
 1 Carth the Lion  
-1 Chromatic Lantern  
 1 Command Tower  
 1 Contagion Engine  
 1 Counterspell  
@@ -230,6 +233,7 @@ DECK:
 1 Tezzeret's Gambit  
 1 The Chain Veil  
 1 The Eternal Wanderer  
+1 The Wandering Emperor  
 1 Three Visits  
 1 Thrummingbird  
 1 Ugin, the Spirit Dragon  
