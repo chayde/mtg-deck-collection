@@ -2,6 +2,13 @@
 
 ## 🗓️ September 2026: Henzie Blitz Refinement, Playtesting & The Necrobloom Inception
 
+### 2026-09-10: Caesar, Legion's Emperor — New Planning Deck: Mardu Tokens, Aristocrats & Burn Engine
+*   **Deck Inception:** Designed and scaffolded a brand new Bracket 3 Mardu ({R}{W}{B}) Tokens, Aristocrats, and Burn Swarm deck in [`commander_decks/Planning/CaesarLegionsEmperor/caesar_mardu.md`](commander_decks/Planning/CaesarLegionsEmperor/caesar_mardu.md) (`deck_status: main`).
+*   **Synergy Engine:** Centers around Caesar as a backline commander who triggers whenever any creature attacks. Sacrificing expendable 1/1 tokens (Soldiers, Thopters, Gnomes) generates card velocity, replaces attackers with hasty 1/1 Soldiers, and provides direct-damage burn to opponents' life totals.
+*   **Multiplier & Payoff Suite:** Integrates premier token doublers (*Mondrak, Glory Dominus*, *Anointed Procession*), combat doubling (*Isshin, Two Heavens as One*), aerial win-con conversion (*Divine Visitation*), anthem burn (*Warleader's Call*, *Purphoros, God of the Forge*, *Impact Tremors*), and aristocrat drainers (*Bastion of Remembrance*, *Elas il-Kor*, *Mirkwood Bats*, *Teysa Karlov*).
+*   **Bracket & Game Changers:** Verified for **Bracket 3 (Upgraded)** with **1 / 3 Game Changers** (*Teferi's Protection*), providing ultimate wipe insurance to protect wide token boards. *City on Fire* prioritized in the Future Roadmap to keep the initial mana curve tight.
+*   **Validation:** 20-simulation goldfish check — **99% commander cast rate (79/80, T3.5 avg with 59% T1-T3 casts)**, **91% engine readiness within target window (T4.4 avg)**, **48% Gold Keeps, 49% Silver Keeps (97% functional keeps, 6.86 avg hand size)**. Bracket compliance status: **PASS** for Bracket 3. Logged to `commander_decks/Planning/CaesarLegionsEmperor/GOLDFISH_LOG.md`.
+
 ### 2026-09-10: The Necrobloom — Playtest Conclusion & Shelved in Planning
 *   **Status Update:** Following extensive playtesting in Forge MTG, the 23-card overhaul proved the deck's mechanical engine and explosive overrun capabilities (*Lumra* + *Spelunking* + *Field of the Dead* + *Insidious Roots*). However, concluding that the core premise and play pattern (heavy bookkeeping of lands, triggers, and Field of the Dead swarms) was not an enjoyable fit, the deck has been formally shelved in [`commander_decks/Planning/TheNecrobloom/`](commander_decks/Planning/TheNecrobloom/) as a fully documented Bracket 3 reference build.
 *   **Documentation Alignment:** Synchronized [`README.md`](README.md) and [`commander_decks/Planning/TheNecrobloom/README.md`](commander_decks/Planning/TheNecrobloom/README.md) to record the deck's status as shelved reference material for future Abzan or lands-matter exploration.
