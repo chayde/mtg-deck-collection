@@ -18,10 +18,10 @@
 - [ ] Castle Ardenvale
 - [ ] Caves of Koilos
 - [ ] Clifftop Retreat
-- [ ] Desolate Mire
 - [ ] Diamond City
 - [ ] Godless Shrine
 - [ ] Isolated Chapel
+- [ ] Luxury Suite
 - [ ] Marsh Flats
 - [ ] Mountain
 - [ ] Nomad Outpost
@@ -30,13 +30,13 @@
 - [ ] Prismatic Vista
 - [ ] Sacred Foundry
 - [ ] Savai Triome
-- [ ] Shadowblood Ridge
 - [ ] Sulfurous Springs
 - [ ] Swamp
+- [ ] Vault of Champions
 - [ ] Vault of the Archangel
 - [ ] Windbrisk Heights
 
-### Creatures (21 Cards)
+### Creatures (23 Cards)
 - [ ] Adeline, Resplendent Cathar
 - [ ] Anim Pakal, Thousandth Moon
 - [ ] Arabella, Abandoned Doll
@@ -44,8 +44,10 @@
 - [ ] Charismatic Conqueror
 - [ ] Commissar Severina Raine
 - [ ] Elas il-Kor, Sadistic Pilgrim
+- [ ] Esper Sentinel
 - [ ] General's Enforcer
 - [ ] Isshin, Two Heavens as One
+- [ ] Lotho, Corrupt Shirriff
 - [ ] Loyal Apprentice
 - [ ] Mirkwood Bats
 - [ ] Mondrak, Glory Dominus
@@ -59,13 +61,11 @@
 - [ ] Welcoming Vampire
 - [ ] Zulaport Cutthroat
 
-### Artifacts & Ramp (11 Cards)
+### Artifacts & Ramp (9 Cards)
 - [ ] Arcane Signet
-- [ ] Boros Signet
 - [ ] Fellwar Stone
 - [ ] Horn of Gondor
 - [ ] Idol of Oblivion
-- [ ] Orzhov Signet
 - [ ] Skullclamp
 - [ ] Sol Ring
 - [ ] Talisman of Conviction

@@ -272,6 +272,7 @@ Examples:
 ### Playstyle
 - **Loves:** Value engines, complex loops, and meaningful decisions — Aristocrats, ETB Triggers, Landfall, Cascade/Chaos, Tribal (Slivers, Dragons, Angels), Midrange/Combo-Control.
 - **Dislikes:** Linear aggro (e.g., Mono-Red burn-face strategies). Do not recommend these archetypes.
+- **Card & Mana Base Preferences:** Strongly dislikes filter lands (e.g., *Shadowblood Ridge*, *Desolate Mire*) and filter mana rocks (*Signets* like *Boros Signet*, *Orzhov Signet*). Avoid including filter lands or filter rocks in any deck builds going forward.
 
 ### Paper Magic
 - Tracks **Budget** and **Premium** versions of decks separately.

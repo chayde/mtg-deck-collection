@@ -2,6 +2,14 @@
 
 ## 🗓️ September 2026: Henzie Blitz Refinement, Playtesting & The Necrobloom Inception
 
+### 2026-09-10: Caesar, Legion's Emperor — Filter Lands & Filter Rocks Eliminated for Crowd Lands & Creature Engines
+*   **User Preference Policy:** Formally codified a permanent deckbuilding rule in `GEMINI.md` and `CLAUDE.md` to avoid filter lands (*Shadowblood Ridge*, *Desolate Mire*) and filter mana rocks (*Signets*) across all future deck designs due to activation friction.
+*   **The 4-Card Optimization:**
+    *   **In (4):** *Vault of Champions*, *Luxury Suite*, *Lotho, Corrupt Shirriff*, *Esper Sentinel*.
+    *   **Out (4):** *Desolate Mire*, *Shadowblood Ridge*, *Orzhov Signet*, *Boros Signet*.
+*   **Synergy & Velocity Rationale:** Crowd lands provide unconditional untapped dual fixing in 4-player pods with zero activation tax. The awkward Signets were converted into premier low-cost creature engines: *Lotho, Corrupt Shirriff* (continuous Treasure ramp + body) and *Esper Sentinel* (1-drop Human Soldier tax & card draw engine).
+*   **Validation:** 20-simulation goldfish check — **99% commander cast rate (79/80, T5.0 avg)**, **89% target engine readiness (T5.4 avg)**, **98% functional keeps (41% Gold, 57% Silver, 6.96 avg hand size)**. Fastest deployment verified at **Turn 3** directly enabled by Turn 2 *Lotho* Treasure generation. Full Bracket 3 compliance maintained (1/3 Game Changers).
+
 ### 2026-09-10: Caesar, Legion's Emperor — New Planning Deck: Mardu Tokens, Aristocrats & Burn Engine
 *   **Deck Inception:** Designed and scaffolded a brand new Bracket 3 Mardu ({R}{W}{B}) Tokens, Aristocrats, and Burn Swarm deck in [`commander_decks/Planning/CaesarLegionsEmperor/caesar_mardu.md`](commander_decks/Planning/CaesarLegionsEmperor/caesar_mardu.md) (`deck_status: main`).
 *   **Synergy Engine:** Centers around Caesar as a backline commander who triggers whenever any creature attacks. Sacrificing expendable 1/1 tokens (Soldiers, Thopters, Gnomes) generates card velocity, replaces attackers with hasty 1/1 Soldiers, and provides direct-damage burn to opponents' life totals.

@@ -16,7 +16,6 @@ DECK:
 1 Bloodstained Mire
 1 Bojuka Bog
 1 Boros Charm
-1 Boros Signet
 1 Call the Coppercoats
 1 Castle Ardenvale
 1 Caves of Koilos
@@ -26,12 +25,12 @@ DECK:
 1 Command Tower
 1 Commissar Severina Raine
 1 Deadly Dispute
-1 Desolate Mire
 1 Despark
 1 Diamond City
 1 Divine Visitation
 1 Dragonskull Summit
 1 Elas il-Kor, Sadistic Pilgrim
+1 Esper Sentinel
 1 Exotic Orchard
 1 Fellwar Stone
 1 Fervent Charge
@@ -49,16 +48,17 @@ DECK:
 1 Isshin, Two Heavens as One
 1 Lethal Scheme
 1 Liliana, Dreadhorde General
+1 Lotho, Corrupt Shirriff
 1 Loyal Apprentice
-1 Marsh Flats
+1 Luxury Suite
 1 Martial Coup
+1 Marsh Flats
 1 Mirkwood Bats
 1 Mondrak, Glory Dominus
 1 Morbid Opportunist
 3 Mountain
 1 Myrel, Shield of Argive
 1 Nomad Outpost
-1 Orzhov Signet
 1 Path of Ancestry
 1 Path to Exile
 1 Phyrexian Tower
@@ -72,7 +72,6 @@ DECK:
 1 Sacred Foundry
 1 Savai Triome
 1 Secure the Wastes
-1 Shadowblood Ridge
 1 Skullclamp
 1 Smoldering Marsh
 1 Sol Ring
@@ -88,6 +87,7 @@ DECK:
 1 Teysa Karlov
 1 Tocasia's Welcome
 1 V.A.T.S.
+1 Vault of Champions
 1 Vault of the Archangel
 1 Warleader's Call
 1 Wear // Tear

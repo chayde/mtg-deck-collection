@@ -50,8 +50,8 @@ deck_status: main
 *   **[Isolated Chapel](https://scryfall.com/card/dmr/250/isolated-chapel?utm_source=api):** Check land entering untapped off Plains or Swamps.
 *   **[Dragonskull Summit](https://scryfall.com/card/dmr/243/dragonskull-summit?utm_source=api):** Check land entering untapped off Swamps or Mountains.
 *   **[Smoldering Marsh](https://scryfall.com/card/otc/321/smoldering-marsh?utm_source=api):** Fetchable dual land entering untapped with two basic lands.
-*   **[Shadowblood Ridge](https://scryfall.com/card/otc/319/shadowblood-ridge?utm_source=api):** Odyssey filter land converting generic mana into black and red.
-*   **[Desolate Mire](https://scryfall.com/card/pip/146/desolate-mire?utm_source=api):** Dual filter land filtering for black or red fixing.
+*   **[Luxury Suite](https://scryfall.com/card/msc/252/luxury-suite?utm_source=api):** Crowd land entering untapped in multiplayer, providing frictionless black and red mana.
+*   **[Vault of Champions](https://scryfall.com/card/cmm/436/vault-of-champions?utm_source=api):** Crowd land entering untapped in multiplayer, providing frictionless white and black mana.
 *   **[Diamond City](https://scryfall.com/card/pip/147/diamond-city?utm_source=api):** Enters with a shield counter and moves it to Caesar or Mondrak once two creatures enter.
 *   **[Windbrisk Heights](https://scryfall.com/card/tdc/411/windbrisk-heights?utm_source=api):** Hideaway land easily castable for 1 white mana after attacking with 3+ creatures.
 *   **[Vault of the Archangel](https://scryfall.com/card/otc/339/vault-of-the-archangel?utm_source=api):** Gives all tokens deathtouch and lifelink, making combat trades devastating.
@@ -62,19 +62,19 @@ deck_status: main
 *   **Swamp (x3):** Basic lands for black fixing and untaxed mana.
 *   **Mountain (x3):** Basic lands for red fixing and untaxed mana.
 
-### ⚡ Ramp & Acceleration (10 Cards)
+### ⚡ Ramp & Acceleration (9 Cards)
 *   **[Sol Ring](https://scryfall.com/card/otc/267/sol-ring?utm_source=api) (1):** Format staple 2-mana colorless acceleration.
 *   **[Arcane Signet](https://scryfall.com/card/otc/252/arcane-signet?utm_source=api) (2):** 2-CMC rock producing all three Mardu colors untapped.
 *   **[Talisman of Conviction](https://scryfall.com/card/otc/268/talisman-of-conviction?utm_source=api) (2):** Untapped Boros color ramp.
 *   **[Talisman of Hierarchy](https://scryfall.com/card/otc/269/talisman-of-hierarchy?utm_source=api) (2):** Untapped Orzhov color ramp.
 *   **[Talisman of Indulgence](https://scryfall.com/card/otc/270/talisman-of-indulgence?utm_source=api) (2):** Untapped Rakdos color ramp.
-*   **[Orzhov Signet](https://scryfall.com/card/otc/263/orzhov-signet?utm_source=api) (2):** Mana rock filtering generic into white and black.
-*   **[Boros Signet](https://scryfall.com/card/otc/256/boros-signet?utm_source=api) (2):** Mana rock filtering generic into red and white.
 *   **[Fellwar Stone](https://scryfall.com/card/otc/257/fellwar-stone?utm_source=api) (2):** Reliable 2-mana untapped fixing in 4-player games.
+*   **[Lotho, Corrupt Shirriff](https://scryfall.com/card/ltr/213/lotho-corrupt-shirriff?utm_source=api) ({W}{B}):** Generates Treasure tokens whenever any player casts their second spell each turn; creature body for Caesar's attack sacrifice.
 *   **[Pitiless Plunderer](https://scryfall.com/card/lcc/208/pitiless-plunderer?utm_source=api) ({3}{B}):** Generates a Treasure token whenever any creature you control dies.
 *   **[Professional Face-Breaker](https://scryfall.com/card/snc/116/professional-face-breaker?utm_source=api) ({2}{R}):** Generates Treasures on combat damage and converts Treasures into impulse draw.
 
-### 📜 Card Advantage & Velocity (12 Cards)
+### 📜 Card Advantage & Velocity (13 Cards)
+*   **[Esper Sentinel](https://scryfall.com/card/mh2/12/esper-sentinel?utm_source=api) ({W}):** 1-drop Human Soldier taxing opponents' noncreature spells and providing early card draw velocity.
 *   **[Skullclamp](https://scryfall.com/card/msc/210/skullclamp?utm_source=api) (1):** Equips onto 1/1 tokens to kill them instantly and draw two cards for 1 mana.
 *   **[Idol of Oblivion](https://scryfall.com/card/otc/258/idol-of-oblivion?utm_source=api) (2):** Taps to draw a card every turn a creature token entered under your control.
 *   **[Morbid Opportunist](https://scryfall.com/card/otc/142/morbid-opportunist?utm_source=api) ({2}{B}):** Repeatable card draw triggering whenever any creature dies (once per turn).
@@ -152,6 +152,11 @@ deck_status: main
 *These cards are top-tier candidates for future upgrades based on metagame tuning or playtesting feedback.*
 
 *   **[City on Fire](https://scryfall.com/card/mom/135/city-on-fire?utm_source=api) ({5}{R}{R}{R}):** Triples all damage from your sources, turning Caesar's burn into a one-shot kill and Purphoros into 6 damage per creature. Kept in roadmap to preserve a low, lean mana curve.
+*   **[Knight of the White Orchid](https://scryfall.com/card/moc/193/knight-of-the-white-orchid?utm_source=api) ({W}{W}):** Untapped Plains ramp (can fetch typed shocklands) on a Human Knight body if an opponent controls more lands.
+*   **[Deep Gnome Terramancer](https://scryfall.com/card/clb/658/deep-gnome-terramancer?utm_source=api) ({1}{W}):** Flash Gnome Wizard ramping Plains whenever opponents fetch or ramp lands.
+*   **[Marionette Apprentice](https://scryfall.com/card/mh3/100/marionette-apprentice?utm_source=api) ({1}{B}):** 2 bodies for 2 mana (1/2 + 1/1 Servo) draining opponents whenever creatures OR artifacts (Treasures) die.
+*   **[Ocelot Pride](https://scryfall.com/card/mh3/38/ocelot-pride?utm_source=api) ({W}):** 1-drop token engine that duplicates all tokens created in a turn once you achieve City's Blessing.
+*   **[Ragavan, Nimble Pilferer](https://scryfall.com/card/mh2/138/ragavan-nimble-pilferer?utm_source=api) ({R}):** Aggressive 1-drop red ramp creature creating Treasures and stealing cards on combat damage.
 *   **[Assemble the Legion](https://scryfall.com/card/rvr/163/assemble-the-legion?utm_source=api) ({3}{R}{W}):** Inevitable ticking token generator that overruns the board if games go past Turn 7.
 *   **[Reconnaissance](https://scryfall.com/card/dmr/20/reconnaissance?utm_source=api) ({W}):** Provides pseudo-vigilance and untaps attacking tokens during the end of combat step after damage is dealt.
 *   **[Smothering Tithe](https://scryfall.com/card/cmm/57/smothering-tithe?utm_source=api) ({3}{W}) [Game Changer]:** Massive Treasure generation engine if moving towards a 2/3 Game Changer configuration.
@@ -164,10 +169,17 @@ deck_status: main
 | :--- | :--- | :--- | :--- |
 | City on Fire | Divine Visitation (if Angel tribal proves awkward with Skullclamp) | Plan Cards | Evaluated / Roadmap |
 | Reconnaissance | Fervent Charge | Plan Cards | Evaluated / Roadmap |
+| Knight of the White Orchid | General's Enforcer / Flexible slot | Ramp / Creature | Evaluated / Roadmap |
+| Marionette Apprentice | Aristocrat flex slot | Plan Cards | Evaluated / Roadmap |
+| Deep Gnome Terramancer | Flexible slot | Ramp / Creature | Evaluated / Roadmap |
 
 ---
 
 ## 📜 Deck Changelog
+*   **2026-09-10:** Replaced filter lands and filter rocks with crowd lands and low-cost creature engines.
+    *   **In (4):** *Vault of Champions*, *Luxury Suite*, *Lotho, Corrupt Shirriff*, *Esper Sentinel*
+    *   **Out (4):** *Desolate Mire*, *Shadowblood Ridge*, *Orzhov Signet*, *Boros Signet*
+    *   **Reason:** Eliminated filter activation friction. Upgraded to unconditional untapped crowd lands, and replaced awkward Signets with premier 1- and 2-drop creature engines (Treasure ramp + card draw tax).
 *   **2026-09-10:** Initial deck inception for Caesar, Legion's Emperor (Bracket 3 Upgraded).
     *   **In (100):** Full 100-card Mardu Tokens & Aristocrats package built to "New Era" standards with 1/3 Game Changers (*Teferi's Protection*).
     *   **Reason:** Created dedicated token swarm and sacrifice engine leveraging Caesar's backline modal triggers.
@@ -193,7 +205,6 @@ DECK:
 1 Bloodstained Mire  
 1 Bojuka Bog  
 1 Boros Charm  
-1 Boros Signet  
 1 Call the Coppercoats  
 1 Castle Ardenvale  
 1 Caves of Koilos  
@@ -203,12 +214,12 @@ DECK:
 1 Command Tower  
 1 Commissar Severina Raine  
 1 Deadly Dispute  
-1 Desolate Mire  
 1 Despark  
 1 Diamond City  
 1 Divine Visitation  
 1 Dragonskull Summit  
 1 Elas il-Kor, Sadistic Pilgrim  
+1 Esper Sentinel  
 1 Exotic Orchard  
 1 Fellwar Stone  
 1 Fervent Charge  
@@ -226,7 +237,9 @@ DECK:
 1 Isshin, Two Heavens as One  
 1 Lethal Scheme  
 1 Liliana, Dreadhorde General  
+1 Lotho, Corrupt Shirriff  
 1 Loyal Apprentice  
+1 Luxury Suite  
 1 Martial Coup  
 1 Marsh Flats  
 1 Mirkwood Bats  
@@ -235,7 +248,6 @@ DECK:
 3 Mountain  
 1 Myrel, Shield of Argive  
 1 Nomad Outpost  
-1 Orzhov Signet  
 1 Path of Ancestry  
 1 Path to Exile  
 1 Phyrexian Tower  
@@ -249,7 +261,6 @@ DECK:
 1 Sacred Foundry  
 1 Savai Triome  
 1 Secure the Wastes  
-1 Shadowblood Ridge  
 1 Skullclamp  
 1 Smoldering Marsh  
 1 Sol Ring  
@@ -265,6 +276,7 @@ DECK:
 1 Teysa Karlov  
 1 Tocasia's Welcome  
 1 V.A.T.S.  
+1 Vault of Champions  
 1 Vault of the Archangel  
 1 Warleader's Call  
 1 Wear // Tear  

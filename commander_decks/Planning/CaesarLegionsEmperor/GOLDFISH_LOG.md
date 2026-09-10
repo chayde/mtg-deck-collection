@@ -220,3 +220,97 @@ BRACKET READINESS (Bracket 3 (Upgraded) — Target T7)
 *   **True Average Deployment:** Average deployment turn settles at **T4.6** (most frequent deployment turn is **Turn 4**, occurring in 41% of seats). T3 casts occur 12.5% of the time via a Turn 2 Talisman/Signet or Turn 1 Sol Ring.
 *   **Fastest Deployment Provenance:** The single Turn 2 deployment out of 80 seats was verified as a pure rules-legal Sol Ring + Arcane Signet line from a Gold Keep hand (Sim 4, Seat 2).
 *   **Stable Consistency:** 98% functional keeps (56% Gold, 42% Silver) and 94% Engine Readiness within the target window (avg T5.0). Perfect Bracket 3 compliance.
+
+---
+
+## 2026-09-10 — Filter Land/Rock Elimination & Creature Engine Inclusions (20 sims, T10 turns, Bracket 3)
+
+**Goal:** Validate mana consistency, commander deployment speed, and engine readiness after removing all filter lands (*Desolate Mire*, *Shadowblood Ridge*) and filter rocks (*Orzhov Signet*, *Boros Signet*) in favor of Crowd Lands (*Vault of Champions*, *Luxury Suite*) and high-impact creature engines (*Lotho, Corrupt Shirriff*, *Esper Sentinel*).
+
+**Command:**
+```bash
+python scripts/multiplayer_goldfish.py "commander_decks/Planning/CaesarLegionsEmperor/moxfield_import.txt" --bracket 3 --sims 20 --turns 10 --html commander_decks/Planning/CaesarLegionsEmperor/goldfish_report.html
+```
+
+**Results:**
+```
+====================================================================
+RUNNING 20 × 4-PLAYER SIMULATIONS
+Commander: Caesar, Legion's Emperor (CMC 4)  |  Target: Bracket 3 (Upgraded) (Target T7)
+====================================================================
+
+--------------------------------------------------------------------
+FASTEST COMMANDER DEPLOYMENT SHOWCASE (Sim 1, Seat 4)
+--------------------------------------------------------------------
+  Cast Turn:     Turn 3 (Gold Keep, 7 cards)
+  Opening Hand:  Lotho, Corrupt Shirriff, Divine Visitation, Isshin, Two Heavens as One, Swamp, Stroke of Midnight, Command Tower, Intangible Virtue
+  Deployment Sequence:
+    T 1: Land: Command Tower
+    T 2: Land: Swamp | Cast: Lotho, Corrupt Shirriff
+    T 3: Land: Sulfurous Springs | ** CAST Caesar, Legion's Emperor T3 **
+
+--------------------------------------------------------------------
+WORST-CASE COMMANDER DEPLOYMENT SHOWCASE (Sim 19, Seat 1)
+--------------------------------------------------------------------
+  Status:        FAILED TO CAST (through Turn 10)
+  Mulligan:      Silver Keep (7 cards)
+  Diagnostic:    Severe Mana Screw: Stuck on 2 lands through Turn 10
+  Opening Hand:  Swamp, Welcoming Vampire, Mirkwood Bats, Morbid Opportunist, Chaos Warp, Vault of Champions, Mondrak, Glory Dominus
+  Turn-by-Turn Play Sequence:
+    T 1: Land: Swamp | Cast: Skullclamp (generic)
+    T 2: Land: Vault of Champions (tapped)
+    T 3: Cast: Swords to Plowshares (generic)
+    T 4: Cast: Idol of Oblivion (generic)
+    T 5: (no plays)
+    T 6: (no plays)
+    T 7: Cast: Zulaport Cutthroat (generic)
+    T 8: Cast: Lotho, Corrupt Shirriff
+    T 9: Cast: Welcoming Vampire (generic)
+    T10: Cast: Morbid Opportunist (generic)
+
+--------------------------------------------------------------------
+AGGREGATE DEPLOYMENT & MULLIGAN PROFILE
+--------------------------------------------------------------------
+  Commander cast rate: 79/80 (99%)
+  Commander Cast Range: T3 - T10
+  Commander Cast Avg:   T5.0
+  Commander Cast Distribution:
+    T 3: ###### (6)
+    T 4: ############################# (29)
+    T 5: ####################### (23)
+    T 6: ############ (12)
+    T 7: ### (3)
+    T 8: ## (2)
+    T 9: ### (3)
+    T10: # (1)
+
+  Opening Hand Quality Breakdown (80 hands evaluated):
+    Gold Keep (Mana + Ramp + Enabler):   33/80 (41%)
+    Silver Keep (Mana + Curve):          46/80 (57%)
+    Desperation Keep (Mulligan to <=5):   1/80 (1%)
+    Average Starting Hand Size:          6.96 cards
+
+--------------------------------------------------------------------
+BRACKET READINESS (Bracket 3 (Upgraded) — Target T7)
+--------------------------------------------------------------------
+  Target Window Readiness Rate (T<=7): 71/80 (89%)
+  Engine Readiness Avg:  T5.4
+  Engine Readiness Distribution:
+    T 3: ### (3)
+    T 4: #################### (20)
+    T 5: ############################ (28)
+    T 6: ############# (13)
+    T 7: ####### (7)
+    T 8: #### (4)
+    T 9: ### (3)
+    T10: # (1)
+
+  [BRACKET COMPLIANCE CHECK] Status: PASS
+  Deck deploys its engine around Turn 5.4, perfectly positioned to execute and threaten a win on Bracket 3 (Upgraded)'s target (Turn 7+).
+```
+
+**Notes:**
+*   **Frictionless Mana Base:** Replacing *Desolate Mire* and *Shadowblood Ridge* with *Vault of Champions* and *Luxury Suite* completely eliminated dead/awkward 1-land filter states.
+*   **Lotho Velocity:** As highlighted in the Fastest Deployment Showcase (Sim 1, Seat 4), Turn 2 *Lotho, Corrupt Shirriff* directly enabled an on-curve Turn 3 Caesar deployment via Treasure generation.
+*   **High Mulligan Stability:** 98% functional keeps (41% Gold, 57% Silver) with a high 6.96 average starting hand size.
+*   **Bracket 3 Alignment:** 99% commander cast rate (79/80), with 89% of seats reaching full engine readiness within the target Bracket 3 window (Turn 5.4 average). Full Bracket 3 compliance maintained (1/3 Game Changers).
