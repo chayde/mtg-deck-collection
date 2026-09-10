@@ -60,6 +60,7 @@ Decks under development, research, or being optimized.
 *   **Felothar the Steadfast:** Abzan Defender Beatdown, Team Vigilance & Toughness Fling Reach ("The Iron Citadel"). Bracket 3.
 *   **The Necrobloom:** Abzan Landfall, Token Swarm & Field of the Dead Engine ("Field of the Dead Landfall Overrun"). Bracket 3 (Shelved/Reference).
 *   **Caesar, Legion's Emperor:** Mardu Tokens, Aristocrats & Burn Swarm Engine ("The Legion's Swarm"). Bracket 3.
+*   **Atraxa, Praetors' Voice:** Non-Red (WUBG) Superfriends, Proliferate Value Engine & Asymmetric Board Control ("The Superfriends Sovereign"). Bracket 3.
 
 
 ### 🎮 `/arena_decks`

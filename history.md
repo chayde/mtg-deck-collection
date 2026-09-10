@@ -2,6 +2,13 @@
 
 ## 🗓️ September 2026: Henzie Blitz Refinement, Playtesting & The Necrobloom Inception
 
+### 2026-09-10: Atraxa, Praetors' Voice — New Planning Deck: Non-Red (WUBG) Superfriends & Proliferate Engine
+*   **Deck Inception:** Designed and scaffolded a brand new Bracket 3 Non-Red ({G}{W}{U}{B}) Superfriends deck in [`commander_decks/Planning/AtraxaPraetorsVoice/atraxa_superfriends.md`](commander_decks/Planning/AtraxaPraetorsVoice/atraxa_superfriends.md) (`deck_status: main`) based on the EDHREC consensus build.
+*   **Synergy Engine:** Features Atraxa as an impenetrable 4/4 vigilance, deathtouch, and lifelink bodyguard that passively proliferates loyalty counters on every end step. Stacks 18 planeswalkers behind asymmetric board wipes (*Supreme Verdict*, *Farewell*) that leave your planeswalkers untouched while clearing opposing armies.
+*   **Multipliers & Enablers:** Integrates premier counter doublers (*Doubling Season*, *Vorinclex, Monstrous Raider*) and burst engines (*Deepglow Skate*, *The Chain Veil*, *Oath of Teferi*, *Tekuthal, Inquiry Dominus*) to enable same-turn ultimates and insurmountable value loops.
+*   **Bracket & Game Changers:** Verified for **Bracket 3 (Upgraded)** with exactly **3 / 3 Game Changers** (*Teferi's Protection*, *Narset, Parter of Veils*, *Farewell*), maximizing competitive punch while remaining completely legal at Bracket 3 tables.
+*   **Validation:** 20-simulation goldfish check — **95% commander cast rate (76/80, T5.4 avg)**, **88% target engine readiness (T5.6 avg)**, **97% functional keeps (35% Gold, 62% Silver, 6.86 avg hand size)**. Fastest deployment verified at **Turn 3** (Sim 1 Seat 3: T1 Exotic Orchard + Birds of Paradise -> T2 Sandsteppe Citadel -> T3 Forest -> Cast Atraxa). Bracket compliance status: **PASS** for Bracket 3. Logged to [`commander_decks/Planning/AtraxaPraetorsVoice/GOLDFISH_LOG.md`](commander_decks/Planning/AtraxaPraetorsVoice/GOLDFISH_LOG.md).
+
 ### 2026-09-10: Caesar, Legion's Emperor — Filter Lands & Filter Rocks Eliminated for Crowd Lands & Creature Engines
 *   **User Preference Policy:** Formally codified a permanent deckbuilding rule in `GEMINI.md` and `CLAUDE.md` to avoid filter lands (*Shadowblood Ridge*, *Desolate Mire*) and filter mana rocks (*Signets*) across all future deck designs due to activation friction.
 *   **The 4-Card Optimization:**
