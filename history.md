@@ -2,6 +2,19 @@
 
 ## 🗓️ September 2026: Henzie Blitz Refinement, Playtesting & The Necrobloom Inception
 
+### 2026-09-10: Atraxa, Praetors' Voice — Mana Base, Ramp Velocity & Anti-Aggro Overhaul
+*   **Playtest Diagnosis:** Following 10 real-world playtest games resulting in severe Turn 8 commander cast stalls, color-screw, and early aggro vulnerability, identified that 51.4% of the original mana base consisted of dead/slow lands (6 unfetchable taplands, 10 mono basics, and 2 colorless trap lands—including *Interplanar Beacon* which cannot cast Atraxa or ramp spells).
+*   **The 11-Card Overhaul:**
+    *   **In (11):** *Sea of Clouds*, *Morphic Pool*, *Vault of Champions*, *Undergrowth Stadium*, *City of Brass*, *Mana Confluence*, *Chromatic Lantern*, *Delighted Halfling*, *Baleful Strix*, *Dovin's Veto*, *Toxic Deluge*.
+    *   **Out (11):** *Sandsteppe Citadel*, *Seaside Citadel*, *Interplanar Beacon*, *Forest* (1), *Island* (1), *Ajani Steadfast*, *Arena Rector*, *Cultivate*, *Inexorable Tide*, *Counterspell*, *Eerie Ultimatum*.
+*   **Synergy & Mana Rationale:**
+    *   **Untapped 4-Color Fixing:** Completed the full 6-land Crowd land cycle (*Sea of Clouds*, *Morphic Pool*, *Vault of Champions*, *Undergrowth Stadium* alongside *Bountiful Promenade* and *Rejuvenating Springs*) and added untapped rainbow pain lands (*City of Brass*, *Mana Confluence*).
+    *   **Proliferate Mana Engines Preserved:** Fully retained signature scaling engines *Astral Cornucopia*, *Everflowing Chalice*, *Karn's Bastion*, and *Thrummingbird*.
+    *   **High-Velocity Early Defense:** Added *Delighted Halfling* ({G}) for uncounterable 4-color fixing and 1/2 blocking, *Baleful Strix* ({U}{B}) for early 1/1 flying deathtouch cantrip rattlesnake defense, *Toxic Deluge* ({2}{B}) for a 3-mana board reset against fast aggro/tokens, and *Dovin's Veto* ({W}{U}) to eliminate double-blue pip friction.
+    *   **Chromatic Lantern Re-Integration:** Swapped the passive 4-mana *Arena Rector* for *Chromatic Lantern* ({3}) to provide total color insurance without sacrificing deck speed.
+*   **Bracket 3 Status:** Strict compliance maintained with exactly 3 / 3 Game Changers (*Teferi's Protection*, *Narset, Parter of Veils*, *Farewell*).
+*   **Validation:** 20-simulation goldfish check — **96% commander cast rate (77/80, T5.2 avg, T4–T5 median peak 53/80)**, **81% target readiness (T5.7 avg)**, **100% playable keeps (0% Desperation Keeps, 6.97 avg hand size)**. Fastest deployment verified at **Turn 3**. Logged to `commander_decks/Planning/AtraxaPraetorsVoice/GOLDFISH_LOG.md`.
+
 ### 2026-09-10: Atraxa, Praetors' Voice — New Planning Deck: Non-Red (WUBG) Superfriends & Proliferate Engine
 *   **Deck Inception:** Designed and scaffolded a brand new Bracket 3 Non-Red ({G}{W}{U}{B}) Superfriends deck in [`commander_decks/Planning/AtraxaPraetorsVoice/atraxa_superfriends.md`](commander_decks/Planning/AtraxaPraetorsVoice/atraxa_superfriends.md) (`deck_status: main`) based on the EDHREC consensus build.
 *   **Synergy Engine:** Features Atraxa as an impenetrable 4/4 vigilance, deathtouch, and lifelink bodyguard that passively proliferates loyalty counters on every end step. Stacks 18 planeswalkers behind asymmetric board wipes (*Supreme Verdict*, *Farewell*) that leave your planeswalkers untouched while clearing opposing armies.

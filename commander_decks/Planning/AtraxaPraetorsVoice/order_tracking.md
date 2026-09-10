@@ -1,17 +1,19 @@
 # Order Tracking: AtraxaPraetorsVoice
 
 ## Overview
-*   **Total Deck Size:** 94 Cards
-*   **In-Hand / Owned:** 7 cards (Includes user-owned Revised Bayou)
-*   **Pending Acquisition / Singles to Order:** 87 cards
+*   **Total Deck Size:** 96 Cards
+*   **In-Hand / Owned:** 3 cards
+*   **Pending Acquisition / Singles to Order:** 93 cards
 
 ---
 
-## 📦 Singles to Acquire / Order List (87 Cards)
+## 📦 Singles to Acquire / Order List (93 Cards)
 
-### Lands (23 Cards)
+### Lands (30 Cards)
+- [x] Bayou (Revised Dual - Owned)
 - [ ] Bountiful Promenade
 - [ ] Breeding Pool
+- [ ] City of Brass
 - [ ] Flooded Strand
 - [ ] Forest
 - [ ] Godless Shrine
@@ -19,28 +21,34 @@
 - [ ] Indatha Triome
 - [ ] Island
 - [ ] Karn's Bastion
+- [ ] Mana Confluence
 - [ ] Marsh Flats
 - [ ] Misty Rainforest
+- [ ] Morphic Pool
 - [ ] Overgrown Tomb
 - [ ] Plains
 - [ ] Polluted Delta
 - [ ] Raffine's Tower
 - [ ] Rejuvenating Springs
+- [ ] Sea of Clouds
 - [ ] Spara's Headquarters
 - [ ] Swamp
 - [ ] Temple Garden
+- [ ] Undergrowth Stadium
+- [ ] Vault of Champions
 - [ ] Verdant Catacombs
 - [ ] Watery Grave
 - [ ] Windswept Heath
 - [ ] Zagoth Triome
 
-### Creatures (16 Cards)
-- [ ] Arena Rector
+### Creatures (17 Cards)
 - [ ] Atraxa, Praetors' Voice
+- [ ] Baleful Strix
 - [ ] Birds of Paradise
 - [ ] Bloom Tender
 - [ ] Carth the Lion
 - [ ] Deepglow Skate
+- [ ] Delighted Halfling
 - [ ] Dreamtide Whale
 - [ ] Evolution Sage
 - [ ] Ezuri, Stalker of Spheres
@@ -52,9 +60,10 @@
 - [ ] Thrummingbird
 - [ ] Vorinclex, Monstrous Raider
 
-### Artifacts & Ramp (8 Cards)
+### Artifacts & Ramp (9 Cards)
 - [ ] Arcane Signet
 - [ ] Astral Cornucopia
+- [ ] Chromatic Lantern
 - [ ] Contagion Engine
 - [ ] Everflowing Chalice
 - [ ] Fellwar Stone
@@ -62,11 +71,9 @@
 - [ ] Sol Ring
 - [ ] The Chain Veil
 
-### Spells & Interaction (14 Cards)
+### Spells & Interaction (13 Cards)
 - [ ] Anguished Unmaking
-- [ ] Counterspell
-- [ ] Cultivate
-- [ ] Eerie Ultimatum
+- [ ] Dovin's Veto
 - [ ] Experimental Augury
 - [ ] Farewell
 - [ ] Farseek
@@ -77,15 +84,14 @@
 - [ ] Teferi's Protection
 - [ ] Tezzeret's Gambit
 - [ ] Three Visits
+- [ ] Toxic Deluge
 
-### Enchantments & Planeswalkers (26 Cards)
-- [ ] Ajani Steadfast
+### Enchantments & Planeswalkers (24 Cards)
 - [ ] Ajani, Sleeper Agent
 - [ ] Ashiok, Dream Render
 - [ ] Brokers Ascendancy
 - [ ] Doubling Season
 - [ ] Elspeth, Sun's Champion
-- [ ] Inexorable Tide
 - [ ] Innkeeper's Talent
 - [ ] Kaya the Inexorable
 - [ ] Liliana, Dreadhorde General
@@ -108,11 +114,7 @@
 
 ---
 
-## 🛡️ Inventory In-Hand (7 Cards)
-- [x] Bayou (Revised Dual — In-Hand)
+## 🛡️ Inventory In-Hand (3 Cards)
 - [x] Command Tower
 - [x] Exotic Orchard
-- [x] Interplanar Beacon
 - [x] Nature's Lore
-- [x] Sandsteppe Citadel
-- [x] Seaside Citadel

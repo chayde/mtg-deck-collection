@@ -2,13 +2,12 @@ COMMANDER:
 1 Atraxa, Praetors' Voice
 
 DECK:
-1 Ajani Steadfast
 1 Ajani, Sleeper Agent
 1 Anguished Unmaking
 1 Arcane Signet
-1 Arena Rector
 1 Ashiok, Dream Render
 1 Astral Cornucopia
+1 Baleful Strix
 1 Bayou
 1 Birds of Paradise
 1 Bloom Tender
@@ -16,14 +15,15 @@ DECK:
 1 Breeding Pool
 1 Brokers Ascendancy
 1 Carth the Lion
+1 Chromatic Lantern
+1 City of Brass
 1 Command Tower
 1 Contagion Engine
-1 Counterspell
-1 Cultivate
 1 Deepglow Skate
+1 Delighted Halfling
 1 Doubling Season
+1 Dovin's Veto
 1 Dreamtide Whale
-1 Eerie Ultimatum
 1 Elspeth, Sun's Champion
 1 Everflowing Chalice
 1 Evolution Sage
@@ -35,21 +35,21 @@ DECK:
 1 Fellwar Stone
 1 Flooded Strand
 1 Flux Channeler
-3 Forest
+2 Forest
 1 Godless Shrine
 1 Hallowed Fountain
 1 Ichormoon Gauntlet
 1 Indatha Triome
-1 Inexorable Tide
 1 Innkeeper's Talent
-1 Interplanar Beacon
-3 Island
+2 Island
 1 Karn's Bastion
 1 Kaya the Inexorable
 1 Lae'zel, Vlaakith's Champion
 1 Liliana, Dreadhorde General
+1 Mana Confluence
 1 Marsh Flats
 1 Misty Rainforest
+1 Morphic Pool
 1 Narset Transcendent
 1 Narset, Parter of Veils
 1 Nature's Lore
@@ -64,8 +64,7 @@ DECK:
 1 Raffine's Tower
 1 Rejuvenating Springs
 1 Ripples of Potential
-1 Sandsteppe Citadel
-1 Seaside Citadel
+1 Sea of Clouds
 1 Shalai, Voice of Plenty
 1 Sol Ring
 1 Spara's Headquarters
@@ -88,7 +87,10 @@ DECK:
 1 The Wandering Emperor
 1 Three Visits
 1 Thrummingbird
+1 Toxic Deluge
 1 Ugin, the Spirit Dragon
+1 Undergrowth Stadium
+1 Vault of Champions
 1 Verdant Catacombs
 1 Vorinclex, Monstrous Raider
 1 Vraska, Betrayal's Sting

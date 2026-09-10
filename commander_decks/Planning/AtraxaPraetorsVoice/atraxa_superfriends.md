@@ -14,8 +14,9 @@ deck_status: main
 In a 4-player multiplayer game, planeswalkers are uniquely vulnerable to combat damage from three opponents. Atraxa solves this vulnerability completely:
 1. **The Ultimate Bodyguard:** Vigilance and deathtouch ensure Atraxa can attack freely to buffer your life total with lifelink while remaining untapped on defense to stop ground and aerial attackers in their tracks.
 2. **Zero-Mana Proliferate:** Every turn cycle, all planeswalkers advance toward their ultimates for free without investing additional mana.
-3. **Asymmetric Board Wipes:** Sweepers like [Supreme Verdict](https://scryfall.com/search?q=!"Supreme+Verdict") and [Farewell](https://scryfall.com/search?q=!"Farewell") eliminate opposing creature armies while leaving your planeswalkers completely unharmed.
-4. **Instant Ultimates:** [Doubling Season](https://scryfall.com/search?q=!"Doubling+Season"), [Vorinclex, Monstrous Raider](https://scryfall.com/search?q=!"Vorinclex,+Monstrous+Raider"), and [Deepglow Skate](https://scryfall.com/search?q=!"Deepglow+Skate") enable planeswalkers to reach ultimate loyalty the exact turn they hit the battlefield.
+3. **Explosive Mana Multipliers:** [Astral Cornucopia](https://scryfall.com/search?q=!"Astral+Cornucopia") and [Everflowing Chalice](https://scryfall.com/search?q=!"Everflowing+Chalice") scale exponentially with proliferate, tapping for 3 to 6+ mana to fuel massive turns and [The Chain Veil](https://scryfall.com/search?q=!"The+Chain+Veil") activations.
+4. **Asymmetric Board Wipes:** Sweepers like [Toxic Deluge](https://scryfall.com/search?q=!"Toxic+Deluge"), [Supreme Verdict](https://scryfall.com/search?q=!"Supreme+Verdict"), and [Farewell](https://scryfall.com/search?q=!"Farewell") eliminate opposing creature armies while leaving your planeswalkers completely unharmed.
+5. **Instant Ultimates:** [Doubling Season](https://scryfall.com/search?q=!"Doubling+Season"), [Vorinclex, Monstrous Raider](https://scryfall.com/search?q=!"Vorinclex,+Monstrous+Raider"), and [Deepglow Skate](https://scryfall.com/search?q=!"Deepglow+Skate") enable planeswalkers to reach ultimate loyalty the exact turn they hit the battlefield.
 
 ---
 
@@ -24,8 +25,7 @@ In a 4-player multiplayer game, planeswalkers are uniquely vulnerable to combat 
 ### 👑 Commander (1 Card)
 *   **Atraxa, Praetors' Voice:** 4/4 Flying, vigilance, deathtouch, and lifelink anchor that proliferates all permanents on every end step.
 
-### 🧙 Planeswalker Suite (19 Cards)
-*   **Ajani Steadfast:** Minus ability adds loyalty to all other planeswalkers while +1 gives vigilance and lifelink.
+### 🧙 Planeswalker Suite (18 Cards)
 *   **Ajani, Sleeper Agent:** Digs for creatures/walkers, distributes counters/vigilance, and gifts opponents lethal poison emblems.
 *   **Ashiok, Dream Render:** Static completely shuts down opponent search libraries (fetchlands, tutors); exiles all opponent graveyards.
 *   **Elspeth, Sun's Champion:** Creates three 1/1 Soldier blockers every turn and board wipes power 4+ creatures.
@@ -45,12 +45,13 @@ In a 4-player multiplayer game, planeswalkers are uniquely vulnerable to combat 
 *   **Ugin, the Spirit Dragon:** The ultimate colorless reset button; -X exiles all colored permanents while preserving your colorless rocks.
 *   **Vraska, Betrayal's Sting:** Draws cards, proliferates, and hands out poison counters to turn into an alternate win condition.
 
-### 🛡️ Creature Engines & Proliferate Multipliers (15 Cards)
-*   **Arena Rector:** Dies to tutor any planeswalker (Ugin, Liliana, Tamiyo) directly onto the battlefield.
+### 🛡️ Creature Engines & Proliferate Multipliers (16 Cards)
+*   **Baleful Strix:** 1/1 Flying deathtouch cantrip; replaces itself on entry and stops aggressive attackers and flyers cold.
 *   **Birds of Paradise:** 1-drop mana dork providing perfect 4-color fixing.
 *   **Bloom Tender:** Taps for up to 4 mana with Atraxa on the battlefield.
 *   **Carth the Lion:** Adds +1 to all loyalty ability costs and digs 7 cards deep for a planeswalker on entry or death.
 *   **Deepglow Skate:** Doubles all loyalty counters on all planeswalkers upon entry for instant same-turn ultimates.
+*   **Delighted Halfling:** 1-drop mana fixer; taps for any color for Atraxa and planeswalkers, makes them uncounterable, and blocks 1/1s with its 1/2 body.
 *   **Dreamtide Whale:** Vanishing leviathan that proliferates twice per turn cycle when spells are cast.
 *   **Evolution Sage:** Proliferates every single time a land enters the battlefield under your control.
 *   **Ezuri, Stalker of Spheres:** Proliferates on entry and draws cards whenever you proliferate.
@@ -62,12 +63,11 @@ In a 4-player multiplayer game, planeswalkers are uniquely vulnerable to combat 
 *   **Thrummingbird:** Classic 2-drop evasive flyer that proliferates on combat damage.
 *   **Vorinclex, Monstrous Raider:** Doubles all counters placed on your permanents; planeswalkers enter with double starting loyalty.
 
-### ⚡ Counter & Activation Multipliers (6 Cards)
+### ⚡ Counter & Activation Multipliers (5 Cards)
 *   **Brokers Ascendancy:** Puts a +1/+1 counter on all creatures and a loyalty counter on all planeswalkers every end step.
 *   **Contagion Engine:** Shrinks opponent boards and taps to proliferate twice.
 *   **Doubling Season:** Planeswalkers enter with twice their starting loyalty, enabling instant ultimates on resolution.
 *   **Ichormoon Gauntlet:** Grants all planeswalkers +1 proliferate and extra turns on -12; provides static loyalty buffs.
-*   **Inexorable Tide:** Proliferates whenever you cast any spell.
 *   **The Chain Veil:** Taps to allow every planeswalker to activate a second time each turn; combo engine.
 
 ### 📜 Oaths & Support Enchantments (4 Cards)
@@ -78,20 +78,19 @@ In a 4-player multiplayer game, planeswalkers are uniquely vulnerable to combat 
 
 ### 💎 Mana Acceleration (10 Cards)
 *   **Arcane Signet:** Untapped 2-drop fixing for all 4 colors.
-*   **Astral Cornucopia:** Scales with proliferate counters to tap for massive amounts of mana.
-*   **Cultivate:** Basic land acceleration and hand fixing.
-*   **Everflowing Chalice:** Colorless rock that scales exponentially with proliferate counters.
-*   **Farseek:** Fetches fetchable Shocklands and Triomes directly to the battlefield.
+*   **Astral Cornucopia:** Scales with proliferate counters to tap for massive amounts of any-color mana.
+*   **Chromatic Lantern:** Fixes all lands to tap for any color and provides an extra any-color mana source.
+*   **Everflowing Chalice:** Colorless rock that scales exponentially with proliferate counters into a burst mana battery.
+*   **Farseek:** Fetches fetchable Shocklands, Triomes, and Bayou directly to the battlefield.
 *   **Fellwar Stone:** Efficient 2-mana untapped rock.
-*   **Nature's Lore:** Grabs any Forest (including Breeding Pool, Overgrown Tomb, Temple Garden) untapped.
+*   **Nature's Lore:** Grabs any Forest (including Breeding Pool, Overgrown Tomb, Temple Garden, Bayou) untapped.
 *   **Sol Ring:** The premier format staple for fast mana.
 *   **Tezzeret's Gambit:** Draws two cards and proliferates for 3 mana and 2 life.
 *   **Three Visits:** Grabs any Forest card directly onto the battlefield untapped.
 
 ### ⚔️ Targeted & Mass Disruption (10 Cards)
 *   **Anguished Unmaking:** Instant-speed unconditional exile for any nonland permanent.
-*   **Counterspell:** The classic 2-mana hard counter for game-ending spells.
-*   **Eerie Ultimatum:** Returns every permanent card with a different name from your graveyard directly to the battlefield.
+*   **Dovin's Veto:** Uncounterable hard counter for noncreature spells with clean {W}{U} casting requirements.
 *   **Experimental Augury:** Instant-speed impulse draw that proliferates.
 *   **Farewell:** Premier modal board wipe; exiles creatures, artifacts, enchantments, and graveyards while sparing planeswalkers. *(Game Changer 2/3)*
 *   **Path to Exile:** 1-mana instant exile removal.
@@ -99,42 +98,56 @@ In a 4-player multiplayer game, planeswalkers are uniquely vulnerable to combat 
 *   **Supreme Verdict:** Uncounterable creature board wipe that keeps your planeswalkers intact.
 *   **Swords to Plowshares:** Unconditional 1-mana exile removal.
 *   **Teferi's Protection:** The ultimate defensive spell; phases your entire board out and locks your life total. *(Game Changer 3/3)*
+*   **Toxic Deluge:** 3-mana asymmetric creature board reset to crush early aggressive starts and token swarms.
 
-### 🌲 Mana Base & Lands (35 Cards)
+### 🌲 Mana Base & Lands (36 Cards)
 *   **Flooded Strand, Marsh Flats, Misty Rainforest, Polluted Delta, Verdant Catacombs, Windswept Heath (6):** Fetchlands for fixing and land recursion synergy.
 *   **Breeding Pool, Godless Shrine, Hallowed Fountain, Overgrown Tomb, Temple Garden, Watery Grave (6):** Fetchable dual shocklands.
 *   **Indatha Triome, Raffine's Tower, Spara's Headquarters, Zagoth Triome (4):** Fetchable tri-color lands for color fixing and late-game cycling.
-*   **Bountiful Promenade, Rejuvenating Springs (2):** Crowd lands that enter untapped unconditionally in multiplayer.
+*   **Bountiful Promenade, Morphic Pool, Rejuvenating Springs, Sea of Clouds, Undergrowth Stadium, Vault of Champions (6):** Full cycle of 6 Crowd lands that enter untapped unconditionally in multiplayer.
 *   **Bayou (1):** Original Revised dual land (Swamp Forest); enters untapped unconditionally with zero life payment, fetchable by five fetchlands, Nature's Lore, Three Visits, and Farseek.
-*   **Sandsteppe Citadel, Seaside Citadel (2):** Classic tri-color wedge lands.
+*   **City of Brass, Mana Confluence (2):** Untapped 4-color pain lands that guarantee perfect fixing on Turns 1–3 (offset by Atraxa's lifelink).
 *   **Command Tower, Exotic Orchard (2):** Flawless any-color multiplayer fixing.
-*   **Interplanar Beacon (1):** Taps for colorless, gains 1 life whenever you cast a planeswalker, and filters for planeswalkers.
-*   **Karn's Bastion (1):** Utility land that taps to proliferate at instant speed.
-*   **Forest (3), Island (3), Plains (2), Swamp (2) (10):** Basic lands for path/field insurance and basic land ramp.
+*   **Karn's Bastion (1):** Utility land that taps to proliferate at instant speed, scaling planeswalkers, Cornucopia, and Chalice.
+*   **Forest (2), Island (2), Plains (2), Swamp (2) (8):** Balanced basic lands for path/field insurance and basic land ramp.
 
 ---
 
 ## 🚀 Future Roadmap: Upgrades & Considerations
 
 ### 💡 High-Impact Tech to Consider
-*   **Crowd Lands Suite (Vault of Champions, Sea of Clouds, Morphic Pool, Undergrowth Stadium):** Replacing the remaining tapped tri-lands (Sandsteppe Citadel, Seaside Citadel) with the remaining untapped Crowd lands will eliminate tap-land friction completely.
-*   **Ghostly Prison / Propaganda ({2}{W} / {2}{U}):** Additional pillowfort tax to make attacking your planeswalkers impossible for token swarm decks.
-*   **Cranial Ram / Resourceful Defense:** Additional counter-redistribution tech to safeguard loyalty when planeswalkers die.
+*   **Plaza of Heroes:** Untapped legendary land that taps for any color for Atraxa and planeswalkers, with built-in hexproof/indestructible protection for Atraxa.
+*   **Ghostly Prison / Propaganda ({2}{W} / {2}{U}):** Additional pillowfort tax to deter attacks against your life total.
+*   **Norn's Annex ({3}{W/P}{W/P}):** Direct tax that protects both you and your planeswalkers against combat attacks.
+*   **Resourceful Defense ({2}{W}):** Counter-redistribution enchantment to safeguard loyalty when planeswalkers leave the battlefield.
 
 ### 🛒 Active Acquisition List (Priority Swaps)
 
 | **New Card (In)** | **Card to Remove (Out)** | **Category** | **Status** |
 | :--- | :--- | :--- | :--- |
-| Sea of Clouds | Seaside Citadel | Lands | Planning |
-| Vault of Champions | Sandsteppe Citadel | Lands | Planning |
+| Sea of Clouds | Seaside Citadel | Lands | Acquired |
+| Morphic Pool | Sandsteppe Citadel | Lands | Acquired |
+| Vault of Champions | Interplanar Beacon | Lands | Acquired |
+| Undergrowth Stadium | Forest (Basic #3) | Lands | Acquired |
+| City of Brass | Island (Basic #3) | Lands | Acquired |
+| Mana Confluence | Ajani Steadfast | Lands | Acquired |
+| Chromatic Lantern | Arena Rector | Artifacts | Acquired |
+| Delighted Halfling | Cultivate | Creatures | Acquired |
+| Baleful Strix | Inexorable Tide | Creatures | Acquired |
+| Dovin's Veto | Counterspell | Disruption | Acquired |
+| Toxic Deluge | Eerie Ultimatum | Disruption | Acquired |
 
 ---
 
 ## 📜 Deck Changelog
+*   **2026-09-10:** Comprehensive Mana Base, Ramp Velocity & Anti-Aggro Overhaul.
+    *   **In (11):** Sea of Clouds, Morphic Pool, Vault of Champions, Undergrowth Stadium, City of Brass, Mana Confluence, Chromatic Lantern, Delighted Halfling, Baleful Strix, Dovin's Veto, Toxic Deluge.
+    *   **Out (11):** Sandsteppe Citadel, Seaside Citadel, Interplanar Beacon, Forest (1), Island (1), Ajani Steadfast, Arena Rector, Cultivate, Inexorable Tide, Counterspell, Eerie Ultimatum.
+    *   **Reason:** Resolved severe Turn 8 commander cast stalls and early aggro vulnerability. Replaced unfetchable taplands and colorless trap lands with the full 6-land Crowd land suite and untapped rainbow pain lands. Replaced slow 3-mana basic ramp and extreme 7-pip requirements with 1-drop uncounterable fixing (Delighted Halfling), early flying deathtouch cantrip defense (Baleful Strix), 3-mana anti-aggro reset (Toxic Deluge), and uncounterable noncreature interaction (Dovin's Veto), while preserving signature proliferate engines (Astral Cornucopia, Everflowing Chalice, Karn's Bastion, Thrummingbird).
 *   **2026-09-10:** Eliminated 3-mana filter/fixing crutch for instant-speed planeswalker interaction.
     *   **In:** The Wandering Emperor
     *   **Out:** Chromatic Lantern
-    *   **Reason:** Chromatic Lantern's 3-mana fixing is redundant with a pristine 4-color fetch/shock/dual mana base. Replaced with The Wandering Emperor to provide flash-speed combat ambushing, creature exile, life buffer, and 2/2 vigilance Samurai blockers while holding up instant interaction.
+    *   **Reason:** Replaced with The Wandering Emperor to provide flash-speed combat ambushing, creature exile, life buffer, and 2/2 vigilance Samurai blockers while holding up instant interaction.
 *   **2026-09-10:** Integrated user-owned Revised dual land (Bayou).
     *   **In:** Bayou
     *   **Out:** Opulent Palace
@@ -150,13 +163,12 @@ COMMANDER:
 1 Atraxa, Praetors' Voice  
 
 DECK:  
-1 Ajani Steadfast  
 1 Ajani, Sleeper Agent  
 1 Anguished Unmaking  
 1 Arcane Signet  
-1 Arena Rector  
 1 Ashiok, Dream Render  
 1 Astral Cornucopia  
+1 Baleful Strix  
 1 Bayou  
 1 Birds of Paradise  
 1 Bloom Tender  
@@ -164,14 +176,15 @@ DECK:
 1 Breeding Pool  
 1 Brokers Ascendancy  
 1 Carth the Lion  
+1 Chromatic Lantern  
+1 City of Brass  
 1 Command Tower  
 1 Contagion Engine  
-1 Counterspell  
-1 Cultivate  
 1 Deepglow Skate  
+1 Delighted Halfling  
 1 Doubling Season  
+1 Dovin's Veto  
 1 Dreamtide Whale  
-1 Eerie Ultimatum  
 1 Elspeth, Sun's Champion  
 1 Everflowing Chalice  
 1 Evolution Sage  
@@ -183,21 +196,21 @@ DECK:
 1 Fellwar Stone  
 1 Flooded Strand  
 1 Flux Channeler  
-3 Forest  
+2 Forest  
 1 Godless Shrine  
 1 Hallowed Fountain  
 1 Ichormoon Gauntlet  
 1 Indatha Triome  
-1 Inexorable Tide  
 1 Innkeeper's Talent  
-1 Interplanar Beacon  
-3 Island  
+2 Island  
 1 Karn's Bastion  
 1 Kaya the Inexorable  
 1 Lae'zel, Vlaakith's Champion  
 1 Liliana, Dreadhorde General  
+1 Mana Confluence  
 1 Marsh Flats  
 1 Misty Rainforest  
+1 Morphic Pool  
 1 Narset Transcendent  
 1 Narset, Parter of Veils  
 1 Nature's Lore  
@@ -212,8 +225,7 @@ DECK:
 1 Raffine's Tower  
 1 Rejuvenating Springs  
 1 Ripples of Potential  
-1 Sandsteppe Citadel  
-1 Seaside Citadel  
+1 Sea of Clouds  
 1 Shalai, Voice of Plenty  
 1 Sol Ring  
 1 Spara's Headquarters  
@@ -236,7 +248,10 @@ DECK:
 1 The Wandering Emperor  
 1 Three Visits  
 1 Thrummingbird  
+1 Toxic Deluge  
 1 Ugin, the Spirit Dragon  
+1 Undergrowth Stadium  
+1 Vault of Champions  
 1 Verdant Catacombs  
 1 Vorinclex, Monstrous Raider  
 1 Vraska, Betrayal's Sting  
