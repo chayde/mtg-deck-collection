@@ -9,6 +9,7 @@ DECK:
 1 Arena Rector
 1 Ashiok, Dream Render
 1 Astral Cornucopia
+1 Bayou
 1 Birds of Paradise
 1 Bloom Tender
 1 Bountiful Promenade
@@ -57,7 +58,6 @@ DECK:
 1 Oath of Nissa
 1 Oath of Teferi
 1 Oko, Thief of Crowns
-1 Opulent Palace
 1 Overgrown Tomb
 1 Path to Exile
 2 Plains

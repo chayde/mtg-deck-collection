@@ -2,14 +2,14 @@
 
 ## Overview
 *   **Total Deck Size:** 94 Cards
-*   **In-Hand / Owned:** 6 cards
-*   **Pending Acquisition / Singles to Order:** 88 cards
+*   **In-Hand / Owned:** 7 cards (Includes user-owned Revised Bayou)
+*   **Pending Acquisition / Singles to Order:** 87 cards
 
 ---
 
-## 📦 Singles to Acquire / Order List (88 Cards)
+## 📦 Singles to Acquire / Order List (87 Cards)
 
-### Lands (24 Cards)
+### Lands (23 Cards)
 - [ ] Bountiful Promenade
 - [ ] Breeding Pool
 - [ ] Flooded Strand
@@ -21,7 +21,6 @@
 - [ ] Karn's Bastion
 - [ ] Marsh Flats
 - [ ] Misty Rainforest
-- [ ] Opulent Palace
 - [ ] Overgrown Tomb
 - [ ] Plains
 - [ ] Polluted Delta
@@ -109,7 +108,8 @@
 
 ---
 
-## 🛡️ Inventory In-Hand (6 Cards)
+## 🛡️ Inventory In-Hand (7 Cards)
+- [x] Bayou (Revised Dual — In-Hand)
 - [x] Command Tower
 - [x] Exotic Orchard
 - [x] Interplanar Beacon

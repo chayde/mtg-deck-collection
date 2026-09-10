@@ -105,7 +105,8 @@ In a 4-player multiplayer game, planeswalkers are uniquely vulnerable to combat 
 *   **Breeding Pool, Godless Shrine, Hallowed Fountain, Overgrown Tomb, Temple Garden, Watery Grave (6):** Fetchable dual shocklands.
 *   **Indatha Triome, Raffine's Tower, Spara's Headquarters, Zagoth Triome (4):** Fetchable tri-color lands for color fixing and late-game cycling.
 *   **Bountiful Promenade, Rejuvenating Springs (2):** Crowd lands that enter untapped unconditionally in multiplayer.
-*   **Opulent Palace, Sandsteppe Citadel, Seaside Citadel (3):** Classic tri-color wedge lands.
+*   **Bayou (1):** Original Revised dual land (Swamp Forest); enters untapped unconditionally with zero life payment, fetchable by five fetchlands, Nature's Lore, Three Visits, and Farseek.
+*   **Sandsteppe Citadel, Seaside Citadel (2):** Classic tri-color wedge lands.
 *   **Command Tower, Exotic Orchard (2):** Flawless any-color multiplayer fixing.
 *   **Interplanar Beacon (1):** Taps for colorless, gains 1 life whenever you cast a planeswalker, and filters for planeswalkers.
 *   **Karn's Bastion (1):** Utility land that taps to proliferate at instant speed.
@@ -116,7 +117,7 @@ In a 4-player multiplayer game, planeswalkers are uniquely vulnerable to combat 
 ## 🚀 Future Roadmap: Upgrades & Considerations
 
 ### 💡 High-Impact Tech to Consider
-*   **Crowd Lands Suite (Vault of Champions, Sea of Clouds, Morphic Pool, Undergrowth Stadium):** Replacing the tapped tri-lands (Opulent Palace, Sandsteppe Citadel, Seaside Citadel) with the remaining untapped Crowd lands will eliminate tap-land friction completely.
+*   **Crowd Lands Suite (Vault of Champions, Sea of Clouds, Morphic Pool, Undergrowth Stadium):** Replacing the remaining tapped tri-lands (Sandsteppe Citadel, Seaside Citadel) with the remaining untapped Crowd lands will eliminate tap-land friction completely.
 *   **Ghostly Prison / Propaganda ({2}{W} / {2}{U}):** Additional pillowfort tax to make attacking your planeswalkers impossible for token swarm decks.
 *   **Cranial Ram / Resourceful Defense:** Additional counter-redistribution tech to safeguard loyalty when planeswalkers die.
 
@@ -125,12 +126,15 @@ In a 4-player multiplayer game, planeswalkers are uniquely vulnerable to combat 
 | **New Card (In)** | **Card to Remove (Out)** | **Category** | **Status** |
 | :--- | :--- | :--- | :--- |
 | Sea of Clouds | Seaside Citadel | Lands | Planning |
-| Morphic Pool | Opulent Palace | Lands | Planning |
 | Vault of Champions | Sandsteppe Citadel | Lands | Planning |
 
 ---
 
 ## 📜 Deck Changelog
+*   **2026-09-10:** Integrated user-owned Revised dual land (Bayou).
+    *   **In:** Bayou
+    *   **Out:** Opulent Palace
+    *   **Reason:** Replaced a tapped tri-land with an original Revised dual land (Swamp Forest) that enters untapped unconditionally and is fetchable by five fetchlands, Nature's Lore, Three Visits, and Farseek.
 *   **2026-09-10:** Initial deck inception from EDHREC consensus Superfriends build.
     *   **In (100):** Full 100-card baseline established in Planning with 18 planeswalkers, 15 creature engines, counter multipliers (Doubling Season, Vorinclex, Deepglow Skate), and 3/3 Game Changers (Teferi's Protection, Narset, Parter of Veils, Farewell).
     *   **Reason:** Scaffolding the ultimate non-Red Superfriends deck around Atraxa's passive proliferate and defensive keywords.
@@ -149,6 +153,7 @@ DECK:
 1 Arena Rector  
 1 Ashiok, Dream Render  
 1 Astral Cornucopia  
+1 Bayou  
 1 Birds of Paradise  
 1 Bloom Tender  
 1 Bountiful Promenade  
@@ -197,7 +202,6 @@ DECK:
 1 Oath of Nissa  
 1 Oath of Teferi  
 1 Oko, Thief of Crowns  
-1 Opulent Palace  
 1 Overgrown Tomb  
 1 Path to Exile  
 2 Plains  
