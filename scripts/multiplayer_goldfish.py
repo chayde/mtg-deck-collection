@@ -976,6 +976,36 @@ def _run_one(deck_data: List[CardData], commander: CardData, num_turns: int,
     return players
 
 
+def diagnose_player_stall(player: Player, commander: CardData, num_turns: int,
+                          opponents: List[Player], frac: float) -> str:
+    """Diagnoses why a player failed to cast or was severely delayed in casting their commander."""
+    if player.commander_cast_turn is None:
+        total_mana, r, g, w, u, b = compute_mana(player, num_turns, opponents, frac)
+        total_lands = len(player.lands)
+        total_perms = len([p for p in player.mana_perms if num_turns >= p[1]])
+
+        # Check severe mana screw
+        if total_lands <= 2:
+            return f"Severe Mana Screw: Stuck on {total_lands} land{'s' if total_lands != 1 else ''} through Turn {num_turns}"
+        elif total_mana < commander.cmc:
+            return f"Mana Stalled: Controlled {total_lands} lands and {total_perms} rock(s) (total {total_mana} mana, needed {commander.cmc})"
+
+        # Check color screw
+        missing_pips = []
+        color_counts = {'R': r, 'G': g, 'W': w, 'U': u, 'B': b}
+        color_names = {'R': 'Red {R}', 'G': 'Green {G}', 'W': 'White {W}', 'U': 'Blue {U}', 'B': 'Black {B}'}
+        for color, needed in commander.pips.items():
+            if color_counts.get(color, 0) < needed:
+                missing_pips.append(color_names.get(color, f"{{{color}}}"))
+        if missing_pips:
+            return f"Color Screwed: Reached {total_mana} mana across {total_lands} lands, but lacked {', '.join(missing_pips)} for {commander.name}"
+
+        return f"Curve / Timing Stall: Reached {total_mana} mana across {total_lands} lands, but could not satisfy pip combination ({' '.join(f'{{{c}}}' for c in commander.pips)}) simultaneously"
+    else:
+        ct = player.commander_cast_turn
+        return f"Late Deployment: Cast on Turn {ct} due to slow early mana acceleration or tapped lands"
+
+
 BRACKET_TARGET_TURNS = {
     1: 10,
     2: 9,
@@ -1009,6 +1039,8 @@ def run_sims(deck_data: List[CardData], commander: CardData,
     sim_records = []
     overall_fastest_p = None
     overall_fastest_sim = None
+    overall_worst_p = None
+    overall_worst_sim = None
 
     target_turn = BRACKET_TARGET_TURNS.get(bracket, 7)
     bracket_label = BRACKET_NAMES.get(bracket, f"Bracket {bracket}")
@@ -1047,6 +1079,30 @@ def run_sims(deck_data: List[CardData], commander: CardData,
                 overall_fastest_p = earliest_p
                 overall_fastest_sim = sim
 
+        # Identify missed / stalled players in this simulation
+        missed_players = [p for p in players if p.commander_cast_turn is None]
+        missed_p = missed_players[0] if missed_players else None
+        missed_diag = None
+        if missed_p:
+            opps = [p for p in players if p != missed_p]
+            missed_diag = diagnose_player_stall(missed_p, commander, num_turns, opps, frac)
+
+        # Track worst-case deployment across all simulations
+        for p in players:
+            if p.commander_cast_turn is None:
+                if overall_worst_p is None or overall_worst_p.commander_cast_turn is not None:
+                    overall_worst_p = p
+                    overall_worst_sim = sim
+                elif len(p.lands) < len(overall_worst_p.lands):
+                    overall_worst_p = p
+                    overall_worst_sim = sim
+            elif overall_worst_p is None:
+                overall_worst_p = p
+                overall_worst_sim = sim
+            elif overall_worst_p.commander_cast_turn is not None and p.commander_cast_turn > overall_worst_p.commander_cast_turn:
+                overall_worst_p = p
+                overall_worst_sim = sim
+
         earliest_s = f"T{earliest}" if earliest else "-"
         sim_records.append({
             'sim': sim,
@@ -1058,7 +1114,10 @@ def run_sims(deck_data: List[CardData], commander: CardData,
             'earliest_hand': earliest_p.kept_hand if earliest_p else [],
             'earliest_quality': earliest_p.hand_quality if earliest_p else None,
             'earliest_size': earliest_p.starting_hand_size if earliest_p else None,
-            'earliest_line': [earliest_p.turn_log[t - 1].strip() for t in range(1, earliest_p.commander_cast_turn + 1) if t - 1 < len(earliest_p.turn_log)] if (earliest_p and earliest_p.commander_cast_turn) else []
+            'earliest_line': [earliest_p.turn_log[t - 1].strip() for t in range(1, earliest_p.commander_cast_turn + 1) if t - 1 < len(earliest_p.turn_log)] if (earliest_p and earliest_p.commander_cast_turn) else [],
+            'missed_seat': missed_p.pid if missed_p else None,
+            'missed_diag': missed_diag,
+            'missed_hand': missed_p.kept_hand if missed_p else [],
         })
 
         if earliest_p:
@@ -1070,10 +1129,14 @@ def run_sims(deck_data: List[CardData], commander: CardData,
                   f"Turns: {sim_turns or ['none']}  |  Avg creatures: {avg_cr:.1f}")
             print(f"         Hand: [{hand_str}]")
             print(f"         Line: {line_str}")
+            if missed_p:
+                print(f"         Missed (Seat {missed_p.pid}): {missed_diag}")
         else:
             print(f"  Sim {sim:2d}: Commander cast 0/4  |  "
                   f"Earliest: -     |  Turns: ['none']  |  "
                   f"Avg creatures: {avg_cr:.1f}")
+            if missed_p:
+                print(f"         Missed (Seat {missed_p.pid}): {missed_diag}")
 
     # --- Print Aggregate Stats ---
     total_slots = num_sims * 4
@@ -1095,6 +1158,20 @@ def run_sims(deck_data: List[CardData], commander: CardData,
         for t in range(1, overall_fastest_p.commander_cast_turn + 1):
             if t - 1 < len(overall_fastest_p.turn_log):
                 print(f"    {overall_fastest_p.turn_log[t - 1].strip()}")
+
+    worst_diag = ""
+    if overall_worst_p:
+        opps = [p for p in last_players if p != overall_worst_p]
+        worst_diag = diagnose_player_stall(overall_worst_p, commander, num_turns, opps, frac)
+        status_str = f"FAILED TO CAST (through Turn {num_turns})" if overall_worst_p.commander_cast_turn is None else f"Turn {overall_worst_p.commander_cast_turn} (Late Deployment)"
+        print(f"\n{'-'*68}\nWORST-CASE COMMANDER DEPLOYMENT SHOWCASE (Sim {overall_worst_sim}, Seat {overall_worst_p.pid})\n{'-'*68}")
+        print(f"  Status:        {status_str}")
+        print(f"  Mulligan:      {overall_worst_p.hand_quality} Keep ({overall_worst_p.starting_hand_size} cards)")
+        print(f"  Diagnostic:    {worst_diag}")
+        print(f"  Opening Hand:  {', '.join(overall_worst_p.kept_hand)}")
+        print("  Turn-by-Turn Play Sequence:")
+        for entry in overall_worst_p.turn_log:
+            print(f"    {entry.strip()}")
 
     print(f"\n{'-'*68}\nAGGREGATE DEPLOYMENT & MULLIGAN PROFILE\n{'-'*68}")
     print(f"  Commander cast rate: {len(all_turns)}/{total_slots} ({len(all_turns)/total_slots*100:.0f}%)")
@@ -1206,6 +1283,17 @@ def run_sims(deck_data: List[CardData], commander: CardData,
             'kept_hand': overall_fastest_p.kept_hand,
             'sequence': [overall_fastest_p.turn_log[t - 1].strip() for t in range(1, overall_fastest_p.commander_cast_turn + 1) if t - 1 < len(overall_fastest_p.turn_log)]
         } if overall_fastest_p else None,
+        'worst_deployment': {
+            'sim': overall_worst_sim,
+            'seat': overall_worst_p.pid,
+            'turn': overall_worst_p.commander_cast_turn,
+            'status': "FAILED TO CAST" if overall_worst_p.commander_cast_turn is None else f"Cast on Turn {overall_worst_p.commander_cast_turn}",
+            'diagnostic': worst_diag,
+            'hand_quality': overall_worst_p.hand_quality,
+            'hand_size': overall_worst_p.starting_hand_size,
+            'kept_hand': overall_worst_p.kept_hand,
+            'sequence': [entry.strip() for entry in overall_worst_p.turn_log]
+        } if overall_worst_p else None,
     }
 
 
@@ -1380,9 +1468,12 @@ def write_html_report(path: str, results: dict, meta: dict):
         details = ''
         if s.get('earliest_seat'):
             hand_abbr = ', '.join(s.get('earliest_hand', []))
-            details = f'<br><span class="muted" style="font-size:11px;">Seat {s["earliest_seat"]} ({s.get("earliest_quality")}): {esc(hand_abbr)}</span>'
+            details = f'<br><span class="muted" style="font-size:11px;">Fastest: Seat {s["earliest_seat"]} ({s.get("earliest_quality")}): {esc(hand_abbr)}</span>'
+        miss_info = ''
+        if s.get('missed_seat'):
+            miss_info = f'<br><span style="color:#f87171; font-size:11px; font-weight:600;">Missed: Seat {s["missed_seat"]} &mdash; {esc(s.get("missed_diag", ""))}</span>'
         sim_rows += (
-            f'<tr{miss}><td>{s["sim"]}</td><td>{s["cast"]}/4</td>'
+            f'<tr{miss}><td>{s["sim"]}</td><td>{s["cast"]}/4{miss_info}</td>'
             f'<td>{earliest}{details}</td><td class="turns">{turns}</td>'
             f'<td>{s["avg_creatures"]:.1f}</td></tr>')
 
@@ -1404,6 +1495,37 @@ def write_html_report(path: str, results: dict, meta: dict):
     </div>
     <div>
       <div class="k" style="margin-bottom:6px;">Turn-by-Turn Deployment Sequence:</div>
+      <ol style="margin:0; padding-left:20px; font-size:13px;">
+        {seq_items}
+      </ol>
+    </div>
+  </div>'''
+
+    worst_html = ''
+    wd = results.get('worst_deployment')
+    if wd:
+        seq_items = "".join(f"<li style='margin-bottom:4px;'><code>{esc(step)}</code></li>" for step in wd['sequence'])
+        hand_badges = "".join(f"<span style='display:inline-block; background:var(--card-alt); border:1px solid var(--line); border-radius:4px; padding:2px 6px; margin:2px 4px 2px 0; font-size:12px;'>{esc(card)}</span>" for card in wd['kept_hand'])
+        is_failed = "FAILED" in wd.get('status', '')
+        tag_bg = "#ef444433" if is_failed else "#f59e0b33"
+        tag_color = "var(--danger)" if is_failed else "var(--warn)"
+        border_color = "var(--danger)" if is_failed else "var(--warn)"
+        worst_html = f'''
+  <h2>⚠️ Worst-Case Commander Deployment Showcase</h2>
+  <div class="section-box" style="border-left:4px solid {border_color};">
+    <div style="font-size:16px; font-weight:700; margin-bottom:8px;">
+      Sim {wd['sim']}, Seat {wd['seat']} &mdash; {esc(wd['status'])}
+      <span class="target-tag" style="background:{tag_bg}; color:{tag_color}; font-size:12px; padding:3px 8px;">{esc(wd['hand_quality'])} Keep ({wd['hand_size']} cards)</span>
+    </div>
+    <div style="margin-bottom:12px; font-size:14px; color:#fca5a5;">
+      <strong>Stall Diagnostic:</strong> {esc(wd.get('diagnostic', ''))}
+    </div>
+    <div style="margin-bottom:12px;">
+      <div class="k" style="margin-bottom:6px;">Kept Opening Hand:</div>
+      <div>{hand_badges}</div>
+    </div>
+    <div>
+      <div class="k" style="margin-bottom:6px;">Turn-by-Turn Play Sequence:</div>
       <ol style="margin:0; padding-left:20px; font-size:13px;">
         {seq_items}
       </ol>
@@ -1551,6 +1673,8 @@ def write_html_report(path: str, results: dict, meta: dict):
   {comp_html}
 
   {fastest_html}
+
+  {worst_html}
 
   <h2>🃏 Opening Hand Quality &amp; Mulligan Profile ({results['total_slots']} hands evaluated)</h2>
   <div class="section-box" style="padding:0; overflow:hidden;">
