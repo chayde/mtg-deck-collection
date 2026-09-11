@@ -126,8 +126,8 @@ Check off each card as it arrives, then tick the package's **Delivered** box whe
 - [x] [Jaheira, Friend of the Forest](https://manapool.com/card/clb/409/jaheira-friend-of-the-forest) — $10.44 · NMShowcase · Commander Legends: Battle for Baldur's Gate (CLB #409)
 
 ### [Meta TCG](https://manapool.com/shop/metatcg) — [Package #586788-2084939](https://manapool.com/settings/orders/suborder/dcb3782b-fec9-4d58-8df0-4f305b53bb5c) · 1 Rocco card (5 total in shipment)
-- [ ] Delivered
-- [ ] [Campsite Cuisine](https://manapool.com/card/fic/464/campsite-cuisine) — $11.50 · FoilNMBorderless · Final Fantasy Commander (FIC #464)
+- [x] Delivered
+- [x] [Campsite Cuisine](https://manapool.com/card/fic/464/campsite-cuisine) — $11.50 · FoilNMBorderless · Final Fantasy Commander (FIC #464)
 
 ### [White Cat Games Ohio](https://manapool.com/shop/whitecatgamesohio) — [Package #586788-2084950](https://manapool.com/settings/orders/suborder/e8e06778-5f2c-414a-925f-e8a4a2845828) · 7 Rocco cards (13 total in shipment)
 - [x] Delivered
