@@ -62,13 +62,13 @@ Check off each card as it arrives, then tick the package's **Delivered** box whe
 - [x] [All Will Be One](https://manapool.com/card/pza/8/all-will-be-one) — $12.29 · NMBorderless · Teenage Mutant Ninja Turtles Source Material (PZA #8)
 
 ### [Spellfinder](https://manapool.com/shop/spellfinder) — [Package #586788-2084951](https://manapool.com/settings/orders/suborder/60761a54-a6de-426b-90fa-076738109fc9) · 6 Rocco cards (27 total in shipment)
-- [ ] Delivered
-- [ ] [Eiganjo, Seat of the Empire](https://manapool.com/card/neo/268/eiganjo-seat-of-the-empire) — $6.72 · NM · Kamigawa: Neon Dynasty (NEO #268)
-- [ ] [Nuka-Cola Vending Machine](https://manapool.com/card/pip/137/nuka-cola-vending-machine) — $21.93 · NM · Fallout (PIP #137)
-- [ ] [Stomping Ground](https://manapool.com/card/rna/259/stomping-ground) — $7.00 · LP · Ravnica Allegiance (RNA #259)
-- [ ] [Samwise Gamgee](https://manapool.com/card/ltr/327/samwise-gamgee) — $2.16 · NMShowcase · The Lord of the Rings: Tales of Middle-earth (LTR #327)
-- [ ] [Wild-Magic Sorcerer](https://manapool.com/card/clb/816/wild-magic-sorcerer) — $6.91 · LP · Commander Legends: Battle for Baldur's Gate (CLB #816)
-- [ ] [Farmer Cotton](https://manapool.com/card/ltc/55/farmer-cotton) — $2.63 · LP · Tales of Middle-earth Commander (LTC #55)
+- [x] Delivered
+- [x] [Eiganjo, Seat of the Empire](https://manapool.com/card/neo/268/eiganjo-seat-of-the-empire) — $6.72 · NM · Kamigawa: Neon Dynasty (NEO #268)
+- [x] [Nuka-Cola Vending Machine](https://manapool.com/card/pip/137/nuka-cola-vending-machine) — $21.93 · NM · Fallout (PIP #137)
+- [x] [Stomping Ground](https://manapool.com/card/rna/259/stomping-ground) — $7.00 · LP · Ravnica Allegiance (RNA #259)
+- [x] [Samwise Gamgee](https://manapool.com/card/ltr/327/samwise-gamgee) — $2.16 · NMShowcase · The Lord of the Rings: Tales of Middle-earth (LTR #327)
+- [x] [Wild-Magic Sorcerer](https://manapool.com/card/clb/816/wild-magic-sorcerer) — $6.91 · LP · Commander Legends: Battle for Baldur's Gate (CLB #816)
+- [x] [Farmer Cotton](https://manapool.com/card/ltc/55/farmer-cotton) — $2.63 · LP · Tales of Middle-earth Commander (LTC #55)
 
 ### [koboldtradingpost](https://manapool.com/shop/koboldtradingpost) — [Package #586788-2084940](https://manapool.com/settings/orders/suborder/6ad8dbb6-c21d-4a7b-bd21-aa245c71d419) · 6 Rocco cards (13 total in shipment)
 - [x] Delivered
