@@ -17,10 +17,10 @@ Confirmed physically in collection / in-hand:
 Check off each card as it arrives, then tick the package's **Delivered** box when the whole shipment lands.
 
 ### Spellfinder — [Package #586657-2084567](https://manapool.com/settings/orders/suborder/0cfee31b-a700-4e1e-a837-17d6d8852763) · 3 items · $1,016.13
-- [ ] Delivered
-- [ ] [Badlands](https://manapool.com/card/3ed/282/badlands) — $353.94 · HP · Revised Edition (3ED #282)
-- [ ] [Taiga](https://manapool.com/card/3ed/287/taiga) — $340.80 · MP · Revised Edition (3ED #287)
-- [ ] [Bayou](https://manapool.com/card/3ed/283/bayou) — $321.39 · HP · Revised Edition (3ED #283)
+- [x] Delivered
+- [x] [Badlands](https://manapool.com/card/3ed/282/badlands) — $353.94 · HP · Revised Edition (3ED #282)
+- [x] [Taiga](https://manapool.com/card/3ed/287/taiga) — $340.80 · MP · Revised Edition (3ED #287)
+- [x] [Bayou](https://manapool.com/card/3ed/283/bayou) — $321.39 · HP · Revised Edition (3ED #283)
 
 ---
 
