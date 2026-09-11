@@ -117,6 +117,11 @@ In a 4-player multiplayer game, planeswalkers are uniquely vulnerable to combat 
 
 ### 💡 High-Impact Tech to Consider
 *   **Plaza of Heroes:** Untapped legendary land that taps for any color for Atraxa and planeswalkers, with built-in hexproof/indestructible protection for Atraxa.
+*   **Vraska, Golgari Queen ({2}{B}{G}):** 4-mana removal on -3, card draw on +2, and -9 ultimate emblem turning Atraxa into an instant player-killer.
+*   **Kiora, the Crashing Wave ({2}{G}{U}):** 4-mana bubble defense (+1), explore ramp (-1), and -5 ultimate churning out 9/9 Krakens every end step.
+*   **Nissa, Voice of Zendikar ({1}{G}{G}):** 3-mana planeswalker creating 0/1 Plant blockers every turn (+1), team +1/+1 counters (-2), and massive draw (-7).
+*   **Kethis, the Hidden Hand ({W}{B}{G}):** 3-mana 3/4 blocker that discounts all legendary spells by {1} and recurs dead planeswalkers from the graveyard.
+*   **Faeburrow Elder ({1}{G}{W}):** 3-mana vigilance creature tapping for 2 mana ({G}{W}) immediately, scaling to 4 mana ({G}{W}{U}{B}) with Atraxa.
 *   **Ghostly Prison / Propaganda ({2}{W} / {2}{U}):** Additional pillowfort tax to deter attacks against your life total.
 *   **Norn's Annex ({3}{W/P}{W/P}):** Direct tax that protects both you and your planeswalkers against combat attacks.
 *   **Resourceful Defense ({2}{W}):** Counter-redistribution enchantment to safeguard loyalty when planeswalkers leave the battlefield.

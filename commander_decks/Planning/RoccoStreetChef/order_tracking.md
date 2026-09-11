@@ -106,11 +106,11 @@ Check off each card as it arrives, then tick the package's **Delivered** box whe
 - [x] [Sacred Foundry](https://manapool.com/card/eoe/256/sacred-foundry) — $10.79 · FoilLP · Edge of Eternities (EOE #256)
 
 ### [mana exchange](https://manapool.com/shop/manaexchange) — [Package #586788-2084941](https://manapool.com/settings/orders/suborder/94645a75-b785-449a-911e-9c51eef79cf8) · 4 Rocco cards (7 total in shipment)
-- [ ] Delivered
-- [ ] [Treebeard, Gracious Host](https://manapool.com/card/ltc/73/treebeard-gracious-host) — $1.90 · LP · Tales of Middle-earth Commander (LTC #73)
-- [ ] [Baylen, the Haymaker](https://manapool.com/card/blb/205/baylen-the-haymaker) — $0.57 · LP · Bloomburrow (BLB #205)
-- [ ] [Temple Garden](https://manapool.com/card/ecl/268/temple-garden) — $7.35 · LP · Lorwyn Eclipsed (ECL #268)
-- [ ] [Jetmir's Garden](https://manapool.com/card/snc/250/jetmirs-garden) — $15.93 · LP · Streets of New Capenna (SNC #250)
+- [x] Delivered
+- [x] [Treebeard, Gracious Host](https://manapool.com/card/ltc/73/treebeard-gracious-host) — $1.90 · LP · Tales of Middle-earth Commander (LTC #73)
+- [x] [Baylen, the Haymaker](https://manapool.com/card/blb/205/baylen-the-haymaker) — $0.57 · LP · Bloomburrow (BLB #205)
+- [x] [Temple Garden](https://manapool.com/card/ecl/268/temple-garden) — $7.35 · LP · Lorwyn Eclipsed (ECL #268)
+- [x] [Jetmir's Garden](https://manapool.com/card/snc/250/jetmirs-garden) — $15.93 · LP · Streets of New Capenna (SNC #250)
 
 ### [Cardchef](https://manapool.com/shop/cardchef) — [Package #586788-2084949](https://manapool.com/settings/orders/suborder/a3267e71-fced-46b1-a8cc-b4e5d793e275) · 4 Rocco cards (10 total in shipment)
 - [x] Delivered

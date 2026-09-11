@@ -124,10 +124,10 @@ Check off each card as it arrives, then tick the package's **Delivered** box whe
 - [x] [Flare of Cultivation](https://manapool.com/card/pmh3/154s/flare-of-cultivation) — $2.79 · FoilLP · Modern Horizons 3 Promos (PMH3 #154s)
 
 ### [mana exchange](https://manapool.com/shop/manaexchange) — [Package #586788-2084941](https://manapool.com/settings/orders/suborder/94645a75-b785-449a-911e-9c51eef79cf8) · 3 Henzie cards (7 total in shipment)
-- [ ] Delivered
-- [ ] [Animate Dead](https://manapool.com/card/mkc/125/animate-dead) — $5.61 · LP · Murders at Karlov Manor Commander (MKC #125)
-- [ ] [Maha, Its Feathers Night](https://manapool.com/card/blb/100/maha-its-feathers-night) — $20.41 · LP · Bloomburrow (BLB #100)
-- [ ] [Necron Deathmark](https://manapool.com/card/40k/42/necron-deathmark) — $5.91 · LP · Warhammer 40,000 Commander (40K #42)
+- [x] Delivered
+- [x] [Animate Dead](https://manapool.com/card/mkc/125/animate-dead) — $5.61 · LP · Murders at Karlov Manor Commander (MKC #125)
+- [x] [Maha, Its Feathers Night](https://manapool.com/card/blb/100/maha-its-feathers-night) — $20.41 · LP · Bloomburrow (BLB #100)
+- [x] [Necron Deathmark](https://manapool.com/card/40k/42/necron-deathmark) — $5.91 · LP · Warhammer 40,000 Commander (40K #42)
 
 ### [Cardchef](https://manapool.com/shop/cardchef) — [Package #586788-2084949](https://manapool.com/settings/orders/suborder/a3267e71-fced-46b1-a8cc-b4e5d793e275) · 6 Henzie cards (10 total in shipment)
 - [x] Delivered
