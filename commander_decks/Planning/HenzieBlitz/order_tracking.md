@@ -96,12 +96,12 @@ Check off each card as it arrives, then tick the package's **Delivered** box whe
 - [x] [Llanowar Elves](https://manapool.com/card/fdn/227/llanowar-elves) — $0.20 · NM · Foundations (FDN #227)
 
 ### [Guildhall Games](https://manapool.com/shop/guildhallgames) — [Package #586788-2084948](https://manapool.com/settings/orders/suborder/6b0b52f5-d1a7-4b1e-945d-407c82472aba) · 5 Henzie cards (15 total in shipment)
-- [ ] Delivered
-- [ ] [Toxic Deluge](https://manapool.com/card/msc/161/toxic-deluge) — $3.45 · NM · Marvel Super Heroes Commander (MSC #161)
-- [ ] [Birds of Paradise](https://manapool.com/card/msc/170/birds-of-paradise) — $8.75 · NM · Marvel Super Heroes Commander (MSC #170)
-- [ ] [Greater Good](https://manapool.com/card/msc/174/greater-good) — $1.14 · NM · Marvel Super Heroes Commander (MSC #174)
-- [ ] [Marsh Flats](https://manapool.com/card/mh2/248/marsh-flats) — $28.96 · NM · Modern Horizons 2 (MH2 #248)
-- [ ] [Three Visits](https://manapool.com/card/msc/181/three-visits) — $4.84 · NM · Marvel Super Heroes Commander (MSC #181)
+- [x] Delivered
+- [x] [Toxic Deluge](https://manapool.com/card/msc/161/toxic-deluge) — $3.45 · NM · Marvel Super Heroes Commander (MSC #161)
+- [x] [Birds of Paradise](https://manapool.com/card/msc/170/birds-of-paradise) — $8.75 · NM · Marvel Super Heroes Commander (MSC #170)
+- [x] [Greater Good](https://manapool.com/card/msc/174/greater-good) — $1.14 · NM · Marvel Super Heroes Commander (MSC #174)
+- [x] [Marsh Flats](https://manapool.com/card/mh2/248/marsh-flats) — $28.96 · NM · Modern Horizons 2 (MH2 #248)
+- [x] [Three Visits](https://manapool.com/card/msc/181/three-visits) — $4.84 · NM · Marvel Super Heroes Commander (MSC #181)
 
 ### [SimplicityCardsAndGames](https://manapool.com/shop/simplicitycardsandgames) — [Package #586788-2084954](https://manapool.com/settings/orders/suborder/6c14c20b-4145-4fe7-8452-72947d357841) · 3 Henzie cards (4 total in shipment)
 - [x] Delivered

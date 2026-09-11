@@ -80,17 +80,17 @@ Check off each card as it arrives, then tick the package's **Delivered** box whe
 - [x] [Vandalblast](https://manapool.com/card/fic/298/vandalblast) — $1.35 · NM · Final Fantasy Commander (FIC #298)
 
 ### [Guildhall Games](https://manapool.com/shop/guildhallgames) — [Package #586788-2084948](https://manapool.com/settings/orders/suborder/6b0b52f5-d1a7-4b1e-945d-407c82472aba) · 10 Rocco cards (15 total in shipment)
-- [ ] Delivered
-- [ ] [Valakut Exploration](https://manapool.com/card/znr/303/valakut-exploration) — $2.69 · NMShowcase · Zendikar Rising (ZNR #303)
-- [ ] [Sunpetal Grove](https://manapool.com/card/msc/272/sunpetal-grove) — $0.26 · NM · Marvel Super Heroes Commander (MSC #272)
-- [ ] [Talisman of Conviction](https://manapool.com/card/msc/217/talisman-of-conviction) — $0.30 · NM · Marvel Super Heroes Commander (MSC #217)
-- [ ] [Birds of Paradise](https://manapool.com/card/msc/170/birds-of-paradise) — $8.75 · NM · Marvel Super Heroes Commander (MSC #170)
-- [ ] [Bountiful Promenade](https://manapool.com/card/msc/226/bountiful-promenade) — $5.19 · NM · Marvel Super Heroes Commander (MSC #226)
-- [ ] [Plaza of Heroes](https://manapool.com/card/msc/255/plaza-of-heroes) — $3.92 · NM · Marvel Super Heroes Commander (MSC #255)
-- [ ] [Spectator Seating](https://manapool.com/card/msc/268/spectator-seating) — $5.47 · NM · Marvel Super Heroes Commander (MSC #268)
-- [ ] [Generous Gift](https://manapool.com/card/msc/133/generous-gift) — $0.71 · NM · Marvel Super Heroes Commander (MSC #133)
-- [ ] [Austere Command](https://manapool.com/card/msc/121/austere-command) — $0.25 · NM · Marvel Super Heroes Commander (MSC #121)
-- [ ] [Canopy Vista](https://manapool.com/card/msc/227/canopy-vista) — $0.25 · NM · Marvel Super Heroes Commander (MSC #227)
+- [x] Delivered
+- [x] [Valakut Exploration](https://manapool.com/card/znr/303/valakut-exploration) — $2.69 · NMShowcase · Zendikar Rising (ZNR #303)
+- [x] [Sunpetal Grove](https://manapool.com/card/msc/272/sunpetal-grove) — $0.26 · NM · Marvel Super Heroes Commander (MSC #272)
+- [x] [Talisman of Conviction](https://manapool.com/card/msc/217/talisman-of-conviction) — $0.30 · NM · Marvel Super Heroes Commander (MSC #217)
+- [x] [Birds of Paradise](https://manapool.com/card/msc/170/birds-of-paradise) — $8.75 · NM · Marvel Super Heroes Commander (MSC #170)
+- [x] [Bountiful Promenade](https://manapool.com/card/msc/226/bountiful-promenade) — $5.19 · NM · Marvel Super Heroes Commander (MSC #226)
+- [x] [Plaza of Heroes](https://manapool.com/card/msc/255/plaza-of-heroes) — $3.92 · NM · Marvel Super Heroes Commander (MSC #255)
+- [x] [Spectator Seating](https://manapool.com/card/msc/268/spectator-seating) — $5.47 · NM · Marvel Super Heroes Commander (MSC #268)
+- [x] [Generous Gift](https://manapool.com/card/msc/133/generous-gift) — $0.71 · NM · Marvel Super Heroes Commander (MSC #133)
+- [x] [Austere Command](https://manapool.com/card/msc/121/austere-command) — $0.25 · NM · Marvel Super Heroes Commander (MSC #121)
+- [x] [Canopy Vista](https://manapool.com/card/msc/227/canopy-vista) — $0.25 · NM · Marvel Super Heroes Commander (MSC #227)
 
 ### [SimplicityCardsAndGames](https://manapool.com/shop/simplicitycardsandgames) — [Package #586788-2084954](https://manapool.com/settings/orders/suborder/6c14c20b-4145-4fe7-8452-72947d357841) · 1 Rocco card (4 total in shipment)
 - [x] Delivered
