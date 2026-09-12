@@ -31,7 +31,7 @@ DECK:
 1 Bedrock Tortoise
 1 Beast Whisperer
 1 Oathsworn Giant
-1 Zetalpa, Primal Dawn
+1 The Walls of Ba Sing Se
 1 Reconnaissance
 1 Assault Formation
 1 Brave the Sands

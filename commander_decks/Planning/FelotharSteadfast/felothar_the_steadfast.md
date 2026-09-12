@@ -97,7 +97,7 @@ deck_status: main
 *   **Stroke of Midnight:** 3-mana instant nonland permanent destruction into a 1/1 token.
 *   **Heroic Intervention:** Instant team hexproof and indestructible protection.
 *   **Flawless Maneuver:** Free indestructible protection for your team while controlling Felothar.
-*   **Zetalpa, Primal Dawn:** Indestructible, vigilant, flying 4/8 dinosaur beater and permanent blocker that hits for 8 double-strike.
+*   **The Walls of Ba Sing Se:** 8-mana 0/30 artifact wall with defender granting all other permanents you control indestructible; attacks for 30 under Felothar or draws 30 cards with 0 discard.
 
 ### 💥 Asymmetrical Mass Disruption (4 Cards)
 *   **Wave of Reckoning:** 5-mana sorcery where each creature deals damage to itself equal to its power; your 0-power defenders take 0 damage, wiping opponent boards.
@@ -138,6 +138,10 @@ deck_status: main
 ---
 
 ## 📜 Deck Changelog
+*   **2026-09-12:** Swap Zetalpa, Primal Dawn for The Walls of Ba Sing Se.
+    *   **In:** The Walls of Ba Sing Se
+    *   **Out:** Zetalpa, Primal Dawn
+    *   **Reason:** Upgrades top-end threat into a 30-toughness wall that grants team-wide indestructible, swings for 30 under Felothar, and draws 30 cards with zero discard.
 *   **2026-08-31:** Initial 100-card Bracket 3 (0 Game Changers) deck list created for Felothar the Steadfast.
     *   **In:** Full 100-card Abzan Defender Beatdown, Team Vigilance, and Toughness Fling list.
     *   **Out:** N/A.
@@ -179,7 +183,7 @@ DECK:
 1 Bedrock Tortoise  
 1 Beast Whisperer  
 1 Oathsworn Giant  
-1 Zetalpa, Primal Dawn  
+1 The Walls of Ba Sing Se  
 1 Reconnaissance  
 1 Assault Formation  
 1 Brave the Sands  

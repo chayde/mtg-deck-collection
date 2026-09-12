@@ -78,7 +78,7 @@ Track physical card acquisitions for the **Felothar the Steadfast** build below.
 - [ ] 1 Stroke of Midnight
 - [ ] 1 Heroic Intervention
 - [ ] 1 Flawless Maneuver
-- [ ] 1 Zetalpa, Primal Dawn
+- [ ] 1 The Walls of Ba Sing Se
 
 ### Asymmetrical Mass Disruption
 - [ ] 1 Wave of Reckoning

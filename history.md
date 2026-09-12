@@ -2,6 +2,13 @@
 
 ## 🗓️ September 2026: Henzie Blitz Refinement, Playtesting & The Necrobloom Inception
 
+### 2026-09-12: Felothar the Steadfast — The Walls of Ba Sing Se Integrated
+*   **The Swap:**
+    *   **In:** *The Walls of Ba Sing Se* ({8})
+    *   **Out:** *Zetalpa, Primal Dawn* ({6}{W}{W})
+*   **Synergy Rationale:** Upgrades the 8-mana top-end slot from a self-indestructible dinosaur with moderate toughness into a 0/30 artifact wall that grants team-wide indestructible to all other permanents. Under Felothar, it swings for 30 combat damage, deals 30 direct damage when sacrificed to *Catapult Fodder*, and draws 30 cards with zero discard penalty off Felothar's activated ability.
+*   **Bracket 3 Compliance:** 0 Game Changers maintained.
+
 ### 2026-09-12: MTG Board Wipes Reference Guide Created (`BoardWipesReferenceGuide.md`)
 *   **Documentation Milestone:** Created [`BoardWipesReferenceGuide.md`](BoardWipesReferenceGuide.md) based on Ryan Epps's Polygon analysis (*"20 best board wipes in Magic: The Gathering"*).
 *   **Catalog Scope & Analysis:** Compiles detailed mechanical breakdowns, Scryfall data, bracket compliance, and archetype synergies for the 20 premier sweepers in MTG history:
