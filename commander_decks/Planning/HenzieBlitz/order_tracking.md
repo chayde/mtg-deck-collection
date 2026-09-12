@@ -143,11 +143,11 @@ Check off each card as it arrives, then tick the package's **Delivered** box whe
 - [x] [Ojer Kaslem, Deepest Growth // Temple of Cultivation](https://manapool.com/card/lci/204/ojer-kaslem-deepest-growth-temple-of-cultivation) — $7.69 · FoilNM · The Lost Caverns of Ixalan (LCI #204)
 
 ### [Meta TCG](https://manapool.com/shop/metatcg) — [Package #586788-2084939](https://manapool.com/settings/orders/suborder/dcb3782b-fec9-4d58-8df0-4f305b53bb5c) · 4 Henzie cards (5 total in shipment)
-- [ ] Delivered (Partial — Ignoble Hierarch pending replacement order)
+- [x] Delivered
 - [x] [Elves of Deep Shadow](https://manapool.com/card/rav/161/elves-of-deep-shadow) — $5.00 · LP · Ravnica: City of Guilds (RAV #161)
 - [x] [Heroic Intervention](https://manapool.com/card/mar/80/heroic-intervention) — $9.25 · NMBorderless · Marvel Universe (MAR #80)
 - [x] [Deadly Rollick](https://manapool.com/card/sld/1754/deadly-rollick) — $26.75 · NMBorderless · Secret Lair Drop (SLD #1754)
-- [ ] [Ignoble Hierarch](https://manapool.com/card/plst/mh2-166/ignoble-hierarch) — $1.25 · NM · The List (PLST #mh2-166) *(Remediation replacement order pending: [Suborder #fc04be1d](https://manapool.com/settings/orders/suborder/fc04be1d-0ff4-430b-a5ad-e256a1009d17))*
+- [x] [Ignoble Hierarch](https://manapool.com/card/plst/mh2-166/ignoble-hierarch) — $1.25 · NM · The List (PLST #mh2-166) *(Received via remediation replacement [Suborder #fc04be1d](https://manapool.com/settings/orders/suborder/fc04be1d-0ff4-430b-a5ad-e256a1009d17))*
 
 ### [White Cat Games Ohio](https://manapool.com/shop/whitecatgamesohio) — [Package #586788-2084950](https://manapool.com/settings/orders/suborder/e8e06778-5f2c-414a-925f-e8a4a2845828) · 6 Henzie cards (13 total in shipment)
 - [x] Delivered
