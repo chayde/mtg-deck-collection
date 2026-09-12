@@ -2,8 +2,8 @@
 
 ## 🗓️ September 2026: Henzie Blitz Refinement, Playtesting & The Necrobloom Inception
 
-### 2026-09-12: Fetchable Lands & Duals Reference Guide Created (`FetchableLandsReferenceGuide.md`)
-*   **Documentation Milestone:** Created [`FetchableLandsReferenceGuide.md`](FetchableLandsReferenceGuide.md) as the authoritative, tiered guide to fetch lands and fetchable dual/tri-land cycles for Commander.
+### 2026-09-12: Fetchable Lands & Duals Reference Guide & Visual HTML Created (`FetchableLandsReferenceGuide.md` & `FetchableLandsReferenceGuide.html`)
+*   **Documentation Milestone:** Created [`FetchableLandsReferenceGuide.md`](FetchableLandsReferenceGuide.md) and [`FetchableLandsReferenceGuide.html`](FetchableLandsReferenceGuide.html) as the authoritative, tiered guide and interactive dark-mode visual catalog (featuring full card images, live search, and sticky navigation) to fetch lands and fetchable dual/tri-land cycles for Commander.
 *   **Scope & Strategic Ranking:** Organizes lands strictly by multiplayer tempo efficiency, entering-untapped conditions/drawbacks, and keyword utility:
     *   **Engines:** The 10 Fetch Lands (Allied Onslaught/Khans & Enemy Zendikar/MH2).
     *   **Tier 1:** Original Revised Duals (ABUR duals — unconditional untapped, zero drawback).

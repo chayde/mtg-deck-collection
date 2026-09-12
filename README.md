@@ -16,6 +16,7 @@ This repository manages deck lists, analysis, and upgrade plans for both Paper M
 ### 📜 Root Files
 *   **`COMMANDER_DECKBUILDING_RULES.md`**: The source of truth for power level brackets and "Game Changers".
 *   **`FetchableLandsReferenceGuide.md`**: Authoritative reference guide ranking fetch lands, Revised duals, crowd lands, and all fetchable duals/triomes by tempo and downside for Commander.
+*   **`FetchableLandsReferenceGuide.html`**: Interactive dark-mode visual catalog of all 97 fetchable lands with card images, quick filters, and sticky navigation.
 *   **`BudgetCommanderLands.md`**: Comprehensive reference guide for budget Commander lands and mana base packages.
 *   **`BoardWipesReferenceGuide.md`**: Tactical reference guide for the top 20 MTG board wipes and mass disruption options.
 *   **`GEMINI.md`**: Context and instructions for AI agents.
