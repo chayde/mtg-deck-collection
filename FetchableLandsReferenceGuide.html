@@ -36,7 +36,6 @@
       padding-bottom: 80px;
     }
 
-    /* Header */
     .hero {
       background: linear-gradient(180deg, #1e293b 0%, #0b0f19 100%);
       padding: 48px 24px 32px;
@@ -57,7 +56,7 @@
     .hero p {
       color: var(--text-secondary);
       font-size: 1.1rem;
-      max-width: 800px;
+      max-width: 850px;
       margin: 0 auto 20px;
     }
 
@@ -80,12 +79,11 @@
       color: var(--text-primary);
     }
 
-    /* Sticky Navigation */
     .sticky-nav {
       position: sticky;
       top: 0;
       z-index: 100;
-      background-color: rgba(17, 24, 39, 0.92);
+      background-color: rgba(17, 24, 39, 0.94);
       backdrop-filter: blur(8px);
       border-bottom: 1px solid var(--border-color);
       padding: 12px 24px;
@@ -132,7 +130,7 @@
     }
 
     .search-box {
-      min-width: 220px;
+      min-width: 240px;
       position: relative;
     }
 
@@ -152,14 +150,12 @@
       border-color: var(--accent-blue);
     }
 
-    /* Container */
     .container {
       max-width: 1400px;
       margin: 0 auto;
       padding: 32px 24px;
     }
 
-    /* Section Styling */
     .tier-section {
       margin-bottom: 56px;
       scroll-margin-top: 80px;
@@ -177,7 +173,7 @@
     }
 
     .section-title h2 {
-      font-size: 1.5rem;
+      font-size: 1.45rem;
       font-weight: 700;
       margin-bottom: 4px;
       display: flex;
@@ -200,7 +196,6 @@
       white-space: nowrap;
     }
 
-    /* Cards Grid */
     .cards-grid {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
@@ -260,7 +255,7 @@
     }
 
     .card-name {
-      font-size: 1rem;
+      font-size: 0.95rem;
       font-weight: 700;
       color: var(--text-primary);
       text-decoration: none;
@@ -317,49 +312,52 @@
 </head>
 <body>
 
-  <!-- Hero Header -->
   <header class="hero">
     <h1>Fetchable Lands & Commander Duals</h1>
     <p>The definitive tiered visual catalog ranking fetch lands, original Revised duals, multiplayer crowd lands, and all fetchable duals & triomes exclusively for Commander / EDH.</p>
     <div class="stats-badges">
-      <span class="badge" style="border-color: #38bdf8; color: #38bdf8;">97 Documented Lands</span>
-      <span class="badge" style="border-color: #fbbf24; color: #fbbf24;">11 Strategic Tiers</span>
+      <span class="badge" style="border-color: #38bdf8; color: #38bdf8;">133 Documented Lands</span>
+      <span class="badge" style="border-color: #fbbf24; color: #fbbf24;">17 Dedicated Sections</span>
       <span class="badge" style="border-color: #34d399; color: #34d399;">Multiplayer Tempo Graded</span>
       <span class="badge" style="border-color: #c084fc; color: #c084fc;">Dark Mode Optimized</span>
     </div>
   </header>
 
-  <!-- Sticky Nav Bar -->
   <nav class="sticky-nav">
     <div class="nav-links">
-      <a class="nav-link" href="#engines">Fetches</a>
-      <a class="nav-link" href="#tier1">T1: Revised Duals</a>
-      <a class="nav-link" href="#tier2">T2: Crowd Lands</a>
-      <a class="nav-link" href="#tier3">T3: Shock Lands</a>
-      <a class="nav-link" href="#tier4">T4: Battle Lands</a>
-      <a class="nav-link" href="#tier5">T5: Surveil Lands</a>
+      <a class="nav-link" href="#engines">10 Fetches</a>
+      <a class="nav-link" href="#slow_fetches">Slow Fetches</a>
+      <a class="nav-link" href="#untapped_basic_fetches">Vista & Passage</a>
+      <a class="nav-link" href="#mh3_landscapes">MH3 Landscapes</a>
+      <a class="nav-link" href="#panoramas">Panoramas</a>
+      <a class="nav-link" href="#capenna_fetches">Capenna</a>
+      <a class="nav-link" href="#budget_fetches">Budget Fetches</a>
+      <a class="nav-link" href="#tier1">T1: Revised</a>
+      <a class="nav-link" href="#tier2">T2: Crowd</a>
+      <a class="nav-link" href="#tier3">T3: Shocks</a>
+      <a class="nav-link" href="#tier4">T4: Battle</a>
+      <a class="nav-link" href="#tier5">T5: Surveil</a>
       <a class="nav-link" href="#tier6">T6: Triomes</a>
-      <a class="nav-link" href="#tier7">T7: Bicycle Duals</a>
-      <a class="nav-link" href="#tier8">T8: Snow Duals</a>
-      <a class="nav-link" href="#tier9">T9: Common Duals</a>
-      <a class="nav-link" href="#tier10">T10: Utility Lands</a>
+      <a class="nav-link" href="#tier7">T7: Bicycle</a>
+      <a class="nav-link" href="#tier8">T8: Snow</a>
+      <a class="nav-link" href="#tier9">T9: Common</a>
+      <a class="nav-link" href="#tier10">T10: Utility</a>
     </div>
     <div class="search-box">
       <input type="text" id="cardFilter" placeholder="Filter lands or colors..." onkeyup="filterCards()" />
     </div>
   </nav>
 
-  <!-- Main Content Container -->
   <main class="container">
 
     <section class="tier-section" id="engines">
       <div class="section-header">
         <div class="section-title">
-          <h2>Engines: The 10 Fetch Lands</h2>
-          <p>Pay 1 life, tap, sacrifice: Tutors any matching basic land type directly to the battlefield.</p>
+          <h2>Engines: The Original 10 Fetch Lands</h2>
+          <p>Pay 1 life, tap, sacrifice: Tutors any matching basic land type directly to the battlefield untapped.</p>
         </div>
         <span class="section-badge" style="background-color: #38bdf822; color: #38bdf8; border: 1px solid #38bdf866;">
-          Engines
+          Premier Fetches
         </span>
       </div>
 
@@ -521,6 +519,678 @@
             <div class="card-meta">
               <span class="color-pill">{G}{U}</span>
               <span class="note-pill">Simic</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="tier-section" id="slow_fetches">
+      <div class="section-header">
+        <div class="section-title">
+          <h2>Typed Slow Fetches &amp; Krosan Verge</h2>
+          <p>Enters tapped, but searches for basic land types—can fetch Duals, Shocks, and Triomes!</p>
+        </div>
+        <span class="section-badge" style="background-color: #06b6d422; color: #06b6d4; border: 1px solid #06b6d466;">
+          Typed Fetches (Budget)
+        </span>
+      </div>
+
+      <div class="cards-grid">
+
+        <div class="card-tile" data-name="flood plain" data-types="plains / island" data-colors="{w}{u}">
+          <a href="https://scryfall.com/card/cmm/994/flood-plain?utm_source=api" target="_blank" rel="noopener noreferrer" class="card-image-wrap">
+            <img src="https://cards.scryfall.io/normal/front/6/1/61fc0fba-c285-4fad-85a6-79fd7f3f9c35.jpg?1783915392" alt="Flood Plain" loading="lazy" />
+          </a>
+          <div class="card-info">
+            <div class="card-name-row">
+              <a href="https://scryfall.com/card/cmm/994/flood-plain?utm_source=api" target="_blank" rel="noopener noreferrer" class="card-name">Flood Plain</a>
+            </div>
+            <div class="card-types">Plains / Island</div>
+            <div class="card-meta">
+              <span class="color-pill">{W}{U}</span>
+              <span class="note-pill">Enters Tapped — Fetches Untapped</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-tile" data-name="bad river" data-types="island / swamp" data-colors="{u}{b}">
+          <a href="https://scryfall.com/card/dmc/197/bad-river?utm_source=api" target="_blank" rel="noopener noreferrer" class="card-image-wrap">
+            <img src="https://cards.scryfall.io/normal/front/c/a/ca79caa8-9893-49be-bc39-f021adb28220.jpg?1783921393" alt="Bad River" loading="lazy" />
+          </a>
+          <div class="card-info">
+            <div class="card-name-row">
+              <a href="https://scryfall.com/card/dmc/197/bad-river?utm_source=api" target="_blank" rel="noopener noreferrer" class="card-name">Bad River</a>
+            </div>
+            <div class="card-types">Island / Swamp</div>
+            <div class="card-meta">
+              <span class="color-pill">{U}{B}</span>
+              <span class="note-pill">Enters Tapped — Fetches Untapped</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-tile" data-name="rocky tar pit" data-types="swamp / mountain" data-colors="{b}{r}">
+          <a href="https://scryfall.com/card/eoc/173/rocky-tar-pit?utm_source=api" target="_blank" rel="noopener noreferrer" class="card-image-wrap">
+            <img src="https://cards.scryfall.io/normal/front/2/a/2aa1f7c6-f888-4384-9626-f106571e164c.jpg?1783906008" alt="Rocky Tar Pit" loading="lazy" />
+          </a>
+          <div class="card-info">
+            <div class="card-name-row">
+              <a href="https://scryfall.com/card/eoc/173/rocky-tar-pit?utm_source=api" target="_blank" rel="noopener noreferrer" class="card-name">Rocky Tar Pit</a>
+            </div>
+            <div class="card-types">Swamp / Mountain</div>
+            <div class="card-meta">
+              <span class="color-pill">{B}{R}</span>
+              <span class="note-pill">Enters Tapped — Fetches Untapped</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-tile" data-name="mountain valley" data-types="mountain / forest" data-colors="{r}{g}">
+          <a href="https://scryfall.com/card/eoc/61/mountain-valley?utm_source=api" target="_blank" rel="noopener noreferrer" class="card-image-wrap">
+            <img src="https://cards.scryfall.io/normal/front/3/0/3094800e-9994-47c3-9ebc-536bf5de13cd.jpg?1783906048" alt="Mountain Valley" loading="lazy" />
+          </a>
+          <div class="card-info">
+            <div class="card-name-row">
+              <a href="https://scryfall.com/card/eoc/61/mountain-valley?utm_source=api" target="_blank" rel="noopener noreferrer" class="card-name">Mountain Valley</a>
+            </div>
+            <div class="card-types">Mountain / Forest</div>
+            <div class="card-meta">
+              <span class="color-pill">{R}{G}</span>
+              <span class="note-pill">Enters Tapped — Fetches Untapped</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-tile" data-name="grasslands" data-types="forest / plains" data-colors="{g}{w}">
+          <a href="https://scryfall.com/card/cmm/1002/grasslands?utm_source=api" target="_blank" rel="noopener noreferrer" class="card-image-wrap">
+            <img src="https://cards.scryfall.io/normal/front/e/c/ecf52798-b2e0-4d0a-a41b-8927bfa60375.jpg?1783915387" alt="Grasslands" loading="lazy" />
+          </a>
+          <div class="card-info">
+            <div class="card-name-row">
+              <a href="https://scryfall.com/card/cmm/1002/grasslands?utm_source=api" target="_blank" rel="noopener noreferrer" class="card-name">Grasslands</a>
+            </div>
+            <div class="card-types">Forest / Plains</div>
+            <div class="card-meta">
+              <span class="color-pill">{G}{W}</span>
+              <span class="note-pill">Enters Tapped — Fetches Untapped</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-tile" data-name="krosan verge" data-types="forest / plains" data-colors="{w}{g}">
+          <a href="https://scryfall.com/card/otc/304/krosan-verge?utm_source=api" target="_blank" rel="noopener noreferrer" class="card-image-wrap">
+            <img src="https://cards.scryfall.io/normal/front/1/9/19fc5bec-f877-430c-8e83-e6c5fe97f3c4.jpg?1783911875" alt="Krosan Verge" loading="lazy" />
+          </a>
+          <div class="card-info">
+            <div class="card-name-row">
+              <a href="https://scryfall.com/card/otc/304/krosan-verge?utm_source=api" target="_blank" rel="noopener noreferrer" class="card-name">Krosan Verge</a>
+            </div>
+            <div class="card-types">Forest / Plains</div>
+            <div class="card-meta">
+              <span class="color-pill">{W}{G}</span>
+              <span class="note-pill">Enters Tapped — Ramps Forest AND Plains</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="tier-section" id="untapped_basic_fetches">
+      <div class="section-header">
+        <div class="section-title">
+          <h2>Untapped Universal Basic Land Fetches</h2>
+          <p>Enters untapped; searches library for any basic land card.</p>
+        </div>
+        <span class="section-badge" style="background-color: #818cf822; color: #818cf8; border: 1px solid #818cf866;">
+          Untapped Basics
+        </span>
+      </div>
+
+      <div class="cards-grid">
+
+        <div class="card-tile" data-name="prismatic vista" data-types="basic land fetch" data-colors="any">
+          <a href="https://scryfall.com/card/mh1/244/prismatic-vista?utm_source=api" target="_blank" rel="noopener noreferrer" class="card-image-wrap">
+            <img src="https://cards.scryfall.io/normal/front/e/3/e37da81e-be12-45a2-9128-376f1ad7b3e8.jpg?1783933066" alt="Prismatic Vista" loading="lazy" />
+          </a>
+          <div class="card-info">
+            <div class="card-name-row">
+              <a href="https://scryfall.com/card/mh1/244/prismatic-vista?utm_source=api" target="_blank" rel="noopener noreferrer" class="card-name">Prismatic Vista</a>
+            </div>
+            <div class="card-types">Basic Land Fetch</div>
+            <div class="card-meta">
+              <span class="color-pill">Any</span>
+              <span class="note-pill">Pay 1 Life — Untapped Basic</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-tile" data-name="fabled passage" data-types="basic land fetch" data-colors="any">
+          <a href="https://scryfall.com/card/msc/242/fabled-passage?utm_source=api" target="_blank" rel="noopener noreferrer" class="card-image-wrap">
+            <img src="https://cards.scryfall.io/normal/front/6/2/62ef854d-ec9e-443d-a4ba-4b2875ed3fe7.jpg?1783903202" alt="Fabled Passage" loading="lazy" />
+          </a>
+          <div class="card-info">
+            <div class="card-name-row">
+              <a href="https://scryfall.com/card/msc/242/fabled-passage?utm_source=api" target="_blank" rel="noopener noreferrer" class="card-name">Fabled Passage</a>
+            </div>
+            <div class="card-types">Basic Land Fetch</div>
+            <div class="card-meta">
+              <span class="color-pill">Any</span>
+              <span class="note-pill">Untapped Basic with 4+ Lands</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="tier-section" id="mh3_landscapes">
+      <div class="section-header">
+        <div class="section-title">
+          <h2>Modern Horizons 3 Landscapes (10 Tri-Color Fetches)</h2>
+          <p>Enters untapped for {C}; features Cycling {2} or pay {1} to fetch 1 of 3 basics tapped.</p>
+        </div>
+        <span class="section-badge" style="background-color: #ec489922; color: #ec4899; border: 1px solid #ec489966;">
+          MH3 Landscapes
+        </span>
+      </div>
+
+      <div class="cards-grid">
+
+        <div class="card-tile" data-name="contaminated landscape" data-types="plains / island / swamp" data-colors="{w}{u}{b}">
+          <a href="https://scryfall.com/card/mh3/218/contaminated-landscape?utm_source=api" target="_blank" rel="noopener noreferrer" class="card-image-wrap">
+            <img src="https://cards.scryfall.io/normal/front/e/2/e2312c49-1627-47ad-8113-78a999a97d8d.jpg?1783911240" alt="Contaminated Landscape" loading="lazy" />
+          </a>
+          <div class="card-info">
+            <div class="card-name-row">
+              <a href="https://scryfall.com/card/mh3/218/contaminated-landscape?utm_source=api" target="_blank" rel="noopener noreferrer" class="card-name">Contaminated Landscape</a>
+            </div>
+            <div class="card-types">Plains / Island / Swamp</div>
+            <div class="card-meta">
+              <span class="color-pill">{W}{U}{B}</span>
+              <span class="note-pill">Esper — Cycling {2}</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-tile" data-name="seething landscape" data-types="island / swamp / mountain" data-colors="{u}{b}{r}">
+          <a href="https://scryfall.com/card/mh3/225/seething-landscape?utm_source=api" target="_blank" rel="noopener noreferrer" class="card-image-wrap">
+            <img src="https://cards.scryfall.io/normal/front/6/6/661fc907-7003-45c6-820c-9616e9a71c30.jpg?1783911238" alt="Seething Landscape" loading="lazy" />
+          </a>
+          <div class="card-info">
+            <div class="card-name-row">
+              <a href="https://scryfall.com/card/mh3/225/seething-landscape?utm_source=api" target="_blank" rel="noopener noreferrer" class="card-name">Seething Landscape</a>
+            </div>
+            <div class="card-types">Island / Swamp / Mountain</div>
+            <div class="card-meta">
+              <span class="color-pill">{U}{B}{R}</span>
+              <span class="note-pill">Grixis — Cycling {2}</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-tile" data-name="twisted landscape" data-types="swamp / mountain / forest" data-colors="{b}{r}{g}">
+          <a href="https://scryfall.com/card/mh3/232/twisted-landscape?utm_source=api" target="_blank" rel="noopener noreferrer" class="card-image-wrap">
+            <img src="https://cards.scryfall.io/normal/front/d/0/d0e3e7b3-7ba9-47a2-b46c-a40bffb445e2.jpg?1783911232" alt="Twisted Landscape" loading="lazy" />
+          </a>
+          <div class="card-info">
+            <div class="card-name-row">
+              <a href="https://scryfall.com/card/mh3/232/twisted-landscape?utm_source=api" target="_blank" rel="noopener noreferrer" class="card-name">Twisted Landscape</a>
+            </div>
+            <div class="card-types">Swamp / Mountain / Forest</div>
+            <div class="card-meta">
+              <span class="color-pill">{B}{R}{G}</span>
+              <span class="note-pill">Jund — Cycling {2}</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-tile" data-name="sheltering landscape" data-types="mountain / forest / plains" data-colors="{r}{g}{w}">
+          <a href="https://scryfall.com/card/mh3/227/sheltering-landscape?utm_source=api" target="_blank" rel="noopener noreferrer" class="card-image-wrap">
+            <img src="https://cards.scryfall.io/normal/front/0/f/0fe070f4-8877-4280-b8fd-869f3ac34ab6.jpg?1783911238" alt="Sheltering Landscape" loading="lazy" />
+          </a>
+          <div class="card-info">
+            <div class="card-name-row">
+              <a href="https://scryfall.com/card/mh3/227/sheltering-landscape?utm_source=api" target="_blank" rel="noopener noreferrer" class="card-name">Sheltering Landscape</a>
+            </div>
+            <div class="card-types">Mountain / Forest / Plains</div>
+            <div class="card-meta">
+              <span class="color-pill">{R}{G}{W}</span>
+              <span class="note-pill">Naya — Cycling {2}</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-tile" data-name="tranquil landscape" data-types="forest / plains / island" data-colors="{g}{w}{u}">
+          <a href="https://scryfall.com/card/mh3/231/tranquil-landscape?utm_source=api" target="_blank" rel="noopener noreferrer" class="card-image-wrap">
+            <img src="https://cards.scryfall.io/normal/front/1/1/113f48b9-a972-4e2c-af95-05ab078e01f2.jpg?1783911233" alt="Tranquil Landscape" loading="lazy" />
+          </a>
+          <div class="card-info">
+            <div class="card-name-row">
+              <a href="https://scryfall.com/card/mh3/231/tranquil-landscape?utm_source=api" target="_blank" rel="noopener noreferrer" class="card-name">Tranquil Landscape</a>
+            </div>
+            <div class="card-types">Forest / Plains / Island</div>
+            <div class="card-meta">
+              <span class="color-pill">{G}{W}{U}</span>
+              <span class="note-pill">Bant — Cycling {2}</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-tile" data-name="deceptive landscape" data-types="plains / swamp / forest" data-colors="{w}{b}{g}">
+          <a href="https://scryfall.com/card/tdc/356/deceptive-landscape?utm_source=api" target="_blank" rel="noopener noreferrer" class="card-image-wrap">
+            <img src="https://cards.scryfall.io/normal/front/b/a/ba863744-929b-43f3-a773-342ba3437b18.jpg?1783906990" alt="Deceptive Landscape" loading="lazy" />
+          </a>
+          <div class="card-info">
+            <div class="card-name-row">
+              <a href="https://scryfall.com/card/tdc/356/deceptive-landscape?utm_source=api" target="_blank" rel="noopener noreferrer" class="card-name">Deceptive Landscape</a>
+            </div>
+            <div class="card-types">Plains / Swamp / Forest</div>
+            <div class="card-meta">
+              <span class="color-pill">{W}{B}{G}</span>
+              <span class="note-pill">Abzan — Cycling {2}</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-tile" data-name="perilous landscape" data-types="island / mountain / plains" data-colors="{u}{r}{w}">
+          <a href="https://scryfall.com/card/tdc/383/perilous-landscape?utm_source=api" target="_blank" rel="noopener noreferrer" class="card-image-wrap">
+            <img src="https://cards.scryfall.io/normal/front/6/1/61fc78e0-d0db-4ecb-a29a-f1a437d7987c.jpg?1783906975" alt="Perilous Landscape" loading="lazy" />
+          </a>
+          <div class="card-info">
+            <div class="card-name-row">
+              <a href="https://scryfall.com/card/tdc/383/perilous-landscape?utm_source=api" target="_blank" rel="noopener noreferrer" class="card-name">Perilous Landscape</a>
+            </div>
+            <div class="card-types">Island / Mountain / Plains</div>
+            <div class="card-meta">
+              <span class="color-pill">{U}{R}{W}</span>
+              <span class="note-pill">Jeskai — Cycling {2}</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-tile" data-name="foreboding landscape" data-types="swamp / forest / island" data-colors="{b}{g}{u}">
+          <a href="https://scryfall.com/card/tdc/365/foreboding-landscape?utm_source=api" target="_blank" rel="noopener noreferrer" class="card-image-wrap">
+            <img src="https://cards.scryfall.io/normal/front/c/f/cf53f97c-dd4c-44bd-93ba-faa6d64c985a.jpg?1783906986" alt="Foreboding Landscape" loading="lazy" />
+          </a>
+          <div class="card-info">
+            <div class="card-name-row">
+              <a href="https://scryfall.com/card/tdc/365/foreboding-landscape?utm_source=api" target="_blank" rel="noopener noreferrer" class="card-name">Foreboding Landscape</a>
+            </div>
+            <div class="card-types">Swamp / Forest / Island</div>
+            <div class="card-meta">
+              <span class="color-pill">{B}{G}{U}</span>
+              <span class="note-pill">Sultai — Cycling {2}</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-tile" data-name="shattered landscape" data-types="mountain / plains / swamp" data-colors="{r}{w}{b}">
+          <a href="https://scryfall.com/card/tdc/390/shattered-landscape?utm_source=api" target="_blank" rel="noopener noreferrer" class="card-image-wrap">
+            <img src="https://cards.scryfall.io/normal/front/f/8/f8373e5a-94bb-4aa0-bd09-13a01e0cb02a.jpg?1783906970" alt="Shattered Landscape" loading="lazy" />
+          </a>
+          <div class="card-info">
+            <div class="card-name-row">
+              <a href="https://scryfall.com/card/tdc/390/shattered-landscape?utm_source=api" target="_blank" rel="noopener noreferrer" class="card-name">Shattered Landscape</a>
+            </div>
+            <div class="card-types">Mountain / Plains / Swamp</div>
+            <div class="card-meta">
+              <span class="color-pill">{R}{W}{B}</span>
+              <span class="note-pill">Mardu — Cycling {2}</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-tile" data-name="bountiful landscape" data-types="forest / island / mountain" data-colors="{g}{u}{r}">
+          <a href="https://scryfall.com/card/tdc/342/bountiful-landscape?utm_source=api" target="_blank" rel="noopener noreferrer" class="card-image-wrap">
+            <img src="https://cards.scryfall.io/normal/front/f/1/f1c99617-6e38-4af7-a064-6db9a5e2cc6a.jpg?1783906999" alt="Bountiful Landscape" loading="lazy" />
+          </a>
+          <div class="card-info">
+            <div class="card-name-row">
+              <a href="https://scryfall.com/card/tdc/342/bountiful-landscape?utm_source=api" target="_blank" rel="noopener noreferrer" class="card-name">Bountiful Landscape</a>
+            </div>
+            <div class="card-types">Forest / Island / Mountain</div>
+            <div class="card-meta">
+              <span class="color-pill">{G}{U}{R}</span>
+              <span class="note-pill">Temur — Cycling {2}</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="tier-section" id="panoramas">
+      <div class="section-header">
+        <div class="section-title">
+          <h2>The Alara Panoramas (5 Shard Fetches)</h2>
+          <p>Taps for {C}; pay {1}, tap, sacrifice to fetch 1 of 3 basics tapped.</p>
+        </div>
+        <span class="section-badge" style="background-color: #a855f722; color: #a855f7; border: 1px solid #a855f766;">
+          Alara Panoramas
+        </span>
+      </div>
+
+      <div class="cards-grid">
+
+        <div class="card-tile" data-name="bant panorama" data-types="forest / plains / island" data-colors="{g}{w}{u}">
+          <a href="https://scryfall.com/card/ncc/387/bant-panorama?utm_source=api" target="_blank" rel="noopener noreferrer" class="card-image-wrap">
+            <img src="https://cards.scryfall.io/normal/front/d/c/dc506497-4ecd-41d3-9042-f92f498251b0.jpg?1783923205" alt="Bant Panorama" loading="lazy" />
+          </a>
+          <div class="card-info">
+            <div class="card-name-row">
+              <a href="https://scryfall.com/card/ncc/387/bant-panorama?utm_source=api" target="_blank" rel="noopener noreferrer" class="card-name">Bant Panorama</a>
+            </div>
+            <div class="card-types">Forest / Plains / Island</div>
+            <div class="card-meta">
+              <span class="color-pill">{G}{W}{U}</span>
+              <span class="note-pill">Bant Fetch</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-tile" data-name="esper panorama" data-types="plains / island / swamp" data-colors="{w}{u}{b}">
+          <a href="https://scryfall.com/card/ncc/399/esper-panorama?utm_source=api" target="_blank" rel="noopener noreferrer" class="card-image-wrap">
+            <img src="https://cards.scryfall.io/normal/front/b/8/b89070ab-4fe6-4919-b160-b32100fb4930.jpg?1783923201" alt="Esper Panorama" loading="lazy" />
+          </a>
+          <div class="card-info">
+            <div class="card-name-row">
+              <a href="https://scryfall.com/card/ncc/399/esper-panorama?utm_source=api" target="_blank" rel="noopener noreferrer" class="card-name">Esper Panorama</a>
+            </div>
+            <div class="card-types">Plains / Island / Swamp</div>
+            <div class="card-meta">
+              <span class="color-pill">{W}{U}{B}</span>
+              <span class="note-pill">Esper Fetch</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-tile" data-name="grixis panorama" data-types="island / swamp / mountain" data-colors="{u}{b}{r}">
+          <a href="https://scryfall.com/card/ncc/407/grixis-panorama?utm_source=api" target="_blank" rel="noopener noreferrer" class="card-image-wrap">
+            <img src="https://cards.scryfall.io/normal/front/e/4/e49dd5f0-1afa-4301-acdb-28424e2553b9.jpg?1783923198" alt="Grixis Panorama" loading="lazy" />
+          </a>
+          <div class="card-info">
+            <div class="card-name-row">
+              <a href="https://scryfall.com/card/ncc/407/grixis-panorama?utm_source=api" target="_blank" rel="noopener noreferrer" class="card-name">Grixis Panorama</a>
+            </div>
+            <div class="card-types">Island / Swamp / Mountain</div>
+            <div class="card-meta">
+              <span class="color-pill">{U}{B}{R}</span>
+              <span class="note-pill">Grixis Fetch</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-tile" data-name="jund panorama" data-types="swamp / mountain / forest" data-colors="{b}{r}{g}">
+          <a href="https://scryfall.com/card/ncc/408/jund-panorama?utm_source=api" target="_blank" rel="noopener noreferrer" class="card-image-wrap">
+            <img src="https://cards.scryfall.io/normal/front/5/0/50d8346a-e0b5-41eb-be89-7d1eb0e84f28.jpg?1783923197" alt="Jund Panorama" loading="lazy" />
+          </a>
+          <div class="card-info">
+            <div class="card-name-row">
+              <a href="https://scryfall.com/card/ncc/408/jund-panorama?utm_source=api" target="_blank" rel="noopener noreferrer" class="card-name">Jund Panorama</a>
+            </div>
+            <div class="card-types">Swamp / Mountain / Forest</div>
+            <div class="card-meta">
+              <span class="color-pill">{B}{R}{G}</span>
+              <span class="note-pill">Jund Fetch</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-tile" data-name="naya panorama" data-types="mountain / forest / plains" data-colors="{r}{g}{w}">
+          <a href="https://scryfall.com/card/ncc/417/naya-panorama?utm_source=api" target="_blank" rel="noopener noreferrer" class="card-image-wrap">
+            <img src="https://cards.scryfall.io/normal/front/6/a/6a546a28-8df5-4080-9f50-af86d84a066f.jpg?1783923191" alt="Naya Panorama" loading="lazy" />
+          </a>
+          <div class="card-info">
+            <div class="card-name-row">
+              <a href="https://scryfall.com/card/ncc/417/naya-panorama?utm_source=api" target="_blank" rel="noopener noreferrer" class="card-name">Naya Panorama</a>
+            </div>
+            <div class="card-types">Mountain / Forest / Plains</div>
+            <div class="card-meta">
+              <span class="color-pill">{R}{G}{W}</span>
+              <span class="note-pill">Naya Fetch</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="tier-section" id="capenna_fetches">
+      <div class="section-header">
+        <div class="section-title">
+          <h2>Streets of New Capenna Family Lands</h2>
+          <p>Auto-sacrifices on entry to search for 1 of 3 basics tapped, and gains 1 life.</p>
+        </div>
+        <span class="section-badge" style="background-color: #f59e0b22; color: #f59e0b; border: 1px solid #f59e0b66;">
+          Capenna Family Fetches
+        </span>
+      </div>
+
+      <div class="cards-grid">
+
+        <div class="card-tile" data-name="brokers hideout" data-types="forest / plains / island" data-colors="{g}{w}{u}">
+          <a href="https://scryfall.com/card/snc/248/brokers-hideout?utm_source=api" target="_blank" rel="noopener noreferrer" class="card-image-wrap">
+            <img src="https://cards.scryfall.io/normal/front/9/8/989b299b-daa9-4bda-94e2-9a2f0e8f2bce.jpg?1783923058" alt="Brokers Hideout" loading="lazy" />
+          </a>
+          <div class="card-info">
+            <div class="card-name-row">
+              <a href="https://scryfall.com/card/snc/248/brokers-hideout?utm_source=api" target="_blank" rel="noopener noreferrer" class="card-name">Brokers Hideout</a>
+            </div>
+            <div class="card-types">Forest / Plains / Island</div>
+            <div class="card-meta">
+              <span class="color-pill">{G}{W}{U}</span>
+              <span class="note-pill">Bant — Gain 1 Life</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-tile" data-name="obscura storefront" data-types="plains / island / swamp" data-colors="{w}{u}{b}">
+          <a href="https://scryfall.com/card/dsc/291/obscura-storefront?utm_source=api" target="_blank" rel="noopener noreferrer" class="card-image-wrap">
+            <img src="https://cards.scryfall.io/normal/front/d/8/d8eaf8d2-8029-49d9-a94b-a72dc31fc81f.jpg?1783909570" alt="Obscura Storefront" loading="lazy" />
+          </a>
+          <div class="card-info">
+            <div class="card-name-row">
+              <a href="https://scryfall.com/card/dsc/291/obscura-storefront?utm_source=api" target="_blank" rel="noopener noreferrer" class="card-name">Obscura Storefront</a>
+            </div>
+            <div class="card-types">Plains / Island / Swamp</div>
+            <div class="card-meta">
+              <span class="color-pill">{W}{U}{B}</span>
+              <span class="note-pill">Esper — Gain 1 Life</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-tile" data-name="maestros theater" data-types="island / swamp / mountain" data-colors="{u}{b}{r}">
+          <a href="https://scryfall.com/card/eoc/167/maestros-theater?utm_source=api" target="_blank" rel="noopener noreferrer" class="card-image-wrap">
+            <img src="https://cards.scryfall.io/normal/front/d/4/d4087ba6-8227-4ec3-a989-0833ad6c8788.jpg?1783906010" alt="Maestros Theater" loading="lazy" />
+          </a>
+          <div class="card-info">
+            <div class="card-name-row">
+              <a href="https://scryfall.com/card/eoc/167/maestros-theater?utm_source=api" target="_blank" rel="noopener noreferrer" class="card-name">Maestros Theater</a>
+            </div>
+            <div class="card-types">Island / Swamp / Mountain</div>
+            <div class="card-meta">
+              <span class="color-pill">{U}{B}{R}</span>
+              <span class="note-pill">Grixis — Gain 1 Life</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-tile" data-name="riveteers overlook" data-types="swamp / mountain / forest" data-colors="{b}{r}{g}">
+          <a href="https://scryfall.com/card/ecc/162/riveteers-overlook?utm_source=api" target="_blank" rel="noopener noreferrer" class="card-image-wrap">
+            <img src="https://cards.scryfall.io/normal/front/6/5/65ce9590-87c0-4057-bddb-fadc0de552f6.jpg?1783904521" alt="Riveteers Overlook" loading="lazy" />
+          </a>
+          <div class="card-info">
+            <div class="card-name-row">
+              <a href="https://scryfall.com/card/ecc/162/riveteers-overlook?utm_source=api" target="_blank" rel="noopener noreferrer" class="card-name">Riveteers Overlook</a>
+            </div>
+            <div class="card-types">Swamp / Mountain / Forest</div>
+            <div class="card-meta">
+              <span class="color-pill">{B}{R}{G}</span>
+              <span class="note-pill">Jund — Gain 1 Life</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-tile" data-name="cabaretti courtyard" data-types="mountain / forest / plains" data-colors="{r}{g}{w}">
+          <a href="https://scryfall.com/card/eoc/151/cabaretti-courtyard?utm_source=api" target="_blank" rel="noopener noreferrer" class="card-image-wrap">
+            <img src="https://cards.scryfall.io/normal/front/c/5/c54ddd4e-f668-4ec8-b123-59afa977eba4.jpg?1783906015" alt="Cabaretti Courtyard" loading="lazy" />
+          </a>
+          <div class="card-info">
+            <div class="card-name-row">
+              <a href="https://scryfall.com/card/eoc/151/cabaretti-courtyard?utm_source=api" target="_blank" rel="noopener noreferrer" class="card-name">Cabaretti Courtyard</a>
+            </div>
+            <div class="card-types">Mountain / Forest / Plains</div>
+            <div class="card-meta">
+              <span class="color-pill">{R}{G}{W}</span>
+              <span class="note-pill">Naya — Gain 1 Life</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="tier-section" id="budget_fetches">
+      <div class="section-header">
+        <div class="section-title">
+          <h2>Universal Budget Basic Land Fetches &amp; Ramp Lands</h2>
+          <p>Budget staples that extract basic lands from your deck or ramp multiple lands onto the board.</p>
+        </div>
+        <span class="section-badge" style="background-color: #10b98122; color: #10b981; border: 1px solid #10b98166;">
+          Budget Basic Fetches
+        </span>
+      </div>
+
+      <div class="cards-grid">
+
+        <div class="card-tile" data-name="evolving wilds" data-types="basic land fetch" data-colors="any">
+          <a href="https://scryfall.com/card/msc/240/evolving-wilds?utm_source=api" target="_blank" rel="noopener noreferrer" class="card-image-wrap">
+            <img src="https://cards.scryfall.io/normal/front/c/0/c0318a48-30e4-4ef7-be3d-5e561c5ce428.jpg?1783903203" alt="Evolving Wilds" loading="lazy" />
+          </a>
+          <div class="card-info">
+            <div class="card-name-row">
+              <a href="https://scryfall.com/card/msc/240/evolving-wilds?utm_source=api" target="_blank" rel="noopener noreferrer" class="card-name">Evolving Wilds</a>
+            </div>
+            <div class="card-types">Basic Land Fetch</div>
+            <div class="card-meta">
+              <span class="color-pill">Any</span>
+              <span class="note-pill">Enters Tapped Basic</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-tile" data-name="terramorphic expanse" data-types="basic land fetch" data-colors="any">
+          <a href="https://scryfall.com/card/msc/273/terramorphic-expanse?utm_source=api" target="_blank" rel="noopener noreferrer" class="card-image-wrap">
+            <img src="https://cards.scryfall.io/normal/front/a/8/a81f924b-0527-4311-8120-9bfff71524f6.jpg?1783903191" alt="Terramorphic Expanse" loading="lazy" />
+          </a>
+          <div class="card-info">
+            <div class="card-name-row">
+              <a href="https://scryfall.com/card/msc/273/terramorphic-expanse?utm_source=api" target="_blank" rel="noopener noreferrer" class="card-name">Terramorphic Expanse</a>
+            </div>
+            <div class="card-types">Basic Land Fetch</div>
+            <div class="card-meta">
+              <span class="color-pill">Any</span>
+              <span class="note-pill">Enters Tapped Basic</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-tile" data-name="escape tunnel" data-types="basic land fetch" data-colors="any">
+          <a href="https://scryfall.com/card/tmt/184/escape-tunnel?utm_source=api" target="_blank" rel="noopener noreferrer" class="card-image-wrap">
+            <img src="https://cards.scryfall.io/normal/front/5/d/5df90940-15ea-418c-8547-6c75d69ec6d3.jpg?1783904064" alt="Escape Tunnel" loading="lazy" />
+          </a>
+          <div class="card-info">
+            <div class="card-name-row">
+              <a href="https://scryfall.com/card/tmt/184/escape-tunnel?utm_source=api" target="_blank" rel="noopener noreferrer" class="card-name">Escape Tunnel</a>
+            </div>
+            <div class="card-types">Basic Land Fetch</div>
+            <div class="card-meta">
+              <span class="color-pill">Any</span>
+              <span class="note-pill">Tapped Basic or Unblockable</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-tile" data-name="ash barrens" data-types="basic landcycling" data-colors="any">
+          <a href="https://scryfall.com/card/tmc/60/ash-barrens?utm_source=api" target="_blank" rel="noopener noreferrer" class="card-image-wrap">
+            <img src="https://cards.scryfall.io/normal/front/e/8/e8510205-4baa-4f1c-bf64-5d931e2ddf48.jpg?1783904155" alt="Ash Barrens" loading="lazy" />
+          </a>
+          <div class="card-info">
+            <div class="card-name-row">
+              <a href="https://scryfall.com/card/tmc/60/ash-barrens?utm_source=api" target="_blank" rel="noopener noreferrer" class="card-name">Ash Barrens</a>
+            </div>
+            <div class="card-types">Basic Landcycling</div>
+            <div class="card-meta">
+              <span class="color-pill">Any</span>
+              <span class="note-pill">Basic Landcycling {1}</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-tile" data-name="promising vein" data-types="basic land fetch" data-colors="any">
+          <a href="https://scryfall.com/card/lci/279/promising-vein?utm_source=api" target="_blank" rel="noopener noreferrer" class="card-image-wrap">
+            <img src="https://cards.scryfall.io/normal/front/e/9/e9681a54-6413-4ff4-b6b1-ee4decb25bfa.jpg?1783913716" alt="Promising Vein" loading="lazy" />
+          </a>
+          <div class="card-info">
+            <div class="card-name-row">
+              <a href="https://scryfall.com/card/lci/279/promising-vein?utm_source=api" target="_blank" rel="noopener noreferrer" class="card-name">Promising Vein</a>
+            </div>
+            <div class="card-types">Basic Land Fetch</div>
+            <div class="card-meta">
+              <span class="color-pill">Any</span>
+              <span class="note-pill">Taps for {C} / Pay {1} to Fetch</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-tile" data-name="shire terrace" data-types="basic land fetch" data-colors="any">
+          <a href="https://scryfall.com/card/ltr/261/shire-terrace?utm_source=api" target="_blank" rel="noopener noreferrer" class="card-image-wrap">
+            <img src="https://cards.scryfall.io/normal/front/2/5/25932483-58cd-4ae5-82bf-ab455177d117.jpg?1783916230" alt="Shire Terrace" loading="lazy" />
+          </a>
+          <div class="card-info">
+            <div class="card-name-row">
+              <a href="https://scryfall.com/card/ltr/261/shire-terrace?utm_source=api" target="_blank" rel="noopener noreferrer" class="card-name">Shire Terrace</a>
+            </div>
+            <div class="card-types">Basic Land Fetch</div>
+            <div class="card-meta">
+              <span class="color-pill">Any</span>
+              <span class="note-pill">Taps for {C} / Pay {1} to Fetch</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-tile" data-name="myriad landscape" data-types="colorless ramp" data-colors="any">
+          <a href="https://scryfall.com/card/eoc/169/myriad-landscape?utm_source=api" target="_blank" rel="noopener noreferrer" class="card-image-wrap">
+            <img src="https://cards.scryfall.io/normal/front/a/0/a0e2098f-1d94-491a-a7e9-a45a9f69e3a8.jpg?1783906009" alt="Myriad Landscape" loading="lazy" />
+          </a>
+          <div class="card-info">
+            <div class="card-name-row">
+              <a href="https://scryfall.com/card/eoc/169/myriad-landscape?utm_source=api" target="_blank" rel="noopener noreferrer" class="card-name">Myriad Landscape</a>
+            </div>
+            <div class="card-types">Colorless Ramp</div>
+            <div class="card-meta">
+              <span class="color-pill">Any</span>
+              <span class="note-pill">Ramps 2 Basics of Same Type</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-tile" data-name="blighted woodland" data-types="green ramp" data-colors="any">
+          <a href="https://scryfall.com/card/clb/881/blighted-woodland?utm_source=api" target="_blank" rel="noopener noreferrer" class="card-image-wrap">
+            <img src="https://cards.scryfall.io/normal/front/9/4/94e0ad38-31b3-46ba-9999-9b6ff57906ae.jpg?1783922381" alt="Blighted Woodland" loading="lazy" />
+          </a>
+          <div class="card-info">
+            <div class="card-name-row">
+              <a href="https://scryfall.com/card/clb/881/blighted-woodland?utm_source=api" target="_blank" rel="noopener noreferrer" class="card-name">Blighted Woodland</a>
+            </div>
+            <div class="card-types">Green Ramp</div>
+            <div class="card-meta">
+              <span class="color-pill">Any</span>
+              <span class="note-pill">Ramps 2 Basics onto Board</span>
             </div>
           </div>
         </div>

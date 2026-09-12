@@ -217,10 +217,22 @@ When running 3+ colors, these cycles form the backbone of your fixing:
 
 ---
 
-## 🔍 5. Basic Land Fetches (Under $2)
+## 🔍 5. Budget Land Fetches (Under $2)
 
-Budget fixing that extracts basic lands directly from your deck to fix colors, thin the deck, or trigger Landfall:
+Budget fixing that extracts lands directly from your deck to fix colors, thin the deck, or trigger Landfall:
 
+### Mirage "Slow Fetches" (Typed Dual & Triome Fetches Under $1)
+> 💡 **The Budget Secret:** Unlike *Evolving Wilds*, the 5 allied Mirage fetches search for **basic land types** (Plains, Island, Swamp, Mountain, Forest)—meaning they **can tutor Tango lands, Cycling duals, Snow duals, DMU common duals, and even Shock lands or Triomes** on a budget. While the fetch itself enters tapped, the land it tutors **enters untapped**!
+*   [**Flood Plain**](https://scryfall.com/search?q=!"Flood+Plain") (Azorius) — Fetches Plains or Island.
+*   [**Bad River**](https://scryfall.com/search?q=!"Bad+River") (Dimir) — Fetches Island or Swamp.
+*   [**Rocky Tar Pit**](https://scryfall.com/search?q=!"Rocky+Tar+Pit") (Rakdos) — Fetches Swamp or Mountain.
+*   [**Mountain Valley**](https://scryfall.com/search?q=!"Mountain+Valley") (Gruul) — Fetches Mountain or Forest.
+*   [**Grasslands**](https://scryfall.com/search?q=!"Grasslands") (Selesnya) — Fetches Forest or Plains.
+
+### The Budget Super-Ramp Fetch
+*   [**Krosan Verge**](https://scryfall.com/search?q=!"Krosan+Verge") (~$0.30) — Enters tapped; taps for {C}. `{2}, {T}, Sacrifice`: Search for **a Forest card AND a Plains card** (including typed nonbasic duals/triomes) and put them onto the battlefield tapped. Two lands ramped from one card!
+
+### Universal Basic Land Fetches
 *   [**Ash Barrens**](https://scryfall.com/search?q=!"Ash+Barrens") — Basic Landcycling for {1}; instant-speed mana fixing that leaves a land in the graveyard.
 *   [**Escape Tunnel**](https://scryfall.com/search?q=!"Escape+Tunnel") — Sacrifices to fetch an untapped basic (if you control few lands) or makes a power 2 or less creature unblockable.
 *   [**Evolving Wilds**](https://scryfall.com/search?q=!"Evolving+Wilds") — Classic budget staple; fetches any basic tapped.
@@ -229,6 +241,14 @@ Budget fixing that extracts basic lands directly from your deck to fix colors, t
 *   [**Promising Vein**](https://scryfall.com/search?q=!"Promising+Vein") — Taps for {C}; pay {1}, tap, sacrifice to fetch a basic tapped. Tyler's top pick for flexible fixing.
 *   [**Shire Terrace**](https://scryfall.com/search?q=!"Shire+Terrace") — Taps for {C}; pay {1}, tap, sacrifice to fetch a basic tapped.
 *   [**Vibrant Cityscape**](https://scryfall.com/search?q=!"Vibrant+Cityscape") — Taps for {C}; provides flexible basic land tutoring.
+
+### Streets of New Capenna Family Lands (Auto-Sac Fetches)
+*Auto-sacrifice on entry to search for one of three basic land types tapped, and **gain 1 life**:*
+*   [**Brokers Hideout**](https://scryfall.com/search?q=!"Brokers+Hideout") (Bant — Forest, Plains, Island)
+*   [**Obscura Storefront**](https://scryfall.com/search?q=!"Obscura+Storefront") (Esper — Plains, Island, Swamp)
+*   [**Maestros Theater**](https://scryfall.com/search?q=!"Maestros+Theater") (Grixis — Island, Swamp, Mountain)
+*   [**Riveteers Overlook**](https://scryfall.com/search?q=!"Riveteers+Overlook") (Jund — Swamp, Mountain, Forest)
+*   [**Cabaretti Courtyard**](https://scryfall.com/search?q=!"Cabaretti+Courtyard") (Naya — Mountain, Forest, Plains)
 
 ---
 

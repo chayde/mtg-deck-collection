@@ -31,19 +31,26 @@ In Commander, mana efficiency and color consistency form the backbone of every d
 
 ## 📊 2. Master Tier & Speed Matrix
 
-| Tier | Category / Cycle | Untapped Speed | Downside / Condition | Keywords / Upside | Fetchable by Fetches? |
+| Tier / Category | Cycle / Group | Untapped Speed | Downside / Condition | Keywords / Upside | What It Can Fetch |
 |:---:|---|:---:|---|---|:---:|
-| **Engines** | **The 10 Fetch Lands** | Turn 1 Untapped | Pay 1 life, sacrifice | Tutors any matching basic land type directly to board | — |
-| **Tier 1** | **Original Revised Duals (10)** | Turn 1 Untapped | None (Zero Drawback) | Has two basic land types | **YES** |
-| **Tier 2** | **Crowd / Bond Lands (10)** | Turn 1 Untapped | Tapped if 1 or 0 opponents | Unconditional untapped in 4-player Commander pods | ❌ No |
-| **Tier 3** | **Shock Lands (10)** | Turn 1 Untapped | Pay 2 life (negligible) | Has two basic land types | **YES** |
-| **Tier 4** | **Battle / Tango Lands (5 Allied)** | Turn 3+ Untapped | Control 2+ basic lands | Has two basic land types | **YES** |
-| **Tier 5** | **Surveil Lands (10)** | Enters Tapped | None (always enters tapped) | **Surveil 1**, has two basic land types | **YES** |
-| **Tier 6** | **Triomes & Capenna Tri-Lands (10)** | Enters Tapped | None (always enters tapped) | **3 Colors**, **Cycling {3}**, has 3 basic land types | **YES** |
-| **Tier 7** | **Bicycle Dual Lands (5 Allied)** | Enters Tapped | None (always enters tapped) | **Cycling {2}**, has two basic land types | **YES** |
-| **Tier 8** | **Snow Dual Lands (10)** | Enters Tapped | None (always enters tapped) | **Snow supertype**, has two basic land types | **YES** |
-| **Tier 9** | **Dominaria United Common Duals (10)** | Enters Tapped | None (always enters tapped) | Common budget, has two basic land types | **YES** |
-| **Tier 10** | **Specialty Fetchable Utility Lands** | Variable | Control 3+ basics / reveal Treefolk | Spell recursion, Food, token generation | **YES** |
+| **Premier Fetches** | **The Original 10 Fetch Lands** | Turn 1 Untapped | Pay 1 life, sacrifice | Instant speed, zero mana | **Basic Land Types** (Duals, Shocks, Triomes) |
+| **Typed Slow Fetches** | **Mirage Slow Fetches (5 Allied)** | Enters Tapped | Enters tapped | Fetched land enters untapped | **Basic Land Types** (Duals, Shocks, Triomes) |
+| **Typed Double Fetch** | **Krosan Verge** | Enters Tapped | Enters tapped, costs {2} | Ramps TWO lands to board | **Forest AND Plains** (Duals, Shocks, Triomes) |
+| **Untapped Basic Fetches**| **Prismatic Vista & Fabled Passage** | Turn 1 / Turn 4+ Untapped | Pay 1 life / Control 4+ lands | Untapped basic fixing | Basic lands of any type |
+| **Tri-Color Fetches** | **MH3 Landscapes (10 Triomes)** | Turn 1 Untapped (C) | Pay {1} to fetch | **Cycling {2}**, taps for {C} | Basic of 3 designated types |
+| **Shard Fetches** | **The Alara Panoramas (5 Cards)** | Turn 1 Untapped (C) | Pay {1} to fetch | Taps for {C} | Basic of 3 designated types |
+| **Auto-Sac Fetches** | **Capenna Family Lands (5 Cards)** | Enters Tapped | Auto-sacrifices on entry | **Gains 1 life** | Basic of 3 designated types |
+| **Universal Budget Fetches**| **Evolving Wilds, Terramorphic, etc.**| Enters Tapped | Enters tapped | Budget staples, land drop triggers | Any basic land |
+| **Tier 1** | **Original Revised Duals (10)** | Turn 1 Untapped | None (Zero Drawback) | Has two basic land types | — |
+| **Tier 2** | **Crowd / Bond Lands (10)** | Turn 1 Untapped | Tapped if 1 or 0 opponents | Unconditional untapped in 4-player Commander | — |
+| **Tier 3** | **Shock Lands (10)** | Turn 1 Untapped | Pay 2 life (negligible) | Has two basic land types | — |
+| **Tier 4** | **Battle / Tango Lands (5 Allied)** | Turn 3+ Untapped | Control 2+ basic lands | Has two basic land types | — |
+| **Tier 5** | **Surveil Lands (10)** | Enters Tapped | None (always enters tapped) | **Surveil 1**, has two basic land types | — |
+| **Tier 6** | **Triomes & Capenna Tri-Lands (10)** | Enters Tapped | None (always enters tapped) | **3 Colors**, **Cycling {3}**, has 3 basic land types | — |
+| **Tier 7** | **Bicycle Dual Lands (5 Allied)** | Enters Tapped | None (always enters tapped) | **Cycling {2}**, has two basic land types | — |
+| **Tier 8** | **Snow Dual Lands (10)** | Enters Tapped | None (always enters tapped) | **Snow supertype**, has two basic land types | — |
+| **Tier 9** | **Dominaria United Common Duals (10)** | Enters Tapped | None (always enters tapped) | Common budget, has two basic land types | — |
+| **Tier 10** | **Specialty Fetchable Utility Lands** | Variable | Control 3+ basics / reveal Treefolk | Spell recursion, Food, token generation | — |
 
 ---
 
@@ -51,24 +58,81 @@ In Commander, mana efficiency and color consistency form the backbone of every d
 
 ---
 
-### Engines: The 10 Fetch Lands
+### Engines: The Fetch Lands (Lands That Fetch Lands)
+
+#### 1. Premier Fetch Lands (The Original 10)
 *Pay 1 life, tap, sacrifice: Search your library for a Plains, Island, Swamp, Mountain, or Forest card, put it onto the battlefield, then shuffle.*
 
 Because they search for a **land type** rather than a "basic land", each fetch land can find any typed dual, triome, shock, or utility land matching either of its designated types.
 
-#### Allied Color Fetch Lands (Onslaught / Khans of Tarkir)
+##### Allied Color Fetch Lands (Onslaught / Khans of Tarkir)
 * [**Flooded Strand**](https://scryfall.com/search?q=!"Flooded+Strand") — Plains / Island (Azorius)
 * [**Polluted Delta**](https://scryfall.com/search?q=!"Polluted+Delta") — Island / Swamp (Dimir)
 * [**Bloodstained Mire**](https://scryfall.com/search?q=!"Bloodstained+Mire") — Swamp / Mountain (Rakdos)
 * [**Wooded Foothills**](https://scryfall.com/search?q=!"Wooded+Foothills") — Mountain / Forest (Gruul)
 * [**Windswept Heath**](https://scryfall.com/search?q=!"Windswept+Heath") — Forest / Plains (Selesnya)
 
-#### Enemy Color Fetch Lands (Zendikar / Modern Horizons 2)
+##### Enemy Color Fetch Lands (Zendikar / Modern Horizons 2)
 * [**Marsh Flats**](https://scryfall.com/search?q=!"Marsh+Flats") — Plains / Swamp (Orzhov)
 * [**Scalding Tarn**](https://scryfall.com/search?q=!"Scalding+Tarn") — Island / Mountain (Izzet)
 * [**Verdant Catacombs**](https://scryfall.com/search?q=!"Verdant+Catacombs") — Swamp / Forest (Golgari)
 * [**Arid Mesa**](https://scryfall.com/search?q=!"Arid+Mesa") — Mountain / Plains (Boros)
 * [**Misty Rainforest**](https://scryfall.com/search?q=!"Misty+Rainforest") — Forest / Island (Simic)
+
+#### 2. Typed "Slow Fetches" / Mirage Fetch Lands (5 Allied Cards)
+*Enters the battlefield tapped. {T}, Sacrifice this land: Search your library for a Plains, Island, Swamp, Mountain, or Forest card, put it onto the battlefield, then shuffle.*
+
+* **Key Commander Strength:** Like the original 10 fetches, these search for **basic land types**—meaning they **can tutor Revised duals, Shock lands, and Triomes**. While the fetch land itself enters tapped, the land it tutors **enters untapped** (unless the fetched card has its own tapped clause). They are premier budget fetch staples (all under $0.50–$1.00).
+* [**Flood Plain**](https://scryfall.com/search?q=!"Flood+Plain") — Plains / Island (Azorius)
+* [**Bad River**](https://scryfall.com/search?q=!"Bad+River") — Island / Swamp (Dimir)
+* [**Rocky Tar Pit**](https://scryfall.com/search?q=!"Rocky+Tar+Pit") — Swamp / Mountain (Rakdos)
+* [**Mountain Valley**](https://scryfall.com/search?q=!"Mountain+Valley") — Mountain / Forest (Gruul)
+* [**Grasslands**](https://scryfall.com/search?q=!"Grasslands") — Forest / Plains (Selesnya)
+
+#### 3. The Typed Double-Fetch: Krosan Verge
+* [**Krosan Verge**](https://scryfall.com/search?q=!"Krosan+Verge") — Land: Enters tapped, taps for {C}. `{2}, {T}, Sacrifice`: Search your library for **a Forest card AND a Plains card**, put them onto the battlefield tapped, then shuffle.
+  * **Why It Excels:** It specifies *a Forest card and a Plains card*—**not** basic lands. You can tutor two nonbasic typed duals or triomes at the same time (e.g. *Overgrown Tomb* + *Hallowed Fountain*, or *Savannah* + *Ketria Triome*), ramping you up by one land and providing 4 to 5 colors of fixing off a single card.
+
+#### 4. Untapped Universal Basic Land Fetches: Prismatic Vista & Fabled Passage
+* [**Prismatic Vista**](https://scryfall.com/search?q=!"Prismatic+Vista") — Land: `{T}, Pay 1 life, Sacrifice`: Search library for a **basic land card**, put it onto the battlefield **untapped**, then shuffle. *The premier universal untapped basic land tutor.*
+* [**Fabled Passage**](https://scryfall.com/search?q=!"Fabled+Passage") — Land: `{T}, Sacrifice`: Search library for a **basic land card**, put it onto the battlefield tapped. If you control four or more lands, **untap it**.
+
+#### 5. Modern Horizons 3 Landscapes (10 Tri-Color Cycling Fetches)
+*Enters the battlefield untapped. Taps for {C} unconditionally. Has Cycling {2}. Pay {1}, {T}, Sacrifice: Search library for a basic land of one of three types, put it onto the battlefield tapped.*
+* [**Contaminated Landscape**](https://scryfall.com/search?q=!"Contaminated+Landscape") (Esper — Plains, Island, Swamp)
+* [**Seething Landscape**](https://scryfall.com/search?q=!"Seething+Landscape") (Grixis — Island, Swamp, Mountain)
+* [**Twisted Landscape**](https://scryfall.com/search?q=!"Twisted+Landscape") (Jund — Swamp, Mountain, Forest)
+* [**Sheltering Landscape**](https://scryfall.com/search?q=!"Sheltering+Landscape") (Naya — Mountain, Forest, Plains)
+* [**Tranquil Landscape**](https://scryfall.com/search?q=!"Tranquil+Landscape") (Bant — Forest, Plains, Island)
+* [**Deceptive Landscape**](https://scryfall.com/search?q=!"Deceptive+Landscape") (Abzan — Plains, Swamp, Forest)
+* [**Perilous Landscape**](https://scryfall.com/search?q=!"Perilous+Landscape") (Jeskai — Island, Mountain, Plains)
+* [**Foreboding Landscape**](https://scryfall.com/search?q=!"Foreboding+Landscape") (Sultai — Swamp, Forest, Island)
+* [**Shattered Landscape**](https://scryfall.com/search?q=!"Shattered+Landscape") (Mardu — Mountain, Plains, Swamp)
+* [**Bountiful Landscape**](https://scryfall.com/search?q=!"Bountiful+Landscape") (Temur — Forest, Island, Mountain)
+
+#### 6. The Alara Panoramas (5 Shard Fetches)
+*Taps for {C}. Pay {1}, {T}, Sacrifice: Search library for a basic land of one of three types, put it onto the battlefield tapped.*
+* [**Bant Panorama**](https://scryfall.com/search?q=!"Bant+Panorama") (Forest, Plains, Island)
+* [**Esper Panorama**](https://scryfall.com/search?q=!"Esper+Panorama") (Plains, Island, Swamp)
+* [**Grixis Panorama**](https://scryfall.com/search?q=!"Grixis+Panorama") (Island, Swamp, Mountain)
+* [**Jund Panorama**](https://scryfall.com/search?q=!"Jund+Panorama") (Swamp, Mountain, Forest)
+* [**Naya Panorama**](https://scryfall.com/search?q=!"Naya+Panorama") (Mountain, Forest, Plains)
+
+#### 7. Streets of New Capenna Family Lands (5 Auto-Sac Fetches)
+*When this land enters the battlefield, sacrifice it: Search library for a basic land of one of three types, put it onto the battlefield tapped, and you gain 1 life.*
+* [**Brokers Hideout**](https://scryfall.com/search?q=!"Brokers+Hideout") (Bant — Forest, Plains, Island)
+* [**Obscura Storefront**](https://scryfall.com/search?q=!"Obscura+Storefront") (Esper — Plains, Island, Swamp)
+* [**Maestros Theater**](https://scryfall.com/search?q=!"Maestros+Theater") (Grixis — Island, Swamp, Mountain)
+* [**Riveteers Overlook**](https://scryfall.com/search?q=!"Riveteers+Overlook") (Jund — Swamp, Mountain, Forest)
+* [**Cabaretti Courtyard**](https://scryfall.com/search?q=!"Cabaretti+Courtyard") (Naya — Mountain, Forest, Plains)
+
+#### 8. Universal Budget Basic Land Fetches & Ramp Lands
+* [**Evolving Wilds**](https://scryfall.com/search?q=!"Evolving+Wilds") & [**Terramorphic Expanse**](https://scryfall.com/search?q=!"Terramorphic+Expanse") — Classic staples; tap, sacrifice to fetch any basic land tapped.
+* [**Escape Tunnel**](https://scryfall.com/search?q=!"Escape+Tunnel") — Fetches any basic tapped, or makes a creature with power ≤2 unblockable.
+* [**Ash Barrens**](https://scryfall.com/search?q=!"Ash+Barrens") — Taps for {C}; has **Basic landcycling {1}** to tutor any basic to hand at instant speed.
+* [**Promising Vein**](https://scryfall.com/search?q=!"Promising+Vein") & [**Shire Terrace**](https://scryfall.com/search?q=!"Shire+Terrace") — Taps for {C}; `{1}, {T}, Sacrifice` to fetch any basic tapped.
+* [**Myriad Landscape**](https://scryfall.com/search?q=!"Myriad+Landscape") — Taps for {C}; `{2}, {T}, Sacrifice`: Search library for **two basic lands that share a land type** tapped. Colorless land ramp.
+* [**Blighted Woodland**](https://scryfall.com/search?q=!"Blighted+Woodland") — Taps for {C}; `{3}{G}, {T}, Sacrifice`: Search library for **two basic lands** tapped.
 
 ---
 

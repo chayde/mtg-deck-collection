@@ -2,20 +2,17 @@
 
 ## 🗓️ September 2026: Henzie Blitz Refinement, Playtesting & The Necrobloom Inception
 
-### 2026-09-12: Fetchable Lands & Duals Reference Guide & Visual HTML Created (`FetchableLandsReferenceGuide.md` & `FetchableLandsReferenceGuide.html`)
-*   **Documentation Milestone:** Created [`FetchableLandsReferenceGuide.md`](FetchableLandsReferenceGuide.md) and [`FetchableLandsReferenceGuide.html`](FetchableLandsReferenceGuide.html) as the authoritative, tiered guide and interactive dark-mode visual catalog (featuring full card images, live search, and sticky navigation) to fetch lands and fetchable dual/tri-land cycles for Commander.
-*   **Scope & Strategic Ranking:** Organizes lands strictly by multiplayer tempo efficiency, entering-untapped conditions/drawbacks, and keyword utility:
-    *   **Engines:** The 10 Fetch Lands (Allied Onslaught/Khans & Enemy Zendikar/MH2).
-    *   **Tier 1:** Original Revised Duals (ABUR duals — unconditional untapped, zero drawback).
-    *   **Tier 2:** Multiplayer "Crowd Lands" / Bond Lands (always untapped in 4-player Commander).
-    *   **Tier 3:** Shock Lands (untapped for 2 life — negligible in 40-life format).
-    *   **Tier 4:** Battle / Tango Lands (untapped with 2+ basic lands).
-    *   **Tier 5:** Surveil Lands (enters tapped with **Surveil 1** card selection & graveyard setup).
-    *   **Tier 6:** Triomes & New Capenna Tri-Lands (enters tapped with 3 basic types & **Cycling {3}**).
-    *   **Tier 7:** Bicycle Dual Lands (enters tapped with **Cycling {2}**).
-    *   **Tier 8:** Kaldheim Snow Duals (enters tapped with **Snow supertype**).
-    *   **Tier 9:** Dominaria United Common Duals (enters tapped budget Domain fixers).
-    *   **Tier 10:** Specialty Fetchable Utility Lands (Eldraine monocolored utility cycle, *Murmuring Bosk*, *Mistveil Plains*).
+### 2026-09-12: Fetchable Lands Reference Guide Expanded & Budget Guide Synchronization
+*   **Documentation Expansion:** Expanded [`FetchableLandsReferenceGuide.md`](FetchableLandsReferenceGuide.md) and [`FetchableLandsReferenceGuide.html`](FetchableLandsReferenceGuide.html) to a complete 133-land visual catalog featuring dedicated sub-sections for all land-fetching lands:
+    *   **The Original 10 Fetch Lands:** Allied (Onslaught/Khans) and Enemy (Zendikar/MH2).
+    *   **Mirage "Slow Fetches" (5 Allied):** *Flood Plain*, *Bad River*, *Rocky Tar Pit*, *Mountain Valley*, *Grasslands* (enters tapped, but tutors typed duals/shocks/triomes onto the battlefield untapped).
+    *   **Typed Double-Fetch:** *Krosan Verge* (ramps a Forest AND a Plains—including nonbasic typed duals—onto the board).
+    *   **Untapped Basic Fetches:** *Prismatic Vista* and *Fabled Passage*.
+    *   **Tri-Color Fetches:** The 10 Modern Horizons 3 *Landscapes* (cycling {2} + fetch 1 of 3 basics).
+    *   **Shard Fetches:** The 5 *Alara Panoramas* (*Bant*, *Esper*, *Grixis*, *Jund*, *Naya*).
+    *   **Auto-Sac Fetches:** The 5 *Streets of New Capenna Family Lands* (*Brokers Hideout*, *Obscura Storefront*, etc. + 1 life gain).
+    *   **Universal Budget Basic Fetches & Ramp Lands:** *Evolving Wilds*, *Terramorphic Expanse*, *Escape Tunnel*, *Ash Barrens*, *Promising Vein*, *Shire Terrace*, *Myriad Landscape*, *Blighted Woodland*.
+*   **Budget Commander Lands Guide (`BudgetCommanderLands.md`):** Integrated the 5 Mirage Slow Fetches, *Krosan Verge*, and New Capenna family fetches into Section 5 as high-efficiency budget tools for tutoring typed duals under $1.
 
 ### 2026-09-12: Felothar the Steadfast — The Walls of Ba Sing Se Integrated
 *   **The Swap:**
