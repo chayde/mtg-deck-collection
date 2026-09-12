@@ -7,6 +7,10 @@
 *   **Henzie "Toolbox" Torre:** All 91 unique nonbasic singles (+ 2 in-hand collection singles *Damage Control Crew* and *Sulfurous Springs*) are physically in-hand. Adding 7 basic lands from collection (4 Forest, 2 Swamp, 1 Mountain) completes the tournament-legal 100-card deck.
 *   **Rocco, Street Chef:** All 81 ordered nonbasic singles (+ 6 in-hand collection singles *Command Tower*, *Exotic Orchard*, *Nature's Lore*, *Path of Ancestry*, *Arcane Signet*, *Peregrin Took*) are physically in-hand. Adding 16 basic lands from collection (8 Forest, 4 Mountain, 4 Plains) completes the tournament-legal 100-card deck.
 
+### 2026-09-12: Deck Promotions — Henzie Blitz & Rocco, Street Chef Promoted to Owned
+*   **Deck Promotion (Planning → Owned):** Following the physical verification of all 100 cards for both decks, **Henzie "Toolbox" Torre** (`commander_decks/Owned/HenzieBlitz/`) and **Rocco, Street Chef** (`commander_decks/Owned/RoccoStreetChef/`) have been officially graduated from `Planning/` to `Owned/`.
+*   **Inventory & Physical Status:** Both decks are fully sleeved, verified at exactly 100 cards, and battle-ready for paper Commander pods.
+
 ### 2026-09-12: Fetchable Lands Reference Guide Expanded & Budget Guide Synchronization
 *   **Documentation Expansion:** Expanded [`FetchableLandsReferenceGuide.md`](FetchableLandsReferenceGuide.md) and [`FetchableLandsReferenceGuide.html`](FetchableLandsReferenceGuide.html) to a complete 133-land visual catalog featuring dedicated sub-sections for all land-fetching lands:
     *   **The Original 10 Fetch Lands:** Allied (Onslaught/Khans) and Enemy (Zendikar/MH2).

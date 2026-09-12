@@ -35,6 +35,8 @@ Decks physically built and ready for play.
 *   **Sauron Midrange:** Grixis Amass and Ring Temptation.
 *   **Incredible Hulk (Gamma Smash):** Temur +1/+1 counters / Gamma Tribal (Bruce Banner // The Incredible Hulk). Bracket 3.
 *   **The Ur-Dragon (Kibler's Flight):** 5-Color Dragon Tribal. Bracket 2 Mid-Budget version.
+*   **Henzie Blitz:** Jund Blitz & Value Reanimation Engine (Henzie "Toolbox" Torre). Bracket 3.
+*   **Rocco, Street Chef:** Naya Impulse Gastronomy & Food Tokens ("The Street Chef's Kitchen"). Bracket 3.
 *   **Preconstructed Decks:** Original and modified PreCons (Ashling, Bello, Disa, Ulalek, etc.).
 
 #### 📁 `/External`
@@ -50,14 +52,12 @@ Decks under development, research, or being optimized.
 *   **Omnath Landfall:** 4-Color value engine (Locus of Creation).
 *   **Thalia & Gitrog:** Abzan Landfall & Hatebears.
 *   **Yidris Cascade:** 4-Color "Value Cascade".
-*   **Henzie Blitz:** Jund Blitz & Value Reanimation Engine. Bracket 3.
 *   **Ulamog Ramp:** Colorless high-power ramp.
 *   **Zimone Engine:** Simic Landfall for **Christina**.
 *   **Ramses, Assassin Lord:** Dimir Assassin Tribal alt-win condition (Shadow Brotherhood).
 *   **Nekusar, the Mindrazer:** Grixis Group Slug & Forced Draw / Wheels (Lethal Library).
 *   **Ulalek, Fused Atrocity:** 5-Color Devoid / Eldrazi Tribal & Stack Duplication (Eldrazi Stack Incursion). Bracket 3.
 *   **Mahadi, Emporium Master:** Rakdos Treasure Aristocrats & Sacrifice Control ("The Blood Market"). Bracket 3.
-*   **Rocco, Street Chef:** Naya Impulse Gastronomy & Food Tokens ("The Street Chef's Kitchen"). Bracket 3.
 *   **Svella, Ice Shaper:** Gruul Big-Mana Activated Ability & Topdeck Stompy ("The Icy Forge"). Bracket 3.
 *   **Sygg, River Cutthroat:** Dimir Group Slug, Goad & End-Step Attrition Control ("The Toll of the River"). Bracket 3.
 *   **Felothar the Steadfast:** Abzan Defender Beatdown, Team Vigilance & Toughness Fling Reach ("The Iron Citadel"). Bracket 3.
