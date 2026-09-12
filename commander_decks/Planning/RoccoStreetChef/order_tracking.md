@@ -3,7 +3,7 @@
 Legend: `- [x]` in hand / received · `- [ ]` ordered, awaiting delivery  
 Condition codes: NM / LP / MP / HP · finish noted only when Foil.
 
-**Deck status:** Acquisition in progress — 81 singles ordered via Manapool Order #586788.
+**Deck status:** ✅ **100% ACQUIRED / IN-HAND** — All 81 ordered singles delivered via Manapool Order #586788. Add 16 basic lands from collection to complete the 100-card deck.
 
 ---
 
@@ -140,10 +140,10 @@ Check off each card as it arrives, then tick the package's **Delivered** box whe
 - [x] [Kodama of the West Tree](https://manapool.com/card/pneo/199p/kodama-of-the-west-tree) — $20.00 · NM · Kamigawa: Neon Dynasty Promos (PNEO #199p)
 
 ### [HoloEN](https://manapool.com/shop/holoen) — [Package #586788-2084945](https://manapool.com/settings/orders/suborder/ee3c4533-e438-47d4-8dfb-77b67386d45c) · 3 Rocco cards (8 total in shipment)
-- [ ] Delivered
-- [ ] [Swords to Plowshares](https://manapool.com/card/dmr/31/swords-to-plowshares) — $1.50 · NM · Dominaria Remastered (DMR #31)
-- [ ] [Rosie Cotton of South Lane](https://manapool.com/card/ltr/440/rosie-cotton-of-south-lane) — $0.15 · NMBorderless · The Lord of the Rings: Tales of Middle-earth (LTR #440)
-- [ ] [Tireless Tracker](https://manapool.com/card/soi/233/tireless-tracker) — $0.15 · NM · Shadows over Innistrad (SOI #233)
+- [x] Delivered
+- [x] [Swords to Plowshares](https://manapool.com/card/dmr/31/swords-to-plowshares) — $1.50 · NM · Dominaria Remastered (DMR #31)
+- [x] [Rosie Cotton of South Lane](https://manapool.com/card/ltr/440/rosie-cotton-of-south-lane) — $0.15 · NMBorderless · The Lord of the Rings: Tales of Middle-earth (LTR #440)
+- [x] [Tireless Tracker](https://manapool.com/card/soi/233/tireless-tracker) — $0.15 · NM · Shadows over Innistrad (SOI #233)
 
 ### [The Acorn Vault](https://manapool.com/shop/theacornvault) — [Package #586788-2084947](https://manapool.com/settings/orders/suborder/f0c488e3-0714-48f3-a7ee-976c456e5406) · 2 Rocco cards (3 total in shipment)
 - [x] Delivered

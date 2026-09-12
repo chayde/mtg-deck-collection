@@ -2,6 +2,11 @@
 
 ## 🗓️ September 2026: Henzie Blitz Refinement, Playtesting & The Necrobloom Inception
 
+### 2026-09-12: Physical Acquisition Complete — Henzie "Toolbox" Torre & Rocco, Street Chef
+*   **Acquisition Milestone:** 100% of all ordered paper singles across Orders #586657 (Spellfinder Revised Duals: *Badlands*, *Taiga*, *Bayou*) and #586788 (19-package combined singles order via Manapool) plus the *Ignoble Hierarch* remediation order have been physically delivered, verified, and checked off in both tracking manifests.
+*   **Henzie "Toolbox" Torre:** All 91 unique nonbasic singles (+ 2 in-hand collection singles *Damage Control Crew* and *Sulfurous Springs*) are physically in-hand. Adding 7 basic lands from collection (4 Forest, 2 Swamp, 1 Mountain) completes the tournament-legal 100-card deck.
+*   **Rocco, Street Chef:** All 81 ordered nonbasic singles (+ 6 in-hand collection singles *Command Tower*, *Exotic Orchard*, *Nature's Lore*, *Path of Ancestry*, *Arcane Signet*, *Peregrin Took*) are physically in-hand. Adding 16 basic lands from collection (8 Forest, 4 Mountain, 4 Plains) completes the tournament-legal 100-card deck.
+
 ### 2026-09-12: Fetchable Lands Reference Guide Expanded & Budget Guide Synchronization
 *   **Documentation Expansion:** Expanded [`FetchableLandsReferenceGuide.md`](FetchableLandsReferenceGuide.md) and [`FetchableLandsReferenceGuide.html`](FetchableLandsReferenceGuide.html) to a complete 133-land visual catalog featuring dedicated sub-sections for all land-fetching lands:
     *   **The Original 10 Fetch Lands:** Allied (Onslaught/Khans) and Enemy (Zendikar/MH2).

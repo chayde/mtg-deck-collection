@@ -3,7 +3,7 @@
 Legend: `- [x]` in hand / received · `- [ ]` ordered, awaiting delivery  
 Condition codes: NM / LP / MP / HP · finish noted only when Foil.
 
-**Deck status:** Acquisition in progress — 91 unique singles ordered across Orders #586657 and #586788 via Manapool.
+**Deck status:** ✅ **100% ACQUIRED / IN-HAND** — All 93 ordered singles delivered across Orders #586657 and #586788 via Manapool. Add 7 basic lands from collection to complete the 100-card deck.
 
 ## 🛡️ Inventory In-Hand (2 Cards)
 Confirmed physically in collection / in-hand:
@@ -159,12 +159,12 @@ Check off each card as it arrives, then tick the package's **Delivered** box whe
 - [x] [Polluted Delta](https://manapool.com/card/mh3/224/polluted-delta) — $19.00 · NM · Modern Horizons 3 (MH3 #224)
 
 ### [HoloEN](https://manapool.com/shop/holoen) — [Package #586788-2084945](https://manapool.com/settings/orders/suborder/ee3c4533-e438-47d4-8dfb-77b67386d45c) · 5 Henzie cards (8 total in shipment)
-- [ ] Delivered
-- [ ] [Grave Researcher // Reanimate](https://manapool.com/card/sos/85/grave-researcher-reanimate) — $1.50 · NM · Secrets of Strixhaven (SOS #85)
-- [ ] [Junji, the Midnight Sky](https://manapool.com/card/neo/102/junji-the-midnight-sky) — $0.45 · NM · Kamigawa: Neon Dynasty (NEO #102)
-- [ ] [Blood Crypt](https://manapool.com/card/ecl/262/blood-crypt) — $9.00 · FoilNM · Lorwyn Eclipsed (ECL #262)
-- [ ] [Undergrowth Stadium](https://manapool.com/card/tmc/80/undergrowth-stadium) — $6.15 · NM · Teenage Mutant Ninja Turtles Eternal (TMC #80)
-- [ ] [Gwenom, Remorseless](https://manapool.com/card/spm/56/gwenom-remorseless) — $3.50 · NM · Marvel's Spider-Man (SPM #56)
+- [x] Delivered
+- [x] [Grave Researcher // Reanimate](https://manapool.com/card/sos/85/grave-researcher-reanimate) — $1.50 · NM · Secrets of Strixhaven (SOS #85)
+- [x] [Junji, the Midnight Sky](https://manapool.com/card/neo/102/junji-the-midnight-sky) — $0.45 · NM · Kamigawa: Neon Dynasty (NEO #102)
+- [x] [Blood Crypt](https://manapool.com/card/ecl/262/blood-crypt) — $9.00 · FoilNM · Lorwyn Eclipsed (ECL #262)
+- [x] [Undergrowth Stadium](https://manapool.com/card/tmc/80/undergrowth-stadium) — $6.15 · NM · Teenage Mutant Ninja Turtles Eternal (TMC #80)
+- [x] [Gwenom, Remorseless](https://manapool.com/card/spm/56/gwenom-remorseless) — $3.50 · NM · Marvel's Spider-Man (SPM #56)
 
 ### [The Acorn Vault](https://manapool.com/shop/theacornvault) — [Package #586788-2084947](https://manapool.com/settings/orders/suborder/f0c488e3-0714-48f3-a7ee-976c456e5406) · 1 Henzie card (3 total in shipment)
 - [x] Delivered
