@@ -2,6 +2,14 @@
 
 ## 🗓️ September 2026: Henzie Blitz Refinement, Playtesting & The Necrobloom Inception
 
+### 2026-09-12: MTG Board Wipes Reference Guide Created (`BoardWipesReferenceGuide.md`)
+*   **Documentation Milestone:** Created [`BoardWipesReferenceGuide.md`](BoardWipesReferenceGuide.md) based on Ryan Epps's Polygon analysis (*"20 best board wipes in Magic: The Gathering"*).
+*   **Catalog Scope & Analysis:** Compiles detailed mechanical breakdowns, Scryfall data, bracket compliance, and archetype synergies for the 20 premier sweepers in MTG history:
+    *   **Premier Staples:** *Cyclonic Rift*, *Farewell*, *Toxic Deluge*, *Damnation*, *Wrath of God*, *Supreme Verdict*, *Blasphemous Act*, *Terminus*, *The Meathook Massacre*, *Fumigate*.
+    *   **Modular, Asymmetric & Utility Options:** *Austere Command*, *Earthquake*, *Living Death*, *Merciless Eviction*, *Armageddon*, *Nevinyrral's Disk*, *Ezuri's Predation*, *In Garruk's Wake*, *Organic Extinction*, *Boompile*.
+    *   **Tactical Dimensions:** Classifies cards across 5 dimensions: Mana Velocity, Instant Speed timing, Removal Vector (Destroy vs Exile vs -X/-X vs Tuck vs Bounce), Parity Breaking, and Commander Bracket Game Changer limits (*Cyclonic Rift* and *Farewell* consume Game Changer slots; 18 others do not).
+    *   **Project Archetype Mapping:** Explicit cross-referencing to our active decks (*The Ur-Dragon*, *Captain America*, *Caesar*, *Meren*, *Henzie*, *Atraxa*, *The Necrobloom*).
+
 ### 2026-09-10: Atraxa, Praetors' Voice — Mana Base, Ramp Velocity & Anti-Aggro Overhaul
 *   **Playtest Diagnosis:** Following 10 real-world playtest games resulting in severe Turn 8 commander cast stalls, color-screw, and early aggro vulnerability, identified that 51.4% of the original mana base consisted of dead/slow lands (6 unfetchable taplands, 10 mono basics, and 2 colorless trap lands—including *Interplanar Beacon* which cannot cast Atraxa or ramp spells).
 *   **The 11-Card Overhaul:**
