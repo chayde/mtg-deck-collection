@@ -87,6 +87,7 @@ deck_status: main
 
 ## 🔮 Future Roadmap & Flex Swaps
 
+*   **Esper Sentinel ({W}):** **Premier Tax & Draw Engine ($63).** 1-drop artifact creature that taxes opponents' first noncreature spells each turn. Scales exponentially with Rocco's +1/+1 counters to draw free cards continuously. (Prime cut candidate: *Tireless Tracker* or *Valakut Exploration*).
 *   **Mondrak, Glory Dominus ({2}{W}{W}):** **S-Tier Token Doubler ($41).** Doubles ALL tokens (Foods, Treasures, Clues, Thopters, Rhinos). Sacrifices 2 Foods for permanent Indestructible protection.
 *   **Krark-Clan Ironworks ({4}):** **S-Tier Food Mana Engine ($17).** Sacrifices any Food token for **{C}{C} (2 free colorless mana)** instantly without tapping.
 *   **The Gaffer ({2}{W}):** **Hobbit Draw Engine ($7).** Draws a card on each player's end step whenever you gain 3+ life from a Food token.
