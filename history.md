@@ -2,6 +2,21 @@
 
 ## 🗓️ September 2026: Henzie Blitz Refinement, Playtesting & The Necrobloom Inception
 
+### 2026-09-12: Fetchable Lands & Duals Reference Guide Created (`FetchableLandsReferenceGuide.md`)
+*   **Documentation Milestone:** Created [`FetchableLandsReferenceGuide.md`](FetchableLandsReferenceGuide.md) as the authoritative, tiered guide to fetch lands and fetchable dual/tri-land cycles for Commander.
+*   **Scope & Strategic Ranking:** Organizes lands strictly by multiplayer tempo efficiency, entering-untapped conditions/drawbacks, and keyword utility:
+    *   **Engines:** The 10 Fetch Lands (Allied Onslaught/Khans & Enemy Zendikar/MH2).
+    *   **Tier 1:** Original Revised Duals (ABUR duals — unconditional untapped, zero drawback).
+    *   **Tier 2:** Multiplayer "Crowd Lands" / Bond Lands (always untapped in 4-player Commander).
+    *   **Tier 3:** Shock Lands (untapped for 2 life — negligible in 40-life format).
+    *   **Tier 4:** Battle / Tango Lands (untapped with 2+ basic lands).
+    *   **Tier 5:** Surveil Lands (enters tapped with **Surveil 1** card selection & graveyard setup).
+    *   **Tier 6:** Triomes & New Capenna Tri-Lands (enters tapped with 3 basic types & **Cycling {3}**).
+    *   **Tier 7:** Bicycle Dual Lands (enters tapped with **Cycling {2}**).
+    *   **Tier 8:** Kaldheim Snow Duals (enters tapped with **Snow supertype**).
+    *   **Tier 9:** Dominaria United Common Duals (enters tapped budget Domain fixers).
+    *   **Tier 10:** Specialty Fetchable Utility Lands (Eldraine monocolored utility cycle, *Murmuring Bosk*, *Mistveil Plains*).
+
 ### 2026-09-12: Felothar the Steadfast — The Walls of Ba Sing Se Integrated
 *   **The Swap:**
     *   **In:** *The Walls of Ba Sing Se* ({8})
