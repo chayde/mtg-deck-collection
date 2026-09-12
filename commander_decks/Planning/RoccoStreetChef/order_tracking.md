@@ -53,9 +53,9 @@ Check off each card as it arrives, then tick the package's **Delivered** box whe
 - [x] [Rootbound Crag](https://manapool.com/card/fic/416/rootbound-crag) — $0.25 · NM · Final Fantasy Commander (FIC #416)
 
 ### [On the Stack Gaming](https://manapool.com/shop/onthestackgaming) — [Package #586788-2084944](https://manapool.com/settings/orders/suborder/369de008-f67a-49a0-a951-ae13081ded1d) · 2 Rocco cards (6 total in shipment)
-- [ ] Delivered
-- [ ] [Path to Exile](https://manapool.com/card/cmm/49/path-to-exile) — $1.19 · NM · Commander Masters (CMM #49)
-- [ ] [Academy Manufactor](https://manapool.com/card/sld/7188/academy-manufactor) — $8.04 · FoilNMBorderless · Secret Lair Drop (SLD #7188)
+- [x] Delivered
+- [x] [Path to Exile](https://manapool.com/card/cmm/49/path-to-exile) — $1.19 · NM · Commander Masters (CMM #49)
+- [x] [Academy Manufactor](https://manapool.com/card/sld/7188/academy-manufactor) — $8.04 · FoilNMBorderless · Secret Lair Drop (SLD #7188)
 
 ### [CashCardsUnlimited](https://manapool.com/shop/cashcardsunlimited) — [Package #586788-2084952](https://manapool.com/settings/orders/suborder/5e5687bd-6fb1-478d-bc30-5f4848e3ecd6) · 1 Rocco card (4 total in shipment)
 - [x] Delivered

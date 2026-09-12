@@ -49,11 +49,11 @@ Check off each card as it arrives, then tick the package's **Delivered** box whe
 - [x] [Rampant Rejuvenator](https://manapool.com/card/fic/314/rampant-rejuvenator) — $0.25 · NM · Final Fantasy Commander (FIC #314)
 
 ### [On the Stack Gaming](https://manapool.com/shop/onthestackgaming) — [Package #586788-2084944](https://manapool.com/settings/orders/suborder/369de008-f67a-49a0-a951-ae13081ded1d) · 4 Henzie cards (6 total in shipment)
-- [ ] Delivered
-- [ ] [Timeless Witness](https://manapool.com/card/mh2/179/timeless-witness) — $0.15 · NM · Modern Horizons 2 (MH2 #179)
-- [ ] [Balefire Dragon](https://manapool.com/card/cmm/207/balefire-dragon) — $14.45 · NM · Commander Masters (CMM #207)
-- [ ] [Mikaeus, the Unhallowed](https://manapool.com/card/cmm/173/mikaeus-the-unhallowed) — $22.23 · NM · Commander Masters (CMM #173)
-- [ ] [Commercial District](https://manapool.com/card/mkm/259/commercial-district) — $6.99 · NM · Murders at Karlov Manor (MKM #259)
+- [x] Delivered
+- [x] [Timeless Witness](https://manapool.com/card/mh2/179/timeless-witness) — $0.15 · NM · Modern Horizons 2 (MH2 #179)
+- [x] [Balefire Dragon](https://manapool.com/card/cmm/207/balefire-dragon) — $14.45 · NM · Commander Masters (CMM #207)
+- [x] [Mikaeus, the Unhallowed](https://manapool.com/card/cmm/173/mikaeus-the-unhallowed) — $22.23 · NM · Commander Masters (CMM #173)
+- [x] [Commercial District](https://manapool.com/card/mkm/259/commercial-district) — $6.99 · NM · Murders at Karlov Manor (MKM #259)
 
 ### [CashCardsUnlimited](https://manapool.com/shop/cashcardsunlimited) — [Package #586788-2084952](https://manapool.com/settings/orders/suborder/5e5687bd-6fb1-478d-bc30-5f4848e3ecd6) · 3 Henzie cards (4 total in shipment)
 - [x] Delivered
