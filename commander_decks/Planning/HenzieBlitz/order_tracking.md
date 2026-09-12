@@ -171,10 +171,10 @@ Check off each card as it arrives, then tick the package's **Delivered** box whe
 - [x] [Archon of Cruelty](https://manapool.com/card/m3c/197/archon-of-cruelty) — $9.67 · NM · Modern Horizons 3 Commander (M3C #197)
 
 ### [Tarkan's Cards](https://manapool.com/shop/tarkanscards) — [Package #586788-2084953](https://manapool.com/settings/orders/suborder/f230be13-a735-4e45-a375-b3413cdf5c96) · 3 Henzie cards (11 total in shipment)
-- [ ] Delivered
-- [ ] [Farseek](https://manapool.com/card/fic/302/farseek) — $0.64 · NM · Final Fantasy Commander (FIC #302)
-- [ ] [Malakir Rebirth // Malakir Mire](https://manapool.com/card/znr/111/malakir-rebirth-malakir-mire) — $13.31 · NM · Zendikar Rising (ZNR #111)
-- [ ] [Utopia Sprawl](https://manapool.com/card/rvr/159/utopia-sprawl) — $1.45 · NM · Ravnica Remastered (RVR #159)
+- [x] Delivered
+- [x] [Farseek](https://manapool.com/card/fic/302/farseek) — $0.64 · NM · Final Fantasy Commander (FIC #302)
+- [x] [Malakir Rebirth // Malakir Mire](https://manapool.com/card/znr/111/malakir-rebirth-malakir-mire) — $13.31 · NM · Zendikar Rising (ZNR #111)
+- [x] [Utopia Sprawl](https://manapool.com/card/rvr/159/utopia-sprawl) — $1.45 · NM · Ravnica Remastered (RVR #159)
 
 ---
 

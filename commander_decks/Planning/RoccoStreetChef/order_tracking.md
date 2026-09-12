@@ -151,15 +151,15 @@ Check off each card as it arrives, then tick the package's **Delivered** box whe
 - [x] [Banquet Guests](https://manapool.com/card/ltc/47/banquet-guests) — $0.35 · LP · Tales of Middle-earth Commander (LTC #47)
 
 ### [Tarkan's Cards](https://manapool.com/shop/tarkanscards) — [Package #586788-2084953](https://manapool.com/settings/orders/suborder/f230be13-a735-4e45-a375-b3413cdf5c96) · 8 Rocco cards (11 total in shipment)
-- [ ] Delivered
-- [ ] [Delayed Blast Fireball](https://manapool.com/card/clb/676/delayed-blast-fireball) — $15.73 · NM · Commander Legends: Battle for Baldur's Gate (CLB #676)
-- [ ] [Shalai and Hallar](https://manapool.com/card/moc/10/shalai-and-hallar) — $6.50 · FoilNM · March of the Machine Commander (MOC #10)
-- [ ] [Tireless Provisioner](https://manapool.com/card/moc/313/tireless-provisioner) — $2.52 · NM · March of the Machine Commander (MOC #313)
-- [ ] [Farseek](https://manapool.com/card/fic/302/farseek) — $0.64 · NM · Final Fantasy Commander (FIC #302)
-- [ ] [Brushland](https://manapool.com/card/fic/377/brushland) — $0.48 · NM · Final Fantasy Commander (FIC #377)
-- [ ] [Professional Face-Breaker](https://manapool.com/card/fic/296/professional-face-breaker) — $6.30 · NM · Final Fantasy Commander (FIC #296)
-- [ ] [Three Visits](https://manapool.com/card/fic/315/three-visits) — $5.49 · NM · Final Fantasy Commander (FIC #315)
-- [ ] [Pia Nalaar, Consul of Revival](https://manapool.com/card/mat/42/pia-nalaar-consul-of-revival) — $0.44 · FoilNM · March of the Machine: The Aftermath (MAT #42)
+- [x] Delivered
+- [x] [Delayed Blast Fireball](https://manapool.com/card/clb/676/delayed-blast-fireball) — $15.73 · NM · Commander Legends: Battle for Baldur's Gate (CLB #676)
+- [x] [Shalai and Hallar](https://manapool.com/card/moc/10/shalai-and-hallar) — $6.50 · FoilNM · March of the Machine Commander (MOC #10)
+- [x] [Tireless Provisioner](https://manapool.com/card/moc/313/tireless-provisioner) — $2.52 · NM · March of the Machine Commander (MOC #313)
+- [x] [Farseek](https://manapool.com/card/fic/302/farseek) — $0.64 · NM · Final Fantasy Commander (FIC #302)
+- [x] [Brushland](https://manapool.com/card/fic/377/brushland) — $0.48 · NM · Final Fantasy Commander (FIC #377)
+- [x] [Professional Face-Breaker](https://manapool.com/card/fic/296/professional-face-breaker) — $6.30 · NM · Final Fantasy Commander (FIC #296)
+- [x] [Three Visits](https://manapool.com/card/fic/315/three-visits) — $5.49 · NM · Final Fantasy Commander (FIC #315)
+- [x] [Pia Nalaar, Consul of Revival](https://manapool.com/card/mat/42/pia-nalaar-consul-of-revival) — $0.44 · FoilNM · March of the Machine: The Aftermath (MAT #42)
 
 ---
 
