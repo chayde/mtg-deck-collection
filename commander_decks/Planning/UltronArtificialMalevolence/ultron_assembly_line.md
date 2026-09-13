@@ -188,6 +188,14 @@ deck_status: main
 ### 💡 High-Impact Tech to Consider
 *These cards are not currently in the deck but are top-tier candidates for future upgrades based on technical analysis.*
 
+*   **[Platinum Angel](https://scryfall.com/card/cn2/214/platinum-angel?utm_source=api) ({7}):** 4/4 flying artifact creature that prevents you from losing and opponents from winning. Synergizes with *Mycosynth Golem* (casts for as little as {0} via affinity) and Ultron's copy trigger ({2}) to create two separate win-denial flying bodies.
+    *   *Potential Cut Candidate 1:* **[Ugin, Eye of the Storms](https://scryfall.com/search?q=!"Ugin,+Eye+of+the+Storms")** ({7}) — High-CMC planeswalker that does not benefit from creature affinity or Ultron's copy trigger.
+    *   *Potential Cut Candidate 2:* **[Contagion Engine](https://scryfall.com/search?q=!"Contagion+Engine")** ({6}) — Clunky 6-mana artifact + 4-mana activation that serves primarily as a luxury proliferate engine.
+    *   *Potential Cut Candidate 3:* **[Iron Spider, Stark Upgrade](https://scryfall.com/search?q=!"Iron+Spider,+Stark+Upgrade")** ({3}) — Slow modular counter distribution.
+*   **[Darksteel Angel](https://scryfall.com/card/frc/13/darksteel-angel?utm_source=api) ({9}):** 4/4 flying, indestructible artifact creature with complete game-loss prevention and an anti--1/-1 counter clause (*"Creatures you control can't have -1/-1 counters put on them"*). Vastly superior to Platinum Angel by innately shutting down destroy wipes (*Wrath of God*, *Blasphemous Act*) as well as -1/-1 counter bypass wipes (*Toxic Deluge*, *Contagion Engine*). With Ultron ({2}), creates two indestructible, flying win-denial blockers that gain hexproof under *Cryptothrall*. (Releases in *Reality Fracture Commander*).
+    *   *Potential Cut Candidate 1:* **[Ugin, Eye of the Storms](https://scryfall.com/search?q=!"Ugin,+Eye+of+the+Storms")** ({7}) — Matches the high-CMC top-end curve slot while gaining full creature affinity from Mycosynth Golem and duplication from Ultron.
+    *   *Potential Cut Candidate 2:* **[Contagion Engine](https://scryfall.com/search?q=!"Contagion+Engine")** ({6}) — Frees up a heavy mana sink for an absolute lock piece.
+    *   *Potential Cut Candidate 3:* **[Iron Spider, Stark Upgrade](https://scryfall.com/search?q=!"Iron+Spider,+Stark+Upgrade")** ({3}) — Low-impact counter distribution easily replaced by win-condition insurance.
 *   **[Basalt Monolith](https://scryfall.com/search?q=!"Basalt+Monolith") ({3}):** Combos with Forsaken Monument for infinite colorless mana and duplicates into a 2/2 Robot rock. (Note: currently excluded due to untap friction).
 *   **[Karn, the Great Creator](https://scryfall.com/search?q=!"Karn,+the+Great+Creator") ({4}):** Asymmetric stax piece shutting down opposing artifact activations while animating your own non-creature artifacts on demand.
 *   **[Chimil, the Inner Sun](https://scryfall.com/search?q=!"Chimil,+the+Inner+Sun") ({6}):** Makes your spells uncounterable and discovers 5 at end of turn for free artifact deployment.
@@ -211,6 +219,10 @@ deck_status: main
 ---
 
 ## 📜 Deck Changelog
+*   **2026-09-13:** Added Platinum Angel and Darksteel Angel to High-Impact Tech to Consider with recommended cut options.
+    *   **In:** None (roadmap documentation only).
+    *   **Out:** None (no card changes made).
+    *   **Reason:** Documented game-loss prevention angels with Mycosynth Golem affinity synergy and Ultron duplicate potential, detailing Ugin, Eye of the Storms, Contagion Engine, and Iron Spider, Stark Upgrade as recommended candidate cuts.
 *   **2026-09-13:** Executed 7-card hybrid optimization suite.
     *   **In:** *Arc Reactor*, *Panharmonicon*, *Mycosynth Golem*, *Darksteel Forge*, *Mystic Forge*, *Sensei's Divining Top*, *Warping Wail*
     *   **Out:** *The Endstone*, *Adaptive Omnitool*, *Stridehangar Automaton*, *Radiant Lotus*, *Banner of Kinship*, *Lux Cannon*, *Rise of the Eldrazi*
