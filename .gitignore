@@ -4,3 +4,4 @@ db/mtg_database.json
 logs/
 .claude/
 *.dck
+__pycache__/
