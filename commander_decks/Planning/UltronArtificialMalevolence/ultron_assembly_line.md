@@ -193,6 +193,10 @@ deck_status: main
 *   **[Basalt Monolith](https://scryfall.com/search?q=!"Basalt+Monolith") ({3}):** Combos with Forsaken Monument for infinite colorless mana and duplicates into a 2/2 Robot rock.
 *   **[Darksteel Forge](https://scryfall.com/search?q=!"Darksteel+Forge") ({9}):** Grants blanket indestructible to all artifacts, completely insulating your 2/2 Robot army and mana rocks from sweepers.
 *   **[Warping Wail](https://scryfall.com/search?q=!"Warping+Wail") ({1}{C}):** Instant-speed modal interaction countering sorcery board wipes (*Farewell*, *Blasphemous Act*) or exiling utility creatures.
+*   **[Mycosynth Golem](https://scryfall.com/card/5dn/137/mycosynth-golem?utm_source=api) ({11}):** Possesses affinity for artifacts itself and grants *affinity for artifacts* to all artifact creature spells you cast. With Ultron's wide board of duplicated rocks, Bobbleheads, and 2/2 Robot tokens, this easily casts for near-{0} mana and reduces your creature threats (*Krang, Utrom Warlord*, *Cybermen Squadron*, *Roaming Throne*, *Scrap Trawler*) to {0} generic mana—freeing up all your mana to pay Ultron's {2} copy trigger on every drop.
+    *   *Potential Cut Candidate 1:* **[Stridehangar Automaton](https://scryfall.com/search?q=!"Stridehangar+Automaton")** ({5}) — An overcosted 5-mana beater that creates slow incremental tokens; cutting it for Golem massively raises the deck's velocity.
+    *   *Potential Cut Candidate 2:* **[The Endstone](https://scryfall.com/search?q=!"The+Endstone")** ({4}) — Clunky mana sink and ramp artifact; Golem's affinity cost-reduction provides vastly superior mana savings.
+    *   *Potential Cut Candidate 3:* **[The Eternity Elevator](https://scryfall.com/search?q=!"The+Eternity+Elevator")** ({5}) — Slow, high-CMC card selection engine that struggles to compete with high-velocity cost reduction.
 *   **[Karn, the Great Creator](https://scryfall.com/search?q=!"Karn,+the+Great+Creator") ({4}):** Asymmetric stax piece shutting down opposing artifact activations while animating your own non-creature artifacts on demand.
 *   **[Chimil, the Inner Sun](https://scryfall.com/search?q=!"Chimil,+the+Inner+Sun") ({6}):** Makes your spells uncounterable and discovers 5 at end of turn for free artifact deployment.
 *   **[Staff of Domination](https://scryfall.com/search?q=!"Staff+of+Domination") ({3}):** Infinite mana outlet enabling infinite life, card draw, and creature control.
@@ -211,6 +215,10 @@ deck_status: main
 ---
 
 ## 📜 Deck Changelog
+*   **2026-09-13:** Added Mycosynth Golem to High-Impact Tech to Consider with 3 potential cut options.
+    *   **In:** None (roadmap documentation only).
+    *   **Out:** None (no card changes made).
+    *   **Reason:** Evaluated Mycosynth Golem as premier affinity tech for artifact creatures and documented Stridehangar Automaton, The Endstone, and The Eternity Elevator as top candidates for replacement.
 *   **2026-09-13:** Documented top-down architectural review recommendations.
     *   **In:** None (documentation update only).
     *   **Out:** None (no card changes made).
