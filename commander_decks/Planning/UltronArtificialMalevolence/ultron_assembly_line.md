@@ -144,13 +144,57 @@ deck_status: main
 
 ## 🚀 Future Roadmap: Upgrades & Considerations
 
+### 🔍 Top-Down Architectural Review & Optimization Recommendations
+*Documenting strategic findings, vulnerability analyses, and optimization paths identified during the initial goldfish validation and deck audit. No decklist changes have been implemented yet.*
+
+#### 1. The "Animate Artifact" Double-Edged Sword (Sweeper Vulnerability)
+*   **The Mechanic:** When Ultron duplicates non-creature artifacts (mana rocks, Bobbleheads, utility pieces) for {2}, the token copies are created as **2/2 Robot artifact creatures**.
+*   **The Risk:** While this rapidly builds a combat-ready board presence, it converts inanimate ramp and utility engines into creatures, leaving them vulnerable to conventional creature sweepers (*Blasphemous Act*, *Toxic Deluge*, *Wrath of God*). While the original nontoken artifacts survive, losing your duplicated token rocks can wipe out critical mana velocity.
+*   **Mitigation Candidates:**
+    *   **[Darksteel Forge](https://scryfall.com/search?q=!"Darksteel+Forge") ({9}):** Grants blanket indestructible to all artifacts (both originals and 2/2 Robot tokens), rendering your board immune to lethal combat, damage sweepers, and destroy effects.
+    *   **[Eldrazi Monument](https://scryfall.com/search?q=!"Eldrazi+Monument") ({5}):** Gives all creatures flying, +1/+1, and indestructible; easily fed by sacrificing redundant or tapped 2/2 Robot tokens on upkeep.
+
+#### 2. Topdeck Engine & Card Selection (Eliminating Stalls)
+*   **The Risk:** Colorless decks lack traditional colored card draw and can occasionally stall if they hit a run of lands without filtering (as observed in the Turn 9 goldfish outlier).
+*   **The Engine:** Colorless artifact decks have access to one of the most explosive card-advantage engines in Magic:
+    *   **[Mystic Forge](https://scryfall.com/search?q=!"Mystic+Forge") ({4}):** Allows casting artifact and colorless spells directly off the top of the library, exiling dead lands to keep the chain going.
+    *   **[Sensei's Divining Top](https://scryfall.com/search?q=!"Sensei's+Divining+Top") ({1}):** Provides cheap topdeck manipulation. When paired with **Mystic Forge** and any cost reducer (*Cloud Key*, *Foundry Inspector*, *Semblance Anvil*), tapping the Top to draw a card and casting it for free off the library top draws your entire deck at instant speed.
+
+#### 3. Instant-Speed Interaction Deficit
+*   **The Risk:** Removal is currently skewed heavily toward high-CMC board wipes (*All Is Dust*, *Portal to Phyrexia*, *Ugin, the Spirit Dragon*) and slow charge-counter engines (*Lux Cannon*). The deck lacks low-cost, instant-speed responses to stop fast opponent win conditions or game-ending spells before Turn 6.
+*   **Recommended Additions:**
+    *   **[Warping Wail](https://scryfall.com/search?q=!"Warping+Wail") ({1}{C}):** Vital 2-mana modal instant that counters opposing sorcery sweepers (*Farewell*, *Blasphemous Act*, *Torment of Hailfire*), exiles utility creatures (dorks, combo enablers with power/toughness 1 or less), or creates an Eldrazi Scion for emergency ramp.
+    *   **[Not of This World](https://scryfall.com/search?q=!"Not+of+This+World") ({7}):** Free 0-mana counterspell when targeting a spell or ability that targets a 7+ power creature (e.g. *Krang*, high-toughness constructs, or buffed Ultron).
+    *   **[Null Brooch](https://scryfall.com/search?q=!"Null+Brooch") ({4}):** Repeatable noncreature spell counter on an artifact.
+
+#### 4. Mana Velocity & Infinite Mana Pairings
+*   **[Basalt Monolith](https://scryfall.com/search?q=!"Basalt+Monolith") ({3}):** Enters for 3 mana and taps for 3 mana; duplicated by Ultron for {2} into a 2/2 Robot rock, netting 6 mana total on deployment. Combos with **[Forsaken Monument](https://scryfall.com/search?q=!"Forsaken+Monument")** ({5}) for infinite colorless mana (since Monolith taps for 4 mana under the Monument and untaps for 3).
+
+#### 5. Identified Low-Performing / Flex Cut Targets
+*   **[The Endstone](https://scryfall.com/search?q=!"The+Endstone") ({4}):** High mana investment for conditional value; prime cut for *Mystic Forge*.
+*   **[Radiant Lotus](https://scryfall.com/search?q=!"Radiant+Lotus") ({3}):** Subpar rate compared to *Basalt Monolith*.
+*   **[Lux Cannon](https://scryfall.com/search?q=!"Lux+Cannon") ({4}):** Clunky and slow without dedicated multi-untap engines; prime cut for *Sensei's Divining Top* or *Warping Wail*.
+*   **[Stridehangar Automaton](https://scryfall.com/search?q=!"Stridehangar+Automaton") ({5}):** Redundant high-cost beater; easily replaced by protection or lower-curve interaction.
+*   **[The Eternity Elevator](https://scryfall.com/search?q=!"The+Eternity+Elevator") ({5}):** Slow card selection engine; prime candidate for *Darksteel Forge*.
+
+#### 6. Bracket 3 Headroom & Game Changer Analysis
+*   **Current Game Changers:** Exactly 1 / 3 (*The One Ring*).
+*   **Headroom:** 2 open Game Changer slots are legally available under Bracket 3 rules without exceeding power ceilings.
+*   **Potential Inclusions:**
+    *   *Mishra's Workshop* (Land) or *Ancient Tomb* (Land) for explosive Turn 1–2 acceleration.
+    *   *Grim Monolith* ({2}) or *Mana Vault* ({1}) for burst ramp.
+    *   *Current Assessment:* Leaving these slots open keeps the deck pure, thematic, and socially balanced for casual-synergy Bracket 3 pods.
+
 ### 💡 High-Impact Tech to Consider
 *These cards are not currently in the deck but are top-tier candidates for future upgrades based on technical analysis.*
 
 *   **[Mystic Forge](https://scryfall.com/search?q=!"Mystic+Forge") ({4}):** Play colorless spells directly from the top of your library and exile dead lands; forms an instant-win draw loop with Sensei's Divining Top and cost reducers.
+*   **[Sensei's Divining Top](https://scryfall.com/search?q=!"Sensei's+Divining+Top") ({1}):** 1-drop topdeck filtering that dodges removal and creates an infinite draw loop with Mystic Forge and cost reducers.
+*   **[Basalt Monolith](https://scryfall.com/search?q=!"Basalt+Monolith") ({3}):** Combos with Forsaken Monument for infinite colorless mana and duplicates into a 2/2 Robot rock.
+*   **[Darksteel Forge](https://scryfall.com/search?q=!"Darksteel+Forge") ({9}):** Grants blanket indestructible to all artifacts, completely insulating your 2/2 Robot army and mana rocks from sweepers.
+*   **[Warping Wail](https://scryfall.com/search?q=!"Warping+Wail") ({1}{C}):** Instant-speed modal interaction countering sorcery board wipes (*Farewell*, *Blasphemous Act*) or exiling utility creatures.
 *   **[Karn, the Great Creator](https://scryfall.com/search?q=!"Karn,+the+Great+Creator") ({4}):** Asymmetric stax piece shutting down opposing artifact activations while animating your own non-creature artifacts on demand.
 *   **[Chimil, the Inner Sun](https://scryfall.com/search?q=!"Chimil,+the+Inner+Sun") ({6}):** Makes your spells uncounterable and discovers 5 at end of turn for free artifact deployment.
-*   **[Basalt Monolith](https://scryfall.com/search?q=!"Basalt+Monolith") ({3}):** Combos with Forsaken Monument or Rings of Brighthearth for infinite colorless mana.
 *   **[Staff of Domination](https://scryfall.com/search?q=!"Staff+of+Domination") ({3}):** Infinite mana outlet enabling infinite life, card draw, and creature control.
 
 ### 🛒 Active Acquisition List (Priority Swaps)
@@ -160,10 +204,17 @@ deck_status: main
 | :--- | :--- | :--- | :--- |
 | *Mystic Forge* | *The Endstone* | Card Advantage | Pending |
 | *Basalt Monolith* | *Radiant Lotus* | Mana Acceleration | Pending |
+| *Sensei's Divining Top* | *Lux Cannon* | Card Advantage | Pending |
+| *Warping Wail* | *Stridehangar Automaton* | Interaction | Pending |
+| *Darksteel Forge* | *The Eternity Elevator* | Finisher / Utility | Pending |
 
 ---
 
 ## 📜 Deck Changelog
+*   **2026-09-13:** Documented top-down architectural review recommendations.
+    *   **In:** None (documentation update only).
+    *   **Out:** None (no card changes made).
+    *   **Reason:** Integrated top-down strategic review findings into Future Roadmap, highlighting sweeper vulnerability, topdeck filtering, instant-speed interaction, and flex cut candidates without modifying the active 100-card baseline.
 *   **2026-09-13:** Initial deck scaffold and baseline configuration into Planning.
     *   **In:** 100-card baseline recovered from conversation transcript.
     *   **Out:** None (new deck inception).
