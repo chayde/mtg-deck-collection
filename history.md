@@ -2,6 +2,13 @@
 
 ## 🗓️ September 2026: Henzie Blitz Refinement, Playtesting & The Necrobloom Inception
 
+### 2026-09-13: Ultron, Artificial Malevolence — New Planning Deck Created (Bracket 3 Validated)
+*   **Deck Inception:** Scaffolded and fully documented brand new 100-card colorless Artifacts, Token Duplication, and Robot Swarm deck in [`commander_decks/Planning/UltronArtificialMalevolence/ultron_assembly_line.md`](commander_decks/Planning/UltronArtificialMalevolence/ultron_assembly_line.md) (`deck_status: main`).
+*   **Synergy Engine:** Features Ultron's {2} copy trigger to duplicate entering nontoken artifacts, turning inanimate mana rocks and equipment into a formidable 2/2 Robot Villain army while retaining all printed abilities.
+*   **Multipliers & Enablers:** Integrates the 7 Fallout Bobbleheads (scaling exponentially when copied), Roaming Throne (naming Robot for double Ultron copy triggers), Cybermen Squadron (granting Myriad to nonlegendary artifact creatures), Krang, Utrom Warlord (team flying, trample, indestructible, haste), and infinite sacrifice loops via Krark-Clan Ironworks, Scrap Trawler, and Myr Retriever/Junk Diver into Aetherflux Reservoir or Walking Ballista.
+*   **Bracket & Game Changers:** Verified for **Bracket 3 (Upgraded)** with **1 / 3 Game Changers** (*The One Ring*), leaving 2 open Game Changer slots for future high-power optimization.
+*   **Validation:** 20-simulation goldfish check — **100% commander cast rate (80/80, T3.7 avg)**, **98% target engine readiness (78/80 <= T7, T4.5 avg)**, **54% Gold Keeps, 46% Silver Keeps (0% Desperation Keeps, 6.97 avg hand size)**. Fastest deployment verified at **Turn 1** (Sim 11 Seat 4: T1 Shrine of the Forsaken Gods + Sol Ring -> Cast Ultron). Bracket compliance status: **PASS** for Bracket 3. Generated HTML report at [`commander_decks/Planning/UltronArtificialMalevolence/goldfish_report.html`](commander_decks/Planning/UltronArtificialMalevolence/goldfish_report.html).
+
 ### 2026-09-12: Physical Acquisition Complete — Henzie "Toolbox" Torre & Rocco, Street Chef
 *   **Acquisition Milestone:** 100% of all ordered paper singles across Orders #586657 (Spellfinder Revised Duals: *Badlands*, *Taiga*, *Bayou*) and #586788 (19-package combined singles order via Manapool) plus the *Ignoble Hierarch* remediation order have been physically delivered, verified, and checked off in both tracking manifests.
 *   **Henzie "Toolbox" Torre:** All 91 unique nonbasic singles (+ 2 in-hand collection singles *Damage Control Crew* and *Sulfurous Springs*) are physically in-hand. Adding 7 basic lands from collection (4 Forest, 2 Swamp, 1 Mountain) completes the tournament-legal 100-card deck.
