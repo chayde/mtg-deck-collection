@@ -1,5 +1,67 @@
 # Goldfish Simulation Log: Henzie "Toolbox" Torre
 
+## 2026-09-14 — 100-Game Deep Sample Simulation & Visual HTML Report Generation (100 sims, 10 turns, Bracket 3)
+
+**Command:**
+```bash
+python scripts/multiplayer_goldfish.py commander_decks/Owned/HenzieBlitz/moxfield_import.txt --sims 100 --turns 10 --bracket 3 --html commander_decks/Owned/HenzieBlitz/goldfish_report.html
+```
+
+**Results:**
+```
+====================================================================
+RUNNING 100 × 4-PLAYER SIMULATIONS (400 Seat Games)
+Commander: Henzie "Toolbox" Torre (CMC 3)  |  Target: Bracket 3 (Upgraded) (Target T7)
+====================================================================
+
+--------------------------------------------------------------------
+AGGREGATE DEPLOYMENT & MULLIGAN PROFILE
+--------------------------------------------------------------------
+  Commander cast rate: 376/400 (94%)
+  Commander Cast Range: T2 - T10
+  Commander Cast Avg:   T4.7
+  Commander Cast Distribution:
+    T 2: ##################################### (37)
+    T 3: ############################################################################## (78)
+    T 4: ######################################################################### (73)
+    T 5: ##################################################################### (69)
+    T 6: #################################################### (52)
+    T 7: ################################ (32)
+    T 8: #################### (20)
+    T 9: ######## (8)
+    T10: ####### (7)
+
+  Opening Hand Quality Breakdown (400 hands evaluated):
+    Gold Keep (Mana + Ramp + Enabler):   121/400 (30%)
+    Silver Keep (Mana + Curve):          269/400 (67%)
+    Desperation Keep (Mulligan to <=5):   10/400 (2%)
+    Average Starting Hand Size:          6.91 cards
+
+--------------------------------------------------------------------
+BRACKET READINESS (Bracket 3 (Upgraded) — Target T7)
+--------------------------------------------------------------------
+  Target Window Readiness Rate (T<=7): 337/400 (84%)
+  Engine Readiness Avg:  T5.3
+  Engine Readiness Distribution:
+    T 3: ######################## (24)
+    T 4: ################################################################################################################# (113)
+    T 5: ################################################################################################### (99)
+    T 6: ################################################################# (65)
+    T 7: #################################### (36)
+    T 8: #################### (20)
+    T 9: ########## (10)
+    T10: ####### (7)
+
+  [BRACKET COMPLIANCE CHECK] Status: PASS
+  Deck deploys its engine around Turn 5.3, perfectly positioned to execute and threaten a win on Bracket 3 (Upgraded)'s target (Turn 7+).
+```
+
+**Notes:**
+- **Comprehensive 100-Sim Deep Benchmark:** Successfully generated the standalone interactive visual HTML report at `commander_decks/Owned/HenzieBlitz/goldfish_report.html`.
+- **Rock-Solid Hand Quality:** Evaluated across 400 seat games. 97% functional keeps (30% Gold Keeps, 67% Silver Keeps) with an average starting hand size of 6.91 cards and only 2% desperation keeps.
+- **Fast Commander Deployment:** Commander cast in 94% of games (376/400), with 115 games deploying Henzie on Turn 2 or Turn 3 (earliest showcase on T2 via Turn 1 Bayou + Birds of Paradise).
+- **Bracket Compliance:** Achieved an 84% target window readiness (337/400 <= T7) with an average engine readiness of Turn 5.3, earning an unambiguous **PASS** for Bracket 3.
+
 ## 2026-09-03 — Curve & Combat Control Overhaul: Rampant Rejuvenator & Kardur In, Steve & Solemn Out (20 sims, 10 turns, Bracket 3)
 
 **Command:**
