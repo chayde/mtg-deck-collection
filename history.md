@@ -2,6 +2,16 @@
 
 ## 🗓️ September 2026: Henzie Blitz Refinement, Playtesting & The Necrobloom Inception
 
+### 2026-09-15: Visual Swap Matrix & Mechanics Pre-Check Utility Created (`scripts/swap_matrix.py`)
+*   **Tool Architecture:** Designed and implemented [`scripts/swap_matrix.py`](scripts/swap_matrix.py) to eliminate card evaluation friction, prevent subtle MTG rules traps, and automate the Triple-Update transaction across all deck files.
+*   **Core Capabilities:**
+    *   **Scryfall & Bracket Integration:** Automatically pulls verified card data, oracle text, images, and prices. Enforces commander color identity and Bracket 3 Game Changer limits ($\le 3$).
+    *   **Mathematical Deltas:** Computes before-and-after deltas for nonland average CMC, mana curve distribution (0-1, 2, 3, 4, 5, 6+), color pip balance, card type density, and estimated market price impact.
+    *   **Automated Rules Watchdog:** Proactively audits incoming cards for CR 302.6 summoning sickness on animated/token permanents with tap abilities, unconditional tapland tempo drag, codified user preferences (prohibiting filter lands and filter rocks per `GEMINI.md`), and dies triggers vs. graveyard exile replacement effects.
+    *   **Visual HTML Dashboard:** Auto-generates a standalone, dark-mode, responsive visual report (`swap_matrix.html`) in the deck directory with side-by-side cards, 240px artwork, CSS hover zoom, and comparative delta cards.
+    *   **Atomic `--apply` Triple-Update:** One-command execution that updates the main markdown card explanations with verified Scryfall links, rewrites the Plain Text section with mandatory GFM 2-space line endings, updates `moxfield_import.txt`, and logs to `## Deck Changelog`.
+*   **Workflow Codification:** Integrated into `GEMINI.md` as mandatory **Phase 2.5** in deck refinement workflows, and indexed in `README.md`.
+
 ### 2026-09-14: Henzie "Toolbox" Torre — 100-Game Goldfish Simulation Benchmark & Visual HTML Report
 *   **Deep Statistical Validation:** Executed a comprehensive 100-game (400 seat games, 10 turns) multiplayer goldfish simulation for the owned, tournament-legal 100-card Henzie Blitz deck to generate the standalone interactive visual HTML report (`commander_decks/Owned/HenzieBlitz/goldfish_report.html`).
 *   **Validation Metrics:**

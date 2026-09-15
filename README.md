@@ -128,7 +128,8 @@ Each search overwrites `cache/recommend_session.json` with the current candidate
 | Script | Role | Status |
 |--------|------|--------|
 | `scripts/scryfall_lookup.py` | Named lookups, oracle text verification, batch lookups | **Unchanged — still primary** |
-| `scripts/scryfall_recommend.py` | Card discovery via ID-based search | **New — optional experiment** |
+| `scripts/swap_matrix.py` | Visual swap matrix, delta math, rules watchdog & atomic apply | **New — primary for deck swaps** |
+| `scripts/scryfall_recommend.py` | Card discovery via ID-based search | **Optional experiment** |
 | `scripts/manapool_price_deck.py` | Deck pricing via Manapool | **Unchanged** |
 
 `scryfall_recommend.py` imports `scryfall_lookup.py` as a library. It adds no new API dependencies and uses the same rate limiting, caching, and retry logic.

@@ -301,14 +301,23 @@ Examples:
 *   **Expert Agency:** While `COMMANDER_TEMPLATE.md` provides base ratios, you are encouraged to deviate if the deck's strategy demands it (e.g., more creatures for a Tribal deck). You must explicitly justify these deviations in your strategy summary.
 *   **Bracket Compliance:** Check "Game Changers" in `COMMANDER_DECKBUILDING_RULES.md` to ensure the deck remains within its target Bracket (1-5).
 
+### Phase 2.5: Visual Swap Matrix & Mechanics Pre-Check (MANDATORY for Swaps)
+Whenever recommending or discussing card swaps:
+*   **Run the Swap Matrix Tool:** Execute `python scripts/swap_matrix.py "<path/to/deck>" --in "Card A: Role" --out "Card B" --reason "Rationale"`.
+*   **Deliverables:**
+    1. **In-Chat Matrix Table & Delta Dashboard:** Displays paired In/Out cards, CMC changes, curve histogram shift, color pip shifts, type balance, Game Changer compliance, and estimated market price impact.
+    2. **Rules Watchdog Audit:** Automatically scans incoming cards for CR 302.6 summoning sickness traps, unconditional tapland tempo drag, user-preference bans (filter lands and filter rocks), and dies/exile clashes.
+    3. **Interactive Visual HTML:** Auto-generates `<deck_directory>/swap_matrix.html` featuring 240px Scryfall card images, hover zoom, and comparative delta cards.
+*   **Review Before Modifying:** Present the matrix and await user agreement before applying changes.
+
 ### Phase 3: The Triple-Update Transaction
-Whenever a deck is modified, you must update all three locations in a single "transactional" effort:
+Whenever a deck is modified, you must update all three locations in a single "transactional" effort — either manually or atomically via `scripts/swap_matrix.py ... --apply`:
 1.  **Main Deck File:** Update the card list and the "Card Explanations" categories.
 2.  **Plain Text Section:** Update the "Plain Text Copy/Paste" at the bottom of the `.md` file. Every line **MUST** end with two spaces for GitHub GFM line breaks.
 3.  **Moxfield Import:** Update the `moxfield_import.txt` file in the deck folder. This file uses raw text with **NO** trailing spaces.
 
 ### Phase 4: Validation & Sync
-*   **Goldfish Simulation:** After major overhauls, run a 5-game simulation using `scripts/multiplayer_goldfish.py`.
+*   **Goldfish Simulation:** After major overhauls (5+ card changes), run a 20-game simulation using `scripts/multiplayer_goldfish.py`.
 *   **Changelog:** Log all changes in the deck's `## Deck Changelog` using the [YYYY-MM-DD] format.
 *   **Commit & Push:** Ensure all changes are committed and pushed to GitHub to keep the environment synchronized.
 
@@ -470,6 +479,25 @@ python3 scripts/add_commander_images.py
 No arguments needed — it discovers files automatically.
 
 **Note:** Skips `PreCons/` and `External/` directories by design.
+
+---
+
+### `scripts/swap_matrix.py` — Visual Swap Matrix & Mechanics Pre-Check Utility
+**What it does:** Evaluates proposed card swaps against Scryfall card data and current deck lists. Computes mathematical deltas (average CMC, curve shifts, color pip requirements, type balance, price delta), audits rules and personal preference violations (CR 302.6 summoning sickness on animated permanents, unconditional taplands, banned filter lands/rocks), and generates a standalone, responsive, dark-mode visual HTML report with 240px card images (`swap_matrix.html`). With `--apply`, atomically executes the Triple-Update Rule across markdown deck files, plain text sections (with 2-space line endings), `moxfield_import.txt`, and logs to `## Deck Changelog`.
+
+**When to use:**
+- Whenever proposing, evaluating, or applying card swaps to any Commander deck.
+- Before executing manual file edits to ensure no rules, color identity, or bracket violations exist.
+- Required per Phase 2.5 of the Mandatory Agentic Workflows.
+
+**Usage:**
+```bash
+# Dry-run analysis with visual HTML generation:
+python scripts/swap_matrix.py "<path/to/deck_file>" --in "Card A: Role" "Card B" --out "Card C" "Card D" --reason "Summary rationale"
+
+# Atomically apply Triple-Update changes to files:
+python scripts/swap_matrix.py "<path/to/deck_file>" --in "Card A: Role" "Card B" --out "Card C" "Card D" --reason "Summary rationale" --apply
+```
 
 ---
 
