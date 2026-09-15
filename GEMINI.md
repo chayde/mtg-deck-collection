@@ -87,6 +87,8 @@ Whenever a deck's card list changes, you **MUST** update **all three** of these 
 2. **Plain Text Copy/Paste section** at the bottom of the main deck file (every line ends with two trailing spaces for GitHub GFM line breaks)
 3. **`moxfield_import.txt`** — raw text, Moxfield-compatible headers, **no** trailing spaces
 
+- **Automated Execution:** Use `python scripts/swap_matrix.py <deck> --in ... --out ... --reason ... --apply` to execute the Triple Update atomically across all three locations and eliminate manual desynchronization errors.
+
 ### 5.3 100-Card Singleton Rule
 
 - Every Commander deck must be exactly 100 cards: 1 Commander + 99 cards.
@@ -117,6 +119,20 @@ Exceeding the limit for a deck's bracket is a hard block — do not proceed with
 - **NEVER chain commands** using semicolons (`;`), logical AND (`&&`), logical OR (`||`), or piping (`|`) unless strictly required by a specific shell tool pipeline.
 - Chaining commands breaks IDE/client auto-execution allowlists (such as `command(git*)` and `command(python*)`) and forces unnecessary security prompt interruptions.
 - Execute one single command per tool call (e.g. run `git status` separately, then `git push origin master` separately).
+
+### 5.7 Visual Swap Matrix Protocol — MANDATORY FOR ALL SWAPS
+
+- **MANDATORY:** Whenever recommending, evaluating, or executing card swaps for ANY deck, you MUST use:
+  ```bash
+  python scripts/swap_matrix.py "<path/to/deck>" --in "Card A: Role" --out "Card B" --reason "Rationale"
+  ```
+- **Never propose raw, unverified text swaps in chat.** Always run the tool first so the user receives:
+  1. The paired In/Out markdown table with Scryfall links, CMC, types, and roles.
+  2. The 4-point Delta Dashboard (Avg CMC, curve shift, color pips, type balance, price impact, and Bracket Game Changer compliance).
+  3. The Rules Watchdog audit (flagging CR 302.6 summoning sickness, tapland tempo drag, banned filter lands/rocks, and exile/dies clashes).
+  4. The standalone visual report at `<deck_dir>/swap_matrix.html` with 240px card artwork and hover zoom.
+- **Review Before Modifying:** Present the matrix to the user and await agreement.
+- **Atomic Application:** Once approved, re-run with `--apply` to update the main markdown file, plain text section, `moxfield_import.txt`, and deck changelog in one atomic transaction.
 
 ---
 
@@ -285,7 +301,7 @@ Examples:
   1. The exact `Scryfall:` URI returned by `scripts/scryfall_lookup.py`, OR
   2. The canonical exact-name search URL: `https://scryfall.com/search?q=!"Card+Name"` (which Scryfall automatically resolves directly to the card page).
   3. For card images: Always copy the verified `Image:` URI returned directly by `scripts/scryfall_lookup.py`.
-- When recommending a swap, always name both the card going in **and** the card coming out.
+- **Card Swaps (MANDATORY):** When recommending or discussing card swaps, ALWAYS run `scripts/swap_matrix.py` and present the complete Visual Swap Matrix table, Delta Dashboard, Rules Watchdog notes, and link to `swap_matrix.html`. Do not propose piecemeal text swaps.
 - Flag bracket or legality concerns as blockers, not suggestions.
 
 ---

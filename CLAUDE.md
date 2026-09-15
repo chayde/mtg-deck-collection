@@ -84,9 +84,11 @@ Run through this at the start of every working session:
 
 Whenever a deck's card list changes, you **MUST** update **all three** of these locations in the same edit session — never leave them out of sync:
 
-1. **`README.md`** — card list entries with their one-line descriptions (the main deck file, always named README.md)
-2. **Plain Text Copy/Paste section** at the bottom of `README.md` (every line ends with two trailing spaces for GitHub GFM line breaks)
+1. **Main deck file** — card list entries with their one-line descriptions
+2. **Plain Text Copy/Paste section** at the bottom of the main deck file (every line ends with two trailing spaces for GitHub GFM line breaks)
 3. **`moxfield_import.txt`** — raw text, Moxfield-compatible headers, **no** trailing spaces
+
+- **Automated Execution:** Use `python scripts/swap_matrix.py <deck> --in ... --out ... --reason ... --apply` to execute the Triple Update atomically across all three locations and eliminate manual desynchronization errors.
 
 ### 5.3 100-Card Singleton Rule
 
@@ -121,6 +123,20 @@ Exceeding the limit for a deck's bracket is a hard block — do not proceed with
 - **NEVER chain commands** using semicolons (`;`), logical AND (`&&`), logical OR (`||`), or piping (`|`) unless strictly required by a specific shell tool pipeline.
 - Chaining commands breaks IDE/client auto-execution allowlists (such as `command(git*)` and `command(python*)`) and forces unnecessary security prompt interruptions.
 - Execute one single command per tool call (e.g. run `git status` separately, then `git push origin master` separately).
+
+### 5.7 Visual Swap Matrix Protocol — MANDATORY FOR ALL SWAPS
+
+- **MANDATORY:** Whenever recommending, evaluating, or executing card swaps for ANY deck, you MUST use:
+  ```bash
+  python scripts/swap_matrix.py "<path/to/deck>" --in "Card A: Role" --out "Card B" --reason "Rationale"
+  ```
+- **Never propose raw, unverified text swaps in chat.** Always run the tool first so the user receives:
+  1. The paired In/Out markdown table with Scryfall links, CMC, types, and roles.
+  2. The 4-point Delta Dashboard (Avg CMC, curve shift, color pips, type balance, price impact, and Bracket Game Changer compliance).
+  3. The Rules Watchdog audit (flagging CR 302.6 summoning sickness, tapland tempo drag, banned filter lands/rocks, and exile/dies clashes).
+  4. The standalone visual report at `<deck_dir>/swap_matrix.html` with 240px card artwork and hover zoom.
+- **Review Before Modifying:** Present the matrix to the user and await agreement.
+- **Atomic Application:** Once approved, re-run with `--apply` to update the main markdown file, plain text section, `moxfield_import.txt`, and deck changelog in one atomic transaction.
 
 ---
 
@@ -291,7 +307,7 @@ Examples:
   1. The exact `Scryfall:` URI returned by `scripts/scryfall_lookup.py`, OR
   2. The canonical exact-name search URL: `https://scryfall.com/search?q=!"Card+Name"` (which Scryfall automatically resolves directly to the card page).
   3. For card images: Always copy the verified `Image:` URI returned directly by `scripts/scryfall_lookup.py`.
-- When recommending a swap, always name both the card going in **and** the card coming out.
+- **Card Swaps (MANDATORY):** When recommending or discussing card swaps, ALWAYS run `scripts/swap_matrix.py` and present the complete Visual Swap Matrix table, Delta Dashboard, Rules Watchdog notes, and link to `swap_matrix.html`. Do not propose piecemeal text swaps.
 - Flag bracket or legality concerns as blockers, not suggestions.
 
 ---
@@ -308,14 +324,23 @@ Examples:
 *   **Expert Agency:** While `COMMANDER_TEMPLATE.md` provides base ratios, you are encouraged to deviate if the deck's strategy demands it (e.g., more creatures for a Tribal deck). You must explicitly justify these deviations in your strategy summary.
 *   **Bracket Compliance:** Consult `BRACKETS.md` to determine the correct bracket and its full restrictions, then verify "Game Changers" in `COMMANDER_DECKBUILDING_RULES.md` to ensure the deck stays within its target Bracket (1-5).
 
+### Phase 2.5: Visual Swap Matrix & Mechanics Pre-Check (MANDATORY for Swaps)
+Whenever recommending or discussing card swaps:
+*   **Run the Swap Matrix Tool:** Execute `python scripts/swap_matrix.py "<path/to/deck>" --in "Card A: Role" --out "Card B" --reason "Rationale"`.
+*   **Deliverables:**
+    1. **In-Chat Matrix Table & Delta Dashboard:** Displays paired In/Out cards, CMC changes, curve histogram shift, color pip shifts, type balance, Game Changer compliance, and estimated market price impact.
+    2. **Rules Watchdog Audit:** Automatically scans incoming cards for CR 302.6 summoning sickness traps, unconditional tapland tempo drag, user-preference bans (filter lands and filter rocks), and dies/exile clashes.
+    3. **Interactive Visual HTML:** Auto-generates `<deck_directory>/swap_matrix.html` featuring 240px Scryfall card images, hover zoom, and comparative delta cards.
+*   **Review Before Modifying:** Present the matrix and await user agreement before applying changes.
+
 ### Phase 3: The Triple-Update Transaction
-Whenever a deck is modified, you must update all three locations in a single "transactional" effort:
-1.  **`README.md`:** Update the card list and the "Card Explanations" categories. (The main deck file is always named `README.md`.)
-2.  **Plain Text Section:** Update the "Plain Text Copy/Paste" at the bottom of `README.md`. Every line **MUST** end with two spaces for GitHub GFM line breaks.
+Whenever a deck is modified, you must update all three locations in a single "transactional" effort — either manually or atomically via `scripts/swap_matrix.py ... --apply`:
+1.  **Main Deck File:** Update the card list and the "Card Explanations" categories.
+2.  **Plain Text Section:** Update the "Plain Text Copy/Paste" at the bottom of the main deck file. Every line **MUST** end with two spaces for GitHub GFM line breaks.
 3.  **Moxfield Import:** Update the `moxfield_import.txt` file in the deck folder. This file uses raw text with **NO** trailing spaces.
 
 ### Phase 4: Validation & Sync
-*   **Goldfish Simulation:** After major overhauls, run a 5-game simulation using `scripts/multiplayer_goldfish.py`.
+*   **Goldfish Simulation:** After major overhauls (5+ card changes), run a 20-game simulation using `scripts/multiplayer_goldfish.py`.
 *   **Changelog:** Log all changes in the deck's `## Deck Changelog` using the [YYYY-MM-DD] format.
 *   **Commit & Push:** Ensure all changes are committed and pushed to GitHub to keep the environment synchronized.
 
@@ -487,6 +512,25 @@ python3 scripts/add_commander_images.py
 No arguments needed — it discovers files automatically.
 
 **Note:** Skips `PreCons/` and `External/` directories by design.
+
+---
+
+### `scripts/swap_matrix.py` — Visual Swap Matrix & Mechanics Pre-Check Utility
+**What it does:** Evaluates proposed card swaps against Scryfall card data and current deck lists. Computes mathematical deltas (average CMC, curve shifts, color pip requirements, type balance, price delta), audits rules and personal preference violations (CR 302.6 summoning sickness on animated permanents, unconditional taplands, banned filter lands/rocks), and generates a standalone, responsive, dark-mode visual HTML report with 240px card images (`swap_matrix.html`). With `--apply`, atomically executes the Triple-Update Rule across markdown deck files, plain text sections (with 2-space line endings), `moxfield_import.txt`, and logs to `## Deck Changelog`.
+
+**When to use:**
+- Whenever proposing, evaluating, or applying card swaps to any Commander deck.
+- Before executing manual file edits to ensure no rules, color identity, or bracket violations exist.
+- Required per Phase 2.5 of the Mandatory Agentic Workflows.
+
+**Usage:**
+```bash
+# Dry-run analysis with visual HTML generation:
+python scripts/swap_matrix.py "<path/to/deck_file>" --in "Card A: Role" "Card B" --out "Card C" "Card D" --reason "Summary rationale"
+
+# Atomically apply Triple-Update changes to files:
+python scripts/swap_matrix.py "<path/to/deck_file>" --in "Card A: Role" "Card B" --out "Card C" "Card D" --reason "Summary rationale" --apply
+```
 
 ---
 
