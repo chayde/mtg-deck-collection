@@ -644,21 +644,21 @@ def generate_html_matrix(output_path: Path,
   .swap-row {{
     display: flex;
     align-items: stretch;
-    gap: 16px;
-    margin-bottom: 20px;
+    gap: 12px;
+    margin-bottom: 12px;
     background: var(--bg-card);
     border: 1px solid var(--border-color);
     border-radius: 8px;
-    padding: 16px;
+    padding: 12px;
   }}
-  .card-column {{ flex: 1; display: flex; flex-direction: column; }}
+  .card-column {{ flex: 1; display: flex; flex-direction: column; min-width: 0; }}
   .col-header {{
     font-size: 11px;
     font-weight: 700;
     letter-spacing: 0.5px;
-    padding: 4px 8px;
+    padding: 3px 8px;
     border-radius: 4px;
-    margin-bottom: 12px;
+    margin-bottom: 8px;
     display: inline-block;
     align-self: flex-start;
   }}
@@ -667,67 +667,78 @@ def generate_html_matrix(output_path: Path,
   
   .card-card {{
     display: flex;
-    gap: 16px;
+    gap: 12px;
     flex: 1;
+    min-width: 0;
   }}
   .img-wrap {{
-    width: 140px;
+    width: 70px;
     flex-shrink: 0;
-    border-radius: 6px;
-    overflow: hidden;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.5);
-    transition: transform 0.2s ease;
+    border-radius: 4px;
+    overflow: visible;
+    position: relative;
   }}
-  .img-wrap:hover {{
-    transform: scale(1.08);
-    z-index: 10;
+  .img-wrap img {{
+    width: 70px;
+    display: block;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
   }}
-  .img-wrap img {{ width: 100%; display: block; border-radius: 6px; }}
-  .card-info {{ flex: 1; }}
+  .img-wrap:hover img {{
+    transform: scale(2.6);
+    transform-origin: top left;
+    box-shadow: 0 12px 28px rgba(0,0,0,0.85);
+    z-index: 100;
+    position: relative;
+  }}
+  .card-info {{ flex: 1; min-width: 0; }}
   .card-title {{
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 700;
-    margin-bottom: 4px;
+    margin-bottom: 2px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 8px;
   }}
-  .card-title a {{ color: #fff; text-decoration: none; }}
+  .card-title a {{ color: #fff; text-decoration: none; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }}
   .card-title a:hover {{ text-decoration: underline; color: var(--blue); }}
-  .mana-cost {{ font-family: monospace; font-size: 14px; color: var(--gold); }}
-  .type-line {{ font-size: 12px; color: var(--text-muted); margin-bottom: 8px; }}
+  .mana-cost {{ font-family: monospace; font-size: 13px; color: var(--gold); white-space: nowrap; }}
+  .type-line {{ font-size: 11px; color: var(--text-muted); margin-bottom: 6px; }}
   .oracle-box {{
     background: #0d1117;
     border: 1px solid var(--border-color);
     border-radius: 4px;
-    padding: 8px 10px;
-    font-size: 12px;
+    padding: 6px 8px;
+    font-size: 11px;
     color: #e6edf3;
-    max-height: 110px;
+    max-height: 80px;
     overflow-y: auto;
+    line-height: 1.4;
   }}
   .rationale-tag {{
-    margin-top: 8px;
-    font-size: 12px;
+    margin-top: 6px;
+    font-size: 11px;
     background: rgba(88, 166, 255, 0.1);
     border-left: 3px solid var(--blue);
-    padding: 6px 8px;
+    padding: 4px 8px;
     border-radius: 0 4px 4px 0;
   }}
   .swap-arrow {{
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 24px;
+    font-size: 20px;
     color: var(--text-muted);
-    padding: 0 8px;
+    padding: 0 4px;
   }}
 
   @media (max-width: 850px) {{
     .swap-row {{ flex-direction: column; }}
-    .swap-arrow {{ transform: rotate(90deg); margin: 8px 0; }}
-    .card-card {{ flex-direction: column; }}
-    .img-wrap {{ width: 180px; margin: 0 auto; }}
+    .swap-arrow {{ transform: rotate(90deg); margin: 4px 0; }}
+    .card-card {{ display: flex; flex-direction: row; }}
+    .img-wrap {{ width: 70px; }}
   }}
 </style>
 </head>
