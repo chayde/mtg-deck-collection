@@ -902,6 +902,8 @@ def main():
     parser.add_argument("--out", dest="out_cards", nargs="+", required=True, help="Cards to cut")
     parser.add_argument("--reason", default="Optimization and deck refinement", help="Summary rationale for swaps")
     parser.add_argument("--bracket", type=int, choices=[1, 2, 3, 4, 5], default=None, help="Commander Bracket (1-5)")
+    parser.add_argument("--img-width", type=int, default=110, help="Card image width for in-chat table (default: 110px)")
+    parser.add_argument("--no-images", action="store_true", help="Omit card images from markdown table output")
     parser.add_argument("--html", nargs="?", const="__AUTO__", default="__AUTO__", help="Path for HTML visual report")
     parser.add_argument("--apply", action="store_true", help="Atomically apply Triple-Update changes to files")
 
@@ -972,12 +974,27 @@ def main():
     # Print CLI Markdown Output
     deck_name = deck_dir.name
     print(f"\n### 🔄 Proposed Swap Matrix: {deck_name} ({len(swaps)} Cards)\n")
-    print(f"| # | Out (Cut) | CMC | Type | In (Add) | CMC | Type | Role & Rationale |")
-    print(f"|---|---|---|---|---|---|---|---|")
-    for idx, s in enumerate(swaps, start=1):
-        o = s["out"]
-        i = s["in"]
-        print(f"| {idx} | [{o['name']}]({o['scryfall_uri']}) | {o['cmc']} | {o['type_line'].split('—')[0].strip()} | [{i['name']}]({i['scryfall_uri']}) | {i['cmc']} | {i['type_line'].split('—')[0].strip()} | {s['rationale']} |")
+    if args.no_images:
+        print(f"| # | Out (Cut) | CMC | Type | In (Add) | CMC | Type | Role & Rationale |")
+        print(f"|---|---|---|---|---|---|---|---|")
+        for idx, s in enumerate(swaps, start=1):
+            o = s["out"]
+            i = s["in"]
+            print(f"| {idx} | [{o['name']}]({o['scryfall_uri']}) | {o['cmc']} | {o['type_line'].split('—')[0].strip()} | [{i['name']}]({i['scryfall_uri']}) | {i['cmc']} | {i['type_line'].split('—')[0].strip()} | {s['rationale']} |")
+    else:
+        print(f"| # | Out (Cut) | | In (Add) | Role & Rationale |")
+        print(f"|---|---|:---:|---|---|")
+        for idx, s in enumerate(swaps, start=1):
+            o = s["out"]
+            i = s["in"]
+            w = args.img_width
+            o_img = f'<a href="{o["scryfall_uri"]}"><img src="{o["image_uri"]}" width="{w}" alt="{o["name"]}" /></a><br>' if o.get("image_uri") else ""
+            i_img = f'<a href="{i["scryfall_uri"]}"><img src="{i["image_uri"]}" width="{w}" alt="{i["name"]}" /></a><br>' if i.get("image_uri") else ""
+            o_cost = o['mana_cost'] or f"CMC {o['cmc']}"
+            i_cost = i['mana_cost'] or f"CMC {i['cmc']}"
+            o_cell = f"{o_img}**[{o['name']}]({o['scryfall_uri']})** ({o_cost})<br><sub>{o['type_line'].split('—')[0].strip()}</sub>"
+            i_cell = f"{i_img}**[{i['name']}]({i['scryfall_uri']})** ({i_cost})<br><sub>{i['type_line'].split('—')[0].strip()}</sub>"
+            print(f"| {idx} | {o_cell} | ➔ | {i_cell} | {s['rationale']} |")
 
     cmc_diff = post_metrics["avg_cmc"] - pre_metrics["avg_cmc"]
     sign = "+" if cmc_diff > 0 else ""
