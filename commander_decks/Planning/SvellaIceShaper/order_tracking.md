@@ -9,13 +9,10 @@
 
 ## 📦 Singles to Acquire / Order List (82 Cards)
 
-### Lands (20 Cards)
+### Lands (17 Cards)
 - [ ] Bala Ged Recovery
-- [ ] Bridgeworks Battle
-- [ ] Castle Garenbrig
 - [ ] Cinder Glade
 - [ ] Commercial District
-- [ ] Cragcrown Pathway
 - [ ] Fabled Passage
 - [ ] Karplusan Forest
 - [ ] Kessig Wolf Run
@@ -23,86 +20,88 @@
 - [ ] Prismatic Vista
 - [ ] Rockfall Vale
 - [ ] Rootbound Crag
-- [ ] Scrying Sheets
 - [ ] Snow-Covered Forest
 - [ ] Snow-Covered Mountain
 - [ ] Spire Garden
 - [ ] Stomping Ground
 - [ ] Turntimber Symbiosis
 - [ ] Valakut Awakening
+- [ ] Wooded Foothills
 
-### Creatures (25 Cards)
-- [ ] Agatha of the Vile Cauldron
+### Creatures (18 Cards)
 - [ ] Apex Devastator
 - [ ] Birds of Paradise
+- [ ] Blightsteel Colossus
 - [ ] Delighted Halfling
 - [ ] Elvish Mystic
 - [ ] Etali, Primal Conqueror
 - [ ] Etali, Primal Storm
-- [ ] Ghalta, Stampede Tyrant
 - [ ] Goblin Anarchomancer
-- [ ] Hellkite Tyrant
 - [ ] Kogla, the Titan Ape
 - [ ] Kozilek, Butcher of Truth
 - [ ] Llanowar Elves
 - [ ] Nyxbloom Ancient
 - [ ] Roxanne, Starfall Savant
-- [ ] Saryth, the Viper's Fang
 - [ ] Seedborn Muse
 - [ ] Seeker of Skybreak
-- [ ] Shang-Chi, Master of Kung Fu
-- [ ] Surrak and Goreclaw
-- [ ] Terastodon
 - [ ] Terror of the Peaks
-- [ ] Ulamog, the Infinite Gyre
+- [ ] Triplicate Titan
 - [ ] Vaultborn Tyrant
-- [ ] Worldspine Wurm
 
-### Artifacts & Ramp (12 Cards)
+### Artifacts & Ramp (9 Cards)
 - [ ] Akroma's Memorial
 - [ ] Arcane Signet
 - [ ] Battlemage's Bracers
 - [ ] Idol of Oblivion
-- [ ] Illusionist's Bracers
-- [ ] Patriar's Seal
 - [ ] Portal to Phyrexia
-- [ ] Rings of Brighthearth
 - [ ] Sol Ring
-- [ ] Sting, the Glinting Dagger
 - [ ] Thousand-Year Elixir
+- [ ] Thran Turbine
 - [ ] Unwinding Clock
 
-### Spells & Interaction (14 Cards)
+### Spells & Interaction (10 Cards)
 - [ ] All Is Dust
 - [ ] Beast Within
 - [ ] Blasphemous Act
-- [ ] Bolt Bend
 - [ ] Chaos Warp
 - [ ] Deflecting Swat
 - [ ] Heroic Intervention
 - [ ] Into the North
-- [ ] Krosan Grip
-- [ ] Last March of the Ents
 - [ ] Return of the Wildspeaker
 - [ ] Rishkar's Expertise
-- [ ] Skred
 - [ ] Tamiyo's Safekeeping
 
-### Enchantments & Planeswalkers (8 Cards)
-- [ ] Cream of the Crop
-- [ ] Domri, Anarch of Bolas
+### Enchantments & Planeswalkers (5 Cards)
 - [ ] Garruk's Uprising
 - [ ] Guardian Project
 - [ ] Mana Reflection
 - [ ] Rhythm of the Wild
 - [ ] Sylvan Library
+
+### Other (23 Cards)
+- [ ] Agatha of the Vile Cauldron
+- [ ] Bolt Bend
+- [ ] Bridgeworks Battle
+- [ ] Castle Garenbrig
+- [ ] Cragcrown Pathway
+- [ ] Cream of the Crop
+- [ ] Deck
+- [ ] Hellkite Tyrant
+- [ ] Illusionist's Bracers
+- [ ] Krosan Grip
+- [ ] Last March of the Ents
+- [ ] Patriar's Seal
+- [ ] Rings of Brighthearth
+- [ ] Saryth, the Viper's Fang
+- [ ] Scrying Sheets
+- [ ] Shang-Chi, Master of Kung Fu
+- [ ] Skred
+- [ ] Sting, the Glinting Dagger
+- [ ] Surrak and Goreclaw
+- [ ] Svella, Ice Shaper *CMDR*
+- [ ] Terastodon
+- [ ] Ulamog, the Infinite Gyre
 - [ ] Up the Beanstalk
-
-### Commander (1 Card)
-- [ ] Svella, Ice Shaper
-
-### Additional Lands (1 Card)
-- [ ] Wooded Foothills
 
 ---
 

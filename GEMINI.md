@@ -36,6 +36,8 @@ This is a **documentation-only repository** — no build system, no tests. All c
 /
 ├── COMMANDER_DECKBUILDING_RULES.md  ← Source of truth: Brackets 1-5 and Game Changers list
 ├── COMMANDER_TEMPLATE.md            ← "New Era" card ratios (38 lands, 10 ramp, 12 draw, etc.)
+├── DeckShapeReferenceGuide.md       ← Authoritative guide on internal deck geometry & Commander Subtraction
+├── DeckShapeReferenceGuide.html     ← Interactive visual dashboard & 7-step deck auditor
 ├── DECK_TEMPLATE.md                 ← Structural template for all new deck files
 ├── history.md                       ← Chronological decision log — READ BEFORE major changes
 ├── collection.csv                   ← Physical/digital card collection database
@@ -79,7 +81,7 @@ Run through this at the start of every working session:
 - **Scryfall Link & Image Accuracy:** NEVER manually construct `/card/<set>/<number>/...` URLs from memory. Scryfall routes exclusively by `<set>/<collector_number>` and ignores card name slugs, causing links to resolve to completely different cards if the number is wrong. Always use the verified `Scryfall:` URI and `Image:` URL returned by `scripts/scryfall_lookup.py`, or use the canonical search URL format `https://scryfall.com/search?q=!"Card+Name"`.
 - When recommending new cards, state which source you verified them with.
 
-### 5.2 The Triple Update Rule — CRITICAL
+### 5.2 The Triple Update & Forge Sync Rule — CRITICAL
 
 Whenever a deck's card list changes, you **MUST** update **all three** of these locations in the same edit session — never leave them out of sync:
 
@@ -87,7 +89,8 @@ Whenever a deck's card list changes, you **MUST** update **all three** of these 
 2. **Plain Text Copy/Paste section** at the bottom of the main deck file (every line ends with two trailing spaces for GitHub GFM line breaks)
 3. **`moxfield_import.txt`** — raw text, Moxfield-compatible headers, **no** trailing spaces
 
-- **Automated Execution:** Use `python scripts/swap_matrix.py <deck> --in ... --out ... --reason ... --apply` to execute the Triple Update atomically across all three locations and eliminate manual desynchronization errors.
+- **Automated Execution & Forge Sync:** Use `python scripts/swap_matrix.py <deck> --in ... --out ... --reason ... --apply` to execute the Triple Update atomically across all three locations and automatically synchronize the deck directly into MTG Forge (`%APPDATA%/Forge/decks/commander/<Deck>.dck`).
+- **Standalone/Batch Forge Sync:** Use `python scripts/sync_to_forge.py "<deck>"` or `python scripts/sync_to_forge.py --all` to synchronize decks to Forge on demand.
 
 ### 5.3 100-Card Singleton Rule
 
@@ -132,7 +135,7 @@ Exceeding the limit for a deck's bracket is a hard block — do not proceed with
   3. The Rules Watchdog audit (flagging CR 302.6 summoning sickness, tapland tempo drag, banned filter lands/rocks, and exile/dies clashes).
   4. The standalone visual report at `<deck_dir>/swap_matrix.html` with 240px card artwork and hover zoom.
 - **Review Before Modifying:** Present the matrix to the user and await agreement.
-- **Atomic Application:** Once approved, re-run with `--apply` to update the main markdown file, plain text section, `moxfield_import.txt`, and deck changelog in one atomic transaction.
+- **Atomic Application:** Once approved, re-run with `--apply` to update the main markdown file, plain text section, `moxfield_import.txt`, deck changelog, and automatically synchronize the `.dck` file into MTG Forge in one atomic transaction.
 
 ---
 
@@ -153,6 +156,18 @@ Use `COMMANDER_TEMPLATE.md` as the source of truth. Default targets:
 | Commander | 1 |
 
 These are **guidelines**, not hard requirements. A creature-heavy tribal deck may run more Plan Cards and fewer of another category. Explain any meaningful deviations.
+
+### Deck Shape Theory & The Commander Subtraction Principle (`DeckShapeReferenceGuide.md`)
+
+When designing, diagnosing, or deviating from standard ratios, consult [`DeckShapeReferenceGuide.md`](DeckShapeReferenceGuide.md) and [`DeckShapeReferenceGuide.html`](DeckShapeReferenceGuide.html):
+- **The 3-Step Keystone:** Formulate the deck's proactive path to victory: **Primary Action (Engine) $\rightarrow$ Capitalization (Mass Conversion) $\rightarrow$ Game Conversion (Finisher)**.
+- **The Commander Subtraction Principle:** Because the Commander resides in the Command Zone with 100% availability, **reduce that exact functional category within the 99** (Generators, Amplifiers, Payoffs, or Advantage Gainers).
+- **Geometric Shapes:**
+  - *Diamond (Commander = Generator):* Reduce generators in the 99, maximize amplifiers (evasion, doublers), maintain 3–5 high-impact payoffs.
+  - *Inverted Triangle / T-Shape (Commander = Amplifier):* Cut 99 amplifiers; flood the deck with premier trigger/ETB generators.
+  - *Pointed Rectangle (Commander = Payoff):* Cut 99 payoffs to near zero; maximize generators and enablers to achieve the commander's win threshold.
+  - *Pillar-Shifted (Commander = Advantage Gainer):* Reduce slots from the specific advantage pillar the commander fulfills (draw, ramp, removal) and reallocate into synergy.
+- **High-Synergy Advantage Pillars:** Prioritize high-synergy card draw (e.g. *Quicksmith Genius*, *Sarinth Steelseeker*, *Idol of Oblivion*), continuous scaling mana engines (*Inspiring Statuary*, *Night of the Sweets' Revenge*), and game-ending asymmetrical sweepers ("The Cyclonic Rift Effect" like *The Great Aurora*, *Reckless Endeavor*).
 
 ### Deck File Structure (use `DECK_TEMPLATE.md`)
 
@@ -326,11 +341,12 @@ Whenever recommending or discussing card swaps:
     3. **Interactive Visual HTML:** Auto-generates `<deck_directory>/swap_matrix.html` featuring 240px Scryfall card images, hover zoom, and comparative delta cards.
 *   **Review Before Modifying:** Present the matrix and await user agreement before applying changes.
 
-### Phase 3: The Triple-Update Transaction
+### Phase 3: The Triple-Update & Forge Synchronization Transaction
 Whenever a deck is modified, you must update all three locations in a single "transactional" effort — either manually or atomically via `scripts/swap_matrix.py ... --apply`:
 1.  **Main Deck File:** Update the card list and the "Card Explanations" categories.
 2.  **Plain Text Section:** Update the "Plain Text Copy/Paste" at the bottom of the `.md` file. Every line **MUST** end with two spaces for GitHub GFM line breaks.
 3.  **Moxfield Import:** Update the `moxfield_import.txt` file in the deck folder. This file uses raw text with **NO** trailing spaces.
+4.  **MTG Forge Sync:** Ensure the deck's `.dck` file is updated in `%APPDATA%/Forge/decks/commander/` (handled automatically when running `swap_matrix.py ... --apply`, or via `python scripts/sync_to_forge.py "<path/to/deck>"`).
 
 ### Phase 4: Validation & Sync
 *   **Goldfish Simulation:** After major overhauls (5+ card changes), run a 20-game simulation using `scripts/multiplayer_goldfish.py`.
@@ -499,7 +515,7 @@ No arguments needed — it discovers files automatically.
 ---
 
 ### `scripts/swap_matrix.py` — Visual Swap Matrix & Mechanics Pre-Check Utility
-**What it does:** Evaluates proposed card swaps against Scryfall card data and current deck lists. Computes mathematical deltas (average CMC, curve shifts, color pip requirements, type balance, price delta), audits rules and personal preference violations (CR 302.6 summoning sickness on animated permanents, unconditional taplands, banned filter lands/rocks), and generates a standalone, responsive, dark-mode visual HTML report with 240px card images (`swap_matrix.html`). With `--apply`, atomically executes the Triple-Update Rule across markdown deck files, plain text sections (with 2-space line endings), `moxfield_import.txt`, and logs to `## Deck Changelog`.
+**What it does:** Evaluates proposed card swaps against Scryfall card data and current deck lists. Computes mathematical deltas (average CMC, curve shifts, color pip requirements, type balance, price delta), audits rules and personal preference violations (CR 302.6 summoning sickness on animated permanents, unconditional taplands, banned filter lands/rocks), and generates a standalone, responsive, dark-mode visual HTML report with 240px card images (`swap_matrix.html`). With `--apply`, atomically executes the Triple-Update Rule across markdown deck files, plain text sections (with 2-space line endings), `moxfield_import.txt`, logs to `## Deck Changelog`, and automatically synchronizes the updated deck into MTG Forge (`.dck`).
 
 **When to use:**
 - Whenever proposing, evaluating, or applying card swaps to any Commander deck.
@@ -511,8 +527,34 @@ No arguments needed — it discovers files automatically.
 # Dry-run analysis with visual HTML generation:
 python scripts/swap_matrix.py "<path/to/deck_file>" --in "Card A: Role" "Card B" --out "Card C" "Card D" --reason "Summary rationale"
 
-# Atomically apply Triple-Update changes to files:
+# Atomically apply Triple-Update changes and auto-sync to MTG Forge:
 python scripts/swap_matrix.py "<path/to/deck_file>" --in "Card A: Role" "Card B" --out "Card C" "Card D" --reason "Summary rationale" --apply
+
+# Apply without syncing to Forge:
+python scripts/swap_matrix.py "<path/to/deck_file>" --in "Card A: Role" "Card B" --out "Card C" "Card D" --reason "Summary rationale" --apply --no-forge
+```
+
+---
+
+### `scripts/sync_to_forge.py` — MTG Forge Deck Synchronizer
+**What it does:** Directly serializes Commander decks from this repository into MTG Forge's native `.dck` format (`[metadata]`, `[Commander]`, `[Main]`) and saves them to `%APPDATA%/Forge/decks/commander/`. Automatically handles alias mapping between repo folders and existing Forge deck files, strips third-party import tags, and preserves custom deck names without duplicate file creation.
+
+**When to use:**
+- Syncing an individual deck to MTG Forge outside of `swap_matrix.py`.
+- Syncing all repository Commander decks to MTG Forge in a single batch.
+- Testing a freshly scaffolded deck in Forge immediately after creation.
+
+**Usage:**
+```bash
+# Sync a single deck:
+python scripts/sync_to_forge.py "commander_decks/Owned/TheHive"
+
+# Sync all Commander decks across the entire repository:
+python scripts/sync_to_forge.py --all
+
+# Preview sync actions without writing files:
+python scripts/sync_to_forge.py "commander_decks/Owned/TheHive" --dry-run
+python scripts/sync_to_forge.py --all --dry-run
 ```
 
 ---
@@ -527,6 +569,7 @@ Use this before finalizing any deck edit:
 - [ ] Main deck file updated (card list + descriptions)
 - [ ] Plain Text section updated (two trailing spaces per line)
 - [ ] `moxfield_import.txt` updated (no trailing spaces)
+- [ ] MTG Forge `.dck` synchronized in `%APPDATA%/Forge/decks/commander/` (auto-applied via `swap_matrix.py --apply`)
 - [ ] Changelog entry added with today's date
 - [ ] `order_tracking.md` updated if physical cards were ordered or received
 - [ ] `history.md` updated if this is a major change or deck promotion

@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Swap Matrix: VarinaLichQueen</title>
+<style>
+  :root {
+    --bg-main: #0d1117;
+    --bg-card: #161b22;
+    --border-color: #30363d;
+    --text-main: #c9d1d9;
+    --text-muted: #8b949e;
+    --out-red: #f85149;
+    --out-bg: rgba(248, 81, 73, 0.1);
+    --in-green: #3fb950;
+    --in-bg: rgba(63, 185, 80, 0.1);
+    --gold: #d29922;
+    --blue: #58a6ff;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background-color: var(--bg-main);
+    color: var(--text-main);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    padding: 24px;
+    line-height: 1.5;
+  }
+  .container { max-width: 1200px; margin: 0 auto; }
+  header {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 24px;
+  }
+  h1 { font-size: 24px; color: #fff; margin-bottom: 8px; }
+  .sub-header { color: var(--text-muted); font-size: 14px; margin-bottom: 16px; }
+  
+  /* Delta Dashboard Grid */
+  .dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 16px;
+    margin-top: 16px;
+  }
+  .metric-card {
+    background: #21262d;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    padding: 14px;
+  }
+  .metric-title { font-size: 12px; text-transform: uppercase; color: var(--text-muted); font-weight: 600; }
+  .metric-value { font-size: 20px; font-weight: bold; margin: 4px 0; }
+  .metric-sub { font-size: 12px; }
+  
+  .positive { color: var(--in-green); }
+  .negative { color: var(--out-red); }
+  .critical { color: var(--out-red); font-weight: bold; }
+  .neutral { color: var(--text-muted); }
+
+  /* Curve Section */
+  .curve-section {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 24px;
+  }
+  .curve-chart {
+    display: flex;
+    align-items: flex-end;
+    gap: 20px;
+    height: 140px;
+    padding-top: 20px;
+    border-bottom: 1px solid var(--border-color);
+  }
+  .curve-col {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+  }
+  .curve-bars-pair {
+    display: flex;
+    align-items: flex-end;
+    gap: 4px;
+    width: 36px;
+    height: 100px;
+  }
+  .bar { width: 16px; border-radius: 3px 3px 0 0; }
+  .bar-pre { background: #8b949e; opacity: 0.6; }
+  .bar-post { background: var(--blue); }
+  .curve-label { font-size: 12px; font-weight: 600; margin-top: 6px; }
+  .curve-counts { font-size: 10px; color: var(--text-muted); }
+
+  /* Rules Watchdog */
+  .rules-section {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 24px;
+  }
+  .rules-title { font-size: 16px; font-weight: bold; margin-bottom: 12px; display: flex; align-items: center; gap: 8px; }
+  .rule-item {
+    padding: 10px 14px;
+    border-radius: 6px;
+    margin-bottom: 8px;
+    font-size: 13px;
+    border: 1px solid transparent;
+  }
+  .rule-item.critical { background: rgba(248, 81, 73, 0.15); border-color: var(--out-red); }
+  .rule-item.warning { background: rgba(210, 153, 34, 0.15); border-color: var(--gold); }
+  .rule-item.info { background: rgba(88, 166, 255, 0.1); border-color: var(--blue); }
+  .rule-badge {
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-right: 6px;
+  }
+  .rule-badge.critical { background: var(--out-red); color: #fff; }
+  .rule-badge.warning { background: var(--gold); color: #000; }
+  .rule-badge.info { background: var(--blue); color: #000; }
+
+  /* Swap Rows */
+  .swap-row {
+    display: flex;
+    align-items: stretch;
+    gap: 16px;
+    margin-bottom: 20px;
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 16px;
+  }
+  .card-column { flex: 1; display: flex; flex-direction: column; }
+  .col-header {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    padding: 4px 8px;
+    border-radius: 4px;
+    margin-bottom: 12px;
+    display: inline-block;
+    align-self: flex-start;
+  }
+  .badge-out { background: var(--out-bg); color: var(--out-red); border: 1px solid var(--out-red); }
+  .badge-in { background: var(--in-bg); color: var(--in-green); border: 1px solid var(--in-green); }
+  
+  .card-card {
+    display: flex;
+    gap: 16px;
+    flex: 1;
+  }
+  .img-wrap {
+    width: 140px;
+    flex-shrink: 0;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+    transition: transform 0.2s ease;
+  }
+  .img-wrap:hover {
+    transform: scale(1.08);
+    z-index: 10;
+  }
+  .img-wrap img { width: 100%; display: block; border-radius: 6px; }
+  .card-info { flex: 1; }
+  .card-title {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .card-title a { color: #fff; text-decoration: none; }
+  .card-title a:hover { text-decoration: underline; color: var(--blue); }
+  .mana-cost { font-family: monospace; font-size: 14px; color: var(--gold); }
+  .type-line { font-size: 12px; color: var(--text-muted); margin-bottom: 8px; }
+  .oracle-box {
+    background: #0d1117;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    padding: 8px 10px;
+    font-size: 12px;
+    color: #e6edf3;
+    max-height: 110px;
+    overflow-y: auto;
+  }
+  .rationale-tag {
+    margin-top: 8px;
+    font-size: 12px;
+    background: rgba(88, 166, 255, 0.1);
+    border-left: 3px solid var(--blue);
+    padding: 6px 8px;
+    border-radius: 0 4px 4px 0;
+  }
+  .swap-arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    color: var(--text-muted);
+    padding: 0 8px;
+  }
+
+  @media (max-width: 850px) {
+    .swap-row { flex-direction: column; }
+    .swap-arrow { transform: rotate(90deg); margin: 8px 0; }
+    .card-card { flex-direction: column; }
+    .img-wrap { width: 180px; margin: 0 auto; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <h1>Visual Swap Matrix — VarinaLichQueen</h1>
+    <div class="sub-header">
+      Commander: <strong>Varina, Lich Queen</strong> | Target Bracket: <strong>Bracket 3</strong> | 
+      Generated: <strong>2026-09-20 10:40:23</strong>
+    </div>
+    <div class="rationale-tag"><strong>Proposal Logic:</strong> Integrate video tech: Reconnaissance combat shield, Bone Miser discard engine, Containment Construct, Haunted One, and Lazotep Plating</div>
+
+    <div class="dashboard-grid">
+      <div class="metric-card">
+        <div class="metric-title">Average CMC (Nonland)</div>
+        <div class="metric-value neutral">2.97 ➔ 2.90</div>
+        <div class="metric-sub">Delta: -0.06</div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-title">Game Changers (Bracket 3)</div>
+        <div class="metric-value positive">2 / 3</div>
+        <div class="metric-sub">Status: PASS (Pre: 3)</div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-title">Deck Size & Balance</div>
+        <div class="metric-value">99 Cards</div>
+        <div class="metric-sub">Creatures: 22➔23 | Lands: 37</div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-title">Est. Market Value Impact</div>
+        <div class="metric-value">$702.81</div>
+        <div class="metric-sub">Delta: $-57.17</div>
+      </div>
+    </div>
+  </header>
+
+  <div class="rules-section">
+    <div class="rules-title">🛡️ Rules & Synergy Watchdog</div>
+    <div class='rule-item positive'>All clear! No rules traps or preference violations detected.</div>
+  </div>
+
+  <div class="curve-section">
+    <div class="rules-title">📊 Mana Curve Shift (Grey = Pre, Blue = Post)</div>
+    <div class="curve-chart">
+      
+        <div class="curve-col">
+            <div class="curve-bars-pair">
+                <div class="bar bar-pre" style="height: 35%;" title="Pre: 7"></div>
+                <div class="bar bar-post" style="height: 40%;" title="Post: 8"></div>
+            </div>
+            <div class="curve-label">0-1</div>
+            <div class="curve-counts">7➔8</div>
+        </div>
+        
+        <div class="curve-col">
+            <div class="curve-bars-pair">
+                <div class="bar bar-pre" style="height: 80%;" title="Pre: 16"></div>
+                <div class="bar bar-post" style="height: 90%;" title="Post: 18"></div>
+            </div>
+            <div class="curve-label">2</div>
+            <div class="curve-counts">16➔18</div>
+        </div>
+        
+        <div class="curve-col">
+            <div class="curve-bars-pair">
+                <div class="bar bar-pre" style="height: 100%;" title="Pre: 20"></div>
+                <div class="bar bar-post" style="height: 90%;" title="Post: 18"></div>
+            </div>
+            <div class="curve-label">3</div>
+            <div class="curve-counts">20➔18</div>
+        </div>
+        
+        <div class="curve-col">
+            <div class="curve-bars-pair">
+                <div class="bar bar-pre" style="height: 75%;" title="Pre: 15"></div>
+                <div class="bar bar-post" style="height: 65%;" title="Post: 13"></div>
+            </div>
+            <div class="curve-label">4</div>
+            <div class="curve-counts">15➔13</div>
+        </div>
+        
+        <div class="curve-col">
+            <div class="curve-bars-pair">
+                <div class="bar bar-pre" style="height: 5%;" title="Pre: 1"></div>
+                <div class="bar bar-post" style="height: 10%;" title="Post: 2"></div>
+            </div>
+            <div class="curve-label">5</div>
+            <div class="curve-counts">1➔2</div>
+        </div>
+        
+        <div class="curve-col">
+            <div class="curve-bars-pair">
+                <div class="bar bar-pre" style="height: 15%;" title="Pre: 3"></div>
+                <div class="bar bar-post" style="height: 15%;" title="Post: 3"></div>
+            </div>
+            <div class="curve-label">6+</div>
+            <div class="curve-counts">3➔3</div>
+        </div>
+        
+    </div>
+  </div>
+
+  <div class="swaps-container">
+    
+        <div class="swap-row">
+            <div class="card-column out-col">
+                <div class="col-header badge-out">OUT #1 — CUT</div>
+                <div class="card-card">
+                    <div class="img-wrap">
+                        <img src="https://cards.scryfall.io/normal/front/f/7/f7f3dd95-bd14-4e0f-a388-444f9cf1b0dc.jpg?1783915698" alt="Fierce Guardianship" loading="lazy" />
+                    </div>
+                    <div class="card-info">
+                        <div class="card-title">
+                            <a href="https://scryfall.com/card/cmm/94/fierce-guardianship?utm_source=api" target="_blank">Fierce Guardianship</a>
+                            <span class="mana-cost">{2}{U}</span>
+                        </div>
+                        <div class="type-line">Instant — CMC 3</div>
+                        <div class="oracle-box">If you control a commander, you may cast this spell without paying its mana cost.<br>Counter target noncreature spell.</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swap-arrow">➔</div>
+
+            <div class="card-column in-col">
+                <div class="col-header badge-in">IN #1 — ADD</div>
+                <div class="card-card">
+                    <div class="img-wrap">
+                        <img src="https://cards.scryfall.io/normal/front/f/0/f03b5405-6016-405b-a504-a454731b9276.jpg?1783933460" alt="Lazotep Plating" loading="lazy" />
+                    </div>
+                    <div class="card-info">
+                        <div class="card-title">
+                            <a href="https://scryfall.com/card/war/59/lazotep-plating?utm_source=api" target="_blank">Lazotep Plating</a>
+                            <span class="mana-cost">{1}{U}</span>
+                        </div>
+                        <div class="type-line">Instant — CMC 2</div>
+                        <div class="oracle-box">Amass Zombies 1. (Put a +1/+1 counter on an Army you control. It's also a Zombie. If you don't control an Army, create a 0/0 black Zombie Army creature token first.)<br>You and permanents you control gain hexproof until end of turn. (You and they can't be the targets of spells or abilities your opponents control.)</div>
+                        <div class="rationale-tag"><strong>Role / Reason:</strong> Integrate video tech: Reconnaissance combat shield, Bone Miser discard engine, Containment Construct, Haunted One, and Lazotep Plating</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="swap-row">
+            <div class="card-column out-col">
+                <div class="col-header badge-out">OUT #2 — CUT</div>
+                <div class="card-card">
+                    <div class="img-wrap">
+                        <img src="https://cards.scryfall.io/normal/front/3/d/3d460b79-f1a5-41c4-a5b3-61f703fd97df.jpg?1783943036" alt="Graveborn Muse" loading="lazy" />
+                    </div>
+                    <div class="card-info">
+                        <div class="card-title">
+                            <a href="https://scryfall.com/card/10e/145/graveborn-muse?utm_source=api" target="_blank">Graveborn Muse</a>
+                            <span class="mana-cost">{2}{B}{B}</span>
+                        </div>
+                        <div class="type-line">Creature — Zombie Spirit — CMC 4</div>
+                        <div class="oracle-box">At the beginning of your upkeep, you draw X cards and you lose X life, where X is the number of Zombies you control.</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swap-arrow">➔</div>
+
+            <div class="card-column in-col">
+                <div class="col-header badge-in">IN #2 — ADD</div>
+                <div class="card-card">
+                    <div class="img-wrap">
+                        <img src="https://cards.scryfall.io/normal/front/a/7/a7fa6901-e74f-448c-9d26-99a692092512.jpg?1783932810" alt="Bone Miser" loading="lazy" />
+                    </div>
+                    <div class="card-info">
+                        <div class="card-title">
+                            <a href="https://scryfall.com/card/c19/15/bone-miser?utm_source=api" target="_blank">Bone Miser</a>
+                            <span class="mana-cost">{4}{B}</span>
+                        </div>
+                        <div class="type-line">Creature — Zombie Wizard — CMC 5</div>
+                        <div class="oracle-box">Whenever you discard a creature card, create a 2/2 black Zombie creature token.<br>Whenever you discard a land card, add {B}{B}.<br>Whenever you discard a noncreature, nonland card, draw a card.</div>
+                        <div class="rationale-tag"><strong>Role / Reason:</strong> Integrate video tech: Reconnaissance combat shield, Bone Miser discard engine, Containment Construct, Haunted One, and Lazotep Plating</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="swap-row">
+            <div class="card-column out-col">
+                <div class="col-header badge-out">OUT #3 — CUT</div>
+                <div class="card-card">
+                    <div class="img-wrap">
+                        <img src="https://cards.scryfall.io/normal/front/9/4/94751d5e-7693-44af-b1b5-e440677dc7a2.jpg?1783913890" alt="Bident of Thassa" loading="lazy" />
+                    </div>
+                    <div class="card-info">
+                        <div class="card-title">
+                            <a href="https://scryfall.com/card/lcc/146/bident-of-thassa?utm_source=api" target="_blank">Bident of Thassa</a>
+                            <span class="mana-cost">{2}{U}{U}</span>
+                        </div>
+                        <div class="type-line">Legendary Enchantment Artifact — CMC 4</div>
+                        <div class="oracle-box">Whenever a creature you control deals combat damage to a player, you may draw a card.<br>{1}{U}, {T}: Creatures your opponents control attack this turn if able.</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swap-arrow">➔</div>
+
+            <div class="card-column in-col">
+                <div class="col-header badge-in">IN #3 — ADD</div>
+                <div class="card-card">
+                    <div class="img-wrap">
+                        <img src="https://cards.scryfall.io/normal/front/a/1/a16012d8-703c-4385-8769-13e3caba3fc6.jpg?1783946529" alt="Reconnaissance" loading="lazy" />
+                    </div>
+                    <div class="card-info">
+                        <div class="card-title">
+                            <a href="https://scryfall.com/card/exo/17/reconnaissance?utm_source=api" target="_blank">Reconnaissance</a>
+                            <span class="mana-cost">{W}</span>
+                        </div>
+                        <div class="type-line">Enchantment — CMC 1</div>
+                        <div class="oracle-box">{0}: Remove target attacking creature you control from combat and untap it. (If you activate during end of combat, the creature will untap after it deals combat damage.)</div>
+                        <div class="rationale-tag"><strong>Role / Reason:</strong> Integrate video tech: Reconnaissance combat shield, Bone Miser discard engine, Containment Construct, Haunted One, and Lazotep Plating</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="swap-row">
+            <div class="card-column out-col">
+                <div class="col-header badge-out">OUT #4 — CUT</div>
+                <div class="card-card">
+                    <div class="img-wrap">
+                        <img src="https://cards.scryfall.io/normal/front/a/b/ab12f69e-1491-47a8-8c46-d85bbf637ff6.jpg?1783915723" alt="Flawless Maneuver" loading="lazy" />
+                    </div>
+                    <div class="card-info">
+                        <div class="card-title">
+                            <a href="https://scryfall.com/card/cmm/24/flawless-maneuver?utm_source=api" target="_blank">Flawless Maneuver</a>
+                            <span class="mana-cost">{2}{W}</span>
+                        </div>
+                        <div class="type-line">Instant — CMC 3</div>
+                        <div class="oracle-box">If you control a commander, you may cast this spell without paying its mana cost.<br>Creatures you control gain indestructible until end of turn.</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swap-arrow">➔</div>
+
+            <div class="card-column in-col">
+                <div class="col-header badge-in">IN #4 — ADD</div>
+                <div class="card-card">
+                    <div class="img-wrap">
+                        <img src="https://cards.scryfall.io/normal/front/d/c/dc53b1af-0f4a-4475-a131-27cb5d5b0cf1.jpg?1783922514" alt="Haunted One" loading="lazy" />
+                    </div>
+                    <div class="card-info">
+                        <div class="card-title">
+                            <a href="https://scryfall.com/card/clb/654/haunted-one?utm_source=api" target="_blank">Haunted One</a>
+                            <span class="mana-cost">{2}{B}</span>
+                        </div>
+                        <div class="type-line">Legendary Enchantment — Background — CMC 3</div>
+                        <div class="oracle-box">Commander creatures you own have "Whenever this creature becomes tapped, it and other creatures you control that share a creature type with it each get +2/+0 and gain undying until end of turn." (When a creature with undying dies, if it had no +1/+1 counters on it, return it to the battlefield under its owner's control with a +1/+1 counter on it.)</div>
+                        <div class="rationale-tag"><strong>Role / Reason:</strong> Integrate video tech: Reconnaissance combat shield, Bone Miser discard engine, Containment Construct, Haunted One, and Lazotep Plating</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="swap-row">
+            <div class="card-column out-col">
+                <div class="col-header badge-out">OUT #5 — CUT</div>
+                <div class="card-card">
+                    <div class="img-wrap">
+                        <img src="https://cards.scryfall.io/normal/front/d/8/d8c5e52d-57ae-464b-8860-7dd39ebfef64.jpg?1783904806" alt="Frantic Search" loading="lazy" />
+                    </div>
+                    <div class="card-info">
+                        <div class="card-title">
+                            <a href="https://scryfall.com/card/tle/159/frantic-search?utm_source=api" target="_blank">Frantic Search</a>
+                            <span class="mana-cost">{2}{U}</span>
+                        </div>
+                        <div class="type-line">Instant — CMC 3</div>
+                        <div class="oracle-box">Draw two cards, then discard two cards. Untap up to three lands.</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swap-arrow">➔</div>
+
+            <div class="card-column in-col">
+                <div class="col-header badge-in">IN #5 — ADD</div>
+                <div class="card-card">
+                    <div class="img-wrap">
+                        <img src="https://cards.scryfall.io/normal/front/f/e/feb09084-0fdb-4226-b536-56d856354b5a.jpg?1783903740" alt="Containment Construct" loading="lazy" />
+                    </div>
+                    <div class="card-info">
+                        <div class="card-title">
+                            <a href="https://scryfall.com/card/soc/344/containment-construct?utm_source=api" target="_blank">Containment Construct</a>
+                            <span class="mana-cost">{2}</span>
+                        </div>
+                        <div class="type-line">Artifact Creature — Construct — CMC 2</div>
+                        <div class="oracle-box">Whenever you discard a card, you may exile that card from your graveyard. If you do, you may play that card this turn.</div>
+                        <div class="rationale-tag"><strong>Role / Reason:</strong> Integrate video tech: Reconnaissance combat shield, Bone Miser discard engine, Containment Construct, Haunted One, and Lazotep Plating</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+  </div>
+</div>
+</body>
+</html>

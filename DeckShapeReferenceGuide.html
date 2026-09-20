@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Commander Deck Shape Reference Guide: Engineering High-Synergy Powerhouses</title>
+  <style>
+    :root {
+      --bg-primary: #0b0f19;
+      --bg-secondary: #111827;
+      --bg-card: #1f2937;
+      --bg-card-hover: #283548;
+      --border-color: #374151;
+      --border-subtle: #2d3748;
+      --text-primary: #f9fafb;
+      --text-secondary: #9ca3af;
+      --text-muted: #6b7280;
+      --accent-blue: #38bdf8;
+      --accent-gold: #fbbf24;
+      --accent-green: #34d399;
+      --accent-red: #f87171;
+      --accent-purple: #c084fc;
+      --accent-orange: #fb923c;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--bg-primary);
+      color: var(--text-primary);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+      padding-bottom: 80px;
+    }
+
+    .hero {
+      background: linear-gradient(180deg, #1e293b 0%, #0b0f19 100%);
+      padding: 56px 24px 36px;
+      text-align: center;
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+      font-weight: 800;
+      letter-spacing: -0.025em;
+      margin-bottom: 14px;
+      background: linear-gradient(135deg, #f9fafb 0%, #94a3b8 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .hero .source-badge {
+      display: inline-block;
+      background: rgba(56, 189, 248, 0.15);
+      color: var(--accent-blue);
+      border: 1px solid rgba(56, 189, 248, 0.3);
+      padding: 6px 14px;
+      border-radius: 9999px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin-bottom: 16px;
+      text-decoration: none;
+      transition: all 0.2s ease;
+    }
+    .hero .source-badge:hover {
+      background: rgba(56, 189, 248, 0.25);
+      border-color: var(--accent-blue);
+    }
+
+    .hero p {
+      color: var(--text-secondary);
+      font-size: 1.15rem;
+      max-width: 860px;
+      margin: 0 auto 20px;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 32px 24px;
+    }
+
+    /* Sticky Nav */
+    .nav-bar {
+      position: sticky;
+      top: 0;
+      background: rgba(11, 15, 25, 0.95);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid var(--border-color);
+      z-index: 100;
+      padding: 12px 24px;
+    }
+    .nav-links {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      flex-wrap: wrap;
+      list-style: none;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .nav-link {
+      color: var(--text-secondary);
+      text-decoration: none;
+      font-size: 0.9rem;
+      font-weight: 600;
+      padding: 6px 14px;
+      border-radius: 8px;
+      border: 1px solid transparent;
+      transition: all 0.2s ease;
+    }
+    .nav-link:hover {
+      color: var(--text-primary);
+      background: var(--bg-card);
+      border-color: var(--border-color);
+    }
+
+    /* Section Styling */
+    section {
+      margin-bottom: 56px;
+      scroll-margin-top: 80px;
+    }
+
+    h2.section-title {
+      font-size: 1.75rem;
+      font-weight: 700;
+      margin-bottom: 24px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      border-bottom: 1px solid var(--border-color);
+      padding-bottom: 12px;
+    }
+    h2.section-title span.badge {
+      font-size: 0.8rem;
+      padding: 3px 10px;
+      border-radius: 9999px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    /* Comparison Box */
+    .comparison-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      margin: 24px 0;
+    }
+    @media (max-width: 768px) {
+      .comparison-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+    .comparison-box {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      padding: 24px;
+    }
+    .comparison-box.wrong {
+      border-top: 4px solid var(--accent-red);
+    }
+    .comparison-box.right {
+      border-top: 4px solid var(--accent-green);
+    }
+    .comparison-box h3 {
+      font-size: 1.2rem;
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    /* Steps Flow */
+    .steps-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 20px;
+      margin: 28px 0;
+    }
+    .step-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      padding: 24px;
+      position: relative;
+      overflow: hidden;
+    }
+    .step-number {
+      position: absolute;
+      top: -10px;
+      right: 12px;
+      font-size: 4rem;
+      font-weight: 900;
+      color: rgba(255, 255, 255, 0.03);
+      user-select: none;
+    }
+    .step-badge {
+      display: inline-block;
+      font-size: 0.75rem;
+      font-weight: 700;
+      padding: 4px 10px;
+      border-radius: 6px;
+      margin-bottom: 12px;
+      text-transform: uppercase;
+    }
+    .step-card h4 {
+      font-size: 1.25rem;
+      font-weight: 700;
+      margin-bottom: 10px;
+      color: var(--text-primary);
+    }
+    .step-card p {
+      color: var(--text-secondary);
+      font-size: 0.95rem;
+      margin-bottom: 12px;
+    }
+    .step-card .card-examples {
+      margin-top: 14px;
+      padding-top: 14px;
+      border-top: 1px solid var(--border-subtle);
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+
+    /* Shape Diagrams */
+    .shapes-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+      margin: 28px 0;
+    }
+    .shape-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      padding: 24px;
+      text-align: center;
+      transition: transform 0.2s ease, border-color 0.2s ease;
+    }
+    .shape-card:hover {
+      transform: translateY(-4px);
+      border-color: var(--accent-blue);
+    }
+    .shape-visual {
+      height: 120px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin: 16px 0 20px;
+      gap: 6px;
+    }
+    .shape-bar {
+      height: 20px;
+      border-radius: 4px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: #0b0f19;
+      transition: all 0.3s ease;
+    }
+    .bar-gen { background: var(--accent-green); }
+    .bar-amp { background: var(--accent-gold); }
+    .bar-pay { background: var(--accent-red); }
+
+    /* Card Gallery */
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
+      margin: 24px 0;
+    }
+    .card-item {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      padding: 16px;
+      text-align: center;
+      transition: all 0.2s ease;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .card-item:hover {
+      transform: translateY(-4px);
+      border-color: var(--accent-blue);
+      box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.5);
+    }
+    .card-item img {
+      width: 100%;
+      max-width: 220px;
+      border-radius: 8px;
+      margin-bottom: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    }
+    .card-item .card-name {
+      font-weight: 700;
+      font-size: 1rem;
+      margin-bottom: 4px;
+      color: var(--text-primary);
+    }
+    .card-item .card-role {
+      font-size: 0.8rem;
+      color: var(--accent-blue);
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+    .card-item .card-desc {
+      font-size: 0.85rem;
+      color: var(--text-secondary);
+      line-height: 1.4;
+    }
+
+    /* Pillars */
+    .pillar-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      padding: 24px;
+      margin-bottom: 24px;
+    }
+    .pillar-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 16px;
+      border-bottom: 1px solid var(--border-subtle);
+      padding-bottom: 12px;
+    }
+    .pillar-header h3 {
+      font-size: 1.3rem;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    /* Auditor Checklist */
+    .auditor-box {
+      background: var(--bg-secondary);
+      border: 2px solid var(--accent-blue);
+      border-radius: 12px;
+      padding: 28px;
+      margin: 32px 0;
+    }
+    .check-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      margin-bottom: 16px;
+      padding: 10px 14px;
+      background: var(--bg-card);
+      border-radius: 8px;
+      border: 1px solid var(--border-subtle);
+    }
+    .check-item input[type="checkbox"] {
+      margin-top: 4px;
+      width: 18px;
+      height: 18px;
+      cursor: pointer;
+      accent-color: var(--accent-blue);
+    }
+    .check-item label {
+      font-size: 0.95rem;
+      color: var(--text-primary);
+      cursor: pointer;
+    }
+    .check-item label span {
+      display: block;
+      color: var(--text-secondary);
+      font-size: 0.85rem;
+      margin-top: 4px;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 0.85rem;
+      margin-top: 40px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border-subtle);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="hero">
+    <a href="https://www.youtube.com/watch?v=xZvaBPrF56E" target="_blank" class="source-badge">
+      ▶ Video Reference: Commander Challenge (Gauge)
+    </a>
+    <h1>Commander Deck Shape Reference Guide</h1>
+    <p>
+      How to turn any Commander deck into a Bracket 3 or 4 powerhouse by understanding its internal geometry, 
+      applying the Commander Subtraction Principle, and mastering high-synergy advantage pillars.
+    </p>
+  </div>
+
+  <div class="nav-bar">
+    <ul class="nav-links">
+      <li><a href="#philosophy" class="nav-link">Core Philosophy</a></li>
+      <li><a href="#keystone" class="nav-link">3-Step Keystone</a></li>
+      <li><a href="#roles" class="nav-link">4 Functional Roles</a></li>
+      <li><a href="#shapes" class="nav-link">4 Geometric Shapes</a></li>
+      <li><a href="#pillars" class="nav-link">Three Advantage Pillars</a></li>
+      <li><a href="#calibration" class="nav-link">Goldfish & Calibration</a></li>
+      <li><a href="#auditor" class="nav-link">Deck Auditor Checklist</a></li>
+    </ul>
+  </div>
+
+  <div class="container">
+
+    <!-- Section 1: Philosophy -->
+    <section id="philosophy">
+      <h2 class="section-title">
+        1. Core Philosophy: Geometry Over Raw Staples
+        <span class="badge" style="background: rgba(56, 189, 248, 0.2); color: var(--accent-blue);">Foundation</span>
+      </h2>
+
+      <div class="comparison-grid">
+        <div class="comparison-box wrong">
+          <h3 style="color: var(--accent-red);">❌ The Expensive Trap (Bracket 2 Muddling)</h3>
+          <p style="color: var(--text-secondary); margin-bottom: 12px;">
+            Buying generic high-cost staples ($50+ cards like <em>Rhystic Study</em>, <em>Sylvan Library</em>, <em>Old Gnawbone</em>, <em>Ancient Copper Dragon</em>) 
+            to patch an underperforming deck.
+          </p>
+          <ul style="color: var(--text-muted); font-size: 0.9rem; padding-left: 20px;">
+            <li>High mana curve congestion at the top end.</li>
+            <li>No cohesive bridge between setup and winning.</li>
+            <li>Hands full of redundant generators that fail to scale.</li>
+            <li>Deck remains slow and vulnerable to early disruption.</li>
+          </ul>
+        </div>
+
+        <div class="comparison-box right">
+          <h3 style="color: var(--accent-green);">✔ The High-Synergy Powerhouse (Bracket 3/4)</h3>
+          <p style="color: var(--text-secondary); margin-bottom: 12px;">
+            Arranging cards into the correct geometric shape and replacing generic staples with $0.25–$2 high-synergy engines.
+          </p>
+          <ul style="color: var(--text-muted); font-size: 0.9rem; padding-left: 20px;">
+            <li>Crystal-clear 3-step path to victory every single game.</li>
+            <li>Commander Subtraction eliminates dead draws in the 99.</li>
+            <li>Draw and ramp scale exponentially with the deck's primary mechanic.</li>
+            <li>Faster, much more resilient, and $150+ cheaper.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 2: 3-Step Keystone -->
+    <section id="keystone">
+      <h2 class="section-title">
+        2. The 3-Step Keystone: Formulating a Clear Objective
+        <span class="badge" style="background: rgba(251, 191, 36, 0.2); color: var(--accent-gold);">Methodology</span>
+      </h2>
+      <p style="color: var(--text-secondary); margin-bottom: 16px;">
+        The fundamental difference between a meandering Bracket 2 deck and a decisive Bracket 3/4 deck is a clear, proactive win plan. 
+        Formulate your keystone across these three sequential steps:
+      </p>
+
+      <div class="steps-container">
+        <div class="step-card">
+          <div class="step-number">1</div>
+          <span class="step-badge" style="background: rgba(52, 211, 153, 0.15); color: var(--accent-green);">Step 1: The Engine</span>
+          <h4>Primary Mechanical Action</h4>
+          <p>
+            The repetitive mechanical action your deck performs. Without this action, the deck does literally nothing.
+          </p>
+          <div class="card-examples">
+            <strong>Wilson Case Study:</strong> Generating a swarm of tokens (Treasures, Food, Clues, Thopters, Frogs) via Wilson's combat triggers.
+          </div>
+        </div>
+
+        <div class="step-card">
+          <div class="step-number">2</div>
+          <span class="step-badge" style="background: rgba(251, 146, 60, 0.15); color: var(--accent-orange);">Step 2: The Catalyst</span>
+          <h4>Mass Capitalization</h4>
+          <p>
+            How does your deck turn that mechanical output into an overwhelming resource or board state advantage?
+          </p>
+          <div class="card-examples">
+            <strong>Wilson Case Study:</strong> <em>Warp World</em>, <em>Glimpse of Tomorrow</em>, and <em>Over the Top</em> count all permanents (including tokens) to flip 25+ real cards directly onto the battlefield.
+          </div>
+        </div>
+
+        <div class="step-card">
+          <div class="step-number">3</div>
+          <span class="step-badge" style="background: rgba(248, 113, 113, 0.15); color: var(--accent-red);">Step 3: The Finisher</span>
+          <h4>Decisive Game Conversion</h4>
+          <p>
+            Flipping or casting your mass spell is not enough. You must run cards that immediately convert that arrival into a lethal win.
+          </p>
+          <div class="card-examples">
+            <strong>Wilson Case Study:</strong> <em>Ingenious Artillerist</em> deals 20+ ETB burn, <em>Displaced Dinosaurs</em> creates 7/7s, and <em>Depthshaker Titan</em> animates artifacts with Melee and Haste.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 3: 4 Functional Roles -->
+    <section id="roles">
+      <h2 class="section-title">
+        3. The Four Functional Card Roles
+        <span class="badge" style="background: rgba(192, 132, 252, 0.2); color: var(--accent-purple);">Taxonomy</span>
+      </h2>
+      <p style="color: var(--text-secondary); margin-bottom: 20px;">
+        Every card in your 99 fits into one of these four categories. Accurate role diagnosis is essential before adjusting ratios.
+      </p>
+
+      <div class="steps-container">
+        <div class="step-card" style="border-top: 3px solid var(--accent-green);">
+          <span class="step-badge" style="background: rgba(52, 211, 153, 0.15); color: var(--accent-green);">Generators</span>
+          <h4>The Core Generators</h4>
+          <p>Cards that perform the base strategy. If you have no generators, the deck never starts.</p>
+          <div class="card-examples">
+            <em>Examples:</em> Wilson, Tireless Tracker, Krenko, Lotho, self-millers.
+          </div>
+        </div>
+
+        <div class="step-card" style="border-top: 3px solid var(--accent-gold);">
+          <span class="step-badge" style="background: rgba(251, 191, 36, 0.15); color: var(--accent-gold);">Amplifiers</span>
+          <h4>The Force Multipliers</h4>
+          <p>Cards that do nothing on an empty board, but make your generators produce 2x–4x output.</p>
+          <div class="card-examples">
+            <em>Examples:</em> Peregrin Took, Quina Qu Gourmet, Brotherhood Regalia, The Reaver Cleaver.
+          </div>
+        </div>
+
+        <div class="step-card" style="border-top: 3px solid var(--accent-red);">
+          <span class="step-badge" style="background: rgba(248, 113, 113, 0.15); color: var(--accent-red);">Payoffs</span>
+          <h4>The Game Finishers</h4>
+          <p>Cards that convert an established board state into an immediate win or insurmountable lead.</p>
+          <div class="card-examples">
+            <em>Examples:</em> Jetmir, Warp World, Ingenious Artillerist, Over the Top.
+          </div>
+        </div>
+
+        <div class="step-card" style="border-top: 3px solid var(--accent-blue);">
+          <span class="step-badge" style="background: rgba(56, 189, 248, 0.15); color: var(--accent-blue);">Advantage Gainers</span>
+          <h4>Support Infrastructure</h4>
+          <p>Cards supporting the engine across the Three Pillars: Card Velocity, Mana Advantage, and Protection.</p>
+          <div class="card-examples">
+            <em>Examples:</em> Quicksmith Genius, Inspiring Statuary, Beast Within, Heroic Intervention.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 4: 4 Geometric Shapes -->
+    <section id="shapes">
+      <h2 class="section-title">
+        4. The 4 Geometric Shapes & The Subtraction Principle
+        <span class="badge" style="background: rgba(56, 189, 248, 0.2); color: var(--accent-blue);">Architecture</span>
+      </h2>
+      
+      <div style="background: rgba(56, 189, 248, 0.08); border-left: 4px solid var(--accent-blue); padding: 16px 20px; border-radius: 0 8px 8px 0; margin-bottom: 24px;">
+        <strong style="color: var(--accent-blue);">THE COMMANDER SUBTRACTION PRINCIPLE:</strong>
+        <p style="color: var(--text-secondary); font-size: 0.95rem; margin-top: 4px;">
+          Because your Commander resides in the Command Zone with 100% cast availability, you must <strong>REDUCE that exact category in the 99</strong>. 
+          If your commander generates tokens, run fewer token generators in the 99 and maximize amplifiers!
+        </p>
+      </div>
+
+      <div class="shapes-grid">
+        <!-- Shape 1 -->
+        <div class="shape-card">
+          <h4 style="color: var(--accent-green);">Shape 1: The Diamond</h4>
+          <p style="font-size: 0.85rem; color: var(--text-secondary);">Commander is a <strong>Generator</strong></p>
+          <div class="shape-visual">
+            <div class="shape-bar bar-gen" style="width: 40px;">Gen</div>
+            <div class="shape-bar bar-amp" style="width: 140px;">Amplifiers</div>
+            <div class="shape-bar bar-pay" style="width: 60px;">Payoffs</div>
+          </div>
+          <p style="font-size: 0.85rem; color: var(--text-muted); text-align: left;">
+            <strong>Strategy:</strong> Cut weak generators from the 99. Maximize amplifiers (evasion gear, token doublers) and keep 3–5 high-impact payoffs.
+          </p>
+          <div style="margin-top: 10px; font-size: 0.8rem; color: var(--accent-blue);">
+            e.g., Wilson + Guild Artisan, Sorin of House Markov, Lotho.
+          </div>
+        </div>
+
+        <!-- Shape 2 -->
+        <div class="shape-card">
+          <h4 style="color: var(--accent-gold);">Shape 2: Inverted Triangle (T)</h4>
+          <p style="font-size: 0.85rem; color: var(--text-secondary);">Commander is an <strong>Amplifier</strong></p>
+          <div class="shape-visual">
+            <div class="shape-bar bar-gen" style="width: 150px;">Massive Generators</div>
+            <div class="shape-bar bar-amp" style="width: 40px;">Amp</div>
+            <div class="shape-bar bar-pay" style="width: 70px;">Payoffs</div>
+          </div>
+          <p style="font-size: 0.85rem; color: var(--text-muted); text-align: left;">
+            <strong>Strategy:</strong> Cut amplifiers from the 99. Your commander is the force multiplier. Pack the deck with premier ETB/trigger generators.
+          </p>
+          <div style="margin-top: 10px; font-size: 0.8rem; color: var(--accent-blue);">
+            e.g., Duke Ulder Ravengard, Isshin, Roaming Throne shells.
+          </div>
+        </div>
+
+        <!-- Shape 3 -->
+        <div class="shape-card">
+          <h4 style="color: var(--accent-red);">Shape 3: Pointed Rectangle</h4>
+          <p style="font-size: 0.85rem; color: var(--text-secondary);">Commander is a <strong>Payoff</strong></p>
+          <div class="shape-visual">
+            <div class="shape-bar bar-gen" style="width: 120px;">Generators</div>
+            <div class="shape-bar bar-amp" style="width: 120px;">Amplifiers</div>
+            <div class="shape-bar bar-pay" style="width: 30px;">Win</div>
+          </div>
+          <p style="font-size: 0.85rem; color: var(--text-muted); text-align: left;">
+            <strong>Strategy:</strong> Run zero (or 1 max) overrun payoffs in the 99. Your commander IS the win-con. Maximize board development speed.
+          </p>
+          <div style="margin-top: 10px; font-size: 0.8rem; color: var(--accent-blue);">
+            e.g., Jetmir Nexus of Revels, Craterhoof commanders, Syr Konrad.
+          </div>
+        </div>
+
+        <!-- Shape 4 -->
+        <div class="shape-card">
+          <h4 style="color: var(--accent-purple);">Shape 4: Pillar-Shifted</h4>
+          <p style="font-size: 0.85rem; color: var(--text-secondary);">Commander is an <strong>Advantage Gainer</strong></p>
+          <div class="shape-visual">
+            <div class="shape-bar" style="background: var(--accent-blue); width: 140px;">Pillars Shifted</div>
+            <div class="shape-bar bar-gen" style="width: 90px;">Generators</div>
+            <div class="shape-bar bar-pay" style="width: 60px;">Payoffs</div>
+          </div>
+          <p style="font-size: 0.85rem; color: var(--text-muted); text-align: left;">
+            <strong>Strategy:</strong> Shave slots from the specific advantage pillar the commander fulfills (draw, ramp, or removal) and reallocate into synergy.
+          </p>
+          <div style="margin-top: 10px; font-size: 0.8rem; color: var(--accent-blue);">
+            e.g., Sythis (Card Draw), Urza (Mana Ramp), Marchesa (Protection).
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 5: The Three Advantage Pillars -->
+    <section id="pillars">
+      <h2 class="section-title">
+        5. Upgrading the Three Advantage Pillars via High-Synergy
+        <span class="badge" style="background: rgba(52, 211, 153, 0.2); color: var(--accent-green);">Optimization</span>
+      </h2>
+
+      <!-- Pillar 1 -->
+      <div class="pillar-card">
+        <div class="pillar-header">
+          <h3 style="color: var(--accent-blue);">
+            Pillar 1: Card Advantage — "High-Synergy Dig" vs. Generic Staples
+          </h3>
+          <span style="color: var(--accent-green); font-weight: 600; font-size: 0.9rem;">Cost-to-Power Secret</span>
+        </div>
+        <p style="color: var(--text-secondary); margin-bottom: 16px;">
+          Generic draw cards (<em>Rhystic Study</em>, <em>Sylvan Library</em>) are expensive due to universal demand. 
+          High-synergy dig ties directly into your Primary Mechanical Action to churn through 10–15 cards for under $1 per card.
+        </p>
+        <div class="card-grid">
+          <div class="card-item">
+            <a href="https://scryfall.com/card/c21/178/quicksmith-genius?utm_source=api" target="_blank">
+              <img src="https://cards.scryfall.io/normal/front/7/f/7fed8df9-600c-4502-83a3-883724f2f7c6.jpg?1783927540" alt="Quicksmith Genius" />
+            </a>
+            <div class="card-name">Quicksmith Genius</div>
+            <div class="card-role">High-Synergy Looting ({2}{R})</div>
+            <div class="card-desc">Loots whenever an artifact enters. In a token storm turn, filters through 15+ cards for $0.31.</div>
+          </div>
+
+          <div class="card-item">
+            <a href="https://scryfall.com/card/bro/189/sarinth-steelseeker?utm_source=api" target="_blank">
+              <img src="https://cards.scryfall.io/normal/front/d/9/d96761b2-eb9c-4963-a496-ba53a01f4b17.jpg?1783920040" alt="Sarinth Steelseeker" />
+            </a>
+            <div class="card-name">Sarinth Steelseeker</div>
+            <div class="card-role">Topdeck Filter & Land Draw ({1}{G})</div>
+            <div class="card-desc">Puts lands in hand and bins unwanted cards whenever artifacts enter. Pure card selection.</div>
+          </div>
+
+          <div class="card-item">
+            <a href="https://scryfall.com/card/msc/688/heroes-for-hire?utm_source=api" target="_blank">
+              <img src="https://cards.scryfall.io/normal/front/3/7/37759556-ea31-47b4-8457-a83d17a51e28.jpg?1783903050" alt="Heroes for Hire" />
+            </a>
+            <div class="card-name">Heroes for Hire</div>
+            <div class="card-role">Treasure Impulse Engine ({3}{R}{R})</div>
+            <div class="card-desc">Enters with 3 Treasures. Sacrifice any Treasure to impulse draw off the top. Dig 8 deep on command.</div>
+          </div>
+
+          <div class="card-item">
+            <a href="https://scryfall.com/card/tdc/319/idol-of-oblivion?utm_source=api" target="_blank">
+              <img src="https://cards.scryfall.io/normal/front/c/b/cbc25725-1485-4d98-abe1-906520f868d8.jpg?1783907011" alt="Idol of Oblivion" />
+            </a>
+            <div class="card-name">Idol of Oblivion</div>
+            <div class="card-role">Token Draw Engine ({2})</div>
+            <div class="card-desc">Tap to draw a card if you created a token this turn. Unconditional, repeatable engine draw.</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pillar 2 -->
+      <div class="pillar-card">
+        <div class="pillar-header">
+          <h3 style="color: var(--accent-gold);">
+            Pillar 2: Mana Advantage — The Three Tiers of Ramp
+          </h3>
+          <span style="color: var(--accent-gold); font-weight: 600; font-size: 0.9rem;">Scaling Beyond Rocks</span>
+        </div>
+        <p style="color: var(--text-secondary); margin-bottom: 16px;">
+          Move beyond basic 2-mana ramp. Bracket 3 and 4 decks combine basic ramp with <strong>High-Synergy Mana Engines</strong> 
+          that leverage the deck's primary output to create enormous mana turn after turn.
+        </p>
+        <div class="card-grid">
+          <div class="card-item">
+            <a href="https://scryfall.com/card/mkc/230/inspiring-statuary?utm_source=api" target="_blank">
+              <img src="https://cards.scryfall.io/normal/front/4/f/4f7e4c0a-683b-4b22-9ea5-ed6470b8b1d7.jpg?1783912973" alt="Inspiring Statuary" />
+            </a>
+            <div class="card-name">Inspiring Statuary</div>
+            <div class="card-role">Improvise Engine ({3})</div>
+            <div class="card-desc">Allows all nonartifact spells to be cast by tapping tokens without sacrificing them. Instant +10 mana.</div>
+          </div>
+
+          <div class="card-item">
+            <a href="https://scryfall.com/card/woe/178/night-of-the-sweets-revenge?utm_source=api" target="_blank">
+              <img src="https://cards.scryfall.io/normal/front/2/7/27f53bed-7075-4303-aa9e-fcca0a266e19.jpg?1783915080" alt="Night of the Sweets' Revenge" />
+            </a>
+            <div class="card-name">Night of the Sweets' Revenge</div>
+            <div class="card-role">Food Mana & Finisher ({3}{G})</div>
+            <div class="card-desc">Turns all Foods into green mana dorks, accelerating straight into a massive game-ending overrun activation.</div>
+          </div>
+
+          <div class="card-item">
+            <a href="https://scryfall.com/card/otj/228/roxanne-starfall-savant?utm_source=api" target="_blank">
+              <img src="https://cards.scryfall.io/normal/front/1/1/11fbe52f-febd-49fc-8391-28d3efe9c3eb.jpg?1783911786" alt="Roxanne, Starfall Savant" />
+            </a>
+            <div class="card-name">Roxanne, Starfall Savant</div>
+            <div class="card-role">Mana Doubler & Removal ({3}{R}{G})</div>
+            <div class="card-desc">Creates Meteorite tokens and doubles mana output from all artifact tokens. Devastating acceleration.</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pillar 3 -->
+      <div class="pillar-card">
+        <div class="pillar-header">
+          <h3 style="color: var(--accent-red);">
+            Pillar 3: Board State Advantage — The "Cyclonic Rift Effect"
+          </h3>
+          <span style="color: var(--accent-red); font-weight: 600; font-size: 0.9rem;">Asymmetrical Wipes</span>
+        </div>
+        <p style="color: var(--text-secondary); margin-bottom: 16px;">
+          Do not run symmetrical wipes that destroy your own board. Prioritize interaction that suppresses opponents, protects your engine, 
+          and includes at least one <strong>Game-Ending Sweeper</strong> that converts your board presence into an immediate victory.
+        </p>
+        <div class="card-grid">
+          <div class="card-item">
+            <a href="https://scryfall.com/card/ori/179/the-great-aurora?utm_source=api" target="_blank">
+              <img src="https://cards.scryfall.io/normal/front/b/1/b1d0eb3b-00b9-42ca-9f7d-5543bffc3480.jpg?1783938322" alt="The Great Aurora" />
+            </a>
+            <div class="card-name">The Great Aurora</div>
+            <div class="card-role">Table Reset & Win-Con ({6}{G}{G}{G})</div>
+            <div class="card-desc">Shuffles all tokens & hands. You draw 35+ cards and dump 15+ untapped lands while opponents get crippled.</div>
+          </div>
+
+          <div class="card-item">
+            <a href="https://scryfall.com/card/afc/33/reckless-endeavor?utm_source=api" target="_blank">
+              <img src="https://cards.scryfall.io/normal/front/b/a/ba98a4bd-e217-4dba-aee9-315b4f843cdf.jpg?1783926245" alt="Reckless Endeavor" />
+            </a>
+            <div class="card-name">Reckless Endeavor</div>
+            <div class="card-role">Damage Sweeper + Treasure ({5}{R}{R})</div>
+            <div class="card-desc">Wipes the opposing creature board while simultaneously generating 6–12 Treasures to rebuild instantly.</div>
+          </div>
+
+          <div class="card-item">
+            <a href="https://scryfall.com/card/cmm/295/heroic-intervention?utm_source=api" target="_blank">
+              <img src="https://cards.scryfall.io/normal/front/e/3/e32c67d1-187f-40df-b3b3-6036f5c92834.jpg?1783915629" alt="Heroic Intervention" />
+            </a>
+            <div class="card-name">Heroic Intervention</div>
+            <div class="card-role">Instant Board Shield ({1}{G})</div>
+            <div class="card-desc">Grants hexproof and indestructible. Essential when you are the scariest threat at the table.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 6: Calibration -->
+    <section id="calibration">
+      <h2 class="section-title">
+        6. Goldfishing & Bracket Calibration
+        <span class="badge" style="background: rgba(251, 191, 36, 0.2); color: var(--accent-gold);">Validation</span>
+      </h2>
+      <p style="color: var(--text-secondary); margin-bottom: 16px;">
+        Use <code>scripts/multiplayer_goldfish.py</code> to benchmark your deck's turn-by-turn velocity. 
+        Always adjust raw goldfish numbers to account for real-world pod friction:
+      </p>
+
+      <div style="overflow-x: auto;">
+        <table style="width: 100%; border-collapse: collapse; background: var(--bg-card); border-radius: 8px; overflow: hidden;">
+          <thead>
+            <tr style="background: var(--bg-secondary); border-bottom: 1px solid var(--border-color); text-align: left;">
+              <th style="padding: 12px 16px; color: var(--text-primary);">Bracket</th>
+              <th style="padding: 12px 16px; color: var(--text-primary);">Target Presentation</th>
+              <th style="padding: 12px 16px; color: var(--text-primary);">Goldfish Window</th>
+              <th style="padding: 12px 16px; color: var(--text-primary);">Pod Friction Factors</th>
+            </tr>
+          </thead>
+          <tbody style="color: var(--text-secondary); font-size: 0.95rem;">
+            <tr style="border-bottom: 1px solid var(--border-subtle);">
+              <td style="padding: 12px 16px; font-weight: 700; color: var(--accent-green);">Bracket 2</td>
+              <td style="padding: 12px 16px;">Turn 8–9</td>
+              <td style="padding: 12px 16px;">Turn 7–8</td>
+              <td style="padding: 12px 16px;">Casual board wipes, creature combat stalls.</td>
+            </tr>
+            <tr style="border-bottom: 1px solid var(--border-subtle); background: rgba(56, 189, 248, 0.04);">
+              <td style="padding: 12px 16px; font-weight: 700; color: var(--accent-blue);">Bracket 3 (Target)</td>
+              <td style="padding: 12px 16px;"><strong>Turn 6–7</strong></td>
+              <td style="padding: 12px 16px;"><strong>Turn 5–6</strong></td>
+              <td style="padding: 12px 16px;">Spot removal on commander, blockers, combat attack conditions (Guild Artisan life totals).</td>
+            </tr>
+            <tr>
+              <td style="padding: 12px 16px; font-weight: 700; color: var(--accent-purple);">Bracket 4</td>
+              <td style="padding: 12px 16px;">Turn 4–5</td>
+              <td style="padding: 12px 16px;">Turn 3–4</td>
+              <td style="padding: 12px 16px;">Free interaction, heavy stax, fast mana denial.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Section 7: Auditor Checklist -->
+    <section id="auditor">
+      <h2 class="section-title">
+        7. The 7-Step Deck Shape Auditor Checklist
+        <span class="badge" style="background: rgba(56, 189, 248, 0.2); color: var(--accent-blue);">Interactive Tool</span>
+      </h2>
+      <p style="color: var(--text-secondary); margin-bottom: 20px;">
+        Audit any new or underperforming deck before spending money on card upgrades:
+      </p>
+
+      <div class="auditor-box">
+        <div class="check-item">
+          <input type="checkbox" id="chk1" />
+          <label for="chk1">
+            <strong>1. Define the 3-Step Keystone Objective</strong>
+            <span>Can you summarize the Primary Mechanic, Capitalization Spell, and Win Conversion in one sentence?</span>
+          </label>
+        </div>
+
+        <div class="check-item">
+          <input type="checkbox" id="chk2" />
+          <label for="chk2">
+            <strong>2. Classify the Commander's Functional Role</strong>
+            <span>Is your commander fundamentally a Generator, an Amplifier, a Payoff, or an Advantage Gainer?</span>
+          </label>
+        </div>
+
+        <div class="check-item">
+          <input type="checkbox" id="chk3" />
+          <label for="chk3">
+            <strong>3. Apply the Commander Subtraction Principle</strong>
+            <span>Have you systematically cut redundant cards in the 99 that duplicate what your commander already guarantees?</span>
+          </label>
+        </div>
+
+        <div class="check-item">
+          <input type="checkbox" id="chk4" />
+          <label for="chk4">
+            <strong>4. Match Geometric Proportions</strong>
+            <span>Does your deck match its intended shape (Diamond, Inverted Triangle, Pointed Rectangle, Pillar-Shifted)?</span>
+          </label>
+        </div>
+
+        <div class="check-item">
+          <input type="checkbox" id="chk5" />
+          <label for="chk5">
+            <strong>5. Replace Generic Draw with High-Synergy Dig</strong>
+            <span>Are you running draw engines that trigger directly off your primary mechanic (e.g. artifact ETBs, token creation)?</span>
+          </label>
+        </div>
+
+        <div class="check-item">
+          <input type="checkbox" id="chk6" />
+          <label for="chk6">
+            <strong>6. Integrate High-Synergy Continuous Mana Engines</strong>
+            <span>Does your ramp include cards that turn your mechanic into continuous mana (e.g., Improvise, doubling effects)?</span>
+          </label>
+        </div>
+
+        <div class="check-item">
+          <input type="checkbox" id="chk7" />
+          <label for="chk7">
+            <strong>7. Calibrate Board Advantage & Add a Game-Ending Sweeper</strong>
+            <span>Is your removal-to-protection ratio aligned with your table threat level, and do you run an asymmetrical game-closing wipe?</span>
+          </label>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>MTG Deck Collection Repository | Engineering High-Synergy Commander Decks</p>
+      <p style="margin-top: 4px;">Referenced Video: Gauge — "Turn Any Deck Into a Power House (by fixing it's shape)"</p>
+    </footer>
+
+  </div>
+
+</body>
+</html>

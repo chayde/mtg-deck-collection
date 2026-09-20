@@ -80,15 +80,15 @@ deck_status: main
 *   **Akroma's Memorial:** Grants all creatures flying, first strike, vigilance, trample, haste, and protection from black and red permanently.
 *   **Kozilek, Butcher of Truth:** 12/12 Annihilator 4 Eldrazi that draws 4 cards on cast.
 *   **Ulamog, the Infinite Gyre:** 10/10 Indestructible Annihilator 4 Eldrazi that destroys target permanent on cast.
-*   **Worldspine Wurm:** 15/15 Trample behemoth that leaves behind three 5/5 Trample Wurms upon death.
+*   **[Triplicate Titan](https://scryfall.com/card/c21/79/triplicate-titan?utm_source=api) ({9}):** Flying Vigilance Artifact Behemoth
 *   **Nyxbloom Ancient:** Triples all mana produced by your lands and Icy Manaliths.
 *   **Mana Reflection:** Doubles all mana produced by tapping permanents.
 *   **Roxanne, Starfall Savant:** Creates Meteorite tokens, ramps mana, and doubles mana produced by artifacts/tokens.
-*   **Ghalta, Stampede Tyrant:** 12/12 Trample that drops every creature in your hand directly onto the battlefield.
+*   **[Blightsteel Colossus](https://scryfall.com/card/2xm/235/blightsteel-colossus?utm_source=api) ({12}):** Indestructible Infect Finisher
 *   **Surrak and Goreclaw:** Grants trample, +1/+1 counters, and haste to entering creatures.
 *   **Rhythm of the Wild:** Creature spells can't be countered; grants Riot (Haste or +1/+1 counter).
 *   **Shang-Chi, Master of Kung Fu:** Allows creature abilities to be activated with haste and taps for 2 mana toward creature abilities.
-*   **Domri, Anarch of Bolas:** Static +1/+0, mana ramp that prevents counterspells, and targeted fight removal.
+*   **[Thran Turbine](https://scryfall.com/card/usg/311/thran-turbine?utm_source=api) ({1}):** Upkeep Activated Ability Battery
 
 ### 🧱 Mana Base (37 Cards)
 *   **Snow Lands (18):** 8 Snow-Covered Forest, 8 Snow-Covered Mountain, 1 Highland Forest, 1 Scrying Sheets
@@ -107,6 +107,10 @@ deck_status: main
 ---
 
 ## 📜 Deck Changelog
+- **[2026-09-15]:** Add Command Zone tech: Thran Turbine accelerates early Svella activations; Triplicate Titan provides an evasive artifact threat; Blightsteel Colossus replaces hand-reliant Ghalta with an indestructible infect finisher.
+    - **In:** Thran Turbine, Triplicate Titan, Blightsteel Colossus
+    - **Out:** Domri, Anarch of Bolas, Worldspine Wurm, Ghalta, Stampede Tyrant
+    - **Reason:** Add Command Zone tech: Thran Turbine accelerates early Svella activations; Triplicate Titan provides an evasive artifact threat; Blightsteel Colossus replaces hand-reliant Ghalta with an indestructible infect finisher.
 *   **2026-08-29:** Replaced Clock of Omens with Cream of the Crop.
     *   **In:** *Cream of the Crop*
     *   **Out:** *Clock of Omens*
@@ -123,7 +127,7 @@ deck_status: main
 
 ## 📋 Plain Text Copy/Paste (Moxfield Import)
 
-```text
+```text  
 1 Svella, Ice Shaper  
 1 Agatha of the Vile Cauldron  
 1 Akroma's Memorial  
@@ -147,13 +151,13 @@ deck_status: main
 1 Cream of the Crop  
 1 Deflecting Swat  
 1 Delighted Halfling  
-1 Domri, Anarch of Bolas  
+1 Thran Turbine  
 1 Elvish Mystic  
 1 Etali, Primal Conqueror  
 1 Etali, Primal Storm  
 1 Fabled Passage  
 1 Garruk's Uprising  
-1 Ghalta, Stampede Tyrant  
+1 Blightsteel Colossus  
 1 Goblin Anarchomancer  
 1 Guardian Project  
 1 Hellkite Tyrant  
@@ -209,5 +213,5 @@ deck_status: main
 1 Valakut Awakening  
 1 Vaultborn Tyrant  
 1 Wooded Foothills  
-1 Worldspine Wurm  
-```
+1 Triplicate Titan  
+```  

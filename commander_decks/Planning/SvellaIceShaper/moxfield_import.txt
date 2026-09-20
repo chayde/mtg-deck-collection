@@ -24,13 +24,13 @@ Deck
 1 Cream of the Crop
 1 Deflecting Swat
 1 Delighted Halfling
-1 Domri, Anarch of Bolas
+1 Thran Turbine
 1 Elvish Mystic
 1 Etali, Primal Conqueror
 1 Etali, Primal Storm
 1 Fabled Passage
 1 Garruk's Uprising
-1 Ghalta, Stampede Tyrant
+1 Blightsteel Colossus
 1 Goblin Anarchomancer
 1 Guardian Project
 1 Hellkite Tyrant
@@ -86,4 +86,4 @@ Deck
 1 Valakut Awakening
 1 Vaultborn Tyrant
 1 Wooded Foothills
-1 Worldspine Wurm
+1 Triplicate Titan

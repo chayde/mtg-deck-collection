@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Swap Matrix: TheGreatGoblin</title>
+<style>
+  :root {
+    --bg-main: #0d1117;
+    --bg-card: #161b22;
+    --border-color: #30363d;
+    --text-main: #c9d1d9;
+    --text-muted: #8b949e;
+    --out-red: #f85149;
+    --out-bg: rgba(248, 81, 73, 0.1);
+    --in-green: #3fb950;
+    --in-bg: rgba(63, 185, 80, 0.1);
+    --gold: #d29922;
+    --blue: #58a6ff;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background-color: var(--bg-main);
+    color: var(--text-main);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    padding: 24px;
+    line-height: 1.5;
+  }
+  .container { max-width: 1200px; margin: 0 auto; }
+  header {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 24px;
+  }
+  h1 { font-size: 24px; color: #fff; margin-bottom: 8px; }
+  .sub-header { color: var(--text-muted); font-size: 14px; margin-bottom: 16px; }
+  
+  /* Delta Dashboard Grid */
+  .dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 16px;
+    margin-top: 16px;
+  }
+  .metric-card {
+    background: #21262d;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    padding: 14px;
+  }
+  .metric-title { font-size: 12px; text-transform: uppercase; color: var(--text-muted); font-weight: 600; }
+  .metric-value { font-size: 20px; font-weight: bold; margin: 4px 0; }
+  .metric-sub { font-size: 12px; }
+  
+  .positive { color: var(--in-green); }
+  .negative { color: var(--out-red); }
+  .critical { color: var(--out-red); font-weight: bold; }
+  .neutral { color: var(--text-muted); }
+
+  /* Curve Section */
+  .curve-section {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 24px;
+  }
+  .curve-chart {
+    display: flex;
+    align-items: flex-end;
+    gap: 20px;
+    height: 140px;
+    padding-top: 20px;
+    border-bottom: 1px solid var(--border-color);
+  }
+  .curve-col {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+  }
+  .curve-bars-pair {
+    display: flex;
+    align-items: flex-end;
+    gap: 4px;
+    width: 36px;
+    height: 100px;
+  }
+  .bar { width: 16px; border-radius: 3px 3px 0 0; }
+  .bar-pre { background: #8b949e; opacity: 0.6; }
+  .bar-post { background: var(--blue); }
+  .curve-label { font-size: 12px; font-weight: 600; margin-top: 6px; }
+  .curve-counts { font-size: 10px; color: var(--text-muted); }
+
+  /* Rules Watchdog */
+  .rules-section {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 24px;
+  }
+  .rules-title { font-size: 16px; font-weight: bold; margin-bottom: 12px; display: flex; align-items: center; gap: 8px; }
+  .rule-item {
+    padding: 10px 14px;
+    border-radius: 6px;
+    margin-bottom: 8px;
+    font-size: 13px;
+    border: 1px solid transparent;
+  }
+  .rule-item.critical { background: rgba(248, 81, 73, 0.15); border-color: var(--out-red); }
+  .rule-item.warning { background: rgba(210, 153, 34, 0.15); border-color: var(--gold); }
+  .rule-item.info { background: rgba(88, 166, 255, 0.1); border-color: var(--blue); }
+  .rule-badge {
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-right: 6px;
+  }
+  .rule-badge.critical { background: var(--out-red); color: #fff; }
+  .rule-badge.warning { background: var(--gold); color: #000; }
+  .rule-badge.info { background: var(--blue); color: #000; }
+
+  /* Swap Rows */
+  .swap-row {
+    display: flex;
+    align-items: stretch;
+    gap: 16px;
+    margin-bottom: 20px;
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 16px;
+  }
+  .card-column { flex: 1; display: flex; flex-direction: column; }
+  .col-header {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    padding: 4px 8px;
+    border-radius: 4px;
+    margin-bottom: 12px;
+    display: inline-block;
+    align-self: flex-start;
+  }
+  .badge-out { background: var(--out-bg); color: var(--out-red); border: 1px solid var(--out-red); }
+  .badge-in { background: var(--in-bg); color: var(--in-green); border: 1px solid var(--in-green); }
+  
+  .card-card {
+    display: flex;
+    gap: 16px;
+    flex: 1;
+  }
+  .img-wrap {
+    width: 140px;
+    flex-shrink: 0;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+    transition: transform 0.2s ease;
+  }
+  .img-wrap:hover {
+    transform: scale(1.08);
+    z-index: 10;
+  }
+  .img-wrap img { width: 100%; display: block; border-radius: 6px; }
+  .card-info { flex: 1; }
+  .card-title {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .card-title a { color: #fff; text-decoration: none; }
+  .card-title a:hover { text-decoration: underline; color: var(--blue); }
+  .mana-cost { font-family: monospace; font-size: 14px; color: var(--gold); }
+  .type-line { font-size: 12px; color: var(--text-muted); margin-bottom: 8px; }
+  .oracle-box {
+    background: #0d1117;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    padding: 8px 10px;
+    font-size: 12px;
+    color: #e6edf3;
+    max-height: 110px;
+    overflow-y: auto;
+  }
+  .rationale-tag {
+    margin-top: 8px;
+    font-size: 12px;
+    background: rgba(88, 166, 255, 0.1);
+    border-left: 3px solid var(--blue);
+    padding: 6px 8px;
+    border-radius: 0 4px 4px 0;
+  }
+  .swap-arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    color: var(--text-muted);
+    padding: 0 8px;
+  }
+
+  @media (max-width: 850px) {
+    .swap-row { flex-direction: column; }
+    .swap-arrow { transform: rotate(90deg); margin: 8px 0; }
+    .card-card { flex-direction: column; }
+    .img-wrap { width: 180px; margin: 0 auto; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <h1>Visual Swap Matrix — TheGreatGoblin</h1>
+    <div class="sub-header">
+      Commander: <strong>The Great Goblin</strong> | Target Bracket: <strong>Bracket 3</strong> | 
+      Generated: <strong>2026-09-18 17:26:11</strong>
+    </div>
+    <div class="rationale-tag"><strong>Proposal Logic:</strong> Optimization and deck refinement</div>
+
+    <div class="dashboard-grid">
+      <div class="metric-card">
+        <div class="metric-title">Average CMC (Nonland)</div>
+        <div class="metric-value negative">0.00 ➔ 2.00</div>
+        <div class="metric-sub">Delta: +2.00</div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-title">Game Changers (Bracket 3)</div>
+        <div class="metric-value positive">0 / 3</div>
+        <div class="metric-sub">Status: PASS (Pre: 0)</div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-title">Deck Size & Balance</div>
+        <div class="metric-value">5 Cards</div>
+        <div class="metric-sub">Creatures: 0➔3 | Lands: 1</div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-title">Est. Market Value Impact</div>
+        <div class="metric-value">$4.34</div>
+        <div class="metric-sub">Delta: +$4.34</div>
+      </div>
+    </div>
+  </header>
+
+  <div class="rules-section">
+    <div class="rules-title">🛡️ Rules & Synergy Watchdog</div>
+    <div class='rule-item positive'>All clear! No rules traps or preference violations detected.</div>
+  </div>
+
+  <div class="curve-section">
+    <div class="rules-title">📊 Mana Curve Shift (Grey = Pre, Blue = Post)</div>
+    <div class="curve-chart">
+      
+        <div class="curve-col">
+            <div class="curve-bars-pair">
+                <div class="bar bar-pre" style="height: 0%;" title="Pre: 0"></div>
+                <div class="bar bar-post" style="height: 50%;" title="Post: 1"></div>
+            </div>
+            <div class="curve-label">0-1</div>
+            <div class="curve-counts">0➔1</div>
+        </div>
+        
+        <div class="curve-col">
+            <div class="curve-bars-pair">
+                <div class="bar bar-pre" style="height: 0%;" title="Pre: 0"></div>
+                <div class="bar bar-post" style="height: 100%;" title="Post: 2"></div>
+            </div>
+            <div class="curve-label">2</div>
+            <div class="curve-counts">0➔2</div>
+        </div>
+        
+        <div class="curve-col">
+            <div class="curve-bars-pair">
+                <div class="bar bar-pre" style="height: 0%;" title="Pre: 0"></div>
+                <div class="bar bar-post" style="height: 50%;" title="Post: 1"></div>
+            </div>
+            <div class="curve-label">3</div>
+            <div class="curve-counts">0➔1</div>
+        </div>
+        
+        <div class="curve-col">
+            <div class="curve-bars-pair">
+                <div class="bar bar-pre" style="height: 0%;" title="Pre: 0"></div>
+                <div class="bar bar-post" style="height: 0%;" title="Post: 0"></div>
+            </div>
+            <div class="curve-label">4</div>
+            <div class="curve-counts">0➔0</div>
+        </div>
+        
+        <div class="curve-col">
+            <div class="curve-bars-pair">
+                <div class="bar bar-pre" style="height: 0%;" title="Pre: 0"></div>
+                <div class="bar bar-post" style="height: 0%;" title="Post: 0"></div>
+            </div>
+            <div class="curve-label">5</div>
+            <div class="curve-counts">0➔0</div>
+        </div>
+        
+        <div class="curve-col">
+            <div class="curve-bars-pair">
+                <div class="bar bar-pre" style="height: 0%;" title="Pre: 0"></div>
+                <div class="bar bar-post" style="height: 0%;" title="Post: 0"></div>
+            </div>
+            <div class="curve-label">6+</div>
+            <div class="curve-counts">0➔0</div>
+        </div>
+        
+    </div>
+  </div>
+
+  <div class="swaps-container">
+    
+        <div class="swap-row">
+            <div class="card-column out-col">
+                <div class="col-header badge-out">OUT #1 — CUT</div>
+                <div class="card-card">
+                    <div class="img-wrap">
+                        <img src="https://cards.scryfall.io/normal/front/d/7/d7af1d6b-ff13-4886-a212-4a6e09153475.jpg?1783909568" alt="Shadowblood Ridge" loading="lazy" />
+                    </div>
+                    <div class="card-info">
+                        <div class="card-title">
+                            <a href="https://scryfall.com/card/dsc/296/shadowblood-ridge?utm_source=api" target="_blank">Shadowblood Ridge</a>
+                            <span class="mana-cost"></span>
+                        </div>
+                        <div class="type-line">Land — CMC 0</div>
+                        <div class="oracle-box">{1}, {T}: Add {B}{R}.</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swap-arrow">➔</div>
+
+            <div class="card-column in-col">
+                <div class="col-header badge-in">IN #1 — ADD</div>
+                <div class="card-card">
+                    <div class="img-wrap">
+                        <img src="https://cards.scryfall.io/normal/front/5/b/5b9e49ee-9103-4340-bf92-f888c722af47.jpg?1783918478" alt="Goblin Turncoat" loading="lazy" />
+                    </div>
+                    <div class="card-info">
+                        <div class="card-title">
+                            <a href="https://scryfall.com/card/dmr/87/goblin-turncoat?utm_source=api" target="_blank">Goblin Turncoat</a>
+                            <span class="mana-cost">{1}{B}</span>
+                        </div>
+                        <div class="type-line">Creature — Goblin Mercenary — CMC 2</div>
+                        <div class="oracle-box">Sacrifice a Goblin: Regenerate this creature.</div>
+                        <div class="rationale-tag"><strong>Role / Reason:</strong> Free Sacrifice Outlet</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="swap-row">
+            <div class="card-column out-col">
+                <div class="col-header badge-out">OUT #2 — CUT</div>
+                <div class="card-card">
+                    <div class="img-wrap">
+                        <img src="https://cards.scryfall.io/back.jpg" alt="Unknown" loading="lazy" />
+                    </div>
+                    <div class="card-info">
+                        <div class="card-title">
+                            <a href="https://scryfall.com/search?q=!"Unknown"" target="_blank">Unknown</a>
+                            <span class="mana-cost"></span>
+                        </div>
+                        <div class="type-line">Unknown — CMC 0</div>
+                        <div class="oracle-box"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swap-arrow">➔</div>
+
+            <div class="card-column in-col">
+                <div class="col-header badge-in">IN #2 — ADD</div>
+                <div class="card-card">
+                    <div class="img-wrap">
+                        <img src="https://cards.scryfall.io/normal/front/f/9/f9abe517-f601-4784-8d62-2350bd755146.jpg?1783908954" alt="Dragon Fodder" loading="lazy" />
+                    </div>
+                    <div class="card-info">
+                        <div class="card-title">
+                            <a href="https://scryfall.com/card/fdn/535/dragon-fodder?utm_source=api" target="_blank">Dragon Fodder</a>
+                            <span class="mana-cost">{1}{R}</span>
+                        </div>
+                        <div class="type-line">Sorcery — CMC 2</div>
+                        <div class="oracle-box">Create two 1/1 red Goblin creature tokens.</div>
+                        <div class="rationale-tag"><strong>Role / Reason:</strong> Token Maker</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="swap-row">
+            <div class="card-column out-col">
+                <div class="col-header badge-out">OUT #3 — CUT</div>
+                <div class="card-card">
+                    <div class="img-wrap">
+                        <img src="https://cards.scryfall.io/back.jpg" alt="Unknown" loading="lazy" />
+                    </div>
+                    <div class="card-info">
+                        <div class="card-title">
+                            <a href="https://scryfall.com/search?q=!"Unknown"" target="_blank">Unknown</a>
+                            <span class="mana-cost"></span>
+                        </div>
+                        <div class="type-line">Unknown — CMC 0</div>
+                        <div class="oracle-box"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swap-arrow">➔</div>
+
+            <div class="card-column in-col">
+                <div class="col-header badge-in">IN #3 — ADD</div>
+                <div class="card-card">
+                    <div class="img-wrap">
+                        <img src="https://cards.scryfall.io/normal/front/f/4/f458ae68-5cda-4c40-a348-47b4196fba02.jpg?1783903780" alt="Woe Strider" loading="lazy" />
+                    </div>
+                    <div class="card-info">
+                        <div class="card-title">
+                            <a href="https://scryfall.com/card/soc/231/woe-strider?utm_source=api" target="_blank">Woe Strider</a>
+                            <span class="mana-cost">{2}{B}</span>
+                        </div>
+                        <div class="type-line">Creature — Horror — CMC 3</div>
+                        <div class="oracle-box">When this creature enters, create a 0/1 white Goat creature token.<br>Sacrifice another creature: Scry 1.<br>Escape—{3}{B}{B}, Exile four other cards from your graveyard. (You may cast this card from your graveyard for its escape cost.)<br>This creature escapes with two +1/+1 counters on it.</div>
+                        <div class="rationale-tag"><strong>Role / Reason:</strong> Free Sacrifice Engine</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="swap-row">
+            <div class="card-column out-col">
+                <div class="col-header badge-out">OUT #4 — CUT</div>
+                <div class="card-card">
+                    <div class="img-wrap">
+                        <img src="https://cards.scryfall.io/back.jpg" alt="Unknown" loading="lazy" />
+                    </div>
+                    <div class="card-info">
+                        <div class="card-title">
+                            <a href="https://scryfall.com/search?q=!"Unknown"" target="_blank">Unknown</a>
+                            <span class="mana-cost"></span>
+                        </div>
+                        <div class="type-line">Unknown — CMC 0</div>
+                        <div class="oracle-box"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swap-arrow">➔</div>
+
+            <div class="card-column in-col">
+                <div class="col-header badge-in">IN #4 — ADD</div>
+                <div class="card-card">
+                    <div class="img-wrap">
+                        <img src="https://cards.scryfall.io/normal/front/c/f/cf20cfd7-81f4-423c-a662-c4b6676edfdd.jpg?1783921890" alt="Goblin Banneret" loading="lazy" />
+                    </div>
+                    <div class="card-info">
+                        <div class="card-title">
+                            <a href="https://scryfall.com/card/2x2/110/goblin-banneret?utm_source=api" target="_blank">Goblin Banneret</a>
+                            <span class="mana-cost">{R}</span>
+                        </div>
+                        <div class="type-line">Creature — Goblin Soldier — CMC 1</div>
+                        <div class="oracle-box">Mentor (Whenever this creature attacks, put a +1/+1 counter on target attacking creature with lesser power.)<br>{1}{R}: This creature gets +2/+0 until end of turn.</div>
+                        <div class="rationale-tag"><strong>Role / Reason:</strong> Mentor Counter Enabler</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="swap-row">
+            <div class="card-column out-col">
+                <div class="col-header badge-out">OUT #5 — CUT</div>
+                <div class="card-card">
+                    <div class="img-wrap">
+                        <img src="https://cards.scryfall.io/back.jpg" alt="Unknown" loading="lazy" />
+                    </div>
+                    <div class="card-info">
+                        <div class="card-title">
+                            <a href="https://scryfall.com/search?q=!"Unknown"" target="_blank">Unknown</a>
+                            <span class="mana-cost"></span>
+                        </div>
+                        <div class="type-line">Unknown — CMC 0</div>
+                        <div class="oracle-box"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swap-arrow">➔</div>
+
+            <div class="card-column in-col">
+                <div class="col-header badge-in">IN #5 — ADD</div>
+                <div class="card-card">
+                    <div class="img-wrap">
+                        <img src="https://cards.scryfall.io/normal/front/6/5/658cfcb7-81b7-48c6-9dd2-1663d06108cf.jpg?1783910785" alt="Fountainport" loading="lazy" />
+                    </div>
+                    <div class="card-info">
+                        <div class="card-title">
+                            <a href="https://scryfall.com/card/blb/253/fountainport?utm_source=api" target="_blank">Fountainport</a>
+                            <span class="mana-cost"></span>
+                        </div>
+                        <div class="type-line">Land — CMC 0</div>
+                        <div class="oracle-box">{T}: Add {C}.<br>{2}, {T}, Sacrifice a token: Draw a card.<br>{3}, {T}, Pay 1 life: Create a 1/1 blue Fish creature token.<br>{4}, {T}: Create a Treasure token.</div>
+                        <div class="rationale-tag"><strong>Role / Reason:</strong> Utility Land</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+  </div>
+</div>
+</body>
+</html>

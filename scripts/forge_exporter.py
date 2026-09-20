@@ -86,12 +86,6 @@ def export_to_forge(deck_data, output_path):
     if deck_data['commanders']:
         lines.append("Deck Type=Commander")
 
-    # [Commander] section
-    if deck_data['commanders']:
-        lines.append("[Commander]")
-        for c in deck_data['commanders']:
-            lines.append(c)
-
     # [Main] section
     if deck_data['main']:
         lines.append("[Main]")
@@ -102,6 +96,12 @@ def export_to_forge(deck_data, output_path):
     if deck_data['sideboard']:
         lines.append("[Sideboard]")
         for c in deck_data['sideboard']:
+            lines.append(c)
+
+    # [Commander] section (at bottom)
+    if deck_data['commanders']:
+        lines.append("[Commander]")
+        for c in deck_data['commanders']:
             lines.append(c)
 
     try:

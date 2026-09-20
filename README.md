@@ -15,6 +15,9 @@ This repository manages deck lists, analysis, and upgrade plans for both Paper M
 
 ### 📜 Root Files
 *   **`COMMANDER_DECKBUILDING_RULES.md`**: The source of truth for power level brackets and "Game Changers".
+*   **`COMMANDER_TEMPLATE.md`**: "New Era" baseline card ratios (38 lands, 10 ramp, 12 draw, 12 removal, 6 sweepers, 31 plan).
+*   **`DeckShapeReferenceGuide.md`**: Authoritative guide on internal deck geometry (Generators, Amplifiers, Payoffs, Advantage Pillars) and the Commander Subtraction Principle to engineer high-synergy Bracket 3/4 powerhouses.
+*   **`DeckShapeReferenceGuide.html`**: Interactive visual dashboard for Deck Shape Theory with shape diagrams, card galleries, and the 7-step deck auditor.
 *   **`FetchableLandsReferenceGuide.md`**: Authoritative reference guide ranking fetch lands, Revised duals, crowd lands, and all fetchable duals/triomes by tempo and downside for Commander.
 *   **`FetchableLandsReferenceGuide.html`**: Interactive dark-mode visual catalog of all 97 fetchable lands with card images, quick filters, and sticky navigation.
 *   **`BudgetCommanderLands.md`**: Comprehensive reference guide for budget Commander lands and mana base packages.
@@ -37,6 +40,7 @@ Decks physically built and ready for play.
 *   **The Ur-Dragon (Kibler's Flight):** 5-Color Dragon Tribal. Bracket 2 Mid-Budget version.
 *   **Henzie Blitz:** Jund Blitz & Value Reanimation Engine (Henzie "Toolbox" Torre). Bracket 3.
 *   **Rocco, Street Chef:** Naya Impulse Gastronomy & Food Tokens ("The Street Chef's Kitchen"). Bracket 3.
+*   **The Great Goblin:** Rakdos Goblins / +1/+1 Counters & Aristocrats Burn ("The Goblin King's Court").
 *   **Preconstructed Decks:** Original and modified PreCons (Ashling, Bello, Disa, Ulalek, etc.).
 
 #### 📁 `/External`
@@ -65,6 +69,7 @@ Decks under development, research, or being optimized.
 *   **Caesar, Legion's Emperor:** Mardu Tokens, Aristocrats & Burn Swarm Engine ("The Legion's Swarm"). Bracket 3.
 *   **Atraxa, Praetors' Voice:** Non-Red (WUBG) Superfriends, Proliferate Value Engine & Asymmetric Board Control ("The Superfriends Sovereign"). Bracket 3.
 *   **Ultron, Artificial Malevolence:** Colorless Artifacts, Token Duplication & Robot Swarm ("The Assembly Line"). Bracket 3.
+*   **Varina, Lich Queen:** Esper ({W}{U}{B}) Go-Wide Zombie Swarm / Card Velocity & Combat Overrun ("Esper Zombie Apocalypse"). Bracket 3.
 
 
 ### 🎮 `/arena_decks`
@@ -128,7 +133,8 @@ Each search overwrites `cache/recommend_session.json` with the current candidate
 | Script | Role | Status |
 |--------|------|--------|
 | `scripts/scryfall_lookup.py` | Named lookups, oracle text verification, batch lookups | **Unchanged — still primary** |
-| `scripts/swap_matrix.py` | Visual swap matrix, delta math, rules watchdog & atomic apply | **New — primary for deck swaps** |
+| `scripts/swap_matrix.py` | Visual swap matrix, delta math, rules watchdog & atomic apply (with auto Forge sync) | **New — primary for deck swaps** |
+| `scripts/sync_to_forge.py` | Direct MTG Forge `.dck` export & automated synchronization | **New — primary for Forge testing** |
 | `scripts/scryfall_recommend.py` | Card discovery via ID-based search | **Optional experiment** |
 | `scripts/manapool_price_deck.py` | Deck pricing via Manapool | **Unchanged** |
 

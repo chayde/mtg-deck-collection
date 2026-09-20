@@ -48,6 +48,11 @@ except ImportError:
     print("Error: Could not import lookup_named from scryfall_lookup.py", file=sys.stderr)
     sys.exit(1)
 
+try:
+    from sync_to_forge import sync_deck_to_forge
+except ImportError:
+    sync_deck_to_forge = None
+
 # --- Codified Preferences & Ban Lists ---
 FILTER_LANDS = {
     "shadowblood ridge", "desolate mire", "darkwater catacombs", "mossfire valley",
@@ -791,13 +796,15 @@ def generate_html_matrix(output_path: Path,
 def apply_triple_update(md_path: Path,
                         moxfield_path: Path,
                         swaps: List[Dict[str, Any]],
-                        reason: str) -> bool:
+                        reason: str,
+                        sync_forge: bool = True) -> bool:
     """
     Atomically updates:
       1. Main markdown card explanations & category counts
       2. Plain Text Copy/Paste section with strict GFM 2-space line breaks
       3. moxfield_import.txt with raw text
       4. Appends to ## Deck Changelog
+      5. Synchronizes updated deck list to MTG Forge (.dck)
     """
     if not md_path or not md_path.exists():
         print(f"Error: Markdown deck file not found at {md_path}", file=sys.stderr)
@@ -892,6 +899,16 @@ def apply_triple_update(md_path: Path,
     print(f"[apply] Successfully executed Triple Update!")
     print(f"        Updated markdown: {md_path}")
     print(f"        Updated Moxfield: {moxfield_path}")
+
+    # Synchronize to MTG Forge
+    if sync_forge and sync_deck_to_forge:
+        deck_dir = md_path.parent if md_path else moxfield_path.parent
+        forge_ok, forge_msg = sync_deck_to_forge(deck_dir)
+        if forge_ok:
+            print(f"        Updated Forge:    {forge_msg}")
+        else:
+            print(f"        [notice] Forge:   {forge_msg}")
+
     return True
 
 
@@ -906,6 +923,7 @@ def main():
     parser.add_argument("--no-images", action="store_true", help="Omit card images from markdown table output")
     parser.add_argument("--html", nargs="?", const="__AUTO__", default="__AUTO__", help="Path for HTML visual report")
     parser.add_argument("--apply", action="store_true", help="Atomically apply Triple-Update changes to files")
+    parser.add_argument("--no-forge", action="store_true", help="Skip synchronizing deck to MTG Forge upon --apply")
 
     args = parser.parse_args()
 
@@ -1031,7 +1049,7 @@ def main():
         if has_critical:
             print("\n[apply] BLOCKED: Cannot apply swaps due to CRITICAL rule violations (e.g. Color Identity).", file=sys.stderr)
             sys.exit(1)
-        apply_triple_update(md_path, moxfield_path, swaps, args.reason)
+        apply_triple_update(md_path, moxfield_path, swaps, args.reason, sync_forge=(not args.no_forge))
 
 
 if __name__ == "__main__":

@@ -1,6 +1,62 @@
 # Project History: MTG Deck Collection
 
-## 🗓️ September 2026: Henzie Blitz Refinement, Playtesting & The Necrobloom Inception
+## 🗓️ September 2026: Varina Zombie Apocalypse Inception, Henzie Blitz Refinement & Playtesting
+
+### 2026-09-20: MTG Forge Deck Serialization Format Fix ([Main] ➔ [Commander])
+*   **Root Cause Analysis:** Investigated an issue where MTG Forge dropped commanders or failed to assign the command zone during in-game deck import. Auditing native Forge deck exports (e.g., `Gamma Smash.dck`) confirmed that Forge's internal parser expects `[Main]` to be declared before `[Commander]` at the bottom of the file.
+*   **Script Fixes:**
+    *   Updated `scripts/sync_to_forge.py` (`serialize_forge_dck`) to write `[metadata]`, followed by `[Main]`, and placing `[Commander]` at the bottom of the file.
+    *   Updated `scripts/forge_exporter.py` (`export_to_forge`) to serialize `[Main]` and `[Sideboard]` before `[Commander]`.
+*   **Batch Re-Synchronization:** Executed `python scripts/sync_to_forge.py --all`, re-exporting all 33 Commander decks in `%APPDATA%\Forge\decks\commander\`. Verified on `VarinaLichQueen.dck`, `UrDragon.dck`, and `Gamma Smash.dck` that `[Commander]` is properly serialized at the bottom.
+
+### 2026-09-20: Varina, Lich Queen — 5-Card Video Tech Optimization & Reference Documentation
+*   **Video Deck Tech Integration:** Analyzed community deck tech video (*"Varina, Lich Queen | EDH Deck Tech"*). Rejected all infinite sacrifice loops (*Ashnod's Altar*, *Pitiless Plunderer*, *Gravecrawler*) in strict accordance with the non-aristocrats combat swarm doctrine, while adopting its premier combat, discard, and resilience tech:
+    *   **In (5):** *Reconnaissance* ({W}), *Bone Miser* ({4}{B}), *Containment Construct* ({2}), *Haunted One* ({2}{B}), *Lazotep Plating* ({1}{U}).
+    *   **Out (5):** *Fierce Guardianship* ({2}{U}), *Graveborn Muse* ({2}{B}{B}), *Bident of Thassa* ({2}{U}{U}), *Flawless Maneuver* ({2}{W}), *Frantic Search* ({2}{U}).
+*   **Synergy & Shape Rationale:**
+    *   *Reconnaissance* provides a {0}-mana combat shield (pulling blocked small zombies out of combat while keeping Varina's attack loot trigger) and untaps unblocked attackers at end of combat for pseudo-vigilance.
+    *   *Bone Miser* converts Varina's 4–8 discards into continuous 2/2 Zombies, {B}{B} burst mana, and card draw.
+    *   *Containment Construct* lets the pilot play cards discarded to Varina, transforming looting into raw card advantage.
+    *   *Haunted One* triggers on Varina's attack to grant all Zombies +2/+0 and Undying.
+    *   *Lazotep Plating* provides instant-speed team and player hexproof while generating a Zombie body.
+*   **Roadmap & Documentation:**
+    *   Moved *Fierce Guardianship* (Game Changer), *Flawless Maneuver*, and *Graveborn Muse* into `### 💡 High-Impact Tech to Consider` for future meta tuning.
+    *   Added dedicated `## 🔗 References & Research Sources` section documenting the Reddit thread (`u/lilianasJanitor`), the YouTube deck tech video, and the *Deck Shape Reference Guide*.
+*   **Validation & Benchmarking:**
+    *   **Triple Update & Forge Bridge:** Atomically applied across markdown, `moxfield_import.txt`, and MTG Forge (`VarinaLichQueen.dck`).
+    *   **Goldfish Benchmark:** 20-game simulation demonstrated that Gold Keeps surged from 38% to **49%** (7.00 avg hand size, 0% desperation keeps). Commander cast average improved to **Turn 4.4** (with 10 Turn 3 casts), and engine readiness accelerated to **Turn 4.9** (90% target window readiness), securing a decisive **PASS** for Bracket 3.
+
+### 2026-09-19: Deck Shape Theory & High-Synergy Architecture Reference Guides Created (`DeckShapeReferenceGuide.md` & `DeckShapeReferenceGuide.html`)
+*   **Video Analysis:** Conducted full, end-to-end strategic analysis of *"Turn Any Deck Into a Power House (by fixing it's shape)"* by Gauge (*Commander Challenge*).
+*   **Framework Codification:** Codified the foundational structural deckbuilding concepts into [`DeckShapeReferenceGuide.md`](DeckShapeReferenceGuide.md) and created an interactive visual dashboard in [`DeckShapeReferenceGuide.html`](DeckShapeReferenceGuide.html):
+    *   **The 3-Step Keystone Framework:** Established the sequential formula for proactive win conditions (Primary Mechanical Output $\rightarrow$ Mass Capitalization $\rightarrow$ Game Conversion).
+    *   **The 4 Functional Card Roles:** Formally defined Generators, Amplifiers, Payoffs, and Advantage Gainers with diagnostic tests.
+    *   **The Commander Subtraction Principle:** Established the architectural rule that having 100% access to a commander in the command zone requires reducing that exact category within the 99 to eliminate dead, redundant draws.
+    *   **The 4 Geometric Deck Shapes:** Mapped internal card distributions to Commander roles: Diamond (Commander = Generator), Inverted Triangle / T-Shape (Commander = Amplifier), Pointed Rectangle (Commander = Payoff), and Pillar-Shifted (Commander = Advantage Gainer).
+    *   **The Three Advantage Pillars via High-Synergy:** Demonstrated how replacing generic, high-cost staples ($50+ cards like *Sylvan Library*, *Old Gnawbone*, *Rhystic Study*) with $0.25–$2 High-Synergy Dig (*Quicksmith Genius*, *Sarinth Steelseeker*, *Heroes for Hire*), High-Synergy Mana Engines (*Inspiring Statuary*, *Night of the Sweets' Revenge*), and game-ending asymmetrical sweepers (*The Great Aurora*, *Reckless Endeavor*) makes decks faster, more consistent, and $150+ cheaper.
+    *   **Bracket Calibration & Pod Friction:** Codified goldfish velocity windows (T5–T6 in goldfish translating to high-Bracket 3 under real-world 4-player table friction).
+    *   **7-Step Deck Auditor Checklist:** Embedded a practical diagnostic tool for auditing and troubleshooting underperforming or clunky decks.
+*   **Repo & Guidelines Alignment:** Indexed in [`README.md`](README.md) and incorporated into [`GEMINI.md`](GEMINI.md) as the authoritative framework for customizing and deviating from standard ratios in `COMMANDER_TEMPLATE.md`.
+
+### 2026-09-19: Varina, Lich Queen — New Planning Deck Created (Bracket 3 Validated)
+*   **Deck Inception:** Scaffolded and fully documented brand new 100-card Esper ({W}{U}{B}) Go-Wide Zombie Swarm and Combat Overrun deck in [`commander_decks/Planning/VarinaLichQueen/varina_zombie_apocalypse.md`](commander_decks/Planning/VarinaLichQueen/varina_zombie_apocalypse.md) (`deck_status: main`).
+*   **Synergy Engine:** Features Varina's attack-triggered card velocity (*"draw X, discard X, gain X life"*) to filter through 30–50 cards per game, finding exponential token multipliers (*Anointed Procession*, *Mondrak, Glory Dominus*, *Necroduality*, *Tombstone Stairwell*, *Endless Ranks of the Dead*). Converts excess graveyard fuel into instant-speed 2/2 Zombie tokens at end of opponent turns. Solves the 2/2 blocker hurdle with permanent flying evasion (*Wonder* in graveyard, *Hordewing Skaab*), unblockable swampwalk (*Zombie Master* + *Urborg*), and game-ending alpha strikes (*Akroma's Will*).
+*   **User Constraints:** Strictly non-aristocrats (zero death/sacrifice loops); strictly zero filter lands and zero filter rocks/Signets.
+*   **Bracket & Game Changers:** Verified for **Bracket 3 (Upgraded Casual)** with **3 / 3 Game Changers** (*Field of the Dead*, *Teferi's Protection*, *Fierce Guardianship*). *Cyclonic Rift* and *Smothering Tithe* documented in the roadmap as potential upgrade pivots.
+*   **Forge & Goldfish Validation:** Synchronized to MTG Forge (`VarinaLichQueen.dck`). 20-game simulation benchmark achieved **100% commander cast rate (80/80, T4.9 avg)**, **0% Desperation Keeps (6.94 avg hand size, 38% Gold / 62% Silver)**, and **91% target window readiness (73/80 <= T7, T5.3 avg)**, earning an unambiguous **PASS** for Bracket 3. Full report saved to [`commander_decks/Planning/VarinaLichQueen/goldfish_report.html`](commander_decks/Planning/VarinaLichQueen/goldfish_report.html) and logged to [`commander_decks/Planning/VarinaLichQueen/GOLDFISH_LOG.md`](commander_decks/Planning/VarinaLichQueen/GOLDFISH_LOG.md).
+
+### 2026-09-15: MTG Forge Automated Deck Bridge & Swap Matrix Integration (`scripts/sync_to_forge.py`)
+*   **Upstream Engine Analysis:** Analyzed upstream [Card-Forge/forge](https://github.com/Card-Forge/forge) source code (`forge.deck.io.DeckStorage`, `DeckSerializer`, `CardPool`, and `CardDb`). Confirmed the native `.dck` format specifications (`[metadata]`, `[Commander]`, `[Main]`) and verified that Forge seamlessly resolves plain card names to default/preferred artwork without requiring manual set or collector numbers.
+*   **Automated Forge Synchronizer (`scripts/sync_to_forge.py`):**
+    *   Directly serializes any Commander deck in the repository into Forge's local deck library (`%APPDATA%\Forge\decks\commander\`).
+    *   Maintains an intelligent alias map resolving repository folder names (e.g. `UrDragonKibler`, `KarametraAngels`, `TheHive`) to existing Forge `.dck` files to prevent duplicate entries in Forge's deck selector.
+    *   Supports single-deck sync (`python scripts/sync_to_forge.py "<deck>"`) and batch repository sync (`--all`).
+    *   Successfully batch-synchronized all 31 Commander decks into the user's active Forge installation.
+*   **Augmented Swap Matrix Pipeline (`scripts/swap_matrix.py`):**
+    *   Integrated Forge synchronization directly into `swap_matrix.py ... --apply`.
+    *   Applying swaps now updates the main Markdown explanations, Plain Text 2-space copy/paste section, `moxfield_import.txt`, `## Deck Changelog`, AND writes directly to the local MTG Forge `.dck` file in a single atomic transaction.
+    *   Added `--no-forge` flag for opting out when needed.
+*   **Workflow Codification:** Updated `GEMINI.md`, `CLAUDE.md`, and `README.md` to reflect the updated Triple-Update + Forge Sync protocol (Phase 3).
 
 ### 2026-09-15: Visual Swap Matrix & Mechanics Pre-Check Utility Created (`scripts/swap_matrix.py`)
 *   **Tool Architecture:** Designed and implemented [`scripts/swap_matrix.py`](scripts/swap_matrix.py) to eliminate card evaluation friction, prevent subtle MTG rules traps, and automate the Triple-Update transaction across all deck files.
