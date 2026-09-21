@@ -29,8 +29,10 @@ import os
 import sys
 import re
 import argparse
+import zipfile
+import unicodedata
 from pathlib import Path
-from typing import List, Tuple, Optional, Dict, Any
+from typing import List, Tuple, Optional, Dict, Any, Set
 
 # Ensure UTF-8 output on Windows consoles
 if hasattr(sys.stdout, "reconfigure"):
@@ -144,14 +146,158 @@ def resolve_deck_files(target: Path) -> Tuple[Optional[Path], Optional[Path], Pa
         return None, None, target
 
 
-def parse_deck_list(moxfield_path: Optional[Path], md_path: Optional[Path]) -> Tuple[List[str], List[str]]:
+_FORGE_CARD_CACHE: Optional[Tuple[Set[str], Dict[str, str]]] = None
+
+
+def strip_accents(s: str) -> str:
+    """Removes diacritics/accents from a string (e.g. 'Andúril' -> 'Anduril')."""
+    return ''.join(c for c in unicodedata.normalize('NFD', s) if unicodedata.category(c) != 'Mn')
+
+
+def find_forge_cardsfolder_zip() -> Optional[Path]:
     """
-    Extracts commander list and mainboard list.
-    Prefers moxfield_import.txt, falls back to plain text section in markdown file.
-    Returns: (commanders, mainboard)
+    Locates Forge's cardsfolder.zip containing official card definitions.
+    """
+    env_forge = os.environ.get("FORGE_INSTALL_DIR") or os.environ.get("FORGE_DIR")
+    if env_forge:
+        p = Path(env_forge) / "res" / "cardsfolder" / "cardsfolder.zip"
+        if p.exists():
+            return p
+
+    candidates = [
+        Path("C:/forge-mtg/res/cardsfolder/cardsfolder.zip"),
+        Path("C:/forge/res/cardsfolder/cardsfolder.zip"),
+        Path.home() / "forge-mtg" / "res" / "cardsfolder" / "cardsfolder.zip",
+        Path.home() / "forge" / "res" / "cardsfolder" / "cardsfolder.zip",
+        Path.home() / "AppData" / "Local" / "Forge" / "res" / "cardsfolder" / "cardsfolder.zip",
+    ]
+    for c in candidates:
+        if c.exists():
+            return c
+    return None
+
+
+def get_forge_card_db() -> Tuple[Set[str], Dict[str, str]]:
+    """
+    Loads all valid card names from Forge's cardsfolder.zip into memory.
+    Returns:
+      (exact_names_set, lookup_dict) where lookup_dict maps lowercased and
+      accent-stripped names to Forge's primary face name.
+    """
+    global _FORGE_CARD_CACHE
+    if _FORGE_CARD_CACHE is not None:
+        return _FORGE_CARD_CACHE
+
+    exact_names: Set[str] = set()
+    lookup: Dict[str, str] = {}
+
+    zip_path = find_forge_cardsfolder_zip()
+    if zip_path and zip_path.exists():
+        try:
+            with zipfile.ZipFile(zip_path) as z:
+                for fname in z.namelist():
+                    if fname.endswith('.txt'):
+                        try:
+                            content = z.read(fname).decode('utf-8', errors='ignore')
+                            lines = content.splitlines()
+                            primary_name = None
+                            for line in lines:
+                                if line.startswith('Name:'):
+                                    name = line[5:].strip()
+                                    if primary_name is None:
+                                        primary_name = name
+                                    exact_names.add(name)
+                                    lookup[name.lower()] = primary_name
+                                    lookup[strip_accents(name.lower())] = primary_name
+                        except Exception:
+                            pass
+        except Exception:
+            pass
+
+    _FORGE_CARD_CACHE = (exact_names, lookup)
+    return _FORGE_CARD_CACHE
+
+
+def sanitize_card_for_forge(
+    raw_card_line: str,
+    lookup: Optional[Dict[str, str]] = None
+) -> Tuple[Optional[str], Optional[str]]:
+    """
+    Sanitizes a raw card line (e.g. '1 Norman Osborn / Green Goblin *CMDR*') into
+    a Forge-compatible card line (e.g. '1 Norman Osborn').
+    Returns (formatted_card_line, warning_message).
+    Returns (None, None) if the card should be skipped (e.g. tokens, emblems).
+    """
+    cleaned_line = re.sub(r'\s*\*[A-Za-z0-9_-]+\*', '', raw_card_line).strip()
+    m = re.match(r'^(\d+\s+)?(.*)$', cleaned_line)
+    if not m:
+        return None, None
+
+    qty = m.group(1) or "1 "
+    card_name = m.group(2).strip()
+    if not card_name:
+        return None, None
+
+    # Filter out tokens, emblems, and auxiliary objects not in the 99/Commander
+    lower = card_name.lower()
+    if 'token' in lower or 'emblem' in lower or lower == 'the ring tempts you':
+        return None, None
+
+    # Preserve edition / collector number suffix if present (e.g. "Card|SET|[123]")
+    if '|' in card_name:
+        parts = card_name.split('|', 1)
+        base_name = parts[0].strip()
+        edition_suffix = "|" + parts[1]
+    else:
+        base_name = card_name
+        edition_suffix = ""
+
+    warning: Optional[str] = None
+    target_name = base_name
+
+    if lookup:
+        base_lower = base_name.lower()
+        base_unaccented = strip_accents(base_lower)
+
+        if base_lower in lookup:
+            target_name = lookup[base_lower]
+        elif base_unaccented in lookup:
+            target_name = lookup[base_unaccented]
+        elif '/' in base_name:
+            # Multi-faced cards (DFCs, MDFCs, split cards, adventures)
+            # In Forge, these cards are indexed strictly by their primary front face
+            front_face = re.split(r'\s+[/]+\s+', base_name)[0].strip()
+            front_lower = front_face.lower()
+            front_unaccented = strip_accents(front_lower)
+            if front_lower in lookup:
+                target_name = lookup[front_lower]
+            elif front_unaccented in lookup:
+                target_name = lookup[front_unaccented]
+            else:
+                target_name = front_face
+                warning = f"Card '{base_name}' front-face '{front_face}' not found in Forge database."
+        else:
+            warning = f"Card '{base_name}' not found in Forge database."
+    else:
+        # Fallback if Forge cardsfolder is unavailable: split on ' / ' or ' // '
+        if '/' in base_name:
+            target_name = re.split(r'\s+[/]+\s+', base_name)[0].strip()
+
+    return f"{qty.strip()} {target_name}{edition_suffix}", warning
+
+
+def parse_deck_list(
+    moxfield_path: Optional[Path],
+    md_path: Optional[Path],
+    lookup: Optional[Dict[str, str]] = None
+) -> Tuple[List[str], List[str], List[str]]:
+    """
+    Extracts commander list and mainboard list, sanitizing cards for Forge.
+    Returns: (commanders, mainboard, warnings)
     """
     commanders: List[str] = []
     mainboard: List[str] = []
+    warnings: List[str] = []
 
     if moxfield_path and moxfield_path.exists():
         content = moxfield_path.read_text(encoding="utf-8")
@@ -175,24 +321,19 @@ def parse_deck_list(moxfield_path: Optional[Path], md_path: Optional[Path]) -> T
 
             # Check for *CMDR* tag on card line
             is_cmdr_line = "*cmdr*" in line.lower()
+            formatted, warn = sanitize_card_for_forge(line, lookup=lookup)
+            if warn:
+                warnings.append(warn)
+            if not formatted:
+                continue
 
-            # Clean line: strip Moxfield tags like *CMDR*, *F*, *E*, etc.
-            cleaned_line = re.sub(r'\s*\*[A-Za-z0-9_-]+\*', '', line).strip()
-            # Ensure quantity prefix
-            m = re.match(r'^(\d+\s+)?(.*)$', cleaned_line)
-            if m:
-                qty = m.group(1) or "1 "
-                card_name = m.group(2).strip()
-                if not card_name:
-                    continue
-                formatted = f"{qty.strip()} {card_name}"
-                if current_section == "commander" or is_cmdr_line:
-                    commanders.append(formatted)
-                elif current_section == "main":
-                    mainboard.append(formatted)
+            if current_section == "commander" or is_cmdr_line:
+                commanders.append(formatted)
+            elif current_section == "main":
+                mainboard.append(formatted)
 
         if commanders or mainboard:
-            return commanders, mainboard
+            return commanders, mainboard, warnings
 
     # Fallback to Markdown Plain Text Copy/Paste section
     if md_path and md_path.exists():
@@ -204,27 +345,31 @@ def parse_deck_list(moxfield_path: Optional[Path], md_path: Optional[Path]) -> T
                 line = line.strip()
                 if not line or line.startswith("#") or line.startswith("```"):
                     continue
-                m = re.match(r'^(\d+\s+)?(.*)$', line)
-                if m:
-                    qty = m.group(1) or "1 "
-                    card_name = m.group(2).strip()
-                    if not card_name:
-                        continue
-                    mainboard.append(f"{qty.strip()} {card_name}")
+                formatted, warn = sanitize_card_for_forge(line, lookup=lookup)
+                if warn:
+                    warnings.append(warn)
+                if not formatted:
+                    continue
+                mainboard.append(formatted)
 
         # Try to identify commander from markdown header or frontmatter
         cmdr_match = re.search(r'#\s+([^—\n]+?)(?:\s+—|\n)', content)
         if cmdr_match:
-            cmdr_name = cmdr_match.group(1).strip()
+            raw_cmdr_name = cmdr_match.group(1).strip()
+            formatted_cmdr, warn = sanitize_card_for_forge(f"1 {raw_cmdr_name}", lookup=lookup)
+            if warn:
+                warnings.append(warn)
+            clean_cmdr = formatted_cmdr or f"1 {raw_cmdr_name}"
             # If commander was put in mainboard, move it to commanders
+            cmdr_base = re.sub(r'^\d+\s+', '', clean_cmdr).lower()
             for idx, c in enumerate(mainboard):
-                if cmdr_name.lower() in c.lower():
+                if cmdr_base in c.lower():
                     commanders.append(mainboard.pop(idx))
                     break
             if not commanders:
-                commanders.append(f"1 {cmdr_name}")
+                commanders.append(clean_cmdr)
 
-    return commanders, mainboard
+    return commanders, mainboard, warnings
 
 
 def determine_forge_deck_name(deck_dir: Path, forge_dir: Path) -> str:
@@ -296,7 +441,8 @@ def sync_deck_to_forge(
     if not target_forge_dir:
         return False, "Could not determine MTG Forge commander directory (%APPDATA%\\Forge\\decks\\commander\\)."
 
-    commanders, mainboard = parse_deck_list(moxfield_path, md_path)
+    _, lookup = get_forge_card_db()
+    commanders, mainboard, warnings = parse_deck_list(moxfield_path, md_path, lookup=lookup)
     if not commanders and not mainboard:
         return False, f"No cards could be parsed from deck at '{deck_dir}'."
 
@@ -306,18 +452,20 @@ def sync_deck_to_forge(
 
     total_cards = len(commanders) + sum(int(re.match(r'^(\d+)', c).group(1)) if re.match(r'^(\d+)', c) else 1 for c in mainboard)
 
+    warn_str = f" (Warnings: {'; '.join(warnings)})" if warnings else ""
+
     if dry_run:
         msg = (
             f"[dry-run] Would write {out_file}\n"
             f"          Deck Name: '{deck_name}'\n"
-            f"          Commanders: {len(commanders)} | Mainboard: {len(mainboard)} | Total Cards: {total_cards}"
+            f"          Commanders: {len(commanders)} | Mainboard: {len(mainboard)} | Total Cards: {total_cards}{warn_str}"
         )
         return True, msg
 
     try:
         target_forge_dir.mkdir(parents=True, exist_ok=True)
         out_file.write_text(dck_content, encoding="utf-8")
-        msg = f"Synced '{deck_name}' ({total_cards} cards) ➔ {out_file}"
+        msg = f"Synced '{deck_name}' ({total_cards} cards) ➔ {out_file}{warn_str}"
         return True, msg
     except Exception as e:
         return False, f"Failed to write Forge deck file '{out_file}': {e}"

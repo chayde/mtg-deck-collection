@@ -249,5 +249,5 @@ SIDEBOARD:
 1 Beast Whisperer  
 1 Aphetto Dredging  
 1 An Offer You Can't Refuse  
-1 Amoeboid Changling  
+1 Amoeboid Changeling  
 1 Virulent Sliver  

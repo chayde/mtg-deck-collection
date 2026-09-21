@@ -2,6 +2,16 @@
 
 ## 🗓️ September 2026: Varina Zombie Apocalypse Inception, Henzie Blitz Refinement & Playtesting
 
+### 2026-09-21: MTG Forge Deck Synchronizer — Multi-Faced Card & Crash Fix (`scripts/sync_to_forge.py`)
+*   **Root Cause Diagnosis:** Investigated bug where certain decks (e.g. `Green Goblin`, `Gamma Smash`) showed no commander in Forge, and attempting to add cards in the Forge Deck Editor triggered `java.lang.NullPointerException: element cannot be mapped to a null key` in `ACEditorBase.getAllowedAdditions`. Confirmed that Forge indexes multi-faced cards (DFCs, MDFCs, split cards, adventures) strictly by their primary front face name; composite strings with slashes (such as `Norman Osborn / Green Goblin`, `Bruce Banner // The Incredible Hulk`, `Wear // Tear`) fail lookup and create "unsupported card" instances whose `normalizedName` is null. Java 8's `Collectors.groupingBy()` in Forge's deck editor explicitly forbids null keys, crashing the UI thread.
+*   **Synchronizer Engine Enhancement:**
+    *   Added Forge card database auto-discovery and in-memory indexing (`cardsfolder.zip`), parsing all 34,500+ valid Forge card names in ~0.5s.
+    *   Implemented `sanitize_card_for_forge()` to strip Moxfield tags/collector numbers, automatically resolve slash cards to their front face name, normalize diacritics/accents (e.g. `Andúril, Flame of the West`), and filter out non-deck auxiliary entries (e.g. tokens and emblems).
+*   **Deck File Typo Cleanup:**
+    *   Corrected `Amoeboid Changling` -> `Amoeboid Changeling` across `TheHive-Slivers.md`, `README.md`, and `moxfield_import.txt`.
+    *   Removed `The Ring // The Ring Tempts You (Emblem Token)` from `commander_decks/Owned/SauronGrixis/moxfield_import.txt`.
+*   **Batch Re-Synchronization & Verification:** Executed `python scripts/sync_to_forge.py --all`, re-exporting all 32 Commander decks to `%APPDATA%\Forge\decks\commander\`. Verified 100% card recognition across all decks in Forge with 0 unsupported cards or empty commanders.
+
 ### 2026-09-21: The Necrobloom — Abzan Go-Wide Zombie Apocalypse Reboot (Bracket 3 Validated)
 *   **Archetype & Commander Pivot:** Following real-world playtest feedback where both Varina and Marneus struggled against focused removal and empty-hand draw starvation, conducted a multi-agent research mission investigating online resources for **The Necrobloom** ({1}{W}{B}{G}). Analyzed two YouTube video guides with Moxfield decklists (Panzer_MTG's `c-QIksX0ykquTy2BFUUfOg` and MTGSpencer's `F_2PYj4gdUeEJt1VPP6x3Q`), EDHREC live data across Bracket 3 (2,475 decks), `lands-matter` (3,560 decks), and `tokens` (1,351 decks), and r/EDH pilot discussions.
 *   **Retirement & Cleanup:** Cleanly deleted `commander_decks/Planning/VarinaLichQueen/` and `commander_decks/Planning/MarneusCalgar/` from the repository, removed `VarinaLichQueen.dck` and `MarneusCalgar.dck` from `%APPDATA%\Forge\decks\commander\`, and updated `README.md`.
