@@ -2,180 +2,199 @@
 deck_status: main
 ---
 
-# Deck Guide: The Necrobloom — "Field of the Dead Landfall Overrun"
+# Deck Guide: The Necrobloom — "Abzan Zombie Apocalypse"
 
-![The Necrobloom](https://cards.scryfall.io/normal/front/8/f/8fcf68cf-0dac-4b29-90d5-c18c685182e6.jpg?1717012753)
+![The Necrobloom](https://cards.scryfall.io/normal/front/8/f/8fcf68cf-0dac-4b29-90d5-c18c685182e6.jpg?1783911249)
 
-## Commander Strategy
-**The Necrobloom** ({1}{W}{B}{G}) serves as a literal **Field of the Dead in the Command Zone**, backed by graveyard insurance through its global land-Dredge ability. Rather than aggressively milling nonland spells into the graveyard and fighting self-inflicted card disadvantage, this deck operates as a pure **Landfall & Land Acceleration Engine**. 
+## 🧟 Commander Strategy
+
+**The Necrobloom** ({1}{W}{B}{G}) is a relentless 2/7 Plant powerhouse that transforms the classic "Lands Matter" archetype into an unstoppable **Go-Wide Zombie Apocalypse**. By serving as a **Field of the Dead in the Command Zone**, backed by universal **Dredge 2** on all land cards in the graveyard, this deck solves the fundamental failure points of previous Zombie builds:
+
+1. **No More Empty-Hand Looting Traps:** Unlike Varina, looting ($N \rightarrow N$) does not replace lost cards. The Necrobloom relies on raw, token-fed card engines: [Skullclamp](https://scryfall.com/search?q=!"Skullclamp") (equipping 0/1 Plants to draw 2 for {1}), [Idol of Oblivion](https://scryfall.com/search?q=!"Idol+of+Oblivion") (free draw every turn on token entry), [Braids, Arisen Nightmare](https://scryfall.com/search?q=!"Braids,+Arisen+Nightmare") (sacrificing tokens or dredged lands to draw 2–3 cards every end step), [Cryptbreaker](https://scryfall.com/search?q=!"Cryptbreaker") (tapping Zombies to draw cards at instant speed), [Black Market Connections](https://scryfall.com/search?q=!"Black+Market+Connections"), and [Shamanic Revelation](https://scryfall.com/search?q=!"Shamanic+Revelation") (drawing 10–15 cards off the Zombie horde).
+2. **Zero-Mana Zombie Spigots:** Creating Zombie tokens does not cost 2 mana per token. Once 7 differently named lands are controlled, **every single land drop creates a 2/2 black Zombie creature token for free**.
+3. **Double Zombie Stacking with Field of the Dead:** Stacking The Necrobloom with the actual [Field of the Dead](https://scryfall.com/search?q=!"Field+of+the+Dead") yields **two 2/2 Zombies per land drop (4 power per land)**. With token doublers like [Anointed Procession](https://scryfall.com/search?q=!"Anointed+Procession") or [Mondrak, Glory Dominus](https://scryfall.com/search?q=!"Mondrak,+Glory+Dominus"), each land drop vomits **four 2/2 Zombies** (8 power)!
+4. **Resilient Green Ramp vs. Fragile Artifact Rocks:** Rather than fragile artifact mana rocks that get blown out by wipes, Green land ramp ([Nature's Lore](https://scryfall.com/search?q=!"Nature's+Lore"), [Three Visits](https://scryfall.com/search?q=!"Three+Visits"), [Farseek](https://scryfall.com/search?q=!"Farseek"), [Sakura-Tribe Elder](https://scryfall.com/search?q=!"Sakura-Tribe+Elder")) puts permanent lands onto the battlefield that opponents rarely wipe.
+
+---
 
 ### 🏆 Core Win Conditions
-1. **The Double Zombie Swarm (Combat Overrun):** Once you control 7 differently named lands, The Necrobloom generates a 2/2 Zombie on every land drop. Stacked alongside the actual [Field of the Dead](https://scryfall.com/card/m20/247/field-of-the-dead?utm_source=api), each land drop creates **two 2/2 Zombies**. Resolving mass land reanimation spells ([Splendid Reclamation](https://scryfall.com/card/eoc/108/splendid-reclamation?utm_source=api), [Lumra, Bellow of the Woods](https://scryfall.com/card/blb/183/lumra-bellow-of-the-woods?utm_source=api), or [Scapeshift](https://scryfall.com/card/m19/201/scapeshift?utm_source=api)) puts 8–15 lands onto the battlefield at once, creating 16–30 Zombies (32–60 power) out of nowhere. We then untap or haste with [Craterhoof Behemoth](https://scryfall.com/card/tdm/138/craterhoof-behemoth?utm_source=api) or pump the team with [Felidar Retreat](https://scryfall.com/card/fdn/574/felidar-retreat?utm_source=api) to overrun the pod.
-2. **The Marit Lage Land Strike:** Supported by 4 land tutors ([Crop Rotation](https://scryfall.com/card/dmr/154/crop-rotation?utm_source=api), [Elvish Reclaimer](https://scryfall.com/card/m20/169/elvish-reclaimer?utm_source=api), [Knight of the Reliquary](https://scryfall.com/card/ima/203/knight-of-the-reliquary?utm_source=api), and [Urza's Cave](https://scryfall.com/card/mh3/234/urzas-cave?utm_source=api)), the deck can assemble the legendary combo of [Thespian's Stage](https://scryfall.com/card/2xm/327/thespians-stage?utm_source=api) and [Dark Depths](https://scryfall.com/card/dmr/244/dark-depths?utm_source=api). Paying {2} to copy Dark Depths causes the copy to enter with zero ice counters, immediately sacrificing it to create **Marit Lage: a 20/20 flying indestructible Avatar** that one-shots players through conventional blockers.
-3. **The Titania Elemental Army:** [Titania, Protector of Argoth](https://scryfall.com/card/eoc/111/titania-protector-of-argoth?utm_source=api) generates a 5/3 green Elemental token whenever a land you control is put into a graveyard from the battlefield. Coupled with [Zuran Orb](https://scryfall.com/card/mh2/300/zuran-orb?utm_source=api) (0-mana instant-speed land sac) or [Sylvan Safekeeper](https://scryfall.com/card/cma/152/sylvan-safekeeper?utm_source=api), sacrificing 6 lands produces 30 power of Elementals instantly while gaining 12 life, right before bringing all lands back with Splendid Reclamation or Lumra.
+
+1. **The Landfall Zombie Incursion (Combat Swarm):** Resolving mass land ramp spells—[Scapeshift](https://scryfall.com/search?q=!"Scapeshift") ({2}{G}{G}), [Splendid Reclamation](https://scryfall.com/search?q=!"Splendid+Reclamation") ({3}{G}), [Lumra, Bellow of the Woods](https://scryfall.com/search?q=!"Lumra,+Bellow+of+the+Woods") ({4}{G}{G}), [Awaken the Woods](https://scryfall.com/search?q=!"Awaken+the+Woods") ({X}{G}{G}), or [Aftermath Analyst](https://scryfall.com/search?q=!"Aftermath+Analyst")—puts 6–12 lands onto the battlefield simultaneously, generating **12 to 24 Zombie tokens in a single turn**.
+2. **The Noxious Ghoul Asymmetrical Board Wipe:** When [Noxious Ghoul](https://scryfall.com/search?q=!"Noxious+Ghoul") ({3}{B}{B}) is on the battlefield, every entering Zombie gives all non-Zombie creatures -1/-1 until end of turn. Dropping 5–10 lands or cracking fetches gives all opposing creatures -5/-5 to -10/-10, completely wiping opponents' boards while leaving our entire Zombie army completely untouched and clear to swing for the win!
+3. **Unblockable Swampwalk (Zombie Master + Urborg):** Supported by land tutors ([Crop Rotation](https://scryfall.com/search?q=!"Crop+Rotation"), [Elvish Reclaimer](https://scryfall.com/search?q=!"Elvish+Reclaimer"), [Wight of the Reliquary](https://scryfall.com/search?q=!"Wight+of+the+Reliquary")), assembling [Urborg, Tomb of Yawgmoth](https://scryfall.com/search?q=!"Urborg,+Tomb+of+Yawgmoth") alongside [Zombie Master](https://scryfall.com/search?q=!"Zombie+Master") makes every land on the board a Swamp, granting our entire Zombie horde **unblockable Swampwalk** and `{B}: Regenerate`.
+4. **Lethal Overruns & Direct Burn:** [Beastmaster Ascension](https://scryfall.com/search?q=!"Beastmaster+Ascension") (+5/+5 to all creatures permanently after 7 attackers), [Akroma's Will](https://scryfall.com/search?q=!"Akroma's+Will") (flying, double strike, vigilance, lifelink, indestructible, protection from all colors), [Undead Warchief](https://scryfall.com/search?q=!"Undead+Warchief") (+2/+1 to all Zombies), and [Wayward Servant](https://scryfall.com/search?q=!"Wayward+Servant") (draining opponents for 1 life whenever a Zombie enters).
+
+---
 
 ### 🚜 Piloting the Engine (Turn-by-Turn Blueprint)
-*   **Early Turns (T1–T3):** Accelerate your land base using 2-mana land ramp ([Nature's Lore](https://scryfall.com/card/mkc/178/natures-lore?utm_source=api), [Three Visits](https://scryfall.com/card/otc/209/three-visits?utm_source=api), [Farseek](https://scryfall.com/card/rvr/138/farseek?utm_source=api), [Sakura-Tribe Elder](https://scryfall.com/card/soc/285/sakura-tribe-elder?utm_source=api)). Prioritize fetching typed duals with basic land types ([Underground Mortuary](https://scryfall.com/card/mkm/271/underground-mortuary?utm_source=api), [Shadowy Backstreet](https://scryfall.com/card/mkm/268/shadowy-backstreet?utm_source=api), [Lush Portico](https://scryfall.com/card/mkm/263/lush-portico?utm_source=api)) to trigger Surveil 1 and maximize your distinct land names.
-*   **Midgame (T4–T6):** Cast The Necrobloom ({1}{W}{B}{G}) or establish an additional land drop engine ([Azusa](https://scryfall.com/card/cmm/274/azusa-lost-but-seeking?utm_source=api), [Exploration](https://scryfall.com/card/dmr/159/exploration?utm_source=api), [Dryad of the Ilysian Grove](https://scryfall.com/card/cmm/891/dryad-of-the-ilysian-grove?utm_source=api), [The Gitrog Monster](https://scryfall.com/card/otc/229/the-gitrog-monster?utm_source=api)). Deploy [Spelunking](https://scryfall.com/card/lci/213/spelunking?utm_source=api) ({2}{G}) as soon as possible so all future land drops enter untapped.
-*   **The Golden Rule of Dredge:** **Never dredge on auto-pilot.** In this build, Dredge 2 on lands is an **insurance policy**, not an aggressive mill strategy. If your hand already has lands to play and gas to cast, take your normal draw! Only use Dredge 2 when you need a guaranteed land drop or when recurring utility lands like [Boseiju, Who Endures](https://scryfall.com/card/neo/266/boseiju-who-endures?utm_source=api), [Takenuma, Abandoned Mire](https://scryfall.com/card/neo/278/takenuma-abandoned-mire?utm_source=api), or [Bala Ged Recovery](https://scryfall.com/card/znr/180/bala-ged-recovery-bala-ged-sanctuary?utm_source=api).
-*   **Late Game (T6–T8):** Detonate the board with [Splendid Reclamation](https://scryfall.com/card/eoc/108/splendid-reclamation?utm_source=api), [Lumra](https://scryfall.com/card/blb/183/lumra-bellow-of-the-woods?utm_source=api), or [Cultivator Colossus](https://scryfall.com/card/inr/190/cultivator-colossus?utm_source=api). With [Insidious Roots](https://scryfall.com/card/mkm/208/insidious-roots?utm_source=api) or [Lotus Cobra](https://scryfall.com/card/znr/193/lotus-cobra?utm_source=api) on board, every land drop pays for follow-up spells. Cast [Craterhoof Behemoth](https://scryfall.com/card/tdm/138/craterhoof-behemoth?utm_source=api) or swing with an overwhelming army protected by [Heroic Intervention](https://scryfall.com/card/cmm/295/heroic-intervention?utm_source=api).
+
+*   **Turns 1–3 (Velocity & Color Fixing):** Deploy early land ramp ([Nature's Lore](https://scryfall.com/search?q=!"Nature's+Lore"), [Three Visits](https://scryfall.com/search?q=!"Three+Visits"), [Farseek](https://scryfall.com/search?q=!"Farseek"), [Lotus Cobra](https://scryfall.com/search?q=!"Lotus+Cobra"), [Exploration](https://scryfall.com/search?q=!"Exploration"), [Elvish Reclaimer](https://scryfall.com/search?q=!"Elvish+Reclaimer")). Fetch typed duals with basic land types ([Underground Mortuary](https://scryfall.com/search?q=!"Underground+Mortuary"), [Shadowy Backstreet](https://scryfall.com/search?q=!"Shadowy+Backstreet"), [Lush Portico](https://scryfall.com/search?q=!"Lush+Portico")) to trigger Surveil 1, fixing mana and putting a land in the graveyard to unlock Dredge 2.
+*   **Turns 4–5 (Commander & The 7-Name Threshold):** Cast The Necrobloom ({1}{W}{B}{G}). Because the mana base utilizes a strict 1:1 split between regular and Snow-Covered basics along with unique fetchlands, shocks, and surveil duals, you will cross the 7 differently named land threshold on Turn 4 or Turn 5 with near 100% consistency. Deploy [Spelunking](https://scryfall.com/search?q=!"Spelunking") ({2}{G}) so all future lands enter untapped.
+*   **The Golden Rule of Dredge:** **Never dredge blindly.** Dredge 2 on lands is an **insurance engine**, not an aggressive mill loop. If you already have lands in hand or need interactive spells, take your normal draw! Only use Dredge 2 when you need a guaranteed land drop, when recurring utility lands ([Boseiju](https://scryfall.com/search?q=!"Boseiju,+Who+Endures"), [Takenuma](https://scryfall.com/search?q=!"Takenuma,+Abandoned+Mire"), [Field of the Dead](https://scryfall.com/search?q=!"Field+of+the+Dead"), [Cabal Coffers](https://scryfall.com/search?q=!"Cabal+Coffers")), or when you have separate draw engines ([Skullclamp](https://scryfall.com/search?q=!"Skullclamp"), [Idol of Oblivion](https://scryfall.com/search?q=!"Idol+of+Oblivion"), [Braids](https://scryfall.com/search?q=!"Braids,+Arisen+Nightmare")) on the board.
+*   **Turns 6–8 (The Zombie Incursion & Finisher):** Cast [Scapeshift](https://scryfall.com/search?q=!"Scapeshift"), [Splendid Reclamation](https://scryfall.com/search?q=!"Splendid+Reclamation"), or [Lumra](https://scryfall.com/search?q=!"Lumra,+Bellow+of+the+Woods") to flood the board with 12–24 Zombies. Trigger [Noxious Ghoul](https://scryfall.com/search?q=!"Noxious+Ghoul") to wipe opposing creatures, buff the horde with [Undead Warchief](https://scryfall.com/search?q=!"Undead+Warchief") or [Death Baron](https://scryfall.com/search?q=!"Death+Baron"), activate [Zombie Master](https://scryfall.com/search?q=!"Zombie+Master") + [Urborg](https://scryfall.com/search?q=!"Urborg,+Tomb+of+Yawgmoth"), or resolve [Akroma's Will](https://scryfall.com/search?q=!"Akroma's+Will") / [Beastmaster Ascension](https://scryfall.com/search?q=!"Beastmaster+Ascension") to swing for lethal across all opponents.
+
+---
 
 ## 🛠️ Card Explanations
 
 ### 👑 Commander (1 Card)
-*   **The Necrobloom:** {1}{W}{B}{G} 2/7 Plant. Land cards in your graveyard have Dredge 2. Whenever a land enters the battlefield under your control, create a 0/1 green Plant creature token; if you control seven or more lands with different names, create a 2/2 black Zombie creature token instead. [Commander]
+*   **The Necrobloom:** {1}{W}{B}{G} 2/7 Plant. Land cards in your graveyard have Dredge 2. Whenever a land enters the battlefield under your control, create a 0/1 green Plant token; if you control seven or more lands with different names, create a 2/2 black Zombie creature token instead. [Commander]
 
-### ⚡ Game Changers (2 Cards — Bracket 3 Max 3)
-*   **Crop Rotation:** {G} instant. Sacrifices a land to tutor ANY land directly onto the battlefield at instant speed (grabs Field of the Dead, Dark Depths, Thespian's Stage, or Bojuka Bog). [GAME CHANGER]
+### ⚡ Game Changers (3 Cards — Bracket 3 Limit)
+*   **Crop Rotation:** {G} instant. Sacrifices a land to tutor ANY land directly onto the battlefield at instant speed (grabs Field of the Dead, Urborg, Cabal Coffers, or Bojuka Bog). [GAME CHANGER]
 *   **Field of the Dead:** Land. Enters tapped; creates a 2/2 black Zombie token whenever a land enters if you control 7+ differently named lands (doubles Zombie production alongside The Necrobloom). [GAME CHANGER]
+*   **Teferi's Protection:** {2}{W} instant. All permanents you control phase out (preserving tokens, +1/+1 counters, and commander) and your life total cannot change until your next turn. [GAME CHANGER]
 
-### 🚜 Landfall Engines & Token Swarm (7 Cards)
-*   **Ancient Greenwarden:** {4}{G}{G} 5/7 Elemental. Plays lands from graveyard and doubles all Landfall triggers (2x Zombies from Necrobloom/Field, 2x mana from Lotus Cobra, 2x tokens from Scute Swarm).
-*   **Avenger of Zendikar:** {5}{G}{G} 5/5 Elemental. Creates a 0/1 Plant for every land you control on ETB, then puts a +1/+1 counter on all Plants on every subsequent landfall.
-*   **Felidar Retreat:** {3}{W} enchantment. Modal landfall trigger that either creates 2/2 Cat Beasts or puts a +1/+1 counter on all creatures and grants vigilance.
-*   **Insidious Roots:** {B}{G} enchantment. All creature tokens tap for mana of any color; whenever creature cards leave graveyard, creates a 0/1 Plant and puts +1/+1 counters on all Plants.
-*   **Scute Swarm:** {2}{G} 1/1 Insect. Landfall creates a 1/1 Insect; once you control 6+ lands, creates token copies of Scute Swarm, growing exponentially.
-*   **Springheart Nantuko:** {1}{G} 1/1 Insect Monk. Landfall creates 1/1 Insects, or bestows onto creatures to clone them for {1}{G} on every land drop.
-*   **Titania, Protector of Argoth:** {3}{G}{G} 5/3 Elemental. Returns a land from graveyard to battlefield on ETB; creates a 5/3 green Elemental token whenever a land you control is put into a graveyard.
+### 🧟 Zombie Swarm Lords, Engines & ETB Drain (12 Cards)
+*   **Cryptbreaker:** {B} 1/1 Zombie. {1}{B}, {T}, discard a card to make a 2/2 Zombie; tap three untapped Zombies to draw a card and lose 1 life (bypasses CR 302.6 summoning sickness, so fresh tokens can immediately tap to draw).
+*   **Wayward Servant:** {W}{B} 2/2 Zombie. Whenever another Zombie enters under your control, each opponent loses 1 life and you gain 1 life (drains 10–20 life directly across the table on mass landfalls).
+*   **Wight of the Reliquary:** {B}{G} 2/2 Zombie Elf Rogue. Vigilance; gets +1/+1 for each land in yard; tap, sacrifice a creature (Plant or Zombie token) to tutor ANY land onto the battlefield tapped.
+*   **Undead Augur:** {B}{B} 2/2 Zombie Wizard. Whenever this creature or another Zombie you control dies, draw a card and lose 1 life (sweeper and sacrifice insurance).
+*   **Death Baron:** {1}{B}{B} 2/2 Zombie Wizard. Skeletons and other Zombies you control get +1/+1 and have deathtouch (makes 2/2 tokens lethal to block).
+*   **Lord of the Accursed:** {2}{B} 2/3 Zombie. Other Zombies get +1/+1; {1}{B}, {T} grants all Zombies menace until end of turn.
+*   **Undead Warchief:** {2}{B}{B} 1/1 Zombie. Zombie spells cost {1} less to cast; Zombie creatures you control get +2/+1 (turns ten 2/2 Zombies into 40 power).
+*   **Zombie Master:** {1}{B}{B} 2/3 Zombie. Other Zombie creatures have swampwalk and "{B}: Regenerate this permanent" (grants unblockable attacks with Urborg).
+*   **Diregraf Colossus:** {2}{B} 2/2 Zombie Giant. Enters with a +1/+1 counter for each Zombie in your graveyard; whenever you cast a Zombie spell, creates a tapped 2/2 Zombie token.
+*   **Headless Rider:** {2}{B} 3/1 Zombie. Whenever this creature or another nontoken Zombie you control dies, creates a 2/2 black Zombie creature token.
+*   **Noxious Ghoul:** {3}{B}{B} 3/3 Zombie. Whenever Noxious Ghoul or another Zombie enters the battlefield, all non-Zombie creatures get -1/-1 until end of turn (one-sided board wipe on mass landfall).
+*   **Gisa, the Hellraiser:** {3}{B}{B} 4/4 Human Warlock. Ward—Pay 2 life; Skeletons and Zombies get +1/+1 and menace; committing a crime creates two 2/2 Zombie Rogues.
 
-### 💥 Mass Land Reanimation & Overrun Finishers (6 Cards)
-*   **Craterhoof Behemoth:** {5}{G}{G}{G} 5/5 Beast. Haste; on ETB, creatures gain trample and +X/+X where X is creature count, instantly converting 10+ Plant/Zombie tokens into lethal combat damage.
-*   **Cultivator Colossus:** {4}{G}{G}{G} */* Plant Beast. Power/toughness equal to lands you control; on ETB, repeatedly puts lands from hand onto battlefield and draws cards in a chain.
-*   **Lumra, Bellow of the Woods:** {4}{G}{G} */* Bear God. Vigilance, reach, trample; on ETB, mills 4 cards, then returns ALL land cards from graveyard to battlefield tapped.
+### 💀 Heavy Payoffs & User Favorites (3 Cards)
+*   **Grave Titan:** {4}{B}{B} 6/6 Giant. Deathtouch; creates two 2/2 black Zombie tokens on ETB and two more on every attack (user favorite and premier token generator).
+*   **Black Market Connections:** {2}{B} enchantment. In first main phase, choose one or more: draw a card (lose 2 life), create a Treasure (lose 1 life), and create a 3/2 Shapeshifter/Changeling token with every creature type, including Zombie (lose 3 life).
+*   **Species Specialist:** {2}{B}{B} 2/3 Human Warrior. As it enters, choose Zombie; whenever a creature of the chosen type dies (including tokens!), draw a card.
+
+### 💥 Token Multipliers & Continuous Spigots (4 Cards)
+*   **Anointed Procession:** {3}{W} enchantment. If an effect would create one or more tokens under your control, creates twice that many tokens instead.
+*   **Mondrak, Glory Dominus:** {2}{W}{W} 4/4 Phyrexian Horror. Doubles all token creation; pay {1}{W/P}{W/P} and sacrifice two creatures/artifacts to put an indestructible counter on Mondrak.
+*   **Endless Ranks of the Dead:** {2}{B}{B} enchantment. At the beginning of your upkeep, create X 2/2 Zombie tokens, where X is half the number of Zombies you control, rounded down.
+*   **Tombstone Stairwell:** {2}{B}{B} world enchantment. Cumulative upkeep {1}{B}. At the beginning of each upkeep, each player creates a 2/2 Tombspawn Zombie token with haste for each creature card in their graveyard, destroying them at end of turn (fuels massive death triggers and combat).
+
+### 🌋 Landfall Burst & Mass Land Reanimation (6 Cards)
 *   **Scapeshift:** {2}{G}{G} sorcery. Sacrifices any number of lands to tutor that many lands from library directly onto the battlefield tapped, triggering massive simultaneous Landfall.
 *   **Splendid Reclamation:** {3}{G} sorcery. Returns ALL land cards from your graveyard to the battlefield tapped.
-*   **World Shaper:** {3}{G} 3/3 Merfolk Shaman. Attacks to mill 3 cards; when it dies, returns ALL land cards from your graveyard to the battlefield tapped.
+*   **Lumra, Bellow of the Woods:** {4}{G}{G} */* Bear God. Vigilance, reach, trample; on ETB, mills 4 cards, then returns ALL land cards from graveyard to battlefield tapped.
+*   **Aftermath Analyst:** {1}{G} 1/3 Elf Detective. ETB mills 3 cards; {3}{G}, sacrifice returns ALL land cards from graveyard to battlefield tapped.
+*   **Awaken the Woods:** {X}{G}{G} sorcery. Creates X 1/1 Forest Dryad land creature tokens (triggers Landfall X times simultaneously and produces green mana).
+*   **Life from the Loam:** {1}{G} sorcery. Returns up to 3 target land cards from your graveyard to your hand; has Dredge 3 for continuous engine fueling.
 
-### 🌍 Additional Land Drops & Velocity (7 Cards)
+### 🚜 Landfall Velocity, Extra Drops & Graveyard Retrace (7 Cards)
 *   **Azusa, Lost but Seeking:** {2}{G} 1/2 Human Monk. Allows playing 2 additional lands on each of your turns.
 *   **Dryad of the Ilysian Grove:** {2}{G} 2/4 Nymph Dryad. Allows playing 1 additional land each turn; makes all lands all basic land types for full mana fixing.
-*   **Exploration:** {G} enchantment. Allows playing 1 additional land on each of your turns for just 1 mana.
-*   **Oracle of Mul Daya:** {3}{G} 2/2 Elf Shaman. Plays with top of library revealed; allows playing lands from top of library and playing 1 additional land each turn.
-*   **Spelunking:** {2}{G} enchantment. On ETB draws a card and puts a land onto battlefield; all lands you control enter untapped (mass reanimated lands enter ready to tap immediately).
-*   **Thalia and The Gitrog Monster:** {1}{W}{B}{G} 4/4 First strike, deathtouch. Allows 1 additional land drop per turn, taxes opposing creatures and nonbasic lands to enter tapped, and draws on attack/creature sacrifice.
+*   **Exploration:** {G} enchantment. Allows playing 1 additional land on each of your turns for just 1 green mana.
 *   **The Gitrog Monster:** {3}{B}{G} 6/6 Deathtouch. Allows 1 additional land drop per turn; draws a card whenever one or more land cards are put into your graveyard from anywhere.
+*   **Six:** {2}{G} 2/4 Treefolk Shaman. Attacks to mill 3 and retrieve a nonland permanent card; gives all nonland permanent cards in your graveyard retrace.
+*   **Ramunap Excavator:** {2}{G} 2/3 Snake Cleric. Allows playing lands directly from your graveyard on a creature body.
+*   **Ancient Greenwarden:** {4}{G}{G} 5/7 Elemental. Plays lands from graveyard and doubles all Landfall triggers (2x Zombies from Necrobloom/Field, 2x mana from Lotus Cobra).
 
-### ♻️ Graveyard Recursion & Land Retrieval (9 Cards)
-*   **Aftermath Analyst:** {1}{G} 1/3 Elf Detective. ETB mills 3 cards; {3}{G} sacrifice returns ALL land cards from graveyard to battlefield tapped.
-*   **Conduit of Worlds:** {4} artifact. Plays lands from graveyard; can activate to cast a nonland permanent from graveyard once per turn.
-*   **Dread Return:** {2}{B}{B} sorcery. Returns target creature from graveyard to battlefield; flashback costs sacrificing 3 creatures (synergizes with Plant/Zombie tokens).
-*   **Eerie Ultimatum:** {W}{W}{B}{B}{B}{G}{G} sorcery. Returns any number of permanent cards with different names from your graveyard directly to the battlefield.
-*   **Eternal Witness:** {1}{G}{G} 2/1 Human Shaman. Returns any target card from your graveyard to your hand on ETB.
-*   **Life from the Loam:** {1}{G} sorcery. Returns up to 3 target land cards from your graveyard to your hand; has Dredge 3 for continuous engine fueling.
-*   **Ramunap Excavator:** {2}{G} 2/3 Snake Cleric. Allows playing lands from your graveyard on a creature body.
-*   **Sevinne's Reclamation:** {2}{W} sorcery. Returns a permanent with mana value 3 or less from graveyard to battlefield; flashback creates 2 copies.
-*   **Six:** {2}{G} 2/4 Treefolk Shaman. Attacks to mill 3 and retrieve a nonland card; gives all nonland permanent cards in graveyard retrace.
-*   **Walk-In Closet // Forgotten Cellar:** {2}{G} // {3}{G}{G} enchantment room. Left room plays lands from graveyard; right room allows casting any cards from graveyard this turn.
+### 🃏 Card Draw & Engine Velocity (5 Cards)
+*   **Skullclamp:** {1} equipment. Equips to 0/1 Plant tokens for {1} to kill them immediately and draw 2 cards.
+*   **Idol of Oblivion:** {2} artifact. {T}: Draw a card if you created a token this turn (free uncounterable draw on virtually every turn).
+*   **Sylvan Library:** {1}{G} enchantment. Draw 2 additional cards on draw step; replacing those draws with Necrobloom's Dredge 2 completely bypasses the 4-life payment while dredging lands!
+*   **Braids, Arisen Nightmare:** {1}{B}{B} 3/3 Nightmare. End step sacrifices a permanent (token or land); opponents must match or lose 2 life and draw you a card.
+*   **Shamanic Revelation:** {3}{G}{G} sorcery. Draws a card for each creature you control; Ferocious gains 4 life for each creature with power 4 or greater.
 
-### 🚜 Land Tutors, Sac Outlets & Dredge Tech (7 Cards)
-*   **Dark Depths:** Legendary Snow Land. Enters with 10 ice counters; combos with Thespian's Stage to instantly summon Marit Lage (20/20 flying indestructible Avatar).
-*   **Elvish Reclaimer:** {G} 1/2 Elf Warrior. Grows to 3/4 with 3+ lands in yard; {1}{G}, tap, sacrifice a land to tutor ANY land from library onto the battlefield tapped.
-*   **Hedge Shredder:** {2}{G}{G} 5/5 Vehicle. Whenever one or more land cards are put into your graveyard from library (via mill/Dredge), puts them onto the battlefield tapped!
-*   **Knight of the Reliquary:** {1}{G}{W} 2/2 Knight. Gets +1/+1 for each land in your graveyard; tap, sacrifice a Forest or Plains to tutor ANY land onto the battlefield.
-*   **Sylvan Safekeeper:** {G} 1/1 Human Wizard. Sacrifices a land at instant speed to give target creature you control shroud (free protection + instant land to yard).
-*   **Thespian's Stage:** Land. {2}, tap: copies target land; copies Dark Depths for an instant Marit Lage, or copies Field of the Dead for triple Zombies.
-*   **Wight of the Reliquary:** {B}{G} 2/2 Zombie Elf Rogue. Vigilance; gets +1/+1 for each land in yard; tap, sacrifice a creature to tutor ANY land onto the battlefield tapped.
-*   **Zuran Orb:** {0} artifact. Instant-speed free land sacrifice outlet: gain 2 life per land sacrificed (triggers Titania, protects lands from exile, fuels Splendid Reclamation).
-
-### 🌲 Early Land Ramp & Utility Dorks (9 Cards)
-*   **Deathrite Shaman:** {B/G} 1/2 Elf Shaman. Exiles lands from graveyards for mana; exiles instants/sorceries to drain 2 life; exiles creatures to gain 2 life.
-*   **Farseek:** {1}{G} sorcery. Searches for a Plains, Island, or Swamp onto the battlefield tapped (fetches typed duals/surveil lands/Triome).
-*   **Harrow:** {2}{G} instant. Sacrifices a land as an additional cost to search for 2 basic lands directly onto the battlefield untapped at instant speed.
-*   **Lotus Cobra:** {1}{G} 2/1 Snake. Landfall adds 1 mana of any color, generating explosive mana on multi-landfall turns.
-*   **Nature's Lore:** {1}{G} sorcery. Searches for a Forest card onto the battlefield untapped (fetches Overgrown Tomb, Temple Garden, Mortuary, Lush Portico).
-*   **Sakura-Tribe Elder:** {1}{G} 1/1 Snake Shaman. Sacrifices itself to search for a basic land onto the battlefield tapped, fueling landfall and death triggers.
+### 🌲 Ramp & Land Finding (7 Cards)
 *   **Sol Ring:** {1} artifact. Taps for {2} colorless mana.
+*   **Elvish Reclaimer:** {G} 1/2 Elf Warrior. Grows to 3/4 with 3+ lands in yard; {2}, {T}, sacrifice a land to tutor ANY land from library onto battlefield tapped.
+*   **Lotus Cobra:** {1}{G} 2/1 Snake. Landfall adds 1 mana of any color, generating explosive mana on multi-landfall turns.
+*   **Sakura-Tribe Elder:** {1}{G} 1/1 Snake Shaman. Sacrifices itself to search for a basic land onto the battlefield tapped, fueling landfall and death triggers.
+*   **Nature's Lore:** {1}{G} sorcery. Searches for a Forest card onto the battlefield untapped.
 *   **Three Visits:** {1}{G} sorcery. Searches for a Forest card onto the battlefield untapped.
-*   **Tireless Provisioner:** {2}{G} 3/2 Elf Scout. Landfall generates a Treasure or Food token, bridging mana ramp and life preservation.
+*   **Farseek:** {1}{G} sorcery. Searches for a Plains, Island, or Swamp onto the battlefield tapped (fetches typed duals/surveil lands/Triome).
 
-### 🗡️ Targeted Removal & Instant Disruption (8 Cards)
-*   **Anguished Unmaking:** {1}{W}{B} instant. Exiles target nonland permanent for 3 life.
+### ⚔️ Combat Finishers (2 Cards)
+*   **Beastmaster Ascension:** {2}{G} enchantment. Attacking with 7 creatures permanently grants all creatures you control +5/+5.
+*   **Akroma's Will:** {3}{W} instant. Modal instant lethal alpha strike: grants flying, double strike, vigilance, lifelink, indestructible, and protection from all colors.
+
+### ⚰️ Mass Reanimation & Graveyard Finishers (2 Cards)
+*   **Zombie Apocalypse:** {3}{B}{B}{B} sorcery. Returns all Zombie creature cards from your graveyard to the battlefield tapped, then destroys all Humans.
+*   **Living Death:** {3}{B}{B} sorcery. Each player exiles all creature cards from graveyard, sacrifices all creatures, then puts exiled cards onto the battlefield.
+
+### 🗡️ Targeted Removal, Mass Wipes & Protection (11 Cards)
+*   **Swords to Plowshares:** {W} instant. Exiles target creature; controller gains life equal to its power.
+*   **Path to Exile:** {W} instant. Exiles target creature; controller gets a basic land.
 *   **Assassin's Trophy:** {B}{G} instant. Destroys target permanent an opponent controls; gives them a basic land.
 *   **Beast Within:** {2}{G} instant. Destroys target permanent; controller gets a 3/3 Beast.
-*   **Deadly Rollick:** {3}{B} instant. If you control your commander, exiles target creature for 0 mana.
-*   **Heroic Intervention:** {1}{G} instant. Permanents you control gain hexproof and indestructible until end of turn, protecting against board wipes.
-*   **Path to Exile:** {W} instant. Exiles target creature; controller gets a basic land.
-*   **Swords to Plowshares:** {W} instant. Exiles target creature; controller gains life equal to its power.
 *   **Tear Asunder:** {1}{G} instant. Exiles target artifact or enchantment; kicker {1}{B} exiles any nonland permanent.
-
-### 🧹 Mass Disruption & Card Advantage (5 Cards)
-*   **Braids, Arisen Nightmare:** {1}{B}{B} 3/3 Nightmare. Sacrifices an artifact, creature, or land at end step; opponents must sacrifice the same type or you draw a card and drain 2 life.
-*   **Culling Ritual:** {2}{B}{G} sorcery. Destroys all permanents mana value 2 or less; adds {B} or {G} for each permanent destroyed.
-*   **Skullclamp:** {1} artifact. Equips to 0/1 Plant tokens for {1} to kill them immediately and draw 2 cards.
-*   **Sylvan Library:** {1}{G} enchantment. In draw step, draw 2 additional cards; allows replacing any draws with Dredge 2 to recover lands on demand.
+*   **Deadly Rollick:** {3}{B} instant. If you control your commander, exiles target creature for 0 mana.
+*   **Heroic Intervention:** {1}{G} instant. Permanents you control gain hexproof and indestructible until end of turn.
+*   **Clever Concealment:** {2}{W}{W} instant. Convoke (tap tokens to cast for 0 mana); phases out any number of target nonland permanents you control.
 *   **Toxic Deluge:** {2}{B} sorcery. Pay X life: all creatures get -X/-X until end of turn, bypassing indestructible.
+*   **The Battle of Bywater:** {1}{W}{W} sorcery. Destroys all creatures with power 3 or greater (sparing Necrobloom and all 2/2 Zombie tokens!), then creates a Food token for each creature you control.
+*   **Spelunking:** {2}{G} enchantment. On ETB draws a card and puts a land onto battlefield; all lands you control enter untapped.
 
-### 🏔️ Land Base (39 Lands)
-*   **Bala Ged Recovery:** {2}{G} // land. Front side returns any card from graveyard; back side is Bala Ged Sanctuary (MDFC land with Dredge 2).
-*   **Barren Moor:** Enters tapped; cycles for {B} to trigger instant Dredge 2 self-mill.
-*   **Bojuka Bog:** Enters tapped; exiles all cards from target player's graveyard on ETB.
-*   **Boseiju, Who Endures:** Legendary land. Taps for {G}; Channel destroys target artifact, enchantment, or nonbasic land at instant speed.
+---
+
+### 🏔️ Mana Base (38 Lands — 38 Distinct Names, 0 Filter Lands)
+*   **Bala Ged Recovery // Bala Ged Sanctuary:** {2}{G} // MDFC land. Front side returns any card from graveyard; back side is a land with Dredge 2.
+*   **Barren Moor:** Enters tapped; cycles for {B} to trigger instant Dredge 2.
+*   **Bojuka Bog:** Enters tapped; exiles target player's graveyard on ETB (triggers crime for Gisa).
+*   **Boseiju, Who Endures:** Legendary land. Channel destroys target artifact, enchantment, or nonbasic land at instant speed; recurs via Dredge 2.
+*   **Bountiful Promenade:** Selesnya (GW) bond land; enters untapped with 2+ opponents.
+*   **Cabal Coffers:** Big-mana land; {2}, {T} adds {B} for each Swamp you control (combos with Urborg to generate massive mana).
 *   **Command Tower:** Taps for {W}, {B}, or {G}.
 *   **Dakmor Salvage:** Enters tapped; has innate Dredge 2 even if Necrobloom is temporarily removed.
-*   **Demolition Field:** Sacrifices itself for {2} to destroy a nonbasic land an opponent controls; both players search for a basic land onto battlefield untapped.
+*   **Demolition Field:** Sacrifices itself for {2} to destroy a nonbasic land; both players search for a basic land onto battlefield untapped.
 *   **Exotic Orchard:** Taps for any color an opponent could produce.
-*   **Fabled Passage:** Sacrifices to search for a basic land onto battlefield (untapped if you have 4+ lands).
-*   **Forest:** Basic land ({G}); 2 copies.
-*   **Ghost Quarter:** Taps for {C}; tap, sacrifice to destroy target land; controller may search for a basic land.
+*   **Fabled Passage:** Sacrifices to search for a basic land onto battlefield (untapped with 4+ lands).
+*   **Field of the Dead:** Enters tapped; creates a 2/2 Zombie on land drops when controlling 7+ differently named lands [GAME CHANGER].
+*   **Forest:** Basic land ({G}); 1 copy.
 *   **Godless Shrine:** Plains Swamp shockland; enters untapped for 2 life.
-*   **Indatha Triome:** Searchable Triome (Plains Swamp Forest); enters tapped, cycles for {3}.
+*   **Indatha Triome:** Searchable Plains Swamp Forest; enters tapped, cycles for {3}.
 *   **Lush Portico:** Searchable Forest Plains; enters tapped, surveils 1 on ETB.
 *   **Marsh Flats:** Fetchland; searches for a Plains or Swamp onto the battlefield.
 *   **Overgrown Tomb:** Swamp Forest shockland; enters untapped for 2 life.
 *   **Phyrexian Tower:** Legendary land. Taps for {C}, or taps and sacrifices a creature for {B}{B}.
-*   **Plains:** Basic land ({W}); 2 copies.
-*   **Secluded Steppe:** Enters tapped; cycles for {W} to trigger instant Dredge 2 self-mill.
+*   **Plains:** Basic land ({W}); 1 copy.
+*   **Prismatic Vista:** Fetchland; pays 1 life to search for any basic land onto battlefield untapped.
+*   **Secluded Steppe:** Enters tapped; cycles for {W} to trigger instant Dredge 2.
 *   **Shadowy Backstreet:** Searchable Plains Swamp; enters tapped, surveils 1 on ETB.
-*   **Shifting Woodland:** Delerium land; taps for {G}, or pays {2}{G}{G} to become a copy of any permanent card in your graveyard.
+*   **Shifting Woodland:** Delirium land; taps for {G}, or pays {2}{G}{G} to become a copy of any permanent card in your graveyard.
 *   **Snow-Covered Forest:** Snow basic land ({G}); distinct name for Zombie threshold.
 *   **Snow-Covered Plains:** Snow basic land ({W}); distinct name for Zombie threshold.
 *   **Snow-Covered Swamp:** Snow basic land ({B}); distinct name for Zombie threshold.
-*   **Swamp:** Basic land ({B}).
-*   **Takenuma, Abandoned Mire:** Legendary land. Taps for {B}; Channel mills 3 cards and returns a creature or planeswalker from graveyard to hand.
-*   **Talon Gates of Madara:** Utility gate that phases out any target creature on ETB; can be put into play from hand for {4} or fetched with Crop Rotation.
+*   **Swamp:** Basic land ({B}); 1 copy.
+*   **Takenuma, Abandoned Mire:** Legendary land. Channel mills 3 cards and returns a creature or planeswalker from graveyard to hand.
 *   **Temple Garden:** Forest Plains shockland; enters untapped for 2 life.
-*   **Tranquil Thicket:** Enters tapped; cycles for {G} to trigger instant Dredge 2 self-mill.
+*   **Tranquil Thicket:** Enters tapped; cycles for {G} to trigger instant Dredge 2.
 *   **Underground Mortuary:** Searchable Swamp Forest; enters tapped, surveils 1 on ETB.
+*   **Undergrowth Stadium:** Golgari (BG) bond land; enters untapped with 2+ opponents.
 *   **Urborg, Tomb of Yawgmoth:** Legendary land. Each land is a Swamp in addition to its other land types.
-*   **Urza's Cave:** Sacrifices itself for {3} to tutor ANY land card directly onto the battlefield tapped.
+*   **Vault of Champions:** Orzhov (WB) bond land; enters untapped with 2+ opponents.
 *   **Verdant Catacombs:** Fetchland; searches for a Swamp or Forest onto the battlefield.
 *   **Windswept Heath:** Fetchland; searches for a Forest or Plains onto the battlefield.
 *   **Yavimaya, Cradle of Growth:** Legendary land. Each land is a Forest in addition to its other land types.
 
+---
+
 ## 🚀 Future Roadmap: Upgrades & Considerations
 
 ### 💡 High-Impact Tech to Consider
-*   **Mox Diamond / Mana Crypt:** If ever upgrading beyond Bracket 3 into cEDH / Bracket 4 territory.
-*   **Bazaar of Baghdad:** Pure Dredge powerhouse, but unnecessary for Bracket 3 Landfall Overrun.
-*   **Strip Mine:** Can replace Demolition Field if single-land hard locks are permitted in your playgroup.
+*   **Acererak the Archlich:** {2}{B} 5/5 Zombie Wizard. Returns to hand unless Tomb of Annihilation is completed and ventures into the dungeon. Attacks to force opponents to sacrifice creatures or grant you 2/2 Zombie tokens. Can be played fairly for value without infinite combos.
+*   **Aura Shards:** {1}{G}{W} enchantment. Wipes artifacts/enchantments on every land drop token. Note: It is an official **Game Changer**, so swapping it in requires cutting either *Crop Rotation* or *Teferi's Protection* to remain in Bracket 3.
+*   **Squandered Resources:** {B}{G} enchantment. Sacrifices lands to float mana before *Splendid Reclamation* or *Lumra*.
+*   **Glacial Chasm:** Land. Shuts off all combat damage dealt to you. Note: It is an official **Game Changer**.
 
 ### 🛒 Active Acquisition List (Priority Swaps)
 | Priority | Card Name | Mana Cost | Category | Role / Impact |
 |---|---|---|---|---|
 | 🔥 High | **Field of the Dead** | Land | Land (Game Changer) | Doubles Zombie token generation alongside commander. |
-| 🔥 High | **Spelunking** | {2}{G} | Enchantment | All lands enter untapped; enables explosive same-turn wins. |
-| 🔥 High | **Ancient Greenwarden** | {4}{G}{G} | Creature | Plays lands from yard & doubles ALL Landfall triggers. |
-| 🟡 Mid | **Cultivator Colossus** | {4}{G}{G}{G} | Creature | Chained land drops + mass card draw on an enormous body. |
-| 🟡 Mid | **Titania, Protector of Argoth** | {3}{G}{G} | Creature | 5/3 Elementals on land death; combos with Zuran Orb. |
-| 🟡 Mid | **Heroic Intervention** | {1}{G} | Instant | Essential board wipe protection for token armies. |
-| 🟢 Utility | **Thespian's Stage + Dark Depths** | Lands | Land Combo | 20/20 Flying Indestructible Marit Lage tutor package. |
+| 🔥 High | **Noxious Ghoul** | {3}{B}{B} | Creature | Asymmetrical board wipe on Zombie landfall. |
+| 🔥 High | **Zombie Master** | {1}{B}{B} | Creature | Unblockable Swampwalk alongside Urborg. |
+| 🟡 Mid | **Clever Concealment** | {2}{W}{W} | Instant | 0-mana convoke board wipe protection. |
+| 🟡 Mid | **Wayward Servant** | {W}{B} | Creature | Direct life drain on Zombie token ETBs. |
+| 🟡 Mid | **The Battle of Bywater** | {1}{W}{W} | Sorcery | Asymmetrical wipe sparing Necrobloom and 2/2 Zombies. |
 | 🟢 Utility | **Surveil Lands** | Lands | Land Base | Searchable typed duals that smooth draws and fuel yard. |
 
 ---
 
 ## 📜 Deck Changelog
-*   **[2026-09-09]:** Comprehensive 23-card overhaul fully re-aligning the deck with EDHREC Upgraded / Bracket 3 "Lands Matter" standards.
-    *   **In (23):** Spelunking, Ancient Greenwarden, Cultivator Colossus, Titania, Protector of Argoth, Zuran Orb, Hedge Shredder, Insidious Roots, Heroic Intervention, Walk-In Closet // Forgotten Cellar, World Shaper, Sakura-Tribe Elder, Field of the Dead, Thespian's Stage, Dark Depths, Takenuma, Abandoned Mire, Urborg, Tomb of Yawgmoth, Yavimaya, Cradle of Growth, Underground Mortuary, Shadowy Backstreet, Lush Portico, Forest (x2), Plains (x1)
-    *   **Out (23):** Morbid Opportunist, Painful Truths, Shamanic Revelation, Damnation, Delighted Halfling, Birds of Paradise, Victimize, Pernicious Deed, Crucible of Worlds, Timeless Witness, Arcane Signet, Bountiful Promenade, Vault of Champions, Undergrowth Stadium, High Market, Reflecting Pool, Prismatic Vista, Llanowar Wastes, Caves of Koilos, Brushland, Horizon Canopy, Silent Clearing, Nurturing Peatland
-    *   **Reason:** Replaces fragile mana dorks/rocks, self-damaging board wipes (Pernicious Deed, Damnation), and generic creature/sacrifice card draw with dedicated land-centric engines. Adds Spelunking (untapped lands on mass reanimation), Ancient Greenwarden (doubles landfall), Cultivator Colossus (draws and drops chained lands), Field of the Dead (2x Zombies), Marit Lage combo (Thespian's Stage + Dark Depths), Titania & Zuran Orb (instant-speed 5/3 Elementals and lifegain), and the 3 fetchable Surveil Lands. Trims painful canopy lands for basic Forests and Plains to ensure green land ramp never fizzles.
-*   **[2026-09-08]:** Re-aligned deck from Dredge/Aristocrat hybrid to pure EDHREC Bracket 3 "Lands Matter / Landfall".
-    *   **In:** Lotus Cobra, Craterhoof Behemoth, Eerie Ultimatum, Springheart Nantuko, Boseiju, Who Endures
-    *   **Out:** Mirkwood Bats, Syr Konrad, the Grim, Greater Good, Polluted Mire, Slippery Karst
-    *   **Reason:** Initial baseline re-alignment toward combat overrun and landfall mana.
-*   **[2026-09-08]:** Nonland graveyard recursion upgrade.
-    *   **In:** Bala Ged Recovery, Eternal Witness, Victimize
-    *   **Out:** Forest, Stinkweed Imp, Stroke of Midnight
-*   **[2026-09-08]:** Added missing Scryfall card preview image to README and deck guide.
+
+*   **[2026-09-21]:** Complete overhaul rebooting the deck into a dedicated **Bracket 3 Abzan Go-Wide Zombie Apocalypse**.
+    *   **In:** Grave Titan, Black Market Connections, Noxious Ghoul, Wayward Servant, Undead Warchief, Death Baron, Lord of the Accursed, Zombie Master, Diregraf Colossus, Headless Rider, Endless Ranks of the Dead, Tombstone Stairwell, Cryptbreaker, Undead Augur, Species Specialist, Gisa, the Hellraiser, Clever Concealment, The Battle of Bywater, Zombie Apocalypse, Living Death, Cabal Coffers, Awaken the Woods, Idol of Oblivion
+    *   **Out:** Cultivator Colossus, Titania, Protector of Argoth, Dark Depths, Thespian's Stage, Zuran Orb, Hedge Shredder, Insidious Roots, Craterhoof Behemoth, World Shaper, Knight of the Reliquary, Harrow, Deadly Rollick, Anguished Unmaking, Eternal Witness, Sevinne's Reclamation, Conduit of Worlds, Dread Return, Eerie Ultimatum, Talon Gates of Madara, Urza's Cave, Ghost Quarter, Forest (x1), Plains (x1)
+    *   **Reason:** Replaces generic stompy landfall elements (Titania, Cultivator Colossus, Marit Lage combo) with a lethal, cohesive Go-Wide Zombie swarm engine. Integrates user favorites (Grave Titan, Black Market Connections, Cabal Coffers), premier Zombie lords (Undead Warchief, Death Baron, Lord of the Accursed, Zombie Master + Urborg swampwalk), and asymmetrical wipe tech (Noxious Ghoul, The Battle of Bywater). Adopts 0-mana protection (Clever Concealment) and token draw (Idol of Oblivion, Cryptbreaker). Retains strict Bracket 3 compliance (3/3 Game Changers: Field of the Dead, Crop Rotation, Teferi's Protection) and zero filter lands / zero filter rocks.
 
 ---
 
@@ -187,66 +206,68 @@ COMMANDER:
 
 DECK:  
 1 Aftermath Analyst  
+1 Akroma's Will  
 1 Ancient Greenwarden  
-1 Anguished Unmaking  
+1 Anointed Procession  
 1 Assassin's Trophy  
-1 Avenger of Zendikar  
+1 Awaken the Woods  
 1 Azusa, Lost but Seeking  
-1 Bala Ged Recovery  
+1 Bala Ged Recovery // Bala Ged Sanctuary  
 1 Barren Moor  
 1 Beast Within  
+1 Beastmaster Ascension  
+1 Black Market Connections  
 1 Bojuka Bog  
 1 Boseiju, Who Endures  
+1 Bountiful Promenade  
 1 Braids, Arisen Nightmare  
+1 Cabal Coffers  
+1 Clever Concealment  
 1 Command Tower  
-1 Conduit of Worlds  
-1 Craterhoof Behemoth  
 1 Crop Rotation  
-1 Culling Ritual  
-1 Cultivator Colossus  
+1 Cryptbreaker  
 1 Dakmor Salvage  
-1 Dark Depths  
 1 Deadly Rollick  
-1 Deathrite Shaman  
+1 Death Baron  
 1 Demolition Field  
-1 Dread Return  
+1 Diregraf Colossus  
 1 Dryad of the Ilysian Grove  
-1 Eerie Ultimatum  
 1 Elvish Reclaimer  
-1 Eternal Witness  
+1 Endless Ranks of the Dead  
 1 Exotic Orchard  
 1 Exploration  
 1 Fabled Passage  
 1 Farseek  
-1 Felidar Retreat  
 1 Field of the Dead  
-2 Forest  
-1 Ghost Quarter  
+1 Forest  
+1 Gisa, the Hellraiser  
 1 Godless Shrine  
-1 Harrow  
-1 Hedge Shredder  
+1 Grave Titan  
+1 Headless Rider  
 1 Heroic Intervention  
+1 Idol of Oblivion  
 1 Indatha Triome  
-1 Insidious Roots  
-1 Knight of the Reliquary  
 1 Life from the Loam  
+1 Living Death  
+1 Lord of the Accursed  
 1 Lotus Cobra  
 1 Lumra, Bellow of the Woods  
 1 Lush Portico  
 1 Marsh Flats  
+1 Mondrak, Glory Dominus  
 1 Nature's Lore  
-1 Oracle of Mul Daya  
+1 Noxious Ghoul  
 1 Overgrown Tomb  
 1 Path to Exile  
 1 Phyrexian Tower  
-2 Plains  
+1 Plains  
+1 Prismatic Vista  
 1 Ramunap Excavator  
 1 Sakura-Tribe Elder  
 1 Scapeshift  
-1 Scute Swarm  
 1 Secluded Steppe  
-1 Sevinne's Reclamation  
 1 Shadowy Backstreet  
+1 Shamanic Revelation  
 1 Shifting Woodland  
 1 Six  
 1 Skullclamp  
@@ -254,33 +275,33 @@ DECK:
 1 Snow-Covered Plains  
 1 Snow-Covered Swamp  
 1 Sol Ring  
+1 Species Specialist  
 1 Spelunking  
 1 Splendid Reclamation  
-1 Springheart Nantuko  
 1 Swamp  
 1 Swords to Plowshares  
 1 Sylvan Library  
-1 Sylvan Safekeeper  
 1 Takenuma, Abandoned Mire  
-1 Talon Gates of Madara  
 1 Tear Asunder  
+1 Teferi's Protection  
 1 Temple Garden  
-1 Thalia and The Gitrog Monster  
+1 The Battle of Bywater  
 1 The Gitrog Monster  
-1 Thespian's Stage  
 1 Three Visits  
-1 Tireless Provisioner  
-1 Titania, Protector of Argoth  
+1 Tombstone Stairwell  
 1 Toxic Deluge  
 1 Tranquil Thicket  
 1 Underground Mortuary  
+1 Undergrowth Stadium  
+1 Undead Augur  
+1 Undead Warchief  
 1 Urborg, Tomb of Yawgmoth  
-1 Urza's Cave  
+1 Vault of Champions  
 1 Verdant Catacombs  
-1 Walk-In Closet // Forgotten Cellar  
+1 Wayward Servant  
 1 Wight of the Reliquary  
 1 Windswept Heath  
-1 World Shaper  
 1 Yavimaya, Cradle of Growth  
-1 Zuran Orb  
+1 Zombie Apocalypse  
+1 Zombie Master  
 ```

@@ -99,15 +99,21 @@ def _flush_caches():
 # Network Logic
 # ---------------------------------------------------------------------------
 
-def fetch(url, label="request"):
+def fetch(url, label="request", post_data=None):
     """
     Makes a web request to Scryfall. 
     Includes 'Retry' logic: if the server is busy, it waits and tries again.
+    Supports POST if post_data is provided.
     """
     for attempt in range(MAX_RETRIES):
         try:
-            req = urllib.request.Request(url, headers=HEADERS)
-            with urllib.request.urlopen(req, timeout=10) as r:
+            req_headers = dict(HEADERS)
+            payload = None
+            if post_data is not None:
+                req_headers["Content-Type"] = "application/json"
+                payload = json.dumps(post_data).encode("utf-8")
+            req = urllib.request.Request(url, data=payload, headers=req_headers)
+            with urllib.request.urlopen(req, timeout=15) as r:
                 return json.loads(r.read())
         except urllib.error.HTTPError as e:
             if e.code == 429 or e.code >= 500:
@@ -182,6 +188,52 @@ def lookup_named(name, no_cache=False):
         _cache_set(_card_cache, name, result)
 
     return result
+
+def lookup_collection(names, no_cache=False):
+    """
+    Looks up a batch of cards using Scryfall's /cards/collection endpoint.
+    Processes in chunks of 75 identifiers, checking local cache first.
+    Returns: dict mapping lowercase clean name -> card object
+    """
+    _init_caches()
+    results = {}
+    needed = []
+
+    for name in names:
+        clean_name = name.strip()
+        if not clean_name:
+            continue
+        if not no_cache:
+            cached = _cache_get(_card_cache, clean_name, CARD_CACHE_TTL)
+            if cached is not None:
+                results[clean_name.lower()] = cached
+                continue
+        needed.append(clean_name)
+
+    if not needed:
+        return results
+
+    # Chunk into 75 items per Scryfall collection API specification
+    for i in range(0, len(needed), 75):
+        chunk = needed[i:i + 75]
+        if i > 0:
+            time.sleep(NAMED_DELAY)
+        # For split/partner names like "Frodo // Sam", strip down to primary face for lookup if needed
+        payload = {"identifiers": [{"name": n.split("//")[0].strip() if "//" in n else n} for n in chunk]}
+        data = fetch("https://api.scryfall.com/cards/collection", label=f"collection chunk {i//75 + 1}", post_data=payload)
+        if not data:
+            continue
+        for card in data.get("data", []):
+            cname = card.get("name", "")
+            results[cname.lower()] = card
+            _cache_set(_card_cache, cname, card)
+            if "//" in cname:
+                for face in cname.split("//"):
+                    results[face.strip().lower()] = card
+                    _cache_set(_card_cache, face.strip(), card)
+
+    _flush_caches()
+    return results
 
 def lookup_search(query, unique="cards", order="name", max_pages=5, no_cache=False):
     """Search for cards using Scryfall's powerful search syntax."""
@@ -279,6 +331,19 @@ def main():
             path = args[idx + 1]
             with open(path, encoding="utf-8") as f:
                 names = [line.strip() for line in f if line.strip()]
+            collection_results = lookup_collection(names, no_cache=no_cache)
+            for name in names:
+                lookup_key = name.lower()
+                card = collection_results.get(lookup_key)
+                if not card and "//" in name:
+                    card = collection_results.get(name.split("//")[0].strip().lower())
+                if not card:
+                    card = lookup_named(name, no_cache=no_cache)
+                if card:
+                    print(format_card(card))
+                else:
+                    print(f"--- NOT FOUND: {name}")
+            return
         else:
             # DIRECT MODE (names typed directly in the terminal)
             names = [a for a in args if not a.startswith("--")]

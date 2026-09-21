@@ -65,11 +65,9 @@ Decks under development, research, or being optimized.
 *   **Svella, Ice Shaper:** Gruul Big-Mana Activated Ability & Topdeck Stompy ("The Icy Forge"). Bracket 3.
 *   **Sygg, River Cutthroat:** Dimir Group Slug, Goad & End-Step Attrition Control ("The Toll of the River"). Bracket 3.
 *   **Felothar the Steadfast:** Abzan Defender Beatdown, Team Vigilance & Toughness Fling Reach ("The Iron Citadel"). Bracket 3.
-*   **The Necrobloom:** Abzan Landfall, Token Swarm & Field of the Dead Engine ("Field of the Dead Landfall Overrun"). Bracket 3 (Shelved/Reference).
+*   **The Necrobloom:** Abzan ({W}{B}{G}) Go-Wide Zombie Apocalypse & Landfall Swarm Engine ("Abzan Zombie Apocalypse"). Bracket 3.
 *   **Caesar, Legion's Emperor:** Mardu Tokens, Aristocrats & Burn Swarm Engine ("The Legion's Swarm"). Bracket 3.
 *   **Atraxa, Praetors' Voice:** Non-Red (WUBG) Superfriends, Proliferate Value Engine & Asymmetric Board Control ("The Superfriends Sovereign"). Bracket 3.
-*   **Ultron, Artificial Malevolence:** Colorless Artifacts, Token Duplication & Robot Swarm ("The Assembly Line"). Bracket 3.
-*   **Varina, Lich Queen:** Esper ({W}{U}{B}) Go-Wide Zombie Swarm / Card Velocity & Combat Overrun ("Esper Zombie Apocalypse"). Bracket 3.
 
 
 ### 🎮 `/arena_decks`
