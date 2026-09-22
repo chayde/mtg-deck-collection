@@ -2,6 +2,23 @@
 
 ## 🗓️ September 2026: Varina Zombie Apocalypse Inception, Henzie Blitz Refinement & Playtesting
 
+### 2026-09-21: Krenko, Mob Boss — Post-Ban Package Integration & Repository Inception (Bracket 3 Validated)
+*   **Deck Inception & Post-Ban Strategy:** Integrated the user's mono-red **Krenko, Mob Boss** ({2}{R}{R}) deck found online and played in paper/Forge. The original list contained three banned cards (*Jeweled Lotus*, *Mana Crypt*, and *Mox Ruby*). Following an evaluation of acceleration and resilience options, implemented **Option 1 ("Engine Velocity & Combo")**:
+    *   **In (3):** *Arcane Signet* ({2}), *Patriar's Seal* ({3}), *Umbral Mantle* ({3}).
+    *   **Out (3):** *Jeweled Lotus*, *Mana Crypt*, *Mox Ruby*.
+    *   *Option 1 Rationale:* Provides crucial 2-mana rock ramp (*Arcane Signet*), repeatable untap utility for Krenko (*Patriar's Seal*), and an infinite combo kill line (*Umbral Mantle* with *Skirk Prospector*, *Phyrexian Altar*, *Ashnod's Altar*, or *Mana Echoes* to produce infinite 1/1 Goblins, infinite mana, and an infinitely large Krenko).
+*   **Deck File Scaffolding (Triple Update Rule):** Created `commander_decks/Planning/KrenkoMobBoss/` featuring:
+    *   [`krenko_mob_boss.md`](commander_decks/Planning/KrenkoMobBoss/krenko_mob_boss.md) (`deck_status: main`): Comprehensive strategy guide, keystone geometry, infinite combo documentation, categorized card explanations, roadmap, and Plain Text Copy/Paste section (with two trailing spaces for GFM line breaks).
+    *   `moxfield_import.txt`: Validated exactly 100 cards (1 Commander + 99 Mainboard) in raw Moxfield format with zero trailing spaces.
+    *   `README.md`: Mirrored documentation for GitHub navigation.
+*   **Bracket & Game Changers Compliance:** Scryfall lookup confirmed the deck contains exactly 3 Game Changers (*Ancient Tomb*, *Mox Diamond*, *The One Ring*). Under the Commander Bracket System, Bracket 3 (Upgraded Casual) permits up to 3 Game Changers. The deck is strictly **Bracket 3 compliant (3/3 Game Changers)**.
+*   **MTG Forge Synchronization:** Added `"KrenkoMobBoss": "Krenko"` alias to `scripts/sync_to_forge.py` and exported the 100-card deck to `%APPDATA%\Forge\decks\commander\Krenko.dck`.
+*   **Goldfish Benchmark Validation:** Simulated 20 4-player pod games (80 seats total) using `scripts/multiplayer_goldfish.py --sims 20 --turns 10 --bracket 3`:
+    *   **Commander Cast Rate:** 80/80 (100%), averaging **Turn 3.8** (with 6 Turn 2 casts).
+    *   **Mulligan Stability:** 52% Gold Keeps, 46% Silver Keeps, 1% Desperation Keeps (6.92 avg hand size).
+    *   **Engine Readiness:** 96% target window readiness ($\le$ T7), averaging **Turn 4.3**, securing a decisive **PASS** for Bracket 3. Full report saved to [`commander_decks/Planning/KrenkoMobBoss/goldfish_report.html`](commander_decks/Planning/KrenkoMobBoss/goldfish_report.html) and logged to [`commander_decks/Planning/KrenkoMobBoss/GOLDFISH_LOG.md`](commander_decks/Planning/KrenkoMobBoss/GOLDFISH_LOG.md).
+
+
 ### 2026-09-21: MTG Forge Deck Synchronizer — Multi-Faced Card & Crash Fix (`scripts/sync_to_forge.py`)
 *   **Root Cause Diagnosis:** Investigated bug where certain decks (e.g. `Green Goblin`, `Gamma Smash`) showed no commander in Forge, and attempting to add cards in the Forge Deck Editor triggered `java.lang.NullPointerException: element cannot be mapped to a null key` in `ACEditorBase.getAllowedAdditions`. Confirmed that Forge indexes multi-faced cards (DFCs, MDFCs, split cards, adventures) strictly by their primary front face name; composite strings with slashes (such as `Norman Osborn / Green Goblin`, `Bruce Banner // The Incredible Hulk`, `Wear // Tear`) fail lookup and create "unsupported card" instances whose `normalizedName` is null. Java 8's `Collectors.groupingBy()` in Forge's deck editor explicitly forbids null keys, crashing the UI thread.
 *   **Synchronizer Engine Enhancement:**

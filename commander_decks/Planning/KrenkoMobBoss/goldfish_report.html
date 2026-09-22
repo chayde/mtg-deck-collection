@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Goldfish Audit Report — Krenko, Mob Boss</title>
+<style>
+  :root { --bg:#0f1420; --card:#1a2130; --card-alt:#222c3f; --ink:#e6ebf2; --muted:#8b97ab;
+          --accent:#4ade80; --accent2:#38bdf8; --accent3:#a78bfa; --line:#2a3346; --warn:#f59e0b; --danger:#ef4444; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+          font:15px/1.5 system-ui,-apple-system,Segoe UI,Roboto,sans-serif; }
+  .wrap { max-width:960px; margin:0 auto; padding:32px 20px 60px; }
+  h1 { font-size:26px; margin:0 0 4px; display:flex; align-items:center; gap:8px; }
+  .sub { color:var(--muted); margin:0 0 24px; font-size:14px; }
+  .sub code { background:#0009; padding:2px 6px; border-radius:5px; color:var(--accent2); }
+  
+  .cards { display:grid; grid-template-columns:repeat(auto-fit,minmax(140px,1fr));
+            gap:14px; margin-bottom:24px; }
+  .stat { background:var(--card); border:1px solid var(--line); border-radius:12px;
+           padding:16px 18px; }
+  .stat .k { color:var(--muted); font-size:11px; text-transform:uppercase;
+              letter-spacing:.05em; }
+  .stat .v { font-size:26px; font-weight:700; margin-top:4px; }
+  .stat .v.accent { color:var(--accent); }
+  .stat .v.accent2 { color:var(--accent2); }
+  .stat .v.accent3 { color:var(--accent3); }
+  
+  h2 { font-size:15px; text-transform:uppercase; letter-spacing:.06em;
+        color:var(--muted); border-bottom:1px solid var(--line);
+        padding-bottom:8px; margin:32px 0 16px; }
+  
+  .badge { display:inline-block; padding:8px 14px; border-radius:8px; font-weight:600; font-size:14px; margin-bottom:20px; width:100%; }
+  .badge.pass { background:#166534; color:#86efac; border:1px solid #22c55e44; }
+  .badge.warn { background:#78350f; color:#fde68a; border:1px solid #f59e0b44; }
+  .badge.notice { background:#1e3a8a; color:#bfdbfe; border:1px solid #3b82f644; }
+  
+  .comp-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(110px,1fr)); gap:10px; margin-bottom:24px; }
+  .comp-item { background:var(--card); border:1px solid var(--line); border-radius:8px; padding:10px 12px; text-align:center; }
+  .comp-item .ck { font-size:11px; color:var(--muted); text-transform:uppercase; }
+  .comp-item .cv { font-size:18px; font-weight:700; color:var(--accent2); margin-top:2px; }
+
+  .section-box { background:var(--card); border:1px solid var(--line); border-radius:12px; padding:18px 20px; margin-bottom:24px; }
+
+  table { width:100%; border-collapse:collapse; }
+  td, th { padding:7px 10px; text-align:left; }
+  
+  .dist td { border:0; }
+  .dist .turn { width:140px; color:var(--muted); font-variant-numeric:tabular-nums; }
+  .dist .barcell { width:100%; }
+  .dist .count { width:90px; text-align:right; font-variant-numeric:tabular-nums; }
+  .bar { height:18px; border-radius:4px; min-width:2px; }
+  .bar.deploy { background:linear-gradient(90deg,var(--accent2),var(--accent)); }
+  .bar.engine { background:linear-gradient(90deg,var(--accent3),var(--accent2)); }
+  .target-tag { font-size:10px; padding:2px 5px; border-radius:4px; background:#38bdf833; color:var(--accent2); margin-left:6px; }
+
+  .simtable { font-size:14px; }
+  .simtable th { color:var(--muted); font-weight:600; border-bottom:1px solid var(--line); }
+  .simtable td { border-bottom:1px solid #202839; }
+  .simtable tr.miss td { color:#f7a08a; }
+  .simtable .turns { color:var(--muted); }
+  
+  .hq-table td { border-bottom:1px solid var(--line); padding:10px 12px; }
+  .hq-table th { color:var(--muted); border-bottom:1px solid var(--line); padding:10px 12px; }
+  .hq-bar { height:10px; border-radius:3px; }
+  
+  .muted { color:var(--muted); }
+  footer { margin-top:40px; color:var(--muted); font-size:12px; border-top:1px solid var(--line); padding-top:16px; }
+</style></head><body><div class="wrap">
+  <h1>🐟 Goldfish Audit Report — Krenko, Mob Boss</h1>
+  <p class="sub">Deck: <code>commander_decks/Planning/KrenkoMobBoss/moxfield_import.txt</code> &nbsp;·&nbsp;
+     Target: <strong>Bracket 3 (Upgraded)</strong> &nbsp;·&nbsp;
+     Measuring: CMC 4 &nbsp;·&nbsp;
+     20 sims × T10 &nbsp;·&nbsp;
+     2026-09-21 21:34:49 Eastern Daylight Time</p>
+
+  
+
+  <div class="badge pass">
+    <strong>Bracket Compliance [PASS]:</strong> Deck deploys its engine around Turn 4.3, perfectly positioned to execute and threaten a win on Bracket 3 (Upgraded)'s target (Turn 7+).
+  </div>
+
+  <div class="cards">
+    <div class="stat"><div class="k">Deploy Rate</div><div class="v accent">100%</div>
+      <div class="muted">80/80 seats</div></div>
+    <div class="stat"><div class="k">Avg Cast Turn</div><div class="v">T3.8</div>
+      <div class="muted">Range: T2–T7</div></div>
+    <div class="stat"><div class="k">Gold Keep Rate</div><div class="v accent2">52%</div>
+      <div class="muted">Avg Hand: 6.92 cards</div></div>
+    <div class="stat"><div class="k">Target Readiness (T&le;7)</div><div class="v accent3">96%</div>
+      <div class="muted">Avg: T4.3</div></div>
+    <div class="stat"><div class="k">Avg Creatures</div><div class="v">3.6</div>
+      <div class="muted">by T10</div></div>
+  </div>
+
+  
+  <h2>📦 Deck Auto-Classification (Scryfall Engine)</h2>
+  <div class="comp-grid">
+    <div class="comp-item"><div class="ck">Lands</div><div class="cv">38</div></div>
+    <div class="comp-item"><div class="ck">Mana Dorks &amp; Rocks</div><div class="cv">9</div></div>
+    <div class="comp-item"><div class="ck">Ramp Spells</div><div class="cv">5</div></div>
+    <div class="comp-item"><div class="ck">Burst / Rituals</div><div class="cv">0</div></div>
+    <div class="comp-item"><div class="ck">Enablers &amp; Draw</div><div class="cv">24</div></div>
+    <div class="comp-item"><div class="ck">High-CMC Payoffs</div><div class="cv">13</div></div>
+    <div class="comp-item"><div class="ck">MDFCs</div><div class="cv">0</div></div>
+    <div class="comp-item"><div class="ck">Creatures</div><div class="cv">27</div></div>
+  </div>
+
+  
+  <h2>🚀 Fastest Commander Deployment Showcase</h2>
+  <div class="section-box" style="border-left:4px solid var(--accent);">
+    <div style="font-size:16px; font-weight:700; margin-bottom:8px;">
+      Sim 8, Seat 1 &mdash; Cast on Turn 2 
+      <span class="target-tag" style="background:#22c55e33; color:var(--accent); font-size:12px; padding:3px 8px;">Gold Keep (7 cards)</span>
+    </div>
+    <div style="margin-bottom:12px;">
+      <div class="k" style="margin-bottom:6px;">Kept Opening Hand:</div>
+      <div><span style='display:inline-block; background:var(--card-alt); border:1px solid var(--line); border-radius:4px; padding:2px 6px; margin:2px 4px 2px 0; font-size:12px;'>Mox Diamond</span><span style='display:inline-block; background:var(--card-alt); border:1px solid var(--line); border-radius:4px; padding:2px 6px; margin:2px 4px 2px 0; font-size:12px;'>Commander's Plate</span><span style='display:inline-block; background:var(--card-alt); border:1px solid var(--line); border-radius:4px; padding:2px 6px; margin:2px 4px 2px 0; font-size:12px;'>Arcane Signet</span><span style='display:inline-block; background:var(--card-alt); border:1px solid var(--line); border-radius:4px; padding:2px 6px; margin:2px 4px 2px 0; font-size:12px;'>Banner of Kinship</span><span style='display:inline-block; background:var(--card-alt); border:1px solid var(--line); border-radius:4px; padding:2px 6px; margin:2px 4px 2px 0; font-size:12px;'>Cavern of Souls</span><span style='display:inline-block; background:var(--card-alt); border:1px solid var(--line); border-radius:4px; padding:2px 6px; margin:2px 4px 2px 0; font-size:12px;'>Mountain</span><span style='display:inline-block; background:var(--card-alt); border:1px solid var(--line); border-radius:4px; padding:2px 6px; margin:2px 4px 2px 0; font-size:12px;'>Goblin Piledriver</span></div>
+    </div>
+    <div>
+      <div class="k" style="margin-bottom:6px;">Turn-by-Turn Deployment Sequence:</div>
+      <ol style="margin:0; padding-left:20px; font-size:13px;">
+        <li style='margin-bottom:4px;'><code>T 1: Land: Cavern of Souls | Cast: Mox Diamond | Cast: Arcane Signet | Cast: Commander's Plate (generic)</code></li><li style='margin-bottom:4px;'><code>T 2: Land: Nykthos, Shrine to Nyx | ** CAST Krenko, Mob Boss T2 **</code></li>
+      </ol>
+    </div>
+  </div>
+
+  
+  <h2>⚠️ Worst-Case Commander Deployment Showcase</h2>
+  <div class="section-box" style="border-left:4px solid var(--warn);">
+    <div style="font-size:16px; font-weight:700; margin-bottom:8px;">
+      Sim 6, Seat 4 &mdash; Cast on Turn 7
+      <span class="target-tag" style="background:#f59e0b33; color:var(--warn); font-size:12px; padding:3px 8px;">Silver Keep (7 cards)</span>
+    </div>
+    <div style="margin-bottom:12px; font-size:14px; color:#fca5a5;">
+      <strong>Stall Diagnostic:</strong> Late Deployment: Cast on Turn 7 due to slow early mana acceleration or tapped lands
+    </div>
+    <div style="margin-bottom:12px;">
+      <div class="k" style="margin-bottom:6px;">Kept Opening Hand:</div>
+      <div><span style='display:inline-block; background:var(--card-alt); border:1px solid var(--line); border-radius:4px; padding:2px 6px; margin:2px 4px 2px 0; font-size:12px;'>Goblin Piledriver</span><span style='display:inline-block; background:var(--card-alt); border:1px solid var(--line); border-radius:4px; padding:2px 6px; margin:2px 4px 2px 0; font-size:12px;'>Goblin Sharpshooter</span><span style='display:inline-block; background:var(--card-alt); border:1px solid var(--line); border-radius:4px; padding:2px 6px; margin:2px 4px 2px 0; font-size:12px;'>Valakut, the Molten Pinnacle</span><span style='display:inline-block; background:var(--card-alt); border:1px solid var(--line); border-radius:4px; padding:2px 6px; margin:2px 4px 2px 0; font-size:12px;'>Aggravated Assault</span><span style='display:inline-block; background:var(--card-alt); border:1px solid var(--line); border-radius:4px; padding:2px 6px; margin:2px 4px 2px 0; font-size:12px;'>Umbral Mantle</span><span style='display:inline-block; background:var(--card-alt); border:1px solid var(--line); border-radius:4px; padding:2px 6px; margin:2px 4px 2px 0; font-size:12px;'>Mountain</span><span style='display:inline-block; background:var(--card-alt); border:1px solid var(--line); border-radius:4px; padding:2px 6px; margin:2px 4px 2px 0; font-size:12px;'>Eldrazi Monument</span></div>
+    </div>
+    <div>
+      <div class="k" style="margin-bottom:6px;">Turn-by-Turn Play Sequence:</div>
+      <ol style="margin:0; padding-left:20px; font-size:13px;">
+        <li style='margin-bottom:4px;'><code>T 1: Land: Mountain</code></li><li style='margin-bottom:4px;'><code>T 2: Land: Mountain | Cast: Goblin Piledriver (generic)</code></li><li style='margin-bottom:4px;'><code>T 3: Land: Valakut, the Molten Pinnacle (tapped)</code></li><li style='margin-bottom:4px;'><code>T 4: Cast: Goblin Sharpshooter (generic)</code></li><li style='margin-bottom:4px;'><code>T 5: Cast: Aggravated Assault (generic)</code></li><li style='margin-bottom:4px;'><code>T 6: Cast: Gamble (+1 land) | Cast: Goblin War Strike (generic)</code></li><li style='margin-bottom:4px;'><code>T 7: ** CAST Krenko, Mob Boss T7 **</code></li><li style='margin-bottom:4px;'><code>T 8: Cast: Umbral Mantle (generic)</code></li><li style='margin-bottom:4px;'><code>T 9: Cast: Wheel of Fortune (generic)</code></li><li style='margin-bottom:4px;'><code>T10: Cast: Sol Ring | Cast: Eldrazi Monument (generic)</code></li>
+      </ol>
+    </div>
+  </div>
+
+  <h2>🃏 Opening Hand Quality &amp; Mulligan Profile (80 hands evaluated)</h2>
+  <div class="section-box" style="padding:0; overflow:hidden;">
+    <table class="hq-table">
+      <thead><tr><th>Keep Category</th><th>Definition</th><th>Hands</th><th>Share</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><strong style="color:var(--accent);">Gold Keep</strong></td>
+          <td>Ideal opening hand: 2–4 lands, &ge;1 ramp piece, &ge;1 engine enabler</td>
+          <td><strong>42</strong> / 80</td>
+          <td><strong style="color:var(--accent);">52%</strong></td>
+        </tr>
+        <tr>
+          <td><strong style="color:var(--accent2);">Silver Keep</strong></td>
+          <td>Standard functional hand: 2–5 lands with playable curve</td>
+          <td><strong>37</strong> / 80</td>
+          <td><strong style="color:var(--accent2);">46%</strong></td>
+        </tr>
+        <tr>
+          <td><strong style="color:var(--warn);">Desperation Keep</strong></td>
+          <td>Forced keep after multiple mulligans (Hand size &le; 5)</td>
+          <td><strong>1</strong> / 80</td>
+          <td><strong style="color:var(--warn);">1%</strong></td>
+        </tr>
+        <tr>
+          <td colspan="2"><strong>Average Starting Hand Size</strong></td>
+          <td colspan="2"><strong>6.92 cards</strong></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2>🚀 Commander Deployment Distribution</h2>
+  <div class="section-box">
+    <table class="dist"><tr><td class="turn">T2</td><td class="barcell"><div class="bar deploy" style="width:20.7%"></div></td><td class="count">6 <span class="muted">(8%)</span></td></tr><tr><td class="turn">T3</td><td class="barcell"><div class="bar deploy" style="width:96.6%"></div></td><td class="count">28 <span class="muted">(35%)</span></td></tr><tr><td class="turn">T4</td><td class="barcell"><div class="bar deploy" style="width:100.0%"></div></td><td class="count">29 <span class="muted">(36%)</span></td></tr><tr><td class="turn">T5</td><td class="barcell"><div class="bar deploy" style="width:41.4%"></div></td><td class="count">12 <span class="muted">(15%)</span></td></tr><tr><td class="turn">T6</td><td class="barcell"><div class="bar deploy" style="width:10.3%"></div></td><td class="count">3 <span class="muted">(4%)</span></td></tr><tr><td class="turn">T7</td><td class="barcell"><div class="bar deploy" style="width:6.9%"></div></td><td class="count">2 <span class="muted">(2%)</span></td></tr></table>
+  </div>
+
+  <h2>⚡ Engine Readiness Distribution (Bracket 3 (Upgraded) — Target T7)</h2>
+  <div class="section-box">
+    <table class="dist"><tr><td class="turn">T2 <span class="target-tag">Target Window</span></td><td class="barcell"><div class="bar engine" style="width:6.7%"></div></td><td class="count">2 <span class="muted">(2%)</span></td></tr><tr><td class="turn">T3 <span class="target-tag">Target Window</span></td><td class="barcell"><div class="bar engine" style="width:66.7%"></div></td><td class="count">20 <span class="muted">(25%)</span></td></tr><tr><td class="turn">T4 <span class="target-tag">Target Window</span></td><td class="barcell"><div class="bar engine" style="width:100.0%"></div></td><td class="count">30 <span class="muted">(38%)</span></td></tr><tr><td class="turn">T5 <span class="target-tag">Target Window</span></td><td class="barcell"><div class="bar engine" style="width:53.3%"></div></td><td class="count">16 <span class="muted">(20%)</span></td></tr><tr><td class="turn">T6 <span class="target-tag">Target Window</span></td><td class="barcell"><div class="bar engine" style="width:16.7%"></div></td><td class="count">5 <span class="muted">(6%)</span></td></tr><tr><td class="turn">T7 <span class="target-tag">Target Window</span></td><td class="barcell"><div class="bar engine" style="width:13.3%"></div></td><td class="count">4 <span class="muted">(5%)</span></td></tr><tr><td class="turn">T8 </td><td class="barcell"><div class="bar engine" style="width:6.7%"></div></td><td class="count">2 <span class="muted">(2%)</span></td></tr><tr><td class="turn">T10 </td><td class="barcell"><div class="bar engine" style="width:3.3%"></div></td><td class="count">1 <span class="muted">(1%)</span></td></tr></table>
+  </div>
+
+  <h2>📊 Per-Simulation Breakdown (20 Games)</h2>
+  <div class="section-box" style="padding:0; overflow:hidden;">
+    <table class="simtable">
+      <thead><tr><th>Sim #</th><th>Seats Cast</th><th>Earliest</th><th>Turns Deployed</th><th>Avg Creatures</th></tr></thead>
+      <tbody><tr><td>1</td><td>4/4</td><td>T3<br><span class="muted" style="font-size:11px;">Fastest: Seat 3 (Silver): Throne of Eldraine, Mana Echoes, Mountain, Maze of Ith, Mountain, Nykthos, Shrine to Nyx, Gamble</span></td><td class="turns">T5, T5, T3, T5</td><td>3.0</td></tr><tr><td>2</td><td>4/4</td><td>T3<br><span class="muted" style="font-size:11px;">Fastest: Seat 1 (Gold): Skirk Prospector, Aggravated Assault, Mountain, Den of the Bugbear, Goblin Lackey, Patriar's Seal, Valakut, the Molten Pinnacle</span></td><td class="turns">T3, T3, T3, T3</td><td>4.8</td></tr><tr><td>3</td><td>4/4</td><td>T3<br><span class="muted" style="font-size:11px;">Fastest: Seat 1 (Gold): Broadside Bombardiers, Muxus, Goblin Grandee, Brightstone Ritual, Patriar's Seal, Cavern of Souls, Mountain</span></td><td class="turns">T3, T5, T5, T6</td><td>4.5</td></tr><tr><td>4</td><td>4/4</td><td>T3<br><span class="muted" style="font-size:11px;">Fastest: Seat 2 (Silver): Mountain, Blood Moon, Maze of Ith, Mountain, Patriar's Seal, Eldrazi Monument, Valakut, the Molten Pinnacle</span></td><td class="turns">T6, T3, T4, T4</td><td>4.0</td></tr><tr><td>5</td><td>4/4</td><td>T3<br><span class="muted" style="font-size:11px;">Fastest: Seat 2 (Gold): War Room, Maze of Ith, Mountain, Orcrist, Goblin-cleaver, Goblin Lackey, Sting, the Glinting Dagger, Gamble</span></td><td class="turns">T4, T3, T4, T6</td><td>3.5</td></tr><tr><td>6</td><td>4/4</td><td>T4<br><span class="muted" style="font-size:11px;">Fastest: Seat 3 (Silver): Fable of the Mirror-Breaker, Mountain, Goblin Trashmaster, Mountain, Ruby Medallion, Goblin Wizard, Mountain</span></td><td class="turns">T5, T5, T4, T7</td><td>3.5</td></tr><tr><td>7</td><td>4/4</td><td>T4<br><span class="muted" style="font-size:11px;">Fastest: Seat 1 (Gold): Goblin Matron, Marvin, Murderous Mimic, Mountain, Pashalik Mons, Strip Mine, Mountain, Skullclamp</span></td><td class="turns">T4, T5, T7, T4</td><td>3.5</td></tr><tr><td>8</td><td>4/4</td><td>T2<br><span class="muted" style="font-size:11px;">Fastest: Seat 1 (Gold): Mox Diamond, Commander's Plate, Arcane Signet, Banner of Kinship, Cavern of Souls, Mountain, Goblin Piledriver</span></td><td class="turns">T2, T3, T3, T3</td><td>3.5</td></tr><tr><td>9</td><td>4/4</td><td>T3<br><span class="muted" style="font-size:11px;">Fastest: Seat 1 (Gold): The One Ring, Gamble, Mountain, Swiftfoot Boots, Impact Tremors, Mountain, Goblin Matron</span></td><td class="turns">T3, T4, T4, T3</td><td>3.2</td></tr><tr><td>10</td><td>4/4</td><td>T3<br><span class="muted" style="font-size:11px;">Fastest: Seat 1 (Silver): Mountain, Mountain, Mountain, Coat of Arms, Muxus, Goblin Grandee, Blood Moon, Arcane Signet</span></td><td class="turns">T3, T4, T3, T4</td><td>3.2</td></tr><tr><td>11</td><td>4/4</td><td>T2<br><span class="muted" style="font-size:11px;">Fastest: Seat 4 (Gold): Sol Ring, Strip Mine, Mountain, Mox Diamond, Mountain, Nykthos, Shrine to Nyx, Goblin Piledriver</span></td><td class="turns">T4, T3, T4, T2</td><td>3.5</td></tr><tr><td>12</td><td>4/4</td><td>T3<br><span class="muted" style="font-size:11px;">Fastest: Seat 1 (Silver): Skirk Prospector, Three Tree City, Mountain, Jeska's Will, Mountain, Mountain, Mountain</span></td><td class="turns">T3, T3, T4, T3</td><td>3.2</td></tr><tr><td>13</td><td>4/4</td><td>T3<br><span class="muted" style="font-size:11px;">Fastest: Seat 4 (Silver): Blood Moon, Eldrazi Monument, Mountain, Sokenzan, Crucible of Defiance, Umbral Mantle, Arena of Glory, Mountain</span></td><td class="turns">T5, T4, T4, T3</td><td>3.8</td></tr><tr><td>14</td><td>4/4</td><td>T3<br><span class="muted" style="font-size:11px;">Fastest: Seat 4 (Gold): Brightstone Ritual, Roaming Throne, Den of the Bugbear, Chaos Warp, Coat of Arms, Mountain, Cavern of Souls</span></td><td class="turns">T4, T4, T4, T3</td><td>3.0</td></tr><tr><td>15</td><td>4/4</td><td>T3<br><span class="muted" style="font-size:11px;">Fastest: Seat 4 (Gold): Swiftfoot Boots, Mountain, Arcane Signet, Ruby Medallion, Sol Ring, Goblin Trashmaster, Strip Mine</span></td><td class="turns">T4, T4, T4, T3</td><td>4.0</td></tr><tr><td>16</td><td>4/4</td><td>T3<br><span class="muted" style="font-size:11px;">Fastest: Seat 1 (Silver): Fable of the Mirror-Breaker, Mana Echoes, Commander's Plate, Ancient Tomb, Swiftfoot Boots, Blood Moon, Mountain</span></td><td class="turns">T3, T3, T4, T4</td><td>3.0</td></tr><tr><td>17</td><td>4/4</td><td>T2<br><span class="muted" style="font-size:11px;">Fastest: Seat 3 (Silver): Sol Ring, Mountain, Mountain, Helm of the Host, Mountain, Mountain, Mountain</span></td><td class="turns">T3, T5, T2, T2</td><td>2.5</td></tr><tr><td>18</td><td>4/4</td><td>T3<br><span class="muted" style="font-size:11px;">Fastest: Seat 4 (Gold): Skullclamp, Mountain, Mines of Moria, Mountain, Muxus, Goblin Grandee, Skirk Prospector, War Room</span></td><td class="turns">T4, T4, T5, T3</td><td>4.2</td></tr><tr><td>19</td><td>4/4</td><td>T2<br><span class="muted" style="font-size:11px;">Fastest: Seat 1 (Gold): Roaming Throne, Mountain, Sting, the Glinting Dagger, Brightstone Ritual, Thornbite Staff, Mountain, Goblin Wizard</span></td><td class="turns">T2, T4, T2, T4</td><td>4.2</td></tr><tr><td>20</td><td>4/4</td><td>T3<br><span class="muted" style="font-size:11px;">Fastest: Seat 1 (Gold): Ashnod's Altar, Mountain, Goblin Settler, Mountain, Blood Moon, Impact Tremors, General Kreat, the Boltbringer</span></td><td class="turns">T3, T4, T5, T3</td><td>3.0</td></tr></tbody>
+    </table>
+  </div>
+
+  <footer>Generated by <code>scripts/multiplayer_goldfish.py</code>. A 4-player Commander pod simulation;
+  all seats run the same deck. "Deploy" = the measured commander cost becomes castable in game conditions.</footer>
+</div></body></html>
