@@ -162,6 +162,7 @@ Rather than relying purely on reactive removal spells that empty your hand, this
 
 ### High-Impact Tech & Flex Options
 *   **[Gisa and Geralf](https://scryfall.com/search?q=!"Gisa+and+Geralf"):** (Dimir only, kept as reference for multi-color variants).
+*   **[Yawgmoth's Will](https://scryfall.com/search?q=!"Yawgmoth's+Will"):** ({2}{B}) (High-impact graveyard recursion tech; lets you replay key nonland pieces or utility spells out of the graveyard following repeated wipes, though cards are exiled upon leaving and dies triggers are replaced).
 *   **[Phyrexian Altar](https://scryfall.com/search?q=!"Phyrexian+Altar"):** (Game Changer upgrade option if replacing Field of the Dead or Bolas's Citadel).
 *   **[Vampiric Tutor](https://scryfall.com/search?q=!"Vampiric+Tutor") / [Demonic Tutor](https://scryfall.com/search?q=!"Demonic+Tutor"):** (Game Changers that would push the deck past Bracket 3's limit of 3 unless swapped for The One Ring or Citadel).
 
