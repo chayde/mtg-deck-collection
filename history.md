@@ -19,7 +19,7 @@
 *   **Goldfish Benchmark Validation:** Simulated 20 4-player pod games (80 seats total) using `scripts/multiplayer_goldfish.py --sims 20 --turns 10 --bracket 3`:
     *   **Commander Cast Rate:** 77/80 (96%), averaging **Turn 5.4** (with explosive T2–T3 lines unlocked by *Dark Ritual*, *Sol Ring*, and *Jet Medallion*).
     *   **Mulligan Stability:** 22% Gold Keeps, 78% Silver Keeps, **0% Desperation Keeps** (6.91 avg hand size).
-    *   **Engine Readiness:** 85% target window readiness ($\le$ T7), averaging **Turn 5.4**, securing a decisive **PASS** for Bracket 3. Full report saved to [`commander_decks/Planning/GisaTheHellraiser/goldfish_report.html`](commander_decks/Planning/GisaTheHellraiser/goldfish_report.html) and logged to [`commander_decks/Planning/GisaTheHellraiser/GOLDFISH_LOG.md`](commander_decks/Planning/GisaTheHellraiser/GOLDFISH_LOG.md).
+*   **Finisher Swap (Gray Merchant of Asphodel in for Roaming Throne):** Executed Visual Swap Matrix swap replacing *Roaming Throne* ({4}) with *Gray Merchant of Asphodel* ({3}{B}{B}) to provide a devastating direct life-drain win condition that synergizes with heavy mono-black devotion and mass reanimation spells. Goldfish re-validation showed improved commander deployment (Turn 5.0 avg, 28% Gold Keeps), maintaining a solid Bracket 3 PASS.
 *   **Archiving:** Updated `TheNecrobloom` to `deck_status: reference` in `necrobloom_abzan.md` and updated root `README.md`.
 
 ### 2026-09-21: Krenko, Mob Boss — Post-Ban Package Integration & Repository Inception (Bracket 3 Validated)

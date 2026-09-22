@@ -49,6 +49,7 @@ Rather than relying purely on reactive removal spells that empty your hand, this
 4. **Bringer of the Last Gift ({6}{B}{B}):** Symmetrical creature wipe and asymmetric mass reanimation. Sacrificing your board wipes all other creatures, then immediately reanimates every creature from your graveyard with haste or menace.
 5. **Mikaeus, the Unhallowed ({3}{B}{B}{B}):** Gives all non-Humans +1/+1 and **Undying**, rendering your entire Zombie army immune to opposing board wipes. Any wipe returns your army bigger and triggers all ETBs again!
 6. **Acererak the Archlich ({2}{B}):** Cast Acererak, venture into the *Lost Mine of Phandelver* or *Dungeon of the Mad Mage*, return him to hand, and repeat with big mana for card draw, treasure ramp, and life drain.
+7. **Gray Merchant of Asphodel ({3}{B}{B}):** Drains each opponent for life equal to your devotion to black and gains that much life. Devastating when mass-reanimated via *Bringer of the Last Gift*, *Living Death*, *Patriarch's Bidding*, or *Zombie Apocalypse*.
 
 ---
 
@@ -95,7 +96,7 @@ Rather than relying purely on reactive removal spells that empty your hand, this
 *   [Living Death](https://scryfall.com/search?q=!"Living+Death") ({3}{BB}) — Symmetrical board wipe and graveyard swap that turns your full graveyard into a game-winning horde.
 *   [Zombie Apocalypse](https://scryfall.com/search?q=!"Zombie+Apocalypse") ({3}{B}{B}{B}) — Destroys all Humans and returns all Zombie creature cards from your graveyard to the battlefield tapped.
 
-### Typal Lords, Anthems & Multipliers (11)
+### Typal Lords, Anthems & Multipliers (10)
 *   [Death Baron](https://scryfall.com/search?q=!"Death+Baron") ({1}{B}{B}) — +1/+1 and deathtouch to all Zombies and Skeletons; pairs with menace to guarantee brutal blocks.
 *   [Lord of the Undead](https://scryfall.com/search?q=!"Lord+of+the+Undead") ({1}{B}{B}) — +1/+1 anthem and {1}{B}, {T}: Return target Zombie card from graveyard to hand.
 *   [Lord of the Accursed](https://scryfall.com/search?q=!"Lord+of+the+Accursed") ({2}{B}) — +1/+1 anthem and grants menace across the board.
@@ -103,7 +104,6 @@ Rather than relying purely on reactive removal spells that empty your hand, this
 *   [Zombie Master](https://scryfall.com/search?q=!"Zombie+Master") ({1}{B}{B}) — Grants Swampwalk and {B}: Regenerate to all Zombies; unblockable with Urborg.
 *   [Diregraf Colossus](https://scryfall.com/search?q=!"Diregraf+Colossus") ({2}{B}) — Enters with counters for each Zombie in graveyard; creates a 2/2 Zombie whenever you cast a Zombie spell.
 *   [Headless Rider](https://scryfall.com/search?q=!"Headless+Rider") ({2}{B}) — Whenever a nontoken Zombie dies, create a 2/2 black Zombie creature token.
-*   [Roaming Throne](https://scryfall.com/search?q=!"Roaming+Throne") ({4}) — Naming Warlock doubles Gisa's trigger, creating 4 Zombie Rogues per crime!
 *   [Coat of Arms](https://scryfall.com/search?q=!"Coat+of+Arms") ({5}) — Typal multiplier scaling your horde into lethal 20/20 attackers.
 *   [Banner of Kinship](https://scryfall.com/search?q=!"Banner+of+Kinship") ({5}) — Enters with fellowship counters equal to Zombies controlled, granting massive permanent power buff.
 *   [Eldrazi Monument](https://scryfall.com/search?q=!"Eldrazi+Monument") ({5}) — Creatures get +1/+1, flying, and indestructible; fed effortlessly by Gisa's Zombie tokens.
@@ -131,7 +131,8 @@ Rather than relying purely on reactive removal spells that empty your hand, this
 *   [Dark Ritual](https://scryfall.com/search?q=!"Dark+Ritual") ({B}) — Adds {B}{B}{B} for explosive early turn 2 Gisa or turn 3 Bolas's Citadel.
 *   [Crypt Ghast](https://scryfall.com/search?q=!"Crypt+Ghast") ({3}{B}) — Swamps tap for an additional {B}; extort triggers drain opponents and stabilize life totals.
 
-### Utility Creatures, Recursion & Finishers (7)
+### Utility Creatures, Recursion & Finishers (8)
+*   [Gray Merchant of Asphodel](https://scryfall.com/search?q=!"Gray+Merchant+of+Asphodel") ({3}{B}{B}) — Devastating devotion-based life drain finisher; scales with heavy mono-black pips and lethal upon mass reanimation.
 *   [Acererak the Archlich](https://scryfall.com/search?q=!"Acererak+the+Archlich") ({2}{B}) — Zombie Wizard bounce engine venturing into dungeons for value, draw, and drain.
 *   [Grave Titan](https://scryfall.com/search?q=!"Grave+Titan") ({4}{B}{B}) — 6/6 deathtouch Giant creating two 2/2 Zombies on entry and whenever it attacks.
 *   [Ghoulcaller Gisa](https://scryfall.com/search?q=!"Ghoulcaller+Gisa") ({3}{B}{B}) — {B}, {T}, sacrifice a creature: create X 2/2 Zombie tokens where X is sacrificed creature's power.
@@ -173,13 +174,16 @@ Rather than relying purely on reactive removal spells that empty your hand, this
 | Mikaeus, the Unhallowed | {3}{B}{B}{B} | Finisher / Protection | High | $18.00 | Planned |
 | Cabal Coffers | Land | Big Mana Engine | High | $20.00 | Planned |
 | Urborg, Tomb of Yawgmoth | Land | Mana Engine / Swampwalk | High | $35.00 | Planned |
-| Commander's Plate | {1} | Commander Protection | High | $30.00 | Planned |
-| Roaming Throne | {4} | Trigger Doubler | High | $25.00 | Planned |
+| Gray Merchant of Asphodel | {3}{B}{B} | Finisher / Devotion Drain | High | $4.50 | Planned |
 | Three Tree City | Land | Typal Mana Engine | High | $22.00 | Planned |
 
 ---
 
 ## 📜 Deck Changelog
+- **[2026-09-22]:** Add Gary as high-devotion life-drain finisher and mass-reanimation target over Roaming Throne
+    - **In:** Gray Merchant of Asphodel
+    - **Out:** Roaming Throne
+    - **Reason:** Add Gary as high-devotion life-drain finisher and mass-reanimation target over Roaming Throne
 
 - **[2026-09-22]:** Initial deck construction for Gisa, the Hellraiser as the primary Bracket 3 Mono-Black Zombie Horde Apocalypse deck.
     - **In:** Full 100-card list featuring Gisa, the Hellraiser, instant-speed crime enablers (Zombie Trailblazer, Withered Wretch, Ghost Vacuum, Agatha's Soul Cauldron), typal multipliers (Coat of Arms, Banner of Kinship, Eldrazi Monument, Roaming Throne), big mana engines (Cabal Coffers, Urborg, Cabal Stronghold, Nykthos, Three Tree City, Crypt Ghast), alternate win conditions (Bringer of the Last Gift, Mikaeus the Unhallowed, Noxious Ghoul, Zombie Master, Acererak the Archlich), and 3 Game Changers (The One Ring, Bolas's Citadel, Field of the Dead).
@@ -189,7 +193,7 @@ Rather than relying purely on reactive removal spells that empty your hand, this
 
 ## 📋 Plain Text Copy/Paste (Moxfield Import)
 
-```text
+```text  
 1 Gisa, the Hellraiser  
 1 Acererak the Archlich  
 1 Agatha's Soul Cauldron  
@@ -243,7 +247,7 @@ Rather than relying purely on reactive removal spells that empty your hand, this
 1 Phyrexian Arena  
 1 Phyrexian Tower  
 1 Relic of Progenitus  
-1 Roaming Throne  
+1 Gray Merchant of Asphodel  
 1 Scavenger Grounds  
 1 Skullclamp  
 1 Snuff Out  
@@ -269,4 +273,4 @@ Rather than relying purely on reactive removal spells that empty your hand, this
 1 Zombie Apocalypse  
 1 Zombie Master  
 1 Zombie Trailblazer  
-```
+```  

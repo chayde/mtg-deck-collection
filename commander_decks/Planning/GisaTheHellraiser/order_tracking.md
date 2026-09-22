@@ -7,7 +7,7 @@ Physical card acquisitions tracked for Gisa, the Hellraiser:
 - [ ] 1 Zombie Trailblazer
 - [ ] 1 Bringer of the Last Gift
 - [ ] 1 Mikaeus, the Unhallowed
-- [ ] 1 Roaming Throne
+- [ ] 1 Gray Merchant of Asphodel
 - [ ] 1 Banner of Kinship
 - [ ] 1 Coat of Arms
 - [ ] 1 Eldrazi Monument

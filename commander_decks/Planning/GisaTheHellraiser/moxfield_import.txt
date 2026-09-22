@@ -54,7 +54,7 @@ DECK:
 1 Phyrexian Arena
 1 Phyrexian Tower
 1 Relic of Progenitus
-1 Roaming Throne
+1 Gray Merchant of Asphodel
 1 Scavenger Grounds
 1 Skullclamp
 1 Snuff Out
