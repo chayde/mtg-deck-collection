@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Goldfish Audit Report — Gisa, the Hellraiser</title>
+<style>
+  :root { --bg:#0f1420; --card:#1a2130; --card-alt:#222c3f; --ink:#e6ebf2; --muted:#8b97ab;
+          --accent:#4ade80; --accent2:#38bdf8; --accent3:#a78bfa; --line:#2a3346; --warn:#f59e0b; --danger:#ef4444; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+          font:15px/1.5 system-ui,-apple-system,Segoe UI,Roboto,sans-serif; }
+  .wrap { max-width:960px; margin:0 auto; padding:32px 20px 60px; }
+  h1 { font-size:26px; margin:0 0 4px; display:flex; align-items:center; gap:8px; }
+  .sub { color:var(--muted); margin:0 0 24px; font-size:14px; }
+  .sub code { background:#0009; padding:2px 6px; border-radius:5px; color:var(--accent2); }
+  
+  .cards { display:grid; grid-template-columns:repeat(auto-fit,minmax(140px,1fr));
+            gap:14px; margin-bottom:24px; }
+  .stat { background:var(--card); border:1px solid var(--line); border-radius:12px;
+           padding:16px 18px; }
+  .stat .k { color:var(--muted); font-size:11px; text-transform:uppercase;
+              letter-spacing:.05em; }
+  .stat .v { font-size:26px; font-weight:700; margin-top:4px; }
+  .stat .v.accent { color:var(--accent); }
+  .stat .v.accent2 { color:var(--accent2); }
+  .stat .v.accent3 { color:var(--accent3); }
+  
+  h2 { font-size:15px; text-transform:uppercase; letter-spacing:.06em;
+        color:var(--muted); border-bottom:1px solid var(--line);
+        padding-bottom:8px; margin:32px 0 16px; }
+  
+  .badge { display:inline-block; padding:8px 14px; border-radius:8px; font-weight:600; font-size:14px; margin-bottom:20px; width:100%; }
+  .badge.pass { background:#166534; color:#86efac; border:1px solid #22c55e44; }
+  .badge.warn { background:#78350f; color:#fde68a; border:1px solid #f59e0b44; }
+  .badge.notice { background:#1e3a8a; color:#bfdbfe; border:1px solid #3b82f644; }
+  
+  .comp-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(110px,1fr)); gap:10px; margin-bottom:24px; }
+  .comp-item { background:var(--card); border:1px solid var(--line); border-radius:8px; padding:10px 12px; text-align:center; }
+  .comp-item .ck { font-size:11px; color:var(--muted); text-transform:uppercase; }
+  .comp-item .cv { font-size:18px; font-weight:700; color:var(--accent2); margin-top:2px; }
+
+  .section-box { background:var(--card); border:1px solid var(--line); border-radius:12px; padding:18px 20px; margin-bottom:24px; }
+
+  table { width:100%; border-collapse:collapse; }
+  td, th { padding:7px 10px; text-align:left; }
+  
+  .dist td { border:0; }
+  .dist .turn { width:140px; color:var(--muted); font-variant-numeric:tabular-nums; }
+  .dist .barcell { width:100%; }
+  .dist .count { width:90px; text-align:right; font-variant-numeric:tabular-nums; }
+  .bar { height:18px; border-radius:4px; min-width:2px; }
+  .bar.deploy { background:linear-gradient(90deg,var(--accent2),var(--accent)); }
+  .bar.engine { background:linear-gradient(90deg,var(--accent3),var(--accent2)); }
+  .target-tag { font-size:10px; padding:2px 5px; border-radius:4px; background:#38bdf833; color:var(--accent2); margin-left:6px; }
+
+  .simtable { font-size:14px; }
+  .simtable th { color:var(--muted); font-weight:600; border-bottom:1px solid var(--line); }
+  .simtable td { border-bottom:1px solid #202839; }
+  .simtable tr.miss td { color:#f7a08a; }
+  .simtable .turns { color:var(--muted); }
+  
+  .hq-table td { border-bottom:1px solid var(--line); padding:10px 12px; }
+  .hq-table th { color:var(--muted); border-bottom:1px solid var(--line); padding:10px 12px; }
+  .hq-bar { height:10px; border-radius:3px; }
+  
+  .muted { color:var(--muted); }
+  footer { margin-top:40px; color:var(--muted); font-size:12px; border-top:1px solid var(--line); padding-top:16px; }
+</style></head><body><div class="wrap">
+  <h1>🐟 Goldfish Audit Report — Gisa, the Hellraiser</h1>
+  <p class="sub">Deck: <code>commander_decks/Planning/GisaTheHellraiser/moxfield_import.txt</code> &nbsp;·&nbsp;
+     Target: <strong>Bracket 3 (Upgraded)</strong> &nbsp;·&nbsp;
+     Measuring: CMC 5 &nbsp;·&nbsp;
+     20 sims × T10 &nbsp;·&nbsp;
+     2026-09-21 23:59:36 Eastern Daylight Time</p>
+
+  
+
+  <div class="badge pass">
+    <strong>Bracket Compliance [PASS]:</strong> Deck deploys its engine around Turn 5.4, perfectly positioned to execute and threaten a win on Bracket 3 (Upgraded)'s target (Turn 7+).
+  </div>
+
+  <div class="cards">
+    <div class="stat"><div class="k">Deploy Rate</div><div class="v accent">96%</div>
+      <div class="muted">77/80 seats</div></div>
+    <div class="stat"><div class="k">Avg Cast Turn</div><div class="v">T5.4</div>
+      <div class="muted">Range: T2–T10</div></div>
+    <div class="stat"><div class="k">Gold Keep Rate</div><div class="v accent2">22%</div>
+      <div class="muted">Avg Hand: 6.91 cards</div></div>
+    <div class="stat"><div class="k">Target Readiness (T&le;7)</div><div class="v accent3">85%</div>
+      <div class="muted">Avg: T5.4</div></div>
+    <div class="stat"><div class="k">Avg Creatures</div><div class="v">3.5</div>
+      <div class="muted">by T10</div></div>
+  </div>
+
+  
+  <h2>📦 Deck Auto-Classification (Scryfall Engine)</h2>
+  <div class="comp-grid">
+    <div class="comp-item"><div class="ck">Lands</div><div class="cv">37</div></div>
+    <div class="comp-item"><div class="ck">Mana Dorks &amp; Rocks</div><div class="cv">4</div></div>
+    <div class="comp-item"><div class="ck">Ramp Spells</div><div class="cv">2</div></div>
+    <div class="comp-item"><div class="ck">Burst / Rituals</div><div class="cv">0</div></div>
+    <div class="comp-item"><div class="ck">Enablers &amp; Draw</div><div class="cv">30</div></div>
+    <div class="comp-item"><div class="ck">High-CMC Payoffs</div><div class="cv">22</div></div>
+    <div class="comp-item"><div class="ck">MDFCs</div><div class="cv">0</div></div>
+    <div class="comp-item"><div class="ck">Creatures</div><div class="cv">25</div></div>
+  </div>
+
+  
+  <h2>🚀 Fastest Commander Deployment Showcase</h2>
+  <div class="section-box" style="border-left:4px solid var(--accent);">
+    <div style="font-size:16px; font-weight:700; margin-bottom:8px;">
+      Sim 3, Seat 1 &mdash; Cast on Turn 2 
+      <span class="target-tag" style="background:#22c55e33; color:var(--accent); font-size:12px; padding:3px 8px;">Gold Keep (7 cards)</span>
+    </div>
+    <div style="margin-bottom:12px;">
+      <div class="k" style="margin-bottom:6px;">Kept Opening Hand:</div>
+      <div><span style='display:inline-block; background:var(--card-alt); border:1px solid var(--line); border-radius:4px; padding:2px 6px; margin:2px 4px 2px 0; font-size:12px;'>Skullclamp</span><span style='display:inline-block; background:var(--card-alt); border:1px solid var(--line); border-radius:4px; padding:2px 6px; margin:2px 4px 2px 0; font-size:12px;'>Mind Stone</span><span style='display:inline-block; background:var(--card-alt); border:1px solid var(--line); border-radius:4px; padding:2px 6px; margin:2px 4px 2px 0; font-size:12px;'>Swamp</span><span style='display:inline-block; background:var(--card-alt); border:1px solid var(--line); border-radius:4px; padding:2px 6px; margin:2px 4px 2px 0; font-size:12px;'>Tragic Slip</span><span style='display:inline-block; background:var(--card-alt); border:1px solid var(--line); border-radius:4px; padding:2px 6px; margin:2px 4px 2px 0; font-size:12px;'>Dark Ritual</span><span style='display:inline-block; background:var(--card-alt); border:1px solid var(--line); border-radius:4px; padding:2px 6px; margin:2px 4px 2px 0; font-size:12px;'>War Room</span><span style='display:inline-block; background:var(--card-alt); border:1px solid var(--line); border-radius:4px; padding:2px 6px; margin:2px 4px 2px 0; font-size:12px;'>Swamp</span></div>
+    </div>
+    <div>
+      <div class="k" style="margin-bottom:6px;">Turn-by-Turn Deployment Sequence:</div>
+      <ol style="margin:0; padding-left:20px; font-size:13px;">
+        <li style='margin-bottom:4px;'><code>T 1: Land: Swamp | Cast: Dark Ritual | Cast: Mind Stone | Cast: Skullclamp (generic) | Cast: Tragic Slip (generic)</code></li><li style='margin-bottom:4px;'><code>T 2: Land: War Room | ** CAST Gisa, the Hellraiser T2 **</code></li>
+      </ol>
+    </div>
+  </div>
+
+  
+  <h2>⚠️ Worst-Case Commander Deployment Showcase</h2>
+  <div class="section-box" style="border-left:4px solid var(--danger);">
+    <div style="font-size:16px; font-weight:700; margin-bottom:8px;">
+      Sim 16, Seat 1 &mdash; FAILED TO CAST
+      <span class="target-tag" style="background:#ef444433; color:var(--danger); font-size:12px; padding:3px 8px;">Gold Keep (7 cards)</span>
+    </div>
+    <div style="margin-bottom:12px; font-size:14px; color:#fca5a5;">
+      <strong>Stall Diagnostic:</strong> Mana Stalled: Controlled 3 lands and 1 rock(s) (total 4 mana, needed 5)
+    </div>
+    <div style="margin-bottom:12px;">
+      <div class="k" style="margin-bottom:6px;">Kept Opening Hand:</div>
+      <div><span style='display:inline-block; background:var(--card-alt); border:1px solid var(--line); border-radius:4px; padding:2px 6px; margin:2px 4px 2px 0; font-size:12px;'>Undead Augur</span><span style='display:inline-block; background:var(--card-alt); border:1px solid var(--line); border-radius:4px; padding:2px 6px; margin:2px 4px 2px 0; font-size:12px;'>Unholy Grotto</span><span style='display:inline-block; background:var(--card-alt); border:1px solid var(--line); border-radius:4px; padding:2px 6px; margin:2px 4px 2px 0; font-size:12px;'>Ghoulcaller Gisa</span><span style='display:inline-block; background:var(--card-alt); border:1px solid var(--line); border-radius:4px; padding:2px 6px; margin:2px 4px 2px 0; font-size:12px;'>Bringer of the Last Gift</span><span style='display:inline-block; background:var(--card-alt); border:1px solid var(--line); border-radius:4px; padding:2px 6px; margin:2px 4px 2px 0; font-size:12px;'>Scavenger Grounds</span><span style='display:inline-block; background:var(--card-alt); border:1px solid var(--line); border-radius:4px; padding:2px 6px; margin:2px 4px 2px 0; font-size:12px;'>Mind Stone</span><span style='display:inline-block; background:var(--card-alt); border:1px solid var(--line); border-radius:4px; padding:2px 6px; margin:2px 4px 2px 0; font-size:12px;'>Cryptbreaker</span></div>
+    </div>
+    <div>
+      <div class="k" style="margin-bottom:6px;">Turn-by-Turn Play Sequence:</div>
+      <ol style="margin:0; padding-left:20px; font-size:13px;">
+        <li style='margin-bottom:4px;'><code>T 1: Land: Unholy Grotto</code></li><li style='margin-bottom:4px;'><code>T 2: Land: Scavenger Grounds | Cast: Mind Stone | Cast: Skullclamp (generic)</code></li><li style='margin-bottom:4px;'><code>T 3: (no plays)</code></li><li style='margin-bottom:4px;'><code>T 4: (no plays)</code></li><li style='margin-bottom:4px;'><code>T 5: (no plays)</code></li><li style='margin-bottom:4px;'><code>T 6: (no plays)</code></li><li style='margin-bottom:4px;'><code>T 7: Land: War Room</code></li><li style='margin-bottom:4px;'><code>T 8: (no plays)</code></li><li style='margin-bottom:4px;'><code>T 9: (no plays)</code></li><li style='margin-bottom:4px;'><code>T10: (no plays)</code></li>
+      </ol>
+    </div>
+  </div>
+
+  <h2>🃏 Opening Hand Quality &amp; Mulligan Profile (80 hands evaluated)</h2>
+  <div class="section-box" style="padding:0; overflow:hidden;">
+    <table class="hq-table">
+      <thead><tr><th>Keep Category</th><th>Definition</th><th>Hands</th><th>Share</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><strong style="color:var(--accent);">Gold Keep</strong></td>
+          <td>Ideal opening hand: 2–4 lands, &ge;1 ramp piece, &ge;1 engine enabler</td>
+          <td><strong>18</strong> / 80</td>
+          <td><strong style="color:var(--accent);">22%</strong></td>
+        </tr>
+        <tr>
+          <td><strong style="color:var(--accent2);">Silver Keep</strong></td>
+          <td>Standard functional hand: 2–5 lands with playable curve</td>
+          <td><strong>62</strong> / 80</td>
+          <td><strong style="color:var(--accent2);">78%</strong></td>
+        </tr>
+        <tr>
+          <td><strong style="color:var(--warn);">Desperation Keep</strong></td>
+          <td>Forced keep after multiple mulligans (Hand size &le; 5)</td>
+          <td><strong>0</strong> / 80</td>
+          <td><strong style="color:var(--warn);">0%</strong></td>
+        </tr>
+        <tr>
+          <td colspan="2"><strong>Average Starting Hand Size</strong></td>
+          <td colspan="2"><strong>6.91 cards</strong></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2>🚀 Commander Deployment Distribution</h2>
+  <div class="section-box">
+    <table class="dist"><tr><td class="turn">T2</td><td class="barcell"><div class="bar deploy" style="width:15.4%"></div></td><td class="count">4 <span class="muted">(5%)</span></td></tr><tr><td class="turn">T3</td><td class="barcell"><div class="bar deploy" style="width:15.4%"></div></td><td class="count">4 <span class="muted">(5%)</span></td></tr><tr><td class="turn">T4</td><td class="barcell"><div class="bar deploy" style="width:50.0%"></div></td><td class="count">13 <span class="muted">(17%)</span></td></tr><tr><td class="turn">T5</td><td class="barcell"><div class="bar deploy" style="width:100.0%"></div></td><td class="count">26 <span class="muted">(34%)</span></td></tr><tr><td class="turn">T6</td><td class="barcell"><div class="bar deploy" style="width:42.3%"></div></td><td class="count">11 <span class="muted">(14%)</span></td></tr><tr><td class="turn">T7</td><td class="barcell"><div class="bar deploy" style="width:38.5%"></div></td><td class="count">10 <span class="muted">(13%)</span></td></tr><tr><td class="turn">T8</td><td class="barcell"><div class="bar deploy" style="width:11.5%"></div></td><td class="count">3 <span class="muted">(4%)</span></td></tr><tr><td class="turn">T9</td><td class="barcell"><div class="bar deploy" style="width:15.4%"></div></td><td class="count">4 <span class="muted">(5%)</span></td></tr><tr><td class="turn">T10</td><td class="barcell"><div class="bar deploy" style="width:7.7%"></div></td><td class="count">2 <span class="muted">(3%)</span></td></tr></table>
+  </div>
+
+  <h2>⚡ Engine Readiness Distribution (Bracket 3 (Upgraded) — Target T7)</h2>
+  <div class="section-box">
+    <table class="dist"><tr><td class="turn">T2 <span class="target-tag">Target Window</span></td><td class="barcell"><div class="bar engine" style="width:15.4%"></div></td><td class="count">4 <span class="muted">(5%)</span></td></tr><tr><td class="turn">T3 <span class="target-tag">Target Window</span></td><td class="barcell"><div class="bar engine" style="width:15.4%"></div></td><td class="count">4 <span class="muted">(5%)</span></td></tr><tr><td class="turn">T4 <span class="target-tag">Target Window</span></td><td class="barcell"><div class="bar engine" style="width:50.0%"></div></td><td class="count">13 <span class="muted">(16%)</span></td></tr><tr><td class="turn">T5 <span class="target-tag">Target Window</span></td><td class="barcell"><div class="bar engine" style="width:100.0%"></div></td><td class="count">26 <span class="muted">(32%)</span></td></tr><tr><td class="turn">T6 <span class="target-tag">Target Window</span></td><td class="barcell"><div class="bar engine" style="width:42.3%"></div></td><td class="count">11 <span class="muted">(14%)</span></td></tr><tr><td class="turn">T7 <span class="target-tag">Target Window</span></td><td class="barcell"><div class="bar engine" style="width:38.5%"></div></td><td class="count">10 <span class="muted">(12%)</span></td></tr><tr><td class="turn">T8 </td><td class="barcell"><div class="bar engine" style="width:11.5%"></div></td><td class="count">3 <span class="muted">(4%)</span></td></tr><tr><td class="turn">T9 </td><td class="barcell"><div class="bar engine" style="width:15.4%"></div></td><td class="count">4 <span class="muted">(5%)</span></td></tr><tr><td class="turn">T10 </td><td class="barcell"><div class="bar engine" style="width:7.7%"></div></td><td class="count">2 <span class="muted">(2%)</span></td></tr></table>
+  </div>
+
+  <h2>📊 Per-Simulation Breakdown (20 Games)</h2>
+  <div class="section-box" style="padding:0; overflow:hidden;">
+    <table class="simtable">
+      <thead><tr><th>Sim #</th><th>Seats Cast</th><th>Earliest</th><th>Turns Deployed</th><th>Avg Creatures</th></tr></thead>
+      <tbody><tr><td>1</td><td>4/4</td><td>T4<br><span class="muted" style="font-size:11px;">Fastest: Seat 4 (Silver): Toxic Deluge, Undead Warchief, Death Baron, Swamp, Swamp, Lord of the Accursed, Forsaken Miner</span></td><td class="turns">T7, T5, T8, T4</td><td>4.0</td></tr><tr><td>2</td><td>4/4</td><td>T4<br><span class="muted" style="font-size:11px;">Fastest: Seat 4 (Silver): War Room, Swamp, Bitter Triumph, Bojuka Bog, Commander's Plate, Deadly Rollick, Toxic Deluge</span></td><td class="turns">T7, T8, T7, T4</td><td>3.0</td></tr><tr><td>3</td><td>4/4</td><td>T2<br><span class="muted" style="font-size:11px;">Fastest: Seat 1 (Gold): Skullclamp, Mind Stone, Swamp, Tragic Slip, Dark Ritual, War Room, Swamp</span></td><td class="turns">T2, T5, T10, T7</td><td>2.8</td></tr><tr class="miss"><td>4</td><td>3/4<br><span style="color:#f87171; font-size:11px; font-weight:600;">Missed: Seat 3 &mdash; Mana Stalled: Controlled 4 lands and 0 rock(s) (total 4 mana, needed 5)</span></td><td>T5<br><span class="muted" style="font-size:11px;">Fastest: Seat 1 (Silver): Swamp, Swamp, Swamp, Swamp, Ghoulcaller Gisa, Grave Titan, Swamp</span></td><td class="turns">T5, T6, T6</td><td>3.8</td></tr><tr><td>5</td><td>4/4</td><td>T2<br><span class="muted" style="font-size:11px;">Fastest: Seat 4 (Gold): Swamp, Jet Medallion, Eldrazi Monument, Snuff Out, Dark Ritual, Cabal Stronghold</span></td><td class="turns">T4, T4, T5, T2</td><td>3.8</td></tr><tr><td>6</td><td>4/4</td><td>T3<br><span class="muted" style="font-size:11px;">Fastest: Seat 1 (Silver): Bitter Triumph, Swamp, Infernal Grasp, Noxious Ghoul, Swamp, Swamp, Tombstone Stairwell</span></td><td class="turns">T3, T5, T5, T6</td><td>4.0</td></tr><tr><td>7</td><td>4/4</td><td>T2<br><span class="muted" style="font-size:11px;">Fastest: Seat 1 (Gold): The One Ring, Diregraf Colossus, Demolition Field, Dark Ritual, Infernal Grasp, Swamp</span></td><td class="turns">T2, T7, T7, T4</td><td>3.8</td></tr><tr><td>8</td><td>4/4</td><td>T5<br><span class="muted" style="font-size:11px;">Fastest: Seat 2 (Silver): Headless Rider, Swamp, Swamp, Field of the Dead, Acererak the Archlich, Eldrazi Monument, Demolition Field</span></td><td class="turns">T7, T5, T5, T5</td><td>4.2</td></tr><tr class="miss"><td>9</td><td>3/4<br><span style="color:#f87171; font-size:11px; font-weight:600;">Missed: Seat 4 &mdash; Curve / Timing Stall: Reached 5 mana across 4 lands, but could not satisfy pip combination ({B}) simultaneously</span></td><td>T4<br><span class="muted" style="font-size:11px;">Fastest: Seat 1 (Gold): Swamp, Demolition Field, Arcane Signet, Braids, Arisen Nightmare, Three Tree City, Withering Torment, Snuff Out</span></td><td class="turns">T4, T5, T4</td><td>3.8</td></tr><tr><td>10</td><td>4/4</td><td>T5<br><span class="muted" style="font-size:11px;">Fastest: Seat 1 (Silver): Zombie Master, Swamp, Headless Rider, Commander's Plate, Jet Medallion, Ayara, First of Locthwain, Nykthos, Shrine to Nyx</span></td><td class="turns">T5, T5, T5, T5</td><td>3.0</td></tr><tr><td>11</td><td>4/4</td><td>T4<br><span class="muted" style="font-size:11px;">Fastest: Seat 2 (Silver): Undead Warchief, Species Specialist, Swamp, Phyrexian Tower, Snuff Out, Swamp, Arcane Signet</span></td><td class="turns">T6, T4, T6, T4</td><td>3.2</td></tr><tr><td>12</td><td>4/4</td><td>T4<br><span class="muted" style="font-size:11px;">Fastest: Seat 1 (Silver): Death Baron, War Room, Phyrexian Arena, Witch's Cottage, Demolition Field, Zombie Master, Coat of Arms</span></td><td class="turns">T4, T5, T5, T5</td><td>3.8</td></tr><tr><td>13</td><td>4/4</td><td>T5<br><span class="muted" style="font-size:11px;">Fastest: Seat 2 (Silver): Throne of Eldraine, Witch's Cottage, Go for the Throat, Swamp, Swamp, Phyrexian Arena, Snuff Out</span></td><td class="turns">T7, T5, T9, T5</td><td>3.2</td></tr><tr><td>14</td><td>4/4</td><td>T3<br><span class="muted" style="font-size:11px;">Fastest: Seat 2 (Gold): Castle Locthwain, Banner of Kinship, Hero's Downfall, Dark Ritual, Arcane Signet, Expedition Map, Bojuka Bog</span></td><td class="turns">T9, T3, T5, T3</td><td>4.0</td></tr><tr><td>15</td><td>4/4</td><td>T3<br><span class="muted" style="font-size:11px;">Fastest: Seat 3 (Gold): Deadly Rollick, Swamp, Sol Ring, Swamp, Species Specialist, Undead Augur, Swamp</span></td><td class="turns">T5, T7, T3, T5</td><td>3.0</td></tr><tr class="miss"><td>16</td><td>3/4<br><span style="color:#f87171; font-size:11px; font-weight:600;">Missed: Seat 1 &mdash; Mana Stalled: Controlled 3 lands and 1 rock(s) (total 4 mana, needed 5)</span></td><td>T4<br><span class="muted" style="font-size:11px;">Fastest: Seat 3 (Silver): Field of the Dead, Go for the Throat, Roaming Throne, Demolition Field, Three Tree City, Swamp, Bringer of the Last Gift</span></td><td class="turns">T5, T4, T6</td><td>2.5</td></tr><tr><td>17</td><td>4/4</td><td>T4<br><span class="muted" style="font-size:11px;">Fastest: Seat 1 (Gold): Scavenger Grounds, Nykthos, Shrine to Nyx, Takenuma, Abandoned Mire, Diregraf Colossus, Arcane Signet</span></td><td class="turns">T4, T5, T7, T9</td><td>3.0</td></tr><tr><td>18</td><td>4/4</td><td>T2<br><span class="muted" style="font-size:11px;">Fastest: Seat 1 (Gold): Swamp, Dark Ritual, Urborg, Tomb of Yawgmoth, Feed the Swarm, Undead Augur, Tombstone Stairwell, Living Death</span></td><td class="turns">T2, T6, T5, T10</td><td>3.0</td></tr><tr><td>19</td><td>4/4</td><td>T4<br><span class="muted" style="font-size:11px;">Fastest: Seat 4 (Gold): Castle Locthwain, Bojuka Bog, Arcane Signet, Feed the Swarm, Swamp, Diregraf Colossus, Swamp</span></td><td class="turns">T6, T5, T6, T4</td><td>4.5</td></tr><tr><td>20</td><td>4/4</td><td>T6<br><span class="muted" style="font-size:11px;">Fastest: Seat 1 (Silver): Swamp, Deadly Rollick, Acererak the Archlich, Cabal Coffers, Nykthos, Shrine to Nyx, Grave Titan, Swamp</span></td><td class="turns">T6, T9, T6, T8</td><td>4.2</td></tr></tbody>
+    </table>
+  </div>
+
+  <footer>Generated by <code>scripts/multiplayer_goldfish.py</code>. A 4-player Commander pod simulation;
+  all seats run the same deck. "Deploy" = the measured commander cost becomes castable in game conditions.</footer>
+</div></body></html>

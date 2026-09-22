@@ -2,6 +2,26 @@
 
 ## 🗓️ September 2026: Varina Zombie Apocalypse Inception, Henzie Blitz Refinement & Playtesting
 
+### 2026-09-22: Gisa, the Hellraiser — Mono-Black Zombie Horde Apocalypse Inception (Bracket 3 Validated)
+*   **Archetype Pivot & Commander Inception:** Following playtesting where The Necrobloom struggled to reliably generate large, game-winning fields of Zombies, pivoted to a pure **Mono-Black Zombie Swarm Engine** commanded by **Gisa, the Hellraiser** ({3}{B}{B}). Gisa solves the historical failure points of Zombie typal decks by combining inherent protection (`Ward—{2}, Pay 2 life`), a built-in typal anthem and evasion engine (`+1/+1 and menace to all Zombies and Skeletons`), and an explosive token spigot (creating two 2/2 Zombie Rogues whenever you commit a crime, once each turn).
+*   **The Instant-Speed Crime Engine (CR 700.13):** Maximized Gisa's "once each turn" trigger by integrating proactive, 0-mana and instant-speed crime enablers:
+    *   *Zombie Trailblazer* ({B}{B}{B}): Tap an untapped Zombie (even summoning-sick tokens) to target an opponent's land or creature for {0} mana at instant speed.
+    *   *Withered Wretch* ({B}{B}) & *Cemetery Reaper* ({1}{B}{B}): Repeatable instant graveyard exile crimes.
+    *   *Ghost Vacuum* ({1}), *Relic of Progenitus* ({1}), & *Agatha's Soul Cauldron* ({2}): Instant {0}-mana tap crime triggers that disrupt opposing graveyards.
+    *   *Result:* Generates up to **8 Zombie Rogues (24 power with menace)** per turn cycle without casting creature spells!
+*   **Typal Multipliers & Finisher Suite:**
+    *   *User-Requested Finishers:* *Bringer of the Last Gift* ({6}{B}{B}) (asymmetrical wipe + mass reanimation) and *Mikaeus, the Unhallowed* ({3}{B}{B}{B}) (+1/+1 anthem and Undying protection across the board).
+    *   *Mono-Colored Typal Package (from Krenko build):* *The One Ring* ({4}), *Roaming Throne* ({4}, naming Warlock to double Gisa's trigger to 4 Zombies per crime), *Banner of Kinship* ({5}), *Coat of Arms* ({5}), *Eldrazi Monument* ({5}), *Throne of Eldraine* ({5}), and *Commander's Plate* ({1}, granting Gisa +3/+3 and protection from White, Blue, Red, and Green).
+    *   *Alternate Win-Cons:* *Noxious Ghoul* ({3}{B}{B}) (sweeps all opposing non-Zombies by -2/-2 per crime trigger), *Zombie Master* ({1}{B}{B}) + *Urborg, Tomb of Yawgmoth* (unblockable Swampwalk), and *Acererak the Archlich* ({2}{B}) (repeatable dungeon venture loop).
+*   **The Big Mana Mono-Black Engine:** Assembled *Cabal Coffers* + *Urborg, Tomb of Yawgmoth*, *Cabal Stronghold*, *Nykthos, Shrine to Nyx*, *Three Tree City*, and *Crypt Ghast* to generate 15–30+ mana.
+*   **User Constraints & Bracket Compliance:** Strictly zero filter lands and zero filter rocks/Signets. Exactly 3 Game Changers (*The One Ring*, *Bolas's Citadel*, *Field of the Dead*), achieving 100% compliance with **Bracket 3 (Upgraded Casual)** limits ($\le 3$).
+*   **Triple Update & Forge Sync:** Created `commander_decks/Planning/GisaTheHellraiser/` with `gisa_the_hellraiser.md` (`deck_status: main`), `moxfield_import.txt` (exactly 100 cards), `README.md`, and `order_tracking.md`. Synchronized to `%APPDATA%\Forge\decks\commander\Gisa The Hellraiser.dck`.
+*   **Goldfish Benchmark Validation:** Simulated 20 4-player pod games (80 seats total) using `scripts/multiplayer_goldfish.py --sims 20 --turns 10 --bracket 3`:
+    *   **Commander Cast Rate:** 77/80 (96%), averaging **Turn 5.4** (with explosive T2–T3 lines unlocked by *Dark Ritual*, *Sol Ring*, and *Jet Medallion*).
+    *   **Mulligan Stability:** 22% Gold Keeps, 78% Silver Keeps, **0% Desperation Keeps** (6.91 avg hand size).
+    *   **Engine Readiness:** 85% target window readiness ($\le$ T7), averaging **Turn 5.4**, securing a decisive **PASS** for Bracket 3. Full report saved to [`commander_decks/Planning/GisaTheHellraiser/goldfish_report.html`](commander_decks/Planning/GisaTheHellraiser/goldfish_report.html) and logged to [`commander_decks/Planning/GisaTheHellraiser/GOLDFISH_LOG.md`](commander_decks/Planning/GisaTheHellraiser/GOLDFISH_LOG.md).
+*   **Archiving:** Updated `TheNecrobloom` to `deck_status: reference` in `necrobloom_abzan.md` and updated root `README.md`.
+
 ### 2026-09-21: Krenko, Mob Boss — Post-Ban Package Integration & Repository Inception (Bracket 3 Validated)
 *   **Deck Inception & Post-Ban Strategy:** Integrated the user's mono-red **Krenko, Mob Boss** ({2}{R}{R}) deck found online and played in paper/Forge. The original list contained three banned cards (*Jeweled Lotus*, *Mana Crypt*, and *Mox Ruby*). Following an evaluation of acceleration and resilience options, implemented **Option 1 ("Engine Velocity & Combo")**:
     *   **In (3):** *Arcane Signet* ({2}), *Patriar's Seal* ({3}), *Umbral Mantle* ({3}).

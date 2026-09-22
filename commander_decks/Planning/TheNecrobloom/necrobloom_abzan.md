@@ -1,5 +1,5 @@
 ---
-deck_status: main
+deck_status: reference
 ---
 
 # Deck Guide: The Necrobloom — "Abzan Zombie Apocalypse"

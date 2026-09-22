@@ -81,6 +81,7 @@ KNOWN_FORGE_ALIASES: Dict[str, str] = {
     "UlalekFusedAtrocity": "Ulalek",
     "RafiqBant": "Rafiq",
     "KrenkoMobBoss": "Krenko",
+    "GisaTheHellraiser": "Gisa The Hellraiser",
 }
 
 
