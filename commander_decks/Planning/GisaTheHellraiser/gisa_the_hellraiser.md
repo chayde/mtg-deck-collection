@@ -4,7 +4,7 @@ deck_status: main
 
 # Deck Guide: Gisa, the Hellraiser — "The Hellraiser's Horde"
 
-![Gisa, the Hellraiser](https://cards.scryfall.io/normal/front/d/b/db7c078b-0325-473f-8097-4dda73264139.jpg?1712355592)
+![Gisa, the Hellraiser](https://cards.scryfall.io/normal/front/d/b/db7c07b2-02b2-4e62-bf1b-4848e06eec28.jpg?1783911832)
 
 ## 🧟 Commander Strategy
 
