@@ -24,7 +24,7 @@ Physical card acquisitions tracked for Gisa, the Hellraiser:
 - [ ] 1 Unholy Grotto
 - [ ] 1 Grave Titan
 - [ ] 1 Black Market Connections
-- [ ] 1 Acererak the Archlich
+- [ ] 1 Yawgmoth, Thran Physician
 - [ ] 1 Cemetery Reaper
 - [ ] 1 Withered Wretch
 - [ ] 1 Death Baron
@@ -35,8 +35,10 @@ Physical card acquisitions tracked for Gisa, the Hellraiser:
 - [ ] 1 Noxious Ghoul
 - [ ] 1 Zombie Master
 - [ ] 1 Endless Ranks of the Dead
-- [ ] 1 Tombstone Stairwell
-- [ ] 1 Zombie Apocalypse
+- [ ] 1 Unlicensed Hearse
+- [ ] 1 Army of the Damned
+- [ ] 1 Deserted Temple
+- [ ] 1 Liquimetal Torque
 - [ ] 1 Living Death
 - [ ] 1 Ghost Vacuum
 - [ ] 1 Agatha's Soul Cauldron

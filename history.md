@@ -20,6 +20,10 @@
     *   **Commander Cast Rate:** 77/80 (96%), averaging **Turn 5.4** (with explosive T2–T3 lines unlocked by *Dark Ritual*, *Sol Ring*, and *Jet Medallion*).
     *   **Mulligan Stability:** 22% Gold Keeps, 78% Silver Keeps, **0% Desperation Keeps** (6.91 avg hand size).
 *   **Finisher Swap (Gray Merchant of Asphodel in for Roaming Throne):** Executed Visual Swap Matrix swap replacing *Roaming Throne* ({4}) with *Gray Merchant of Asphodel* ({3}{B}{B}) to provide a devastating direct life-drain win condition that synergizes with heavy mono-black devotion and mass reanimation spells. Goldfish re-validation showed improved commander deployment (Turn 5.0 avg, 28% Gold Keeps), maintaining a solid Bracket 3 PASS.
+*   **Repeatable Crime Density & Swarm Overhaul (5 Cards):** Following gameplay feedback identifying a shortage of repeatable crime triggers (relying too heavily on 1-for-1 single-target removal spells) and underperformance from slow/situational cards:
+    *   **In (5):** *Army of the Damned* ({5}{B}{B}{B}) (13-Zombie bomb = 39 power of menace attackers), *Yawgmoth, Thran Physician* ({2}{B}{B}) (0-mana instant crime trigger, creature shrink, and card draw engine), *Deserted Temple* (Land that untaps Cabal Coffers/Nykthos for mana or targets opponent lands for instant crimes), *Unlicensed Hearse* ({2}) (0-mana instant graveyard exile crime engine + scaling vehicle), *Liquimetal Torque* ({2}) (2-mana rock tapping for mana or targeting opponent permanents for 0-mana instant crimes).
+    *   **Out (5):** *Zombie Apocalypse*, *Acererak the Archlich*, *Demolition Field*, *Tombstone Stairwell*, *Mind Stone*.
+    *   *Result:* Repeatable crime engines expanded from 6 to 10 permanents. Goldfish simulation showed Gold Keep rates reaching an all-time high of 30% and average starting hand size of 6.97 cards, maintaining a strong Bracket 3 PASS.
 *   **Archiving:** Updated `TheNecrobloom` to `deck_status: reference` in `necrobloom_abzan.md` and updated root `README.md`.
 
 ### 2026-09-21: Krenko, Mob Boss — Post-Ban Package Integration & Repository Inception (Bracket 3 Validated)

@@ -48,17 +48,18 @@ Rather than relying purely on reactive removal spells that empty your hand, this
 3. **The Noxious Ghoul Asymmetric Wipeout:** Whenever [Noxious Ghoul](https://scryfall.com/search?q=!"Noxious+Ghoul") ({3}{B}{B}) or another Zombie enters, all non-Zombie creatures get -1/-1 until end of turn. Whenever Gisa commits a crime, two Zombies enter, giving all non-Zombies -2/-2. Committing 2–3 crimes or casting mass token spells permanently annihilates all opposing armies while leaving your Zombies untouched!
 4. **Bringer of the Last Gift ({6}{B}{B}):** Symmetrical creature wipe and asymmetric mass reanimation. Sacrificing your board wipes all other creatures, then immediately reanimates every creature from your graveyard with haste or menace.
 5. **Mikaeus, the Unhallowed ({3}{B}{B}{B}):** Gives all non-Humans +1/+1 and **Undying**, rendering your entire Zombie army immune to opposing board wipes. Any wipe returns your army bigger and triggers all ETBs again!
-6. **Acererak the Archlich ({2}{B}):** Cast Acererak, venture into the *Lost Mine of Phandelver* or *Dungeon of the Mad Mage*, return him to hand, and repeat with big mana for card draw, treasure ramp, and life drain.
-7. **Gray Merchant of Asphodel ({3}{B}{B}):** Drains each opponent for life equal to your devotion to black and gains that much life. Devastating when mass-reanimated via *Bringer of the Last Gift*, *Living Death*, *Patriarch's Bidding*, or *Zombie Apocalypse*.
+6. **Army of the Damned ({5}{B}{B}{B}):** Vomits thirteen 2/2 black Zombie tokens onto the battlefield (thirteen 3/3 menace Zombies under Gisa = 39 power of evasion attackers) with Flashback to do it again from the graveyard!
+7. **Yawgmoth, Thran Physician ({2}{B}{B}):** Sacrifices Zombie tokens for {0} mana at instant speed to place -1/-1 counters on opponent creatures (commits crimes!), drawing cards while Gisa spawns 2 new Zombies per rotation.
+8. **Gray Merchant of Asphodel ({3}{B}{B}):** Drains each opponent for life equal to your devotion to black and gains that much life. Devastating when mass-reanimated via *Bringer of the Last Gift*, *Living Death*, or *Patriarch's Bidding*.
 
 ---
 
 ### 🚜 Piloting the Engine (Turn-by-Turn Blueprint)
 
-* **Turns 1–3 (Setup & Ramp):** Establish mana acceleration ([Sol Ring](https://scryfall.com/search?q=!"Sol+Ring"), [Arcane Signet](https://scryfall.com/search?q=!"Arcane+Signet"), [Jet Medallion](https://scryfall.com/search?q=!"Jet+Medallion"), [Wayfarer's Bauble](https://scryfall.com/search?q=!"Wayfarer's+Bauble"), [Expedition Map](https://scryfall.com/search?q=!"Expedition+Map")). Deploy low-curve engine pieces ([Cryptbreaker](https://scryfall.com/search?q=!"Cryptbreaker"), [Forsaken Miner](https://scryfall.com/search?q=!"Forsaken+Miner"), [Ghost Vacuum](https://scryfall.com/search?q=!"Ghost+Vacuum"), [Withered Wretch](https://scryfall.com/search?q=!"Withered+Wretch")).
+* **Turns 1–3 (Setup & Ramp):** Establish mana acceleration ([Sol Ring](https://scryfall.com/search?q=!"Sol+Ring"), [Arcane Signet](https://scryfall.com/search?q=!"Arcane+Signet"), [Jet Medallion](https://scryfall.com/search?q=!"Jet+Medallion"), [Liquimetal Torque](https://scryfall.com/search?q=!"Liquimetal+Torque"), [Wayfarer's Bauble](https://scryfall.com/search?q=!"Wayfarer's+Bauble"), [Expedition Map](https://scryfall.com/search?q=!"Expedition+Map")). Deploy low-curve engine pieces ([Cryptbreaker](https://scryfall.com/search?q=!"Cryptbreaker"), [Forsaken Miner](https://scryfall.com/search?q=!"Forsaken+Miner"), [Ghost Vacuum](https://scryfall.com/search?q=!"Ghost+Vacuum"), [Withered Wretch](https://scryfall.com/search?q=!"Withered+Wretch"), [Unlicensed Hearse](https://scryfall.com/search?q=!"Unlicensed+Hearse")).
 * **Turn 4 (Deploy Value Engine or Commander):** Cast [Black Market Connections](https://scryfall.com/search?q=!"Black+Market+Connections"), [The One Ring](https://scryfall.com/search?q=!"The+One+Ring"), or cast [Gisa, the Hellraiser](https://scryfall.com/search?q=!"Gisa,+the+Hellraiser") with protection or immediate crime open. Equip [Commander's Plate](https://scryfall.com/search?q=!"Commander's+Plate") to grant Gisa protection from White, Blue, Red, and Green!
-* **Turns 5–6 (The Crime Rotation):** Maintain at least 1 open mana or an active tap ability ([Zombie Trailblazer](https://scryfall.com/search?q=!"Zombie+Trailblazer"), [Ghost Vacuum](https://scryfall.com/search?q=!"Ghost+Vacuum"), [Agatha's Soul Cauldron](https://scryfall.com/search?q=!"Agatha's+Soul+Cauldron")). Commit crimes on each player's turn to generate 6–8 menacing Zombies per rotation.
-* **Turn 7+ (Big Mana & Apocalypse):** Tap [Cabal Coffers](https://scryfall.com/search?q=!"Cabal+Coffers") + [Urborg, Tomb of Yawgmoth](https://scryfall.com/search?q=!"Urborg,+Tomb+of+Yawgmoth"), [Three Tree City](https://scryfall.com/search?q=!"Three+Tree+City"), or [Nykthos, Shrine to Nyx](https://scryfall.com/search?q=!"Nykthos,+Shrine+to+Nyx") for 15–30 mana. Resolve [Coat of Arms](https://scryfall.com/search?q=!"Coat+of+Arms"), [Banner of Kinship](https://scryfall.com/search?q=!"Banner+of+Kinship"), [Bolas's Citadel](https://scryfall.com/search?q=!"Bolas's+Citadel"), or [Zombie Apocalypse](https://scryfall.com/search?q=!"Zombie+Apocalypse") to close out the game in an overwhelming alpha strike.
+* **Turns 5–6 (The Crime Rotation):** Maintain open mana or an active tap ability ([Zombie Trailblazer](https://scryfall.com/search?q=!"Zombie+Trailblazer"), [Ghost Vacuum](https://scryfall.com/search?q=!"Ghost+Vacuum"), [Agatha's Soul Cauldron](https://scryfall.com/search?q=!"Agatha's+Soul+Cauldron"), [Unlicensed Hearse](https://scryfall.com/search?q=!"Unlicensed+Hearse"), [Liquimetal Torque](https://scryfall.com/search?q=!"Liquimetal+Torque"), [Deserted Temple](https://scryfall.com/search?q=!"Deserted+Temple"), [Yawgmoth](https://scryfall.com/search?q=!"Yawgmoth,+Thran+Physician")). Commit crimes on each player's turn to generate 6–8 menacing Zombies per rotation.
+* **Turn 7+ (Big Mana & Apocalypse):** Tap [Cabal Coffers](https://scryfall.com/search?q=!"Cabal+Coffers") + [Urborg, Tomb of Yawgmoth](https://scryfall.com/search?q=!"Urborg,+Tomb+of+Yawgmoth"), [Three Tree City](https://scryfall.com/search?q=!"Three+Tree+City"), or [Nykthos, Shrine to Nyx](https://scryfall.com/search?q=!"Nykthos,+Shrine+to+Nyx") for 15–30 mana. Resolve [Coat of Arms](https://scryfall.com/search?q=!"Coat+of+Arms"), [Banner of Kinship](https://scryfall.com/search?q=!"Banner+of+Kinship"), [Bolas's Citadel](https://scryfall.com/search?q=!"Bolas's+Citadel"), or [Army of the Damned](https://scryfall.com/search?q=!"Army+of+the+Damned") to close out the game in an overwhelming alpha strike.
 
 ---
 
@@ -74,13 +75,14 @@ Rather than relying purely on reactive removal spells that empty your hand, this
 *   [Nykthos, Shrine to Nyx](https://scryfall.com/search?q=!"Nykthos,+Shrine+to+Nyx") (Land) — Taps for {B} equal to your Black devotion, generating immense bursts with heavy-pip permanents.
 *   [Three Tree City](https://scryfall.com/search?q=!"Three+Tree+City") (Land) — Chooses Zombie; taps for {B} equal to the number of Zombies on your board.
 
-### Repeatable Crime Enablers & Targeted Disruption (13)
+### Repeatable Crime Enablers & Targeted Disruption (14)
 *   [Zombie Trailblazer](https://scryfall.com/search?q=!"Zombie+Trailblazer") ({B}{B}{B}) — Tap an untapped Zombie to target an opponent's land or creature; 0-mana instant crime engine on every player's turn.
 *   [Withered Wretch](https://scryfall.com/search?q=!"Withered+Wretch") ({B}{B}) — {1}: Exile target card from a graveyard; premier instant-speed crime engine and graveyard blowout.
 *   [Cemetery Reaper](https://scryfall.com/search?q=!"Cemetery+Reaper") ({1}{B}{B}) — Typal anthem that exiles opposing graveyard creatures to create 3 Zombies per activation with Gisa.
 *   [Ghost Vacuum](https://scryfall.com/search?q=!"Ghost+Vacuum") ({1}) — Tap to exile target card from an opponent's graveyard for {0} mana; later mass-reanimates exiled creatures as 1/1 flying Spirits.
 *   [Relic of Progenitus](https://scryfall.com/search?q=!"Relic+of+Progenitus") ({1}) — Tap to exile target card from target player's graveyard; {1} can wipe all graveyards and replace itself.
 *   [Agatha's Soul Cauldron](https://scryfall.com/search?q=!"Agatha's+Soul+Cauldron") ({2}) — Tap to exile creature from an opponent's graveyard; distributes counters and gives your creatures activated abilities.
+*   [Unlicensed Hearse](https://scryfall.com/search?q=!"Unlicensed+Hearse") ({2}) — Tap to exile up to two target cards from an opponent's graveyard for {0} mana; grows into an 8/8+ vehicle beater.
 *   [Defile](https://scryfall.com/search?q=!"Defile") ({B}) — Instant crime removal scaling with Swamps to eliminate indestructible threats.
 *   [Tragic Slip](https://scryfall.com/search?q=!"Tragic+Slip") ({B}) — Instant crime removal giving target creature -13/-13 with Morbid.
 *   [Snuff Out](https://scryfall.com/search?q=!"Snuff+Out") ({3}{B}) — Free instant crime removal paying 4 life instead of mana.
@@ -94,7 +96,7 @@ Rather than relying purely on reactive removal spells that empty your hand, this
 *   [Toxic Deluge](https://scryfall.com/search?q=!"Toxic+Deluge") ({2}{B}) — Premier 3-mana scalable sweeper bypassing indestructible.
 *   [Bringer of the Last Gift](https://scryfall.com/search?q=!"Bringer+of+the+Last+Gift") ({6}{B}{B}) — 6/6 flying demon; wipes all other creatures and mass-reanimates your entire graveyard.
 *   [Living Death](https://scryfall.com/search?q=!"Living+Death") ({3}{BB}) — Symmetrical board wipe and graveyard swap that turns your full graveyard into a game-winning horde.
-*   [Zombie Apocalypse](https://scryfall.com/search?q=!"Zombie+Apocalypse") ({3}{B}{B}{B}) — Destroys all Humans and returns all Zombie creature cards from your graveyard to the battlefield tapped.
+*   [Army of the Damned](https://scryfall.com/search?q=!"Army+of+the+Damned") ({5}{B}{B}{B}) — Creates thirteen 2/2 Zombie tokens (thirteen 3/3 menacing Zombies under Gisa = 39 power) with Flashback to do it again.
 
 ### Typal Lords, Anthems & Multipliers (10)
 *   [Death Baron](https://scryfall.com/search?q=!"Death+Baron") ({1}{B}{B}) — +1/+1 and deathtouch to all Zombies and Skeletons; pairs with menace to guarantee brutal blocks.
@@ -126,14 +128,14 @@ Rather than relying purely on reactive removal spells that empty your hand, this
 *   [Sol Ring](https://scryfall.com/search?q=!"Sol+Ring") ({1}) — Premier artifact ramp staple.
 *   [Arcane Signet](https://scryfall.com/search?q=!"Arcane+Signet") ({2}) — Untapped 2-mana rock tapping for {B}.
 *   [Jet Medallion](https://scryfall.com/search?q=!"Jet+Medallion") ({2}) — Reduces the cost of all Black spells by {1}.
-*   [Mind Stone](https://scryfall.com/search?q=!"Mind+Stone") ({2}) — 2-mana rock that can be cashed in for a card draw late.
+*   [Liquimetal Torque](https://scryfall.com/search?q=!"Liquimetal+Torque") ({2}) — Untapped 2-mana rock adding {C}; taps for {0} mana at instant speed to target an opponent's nonland permanent and commit a crime.
 *   [Wayfarer's Bauble](https://scryfall.com/search?q=!"Wayfarer's+Bauble") ({1}) — Fetches a basic Swamp directly onto the battlefield.
 *   [Dark Ritual](https://scryfall.com/search?q=!"Dark+Ritual") ({B}) — Adds {B}{B}{B} for explosive early turn 2 Gisa or turn 3 Bolas's Citadel.
 *   [Crypt Ghast](https://scryfall.com/search?q=!"Crypt+Ghast") ({3}{B}) — Swamps tap for an additional {B}; extort triggers drain opponents and stabilize life totals.
 
 ### Utility Creatures, Recursion & Finishers (8)
 *   [Gray Merchant of Asphodel](https://scryfall.com/search?q=!"Gray+Merchant+of+Asphodel") ({3}{B}{B}) — Devastating devotion-based life drain finisher; scales with heavy mono-black pips and lethal upon mass reanimation.
-*   [Acererak the Archlich](https://scryfall.com/search?q=!"Acererak+the+Archlich") ({2}{B}) — Zombie Wizard bounce engine venturing into dungeons for value, draw, and drain.
+*   [Yawgmoth, Thran Physician](https://scryfall.com/search?q=!"Yawgmoth,+Thran+Physician") ({2}{B}{B}) — Sac a Zombie token for {0} mana to put -1/-1 on target creature (commits crime!) and draw a card, triggering Gisa to spawn two new Zombies.
 *   [Grave Titan](https://scryfall.com/search?q=!"Grave+Titan") ({4}{B}{B}) — 6/6 deathtouch Giant creating two 2/2 Zombies on entry and whenever it attacks.
 *   [Ghoulcaller Gisa](https://scryfall.com/search?q=!"Ghoulcaller+Gisa") ({3}{B}{B}) — {B}, {T}, sacrifice a creature: create X 2/2 Zombie tokens where X is sacrificed creature's power.
 *   [Forsaken Miner](https://scryfall.com/search?q=!"Forsaken+Miner") ({B}) — {B}: Return from graveyard whenever you commit a crime; endless fodder and trigger loop.
@@ -147,7 +149,7 @@ Rather than relying purely on reactive removal spells that empty your hand, this
 
 ### Utility Lands & Mana Base (37)
 *   [Bojuka Bog](https://scryfall.com/search?q=!"Bojuka+Bog") (Land) — Enters tapped; exiles target player's graveyard on ETB (commits a crime!).
-*   [Demolition Field](https://scryfall.com/search?q=!"Demolition+Field") (Land) — Destroys nonbasic land an opponent controls; commits a crime and replaces itself with a basic Swamp.
+*   [Deserted Temple](https://scryfall.com/search?q=!"Deserted+Temple") (Land) — Taps for {C}; {1}, {T}: untaps Cabal Coffers/Nykthos on your turn, OR untaps target opponent's land on their turn to commit an instant-speed crime!
 *   [Field of the Dead](https://scryfall.com/search?q=!"Field+of+the+Dead") (Land) — Creates a 2/2 Zombie token whenever a land enters if you control 7+ differently named lands (Game Changer #3).
 *   [Phyrexian Tower](https://scryfall.com/search?q=!"Phyrexian+Tower") (Land) — Taps for {C} or sacrifices a creature to produce {B}{B}.
 *   [Scavenger Grounds](https://scryfall.com/search?q=!"Scavenger+Grounds") (Land) — {2}, {T}, sacrifice a Desert: exile all cards from all graveyards (commits a crime when targeting an opponent).
@@ -181,6 +183,10 @@ Rather than relying purely on reactive removal spells that empty your hand, this
 ---
 
 ## 📜 Deck Changelog
+- **[2026-09-22]:** Add 13-Zombie bomb (Army of the Damned) and boost repeatable crime engines (Yawgmoth, Deserted Temple, Hearse, Torque) over underperformers
+    - **In:** Army of the Damned, Yawgmoth, Thran Physician, Deserted Temple, Unlicensed Hearse, Liquimetal Torque
+    - **Out:** Zombie Apocalypse, Acererak the Archlich, Demolition Field, Tombstone Stairwell, Mind Stone
+    - **Reason:** Add 13-Zombie bomb (Army of the Damned) and boost repeatable crime engines (Yawgmoth, Deserted Temple, Hearse, Torque) over underperformers
 - **[2026-09-22]:** Add Gary as high-devotion life-drain finisher and mass-reanimation target over Roaming Throne
     - **In:** Gray Merchant of Asphodel
     - **Out:** Roaming Throne
@@ -196,7 +202,7 @@ Rather than relying purely on reactive removal spells that empty your hand, this
 
 ```text  
 1 Gisa, the Hellraiser  
-1 Acererak the Archlich  
+1 Yawgmoth, Thran Physician  
 1 Agatha's Soul Cauldron  
 1 Arcane Signet  
 1 Ayara, First of Locthwain  
@@ -219,7 +225,7 @@ Rather than relying purely on reactive removal spells that empty your hand, this
 1 Deadly Rollick  
 1 Death Baron  
 1 Defile  
-1 Demolition Field  
+1 Deserted Temple  
 1 Diregraf Colossus  
 1 Dismember  
 1 Eldrazi Monument  
@@ -240,7 +246,7 @@ Rather than relying purely on reactive removal spells that empty your hand, this
 1 Lord of the Accursed  
 1 Lord of the Undead  
 1 Mikaeus, the Unhallowed  
-1 Mind Stone  
+1 Liquimetal Torque  
 1 Morbid Opportunist  
 1 Noxious Ghoul  
 1 Nykthos, Shrine to Nyx  
@@ -259,7 +265,7 @@ Rather than relying purely on reactive removal spells that empty your hand, this
 1 The One Ring  
 1 Three Tree City  
 1 Throne of Eldraine  
-1 Tombstone Stairwell  
+1 Unlicensed Hearse  
 1 Toxic Deluge  
 1 Tragic Slip  
 1 Undead Augur  
@@ -271,7 +277,7 @@ Rather than relying purely on reactive removal spells that empty your hand, this
 1 Withered Wretch  
 1 Withering Torment  
 1 Witch's Cottage  
-1 Zombie Apocalypse  
+1 Army of the Damned  
 1 Zombie Master  
 1 Zombie Trailblazer  
 ```  
