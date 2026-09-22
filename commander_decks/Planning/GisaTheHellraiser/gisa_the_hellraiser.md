@@ -75,7 +75,8 @@ Rather than relying purely on reactive removal spells that empty your hand, this
 *   [Nykthos, Shrine to Nyx](https://scryfall.com/search?q=!"Nykthos,+Shrine+to+Nyx") (Land) — Taps for {B} equal to your Black devotion, generating immense bursts with heavy-pip permanents.
 *   [Three Tree City](https://scryfall.com/search?q=!"Three+Tree+City") (Land) — Chooses Zombie; taps for {B} equal to the number of Zombies on your board.
 
-### Repeatable Crime Enablers & Targeted Disruption (14)
+### Repeatable Crime Enablers & Targeted Disruption (19)
+*   [Staff of Domination](https://scryfall.com/search?q=!"Staff+of+Domination") ({3}) — Untaps itself for {1}; sinks big mana into unlimited card draw, life stabilization, or tapping opponent creatures at instant speed to commit crimes.
 *   [Zombie Trailblazer](https://scryfall.com/search?q=!"Zombie+Trailblazer") ({B}{B}{B}) — Tap an untapped Zombie to target an opponent's land or creature; 0-mana instant crime engine on every player's turn.
 *   [Withered Wretch](https://scryfall.com/search?q=!"Withered+Wretch") ({B}{B}) — {1}: Exile target card from a graveyard; premier instant-speed crime engine and graveyard blowout.
 *   [Cemetery Reaper](https://scryfall.com/search?q=!"Cemetery+Reaper") ({1}{B}{B}) — Typal anthem that exiles opposing graveyard creatures to create 3 Zombies per activation with Gisa.
@@ -90,6 +91,10 @@ Rather than relying purely on reactive removal spells that empty your hand, this
 *   [Dismember](https://scryfall.com/search?q=!"Dismember") ({1}{B/P}{B/P}) — {1} and 4 life for instant -5/-5 removal and crime trigger.
 *   [Infernal Grasp](https://scryfall.com/search?q=!"Infernal+Grasp") ({1}{B}) — Unconditional 2-mana creature destruction and crime trigger.
 *   [Withering Torment](https://scryfall.com/search?q=!"Withering+Torment") ({2}{B}) — Instant-speed Mono-Black enchantment or creature removal that commits a crime.
+*   [Bitter Triumph](https://scryfall.com/search?q=!"Bitter+Triumph") ({1}{B}) — Instant crime removal targeting creature or planeswalker at 2 mana.
+*   [Feed the Swarm](https://scryfall.com/search?q=!"Feed+the+Swarm") ({1}{B}) — Sorcery crime removal destroying target creature or enchantment.
+*   [Go for the Throat](https://scryfall.com/search?q=!"Go+for+the+Throat") ({1}{B}) — 2-mana instant crime removal destroying target nonartifact creature.
+*   [Hero's Downfall](https://scryfall.com/search?q=!"Hero's+Downfall") ({1}{B}{B}) — Flexible 3-mana instant crime removal destroying creature, planeswalker, or battle.
 
 ### Mass Disruption & Asymmetric Sweepers (5)
 *   [Noxious Ghoul](https://scryfall.com/search?q=!"Noxious+Ghoul") ({3}{B}{B}) — Whenever a Zombie enters, all non-Zombies get -1/-1 until end of turn; wipes opposing boards as Gisa triggers.
@@ -124,11 +129,12 @@ Rather than relying purely on reactive removal spells that empty your hand, this
 *   [Castle Locthwain](https://scryfall.com/search?q=!"Castle+Locthwain") (Land) — Land-based card draw engine in Mono-Black.
 *   [War Room](https://scryfall.com/search?q=!"War+Room") (Land) — Taps and pays 1 life in Mono-Black to draw a card.
 
-### Ramp & Mana Acceleration (7)
+### Ramp & Mana Acceleration (8)
 *   [Sol Ring](https://scryfall.com/search?q=!"Sol+Ring") ({1}) — Premier artifact ramp staple.
 *   [Arcane Signet](https://scryfall.com/search?q=!"Arcane+Signet") ({2}) — Untapped 2-mana rock tapping for {B}.
 *   [Jet Medallion](https://scryfall.com/search?q=!"Jet+Medallion") ({2}) — Reduces the cost of all Black spells by {1}.
 *   [Liquimetal Torque](https://scryfall.com/search?q=!"Liquimetal+Torque") ({2}) — Untapped 2-mana rock adding {C}; taps for {0} mana at instant speed to target an opponent's nonland permanent and commit a crime.
+*   [Expedition Map](https://scryfall.com/search?q=!"Expedition+Map") ({1}) — Tutors Cabal Coffers, Urborg, or Nykthos directly to hand.
 *   [Wayfarer's Bauble](https://scryfall.com/search?q=!"Wayfarer's+Bauble") ({1}) — Fetches a basic Swamp directly onto the battlefield.
 *   [Dark Ritual](https://scryfall.com/search?q=!"Dark+Ritual") ({B}) — Adds {B}{B}{B} for explosive early turn 2 Gisa or turn 3 Bolas's Citadel.
 *   [Crypt Ghast](https://scryfall.com/search?q=!"Crypt+Ghast") ({3}{B}) — Swamps tap for an additional {B}; extort triggers drain opponents and stabilize life totals.
@@ -183,6 +189,10 @@ Rather than relying purely on reactive removal spells that empty your hand, this
 ---
 
 ## 📜 Deck Changelog
+- **[2026-09-22]:** Replace win-more/dead-draw enchantment with versatile big-mana sink, life stabilization, and instant crime engine
+    - **In:** Staff of Domination
+    - **Out:** Endless Ranks of the Dead
+    - **Reason:** Replace win-more/dead-draw enchantment with versatile big-mana sink, life stabilization, and instant crime engine
 - **[2026-09-22]:** Add 13-Zombie bomb (Army of the Damned) and boost repeatable crime engines (Yawgmoth, Deserted Temple, Hearse, Torque) over underperformers
     - **In:** Army of the Damned, Yawgmoth, Thran Physician, Deserted Temple, Unlicensed Hearse, Liquimetal Torque
     - **Out:** Zombie Apocalypse, Acererak the Archlich, Demolition Field, Tombstone Stairwell, Mind Stone
@@ -229,7 +239,7 @@ Rather than relying purely on reactive removal spells that empty your hand, this
 1 Diregraf Colossus  
 1 Dismember  
 1 Eldrazi Monument  
-1 Endless Ranks of the Dead  
+1 Staff of Domination  
 1 Expedition Map  
 1 Feed the Swarm  
 1 Field of the Dead  

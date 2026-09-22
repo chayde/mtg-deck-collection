@@ -24,6 +24,9 @@
     *   **In (5):** *Army of the Damned* ({5}{B}{B}{B}) (13-Zombie bomb = 39 power of menace attackers), *Yawgmoth, Thran Physician* ({2}{B}{B}) (0-mana instant crime trigger, creature shrink, and card draw engine), *Deserted Temple* (Land that untaps Cabal Coffers/Nykthos for mana or targets opponent lands for instant crimes), *Unlicensed Hearse* ({2}) (0-mana instant graveyard exile crime engine + scaling vehicle), *Liquimetal Torque* ({2}) (2-mana rock tapping for mana or targeting opponent permanents for 0-mana instant crimes).
     *   **Out (5):** *Zombie Apocalypse*, *Acererak the Archlich*, *Demolition Field*, *Tombstone Stairwell*, *Mind Stone*.
     *   *Result:* Repeatable crime engines expanded from 6 to 10 permanents. Goldfish simulation showed Gold Keep rates reaching an all-time high of 30% and average starting hand size of 6.97 cards, maintaining a strong Bracket 3 PASS.
+*   **Big-Mana Outlet & Repeatable Crime Upgrade (Staff of Domination in for Endless Ranks of the Dead):** Following gameplay testing where *Endless Ranks of the Dead* ({2}{B}{B}) frequently proved to be a dead draw on empty boards or win-more in ahead states, and excess mana from Cabal Coffers/Nykthos needed a repeatable permanent dump, executed Visual Swap Matrix swap:
+    *   **In:** *Staff of Domination* ({3}) (versatile big-mana sink for unlimited card draw and life stabilization, plus a repeatable {5}-mana instant-speed crime generator that taps opposing creatures to trigger Gisa on opponents' turns).
+    *   **Out:** *Endless Ranks of the Dead* ({2}{B}{B}).
 *   **Archiving:** Updated `TheNecrobloom` to `deck_status: reference` in `necrobloom_abzan.md` and updated root `README.md`.
 
 ### 2026-09-21: Krenko, Mob Boss — Post-Ban Package Integration & Repository Inception (Bracket 3 Validated)

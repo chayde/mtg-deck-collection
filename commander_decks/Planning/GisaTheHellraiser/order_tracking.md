@@ -34,7 +34,7 @@ Physical card acquisitions tracked for Gisa, the Hellraiser:
 - [ ] 1 Cryptbreaker
 - [ ] 1 Noxious Ghoul
 - [ ] 1 Zombie Master
-- [ ] 1 Endless Ranks of the Dead
+- [ ] 1 Staff of Domination
 - [ ] 1 Unlicensed Hearse
 - [ ] 1 Army of the Damned
 - [ ] 1 Deserted Temple

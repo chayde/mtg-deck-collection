@@ -255,3 +255,76 @@ BRACKET READINESS (Bracket 3 (Upgraded) — Target T7)
 - **Mulligan Quality Peak:** Gold Keep rate hit **30%** with average starting hand size climbing to **6.97 cards** (highest across all tested iterations).
 - **Crime Density:** Repeatable crime engine count grew from 6 to **10 permanents** (*Zombie Trailblazer*, *Withered Wretch*, *Cemetery Reaper*, *Ghost Vacuum*, *Relic of Progenitus*, *Agatha's Soul Cauldron*, *Unlicensed Hearse*, *Liquimetal Torque*, *Deserted Temple*, *Yawgmoth*), ensuring consistent multi-turn triggers across opponents' turns.
 - **Bracket Compliance:** Maintained solid **PASS** for Bracket 3.
+
+## [2026-09-22] — Big-Mana Sink & Crime Engine Upgrade: Staff of Domination in for Endless Ranks of the Dead (20 sims, T10 turns, Bracket 3)
+
+**Command:**
+```bash
+python scripts/multiplayer_goldfish.py "commander_decks/Planning/GisaTheHellraiser/moxfield_import.txt" --sims 20 --turns 10 --bracket 3
+```
+
+**Results:**
+```text
+--------------------------------------------------------------------
+FASTEST COMMANDER DEPLOYMENT SHOWCASE (Sim 5, Seat 4)
+--------------------------------------------------------------------
+  Cast Turn:     Turn 2 (Gold Keep, 7 cards)
+  Opening Hand:  Liquimetal Torque, Dark Ritual, Withered Wretch, Witch's Cottage, Swamp, Swamp, Swamp
+  Deployment Sequence:
+    T 1: Land: Swamp | Cast: Dark Ritual | Cast: Liquimetal Torque | Cast: Wayfarer's Bauble (+1 land)
+    T 2: Land: Swamp | ** CAST Gisa, the Hellraiser T2 ** | Cast: Withered Wretch (generic)
+
+--------------------------------------------------------------------
+WORST-CASE COMMANDER DEPLOYMENT SHOWCASE (Sim 14, Seat 4)
+--------------------------------------------------------------------
+  Status:        FAILED TO CAST (through Turn 10)
+  Mulligan:      Silver Keep (7 cards)
+  Diagnostic:    Mana Stalled: Controlled 4 lands and 0 rock(s) (total 4 mana, needed 5)
+  Opening Hand:  Deadly Rollick, War Room, Living Death, Bojuka Bog, Ghost Vacuum, Feed the Swarm, Lord of the Accursed
+
+--------------------------------------------------------------------
+AGGREGATE DEPLOYMENT & MULLIGAN PROFILE
+--------------------------------------------------------------------
+  Commander cast rate: 77/80 (96%)
+  Commander Cast Range: T2 - T10
+  Commander Cast Avg:   T5.1
+  Commander Cast Distribution:
+    T 2: ### (3)
+    T 3: ######### (9)
+    T 4: ################# (17)
+    T 5: ####################### (23)
+    T 6: ############ (12)
+    T 7: ##### (5)
+    T 8: ##### (5)
+    T10: ### (3)
+
+  Opening Hand Quality Breakdown (80 hands evaluated):
+    Gold Keep (Mana + Ramp + Enabler):   31/80 (39%)
+    Silver Keep (Mana + Curve):          48/80 (60%)
+    Desperation Keep (Mulligan to <=5):   1/80 (1%)
+    Average Starting Hand Size:          6.94 cards
+
+--------------------------------------------------------------------
+BRACKET READINESS (Bracket 3 (Upgraded) — Target T7)
+--------------------------------------------------------------------
+  Target Window Readiness Rate (T<=7): 69/80 (86%)
+  Engine Readiness Avg:  T5.1
+  Engine Readiness Distribution:
+    T 2: ### (3)
+    T 3: ######### (9)
+    T 4: ################# (17)
+    T 5: ####################### (23)
+    T 6: ############ (12)
+    T 7: ##### (5)
+    T 8: ##### (5)
+    T10: ### (3)
+
+  [BRACKET COMPLIANCE CHECK] Status: PASS
+  Deck deploys its engine around Turn 5.1, perfectly positioned to execute and threaten a win on Bracket 3 (Upgraded)'s target (Turn 7+).
+```
+
+**Notes:**
+- **Gold Keep Quality Leap:** Gold Keep rate rose to **39%** (up from 30%), reflecting a lower curve (Staff at {3} vs Endless Ranks at {4}) and increased early-turn utility.
+- **Engine Readiness:** 86% of seats achieved full engine readiness by Turn 7 (averaging **Turn 5.1**), demonstrating exceptional consistency for Bracket 3.
+- **Mana Flexibility:** Swapping out a dead-draw enchantment for Staff of Domination ensures excess mana from Cabal Coffers/Nykthos has an instant-speed card draw, lifegain, and crime generator outlet.
+
