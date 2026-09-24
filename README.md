@@ -69,6 +69,7 @@ Decks under development, research, or being optimized.
 *   **Caesar, Legion's Emperor:** Mardu Tokens, Aristocrats & Burn Swarm Engine ("The Legion's Swarm"). Bracket 3.
 *   **Atraxa, Praetors' Voice:** Non-Red (WUBG) Superfriends, Proliferate Value Engine & Asymmetric Board Control ("The Superfriends Sovereign"). Bracket 3.
 *   **Krenko, Mob Boss:** Mono-Red Goblin Tribal / Swarm Aggro & Untap Combos ("Exponential Swarm & Untap Combos"). Bracket 3.
+*   **Krenko Bracket 3:** Mono-Red Goblin Tribal / Swarm Aggro, Infinite Untap Combos & Stack Protection ("Pragmatic High-Power Swarm & Untap Combos"). Bracket 3.
 
 
 ### 🎮 `/arena_decks`
