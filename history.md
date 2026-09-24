@@ -19,6 +19,16 @@
     *   **Commander Cast Rate:** 80/80 (100%), averaging **Turn 3.9** (with 28 casts on Turn 2–3).
     *   **Mulligan Stability:** 50% Gold Keeps, 49% Silver Keeps, **1% Desperation Keeps** (6.95 avg hand size).
     *   **Engine Readiness:** 95% target window readiness ($\le$ T7), averaging **Turn 4.6**, securing an unambiguous **PASS** for Bracket 3. Full report saved to [`commander_decks/Planning/KrenkoBracket3/goldfish_report.html`](commander_decks/Planning/KrenkoBracket3/goldfish_report.html) and logged to [`commander_decks/Planning/KrenkoBracket3/GOLDFISH_LOG.md`](commander_decks/Planning/KrenkoBracket3/GOLDFISH_LOG.md).
+*   **Playtesting Optimization Swaps (3 Cards):** Following gameplay testing where certain cards felt clunky, slow, or dead in hand:
+    *   **In (3):**
+        *   *Commander's Plate* ({1}): In a mono-red deck, grants Krenko +3/+3 and **Protection from White, Blue, Black, and Green**, blanking almost all premier spot removal (*Swords*, *Path*, *Pongify*, *Cyclonic Rift*, *Deadly Rollick*, *Beast Within*) and making him virtually unblockable.
+        *   *Throne of Eldraine* ({5}): Taps for **{R}{R}{R}{R}** to cast monocolored red spells (instantly casting Krenko or deploying multiple goblins) and provides a repeatable `{3}, {T}: Draw two cards` engine using red mana to solve late-game gas shortages.
+        *   *Moria Marauder* ({R}{R}): 2-drop Goblin Warrior with Double Strike; exiles the top card of the library to play whenever *any* Goblin deals combat damage to a player, delivering explosive, immediate card velocity without delay.
+    *   **Out (3):**
+        *   *Thornbite Staff* ({2}): Krenko is a Warrior (not a Shaman), voiding the auto-equip and demanding a prohibitive {4} mana equip cost ({6} mana total investment), proving dead without a sac outlet ready.
+        *   *Pyre of Heroes* ({2}): Slow, sorcery-speed typal Birthing Pod that lagged behind direct tutors and impulse velocity.
+        *   *Fable of the Mirror-Breaker* ({2}{R}): Required 3 full turn cycles to flip into *Reflection of Kiki-Jiki* (which has summoning sickness), far too slow for an explosive swarm archetype.
+    *   **Post-Swap Goldfish Re-Validation:** 20-game simulation (80 seats) confirmed 99% commander deployment (T4.0 avg), 100% functional keeps (45% Gold, 55% Silver, 0% Desperation keeps, 6.94 avg hand size), 89% target window readiness ($\le$ T7), and solid Bracket 3 **PASS** compliance. Updated `order_tracking.md`, `GOLDFISH_LOG.md`, and Forge synchronization (`Krenko Bracket 3.dck`).
 
 *   **Archetype Pivot & Commander Inception:** Following playtesting where The Necrobloom struggled to reliably generate large, game-winning fields of Zombies, pivoted to a pure **Mono-Black Zombie Swarm Engine** commanded by **Gisa, the Hellraiser** ({3}{B}{B}). Gisa solves the historical failure points of Zombie typal decks by combining inherent protection (`Ward—{2}, Pay 2 life`), a built-in typal anthem and evasion engine (`+1/+1 and menace to all Zombies and Skeletons`), and an explosive token spigot (creating two 2/2 Zombie Rogues whenever you commit a crime, once each turn).
 *   **The Instant-Speed Crime Engine (CR 700.13):** Maximized Gisa's "once each turn" trigger by integrating proactive, 0-mana and instant-speed crime enablers:

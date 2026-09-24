@@ -66,7 +66,7 @@ The following 31 singles represent the targeted upgrade package to complete the 
 | **Deflecting Swat** | {2}{R} | Protection | ~$70.00 | Free redirect protection for Krenko against spot removal |
 | **Purphoros, God of the Forge** | {3}{R} | Finisher | ~$30.20 | 2 damage to each opponent per creature ETB; primary non-combat win-con |
 | **Goblin Sharpshooter** | {2}{R} | Utility / Combo | ~$24.75 | Repeatable pinger that untaps on any death; machine-gun board control |
-| **Thornbite Staff** | {2} | Untap / Combo | ~$18.70 | Auto-untaps Krenko on any creature death; infinite token combo piece |
+| **Commander's Plate** | {1} | Protection / Voltron | ~$49.75 | Protection from WUBG (non-red) & +3/+3 shield for Krenko |
 | **Goblin Lackey** | {R} | Utility / Cheat | ~$16.00 | Turn 1 combat cheat for Muxus or high-cost Goblins |
 | **Thousand-Year Elixir** | {3} | Haste / Untap | ~$14.75 | Pseudo-haste allowing Krenko to tap on entry + {1} untap activation |
 | **Goblin King** | {1}{R}{R} | Lord / Evasion | ~$14.20 | +1/+1 & Mountainwalk (unblockable swarm with Blood Moon) |
@@ -83,7 +83,6 @@ The following 31 singles represent the targeted upgrade package to complete the 
 | **Arena of Glory** | Land | Land / Haste | ~$7.10 | Land that exerts for {R}{R} to give Krenko immediate haste |
 | **General Kreat, the Boltbringer** | {2}{R} | Finisher | ~$7.30 | Attack token generator + 1 damage per creature ETB |
 | **Goblin Recruiter** | {1}{R} | Tutor | ~$6.80 | Stacks the library with any number of Goblins in optimal combo order |
-| **Fable of the Mirror-Breaker** | {2}{R} | Velocity / Token | ~$6.40 | Ramp, hand smoothing, and Reflection of Kiki-Jiki copy engine |
 | **The Fire Crystal** | {2}{R}{R} | Haste / Ramp | ~$5.30 | Universal team haste, {1} red cost reduction, and creature duplication |
 | **Patriar's Seal** | {3} | Ramp / Untap | ~$4.70 | Mana rock + {1},{T} ability to untap legendary Krenko |
 | **War Room** | Land | Land / Draw | ~$5.50 | Untapped land drawing cards for 3 mana and 1 life in mono-red |
@@ -94,7 +93,8 @@ The following 31 singles represent the targeted upgrade package to complete the 
 | **Mines of Moria** | Land | Land / Utility | ~$3.40 | Treasure ramp & targeted graveyard exile on a land |
 | **Sokenzan, Crucible of Defiance** | Land | Land / Utility | ~$2.85 | Channel ability making two 1/1 hasty Spirit tokens at instant speed |
 | **Swiftfoot Boots** | {2} | Haste / Protection | ~$2.00 | {1} equip cost granting haste & hexproof |
-| **Pyre of Heroes** | {2} | Tutor / Pod | ~$1.65 | Typal Birthing Pod converting 1/1 tokens into 1-drops and 3-drops into Krenko |
+| **Throne of Eldraine** | {5} | Ramp / Draw | ~$29.00 | +4 red mana acceleration & repeatable 2-card draw engine |
+| **Moria Marauder** | {R}{R} | Velocity / Aggro | ~$0.47 | Double strike & impulse card draw on Goblin combat damage |
 | **Chaos Warp** | {2}{R} | Removal | ~$1.00 | Universal instant-speed removal answering any permanent type |
 | **Return the Favor** | {R}{R} | Protection | ~$0.80 | Spree instant redirecting removal away from Krenko or copying spells |
 | **Rising of the Day** | {2}{R} | Haste / Anthem | ~$0.75 | Universal team haste for all creatures & +1/+0 to Krenko |
@@ -106,4 +106,4 @@ The following 31 singles represent the targeted upgrade package to complete the 
 *   **Total Deck Size:** Exactly 100 Cards (1 Commander + 99 Mainboard)
 *   **In-Hand / Owned:** 63 Cards (33 nonbasic singles + basic Mountains)
 *   **To Acquire:** 37 Singles (including the user-requested powerhouses *Phyrexian Altar* & *Mana Echoes*)
-*   **Estimated Acquisition Cost:** ~$465 – $495 (with ~$185 accounted for by *Phyrexian Altar*, *Mana Echoes*, and *Deflecting Swat*)
+*   **Estimated Acquisition Cost:** ~$515 – $545 (with ~$235 accounted for by *Phyrexian Altar*, *Mana Echoes*, *Deflecting Swat*, and *Commander's Plate*)

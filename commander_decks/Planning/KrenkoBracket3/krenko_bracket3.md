@@ -67,7 +67,7 @@ deck_status: main
 
 ### 🔄 Untap & Infinite Combo Engines (5 Cards)
 *   **[Mana Echoes](https://scryfall.com/search?q=!"Mana+Echoes") ({2}{R}{R}):** Produces exponential colorless mana whenever Goblins enter; 1 Krenko tap yields 20–50+ mana.
-*   **[Thornbite Staff](https://scryfall.com/search?q=!"Thornbite+Staff") ({2}):** Automatically untaps equipped creature whenever any creature dies; enables instant-speed infinite combos with Krenko and any sac outlet.
+*   **[Commander's Plate](https://scryfall.com/card/cmr/305/commanders-plate?utm_source=api) ({1}):** Protection from non-red & +3/+3 voltron shield
 *   **[Umbral Mantle](https://scryfall.com/search?q=!"Umbral+Mantle") ({3}):** Equipment granting `{3}, {Q}: +2/+2`; provides infinite untap loops and infinite Goblins with sacrifice mana outlets.
 *   **[Staff of Domination](https://scryfall.com/search?q=!"Staff+of+Domination") ({3}):** Swiss-army artifact untapping Krenko, tapping blockers, gaining life, and drawing your entire library.
 *   **[Thousand-Year Elixir](https://scryfall.com/search?q=!"Thousand-Year+Elixir") ({3}):** Grants pseudo-haste allowing Krenko to tap immediately on entry and provides an untap activation for {1}.
@@ -83,13 +83,13 @@ deck_status: main
 
 ### 📜 Card Velocity, Tutors & Pod Engines (9 Cards)
 *   **[Skullclamp](https://scryfall.com/search?q=!"Skullclamp") ({1}):** Premier card draw engine; clamps 1/1 Goblin tokens to draw 2 cards each for {1}.
-*   **[Pyre of Heroes](https://scryfall.com/search?q=!"Pyre+of+Heroes") ({2}):** Typal Birthing Pod sacrificing 1/1 tokens into 1-drop combo pieces, 2-drops into lords, and 3-drops straight into Krenko.
+*   **[Throne of Eldraine](https://scryfall.com/card/plst/WOC-28/throne-of-eldraine?utm_source=api) ({5}):** +4 red mana rock & repeatable 2-card draw engine
 *   **[Goblin Matron](https://scryfall.com/search?q=!"Goblin+Matron") ({2}{R}):** Unconditional tutor on a Goblin body searching for any Goblin card directly to hand.
 *   **[Goblin Recruiter](https://scryfall.com/search?q=!"Goblin+Recruiter") ({1}{R}):** Stacks the top of the library with any number of Goblins in optimal combo order.
 *   **[Conspicuous Snoop](https://scryfall.com/search?q=!"Conspicuous+Snoop") ({R}{R}):** Plays Goblins off the top of the library and gains all activated abilities of Goblins on top.
 *   **[Goblin Ringleader](https://scryfall.com/search?q=!"Goblin+Ringleader") ({3}{R}):** Hasty 4-drop digging four cards deep to put all revealed Goblins into hand.
 *   **[Rundvelt Hordemaster](https://scryfall.com/search?q=!"Rundvelt+Hordemaster") ({1}{R}):** Goblin lord that exiles and lets you play Goblin creature cards from the top of your library when Goblins die.
-*   **[Fable of the Mirror-Breaker](https://scryfall.com/search?q=!"Fable+of+the+Mirror-Breaker") ({2}{R}):** Ramps with Goblin Shaman Treasures, loots 2 dead cards, and transforms into Reflection of Kiki-Jiki.
+*   **[Moria Marauder](https://scryfall.com/card/ltr/138/moria-marauder?utm_source=api) ({R}{R}):** Double strike & impulse card draw on Goblin combat damage
 *   **[Muxus, Goblin Grandee](https://scryfall.com/search?q=!"Muxus,+Goblin+Grandee") ({4}{R}{R}):** Explosive 6-drop digging the top 6 cards and putting all revealed Goblins with MV $\le 5$ onto the battlefield.
 
 ### ⚔️ One-Sided Lords & Swarm Amplifiers (7 Cards)
@@ -149,6 +149,10 @@ deck_status: main
 ---
 
 ## 📜 Deck Changelog
+- **[2026-09-24]:** Replace clunky combo piece, slow sorcery pod, and 3-turn saga with premier WUBG protection (Commander's Plate), mono-red ramp/draw engine (Throne of Eldraine), and combat impulse velocity (Moria Marauder)
+    - **In:** Commander's Plate, Throne of Eldraine, Moria Marauder
+    - **Out:** Thornbite Staff, Pyre of Heroes, Fable of the Mirror-Breaker // Reflection of Kiki-Jiki
+    - **Reason:** Replace clunky combo piece, slow sorcery pod, and 3-turn saga with premier WUBG protection (Commander's Plate), mono-red ramp/draw engine (Throne of Eldraine), and combat impulse velocity (Moria Marauder)
 *   **2026-09-24:** Deck inception and architecture design.
     *   **In:** Initial 100-card build integrating the 9-Source Haste Matrix (*The Fire Crystal*, *Rising of the Day*, *Lightning Greaves*), stack protection (*Deflecting Swat*, *Return the Favor*), user-requested combo engines (*Phyrexian Altar*, *Mana Echoes*), and Yawgfather tech (*Pyre of Heroes*, *Quest for the Goblin Lord*).
     *   **Out:** Symmetrical *Coat of Arms* and high-CMC luxury staples (*Mox Diamond*, *Wheel of Fortune*, *Ancient Tomb*, *The One Ring*).
@@ -174,7 +178,7 @@ DECK:
 1 Deflecting Swat  
 1 Den of the Bugbear  
 1 Eldrazi Monument  
-1 Fable of the Mirror-Breaker  
+1 Moria Marauder  
 1 Fellwar Stone  
 1 Gempalm Incinerator  
 1 General Kreat, the Boltbringer  
@@ -208,7 +212,7 @@ DECK:
 1 Patriar's Seal  
 1 Phyrexian Altar  
 1 Purphoros, God of the Forge  
-1 Pyre of Heroes  
+1 Throne of Eldraine  
 1 Quest for the Goblin Lord  
 1 Return the Favor  
 1 Rising of the Day  
@@ -225,7 +229,7 @@ DECK:
 1 Sting, the Glinting Dagger  
 1 Swiftfoot Boots  
 1 The Fire Crystal  
-1 Thornbite Staff  
+1 Commander's Plate  
 1 Thousand-Year Elixir  
 1 Torbran, Thane of Red Fell  
 1 Umbral Mantle  

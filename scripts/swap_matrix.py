@@ -829,6 +829,10 @@ def apply_triple_update(md_path: Path,
             # Try case-insensitive fallback
             pattern_ci = rf'^\s*1\s+{re.escape(out_name)}\s*$'
             mox_content, count = re.subn(pattern_ci, new_line, mox_content, flags=re.MULTILINE | re.IGNORECASE)
+        if count == 0 and " // " in out_name:
+            out_front = out_name.split(" // ")[0]
+            pattern_front = rf'^\s*1\s+{re.escape(out_front)}\s*$'
+            mox_content, count = re.subn(pattern_front, new_line, mox_content, flags=re.MULTILINE | re.IGNORECASE)
 
     # 2. Update Markdown Deck File
     # (a) Card Explanations section
@@ -849,6 +853,13 @@ def apply_triple_update(md_path: Path,
             # Fallback for plain bold without link
             bullet_pattern_plain = rf'^\s*\*\s+\*\*{re.escape(out_name)}\*\*.*$'
             md_content, b_count = re.subn(bullet_pattern_plain, replacement_bullet, md_content, flags=re.MULTILINE)
+        if b_count == 0 and " // " in out_name:
+            out_front = out_name.split(" // ")[0]
+            bullet_pattern_front = rf'^\s*\*\s+\*\*\[?{re.escape(out_front)}(?:\]\([^)]+\))?(?:\s*\([^)]+\))?\s*:\*\*.*$'
+            md_content, b_count = re.subn(bullet_pattern_front, replacement_bullet, md_content, flags=re.MULTILINE)
+            if b_count == 0:
+                bullet_pattern_plain_front = rf'^\s*\*\s+\*\*{re.escape(out_front)}\*\*.*$'
+                md_content, b_count = re.subn(bullet_pattern_plain_front, replacement_bullet, md_content, flags=re.MULTILINE)
 
     # (b) Plain Text Copy/Paste section in markdown
     # Each line MUST have two spaces at the end
@@ -863,7 +874,11 @@ def apply_triple_update(md_path: Path,
             in_name = s["in"]["name"]
             # Look for 1 OutName  (with optional trailing spaces)
             pt_pat = rf'^(1\s+{re.escape(out_name)})\s*$'
-            pt_body = re.sub(pt_pat, rf'1 {in_name}  ', pt_body, flags=re.MULTILINE)
+            pt_body, pt_cnt = re.subn(pt_pat, rf'1 {in_name}  ', pt_body, flags=re.MULTILINE)
+            if pt_cnt == 0 and " // " in out_name:
+                out_front = out_name.split(" // ")[0]
+                pt_pat_front = rf'^(1\s+{re.escape(out_front)})\s*$'
+                pt_body = re.sub(pt_pat_front, rf'1 {in_name}  ', pt_body, flags=re.MULTILINE)
 
         # Ensure all card lines have 2 trailing spaces
         reformatted_lines = []
@@ -971,7 +986,7 @@ def main():
         # Remove first occurrence of out_name
         found = False
         for idx, name in enumerate(post_deck_names):
-            if name.lower() == out_name.lower():
+            if name.lower() == out_name.lower() or (" // " in out_name and name.lower() == out_name.split(" // ")[0].lower()):
                 post_deck_names.pop(idx)
                 found = True
                 break
