@@ -106,6 +106,17 @@ KNOWN_GAME_CHANGERS = {
     "lion's eye diamond", "mana vault", "the one ring"
 }
 
+# Known Mass Land Denial (MLD) cards banned in Brackets 1-3 under WotC rules
+KNOWN_MLD_CARDS = {
+    "blood moon", "magus of the moon", "back to basics",
+    "armageddon", "ravages of war", "cataclysm", "fall of the thran",
+    "global ruin", "restore balance", "ruination", "wave of vitriol",
+    "obliterate", "jokulhaups", "decree of annihilation", "devastation",
+    "boom // bust", "impending disaster", "keldon firebombers", "wildfire",
+    "destructive force", "sunder", "death cloud", "winter orb", "static orb",
+    "stasis"
+}
+
 # ---------------------------------------------------------------------------
 # Data Resolution Helpers
 # ---------------------------------------------------------------------------
@@ -292,7 +303,7 @@ class DTIEvaluation:
                 "reason": f"Velocity vector ({self.velocity_vector}/48) >= 28. Fast proactive clock."
             })
 
-        # Gate 2: Early Finish / Glass Cannon Gate (Eliminates table by Turn 5-6: Zero-Untap Override or T4-5 Combo Finish)
+        # Gate 2: Early Finish / Glass Cannon Gate (Eliminates table by Turn 5: Zero-Untap Override or T1-3 onset)
         early_finish = False
         if self.grades["p1"] == "S":
             early_finish = True
@@ -300,14 +311,12 @@ class DTIEvaluation:
             early_finish = True
         elif self.grades["a2"] in ("S", "A") and self.grades["p2"] == "S":
             early_finish = True
-        elif self.grades["p1"] == "A" and self.grades["p2"] == "A" and any(k in self.archetype.lower() for k in ("combo", "infinite", "loop")):
-            early_finish = True
 
         if early_finish:
             self.gates_triggered.append({
                 "name": "Early Finish Gate",
                 "bracket": 4,
-                "reason": f"Reliably threatens table elimination by Turn 5–6 (P1:{self.grades['p1']}, P2:{self.grades['p2']}). Violates Bracket 3 Turn 7 ceiling; requires Bracket 4."
+                "reason": f"Reliably eliminates opponents or establishes lockout by Turn 5 (Zero-Untap Override: P1:{self.grades['p1']}, P2:{self.grades['p2']}). Belongs in Bracket 4."
             })
 
         # Gate 3: Suppression Gate (I2 S/A severe denial -> Bracket 4)
@@ -335,15 +344,21 @@ class DTIEvaluation:
         self.wotc_floor = 1
         self.game_changers_count = 0
         self.game_changers_list = []
+        self.mld_list = []
         self.final_bracket = self.dti_bracket
 
     def apply_wotc_rules(self, card_names: List[str]):
-        """Cross-references Game Changers and sets statutory floor."""
+        """Cross-references Game Changers, MLD, and sets statutory floor."""
         count, gc_list = count_game_changers(card_names)
         self.game_changers_count = count
         self.game_changers_list = gc_list
 
-        if count > 3:
+        mld_matches = [c for c in card_names if c.lower() in KNOWN_MLD_CARDS]
+        self.mld_list = mld_matches
+
+        if mld_matches:
+            self.wotc_floor = 4
+        elif count > 3:
             self.wotc_floor = 4
         elif count >= 1:
             self.wotc_floor = 3
@@ -444,6 +459,8 @@ def render_ascii_dashboard(eval_obj: DTIEvaluation, telemetry: Optional[Dict[str
     lines.append(f"  Final Placement: {b_label.upper()}")
     if eval_obj.game_changers_count > 0:
         lines.append(f"  Game Changers:   {eval_obj.game_changers_count} / 3 limit (WotC Floor: B{eval_obj.wotc_floor})")
+    if getattr(eval_obj, "mld_list", None):
+        lines.append(f"  Mass Land Denial: {', '.join(eval_obj.mld_list)} (WotC Floor: B4)")
     lines.append("-" * 76)
 
     # Domain Breakdown
@@ -512,6 +529,8 @@ def render_markdown_audit(eval_obj: DTIEvaluation, telemetry: Optional[Dict[str,
     md.append(f"* **WotC Statutory Compliance:** {eval_obj.game_changers_count} / 3 Game Changers (Floor: Bracket {eval_obj.wotc_floor})")
     if eval_obj.game_changers_list:
         md.append(f"  * *Game Changers detected:* {', '.join(eval_obj.game_changers_list)}")
+    if getattr(eval_obj, "mld_list", None):
+        md.append(f"  * *Mass Land Denial detected (Floor: Bracket 4):* {', '.join(eval_obj.mld_list)}")
     md.append("")
 
     if eval_obj.overview:

@@ -13,8 +13,8 @@ deck_status: main
 ## Commander Strategy
 **Krenko, Mob Boss**
 *   **Archetype:** Mono-Red Goblin Tribal Aggro-Combo / Infinite Untap Combos & Stack Protection
-*   **Bracket:** 4 (Optimized — Promoted from Bracket 3 via Early Combo Finish Gate / Turn 5–6 Win Window)
-*   **DTI Threat Index:** **42 / 96** (Score Floor: Bracket 3 | Final: Bracket 4 via Early Finish Gate | Velocity: **24/48** | Suppression: **16/40** | Gate: Early Finish Gate Triggered -> B4 | [DTI Report](dti_report.html))
+*   **Bracket:** 4 (Optimized — Promoted from Bracket 3 via WotC Mass Land Denial statutory floor on *Blood Moon*)
+*   **DTI Threat Index:** **42 / 96** (Score Floor: Bracket 3 | Final: Bracket 4 via Blood Moon MLD | Velocity: **24/48** | Suppression: **16/40** | Gates: All Passed | [DTI Report](dti_report.html))
 *   **Core Goal:** Rapidly deploy Krenko with immediate haste, double your Goblin count on the turn he lands, and convert token volume into lethal direct burn or infinite loops (*Umbral Mantle*, *Staff of Domination*, *Mana Echoes*, *Phyrexian Altar*) while protecting Krenko from targeted removal via red redirect countermagic (*Deflecting Swat*, *Return the Favor*).
 
 ### Keystone Geometry & The Commander Subtraction Principle
@@ -153,7 +153,7 @@ deck_status: main
 - **[2026-09-25]:** Calibrated against official DeckCheck.co scan.
     - **In:** N/A (DTI Telemetry & Calibration)
     - **Out:** N/A
-    - **Reason:** Official scan validated Threat Score at 42 / 96 with 100% benchmark tier match (R1:A, R2:A, A1:A, A2:A, P1:A, P2:A, P3:B, I1:B, I2:B, S1:A, S2:A, S3:A). Promoted to Bracket 4 (Optimized) via Early Finish Gate due to Turn 5 threat onset (P1: A) and 1 opponent response cycle (P2: A) establishing a Turn 5–6 infinite combo win window (Umbral Mantle, Mana Echoes, Staff of Domination) that violates Bracket 3's Turn 7 earliest win ceiling.
+    - **Reason:** Official scan validated Threat Score at 42 / 96 with 100% benchmark tier match (R1:A, R2:A, A1:A, A2:A, P1:A, P2:A, P3:B, I1:B, I2:B, S1:A, S2:A, S3:A) and confirmed "Two-Card Infinite Combos: No". Deck was promoted to Bracket 4 (Optimized) solely and exclusively due to WotC statutory rule banning Mass Land Denial in Brackets 1–3 ("Mass Land Denial not allowed in Bracket 3 — Blood Moon"). Swapping Blood Moon for a non-MLD card returns the deck to official Bracket 3 (Upgraded Casual).
 - **[2026-09-24]:** Replace clunky combo piece, slow sorcery pod, and 3-turn saga with premier WUBG protection (Commander's Plate), mono-red ramp/draw engine (Throne of Eldraine), and combat impulse velocity (Moria Marauder)
     - **In:** Commander's Plate, Throne of Eldraine, Moria Marauder
     - **Out:** Thornbite Staff, Pyre of Heroes, Fable of the Mirror-Breaker // Reflection of Kiki-Jiki

@@ -213,12 +213,12 @@ Use these calibrated decks to ground every future evaluation:
 *   **Benchmarks:** $R1: B, R2: A, A1: B, A2: A, P1: B, P2: B, P3: B, I1: A, I2: B, S1: B, S2: A, S3: A$.
 *   **Calibration Principle:** Crucial empirical discovery confirming the statutory WotC Game Changer Floor ($DTI \ge \text{WotC Floor}$): while its physical clock and engine threat score is 31/96 (identical to Y'shtola at the apex ceiling of Bracket 2), running 3 official Game Changers (*Bolas's Citadel*, *Field of the Dead*, *The One Ring*) establishes a hard statutory floor of Bracket 3 (Upgraded Casual).
 
-### Anchor 12: Krenko (Mono-Red Goblin Aggro-Combo) — Bracket 4 Early Combo Gate
-*   **Threat Score:** **42 / 96** (Score Floor: Bracket 3 [32–51], Promoted to Bracket 4 via Early Finish Gate)
+### Anchor 12: Krenko (Mono-Red Goblin Aggro-Combo) — Bracket 4 WotC MLD Floor
+*   **Threat Score:** **42 / 96** (Score Floor: Bracket 3 [32–51], Promoted to Bracket 4 via Blood Moon MLD)
 *   **Vectors:** Velocity: **24 / 48** | Suppression: **16 / 40**
-*   **Clock:** Onset Turn 5 ($P1: A$), Ready Turn 4 ($A2: A$), Response Cycles: 1 ($P2: A$) $\rightarrow$ Turn 5–6 kill.
+*   **Clock:** Onset Turn 5 ($P1: A$), Ready Turn 4 ($A2: A$), Response Cycles: 1 ($P2: A$) $\rightarrow$ Turn 6 kill.
 *   **Benchmarks:** $R1: A, R2: A, A1: A, A2: A, P1: A, P2: A, P3: B, I1: B, I2: B, S1: A, S2: A, S3: A$.
-*   **Calibration Principle:** Crucial calibration discovery on the boundary between Bracket 3 and Bracket 4: while pure combat decks like *TheHive* (50/96) remain in Bracket 3 because they must attack through blockers, Krenko's identical clock (Onset T5, Cycles 1) paired with infinite untap loops (*Umbral Mantle*, *Mana Echoes*, *Staff of Domination*) and *Blood Moon* trips the Early Finish Gate into Bracket 4 (Turn 5–6 win window violates Bracket 3's Turn 7 earliest win rule).
+*   **Calibration Principle:** Crucial empirical discovery confirming DeckCheck's strict enforcement of WotC Mass Land Denial (MLD) rules: despite scoring 42/96 (solid Bracket 3) and running zero Game Changers (0/3) and zero 2-card combos, running Blood Moon (classified as Mass Land Denial) triggers a hard statutory floor of Bracket 4 (MLD not allowed in Bracket 3). Removing Blood Moon immediately returns the deck to Bracket 3 (Upgraded Casual).
 
 
 

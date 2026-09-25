@@ -11,13 +11,11 @@
 * **DTI Threat Index:** `42 / 96` (Score Floor: Bracket 3)
 * **Clock Speed (Velocity Vector):** `24 / 48`
 * **Opponent Stifle (Suppression Vector):** `16 / 40`
-* **WotC Statutory Compliance:** 0 / 3 Game Changers (Floor: Bracket 2)
+* **WotC Statutory Compliance:** 0 / 3 Game Changers (Floor: Bracket 4)
+  * *Mass Land Denial detected (Floor: Bracket 4):* Blood Moon
 
 ### Tactical Overview
 This deck is a high-power, synergistic Mono-Red Goblin swarm and combo engine commanded by Krenko, Mob Boss. The game plan focuses on deploying Krenko ahead of curve on Turn 3 or 4 with immediate haste using a dedicated 9-source haste matrix. Once on the board, Krenko exponentially doubles your Goblin count each turn cycle, rapidly generating lethal armies. The deck converts token volume into victory through direct non-combat damage triggers like Purphoros, Impact Tremors, and Goblin Bombardment, or via combat overruns with Shared Animosity and Quest for the Goblin Lord. It also houses compact infinite untap loops utilizing Umbral Mantle, Staff of Domination, and Mana Echoes paired with sacrifice altars (Phyrexian Altar, Ashnod's Altar, Skirk Prospector). The strategy is shielded against spot removal and counterspells through red stack redirects (Deflecting Swat, Return the Favor) and Commander's Plate, while Blood Moon punishes greedy multi-color mana bases.
-
-### ⚠️ Active Gatekeeper Triggers
-- **Early Finish Gate (Mandates Bracket 4):** Reliably threatens table elimination by Turn 5–6 (P1:A, P2:A). Violates Bracket 3 Turn 7 ceiling; requires Bracket 4.
 
 ---
 
