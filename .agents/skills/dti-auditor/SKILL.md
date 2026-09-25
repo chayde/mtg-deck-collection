@@ -157,3 +157,11 @@ Use these calibrated decks to ground every future evaluation:
 *   **Benchmarks:** $R1: A, R2: S, A1: B, A2: S, P1: A, P2: B, P3: B, I1: A, I2: F, S1: B, S2: S, S3: A$.
 *   **Calibration Principle:** Extremely fast Turn 3 engine readiness ($A2: S$), S-tier card flow ($R2: S$), and S-tier recovery ($S2: S$ via permanent Food tokens) are kept safely in mid-Bracket 3 by having zero stax or denial ($I2: F$), granting symmetrical cards, and affording opponents 2 response cycles.
 
+### Anchor 4: HearthhullTheWorldseed (Jund Lands Precon) — Bracket 3 High-Synergy Precon Baseline
+*   **Threat Score:** **40 / 96** (Precon Floor of Bracket 3, 32–51 band)
+*   **Vectors:** Velocity: **18 / 48** | Suppression: **13 / 40**
+*   **Clock:** Onset Turn 6 ($P1: B$), Ready Turn 4 ($A2: A$), Response Cycles: 1 ($P2: A$) $\rightarrow$ Turn 7 kill.
+*   **Benchmarks:** $R1: A, R2: S, A1: A, A2: A, P1: B, P2: A, P3: B, I1: B, I2: B, S1: C, S2: A, S3: A$.
+*   **Calibration Principle:** Modern synergy precons land at the 40/96 floor of Bracket 3: their clocks are slower (Turn 4 engine, Turn 6 threat onset, 18/48 velocity) and protection is fragile ($S1: C$), but massive card draw ($R2: S$) and land recursion ($S2: A$) comfortably lift them above the Bracket 2 ceiling (31).
+
+

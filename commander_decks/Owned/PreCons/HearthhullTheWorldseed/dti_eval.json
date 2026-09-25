@@ -1,0 +1,268 @@
+{
+  "deck_name": "HearthhullTheWorldseed",
+  "thematic_restriction": false,
+  "grades": {
+    "r1": "A",
+    "r2": "S",
+    "a1": "A",
+    "a2": "A",
+    "p1": "B",
+    "p2": "A",
+    "p3": "B",
+    "i1": "B",
+    "i2": "B",
+    "s1": "C",
+    "s2": "A",
+    "s3": "A"
+  },
+  "justifications": {
+    "r1": "Substantial land ramp suite (Nature's Lore, Farseek, Cultivate, Skyshroud Claim, Harrow) and 42 lands ensuring steady acceleration.",
+    "r2": "S-tier card draw engines: Hearthhull draws 2 per land sacrifice, paired with The Gitrog Monster, Korvold, and Braids.",
+    "a1": "Strong redundancy of land recursion, sacrifice outlets, and top-of-library access (Oracle of Mul Daya, Augur of Autumn).",
+    "a2": "Engine comes online consistently by Turn 4 once Hearthhull enters and stations to 2+ counters.",
+    "p1": "Threat onset manifests around Turn 6 with massive landfall armies (Titania, Omnath, Baloth Prime) and station drain.",
+    "p2": "High win compactness with only 1 opponent untap cycle required to close out via mass land recursion and direct drain.",
+    "p3": "Graveyard lands and visible permanents telegraph impending recursion turns to the table.",
+    "i1": "Solid Jund removal suite (Beast Within, Tear Asunder, Rakdos Charm, Blasphemous Act, Planetary Annihilation).",
+    "i2": "Proactive land wipes (Planetary Annihilation) and sacrifice pressure (Braids, World Breaker, Bojuka Bog).",
+    "s1": "Low plan shielding: lacks instant stack interaction or countermagic in Jund colors, relying on Hammer of Purphoros for haste.",
+    "s2": "High engine recovery via mass graveyard land recursion (Splendid Reclamation, Aftermath Analyst, Soul of Windgrace).",
+    "s3": "Heavy hitters (The Gitrog Monster, Korvold, Omnath, Titania) operate as independent engines without Hearthhull."
+  },
+  "overview": "Hearthhull, the Worldseed commands a synergistic Jund lands-matter deck centered on sacrificing lands for velocity, recurring them from the graveyard, and draining opponents out while amassing huge token armies. Early turns focus on accelerating mana through land-fetch spells and developing board presence. By Turn 4, Hearthhull enters and stations to 2+ charge counters, establishing an engine that draws cards and grants extra land drops each turn. In the mid-game, the deck deploys heavy landfall and sacrifice payoffs such as Titania, Protector of Argoth, Baloth Prime, Omnath, Locus of Rage, and The Gitrog Monster. Once Hearthhull reaches 8+ station counters, it transforms into an evasive 6/7 attacker that drains each opponent for 2 life per sacrificed land. Mass recursion spells like Splendid Reclamation and Aftermath Analyst fuel devastating alpha strikes and burst life loss by Turn 6 to 7. The deck boasts robust recovery and redundancy, though it remains vulnerable to graveyard hate and creature sweepers.",
+  "primer": {
+    "core_strategy": [
+      "Early Ramp & Setup: Spend Turns 1–3 playing ramp spells like Farseek and Nature's Lore and deploying utility creatures to prepare for commander stationing.",
+      "Deploy the Engine: Cast Hearthhull, the Worldseed on Turn 4, station it to 2+ counters with a utility creature, and activate its ability to draw cards and accelerate land drops.",
+      "Amass Token Payoffs: Cast premier landfall and sacrifice engines such as Titania, Protector of Argoth, Baloth Prime, and The Gitrog Monster to generate board presence.",
+      "Mass Recursion & Finish: Station Hearthhull to 8+ counters, cast Splendid Reclamation or activate Aftermath Analyst, and sacrifice lands to drain the table and swing for lethal damage."
+    ],
+    "mulligan_priorities": {
+      "keep": [
+        "Hands with 3–4 lands, at least two colors including Green, an early ramp spell (Nature's Lore, Farseek, Sol Ring), and a 2-to-3 mana creature to station Hearthhull on Turn 4."
+      ],
+      "avoid": [
+        "Hands with only tapped utility lands, lack of green mana, or expensive 5+ mana payoffs without early ramp or card draw."
+      ]
+    },
+    "key_tips": [
+      "Always time your land sacrifices when payoff engines like Titania, Protector of Argoth, Mayhem Devil, or an 8+ counter Hearthhull are active to maximize value and direct damage.",
+      "Use fetchlands and self-sacrificing lands to fill the graveyard rapidly, setting up game-winning turns with Splendid Reclamation and Aftermath Analyst.",
+      "Stationing is a sorcery-speed action: ensure you station Hearthhull before combat so its 8+ counter haste and combat abilities are active when attacking."
+    ]
+  },
+  "weaknesses": {
+    "critical": [
+      "Mass Graveyard Hate: Cards like Rest in Peace and Bojuka Bog exile land reserves, neutering mass recursion cards like Splendid Reclamation and Aftermath Analyst.",
+      "Vulnerability to Board Wipes: The deck relies heavily on creature-based token armies and station enablers, making sweepers like Farewell and Toxic Deluge disruptive to lethal timing."
+    ],
+    "moderate": [
+      "Lack of Stack Interaction: Operating in Jund colors without blue countermagic leaves the deck unable to interact directly with opposing instant-speed win conditions on the stack.",
+      "Sorcery-Speed Stationing: Station counters can only be added at sorcery speed, preventing surprise blocking transformations or reactive drain setups on opponents' turns."
+    ],
+    "minor": [
+      "Self-Inflicted Life Loss: Aggressive land sacrifices and pain lands (Llanowar Wastes, Sulfurous Springs) can lower your life total against aggressive burn strategies."
+    ]
+  },
+  "key_cards": [
+    {
+      "card": "Hearthhull, the Worldseed",
+      "note": "Commander that provides repeatable card advantage, additional land drops, and a lethal 2-life drain trigger at 8+ station counters."
+    },
+    {
+      "card": "Titania, Protector of Argoth",
+      "note": "Creates 5/3 Elemental tokens whenever lands are put into the graveyard and returns a land on entry."
+    },
+    {
+      "card": "Baloth Prime",
+      "note": "Massive 10/10 creature that easily stations Hearthhull to 8+ while producing 4/4 Beast tokens whenever lands are sacrificed."
+    },
+    {
+      "card": "The Gitrog Monster",
+      "note": "Core engine piece that grants extra land plays, sacrifices lands on upkeep, and draws cards whenever lands hit the graveyard."
+    },
+    {
+      "card": "Splendid Reclamation",
+      "note": "Returns all lands from the graveyard to the battlefield, enabling massive landfall triggers and mana surges."
+    },
+    {
+      "card": "Aftermath Analyst",
+      "note": "Self-mills early and acts as a repeatable creature-based Splendid Reclamation to fuel big turns."
+    },
+    {
+      "card": "Omnath, Locus of Rage",
+      "note": "Generates 5/5 Elementals on landfall and deals 3 damage to any target whenever an Elemental dies."
+    },
+    {
+      "card": "Mayhem Devil",
+      "note": "Pings any target for 1 damage whenever any player sacrifices a permanent, weaponizing all land sacrifices."
+    },
+    {
+      "card": "Moraug, Fury of Akoum",
+      "note": "Provides additional combat phases and stat buffs whenever lands enter during your main phase."
+    },
+    {
+      "card": "Planetary Annihilation",
+      "note": "Asymmetric board and land wipe that clears opposing creatures and resets lands, triggering your sacrifice and death payoffs."
+    },
+    {
+      "card": "Soul of Windgrace",
+      "note": "Recovers lands from any graveyard, provides card draw and life gain, and can protect itself with indestructible."
+    },
+    {
+      "card": "Korvold, Fae-Cursed King",
+      "note": "Grows rapidly and draws cards on every permanent sacrifice, turning land cycling into massive card advantage."
+    }
+  ],
+  "card_ledger": {
+    "r1": [
+      { "card": "Arcane Signet", "role": "2-CMC mana rock fixing" },
+      { "card": "Sol Ring", "role": "Premier fast mana ramp" },
+      { "card": "Cultivate", "role": "3-CMC basic land fetch ramp" },
+      { "card": "Farseek", "role": "2-CMC land ramp / type fixing" },
+      { "card": "Nature's Lore", "role": "2-CMC untapped forest ramp" },
+      { "card": "Skyshroud Claim", "role": "4-CMC dual forest ramp entering untapped" },
+      { "card": "Harrow", "role": "Instant land sacrifice fetching 2 untapped lands" },
+      { "card": "Roiling Regrowth", "role": "Instant land sacrifice fetching 2 lands" },
+      { "card": "Springbloom Druid", "role": "Creature land sacrifice fetching 2 basic lands" },
+      { "card": "Sprouting Goblin", "role": "Kicker land fetcher & sac draw" },
+      { "card": "Exploration Broodship", "role": "Spacecraft utility & mana ramp" },
+      { "card": "Worldsoul's Rage", "role": "Scalable direct damage and land acceleration" },
+      { "card": "Aftermath Analyst", "role": "Self-mill and mass land recursion onto battlefield" },
+      { "card": "Splendid Reclamation", "role": "Mass land recursion onto battlefield" },
+      { "card": "Oracle of Mul Daya", "role": "Additional land play & top of library plays" },
+      { "card": "Augur of Autumn", "role": "Plays lands and creatures from top of library" },
+      { "card": "Soul of Windgrace", "role": "Recurs lands from graveyard to battlefield on attack" },
+      { "card": "Groundskeeper", "role": "Repeatable basic land return to hand" },
+      { "card": "Bojuka Bog", "role": "Graveyard hate utility land" },
+      { "card": "Cabaretti Courtyard", "role": "Fetchland sac fixing and life gain" },
+      { "card": "Canyon Slough", "role": "Cycling dual land" },
+      { "card": "Cinder Glade", "role": "Tango dual land" },
+      { "card": "Command Tower", "role": "Untapped commander fixing" },
+      { "card": "Dakmor Salvage", "role": "Dredge land recursion engine" },
+      { "card": "Escape Tunnel", "role": "Sacrifice fetchland fixing" },
+      { "card": "Eumidian Hatchery", "role": "Theme land fixing" },
+      { "card": "Evolving Wilds", "role": "Sacrifice basic land fetch" },
+      { "card": "Fabled Passage", "role": "Untapped fetchland after 4 lands" },
+      { "card": "Festering Thicket", "role": "Dual land fixing" },
+      { "card": "Forest", "role": "Basic land mana (8 copies)" },
+      { "card": "Karplusan Forest", "role": "Untapped pain land" },
+      { "card": "Llanowar Wastes", "role": "Untapped pain land" },
+      { "card": "Maestros Theater", "role": "Fetchland sac fixing and life gain" },
+      { "card": "Mountain", "role": "Basic land mana (3 copies)" },
+      { "card": "Mountain Valley", "role": "Slow fetchland fixing" },
+      { "card": "Myriad Landscape", "role": "Double basic land ramp land" },
+      { "card": "Riveteers Overlook", "role": "Fetchland sac fixing and life gain" },
+      { "card": "Rocky Tar Pit", "role": "Slow fetchland fixing" },
+      { "card": "Sheltered Thicket", "role": "Cycling dual land" },
+      { "card": "Smoldering Marsh", "role": "Tango dual land" },
+      { "card": "Sulfurous Springs", "role": "Untapped pain land" },
+      { "card": "Swamp", "role": "Basic land mana (5 copies)" },
+      { "card": "Terramorphic Expanse", "role": "Sacrifice basic land fetch" },
+      { "card": "Twilight Mire", "role": "Filter land fixing" },
+      { "card": "Vernal Fen", "role": "Utility land fixing" },
+      { "card": "Viridescent Bog", "role": "Filter land fixing" },
+      { "card": "Wastes", "role": "Basic land mana" }
+    ],
+    "r2": [
+      { "card": "Hearthhull, the Worldseed", "role": "Sacrifices land to draw 2 cards and play extra land" },
+      { "card": "The Gitrog Monster", "role": "Draws a card whenever a land is put into graveyard from anywhere" },
+      { "card": "Korvold, Fae-Cursed King", "role": "Draws a card whenever any permanent is sacrificed" },
+      { "card": "Braids, Arisen Nightmare", "role": "Draws up to 3 cards on end-step permanent sacrifice" },
+      { "card": "God-Eternal Bontu", "role": "Sacrifices permanents on ETB to draw that many cards" },
+      { "card": "Tireless Tracker", "role": "Creates Clue tokens on landfall to draw cards" },
+      { "card": "Night's Whisper", "role": "2-mana draw 2 cards" },
+      { "card": "Escape to the Wilds", "role": "Exiles 5 cards to play and grants additional land drop" },
+      { "card": "Sprouting Goblin", "role": "Sacrifices land to draw a card" },
+      { "card": "Soul of Windgrace", "role": "Discards land to draw a card" },
+      { "card": "Uurg, Spawn of Turg", "role": "Surveil 1 on upkeep" }
+    ],
+    "a1": [
+      { "card": "Satyr Wayfinder", "role": "Mills 4 cards and puts land into hand" },
+      { "card": "Loamcrafter Faun", "role": "Discards lands to recur nonland permanents" },
+      { "card": "Augur of Autumn", "role": "Reveals and plays lands/creatures from top of library" },
+      { "card": "Oracle of Mul Daya", "role": "Plays lands from top of library" },
+      { "card": "Dakmor Salvage", "role": "Dredges 2 to recur directly to hand" },
+      { "card": "Farseek", "role": "Type-specific land search" },
+      { "card": "Nature's Lore", "role": "Forest search" },
+      { "card": "Skyshroud Claim", "role": "Forest search" },
+      { "card": "Cultivate", "role": "Basic land search" }
+    ],
+    "a2": [
+      { "card": "Hearthhull, the Worldseed", "role": "Commander online by Turn 4 with stationing to 2+" },
+      { "card": "The Gitrog Monster", "role": "Massive acceleration of land plays and graveyard churning" },
+      { "card": "Titania, Protector of Argoth", "role": "Immediate 5/3 Elemental army on land sacrifices" },
+      { "card": "Baloth Prime", "role": "10/10 station enabler and 4/4 Beast tokens" },
+      { "card": "Aftermath Analyst", "role": "Self-mill and explosive mass land return" },
+      { "card": "Splendid Reclamation", "role": "Returns all lands from graveyard to field tapped" },
+      { "card": "Szarel, Genesis Shepherd", "role": "Station multiplier and token amplifier" },
+      { "card": "Korvold, Fae-Cursed King", "role": "Explosive card and counter engine" },
+      { "card": "Omnath, Locus of Rage", "role": "5/5 Elemental army generation" }
+    ],
+    "p1": [
+      { "card": "Hearthhull, the Worldseed", "role": "6/7 trampler + 2 damage drain to all opponents per land sac" },
+      { "card": "Titania, Protector of Argoth", "role": "Swarm of 5/3 Elementals" },
+      { "card": "Omnath, Locus of Rage", "role": "Swarm of 5/5 Elementals + 3 damage lightning bolts on death" },
+      { "card": "Rampaging Baloths", "role": "Swarm of 4/4 Beasts on landfall" },
+      { "card": "Baloth Prime", "role": "10/10 trampler + 4/4 Beast tokens" },
+      { "card": "Centaur Vinecrasher", "role": "Massive trampler scaling with graveyard lands" },
+      { "card": "Multani, Yavimaya's Avatar", "role": "Massive reach/trample beater scaling with lands" },
+      { "card": "Moraug, Fury of Akoum", "role": "Multiple combat phases and +1/+0 buffs" },
+      { "card": "Mayhem Devil", "role": "1 damage ping to any target on any sacrifice" },
+      { "card": "Juri, Master of the Revue", "role": "Scales with sacrifices and deals lethal death damage" },
+      { "card": "Mazirek, Kraul Death Priest", "role": "+1/+1 counters across entire board on sacrifices" }
+    ],
+    "p2": [
+      { "card": "Hearthhull, the Worldseed", "role": "Direct life drain bypassing combat step" },
+      { "card": "Moraug, Fury of Akoum", "role": "Extra combats to close game in single turn" },
+      { "card": "Splendid Reclamation", "role": "Mass burst landfall trigger finish" },
+      { "card": "Mayhem Devil", "role": "Direct burst damage to close life totals" },
+      { "card": "Worldsoul's Rage", "role": "Direct burn to any target" }
+    ],
+    "p3": [
+      { "card": "Hearthhull, the Worldseed", "role": "Visible station counters and graveyard telegraph lethality" },
+      { "card": "Splendid Reclamation", "role": "Graveyard size is public information" }
+    ],
+    "i1": [
+      { "card": "Beast Within", "role": "Instant permanent destruction" },
+      { "card": "Infernal Grasp", "role": "Instant creature removal" },
+      { "card": "Putrefy", "role": "Instant creature or artifact destruction" },
+      { "card": "Rakdos Charm", "role": "Modular graveyard exile, artifact removal, or player damage" },
+      { "card": "Tear Asunder", "role": "Exile artifact or enchantment" },
+      { "card": "Windgrace's Judgment", "role": "Destroys nonland permanent from each opponent" },
+      { "card": "Blasphemous Act", "role": "1-mana creature damage sweeper" },
+      { "card": "Gaze of Granite", "role": "X-CMC permanent sweeper" },
+      { "card": "Planetary Annihilation", "role": "Asymmetric creature and land reset" },
+      { "card": "Pest Infestation", "role": "Scalable artifact/enchantment exile and token creation" },
+      { "card": "World Breaker", "role": "Exile artifact, enchantment, or land on cast" },
+      { "card": "Binding the Old Gods", "role": "Nonland permanent destruction, land ramp, and deathtouch" }
+    ],
+    "i2": [
+      { "card": "Planetary Annihilation", "role": "Asymmetric land and creature reset" },
+      { "card": "Bojuka Bog", "role": "Targeted graveyard exile land" },
+      { "card": "Braids, Arisen Nightmare", "role": "Forces opponents to sacrifice permanents or lose life/draw" },
+      { "card": "World Breaker", "role": "Exiles opponent lands or key utility artifacts" }
+    ],
+    "s1": [
+      { "card": "Hammer of Purphoros", "role": "Grants haste to eliminate summoning sickness" },
+      { "card": "Soul of Windgrace", "role": "Can discard land to gain indestructible" }
+    ],
+    "s2": [
+      { "card": "Splendid Reclamation", "role": "Returns all lands from graveyard to battlefield" },
+      { "card": "Aftermath Analyst", "role": "Repeatable mass land return from graveyard" },
+      { "card": "Soul of Windgrace", "role": "Returns land from graveyard on attack" },
+      { "card": "Titania, Protector of Argoth", "role": "Returns land from graveyard to battlefield on ETB" },
+      { "card": "Groundskeeper", "role": "Returns basic lands from graveyard to hand" },
+      { "card": "Multani, Yavimaya's Avatar", "role": "Returns to hand from graveyard by bouncing lands" },
+      { "card": "World Breaker", "role": "Returns to hand from graveyard by sacrificing land" }
+    ],
+    "s3": [
+      { "card": "The Gitrog Monster", "role": "Autonomous card engine and sacrifice outlet" },
+      { "card": "Korvold, Fae-Cursed King", "role": "Autonomous card engine and threat" },
+      { "card": "Titania, Protector of Argoth", "role": "Autonomous token generation" },
+      { "card": "Omnath, Locus of Rage", "role": "Autonomous token generation and burn" },
+      { "card": "Baloth Prime", "role": "Independent 10/10 beater and token creator" },
+      { "card": "Rampaging Baloths", "role": "Independent token engine" }
+    ]
+  }
+}

@@ -179,18 +179,18 @@ Every comprehensive DTI evaluation produces not just numeric scores, but a compl
 
 These decks serve as our empirical calibration standard directly validated against DeckCheck's official web scanner:
 
-| Metric | Anchor 1: TheHive (Slivers) | Anchor 2: HenzieBlitz (Jund Reanimator) | Anchor 3: RoccoStreetChef (Naya Food Midrange) |
-|---|---|---|---|
-| **Archetype** | Sliver Tribal Aggro-Cascade | Jund Blitz Reanimator | Naya Food & Exile Midrange |
-| **Final Bracket** | **Bracket 3 (Upgraded Casual — Apex)** | **Bracket 4 (Optimized — Floor)** | **Bracket 3 (Upgraded Casual — Solid)** |
-| **DTI Threat Score** | **50 / 96** (B3 band: 32–51) | **52 / 96** (B4 band: 52–67) | **46 / 96** (B3 band: 32–51) |
-| **Velocity Vector** | **24 / 48** ($R1:5 + A2:5 + P1:5 + P2:5 + S1:4$) | **24 / 48** ($R1:5 + A2:10 + P1:5 + P2:2 + S1:2$) | **24 / 48** ($R1:5 + A2:10 + P1:5 + P2:2 + S1:2$) |
-| **Suppression Vector** | **16 / 40** ($R1:5 + I2:2 + I1:2 + P1:5 + S3:2$) | **20 / 40** ($R1:5 + I2:4 + I1:4 + P1:5 + S3:2$) | **16 / 40** ($R1:5 + I2:0 + I1:4 + P1:5 + S3:2$) |
-| **Engine Ready Turn** | Turn 4 ($A2: A$) | Turn 3 ($A2: S$) | Turn 3 ($A2: S$) |
-| **Threat Onset Turn** | Turn 5 ($P1: A$) | Turn 4 ($P1: A$) | Turn 5 ($P1: A$) |
-| **Untap Cycles ($P2$)** | 1 cycle ($P2: A$) $\rightarrow$ Turn 6 kill | 2 cycles ($P2: B$) $\rightarrow$ Turn 6 kill | 2 cycles ($P2: B$) $\rightarrow$ Turn 7 kill |
-| **Key Benchmarks** | $R2: S, A1: S, A2: A, P1: A, I2: B$ | $R2: S, A2: S, P1: A, I1: A, I2: A$ | $R1: A, R2: S, A2: S, I1: A, I2: F, S2: S, S3: A$ |
-| **Calibration Principle** | High velocity and S-tier card flow with fair interaction and 1 untap step cap out at the B3 apex (50/96). | Asymmetric lock (*Maha* + board wipes) trips Suppression Gate ($I2: A$) straight to the B4 floor (52/96). | High engine speed ($A2: S$) and S-tier recovery ($S2: S$) sit safely in mid-B3 (46/96) due to zero stax/denial ($I2: F$) and 2 untap cycles. |
+| Metric | Anchor 1: TheHive (Slivers) | Anchor 2: HenzieBlitz (Jund Reanimator) | Anchor 3: RoccoStreetChef (Naya Food Midrange) | Anchor 4: Hearthhull (Jund Lands Precon) |
+|---|---|---|---|---|
+| **Archetype** | Sliver Tribal Aggro-Cascade | Jund Blitz Reanimator | Naya Food & Exile Midrange | Jund Lands & Aristocrats Precon |
+| **Final Bracket** | **Bracket 3 (Upgraded Casual — Apex)** | **Bracket 4 (Optimized — Floor)** | **Bracket 3 (Upgraded Casual — Solid)** | **Bracket 3 (Upgraded Casual — Precon Floor)** |
+| **DTI Threat Score** | **50 / 96** (B3 band: 32–51) | **52 / 96** (B4 band: 52–67) | **46 / 96** (B3 band: 32–51) | **40 / 96** (B3 band: 32–51) |
+| **Velocity Vector** | **24 / 48** ($R1:5 + A2:5 + P1:5 + P2:5 + S1:4$) | **24 / 48** ($R1:5 + A2:10 + P1:5 + P2:2 + S1:2$) | **24 / 48** ($R1:5 + A2:10 + P1:5 + P2:2 + S1:2$) | **18 / 48** ($R1:5 + A2:5 + P1:2 + P2:5 + S1:1$) |
+| **Suppression Vector** | **16 / 40** ($R1:5 + I2:2 + I1:2 + P1:5 + S3:2$) | **20 / 40** ($R1:5 + I2:4 + I1:4 + P1:5 + S3:2$) | **16 / 40** ($R1:5 + I2:0 + I1:4 + P1:5 + S3:2$) | **13 / 40** ($R1:5 + I2:2 + I1:2 + P1:2 + S3:2$) |
+| **Engine Ready Turn** | Turn 4 ($A2: A$) | Turn 3 ($A2: S$) | Turn 3 ($A2: S$) | Turn 4 ($A2: A$) |
+| **Threat Onset Turn** | Turn 5 ($P1: A$) | Turn 4 ($P1: A$) | Turn 5 ($P1: A$) | Turn 6 ($P1: B$) |
+| **Untap Cycles ($P2$)** | 1 cycle ($P2: A$) $\rightarrow$ Turn 6 kill | 2 cycles ($P2: B$) $\rightarrow$ Turn 6 kill | 2 cycles ($P2: B$) $\rightarrow$ Turn 7 kill | 1 cycle ($P2: A$) $\rightarrow$ Turn 7 kill |
+| **Key Benchmarks** | $R2: S, A1: S, A2: A, P1: A, I2: B$ | $R2: S, A2: S, P1: A, I1: A, I2: A$ | $R1: A, R2: S, A2: S, I1: A, I2: F, S2: S, S3: A$ | $R1: A, R2: S, A1: A, A2: A, P1: B, P2: A, S1: C$ |
+| **Calibration Principle** | High velocity and S-tier card flow with fair interaction and 1 untap step cap out at the B3 apex (50/96). | Asymmetric lock (*Maha* + board wipes) trips Suppression Gate ($I2: A$) straight to the B4 floor (52/96). | High engine speed ($A2: S$) and S-tier recovery ($S2: S$) sit safely in mid-B3 (46/96) due to zero stax/denial ($I2: F$) and 2 untap cycles. | Modern synergy precons land at 40/96: slower onset (Turn 6) and low shielding ($S1: C$), but S-tier card flow ($R2: S$) and high recursion ($S2: A$) comfortably exceed Bracket 2 (16–31). |
 
 ---
 

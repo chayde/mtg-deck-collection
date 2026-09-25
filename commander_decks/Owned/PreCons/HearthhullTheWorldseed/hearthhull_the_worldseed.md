@@ -1,13 +1,28 @@
+---
+deck_status: main
+---
+
 # Hearthhull, the Worldseed Deck Guide
+
+![Hearthhull, the Worldseed](https://cards.scryfall.io/normal/front/6/9/69070a25-2475-40b4-93ff-ee7f516a506a.jpg?1721427181)
 
 ## Commander Strategy
 **Hearthhull, the Worldseed**
-*   **Role:** The Sacrifice Outlet & Damage Engine.
-*   **Goal:** To sacrifice lands for card advantage while simultaneously draining your opponents' life and triggering powerful "Lands-Matter" payoffs.
-*   **The Engine:**
-    1.  **Station:** Hearthhull is a Spacecraft (Artifact Creature — Spacecraft). It uses the *Station* mechanic to grow in power based on your other creatures, eventually becoming a massive 6/7 threat.
-    2.  **Land Sacrifice:** Hearthhull's primary ability allows you to sacrifice a land to draw two cards and play an additional land. This keeps your hand full and fuels your graveyard.
-    3.  **Life Drain:** Whenever you sacrifice a land (to Hearthhull or other effects like *Harrow*), each opponent loses 2 life. In a Jund Lands deck, this can quickly end the game.
+*   **Archetype:** Jund ({B}{R}{G}) Lands & Land Sacrifice Aristocrats
+*   **Bracket:** 3 (Upgraded Casual — Precon Floor, 0 Game Changers)
+*   **DTI Threat Index:** **40 / 96** (Bracket 3 | Velocity: **18/48** | Suppression: **13/40** | Clock: Engine T4, Onset T6, 1 Untap Cycle | Gates: All Passed | [DTI Report](dti_report.html))
+*   **Core Goal:** Accelerate mana through early land fetch, deploy Hearthhull on Turn 4, and station to 2+ charge counters to draw cards and grant extra land drops. Amass token armies via Titania, Baloth Prime, and Omnath, and finish games by stationing to 8+ to drain the table with mass land recursion (Splendid Reclamation, Aftermath Analyst).
+
+### 🎯 Tactical Overview & Mulligan Guide
+*   **Core Strategy:** T1–3 Ramp $\rightarrow$ T4 Hearthhull Station Engine $\rightarrow$ T5 Token Payoffs $\rightarrow$ T6–7 Mass Land Recursion & Drain.
+*   **Keep Hands:** 3–4 lands, 2+ colors with Green, 1–2 ramp spells (Nature's Lore, Farseek, Sol Ring), and a 2–3 mana creature to station Hearthhull on Turn 4.
+*   **Avoid Hands:** Tapped utility land hands, missing green mana, or expensive 5+ mana payoffs with no early acceleration.
+*   **Strategic Weaknesses:** Mass graveyard hate (*Rest in Peace*, *Bojuka Bog*) and creature sweepers (*Farewell*, *Toxic Deluge*); lack of instant-speed stack interaction.
+
+### The Engine Mechanics
+1.  **Station:** Hearthhull is a Spacecraft (Artifact Creature — Spacecraft). It uses the *Station* mechanic to grow in power based on other creatures, becoming an evasive 6/7 threat at 8+ counters.
+2.  **Land Sacrifice:** Hearthhull's primary ability allows you to sacrifice a land to draw two cards and play an additional land. This keeps your hand full and fuels the graveyard.
+3.  **Life Drain:** At 8+ station counters, whenever you sacrifice a land (to Hearthhull, fetchlands, or *Harrow*), each opponent loses 2 life. In a Jund Lands deck, this quickly closes out the table.
 
 ## 1. The Land Sacrifice Synergy
 *Cards that benefit from lands entering the graveyard or provide extra sacrifice outlets.*
@@ -45,6 +60,10 @@
 ---
 
 ## 📜 Deck Changelog
+*   **2026-09-24:** Validated deck under DeckCheck Threat Index (DTI) framework via official scan calibration.
+    *   **DTI Threat Score:** **40 / 96** (Bracket 3 Upgraded Casual — Precon Floor).
+    *   **Telemetry:** Velocity: 18/48, Suppression: 13/40, Threat Onset: Turn 6 ($P1: B$), Engine Ready: Turn 4 ($A2: A$), Opponent Response Cycles: 1 ($P2: A$).
+    *   **Gatekeepers:** All 4 gates passed safely; serves as the empirical Anchor 4 baseline for high-synergy modern Commander precons.
 *   **2026-02-27:** Initial deck creation.
 
 ## Plain Text Copy/Paste
