@@ -143,12 +143,12 @@ Use these calibrated decks to ground every future evaluation:
 *   **Benchmarks:** $R1: A, R2: S, A1: S, A2: A, P1: A, P2: A, P3: B, I1: B, I2: B, S1: A, S2: A, S3: A$.
 *   **Calibration Principle:** High-synergy cascade and cycling provide S-tier access and flow, but fair interaction ($I2: B$) and 1 untap cycle for combat damage keep it safely in Bracket 3.
 
-### Anchor 2: HenzieBlitz (Jund Blitz Reanimator) — Bracket 4 Floor
-*   **Threat Score:** **52 / 96** (Exact floor of Bracket 4, 52–67 band)
-*   **Vectors:** Velocity: **24 / 48** | Suppression: **20 / 40**
+### Anchor 2: HenzieBlitz (Jund Blitz Reanimator) — Bracket 3 Apex (Ceiling)
+*   **Threat Score:** **50 / 96** (Apex Ceiling of Bracket 3, 32–51 band)
+*   **Vectors:** Velocity: **24 / 48** | Suppression: **18 / 40**
 *   **Clock:** Onset Turn 4 ($P1: A$), Ready Turn 3 ($A2: S$), Response Cycles: 2 ($P2: B$).
-*   **Benchmarks:** $R1: A, R2: S, A1: A, A2: S, P1: A, P2: B, P3: A, I1: A, I2: A, S1: B, S2: A, S3: A$.
-*   **Calibration Principle:** Turn 3 engine deployment ($A2: S$), automatic death draws ($R2: S$), and asymmetric board wipe locks (*Maha* + *Massacre Wurm* / *Balefire*, *Archon of Cruelty*, *Kardur*) trip the Suppression Gate and land directly on the 52 Bracket 4 threshold.
+*   **Benchmarks:** $R1: A, R2: S, A1: A, A2: S, P1: A, P2: B, P3: A, I1: A, I2: B, S1: B, S2: A, S3: A$.
+*   **Calibration Principle:** Empirically proves the exact 50/52 boundary between Bracket 3 and Bracket 4. With Myojin of Night's Reach (mass hand discard), the deck scored 52/96 and tripped the Suppression Gate into Bracket 4. Replacing Myojin with Gruff Triplets dropped Proactive Denial to $I2: B$, bringing the Threat Score to 50/96 and clearing the Suppression Gate straight into solid Bracket 3 alongside *TheHive*.
 
 ### Anchor 3: RoccoStreetChef (Naya Food & Exile Midrange) — Bracket 3 Solid Engine
 *   **Threat Score:** **46 / 96** (Solid Bracket 3, 32–51 band)

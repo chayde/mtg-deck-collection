@@ -84,6 +84,10 @@
     {
       "card": "Deflecting Swat",
       "note": "Free protective interaction that redirects removal and counterspells while Henzie is on the battlefield."
+    },
+    {
+      "card": "Gruff Triplets",
+      "note": "Multiplying blitz trample engine dealing 9 haste damage on entry and leaving behind two permanent 6/6 tramplers upon death."
     }
   ],
   "grades": {
@@ -95,7 +99,7 @@
     "p2": "B",
     "p3": "A",
     "i1": "A",
-    "i2": "A",
+    "i2": "B",
     "s1": "B",
     "s2": "A",
     "s3": "A"
@@ -109,7 +113,7 @@
     "p2": "Requires 2 opponent response cycles to conclude the game via repeated combat and reanimation burst.",
     "p3": "Haste dramatically compresses interaction windows; blitz creatures extract full value even if answered.",
     "i1": "Free interaction (Deflecting Swat, Deadly Rollick) alongside creature ETB removal (Druid of Purification, Necron Deathmark, Tear Asunder).",
-    "i2": "Maha + Massacre Wurm, Balefire Dragon, Archon of Cruelty, and Kardur systematically dismantle opposing boards and lock out attacks.",
+    "i2": "Maha + Massacre Wurm, Balefire Dragon, Archon of Cruelty, and Kardur provide powerful creature removal and attack restriction without hard stax or mass hand wipes.",
     "s1": "Heroic Intervention, Deflecting Swat, and Delighted Halfling protect the engine; blitz creatures bypass spot removal by dying profitably.",
     "s2": "Living Death, Bringer of the Last Gift, and Victimize turn board wipes directly into instant-win states.",
     "s3": "High-CMC threats can be hardcast independently; mass reanimation operates effectively even without Henzie on the field."
@@ -190,7 +194,8 @@
       {"card": "Massacre Wurm", "role": "Turn 4-5 lethal life drain against wide boards"},
       {"card": "Moraug, Fury of Akoum", "role": "Multiple extra combat phases multiplying blitz power"},
       {"card": "Balefire Dragon", "role": "Lethal one-sided creature sweeper on connection"},
-      {"card": "Gwenom, Remorseless", "role": "Aggressive scaling attacker that drains and recycles"}
+      {"card": "Gwenom, Remorseless", "role": "Aggressive scaling attacker that drains and recycles"},
+      {"card": "Gruff Triplets", "role": "9 trample haste damage on blitz, leaving two 6/6 permanent blockers"}
     ],
     "p2": [
       {"card": "Living Death", "role": "Mass reanimation of all accumulated blitz threats for sudden win"},
@@ -216,7 +221,6 @@
       {"card": "Archon of Cruelty", "role": "Systematic sacrifice and discard pressure on opponents"},
       {"card": "Balefire Dragon", "role": "Repeatedly clears opposing boards upon combat damage"},
       {"card": "Kardur, Doomscourge", "role": "Goads all opposing creatures, completely denying attacks against you"},
-      {"card": "Myojin of Night's Reach", "role": "Forces opponents to discard entire hands"},
       {"card": "Druid of Purification", "role": "Destroys up to four opposing artifacts or enchantments"},
       {"card": "Bane of Progress", "role": "Mass one-sided wipe of opposing artifacts and enchantments"},
       {"card": "Toxic Deluge", "role": "Cheap adjustable sweeper breaking through indestructible"}

@@ -1,23 +1,20 @@
 # DTI Power & Threat Evaluation: HenzieBlitz
 
-> **Evaluated Bracket: Bracket 4** | **Threat Score: 52 / 96** | **Velocity: 24 / 48** | **Suppression: 20 / 40**
+> **Evaluated Bracket: Bracket 3** | **Threat Score: 50 / 96** | **Velocity: 24 / 48** | **Suppression: 18 / 40**
 > **Archetype:** Jund Blitz Reanimator · **Threat Onset:** turn 4 · **Engine Ready:** turn 3 · **Response Cycles:** 2
 
 ---
 
 ## 1. Executive Summary & Tactical Overview
 
-* **Final Placement:** **Bracket 4**
-* **DTI Threat Index:** `52 / 96` (Score Floor: Bracket 4)
+* **Final Placement:** **Bracket 3**
+* **DTI Threat Index:** `50 / 96` (Score Floor: Bracket 3)
 * **Clock Speed (Velocity Vector):** `24 / 48`
-* **Opponent Stifle (Suppression Vector):** `20 / 40`
+* **Opponent Stifle (Suppression Vector):** `18 / 40`
 * **WotC Statutory Compliance:** 0 / 3 Game Changers (Floor: Bracket 2)
 
 ### Tactical Overview
 This deck is a high-powered Jund blitz reanimator strategy helmed by Henzie "Toolbox" Torre. The primary game plan uses dense one-mana acceleration to cast Henzie on Turn 2, enabling high-mana-value creatures to enter with haste, discount, and on-death card draw on Turn 3. The deck transitions quickly into overwhelming mid-game pressure by blitzing disruptive heavy hitters like Archon of Cruelty, Massacre Wurm, and Terror of the Peaks. These creatures attack immediately, generate massive enter-the-battlefield value, and fill the graveyard upon dying at the end step. The deck converts this graveyard setup into a decisive win using mass reanimation spells like Living Death and Bringer of the Last Gift, or repeated burst damage via Moraug, Fury of Akoum. Free interaction like Deflecting Swat and Deadly Rollick safeguards the engine during critical development turns.
-
-### ⚠️ Active Gatekeeper Triggers
-- **Suppression Gate (Mandates Bracket 4):** Proactive restriction I2 is A. Asymmetrical locks/attrition require Bracket 4.
 
 ---
 
@@ -69,6 +66,7 @@ This deck is a high-powered Jund blitz reanimator strategy helmed by Henzie "Too
 - **[Rampant Rejuvenator](https://scryfall.com/search?q=!%22Rampant%20Rejuvenator%22):** Turn 3 blitz creature that attacks and fetches two basic lands onto the battlefield upon dying.
 - **[Kardur, Doomscourge](https://scryfall.com/search?q=!%22Kardur%2C%20Doomscourge%22):** Goads all opposing boards to force combat away from you while draining opponents as attacking creatures die.
 - **[Deflecting Swat](https://scryfall.com/search?q=!%22Deflecting%20Swat%22):** Free protective interaction that redirects removal and counterspells while Henzie is on the battlefield.
+- **[Gruff Triplets](https://scryfall.com/search?q=!%22Gruff%20Triplets%22):** Multiplying blitz trample engine dealing 9 haste damage on entry and leaving behind two permanent 6/6 tramplers upon death.
 
 ---
 
@@ -84,7 +82,7 @@ This deck is a high-powered Jund blitz reanimator strategy helmed by Henzie "Too
 | **A1** | Selection & Redundancy | Access | `A` | **4/8** | Birthing Ritual, Timeless Witness, and dense redundancy of interchangeable ETB/death creatures eliminate variance. |
 | **P3** | Exposure & Predictability | Pressure | `A` | **4/8** | Haste dramatically compresses interaction windows; blitz creatures extract full value even if answered. |
 | **I1** | Reactive Disruption | Interaction | `A` | **4/8** | Free interaction (Deflecting Swat, Deadly Rollick) alongside creature ETB removal (Druid of Purification, Necron Deathmark, Tear Asunder). |
-| **I2** | Proactive Denial & Restriction | Interaction | `A` | **4/8** | Maha + Massacre Wurm, Balefire Dragon, Archon of Cruelty, and Kardur systematically dismantle opposing boards and lock out attacks. |
+| **I2** | Proactive Denial & Restriction | Interaction | `B` | **2/8** | Maha + Massacre Wurm, Balefire Dragon, Archon of Cruelty, and Kardur provide powerful creature removal and attack restriction without hard stax or mass hand wipes. |
 | **S1** | Plan Shielding & Protection | Resilience | `B` | **2/8** | Heroic Intervention, Deflecting Swat, and Delighted Halfling protect the engine; blitz creatures bypass spot removal by dying profitably. |
 | **S2** | Engine Recovery | Resilience | `A` | **2/4** | Living Death, Bringer of the Last Gift, and Victimize turn board wipes directly into instant-win states. |
 | **S3** | Independence & Backup Plans | Resilience | `A` | **2/4** | High-CMC threats can be hardcast independently; mass reanimation operates effectively even without Henzie on the field. |
@@ -146,13 +144,14 @@ Every card in the deck mapped to the specific benchmarks it supports:
 - **Utopia Sprawl**: Enables Turn 2 commander deployment
 - **Henzie "Toolbox" Torre**: Assembles immediate haste and discounted blitz on Turn 3
 
-### P1: Critical Onset & Lethality (Tier `A`) — 6 Cards
+### P1: Critical Onset & Lethality (Tier `A`) — 7 Cards
 - **Archon of Cruelty**: Immediate 6-point life swing, sacrifice, and card draw on Turn 4
 - **Terror of the Peaks**: Immediate direct burn to opposing targets on entry
 - **Massacre Wurm**: Turn 4-5 lethal life drain against wide boards
 - **Moraug, Fury of Akoum**: Multiple extra combat phases multiplying blitz power
 - **Balefire Dragon**: Lethal one-sided creature sweeper on connection
 - **Gwenom, Remorseless**: Aggressive scaling attacker that drains and recycles
+- **Gruff Triplets**: 9 trample haste damage on blitz, leaving two 6/6 permanent blockers
 
 ### P2: Win Inevitability & Compactness (Tier `B`) — 4 Cards
 - **Living Death**: Mass reanimation of all accumulated blitz threats for sudden win
@@ -190,13 +189,12 @@ Every card in the deck mapped to the specific benchmarks it supports:
 - **Windgrace's Judgment**: Multi-target instant-speed permanent removal
 - **Necron Deathmark**: Flash creature removal and self-mill
 
-### I2: Proactive Denial & Restriction (Tier `A`) — 9 Cards
+### I2: Proactive Denial & Restriction (Tier `B`) — 8 Cards
 - **Maha, Its Feathers Night**: Reduces all opposing creature toughness to 1 permanently
 - **Massacre Wurm**: Asymmetrical wipe clearing opposing small creatures and life totals
 - **Archon of Cruelty**: Systematic sacrifice and discard pressure on opponents
 - **Balefire Dragon**: Repeatedly clears opposing boards upon combat damage
 - **Kardur, Doomscourge**: Goads all opposing creatures, completely denying attacks against you
-- **Myojin of Night's Reach**: Forces opponents to discard entire hands
 - **Druid of Purification**: Destroys up to four opposing artifacts or enchantments
 - **Bane of Progress**: Mass one-sided wipe of opposing artifacts and enchantments
 - **Toxic Deluge**: Cheap adjustable sweeper breaking through indestructible

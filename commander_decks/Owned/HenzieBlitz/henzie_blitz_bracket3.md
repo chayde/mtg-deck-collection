@@ -9,8 +9,8 @@ deck_status: main
 ## Commander Strategy
 **Henzie "Toolbox" Torre**
 *   **Archetype:** Jund ({B}{R}{G}) Blitz / Sacrifice / Value Reanimation Midrange
-*   **Bracket:** 4 (Optimized · High-Velocity Attrition Reanimator)
-*   **DTI Threat Index:** **52 / 96** (Bracket 4 · Optimized | Velocity: **24/48** | Suppression: **20/40** | Gates: Suppression Gate [Triggered -> B4] | [DTI Report](dti_report.html))
+*   **Bracket:** 3 (Upgraded Casual · Apex Combat & Value Reanimator)
+*   **DTI Threat Index:** **50 / 96** (Bracket 3 [32–51] · Solid Upgraded Casual | Velocity: **24/48** | Suppression: **18/40** | Gates: All Passed | [DTI Report](dti_report.html))
 *   **Game Changers (1/3):** [Survival of the Fittest](https://scryfall.com/search?q=!"Survival+of+the+Fittest") *(Note: Runs [Emeritus of Woe // Demonic Tutor](https://scryfall.com/card/sos/80/emeritus-of-woe-demonic-tutor?utm_source=api) as a blitzable creature with adventure tutor to maximize creature synergy while avoiding the Game Changer limit).*
 *   **Core Goal:** Exploit high 1-drop mana dork density to reliably cast Henzie on Turn 2. Beginning on Turn 3, chain discounted Blitz creature spells with haste, immediate attack triggers, and death draws. Feed high-impact threats into continuous sacrifice engines (*Birthing Ritual*, *Greater Good*, *Industrial Advancement*), refueling the hand and filling the graveyard to resolve backbreaking mass reanimation (*Living Death*, *Victimize*, *Phyrexian Delver*) for lethal non-combat damage and overwhelming combat swings.
 
@@ -87,7 +87,7 @@ deck_status: main
 *   **Mikaeus, the Unhallowed:** {3}{B}{B}{B} 5/5 intimidate. Gives non-Human creatures +1/+1 and Undying, causing blitzed creatures to return immediately after sacrifice with a +1/+1 counter.
 *   **Bane of Progress:** {4}{G}{G} 2/2. ETB destroys all artifacts and enchantments and puts a +1/+1 counter on itself for each permanent destroyed.
 *   **Kogla, the Titan Ape:** {3}{G}{G}{G} 7/6. ETB fights target creature; attacking destroys an artifact or enchantment defending player controls.
-*   **Myojin of Night's Reach:** {5}{B}{B}{B} 5/2. Enters with a divinity counter when blitzed from hand; attacks as an indestructible 5/2 with haste, then remove counter at instant speed to force ALL opponents to discard their entire hands simultaneously before dying at end step to draw a card.
+*   **[Gruff Triplets](https://scryfall.com/search?q=!"Gruff+Triplets") ({3}{G}{G}{G}):** 3/3 trample. Enters and creates two 3/3 token copies; when blitzed for 5 mana, swings for 9 trample haste, and when the original dies at end step, puts three +1/+1 counters on both token copies (leaving behind two permanent 6/6 tramplers) while drawing a card.
 *   **Bringer of the Last Gift:** {6}{B}{B} 6/6 flying. When cast, each player sacrifices all other creatures, then returns all creature cards from their graveyard that weren't put there this way to the battlefield; blitzing it triggers an asymmetric Living Death on entry, attacks with haste for 6 flying damage, and draws a card on death.
 
 ### 💀 Reanimation & Recursion Suite (7 Cards)
@@ -168,6 +168,10 @@ deck_status: main
 ---
 
 ## 📜 Deck Changelog
+- **[2026-09-25]:** Replace 8-CMC mass hand discard bomb (Myojin) with multiplying blitz trample engine (Gruff Triplets) to lower suppression into Bracket 3 (Threat Score 50/96)
+    - **In:** Gruff Triplets
+    - **Out:** Myojin of Night's Reach
+    - **Reason:** Replace 8-CMC mass hand discard bomb (Myojin) with multiplying blitz trample engine (Gruff Triplets) to lower suppression into Bracket 3 (Threat Score 50/96)
 
 - **2026-09-03:** Curve & Combat Control Overhaul (Rampant Rejuvenator & Kardur In; Sakura-Tribe Elder & Solemn Simulacrum Out).
     - **In:** *Rampant Rejuvenator* ({3}{G}), *Kardur, Doomscourge* ({2}{B}{R})
@@ -284,7 +288,7 @@ DECK:
 1 Mikaeus, the Unhallowed  
 1 Bane of Progress  
 1 Kogla, the Titan Ape  
-1 Myojin of Night's Reach  
+1 Gruff Triplets  
 1 Bringer of the Last Gift  
 1 Grave Researcher  
 1 Animate Dead  

@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Swap Matrix: HenzieBlitz</title>
+<style>
+  :root {
+    --bg-main: #0d1117;
+    --bg-card: #161b22;
+    --border-color: #30363d;
+    --text-main: #c9d1d9;
+    --text-muted: #8b949e;
+    --out-red: #f85149;
+    --out-bg: rgba(248, 81, 73, 0.1);
+    --in-green: #3fb950;
+    --in-bg: rgba(63, 185, 80, 0.1);
+    --gold: #d29922;
+    --blue: #58a6ff;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background-color: var(--bg-main);
+    color: var(--text-main);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    padding: 24px;
+    line-height: 1.5;
+  }
+  .container { max-width: 1200px; margin: 0 auto; }
+  header {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 24px;
+  }
+  h1 { font-size: 24px; color: #fff; margin-bottom: 8px; }
+  .sub-header { color: var(--text-muted); font-size: 14px; margin-bottom: 16px; }
+  
+  /* Delta Dashboard Grid */
+  .dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 16px;
+    margin-top: 16px;
+  }
+  .metric-card {
+    background: #21262d;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    padding: 14px;
+  }
+  .metric-title { font-size: 12px; text-transform: uppercase; color: var(--text-muted); font-weight: 600; }
+  .metric-value { font-size: 20px; font-weight: bold; margin: 4px 0; }
+  .metric-sub { font-size: 12px; }
+  
+  .positive { color: var(--in-green); }
+  .negative { color: var(--out-red); }
+  .critical { color: var(--out-red); font-weight: bold; }
+  .neutral { color: var(--text-muted); }
+
+  /* Curve Section */
+  .curve-section {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 24px;
+  }
+  .curve-chart {
+    display: flex;
+    align-items: flex-end;
+    gap: 20px;
+    height: 140px;
+    padding-top: 20px;
+    border-bottom: 1px solid var(--border-color);
+  }
+  .curve-col {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+  }
+  .curve-bars-pair {
+    display: flex;
+    align-items: flex-end;
+    gap: 4px;
+    width: 36px;
+    height: 100px;
+  }
+  .bar { width: 16px; border-radius: 3px 3px 0 0; }
+  .bar-pre { background: #8b949e; opacity: 0.6; }
+  .bar-post { background: var(--blue); }
+  .curve-label { font-size: 12px; font-weight: 600; margin-top: 6px; }
+  .curve-counts { font-size: 10px; color: var(--text-muted); }
+
+  /* Rules Watchdog */
+  .rules-section {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 24px;
+  }
+  .rules-title { font-size: 16px; font-weight: bold; margin-bottom: 12px; display: flex; align-items: center; gap: 8px; }
+  .rule-item {
+    padding: 10px 14px;
+    border-radius: 6px;
+    margin-bottom: 8px;
+    font-size: 13px;
+    border: 1px solid transparent;
+  }
+  .rule-item.critical { background: rgba(248, 81, 73, 0.15); border-color: var(--out-red); }
+  .rule-item.warning { background: rgba(210, 153, 34, 0.15); border-color: var(--gold); }
+  .rule-item.info { background: rgba(88, 166, 255, 0.1); border-color: var(--blue); }
+  .rule-badge {
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-right: 6px;
+  }
+  .rule-badge.critical { background: var(--out-red); color: #fff; }
+  .rule-badge.warning { background: var(--gold); color: #000; }
+  .rule-badge.info { background: var(--blue); color: #000; }
+
+  /* Swap Rows */
+  .swap-row {
+    display: flex;
+    align-items: stretch;
+    gap: 16px;
+    margin-bottom: 20px;
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 16px;
+  }
+  .card-column { flex: 1; display: flex; flex-direction: column; }
+  .col-header {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    padding: 4px 8px;
+    border-radius: 4px;
+    margin-bottom: 12px;
+    display: inline-block;
+    align-self: flex-start;
+  }
+  .badge-out { background: var(--out-bg); color: var(--out-red); border: 1px solid var(--out-red); }
+  .badge-in { background: var(--in-bg); color: var(--in-green); border: 1px solid var(--in-green); }
+  
+  .card-card {
+    display: flex;
+    gap: 16px;
+    flex: 1;
+  }
+  .img-wrap {
+    width: 140px;
+    flex-shrink: 0;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+    transition: transform 0.2s ease;
+  }
+  .img-wrap:hover {
+    transform: scale(1.08);
+    z-index: 10;
+  }
+  .img-wrap img { width: 100%; display: block; border-radius: 6px; }
+  .card-info { flex: 1; }
+  .card-title {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .card-title a { color: #fff; text-decoration: none; }
+  .card-title a:hover { text-decoration: underline; color: var(--blue); }
+  .mana-cost { font-family: monospace; font-size: 14px; color: var(--gold); }
+  .type-line { font-size: 12px; color: var(--text-muted); margin-bottom: 8px; }
+  .oracle-box {
+    background: #0d1117;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    padding: 8px 10px;
+    font-size: 12px;
+    color: #e6edf3;
+    max-height: 110px;
+    overflow-y: auto;
+  }
+  .rationale-tag {
+    margin-top: 8px;
+    font-size: 12px;
+    background: rgba(88, 166, 255, 0.1);
+    border-left: 3px solid var(--blue);
+    padding: 6px 8px;
+    border-radius: 0 4px 4px 0;
+  }
+  .swap-arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    color: var(--text-muted);
+    padding: 0 8px;
+  }
+
+  @media (max-width: 850px) {
+    .swap-row { flex-direction: column; }
+    .swap-arrow { transform: rotate(90deg); margin: 8px 0; }
+    .card-card { flex-direction: column; }
+    .img-wrap { width: 180px; margin: 0 auto; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <h1>Visual Swap Matrix — HenzieBlitz</h1>
+    <div class="sub-header">
+      Commander: <strong>Henzie "Toolbox" Torre</strong> | Target Bracket: <strong>Bracket 4</strong> | 
+      Generated: <strong>2026-09-25 13:34:18</strong>
+    </div>
+    <div class="rationale-tag"><strong>Proposal Logic:</strong> Replace 8-CMC mass hand discard bomb (Myojin) with multiplying blitz trample engine (Gruff Triplets) to lower suppression into Bracket 3 (Threat Score 50/96)</div>
+
+    <div class="dashboard-grid">
+      <div class="metric-card">
+        <div class="metric-title">Average CMC (Nonland)</div>
+        <div class="metric-value neutral">3.90 ➔ 3.87</div>
+        <div class="metric-sub">Delta: -0.03</div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-title">Game Changers (Bracket 4)</div>
+        <div class="metric-value positive">0 / 3</div>
+        <div class="metric-sub">Status: PASS (Pre: 0)</div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-title">Deck Size & Balance</div>
+        <div class="metric-value">99 Cards</div>
+        <div class="metric-sub">Creatures: 42➔42 | Lands: 38</div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-title">Est. Market Value Impact</div>
+        <div class="metric-value">$808.03</div>
+        <div class="metric-sub">Delta: +$0.20</div>
+      </div>
+    </div>
+  </header>
+
+  <div class="rules-section">
+    <div class="rules-title">🛡️ Rules & Synergy Watchdog</div>
+    <div class='rule-item positive'>All clear! No rules traps or preference violations detected.</div>
+  </div>
+
+  <div class="curve-section">
+    <div class="rules-title">📊 Mana Curve Shift (Grey = Pre, Blue = Post)</div>
+    <div class="curve-chart">
+      
+        <div class="curve-col">
+            <div class="curve-bars-pair">
+                <div class="bar bar-pre" style="height: 64%;" title="Pre: 9"></div>
+                <div class="bar bar-post" style="height: 64%;" title="Post: 9"></div>
+            </div>
+            <div class="curve-label">0-1</div>
+            <div class="curve-counts">9➔9</div>
+        </div>
+        
+        <div class="curve-col">
+            <div class="curve-bars-pair">
+                <div class="bar bar-pre" style="height: 64%;" title="Pre: 9"></div>
+                <div class="bar bar-post" style="height: 64%;" title="Post: 9"></div>
+            </div>
+            <div class="curve-label">2</div>
+            <div class="curve-counts">9➔9</div>
+        </div>
+        
+        <div class="curve-col">
+            <div class="curve-bars-pair">
+                <div class="bar bar-pre" style="height: 35%;" title="Pre: 5"></div>
+                <div class="bar bar-post" style="height: 35%;" title="Post: 5"></div>
+            </div>
+            <div class="curve-label">3</div>
+            <div class="curve-counts">5➔5</div>
+        </div>
+        
+        <div class="curve-col">
+            <div class="curve-bars-pair">
+                <div class="bar bar-pre" style="height: 100%;" title="Pre: 14"></div>
+                <div class="bar bar-post" style="height: 100%;" title="Post: 14"></div>
+            </div>
+            <div class="curve-label">4</div>
+            <div class="curve-counts">14➔14</div>
+        </div>
+        
+        <div class="curve-col">
+            <div class="curve-bars-pair">
+                <div class="bar bar-pre" style="height: 85%;" title="Pre: 12"></div>
+                <div class="bar bar-post" style="height: 85%;" title="Post: 12"></div>
+            </div>
+            <div class="curve-label">5</div>
+            <div class="curve-counts">12➔12</div>
+        </div>
+        
+        <div class="curve-col">
+            <div class="curve-bars-pair">
+                <div class="bar bar-pre" style="height: 85%;" title="Pre: 12"></div>
+                <div class="bar bar-post" style="height: 85%;" title="Post: 12"></div>
+            </div>
+            <div class="curve-label">6+</div>
+            <div class="curve-counts">12➔12</div>
+        </div>
+        
+    </div>
+  </div>
+
+  <div class="swaps-container">
+    
+        <div class="swap-row">
+            <div class="card-column out-col">
+                <div class="col-header badge-out">OUT #1 — CUT</div>
+                <div class="card-card">
+                    <div class="img-wrap">
+                        <img src="https://cards.scryfall.io/normal/front/7/3/73bc5505-7fa0-4ebf-a691-b4ca5f52b019.jpg?1783908928" alt="Myojin of Night's Reach" loading="lazy" />
+                    </div>
+                    <div class="card-info">
+                        <div class="card-title">
+                            <a href="https://scryfall.com/card/fdn/610/myojin-of-nights-reach?utm_source=api" target="_blank">Myojin of Night's Reach</a>
+                            <span class="mana-cost">{5}{B}{B}{B}</span>
+                        </div>
+                        <div class="type-line">Legendary Creature — Spirit — CMC 8</div>
+                        <div class="oracle-box">Myojin of Night's Reach enters with a divinity counter on it if you cast it from your hand.<br>Myojin of Night's Reach has indestructible as long as it has a divinity counter on it.<br>Remove a divinity counter from Myojin of Night's Reach: Each opponent discards their hand.</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swap-arrow">➔</div>
+
+            <div class="card-column in-col">
+                <div class="col-header badge-in">IN #1 — ADD</div>
+                <div class="card-card">
+                    <div class="img-wrap">
+                        <img src="https://cards.scryfall.io/normal/front/f/8/f8760ab9-ac76-4e2e-b82f-0ee2a6dc5634.jpg?1783915082" alt="Gruff Triplets" loading="lazy" />
+                    </div>
+                    <div class="card-info">
+                        <div class="card-title">
+                            <a href="https://scryfall.com/card/woe/172/gruff-triplets?utm_source=api" target="_blank">Gruff Triplets</a>
+                            <span class="mana-cost">{3}{G}{G}{G}</span>
+                        </div>
+                        <div class="type-line">Creature — Satyr Warrior — CMC 6</div>
+                        <div class="oracle-box">Trample<br>When this creature enters, if it isn't a token, create two tokens that are copies of it.<br>When this creature dies, put a number of +1/+1 counters equal to its power on each creature you control named Gruff Triplets.</div>
+                        <div class="rationale-tag"><strong>Role / Reason:</strong> Multiplying Blitz Trample Engine</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+  </div>
+</div>
+</body>
+</html>

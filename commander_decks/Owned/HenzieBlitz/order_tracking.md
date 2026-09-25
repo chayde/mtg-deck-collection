@@ -3,7 +3,10 @@
 Legend: `- [x]` in hand / received · `- [ ]` ordered, awaiting delivery  
 Condition codes: NM / LP / MP / HP · finish noted only when Foil.
 
-**Deck status:** ✅ **100% ACQUIRED / IN-HAND** — All 93 ordered singles delivered across Orders #586657 and #586788 via Manapool. Add 7 basic lands from collection to complete the 100-card deck.
+**Deck status:** 99/100 In-Hand · 1 card pending acquisition ([Gruff Triplets](https://scryfall.com/search?q=!"Gruff+Triplets"), ~$0.36) to replace *Myojin of Night's Reach* for Bracket 3 calibration.
+
+## 🛒 Pending Acquisition (1 Card)
+- [ ] **[Gruff Triplets](https://scryfall.com/search?q=!"Gruff+Triplets")** ({3}{G}{G}{G}) — ~$0.36 · Replaces *Myojin of Night's Reach* to achieve official Bracket 3 compliance (50/96).
 
 ## 🛡️ Inventory In-Hand (2 Cards)
 Confirmed physically in collection / in-hand:

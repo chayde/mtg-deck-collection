@@ -227860,5 +227860,591 @@
       }
     },
     "cached_at": 1790339947.1055183
+  },
+  "demonic tutor": {
+    "data": {
+      "object": "card",
+      "id": "a24b4cb6-cebb-428b-8654-74347a6a8d63",
+      "oracle_id": "82004860-e589-4e38-8d61-8c0210e4ea39",
+      "multiverse_ids": [
+        622758
+      ],
+      "mtgo_id": 115399,
+      "tcgplayer_id": 504566,
+      "cardmarket_id": 722428,
+      "name": "Demonic Tutor",
+      "lang": "en",
+      "released_at": "2023-08-04",
+      "uri": "https://api.scryfall.com/cards/a24b4cb6-cebb-428b-8654-74347a6a8d63",
+      "scryfall_uri": "https://scryfall.com/card/cmm/150/demonic-tutor?utm_source=api",
+      "layout": "normal",
+      "highres_image": true,
+      "image_status": "highres_scan",
+      "image_updated_at": "2026-07-13T04:07:59Z",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/a/2/a24b4cb6-cebb-428b-8654-74347a6a8d63.jpg?1783915679",
+        "normal": "https://cards.scryfall.io/normal/front/a/2/a24b4cb6-cebb-428b-8654-74347a6a8d63.jpg?1783915679",
+        "large": "https://cards.scryfall.io/large/front/a/2/a24b4cb6-cebb-428b-8654-74347a6a8d63.jpg?1783915679",
+        "png": "https://cards.scryfall.io/png/front/a/2/a24b4cb6-cebb-428b-8654-74347a6a8d63.png?1783915679",
+        "art_crop": "https://cards.scryfall.io/art_crop/front/a/2/a24b4cb6-cebb-428b-8654-74347a6a8d63.jpg?1783915679",
+        "border_crop": "https://cards.scryfall.io/border_crop/front/a/2/a24b4cb6-cebb-428b-8654-74347a6a8d63.jpg?1783915679",
+        "thumb": "https://cards.scryfall.io/thumb/front/a/2/a24b4cb6-cebb-428b-8654-74347a6a8d63.webp?1783915679",
+        "grid": "https://cards.scryfall.io/grid/front/a/2/a24b4cb6-cebb-428b-8654-74347a6a8d63.webp?1783915679",
+        "display": "https://cards.scryfall.io/display/front/a/2/a24b4cb6-cebb-428b-8654-74347a6a8d63.webp?1783915679",
+        "art": "https://cards.scryfall.io/art/front/a/2/a24b4cb6-cebb-428b-8654-74347a6a8d63.webp?1783915679",
+        "crop": "https://cards.scryfall.io/crop/front/a/2/a24b4cb6-cebb-428b-8654-74347a6a8d63.webp?1783915679"
+      },
+      "mana_cost": "{1}{B}",
+      "cmc": 2.0,
+      "type_line": "Sorcery",
+      "oracle_text": "Search your library for a card, put that card into your hand, then shuffle.",
+      "colors": [
+        "B"
+      ],
+      "color_identity": [
+        "B"
+      ],
+      "keywords": [],
+      "legalities": {
+        "standard": "not_legal",
+        "future": "not_legal",
+        "historic": "banned",
+        "timeless": "restricted",
+        "gladiator": "legal",
+        "pioneer": "not_legal",
+        "modern": "not_legal",
+        "legacy": "banned",
+        "pauper": "not_legal",
+        "vintage": "restricted",
+        "penny": "not_legal",
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "standardbrawl": "not_legal",
+        "brawl": "banned",
+        "competitivebrawl": "legal",
+        "alchemy": "not_legal",
+        "paupercommander": "not_legal",
+        "duel": "legal",
+        "oldschool": "not_legal",
+        "premodern": "not_legal",
+        "predh": "legal",
+        "tlr": "banned"
+      },
+      "games": [
+        "paper",
+        "mtgo"
+      ],
+      "reserved": false,
+      "game_changer": true,
+      "foil": true,
+      "nonfoil": true,
+      "finishes": [
+        "nonfoil",
+        "foil"
+      ],
+      "oversized": false,
+      "promo": false,
+      "reprint": true,
+      "variation": false,
+      "set_id": "cd05036f-2698-43e6-a48e-5c8d82f0a551",
+      "set": "cmm",
+      "set_name": "Commander Masters",
+      "set_type": "masters",
+      "set_uri": "https://api.scryfall.com/sets/cd05036f-2698-43e6-a48e-5c8d82f0a551",
+      "set_search_uri": "https://api.scryfall.com/cards/search?order=set&q=e%3Acmm&unique=prints",
+      "scryfall_set_uri": "https://scryfall.com/sets/cmm?utm_source=api",
+      "rulings_uri": "https://api.scryfall.com/cards/a24b4cb6-cebb-428b-8654-74347a6a8d63/rulings",
+      "prints_search_uri": "https://api.scryfall.com/cards/search?order=released&q=oracleid%3A82004860-e589-4e38-8d61-8c0210e4ea39&unique=prints",
+      "collector_number": "150",
+      "digital": false,
+      "rarity": "mythic",
+      "flavor_text": "Beware the generosity of demons.",
+      "card_back_id": "0aeebaf5-8c7d-4636-9e82-8c27447861f7",
+      "artist": "Zack Stella",
+      "artist_ids": [
+        "17bc7f55-958b-43f4-bb40-09746d05b3f9"
+      ],
+      "illustration_id": "38139ff0-097b-4d15-9e39-13a0234500c1",
+      "border_color": "black",
+      "frame": "2015",
+      "security_stamp": "oval",
+      "full_art": false,
+      "textless": false,
+      "booster": true,
+      "story_spotlight": false,
+      "edhrec_rank": 63,
+      "preview": {
+        "source": "Star City Games",
+        "source_uri": "https://articles.starcitygames.com/magic-the-gathering/demonic-tutor-demonlord-belzenlok-return-in-commander-masters/",
+        "previewed_at": "2023-07-14"
+      },
+      "prices": {
+        "usd": "67.92",
+        "usd_foil": "78.92",
+        "usd_etched": null,
+        "eur": "49.55",
+        "eur_foil": "57.49",
+        "tix": "8.92"
+      },
+      "related_uris": {
+        "gatherer": "https://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=622758&printed=false",
+        "tcgplayer_infinite_articles": "https://partner.tcgplayer.com/c/4931599/1830156/21018?subId1=api&trafcat=tcgplayer.com%2Fsearch%2Farticles&u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Farticles%3FproductLineName%3Dmagic%26q%3DDemonic%2BTutor",
+        "tcgplayer_infinite_decks": "https://partner.tcgplayer.com/c/4931599/1830156/21018?subId1=api&trafcat=tcgplayer.com%2Fsearch%2Fdecks&u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Fdecks%3FproductLineName%3Dmagic%26q%3DDemonic%2BTutor",
+        "edhrec": "https://edhrec.com/route/?cc=Demonic+Tutor"
+      },
+      "purchase_uris": {
+        "tcgplayer": "https://partner.tcgplayer.com/c/4931599/1830156/21018?subId1=api&u=https%3A%2F%2Fwww.tcgplayer.com%2Fproduct%2F504566%3Fpage%3D1",
+        "cardmarket": "https://www.cardmarket.com/en/Magic/Products?idProduct=722428&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+        "cardhoarder": "https://www.cardhoarder.com/cards/115399?affiliate_id=scryfall&ref=card-profile&utm_campaign=affiliate&utm_medium=card&utm_source=scryfall"
+      }
+    },
+    "cached_at": 1790357012.3111231
+  },
+  "gruff triplets": {
+    "data": {
+      "object": "card",
+      "id": "f8760ab9-ac76-4e2e-b82f-0ee2a6dc5634",
+      "oracle_id": "32de1b70-f993-4423-b0ef-0762c2b4d1b1",
+      "multiverse_ids": [
+        629673
+      ],
+      "mtgo_id": 116682,
+      "arena_id": 86879,
+      "tcgplayer_id": 513344,
+      "cardmarket_id": 729557,
+      "name": "Gruff Triplets",
+      "lang": "en",
+      "released_at": "2023-09-08",
+      "uri": "https://api.scryfall.com/cards/f8760ab9-ac76-4e2e-b82f-0ee2a6dc5634",
+      "scryfall_uri": "https://scryfall.com/card/woe/172/gruff-triplets?utm_source=api",
+      "layout": "normal",
+      "highres_image": true,
+      "image_status": "highres_scan",
+      "image_updated_at": "2026-07-13T03:58:02Z",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/f/8/f8760ab9-ac76-4e2e-b82f-0ee2a6dc5634.jpg?1783915082",
+        "normal": "https://cards.scryfall.io/normal/front/f/8/f8760ab9-ac76-4e2e-b82f-0ee2a6dc5634.jpg?1783915082",
+        "large": "https://cards.scryfall.io/large/front/f/8/f8760ab9-ac76-4e2e-b82f-0ee2a6dc5634.jpg?1783915082",
+        "png": "https://cards.scryfall.io/png/front/f/8/f8760ab9-ac76-4e2e-b82f-0ee2a6dc5634.png?1783915082",
+        "art_crop": "https://cards.scryfall.io/art_crop/front/f/8/f8760ab9-ac76-4e2e-b82f-0ee2a6dc5634.jpg?1783915082",
+        "border_crop": "https://cards.scryfall.io/border_crop/front/f/8/f8760ab9-ac76-4e2e-b82f-0ee2a6dc5634.jpg?1783915082",
+        "thumb": "https://cards.scryfall.io/thumb/front/f/8/f8760ab9-ac76-4e2e-b82f-0ee2a6dc5634.webp?1783915082",
+        "grid": "https://cards.scryfall.io/grid/front/f/8/f8760ab9-ac76-4e2e-b82f-0ee2a6dc5634.webp?1783915082",
+        "display": "https://cards.scryfall.io/display/front/f/8/f8760ab9-ac76-4e2e-b82f-0ee2a6dc5634.webp?1783915082",
+        "art": "https://cards.scryfall.io/art/front/f/8/f8760ab9-ac76-4e2e-b82f-0ee2a6dc5634.webp?1783915082",
+        "crop": "https://cards.scryfall.io/crop/front/f/8/f8760ab9-ac76-4e2e-b82f-0ee2a6dc5634.webp?1783915082"
+      },
+      "mana_cost": "{3}{G}{G}{G}",
+      "cmc": 6.0,
+      "type_line": "Creature — Satyr Warrior",
+      "oracle_text": "Trample\nWhen this creature enters, if it isn't a token, create two tokens that are copies of it.\nWhen this creature dies, put a number of +1/+1 counters equal to its power on each creature you control named Gruff Triplets.",
+      "power": "3",
+      "toughness": "3",
+      "colors": [
+        "G"
+      ],
+      "color_identity": [
+        "G"
+      ],
+      "keywords": [
+        "Trample"
+      ],
+      "all_parts": [
+        {
+          "object": "related_card",
+          "id": "f48f7bd4-c12d-48a7-b39f-36033636e5c7",
+          "component": "combo_piece",
+          "name": "Gruff Triplets",
+          "type_line": "Creature — Satyr Warrior",
+          "uri": "https://api.scryfall.com/cards/f48f7bd4-c12d-48a7-b39f-36033636e5c7"
+        },
+        {
+          "object": "related_card",
+          "id": "f4e87a11-b3b1-47b2-bd73-f4c78d6fbe6c",
+          "component": "token",
+          "name": "Copy",
+          "type_line": "Token",
+          "uri": "https://api.scryfall.com/cards/f4e87a11-b3b1-47b2-bd73-f4c78d6fbe6c"
+        }
+      ],
+      "legalities": {
+        "standard": "legal",
+        "future": "legal",
+        "historic": "legal",
+        "timeless": "legal",
+        "gladiator": "legal",
+        "pioneer": "legal",
+        "modern": "legal",
+        "legacy": "legal",
+        "pauper": "not_legal",
+        "vintage": "legal",
+        "penny": "legal",
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "standardbrawl": "legal",
+        "brawl": "legal",
+        "competitivebrawl": "legal",
+        "alchemy": "not_legal",
+        "paupercommander": "not_legal",
+        "duel": "legal",
+        "oldschool": "not_legal",
+        "premodern": "not_legal",
+        "predh": "not_legal",
+        "tlr": "not_legal"
+      },
+      "games": [
+        "paper",
+        "arena",
+        "mtgo"
+      ],
+      "reserved": false,
+      "game_changer": false,
+      "foil": true,
+      "nonfoil": true,
+      "finishes": [
+        "nonfoil",
+        "foil"
+      ],
+      "oversized": false,
+      "promo": false,
+      "reprint": false,
+      "variation": false,
+      "set_id": "79139661-13ee-43c4-8bad-a8c069f1a1df",
+      "set": "woe",
+      "set_name": "Wilds of Eldraine",
+      "set_type": "expansion",
+      "set_uri": "https://api.scryfall.com/sets/79139661-13ee-43c4-8bad-a8c069f1a1df",
+      "set_search_uri": "https://api.scryfall.com/cards/search?order=set&q=e%3Awoe&unique=prints",
+      "scryfall_set_uri": "https://scryfall.com/sets/woe?utm_source=api",
+      "rulings_uri": "https://api.scryfall.com/cards/f8760ab9-ac76-4e2e-b82f-0ee2a6dc5634/rulings",
+      "prints_search_uri": "https://api.scryfall.com/cards/search?order=released&q=oracleid%3A32de1b70-f993-4423-b0ef-0762c2b4d1b1&unique=prints",
+      "collector_number": "172",
+      "digital": false,
+      "rarity": "rare",
+      "card_back_id": "0aeebaf5-8c7d-4636-9e82-8c27447861f7",
+      "artist": "Fajareka Setiawan",
+      "artist_ids": [
+        "0cc534e0-be18-4cb1-8521-50fabd0dac6f"
+      ],
+      "illustration_id": "01489436-9107-4fb3-b4bc-5429d6de4fd2",
+      "border_color": "black",
+      "frame": "2015",
+      "security_stamp": "oval",
+      "full_art": false,
+      "textless": false,
+      "booster": true,
+      "story_spotlight": false,
+      "edhrec_rank": 5275,
+      "penny_rank": 7384,
+      "preview": {
+        "source": "Wizards of the Coast",
+        "source_uri": "https://twitter.com/Magic30th_TOKYO/status/1693578702662049915",
+        "previewed_at": "2023-08-21"
+      },
+      "prices": {
+        "usd": "0.36",
+        "usd_foil": "0.46",
+        "usd_etched": null,
+        "eur": "0.42",
+        "eur_foil": "0.69",
+        "tix": "0.02"
+      },
+      "related_uris": {
+        "gatherer": "https://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=629673&printed=false",
+        "tcgplayer_infinite_articles": "https://partner.tcgplayer.com/c/4931599/1830156/21018?subId1=api&trafcat=tcgplayer.com%2Fsearch%2Farticles&u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Farticles%3FproductLineName%3Dmagic%26q%3DGruff%2BTriplets",
+        "tcgplayer_infinite_decks": "https://partner.tcgplayer.com/c/4931599/1830156/21018?subId1=api&trafcat=tcgplayer.com%2Fsearch%2Fdecks&u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Fdecks%3FproductLineName%3Dmagic%26q%3DGruff%2BTriplets",
+        "edhrec": "https://edhrec.com/route/?cc=Gruff+Triplets"
+      },
+      "purchase_uris": {
+        "tcgplayer": "https://partner.tcgplayer.com/c/4931599/1830156/21018?subId1=api&u=https%3A%2F%2Fwww.tcgplayer.com%2Fproduct%2F513344%3Fpage%3D1",
+        "cardmarket": "https://www.cardmarket.com/en/Magic/Products?idProduct=729557&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+        "cardhoarder": "https://www.cardhoarder.com/cards/116682?affiliate_id=scryfall&ref=card-profile&utm_campaign=affiliate&utm_medium=card&utm_source=scryfall"
+      }
+    },
+    "cached_at": 1790357305.9125853
+  },
+  "kogla and yidaro": {
+    "data": {
+      "object": "card",
+      "id": "b760ebdf-bea6-4c43-a187-4a02ebf95ebf",
+      "oracle_id": "fe8c2b7e-f80d-4acb-a976-edcf436a78a9",
+      "multiverse_ids": [
+        607315
+      ],
+      "mtgo_id": 110402,
+      "arena_id": 84551,
+      "tcgplayer_id": 490551,
+      "cardmarket_id": 704062,
+      "name": "Kogla and Yidaro",
+      "lang": "en",
+      "released_at": "2023-04-21",
+      "uri": "https://api.scryfall.com/cards/b760ebdf-bea6-4c43-a187-4a02ebf95ebf",
+      "scryfall_uri": "https://scryfall.com/card/mom/244/kogla-and-yidaro?utm_source=api",
+      "layout": "normal",
+      "highres_image": true,
+      "image_status": "highres_scan",
+      "image_updated_at": "2026-07-13T04:29:02Z",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/b/7/b760ebdf-bea6-4c43-a187-4a02ebf95ebf.jpg?1783916942",
+        "normal": "https://cards.scryfall.io/normal/front/b/7/b760ebdf-bea6-4c43-a187-4a02ebf95ebf.jpg?1783916942",
+        "large": "https://cards.scryfall.io/large/front/b/7/b760ebdf-bea6-4c43-a187-4a02ebf95ebf.jpg?1783916942",
+        "png": "https://cards.scryfall.io/png/front/b/7/b760ebdf-bea6-4c43-a187-4a02ebf95ebf.png?1783916942",
+        "art_crop": "https://cards.scryfall.io/art_crop/front/b/7/b760ebdf-bea6-4c43-a187-4a02ebf95ebf.jpg?1783916942",
+        "border_crop": "https://cards.scryfall.io/border_crop/front/b/7/b760ebdf-bea6-4c43-a187-4a02ebf95ebf.jpg?1783916942",
+        "thumb": "https://cards.scryfall.io/thumb/front/b/7/b760ebdf-bea6-4c43-a187-4a02ebf95ebf.webp?1783916942",
+        "grid": "https://cards.scryfall.io/grid/front/b/7/b760ebdf-bea6-4c43-a187-4a02ebf95ebf.webp?1783916942",
+        "display": "https://cards.scryfall.io/display/front/b/7/b760ebdf-bea6-4c43-a187-4a02ebf95ebf.webp?1783916942",
+        "art": "https://cards.scryfall.io/art/front/b/7/b760ebdf-bea6-4c43-a187-4a02ebf95ebf.webp?1783916942",
+        "crop": "https://cards.scryfall.io/crop/front/b/7/b760ebdf-bea6-4c43-a187-4a02ebf95ebf.webp?1783916942"
+      },
+      "mana_cost": "{2}{R}{R}{G}{G}",
+      "cmc": 6.0,
+      "type_line": "Legendary Creature — Ape Dinosaur Turtle",
+      "oracle_text": "When Kogla and Yidaro enters, choose one —\n• It gains trample and haste until end of turn.\n• It fights target creature you don't control.\n{2}{R}{G}, Discard this card: Destroy up to one target artifact or enchantment. Shuffle this card into your library from your graveyard, then draw a card.",
+      "power": "7",
+      "toughness": "7",
+      "colors": [
+        "G",
+        "R"
+      ],
+      "color_identity": [
+        "G",
+        "R"
+      ],
+      "keywords": [
+        "Fight"
+      ],
+      "legalities": {
+        "standard": "not_legal",
+        "future": "not_legal",
+        "historic": "legal",
+        "timeless": "legal",
+        "gladiator": "legal",
+        "pioneer": "legal",
+        "modern": "legal",
+        "legacy": "legal",
+        "pauper": "not_legal",
+        "vintage": "legal",
+        "penny": "legal",
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "standardbrawl": "not_legal",
+        "brawl": "legal",
+        "competitivebrawl": "legal",
+        "alchemy": "not_legal",
+        "paupercommander": "not_legal",
+        "duel": "legal",
+        "oldschool": "not_legal",
+        "premodern": "not_legal",
+        "predh": "not_legal",
+        "tlr": "not_legal"
+      },
+      "games": [
+        "paper",
+        "arena",
+        "mtgo"
+      ],
+      "reserved": false,
+      "game_changer": false,
+      "foil": true,
+      "nonfoil": true,
+      "finishes": [
+        "nonfoil",
+        "foil"
+      ],
+      "oversized": false,
+      "promo": false,
+      "reprint": false,
+      "variation": false,
+      "set_id": "392f7315-dc53-40a3-a2cc-5482dbd498b3",
+      "set": "mom",
+      "set_name": "March of the Machine",
+      "set_type": "expansion",
+      "set_uri": "https://api.scryfall.com/sets/392f7315-dc53-40a3-a2cc-5482dbd498b3",
+      "set_search_uri": "https://api.scryfall.com/cards/search?order=set&q=e%3Amom&unique=prints",
+      "scryfall_set_uri": "https://scryfall.com/sets/mom?utm_source=api",
+      "rulings_uri": "https://api.scryfall.com/cards/b760ebdf-bea6-4c43-a187-4a02ebf95ebf/rulings",
+      "prints_search_uri": "https://api.scryfall.com/cards/search?order=released&q=oracleid%3Afe8c2b7e-f80d-4acb-a976-edcf436a78a9&unique=prints",
+      "collector_number": "244",
+      "digital": false,
+      "rarity": "rare",
+      "card_back_id": "0aeebaf5-8c7d-4636-9e82-8c27447861f7",
+      "artist": "Chris Rahn",
+      "artist_ids": [
+        "7742047e-0f80-4c0f-a530-d07460165e86"
+      ],
+      "illustration_id": "8a057c51-f65b-4fd9-8c1e-13914c45c639",
+      "border_color": "black",
+      "frame": "2015",
+      "frame_effects": [
+        "legendary"
+      ],
+      "security_stamp": "oval",
+      "full_art": false,
+      "textless": false,
+      "booster": true,
+      "story_spotlight": false,
+      "edhrec_rank": 2532,
+      "penny_rank": 2453,
+      "preview": {
+        "source": "Card Kingdom",
+        "source_uri": "https://twitter.com/Card_Kingdom/status/1641470302222942209",
+        "previewed_at": "2023-03-30"
+      },
+      "prices": {
+        "usd": "2.32",
+        "usd_foil": "2.82",
+        "usd_etched": null,
+        "eur": "1.00",
+        "eur_foil": "0.90",
+        "tix": "0.02"
+      },
+      "related_uris": {
+        "gatherer": "https://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=607315&printed=false",
+        "tcgplayer_infinite_articles": "https://partner.tcgplayer.com/c/4931599/1830156/21018?subId1=api&trafcat=tcgplayer.com%2Fsearch%2Farticles&u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Farticles%3FproductLineName%3Dmagic%26q%3DKogla%2Band%2BYidaro",
+        "tcgplayer_infinite_decks": "https://partner.tcgplayer.com/c/4931599/1830156/21018?subId1=api&trafcat=tcgplayer.com%2Fsearch%2Fdecks&u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Fdecks%3FproductLineName%3Dmagic%26q%3DKogla%2Band%2BYidaro",
+        "edhrec": "https://edhrec.com/route/?cc=Kogla+and+Yidaro"
+      },
+      "purchase_uris": {
+        "tcgplayer": "https://partner.tcgplayer.com/c/4931599/1830156/21018?subId1=api&u=https%3A%2F%2Fwww.tcgplayer.com%2Fproduct%2F490551%3Fpage%3D1",
+        "cardmarket": "https://www.cardmarket.com/en/Magic/Products?idProduct=704062&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+        "cardhoarder": "https://www.cardhoarder.com/cards/110402?affiliate_id=scryfall&ref=card-profile&utm_campaign=affiliate&utm_medium=card&utm_source=scryfall"
+      }
+    },
+    "cached_at": 1790357310.8191931
+  },
+  "treeshaker chimera": {
+    "data": {
+      "object": "card",
+      "id": "5f73b249-be19-4a51-8759-648a2f122e6d",
+      "oracle_id": "8b119b69-4794-443e-aa13-747c125b5b1b",
+      "multiverse_ids": [
+        559890
+      ],
+      "tcgplayer_id": 269669,
+      "cardmarket_id": 652902,
+      "name": "Treeshaker Chimera",
+      "lang": "en",
+      "released_at": "2022-04-29",
+      "uri": "https://api.scryfall.com/cards/5f73b249-be19-4a51-8759-648a2f122e6d",
+      "scryfall_uri": "https://scryfall.com/card/ncc/318/treeshaker-chimera?utm_source=api",
+      "layout": "normal",
+      "highres_image": true,
+      "image_status": "highres_scan",
+      "image_updated_at": "2026-07-13T06:13:58Z",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/5/f/5f73b249-be19-4a51-8759-648a2f122e6d.jpg?1783923238",
+        "normal": "https://cards.scryfall.io/normal/front/5/f/5f73b249-be19-4a51-8759-648a2f122e6d.jpg?1783923238",
+        "large": "https://cards.scryfall.io/large/front/5/f/5f73b249-be19-4a51-8759-648a2f122e6d.jpg?1783923238",
+        "png": "https://cards.scryfall.io/png/front/5/f/5f73b249-be19-4a51-8759-648a2f122e6d.png?1783923238",
+        "art_crop": "https://cards.scryfall.io/art_crop/front/5/f/5f73b249-be19-4a51-8759-648a2f122e6d.jpg?1783923238",
+        "border_crop": "https://cards.scryfall.io/border_crop/front/5/f/5f73b249-be19-4a51-8759-648a2f122e6d.jpg?1783923238",
+        "thumb": "https://cards.scryfall.io/thumb/front/5/f/5f73b249-be19-4a51-8759-648a2f122e6d.webp?1783923238",
+        "grid": "https://cards.scryfall.io/grid/front/5/f/5f73b249-be19-4a51-8759-648a2f122e6d.webp?1783923238",
+        "display": "https://cards.scryfall.io/display/front/5/f/5f73b249-be19-4a51-8759-648a2f122e6d.webp?1783923238",
+        "art": "https://cards.scryfall.io/art/front/5/f/5f73b249-be19-4a51-8759-648a2f122e6d.webp?1783923238",
+        "crop": "https://cards.scryfall.io/crop/front/5/f/5f73b249-be19-4a51-8759-648a2f122e6d.webp?1783923238"
+      },
+      "mana_cost": "{5}{G}{G}",
+      "cmc": 7.0,
+      "type_line": "Creature — Chimera",
+      "oracle_text": "All creatures able to block this creature do so.\nWhen this creature dies, draw three cards.",
+      "power": "8",
+      "toughness": "5",
+      "colors": [
+        "G"
+      ],
+      "color_identity": [
+        "G"
+      ],
+      "keywords": [],
+      "legalities": {
+        "standard": "not_legal",
+        "future": "not_legal",
+        "historic": "legal",
+        "timeless": "legal",
+        "gladiator": "legal",
+        "pioneer": "legal",
+        "modern": "legal",
+        "legacy": "legal",
+        "pauper": "not_legal",
+        "vintage": "legal",
+        "penny": "legal",
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "standardbrawl": "not_legal",
+        "brawl": "legal",
+        "competitivebrawl": "legal",
+        "alchemy": "not_legal",
+        "paupercommander": "not_legal",
+        "duel": "legal",
+        "oldschool": "not_legal",
+        "premodern": "not_legal",
+        "predh": "not_legal",
+        "tlr": "not_legal"
+      },
+      "games": [
+        "paper"
+      ],
+      "reserved": false,
+      "game_changer": false,
+      "foil": false,
+      "nonfoil": true,
+      "finishes": [
+        "nonfoil"
+      ],
+      "oversized": false,
+      "promo": false,
+      "reprint": true,
+      "variation": false,
+      "set_id": "c51de34b-d4d6-4179-a432-573744ded119",
+      "set": "ncc",
+      "set_name": "New Capenna Commander",
+      "set_type": "commander",
+      "set_uri": "https://api.scryfall.com/sets/c51de34b-d4d6-4179-a432-573744ded119",
+      "set_search_uri": "https://api.scryfall.com/cards/search?order=set&q=e%3Ancc&unique=prints",
+      "scryfall_set_uri": "https://scryfall.com/sets/ncc?utm_source=api",
+      "rulings_uri": "https://api.scryfall.com/cards/5f73b249-be19-4a51-8759-648a2f122e6d/rulings",
+      "prints_search_uri": "https://api.scryfall.com/cards/search?order=released&q=oracleid%3A8b119b69-4794-443e-aa13-747c125b5b1b&unique=prints",
+      "collector_number": "318",
+      "digital": false,
+      "rarity": "rare",
+      "flavor_text": "The wisdom of the past is written on the bones of ancients.",
+      "card_back_id": "0aeebaf5-8c7d-4636-9e82-8c27447861f7",
+      "artist": "Vincent Proce",
+      "artist_ids": [
+        "d82b1138-76d3-49f7-9d8c-bc2e2d3e0b0a"
+      ],
+      "illustration_id": "fc5f6af6-984c-4a77-9718-3cd78604e8ee",
+      "border_color": "black",
+      "frame": "2015",
+      "security_stamp": "oval",
+      "full_art": false,
+      "textless": false,
+      "booster": false,
+      "story_spotlight": false,
+      "edhrec_rank": 7351,
+      "penny_rank": 15229,
+      "prices": {
+        "usd": "0.38",
+        "usd_foil": null,
+        "usd_etched": null,
+        "eur": "0.30",
+        "eur_foil": null,
+        "tix": null
+      },
+      "related_uris": {
+        "gatherer": "https://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=559890&printed=false",
+        "tcgplayer_infinite_articles": "https://partner.tcgplayer.com/c/4931599/1830156/21018?subId1=api&trafcat=tcgplayer.com%2Fsearch%2Farticles&u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Farticles%3FproductLineName%3Dmagic%26q%3DTreeshaker%2BChimera",
+        "tcgplayer_infinite_decks": "https://partner.tcgplayer.com/c/4931599/1830156/21018?subId1=api&trafcat=tcgplayer.com%2Fsearch%2Fdecks&u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Fdecks%3FproductLineName%3Dmagic%26q%3DTreeshaker%2BChimera",
+        "edhrec": "https://edhrec.com/route/?cc=Treeshaker+Chimera"
+      },
+      "purchase_uris": {
+        "tcgplayer": "https://partner.tcgplayer.com/c/4931599/1830156/21018?subId1=api&u=https%3A%2F%2Fwww.tcgplayer.com%2Fproduct%2F269669%3Fpage%3D1",
+        "cardmarket": "https://www.cardmarket.com/en/Magic/Products?idProduct=652902&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+        "cardhoarder": "https://www.cardhoarder.com/cards?affiliate_id=scryfall&data%5Bsearch%5D=Treeshaker+Chimera&ref=card-profile&utm_campaign=affiliate&utm_medium=card&utm_source=scryfall"
+      }
+    },
+    "cached_at": 1790357316.023572
   }
 }
