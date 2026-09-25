@@ -12,7 +12,7 @@
             --text-main: #f8fafc;
             --text-sub: #94a3b8;
             --border: #334155;
-            --accent: #3b82f6;
+            --accent: #10b981;
             --s-color: #8b5cf6;
             --a-color: #3b82f6;
             --b-color: #10b981;
@@ -171,6 +171,55 @@
             box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.5), 0 8px 10px -6px rgba(0, 0, 0, 0.5);
             border: 2px solid #475569;
         }
+
+        .deck-telemetry-banner {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 10px 16px;
+            margin-bottom: 20px;
+            font-size: 13px;
+            color: var(--text-sub);
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+        .deck-telemetry-banner strong { color: var(--text-main); }
+        .info-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 24px;
+        }
+        .info-card h3 {
+            font-size: 16px;
+            margin-bottom: 12px;
+            color: var(--text-main);
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 8px;
+        }
+        .primer-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        @media (max-width: 768px) {
+            .primer-grid { grid-template-columns: 1fr; }
+        }
+        .weakness-card {
+            background: #0f172a;
+            border-radius: 8px;
+            padding: 14px;
+            border-top: 3px solid #64748b;
+        }
+        .weakness-critical { border-top-color: #ef4444; }
+        .weakness-moderate { border-top-color: #f59e0b; }
+        .weakness-minor { border-top-color: #3b82f6; }
+        .weakness-list { list-style: none; margin-top: 8px; }
+        .weakness-list li { font-size: 13px; margin: 6px 0; color: #cbd5e1; }
+        .step-list { padding-left: 20px; font-size: 13px; color: #cbd5e1; line-height: 1.6; }
+        .step-list li { margin-bottom: 6px; }
     </style>
 </head>
 <body>
@@ -181,27 +230,29 @@
                 <h1>EtaliConqueror</h1>
                 <div class="header-sub">DeckCheck Threat Index (DTI) Evaluation Report</div>
             </div>
-            <div class="bracket-badge">BRACKET 2</div>
+            <div class="bracket-badge">BRACKET 3</div>
         </header>
+
+        
 
         <div class="metrics-grid">
             <div class="metric-card">
                 <div class="metric-title">Threat Score</div>
-                <div class="metric-value">27 <span style="font-size:16px;color:var(--text-sub);">/ 96</span></div>
-                <div class="metric-sub">Score Floor: Bracket 2</div>
-                <div class="progress-bar"><div class="progress-fill" style="width: 28.125%;"></div></div>
+                <div class="metric-value">40 <span style="font-size:16px;color:var(--text-sub);">/ 96</span></div>
+                <div class="metric-sub">Score Floor: Bracket 3</div>
+                <div class="progress-bar"><div class="progress-fill" style="width: 41.66666666666667%;"></div></div>
             </div>
             <div class="metric-card">
                 <div class="metric-title">Velocity Vector</div>
-                <div class="metric-value">16 <span style="font-size:16px;color:var(--text-sub);">/ 48</span></div>
+                <div class="metric-value">18 <span style="font-size:16px;color:var(--text-sub);">/ 48</span></div>
                 <div class="metric-sub">Clock & Assembly Speed (Gate at 28)</div>
-                <div class="progress-bar"><div class="progress-fill" style="width: 33.33333333333333%;"></div></div>
+                <div class="progress-bar"><div class="progress-fill" style="width: 37.5%;"></div></div>
             </div>
             <div class="metric-card">
                 <div class="metric-title">Suppression Vector</div>
-                <div class="metric-value">9 <span style="font-size:16px;color:var(--text-sub);">/ 40</span></div>
+                <div class="metric-value">12 <span style="font-size:16px;color:var(--text-sub);">/ 40</span></div>
                 <div class="metric-sub">Denial, Tax & Stax Impact</div>
-                <div class="progress-bar"><div class="progress-fill" style="width: 22.5%;"></div></div>
+                <div class="progress-bar"><div class="progress-fill" style="width: 30.0%;"></div></div>
             </div>
             <div class="metric-card">
                 <div class="metric-title">Game Changers</div>
@@ -217,27 +268,141 @@
                 <span class="gate-tag tag-passed">
                     PASSED
                 </span>
-                <strong>Velocity Gate:</strong> Vector 16/48 (Threshold: &ge; 28 mandates Bracket 4).
+                <strong>Velocity Gate:</strong> Vector 18/48 (Threshold: &ge; 28 mandates Bracket 4).
             </div>
             <div class="gate-item">
                 <span class="gate-tag tag-passed">
                     PASSED
                 </span>
-                <strong>Early Finish Gate:</strong> Critical Onset P1 is B (Turns 1–5 onset mandates Bracket 4).
+                <strong>Early Finish Gate:</strong> Onset A, Completion B (Zero-untap or T1-5 table elimination mandates Bracket 4).
             </div>
             <div class="gate-item">
                 <span class="gate-tag tag-passed">
                     PASSED
                 </span>
-                <strong>Suppression Gate:</strong> Proactive Restriction I2 is C (Severe attrition mandates Bracket 4).
+                <strong>Suppression Gate:</strong> Proactive Restriction I2 is F (Severe attrition mandates Bracket 4).
             </div>
             <div class="gate-item">
                 <span class="gate-tag tag-passed">
                     PASSED
                 </span>
-                <strong>cEDH Gate:</strong> Format ceiling clock with 0-untap kill (Peak vector: 16).
+                <strong>cEDH Gate:</strong> Format ceiling clock with 0-untap kill (Peak vector: 18).
             </div>
         </div>
+
+        
+        <div class="info-card">
+            <h3>Tactical Overview</h3>
+            <p style="font-size: 14px; line-height: 1.6; color: #cbd5e1;">This Gruul deck is an explosive big-mana stompy strategy built around Etali, Primal Conqueror. The primary game plan focuses on rapid early ramp using 1-mana dorks, land-fetching sorceries, and cost reducers to cast Etali ahead of curve by Turn 4. Upon entering the battlefield, Etali immediately triggers to cast up to four free nonland spells from all players' libraries. The deck magnifies this overwhelming card advantage using a deep suite of temporary clone spells, blink effects, and trigger multipliers like Twinflame, Heat Shimmer, Orthion, Hero of Lavabrink, and Panharmonicon. Each additional trigger generates exponential board presence and card velocity. The deck closes out games either by overwhelming the table with large stolen boards and token copies or by transforming Etali into Etali, Primal Sickness, an 11/11 indestructible trampler that eliminates opponents in a single swing via poison counters. While highly explosive and resilient to countermagic thanks to redundancy, it relies on proactive threats over defensive interaction.</p>
+        </div>
+        
+        
+        <div class="info-card">
+            <h3>Operational Primer & Strategy</h3>
+            <div class="primer-grid">
+                <div>
+                    <h4 style="font-size: 13px; text-transform: uppercase; color: var(--text-sub); margin-bottom: 8px;">Core Turn Strategy</h4>
+                    <ol class="step-list">
+                        <li>Accelerate Mana: Use one-drop mana elves, land-ramp spells, and mana rocks on Turns 1 through 3 to reach seven mana as fast as possible.</li><li>Deploy the Commander: Cast Etali, Primal Conqueror on Turn 4 to exile and cast four free nonland spells from across the table.</li><li>Multiply Triggers: Use temporary clone spells like Twinflame and permanents like Panharmonicon to copy Etali repeatedly for massive card and mana advantage.</li><li>Close the Game: Overwhelm the board with stolen threats or pay nine mana to transform Etali into Etali, Primal Sickness and eliminate players with 11 trample infect damage.</li>
+                    </ol>
+                </div>
+                <div>
+                    <h4 style="font-size: 13px; text-transform: uppercase; color: var(--text-sub); margin-bottom: 8px;">Mulligan Priorities</h4>
+                    <div style="font-size: 13px; color: #cbd5e1; margin-bottom: 14px; line-height: 1.5;">
+                        <p style='margin-bottom: 6px;'><strong>Keep:</strong> ["Hands with 2 to 3 lands and at least two cheap ramp pieces (such as Llanowar Elves, Wild Growth, or Nature's Lore) that guarantee reaching six or seven mana by Turn 4."]</p><p><strong>Avoid:</strong> ['Hands with multiple 5+ mana payoffs, clone spells without early ramp, or insufficient colored mana sources.']</p>
+                    </div>
+                    <h4 style="font-size: 13px; text-transform: uppercase; color: var(--text-sub); margin-bottom: 8px;">Tactical Tips</h4><ul class="step-list" style="list-style: disc;"><li>Remember that token copies of legendary creatures will trigger enter-the-battlefield abilities before you must sacrifice one to the legend rule.</li><li>Prioritize casting opponents' card draw, extra turns, or high-impact permanents off Etali triggers before resolving low-impact utility spells.</li><li>Use Temur Sabertooth or Voyager Staff to save Etali from targeted exile or board wipes while resetting its powerful entrance trigger.</li></ul>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="info-card">
+            <h3>Strategic Weaknesses & Interaction Exploits</h3>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px;">
+                <div class="weakness-card weakness-critical">
+                    <h4 style="font-size: 13px; color: #ef4444; text-transform: uppercase;">Critical Vulnerabilities</h4>
+                    <ul class="weakness-list"><li>Rule of Law effects and heavy stax (such as Drannith Magistrate or Archon of Emeria) completely shut down Etali's ability to cast exiled spells.</li><li>Targeted counterspells against the initial seven-mana commander cast cause severe tempo loss and add commander tax.</li></ul>
+                </div>
+                <div class="weakness-card weakness-moderate">
+                    <h4 style="font-size: 13px; color: #f59e0b; text-transform: uppercase;">Moderate Friction Points</h4>
+                    <ul class="weakness-list"><li>Low density of instant-speed interaction leaves the deck vulnerable to faster combo strategies before Turn 4.</li><li>Dependence on opponents' libraries can occasionally result in low-impact hits against creature-light or synergy-dependent decks.</li></ul>
+                </div>
+                <div class="weakness-card weakness-minor">
+                    <h4 style="font-size: 13px; color: #3b82f6; text-transform: uppercase;">Minor Weaknesses</h4>
+                    <ul class="weakness-list"><li>Vulnerability to artifact or creature board wipes after overcommitting cloned boards.</li><li>High reliance on basic Forest and Mountain access for early land-ramp spells.</li></ul>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="info-card">
+            <h3>Key Engine Anchors</h3>
+            <div class="card-grid">
+                
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Etali%2C%20Primal%20Conqueror&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Etali%2C%20Primal%20Conqueror%22" target="_blank" rel="noopener">Etali, Primal Conqueror</a>
+                <span class="chip-role">Primary commander, massive card advantage engine, and alternate poison win condition.</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Twinflame&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Twinflame%22" target="_blank" rel="noopener">Twinflame</a>
+                <span class="chip-role">Low-cost sorcery clone that re-triggers Etali for four additional free spells.</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Heat%20Shimmer&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Heat%20Shimmer%22" target="_blank" rel="noopener">Heat Shimmer</a>
+                <span class="chip-role">Hasty temporary copy generator that triggers Etali's entrance ability and provides an immediate attacker.</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Orthion%2C%20Hero%20of%20Lavabrink&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Orthion%2C%20Hero%20of%20Lavabrink%22" target="_blank" rel="noopener">Orthion, Hero of Lavabrink</a>
+                <span class="chip-role">Repeatable clone engine that can create five hasty copies of Etali in late-game turns.</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Panharmonicon&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Panharmonicon%22" target="_blank" rel="noopener">Panharmonicon</a>
+                <span class="chip-role">Doubles all enter-the-battlefield triggers from Etali and supporting ramp creatures.</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Hellkite%20Courser&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Hellkite%20Courser%22" target="_blank" rel="noopener">Hellkite Courser</a>
+                <span class="chip-role">Cheats Etali directly from the command zone with haste on Turn 5 or 6, bypassing commander tax.</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Flameshadow%20Conjuring&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Flameshadow%20Conjuring%22" target="_blank" rel="noopener">Flameshadow Conjuring</a>
+                <span class="chip-role">Enchantment that creates a hasty token copy of Etali for a single red mana whenever it enters.</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Temur%20Sabertooth&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Temur%20Sabertooth%22" target="_blank" rel="noopener">Temur Sabertooth</a>
+                <span class="chip-role">Reusable bounce engine that protects Etali from removal and enables repeated casting.</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Delina%2C%20Wild%20Mage&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Delina%2C%20Wild%20Mage%22" target="_blank" rel="noopener">Delina, Wild Mage</a>
+                <span class="chip-role">Attack-triggered engine that creates non-legendary attacking token copies of Etali.</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Somberwald%20Sage&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Somberwald%20Sage%22" target="_blank" rel="noopener">Somberwald Sage</a>
+                <span class="chip-role">High-velocity accelerator that taps for three creature mana to enable Turn 4 Etali casts.</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Rhythm%20of%20the%20Wild&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Rhythm%20of%20the%20Wild%22" target="_blank" rel="noopener">Rhythm of the Wild</a>
+                <span class="chip-role">Prevents counterspells on creature spells and grants haste for immediate pressure.</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Rishkar%27s%20Expertise&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Rishkar%27s%20Expertise%22" target="_blank" rel="noopener">Rishkar's Expertise</a>
+                <span class="chip-role">Draws seven cards off Etali's base power and casts a follow-up clone spell for free.</span>
+            </div>
+            
+            </div>
+        </div>
+        
 
         <h2 style="margin-bottom: 16px; font-size: 20px;">12 Universal Benchmarks</h2>
         <table>
@@ -258,8 +423,8 @@
             <td><strong>Mana Velocity & Sufficiency</strong><br><span class="domain-sub">Resources</span></td>
             <td class="tier-col"><span class="tier-badge tier-a">A</span></td>
             <td class="score-col">5 / 10</td>
-            <td class="ledger-count-col">8</td>
-            <td class="just-col">Explosive Gruul ramp suite (12+ dorks and 2-CMC ramp) deploying 7-mana Etali by Turn 4–5.</td>
+            <td class="ledger-count-col">45</td>
+            <td class="just-col">Dense 1-mana dorks, wild growth enablers, 2-mana land fetchers, and burst ramp (Somberwald Sage, Selvala, Mana Geyser) enabling 7 mana by Turn 4.</td>
         </tr>
         
         <tr>
@@ -267,17 +432,17 @@
             <td><strong>Assembly Velocity</strong><br><span class="domain-sub">Access</span></td>
             <td class="tier-col"><span class="tier-badge tier-a">A</span></td>
             <td class="score-col">5 / 10</td>
-            <td class="ledger-count-col">0</td>
-            <td class="just-col">Casts Etali and triggers initial wave by Turn 4.5–5.</td>
+            <td class="ledger-count-col">5</td>
+            <td class="just-col">Engine comes online consistently on Turn 4 via explosive dork acceleration and cost reducers.</td>
         </tr>
         
         <tr>
             <td class="code-col"><strong>P1</strong></td>
             <td><strong>Critical Onset & Lethality</strong><br><span class="domain-sub">Pressure</span></td>
-            <td class="tier-col"><span class="tier-badge tier-b">B</span></td>
-            <td class="score-col">2 / 10</td>
-            <td class="ledger-count-col">0</td>
-            <td class="just-col">Presents massive multi-spell board parity break on Turns 5–6.</td>
+            <td class="tier-col"><span class="tier-badge tier-a">A</span></td>
+            <td class="score-col">5 / 10</td>
+            <td class="ledger-count-col">8</td>
+            <td class="just-col">Critical onset hits immediately on Turn 4 with Etali's initial cast flooding the board with stolen spells and hasty token copies.</td>
         </tr>
         
         <tr>
@@ -285,26 +450,26 @@
             <td><strong>Win Inevitability & Compactness</strong><br><span class="domain-sub">Pressure</span></td>
             <td class="tier-col"><span class="tier-badge tier-b">B</span></td>
             <td class="score-col">2 / 10</td>
-            <td class="ledger-count-col">0</td>
-            <td class="just-col">Requires 2 opponent untaps to close the game via combat or poison flip.</td>
+            <td class="ledger-count-col">3</td>
+            <td class="just-col">Requires 2 opponent response cycles to conclude games through combat damage or transforming into Etali, Primal Sickness for 11 poison.</td>
         </tr>
         
         <tr>
             <td class="code-col"><strong>R2</strong></td>
             <td><strong>Card Flow & Replenishment</strong><br><span class="domain-sub">Resources</span></td>
-            <td class="tier-col"><span class="tier-badge tier-a">A</span></td>
-            <td class="score-col">4 / 8</td>
-            <td class="ledger-count-col">0</td>
-            <td class="just-col">Etali cast triggers cast 4 free spells from pods; recurring copy/blink loops generate immense card advantage.</td>
+            <td class="tier-col"><span class="tier-badge tier-s">S</span></td>
+            <td class="score-col">8 / 8</td>
+            <td class="ledger-count-col">8</td>
+            <td class="just-col">S-tier card flow from Etali casting up to 4 free nonland spells from all players per entry, amplified by Rishkar's Expertise and Return of the Wildspeaker.</td>
         </tr>
         
         <tr>
             <td class="code-col"><strong>A1</strong></td>
             <td><strong>Selection & Redundancy</strong><br><span class="domain-sub">Access</span></td>
-            <td class="tier-col"><span class="tier-badge tier-b">B</span></td>
-            <td class="score-col">2 / 8</td>
-            <td class="ledger-count-col">0</td>
-            <td class="just-col">Redundancy of clone/blink and haste enablers (Twinflame, Heat Shimmer, Molten Duplication).</td>
+            <td class="tier-col"><span class="tier-badge tier-s">S</span></td>
+            <td class="score-col">8 / 8</td>
+            <td class="ledger-count-col">15</td>
+            <td class="just-col">S-tier redundancy with 15+ dedicated ETB clone and flicker spells (Twinflame, Heat Shimmer, Orthion, Panharmonicon, Delina, Conjurer's Closet).</td>
         </tr>
         
         <tr>
@@ -312,8 +477,8 @@
             <td><strong>Exposure & Predictability</strong><br><span class="domain-sub">Pressure</span></td>
             <td class="tier-col"><span class="tier-badge tier-b">B</span></td>
             <td class="score-col">2 / 8</td>
-            <td class="ledger-count-col">0</td>
-            <td class="just-col">Etali is telegraphed in the command zone, but ETB triggers resolve regardless of spot removal.</td>
+            <td class="ledger-count-col">2</td>
+            <td class="just-col">Exiled spells and command zone presence are public knowledge, telegraphing impending big turns.</td>
         </tr>
         
         <tr>
@@ -321,44 +486,44 @@
             <td><strong>Reactive Disruption</strong><br><span class="domain-sub">Interaction</span></td>
             <td class="tier-col"><span class="tier-badge tier-c">C</span></td>
             <td class="score-col">1 / 8</td>
-            <td class="ledger-count-col">2</td>
-            <td class="just-col">Light reactive interaction; primarily relies on stolen opponent spells.</td>
+            <td class="ledger-count-col">3</td>
+            <td class="just-col">Low disruption suite limited to Beast Within, Chaos Warp, and Blasphemous Act (C tier).</td>
         </tr>
         
         <tr>
             <td class="code-col"><strong>I2</strong></td>
             <td><strong>Proactive Denial & Restriction</strong><br><span class="domain-sub">Interaction</span></td>
-            <td class="tier-col"><span class="tier-badge tier-c">C</span></td>
-            <td class="score-col">1 / 8</td>
+            <td class="tier-col"><span class="tier-badge tier-f">F</span></td>
+            <td class="score-col">0 / 8</td>
             <td class="ledger-count-col">0</td>
-            <td class="just-col">Incidental board disruption via Etali hits; no intentional stax.</td>
+            <td class="just-col">Completely devoid of stax, taxing effects, or resource denial (F tier).</td>
         </tr>
         
         <tr>
             <td class="code-col"><strong>S1</strong></td>
             <td><strong>Plan Shielding & Protection</strong><br><span class="domain-sub">Resilience</span></td>
-            <td class="tier-col"><span class="tier-badge tier-b">B</span></td>
-            <td class="score-col">2 / 8</td>
-            <td class="ledger-count-col">1</td>
-            <td class="just-col">Moderate protection (Deflecting Swat, Heroic Intervention, Lightning Greaves).</td>
+            <td class="tier-col"><span class="tier-badge tier-c">C</span></td>
+            <td class="score-col">1 / 8</td>
+            <td class="ledger-count-col">5</td>
+            <td class="just-col">Fragile plan shielding: vulnerable to Rule of Law effects, Drannith Magistrate, and counterspells on the initial 7-mana cast (C tier).</td>
         </tr>
         
         <tr>
             <td class="code-col"><strong>S2</strong></td>
             <td><strong>Engine Recovery</strong><br><span class="domain-sub">Resilience</span></td>
-            <td class="tier-col"><span class="tier-badge tier-b">B</span></td>
-            <td class="score-col">1 / 4</td>
-            <td class="ledger-count-col">0</td>
-            <td class="just-col">Etali ETB restocks board immediately even after mass board wipes.</td>
+            <td class="tier-col"><span class="tier-badge tier-a">A</span></td>
+            <td class="score-col">2 / 4</td>
+            <td class="ledger-count-col">4</td>
+            <td class="just-col">High recovery through Temur Sabertooth bouncing, Eternal Witness recursion, and Hellkite Courser bypassing commander tax.</td>
         </tr>
         
         <tr>
             <td class="code-col"><strong>S3</strong></td>
             <td><strong>Independence & Backup Plans</strong><br><span class="domain-sub">Resilience</span></td>
-            <td class="tier-col"><span class="tier-badge tier-c">C</span></td>
-            <td class="score-col">0 / 4</td>
-            <td class="ledger-count-col">0</td>
-            <td class="just-col">Deck is built entirely around Etali's ETB trigger.</td>
+            <td class="tier-col"><span class="tier-badge tier-b">B</span></td>
+            <td class="score-col">1 / 4</td>
+            <td class="ledger-count-col">3</td>
+            <td class="just-col">Moderately reliant on Etali to generate card advantage, though clone targets and big stompy threats offer backup pressure (B tier).</td>
         </tr>
         
             </tbody>
@@ -370,48 +535,498 @@
         <div class="ledger-group">
             <div class="ledger-header">
                 <h3>R1: Mana Velocity & Sufficiency <span class="ledger-tier-tag tier-a">A</span></h3>
-                <span class="count-tag">8 cards</span>
+                <span class="count-tag">45 cards</span>
             </div>
             <div class="card-grid">
                 
-            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Arcane%20Signet&format=image&version=normal">
-                <a href="https://scryfall.com/search?q=!%22Arcane%20Signet%22" target="_blank" rel="noopener">Arcane Signet</a>
-                <span class="chip-role">Mana ramp / fixing</span>
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Arbor%20Elf&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Arbor%20Elf%22" target="_blank" rel="noopener">Arbor Elf</a>
+                <span class="chip-role">1-CMC dork untapping enchanted basic forests</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Elvish%20Mystic&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Elvish%20Mystic%22" target="_blank" rel="noopener">Elvish Mystic</a>
+                <span class="chip-role">1-CMC green mana dork</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Fyndhorn%20Elves&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Fyndhorn%20Elves%22" target="_blank" rel="noopener">Fyndhorn Elves</a>
+                <span class="chip-role">1-CMC green mana dork</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Llanowar%20Elves&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Llanowar%20Elves%22" target="_blank" rel="noopener">Llanowar Elves</a>
+                <span class="chip-role">1-CMC green mana dork</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Paradise%20Druid&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Paradise%20Druid%22" target="_blank" rel="noopener">Paradise Druid</a>
+                <span class="chip-role">2-CMC hexproof mana dork fixing both colors</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Somberwald%20Sage&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Somberwald%20Sage%22" target="_blank" rel="noopener">Somberwald Sage</a>
+                <span class="chip-role">Taps for 3 creature mana enabling Turn 4 Etali</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Selvala%2C%20Heart%20of%20the%20Wilds&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Selvala%2C%20Heart%20of%20the%20Wilds%22" target="_blank" rel="noopener">Selvala, Heart of the Wilds</a>
+                <span class="chip-role">Burst mana scaling with Etali's 7 power</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Sakura-Tribe%20Elder&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Sakura-Tribe%20Elder%22" target="_blank" rel="noopener">Sakura-Tribe Elder</a>
+                <span class="chip-role">Basic land ramp on sacrifice</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Wood%20Elves&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Wood%20Elves%22" target="_blank" rel="noopener">Wood Elves</a>
+                <span class="chip-role">Enters to search untapped Forest</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Topiary%20Stomper&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Topiary%20Stomper%22" target="_blank" rel="noopener">Topiary Stomper</a>
+                <span class="chip-role">Searches basic land onto battlefield tapped</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Solemn%20Simulacrum&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Solemn%20Simulacrum%22" target="_blank" rel="noopener">Solemn Simulacrum</a>
+                <span class="chip-role">Enters to ramp basic land and draws on death</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Savage%20Ventmaw&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Savage%20Ventmaw%22" target="_blank" rel="noopener">Savage Ventmaw</a>
+                <span class="chip-role">Adds 6 mana ({R}{R}{R}{G}{G}{G}) on attack</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Goblin%20Anarchomancer&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Goblin%20Anarchomancer%22" target="_blank" rel="noopener">Goblin Anarchomancer</a>
+                <span class="chip-role">Reduces red and green spell costs by 1</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Goreclaw%2C%20Terror%20of%20Qal%20Sisma&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Goreclaw%2C%20Terror%20of%20Qal%20Sisma%22" target="_blank" rel="noopener">Goreclaw, Terror of Qal Sisma</a>
+                <span class="chip-role">Reduces 4+ power creature spells by 2 mana</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Wild%20Growth&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Wild%20Growth%22" target="_blank" rel="noopener">Wild Growth</a>
+                <span class="chip-role">1-CMC land enchantment adding extra green mana</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Utopia%20Sprawl&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Utopia%20Sprawl%22" target="_blank" rel="noopener">Utopia Sprawl</a>
+                <span class="chip-role">1-CMC land enchantment adding chosen color</span>
             </div>
             
             <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Cultivate&format=image&version=normal">
                 <a href="https://scryfall.com/search?q=!%22Cultivate%22" target="_blank" rel="noopener">Cultivate</a>
-                <span class="chip-role">Mana ramp / fixing</span>
-            </div>
-            
-            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Rugged%20Highlands&format=image&version=normal">
-                <a href="https://scryfall.com/search?q=!%22Rugged%20Highlands%22" target="_blank" rel="noopener">Rugged Highlands</a>
-                <span class="chip-role">Mana ramp / fixing</span>
+                <span class="chip-role">3-CMC land ramp searching 2 basics</span>
             </div>
             
             <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Kodama%27s%20Reach&format=image&version=normal">
                 <a href="https://scryfall.com/search?q=!%22Kodama%27s%20Reach%22" target="_blank" rel="noopener">Kodama's Reach</a>
-                <span class="chip-role">Mana ramp / fixing</span>
+                <span class="chip-role">3-CMC land ramp searching 2 basics</span>
             </div>
             
-            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Myriad%20Landscape&format=image&version=normal">
-                <a href="https://scryfall.com/search?q=!%22Myriad%20Landscape%22" target="_blank" rel="noopener">Myriad Landscape</a>
-                <span class="chip-role">Mana ramp / fixing</span>
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Farseek&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Farseek%22" target="_blank" rel="noopener">Farseek</a>
+                <span class="chip-role">2-CMC search for Forest dual land</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Nature%27s%20Lore&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Nature%27s%20Lore%22" target="_blank" rel="noopener">Nature's Lore</a>
+                <span class="chip-role">2-CMC search for untapped Forest</span>
             </div>
             
             <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Rampant%20Growth&format=image&version=normal">
                 <a href="https://scryfall.com/search?q=!%22Rampant%20Growth%22" target="_blank" rel="noopener">Rampant Growth</a>
-                <span class="chip-role">Mana ramp / fixing</span>
+                <span class="chip-role">2-CMC search for basic land</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Skyshroud%20Claim&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Skyshroud%20Claim%22" target="_blank" rel="noopener">Skyshroud Claim</a>
+                <span class="chip-role">4-CMC search for 2 untapped Forests</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Mana%20Geyser&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Mana%20Geyser%22" target="_blank" rel="noopener">Mana Geyser</a>
+                <span class="chip-role">Burst red mana scaling with opponent tapped lands</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Seething%20Song&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Seething%20Song%22" target="_blank" rel="noopener">Seething Song</a>
+                <span class="chip-role">Burst ritual adding 5 red mana</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Frontier%20Siege&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Frontier%20Siege%22" target="_blank" rel="noopener">Frontier Siege</a>
+                <span class="chip-role">Adds {G}{G} at the beginning of each of your main phases</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Arcane%20Signet&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Arcane%20Signet%22" target="_blank" rel="noopener">Arcane Signet</a>
+                <span class="chip-role">2-CMC mana rock fixing</span>
             </div>
             
             <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Sol%20Ring&format=image&version=normal">
                 <a href="https://scryfall.com/search?q=!%22Sol%20Ring%22" target="_blank" rel="noopener">Sol Ring</a>
-                <span class="chip-role">Mana ramp / fixing</span>
+                <span class="chip-role">Premier fast mana acceleration</span>
             </div>
             
             <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Talisman%20of%20Impulse&format=image&version=normal">
                 <a href="https://scryfall.com/search?q=!%22Talisman%20of%20Impulse%22" target="_blank" rel="noopener">Talisman of Impulse</a>
-                <span class="chip-role">Mana ramp / fixing</span>
+                <span class="chip-role">2-CMC mana rock fixing</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Cursed%20Mirror&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Cursed%20Mirror%22" target="_blank" rel="noopener">Cursed Mirror</a>
+                <span class="chip-role">Mana rock entering as a copy of any creature with haste</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Cinder%20Glade&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Cinder%20Glade%22" target="_blank" rel="noopener">Cinder Glade</a>
+                <span class="chip-role">Tango dual land</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Command%20Tower&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Command%20Tower%22" target="_blank" rel="noopener">Command Tower</a>
+                <span class="chip-role">Untapped commander fixing</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Exotic%20Orchard&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Exotic%20Orchard%22" target="_blank" rel="noopener">Exotic Orchard</a>
+                <span class="chip-role">Untapped multi-color fixing</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Forest&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Forest%22" target="_blank" rel="noopener">Forest</a>
+                <span class="chip-role">Basic land mana (15 copies)</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Game%20Trail&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Game%20Trail%22" target="_blank" rel="noopener">Game Trail</a>
+                <span class="chip-role">Reveal snarl dual land</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Karplusan%20Forest&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Karplusan%20Forest%22" target="_blank" rel="noopener">Karplusan Forest</a>
+                <span class="chip-role">Untapped pain land</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Mossfire%20Valley&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Mossfire%20Valley%22" target="_blank" rel="noopener">Mossfire Valley</a>
+                <span class="chip-role">Filter dual land</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Mountain&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Mountain%22" target="_blank" rel="noopener">Mountain</a>
+                <span class="chip-role">Basic land mana (8 copies)</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Myriad%20Landscape&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Myriad%20Landscape%22" target="_blank" rel="noopener">Myriad Landscape</a>
+                <span class="chip-role">Double basic land ramp land</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Rockfall%20Vale&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Rockfall%20Vale%22" target="_blank" rel="noopener">Rockfall Vale</a>
+                <span class="chip-role">Check slow dual land</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Rogue%27s%20Passage&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Rogue%27s%20Passage%22" target="_blank" rel="noopener">Rogue's Passage</a>
+                <span class="chip-role">Utility unblockable land</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Rootbound%20Crag&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Rootbound%20Crag%22" target="_blank" rel="noopener">Rootbound Crag</a>
+                <span class="chip-role">Check dual land</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Rugged%20Highlands&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Rugged%20Highlands%22" target="_blank" rel="noopener">Rugged Highlands</a>
+                <span class="chip-role">Gain land fixing</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Sheltered%20Thicket&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Sheltered%20Thicket%22" target="_blank" rel="noopener">Sheltered Thicket</a>
+                <span class="chip-role">Cycling dual land</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Spire%20Garden&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Spire%20Garden%22" target="_blank" rel="noopener">Spire Garden</a>
+                <span class="chip-role">Untapped bond land</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Temple%20of%20Abandon&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Temple%20of%20Abandon%22" target="_blank" rel="noopener">Temple of Abandon</a>
+                <span class="chip-role">Scry dual land</span>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="ledger-group">
+            <div class="ledger-header">
+                <h3>A2: Assembly Velocity <span class="ledger-tier-tag tier-a">A</span></h3>
+                <span class="count-tag">5 cards</span>
+            </div>
+            <div class="card-grid">
+                
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Etali%2C%20Primal%20Conqueror&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Etali%2C%20Primal%20Conqueror%22" target="_blank" rel="noopener">Etali, Primal Conqueror</a>
+                <span class="chip-role">Commander deployed on Turn 4 to launch primary engine</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Hellkite%20Courser&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Hellkite%20Courser%22" target="_blank" rel="noopener">Hellkite Courser</a>
+                <span class="chip-role">Cheats Etali from command zone with haste on Turn 5</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Somberwald%20Sage&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Somberwald%20Sage%22" target="_blank" rel="noopener">Somberwald Sage</a>
+                <span class="chip-role">Accelerates 3 creature mana to cast Etali on Turn 4</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Selvala%2C%20Heart%20of%20the%20Wilds&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Selvala%2C%20Heart%20of%20the%20Wilds%22" target="_blank" rel="noopener">Selvala, Heart of the Wilds</a>
+                <span class="chip-role">Generates massive mana to cast Etali and follow-up clones</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Rhythm%20of%20the%20Wild&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Rhythm%20of%20the%20Wild%22" target="_blank" rel="noopener">Rhythm of the Wild</a>
+                <span class="chip-role">Grants haste to Etali for immediate combat pressure</span>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="ledger-group">
+            <div class="ledger-header">
+                <h3>P1: Critical Onset & Lethality <span class="ledger-tier-tag tier-a">A</span></h3>
+                <span class="count-tag">8 cards</span>
+            </div>
+            <div class="card-grid">
+                
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Etali%2C%20Primal%20Conqueror&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Etali%2C%20Primal%20Conqueror%22" target="_blank" rel="noopener">Etali, Primal Conqueror</a>
+                <span class="chip-role">Floods board with 4 free stolen spells on Turn 4</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Etali%2C%20Primal%20Sickness&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Etali%2C%20Primal%20Sickness%22" target="_blank" rel="noopener">Etali, Primal Sickness</a>
+                <span class="chip-role">11/11 indestructible trampler with infect eliminating in 1 hit</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Orthion%2C%20Hero%20of%20Lavabrink&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Orthion%2C%20Hero%20of%20Lavabrink%22" target="_blank" rel="noopener">Orthion, Hero of Lavabrink</a>
+                <span class="chip-role">Creates five 7/7 hasty Etali beaters</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Delina%2C%20Wild%20Mage&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Delina%2C%20Wild%20Mage%22" target="_blank" rel="noopener">Delina, Wild Mage</a>
+                <span class="chip-role">Spawns attacking Etali copies</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Heat%20Shimmer&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Heat%20Shimmer%22" target="_blank" rel="noopener">Heat Shimmer</a>
+                <span class="chip-role">Hasty 7/7 attacker</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Twinflame&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Twinflame%22" target="_blank" rel="noopener">Twinflame</a>
+                <span class="chip-role">Hasty 7/7 attacker</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Savage%20Ventmaw&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Savage%20Ventmaw%22" target="_blank" rel="noopener">Savage Ventmaw</a>
+                <span class="chip-role">4/4 flying combat threat</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Goreclaw%2C%20Terror%20of%20Qal%20Sisma&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Goreclaw%2C%20Terror%20of%20Qal%20Sisma%22" target="_blank" rel="noopener">Goreclaw, Terror of Qal Sisma</a>
+                <span class="chip-role">4/3 trampling combat buff</span>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="ledger-group">
+            <div class="ledger-header">
+                <h3>P2: Win Inevitability & Compactness <span class="ledger-tier-tag tier-b">B</span></h3>
+                <span class="count-tag">3 cards</span>
+            </div>
+            <div class="card-grid">
+                
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Etali%2C%20Primal%20Sickness&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Etali%2C%20Primal%20Sickness%22" target="_blank" rel="noopener">Etali, Primal Sickness</a>
+                <span class="chip-role">1-shot infect combat elimination requiring combat step</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Orthion%2C%20Hero%20of%20Lavabrink&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Orthion%2C%20Hero%20of%20Lavabrink%22" target="_blank" rel="noopener">Orthion, Hero of Lavabrink</a>
+                <span class="chip-role">Mass token overrun requiring combat step</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Rogue%27s%20Passage&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Rogue%27s%20Passage%22" target="_blank" rel="noopener">Rogue's Passage</a>
+                <span class="chip-role">Makes Etali unblockable for guaranteed poison finish</span>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="ledger-group">
+            <div class="ledger-header">
+                <h3>R2: Card Flow & Replenishment <span class="ledger-tier-tag tier-s">S</span></h3>
+                <span class="count-tag">8 cards</span>
+            </div>
+            <div class="card-grid">
+                
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Etali%2C%20Primal%20Conqueror&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Etali%2C%20Primal%20Conqueror%22" target="_blank" rel="noopener">Etali, Primal Conqueror</a>
+                <span class="chip-role">Exiles and casts up to 4 free nonland spells from all players on ETB</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Etali%2C%20Primal%20Storm&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Etali%2C%20Primal%20Storm%22" target="_blank" rel="noopener">Etali, Primal Storm</a>
+                <span class="chip-role">Exiles and casts free spells from all players on attack</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Rishkar%27s%20Expertise&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Rishkar%27s%20Expertise%22" target="_blank" rel="noopener">Rishkar's Expertise</a>
+                <span class="chip-role">Draws 7 cards off Etali's power and casts free 5-CMC spell</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Return%20of%20the%20Wildspeaker&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Return%20of%20the%20Wildspeaker%22" target="_blank" rel="noopener">Return of the Wildspeaker</a>
+                <span class="chip-role">Draws 7 cards at instant speed off Etali's power</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Garruk%27s%20Uprising&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Garruk%27s%20Uprising%22" target="_blank" rel="noopener">Garruk's Uprising</a>
+                <span class="chip-role">Draws a card on 4+ power creature entries</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Lifecrafter%27s%20Bestiary&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Lifecrafter%27s%20Bestiary%22" target="_blank" rel="noopener">Lifecrafter's Bestiary</a>
+                <span class="chip-role">Scries on upkeep and draws a card on creature casts</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Disciple%20of%20Freyalise&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Disciple%20of%20Freyalise%22" target="_blank" rel="noopener">Disciple of Freyalise</a>
+                <span class="chip-role">MDFC creature sacrificing a creature to draw cards</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Chandra%2C%20Flameshaper&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Chandra%2C%20Flameshaper%22" target="_blank" rel="noopener">Chandra, Flameshaper</a>
+                <span class="chip-role">Impulse card exile or sweeper</span>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="ledger-group">
+            <div class="ledger-header">
+                <h3>A1: Selection & Redundancy <span class="ledger-tier-tag tier-s">S</span></h3>
+                <span class="count-tag">15 cards</span>
+            </div>
+            <div class="card-grid">
+                
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Twinflame&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Twinflame%22" target="_blank" rel="noopener">Twinflame</a>
+                <span class="chip-role">Sorcery creating hasty token copies of Etali</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Heat%20Shimmer&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Heat%20Shimmer%22" target="_blank" rel="noopener">Heat Shimmer</a>
+                <span class="chip-role">Sorcery creating hasty token copy of Etali</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Electroduplicate&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Electroduplicate%22" target="_blank" rel="noopener">Electroduplicate</a>
+                <span class="chip-role">Sorcery creating token copies</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Orthion%2C%20Hero%20of%20Lavabrink&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Orthion%2C%20Hero%20of%20Lavabrink%22" target="_blank" rel="noopener">Orthion, Hero of Lavabrink</a>
+                <span class="chip-role">Creates 1 or 5 hasty token copies of Etali</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Delina%2C%20Wild%20Mage&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Delina%2C%20Wild%20Mage%22" target="_blank" rel="noopener">Delina, Wild Mage</a>
+                <span class="chip-role">Creates non-legendary attacking token copies of Etali</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Jaxis%2C%20the%20Troublemaker&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Jaxis%2C%20the%20Troublemaker%22" target="_blank" rel="noopener">Jaxis, the Troublemaker</a>
+                <span class="chip-role">Blitzes hasty token copy of Etali drawing on death</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Flameshadow%20Conjuring&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Flameshadow%20Conjuring%22" target="_blank" rel="noopener">Flameshadow Conjuring</a>
+                <span class="chip-role">Creates hasty token copy of Etali on ETB for 1 red</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Mirage%20Phalanx&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Mirage%20Phalanx%22" target="_blank" rel="noopener">Mirage Phalanx</a>
+                <span class="chip-role">Soulbond creates hasty token copy of Etali each combat</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Mirror%20March&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Mirror%20March%22" target="_blank" rel="noopener">Mirror March</a>
+                <span class="chip-role">Coin flips create multiple hasty token copies on ETB</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Helm%20of%20the%20Host&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Helm%20of%20the%20Host%22" target="_blank" rel="noopener">Helm of the Host</a>
+                <span class="chip-role">Creates non-legendary token copy of Etali at combat</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Blade%20of%20Selves&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Blade%20of%20Selves%22" target="_blank" rel="noopener">Blade of Selves</a>
+                <span class="chip-role">Myriad creates 2 attacking token copies of Etali</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Panharmonicon&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Panharmonicon%22" target="_blank" rel="noopener">Panharmonicon</a>
+                <span class="chip-role">Doubles all ETB triggers from Etali and ramp creatures</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Strionic%20Resonator&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Strionic%20Resonator%22" target="_blank" rel="noopener">Strionic Resonator</a>
+                <span class="chip-role">Copies Etali's triggered ETB ability</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Conjurer%27s%20Closet&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Conjurer%27s%20Closet%22" target="_blank" rel="noopener">Conjurer's Closet</a>
+                <span class="chip-role">End-step blink to re-trigger Etali for 4 free spells</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Springheart%20Nantuko&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Springheart%20Nantuko%22" target="_blank" rel="noopener">Springheart Nantuko</a>
+                <span class="chip-role">Bestow landfall creates token copies of enchanted creature</span>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="ledger-group">
+            <div class="ledger-header">
+                <h3>P3: Exposure & Predictability <span class="ledger-tier-tag tier-b">B</span></h3>
+                <span class="count-tag">2 cards</span>
+            </div>
+            <div class="card-grid">
+                
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Etali%2C%20Primal%20Conqueror&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Etali%2C%20Primal%20Conqueror%22" target="_blank" rel="noopener">Etali, Primal Conqueror</a>
+                <span class="chip-role">Visible commander and exiled cards are public knowledge</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Panharmonicon&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Panharmonicon%22" target="_blank" rel="noopener">Panharmonicon</a>
+                <span class="chip-role">Board-visible artifact telegraphing trigger explosions</span>
             </div>
             
             </div>
@@ -420,18 +1035,23 @@
         <div class="ledger-group">
             <div class="ledger-header">
                 <h3>I1: Reactive Disruption <span class="ledger-tier-tag tier-c">C</span></h3>
-                <span class="count-tag">2 cards</span>
+                <span class="count-tag">3 cards</span>
             </div>
             <div class="card-grid">
                 
             <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Beast%20Within&format=image&version=normal">
                 <a href="https://scryfall.com/search?q=!%22Beast%20Within%22" target="_blank" rel="noopener">Beast Within</a>
-                <span class="chip-role">Instant-speed reactive removal</span>
+                <span class="chip-role">Instant permanent destruction</span>
             </div>
             
             <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Chaos%20Warp&format=image&version=normal">
                 <a href="https://scryfall.com/search?q=!%22Chaos%20Warp%22" target="_blank" rel="noopener">Chaos Warp</a>
-                <span class="chip-role">Instant-speed reactive removal</span>
+                <span class="chip-role">Instant permanent tuck removal</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Blasphemous%20Act&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Blasphemous%20Act%22" target="_blank" rel="noopener">Blasphemous Act</a>
+                <span class="chip-role">1-mana creature damage sweeper</span>
             </div>
             
             </div>
@@ -439,14 +1059,89 @@
         
         <div class="ledger-group">
             <div class="ledger-header">
-                <h3>S1: Plan Shielding & Protection <span class="ledger-tier-tag tier-b">B</span></h3>
-                <span class="count-tag">1 cards</span>
+                <h3>S1: Plan Shielding & Protection <span class="ledger-tier-tag tier-c">C</span></h3>
+                <span class="count-tag">5 cards</span>
             </div>
             <div class="card-grid">
                 
             <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Swiftfoot%20Boots&format=image&version=normal">
                 <a href="https://scryfall.com/search?q=!%22Swiftfoot%20Boots%22" target="_blank" rel="noopener">Swiftfoot Boots</a>
-                <span class="chip-role">Board / commander protection</span>
+                <span class="chip-role">Grants hexproof and haste</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Tamiyo%27s%20Safekeeping&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Tamiyo%27s%20Safekeeping%22" target="_blank" rel="noopener">Tamiyo's Safekeeping</a>
+                <span class="chip-role">Instant hexproof and indestructible protection</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Rhythm%20of%20the%20Wild&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Rhythm%20of%20the%20Wild%22" target="_blank" rel="noopener">Rhythm of the Wild</a>
+                <span class="chip-role">Prevents creature spells from being countered</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Temur%20Sabertooth&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Temur%20Sabertooth%22" target="_blank" rel="noopener">Temur Sabertooth</a>
+                <span class="chip-role">Bounces Etali to hand to dodge removal</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Voyager%20Staff&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Voyager%20Staff%22" target="_blank" rel="noopener">Voyager Staff</a>
+                <span class="chip-role">Exiles Etali until end step to dodge board wipes</span>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="ledger-group">
+            <div class="ledger-header">
+                <h3>S2: Engine Recovery <span class="ledger-tier-tag tier-a">A</span></h3>
+                <span class="count-tag">4 cards</span>
+            </div>
+            <div class="card-grid">
+                
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Eternal%20Witness&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Eternal%20Witness%22" target="_blank" rel="noopener">Eternal Witness</a>
+                <span class="chip-role">Returns any card from graveyard to hand</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Reclaim&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Reclaim%22" target="_blank" rel="noopener">Reclaim</a>
+                <span class="chip-role">Puts card from graveyard on top of library</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Temur%20Sabertooth&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Temur%20Sabertooth%22" target="_blank" rel="noopener">Temur Sabertooth</a>
+                <span class="chip-role">Bounces Etali to hand to replay and re-trigger</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Hellkite%20Courser&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Hellkite%20Courser%22" target="_blank" rel="noopener">Hellkite Courser</a>
+                <span class="chip-role">Cheats Etali from command zone ignoring commander tax</span>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="ledger-group">
+            <div class="ledger-header">
+                <h3>S3: Independence & Backup Plans <span class="ledger-tier-tag tier-b">B</span></h3>
+                <span class="count-tag">3 cards</span>
+            </div>
+            <div class="card-grid">
+                
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Etali%2C%20Primal%20Storm&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Etali%2C%20Primal%20Storm%22" target="_blank" rel="noopener">Etali, Primal Storm</a>
+                <span class="chip-role">Autonomous free spell exile engine on attack</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Savage%20Ventmaw&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Savage%20Ventmaw%22" target="_blank" rel="noopener">Savage Ventmaw</a>
+                <span class="chip-role">Autonomous mana and air threat</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Delina%2C%20Wild%20Mage&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Delina%2C%20Wild%20Mage%22" target="_blank" rel="noopener">Delina, Wild Mage</a>
+                <span class="chip-role">Autonomous token generation with other creatures</span>
             </div>
             
             </div>

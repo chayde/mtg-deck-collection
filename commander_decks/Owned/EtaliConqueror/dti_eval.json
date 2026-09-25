@@ -1,93 +1,244 @@
 {
+  "deck_name": "EtaliConqueror",
+  "thematic_restriction": false,
   "grades": {
     "r1": "A",
-    "r2": "A",
-    "a1": "B",
+    "r2": "S",
+    "a1": "S",
     "a2": "A",
-    "p1": "B",
+    "p1": "A",
     "p2": "B",
     "p3": "B",
     "i1": "C",
-    "i2": "C",
-    "s1": "B",
-    "s2": "B",
-    "s3": "C"
+    "i2": "F",
+    "s1": "C",
+    "s2": "A",
+    "s3": "B"
   },
   "justifications": {
-    "r1": "Explosive Gruul ramp suite (12+ dorks and 2-CMC ramp) deploying 7-mana Etali by Turn 4–5.",
-    "r2": "Etali cast triggers cast 4 free spells from pods; recurring copy/blink loops generate immense card advantage.",
-    "a1": "Redundancy of clone/blink and haste enablers (Twinflame, Heat Shimmer, Molten Duplication).",
-    "a2": "Casts Etali and triggers initial wave by Turn 4.5–5.",
-    "p1": "Presents massive multi-spell board parity break on Turns 5–6.",
-    "p2": "Requires 2 opponent untaps to close the game via combat or poison flip.",
-    "p3": "Etali is telegraphed in the command zone, but ETB triggers resolve regardless of spot removal.",
-    "i1": "Light reactive interaction; primarily relies on stolen opponent spells.",
-    "i2": "Incidental board disruption via Etali hits; no intentional stax.",
-    "s1": "Moderate protection (Deflecting Swat, Heroic Intervention, Lightning Greaves).",
-    "s2": "Etali ETB restocks board immediately even after mass board wipes.",
-    "s3": "Deck is built entirely around Etali's ETB trigger."
+    "r1": "Dense 1-mana dorks, wild growth enablers, 2-mana land fetchers, and burst ramp (Somberwald Sage, Selvala, Mana Geyser) enabling 7 mana by Turn 4.",
+    "r2": "S-tier card flow from Etali casting up to 4 free nonland spells from all players per entry, amplified by Rishkar's Expertise and Return of the Wildspeaker.",
+    "a1": "S-tier redundancy with 15+ dedicated ETB clone and flicker spells (Twinflame, Heat Shimmer, Orthion, Panharmonicon, Delina, Conjurer's Closet).",
+    "a2": "Engine comes online consistently on Turn 4 via explosive dork acceleration and cost reducers.",
+    "p1": "Critical onset hits immediately on Turn 4 with Etali's initial cast flooding the board with stolen spells and hasty token copies.",
+    "p2": "Requires 2 opponent response cycles to conclude games through combat damage or transforming into Etali, Primal Sickness for 11 poison.",
+    "p3": "Exiled spells and command zone presence are public knowledge, telegraphing impending big turns.",
+    "i1": "Low disruption suite limited to Beast Within, Chaos Warp, and Blasphemous Act (C tier).",
+    "i2": "Completely devoid of stax, taxing effects, or resource denial (F tier).",
+    "s1": "Fragile plan shielding: vulnerable to Rule of Law effects, Drannith Magistrate, and counterspells on the initial 7-mana cast (C tier).",
+    "s2": "High recovery through Temur Sabertooth bouncing, Eternal Witness recursion, and Hellkite Courser bypassing commander tax.",
+    "s3": "Moderately reliant on Etali to generate card advantage, though clone targets and big stompy threats offer backup pressure (B tier)."
   },
+  "overview": "This Gruul deck is an explosive big-mana stompy strategy built around Etali, Primal Conqueror. The primary game plan focuses on rapid early ramp using 1-mana dorks, land-fetching sorceries, and cost reducers to cast Etali ahead of curve by Turn 4. Upon entering the battlefield, Etali immediately triggers to cast up to four free nonland spells from all players' libraries. The deck magnifies this overwhelming card advantage using a deep suite of temporary clone spells, blink effects, and trigger multipliers like Twinflame, Heat Shimmer, Orthion, Hero of Lavabrink, and Panharmonicon. Each additional trigger generates exponential board presence and card velocity. The deck closes out games either by overwhelming the table with large stolen boards and token copies or by transforming Etali into Etali, Primal Sickness, an 11/11 indestructible trampler that eliminates opponents in a single swing via poison counters. While highly explosive and resilient to countermagic thanks to redundancy, it relies on proactive threats over defensive interaction.",
+  "primer": {
+    "core_strategy": [
+      "Accelerate Mana: Use one-drop mana elves, land-ramp spells, and mana rocks on Turns 1 through 3 to reach seven mana as fast as possible.",
+      "Deploy the Commander: Cast Etali, Primal Conqueror on Turn 4 to exile and cast four free nonland spells from across the table.",
+      "Multiply Triggers: Use temporary clone spells like Twinflame and permanents like Panharmonicon to copy Etali repeatedly for massive card and mana advantage.",
+      "Close the Game: Overwhelm the board with stolen threats or pay nine mana to transform Etali into Etali, Primal Sickness and eliminate players with 11 trample infect damage."
+    ],
+    "mulligan_priorities": {
+      "keep": [
+        "Hands with 2 to 3 lands and at least two cheap ramp pieces (such as Llanowar Elves, Wild Growth, or Nature's Lore) that guarantee reaching six or seven mana by Turn 4."
+      ],
+      "avoid": [
+        "Hands with multiple 5+ mana payoffs, clone spells without early ramp, or insufficient colored mana sources."
+      ]
+    },
+    "key_tips": [
+      "Remember that token copies of legendary creatures will trigger enter-the-battlefield abilities before you must sacrifice one to the legend rule.",
+      "Prioritize casting opponents' card draw, extra turns, or high-impact permanents off Etali triggers before resolving low-impact utility spells.",
+      "Use Temur Sabertooth or Voyager Staff to save Etali from targeted exile or board wipes while resetting its powerful entrance trigger."
+    ]
+  },
+  "weaknesses": {
+    "critical": [
+      "Rule of Law effects and heavy stax (such as Drannith Magistrate or Archon of Emeria) completely shut down Etali's ability to cast exiled spells.",
+      "Targeted counterspells against the initial seven-mana commander cast cause severe tempo loss and add commander tax."
+    ],
+    "moderate": [
+      "Low density of instant-speed interaction leaves the deck vulnerable to faster combo strategies before Turn 4.",
+      "Dependence on opponents' libraries can occasionally result in low-impact hits against creature-light or synergy-dependent decks."
+    ],
+    "minor": [
+      "Vulnerability to artifact or creature board wipes after overcommitting cloned boards.",
+      "High reliance on basic Forest and Mountain access for early land-ramp spells."
+    ]
+  },
+  "key_cards": [
+    {
+      "card": "Etali, Primal Conqueror",
+      "note": "Primary commander, massive card advantage engine, and alternate poison win condition."
+    },
+    {
+      "card": "Twinflame",
+      "note": "Low-cost sorcery clone that re-triggers Etali for four additional free spells."
+    },
+    {
+      "card": "Heat Shimmer",
+      "note": "Hasty temporary copy generator that triggers Etali's entrance ability and provides an immediate attacker."
+    },
+    {
+      "card": "Orthion, Hero of Lavabrink",
+      "note": "Repeatable clone engine that can create five hasty copies of Etali in late-game turns."
+    },
+    {
+      "card": "Panharmonicon",
+      "note": "Doubles all enter-the-battlefield triggers from Etali and supporting ramp creatures."
+    },
+    {
+      "card": "Hellkite Courser",
+      "note": "Cheats Etali directly from the command zone with haste on Turn 5 or 6, bypassing commander tax."
+    },
+    {
+      "card": "Flameshadow Conjuring",
+      "note": "Enchantment that creates a hasty token copy of Etali for a single red mana whenever it enters."
+    },
+    {
+      "card": "Temur Sabertooth",
+      "note": "Reusable bounce engine that protects Etali from removal and enables repeated casting."
+    },
+    {
+      "card": "Delina, Wild Mage",
+      "note": "Attack-triggered engine that creates non-legendary attacking token copies of Etali."
+    },
+    {
+      "card": "Somberwald Sage",
+      "note": "High-velocity accelerator that taps for three creature mana to enable Turn 4 Etali casts."
+    },
+    {
+      "card": "Rhythm of the Wild",
+      "note": "Prevents counterspells on creature spells and grants haste for immediate pressure."
+    },
+    {
+      "card": "Rishkar's Expertise",
+      "note": "Draws seven cards off Etali's base power and casts a follow-up clone spell for free."
+    }
+  ],
   "card_ledger": {
     "r1": [
-      {
-        "card": "Arcane Signet",
-        "role": "Mana ramp / fixing"
-      },
-      {
-        "card": "Cultivate",
-        "role": "Mana ramp / fixing"
-      },
-      {
-        "card": "Rugged Highlands",
-        "role": "Mana ramp / fixing"
-      },
-      {
-        "card": "Kodama's Reach",
-        "role": "Mana ramp / fixing"
-      },
-      {
-        "card": "Myriad Landscape",
-        "role": "Mana ramp / fixing"
-      },
-      {
-        "card": "Rampant Growth",
-        "role": "Mana ramp / fixing"
-      },
-      {
-        "card": "Sol Ring",
-        "role": "Mana ramp / fixing"
-      },
-      {
-        "card": "Talisman of Impulse",
-        "role": "Mana ramp / fixing"
-      }
+      { "card": "Arbor Elf", "role": "1-CMC dork untapping enchanted basic forests" },
+      { "card": "Elvish Mystic", "role": "1-CMC green mana dork" },
+      { "card": "Fyndhorn Elves", "role": "1-CMC green mana dork" },
+      { "card": "Llanowar Elves", "role": "1-CMC green mana dork" },
+      { "card": "Paradise Druid", "role": "2-CMC hexproof mana dork fixing both colors" },
+      { "card": "Somberwald Sage", "role": "Taps for 3 creature mana enabling Turn 4 Etali" },
+      { "card": "Selvala, Heart of the Wilds", "role": "Burst mana scaling with Etali's 7 power" },
+      { "card": "Sakura-Tribe Elder", "role": "Basic land ramp on sacrifice" },
+      { "card": "Wood Elves", "role": "Enters to search untapped Forest" },
+      { "card": "Topiary Stomper", "role": "Searches basic land onto battlefield tapped" },
+      { "card": "Solemn Simulacrum", "role": "Enters to ramp basic land and draws on death" },
+      { "card": "Savage Ventmaw", "role": "Adds 6 mana ({R}{R}{R}{G}{G}{G}) on attack" },
+      { "card": "Goblin Anarchomancer", "role": "Reduces red and green spell costs by 1" },
+      { "card": "Goreclaw, Terror of Qal Sisma", "role": "Reduces 4+ power creature spells by 2 mana" },
+      { "card": "Wild Growth", "role": "1-CMC land enchantment adding extra green mana" },
+      { "card": "Utopia Sprawl", "role": "1-CMC land enchantment adding chosen color" },
+      { "card": "Cultivate", "role": "3-CMC land ramp searching 2 basics" },
+      { "card": "Kodama's Reach", "role": "3-CMC land ramp searching 2 basics" },
+      { "card": "Farseek", "role": "2-CMC search for Forest dual land" },
+      { "card": "Nature's Lore", "role": "2-CMC search for untapped Forest" },
+      { "card": "Rampant Growth", "role": "2-CMC search for basic land" },
+      { "card": "Skyshroud Claim", "role": "4-CMC search for 2 untapped Forests" },
+      { "card": "Mana Geyser", "role": "Burst red mana scaling with opponent tapped lands" },
+      { "card": "Seething Song", "role": "Burst ritual adding 5 red mana" },
+      { "card": "Frontier Siege", "role": "Adds {G}{G} at the beginning of each of your main phases" },
+      { "card": "Arcane Signet", "role": "2-CMC mana rock fixing" },
+      { "card": "Sol Ring", "role": "Premier fast mana acceleration" },
+      { "card": "Talisman of Impulse", "role": "2-CMC mana rock fixing" },
+      { "card": "Cursed Mirror", "role": "Mana rock entering as a copy of any creature with haste" },
+      { "card": "Cinder Glade", "role": "Tango dual land" },
+      { "card": "Command Tower", "role": "Untapped commander fixing" },
+      { "card": "Exotic Orchard", "role": "Untapped multi-color fixing" },
+      { "card": "Forest", "role": "Basic land mana (15 copies)" },
+      { "card": "Game Trail", "role": "Reveal snarl dual land" },
+      { "card": "Karplusan Forest", "role": "Untapped pain land" },
+      { "card": "Mossfire Valley", "role": "Filter dual land" },
+      { "card": "Mountain", "role": "Basic land mana (8 copies)" },
+      { "card": "Myriad Landscape", "role": "Double basic land ramp land" },
+      { "card": "Rockfall Vale", "role": "Check slow dual land" },
+      { "card": "Rogue's Passage", "role": "Utility unblockable land" },
+      { "card": "Rootbound Crag", "role": "Check dual land" },
+      { "card": "Rugged Highlands", "role": "Gain land fixing" },
+      { "card": "Sheltered Thicket", "role": "Cycling dual land" },
+      { "card": "Spire Garden", "role": "Untapped bond land" },
+      { "card": "Temple of Abandon", "role": "Scry dual land" }
     ],
-    "a2": [],
-    "p1": [],
-    "p2": [],
-    "r2": [],
-    "a1": [],
-    "p3": [],
+    "r2": [
+      { "card": "Etali, Primal Conqueror", "role": "Exiles and casts up to 4 free nonland spells from all players on ETB" },
+      { "card": "Etali, Primal Storm", "role": "Exiles and casts free spells from all players on attack" },
+      { "card": "Rishkar's Expertise", "role": "Draws 7 cards off Etali's power and casts free 5-CMC spell" },
+      { "card": "Return of the Wildspeaker", "role": "Draws 7 cards at instant speed off Etali's power" },
+      { "card": "Garruk's Uprising", "role": "Draws a card on 4+ power creature entries" },
+      { "card": "Lifecrafter's Bestiary", "role": "Scries on upkeep and draws a card on creature casts" },
+      { "card": "Disciple of Freyalise", "role": "MDFC creature sacrificing a creature to draw cards" },
+      { "card": "Chandra, Flameshaper", "role": "Impulse card exile or sweeper" }
+    ],
+    "a1": [
+      { "card": "Twinflame", "role": "Sorcery creating hasty token copies of Etali" },
+      { "card": "Heat Shimmer", "role": "Sorcery creating hasty token copy of Etali" },
+      { "card": "Electroduplicate", "role": "Sorcery creating token copies" },
+      { "card": "Orthion, Hero of Lavabrink", "role": "Creates 1 or 5 hasty token copies of Etali" },
+      { "card": "Delina, Wild Mage", "role": "Creates non-legendary attacking token copies of Etali" },
+      { "card": "Jaxis, the Troublemaker", "role": "Blitzes hasty token copy of Etali drawing on death" },
+      { "card": "Flameshadow Conjuring", "role": "Creates hasty token copy of Etali on ETB for 1 red" },
+      { "card": "Mirage Phalanx", "role": "Soulbond creates hasty token copy of Etali each combat" },
+      { "card": "Mirror March", "role": "Coin flips create multiple hasty token copies on ETB" },
+      { "card": "Helm of the Host", "role": "Creates non-legendary token copy of Etali at combat" },
+      { "card": "Blade of Selves", "role": "Myriad creates 2 attacking token copies of Etali" },
+      { "card": "Panharmonicon", "role": "Doubles all ETB triggers from Etali and ramp creatures" },
+      { "card": "Strionic Resonator", "role": "Copies Etali's triggered ETB ability" },
+      { "card": "Conjurer's Closet", "role": "End-step blink to re-trigger Etali for 4 free spells" },
+      { "card": "Springheart Nantuko", "role": "Bestow landfall creates token copies of enchanted creature" }
+    ],
+    "a2": [
+      { "card": "Etali, Primal Conqueror", "role": "Commander deployed on Turn 4 to launch primary engine" },
+      { "card": "Hellkite Courser", "role": "Cheats Etali from command zone with haste on Turn 5" },
+      { "card": "Somberwald Sage", "role": "Accelerates 3 creature mana to cast Etali on Turn 4" },
+      { "card": "Selvala, Heart of the Wilds", "role": "Generates massive mana to cast Etali and follow-up clones" },
+      { "card": "Rhythm of the Wild", "role": "Grants haste to Etali for immediate combat pressure" }
+    ],
+    "p1": [
+      { "card": "Etali, Primal Conqueror", "role": "Floods board with 4 free stolen spells on Turn 4" },
+      { "card": "Etali, Primal Sickness", "role": "11/11 indestructible trampler with infect eliminating in 1 hit" },
+      { "card": "Orthion, Hero of Lavabrink", "role": "Creates five 7/7 hasty Etali beaters" },
+      { "card": "Delina, Wild Mage", "role": "Spawns attacking Etali copies" },
+      { "card": "Heat Shimmer", "role": "Hasty 7/7 attacker" },
+      { "card": "Twinflame", "role": "Hasty 7/7 attacker" },
+      { "card": "Savage Ventmaw", "role": "4/4 flying combat threat" },
+      { "card": "Goreclaw, Terror of Qal Sisma", "role": "4/3 trampling combat buff" }
+    ],
+    "p2": [
+      { "card": "Etali, Primal Sickness", "role": "1-shot infect combat elimination requiring combat step" },
+      { "card": "Orthion, Hero of Lavabrink", "role": "Mass token overrun requiring combat step" },
+      { "card": "Rogue's Passage", "role": "Makes Etali unblockable for guaranteed poison finish" }
+    ],
+    "p3": [
+      { "card": "Etali, Primal Conqueror", "role": "Visible commander and exiled cards are public knowledge" },
+      { "card": "Panharmonicon", "role": "Board-visible artifact telegraphing trigger explosions" }
+    ],
     "i1": [
-      {
-        "card": "Beast Within",
-        "role": "Instant-speed reactive removal"
-      },
-      {
-        "card": "Chaos Warp",
-        "role": "Instant-speed reactive removal"
-      }
+      { "card": "Beast Within", "role": "Instant permanent destruction" },
+      { "card": "Chaos Warp", "role": "Instant permanent tuck removal" },
+      { "card": "Blasphemous Act", "role": "1-mana creature damage sweeper" }
     ],
     "i2": [],
     "s1": [
-      {
-        "card": "Swiftfoot Boots",
-        "role": "Board / commander protection"
-      }
+      { "card": "Swiftfoot Boots", "role": "Grants hexproof and haste" },
+      { "card": "Tamiyo's Safekeeping", "role": "Instant hexproof and indestructible protection" },
+      { "card": "Rhythm of the Wild", "role": "Prevents creature spells from being countered" },
+      { "card": "Temur Sabertooth", "role": "Bounces Etali to hand to dodge removal" },
+      { "card": "Voyager Staff", "role": "Exiles Etali until end step to dodge board wipes" }
     ],
-    "s2": [],
-    "s3": []
-  },
-  "deck_name": "EtaliConqueror",
-  "thematic_restriction": false
+    "s2": [
+      { "card": "Eternal Witness", "role": "Returns any card from graveyard to hand" },
+      { "card": "Reclaim", "role": "Puts card from graveyard on top of library" },
+      { "card": "Temur Sabertooth", "role": "Bounces Etali to hand to replay and re-trigger" },
+      { "card": "Hellkite Courser", "role": "Cheats Etali from command zone ignoring commander tax" }
+    ],
+    "s3": [
+      { "card": "Etali, Primal Storm", "role": "Autonomous free spell exile engine on attack" },
+      { "card": "Savage Ventmaw", "role": "Autonomous mana and air threat" },
+      { "card": "Delina, Wild Mage", "role": "Autonomous token generation with other creatures" }
+    ]
+  }
 }

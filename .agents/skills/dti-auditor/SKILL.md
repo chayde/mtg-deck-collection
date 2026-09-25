@@ -171,5 +171,13 @@ Use these calibrated decks to ground every future evaluation:
 *   **Benchmarks:** $R1: B, R2: A, A1: B, A2: A, P1: B, P2: B, P3: B, I1: A, I2: B, S1: B, S2: A, S3: A$.
 *   **Calibration Principle:** Defines the boundary line between Bracket 2 and Bracket 3: a slower Turn 7 onset, 2 untap cycles ($P2: B$), and lower mana/velocity (13/48) cap the deck at 31/96 despite running premier Esper control interaction ($I1: A$) and reliable card draw ($R2: A$).
 
+### Anchor 6: EtaliConqueror (Gruul Stompy / ETB Clone Ramp) — Bracket 3 Explosive Stompy
+*   **Threat Score:** **40 / 96** (Bracket 3, 32–51 band)
+*   **Vectors:** Velocity: **18 / 48** | Suppression: **12 / 40**
+*   **Clock:** Onset Turn 4 ($P1: A$), Ready Turn 4 ($A2: A$), Response Cycles: 2 ($P2: B$) $\rightarrow$ Turn 6 kill.
+*   **Benchmarks:** $R1: A, R2: S, A1: S, A2: A, P1: A, P2: B, P3: B, I1: C, I2: F, S1: C, S2: A, S3: B$.
+*   **Calibration Principle:** Demonstrates why an explosive Turn 4 threat onset ($P1: A$) does not automatically promote a deck to Bracket 4: concluding the game takes 2 untap cycles ($P2: B$, Turn 6 kill), shielding is fragile ($S1: C$), and interaction is near zero ($I1: C, I2: F$), cleanly validating Gate 2's Zero-Untap Override.
+
+
 
 

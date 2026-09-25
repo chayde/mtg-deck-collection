@@ -10,10 +10,16 @@ deck_status: main
 
 ## Commander Strategy
 **Etali, Primal Conqueror**
-*   **Archetype:** Gruul (Red/Green) Ramp + Clones / ETB Copy Engine
-*   **Bracket:** 3 (Upgraded)
-*   **DTI Threat Index:** **27 / 96** (Bracket 2 | Velocity: **16/48** | Suppression: **9/40** | Gates: All Passed | [DTI Report](dti_report.html))
-*   **Core Goal:** Accelerate into Etali as fast as possible — often turns 4–5 — then copy her ETB trigger repeatedly in the same turn cycle. Each copy of Etali that enters the battlefield fires its own ETB, exiling and casting a free nonland card from every opponent's library. With 15 dedicated copy effects, a single Etali cast routinely generates 3–6 stolen spells in one turn. Protect her with hexproof/indestructible effects, recur her with Temur Sabertooth and Conjurer's Closet, and close out games with stolen haymakers.
+*   **Archetype:** Gruul ({R}{G}) Stompy / ETB Clone Ramp
+*   **Bracket:** 3 (Upgraded Casual — 0 Game Changers)
+*   **DTI Threat Index:** **40 / 96** (Bracket 3 | Velocity: **18/48** | Suppression: **12/40** | Clock: Engine T4, Onset T4, 2 Untap Cycles | Gates: All Passed | [DTI Report](dti_report.html))
+*   **Core Goal:** Rapidly accelerate using 1-mana dorks and land ramp to cast Etali on Turn 4, immediately exiling and casting up to four free nonland spells from all players' libraries. Exponentially magnify this card advantage using temporary clone spells (Twinflame, Heat Shimmer) and trigger doublers (Panharmonicon). Close games via overwhelming stolen boards or by transforming into *Etali, Primal Sickness* for an 11/11 indestructible infect elimination.
+
+### 🎯 Tactical Overview & Mulligan Guide
+*   **Core Strategy:** T1–3 Mana Elves & Land Ramp $\rightarrow$ T4 Etali Free Spell Cascade $\rightarrow$ T5 Multiply Clones & Doublers $\rightarrow$ T6 Combat Swarm / 11 Infect Elimination.
+*   **Keep Hands:** 2–3 lands and at least two cheap ramp pieces (Llanowar Elves, Wild Growth, Nature's Lore) that guarantee reaching 6–7 mana by Turn 4.
+*   **Avoid Hands:** Clones without ramp, multiple 5+ mana curve toppers with no early acceleration, or color-starved hands.
+*   **Strategic Weaknesses:** Rule of Law effects, Drannith Magistrate, and targeted counterspells on the 7-mana commander cast; low instant-speed reactive removal.
 
 ### The Copy Engine
 Etali's ETB fires **when she enters the battlefield**, not when she attacks — this is the key distinction from Etali, Primal Storm. Every copy effect in this deck creates a new Etali entering the battlefield, firing a fresh ETB. With three opponents, each Etali ETB steals three spells. A Panharmonicon doubles that to six per entry. The strategic priority each turn is: (1) guarantee Etali lands with haste and protection, (2) deploy as many copy effects as possible before or alongside her to chain ETBs, (3) protect the value you generated with the stolen spells.
@@ -144,6 +150,10 @@ Etali's ETB fires **when she enters the battlefield**, not when she attacks — 
 
 ## 📜 Deck Changelog
 
+*   **2026-09-24:** Validated deck under DeckCheck Threat Index (DTI) framework via official scan calibration.
+    *   **DTI Threat Score:** **40 / 96** (Bracket 3 Upgraded Casual).
+    *   **Telemetry:** Velocity: 18/48, Suppression: 12/40, Threat Onset: Turn 4 ($P1: A$), Engine Ready: Turn 4 ($A2: A$), Opponent Response Cycles: 2 ($P2: B$).
+    *   **Gatekeepers:** All 4 gates passed safely; confirmed that explosive Turn 4 onset without instant-win compactness ($P2: B$, 2 response cycles) cleanly remains in Bracket 3.
 *   **2026-08-20:** Updated bracket classification from Bracket 2 to Bracket 3.
     *   **In:** N/A (Metadata / Power Level reclassification)
     *   **Out:** N/A
