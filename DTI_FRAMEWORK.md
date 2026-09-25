@@ -151,31 +151,54 @@ A deck's final bracket is determined by combining:
    * **Bracket 5 (cEDH):** `68 – 96` *(Requires supported competitive construction)*
 3. **The 4 Hard Gates (Mechanical Overrides):**
    * **The Velocity Gate ($\ge 28 \rightarrow$ Min Bracket 4):** Any deck with a Velocity Vector $\ge 28$ is promoted to Bracket 4 regardless of its total score. A clock this fast breaks casual tables.
-   * **The Early Finish Gate (Glass Cannon $\rightarrow$ Min Bracket 4):** Any deck that reliably eliminates opponents or achieves a game-ending lockout by **Turn 5** ($P1 \in \{S, A\}$) is promoted to Bracket 4.
-   * **The Suppression Gate (Oppression Quarantine $\rightarrow$ Min Bracket 4):** Any deck deploying severe asymmetric locks or recurring attrition ($I2 \in \{S, A\}$) operating in the early game (by **Turn 6**) is quarantined to Bracket 4. *This permanently solves the pubstomper trap (e.g. Portal to Phyrexia / Grave Pact engines hiding in Bracket 3).*
+   * **The Early Finish Gate (Zero-Untap Override / Glass Cannon $\rightarrow$ Min Bracket 4):** Any deck that reliably eliminates all opponents or establishes a game-ending lockout by **Turn 5** ($P1 = S$, or $P1/A2 \in \{S, A\}$ paired with $P2 = S$ zero untap steps) is promoted to Bracket 4. Decks with onset on Turn 5 that afford opponents an untap cycle ($P2 \in \{A, B\}$) finish on Turn 6+ and remain in Bracket 3 unless other gates trip.
+   * **The Suppression Gate (Oppression Quarantine $\rightarrow$ Min Bracket 4):** Any deck deploying severe asymmetric locks or recurring attrition ($I2 \in \{S, A\}$) operating in the early game (by **Turn 6**) is quarantined to Bracket 4. *This permanently solves the pubstomper trap (e.g. Portal to Phyrexia, Grave Pact, or Maha/Massacre Wurm engines hiding in Bracket 3).*
    * **The cEDH Gate ($\rightarrow$ Min Bracket 5):** If Peak Vector ($\text{Velocity}$ or $\text{Suppression}$) $\ge 40$, threat onset $P1 \in \{S, A\}$, and completion $P2 = S$ (0 opponent untap steps), the deck is promoted to Bracket 5 even if its aggregate score is under 68.
 
 ---
 
-## 7. The Card Ledger
+## 7. The Full Audit & Narrative Schema
 
-A score without evidence is merely an opinion. Every DTI evaluation must generate a **Card Ledger**: an exhaustive mapping of every card in the deck to the specific benchmarks it supports.
+Every comprehensive DTI evaluation produces not just numeric scores, but a complete strategic diagnosis:
 
-*   Cards can and should appear under multiple benchmarks if they perform multiple roles (e.g., *Esper Sentinel* feeds $R2$ for card draw, $I2$ for taxing opponents, and $A2$ if feeding creature density).
-*   Lands and fixing appear under $R1$.
-*   Tutors and cantrips appear under $A1$ and $A2$.
-*   Free interaction and countermagic appear under $I1$ and $S1$.
-
-The Card Ledger provides immediate diagnostic clarity: if a deck's $R2$ (Card Flow) comes back as a $C$, looking at the ledger immediately reveals that only 3 or 4 cards support card replenishment, giving the deck builder a direct roadmap for tuning.
+1. **Tactical Overview:** Narrative breakdown of the deck's turn-by-turn progression and core win condition.
+2. **Operational Primer:**
+   * **Core Strategy:** Numbered turn sequence (e.g. Turn 1–2 ramp $\rightarrow$ Turn 3–4 engine $\rightarrow$ Turn 5–6 kill).
+   * **Mulligan Priorities:** Explicit "Keep" vs. "Avoid" opening hand criteria.
+   * **Tactical Tips:** High-leverage sequencing, trigger stacking, and interaction timing.
+3. **Strategic Weaknesses (Categorized Impact):**
+   * 🔴 **Critical:** Plan-breaking vulnerabilities (e.g., rest-in-peace static graveyard hate, exile sweepers).
+   * 🟡 **Moderate:** Friction points (e.g., Rule of Law stax, dork removal, instant-speed counterspells).
+   * ⚪ **Minor:** Incidental friction (e.g., life loss from shocklands, pillowfort attack taxes).
+4. **Key Engine Anchors:** Ranked list of the 12 most critical cards with their exact mechanical justifications.
+5. **The Card Ledger:** An exhaustive mapping of every card in the 99 to the specific benchmarks it supports.
 
 ---
 
-## 8. Integration with Repo Workflow
+## 8. Calibrated Empirical Anchor Decks (Official DeckCheck Baselines)
+
+These decks serve as our empirical calibration standard directly validated against DeckCheck's official web scanner:
+
+| Metric | Anchor 1: TheHive (Slivers) | Anchor 2: HenzieBlitz (Jund Reanimator) |
+|---|---|---|
+| **Archetype** | Sliver Tribal Aggro-Cascade | Jund Blitz Reanimator |
+| **Final Bracket** | **Bracket 3 (Upgraded Casual — Apex)** | **Bracket 4 (Optimized — Floor)** |
+| **DTI Threat Score** | **50 / 96** (Floor: B3, 32–51) | **52 / 96** (Floor: B4, 52–67) |
+| **Velocity Vector** | **24 / 48** ($R1:5 + A2:5 + P1:5 + P2:5 + S1:4$) | **24 / 48** ($R1:5 + A2:10 + P1:5 + P2:2 + S1:2$) |
+| **Suppression Vector** | **16 / 40** ($R1:5 + I2:2 + I1:2 + P1:5 + S3:2$) | **20 / 40** ($R1:5 + I2:4 + I1:4 + P1:5 + S3:2$) |
+| **Engine Ready Turn** | Turn 4 ($A2: A$) | Turn 3 ($A2: S$) |
+| **Threat Onset Turn** | Turn 5 ($P1: A$) | Turn 4 ($P1: A$) |
+| **Untap Cycles ($P2$)** | 1 cycle ($P2: A$) $\rightarrow$ Turn 6 kill | 2 cycles ($P2: B$) $\rightarrow$ Turn 6 kill |
+| **Why Bracket 3 vs 4?** | Fair targeted removal ($I2: B$), no lock. Opponents get 1 untap cycle after T5 onset. Sits at B3 apex (50/96). | Asymmetric lockout ($I2: A$) via *Maha* + *Massacre Wurm* / *Balefire*, triggering Suppression Gate and reaching 52/96 floor. |
+
+---
+
+## 9. Integration with Repo Workflow
 
 When evaluating, tuning, or creating decks in this repository:
 
 1. **Card Verification:** Use `scripts/scryfall_lookup.py` to verify all cards and Game Changer tags.
 2. **Empirical Grounding:** Run `scripts/multiplayer_goldfish.py` to collect real turn-clock and engine readiness data.
-3. **Contextual Evaluation:** Assign qualitative tiers ($S$–$F$) to all 12 benchmarks and construct the Card Ledger.
-4. **Deterministic Audit:** Run `python scripts/dti_evaluator.py` to calculate the Threat Score, verify all 4 Gates, check against WotC baseline rules, and generate `dti_report.html`.
+3. **Contextual Evaluation:** Assign qualitative tiers ($S$–$F$) to all 12 benchmarks, map the Card Ledger, and formulate the primer/weaknesses schema.
+4. **Deterministic Audit:** Run `python scripts/dti_evaluator.py "<deck_dir>"` to calculate the Threat Score, verify all 4 Gates, check against WotC baseline rules, and generate `dti_report.html`.
 5. **Visual Swaps:** Use `python scripts/swap_matrix.py` to adjust cards if the deck violates its target bracket.

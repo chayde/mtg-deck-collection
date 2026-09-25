@@ -72,6 +72,27 @@ Save the evaluation data matching this JSON schema:
 {
   "deck_name": "DeckName",
   "thematic_restriction": false,
+  "archetype": "Archetype Name",
+  "threat_onset": "turn X",
+  "engine_ready": "turn Y",
+  "response_cycles": 1,
+  "overview": "Tactical summary of the deck's primary progression...",
+  "primer": {
+    "core_strategy": ["Step 1...", "Step 2..."],
+    "mulligan_priorities": {
+      "keep": "Hands with...",
+      "avoid": "Hands missing..."
+    },
+    "key_tips": ["Tip 1...", "Tip 2..."]
+  },
+  "weaknesses": {
+    "critical": ["Exile sweepers..."],
+    "moderate": ["Rule of law stax..."],
+    "minor": ["Life loss from lands..."]
+  },
+  "key_cards": [
+    {"card": "Card Name", "note": "Primary function..."}
+  ],
   "grades": {
     "r1": "A", "r2": "B", "a1": "B", "a2": "A",
     "p1": "B", "p2": "A", "p3": "B", "i1": "C",
@@ -97,7 +118,7 @@ python scripts/dti_evaluator.py "<deck_dir>"
 ### Step 6: Review the 4 Hard Gatekeepers & WotC Floor
 Check the output report to ensure no gatekeeper was unintentionally tripped:
 1. **Velocity Gate ($\text{Velocity} = R1 + A2 + P1 + P2 + S1 \ge 28$):** Mandates **Bracket 4** regardless of total score.
-2. **Early Finish Gate ($P1 \in \{S, A\}$):** Threatens win/lockout by Turn 5 $\rightarrow$ Mandates **Bracket 4**.
+2. **Early Finish Gate (Zero-Untap Override / Table Elimination by Turn 5):** Triggered when $P1 = S$, or $P1/A2 \in \{S, A\}$ with $P2 = S$ (zero untap steps) $\rightarrow$ Mandates **Bracket 4**. Decks with onset on Turn 5 that afford 1+ untap cycles ($P2 \in \{A, B\}$) eliminate the table on Turn 6+ and remain in Bracket 3.
 3. **Suppression Gate ($I2 \in \{S, A\}$):** Deploys severe asymmetric denial/attrition by Turn 6 $\rightarrow$ Mandates **Bracket 4**.
 4. **cEDH Gate (Peak Vector $\ge 40$, $P1 \in \{S, A\}$, $P2 = S$):** Mandates **Bracket 5**.
 5. **WotC Floor:** Game Changers count (0 for B1–2, $\le 3$ for B3, unlimited for B4–5). *Remember: DTI only pushes UP, never down.*
@@ -108,3 +129,23 @@ Provide the user with:
 * The Velocity (clock speed) and Suppression (denial) vector scores.
 * Gatekeeper audit status (passed or triggered).
 * Direct links to [`<deck_dir>/dti_audit.md`](./) and the interactive visual dashboard [`<deck_dir>/dti_report.html`](./).
+
+---
+
+## Calibrated Empirical Anchor Decks (Official DeckCheck Baselines)
+
+Use these calibrated decks to ground every future evaluation:
+
+### Anchor 1: TheHive (Sliver Tribal Aggro-Cascade) — Bracket 3 Apex
+*   **Threat Score:** **50 / 96** (Bracket 3 ceiling, 32–51 band)
+*   **Vectors:** Velocity: **24 / 48** | Suppression: **16 / 40**
+*   **Clock:** Onset Turn 5 ($P1: A$), Ready Turn 4 ($A2: A$), Response Cycles: 1 ($P2: A$) $\rightarrow$ Turn 6 table elimination.
+*   **Benchmarks:** $R1: A, R2: S, A1: S, A2: A, P1: A, P2: A, P3: B, I1: B, I2: B, S1: A, S2: A, S3: A$.
+*   **Calibration Principle:** High-synergy cascade and cycling provide S-tier access and flow, but fair interaction ($I2: B$) and 1 untap cycle for combat damage keep it safely in Bracket 3.
+
+### Anchor 2: HenzieBlitz (Jund Blitz Reanimator) — Bracket 4 Floor
+*   **Threat Score:** **52 / 96** (Exact floor of Bracket 4, 52–67 band)
+*   **Vectors:** Velocity: **24 / 48** | Suppression: **20 / 40**
+*   **Clock:** Onset Turn 4 ($P1: A$), Ready Turn 3 ($A2: S$), Response Cycles: 2 ($P2: B$).
+*   **Benchmarks:** $R1: A, R2: S, A1: A, A2: S, P1: A, P2: B, P3: A, I1: A, I2: A, S1: B, S2: A, S3: A$.
+*   **Calibration Principle:** Turn 3 engine deployment ($A2: S$), automatic death draws ($R2: S$), and asymmetric board wipe locks (*Maha* + *Massacre Wurm* / *Balefire*, *Archon of Cruelty*, *Kardur*) trip the Suppression Gate and land directly on the 52 Bracket 4 threshold.
