@@ -4,7 +4,7 @@
 
 * **Commander:** [The Great Goblin](https://scryfall.com/card/hob/158/the-great-goblin?utm_source=api) ({1}{B/R}{B/R})
 * **Colors:** Rakdos ({B}{R})
-* **Bracket:** TBD (Pending Decklist Audit)
+* **Bracket:** Bracket 3 (Upgraded Casual — DTI 41 / 96 | Velocity: 19/48 | Suppression: 13/40)
 * **Status:** Owned / Local Card Shop Purchase — Reconciling Advertised vs. Received Inventory
 
 See [the_great_goblin.md](the_great_goblin.md) for the full deck guide, strategy, card explanations, and changelog.  

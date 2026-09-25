@@ -13,8 +13,8 @@ deck_status: main
 ## Commander Strategy
 **The Great Goblin**
 *   **Archetype:** Rakdos ({B}{R}) Goblins / Counter Burn & Aristocrats Impulse Velocity
-*   **Bracket:** 3 (Upgraded — 0 Game Changers)
-*   **DTI Threat Index:** **17 / 96** (Bracket 2 | Velocity: **10/48** | Suppression: **5/40** | Gates: All Passed | [DTI Report](dti_report.html))
+*   **Bracket:** 3 (Upgraded Casual — 0 Game Changers)
+*   **DTI Threat Index:** **41 / 96** (Bracket 3 | Velocity: **19/48** | Suppression: **13/40** | Gates: All Passed | [DTI Report](dti_report.html))
 *   **Core Goal:** Exploit The Great Goblin's dual engine: whenever you put one or more counters on a Goblin, Orc, or Army you control, deal 2 damage to target opponent; and whenever another Goblin, Orc, or Army you control dies, exile the top card of your library to play until the end of your next turn. Combine free sacrifice outlets, counter placement (+1/+1, -1/-1, quest counters), and recursive loops to burn out the table while maintaining relentless card velocity.
 
 ### Three Interlocking Engines & Win Conditions
@@ -129,6 +129,10 @@ deck_status: main
 ---
 
 ## 📜 Deck Changelog
+*   **2026-09-25:** Calibrated against official DeckCheck.co scan.
+    *   **In:** N/A (DTI Telemetry & Calibration)
+    *   **Out:** N/A
+    *   **Reason:** Official scan validated Threat Score at 41 / 96 (Bracket 3 Upgraded Casual). Velocity vector calibrated to 19/48, Suppression vector to 13/40, Onset Turn 6 (P1: B), Engine Ready Turn 4 (A2: A), with 1 opponent response cycle (P2: A) due to Putrid Goblin + First Day of Class infinite persist loops and Shared Animosity alpha strikes. S-Tier card flow (R2: S) confirmed via The Great Goblin impulse triggers and Skullclamp. All 4 Gatekeepers passed safely. Populated full 100-card ledger and tactical primer.
 *   **2026-09-18:** Reconciled physical inventory after local card shop purchase. Executed Priorities 1 & 2 to bring deck to legal 100-card singleton and eliminate filter land.
     *   **In:** Goblin Turncoat, Dragon Fodder, Woe Strider, Goblin Banneret, Fountainport
     *   **Out:** Shadowblood Ridge

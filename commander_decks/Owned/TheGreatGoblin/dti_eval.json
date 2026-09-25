@@ -1,73 +1,235 @@
 {
+  "deck_name": "TheGreatGoblin",
+  "thematic_restriction": false,
   "grades": {
-    "r1": "B",
-    "r2": "B",
-    "a1": "B",
-    "a2": "B",
+    "r1": "A",
+    "r2": "S",
+    "a1": "A",
+    "a2": "A",
     "p1": "B",
-    "p2": "B",
+    "p2": "A",
     "p3": "B",
-    "i1": "C",
-    "i2": "F",
+    "i1": "B",
+    "i2": "B",
     "s1": "B",
-    "s2": "C",
-    "s3": "C"
+    "s2": "A",
+    "s3": "A"
   },
   "justifications": {
-    "r1": "Rakdos goblin mana dorks (Skirk Prospector) and cheap rocks.",
-    "r2": "Goblin death draw and impulse card advantage.",
-    "a1": "Goblin typal tutors (Goblin Matron, Boggart Harbinger).",
-    "a2": "Assembles goblin army on Turns 5–6.",
-    "p1": "Presents swarm attack on Turns 6–7.",
-    "p2": "2 opponent untap steps to eliminate players.",
-    "p3": "Board-based swarm; vulnerable to sweepers.",
-    "i1": "Targeted burn and creature sacrifice removal.",
-    "i2": "Zero proactive restriction or stax.",
-    "s1": "Standard goblin protection and haste enablers.",
-    "s2": "Rebuilding requires fresh hand of goblins.",
-    "s3": "Functions as a general goblin typal swarm without commander."
+    "r1": "Cheap mana rocks (Sol Ring, Arcane Signet, Talisman of Indulgence, Fellwar Stone) and explosive ritual mana (Skirk Prospector, Brightstone Ritual, Battle Hymn, Infernal Plunge, Springleaf Drum) deploy The Great Goblin on Turn 3.",
+    "r2": "S-tier card flow: The Great Goblin exiles the top card of the library on every Goblin, Orc, or Army death playable through the end of your next turn, augmented by Skullclamp, Rundvelt Hordemaster, Goblin Ringleader, and Village Rites.",
+    "a1": "A-tier selection and redundancy anchored by Goblin Matron tutoring any Goblin directly to hand, high density of token generators, and multiple free sacrifice outlets.",
+    "a2": "Achieves engine readiness by Turn 4 via low-cost Goblin token curves and deploying The Great Goblin.",
+    "p1": "Critical onset hits by Turn 6 as continuous aristocrat burn and swarm combat start threatening lethal life totals.",
+    "p2": "A-tier win compactness: closing the game takes just 1 opponent response cycle after onset due to the Putrid Goblin + First Day of Class infinite persist loop or sudden Shared Animosity combat bursts.",
+    "p3": "Goblin swarm on the battlefield, visible sacrifice outlets, and counter placement telegraph lethal lines.",
+    "i1": "B-tier reactive disruption suite featuring Terminate, Bedevil, Fell the Profane, Vandalblast, Gempalm Incinerator, and Goblin Bombardment.",
+    "i2": "B-tier proactive denial: repeatable board suppression via Goblin Bombardment, Pashalik Mons, Sling-Gang Lieutenant, and Goblin Chainwhirler wiping token armies.",
+    "s1": "B-tier plan shielding: Goblin Chirurgeon provides sacrifice-based regeneration, and Goblin Turncoat provides protection from red.",
+    "s2": "A-tier engine recovery: chaining impulse card draws off dying creatures allows immediate rebuilding from board wipes, supported by Boggart Cursecrafter.",
+    "s3": "A-tier independence: the 99 functions autonomously as a high-velocity Goblin tribal swarm, combat pump, and persist combo engine without The Great Goblin."
   },
+  "overview": "This deck is a synergistic Rakdos Goblin aristocrats build led by The Great Goblin. The strategy focuses on flooding the battlefield with cheap Goblin tokens and converting creature deaths into card flow through the commander's impulse ability. It burns opponents whenever counters are placed on Goblins, Orcs, or Armies, rewarding mechanics like amass, mentor, and blight. The deck leverages sacrifice outlets like Skirk Prospector and Goblin Bombardment alongside drain payoffs like Pashalik Mons, Bastion of Remembrance, and Boggart Cursecrafter. It can win through explosive combat steps with Shared Animosity or through infinite persist loops using Putrid Goblin, First Day of Class, and any free sacrifice outlet. While vulnerable to heavy enchantment-based stax and exile sweepers, the deck recovers quickly by chaining impulse draws off dying creatures.",
+  "primer": {
+    "core_strategy": [
+      "Deploy cheap Goblin token producers and mana ramp during Turns 1 and 2.",
+      "Cast The Great Goblin on Turn 3 to prepare your card advantage and burn engine.",
+      "Drop sacrifice outlets and counter-placing cards on Turns 4 and 5 to exile cards and drain life totals.",
+      "Close the game on Turns 6 and 7 using Shared Animosity combat attacks, mass aristocrat burn, or a Putrid Goblin persist loop."
+    ],
+    "mulligan_priorities": {
+      "keep": [
+        "Hands with two to three lands, at least one early mana ramp piece, and low-cost Goblin token generators like Dragon Fodder or Mogg War Marshal."
+      ],
+      "avoid": [
+        "Hands without early red and black mana, or hands overloaded with expensive payoffs like Siege-Gang Commander and Bolg of the North without early curve plays."
+      ]
+    },
+    "key_tips": [
+      "Use your sacrifice outlets in response to opposing removal to trigger The Great Goblin and bank exiled cards for your next turn.",
+      "Pair Putrid Goblin with First Day of Class and a sacrifice outlet for an infinite damage and infinite mana loop.",
+      "Remember that The Great Goblin triggers on any counter placed on a Goblin, including -1/-1 counters from blight and quest counters on creatures."
+    ]
+  },
+  "weaknesses": {
+    "critical": [
+      "Complete inability to remove resolved problem enchantments like Rest in Peace, Propaganda, or Humility.",
+      "Exile-based board sweepers such as Farewell and Sunfall that bypass both regeneration and on-death triggers."
+    ],
+    "moderate": [
+      "Lack of stack interaction to disrupt opposing fast win attempts or protect key combo turns.",
+      "Reliance on the graveyard and death triggers makes replacement exile effects shut down primary card flow."
+    ],
+    "minor": [
+      "Heavy colored mana requirements on cards like Goblin Chainwhirler can strain awkward mana draws.",
+      "Vulnerability to repeatable creature token sweepers."
+    ]
+  },
+  "key_cards": [
+    {
+      "card": "The Great Goblin",
+      "reason": "Commander that provides impulse card draw on Goblin deaths and burns opponents when counters are placed."
+    },
+    {
+      "card": "Putrid Goblin",
+      "reason": "Key persist creature used with counter effects to enable infinite sacrifice loops."
+    },
+    {
+      "card": "First Day of Class",
+      "reason": "Enables infinite persist loops by putting +1/+1 counters on entering creatures, negating persist -1/-1 counters."
+    },
+    {
+      "card": "Skirk Prospector",
+      "reason": "Free sacrifice outlet that generates red mana for fast mana acceleration and combo execution."
+    },
+    {
+      "card": "Goblin Bombardment",
+      "reason": "Free sacrifice outlet that turns any creature into direct damage to any target."
+    },
+    {
+      "card": "Krenko, Mob Boss",
+      "reason": "Creates exponential Goblin token armies to overwhelm opponents or fuel sacrifice engines."
+    },
+    {
+      "card": "Shared Animosity",
+      "reason": "Pumps attacking Goblins based on swarm size to deliver sudden lethal combat steps."
+    },
+    {
+      "card": "Skullclamp",
+      "reason": "Premier card draw engine that converts 1/1 Goblin tokens into massive hand refills."
+    },
+    {
+      "card": "Goblin Matron",
+      "reason": "Tutors any Goblin card directly to hand to assemble synergy pieces or answers."
+    },
+    {
+      "card": "Uglúk of the White Hand",
+      "reason": "Grows quickly whenever Goblins die, repeatedly triggering the commander's burn ability."
+    },
+    {
+      "card": "Pashalik Mons",
+      "reason": "Redundant death drain payoff and token producer that burns any target when Goblins die."
+    },
+    {
+      "card": "Bastion of Remembrance",
+      "reason": "Non-creature aristocrat drain piece that punishes board wipes and pads life totals."
+    }
+  ],
   "card_ledger": {
     "r1": [
-      {
-        "card": "Arcane Signet",
-        "role": "Mana ramp / fixing"
-      },
-      {
-        "card": "Sol Ring",
-        "role": "Mana ramp / fixing"
-      },
-      {
-        "card": "Talisman of Indulgence",
-        "role": "Mana ramp / fixing"
-      }
+      { "card": "Sol Ring", "role": "Fast colorless mana artifact" },
+      { "card": "Arcane Signet", "role": "2 CMC colored mana rock" },
+      { "card": "Fellwar Stone", "role": "2 CMC mana rock" },
+      { "card": "Talisman of Indulgence", "role": "2 CMC colored talisman" },
+      { "card": "Skirk Prospector", "role": "Free sacrifice outlet generating red mana" },
+      { "card": "Brightstone Ritual", "role": "Burst red mana ritual based on Goblin count" },
+      { "card": "Battle Hymn", "role": "Burst red mana ritual based on creature count" },
+      { "card": "Infernal Plunge", "role": "Burst mana ritual sacrificing a creature" },
+      { "card": "Springleaf Drum", "role": "Mana acceleration tapping a creature" },
+      { "card": "Herald's Horn", "role": "Cost reducer for Goblin spells" },
+      { "card": "Goblin Warchief", "role": "Cost reducer and team haste enabler" },
+      { "card": "Ash Barrens", "role": "Basic landcycling mana fixing" },
+      { "card": "Barad-dûr", "role": "Utility land creating amass tokens" },
+      { "card": "Blazemire Verge", "role": "Untapped verge dual land" },
+      { "card": "Blightstep Pathway", "role": "Modal double-faced dual land" },
+      { "card": "Castle Embereth", "role": "Utility land boosting attacking creatures" },
+      { "card": "Command Tower", "role": "Commander rainbow land" },
+      { "card": "Dark Fortress", "role": "Utility land tapping for black or red" },
+      { "card": "Den of the Bugbear", "role": "Creature land generating attacking Goblins" },
+      { "card": "Dragonskull Summit", "role": "Check dual land" },
+      { "card": "Eclipsed Realms", "role": "Dual land fixing" },
+      { "card": "Exotic Orchard", "role": "Multiplayer rainbow land" },
+      { "card": "Fabled Passage", "role": "Fetchland basic search" },
+      { "card": "Foreboding Ruins", "role": "Shadow dual land" },
+      { "card": "Path of Ancestry", "role": "Tribal rainbow land with scry" },
+      { "card": "Secluded Courtyard", "role": "Tribal creature rainbow land" },
+      { "card": "Smoldering Marsh", "role": "Dual land" },
+      { "card": "Tainted Peak", "role": "Colorless / dual land with Swamp" },
+      { "card": "Unclaimed Territory", "role": "Tribal creature rainbow land" },
+      { "card": "7 Mountain", "role": "Basic lands" },
+      { "card": "5 Swamp", "role": "Basic lands" }
     ],
-    "a2": [],
-    "p1": [],
-    "p2": [],
     "r2": [
-      {
-        "card": "Skullclamp",
-        "role": "Card draw / engine replenishment"
-      }
+      { "card": "The Great Goblin", "role": "Impulse card draw off every Goblin, Orc, or Army death" },
+      { "card": "Skullclamp", "role": "Massive card draw engine converting 1/1 tokens to cards" },
+      { "card": "Rundvelt Hordemaster", "role": "Impulse exile draw off nontoken Goblin deaths" },
+      { "card": "Goblin Ringleader", "role": "ETB top 4 card reveal drawing all Goblins" },
+      { "card": "Village Rites", "role": "1 CMC instant sacrifice draw 2" },
+      { "card": "Fountainport", "role": "Utility land sacrificing tokens for card draw" },
+      { "card": "Forgotten Cave", "role": "Cycling draw utility land" }
     ],
-    "a1": [],
+    "a1": [
+      { "card": "Goblin Matron", "role": "Tutors any Goblin card directly to hand" }
+    ],
+    "a2": [
+      { "card": "Goblin Turncoat", "role": "Free sacrifice outlet granting regeneration" },
+      { "card": "Woe Strider", "role": "Free sacrifice outlet with Goat token and scry" },
+      { "card": "Dragon Fodder", "role": "2 CMC sorcery producing 2 Goblin tokens" },
+      { "card": "Krenko's Command", "role": "2 CMC sorcery producing 2 Goblin tokens" },
+      { "card": "Mogg War Marshal", "role": "Multi-token generator on ETB and death" },
+      { "card": "Searslicer Goblin", "role": "End-step raid Goblin token generator" },
+      { "card": "Goblin Banneret", "role": "Mentor counter placement triggering commander" },
+      { "card": "Mauhúr, Uruk-hai Captain", "role": "Additional counter placement on Goblins and Orcs" },
+      { "card": "Gorbag of Minas Morgul", "role": "Sacrifice outlet for treasures and card draw" },
+      { "card": "Gathering Stone", "role": "Utility land and counter enabler" },
+      { "card": "Goblin-town", "role": "Utility land generating Goblin tokens" },
+      { "card": "Karn's Bastion", "role": "Proliferates counters across Goblins" }
+    ],
+    "p1": [
+      { "card": "Krenko, Mob Boss", "role": "Exponential Goblin token swarm generator" },
+      { "card": "Shared Animosity", "role": "Massive power scaling anthem on attacking Goblins" },
+      { "card": "Impact Tremors", "role": "ETB burn damage to all opponents on creature entry" },
+      { "card": "Pashalik Mons", "role": "Direct damage burn on Goblin deaths and token maker" },
+      { "card": "Bastion of Remembrance", "role": "Aristocrat life drain on creature deaths" },
+      { "card": "Uglúk of the White Hand", "role": "Scaling combat beater growing on Goblin deaths" },
+      { "card": "Siege-Gang Commander", "role": "Generates 3 Goblins and fling direct damage" },
+      { "card": "Goblin Rabblemaster", "role": "Rapid combat token generation and massive attacker" },
+      { "card": "Legion Warboss", "role": "Combat token generator with Mentor counter placement" },
+      { "card": "Goblin Chieftain", "role": "Tribal lord with +1/+1 and haste anthem" },
+      { "card": "Goblin Bushwhacker", "role": "Burst haste and +1/+0 team combat pump" },
+      { "card": "Goblin Piledriver", "role": "High-damage attacker scaling with attacking Goblins" },
+      { "card": "Hobgoblin Bandit Lord", "role": "Tribal lord dealing direct damage equal to Goblins" },
+      { "card": "Howlsquad Heavy", "role": "Menace attacker with amass Orcs counters" },
+      { "card": "Legion Loyalist", "role": "Battalion granting first strike, trample, and token evasion" },
+      { "card": "Quest for the Goblin Lord", "role": "+2/+0 team anthem after 5 Goblin entries" },
+      { "card": "Sling-Gang Lieutenant", "role": "Sacrifice outlet draining opponents for 1 life" },
+      { "card": "Bolg of the North", "role": "High-impact Orc beater and amass generator" },
+      { "card": "Assault on Osgiliath", "role": "Amass token swarm and team double strike" },
+      { "card": "Dralnu's Crusade", "role": "Tribal anthem buffing Goblins by +1/+1" },
+      { "card": "Champion of the Weird", "role": "Counters and aggressive combat scaling" },
+      { "card": "Boggart Mischief", "role": "Token generation and direct damage" },
+      { "card": "Weftstalker Ardent", "role": "Counter placement and aggressive pressure" },
+      { "card": "Goblin Burrows", "role": "Utility land boosting Goblin power" }
+    ],
+    "p2": [
+      { "card": "Putrid Goblin", "role": "Persist creature enabling infinite damage loops" },
+      { "card": "First Day of Class", "role": "Enables infinite persist combos by canceling -1/-1 counters" }
+    ],
     "p3": [],
     "i1": [
-      {
-        "card": "Blightstep Pathway",
-        "role": "Instant-speed reactive removal"
-      },
-      {
-        "card": "Path of Ancestry",
-        "role": "Instant-speed reactive removal"
-      }
+      { "card": "Terminate", "role": "2 CMC instant creature destruction without regeneration" },
+      { "card": "Bedevil", "role": "3 CMC instant artifact, creature, or planeswalker destruction" },
+      { "card": "Fell the Profane", "role": "Instant targeted creature/planeswalker destruction land MDFC" },
+      { "card": "Vandalblast", "role": "Flexible single artifact removal or mass artifact wipe" },
+      { "card": "Gempalm Incinerator", "role": "Cycling direct damage creature removal" },
+      { "card": "Bojuka Bog", "role": "Target player graveyard exile on land entry" },
+      { "card": "Boggart Trawler", "role": "Graveyard exile creature / land MDFC" }
     ],
-    "i2": [],
-    "s1": [],
-    "s2": [],
-    "s3": []
-  },
-  "deck_name": "TheGreatGoblin",
-  "thematic_restriction": false
+    "i2": [
+      { "card": "Goblin Bombardment", "role": "Repeatable targeted direct damage removing opposing creatures" },
+      { "card": "Goblin Chainwhirler", "role": "Asymmetrical 1 damage board wipe to opposing creatures" }
+    ],
+    "s1": [
+      { "card": "Goblin Chirurgeon", "role": "Sacrifices Goblins to regenerate any creature" }
+    ],
+    "s2": [
+      { "card": "Boggart Cursecrafter", "role": "Graveyard recursion retrieving Goblins upon cast" },
+      { "card": "Scuzzback Scrounger", "role": "Persist creature recycling graveyard cards" }
+    ],
+    "s3": [
+      { "card": "Krenko, Mob Boss", "role": "Autonomous game-ending token engine without commander" },
+      { "card": "Shared Animosity", "role": "Autonomous combat win condition" },
+      { "card": "Pashalik Mons", "role": "Autonomous aristocrat drain engine" }
+    ]
+  }
 }

@@ -199,6 +199,14 @@ Use these calibrated decks to ground every future evaluation:
 *   **Benchmarks:** $R1: A, R2: A, A1: A, A2: A, P1: B, P2: A, P3: B, I1: B, I2: B, S1: B, S2: A, S3: A$.
 *   **Calibration Principle:** Illustrates the impact of high compactness and redundancy: with 10 fast rocks ($R1: A$), high redundancy ($A1: A$), and infinite persist loops ($P2: A$), it finishes in 1 response cycle and lands squarely at 37/96 in mid-Bracket 3.
 
+### Anchor 10: The Great Goblin (Rakdos Swarm & Aristocrats) — Bracket 3 Solid
+*   **Threat Score:** **41 / 96** (Bracket 3, 32–51 band)
+*   **Vectors:** Velocity: **19 / 48** | Suppression: **13 / 40**
+*   **Clock:** Onset Turn 6 ($P1: B$), Ready Turn 4 ($A2: A$), Response Cycles: 1 ($P2: A$) $\rightarrow$ Turn 7 kill.
+*   **Benchmarks:** $R1: A, R2: S, A1: A, A2: A, P1: B, P2: A, P3: B, I1: B, I2: B, S1: B, S2: A, S3: A$.
+*   **Calibration Principle:** Demonstrates the power of S-tier card flow ($R2: S$) coupled with 1-cycle compactness ($P2: A$): continuous impulse draw off dying Goblins combined with the Putrid Goblin infinite persist loop lifts it cleanly to 41/96 in mid-Bracket 3.
+
+
 
 
 
