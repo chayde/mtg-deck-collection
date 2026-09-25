@@ -12,7 +12,7 @@
             --text-main: #f8fafc;
             --text-sub: #94a3b8;
             --border: #334155;
-            --accent: #3b82f6;
+            --accent: #f59e0b;
             --s-color: #8b5cf6;
             --a-color: #3b82f6;
             --b-color: #10b981;
@@ -171,6 +171,55 @@
             box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.5), 0 8px 10px -6px rgba(0, 0, 0, 0.5);
             border: 2px solid #475569;
         }
+
+        .deck-telemetry-banner {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 10px 16px;
+            margin-bottom: 20px;
+            font-size: 13px;
+            color: var(--text-sub);
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+        .deck-telemetry-banner strong { color: var(--text-main); }
+        .info-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 24px;
+        }
+        .info-card h3 {
+            font-size: 16px;
+            margin-bottom: 12px;
+            color: var(--text-main);
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 8px;
+        }
+        .primer-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        @media (max-width: 768px) {
+            .primer-grid { grid-template-columns: 1fr; }
+        }
+        .weakness-card {
+            background: #0f172a;
+            border-radius: 8px;
+            padding: 14px;
+            border-top: 3px solid #64748b;
+        }
+        .weakness-critical { border-top-color: #ef4444; }
+        .weakness-moderate { border-top-color: #f59e0b; }
+        .weakness-minor { border-top-color: #3b82f6; }
+        .weakness-list { list-style: none; margin-top: 8px; }
+        .weakness-list li { font-size: 13px; margin: 6px 0; color: #cbd5e1; }
+        .step-list { padding-left: 20px; font-size: 13px; color: #cbd5e1; line-height: 1.6; }
+        .step-list li { margin-bottom: 6px; }
     </style>
 </head>
 <body>
@@ -181,27 +230,29 @@
                 <h1>KrenkoBracket3</h1>
                 <div class="header-sub">DeckCheck Threat Index (DTI) Evaluation Report</div>
             </div>
-            <div class="bracket-badge">BRACKET 2</div>
+            <div class="bracket-badge">BRACKET 4</div>
         </header>
+
+        <div class='deck-telemetry-banner'><span>Archetype: <strong>Mono-Red Goblin Swarm, Infinite Untap Combos & Stack Protection</strong></span> · <span>Threat Onset: <strong>turn 5</strong></span> · <span>Engine Ready: <strong>turn 4</strong></span> · <span>Opponent Response Cycles: <strong>1</strong></span></div>
 
         <div class="metrics-grid">
             <div class="metric-card">
                 <div class="metric-title">Threat Score</div>
-                <div class="metric-value">28 <span style="font-size:16px;color:var(--text-sub);">/ 96</span></div>
-                <div class="metric-sub">Score Floor: Bracket 2</div>
-                <div class="progress-bar"><div class="progress-fill" style="width: 29.166666666666668%;"></div></div>
-            </div>
-            <div class="metric-card">
-                <div class="metric-title">Velocity Vector</div>
-                <div class="metric-value">21 <span style="font-size:16px;color:var(--text-sub);">/ 48</span></div>
-                <div class="metric-sub">Clock & Assembly Speed (Gate at 28)</div>
+                <div class="metric-value">42 <span style="font-size:16px;color:var(--text-sub);">/ 96</span></div>
+                <div class="metric-sub">Score Floor: Bracket 3</div>
                 <div class="progress-bar"><div class="progress-fill" style="width: 43.75%;"></div></div>
             </div>
             <div class="metric-card">
+                <div class="metric-title">Velocity Vector</div>
+                <div class="metric-value">24 <span style="font-size:16px;color:var(--text-sub);">/ 48</span></div>
+                <div class="metric-sub">Clock & Assembly Speed (Gate at 28)</div>
+                <div class="progress-bar"><div class="progress-fill" style="width: 50.0%;"></div></div>
+            </div>
+            <div class="metric-card">
                 <div class="metric-title">Suppression Vector</div>
-                <div class="metric-value">8 <span style="font-size:16px;color:var(--text-sub);">/ 40</span></div>
+                <div class="metric-value">16 <span style="font-size:16px;color:var(--text-sub);">/ 40</span></div>
                 <div class="metric-sub">Denial, Tax & Stax Impact</div>
-                <div class="progress-bar"><div class="progress-fill" style="width: 20.0%;"></div></div>
+                <div class="progress-bar"><div class="progress-fill" style="width: 40.0%;"></div></div>
             </div>
             <div class="metric-card">
                 <div class="metric-title">Game Changers</div>
@@ -217,27 +268,141 @@
                 <span class="gate-tag tag-passed">
                     PASSED
                 </span>
-                <strong>Velocity Gate:</strong> Vector 21/48 (Threshold: &ge; 28 mandates Bracket 4).
+                <strong>Velocity Gate:</strong> Vector 24/48 (Threshold: &ge; 28 mandates Bracket 4).
+            </div>
+            <div class="gate-item">
+                <span class="gate-tag tag-triggered">
+                    TRIGGERED
+                </span>
+                <strong>Early Finish Gate:</strong> Onset A, Completion A (Zero-untap or T1-5 table elimination mandates Bracket 4).
             </div>
             <div class="gate-item">
                 <span class="gate-tag tag-passed">
                     PASSED
                 </span>
-                <strong>Early Finish Gate:</strong> Critical Onset P1 is B (Turns 1–5 onset mandates Bracket 4).
+                <strong>Suppression Gate:</strong> Proactive Restriction I2 is B (Severe attrition mandates Bracket 4).
             </div>
             <div class="gate-item">
                 <span class="gate-tag tag-passed">
                     PASSED
                 </span>
-                <strong>Suppression Gate:</strong> Proactive Restriction I2 is F (Severe attrition mandates Bracket 4).
-            </div>
-            <div class="gate-item">
-                <span class="gate-tag tag-passed">
-                    PASSED
-                </span>
-                <strong>cEDH Gate:</strong> Format ceiling clock with 0-untap kill (Peak vector: 21).
+                <strong>cEDH Gate:</strong> Format ceiling clock with 0-untap kill (Peak vector: 24).
             </div>
         </div>
+
+        
+        <div class="info-card">
+            <h3>Tactical Overview</h3>
+            <p style="font-size: 14px; line-height: 1.6; color: #cbd5e1;">This deck is a high-power, synergistic Mono-Red Goblin swarm and combo engine commanded by Krenko, Mob Boss. The game plan focuses on deploying Krenko ahead of curve on Turn 3 or 4 with immediate haste using a dedicated 9-source haste matrix. Once on the board, Krenko exponentially doubles your Goblin count each turn cycle, rapidly generating lethal armies. The deck converts token volume into victory through direct non-combat damage triggers like Purphoros, Impact Tremors, and Goblin Bombardment, or via combat overruns with Shared Animosity and Quest for the Goblin Lord. It also houses compact infinite untap loops utilizing Umbral Mantle, Staff of Domination, and Mana Echoes paired with sacrifice altars (Phyrexian Altar, Ashnod's Altar, Skirk Prospector). The strategy is shielded against spot removal and counterspells through red stack redirects (Deflecting Swat, Return the Favor) and Commander's Plate, while Blood Moon punishes greedy multi-color mana bases.</p>
+        </div>
+        
+        
+        <div class="info-card">
+            <h3>Operational Primer & Strategy</h3>
+            <div class="primer-grid">
+                <div>
+                    <h4 style="font-size: 13px; text-transform: uppercase; color: var(--text-sub); margin-bottom: 8px;">Core Turn Strategy</h4>
+                    <ol class="step-list">
+                        <li>Deploy cheap Goblins, mana rocks, or rituals during Turns 1 and 2 (Skirk Prospector, Sol Ring, Arcane Signet, Warren Instigator).</li><li>Establish a haste enabler (Lightning Greaves, Rising of the Day, Swiftfoot Boots, Thousand-Year Elixir) on Turn 2 or 3.</li><li>Cast Krenko, Mob Boss on Turn 3 or 4 with immediate haste open, tapping immediately to double your Goblin count.</li><li>Deploy a multiplier or burn payoff (Purphoros, Impact Tremors, Shared Animosity, Mana Echoes) on Turn 4 or 5.</li><li>Close the game on Turn 5 or 6 through infinite untap loops, direct burn triggers, or an unblockable Mountainwalk combat overrun backed by Blood Moon.</li>
+                    </ol>
+                </div>
+                <div>
+                    <h4 style="font-size: 13px; text-transform: uppercase; color: var(--text-sub); margin-bottom: 8px;">Mulligan Priorities</h4>
+                    <div style="font-size: 13px; color: #cbd5e1; margin-bottom: 14px; line-height: 1.5;">
+                        <p style='margin-bottom: 6px;'><strong>Keep:</strong> ['Hands with 2-3 Mountains, early ramp (Sol Ring, Arcane Signet, Skirk Prospector), at least one haste enabler, and a 1-2 drop Goblin.', 'Hands with Goblin Recruiter or Goblin Matron to tutor the missing combo or haste piece.']</p><p><strong>Avoid:</strong> ['Hands with 4+ lands and no 1-2 CMC acceleration or haste enabler.', 'Hands overloaded with 4-5 CMC top-end cards (Siege-Gang Commander, Throne of Eldraine, Muxus) without early mana development.']</p>
+                    </div>
+                    <h4 style="font-size: 13px; text-transform: uppercase; color: var(--text-sub); margin-bottom: 8px;">Tactical Tips</h4><ul class="step-list" style="list-style: disc;"><li>Always hold priority and equip Lightning Greaves or boots to Krenko immediately upon resolution to prevent targeted instant-speed removal before your first tap activation.</li><li>With Goblin Recruiter, stack Conspicuous Snoop on top, followed by Krenko, Skirk Prospector, and Goblin Chieftain to create an unstoppable top-deck combo line.</li><li>Use Goblin Chirurgeon to sacrifice a 1/1 Goblin token and regenerate Krenko or Goblin King in response to damage-based sweepers or destroy effects.</li><li>Blood Moon turns all opposing nonbasic lands into basic Mountains, making your entire army completely unblockable if Goblin King is on the battlefield.</li></ul>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="info-card">
+            <h3>Strategic Weaknesses & Interaction Exploits</h3>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px;">
+                <div class="weakness-card weakness-critical">
+                    <h4 style="font-size: 13px; color: #ef4444; text-transform: uppercase;">Critical Vulnerabilities</h4>
+                    <ul class="weakness-list"><li>Exile-based board sweepers (Farewell, Sunfall) that bypass indestructible and regeneration.</li><li>Split second removal (Sudden Spoiling, Krosan Grip) that prevents sacrifice and redirect responses.</li></ul>
+                </div>
+                <div class="weakness-card weakness-moderate">
+                    <h4 style="font-size: 13px; color: #f59e0b; text-transform: uppercase;">Moderate Friction Points</h4>
+                    <ul class="weakness-list"><li>Heavy pillowfort effects and attack taxes (Ghostly Prison, Propaganda, Ensnaring Bridge) that stall combat lines and force reliance on direct burn or infinite loops.</li><li>Targeted instant-speed removal hitting Krenko before a haste enabler can be attached.</li></ul>
+                </div>
+                <div class="weakness-card weakness-minor">
+                    <h4 style="font-size: 13px; color: #3b82f6; text-transform: uppercase;">Minor Weaknesses</h4>
+                    <ul class="weakness-list"><li>Life loss from War Room or pain lands in long attrition games.</li><li>Opposing basic Mountains diluting the asymmetric lock advantage of Blood Moon.</li></ul>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="info-card">
+            <h3>Key Engine Anchors</h3>
+            <div class="card-grid">
+                
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Krenko%2C%20Mob%20Boss&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Krenko%2C%20Mob%20Boss%22" target="_blank" rel="noopener">Krenko, Mob Boss</a>
+                <span class="chip-role">Primary commander engine exponentially doubling Goblin tokens every tap activation.</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Goblin%20Recruiter&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Goblin%20Recruiter%22" target="_blank" rel="noopener">Goblin Recruiter</a>
+                <span class="chip-role">Unconditional multi-card tutor stacking the entire library in lethal combo order.</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Skullclamp&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Skullclamp%22" target="_blank" rel="noopener">Skullclamp</a>
+                <span class="chip-role">Premier card draw converting 1/1 Goblin tokens into 2 fresh cards for 1 mana.</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Purphoros%2C%20God%20of%20the%20Forge&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Purphoros%2C%20God%20of%20the%20Forge%22" target="_blank" rel="noopener">Purphoros, God of the Forge</a>
+                <span class="chip-role">Indestructible game-ending burn engine dealing 2 damage to each opponent on every Goblin entry.</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Mana%20Echoes&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Mana%20Echoes%22" target="_blank" rel="noopener">Mana Echoes</a>
+                <span class="chip-role">Exponential colorless mana generator producing 20-50+ mana off a single Krenko tap.</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Shared%20Animosity&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Shared%20Animosity%22" target="_blank" rel="noopener">Shared Animosity</a>
+                <span class="chip-role">Devastating combat multiplier giving each attacking Goblin +1/+0 for each other attacking Goblin.</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Blood%20Moon&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Blood%20Moon%22" target="_blank" rel="noopener">Blood Moon</a>
+                <span class="chip-role">Asymmetric land denial shutting down nonbasic mana bases and enabling unblockable Mountainwalk.</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Deflecting%20Swat&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Deflecting%20Swat%22" target="_blank" rel="noopener">Deflecting Swat</a>
+                <span class="chip-role">Free 0-mana redirect protection safeguarding Krenko against targeted spot removal.</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Commander%27s%20Plate&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Commander%27s%20Plate%22" target="_blank" rel="noopener">Commander's Plate</a>
+                <span class="chip-role">Elite equipment giving Krenko +3/+3 and protection from White, Blue, Black, and Green.</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Skirk%20Prospector&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Skirk%20Prospector%22" target="_blank" rel="noopener">Skirk Prospector</a>
+                <span class="chip-role">Premier 1-drop converting Goblins into red mana for ramp bursts and infinite loops.</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Umbral%20Mantle&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Umbral%20Mantle%22" target="_blank" rel="noopener">Umbral Mantle</a>
+                <span class="chip-role">Equipment enabling infinite untap loops and infinite Goblins with mana sacrifice outlets.</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=The%20Fire%20Crystal&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22The%20Fire%20Crystal%22" target="_blank" rel="noopener">The Fire Crystal</a>
+                <span class="chip-role">Triple-threat engine providing team haste, red spell cost reduction, and token cloning.</span>
+            </div>
+            
+            </div>
+        </div>
+        
 
         <h2 style="margin-bottom: 16px; font-size: 20px;">12 Universal Benchmarks</h2>
         <table>
@@ -258,8 +423,8 @@
             <td><strong>Mana Velocity & Sufficiency</strong><br><span class="domain-sub">Resources</span></td>
             <td class="tier-col"><span class="tier-badge tier-a">A</span></td>
             <td class="score-col">5 / 10</td>
-            <td class="ledger-count-col">2</td>
-            <td class="just-col">Standard on-curve ramp and land base; plays at regular tempo.</td>
+            <td class="ledger-count-col">14</td>
+            <td class="just-col">A-tier mana velocity: Sol Ring, Arcane Signet, Fellwar Stone, Springleaf Drum, Ruby Medallion, and explosive rituals (Skirk Prospector, Brightstone Ritual, Battle Hymn, Ashnod's Altar, Phyrexian Altar) deploy Krenko consistently on Turn 3 or 4 (average Turn 3.9 in goldfish simulations).</td>
         </tr>
         
         <tr>
@@ -267,17 +432,17 @@
             <td><strong>Assembly Velocity</strong><br><span class="domain-sub">Access</span></td>
             <td class="tier-col"><span class="tier-badge tier-a">A</span></td>
             <td class="score-col">5 / 10</td>
-            <td class="ledger-count-col">0</td>
-            <td class="just-col">Assembles primary synergy engine on Turns 6–7.</td>
+            <td class="ledger-count-col">11</td>
+            <td class="just-col">A-tier assembly velocity: achieves engine readiness by Turn 4. The 9-source haste matrix (The Fire Crystal, Goblin Chieftain, Goblin Warchief, Rising of the Day, Lightning Greaves, Swiftfoot Boots, Sting, Thousand-Year Elixir, Arena of Glory) eliminates summoning sickness downtime in over 80% of games, enabling immediate token doubling upon deployment.</td>
         </tr>
         
         <tr>
             <td class="code-col"><strong>P1</strong></td>
             <td><strong>Critical Onset & Lethality</strong><br><span class="domain-sub">Pressure</span></td>
-            <td class="tier-col"><span class="tier-badge tier-b">B</span></td>
-            <td class="score-col">2 / 10</td>
-            <td class="ledger-count-col">0</td>
-            <td class="just-col">Presents must-answer board state on Turns 6–7.</td>
+            <td class="tier-col"><span class="tier-badge tier-a">A</span></td>
+            <td class="score-col">5 / 10</td>
+            <td class="ledger-count-col">14</td>
+            <td class="just-col">A-tier critical onset: presents a lethal board state by Turn 5 as Krenko taps for the second time, multiplying the Goblin swarm to 8-16+ bodies backed by Purphoros, Impact Tremors, Shared Animosity, Quest for the Goblin Lord, or Goblin War Strike.</td>
         </tr>
         
         <tr>
@@ -285,26 +450,26 @@
             <td><strong>Win Inevitability & Compactness</strong><br><span class="domain-sub">Pressure</span></td>
             <td class="tier-col"><span class="tier-badge tier-a">A</span></td>
             <td class="score-col">5 / 10</td>
-            <td class="ledger-count-col">0</td>
-            <td class="just-col">Requires 2 opponent untap steps to convert a lethal board state into a win.</td>
+            <td class="ledger-count-col">8</td>
+            <td class="just-col">A-tier win compactness: closing the game requires only 1 opponent response cycle after onset (Turn 6 lethal finish). Non-combat direct burn (Purphoros, Impact Tremors, Goblin Bombardment, Goblin War Strike) and mass haste overruns bypass summoning sickness and combat blockers, with infinite untap loops (Umbral Mantle, Staff of Domination, Mana Echoes) ending the game immediately.</td>
         </tr>
         
         <tr>
             <td class="code-col"><strong>R2</strong></td>
             <td><strong>Card Flow & Replenishment</strong><br><span class="domain-sub">Resources</span></td>
-            <td class="tier-col"><span class="tier-badge tier-b">B</span></td>
-            <td class="score-col">2 / 8</td>
-            <td class="ledger-count-col">1</td>
-            <td class="just-col">Reliable draw package keeping hands stocked without explosive burst.</td>
+            <td class="tier-col"><span class="tier-badge tier-a">A</span></td>
+            <td class="score-col">4 / 8</td>
+            <td class="ledger-count-col">8</td>
+            <td class="just-col">A-tier card replenishment: Skullclamp draws 2 cards for 1 mana off disposable 1/1 tokens, supported by Throne of Eldraine (+4 red mana and repeatable 2-card draw), Rundvelt Hordemaster impulse draws on death, Conspicuous Snoop top-of-library play, Goblin Ringleader 4-card dig, Moria Marauder combat impulse, and War Room.</td>
         </tr>
         
         <tr>
             <td class="code-col"><strong>A1</strong></td>
             <td><strong>Selection & Redundancy</strong><br><span class="domain-sub">Access</span></td>
-            <td class="tier-col"><span class="tier-badge tier-b">B</span></td>
-            <td class="score-col">2 / 8</td>
-            <td class="ledger-count-col">0</td>
-            <td class="just-col">Functional redundancy and moderate selection to assemble synergy pieces.</td>
+            <td class="tier-col"><span class="tier-badge tier-a">A</span></td>
+            <td class="score-col">4 / 8</td>
+            <td class="ledger-count-col">9</td>
+            <td class="just-col">A-tier selection and extreme functional redundancy: anchored by unconditional tutor Goblin Matron, library-stacking tutor Goblin Recruiter, Conspicuous Snoop, and Muxus, reinforced by a 9-source haste matrix, 5 sacrifice outlets, 5 untap engines, and 6 burn finishers.</td>
         </tr>
         
         <tr>
@@ -312,26 +477,26 @@
             <td><strong>Exposure & Predictability</strong><br><span class="domain-sub">Pressure</span></td>
             <td class="tier-col"><span class="tier-badge tier-b">B</span></td>
             <td class="score-col">2 / 8</td>
-            <td class="ledger-count-col">0</td>
-            <td class="just-col">Board-based game plan with standard interaction windows.</td>
+            <td class="ledger-count-col">2</td>
+            <td class="just-col">B-tier exposure: highly visible, permanent-based creature and token swarm on the battlefield that clearly signals lethal combat and burn thresholds.</td>
         </tr>
         
         <tr>
             <td class="code-col"><strong>I1</strong></td>
             <td><strong>Reactive Disruption</strong><br><span class="domain-sub">Interaction</span></td>
-            <td class="tier-col"><span class="tier-badge tier-c">C</span></td>
-            <td class="score-col">1 / 8</td>
-            <td class="ledger-count-col">1</td>
-            <td class="just-col">Fair instant-speed spot removal suite with 2–3 board wipes.</td>
+            <td class="tier-col"><span class="tier-badge tier-b">B</span></td>
+            <td class="score-col">2 / 8</td>
+            <td class="ledger-count-col">9</td>
+            <td class="just-col">B-tier reactive disruption: focused instant-speed stack protection and interaction featuring Deflecting Swat, Return the Favor, Untimely Malfunction, Chaos Warp, Vandalblast, Gempalm Incinerator, and Goblin Bombardment.</td>
         </tr>
         
         <tr>
             <td class="code-col"><strong>I2</strong></td>
             <td><strong>Proactive Denial & Restriction</strong><br><span class="domain-sub">Interaction</span></td>
-            <td class="tier-col"><span class="tier-badge tier-f">F</span></td>
-            <td class="score-col">0 / 8</td>
-            <td class="ledger-count-col">0</td>
-            <td class="just-col">Light incidental taxation or soft denial; no asymmetric locks.</td>
+            <td class="tier-col"><span class="tier-badge tier-b">B</span></td>
+            <td class="score-col">2 / 8</td>
+            <td class="ledger-count-col">5</td>
+            <td class="just-col">B-tier proactive denial: Blood Moon completely shuts down nonbasic mana bases while granting unblockable Mountainwalk via Goblin King. Repeatable creature removal via Goblin Sharpshooter and Goblin Bombardment wipes opposing mana dorks and token armies.</td>
         </tr>
         
         <tr>
@@ -339,26 +504,26 @@
             <td><strong>Plan Shielding & Protection</strong><br><span class="domain-sub">Resilience</span></td>
             <td class="tier-col"><span class="tier-badge tier-a">A</span></td>
             <td class="score-col">4 / 8</td>
-            <td class="ledger-count-col">2</td>
-            <td class="just-col">Moderate protection suite for commander and key permanents.</td>
+            <td class="ledger-count-col">8</td>
+            <td class="just-col">A-tier plan shielding: robust 8-card protection suite for a mono-red shell, including Commander's Plate (protection from White, Blue, Black, and Green), Deflecting Swat (free 0-mana redirect), Return the Favor (redirect/copy), Untimely Malfunction (redirect), Lightning Greaves, Swiftfoot Boots, Goblin Chirurgeon (free regeneration), and Eldrazi Monument (universal indestructible).</td>
         </tr>
         
         <tr>
             <td class="code-col"><strong>S2</strong></td>
             <td><strong>Engine Recovery</strong><br><span class="domain-sub">Resilience</span></td>
-            <td class="tier-col"><span class="tier-badge tier-c">C</span></td>
-            <td class="score-col">0 / 4</td>
-            <td class="ledger-count-col">0</td>
-            <td class="just-col">Can rebuild board presence over 2 turn cycles following a wipe.</td>
+            <td class="tier-col"><span class="tier-badge tier-a">A</span></td>
+            <td class="score-col">2 / 4</td>
+            <td class="ledger-count-col">4</td>
+            <td class="just-col">A-tier engine recovery: Muxus, Goblin Grandee provides an instant 6-card board rebuild; Rundvelt Hordemaster triggers on board wipes to bank exiled playable cards; Goblin Recruiter restacks the library following mass removal; and Krenko recasts from the command zone with immediate haste.</td>
         </tr>
         
         <tr>
             <td class="code-col"><strong>S3</strong></td>
             <td><strong>Independence & Backup Plans</strong><br><span class="domain-sub">Resilience</span></td>
-            <td class="tier-col"><span class="tier-badge tier-c">C</span></td>
-            <td class="score-col">0 / 4</td>
-            <td class="ledger-count-col">0</td>
-            <td class="just-col">Commander is primary engine centerpiece; functions at reduced efficiency without it.</td>
+            <td class="tier-col"><span class="tier-badge tier-a">A</span></td>
+            <td class="score-col">2 / 4</td>
+            <td class="ledger-count-col">10</td>
+            <td class="just-col">A-tier independence: the 99 functions autonomously as a lethal Goblin tribal swarm without Krenko, overwhelming opponents through tribal lords (Chieftain, Warchief, King, Trashmaster, Bandit Lord), Quest for the Goblin Lord, Shared Animosity, Banner of Kinship, Purphoros, and Impact Tremors.</td>
         </tr>
         
             </tbody>
@@ -370,18 +535,78 @@
         <div class="ledger-group">
             <div class="ledger-header">
                 <h3>R1: Mana Velocity & Sufficiency <span class="ledger-tier-tag tier-a">A</span></h3>
-                <span class="count-tag">2 cards</span>
+                <span class="count-tag">14 cards</span>
             </div>
             <div class="card-grid">
                 
-            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Arcane%20Signet&format=image&version=normal">
-                <a href="https://scryfall.com/search?q=!%22Arcane%20Signet%22" target="_blank" rel="noopener">Arcane Signet</a>
-                <span class="chip-role">Mana ramp / fixing</span>
-            </div>
-            
             <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Sol%20Ring&format=image&version=normal">
                 <a href="https://scryfall.com/search?q=!%22Sol%20Ring%22" target="_blank" rel="noopener">Sol Ring</a>
-                <span class="chip-role">Mana ramp / fixing</span>
+                <span class="chip-role">Positive mana rock</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Arcane%20Signet&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Arcane%20Signet%22" target="_blank" rel="noopener">Arcane Signet</a>
+                <span class="chip-role">2-CMC mana rock</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Fellwar%20Stone&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Fellwar%20Stone%22" target="_blank" rel="noopener">Fellwar Stone</a>
+                <span class="chip-role">2-CMC mana rock</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Springleaf%20Drum&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Springleaf%20Drum%22" target="_blank" rel="noopener">Springleaf Drum</a>
+                <span class="chip-role">1-CMC mana ramp tapping summoning-sick tokens</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Ruby%20Medallion&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Ruby%20Medallion%22" target="_blank" rel="noopener">Ruby Medallion</a>
+                <span class="chip-role">Red spell cost reduction</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Patriar%27s%20Seal&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Patriar%27s%20Seal%22" target="_blank" rel="noopener">Patriar's Seal</a>
+                <span class="chip-role">3-CMC mana rock and commander untapper</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Brightstone%20Ritual&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Brightstone%20Ritual%22" target="_blank" rel="noopener">Brightstone Ritual</a>
+                <span class="chip-role">Explosive 1-mana ritual adding red per Goblin</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Battle%20Hymn&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Battle%20Hymn%22" target="_blank" rel="noopener">Battle Hymn</a>
+                <span class="chip-role">Explosive 2-mana ritual adding red per creature</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Skirk%20Prospector&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Skirk%20Prospector%22" target="_blank" rel="noopener">Skirk Prospector</a>
+                <span class="chip-role">1-drop sacrifice outlet converting Goblins into red mana</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Ashnod%27s%20Altar&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Ashnod%27s%20Altar%22" target="_blank" rel="noopener">Ashnod's Altar</a>
+                <span class="chip-role">Sacrifice outlet generating colorless mana</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Phyrexian%20Altar&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Phyrexian%20Altar%22" target="_blank" rel="noopener">Phyrexian Altar</a>
+                <span class="chip-role">Sacrifice outlet generating colored red mana</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Throne%20of%20Eldraine&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Throne%20of%20Eldraine%22" target="_blank" rel="noopener">Throne of Eldraine</a>
+                <span class="chip-role">5-CMC rock producing 4 red mana</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Arena%20of%20Glory&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Arena%20of%20Glory%22" target="_blank" rel="noopener">Arena of Glory</a>
+                <span class="chip-role">Utility land providing red mana and haste</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Mines%20of%20Moria&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Mines%20of%20Moria%22" target="_blank" rel="noopener">Mines of Moria</a>
+                <span class="chip-role">Utility land generating treasure tokens</span>
             </div>
             
             </div>
@@ -389,14 +614,244 @@
         
         <div class="ledger-group">
             <div class="ledger-header">
-                <h3>R2: Card Flow & Replenishment <span class="ledger-tier-tag tier-b">B</span></h3>
-                <span class="count-tag">1 cards</span>
+                <h3>A2: Assembly Velocity <span class="ledger-tier-tag tier-a">A</span></h3>
+                <span class="count-tag">11 cards</span>
+            </div>
+            <div class="card-grid">
+                
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Arena%20of%20Glory&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Arena%20of%20Glory%22" target="_blank" rel="noopener">Arena of Glory</a>
+                <span class="chip-role">Haste land enabling immediate tap on entry</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=The%20Fire%20Crystal&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22The%20Fire%20Crystal%22" target="_blank" rel="noopener">The Fire Crystal</a>
+                <span class="chip-role">Universal team haste and cost reduction</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Goblin%20Chieftain&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Goblin%20Chieftain%22" target="_blank" rel="noopener">Goblin Chieftain</a>
+                <span class="chip-role">Universal Goblin haste enabler</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Goblin%20Warchief&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Goblin%20Warchief%22" target="_blank" rel="noopener">Goblin Warchief</a>
+                <span class="chip-role">Universal Goblin haste enabler and cost reducer</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Rising%20of%20the%20Day&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Rising%20of%20the%20Day%22" target="_blank" rel="noopener">Rising of the Day</a>
+                <span class="chip-role">Universal creature haste enabler</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Lightning%20Greaves&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Lightning%20Greaves%22" target="_blank" rel="noopener">Lightning Greaves</a>
+                <span class="chip-role">0-mana equip haste enabler</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Swiftfoot%20Boots&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Swiftfoot%20Boots%22" target="_blank" rel="noopener">Swiftfoot Boots</a>
+                <span class="chip-role">Haste enabler</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Sting%2C%20the%20Glinting%20Dagger&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Sting%2C%20the%20Glinting%20Dagger%22" target="_blank" rel="noopener">Sting, the Glinting Dagger</a>
+                <span class="chip-role">Haste enabler and each-combat untapper</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Thousand-Year%20Elixir&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Thousand-Year%20Elixir%22" target="_blank" rel="noopener">Thousand-Year Elixir</a>
+                <span class="chip-role">Pseudo-haste enabling immediate tap activations</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Goblin%20Lackey&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Goblin%20Lackey%22" target="_blank" rel="noopener">Goblin Lackey</a>
+                <span class="chip-role">Turn 1 combat cheat for high-cost Goblins</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Warren%20Instigator&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Warren%20Instigator%22" target="_blank" rel="noopener">Warren Instigator</a>
+                <span class="chip-role">Double-strike combat cheat for high-cost Goblins</span>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="ledger-group">
+            <div class="ledger-header">
+                <h3>P1: Critical Onset & Lethality <span class="ledger-tier-tag tier-a">A</span></h3>
+                <span class="count-tag">14 cards</span>
+            </div>
+            <div class="card-grid">
+                
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Krenko%2C%20Mob%20Boss&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Krenko%2C%20Mob%20Boss%22" target="_blank" rel="noopener">Krenko, Mob Boss</a>
+                <span class="chip-role">Exponential token doubling engine</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Shared%20Animosity&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Shared%20Animosity%22" target="_blank" rel="noopener">Shared Animosity</a>
+                <span class="chip-role">Exponential combat damage pump per attacking Goblin</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Quest%20for%20the%20Goblin%20Lord&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Quest%20for%20the%20Goblin%20Lord%22" target="_blank" rel="noopener">Quest for the Goblin Lord</a>
+                <span class="chip-role">Permanent +2/+0 team combat pump</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Banner%20of%20Kinship&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Banner%20of%20Kinship%22" target="_blank" rel="noopener">Banner of Kinship</a>
+                <span class="chip-role">Massive one-sided tribal anthem</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Goblin%20King&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Goblin%20King%22" target="_blank" rel="noopener">Goblin King</a>
+                <span class="chip-role">Lord granting +1/+1 and unblockable Mountainwalk</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Goblin%20Trashmaster&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Goblin%20Trashmaster%22" target="_blank" rel="noopener">Goblin Trashmaster</a>
+                <span class="chip-role">Lord granting +1/+1</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Hobgoblin%20Bandit%20Lord&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Hobgoblin%20Bandit%20Lord%22" target="_blank" rel="noopener">Hobgoblin Bandit Lord</a>
+                <span class="chip-role">Lord granting +1/+1 and targeted burst damage</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Goblin%20Piledriver&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Goblin%20Piledriver%22" target="_blank" rel="noopener">Goblin Piledriver</a>
+                <span class="chip-role">Massive attacker scaling +2/+0 per attacking Goblin</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Purphoros%2C%20God%20of%20the%20Forge&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Purphoros%2C%20God%20of%20the%20Forge%22" target="_blank" rel="noopener">Purphoros, God of the Forge</a>
+                <span class="chip-role">Direct damage burn dealing 2 damage per creature entry</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Impact%20Tremors&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Impact%20Tremors%22" target="_blank" rel="noopener">Impact Tremors</a>
+                <span class="chip-role">Direct damage burn dealing 1 damage per creature entry</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=General%20Kreat%2C%20the%20Boltbringer&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22General%20Kreat%2C%20the%20Boltbringer%22" target="_blank" rel="noopener">General Kreat, the Boltbringer</a>
+                <span class="chip-role">Direct damage burn dealing 1 damage per creature entry</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Goblin%20War%20Strike&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Goblin%20War%20Strike%22" target="_blank" rel="noopener">Goblin War Strike</a>
+                <span class="chip-role">Direct damage burst equal to Goblin count</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Torbran%2C%20Thane%20of%20Red%20Fell&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Torbran%2C%20Thane%20of%20Red%20Fell%22" target="_blank" rel="noopener">Torbran, Thane of Red Fell</a>
+                <span class="chip-role">+2 damage amplifier across all red sources</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Eldrazi%20Monument&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Eldrazi%20Monument%22" target="_blank" rel="noopener">Eldrazi Monument</a>
+                <span class="chip-role">+1/+1 flying and indestructible anthem</span>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="ledger-group">
+            <div class="ledger-header">
+                <h3>P2: Win Inevitability & Compactness <span class="ledger-tier-tag tier-a">A</span></h3>
+                <span class="count-tag">8 cards</span>
+            </div>
+            <div class="card-grid">
+                
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Umbral%20Mantle&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Umbral%20Mantle%22" target="_blank" rel="noopener">Umbral Mantle</a>
+                <span class="chip-role">Infinite untap loops and infinite Goblins</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Staff%20of%20Domination&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Staff%20of%20Domination%22" target="_blank" rel="noopener">Staff of Domination</a>
+                <span class="chip-role">Infinite mana, untaps, and draw loop</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Mana%20Echoes&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Mana%20Echoes%22" target="_blank" rel="noopener">Mana Echoes</a>
+                <span class="chip-role">Exponential colorless mana generator for infinite activations</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Goblin%20Bombardment&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Goblin%20Bombardment%22" target="_blank" rel="noopener">Goblin Bombardment</a>
+                <span class="chip-role">Instant-speed sacrifice finisher</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Pashalik%20Mons&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Pashalik%20Mons%22" target="_blank" rel="noopener">Pashalik Mons</a>
+                <span class="chip-role">Direct damage burn on Goblin death</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Goblin%20War%20Strike&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Goblin%20War%20Strike%22" target="_blank" rel="noopener">Goblin War Strike</a>
+                <span class="chip-role">Direct one-shot burn finisher</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Purphoros%2C%20God%20of%20the%20Forge&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Purphoros%2C%20God%20of%20the%20Forge%22" target="_blank" rel="noopener">Purphoros, God of the Forge</a>
+                <span class="chip-role">Unblockable direct burn table kill</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Impact%20Tremors&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Impact%20Tremors%22" target="_blank" rel="noopener">Impact Tremors</a>
+                <span class="chip-role">Passive direct burn table kill</span>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="ledger-group">
+            <div class="ledger-header">
+                <h3>R2: Card Flow & Replenishment <span class="ledger-tier-tag tier-a">A</span></h3>
+                <span class="count-tag">8 cards</span>
             </div>
             <div class="card-grid">
                 
             <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Skullclamp&format=image&version=normal">
                 <a href="https://scryfall.com/search?q=!%22Skullclamp%22" target="_blank" rel="noopener">Skullclamp</a>
-                <span class="chip-role">Card draw / engine replenishment</span>
+                <span class="chip-role">Card draw engine converting 1/1 tokens into 2 cards</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Throne%20of%20Eldraine&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Throne%20of%20Eldraine%22" target="_blank" rel="noopener">Throne of Eldraine</a>
+                <span class="chip-role">Repeatable 2-card draw engine</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Rundvelt%20Hordemaster&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Rundvelt%20Hordemaster%22" target="_blank" rel="noopener">Rundvelt Hordemaster</a>
+                <span class="chip-role">Impulse card plays off library on Goblin death</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Conspicuous%20Snoop&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Conspicuous%20Snoop%22" target="_blank" rel="noopener">Conspicuous Snoop</a>
+                <span class="chip-role">Card advantage playing Goblins off top of library</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Goblin%20Ringleader&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Goblin%20Ringleader%22" target="_blank" rel="noopener">Goblin Ringleader</a>
+                <span class="chip-role">4-drop putting all revealed Goblins into hand</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Moria%20Marauder&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Moria%20Marauder%22" target="_blank" rel="noopener">Moria Marauder</a>
+                <span class="chip-role">Impulse card exile draw on Goblin combat damage</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Muxus%2C%20Goblin%20Grandee&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Muxus%2C%20Goblin%20Grandee%22" target="_blank" rel="noopener">Muxus, Goblin Grandee</a>
+                <span class="chip-role">Digs 6 cards deep and cheats Goblins onto battlefield</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=War%20Room&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22War%20Room%22" target="_blank" rel="noopener">War Room</a>
+                <span class="chip-role">Untapped card draw utility land</span>
             </div>
             
             </div>
@@ -404,14 +859,164 @@
         
         <div class="ledger-group">
             <div class="ledger-header">
-                <h3>I1: Reactive Disruption <span class="ledger-tier-tag tier-c">C</span></h3>
-                <span class="count-tag">1 cards</span>
+                <h3>A1: Selection & Redundancy <span class="ledger-tier-tag tier-a">A</span></h3>
+                <span class="count-tag">9 cards</span>
             </div>
             <div class="card-grid">
                 
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Goblin%20Matron&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Goblin%20Matron%22" target="_blank" rel="noopener">Goblin Matron</a>
+                <span class="chip-role">Unconditional tutor searching for any Goblin card to hand</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Goblin%20Recruiter&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Goblin%20Recruiter%22" target="_blank" rel="noopener">Goblin Recruiter</a>
+                <span class="chip-role">Stacks entire library with Goblins in custom combo order</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Conspicuous%20Snoop&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Conspicuous%20Snoop%22" target="_blank" rel="noopener">Conspicuous Snoop</a>
+                <span class="chip-role">Card selection and ability copying from top of library</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Muxus%2C%20Goblin%20Grandee&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Muxus%2C%20Goblin%20Grandee%22" target="_blank" rel="noopener">Muxus, Goblin Grandee</a>
+                <span class="chip-role">High-velocity card selection and deployment</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Skirk%20Prospector&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Skirk%20Prospector%22" target="_blank" rel="noopener">Skirk Prospector</a>
+                <span class="chip-role">Redundant sacrifice mana outlet</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Ashnod%27s%20Altar&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Ashnod%27s%20Altar%22" target="_blank" rel="noopener">Ashnod's Altar</a>
+                <span class="chip-role">Redundant sacrifice mana outlet</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Phyrexian%20Altar&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Phyrexian%20Altar%22" target="_blank" rel="noopener">Phyrexian Altar</a>
+                <span class="chip-role">Redundant sacrifice mana outlet</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Goblin%20Bombardment&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Goblin%20Bombardment%22" target="_blank" rel="noopener">Goblin Bombardment</a>
+                <span class="chip-role">Redundant sacrifice direct damage outlet</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Goblin%20Chirurgeon&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Goblin%20Chirurgeon%22" target="_blank" rel="noopener">Goblin Chirurgeon</a>
+                <span class="chip-role">Redundant sacrifice protection outlet</span>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="ledger-group">
+            <div class="ledger-header">
+                <h3>P3: Exposure & Predictability <span class="ledger-tier-tag tier-b">B</span></h3>
+                <span class="count-tag">2 cards</span>
+            </div>
+            <div class="card-grid">
+                
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Krenko%2C%20Mob%20Boss&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Krenko%2C%20Mob%20Boss%22" target="_blank" rel="noopener">Krenko, Mob Boss</a>
+                <span class="chip-role">Fully visible commander and token swarm on board</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Goblin%20Tokens&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Goblin%20Tokens%22" target="_blank" rel="noopener">Goblin Tokens</a>
+                <span class="chip-role">Telegraphed creature board state</span>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="ledger-group">
+            <div class="ledger-header">
+                <h3>I1: Reactive Disruption <span class="ledger-tier-tag tier-b">B</span></h3>
+                <span class="count-tag">9 cards</span>
+            </div>
+            <div class="card-grid">
+                
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Deflecting%20Swat&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Deflecting%20Swat%22" target="_blank" rel="noopener">Deflecting Swat</a>
+                <span class="chip-role">Free instant-speed redirect protection</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Return%20the%20Favor&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Return%20the%20Favor%22" target="_blank" rel="noopener">Return the Favor</a>
+                <span class="chip-role">Modal spree instant redirect and copy</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Untimely%20Malfunction&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Untimely%20Malfunction%22" target="_blank" rel="noopener">Untimely Malfunction</a>
+                <span class="chip-role">Modal removal, redirect, or blocker suppression</span>
+            </div>
+            
             <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Chaos%20Warp&format=image&version=normal">
                 <a href="https://scryfall.com/search?q=!%22Chaos%20Warp%22" target="_blank" rel="noopener">Chaos Warp</a>
-                <span class="chip-role">Instant-speed reactive removal</span>
+                <span class="chip-role">Instant-speed universal permanent removal</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Vandalblast&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Vandalblast%22" target="_blank" rel="noopener">Vandalblast</a>
+                <span class="chip-role">Targeted artifact removal or one-sided overload wipe</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Gempalm%20Incinerator&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Gempalm%20Incinerator%22" target="_blank" rel="noopener">Gempalm Incinerator</a>
+                <span class="chip-role">Uncounterable cycling creature removal</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Goblin%20Trashmaster&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Goblin%20Trashmaster%22" target="_blank" rel="noopener">Goblin Trashmaster</a>
+                <span class="chip-role">Repeatable artifact destruction on a stick</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Goblin%20Sharpshooter&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Goblin%20Sharpshooter%22" target="_blank" rel="noopener">Goblin Sharpshooter</a>
+                <span class="chip-role">Repeatable creature machine-gunning</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Goblin%20Bombardment&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Goblin%20Bombardment%22" target="_blank" rel="noopener">Goblin Bombardment</a>
+                <span class="chip-role">Instant-speed targeted creature removal</span>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="ledger-group">
+            <div class="ledger-header">
+                <h3>I2: Proactive Denial & Restriction <span class="ledger-tier-tag tier-b">B</span></h3>
+                <span class="count-tag">5 cards</span>
+            </div>
+            <div class="card-grid">
+                
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Blood%20Moon&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Blood%20Moon%22" target="_blank" rel="noopener">Blood Moon</a>
+                <span class="chip-role">Hard nonbasic land denial turning lands into Mountains</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Goblin%20Trashmaster&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Goblin%20Trashmaster%22" target="_blank" rel="noopener">Goblin Trashmaster</a>
+                <span class="chip-role">Repeatable artifact destruction suppressing opposing engines</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Goblin%20Sharpshooter&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Goblin%20Sharpshooter%22" target="_blank" rel="noopener">Goblin Sharpshooter</a>
+                <span class="chip-role">Suppresses low-toughness creatures and mana dorks</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Goblin%20Bombardment&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Goblin%20Bombardment%22" target="_blank" rel="noopener">Goblin Bombardment</a>
+                <span class="chip-role">Repeatable creature suppression against opposing boards</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Mines%20of%20Moria&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Mines%20of%20Moria%22" target="_blank" rel="noopener">Mines of Moria</a>
+                <span class="chip-role">Targeted graveyard exile utility on a land</span>
             </div>
             
             </div>
@@ -420,18 +1025,138 @@
         <div class="ledger-group">
             <div class="ledger-header">
                 <h3>S1: Plan Shielding & Protection <span class="ledger-tier-tag tier-a">A</span></h3>
-                <span class="count-tag">2 cards</span>
+                <span class="count-tag">8 cards</span>
             </div>
             <div class="card-grid">
                 
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Commander%27s%20Plate&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Commander%27s%20Plate%22" target="_blank" rel="noopener">Commander's Plate</a>
+                <span class="chip-role">Grants Krenko +3/+3 and protection from WUBG</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Deflecting%20Swat&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Deflecting%20Swat%22" target="_blank" rel="noopener">Deflecting Swat</a>
+                <span class="chip-role">Free 0-mana stack protection redirecting removal</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Return%20the%20Favor&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Return%20the%20Favor%22" target="_blank" rel="noopener">Return the Favor</a>
+                <span class="chip-role">Stack protection redirecting counterspells or removal</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Untimely%20Malfunction&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Untimely%20Malfunction%22" target="_blank" rel="noopener">Untimely Malfunction</a>
+                <span class="chip-role">Stack protection redirecting targeted spells</span>
+            </div>
+            
             <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Lightning%20Greaves&format=image&version=normal">
                 <a href="https://scryfall.com/search?q=!%22Lightning%20Greaves%22" target="_blank" rel="noopener">Lightning Greaves</a>
-                <span class="chip-role">Board / commander protection</span>
+                <span class="chip-role">Shroud and haste equipment protection</span>
             </div>
             
             <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Swiftfoot%20Boots&format=image&version=normal">
                 <a href="https://scryfall.com/search?q=!%22Swiftfoot%20Boots%22" target="_blank" rel="noopener">Swiftfoot Boots</a>
-                <span class="chip-role">Board / commander protection</span>
+                <span class="chip-role">Hexproof and haste equipment protection</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Goblin%20Chirurgeon&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Goblin%20Chirurgeon%22" target="_blank" rel="noopener">Goblin Chirurgeon</a>
+                <span class="chip-role">Free sacrifice regeneration protecting key creatures</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Eldrazi%20Monument&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Eldrazi%20Monument%22" target="_blank" rel="noopener">Eldrazi Monument</a>
+                <span class="chip-role">Universal indestructible granting wipe immunity</span>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="ledger-group">
+            <div class="ledger-header">
+                <h3>S2: Engine Recovery <span class="ledger-tier-tag tier-a">A</span></h3>
+                <span class="count-tag">4 cards</span>
+            </div>
+            <div class="card-grid">
+                
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Muxus%2C%20Goblin%20Grandee&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Muxus%2C%20Goblin%20Grandee%22" target="_blank" rel="noopener">Muxus, Goblin Grandee</a>
+                <span class="chip-role">Instant 6-card army burst from library</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Rundvelt%20Hordemaster&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Rundvelt%20Hordemaster%22" target="_blank" rel="noopener">Rundvelt Hordemaster</a>
+                <span class="chip-role">Exiles playable cards upon board wipe deaths</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Goblin%20Recruiter&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Goblin%20Recruiter%22" target="_blank" rel="noopener">Goblin Recruiter</a>
+                <span class="chip-role">Re-stacks library in custom order following removal</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Sokenzan%2C%20Crucible%20of%20Defiance&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Sokenzan%2C%20Crucible%20of%20Defiance%22" target="_blank" rel="noopener">Sokenzan, Crucible of Defiance</a>
+                <span class="chip-role">Instant-speed uncounterable token recovery</span>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="ledger-group">
+            <div class="ledger-header">
+                <h3>S3: Independence & Backup Plans <span class="ledger-tier-tag tier-a">A</span></h3>
+                <span class="count-tag">10 cards</span>
+            </div>
+            <div class="card-grid">
+                
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Purphoros%2C%20God%20of%20the%20Forge&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Purphoros%2C%20God%20of%20the%20Forge%22" target="_blank" rel="noopener">Purphoros, God of the Forge</a>
+                <span class="chip-role">Standalone win condition via creature ETBs</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Impact%20Tremors&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Impact%20Tremors%22" target="_blank" rel="noopener">Impact Tremors</a>
+                <span class="chip-role">Standalone burn win condition</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Shared%20Animosity&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Shared%20Animosity%22" target="_blank" rel="noopener">Shared Animosity</a>
+                <span class="chip-role">Standalone combat overrun without commander</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Banner%20of%20Kinship&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Banner%20of%20Kinship%22" target="_blank" rel="noopener">Banner of Kinship</a>
+                <span class="chip-role">Standalone tribal anthem</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Goblin%20King&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Goblin%20King%22" target="_blank" rel="noopener">Goblin King</a>
+                <span class="chip-role">Standalone Mountainwalk evasion</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Muxus%2C%20Goblin%20Grandee&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Muxus%2C%20Goblin%20Grandee%22" target="_blank" rel="noopener">Muxus, Goblin Grandee</a>
+                <span class="chip-role">Standalone army-in-a-can</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Siege-Gang%20Commander&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Siege-Gang%20Commander%22" target="_blank" rel="noopener">Siege-Gang Commander</a>
+                <span class="chip-role">Standalone token swarm and burn engine</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Legion%20Warboss&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Legion%20Warboss%22" target="_blank" rel="noopener">Legion Warboss</a>
+                <span class="chip-role">Standalone continuous token generator</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Goblin%20Bushwhacker&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Goblin%20Bushwhacker%22" target="_blank" rel="noopener">Goblin Bushwhacker</a>
+                <span class="chip-role">Standalone kicker team pump and haste</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Torbran%2C%20Thane%20of%20Red%20Fell&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Torbran%2C%20Thane%20of%20Red%20Fell%22" target="_blank" rel="noopener">Torbran, Thane of Red Fell</a>
+                <span class="chip-role">Standalone damage multiplier</span>
             </div>
             
             </div>

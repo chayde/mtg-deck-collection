@@ -292,7 +292,7 @@ class DTIEvaluation:
                 "reason": f"Velocity vector ({self.velocity_vector}/48) >= 28. Fast proactive clock."
             })
 
-        # Gate 2: Early Finish / Glass Cannon Gate (Eliminates table by Turn 5: Zero-Untap Override or T1-3 onset)
+        # Gate 2: Early Finish / Glass Cannon Gate (Eliminates table by Turn 5-6: Zero-Untap Override or T4-5 Combo Finish)
         early_finish = False
         if self.grades["p1"] == "S":
             early_finish = True
@@ -300,12 +300,14 @@ class DTIEvaluation:
             early_finish = True
         elif self.grades["a2"] in ("S", "A") and self.grades["p2"] == "S":
             early_finish = True
+        elif self.grades["p1"] == "A" and self.grades["p2"] == "A" and any(k in self.archetype.lower() for k in ("combo", "infinite", "loop")):
+            early_finish = True
 
         if early_finish:
             self.gates_triggered.append({
                 "name": "Early Finish Gate",
                 "bracket": 4,
-                "reason": f"Reliably eliminates opponents or establishes lockout by Turn 5 (Zero-Untap Override: P1:{self.grades['p1']}, P2:{self.grades['p2']}). Belongs in Bracket 4."
+                "reason": f"Reliably threatens table elimination by Turn 5–6 (P1:{self.grades['p1']}, P2:{self.grades['p2']}). Violates Bracket 3 Turn 7 ceiling; requires Bracket 4."
             })
 
         # Gate 3: Suppression Gate (I2 S/A severe denial -> Bracket 4)

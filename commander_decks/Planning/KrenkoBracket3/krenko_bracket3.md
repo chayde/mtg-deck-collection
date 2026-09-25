@@ -12,9 +12,10 @@ deck_status: main
 
 ## Commander Strategy
 **Krenko, Mob Boss**
-*   **Archetype:** Mono-Red Goblin Tribal / Swarm Aggro, Infinite Untap Combos & Stack Protection
-*   **Bracket:** 3 (Upgraded Casual — 0/3 Game Changers)
-*   **Core Goal:** Rapidly deploy Krenko with immediate haste, double your Goblin count on the turn he lands, and convert token volume into lethal direct burn or infinite loops (*Thornbite Staff*, *Umbral Mantle*, *Staff of Domination*, *Mana Echoes*, *Phyrexian Altar*) while protecting Krenko from targeted removal via red redirect countermagic (*Deflecting Swat*, *Return the Favor*).
+*   **Archetype:** Mono-Red Goblin Tribal Aggro-Combo / Infinite Untap Combos & Stack Protection
+*   **Bracket:** 4 (Optimized — Promoted from Bracket 3 via Early Combo Finish Gate / Turn 5–6 Win Window)
+*   **DTI Threat Index:** **42 / 96** (Score Floor: Bracket 3 | Final: Bracket 4 via Early Finish Gate | Velocity: **24/48** | Suppression: **16/40** | Gate: Early Finish Gate Triggered -> B4 | [DTI Report](dti_report.html))
+*   **Core Goal:** Rapidly deploy Krenko with immediate haste, double your Goblin count on the turn he lands, and convert token volume into lethal direct burn or infinite loops (*Umbral Mantle*, *Staff of Domination*, *Mana Echoes*, *Phyrexian Altar*) while protecting Krenko from targeted removal via red redirect countermagic (*Deflecting Swat*, *Return the Favor*).
 
 ### Keystone Geometry & The Commander Subtraction Principle
 *   **Primary Action (Engine):** Krenko serves as the 100% available token multiplier in the Command Zone. Per the Commander Subtraction Principle, the 99 cuts slow token makers in favor of **9 distinct haste enablers** ([Arena of Glory](https://scryfall.com/search?q=!"Arena+of+Glory"), [The Fire Crystal](https://scryfall.com/search?q=!"The+Fire+Crystal"), [Lightning Greaves](https://scryfall.com/search?q=!"Lightning+Greaves"), [Swiftfoot Boots](https://scryfall.com/search?q=!"Swiftfoot+Boots"), [Rising of the Day](https://scryfall.com/search?q=!"Rising+of+the+Day"), [Thousand-Year Elixir](https://scryfall.com/search?q=!"Thousand-Year+Elixir"), [Sting, the Glinting Dagger](https://scryfall.com/search?q=!"Sting,+the+Glinting+Dagger"), [Goblin Chieftain](https://scryfall.com/search?q=!"Goblin+Chieftain"), [Goblin Warchief](https://scryfall.com/search?q=!"Goblin+Warchief")), ensuring Krenko taps the turn he enters in over 80% of games.
@@ -149,6 +150,10 @@ deck_status: main
 ---
 
 ## 📜 Deck Changelog
+- **[2026-09-25]:** Calibrated against official DeckCheck.co scan.
+    - **In:** N/A (DTI Telemetry & Calibration)
+    - **Out:** N/A
+    - **Reason:** Official scan validated Threat Score at 42 / 96 with 100% benchmark tier match (R1:A, R2:A, A1:A, A2:A, P1:A, P2:A, P3:B, I1:B, I2:B, S1:A, S2:A, S3:A). Promoted to Bracket 4 (Optimized) via Early Finish Gate due to Turn 5 threat onset (P1: A) and 1 opponent response cycle (P2: A) establishing a Turn 5–6 infinite combo win window (Umbral Mantle, Mana Echoes, Staff of Domination) that violates Bracket 3's Turn 7 earliest win ceiling.
 - **[2026-09-24]:** Replace clunky combo piece, slow sorcery pod, and 3-turn saga with premier WUBG protection (Commander's Plate), mono-red ramp/draw engine (Throne of Eldraine), and combat impulse velocity (Moria Marauder)
     - **In:** Commander's Plate, Throne of Eldraine, Moria Marauder
     - **Out:** Thornbite Staff, Pyre of Heroes, Fable of the Mirror-Breaker // Reflection of Kiki-Jiki

@@ -8,8 +8,9 @@
 
 ## Commander Strategy
 **Krenko, Mob Boss**
-*   **Archetype:** Mono-Red Goblin Tribal / Swarm Aggro, Infinite Untap Combos & Stack Protection
-*   **Bracket:** 3 (Upgraded Casual — 0/3 Game Changers)
-*   **Core Goal:** Rapidly deploy Krenko with immediate haste, double your Goblin count on the turn he lands, and convert token volume into lethal direct burn or infinite loops (*Thornbite Staff*, *Umbral Mantle*, *Staff of Domination*, *Mana Echoes*, *Phyrexian Altar*) while protecting Krenko from targeted removal via red redirect countermagic (*Deflecting Swat*, *Return the Favor*).
+*   **Archetype:** Mono-Red Goblin Tribal Aggro-Combo / Infinite Untap Combos & Stack Protection
+*   **Bracket:** 4 (Optimized — Promoted from Bracket 3 via Early Combo Finish Gate / Turn 5–6 Win Window)
+*   **DTI Threat Index:** **42 / 96** (Score Floor: Bracket 3 | Final: Bracket 4 via Early Finish Gate | Velocity: **24/48** | Suppression: **16/40** | Gate: Early Finish Gate Triggered -> B4 | [DTI Report](dti_report.html))
+*   **Core Goal:** Rapidly deploy Krenko with immediate haste, double your Goblin count on the turn he lands, and convert token volume into lethal direct burn or infinite loops (*Umbral Mantle*, *Staff of Domination*, *Mana Echoes*, *Phyrexian Altar*) while protecting Krenko from targeted removal via red redirect countermagic (*Deflecting Swat*, *Return the Favor*).
 
 See [`krenko_bracket3.md`](krenko_bracket3.md) for full strategy guide, infinite combo documentation, and categorized card explanations.
