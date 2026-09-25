@@ -1,89 +1,253 @@
 {
+  "deck_name": "IncredibleHulk",
+  "thematic_restriction": false,
   "grades": {
-    "r1": "B",
-    "r2": "B",
+    "r1": "A",
+    "r2": "A",
     "a1": "B",
-    "a2": "B",
-    "p1": "B",
+    "a2": "A",
+    "p1": "A",
     "p2": "B",
     "p3": "B",
     "i1": "B",
     "i2": "F",
-    "s1": "B",
-    "s2": "C",
-    "s3": "C"
+    "s1": "C",
+    "s2": "A",
+    "s3": "A"
   },
   "justifications": {
-    "r1": "Solid Temur ramp with 2-CMC ramp and Doc Samson power-scaling mana.",
-    "r2": "Bruce Banner front face provides repeatable card draw {X}{X} dump.",
-    "a1": "Typal redundancy and counter synergy (+1/+1 counter doublers).",
-    "a2": "Flips into Hulk with counters setup on Turns 5–6.",
-    "p1": "Presents lethal trample damage / Fling burst on Turns 6–7.",
-    "p2": "2 opponent untaps for fair combat, or same-turn Fling / Caltrops extra combat line.",
-    "p3": "Board-based combat strategy with visible counter growth.",
-    "i1": "Temur countermagic and burn removal (Beast Within, Chaos Warp, Chandra's Ignition).",
-    "i2": "Zero proactive restriction or stax effects.",
-    "s1": "Protection boots and counter protection; Hulk Enrage punishes direct damage.",
-    "s2": "Moderate recovery via counter restocking; vulnerable to mass bounce/exile.",
-    "s3": "Front face provides card draw; back face provides finisher."
+    "r1": "Dense green-based ramp suite (Birds of Paradise, Bloom Tender, Gyre Sage, Incubation Druid, Hulking Raptor, Sol Ring, Signet, 4x land ramp sorceries, The Great Henge).",
+    "r2": "A-tier card flow powered by Bruce Banner's {X}{X} draw ability, The Great Henge, Beast Whisperer, Guardian Project, Toski, Garruk's Uprising, and Rishkar's Expertise.",
+    "a1": "B-tier redundancy: high density of +1/+1 counter amplifiers (Branching Evolution, Hardened Scales, Ozolith, Samson), but zero nonland tutors to search for specific finishers.",
+    "a2": "Reaches engine readiness by Turn 4-5 via fast ramp to pay the {2}{R}{R}{G}{G} transformation cost.",
+    "p1": "Critical onset hits on Turn 5 once transformed into an 8/8 trampling Hulk or deploying standalone beaters like Kalonian Hydra.",
+    "p2": "Requires 2 opponent response cycles to close out games through combat damage, Fling effects, or executing the Caltrops extra-combat loop.",
+    "p3": "Counter placement and visible permanents on the board telegraph lethal damage to the table.",
+    "i1": "Solid reactive removal suite (Cyclonic Rift, Beast Within, Chaos Warp, Pongify, Lightning Bolt, Abrade, Ram Through, Chandra's Ignition).",
+    "i2": "Completely devoid of proactive stax, taxes, or resource denial (F tier).",
+    "s1": "Plan shielding is limited to Tyvar's Stand and Plaza of Heroes, leaving the deck vulnerable to instant-speed spot exile and bounce (C tier).",
+    "s2": "High engine recovery powered by The Ozolith retaining counters across wipes, Restorative Technique, and Abomination World Ravager.",
+    "s3": "The 99 operates effectively as an autonomous stompy beatdown engine without relying on the commander."
   },
+  "overview": "This deck utilizes Bruce Banner // The Incredible Hulk as a low-cost card-drawing commander that transforms into a massive 8/8 trampling threat. The game plan focuses on aggressive green-based mana acceleration to reach the required six colored mana ({2}{R}{R}{G}{G}) by Turn 5. Once transformed, Hulk synergizes with +1/+1 counter amplifiers like Branching Evolution and Hardened Scales to deal lethal combat damage. A two-card interaction with Caltrops triggers Hulk's Enrage ability on attack, generating infinite untaps, power growth, and extra combat phases to end the game immediately. In standard games without Caltrops, the deck applies overwhelming combat pressure through standalone beaters like Kalonian Hydra and asymmetric finishers like Chandra's Ignition, closing out the game across two opponent response cycles by Turn 7.",
+  "primer": {
+    "core_strategy": [
+      "Deploy Bruce Banner // The Incredible Hulk on Turn 1 and accelerate mana using 1-2 CMC ramp spells and creatures.",
+      "Develop the board with counter doublers or draw engines like Garruk's Uprising while hitting land drops.",
+      "Pay {2}{R}{R}{G}{G} on Turn 4 or 5 to transform Bruce Banner into The Incredible Hulk and attack immediately.",
+      "Execute the infinite combat combo with Caltrops or eliminate all opponents by Turn 7 using scaling trample damage, fight spells, and Chandra's Ignition."
+    ],
+    "mulligan_priorities": {
+      "keep": [
+        "Hands containing 3 lands, access to green and blue mana, and at least one 1-2 CMC ramp piece (Birds of Paradise, Farseek, Three Visits, or Sol Ring) to ensure a Turn 4-5 transformation."
+      ],
+      "avoid": [
+        "Hands without green mana, hands flooded with 5+ CMC creatures without ramp, or hands that rely purely on reactive removal without early development."
+      ]
+    },
+    "key_tips": [
+      "Transforming Bruce Banner is an activated ability costing {2}{R}{R}{G}{G}; it does not cause summoning sickness if Bruce was cast on an earlier turn.",
+      "Commander tax applies only to casting Bruce Banner from the command zone; the {2}{R}{R}{G}{G} transformation cost on the battlefield never increases.",
+      "When attacking with Caltrops on the battlefield, Caltrops deals 1 damage to Hulk to trigger Enrage, increasing his toughness faster than damage accumulates and granting infinite combats."
+    ]
+  },
+  "weaknesses": {
+    "critical": [
+      "Heavy reliance on combat damage leaves the primary plan vulnerable to instant-speed spot exile and bounce before damage resolves.",
+      "Absence of stack interaction and counterspells makes the deck susceptible to opposing fast combo wins and non-damage board wipes."
+    ],
+    "moderate": [
+      "The transformation cost of {2}{R}{R}{G}{G} requires specific heavy colored mana fixing ({R}{R}{G}{G}).",
+      "Lack of nonland tutors means the deck cannot reliably search for Caltrops or specific silver bullets, depending instead on raw card draw."
+    ],
+    "minor": [
+      "Bruce Banner's draw ability is restricted to sorcery speed, limiting reactive mana usage during opponents' turns.",
+      "Wide token strategies can absorb single-combat attacks if trample enablers or board wipes are not drawn."
+    ]
+  },
+  "key_cards": [
+    {
+      "card": "Bruce Banner // The Incredible Hulk",
+      "note": "Commander that acts as early card draw and transforms into an 8/8 trampling finisher with extra-combat Enrage triggers."
+    },
+    {
+      "card": "Caltrops",
+      "note": "Deals 1 damage to attacking creatures, triggering an infinite combat phase and counter-growth loop with The Incredible Hulk."
+    },
+    {
+      "card": "Chandra's Ignition",
+      "note": "Converts a high-power creature or transformed Hulk into a one-sided board wipe and massive direct damage to all opponents."
+    },
+    {
+      "card": "Branching Evolution",
+      "note": "Doubles all +1/+1 counters placed on creatures, accelerating Hulk's growth and power-up mechanics."
+    },
+    {
+      "card": "Hardened Scales",
+      "note": "Low-cost enchantment that adds an extra counter whenever counters are placed on creatures."
+    },
+    {
+      "card": "Kalonian Hydra",
+      "note": "Standalone threat that doubles the +1/+1 counters on all attacking creatures each combat."
+    },
+    {
+      "card": "The Great Henge",
+      "note": "Cost-reduced legendary artifact providing mana acceleration, +1/+1 counters, and continuous card draw on creature ETBs."
+    },
+    {
+      "card": "Herald of Secret Streams",
+      "note": "Grants unblockable status to all creatures with +1/+1 counters, bypassing opposing blockers completely."
+    },
+    {
+      "card": "Bloom Tender",
+      "note": "High-efficiency mana creature that taps for up to three mana in Temur colors to accelerate the commander transformation."
+    },
+    {
+      "card": "Plaza of Heroes",
+      "note": "Utility land that provides color fixing for legendaries and can sacrifice to grant hexproof and indestructible to the commander."
+    },
+    {
+      "card": "Professor Hulk",
+      "note": "Large trampling backup beater that draws cards equal to the combat damage it deals to players."
+    },
+    {
+      "card": "Ram Through",
+      "note": "Instant-speed removal spell that uses a high-power trampler to eliminate a creature and push excess damage directly to an opponent."
+    }
+  ],
   "card_ledger": {
     "r1": [
-      {
-        "card": "Sol Ring",
-        "role": "Mana ramp / fixing"
-      },
-      {
-        "card": "Arcane Signet",
-        "role": "Mana ramp / fixing"
-      },
-      {
-        "card": "Cultivate",
-        "role": "Mana ramp / fixing"
-      },
-      {
-        "card": "Kodama's Reach",
-        "role": "Mana ramp / fixing"
-      },
-      {
-        "card": "Hinterland Harbor",
-        "role": "Mana ramp / fixing"
-      },
-      {
-        "card": "Island",
-        "role": "Mana ramp / fixing"
-      }
+      { "card": "Birds of Paradise", "role": "1-CMC 5-color mana dork" },
+      { "card": "Bloom Tender", "role": "Taps for up to 3 mana in Temur colors" },
+      { "card": "Gyre Sage", "role": "Evolves to tap for green mana equal to counters" },
+      { "card": "Incubation Druid", "role": "Taps for 3 mana of any color when adapted/modified" },
+      { "card": "Hulking Raptor", "role": "Adds {G}{G} each first main phase with ward 2" },
+      { "card": "Doc Samson, Super Psychiatrist", "role": "Taps for mana equal to his power" },
+      { "card": "Sol Ring", "role": "Premier fast mana acceleration" },
+      { "card": "Arcane Signet", "role": "2-CMC mana rock fixing" },
+      { "card": "Farseek", "role": "2-CMC search for dual land" },
+      { "card": "Three Visits", "role": "2-CMC search for untapped Forest" },
+      { "card": "Cultivate", "role": "3-CMC land ramp searching 2 basics" },
+      { "card": "Kodama's Reach", "role": "3-CMC land ramp searching 2 basics" },
+      { "card": "The Great Henge", "role": "Legendary artifact tapping for {G}{G} and gaining life" },
+      { "card": "Breeding Pool", "role": "Shock dual land" },
+      { "card": "Cinder Glade", "role": "Tango dual land" },
+      { "card": "Command Tower", "role": "Untapped commander fixing" },
+      { "card": "Exotic Orchard", "role": "Untapped multi-color land" },
+      { "card": "Fabled Passage", "role": "Fetchland fixing" },
+      { "card": "Forest", "role": "Basic land mana (7 copies)" },
+      { "card": "Frontier Bivouac", "role": "Temur tri-tap land" },
+      { "card": "Hinterland Harbor", "role": "Check dual land" },
+      { "card": "Island", "role": "Basic land mana (4 copies)" },
+      { "card": "Karn's Bastion", "role": "Proliferate utility land" },
+      { "card": "Karplusan Forest", "role": "Untapped pain land" },
+      { "card": "Kessig Wolf Run", "role": "Trample firebreathing utility land" },
+      { "card": "Ketria Triome", "role": "Fetchable Temur Triome" },
+      { "card": "Mountain", "role": "Basic land mana (5 copies)" },
+      { "card": "Plaza of Heroes", "role": "Untapped legendary fixing and protection" },
+      { "card": "Rejuvenating Springs", "role": "Untapped bond dual land" },
+      { "card": "Rogue's Passage", "role": "Unblockable utility land" },
+      { "card": "Rootbound Crag", "role": "Check dual land" },
+      { "card": "Scorched Geyser", "role": "Dual land fixing" },
+      { "card": "Shivan Reef", "role": "Untapped pain land" },
+      { "card": "Spire Garden", "role": "Untapped bond dual land" },
+      { "card": "Steam Vents", "role": "Shock dual land" },
+      { "card": "Stomping Ground", "role": "Shock dual land" },
+      { "card": "Sulfur Falls", "role": "Check dual land" }
     ],
-    "a2": [],
-    "p1": [],
-    "p2": [],
     "r2": [
-      {
-        "card": "Beast Whisperer",
-        "role": "Card draw / engine replenishment"
-      }
+      { "card": "Bruce Banner // The Incredible Hulk", "role": "{X}{X}: Draw X cards sorcery speed engine" },
+      { "card": "Beast Whisperer", "role": "Draws a card on every creature spell cast" },
+      { "card": "Guardian Project", "role": "Draws a card on every nontoken creature entry" },
+      { "card": "Garruk's Uprising", "role": "Draws a card on 4+ power creature entries" },
+      { "card": "The Great Henge", "role": "Draws a card and adds +1/+1 counter on nontoken creature entries" },
+      { "card": "Toski, Bearer of Secrets", "role": "Draws a card on combat damage to players" },
+      { "card": "Professor Hulk", "role": "Draws cards equal to combat damage dealt to players" },
+      { "card": "Rishkar's Expertise", "role": "Draws cards equal to greatest power" },
+      { "card": "Gamma Grotesque", "role": "Power-up draws cards for modified creatures" },
+      { "card": "She-Hulk, Jennifer Walters", "role": "Sacrifices land to draw a card and add counter" },
+      { "card": "Brawn, Amadeus Cho", "role": "Draws a card on entry" }
     ],
-    "a1": [],
-    "p3": [],
+    "a1": [
+      { "card": "Branching Evolution", "role": "Doubles +1/+1 counters placed on creatures" },
+      { "card": "Hardened Scales", "role": "Adds an additional +1/+1 counter on placement" },
+      { "card": "The Ozolith", "role": "Collects and preserves counters when creatures leave" },
+      { "card": "Doc Samson, Super Psychiatrist", "role": "Increases counter placement and ramps" },
+      { "card": "Hulk, Strongest There Is", "role": "Doubles counters on Gamma creatures each upkeep" },
+      { "card": "Kalonian Hydra", "role": "Doubles counters on attacking creatures each combat" },
+      { "card": "Evolution Sage", "role": "Proliferates on landfall" },
+      { "card": "Bloom Hulk", "role": "Proliferates on ETB" },
+      { "card": "Verdurous Gearhulk", "role": "Distributes 4 +1/+1 counters on ETB" },
+      { "card": "Herald of Secret Streams", "role": "Grants unblockable to all creatures with counters" },
+      { "card": "Rishkar, Peema Renegade", "role": "Distributes counters and turns them into mana dorks" }
+    ],
+    "a2": [
+      { "card": "Bruce Banner // The Incredible Hulk", "role": "Commander deployed on Turn 1 and transformed by Turn 4-5" },
+      { "card": "Bloom Tender", "role": "Accelerates 3 mana to enable Turn 4 commander flip" },
+      { "card": "Gyre Sage", "role": "Scales mana to accelerate heavy curve toppers" },
+      { "card": "Hulking Raptor", "role": "Adds {G}{G} on Turn 4 first main phase" }
+    ],
+    "p1": [
+      { "card": "Bruce Banner // The Incredible Hulk", "role": "8/8 trampler with reach and extra combat Enrage ability" },
+      { "card": "Kalonian Hydra", "role": "Massive 8/8 trampler scaling entire board exponentially" },
+      { "card": "Abomination, Irradiated Brute", "role": "Scales power with combat damage" },
+      { "card": "Red Hulk", "role": "Enrage damage and power growth" },
+      { "card": "Professor Hulk", "role": "6/6 trampling combat threat" },
+      { "card": "She-Hulk, Wallbreaker", "role": "Grants trample to Heroes and punishes blockers" },
+      { "card": "Abomination, World Ravager", "role": "10/10 menace and trample threat with recursion" },
+      { "card": "Pyrewood Gearhulk", "role": "7/7 alpha strike enabler with menace and vigilance" },
+      { "card": "The Thing, Ben Grimm", "role": "7/7 trampler scaling on Hero combat damage" },
+      { "card": "Hulk, Strongest There Is", "role": "Exponential upkeep counter multiplier" },
+      { "card": "Verdurous Gearhulk", "role": "Immediate 8/8 trampler or massive team pump" }
+    ],
+    "p2": [
+      { "card": "Caltrops", "role": "Infinite combat phase loop with The Incredible Hulk" },
+      { "card": "Chandra's Ignition", "role": "Converts creature power into lethal direct damage to all opponents" },
+      { "card": "Fling", "role": "Sacrifices high-power creature for direct face burn" },
+      { "card": "Soul's Fire", "role": "Deals creature power directly to any target" },
+      { "card": "Herald of Secret Streams", "role": "Unblockable team alpha strike" },
+      { "card": "Kessig Wolf Run", "role": "Trample firebreathing finisher" },
+      { "card": "Rogue's Passage", "role": "Guaranteed unblockable commander damage finish" }
+    ],
+    "p3": [
+      { "card": "Bruce Banner // The Incredible Hulk", "role": "Visible commander transformation and public counter counts" },
+      { "card": "The Ozolith", "role": "Counters stored in public view" }
+    ],
     "i1": [
-      {
-        "card": "Beast Within",
-        "role": "Instant-speed reactive removal"
-      },
-      {
-        "card": "Chaos Warp",
-        "role": "Instant-speed reactive removal"
-      },
-      {
-        "card": "Pongify",
-        "role": "Instant-speed reactive removal"
-      }
+      { "card": "Beast Within", "role": "Instant permanent destruction" },
+      { "card": "Chaos Warp", "role": "Instant permanent tuck removal" },
+      { "card": "Pongify", "role": "1-mana creature destruction" },
+      { "card": "Lightning Bolt", "role": "3 damage removal spell" },
+      { "card": "Abrade", "role": "Modal creature damage or artifact destruction" },
+      { "card": "Ram Through", "role": "Instant creature bite with excess trample damage to face" },
+      { "card": "Soul's Fire", "role": "Direct damage removal" },
+      { "card": "Tyvar's Stand", "role": "Combat trick and protection" },
+      { "card": "Cyclonic Rift", "role": "Asymmetric board bounce sweeper" },
+      { "card": "Chandra's Ignition", "role": "One-sided creature board wipe" },
+      { "card": "Epic Fight", "role": "Fight removal spell" },
+      { "card": "She-Hulk, Jade Defender", "role": "Destroys target artifact or enchantment on Power-up" },
+      { "card": "Abomination, Terrifying Titan", "role": "Fights target creature on Power-up" }
     ],
-    "i2": [],
-    "s1": [],
-    "s2": [],
-    "s3": []
-  },
-  "deck_name": "IncredibleHulk",
-  "thematic_restriction": false
+    "i2": [
+      { "card": "Caltrops", "role": "Taxes and damages attacking creatures" }
+    ],
+    "s1": [
+      { "card": "Tyvar's Stand", "role": "Instant hexproof and indestructible" },
+      { "card": "Plaza of Heroes", "role": "Hexproof and indestructible protection for Bruce/Hulk" },
+      { "card": "The Ozolith", "role": "Protects counter investment against board wipes" },
+      { "card": "Hulkbuster Armor", "role": "Grants ward 2 and stat buff" }
+    ],
+    "s2": [
+      { "card": "The Ozolith", "role": "Recovers all counters to put onto new creatures each combat" },
+      { "card": "Restorative Technique", "role": "Recurs 2 permanents from graveyard to hand" },
+      { "card": "Abomination, World Ravager", "role": "Recurs from graveyard to battlefield on Mayhem trigger" }
+    ],
+    "s3": [
+      { "card": "Kalonian Hydra", "role": "Autonomous game-winning counter doubler" },
+      { "card": "The Great Henge", "role": "Autonomous card and mana engine" },
+      { "card": "She-Hulk, Wallbreaker", "role": "Autonomous trampling army enabler" },
+      { "card": "Abomination, World Ravager", "role": "Independent 10/10 menacing threat" },
+      { "card": "Verdurous Gearhulk", "role": "Autonomous trampling beater" }
+    ]
+  }
 }

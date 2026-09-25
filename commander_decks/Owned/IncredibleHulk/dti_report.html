@@ -171,6 +171,55 @@
             box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.5), 0 8px 10px -6px rgba(0, 0, 0, 0.5);
             border: 2px solid #475569;
         }
+
+        .deck-telemetry-banner {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 10px 16px;
+            margin-bottom: 20px;
+            font-size: 13px;
+            color: var(--text-sub);
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+        .deck-telemetry-banner strong { color: var(--text-main); }
+        .info-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 24px;
+        }
+        .info-card h3 {
+            font-size: 16px;
+            margin-bottom: 12px;
+            color: var(--text-main);
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 8px;
+        }
+        .primer-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        @media (max-width: 768px) {
+            .primer-grid { grid-template-columns: 1fr; }
+        }
+        .weakness-card {
+            background: #0f172a;
+            border-radius: 8px;
+            padding: 14px;
+            border-top: 3px solid #64748b;
+        }
+        .weakness-critical { border-top-color: #ef4444; }
+        .weakness-moderate { border-top-color: #f59e0b; }
+        .weakness-minor { border-top-color: #3b82f6; }
+        .weakness-list { list-style: none; margin-top: 8px; }
+        .weakness-list li { font-size: 13px; margin: 6px 0; color: #cbd5e1; }
+        .step-list { padding-left: 20px; font-size: 13px; color: #cbd5e1; line-height: 1.6; }
+        .step-list li { margin-bottom: 6px; }
     </style>
 </head>
 <body>
@@ -184,24 +233,26 @@
             <div class="bracket-badge">BRACKET 3</div>
         </header>
 
+        
+
         <div class="metrics-grid">
             <div class="metric-card">
                 <div class="metric-title">Threat Score</div>
-                <div class="metric-value">18 <span style="font-size:16px;color:var(--text-sub);">/ 96</span></div>
-                <div class="metric-sub">Score Floor: Bracket 2</div>
-                <div class="progress-bar"><div class="progress-fill" style="width: 18.75%;"></div></div>
+                <div class="metric-value">32 <span style="font-size:16px;color:var(--text-sub);">/ 96</span></div>
+                <div class="metric-sub">Score Floor: Bracket 3</div>
+                <div class="progress-bar"><div class="progress-fill" style="width: 33.33333333333333%;"></div></div>
             </div>
             <div class="metric-card">
                 <div class="metric-title">Velocity Vector</div>
-                <div class="metric-value">10 <span style="font-size:16px;color:var(--text-sub);">/ 48</span></div>
+                <div class="metric-value">18 <span style="font-size:16px;color:var(--text-sub);">/ 48</span></div>
                 <div class="metric-sub">Clock & Assembly Speed (Gate at 28)</div>
-                <div class="progress-bar"><div class="progress-fill" style="width: 20.833333333333336%;"></div></div>
+                <div class="progress-bar"><div class="progress-fill" style="width: 37.5%;"></div></div>
             </div>
             <div class="metric-card">
                 <div class="metric-title">Suppression Vector</div>
-                <div class="metric-value">6 <span style="font-size:16px;color:var(--text-sub);">/ 40</span></div>
+                <div class="metric-value">14 <span style="font-size:16px;color:var(--text-sub);">/ 40</span></div>
                 <div class="metric-sub">Denial, Tax & Stax Impact</div>
-                <div class="progress-bar"><div class="progress-fill" style="width: 15.0%;"></div></div>
+                <div class="progress-bar"><div class="progress-fill" style="width: 35.0%;"></div></div>
             </div>
             <div class="metric-card">
                 <div class="metric-title">Game Changers</div>
@@ -217,13 +268,13 @@
                 <span class="gate-tag tag-passed">
                     PASSED
                 </span>
-                <strong>Velocity Gate:</strong> Vector 10/48 (Threshold: &ge; 28 mandates Bracket 4).
+                <strong>Velocity Gate:</strong> Vector 18/48 (Threshold: &ge; 28 mandates Bracket 4).
             </div>
             <div class="gate-item">
                 <span class="gate-tag tag-passed">
                     PASSED
                 </span>
-                <strong>Early Finish Gate:</strong> Critical Onset P1 is B (Turns 1–5 onset mandates Bracket 4).
+                <strong>Early Finish Gate:</strong> Onset A, Completion B (Zero-untap or T1-5 table elimination mandates Bracket 4).
             </div>
             <div class="gate-item">
                 <span class="gate-tag tag-passed">
@@ -235,9 +286,123 @@
                 <span class="gate-tag tag-passed">
                     PASSED
                 </span>
-                <strong>cEDH Gate:</strong> Format ceiling clock with 0-untap kill (Peak vector: 10).
+                <strong>cEDH Gate:</strong> Format ceiling clock with 0-untap kill (Peak vector: 18).
             </div>
         </div>
+
+        
+        <div class="info-card">
+            <h3>Tactical Overview</h3>
+            <p style="font-size: 14px; line-height: 1.6; color: #cbd5e1;">This deck utilizes Bruce Banner // The Incredible Hulk as a low-cost card-drawing commander that transforms into a massive 8/8 trampling threat. The game plan focuses on aggressive green-based mana acceleration to reach the required six colored mana ({2}{R}{R}{G}{G}) by Turn 5. Once transformed, Hulk synergizes with +1/+1 counter amplifiers like Branching Evolution and Hardened Scales to deal lethal combat damage. A two-card interaction with Caltrops triggers Hulk's Enrage ability on attack, generating infinite untaps, power growth, and extra combat phases to end the game immediately. In standard games without Caltrops, the deck applies overwhelming combat pressure through standalone beaters like Kalonian Hydra and asymmetric finishers like Chandra's Ignition, closing out the game across two opponent response cycles by Turn 7.</p>
+        </div>
+        
+        
+        <div class="info-card">
+            <h3>Operational Primer & Strategy</h3>
+            <div class="primer-grid">
+                <div>
+                    <h4 style="font-size: 13px; text-transform: uppercase; color: var(--text-sub); margin-bottom: 8px;">Core Turn Strategy</h4>
+                    <ol class="step-list">
+                        <li>Deploy Bruce Banner // The Incredible Hulk on Turn 1 and accelerate mana using 1-2 CMC ramp spells and creatures.</li><li>Develop the board with counter doublers or draw engines like Garruk's Uprising while hitting land drops.</li><li>Pay {2}{R}{R}{G}{G} on Turn 4 or 5 to transform Bruce Banner into The Incredible Hulk and attack immediately.</li><li>Execute the infinite combat combo with Caltrops or eliminate all opponents by Turn 7 using scaling trample damage, fight spells, and Chandra's Ignition.</li>
+                    </ol>
+                </div>
+                <div>
+                    <h4 style="font-size: 13px; text-transform: uppercase; color: var(--text-sub); margin-bottom: 8px;">Mulligan Priorities</h4>
+                    <div style="font-size: 13px; color: #cbd5e1; margin-bottom: 14px; line-height: 1.5;">
+                        <p style='margin-bottom: 6px;'><strong>Keep:</strong> ['Hands containing 3 lands, access to green and blue mana, and at least one 1-2 CMC ramp piece (Birds of Paradise, Farseek, Three Visits, or Sol Ring) to ensure a Turn 4-5 transformation.']</p><p><strong>Avoid:</strong> ['Hands without green mana, hands flooded with 5+ CMC creatures without ramp, or hands that rely purely on reactive removal without early development.']</p>
+                    </div>
+                    <h4 style="font-size: 13px; text-transform: uppercase; color: var(--text-sub); margin-bottom: 8px;">Tactical Tips</h4><ul class="step-list" style="list-style: disc;"><li>Transforming Bruce Banner is an activated ability costing {2}{R}{R}{G}{G}; it does not cause summoning sickness if Bruce was cast on an earlier turn.</li><li>Commander tax applies only to casting Bruce Banner from the command zone; the {2}{R}{R}{G}{G} transformation cost on the battlefield never increases.</li><li>When attacking with Caltrops on the battlefield, Caltrops deals 1 damage to Hulk to trigger Enrage, increasing his toughness faster than damage accumulates and granting infinite combats.</li></ul>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="info-card">
+            <h3>Strategic Weaknesses & Interaction Exploits</h3>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px;">
+                <div class="weakness-card weakness-critical">
+                    <h4 style="font-size: 13px; color: #ef4444; text-transform: uppercase;">Critical Vulnerabilities</h4>
+                    <ul class="weakness-list"><li>Heavy reliance on combat damage leaves the primary plan vulnerable to instant-speed spot exile and bounce before damage resolves.</li><li>Absence of stack interaction and counterspells makes the deck susceptible to opposing fast combo wins and non-damage board wipes.</li></ul>
+                </div>
+                <div class="weakness-card weakness-moderate">
+                    <h4 style="font-size: 13px; color: #f59e0b; text-transform: uppercase;">Moderate Friction Points</h4>
+                    <ul class="weakness-list"><li>The transformation cost of {2}{R}{R}{G}{G} requires specific heavy colored mana fixing ({R}{R}{G}{G}).</li><li>Lack of nonland tutors means the deck cannot reliably search for Caltrops or specific silver bullets, depending instead on raw card draw.</li></ul>
+                </div>
+                <div class="weakness-card weakness-minor">
+                    <h4 style="font-size: 13px; color: #3b82f6; text-transform: uppercase;">Minor Weaknesses</h4>
+                    <ul class="weakness-list"><li>Bruce Banner's draw ability is restricted to sorcery speed, limiting reactive mana usage during opponents' turns.</li><li>Wide token strategies can absorb single-combat attacks if trample enablers or board wipes are not drawn.</li></ul>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="info-card">
+            <h3>Key Engine Anchors</h3>
+            <div class="card-grid">
+                
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Bruce%20Banner%20//%20The%20Incredible%20Hulk&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Bruce%20Banner%20//%20The%20Incredible%20Hulk%22" target="_blank" rel="noopener">Bruce Banner // The Incredible Hulk</a>
+                <span class="chip-role">Commander that acts as early card draw and transforms into an 8/8 trampling finisher with extra-combat Enrage triggers.</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Caltrops&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Caltrops%22" target="_blank" rel="noopener">Caltrops</a>
+                <span class="chip-role">Deals 1 damage to attacking creatures, triggering an infinite combat phase and counter-growth loop with The Incredible Hulk.</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Chandra%27s%20Ignition&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Chandra%27s%20Ignition%22" target="_blank" rel="noopener">Chandra's Ignition</a>
+                <span class="chip-role">Converts a high-power creature or transformed Hulk into a one-sided board wipe and massive direct damage to all opponents.</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Branching%20Evolution&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Branching%20Evolution%22" target="_blank" rel="noopener">Branching Evolution</a>
+                <span class="chip-role">Doubles all +1/+1 counters placed on creatures, accelerating Hulk's growth and power-up mechanics.</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Hardened%20Scales&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Hardened%20Scales%22" target="_blank" rel="noopener">Hardened Scales</a>
+                <span class="chip-role">Low-cost enchantment that adds an extra counter whenever counters are placed on creatures.</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Kalonian%20Hydra&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Kalonian%20Hydra%22" target="_blank" rel="noopener">Kalonian Hydra</a>
+                <span class="chip-role">Standalone threat that doubles the +1/+1 counters on all attacking creatures each combat.</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=The%20Great%20Henge&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22The%20Great%20Henge%22" target="_blank" rel="noopener">The Great Henge</a>
+                <span class="chip-role">Cost-reduced legendary artifact providing mana acceleration, +1/+1 counters, and continuous card draw on creature ETBs.</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Herald%20of%20Secret%20Streams&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Herald%20of%20Secret%20Streams%22" target="_blank" rel="noopener">Herald of Secret Streams</a>
+                <span class="chip-role">Grants unblockable status to all creatures with +1/+1 counters, bypassing opposing blockers completely.</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Bloom%20Tender&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Bloom%20Tender%22" target="_blank" rel="noopener">Bloom Tender</a>
+                <span class="chip-role">High-efficiency mana creature that taps for up to three mana in Temur colors to accelerate the commander transformation.</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Plaza%20of%20Heroes&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Plaza%20of%20Heroes%22" target="_blank" rel="noopener">Plaza of Heroes</a>
+                <span class="chip-role">Utility land that provides color fixing for legendaries and can sacrifice to grant hexproof and indestructible to the commander.</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Professor%20Hulk&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Professor%20Hulk%22" target="_blank" rel="noopener">Professor Hulk</a>
+                <span class="chip-role">Large trampling backup beater that draws cards equal to the combat damage it deals to players.</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Ram%20Through&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Ram%20Through%22" target="_blank" rel="noopener">Ram Through</a>
+                <span class="chip-role">Instant-speed removal spell that uses a high-power trampler to eliminate a creature and push excess damage directly to an opponent.</span>
+            </div>
+            
+            </div>
+        </div>
+        
 
         <h2 style="margin-bottom: 16px; font-size: 20px;">12 Universal Benchmarks</h2>
         <table>
@@ -256,28 +421,28 @@
         <tr>
             <td class="code-col"><strong>R1</strong></td>
             <td><strong>Mana Velocity & Sufficiency</strong><br><span class="domain-sub">Resources</span></td>
-            <td class="tier-col"><span class="tier-badge tier-b">B</span></td>
-            <td class="score-col">2 / 10</td>
-            <td class="ledger-count-col">6</td>
-            <td class="just-col">Solid Temur ramp with 2-CMC ramp and Doc Samson power-scaling mana.</td>
+            <td class="tier-col"><span class="tier-badge tier-a">A</span></td>
+            <td class="score-col">5 / 10</td>
+            <td class="ledger-count-col">37</td>
+            <td class="just-col">Dense green-based ramp suite (Birds of Paradise, Bloom Tender, Gyre Sage, Incubation Druid, Hulking Raptor, Sol Ring, Signet, 4x land ramp sorceries, The Great Henge).</td>
         </tr>
         
         <tr>
             <td class="code-col"><strong>A2</strong></td>
             <td><strong>Assembly Velocity</strong><br><span class="domain-sub">Access</span></td>
-            <td class="tier-col"><span class="tier-badge tier-b">B</span></td>
-            <td class="score-col">2 / 10</td>
-            <td class="ledger-count-col">0</td>
-            <td class="just-col">Flips into Hulk with counters setup on Turns 5–6.</td>
+            <td class="tier-col"><span class="tier-badge tier-a">A</span></td>
+            <td class="score-col">5 / 10</td>
+            <td class="ledger-count-col">4</td>
+            <td class="just-col">Reaches engine readiness by Turn 4-5 via fast ramp to pay the {2}{R}{R}{G}{G} transformation cost.</td>
         </tr>
         
         <tr>
             <td class="code-col"><strong>P1</strong></td>
             <td><strong>Critical Onset & Lethality</strong><br><span class="domain-sub">Pressure</span></td>
-            <td class="tier-col"><span class="tier-badge tier-b">B</span></td>
-            <td class="score-col">2 / 10</td>
-            <td class="ledger-count-col">0</td>
-            <td class="just-col">Presents lethal trample damage / Fling burst on Turns 6–7.</td>
+            <td class="tier-col"><span class="tier-badge tier-a">A</span></td>
+            <td class="score-col">5 / 10</td>
+            <td class="ledger-count-col">11</td>
+            <td class="just-col">Critical onset hits on Turn 5 once transformed into an 8/8 trampling Hulk or deploying standalone beaters like Kalonian Hydra.</td>
         </tr>
         
         <tr>
@@ -285,17 +450,17 @@
             <td><strong>Win Inevitability & Compactness</strong><br><span class="domain-sub">Pressure</span></td>
             <td class="tier-col"><span class="tier-badge tier-b">B</span></td>
             <td class="score-col">2 / 10</td>
-            <td class="ledger-count-col">0</td>
-            <td class="just-col">2 opponent untaps for fair combat, or same-turn Fling / Caltrops extra combat line.</td>
+            <td class="ledger-count-col">7</td>
+            <td class="just-col">Requires 2 opponent response cycles to close out games through combat damage, Fling effects, or executing the Caltrops extra-combat loop.</td>
         </tr>
         
         <tr>
             <td class="code-col"><strong>R2</strong></td>
             <td><strong>Card Flow & Replenishment</strong><br><span class="domain-sub">Resources</span></td>
-            <td class="tier-col"><span class="tier-badge tier-b">B</span></td>
-            <td class="score-col">2 / 8</td>
-            <td class="ledger-count-col">1</td>
-            <td class="just-col">Bruce Banner front face provides repeatable card draw {X}{X} dump.</td>
+            <td class="tier-col"><span class="tier-badge tier-a">A</span></td>
+            <td class="score-col">4 / 8</td>
+            <td class="ledger-count-col">11</td>
+            <td class="just-col">A-tier card flow powered by Bruce Banner's {X}{X} draw ability, The Great Henge, Beast Whisperer, Guardian Project, Toski, Garruk's Uprising, and Rishkar's Expertise.</td>
         </tr>
         
         <tr>
@@ -303,8 +468,8 @@
             <td><strong>Selection & Redundancy</strong><br><span class="domain-sub">Access</span></td>
             <td class="tier-col"><span class="tier-badge tier-b">B</span></td>
             <td class="score-col">2 / 8</td>
-            <td class="ledger-count-col">0</td>
-            <td class="just-col">Typal redundancy and counter synergy (+1/+1 counter doublers).</td>
+            <td class="ledger-count-col">11</td>
+            <td class="just-col">B-tier redundancy: high density of +1/+1 counter amplifiers (Branching Evolution, Hardened Scales, Ozolith, Samson), but zero nonland tutors to search for specific finishers.</td>
         </tr>
         
         <tr>
@@ -312,8 +477,8 @@
             <td><strong>Exposure & Predictability</strong><br><span class="domain-sub">Pressure</span></td>
             <td class="tier-col"><span class="tier-badge tier-b">B</span></td>
             <td class="score-col">2 / 8</td>
-            <td class="ledger-count-col">0</td>
-            <td class="just-col">Board-based combat strategy with visible counter growth.</td>
+            <td class="ledger-count-col">2</td>
+            <td class="just-col">Counter placement and visible permanents on the board telegraph lethal damage to the table.</td>
         </tr>
         
         <tr>
@@ -321,8 +486,8 @@
             <td><strong>Reactive Disruption</strong><br><span class="domain-sub">Interaction</span></td>
             <td class="tier-col"><span class="tier-badge tier-b">B</span></td>
             <td class="score-col">2 / 8</td>
-            <td class="ledger-count-col">3</td>
-            <td class="just-col">Temur countermagic and burn removal (Beast Within, Chaos Warp, Chandra's Ignition).</td>
+            <td class="ledger-count-col">13</td>
+            <td class="just-col">Solid reactive removal suite (Cyclonic Rift, Beast Within, Chaos Warp, Pongify, Lightning Bolt, Abrade, Ram Through, Chandra's Ignition).</td>
         </tr>
         
         <tr>
@@ -330,35 +495,35 @@
             <td><strong>Proactive Denial & Restriction</strong><br><span class="domain-sub">Interaction</span></td>
             <td class="tier-col"><span class="tier-badge tier-f">F</span></td>
             <td class="score-col">0 / 8</td>
-            <td class="ledger-count-col">0</td>
-            <td class="just-col">Zero proactive restriction or stax effects.</td>
+            <td class="ledger-count-col">1</td>
+            <td class="just-col">Completely devoid of proactive stax, taxes, or resource denial (F tier).</td>
         </tr>
         
         <tr>
             <td class="code-col"><strong>S1</strong></td>
             <td><strong>Plan Shielding & Protection</strong><br><span class="domain-sub">Resilience</span></td>
-            <td class="tier-col"><span class="tier-badge tier-b">B</span></td>
-            <td class="score-col">2 / 8</td>
-            <td class="ledger-count-col">0</td>
-            <td class="just-col">Protection boots and counter protection; Hulk Enrage punishes direct damage.</td>
+            <td class="tier-col"><span class="tier-badge tier-c">C</span></td>
+            <td class="score-col">1 / 8</td>
+            <td class="ledger-count-col">4</td>
+            <td class="just-col">Plan shielding is limited to Tyvar's Stand and Plaza of Heroes, leaving the deck vulnerable to instant-speed spot exile and bounce (C tier).</td>
         </tr>
         
         <tr>
             <td class="code-col"><strong>S2</strong></td>
             <td><strong>Engine Recovery</strong><br><span class="domain-sub">Resilience</span></td>
-            <td class="tier-col"><span class="tier-badge tier-c">C</span></td>
-            <td class="score-col">0 / 4</td>
-            <td class="ledger-count-col">0</td>
-            <td class="just-col">Moderate recovery via counter restocking; vulnerable to mass bounce/exile.</td>
+            <td class="tier-col"><span class="tier-badge tier-a">A</span></td>
+            <td class="score-col">2 / 4</td>
+            <td class="ledger-count-col">3</td>
+            <td class="just-col">High engine recovery powered by The Ozolith retaining counters across wipes, Restorative Technique, and Abomination World Ravager.</td>
         </tr>
         
         <tr>
             <td class="code-col"><strong>S3</strong></td>
             <td><strong>Independence & Backup Plans</strong><br><span class="domain-sub">Resilience</span></td>
-            <td class="tier-col"><span class="tier-badge tier-c">C</span></td>
-            <td class="score-col">0 / 4</td>
-            <td class="ledger-count-col">0</td>
-            <td class="just-col">Front face provides card draw; back face provides finisher.</td>
+            <td class="tier-col"><span class="tier-badge tier-a">A</span></td>
+            <td class="score-col">2 / 4</td>
+            <td class="ledger-count-col">5</td>
+            <td class="just-col">The 99 operates effectively as an autonomous stompy beatdown engine without relying on the commander.</td>
         </tr>
         
             </tbody>
@@ -369,39 +534,194 @@
             
         <div class="ledger-group">
             <div class="ledger-header">
-                <h3>R1: Mana Velocity & Sufficiency <span class="ledger-tier-tag tier-b">B</span></h3>
-                <span class="count-tag">6 cards</span>
+                <h3>R1: Mana Velocity & Sufficiency <span class="ledger-tier-tag tier-a">A</span></h3>
+                <span class="count-tag">37 cards</span>
             </div>
             <div class="card-grid">
                 
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Birds%20of%20Paradise&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Birds%20of%20Paradise%22" target="_blank" rel="noopener">Birds of Paradise</a>
+                <span class="chip-role">1-CMC 5-color mana dork</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Bloom%20Tender&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Bloom%20Tender%22" target="_blank" rel="noopener">Bloom Tender</a>
+                <span class="chip-role">Taps for up to 3 mana in Temur colors</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Gyre%20Sage&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Gyre%20Sage%22" target="_blank" rel="noopener">Gyre Sage</a>
+                <span class="chip-role">Evolves to tap for green mana equal to counters</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Incubation%20Druid&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Incubation%20Druid%22" target="_blank" rel="noopener">Incubation Druid</a>
+                <span class="chip-role">Taps for 3 mana of any color when adapted/modified</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Hulking%20Raptor&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Hulking%20Raptor%22" target="_blank" rel="noopener">Hulking Raptor</a>
+                <span class="chip-role">Adds {G}{G} each first main phase with ward 2</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Doc%20Samson%2C%20Super%20Psychiatrist&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Doc%20Samson%2C%20Super%20Psychiatrist%22" target="_blank" rel="noopener">Doc Samson, Super Psychiatrist</a>
+                <span class="chip-role">Taps for mana equal to his power</span>
+            </div>
+            
             <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Sol%20Ring&format=image&version=normal">
                 <a href="https://scryfall.com/search?q=!%22Sol%20Ring%22" target="_blank" rel="noopener">Sol Ring</a>
-                <span class="chip-role">Mana ramp / fixing</span>
+                <span class="chip-role">Premier fast mana acceleration</span>
             </div>
             
             <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Arcane%20Signet&format=image&version=normal">
                 <a href="https://scryfall.com/search?q=!%22Arcane%20Signet%22" target="_blank" rel="noopener">Arcane Signet</a>
-                <span class="chip-role">Mana ramp / fixing</span>
+                <span class="chip-role">2-CMC mana rock fixing</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Farseek&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Farseek%22" target="_blank" rel="noopener">Farseek</a>
+                <span class="chip-role">2-CMC search for dual land</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Three%20Visits&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Three%20Visits%22" target="_blank" rel="noopener">Three Visits</a>
+                <span class="chip-role">2-CMC search for untapped Forest</span>
             </div>
             
             <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Cultivate&format=image&version=normal">
                 <a href="https://scryfall.com/search?q=!%22Cultivate%22" target="_blank" rel="noopener">Cultivate</a>
-                <span class="chip-role">Mana ramp / fixing</span>
+                <span class="chip-role">3-CMC land ramp searching 2 basics</span>
             </div>
             
             <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Kodama%27s%20Reach&format=image&version=normal">
                 <a href="https://scryfall.com/search?q=!%22Kodama%27s%20Reach%22" target="_blank" rel="noopener">Kodama's Reach</a>
-                <span class="chip-role">Mana ramp / fixing</span>
+                <span class="chip-role">3-CMC land ramp searching 2 basics</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=The%20Great%20Henge&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22The%20Great%20Henge%22" target="_blank" rel="noopener">The Great Henge</a>
+                <span class="chip-role">Legendary artifact tapping for {G}{G} and gaining life</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Breeding%20Pool&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Breeding%20Pool%22" target="_blank" rel="noopener">Breeding Pool</a>
+                <span class="chip-role">Shock dual land</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Cinder%20Glade&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Cinder%20Glade%22" target="_blank" rel="noopener">Cinder Glade</a>
+                <span class="chip-role">Tango dual land</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Command%20Tower&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Command%20Tower%22" target="_blank" rel="noopener">Command Tower</a>
+                <span class="chip-role">Untapped commander fixing</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Exotic%20Orchard&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Exotic%20Orchard%22" target="_blank" rel="noopener">Exotic Orchard</a>
+                <span class="chip-role">Untapped multi-color land</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Fabled%20Passage&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Fabled%20Passage%22" target="_blank" rel="noopener">Fabled Passage</a>
+                <span class="chip-role">Fetchland fixing</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Forest&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Forest%22" target="_blank" rel="noopener">Forest</a>
+                <span class="chip-role">Basic land mana (7 copies)</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Frontier%20Bivouac&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Frontier%20Bivouac%22" target="_blank" rel="noopener">Frontier Bivouac</a>
+                <span class="chip-role">Temur tri-tap land</span>
             </div>
             
             <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Hinterland%20Harbor&format=image&version=normal">
                 <a href="https://scryfall.com/search?q=!%22Hinterland%20Harbor%22" target="_blank" rel="noopener">Hinterland Harbor</a>
-                <span class="chip-role">Mana ramp / fixing</span>
+                <span class="chip-role">Check dual land</span>
             </div>
             
             <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Island&format=image&version=normal">
                 <a href="https://scryfall.com/search?q=!%22Island%22" target="_blank" rel="noopener">Island</a>
-                <span class="chip-role">Mana ramp / fixing</span>
+                <span class="chip-role">Basic land mana (4 copies)</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Karn%27s%20Bastion&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Karn%27s%20Bastion%22" target="_blank" rel="noopener">Karn's Bastion</a>
+                <span class="chip-role">Proliferate utility land</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Karplusan%20Forest&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Karplusan%20Forest%22" target="_blank" rel="noopener">Karplusan Forest</a>
+                <span class="chip-role">Untapped pain land</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Kessig%20Wolf%20Run&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Kessig%20Wolf%20Run%22" target="_blank" rel="noopener">Kessig Wolf Run</a>
+                <span class="chip-role">Trample firebreathing utility land</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Ketria%20Triome&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Ketria%20Triome%22" target="_blank" rel="noopener">Ketria Triome</a>
+                <span class="chip-role">Fetchable Temur Triome</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Mountain&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Mountain%22" target="_blank" rel="noopener">Mountain</a>
+                <span class="chip-role">Basic land mana (5 copies)</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Plaza%20of%20Heroes&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Plaza%20of%20Heroes%22" target="_blank" rel="noopener">Plaza of Heroes</a>
+                <span class="chip-role">Untapped legendary fixing and protection</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Rejuvenating%20Springs&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Rejuvenating%20Springs%22" target="_blank" rel="noopener">Rejuvenating Springs</a>
+                <span class="chip-role">Untapped bond dual land</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Rogue%27s%20Passage&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Rogue%27s%20Passage%22" target="_blank" rel="noopener">Rogue's Passage</a>
+                <span class="chip-role">Unblockable utility land</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Rootbound%20Crag&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Rootbound%20Crag%22" target="_blank" rel="noopener">Rootbound Crag</a>
+                <span class="chip-role">Check dual land</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Scorched%20Geyser&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Scorched%20Geyser%22" target="_blank" rel="noopener">Scorched Geyser</a>
+                <span class="chip-role">Dual land fixing</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Shivan%20Reef&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Shivan%20Reef%22" target="_blank" rel="noopener">Shivan Reef</a>
+                <span class="chip-role">Untapped pain land</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Spire%20Garden&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Spire%20Garden%22" target="_blank" rel="noopener">Spire Garden</a>
+                <span class="chip-role">Untapped bond dual land</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Steam%20Vents&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Steam%20Vents%22" target="_blank" rel="noopener">Steam Vents</a>
+                <span class="chip-role">Shock dual land</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Stomping%20Ground&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Stomping%20Ground%22" target="_blank" rel="noopener">Stomping Ground</a>
+                <span class="chip-role">Shock dual land</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Sulfur%20Falls&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Sulfur%20Falls%22" target="_blank" rel="noopener">Sulfur Falls</a>
+                <span class="chip-role">Check dual land</span>
             </div>
             
             </div>
@@ -409,14 +729,289 @@
         
         <div class="ledger-group">
             <div class="ledger-header">
-                <h3>R2: Card Flow & Replenishment <span class="ledger-tier-tag tier-b">B</span></h3>
-                <span class="count-tag">1 cards</span>
+                <h3>A2: Assembly Velocity <span class="ledger-tier-tag tier-a">A</span></h3>
+                <span class="count-tag">4 cards</span>
             </div>
             <div class="card-grid">
                 
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Bruce%20Banner%20//%20The%20Incredible%20Hulk&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Bruce%20Banner%20//%20The%20Incredible%20Hulk%22" target="_blank" rel="noopener">Bruce Banner // The Incredible Hulk</a>
+                <span class="chip-role">Commander deployed on Turn 1 and transformed by Turn 4-5</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Bloom%20Tender&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Bloom%20Tender%22" target="_blank" rel="noopener">Bloom Tender</a>
+                <span class="chip-role">Accelerates 3 mana to enable Turn 4 commander flip</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Gyre%20Sage&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Gyre%20Sage%22" target="_blank" rel="noopener">Gyre Sage</a>
+                <span class="chip-role">Scales mana to accelerate heavy curve toppers</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Hulking%20Raptor&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Hulking%20Raptor%22" target="_blank" rel="noopener">Hulking Raptor</a>
+                <span class="chip-role">Adds {G}{G} on Turn 4 first main phase</span>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="ledger-group">
+            <div class="ledger-header">
+                <h3>P1: Critical Onset & Lethality <span class="ledger-tier-tag tier-a">A</span></h3>
+                <span class="count-tag">11 cards</span>
+            </div>
+            <div class="card-grid">
+                
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Bruce%20Banner%20//%20The%20Incredible%20Hulk&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Bruce%20Banner%20//%20The%20Incredible%20Hulk%22" target="_blank" rel="noopener">Bruce Banner // The Incredible Hulk</a>
+                <span class="chip-role">8/8 trampler with reach and extra combat Enrage ability</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Kalonian%20Hydra&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Kalonian%20Hydra%22" target="_blank" rel="noopener">Kalonian Hydra</a>
+                <span class="chip-role">Massive 8/8 trampler scaling entire board exponentially</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Abomination%2C%20Irradiated%20Brute&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Abomination%2C%20Irradiated%20Brute%22" target="_blank" rel="noopener">Abomination, Irradiated Brute</a>
+                <span class="chip-role">Scales power with combat damage</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Red%20Hulk&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Red%20Hulk%22" target="_blank" rel="noopener">Red Hulk</a>
+                <span class="chip-role">Enrage damage and power growth</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Professor%20Hulk&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Professor%20Hulk%22" target="_blank" rel="noopener">Professor Hulk</a>
+                <span class="chip-role">6/6 trampling combat threat</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=She-Hulk%2C%20Wallbreaker&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22She-Hulk%2C%20Wallbreaker%22" target="_blank" rel="noopener">She-Hulk, Wallbreaker</a>
+                <span class="chip-role">Grants trample to Heroes and punishes blockers</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Abomination%2C%20World%20Ravager&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Abomination%2C%20World%20Ravager%22" target="_blank" rel="noopener">Abomination, World Ravager</a>
+                <span class="chip-role">10/10 menace and trample threat with recursion</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Pyrewood%20Gearhulk&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Pyrewood%20Gearhulk%22" target="_blank" rel="noopener">Pyrewood Gearhulk</a>
+                <span class="chip-role">7/7 alpha strike enabler with menace and vigilance</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=The%20Thing%2C%20Ben%20Grimm&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22The%20Thing%2C%20Ben%20Grimm%22" target="_blank" rel="noopener">The Thing, Ben Grimm</a>
+                <span class="chip-role">7/7 trampler scaling on Hero combat damage</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Hulk%2C%20Strongest%20There%20Is&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Hulk%2C%20Strongest%20There%20Is%22" target="_blank" rel="noopener">Hulk, Strongest There Is</a>
+                <span class="chip-role">Exponential upkeep counter multiplier</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Verdurous%20Gearhulk&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Verdurous%20Gearhulk%22" target="_blank" rel="noopener">Verdurous Gearhulk</a>
+                <span class="chip-role">Immediate 8/8 trampler or massive team pump</span>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="ledger-group">
+            <div class="ledger-header">
+                <h3>P2: Win Inevitability & Compactness <span class="ledger-tier-tag tier-b">B</span></h3>
+                <span class="count-tag">7 cards</span>
+            </div>
+            <div class="card-grid">
+                
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Caltrops&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Caltrops%22" target="_blank" rel="noopener">Caltrops</a>
+                <span class="chip-role">Infinite combat phase loop with The Incredible Hulk</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Chandra%27s%20Ignition&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Chandra%27s%20Ignition%22" target="_blank" rel="noopener">Chandra's Ignition</a>
+                <span class="chip-role">Converts creature power into lethal direct damage to all opponents</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Fling&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Fling%22" target="_blank" rel="noopener">Fling</a>
+                <span class="chip-role">Sacrifices high-power creature for direct face burn</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Soul%27s%20Fire&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Soul%27s%20Fire%22" target="_blank" rel="noopener">Soul's Fire</a>
+                <span class="chip-role">Deals creature power directly to any target</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Herald%20of%20Secret%20Streams&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Herald%20of%20Secret%20Streams%22" target="_blank" rel="noopener">Herald of Secret Streams</a>
+                <span class="chip-role">Unblockable team alpha strike</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Kessig%20Wolf%20Run&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Kessig%20Wolf%20Run%22" target="_blank" rel="noopener">Kessig Wolf Run</a>
+                <span class="chip-role">Trample firebreathing finisher</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Rogue%27s%20Passage&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Rogue%27s%20Passage%22" target="_blank" rel="noopener">Rogue's Passage</a>
+                <span class="chip-role">Guaranteed unblockable commander damage finish</span>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="ledger-group">
+            <div class="ledger-header">
+                <h3>R2: Card Flow & Replenishment <span class="ledger-tier-tag tier-a">A</span></h3>
+                <span class="count-tag">11 cards</span>
+            </div>
+            <div class="card-grid">
+                
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Bruce%20Banner%20//%20The%20Incredible%20Hulk&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Bruce%20Banner%20//%20The%20Incredible%20Hulk%22" target="_blank" rel="noopener">Bruce Banner // The Incredible Hulk</a>
+                <span class="chip-role">{X}{X}: Draw X cards sorcery speed engine</span>
+            </div>
+            
             <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Beast%20Whisperer&format=image&version=normal">
                 <a href="https://scryfall.com/search?q=!%22Beast%20Whisperer%22" target="_blank" rel="noopener">Beast Whisperer</a>
-                <span class="chip-role">Card draw / engine replenishment</span>
+                <span class="chip-role">Draws a card on every creature spell cast</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Guardian%20Project&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Guardian%20Project%22" target="_blank" rel="noopener">Guardian Project</a>
+                <span class="chip-role">Draws a card on every nontoken creature entry</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Garruk%27s%20Uprising&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Garruk%27s%20Uprising%22" target="_blank" rel="noopener">Garruk's Uprising</a>
+                <span class="chip-role">Draws a card on 4+ power creature entries</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=The%20Great%20Henge&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22The%20Great%20Henge%22" target="_blank" rel="noopener">The Great Henge</a>
+                <span class="chip-role">Draws a card and adds +1/+1 counter on nontoken creature entries</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Toski%2C%20Bearer%20of%20Secrets&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Toski%2C%20Bearer%20of%20Secrets%22" target="_blank" rel="noopener">Toski, Bearer of Secrets</a>
+                <span class="chip-role">Draws a card on combat damage to players</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Professor%20Hulk&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Professor%20Hulk%22" target="_blank" rel="noopener">Professor Hulk</a>
+                <span class="chip-role">Draws cards equal to combat damage dealt to players</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Rishkar%27s%20Expertise&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Rishkar%27s%20Expertise%22" target="_blank" rel="noopener">Rishkar's Expertise</a>
+                <span class="chip-role">Draws cards equal to greatest power</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Gamma%20Grotesque&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Gamma%20Grotesque%22" target="_blank" rel="noopener">Gamma Grotesque</a>
+                <span class="chip-role">Power-up draws cards for modified creatures</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=She-Hulk%2C%20Jennifer%20Walters&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22She-Hulk%2C%20Jennifer%20Walters%22" target="_blank" rel="noopener">She-Hulk, Jennifer Walters</a>
+                <span class="chip-role">Sacrifices land to draw a card and add counter</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Brawn%2C%20Amadeus%20Cho&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Brawn%2C%20Amadeus%20Cho%22" target="_blank" rel="noopener">Brawn, Amadeus Cho</a>
+                <span class="chip-role">Draws a card on entry</span>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="ledger-group">
+            <div class="ledger-header">
+                <h3>A1: Selection & Redundancy <span class="ledger-tier-tag tier-b">B</span></h3>
+                <span class="count-tag">11 cards</span>
+            </div>
+            <div class="card-grid">
+                
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Branching%20Evolution&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Branching%20Evolution%22" target="_blank" rel="noopener">Branching Evolution</a>
+                <span class="chip-role">Doubles +1/+1 counters placed on creatures</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Hardened%20Scales&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Hardened%20Scales%22" target="_blank" rel="noopener">Hardened Scales</a>
+                <span class="chip-role">Adds an additional +1/+1 counter on placement</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=The%20Ozolith&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22The%20Ozolith%22" target="_blank" rel="noopener">The Ozolith</a>
+                <span class="chip-role">Collects and preserves counters when creatures leave</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Doc%20Samson%2C%20Super%20Psychiatrist&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Doc%20Samson%2C%20Super%20Psychiatrist%22" target="_blank" rel="noopener">Doc Samson, Super Psychiatrist</a>
+                <span class="chip-role">Increases counter placement and ramps</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Hulk%2C%20Strongest%20There%20Is&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Hulk%2C%20Strongest%20There%20Is%22" target="_blank" rel="noopener">Hulk, Strongest There Is</a>
+                <span class="chip-role">Doubles counters on Gamma creatures each upkeep</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Kalonian%20Hydra&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Kalonian%20Hydra%22" target="_blank" rel="noopener">Kalonian Hydra</a>
+                <span class="chip-role">Doubles counters on attacking creatures each combat</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Evolution%20Sage&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Evolution%20Sage%22" target="_blank" rel="noopener">Evolution Sage</a>
+                <span class="chip-role">Proliferates on landfall</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Bloom%20Hulk&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Bloom%20Hulk%22" target="_blank" rel="noopener">Bloom Hulk</a>
+                <span class="chip-role">Proliferates on ETB</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Verdurous%20Gearhulk&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Verdurous%20Gearhulk%22" target="_blank" rel="noopener">Verdurous Gearhulk</a>
+                <span class="chip-role">Distributes 4 +1/+1 counters on ETB</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Herald%20of%20Secret%20Streams&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Herald%20of%20Secret%20Streams%22" target="_blank" rel="noopener">Herald of Secret Streams</a>
+                <span class="chip-role">Grants unblockable to all creatures with counters</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Rishkar%2C%20Peema%20Renegade&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Rishkar%2C%20Peema%20Renegade%22" target="_blank" rel="noopener">Rishkar, Peema Renegade</a>
+                <span class="chip-role">Distributes counters and turns them into mana dorks</span>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="ledger-group">
+            <div class="ledger-header">
+                <h3>P3: Exposure & Predictability <span class="ledger-tier-tag tier-b">B</span></h3>
+                <span class="count-tag">2 cards</span>
+            </div>
+            <div class="card-grid">
+                
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Bruce%20Banner%20//%20The%20Incredible%20Hulk&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Bruce%20Banner%20//%20The%20Incredible%20Hulk%22" target="_blank" rel="noopener">Bruce Banner // The Incredible Hulk</a>
+                <span class="chip-role">Visible commander transformation and public counter counts</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=The%20Ozolith&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22The%20Ozolith%22" target="_blank" rel="noopener">The Ozolith</a>
+                <span class="chip-role">Counters stored in public view</span>
             </div>
             
             </div>
@@ -425,23 +1020,178 @@
         <div class="ledger-group">
             <div class="ledger-header">
                 <h3>I1: Reactive Disruption <span class="ledger-tier-tag tier-b">B</span></h3>
-                <span class="count-tag">3 cards</span>
+                <span class="count-tag">13 cards</span>
             </div>
             <div class="card-grid">
                 
             <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Beast%20Within&format=image&version=normal">
                 <a href="https://scryfall.com/search?q=!%22Beast%20Within%22" target="_blank" rel="noopener">Beast Within</a>
-                <span class="chip-role">Instant-speed reactive removal</span>
+                <span class="chip-role">Instant permanent destruction</span>
             </div>
             
             <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Chaos%20Warp&format=image&version=normal">
                 <a href="https://scryfall.com/search?q=!%22Chaos%20Warp%22" target="_blank" rel="noopener">Chaos Warp</a>
-                <span class="chip-role">Instant-speed reactive removal</span>
+                <span class="chip-role">Instant permanent tuck removal</span>
             </div>
             
             <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Pongify&format=image&version=normal">
                 <a href="https://scryfall.com/search?q=!%22Pongify%22" target="_blank" rel="noopener">Pongify</a>
-                <span class="chip-role">Instant-speed reactive removal</span>
+                <span class="chip-role">1-mana creature destruction</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Lightning%20Bolt&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Lightning%20Bolt%22" target="_blank" rel="noopener">Lightning Bolt</a>
+                <span class="chip-role">3 damage removal spell</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Abrade&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Abrade%22" target="_blank" rel="noopener">Abrade</a>
+                <span class="chip-role">Modal creature damage or artifact destruction</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Ram%20Through&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Ram%20Through%22" target="_blank" rel="noopener">Ram Through</a>
+                <span class="chip-role">Instant creature bite with excess trample damage to face</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Soul%27s%20Fire&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Soul%27s%20Fire%22" target="_blank" rel="noopener">Soul's Fire</a>
+                <span class="chip-role">Direct damage removal</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Tyvar%27s%20Stand&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Tyvar%27s%20Stand%22" target="_blank" rel="noopener">Tyvar's Stand</a>
+                <span class="chip-role">Combat trick and protection</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Cyclonic%20Rift&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Cyclonic%20Rift%22" target="_blank" rel="noopener">Cyclonic Rift</a>
+                <span class="chip-role">Asymmetric board bounce sweeper</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Chandra%27s%20Ignition&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Chandra%27s%20Ignition%22" target="_blank" rel="noopener">Chandra's Ignition</a>
+                <span class="chip-role">One-sided creature board wipe</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Epic%20Fight&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Epic%20Fight%22" target="_blank" rel="noopener">Epic Fight</a>
+                <span class="chip-role">Fight removal spell</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=She-Hulk%2C%20Jade%20Defender&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22She-Hulk%2C%20Jade%20Defender%22" target="_blank" rel="noopener">She-Hulk, Jade Defender</a>
+                <span class="chip-role">Destroys target artifact or enchantment on Power-up</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Abomination%2C%20Terrifying%20Titan&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Abomination%2C%20Terrifying%20Titan%22" target="_blank" rel="noopener">Abomination, Terrifying Titan</a>
+                <span class="chip-role">Fights target creature on Power-up</span>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="ledger-group">
+            <div class="ledger-header">
+                <h3>I2: Proactive Denial & Restriction <span class="ledger-tier-tag tier-f">F</span></h3>
+                <span class="count-tag">1 cards</span>
+            </div>
+            <div class="card-grid">
+                
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Caltrops&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Caltrops%22" target="_blank" rel="noopener">Caltrops</a>
+                <span class="chip-role">Taxes and damages attacking creatures</span>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="ledger-group">
+            <div class="ledger-header">
+                <h3>S1: Plan Shielding & Protection <span class="ledger-tier-tag tier-c">C</span></h3>
+                <span class="count-tag">4 cards</span>
+            </div>
+            <div class="card-grid">
+                
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Tyvar%27s%20Stand&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Tyvar%27s%20Stand%22" target="_blank" rel="noopener">Tyvar's Stand</a>
+                <span class="chip-role">Instant hexproof and indestructible</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Plaza%20of%20Heroes&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Plaza%20of%20Heroes%22" target="_blank" rel="noopener">Plaza of Heroes</a>
+                <span class="chip-role">Hexproof and indestructible protection for Bruce/Hulk</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=The%20Ozolith&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22The%20Ozolith%22" target="_blank" rel="noopener">The Ozolith</a>
+                <span class="chip-role">Protects counter investment against board wipes</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Hulkbuster%20Armor&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Hulkbuster%20Armor%22" target="_blank" rel="noopener">Hulkbuster Armor</a>
+                <span class="chip-role">Grants ward 2 and stat buff</span>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="ledger-group">
+            <div class="ledger-header">
+                <h3>S2: Engine Recovery <span class="ledger-tier-tag tier-a">A</span></h3>
+                <span class="count-tag">3 cards</span>
+            </div>
+            <div class="card-grid">
+                
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=The%20Ozolith&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22The%20Ozolith%22" target="_blank" rel="noopener">The Ozolith</a>
+                <span class="chip-role">Recovers all counters to put onto new creatures each combat</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Restorative%20Technique&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Restorative%20Technique%22" target="_blank" rel="noopener">Restorative Technique</a>
+                <span class="chip-role">Recurs 2 permanents from graveyard to hand</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Abomination%2C%20World%20Ravager&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Abomination%2C%20World%20Ravager%22" target="_blank" rel="noopener">Abomination, World Ravager</a>
+                <span class="chip-role">Recurs from graveyard to battlefield on Mayhem trigger</span>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="ledger-group">
+            <div class="ledger-header">
+                <h3>S3: Independence & Backup Plans <span class="ledger-tier-tag tier-a">A</span></h3>
+                <span class="count-tag">5 cards</span>
+            </div>
+            <div class="card-grid">
+                
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Kalonian%20Hydra&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Kalonian%20Hydra%22" target="_blank" rel="noopener">Kalonian Hydra</a>
+                <span class="chip-role">Autonomous game-winning counter doubler</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=The%20Great%20Henge&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22The%20Great%20Henge%22" target="_blank" rel="noopener">The Great Henge</a>
+                <span class="chip-role">Autonomous card and mana engine</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=She-Hulk%2C%20Wallbreaker&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22She-Hulk%2C%20Wallbreaker%22" target="_blank" rel="noopener">She-Hulk, Wallbreaker</a>
+                <span class="chip-role">Autonomous trampling army enabler</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Abomination%2C%20World%20Ravager&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Abomination%2C%20World%20Ravager%22" target="_blank" rel="noopener">Abomination, World Ravager</a>
+                <span class="chip-role">Independent 10/10 menacing threat</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Verdurous%20Gearhulk&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Verdurous%20Gearhulk%22" target="_blank" rel="noopener">Verdurous Gearhulk</a>
+                <span class="chip-role">Autonomous trampling beater</span>
             </div>
             
             </div>

@@ -178,6 +178,14 @@ Use these calibrated decks to ground every future evaluation:
 *   **Benchmarks:** $R1: A, R2: S, A1: S, A2: A, P1: A, P2: B, P3: B, I1: C, I2: F, S1: C, S2: A, S3: B$.
 *   **Calibration Principle:** Demonstrates why an explosive Turn 4 threat onset ($P1: A$) does not automatically promote a deck to Bracket 4: concluding the game takes 2 untap cycles ($P2: B$, Turn 6 kill), shielding is fragile ($S1: C$), and interaction is near zero ($I1: C, I2: F$), cleanly validating Gate 2's Zero-Untap Override.
 
+### Anchor 7: IncredibleHulk (Temur Stompy & Combat Combo) — Bracket 3 Exact Floor
+*   **Threat Score:** **32 / 96** (Exact floor of Bracket 3, 32–51 band)
+*   **Vectors:** Velocity: **18 / 48** | Suppression: **14 / 40**
+*   **Clock:** Onset Turn 5 ($P1: A$), Ready Turn 5 ($A2: A$), Response Cycles: 2 ($P2: B$) $\rightarrow$ Turn 7 kill.
+*   **Benchmarks:** $R1: A, R2: A, A1: B, A2: A, P1: A, P2: B, P3: B, I1: B, I2: F, S1: C, S2: A, S3: A$.
+*   **Calibration Principle:** Defines the exact floor threshold of Bracket 3 (32/96): paired with Caltrops soft infinite combat loop, heavy green ramp and 8/8 trample onset establish the 32 threshold immediately above the Bracket 2 ceiling (31/96).
+
+
 
 
 

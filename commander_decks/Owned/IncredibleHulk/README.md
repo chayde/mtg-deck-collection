@@ -10,10 +10,16 @@ deck_status: main
 
 ## Commander Strategy
 **Bruce Banner // The Incredible Hulk** ({U} // {2}{R}{R}{G}{G})
-*   **Archetype:** Temur (U/R/G) +1/+1 Counters Midrange / Gamma Tribal
-*   **Bracket:** 3
-*   **DTI Threat Index:** **18 / 96** (Bracket 3 | Velocity: **10/48** | Suppression: **6/40** | Gates: All Passed | [DTI Report](dti_report.html))
-*   **Core Goal:** Deploy Banner turn 1 as a card-advantage engine, build a wide board of counter-hungry Gamma Heroes, and multiply +1/+1 counters until the team swings for lethal trample damage. The flipped Hulk is a resilient 8/8 finisher whose Enrage snowballs counters and — with a self-pinger — chains extra combats.
+*   **Archetype:** Temur ({U}{R}{G}) Stompy / +1/+1 Counters & Combat Combo
+*   **Bracket:** 3 (Upgraded Casual — 1 Game Changer: *Cyclonic Rift*)
+*   **DTI Threat Index:** **32 / 96** (Bracket 3 | Velocity: **18/48** | Suppression: **14/40** | Clock: Engine T5, Onset T5, 2 Untap Cycles | Gates: All Passed | [DTI Report](dti_report.html))
+*   **Core Goal:** Deploy Banner on Turn 1 as a card-advantage engine, accelerate green-based mana, and pay {2}{R}{R}{G}{G} by Turn 4–5 to transform into *The Incredible Hulk*. Synergize with counter multipliers (Branching Evolution, Hardened Scales) and execute an infinite combat loop with *Caltrops*, or close out games via scaling trample damage (Kalonian Hydra), fight spells, and *Chandra's Ignition*.
+
+### 🎯 Tactical Overview & Mulligan Guide
+*   **Core Strategy:** T1 Bruce Banner $\rightarrow$ T1–3 Mana Dorks & Land Ramp $\rightarrow$ T4–5 Transform Hulk $\rightarrow$ T5–7 Caltrops Infinite Combat Loop / Chandra's Ignition Burn.
+*   **Keep Hands:** 3 lands, access to green and blue, and at least one 1–2 CMC ramp piece (Birds of Paradise, Farseek, Three Visits, Sol Ring) guaranteeing a Turn 4–5 transformation.
+*   **Avoid Hands:** Hands without green mana, hands flooded with 5+ CMC creatures without ramp, or hands lacking early board development.
+*   **Strategic Weaknesses:** Reliance on combat damage leaves plan vulnerable to instant-speed spot exile/bounce before damage resolves; absence of stack countermagic leaves deck susceptible to fast opposing combo wins.
 
 ### The Two Faces
 Banner front is {U}, a 1/1 that taps for `{X}{X}: Draw X cards` (a repeatable, mana-hungry draw engine) and flips for `{2}{R}{R}{G}{G}` at sorcery speed. The Incredible Hulk back is an 8/8 with reach and trample and **Enrage — whenever he's dealt damage, put a +1/+1 counter on him; if he's attacking, untap him and take an additional combat phase.** Early game you use Banner to draw and develop; mid-game you flip into the Hulk as a beater that grows every time he takes damage.
@@ -162,6 +168,10 @@ The most on-theme finish: pump the Hulk (or a Kalonian-doubled Hero) and hurl it
 ---
 
 ## 📜 Deck Changelog
+*   **2026-09-24:** Validated deck under DeckCheck Threat Index (DTI) framework via official scan calibration.
+    *   **DTI Threat Score:** **32 / 96** (Bracket 3 Upgraded Casual — Exact Floor Threshold).
+    *   **Telemetry:** Velocity: 18/48, Suppression: 14/40, Threat Onset: Turn 5 ($P1: A$), Engine Ready: Turn 5 ($A2: A$), Opponent Response Cycles: 2 ($P2: B$).
+    *   **Gatekeepers:** All 4 gates passed safely; serves as empirical Anchor 7 representing the exact 32-point floor of Bracket 3 (32–51 band).
 *   **2026-07-17:** Physical integration of the final package.
     - **In:** Herald of Secret Streams; Pyrewood Gearhulk; Ram Through; Verdurous Gearhulk
     - **Out:** N/A
