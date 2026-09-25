@@ -18,7 +18,25 @@
 
 For detailed bracket definitions, restrictions, and decision guidance, read **[`BRACKETS.md`](BRACKETS.md)** before assigning or changing a deck's bracket.
 
+---
 
+## DeckCheck Threat Index (DTI) Framework
+
+> **Authoritative Specification:** See [`DTI_FRAMEWORK.md`](DTI_FRAMEWORK.md) for the full framework rules, scoring matrices, and 12-benchmark rubrics.
+
+While the official WotC bracket rules (Game Changers, mass land denial, extra turns) establish the statutory **floor** for a deck, the repository employs the **DeckCheck Threat Index (DTI)** to catch decks that the card lists miss:
+*   **Axiom:** Magic is an economic and initiative race governed by compounding returns and the turn clock.
+*   **12 Benchmarks (5 Domains):** Resources (`R1, R2`), Access (`A1, A2`), Pressure (`P1, P2, P3`), Interaction (`I1, I2`), Resilience (`S1, S2, S3`).
+*   **Threat Score (0–96):** Calibrated score bands (B1: <16 w/ restriction, B2: 16–31, B3: 32–51, B4: 52–67, B5: 68–96).
+*   **The 4 Hard Gates:**
+    1. *Velocity Gate ($\ge 28 \rightarrow$ Min B4):* $\text{Velocity} = R1 + A2 + P1 + P2 + S1$.
+    2. *Early Finish Gate ($\rightarrow$ Min B4):* Eliminates opponents or locks out table by Turn 5 ($P1 \in \{S, A\}$).
+    3. *Suppression Gate ($\rightarrow$ Min B4):* Early severe asymmetric denial or stax ($I2 \in \{S, A\}$ by Turn 6).
+    4. *cEDH Gate ($\rightarrow$ Min B5):* Peak vector $\ge 40$, $P1 \in \{S, A\}$, and 0-untap win ($P2 = S$).
+*   **Rule:** The DTI can **only push a deck UP, never down**. If WotC rules say Bracket 4, it is Bracket 4. If WotC rules say Bracket 3 but DTI or any Gate mandates Bracket 4, the deck is promoted to Bracket 4.
+*   **Tooling:** Run `python scripts/dti_evaluator.py "<path/to/deck>"` to audit any deck and generate `<deck>/dti_report.html`.
+
+---
 
 ## Game Changers List
 

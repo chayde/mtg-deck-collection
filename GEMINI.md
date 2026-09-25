@@ -35,6 +35,7 @@ This is a **documentation-only repository** — no build system, no tests. All c
 ```
 /
 ├── COMMANDER_DECKBUILDING_RULES.md  ← Source of truth: Brackets 1-5 and Game Changers list
+├── DTI_FRAMEWORK.md                 ← Authoritative specification for DeckCheck Threat Index (DTI) & 12 benchmarks
 ├── COMMANDER_TEMPLATE.md            ← "New Era" card ratios (38 lands, 10 ramp, 12 draw, etc.)
 ├── DeckShapeReferenceGuide.md       ← Authoritative guide on internal deck geometry & Commander Subtraction
 ├── DeckShapeReferenceGuide.html     ← Interactive visual dashboard & 7-step deck auditor
@@ -350,6 +351,7 @@ Whenever a deck is modified, you must update all three locations in a single "tr
 
 ### Phase 4: Validation & Sync
 *   **Goldfish Simulation:** After major overhauls (5+ card changes), run a 20-game simulation using `scripts/multiplayer_goldfish.py`.
+*   **DTI Threat Audit & Bracket Verification:** Run `python scripts/dti_evaluator.py "<path/to/deck>"` to audit the deck against the 12 universal benchmarks, calculate Velocity and Suppression vectors, check all 4 Gatekeepers (Velocity >= 28, Early Finish, Suppression, cEDH), and generate `<deck>/dti_report.html`. Confirm the deck does not accidentally violate its target bracket ceiling.
 *   **Changelog:** Log all changes in the deck's `## Deck Changelog` using the [YYYY-MM-DD] format.
 *   **Commit & Push:** Ensure all changes are committed and pushed to GitHub to keep the environment synchronized.
 
@@ -533,6 +535,31 @@ python scripts/swap_matrix.py "<path/to/deck_file>" --in "Card A: Role" "Card B"
 # Apply without syncing to Forge:
 python scripts/swap_matrix.py "<path/to/deck_file>" --in "Card A: Role" "Card B" --out "Card C" "Card D" --reason "Summary rationale" --apply --no-forge
 ```
+
+---
+
+### `scripts/dti_evaluator.py` — DTI Threat Evaluator & Bracket Auditor
+**What it does:** Evaluates Commander decks under the **DeckCheck Threat Index (DTI)** framework (codified in `DTI_FRAMEWORK.md`). Contextually scores the 12 universal benchmarks, computes composite **Velocity (max 48)** and **Suppression (max 40)** threat vectors, enforces the 4 hard gatekeepers (Velocity Gate $\ge 28$, Early Finish Gate, Suppression Gate, cEDH Gate), verifies WotC Game Changers compliance, correlates with empirical goldfish telemetry, and generates an interactive, dark-mode visual HTML dashboard with a hoverable Scryfall card ledger (`dti_report.html`).
+
+**When to use:**
+- After building or tuning any deck to verify its true operational power level and confirm bracket compliance.
+- Diagnosing whether a deck inadvertently functions as a pubstomper (e.g., fast velocity or early asymmetric lockouts).
+- Identifying weak pillars in a deck's engine (e.g., low $R2$ card flow or $S1$ protection) to guide future swaps.
+
+**Usage:**
+```bash
+# Audit an existing deck using its evaluation file or defaults:
+python scripts/dti_evaluator.py "commander_decks/Planning/KrenkoBracket3"
+
+# Initialize a new evaluation template for a deck:
+python scripts/dti_evaluator.py "commander_decks/Planning/KrenkoBracket3" --init
+
+# Quick audit with specific benchmark tier overrides:
+python scripts/dti_evaluator.py "commander_decks/Planning/KrenkoBracket3" \
+    --r1 A --r2 B --a1 B --a2 A --p1 B --p2 A --p3 B --i1 C --i2 F --s1 A --s2 C --s3 C
+```
+
+**Output:** High-density terminal ASCII dashboard, Markdown audit report (`dti_audit.md`), and interactive visual HTML dashboard (`dti_report.html`).
 
 ---
 

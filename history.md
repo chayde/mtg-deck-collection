@@ -2,6 +2,22 @@
 
 ## 🗓️ September 2026: Varina Zombie Apocalypse Inception, Henzie Blitz Refinement & Playtesting
 
+### 2026-09-24: DeckCheck Threat Index (DTI) Framework Inception, Engine Tooling & Subagent Integration
+*   **System Inception & Retiring Distance-from-cEDH:** Integrated the DeckCheck Threat Index (DTI) framework (analyzed from DeckCheck's architectural deep-dives) to replace traditional distance-from-cEDH power level estimation with an objective framework rooted in the Physics of Magic:
+    *   *3 Foundational Axioms:* (1) Cards are contextual to the deck's specific plan, (2) Zones and life totals are resource aliases, (3) The turn clock is a multiplier (contracting own clock vs. dilating table clock).
+    *   *5 Domains & 12 Universal Benchmarks:* Resources (`R1, R2`), Access (`A1, A2`), Pressure (`P1, P2, P3`), Interaction (`I1, I2`), and Resilience (`S1, S2, S3`).
+*   **Scoring Engine & Gatekeeper Architecture:**
+    *   *Weighted Threat Score (0–96):* Terminal Clock ($R1, A2, P1, P2$ @ 10 max), Execution Modifiers ($R2, A1, P3, I1, I2, S1$ @ 8 max), and Contingency Buffers ($S2, S3$ @ 4 max).
+    *   *Calibrated Bracket Floors:* Bracket 1 (<16 w/ restriction), Bracket 2 (16–31), Bracket 3 (32–51), Bracket 4 (52–67), Bracket 5 (68–96).
+    *   *Composite Threat Vectors:* Velocity Vector ($R1 + A2 + P1 + P2 + S1$, max 48) and Suppression Vector ($R1 + I2 + I1 + P1 + S3$, max 40).
+    *   *4 Hard Gates:* Velocity Gate ($\ge 28 \rightarrow$ B4), Early Finish Gate (Turn $\le 5$ onset $\rightarrow$ B4), Suppression Gate ($I2 \in \{S, A\}$ by Turn $\le 6 \rightarrow$ B4), and cEDH Gate (Vector $\ge 40$, $P1 \in \{S, A\}$, $P2 = S \rightarrow$ B5).
+    *   *Asymmetric Promotion Rule:* DTI sits on top of statutory WotC rules (Game Changers, MLD, extra turns) and can **only push a deck UP, never down**.
+*   **Repository Implementation & Deliverables:**
+    *   [`DTI_FRAMEWORK.md`](DTI_FRAMEWORK.md): Complete authoritative specification, benchmark ladders, rubric, and Card Ledger rules.
+    *   [`scripts/dti_evaluator.py`](scripts/dti_evaluator.py): Deterministic evaluation engine computing scores, vectors, gate checks, WotC compliance, multiplayer goldfish cross-validation, and rendering standalone visual HTML reports (`dti_report.html`) with hoverable Scryfall card chips.
+    *   `dti_auditor` Subagent: Dedicated AI agent configured to perform holistic contextual audits and Card Ledger mapping.
+    *   Updated `COMMANDER_DECKBUILDING_RULES.md` and `GEMINI.md` to integrate DTI audits into the standard validation pipeline.
+
 ### 2026-09-24: KrenkoBracket3 — Pragmatic High-Power Swarm, 9-Source Haste Matrix & Infinite Untap Inception (Bracket 3 Validated)
 *   **Deck Inception & Conversion Strategy:** Evaluated the feasibility of converting the physically owned **The Great Goblin** ({1}{B/R}{B/R}) pre-built deck into a dedicated mono-red **Krenko, Mob Boss** ({2}{R}{R}) powerhouse. Rather than purchasing the $2,200+ vintage shell (which runs *Mox Diamond*, *Wheel of Fortune*, *Ancient Tomb*, and *The One Ring*), engineered **KrenkoBracket3**: a pragmatic, tournament-caliber Bracket 3 build that carries over 33 nonbasics and basic Mountains from *The Great Goblin*, saving over $1,700.
 *   **User-Requested Powerhouses:** Integrated the user's top-performing test engines:
