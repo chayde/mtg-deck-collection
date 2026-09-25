@@ -13,8 +13,8 @@ deck_status: main
 ## Commander Strategy
 **Krenko, Mob Boss**
 *   **Archetype:** Mono-Red Goblin Tribal Aggro-Combo / Infinite Untap Combos & Stack Protection
-*   **Bracket:** 4 (Optimized — Promoted from Bracket 3 via WotC Mass Land Denial statutory floor on *Blood Moon*)
-*   **DTI Threat Index:** **42 / 96** (Score Floor: Bracket 3 | Final: Bracket 4 via Blood Moon MLD | Velocity: **24/48** | Suppression: **16/40** | Gates: All Passed | [DTI Report](dti_report.html))
+*   **Bracket:** 3 (Upgraded Casual — 0/3 Game Changers, No Mass Land Denial, No 2-Card Combos)
+*   **DTI Threat Index:** **42 / 96** (Bracket 3 [32–51] | Velocity: **24/48** | Suppression: **16/40** | Gates: All Passed | [DTI Report](dti_report.html))
 *   **Core Goal:** Rapidly deploy Krenko with immediate haste, double your Goblin count on the turn he lands, and convert token volume into lethal direct burn or infinite loops (*Umbral Mantle*, *Staff of Domination*, *Mana Echoes*, *Phyrexian Altar*) while protecting Krenko from targeted removal via red redirect countermagic (*Deflecting Swat*, *Return the Favor*).
 
 ### Keystone Geometry & The Commander Subtraction Principle
@@ -96,14 +96,15 @@ deck_status: main
 ### ⚔️ One-Sided Lords & Swarm Amplifiers (7 Cards)
 *   **[Quest for the Goblin Lord](https://scryfall.com/search?q=!"Quest+for+the+Goblin+Lord") ({R}):** 1-drop enchantment reaching 5 quest counters in a single Krenko tap to grant your entire swarm a permanent +2/+0.
 *   **[Banner of Kinship](https://scryfall.com/search?q=!"Banner+of+Kinship") ({5}):** Massive one-sided tribal anthem entering with fellowship counters equal to your Goblin count.
-*   **[Goblin King](https://scryfall.com/search?q=!"Goblin+King") ({1}{R}{R}):** Lord granting +1/+1 and Mountainwalk (lethal unblockable swarm alongside *Blood Moon*).
+*   **[Goblin King](https://scryfall.com/search?q=!"Goblin+King") ({1}{R}{R}):** Lord granting +1/+1 and Mountainwalk for unblockable swarm against red opponents.
 *   **[Goblin Trashmaster](https://scryfall.com/search?q=!"Goblin+Trashmaster") ({2}{R}{R}):** Lord granting +1/+1 and turning any Goblin into artifact destruction.
 *   **[Hobgoblin Bandit Lord](https://scryfall.com/search?q=!"Hobgoblin+Bandit+Lord") ({1}{R}{R}):** Lord granting +1/+1 and a targeted damage tap ability scaling with Goblins entered this turn.
 *   **[Goblin Piledriver](https://scryfall.com/search?q=!"Goblin+Piledriver") ({1}{R}):** Gets +2/+0 for each other attacking Goblin with protection from blue; one-shots players.
 *   **[Shared Animosity](https://scryfall.com/search?q=!"Shared+Animosity") ({2}{R}):** Exponential combat enchantment giving each attacking Goblin +1/+0 for each other attacking Goblin.
 
-### 💥 Direct Burn & Finishers (6 Cards)
+### 💥 Direct Burn & Finishers (7 Cards)
 *   **[Purphoros, God of the Forge](https://scryfall.com/search?q=!"Purphoros,+God+of+the+Forge") ({3}{R}):** Indestructible game-ender dealing 2 damage to every opponent on each creature ETB.
+*   **[Torbran, Thane of Red Fell](https://scryfall.com/card/eld/147/torbran-thane-of-red-fell?utm_source=api) ({1}{R}{R}{R}):** Increases damage dealt by all red sources by +2; turns every 1/1 token hit and burn ping into a 3-damage bomb.
 *   **[Impact Tremors](https://scryfall.com/search?q=!"Impact+Tremors") ({1}{R}):** Triggers on every Goblin entry to deal 1 damage to each opponent, draining the table passively.
 *   **[Pashalik Mons](https://scryfall.com/search?q=!"Pashalik+Mons") ({2}{R}):** Direct damage on Goblin deaths (1 damage to any target) and generates additional Goblin tokens.
 *   **[Goblin Bombardment](https://scryfall.com/search?q=!"Goblin+Bombardment") ({1}{R}):** Free instant-speed sac outlet turning every 1/1 Goblin token into 1 targeted damage anywhere.
@@ -120,11 +121,10 @@ deck_status: main
 *   **[Legion Loyalist](https://scryfall.com/search?q=!"Legion+Loyalist") ({R}):** Battalion 1-drop granting first strike, trample, and unblockable by creature tokens.
 *   **[Siege-Gang Commander](https://scryfall.com/search?q=!"Siege-Gang+Commander") ({3}{R}{R}):** Enters with three 1/1 Goblins and provides a mana-activated direct damage fling engine.
 
-### 🛡️ Interaction & Stack Protection (6 Cards)
+### 🛡️ Interaction & Stack Protection (5 Cards)
 *   **[Deflecting Swat](https://scryfall.com/search?q=!"Deflecting+Swat") ({2}{R}):** Free {0}-mana redirect protection for Krenko against targeted removal or counterspells.
 *   **[Return the Favor](https://scryfall.com/search?q=!"Return+the+Favor") ({R}{R}):** Spree instant redirecting targeted removal or copying high-impact spells and abilities.
 *   **[Untimely Malfunction](https://scryfall.com/search?q=!"Untimely+Malfunction") ({1}{R}):** Modal instant destroying an artifact, redirecting a spell/ability, or preventing two creatures from blocking.
-*   **[Blood Moon](https://scryfall.com/search?q=!"Blood+Moon") ({2}{R}):** Shuts down greedy nonbasic mana bases and turns on *Goblin King*'s Mountainwalk for unblockable lethal swings.
 *   **[Chaos Warp](https://scryfall.com/search?q=!"Chaos+Warp") ({2}{R}):** Universal instant-speed removal answering any permanent type.
 *   **[Vandalblast](https://scryfall.com/search?q=!"Vandalblast") ({R}):** One-sided artifact board wipe for {4}{R} overload or targeted removal for {R}.
 
@@ -133,7 +133,7 @@ deck_status: main
 ## 🚀 Future Roadmap: Upgrades & Considerations
 
 ### 💡 High-Impact Tech to Consider
-*   **Torbran, Thane of Red Fell ({1}{R}{R}{R}):** Increases damage dealt by all red sources by +2; turns every 1/1 token hit and Impact Tremors trigger into a 3-damage bomb.
+*   **Blood Moon ({2}{R}):** Nonbasic land denial and Mountainwalk enabler (Note: Automatically sets statutory floor to Bracket 4 under WotC rules).
 *   **Eldrazi Monument ({5}):** Grants all Goblins +1/+1, flying, and indestructible for the negligible upkeep cost of one 1/1 Goblin token.
 *   **Gamble ({R}):** 1-mana unconditional red tutor for combo pieces [GAME CHANGER].
 *   **Jeska's Will ({2}{R}):** High-octane burst ritual and 3-card exile draw engine [GAME CHANGER].
@@ -150,6 +150,10 @@ deck_status: main
 ---
 
 ## 📜 Deck Changelog
+- **[2026-09-25]:** Cut Mass Land Denial (Blood Moon) to achieve WotC Bracket 3 compliance; amplify token and burn damage
+    - **In:** Torbran, Thane of Red Fell
+    - **Out:** Blood Moon
+    - **Reason:** Cut Mass Land Denial (Blood Moon) to achieve WotC Bracket 3 compliance; amplify token and burn damage
 - **[2026-09-25]:** Calibrated against official DeckCheck.co scan.
     - **In:** N/A (DTI Telemetry & Calibration)
     - **Out:** N/A
@@ -175,7 +179,7 @@ DECK:
 1 Ashnod's Altar  
 1 Banner of Kinship  
 1 Battle Hymn  
-1 Blood Moon  
+1 Torbran, Thane of Red Fell  
 1 Brightstone Ritual  
 1 Castle Embereth  
 1 Chaos Warp  

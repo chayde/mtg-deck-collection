@@ -9,8 +9,8 @@
 ## Commander Strategy
 **Krenko, Mob Boss**
 *   **Archetype:** Mono-Red Goblin Tribal Aggro-Combo / Infinite Untap Combos & Stack Protection
-*   **Bracket:** 4 (Optimized — Promoted from Bracket 3 via WotC Mass Land Denial statutory floor on *Blood Moon*)
-*   **DTI Threat Index:** **42 / 96** (Score Floor: Bracket 3 | Final: Bracket 4 via Blood Moon MLD | Velocity: **24/48** | Suppression: **16/40** | Gates: All Passed | [DTI Report](dti_report.html))
+*   **Bracket:** 3 (Upgraded Casual — 0/3 Game Changers, No Mass Land Denial, No 2-Card Combos)
+*   **DTI Threat Index:** **42 / 96** (Bracket 3 [32–51] | Velocity: **24/48** | Suppression: **16/40** | Gates: All Passed | [DTI Report](dti_report.html))
 *   **Core Goal:** Rapidly deploy Krenko with immediate haste, double your Goblin count on the turn he lands, and convert token volume into lethal direct burn or infinite loops (*Umbral Mantle*, *Staff of Domination*, *Mana Echoes*, *Phyrexian Altar*) while protecting Krenko from targeted removal via red redirect countermagic (*Deflecting Swat*, *Return the Favor*).
 
 See [`krenko_bracket3.md`](krenko_bracket3.md) for full strategy guide, infinite combo documentation, and categorized card explanations.

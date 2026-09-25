@@ -78,7 +78,7 @@ The following 31 singles represent the targeted upgrade package to complete the 
 | **Warren Instigator** | {R}{R} | Utility / Cheat | ~$12.00 | Double strike combat cheat putting up to two Goblins into play |
 | **Eldrazi Monument** | {5} | Protection / Finisher | ~$10.50 | Indestructible board wipe shield + flying evasion |
 | **Ashnod's Altar** | {3} | Mana / Combo | ~$9.00 | {C}{C} sac outlet for infinite colorless loops |
-| **Blood Moon** | {2}{R} | Disruption | ~$8.15 | Shuts down greedy nonbasics & turns on Goblin King mountainwalk |
+| **Torbran, Thane of Red Fell** | {1}{R}{R}{R} | Amplifier / Finisher | ~$5.21 | Amplifies red damage by +2; turns 1/1 tokens and pings into 3-damage bombs |
 | **Goblin Trashmaster** | {2}{R}{R} | Lord / Removal | ~$8.20 | Lord (+1/+1) & repeatable artifact destruction sac engine |
 | **Arena of Glory** | Land | Land / Haste | ~$7.10 | Land that exerts for {R}{R} to give Krenko immediate haste |
 | **General Kreat, the Boltbringer** | {2}{R} | Finisher | ~$7.30 | Attack token generator + 1 damage per creature ETB |

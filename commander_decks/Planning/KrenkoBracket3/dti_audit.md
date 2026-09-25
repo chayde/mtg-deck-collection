@@ -1,21 +1,20 @@
 # DTI Power & Threat Evaluation: KrenkoBracket3
 
-> **Evaluated Bracket: Bracket 4** | **Threat Score: 42 / 96** | **Velocity: 24 / 48** | **Suppression: 16 / 40**
+> **Evaluated Bracket: Bracket 3** | **Threat Score: 42 / 96** | **Velocity: 24 / 48** | **Suppression: 16 / 40**
 > **Archetype:** Mono-Red Goblin Swarm, Infinite Untap Combos & Stack Protection · **Threat Onset:** turn 5 · **Engine Ready:** turn 4 · **Response Cycles:** 1
 
 ---
 
 ## 1. Executive Summary & Tactical Overview
 
-* **Final Placement:** **Bracket 4**
+* **Final Placement:** **Bracket 3**
 * **DTI Threat Index:** `42 / 96` (Score Floor: Bracket 3)
 * **Clock Speed (Velocity Vector):** `24 / 48`
 * **Opponent Stifle (Suppression Vector):** `16 / 40`
-* **WotC Statutory Compliance:** 0 / 3 Game Changers (Floor: Bracket 4)
-  * *Mass Land Denial detected (Floor: Bracket 4):* Blood Moon
+* **WotC Statutory Compliance:** 0 / 3 Game Changers (Floor: Bracket 2)
 
 ### Tactical Overview
-This deck is a high-power, synergistic Mono-Red Goblin swarm and combo engine commanded by Krenko, Mob Boss. The game plan focuses on deploying Krenko ahead of curve on Turn 3 or 4 with immediate haste using a dedicated 9-source haste matrix. Once on the board, Krenko exponentially doubles your Goblin count each turn cycle, rapidly generating lethal armies. The deck converts token volume into victory through direct non-combat damage triggers like Purphoros, Impact Tremors, and Goblin Bombardment, or via combat overruns with Shared Animosity and Quest for the Goblin Lord. It also houses compact infinite untap loops utilizing Umbral Mantle, Staff of Domination, and Mana Echoes paired with sacrifice altars (Phyrexian Altar, Ashnod's Altar, Skirk Prospector). The strategy is shielded against spot removal and counterspells through red stack redirects (Deflecting Swat, Return the Favor) and Commander's Plate, while Blood Moon punishes greedy multi-color mana bases.
+This deck is a high-power, synergistic Mono-Red Goblin swarm and combo engine commanded by Krenko, Mob Boss. The game plan focuses on deploying Krenko ahead of curve on Turn 3 or 4 with immediate haste using a dedicated 9-source haste matrix. Once on the board, Krenko exponentially doubles your Goblin count each turn cycle, rapidly generating lethal armies. The deck converts token volume into victory through direct non-combat damage triggers like Purphoros, Impact Tremors, and Goblin Bombardment, or via combat overruns with Shared Animosity and Quest for the Goblin Lord. It also houses compact infinite untap loops utilizing Umbral Mantle, Staff of Domination, and Mana Echoes paired with sacrifice altars (Phyrexian Altar, Ashnod's Altar, Skirk Prospector). The strategy is shielded against spot removal and counterspells through red stack redirects (Deflecting Swat, Return the Favor) and Commander's Plate, while Torbran, Thane of Red Fell amplifies token swarm and direct burn damage to lethal levels.
 
 ---
 
@@ -26,7 +25,7 @@ This deck is a high-power, synergistic Mono-Red Goblin swarm and combo engine co
 2. Establish a haste enabler (Lightning Greaves, Rising of the Day, Swiftfoot Boots, Thousand-Year Elixir) on Turn 2 or 3.
 3. Cast Krenko, Mob Boss on Turn 3 or 4 with immediate haste open, tapping immediately to double your Goblin count.
 4. Deploy a multiplier or burn payoff (Purphoros, Impact Tremors, Shared Animosity, Mana Echoes) on Turn 4 or 5.
-5. Close the game on Turn 5 or 6 through infinite untap loops, direct burn triggers, or an unblockable Mountainwalk combat overrun backed by Blood Moon.
+5. Close the game on Turn 5 or 6 through infinite untap loops, direct burn triggers, or lethal combat overruns amplified by Torbran, Thane of Red Fell or Shared Animosity.
 
 ### Mulligan Priorities
 * **Keep:** ['Hands with 2-3 Mountains, early ramp (Sol Ring, Arcane Signet, Skirk Prospector), at least one haste enabler, and a 1-2 drop Goblin.', 'Hands with Goblin Recruiter or Goblin Matron to tutor the missing combo or haste piece.']
@@ -36,7 +35,7 @@ This deck is a high-power, synergistic Mono-Red Goblin swarm and combo engine co
 - Always hold priority and equip Lightning Greaves or boots to Krenko immediately upon resolution to prevent targeted instant-speed removal before your first tap activation.
 - With Goblin Recruiter, stack Conspicuous Snoop on top, followed by Krenko, Skirk Prospector, and Goblin Chieftain to create an unstoppable top-deck combo line.
 - Use Goblin Chirurgeon to sacrifice a 1/1 Goblin token and regenerate Krenko or Goblin King in response to damage-based sweepers or destroy effects.
-- Blood Moon turns all opposing nonbasic lands into basic Mountains, making your entire army completely unblockable if Goblin King is on the battlefield.
+- Torbran, Thane of Red Fell adds +2 damage to every red source, turning 1/1 Goblin tokens into 3-power attackers and Impact Tremors or Purphoros triggers into 3-4 damage per creature entry.
 
 ---
 
@@ -51,8 +50,8 @@ This deck is a high-power, synergistic Mono-Red Goblin swarm and combo engine co
 - 🟡 Targeted instant-speed removal hitting Krenko before a haste enabler can be attached.
 
 ### Minor Exploits
-- ⚪ Life loss from War Room or pain lands in long attrition games.
-- ⚪ Opposing basic Mountains diluting the asymmetric lock advantage of Blood Moon.
+- ⚪ Life loss from War Room in long attrition games.
+- ⚪ Opposing damage-prevention or lifegain effects stalling burn kill thresholds.
 
 ---
 
@@ -64,7 +63,7 @@ This deck is a high-power, synergistic Mono-Red Goblin swarm and combo engine co
 - **[Purphoros, God of the Forge](https://scryfall.com/search?q=!%22Purphoros%2C%20God%20of%20the%20Forge%22):** Indestructible game-ending burn engine dealing 2 damage to each opponent on every Goblin entry.
 - **[Mana Echoes](https://scryfall.com/search?q=!%22Mana%20Echoes%22):** Exponential colorless mana generator producing 20-50+ mana off a single Krenko tap.
 - **[Shared Animosity](https://scryfall.com/search?q=!%22Shared%20Animosity%22):** Devastating combat multiplier giving each attacking Goblin +1/+0 for each other attacking Goblin.
-- **[Blood Moon](https://scryfall.com/search?q=!%22Blood%20Moon%22):** Asymmetric land denial shutting down nonbasic mana bases and enabling unblockable Mountainwalk.
+- **[Torbran, Thane of Red Fell](https://scryfall.com/search?q=!%22Torbran%2C%20Thane%20of%20Red%20Fell%22):** Static damage amplifier adding +2 damage across all red sources, accelerating burn and combat kills.
 - **[Deflecting Swat](https://scryfall.com/search?q=!%22Deflecting%20Swat%22):** Free 0-mana redirect protection safeguarding Krenko against targeted spot removal.
 - **[Commander's Plate](https://scryfall.com/search?q=!%22Commander%27s%20Plate%22):** Elite equipment giving Krenko +3/+3 and protection from White, Blue, Black, and Green.
 - **[Skirk Prospector](https://scryfall.com/search?q=!%22Skirk%20Prospector%22):** Premier 1-drop converting Goblins into red mana for ramp bursts and infinite loops.
@@ -85,7 +84,7 @@ This deck is a high-power, synergistic Mono-Red Goblin swarm and combo engine co
 | **A1** | Selection & Redundancy | Access | `A` | **4/8** | A-tier selection and extreme functional redundancy: anchored by unconditional tutor Goblin Matron, library-stacking tutor Goblin Recruiter, Conspicuous Snoop, and Muxus, reinforced by a 9-source haste matrix, 5 sacrifice outlets, 5 untap engines, and 6 burn finishers. |
 | **P3** | Exposure & Predictability | Pressure | `B` | **2/8** | B-tier exposure: highly visible, permanent-based creature and token swarm on the battlefield that clearly signals lethal combat and burn thresholds. |
 | **I1** | Reactive Disruption | Interaction | `B` | **2/8** | B-tier reactive disruption: focused instant-speed stack protection and interaction featuring Deflecting Swat, Return the Favor, Untimely Malfunction, Chaos Warp, Vandalblast, Gempalm Incinerator, and Goblin Bombardment. |
-| **I2** | Proactive Denial & Restriction | Interaction | `B` | **2/8** | B-tier proactive denial: Blood Moon completely shuts down nonbasic mana bases while granting unblockable Mountainwalk via Goblin King. Repeatable creature removal via Goblin Sharpshooter and Goblin Bombardment wipes opposing mana dorks and token armies. |
+| **I2** | Proactive Denial & Restriction | Interaction | `B` | **2/8** | B-tier proactive denial: Repeatable creature removal via Goblin Sharpshooter and Goblin Bombardment wipes opposing mana dorks and token armies, backed by targeted artifact destruction from Goblin Trashmaster and Vandalblast. |
 | **S1** | Plan Shielding & Protection | Resilience | `A` | **4/8** | A-tier plan shielding: robust 8-card protection suite for a mono-red shell, including Commander's Plate (protection from White, Blue, Black, and Green), Deflecting Swat (free 0-mana redirect), Return the Favor (redirect/copy), Untimely Malfunction (redirect), Lightning Greaves, Swiftfoot Boots, Goblin Chirurgeon (free regeneration), and Eldrazi Monument (universal indestructible). |
 | **S2** | Engine Recovery | Resilience | `A` | **2/4** | A-tier engine recovery: Muxus, Goblin Grandee provides an instant 6-card board rebuild; Rundvelt Hordemaster triggers on board wipes to bank exiled playable cards; Goblin Recruiter restacks the library following mass removal; and Krenko recasts from the command zone with immediate haste. |
 | **S3** | Independence & Backup Plans | Resilience | `A` | **2/4** | A-tier independence: the 99 functions autonomously as a lethal Goblin tribal swarm without Krenko, overwhelming opponents through tribal lords (Chieftain, Warchief, King, Trashmaster, Bandit Lord), Quest for the Goblin Lord, Shared Animosity, Banner of Kinship, Purphoros, and Impact Tremors. |
@@ -188,7 +187,7 @@ Every card in the deck mapped to the specific benchmarks it supports:
 - **Goblin Bombardment**: Instant-speed targeted creature removal
 
 ### I2: Proactive Denial & Restriction (Tier `B`) — 5 Cards
-- **Blood Moon**: Hard nonbasic land denial turning lands into Mountains
+- **Untimely Malfunction**: Suppresses opposing blockers or destroys key artifacts
 - **Goblin Trashmaster**: Repeatable artifact destruction suppressing opposing engines
 - **Goblin Sharpshooter**: Suppresses low-toughness creatures and mana dorks
 - **Goblin Bombardment**: Repeatable creature suppression against opposing boards

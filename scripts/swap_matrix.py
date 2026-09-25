@@ -197,14 +197,14 @@ def find_deck_files(target_path: str) -> Tuple[Optional[Path], Optional[Path], P
     if p.is_dir():
         deck_dir = p
         moxfield = deck_dir / "moxfield_import.txt"
-        md_files = [f for f in deck_dir.glob("*.md") if f.name not in {"order_tracking.md", "GOLDFISH_LOG.md", "README.md"}]
+        md_files = [f for f in deck_dir.glob("*.md") if f.name not in {"order_tracking.md", "GOLDFISH_LOG.md", "README.md", "dti_audit.md"}]
         md_path = md_files[0] if md_files else None
         return moxfield if moxfield.exists() else None, md_path, deck_dir
 
     deck_dir = p.parent
     if p.name == "moxfield_import.txt":
         moxfield = p
-        md_files = [f for f in deck_dir.glob("*.md") if f.name not in {"order_tracking.md", "GOLDFISH_LOG.md", "README.md"}]
+        md_files = [f for f in deck_dir.glob("*.md") if f.name not in {"order_tracking.md", "GOLDFISH_LOG.md", "README.md", "dti_audit.md"}]
         md_path = md_files[0] if md_files else None
         return moxfield, md_path, deck_dir
 
