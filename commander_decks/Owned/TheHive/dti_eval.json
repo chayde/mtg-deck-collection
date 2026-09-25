@@ -1,103 +1,158 @@
 {
+  "deck_name": "TheHive",
+  "thematic_restriction": false,
+  "archetype": "Sliver Tribal Aggro-Cascade",
+  "threat_onset": "Turn 5",
+  "engine_ready": "Turn 4",
+  "response_cycles": 1,
   "grades": {
-    "r1": "B",
-    "r2": "A",
-    "a1": "B",
-    "a2": "B",
-    "p1": "B",
+    "r1": "A",
+    "r2": "S",
+    "a1": "S",
+    "a2": "A",
+    "p1": "A",
     "p2": "A",
     "p3": "B",
     "i1": "B",
-    "i2": "C",
+    "i2": "B",
     "s1": "A",
-    "s2": "B",
-    "s3": "B"
+    "s2": "A",
+    "s3": "A"
   },
   "justifications": {
-    "r1": "5-color mana base with mana dork slivers (Gemhide, Manaweft) and green ramp.",
-    "r2": "Cascade chains from The First Sliver vomit multiple slivers; Synapse/Dormant draw cards.",
-    "a1": "Homing Sliver (slivercycling) and cascade provide consistent access to key slivers.",
-    "a2": "Cascade engine unleashes on Turn 5.",
-    "p1": "Presents lethal haste/evasion sliver swarm on Turns 6–7.",
-    "p2": "1 opponent untap step or immediate lethal swing with Cloudshredder / Heart Sliver.",
-    "p3": "Cascading into unblockable/flying slivers creates explosive, rapid clock.",
-    "i1": "Harmonic Sliver (repeatable Naturalize) and Necrotic Sliver (Vindicate).",
-    "i2": "Harmonic Sliver systematically eliminates opposing mana rocks and engines.",
-    "s1": "Crystalline Sliver (shroud to all slivers), Hibernation Sliver, and Quick Sliver.",
-    "s2": "Living Death and Patriarch's Bidding mass-reanimate the entire hive.",
-    "s3": "Sliver lords buff each other effectively even without The First Sliver."
+    "r1": "5-color mana base accelerated by Gemhide and Manaweft Slivers alongside green landramp and flawless fetch/shock/triome fixing.",
+    "r2": "The First Sliver cascade engine casts multiple free spells per turn, compounded by Synapse Sliver, Guardian Project, and Vanquisher's Banner.",
+    "a1": "Homing Sliver provides universal slivercycling; Sliver Overlord tutors on demand; Cascade provides format-ceiling card velocity.",
+    "a2": "Engine is ready Turn 4 via mana dorks and haste enablers; cascade turns explode lethal board states on Turn 5.",
+    "p1": "Presents lethal haste/evasion combat threat on Turn 5 across multiple opponents.",
+    "p2": "1 opponent response cycle after onset before achieving lethal table elimination through mass evasion.",
+    "p3": "Visible creature board state with telegraphed combat triggers and anthem scaling.",
+    "i1": "Necrotic Sliver (Vindicate on demand), Harmonic Sliver (repeatable Naturalize), Swords to Plowshares, and Beast Within.",
+    "i2": "Harmonic Sliver systematically destroys opposing mana rocks and value engines on each sliver ETB; Diffusion Sliver taxes interaction.",
+    "s1": "Crystalline Sliver (blanket shroud), Sliver Hivelord (indestructible), Steely Resolve, Heroic Intervention, and Root Sliver (uncounterable).",
+    "s2": "Patriarch's Bidding, Sliver Gravemother (Encore from grave), and Dregscape Sliver (Unearth) mass-rebuild from wipes.",
+    "s3": "Sliver Overlord, Sliver Hivelord, and the lord buff network operate at full lethal lethality even without The First Sliver."
   },
   "card_ledger": {
     "r1": [
-      {
-        "card": "Arcane Signet",
-        "role": "Mana ramp / fixing"
-      },
-      {
-        "card": "Cultivate",
-        "role": "Mana ramp / fixing"
-      },
-      {
-        "card": "Island",
-        "role": "Mana ramp / fixing"
-      },
-      {
-        "card": "Kodama's Reach",
-        "role": "Mana ramp / fixing"
-      },
-      {
-        "card": "Sol Ring",
-        "role": "Mana ramp / fixing"
-      }
+      {"card": "Gemhide Sliver", "role": "Universal mana dork for all slivers"},
+      {"card": "Manaweft Sliver", "role": "Universal mana dork for all slivers"},
+      {"card": "Birds of Paradise", "role": "1-mana 5-color ramp dork"},
+      {"card": "Sol Ring", "role": "Positive mana rock (+1 mana)"},
+      {"card": "Arcane Signet", "role": "2-mana 5-color rock"},
+      {"card": "Chromatic Lantern", "role": "Full 5-color mana fixing and ramp"},
+      {"card": "Pillar of Origins", "role": "2-mana tribal mana rock"},
+      {"card": "Farseek", "role": "Fetches Shocklands/Triomes"},
+      {"card": "Nature's Lore", "role": "Untapped Forest/Shockland ramp"},
+      {"card": "Three Visits", "role": "Untapped Forest/Shockland ramp"},
+      {"card": "Cultivate", "role": "Double basic ramp and smoothing"},
+      {"card": "Kodama's Reach", "role": "Double basic ramp and smoothing"},
+      {"card": "Urza's Incubator", "role": "Reduces all sliver casting costs by 2"},
+      {"card": "Herald's Horn", "role": "Reduces sliver casting costs by 1"},
+      {"card": "Command Tower", "role": "Flawless 5-color land"},
+      {"card": "Sliver Hive", "role": "5-color tribal land"},
+      {"card": "Path of Ancestry", "role": "5-color tribal land with scrying"},
+      {"card": "Unclaimed Territory", "role": "5-color tribal fixing land"},
+      {"card": "Exotic Orchard", "role": "Multicolor land"},
+      {"card": "Blood Crypt", "role": "Fetchable Rakdos shockland"},
+      {"card": "Breeding Pool", "role": "Fetchable Simic shockland"},
+      {"card": "Overgrown Tomb", "role": "Fetchable Golgari shockland"},
+      {"card": "Stomping Ground", "role": "Fetchable Gruul shockland"},
+      {"card": "Temple Garden", "role": "Fetchable Selesnya shockland"},
+      {"card": "Jetmir's Garden", "role": "Fetchable Naya triome"},
+      {"card": "Ketria Triome", "role": "Fetchable Temur triome"},
+      {"card": "Spara's Headquarters", "role": "Fetchable Bant triome"},
+      {"card": "Zagoth Triome", "role": "Fetchable Sultai triome"},
+      {"card": "Ziatora's Proving Ground", "role": "Fetchable Jund triome"},
+      {"card": "Arid Mesa", "role": "Fetchland fixing"},
+      {"card": "Bloodstained Mire", "role": "Fetchland fixing"},
+      {"card": "Flooded Strand", "role": "Fetchland fixing"},
+      {"card": "Marsh Flats", "role": "Fetchland fixing"},
+      {"card": "Misty Rainforest", "role": "Fetchland fixing"},
+      {"card": "Polluted Delta", "role": "Fetchland fixing"},
+      {"card": "Scalding Tarn", "role": "Fetchland fixing"},
+      {"card": "Verdant Catacombs", "role": "Fetchland fixing"},
+      {"card": "Windswept Heath", "role": "Fetchland fixing"},
+      {"card": "Wooded Foothills", "role": "Fetchland fixing"}
     ],
-    "a2": [],
-    "p1": [],
-    "p2": [],
     "r2": [
-      {
-        "card": "Beast Whisperer",
-        "role": "Card draw / engine replenishment"
-      }
+      {"card": "The First Sliver", "role": "Cascade engine casting free cards on every sliver cast"},
+      {"card": "Synapse Sliver", "role": "Draws a card on every sliver combat connection"},
+      {"card": "Guardian Project", "role": "Draws a card on every nontoken sliver ETB"},
+      {"card": "Vanquisher's Banner", "role": "Draws a card on every sliver cast"},
+      {"card": "Herald's Horn", "role": "Topdeck sliver advantage upkeep trigger"},
+      {"card": "Descendants' Path", "role": "Free topdeck sliver casts on upkeep"},
+      {"card": "Reflections of Littjara", "role": "Copies every sliver spell on cast"}
     ],
     "a1": [
-      {
-        "card": "Profane Tutor",
-        "role": "Specific tutor / selection"
-      }
+      {"card": "Homing Sliver", "role": "Universal slivercycling (tutor any sliver for 3 mana)"},
+      {"card": "Sliver Overlord", "role": "Repeatable 3-mana tutor directly to hand"},
+      {"card": "Eladamri's Call", "role": "Instant-speed creature tutor to hand"},
+      {"card": "The First Sliver", "role": "Cascade library digging into functional pieces"},
+      {"card": "Sinew Sliver", "role": "Redundant +1/+1 lord"},
+      {"card": "Predatory Sliver", "role": "Redundant +1/+1 lord"},
+      {"card": "Muscle Sliver", "role": "Redundant +1/+1 lord"}
     ],
-    "p3": [],
+    "a2": [
+      {"card": "Gemhide Sliver", "role": "Accelerates commander and multi-spell turns"},
+      {"card": "Manaweft Sliver", "role": "Accelerates commander and multi-spell turns"},
+      {"card": "Cloudshredder Sliver", "role": "Grants haste for immediate turn-4/5 attacks"},
+      {"card": "Heart Sliver", "role": "Grants haste to entire swarm"},
+      {"card": "Blur Sliver", "role": "Grants haste to entire swarm"},
+      {"card": "Quick Sliver", "role": "Grants flash to assemble at opponent end step"},
+      {"card": "Rhythm of the Wild", "role": "Riot haste enabler"}
+    ],
+    "p1": [
+      {"card": "The First Sliver", "role": "Explosive cascade board flood on turn 5"},
+      {"card": "Cloudshredder Sliver", "role": "Grants flying + haste for immediate lethal combat"},
+      {"card": "Megantic Sliver", "role": "+3/+3 anthem creating game-ending power"},
+      {"card": "Bonescythe Sliver", "role": "Double strike doubling all damage output"},
+      {"card": "Sliver Queen", "role": "Token generation engine scaling into infinite swarm"},
+      {"card": "Brood Sliver", "role": "Doubles swarm count upon combat damage"}
+    ],
+    "p2": [
+      {"card": "Shifting Sliver", "role": "Blanket unblockability eliminating table within 1 untap cycle"},
+      {"card": "Bonescythe Sliver", "role": "Halves combat math to eliminate opponents instantly"},
+      {"card": "Horned Sliver", "role": "Trample pushes over chump blockers"},
+      {"card": "Lavabelly Sliver", "role": "Direct life-drain triggers on sliver ETBs"}
+    ],
+    "p3": [
+      {"card": "The First Sliver", "role": "Creature-based board presence with telegraphed combat"},
+      {"card": "Sinew Sliver", "role": "Visible stat-boosting lord"}
+    ],
     "i1": [
-      {
-        "card": "Beast Within",
-        "role": "Instant-speed reactive removal"
-      },
-      {
-        "card": "Descendants' Path",
-        "role": "Instant-speed reactive removal"
-      },
-      {
-        "card": "Path of Ancestry",
-        "role": "Instant-speed reactive removal"
-      },
-      {
-        "card": "Path to Exile",
-        "role": "Instant-speed reactive removal"
-      },
-      {
-        "card": "Swords to Plowshares",
-        "role": "Instant-speed reactive removal"
-      }
+      {"card": "Necrotic Sliver", "role": "Repeatable Vindicate destroying any target permanent"},
+      {"card": "Harmonic Sliver", "role": "Repeatable Naturalize destroying artifact/enchantment on ETB"},
+      {"card": "Swords to Plowshares", "role": "1-mana instant spot exile"},
+      {"card": "Path to Exile", "role": "1-mana instant spot exile"},
+      {"card": "Beast Within", "role": "Universal instant permanent removal"},
+      {"card": "Blasphemous Act", "role": "1-mana emergency board reset"}
     ],
-    "i2": [],
+    "i2": [
+      {"card": "Harmonic Sliver", "role": "Denies opponents mana rocks and key engines systematically"},
+      {"card": "Diffusion Sliver", "role": "Ward-like tax of 2 mana on all opposing targeting"},
+      {"card": "Necrotic Sliver", "role": "Denial pressure on opposing key utility lands/engines"}
+    ],
     "s1": [
-      {
-        "card": "Heroic Intervention",
-        "role": "Board / commander protection"
-      }
+      {"card": "Crystalline Sliver", "role": "Grants blanket shroud to all slivers"},
+      {"card": "Sliver Hivelord", "role": "Grants indestructible to all slivers"},
+      {"card": "Steely Resolve", "role": "Grants blanket shroud naming Slivers"},
+      {"card": "Heroic Intervention", "role": "Instant hexproof + indestructible against wipes"},
+      {"card": "Root Sliver", "role": "Sliver spells cannot be countered"},
+      {"card": "Rhythm of the Wild", "role": "Creature spells cannot be countered"},
+      {"card": "Hibernation Sliver", "role": "Bounces slivers to hand for 2 life to dodge wipes"},
+      {"card": "Ward Sliver", "role": "Protection from chosen color to blank removal and blocks"}
     ],
-    "s2": [],
-    "s3": []
-  },
-  "deck_name": "TheHive",
-  "thematic_restriction": false
+    "s2": [
+      {"card": "Patriarch's Bidding", "role": "Mass reanimates all slivers from graveyard to battlefield"},
+      {"card": "Sliver Gravemother", "role": "Encore ability reanimates token army from graveyard"},
+      {"card": "Dregscape Sliver", "role": "Unearth ability brings back fallen slivers for 2 mana"}
+    ],
+    "s3": [
+      {"card": "Sliver Overlord", "role": "Alternative commander and tutor engine"},
+      {"card": "Sliver Hivelord", "role": "Alternative defensive commander"},
+      {"card": "Sliver Gravemother", "role": "Alternative graveyard commander"},
+      {"card": "Sliver Queen", "role": "Alternative combo/swarm centerpiece"}
+    ]
+  }
 }

@@ -12,7 +12,7 @@ deck_status: main
 **The First Sliver**
 *   **Archetype:** 5-Color Tribal / Cascade Explosive Swarm  
 *   **Bracket:** 3 (Upgraded)  
-*   **DTI Threat Index:** **28 / 96** (Bracket 2 | Velocity: **15/48** | Suppression: **8/40** | Gates: All Passed | [DTI Report](dti_report.html))
+*   **DTI Threat Index:** **50 / 96** (Bracket 3 · Upgraded Casual | Velocity: **24/48** | Suppression: **16/40** | Gates: All Passed | [DTI Report](dti_report.html))
 *   **Role:** The Value Engine.
 *   **Goal:** To cast Slivers from your hand.
 *   **The Reward:** Every Sliver spell you cast gains **Cascade**, which means you reveal cards from the top of your library until you hit a nonland card that costs less, and you cast that spell for free. This allows you to build a massive board presence out of nowhere. The deck's primary commander is The First Sliver, but it can be swapped with other 5-color slivers.

@@ -276,12 +276,20 @@ class DTIEvaluation:
                 "reason": f"Velocity vector ({self.velocity_vector}/48) >= 28. Fast proactive clock."
             })
 
-        # Gate 2: Early Finish / Glass Cannon Gate (P1 S/A onset T1-5 -> Bracket 4)
-        if self.grades["p1"] in ("S", "A") and self.scores["p2"] >= 2:
+        # Gate 2: Early Finish / Glass Cannon Gate (Eliminates table by Turn 5: Zero-Untap Override or T1-3 onset)
+        early_finish = False
+        if self.grades["p1"] == "S":
+            early_finish = True
+        elif self.grades["p1"] == "A" and self.grades["p2"] == "S":
+            early_finish = True
+        elif self.grades["a2"] in ("S", "A") and self.grades["p2"] == "S":
+            early_finish = True
+
+        if early_finish:
             self.gates_triggered.append({
                 "name": "Early Finish Gate",
                 "bracket": 4,
-                "reason": f"Threat onset P1 is {self.grades['p1']} (Turns 1–5 critical onset). Belongs in Bracket 4."
+                "reason": f"Reliably eliminates opponents or establishes lockout by Turn 5 (Zero-Untap Override: P1:{self.grades['p1']}, P2:{self.grades['p2']}). Belongs in Bracket 4."
             })
 
         # Gate 3: Suppression Gate (I2 S/A severe denial -> Bracket 4)
@@ -429,13 +437,13 @@ def render_ascii_dashboard(eval_obj: DTIEvaluation, telemetry: Optional[Dict[str
 
     # Gates Status
     lines.append("  GATEKEEPER CHECKS:")
-    v_gate = "TRIGGERED -> B4" if eval_obj.velocity_vector >= 28 else "PASSED (Safe)"
-    ef_gate = "TRIGGERED -> B4" if (eval_obj.grades["p1"] in ("S", "A") and eval_obj.scores["p2"] >= 2) else "PASSED (Safe)"
-    sup_gate = "TRIGGERED -> B4" if eval_obj.grades["i2"] in ("S", "A") else "PASSED (Safe)"
+    v_gate = "TRIGGERED -> B4" if any(g["name"] == "Velocity Gate" for g in eval_obj.gates_triggered) else "PASSED (Safe)"
+    ef_gate = "TRIGGERED -> B4" if any(g["name"] == "Early Finish Gate" for g in eval_obj.gates_triggered) else "PASSED (Safe)"
+    sup_gate = "TRIGGERED -> B4" if any(g["name"] == "Suppression Gate" for g in eval_obj.gates_triggered) else "PASSED (Safe)"
     cedh_gate = "TRIGGERED -> B5" if any(g["name"] == "cEDH Gate" for g in eval_obj.gates_triggered) else "PASSED (Safe)"
 
     lines.append(f"  * Velocity Gate (Vector >= 28):          [{v_gate}] ({eval_obj.velocity_vector}/48)")
-    lines.append(f"  * Early Finish Gate (Onset T1-5):        [{ef_gate}] (P1: {eval_obj.grades['p1']})")
+    lines.append(f"  * Early Finish Gate (Onset T1-5):        [{ef_gate}] (P1: {eval_obj.grades['p1']}, P2: {eval_obj.grades['p2']})")
     lines.append(f"  * Suppression Gate (Severe Denial I2):   [{sup_gate}] (I2: {eval_obj.grades['i2']})")
     lines.append(f"  * cEDH Gate (Vector >= 40, P1 S/A, P2 S): [{cedh_gate}]")
 
@@ -823,20 +831,20 @@ def generate_html_report(eval_obj: DTIEvaluation, output_file: Path, telemetry: 
         <div class="gates-banner">
             <div class="gate-title">Gatekeeper Audit Results</div>
             <div class="gate-item">
-                <span class="gate-tag {'tag-triggered' if eval_obj.velocity_vector >= 28 else 'tag-passed'}">
-                    {'TRIGGERED' if eval_obj.velocity_vector >= 28 else 'PASSED'}
+                <span class="gate-tag {'tag-triggered' if any(g['name'] == 'Velocity Gate' for g in eval_obj.gates_triggered) else 'tag-passed'}">
+                    {'TRIGGERED' if any(g['name'] == 'Velocity Gate' for g in eval_obj.gates_triggered) else 'PASSED'}
                 </span>
                 <strong>Velocity Gate:</strong> Vector {eval_obj.velocity_vector}/48 (Threshold: &ge; 28 mandates Bracket 4).
             </div>
             <div class="gate-item">
-                <span class="gate-tag {'tag-triggered' if eval_obj.grades['p1'] in ('S', 'A') else 'tag-passed'}">
-                    {'TRIGGERED' if eval_obj.grades['p1'] in ('S', 'A') else 'PASSED'}
+                <span class="gate-tag {'tag-triggered' if any(g['name'] == 'Early Finish Gate' for g in eval_obj.gates_triggered) else 'tag-passed'}">
+                    {'TRIGGERED' if any(g['name'] == 'Early Finish Gate' for g in eval_obj.gates_triggered) else 'PASSED'}
                 </span>
-                <strong>Early Finish Gate:</strong> Critical Onset P1 is {eval_obj.grades['p1']} (Turns 1–5 onset mandates Bracket 4).
+                <strong>Early Finish Gate:</strong> Onset {eval_obj.grades['p1']}, Completion {eval_obj.grades['p2']} (Zero-untap or T1-5 table elimination mandates Bracket 4).
             </div>
             <div class="gate-item">
-                <span class="gate-tag {'tag-triggered' if eval_obj.grades['i2'] in ('S', 'A') else 'tag-passed'}">
-                    {'TRIGGERED' if eval_obj.grades['i2'] in ('S', 'A') else 'PASSED'}
+                <span class="gate-tag {'tag-triggered' if any(g['name'] == 'Suppression Gate' for g in eval_obj.gates_triggered) else 'tag-passed'}">
+                    {'TRIGGERED' if any(g['name'] == 'Suppression Gate' for g in eval_obj.gates_triggered) else 'PASSED'}
                 </span>
                 <strong>Suppression Gate:</strong> Proactive Restriction I2 is {eval_obj.grades['i2']} (Severe attrition mandates Bracket 4).
             </div>
