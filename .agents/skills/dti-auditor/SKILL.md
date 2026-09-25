@@ -149,3 +149,11 @@ Use these calibrated decks to ground every future evaluation:
 *   **Clock:** Onset Turn 4 ($P1: A$), Ready Turn 3 ($A2: S$), Response Cycles: 2 ($P2: B$).
 *   **Benchmarks:** $R1: A, R2: S, A1: A, A2: S, P1: A, P2: B, P3: A, I1: A, I2: A, S1: B, S2: A, S3: A$.
 *   **Calibration Principle:** Turn 3 engine deployment ($A2: S$), automatic death draws ($R2: S$), and asymmetric board wipe locks (*Maha* + *Massacre Wurm* / *Balefire*, *Archon of Cruelty*, *Kardur*) trip the Suppression Gate and land directly on the 52 Bracket 4 threshold.
+
+### Anchor 3: RoccoStreetChef (Naya Food & Exile Midrange) — Bracket 3 Solid Engine
+*   **Threat Score:** **46 / 96** (Solid Bracket 3, 32–51 band)
+*   **Vectors:** Velocity: **24 / 48** | Suppression: **16 / 40**
+*   **Clock:** Onset Turn 5 ($P1: A$), Ready Turn 3 ($A2: S$), Response Cycles: 2 ($P2: B$) $\rightarrow$ Turn 7 kill.
+*   **Benchmarks:** $R1: A, R2: S, A1: B, A2: S, P1: A, P2: B, P3: B, I1: A, I2: F, S1: B, S2: S, S3: A$.
+*   **Calibration Principle:** Extremely fast Turn 3 engine readiness ($A2: S$), S-tier card flow ($R2: S$), and S-tier recovery ($S2: S$ via permanent Food tokens) are kept safely in mid-Bracket 3 by having zero stax or denial ($I2: F$), granting symmetrical cards, and affording opponents 2 response cycles.
+

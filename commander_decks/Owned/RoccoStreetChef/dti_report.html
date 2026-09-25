@@ -12,7 +12,7 @@
             --text-main: #f8fafc;
             --text-sub: #94a3b8;
             --border: #334155;
-            --accent: #3b82f6;
+            --accent: #10b981;
             --s-color: #8b5cf6;
             --a-color: #3b82f6;
             --b-color: #10b981;
@@ -171,6 +171,55 @@
             box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.5), 0 8px 10px -6px rgba(0, 0, 0, 0.5);
             border: 2px solid #475569;
         }
+
+        .deck-telemetry-banner {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 10px 16px;
+            margin-bottom: 20px;
+            font-size: 13px;
+            color: var(--text-sub);
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+        .deck-telemetry-banner strong { color: var(--text-main); }
+        .info-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 24px;
+        }
+        .info-card h3 {
+            font-size: 16px;
+            margin-bottom: 12px;
+            color: var(--text-main);
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 8px;
+        }
+        .primer-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        @media (max-width: 768px) {
+            .primer-grid { grid-template-columns: 1fr; }
+        }
+        .weakness-card {
+            background: #0f172a;
+            border-radius: 8px;
+            padding: 14px;
+            border-top: 3px solid #64748b;
+        }
+        .weakness-critical { border-top-color: #ef4444; }
+        .weakness-moderate { border-top-color: #f59e0b; }
+        .weakness-minor { border-top-color: #3b82f6; }
+        .weakness-list { list-style: none; margin-top: 8px; }
+        .weakness-list li { font-size: 13px; margin: 6px 0; color: #cbd5e1; }
+        .step-list { padding-left: 20px; font-size: 13px; color: #cbd5e1; line-height: 1.6; }
+        .step-list li { margin-bottom: 6px; }
     </style>
 </head>
 <body>
@@ -181,27 +230,29 @@
                 <h1>RoccoStreetChef</h1>
                 <div class="header-sub">DeckCheck Threat Index (DTI) Evaluation Report</div>
             </div>
-            <div class="bracket-badge">BRACKET 2</div>
+            <div class="bracket-badge">BRACKET 3</div>
         </header>
+
+        
 
         <div class="metrics-grid">
             <div class="metric-card">
                 <div class="metric-title">Threat Score</div>
-                <div class="metric-value">21 <span style="font-size:16px;color:var(--text-sub);">/ 96</span></div>
-                <div class="metric-sub">Score Floor: Bracket 2</div>
-                <div class="progress-bar"><div class="progress-fill" style="width: 21.875%;"></div></div>
+                <div class="metric-value">46 <span style="font-size:16px;color:var(--text-sub);">/ 96</span></div>
+                <div class="metric-sub">Score Floor: Bracket 3</div>
+                <div class="progress-bar"><div class="progress-fill" style="width: 47.91666666666667%;"></div></div>
             </div>
             <div class="metric-card">
                 <div class="metric-title">Velocity Vector</div>
-                <div class="metric-value">10 <span style="font-size:16px;color:var(--text-sub);">/ 48</span></div>
+                <div class="metric-value">24 <span style="font-size:16px;color:var(--text-sub);">/ 48</span></div>
                 <div class="metric-sub">Clock & Assembly Speed (Gate at 28)</div>
-                <div class="progress-bar"><div class="progress-fill" style="width: 20.833333333333336%;"></div></div>
+                <div class="progress-bar"><div class="progress-fill" style="width: 50.0%;"></div></div>
             </div>
             <div class="metric-card">
                 <div class="metric-title">Suppression Vector</div>
-                <div class="metric-value">7 <span style="font-size:16px;color:var(--text-sub);">/ 40</span></div>
+                <div class="metric-value">16 <span style="font-size:16px;color:var(--text-sub);">/ 40</span></div>
                 <div class="metric-sub">Denial, Tax & Stax Impact</div>
-                <div class="progress-bar"><div class="progress-fill" style="width: 17.5%;"></div></div>
+                <div class="progress-bar"><div class="progress-fill" style="width: 40.0%;"></div></div>
             </div>
             <div class="metric-card">
                 <div class="metric-title">Game Changers</div>
@@ -217,27 +268,141 @@
                 <span class="gate-tag tag-passed">
                     PASSED
                 </span>
-                <strong>Velocity Gate:</strong> Vector 10/48 (Threshold: &ge; 28 mandates Bracket 4).
+                <strong>Velocity Gate:</strong> Vector 24/48 (Threshold: &ge; 28 mandates Bracket 4).
             </div>
             <div class="gate-item">
                 <span class="gate-tag tag-passed">
                     PASSED
                 </span>
-                <strong>Early Finish Gate:</strong> Critical Onset P1 is B (Turns 1–5 onset mandates Bracket 4).
+                <strong>Early Finish Gate:</strong> Onset A, Completion B (Zero-untap or T1-5 table elimination mandates Bracket 4).
             </div>
             <div class="gate-item">
                 <span class="gate-tag tag-passed">
                     PASSED
                 </span>
-                <strong>Suppression Gate:</strong> Proactive Restriction I2 is C (Severe attrition mandates Bracket 4).
+                <strong>Suppression Gate:</strong> Proactive Restriction I2 is F (Severe attrition mandates Bracket 4).
             </div>
             <div class="gate-item">
                 <span class="gate-tag tag-passed">
                     PASSED
                 </span>
-                <strong>cEDH Gate:</strong> Format ceiling clock with 0-untap kill (Peak vector: 10).
+                <strong>cEDH Gate:</strong> Format ceiling clock with 0-untap kill (Peak vector: 24).
             </div>
         </div>
+
+        
+        <div class="info-card">
+            <h3>Tactical Overview</h3>
+            <p style="font-size: 14px; line-height: 1.6; color: #cbd5e1;">This Rocco, Street Chef deck is an aggressive Naya Food and exile-matters midrange strategy. It establishes its primary engine early by casting Rocco on Turn 2 or 3, generating continuous card advantage and token creation whenever cards are played from exile. The deck converts Food tokens and +1/+1 counters into explosive mana and card flow using key enablers like Jaheira, Friend of the Forest, Academy Manufactor, and Baylen, the Haymaker. Without relying on infinite combos, it closes games through overwhelming combat damage and burn, utilizing overrun effects like Night of the Sweets' Revenge alongside direct damage engines such as Shalai and Hallar and All Will Be One. The deck features robust removal and high card velocity, though it remains vulnerable to mass exile wipes and provides symmetrical card access to opponents.</p>
+        </div>
+        
+        
+        <div class="info-card">
+            <h3>Operational Primer & Strategy</h3>
+            <div class="primer-grid">
+                <div>
+                    <h4 style="font-size: 13px; text-transform: uppercase; color: var(--text-sub); margin-bottom: 8px;">Core Turn Strategy</h4>
+                    <ol class="step-list">
+                        <li>Accelerate mana on Turns 1–2 using one-drop dorks or two-drop ramp spells to cast Rocco, Street Chef ahead of curve.</li><li>Deploy Rocco on Turn 2 or 3 to begin exiling cards on end steps, triggering +1/+1 counters and Food creation on subsequent turns.</li><li>Leverage token converters like Academy Manufactor, Jaheira, Friend of the Forest, and Peregrin Took to turn Food into massive mana and card velocity.</li><li>Close the game on Turns 5–7 using massive overrun attacks via Night of the Sweets' Revenge, giant unblockable threats like Feasting Hobbit, or direct burn from All Will Be One and Shalai and Hallar.</li>
+                    </ol>
+                </div>
+                <div>
+                    <h4 style="font-size: 13px; text-transform: uppercase; color: var(--text-sub); margin-bottom: 8px;">Mulligan Priorities</h4>
+                    <div style="font-size: 13px; color: #cbd5e1; margin-bottom: 14px; line-height: 1.5;">
+                        <p style='margin-bottom: 6px;'><strong>Keep:</strong> ['Hands with 2–3 lands, at least one 1- or 2-mana ramp piece to cast Rocco, Street Chef on Turn 2 or 3, and a token payoff or interaction spell.']</p><p><strong>Avoid:</strong> ['Hands lacking green mana, hands with only expensive 4+ mana payoffs and no early acceleration, or hands without colored fixing for Naya.']</p>
+                    </div>
+                    <h4 style="font-size: 13px; text-transform: uppercase; color: var(--text-sub); margin-bottom: 8px;">Tactical Tips</h4><ul class="step-list" style="list-style: disc;"><li>Prioritize casting spells from exile over hand spells to trigger Rocco, Street Chef and grow your creatures with +1/+1 counters.</li><li>Save Delayed Blast Fireball to cast from exile via Rocco or foretell, turning it into a one-sided 5-damage board wipe.</li><li>Use Inspiring Call or Plaza of Heroes reactively to protect your key engine pieces against opposing destroy wipes and spot removal.</li></ul>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="info-card">
+            <h3>Strategic Weaknesses & Interaction Exploits</h3>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px;">
+                <div class="weakness-card weakness-critical">
+                    <h4 style="font-size: 13px; color: #ef4444; text-transform: uppercase;">Critical Vulnerabilities</h4>
+                    <ul class="weakness-list"><li>Heavy reliance on creature and artifact permanents makes the board vulnerable to comprehensive sweepers like Farewell or Vandalblast.</li><li>Lack of stack interaction or counterspells leaves the deck exposed to fast opposing combo wins.</li></ul>
+                </div>
+                <div class="weakness-card weakness-moderate">
+                    <h4 style="font-size: 13px; color: #f59e0b; text-transform: uppercase;">Moderate Friction Points</h4>
+                    <ul class="weakness-list"><li>Symmetrical card access from Rocco, Street Chef can hand opponents answers or acceleration if they utilize exile cards effectively.</li><li>Absence of creature tutors requires relying on draw velocity to find specific finishers like All Will Be One.</li></ul>
+                </div>
+                <div class="weakness-card weakness-minor">
+                    <h4 style="font-size: 13px; color: #3b82f6; text-transform: uppercase;">Minor Weaknesses</h4>
+                    <ul class="weakness-list"><li>Targeted removal on Rocco before the end step delays initial token production and counter distribution.</li></ul>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="info-card">
+            <h3>Key Engine Anchors</h3>
+            <div class="card-grid">
+                
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Rocco%2C%20Street%20Chef&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Rocco%2C%20Street%20Chef%22" target="_blank" rel="noopener">Rocco, Street Chef</a>
+                <span class="chip-role">Commander and primary engine piece providing consistent impulse draw, +1/+1 counters, and Food generation.</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Academy%20Manufactor&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Academy%20Manufactor%22" target="_blank" rel="noopener">Academy Manufactor</a>
+                <span class="chip-role">Triples token output by generating a Clue and Treasure alongside every Food token.</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Night%20of%20the%20Sweets%27%20Revenge&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Night%20of%20the%20Sweets%27%20Revenge%22" target="_blank" rel="noopener">Night of the Sweets' Revenge</a>
+                <span class="chip-role">Turns all Food tokens into mana dorks and provides a sorcery-speed overrun finish.</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Jaheira%2C%20Friend%20of%20the%20Forest&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Jaheira%2C%20Friend%20of%20the%20Forest%22" target="_blank" rel="noopener">Jaheira, Friend of the Forest</a>
+                <span class="chip-role">Enables all tokens, including Food and Clues, to tap for green mana.</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Baylen%2C%20the%20Haymaker&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Baylen%2C%20the%20Haymaker%22" target="_blank" rel="noopener">Baylen, the Haymaker</a>
+                <span class="chip-role">Flexible engine piece that converts token tapping into ramp, card draw, or massive trampling stats.</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Shalai%20and%20Hallar&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Shalai%20and%20Hallar%22" target="_blank" rel="noopener">Shalai and Hallar</a>
+                <span class="chip-role">Converts +1/+1 counter placement into direct damage against opponents.</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=All%20Will%20Be%20One&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22All%20Will%20Be%20One%22" target="_blank" rel="noopener">All Will Be One</a>
+                <span class="chip-role">Machine guns damage to opponents or creatures whenever counters are placed on permanents.</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Delayed%20Blast%20Fireball&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Delayed%20Blast%20Fireball%22" target="_blank" rel="noopener">Delayed Blast Fireball</a>
+                <span class="chip-role">Asymmetric board wipe that deals 5 damage to each opponent and their creatures when cast from exile.</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Peregrin%20Took&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Peregrin%20Took%22" target="_blank" rel="noopener">Peregrin Took</a>
+                <span class="chip-role">Adds bonus Food tokens to any token creation and provides repeatable card draw by sacrificing Food.</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Rosie%20Cotton%20of%20South%20Lane&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Rosie%20Cotton%20of%20South%20Lane%22" target="_blank" rel="noopener">Rosie Cotton of South Lane</a>
+                <span class="chip-role">Distributes +1/+1 counters whenever tokens are created, accelerating combat and burn triggers.</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Inspiring%20Call&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Inspiring%20Call%22" target="_blank" rel="noopener">Inspiring Call</a>
+                <span class="chip-role">Instant-speed board protection that grants indestructible to modified creatures and refills the hand.</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Feasting%20Hobbit&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Feasting%20Hobbit%22" target="_blank" rel="noopener">Feasting Hobbit</a>
+                <span class="chip-role">Massive unblockable beater that devours Food tokens on entry to eliminate opponents quickly.</span>
+            </div>
+            
+            </div>
+        </div>
+        
 
         <h2 style="margin-bottom: 16px; font-size: 20px;">12 Universal Benchmarks</h2>
         <table>
@@ -256,28 +421,28 @@
         <tr>
             <td class="code-col"><strong>R1</strong></td>
             <td><strong>Mana Velocity & Sufficiency</strong><br><span class="domain-sub">Resources</span></td>
-            <td class="tier-col"><span class="tier-badge tier-b">B</span></td>
-            <td class="score-col">2 / 10</td>
-            <td class="ledger-count-col">7</td>
-            <td class="just-col">Naya ramp with 2-CMC dorks and Food token artifact utility.</td>
+            <td class="tier-col"><span class="tier-badge tier-a">A</span></td>
+            <td class="score-col">5 / 10</td>
+            <td class="ledger-count-col">49</td>
+            <td class="just-col">Dense 1- and 2-CMC ramp suite (dorks, Nature's Lore, Talismans) paired with token mana engines (Jaheira, Inspiring Statuary, Ninja Pizza).</td>
         </tr>
         
         <tr>
             <td class="code-col"><strong>A2</strong></td>
             <td><strong>Assembly Velocity</strong><br><span class="domain-sub">Access</span></td>
-            <td class="tier-col"><span class="tier-badge tier-b">B</span></td>
-            <td class="score-col">2 / 10</td>
-            <td class="ledger-count-col">0</td>
-            <td class="just-col">Engine starts churning Food and counters on Turns 4–5.</td>
+            <td class="tier-col"><span class="tier-badge tier-s">S</span></td>
+            <td class="score-col">10 / 10</td>
+            <td class="ledger-count-col">19</td>
+            <td class="just-col">Engine comes online consistently by Turn 3 with a Turn 2 or 3 Rocco deployment.</td>
         </tr>
         
         <tr>
             <td class="code-col"><strong>P1</strong></td>
             <td><strong>Critical Onset & Lethality</strong><br><span class="domain-sub">Pressure</span></td>
-            <td class="tier-col"><span class="tier-badge tier-b">B</span></td>
-            <td class="score-col">2 / 10</td>
-            <td class="ledger-count-col">0</td>
-            <td class="just-col">Presents tall/wide modified creature army on Turns 6–7.</td>
+            <td class="tier-col"><span class="tier-badge tier-a">A</span></td>
+            <td class="score-col">5 / 10</td>
+            <td class="ledger-count-col">21</td>
+            <td class="just-col">Presents lethal combat overruns or machine-gun burn by Turn 5 via Night of the Sweets' Revenge, Shalai and Hallar, and All Will Be One.</td>
         </tr>
         
         <tr>
@@ -285,17 +450,17 @@
             <td><strong>Win Inevitability & Compactness</strong><br><span class="domain-sub">Pressure</span></td>
             <td class="tier-col"><span class="tier-badge tier-b">B</span></td>
             <td class="score-col">2 / 10</td>
-            <td class="ledger-count-col">0</td>
-            <td class="just-col">2 opponent untap steps to execute combat wins.</td>
+            <td class="ledger-count-col">6</td>
+            <td class="just-col">Requires 2 opponent response cycles to close out games through combat damage or incremental counter burn.</td>
         </tr>
         
         <tr>
             <td class="code-col"><strong>R2</strong></td>
             <td><strong>Card Flow & Replenishment</strong><br><span class="domain-sub">Resources</span></td>
-            <td class="tier-col"><span class="tier-badge tier-a">A</span></td>
-            <td class="score-col">4 / 8</td>
-            <td class="ledger-count-col">0</td>
-            <td class="just-col">Impulse exile draw on every end step generates continuous card advantage.</td>
+            <td class="tier-col"><span class="tier-badge tier-s">S</span></td>
+            <td class="score-col">8 / 8</td>
+            <td class="ledger-count-col">10</td>
+            <td class="just-col">Continuous symmetrical exile card flow on every player's end step via Rocco, supported by Peregrin Took, Baylen, and Inspiring Call.</td>
         </tr>
         
         <tr>
@@ -303,8 +468,8 @@
             <td><strong>Selection & Redundancy</strong><br><span class="domain-sub">Access</span></td>
             <td class="tier-col"><span class="tier-badge tier-b">B</span></td>
             <td class="score-col">2 / 8</td>
-            <td class="ledger-count-col">0</td>
-            <td class="just-col">High density of exile-matters payoffs and counter multipliers.</td>
+            <td class="ledger-count-col">6</td>
+            <td class="just-col">High redundancy of Food creators and exile-matters payoffs, though lacking dedicated creature tutors.</td>
         </tr>
         
         <tr>
@@ -312,26 +477,26 @@
             <td><strong>Exposure & Predictability</strong><br><span class="domain-sub">Pressure</span></td>
             <td class="tier-col"><span class="tier-badge tier-b">B</span></td>
             <td class="score-col">2 / 8</td>
-            <td class="ledger-count-col">0</td>
-            <td class="just-col">Exiled cards are revealed to the entire table, giving opponents advance warning.</td>
+            <td class="ledger-count-col">3</td>
+            <td class="just-col">Impulse exile plays reveal drawn cards to the entire table, giving opponents advance telegraphing.</td>
         </tr>
         
         <tr>
             <td class="code-col"><strong>I1</strong></td>
             <td><strong>Reactive Disruption</strong><br><span class="domain-sub">Interaction</span></td>
-            <td class="tier-col"><span class="tier-badge tier-b">B</span></td>
-            <td class="score-col">2 / 8</td>
-            <td class="ledger-count-col">5</td>
-            <td class="just-col">Naya instant-speed removal suite (Beast Within, Swords to Plowshares, Chaos Warp).</td>
+            <td class="tier-col"><span class="tier-badge tier-a">A</span></td>
+            <td class="score-col">4 / 8</td>
+            <td class="ledger-count-col">14</td>
+            <td class="just-col">Premier instant-speed removal suite (Swords, Path, Beast Within, Chaos Warp, Delayed Blast Fireball, Blasphemous Act, Farewell).</td>
         </tr>
         
         <tr>
             <td class="code-col"><strong>I2</strong></td>
             <td><strong>Proactive Denial & Restriction</strong><br><span class="domain-sub">Interaction</span></td>
-            <td class="tier-col"><span class="tier-badge tier-c">C</span></td>
-            <td class="score-col">1 / 8</td>
+            <td class="tier-col"><span class="tier-badge tier-f">F</span></td>
+            <td class="score-col">0 / 8</td>
             <td class="ledger-count-col">0</td>
-            <td class="just-col">Light group-hug style impulse triggers; no hard denial.</td>
+            <td class="just-col">Completely devoid of stax, taxing effects, or resource denial (F tier).</td>
         </tr>
         
         <tr>
@@ -339,26 +504,26 @@
             <td><strong>Plan Shielding & Protection</strong><br><span class="domain-sub">Resilience</span></td>
             <td class="tier-col"><span class="tier-badge tier-b">B</span></td>
             <td class="score-col">2 / 8</td>
-            <td class="ledger-count-col">0</td>
-            <td class="just-col">Protection spells (Heroic Intervention, Flawless Maneuver).</td>
+            <td class="ledger-count-col">5</td>
+            <td class="just-col">Moderate protection suite including Inspiring Call, Bolt Bend, Deflecting Palm, and Plaza of Heroes.</td>
         </tr>
         
         <tr>
             <td class="code-col"><strong>S2</strong></td>
             <td><strong>Engine Recovery</strong><br><span class="domain-sub">Resilience</span></td>
-            <td class="tier-col"><span class="tier-badge tier-c">C</span></td>
-            <td class="score-col">0 / 4</td>
-            <td class="ledger-count-col">0</td>
-            <td class="just-col">Food tokens remain on board after wipes to regain life, but creatures must be rebuilt.</td>
+            <td class="tier-col"><span class="tier-badge tier-s">S</span></td>
+            <td class="score-col">4 / 4</td>
+            <td class="ledger-count-col">5</td>
+            <td class="just-col">Food tokens remain on the battlefield through board wipes, allowing instant re-activation of engines and life buffer.</td>
         </tr>
         
         <tr>
             <td class="code-col"><strong>S3</strong></td>
             <td><strong>Independence & Backup Plans</strong><br><span class="domain-sub">Resilience</span></td>
-            <td class="tier-col"><span class="tier-badge tier-c">C</span></td>
-            <td class="score-col">0 / 4</td>
-            <td class="ledger-count-col">0</td>
-            <td class="just-col">Deck heavily synergizes with Rocco's exile trigger.</td>
+            <td class="tier-col"><span class="tier-badge tier-a">A</span></td>
+            <td class="score-col">2 / 4</td>
+            <td class="ledger-count-col">7</td>
+            <td class="just-col">Engine pieces like Baylen, Jaheira, Academy Manufactor, and Killer Service operate effectively without Rocco on board.</td>
         </tr>
         
             </tbody>
@@ -369,44 +534,254 @@
             
         <div class="ledger-group">
             <div class="ledger-header">
-                <h3>R1: Mana Velocity & Sufficiency <span class="ledger-tier-tag tier-b">B</span></h3>
-                <span class="count-tag">7 cards</span>
+                <h3>R1: Mana Velocity & Sufficiency <span class="ledger-tier-tag tier-a">A</span></h3>
+                <span class="count-tag">49 cards</span>
             </div>
             <div class="card-grid">
                 
             <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Arcane%20Signet&format=image&version=normal">
                 <a href="https://scryfall.com/search?q=!%22Arcane%20Signet%22" target="_blank" rel="noopener">Arcane Signet</a>
-                <span class="chip-role">Mana ramp / fixing</span>
+                <span class="chip-role">2-CMC mana rock ramp / fixing</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Avacyn%27s%20Pilgrim&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Avacyn%27s%20Pilgrim%22" target="_blank" rel="noopener">Avacyn's Pilgrim</a>
+                <span class="chip-role">Turn 1 mana dork acceleration</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Battlefield%20Forge&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Battlefield%20Forge%22" target="_blank" rel="noopener">Battlefield Forge</a>
+                <span class="chip-role">Untapped dual land fixing</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Baylen%2C%20the%20Haymaker&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Baylen%2C%20the%20Haymaker%22" target="_blank" rel="noopener">Baylen, the Haymaker</a>
+                <span class="chip-role">Taps tokens for mana</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Bilbo%2C%20Fellow%20Conspirator&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Bilbo%2C%20Fellow%20Conspirator%22" target="_blank" rel="noopener">Bilbo, Fellow Conspirator</a>
+                <span class="chip-role">Creates Treasure tokens alongside Foods</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Birds%20of%20Paradise&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Birds%20of%20Paradise%22" target="_blank" rel="noopener">Birds of Paradise</a>
+                <span class="chip-role">Turn 1 5-color mana dork</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Bountiful%20Promenade&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Bountiful%20Promenade%22" target="_blank" rel="noopener">Bountiful Promenade</a>
+                <span class="chip-role">Untapped bond land</span>
             </div>
             
             <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Brushland&format=image&version=normal">
                 <a href="https://scryfall.com/search?q=!%22Brushland%22" target="_blank" rel="noopener">Brushland</a>
-                <span class="chip-role">Mana ramp / fixing</span>
+                <span class="chip-role">Untapped pain land</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Canopy%20Vista&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Canopy%20Vista%22" target="_blank" rel="noopener">Canopy Vista</a>
+                <span class="chip-role">Fetchable tango land</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Cinder%20Glade&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Cinder%20Glade%22" target="_blank" rel="noopener">Cinder Glade</a>
+                <span class="chip-role">Fetchable tango land</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=City%20of%20Brass&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22City%20of%20Brass%22" target="_blank" rel="noopener">City of Brass</a>
+                <span class="chip-role">Untapped 5-color mana fixing</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Clifftop%20Retreat&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Clifftop%20Retreat%22" target="_blank" rel="noopener">Clifftop Retreat</a>
+                <span class="chip-role">Check land fixing</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Command%20Tower&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Command%20Tower%22" target="_blank" rel="noopener">Command Tower</a>
+                <span class="chip-role">Untapped commander fixing</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Copperline%20Gorge&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Copperline%20Gorge%22" target="_blank" rel="noopener">Copperline Gorge</a>
+                <span class="chip-role">Untapped fast land</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Exotic%20Orchard&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Exotic%20Orchard%22" target="_blank" rel="noopener">Exotic Orchard</a>
+                <span class="chip-role">Untapped multi-color land</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Farseek&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Farseek%22" target="_blank" rel="noopener">Farseek</a>
+                <span class="chip-role">2-CMC land ramp / fixing</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Forest&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Forest%22" target="_blank" rel="noopener">Forest</a>
+                <span class="chip-role">Basic land mana (8 copies)</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Gilded%20Goose&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Gilded%20Goose%22" target="_blank" rel="noopener">Gilded Goose</a>
+                <span class="chip-role">Turn 1 Food generator & mana dork</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Inspiring%20Statuary&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Inspiring%20Statuary%22" target="_blank" rel="noopener">Inspiring Statuary</a>
+                <span class="chip-role">Grants improvise using Food tokens</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Inspiring%20Vantage&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Inspiring%20Vantage%22" target="_blank" rel="noopener">Inspiring Vantage</a>
+                <span class="chip-role">Untapped fast land</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Jaheira%2C%20Friend%20of%20the%20Forest&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Jaheira%2C%20Friend%20of%20the%20Forest%22" target="_blank" rel="noopener">Jaheira, Friend of the Forest</a>
+                <span class="chip-role">Taps all tokens for green mana</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Jetmir%27s%20Garden&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Jetmir%27s%20Garden%22" target="_blank" rel="noopener">Jetmir's Garden</a>
+                <span class="chip-role">Fetchable Naya Triome</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Kami%20of%20Whispered%20Hopes&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Kami%20of%20Whispered%20Hopes%22" target="_blank" rel="noopener">Kami of Whispered Hopes</a>
+                <span class="chip-role">Taps for mana equal to power</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Karplusan%20Forest&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Karplusan%20Forest%22" target="_blank" rel="noopener">Karplusan Forest</a>
+                <span class="chip-role">Untapped pain land</span>
             </div>
             
             <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Kodama%20of%20the%20West%20Tree&format=image&version=normal">
                 <a href="https://scryfall.com/search?q=!%22Kodama%20of%20the%20West%20Tree%22" target="_blank" rel="noopener">Kodama of the West Tree</a>
-                <span class="chip-role">Mana ramp / fixing</span>
+                <span class="chip-role">Fetches basic lands on modified combat damage</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Mountain&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Mountain%22" target="_blank" rel="noopener">Mountain</a>
+                <span class="chip-role">Basic land mana (4 copies)</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Nature%27s%20Lore&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Nature%27s%20Lore%22" target="_blank" rel="noopener">Nature's Lore</a>
+                <span class="chip-role">2-CMC untapped forest ramp</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Night%20of%20the%20Sweets%27%20Revenge&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Night%20of%20the%20Sweets%27%20Revenge%22" target="_blank" rel="noopener">Night of the Sweets' Revenge</a>
+                <span class="chip-role">Turns all Food tokens into green mana dorks</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Ninja%20Pizza&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Ninja%20Pizza%22" target="_blank" rel="noopener">Ninja Pizza</a>
+                <span class="chip-role">Food mana battery</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Nuka-Cola%20Vending%20Machine&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Nuka-Cola%20Vending%20Machine%22" target="_blank" rel="noopener">Nuka-Cola Vending Machine</a>
+                <span class="chip-role">Creates Treasure on Food sacrifice</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Path%20of%20Ancestry&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Path%20of%20Ancestry%22" target="_blank" rel="noopener">Path of Ancestry</a>
+                <span class="chip-role">Command mana fixing & scry</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Plains&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Plains%22" target="_blank" rel="noopener">Plains</a>
+                <span class="chip-role">Basic land mana (4 copies)</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Plaza%20of%20Heroes&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Plaza%20of%20Heroes%22" target="_blank" rel="noopener">Plaza of Heroes</a>
+                <span class="chip-role">Commander mana fixing & hexproof protection</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Professional%20Face-Breaker&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Professional%20Face-Breaker%22" target="_blank" rel="noopener">Professional Face-Breaker</a>
+                <span class="chip-role">Creates Treasure on combat damage</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Razorverge%20Thicket&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Razorverge%20Thicket%22" target="_blank" rel="noopener">Razorverge Thicket</a>
+                <span class="chip-role">Untapped fast land</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Rootbound%20Crag&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Rootbound%20Crag%22" target="_blank" rel="noopener">Rootbound Crag</a>
+                <span class="chip-role">Check land fixing</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Sacred%20Foundry&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Sacred%20Foundry%22" target="_blank" rel="noopener">Sacred Foundry</a>
+                <span class="chip-role">Shock land fixing</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Sam%2C%20Loyal%20Attendant&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Sam%2C%20Loyal%20Attendant%22" target="_blank" rel="noopener">Sam, Loyal Attendant</a>
+                <span class="chip-role">Reduces Food activation cost to 1 mana</span>
             </div>
             
             <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Sol%20Ring&format=image&version=normal">
                 <a href="https://scryfall.com/search?q=!%22Sol%20Ring%22" target="_blank" rel="noopener">Sol Ring</a>
-                <span class="chip-role">Mana ramp / fixing</span>
+                <span class="chip-role">Premier fast mana ramp</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Spectator%20Seating&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Spectator%20Seating%22" target="_blank" rel="noopener">Spectator Seating</a>
+                <span class="chip-role">Untapped bond land</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Spire%20Garden&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Spire%20Garden%22" target="_blank" rel="noopener">Spire Garden</a>
+                <span class="chip-role">Untapped bond land</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Stomping%20Ground&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Stomping%20Ground%22" target="_blank" rel="noopener">Stomping Ground</a>
+                <span class="chip-role">Shock land fixing</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Sunpetal%20Grove&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Sunpetal%20Grove%22" target="_blank" rel="noopener">Sunpetal Grove</a>
+                <span class="chip-role">Check land fixing</span>
             </div>
             
             <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Talisman%20of%20Conviction&format=image&version=normal">
                 <a href="https://scryfall.com/search?q=!%22Talisman%20of%20Conviction%22" target="_blank" rel="noopener">Talisman of Conviction</a>
-                <span class="chip-role">Mana ramp / fixing</span>
+                <span class="chip-role">2-CMC mana rock ramp / fixing</span>
             </div>
             
             <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Talisman%20of%20Impulse&format=image&version=normal">
                 <a href="https://scryfall.com/search?q=!%22Talisman%20of%20Impulse%22" target="_blank" rel="noopener">Talisman of Impulse</a>
-                <span class="chip-role">Mana ramp / fixing</span>
+                <span class="chip-role">2-CMC mana rock ramp / fixing</span>
             </div>
             
             <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Talisman%20of%20Unity&format=image&version=normal">
                 <a href="https://scryfall.com/search?q=!%22Talisman%20of%20Unity%22" target="_blank" rel="noopener">Talisman of Unity</a>
-                <span class="chip-role">Mana ramp / fixing</span>
+                <span class="chip-role">2-CMC mana rock ramp / fixing</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Temple%20Garden&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Temple%20Garden%22" target="_blank" rel="noopener">Temple Garden</a>
+                <span class="chip-role">Shock land fixing</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Three%20Visits&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Three%20Visits%22" target="_blank" rel="noopener">Three Visits</a>
+                <span class="chip-role">2-CMC untapped forest ramp</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Tireless%20Provisioner&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Tireless%20Provisioner%22" target="_blank" rel="noopener">Tireless Provisioner</a>
+                <span class="chip-role">Landfall Food / Treasure generation</span>
             </div>
             
             </div>
@@ -414,34 +789,579 @@
         
         <div class="ledger-group">
             <div class="ledger-header">
-                <h3>I1: Reactive Disruption <span class="ledger-tier-tag tier-b">B</span></h3>
-                <span class="count-tag">5 cards</span>
+                <h3>A2: Assembly Velocity <span class="ledger-tier-tag tier-s">S</span></h3>
+                <span class="count-tag">19 cards</span>
             </div>
             <div class="card-grid">
                 
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Rocco%2C%20Street%20Chef&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Rocco%2C%20Street%20Chef%22" target="_blank" rel="noopener">Rocco, Street Chef</a>
+                <span class="chip-role">Commander ready Turn 2–3 to deploy primary engine</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Academy%20Manufactor&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Academy%20Manufactor%22" target="_blank" rel="noopener">Academy Manufactor</a>
+                <span class="chip-role">Triples token generation</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Baylen%2C%20the%20Haymaker&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Baylen%2C%20the%20Haymaker%22" target="_blank" rel="noopener">Baylen, the Haymaker</a>
+                <span class="chip-role">Instant engine acceleration via token tapping</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Bilbo%2C%20Fellow%20Conspirator&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Bilbo%2C%20Fellow%20Conspirator%22" target="_blank" rel="noopener">Bilbo, Fellow Conspirator</a>
+                <span class="chip-role">Token multiplier creating Treasures</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Farmer%20Cotton&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Farmer%20Cotton%22" target="_blank" rel="noopener">Farmer Cotton</a>
+                <span class="chip-role">Burst Halfling and Food army creation</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Jaheira%2C%20Friend%20of%20the%20Forest&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Jaheira%2C%20Friend%20of%20the%20Forest%22" target="_blank" rel="noopener">Jaheira, Friend of the Forest</a>
+                <span class="chip-role">Massive mana conversion enabling full-hand deployment</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Kami%20of%20Whispered%20Hopes&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Kami%20of%20Whispered%20Hopes%22" target="_blank" rel="noopener">Kami of Whispered Hopes</a>
+                <span class="chip-role">+1/+1 counter amplification</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Killer%20Service&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Killer%20Service%22" target="_blank" rel="noopener">Killer Service</a>
+                <span class="chip-role">Immediate 3 Food tokens + Rhino engine</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Night%20of%20the%20Sweets%27%20Revenge&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Night%20of%20the%20Sweets%27%20Revenge%22" target="_blank" rel="noopener">Night of the Sweets' Revenge</a>
+                <span class="chip-role">Turns entire Food board into mana battery</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Ninja%20Pizza&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Ninja%20Pizza%22" target="_blank" rel="noopener">Ninja Pizza</a>
+                <span class="chip-role">Guaranteed Food creation on post-combat main phase</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Nuka-Cola%20Vending%20Machine&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Nuka-Cola%20Vending%20Machine%22" target="_blank" rel="noopener">Nuka-Cola Vending Machine</a>
+                <span class="chip-role">Converts Food sacrifices into immediate Treasure</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Peregrin%20Took&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Peregrin%20Took%22" target="_blank" rel="noopener">Peregrin Took</a>
+                <span class="chip-role">Bonus Food on every token event</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Pia%20Nalaar%2C%20Consul%20of%20Revival&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Pia%20Nalaar%2C%20Consul%20of%20Revival%22" target="_blank" rel="noopener">Pia Nalaar, Consul of Revival</a>
+                <span class="chip-role">Creates hasty flying Thopters on exile casts</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Rosie%20Cotton%20of%20South%20Lane&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Rosie%20Cotton%20of%20South%20Lane%22" target="_blank" rel="noopener">Rosie Cotton of South Lane</a>
+                <span class="chip-role">Instant counter generation on token entry</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Sam%2C%20Loyal%20Attendant&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Sam%2C%20Loyal%20Attendant%22" target="_blank" rel="noopener">Sam, Loyal Attendant</a>
+                <span class="chip-role">Food generation at combat</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Samwise%20Gamgee&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Samwise%20Gamgee%22" target="_blank" rel="noopener">Samwise Gamgee</a>
+                <span class="chip-role">Food generation on nontoken creatures</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Tough%20Cookie&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Tough%20Cookie%22" target="_blank" rel="noopener">Tough Cookie</a>
+                <span class="chip-role">Food on ETB + animated 4/4s</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Treebeard%2C%20Gracious%20Host&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Treebeard%2C%20Gracious%20Host%22" target="_blank" rel="noopener">Treebeard, Gracious Host</a>
+                <span class="chip-role">2 Foods on ETB + counter distribution</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Wild-Magic%20Sorcerer&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Wild-Magic%20Sorcerer%22" target="_blank" rel="noopener">Wild-Magic Sorcerer</a>
+                <span class="chip-role">Cascade engine on first exile spell each turn</span>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="ledger-group">
+            <div class="ledger-header">
+                <h3>P1: Critical Onset & Lethality <span class="ledger-tier-tag tier-a">A</span></h3>
+                <span class="count-tag">21 cards</span>
+            </div>
+            <div class="card-grid">
+                
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Rocco%2C%20Street%20Chef&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Rocco%2C%20Street%20Chef%22" target="_blank" rel="noopener">Rocco, Street Chef</a>
+                <span class="chip-role">Grows creatures with +1/+1 counters on exile plays</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=All%20Will%20Be%20One&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22All%20Will%20Be%20One%22" target="_blank" rel="noopener">All Will Be One</a>
+                <span class="chip-role">Machine-guns direct burn whenever counters are placed</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Banquet%20Guests&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Banquet%20Guests%22" target="_blank" rel="noopener">Banquet Guests</a>
+                <span class="chip-role">Massive trampling affinity threat with double counters</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Baylen%2C%20the%20Haymaker&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Baylen%2C%20the%20Haymaker%22" target="_blank" rel="noopener">Baylen, the Haymaker</a>
+                <span class="chip-role">Scales power and trample via token tapping</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Belladonna%20Took&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Belladonna%20Took%22" target="_blank" rel="noopener">Belladonna Took</a>
+                <span class="chip-role">Team-wide +1/+1 counters on third token creation</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Campsite%20Cuisine&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Campsite%20Cuisine%22" target="_blank" rel="noopener">Campsite Cuisine</a>
+                <span class="chip-role">Combat overrun granting +3/+3, trample, and indestructible</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Delayed%20Blast%20Fireball&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Delayed%20Blast%20Fireball%22" target="_blank" rel="noopener">Delayed Blast Fireball</a>
+                <span class="chip-role">Asymmetric 5 damage burn to opponents and creatures from exile</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Farmer%20Cotton&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Farmer%20Cotton%22" target="_blank" rel="noopener">Farmer Cotton</a>
+                <span class="chip-role">Go-wide token army pressure</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Feasting%20Hobbit&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Feasting%20Hobbit%22" target="_blank" rel="noopener">Feasting Hobbit</a>
+                <span class="chip-role">Devour 3 unblockable combat finisher</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Killer%20Service&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Killer%20Service%22" target="_blank" rel="noopener">Killer Service</a>
+                <span class="chip-role">4/4 Rhino Warrior beaters every turn</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Kodama%20of%20the%20West%20Tree&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Kodama%20of%20the%20West%20Tree%22" target="_blank" rel="noopener">Kodama of the West Tree</a>
+                <span class="chip-role">Grants trample to all modified creatures</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Laelia%2C%20the%20Blade%20Reforged&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Laelia%2C%20the%20Blade%20Reforged%22" target="_blank" rel="noopener">Laelia, the Blade Reforged</a>
+                <span class="chip-role">Rapidly growing combat beater from exile triggers</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Motivated%20Pony&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Motivated%20Pony%22" target="_blank" rel="noopener">Motivated Pony</a>
+                <span class="chip-role">Attacking +3/+3 and trample team overrun</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Night%20of%20the%20Sweets%27%20Revenge&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Night%20of%20the%20Sweets%27%20Revenge%22" target="_blank" rel="noopener">Night of the Sweets' Revenge</a>
+                <span class="chip-role">Game-ending +X/+X overrun finisher</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Pia%20Nalaar%2C%20Consul%20of%20Revival&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Pia%20Nalaar%2C%20Consul%20of%20Revival%22" target="_blank" rel="noopener">Pia Nalaar, Consul of Revival</a>
+                <span class="chip-role">Swarm flying Thopters with haste</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Rosie%20Cotton%20of%20South%20Lane&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Rosie%20Cotton%20of%20South%20Lane%22" target="_blank" rel="noopener">Rosie Cotton of South Lane</a>
+                <span class="chip-role">Distributes +1/+1 counters on token creation</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Shalai%20and%20Hallar&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Shalai%20and%20Hallar%22" target="_blank" rel="noopener">Shalai and Hallar</a>
+                <span class="chip-role">Direct opponent face burn on counter placement</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Syr%20Ginger%2C%20the%20Meal%20Ender&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Syr%20Ginger%2C%20the%20Meal%20Ender%22" target="_blank" rel="noopener">Syr Ginger, the Meal Ender</a>
+                <span class="chip-role">Rapidly scaling trampling threat on artifact sac</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Tough%20Cookie&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Tough%20Cookie%22" target="_blank" rel="noopener">Tough Cookie</a>
+                <span class="chip-role">Animates Foods into 4/4 attackers</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Treebeard%2C%20Gracious%20Host&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Treebeard%2C%20Gracious%20Host%22" target="_blank" rel="noopener">Treebeard, Gracious Host</a>
+                <span class="chip-role">Large life-gain-scaled beaters</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Valakut%20Exploration&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Valakut%20Exploration%22" target="_blank" rel="noopener">Valakut Exploration</a>
+                <span class="chip-role">End-step direct burn to all opponents</span>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="ledger-group">
+            <div class="ledger-header">
+                <h3>P2: Win Inevitability & Compactness <span class="ledger-tier-tag tier-b">B</span></h3>
+                <span class="count-tag">6 cards</span>
+            </div>
+            <div class="card-grid">
+                
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Night%20of%20the%20Sweets%27%20Revenge&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Night%20of%20the%20Sweets%27%20Revenge%22" target="_blank" rel="noopener">Night of the Sweets' Revenge</a>
+                <span class="chip-role">Sorcery overrun requiring 2 combat turns</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=All%20Will%20Be%20One&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22All%20Will%20Be%20One%22" target="_blank" rel="noopener">All Will Be One</a>
+                <span class="chip-role">Incremental burn finisher</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Shalai%20and%20Hallar&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Shalai%20and%20Hallar%22" target="_blank" rel="noopener">Shalai and Hallar</a>
+                <span class="chip-role">Incremental counter burn finisher</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Feasting%20Hobbit&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Feasting%20Hobbit%22" target="_blank" rel="noopener">Feasting Hobbit</a>
+                <span class="chip-role">Unblockable single-target player elimination</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Motivated%20Pony&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Motivated%20Pony%22" target="_blank" rel="noopener">Motivated Pony</a>
+                <span class="chip-role">Combat overrun requiring combat steps</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Campsite%20Cuisine&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Campsite%20Cuisine%22" target="_blank" rel="noopener">Campsite Cuisine</a>
+                <span class="chip-role">Combat overrun requiring combat steps</span>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="ledger-group">
+            <div class="ledger-header">
+                <h3>R2: Card Flow & Replenishment <span class="ledger-tier-tag tier-s">S</span></h3>
+                <span class="count-tag">10 cards</span>
+            </div>
+            <div class="card-grid">
+                
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Rocco%2C%20Street%20Chef&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Rocco%2C%20Street%20Chef%22" target="_blank" rel="noopener">Rocco, Street Chef</a>
+                <span class="chip-role">Exiles cards on each player's end step for continuous card flow</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Academy%20Manufactor&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Academy%20Manufactor%22" target="_blank" rel="noopener">Academy Manufactor</a>
+                <span class="chip-role">Generates Clue tokens on every Food creation</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Baylen%2C%20the%20Haymaker&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Baylen%2C%20the%20Haymaker%22" target="_blank" rel="noopener">Baylen, the Haymaker</a>
+                <span class="chip-role">Taps 3 tokens to draw a card</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Belladonna%20Took&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Belladonna%20Took%22" target="_blank" rel="noopener">Belladonna Took</a>
+                <span class="chip-role">Draws a card on second token creation each turn</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Inspiring%20Call&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Inspiring%20Call%22" target="_blank" rel="noopener">Inspiring Call</a>
+                <span class="chip-role">Draws cards for every creature with a +1/+1 counter</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Laelia%2C%20the%20Blade%20Reforged&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Laelia%2C%20the%20Blade%20Reforged%22" target="_blank" rel="noopener">Laelia, the Blade Reforged</a>
+                <span class="chip-role">Impulse exile draw on attack</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Peregrin%20Took&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Peregrin%20Took%22" target="_blank" rel="noopener">Peregrin Took</a>
+                <span class="chip-role">Sacrifices 3 Foods to draw a card</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Professional%20Face-Breaker&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Professional%20Face-Breaker%22" target="_blank" rel="noopener">Professional Face-Breaker</a>
+                <span class="chip-role">Impulse exile draw by sacrificing Treasures</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Tireless%20Tracker&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Tireless%20Tracker%22" target="_blank" rel="noopener">Tireless Tracker</a>
+                <span class="chip-role">Creates Clue tokens on landfall to draw cards</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Valakut%20Exploration&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Valakut%20Exploration%22" target="_blank" rel="noopener">Valakut Exploration</a>
+                <span class="chip-role">Exiles cards on landfall for impulse card flow</span>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="ledger-group">
+            <div class="ledger-header">
+                <h3>A1: Selection & Redundancy <span class="ledger-tier-tag tier-b">B</span></h3>
+                <span class="count-tag">6 cards</span>
+            </div>
+            <div class="card-grid">
+                
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Path%20of%20Ancestry&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Path%20of%20Ancestry%22" target="_blank" rel="noopener">Path of Ancestry</a>
+                <span class="chip-role">Scry selection on casting creature types</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Farseek&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Farseek%22" target="_blank" rel="noopener">Farseek</a>
+                <span class="chip-role">Land selection / type fixing</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Nature%27s%20Lore&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Nature%27s%20Lore%22" target="_blank" rel="noopener">Nature's Lore</a>
+                <span class="chip-role">Forest selection</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Three%20Visits&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Three%20Visits%22" target="_blank" rel="noopener">Three Visits</a>
+                <span class="chip-role">Forest selection</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Syr%20Ginger%2C%20the%20Meal%20Ender&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Syr%20Ginger%2C%20the%20Meal%20Ender%22" target="_blank" rel="noopener">Syr Ginger, the Meal Ender</a>
+                <span class="chip-role">Scry 1 on artifact sacrifice</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Valakut%20Exploration&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Valakut%20Exploration%22" target="_blank" rel="noopener">Valakut Exploration</a>
+                <span class="chip-role">Exile selection</span>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="ledger-group">
+            <div class="ledger-header">
+                <h3>P3: Exposure & Predictability <span class="ledger-tier-tag tier-b">B</span></h3>
+                <span class="count-tag">3 cards</span>
+            </div>
+            <div class="card-grid">
+                
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Rocco%2C%20Street%20Chef&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Rocco%2C%20Street%20Chef%22" target="_blank" rel="noopener">Rocco, Street Chef</a>
+                <span class="chip-role">Exile cards are revealed to all opponents in advance</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Valakut%20Exploration&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Valakut%20Exploration%22" target="_blank" rel="noopener">Valakut Exploration</a>
+                <span class="chip-role">Exiled cards are known before being played</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Laelia%2C%20the%20Blade%20Reforged&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Laelia%2C%20the%20Blade%20Reforged%22" target="_blank" rel="noopener">Laelia, the Blade Reforged</a>
+                <span class="chip-role">Exiled card is public information</span>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="ledger-group">
+            <div class="ledger-header">
+                <h3>I1: Reactive Disruption <span class="ledger-tier-tag tier-a">A</span></h3>
+                <span class="count-tag">14 cards</span>
+            </div>
+            <div class="card-grid">
+                
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Austere%20Command&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Austere%20Command%22" target="_blank" rel="noopener">Austere Command</a>
+                <span class="chip-role">Modular mass artifact/creature/enchantment sweeper</span>
+            </div>
+            
             <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Beast%20Within&format=image&version=normal">
                 <a href="https://scryfall.com/search?q=!%22Beast%20Within%22" target="_blank" rel="noopener">Beast Within</a>
-                <span class="chip-role">Instant-speed reactive removal</span>
+                <span class="chip-role">Instant-speed universal permanent removal</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Blasphemous%20Act&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Blasphemous%20Act%22" target="_blank" rel="noopener">Blasphemous Act</a>
+                <span class="chip-role">1-mana creature board wipe</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Bolt%20Bend&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Bolt%20Bend%22" target="_blank" rel="noopener">Bolt Bend</a>
+                <span class="chip-role">1-mana instant spell redirect</span>
             </div>
             
             <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Chaos%20Warp&format=image&version=normal">
                 <a href="https://scryfall.com/search?q=!%22Chaos%20Warp%22" target="_blank" rel="noopener">Chaos Warp</a>
-                <span class="chip-role">Instant-speed reactive removal</span>
+                <span class="chip-role">Instant-speed permanent tuck removal</span>
             </div>
             
-            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Path%20of%20Ancestry&format=image&version=normal">
-                <a href="https://scryfall.com/search?q=!%22Path%20of%20Ancestry%22" target="_blank" rel="noopener">Path of Ancestry</a>
-                <span class="chip-role">Instant-speed reactive removal</span>
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Deflecting%20Palm&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Deflecting%20Palm%22" target="_blank" rel="noopener">Deflecting Palm</a>
+                <span class="chip-role">Instant-speed damage deflection / lethal reversal</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Delayed%20Blast%20Fireball&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Delayed%20Blast%20Fireball%22" target="_blank" rel="noopener">Delayed Blast Fireball</a>
+                <span class="chip-role">Instant-speed asymmetric 5-damage board wipe</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Eiganjo%2C%20Seat%20of%20the%20Empire&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Eiganjo%2C%20Seat%20of%20the%20Empire%22" target="_blank" rel="noopener">Eiganjo, Seat of the Empire</a>
+                <span class="chip-role">Uncounterable channel creature damage</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Farewell&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Farewell%22" target="_blank" rel="noopener">Farewell</a>
+                <span class="chip-role">Comprehensive modular exile board wipe</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Generous%20Gift&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Generous%20Gift%22" target="_blank" rel="noopener">Generous Gift</a>
+                <span class="chip-role">Instant-speed universal permanent removal</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Nature%27s%20Claim&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Nature%27s%20Claim%22" target="_blank" rel="noopener">Nature's Claim</a>
+                <span class="chip-role">1-mana instant artifact/enchantment removal</span>
             </div>
             
             <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Path%20to%20Exile&format=image&version=normal">
                 <a href="https://scryfall.com/search?q=!%22Path%20to%20Exile%22" target="_blank" rel="noopener">Path to Exile</a>
-                <span class="chip-role">Instant-speed reactive removal</span>
+                <span class="chip-role">1-mana instant creature exile</span>
             </div>
             
             <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Swords%20to%20Plowshares&format=image&version=normal">
                 <a href="https://scryfall.com/search?q=!%22Swords%20to%20Plowshares%22" target="_blank" rel="noopener">Swords to Plowshares</a>
-                <span class="chip-role">Instant-speed reactive removal</span>
+                <span class="chip-role">1-mana instant creature exile</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Vandalblast&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Vandalblast%22" target="_blank" rel="noopener">Vandalblast</a>
+                <span class="chip-role">Asymmetric artifact board wipe</span>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="ledger-group">
+            <div class="ledger-header">
+                <h3>S1: Plan Shielding & Protection <span class="ledger-tier-tag tier-b">B</span></h3>
+                <span class="count-tag">5 cards</span>
+            </div>
+            <div class="card-grid">
+                
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Banquet%20Guests&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Banquet%20Guests%22" target="_blank" rel="noopener">Banquet Guests</a>
+                <span class="chip-role">Indestructible shield via Food sacrifice</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Bolt%20Bend&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Bolt%20Bend%22" target="_blank" rel="noopener">Bolt Bend</a>
+                <span class="chip-role">Protects engine pieces from targeted removal</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Campsite%20Cuisine&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Campsite%20Cuisine%22" target="_blank" rel="noopener">Campsite Cuisine</a>
+                <span class="chip-role">Grants attacking creatures indestructible</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Inspiring%20Call&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Inspiring%20Call%22" target="_blank" rel="noopener">Inspiring Call</a>
+                <span class="chip-role">Grants team indestructible at instant speed</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Plaza%20of%20Heroes&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Plaza%20of%20Heroes%22" target="_blank" rel="noopener">Plaza of Heroes</a>
+                <span class="chip-role">Instant hexproof and indestructible protection for Rocco</span>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="ledger-group">
+            <div class="ledger-header">
+                <h3>S2: Engine Recovery <span class="ledger-tier-tag tier-s">S</span></h3>
+                <span class="count-tag">5 cards</span>
+            </div>
+            <div class="card-grid">
+                
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Rocco%2C%20Street%20Chef&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Rocco%2C%20Street%20Chef%22" target="_blank" rel="noopener">Rocco, Street Chef</a>
+                <span class="chip-role">Low 3-CMC commander easily recast to restart engine</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Samwise%20Gamgee&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Samwise%20Gamgee%22" target="_blank" rel="noopener">Samwise Gamgee</a>
+                <span class="chip-role">Graveyard recursion for any historic card via 3 Foods</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=High%20Market&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22High%20Market%22" target="_blank" rel="noopener">High Market</a>
+                <span class="chip-role">Sacrifice outlet to prevent exile and buffer life</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Syr%20Ginger%2C%20the%20Meal%20Ender&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Syr%20Ginger%2C%20the%20Meal%20Ender%22" target="_blank" rel="noopener">Syr Ginger, the Meal Ender</a>
+                <span class="chip-role">Massive life gain buffer</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Inspiring%20Call&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Inspiring%20Call%22" target="_blank" rel="noopener">Inspiring Call</a>
+                <span class="chip-role">Refills hand with fresh cards to rebuild after wipes</span>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="ledger-group">
+            <div class="ledger-header">
+                <h3>S3: Independence & Backup Plans <span class="ledger-tier-tag tier-a">A</span></h3>
+                <span class="count-tag">7 cards</span>
+            </div>
+            <div class="card-grid">
+                
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Baylen%2C%20the%20Haymaker&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Baylen%2C%20the%20Haymaker%22" target="_blank" rel="noopener">Baylen, the Haymaker</a>
+                <span class="chip-role">Autonomous token draw and mana engine</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Academy%20Manufactor&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Academy%20Manufactor%22" target="_blank" rel="noopener">Academy Manufactor</a>
+                <span class="chip-role">Independent value engine</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Jaheira%2C%20Friend%20of%20the%20Forest&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Jaheira%2C%20Friend%20of%20the%20Forest%22" target="_blank" rel="noopener">Jaheira, Friend of the Forest</a>
+                <span class="chip-role">Independent mana acceleration</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Night%20of%20the%20Sweets%27%20Revenge&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Night%20of%20the%20Sweets%27%20Revenge%22" target="_blank" rel="noopener">Night of the Sweets' Revenge</a>
+                <span class="chip-role">Independent mana and win condition</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Tireless%20Provisioner&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Tireless%20Provisioner%22" target="_blank" rel="noopener">Tireless Provisioner</a>
+                <span class="chip-role">Autonomous token generation on land drops</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Tireless%20Tracker&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Tireless%20Tracker%22" target="_blank" rel="noopener">Tireless Tracker</a>
+                <span class="chip-role">Autonomous draw engine on land drops</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Killer%20Service&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Killer%20Service%22" target="_blank" rel="noopener">Killer Service</a>
+                <span class="chip-role">Autonomous 4/4 Rhino creation without Rocco</span>
             </div>
             
             </div>

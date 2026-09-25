@@ -1,96 +1,287 @@
 {
+  "deck_name": "RoccoStreetChef",
+  "thematic_restriction": false,
   "grades": {
-    "r1": "B",
-    "r2": "A",
+    "r1": "A",
+    "r2": "S",
     "a1": "B",
-    "a2": "B",
-    "p1": "B",
+    "a2": "S",
+    "p1": "A",
     "p2": "B",
     "p3": "B",
-    "i1": "B",
-    "i2": "C",
+    "i1": "A",
+    "i2": "F",
     "s1": "B",
-    "s2": "C",
-    "s3": "C"
+    "s2": "S",
+    "s3": "A"
   },
   "justifications": {
-    "r1": "Naya ramp with 2-CMC dorks and Food token artifact utility.",
-    "r2": "Impulse exile draw on every end step generates continuous card advantage.",
-    "a1": "High density of exile-matters payoffs and counter multipliers.",
-    "a2": "Engine starts churning Food and counters on Turns 4–5.",
-    "p1": "Presents tall/wide modified creature army on Turns 6–7.",
-    "p2": "2 opponent untap steps to execute combat wins.",
-    "p3": "Exiled cards are revealed to the entire table, giving opponents advance warning.",
-    "i1": "Naya instant-speed removal suite (Beast Within, Swords to Plowshares, Chaos Warp).",
-    "i2": "Light group-hug style impulse triggers; no hard denial.",
-    "s1": "Protection spells (Heroic Intervention, Flawless Maneuver).",
-    "s2": "Food tokens remain on board after wipes to regain life, but creatures must be rebuilt.",
-    "s3": "Deck heavily synergizes with Rocco's exile trigger."
+    "r1": "Dense 1- and 2-CMC ramp suite (dorks, Nature's Lore, Talismans) paired with token mana engines (Jaheira, Inspiring Statuary, Ninja Pizza).",
+    "r2": "Continuous symmetrical exile card flow on every player's end step via Rocco, supported by Peregrin Took, Baylen, and Inspiring Call.",
+    "a1": "High redundancy of Food creators and exile-matters payoffs, though lacking dedicated creature tutors.",
+    "a2": "Engine comes online consistently by Turn 3 with a Turn 2 or 3 Rocco deployment.",
+    "p1": "Presents lethal combat overruns or machine-gun burn by Turn 5 via Night of the Sweets' Revenge, Shalai and Hallar, and All Will Be One.",
+    "p2": "Requires 2 opponent response cycles to close out games through combat damage or incremental counter burn.",
+    "p3": "Impulse exile plays reveal drawn cards to the entire table, giving opponents advance telegraphing.",
+    "i1": "Premier instant-speed removal suite (Swords, Path, Beast Within, Chaos Warp, Delayed Blast Fireball, Blasphemous Act, Farewell).",
+    "i2": "Completely devoid of stax, taxing effects, or resource denial (F tier).",
+    "s1": "Moderate protection suite including Inspiring Call, Bolt Bend, Deflecting Palm, and Plaza of Heroes.",
+    "s2": "Food tokens remain on the battlefield through board wipes, allowing instant re-activation of engines and life buffer.",
+    "s3": "Engine pieces like Baylen, Jaheira, Academy Manufactor, and Killer Service operate effectively without Rocco on board."
   },
+  "overview": "This Rocco, Street Chef deck is an aggressive Naya Food and exile-matters midrange strategy. It establishes its primary engine early by casting Rocco on Turn 2 or 3, generating continuous card advantage and token creation whenever cards are played from exile. The deck converts Food tokens and +1/+1 counters into explosive mana and card flow using key enablers like Jaheira, Friend of the Forest, Academy Manufactor, and Baylen, the Haymaker. Without relying on infinite combos, it closes games through overwhelming combat damage and burn, utilizing overrun effects like Night of the Sweets' Revenge alongside direct damage engines such as Shalai and Hallar and All Will Be One. The deck features robust removal and high card velocity, though it remains vulnerable to mass exile wipes and provides symmetrical card access to opponents.",
+  "primer": {
+    "core_strategy": [
+      "Accelerate mana on Turns 1–2 using one-drop dorks or two-drop ramp spells to cast Rocco, Street Chef ahead of curve.",
+      "Deploy Rocco on Turn 2 or 3 to begin exiling cards on end steps, triggering +1/+1 counters and Food creation on subsequent turns.",
+      "Leverage token converters like Academy Manufactor, Jaheira, Friend of the Forest, and Peregrin Took to turn Food into massive mana and card velocity.",
+      "Close the game on Turns 5–7 using massive overrun attacks via Night of the Sweets' Revenge, giant unblockable threats like Feasting Hobbit, or direct burn from All Will Be One and Shalai and Hallar."
+    ],
+    "mulligan_priorities": {
+      "keep": [
+        "Hands with 2–3 lands, at least one 1- or 2-mana ramp piece to cast Rocco, Street Chef on Turn 2 or 3, and a token payoff or interaction spell."
+      ],
+      "avoid": [
+        "Hands lacking green mana, hands with only expensive 4+ mana payoffs and no early acceleration, or hands without colored fixing for Naya."
+      ]
+    },
+    "key_tips": [
+      "Prioritize casting spells from exile over hand spells to trigger Rocco, Street Chef and grow your creatures with +1/+1 counters.",
+      "Save Delayed Blast Fireball to cast from exile via Rocco or foretell, turning it into a one-sided 5-damage board wipe.",
+      "Use Inspiring Call or Plaza of Heroes reactively to protect your key engine pieces against opposing destroy wipes and spot removal."
+    ]
+  },
+  "weaknesses": {
+    "critical": [
+      "Heavy reliance on creature and artifact permanents makes the board vulnerable to comprehensive sweepers like Farewell or Vandalblast.",
+      "Lack of stack interaction or counterspells leaves the deck exposed to fast opposing combo wins."
+    ],
+    "moderate": [
+      "Symmetrical card access from Rocco, Street Chef can hand opponents answers or acceleration if they utilize exile cards effectively.",
+      "Absence of creature tutors requires relying on draw velocity to find specific finishers like All Will Be One."
+    ],
+    "minor": [
+      "Targeted removal on Rocco before the end step delays initial token production and counter distribution."
+    ]
+  },
+  "key_cards": [
+    {
+      "card": "Rocco, Street Chef",
+      "note": "Commander and primary engine piece providing consistent impulse draw, +1/+1 counters, and Food generation."
+    },
+    {
+      "card": "Academy Manufactor",
+      "note": "Triples token output by generating a Clue and Treasure alongside every Food token."
+    },
+    {
+      "card": "Night of the Sweets' Revenge",
+      "note": "Turns all Food tokens into mana dorks and provides a sorcery-speed overrun finish."
+    },
+    {
+      "card": "Jaheira, Friend of the Forest",
+      "note": "Enables all tokens, including Food and Clues, to tap for green mana."
+    },
+    {
+      "card": "Baylen, the Haymaker",
+      "note": "Flexible engine piece that converts token tapping into ramp, card draw, or massive trampling stats."
+    },
+    {
+      "card": "Shalai and Hallar",
+      "note": "Converts +1/+1 counter placement into direct damage against opponents."
+    },
+    {
+      "card": "All Will Be One",
+      "note": "Machine guns damage to opponents or creatures whenever counters are placed on permanents."
+    },
+    {
+      "card": "Delayed Blast Fireball",
+      "note": "Asymmetric board wipe that deals 5 damage to each opponent and their creatures when cast from exile."
+    },
+    {
+      "card": "Peregrin Took",
+      "note": "Adds bonus Food tokens to any token creation and provides repeatable card draw by sacrificing Food."
+    },
+    {
+      "card": "Rosie Cotton of South Lane",
+      "note": "Distributes +1/+1 counters whenever tokens are created, accelerating combat and burn triggers."
+    },
+    {
+      "card": "Inspiring Call",
+      "note": "Instant-speed board protection that grants indestructible to modified creatures and refills the hand."
+    },
+    {
+      "card": "Feasting Hobbit",
+      "note": "Massive unblockable beater that devours Food tokens on entry to eliminate opponents quickly."
+    }
+  ],
   "card_ledger": {
     "r1": [
-      {
-        "card": "Arcane Signet",
-        "role": "Mana ramp / fixing"
-      },
-      {
-        "card": "Brushland",
-        "role": "Mana ramp / fixing"
-      },
-      {
-        "card": "Kodama of the West Tree",
-        "role": "Mana ramp / fixing"
-      },
-      {
-        "card": "Sol Ring",
-        "role": "Mana ramp / fixing"
-      },
-      {
-        "card": "Talisman of Conviction",
-        "role": "Mana ramp / fixing"
-      },
-      {
-        "card": "Talisman of Impulse",
-        "role": "Mana ramp / fixing"
-      },
-      {
-        "card": "Talisman of Unity",
-        "role": "Mana ramp / fixing"
-      }
+      { "card": "Arcane Signet", "role": "2-CMC mana rock ramp / fixing" },
+      { "card": "Avacyn's Pilgrim", "role": "Turn 1 mana dork acceleration" },
+      { "card": "Battlefield Forge", "role": "Untapped dual land fixing" },
+      { "card": "Baylen, the Haymaker", "role": "Taps tokens for mana" },
+      { "card": "Bilbo, Fellow Conspirator", "role": "Creates Treasure tokens alongside Foods" },
+      { "card": "Birds of Paradise", "role": "Turn 1 5-color mana dork" },
+      { "card": "Bountiful Promenade", "role": "Untapped bond land" },
+      { "card": "Brushland", "role": "Untapped pain land" },
+      { "card": "Canopy Vista", "role": "Fetchable tango land" },
+      { "card": "Cinder Glade", "role": "Fetchable tango land" },
+      { "card": "City of Brass", "role": "Untapped 5-color mana fixing" },
+      { "card": "Clifftop Retreat", "role": "Check land fixing" },
+      { "card": "Command Tower", "role": "Untapped commander fixing" },
+      { "card": "Copperline Gorge", "role": "Untapped fast land" },
+      { "card": "Exotic Orchard", "role": "Untapped multi-color land" },
+      { "card": "Farseek", "role": "2-CMC land ramp / fixing" },
+      { "card": "Forest", "role": "Basic land mana (8 copies)" },
+      { "card": "Gilded Goose", "role": "Turn 1 Food generator & mana dork" },
+      { "card": "Inspiring Statuary", "role": "Grants improvise using Food tokens" },
+      { "card": "Inspiring Vantage", "role": "Untapped fast land" },
+      { "card": "Jaheira, Friend of the Forest", "role": "Taps all tokens for green mana" },
+      { "card": "Jetmir's Garden", "role": "Fetchable Naya Triome" },
+      { "card": "Kami of Whispered Hopes", "role": "Taps for mana equal to power" },
+      { "card": "Karplusan Forest", "role": "Untapped pain land" },
+      { "card": "Kodama of the West Tree", "role": "Fetches basic lands on modified combat damage" },
+      { "card": "Mountain", "role": "Basic land mana (4 copies)" },
+      { "card": "Nature's Lore", "role": "2-CMC untapped forest ramp" },
+      { "card": "Night of the Sweets' Revenge", "role": "Turns all Food tokens into green mana dorks" },
+      { "card": "Ninja Pizza", "role": "Food mana battery" },
+      { "card": "Nuka-Cola Vending Machine", "role": "Creates Treasure on Food sacrifice" },
+      { "card": "Path of Ancestry", "role": "Command mana fixing & scry" },
+      { "card": "Plains", "role": "Basic land mana (4 copies)" },
+      { "card": "Plaza of Heroes", "role": "Commander mana fixing & hexproof protection" },
+      { "card": "Professional Face-Breaker", "role": "Creates Treasure on combat damage" },
+      { "card": "Razorverge Thicket", "role": "Untapped fast land" },
+      { "card": "Rootbound Crag", "role": "Check land fixing" },
+      { "card": "Sacred Foundry", "role": "Shock land fixing" },
+      { "card": "Sam, Loyal Attendant", "role": "Reduces Food activation cost to 1 mana" },
+      { "card": "Sol Ring", "role": "Premier fast mana ramp" },
+      { "card": "Spectator Seating", "role": "Untapped bond land" },
+      { "card": "Spire Garden", "role": "Untapped bond land" },
+      { "card": "Stomping Ground", "role": "Shock land fixing" },
+      { "card": "Sunpetal Grove", "role": "Check land fixing" },
+      { "card": "Talisman of Conviction", "role": "2-CMC mana rock ramp / fixing" },
+      { "card": "Talisman of Impulse", "role": "2-CMC mana rock ramp / fixing" },
+      { "card": "Talisman of Unity", "role": "2-CMC mana rock ramp / fixing" },
+      { "card": "Temple Garden", "role": "Shock land fixing" },
+      { "card": "Three Visits", "role": "2-CMC untapped forest ramp" },
+      { "card": "Tireless Provisioner", "role": "Landfall Food / Treasure generation" }
     ],
-    "a2": [],
-    "p1": [],
-    "p2": [],
-    "r2": [],
-    "a1": [],
-    "p3": [],
+    "r2": [
+      { "card": "Rocco, Street Chef", "role": "Exiles cards on each player's end step for continuous card flow" },
+      { "card": "Academy Manufactor", "role": "Generates Clue tokens on every Food creation" },
+      { "card": "Baylen, the Haymaker", "role": "Taps 3 tokens to draw a card" },
+      { "card": "Belladonna Took", "role": "Draws a card on second token creation each turn" },
+      { "card": "Inspiring Call", "role": "Draws cards for every creature with a +1/+1 counter" },
+      { "card": "Laelia, the Blade Reforged", "role": "Impulse exile draw on attack" },
+      { "card": "Peregrin Took", "role": "Sacrifices 3 Foods to draw a card" },
+      { "card": "Professional Face-Breaker", "role": "Impulse exile draw by sacrificing Treasures" },
+      { "card": "Tireless Tracker", "role": "Creates Clue tokens on landfall to draw cards" },
+      { "card": "Valakut Exploration", "role": "Exiles cards on landfall for impulse card flow" }
+    ],
+    "a1": [
+      { "card": "Path of Ancestry", "role": "Scry selection on casting creature types" },
+      { "card": "Farseek", "role": "Land selection / type fixing" },
+      { "card": "Nature's Lore", "role": "Forest selection" },
+      { "card": "Three Visits", "role": "Forest selection" },
+      { "card": "Syr Ginger, the Meal Ender", "role": "Scry 1 on artifact sacrifice" },
+      { "card": "Valakut Exploration", "role": "Exile selection" }
+    ],
+    "a2": [
+      { "card": "Rocco, Street Chef", "role": "Commander ready Turn 2–3 to deploy primary engine" },
+      { "card": "Academy Manufactor", "role": "Triples token generation" },
+      { "card": "Baylen, the Haymaker", "role": "Instant engine acceleration via token tapping" },
+      { "card": "Bilbo, Fellow Conspirator", "role": "Token multiplier creating Treasures" },
+      { "card": "Farmer Cotton", "role": "Burst Halfling and Food army creation" },
+      { "card": "Jaheira, Friend of the Forest", "role": "Massive mana conversion enabling full-hand deployment" },
+      { "card": "Kami of Whispered Hopes", "role": "+1/+1 counter amplification" },
+      { "card": "Killer Service", "role": "Immediate 3 Food tokens + Rhino engine" },
+      { "card": "Night of the Sweets' Revenge", "role": "Turns entire Food board into mana battery" },
+      { "card": "Ninja Pizza", "role": "Guaranteed Food creation on post-combat main phase" },
+      { "card": "Nuka-Cola Vending Machine", "role": "Converts Food sacrifices into immediate Treasure" },
+      { "card": "Peregrin Took", "role": "Bonus Food on every token event" },
+      { "card": "Pia Nalaar, Consul of Revival", "role": "Creates hasty flying Thopters on exile casts" },
+      { "card": "Rosie Cotton of South Lane", "role": "Instant counter generation on token entry" },
+      { "card": "Sam, Loyal Attendant", "role": "Food generation at combat" },
+      { "card": "Samwise Gamgee", "role": "Food generation on nontoken creatures" },
+      { "card": "Tough Cookie", "role": "Food on ETB + animated 4/4s" },
+      { "card": "Treebeard, Gracious Host", "role": "2 Foods on ETB + counter distribution" },
+      { "card": "Wild-Magic Sorcerer", "role": "Cascade engine on first exile spell each turn" }
+    ],
+    "p1": [
+      { "card": "Rocco, Street Chef", "role": "Grows creatures with +1/+1 counters on exile plays" },
+      { "card": "All Will Be One", "role": "Machine-guns direct burn whenever counters are placed" },
+      { "card": "Banquet Guests", "role": "Massive trampling affinity threat with double counters" },
+      { "card": "Baylen, the Haymaker", "role": "Scales power and trample via token tapping" },
+      { "card": "Belladonna Took", "role": "Team-wide +1/+1 counters on third token creation" },
+      { "card": "Campsite Cuisine", "role": "Combat overrun granting +3/+3, trample, and indestructible" },
+      { "card": "Delayed Blast Fireball", "role": "Asymmetric 5 damage burn to opponents and creatures from exile" },
+      { "card": "Farmer Cotton", "role": "Go-wide token army pressure" },
+      { "card": "Feasting Hobbit", "role": "Devour 3 unblockable combat finisher" },
+      { "card": "Killer Service", "role": "4/4 Rhino Warrior beaters every turn" },
+      { "card": "Kodama of the West Tree", "role": "Grants trample to all modified creatures" },
+      { "card": "Laelia, the Blade Reforged", "role": "Rapidly growing combat beater from exile triggers" },
+      { "card": "Motivated Pony", "role": "Attacking +3/+3 and trample team overrun" },
+      { "card": "Night of the Sweets' Revenge", "role": "Game-ending +X/+X overrun finisher" },
+      { "card": "Pia Nalaar, Consul of Revival", "role": "Swarm flying Thopters with haste" },
+      { "card": "Rosie Cotton of South Lane", "role": "Distributes +1/+1 counters on token creation" },
+      { "card": "Shalai and Hallar", "role": "Direct opponent face burn on counter placement" },
+      { "card": "Syr Ginger, the Meal Ender", "role": "Rapidly scaling trampling threat on artifact sac" },
+      { "card": "Tough Cookie", "role": "Animates Foods into 4/4 attackers" },
+      { "card": "Treebeard, Gracious Host", "role": "Large life-gain-scaled beaters" },
+      { "card": "Valakut Exploration", "role": "End-step direct burn to all opponents" }
+    ],
+    "p2": [
+      { "card": "Night of the Sweets' Revenge", "role": "Sorcery overrun requiring 2 combat turns" },
+      { "card": "All Will Be One", "role": "Incremental burn finisher" },
+      { "card": "Shalai and Hallar", "role": "Incremental counter burn finisher" },
+      { "card": "Feasting Hobbit", "role": "Unblockable single-target player elimination" },
+      { "card": "Motivated Pony", "role": "Combat overrun requiring combat steps" },
+      { "card": "Campsite Cuisine", "role": "Combat overrun requiring combat steps" }
+    ],
+    "p3": [
+      { "card": "Rocco, Street Chef", "role": "Exile cards are revealed to all opponents in advance" },
+      { "card": "Valakut Exploration", "role": "Exiled cards are known before being played" },
+      { "card": "Laelia, the Blade Reforged", "role": "Exiled card is public information" }
+    ],
     "i1": [
-      {
-        "card": "Beast Within",
-        "role": "Instant-speed reactive removal"
-      },
-      {
-        "card": "Chaos Warp",
-        "role": "Instant-speed reactive removal"
-      },
-      {
-        "card": "Path of Ancestry",
-        "role": "Instant-speed reactive removal"
-      },
-      {
-        "card": "Path to Exile",
-        "role": "Instant-speed reactive removal"
-      },
-      {
-        "card": "Swords to Plowshares",
-        "role": "Instant-speed reactive removal"
-      }
+      { "card": "Austere Command", "role": "Modular mass artifact/creature/enchantment sweeper" },
+      { "card": "Beast Within", "role": "Instant-speed universal permanent removal" },
+      { "card": "Blasphemous Act", "role": "1-mana creature board wipe" },
+      { "card": "Bolt Bend", "role": "1-mana instant spell redirect" },
+      { "card": "Chaos Warp", "role": "Instant-speed permanent tuck removal" },
+      { "card": "Deflecting Palm", "role": "Instant-speed damage deflection / lethal reversal" },
+      { "card": "Delayed Blast Fireball", "role": "Instant-speed asymmetric 5-damage board wipe" },
+      { "card": "Eiganjo, Seat of the Empire", "role": "Uncounterable channel creature damage" },
+      { "card": "Farewell", "role": "Comprehensive modular exile board wipe" },
+      { "card": "Generous Gift", "role": "Instant-speed universal permanent removal" },
+      { "card": "Nature's Claim", "role": "1-mana instant artifact/enchantment removal" },
+      { "card": "Path to Exile", "role": "1-mana instant creature exile" },
+      { "card": "Swords to Plowshares", "role": "1-mana instant creature exile" },
+      { "card": "Vandalblast", "role": "Asymmetric artifact board wipe" }
     ],
     "i2": [],
-    "s1": [],
-    "s2": [],
-    "s3": []
-  },
-  "deck_name": "RoccoStreetChef",
-  "thematic_restriction": false
+    "s1": [
+      { "card": "Banquet Guests", "role": "Indestructible shield via Food sacrifice" },
+      { "card": "Bolt Bend", "role": "Protects engine pieces from targeted removal" },
+      { "card": "Campsite Cuisine", "role": "Grants attacking creatures indestructible" },
+      { "card": "Inspiring Call", "role": "Grants team indestructible at instant speed" },
+      { "card": "Plaza of Heroes", "role": "Instant hexproof and indestructible protection for Rocco" }
+    ],
+    "s2": [
+      { "card": "Rocco, Street Chef", "role": "Low 3-CMC commander easily recast to restart engine" },
+      { "card": "Samwise Gamgee", "role": "Graveyard recursion for any historic card via 3 Foods" },
+      { "card": "High Market", "role": "Sacrifice outlet to prevent exile and buffer life" },
+      { "card": "Syr Ginger, the Meal Ender", "role": "Massive life gain buffer" },
+      { "card": "Inspiring Call", "role": "Refills hand with fresh cards to rebuild after wipes" }
+    ],
+    "s3": [
+      { "card": "Baylen, the Haymaker", "role": "Autonomous token draw and mana engine" },
+      { "card": "Academy Manufactor", "role": "Independent value engine" },
+      { "card": "Jaheira, Friend of the Forest", "role": "Independent mana acceleration" },
+      { "card": "Night of the Sweets' Revenge", "role": "Independent mana and win condition" },
+      { "card": "Tireless Provisioner", "role": "Autonomous token generation on land drops" },
+      { "card": "Tireless Tracker", "role": "Autonomous draw engine on land drops" },
+      { "card": "Killer Service", "role": "Autonomous 4/4 Rhino creation without Rocco" }
+    ]
+  }
 }

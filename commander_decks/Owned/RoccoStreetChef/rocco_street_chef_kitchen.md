@@ -12,15 +12,21 @@ deck_status: main
 
 ## Commander Strategy
 **Rocco, Street Chef**
-*   **Archetype:** Naya ({R}{G}{W}) Impulse Gastronomy / Food Tokens / +1/+1 Counter Burn & Overrun
-*   **Bracket:** 3 (Upgraded — 0 Game Changers)
-*   **DTI Threat Index:** **21 / 96** (Bracket 2 | Velocity: **10/48** | Suppression: **7/40** | Gates: All Passed | [DTI Report](dti_report.html))
-*   **Core Goal:** Utilize Rocco's end-step ability to exile cards for every player. Whenever YOU or your OPPONENTS play a land or cast a spell from exile, Rocco puts a +1/+1 counter on target creature and creates a Food token. You then convert those Foods and counters into massive mana, unblockable attackers, and direct opponent burn!
+*   **Archetype:** Naya ({R}{G}{W}) Food & Exile Midrange
+*   **Bracket:** 3 (Upgraded Casual — 0 Game Changers)
+*   **DTI Threat Index:** **46 / 96** (Bracket 3 | Velocity: **24/48** | Suppression: **16/40** | Clock: Engine T3, Onset T5, 2 Untap Cycles | Gates: All Passed | [DTI Report](dti_report.html))
+*   **Core Goal:** Deploy Rocco on Turn 2 or 3 to establish an immediate exile engine. Whenever cards are played from exile, Rocco distributes +1/+1 counters and creates Food tokens, which are rapidly converted into massive mana and card draw via Jaheira, Academy Manufactor, and Baylen. The deck closes games on Turns 5–7 via overrun effects (Night of the Sweets' Revenge), unblockable beaters (Feasting Hobbit), or direct burn (Shalai and Hallar, All Will Be One).
+
+### 🎯 Tactical Overview & Mulligan Guide
+*   **Core Strategy:** T1–2 Ramp $\rightarrow$ T2–3 Rocco $\rightarrow$ T4 Token Multipliers $\rightarrow$ T5–7 Overrun / Direct Burn Finish.
+*   **Keep Hands:** 2–3 lands, 1–2 mana ramp piece (dork/talisman) to cast Rocco on Turn 2–3, plus an engine payoff or interaction.
+*   **Avoid Hands:** Missing green mana, 4+ CMC heavy hands without early acceleration, or non-functional color fixing.
+*   **Strategic Weaknesses:** Comprehensive artifact/creature wipes (*Farewell*, *Vandalblast*) and fast combo decks lacking stack interaction; symmetrical exile giving opponents incremental resources.
 
 ### Three Interlocking Engines
-1.  **Engine 1 — Impulse & Exile Engine (Rocco & Exile Tech):** Rocco, **Passionate Archaeologist**, **Wild-Magic Sorcerer**, **Laelia, the Blade Reforged**, **Pia Nalaar, Consul of Revival**, and **Delayed Blast Fireball** reward and accelerate playing cards from exile. Every exile play grows your board and fills your kitchen with Food.
-2.  **Engine 2 — Food & Mana Multiplication:** **Jaheira, Friend of the Forest**, **Ninja Pizza** (Food mana battery), **Nuka-Cola Vending Machine** (sac Food -> create Treasure), **Peregrin Took** (extra Food on token creation + sac 3 Foods to draw), **Sam, Loyal Attendant** (reduces Food activation cost to {1}), **Academy Manufactor** (Food -> Food + Clue + Treasure), and **Night of the Sweets' Revenge** (foods tap for {G} + Overrun finisher).
-3.  **Engine 3 — Counter Damage & Overrun Finishers:** **Shalai and Hallar** (deals damage to opponents whenever +1/+1 counters are placed!), **All Will Be One**, **Feasting Hobbit** (Devour Food 3 -> unblockable 14/14+ threat), **Campsite Cuisine** (sac Foods for +3/+3, trample, indestructible), **Belladonna Took**, and **Inspiring Call**.
+1.  **Engine 1 — Impulse & Exile Engine (Rocco & Exile Tech):** Rocco, **Wild-Magic Sorcerer**, **Laelia, the Blade Reforged**, **Pia Nalaar, Consul of Revival**, and **Delayed Blast Fireball** reward and accelerate playing cards from exile.
+2.  **Engine 2 — Food & Mana Multiplication:** **Jaheira, Friend of the Forest**, **Ninja Pizza** (Food mana battery), **Nuka-Cola Vending Machine**, **Peregrin Took**, **Sam, Loyal Attendant**, **Academy Manufactor**, and **Night of the Sweets' Revenge**.
+3.  **Engine 3 — Counter Damage & Overrun Finishers:** **Shalai and Hallar**, **All Will Be One**, **Feasting Hobbit**, **Campsite Cuisine**, **Belladonna Took**, and **Inspiring Call**.
 
 ---
 
@@ -98,6 +104,10 @@ deck_status: main
 ---
 
 ## 📜 Deck Changelog
+*   **2026-09-24:** Validated deck under DeckCheck Threat Index (DTI) framework via official scan calibration.
+    *   **DTI Threat Score:** **46 / 96** (Bracket 3 Upgraded Casual).
+    *   **Telemetry:** Velocity: 24/48, Suppression: 16/40, Threat Onset: Turn 5 ($P1: A$), Engine Ready: Turn 3 ($A2: S$), Opponent Response Cycles: 2 ($P2: B$).
+    *   **Gatekeepers:** All 4 gates passed safely; confirmed resilient Bracket 3 Food & exile midrange engine.
 *   **2026-08-31:** Integrated Belladonna Took, Campsite Cuisine, and Ninja Pizza for enhanced Hobbit token draw, combat overrun, and Food mana.
     *   **In:** Belladonna Took, Campsite Cuisine, Ninja Pizza, Samwise Gamgee, Syr Ginger, the Meal Ender
     *   **Out:** Boros Charm, Butterbur, Bree Innkeeper, Etali, Primal Storm, Gwaihir, Greatest of the Eagles, Skullclamp
