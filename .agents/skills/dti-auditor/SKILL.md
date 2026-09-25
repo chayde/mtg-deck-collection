@@ -164,4 +164,12 @@ Use these calibrated decks to ground every future evaluation:
 *   **Benchmarks:** $R1: A, R2: S, A1: A, A2: A, P1: B, P2: A, P3: B, I1: B, I2: B, S1: C, S2: A, S3: A$.
 *   **Calibration Principle:** Modern synergy precons land at the 40/96 floor of Bracket 3: their clocks are slower (Turn 4 engine, Turn 6 threat onset, 18/48 velocity) and protection is fragile ($S1: C$), but massive card draw ($R2: S$) and land recursion ($S2: A$) comfortably lift them above the Bracket 2 ceiling (31).
 
+### Anchor 5: YshtolaNightsBlessed (Esper Spellslinger Precon) — Bracket 2 Apex (Ceiling)
+*   **Threat Score:** **31 / 96** (Exact ceiling of Bracket 2, 16–31 band)
+*   **Vectors:** Velocity: **13 / 48** | Suppression: **12 / 40**
+*   **Clock:** Onset Turn 7 ($P1: B$), Ready Turn 4 ($A2: A$), Response Cycles: 2 ($P2: B$) $\rightarrow$ Turn 9 kill.
+*   **Benchmarks:** $R1: B, R2: A, A1: B, A2: A, P1: B, P2: B, P3: B, I1: A, I2: B, S1: B, S2: A, S3: A$.
+*   **Calibration Principle:** Defines the boundary line between Bracket 2 and Bracket 3: a slower Turn 7 onset, 2 untap cycles ($P2: B$), and lower mana/velocity (13/48) cap the deck at 31/96 despite running premier Esper control interaction ($I1: A$) and reliable card draw ($R2: A$).
+
+
 

@@ -1,13 +1,28 @@
+---
+deck_status: main
+---
+
 # Y'shtola, Night's Blessed Deck Guide
+
+![Y'shtola, Night's Blessed](https://cards.scryfall.io/normal/front/c/7/c7f2c2d5-e052-49e8-b5de-712858c2ea78.jpg?1783906373)
 
 ## Commander Strategy
 **Y'shtola, Night's Blessed**
-*   **Role:** The Spellslinger Engine & Life Drain Finisher.
-*   **Goal:** To control the game through powerful 3+ CMC noncreature spells, drawing cards and draining opponents' life until you can finish them with explosive magic.
-*   **The Engine:**
-    1.  **Life Loss Reward:** At each end step, if a player lost 4 or more life (very easy to trigger with Y'shtola's own ability or combat), you draw a card.
-    2.  **Aetheric Drain:** Whenever you cast a noncreature spell with mana value 3 or greater, Y'shtola deals 2 damage to each opponent and you gain 2 life. This turns every counterspell, board wipe, and utility artifact into a life-swing tool.
-    3.  **Esper Control:** The Blue/Black/White color identity provides the best removal and card draw in the game.
+*   **Archetype:** Esper ({W}{U}{B}) Spellslinger Control & Life Drain
+*   **Bracket:** 2 (Core / Precon — Apex Ceiling, 0 Game Changers)
+*   **DTI Threat Index:** **31 / 96** (Bracket 2 | Velocity: **13/48** | Suppression: **12/40** | Clock: Engine T4, Onset T7, 2 Untap Cycles | Gates: All Passed | [DTI Report](dti_report.html))
+*   **Core Goal:** Control the game through 3+ CMC noncreature spells, triggering Y'shtola's 2-damage drain and life gain while drawing cards whenever players lose 4+ life in a turn. Suppress aggressive combat via Propaganda and Authority of the Consuls, and close out games around Turns 7–9 via continuous incremental drain, token armies (Hermes, G'raha Tia), or a lethal Exsanguinate.
+
+### 🎯 Tactical Overview & Mulligan Guide
+*   **Core Strategy:** T1–3 Ramp $\rightarrow$ T4 Y'shtola $\rightarrow$ T5 Control & 3+ MV Noncreatures $\rightarrow$ T7–9 Drain & Token Overrun / Exsanguinate.
+*   **Keep Hands:** 3 lands, 2+ colors, 1 two-mana rock (Arcane Signet/Talisman), and early interaction or a 3-mana noncreature spell.
+*   **Avoid Hands:** Missing colors, 5+ land flood with no draw, or 5+ mana heavy hands lacking early acceleration.
+*   **Strategic Weaknesses:** Reliance on legendary creatures leaves engine vulnerable to board wipes; clunky curve if early ramp is removed.
+
+### The Engine Mechanics
+1.  **Life Loss Reward:** At each end step, if a player lost 4 or more life (triggered by Y'shtola's drain or combat), you draw a card.
+2.  **Aetheric Drain:** Whenever you cast a noncreature spell with mana value 3 or greater, Y'shtola deals 2 damage to each opponent and you gain 2 life. This turns removal, board wipes, and utility artifacts into powerful life swings.
+3.  **Esper Control:** Dense suite of uncounterable removal (*Void Rend*), modal sweepers (*Cleansing Nova*, *Crux of Fate*), and pillowfort defenses (*Propaganda*, *Authority of the Consuls*).
 
 ## 1. The Scions of the Seventh Dawn (The Party)
 *Iconic FFXIV characters providing diverse utility.*
@@ -44,6 +59,10 @@
 ---
 
 ## 📜 Deck Changelog
+*   **2026-09-24:** Validated deck under DeckCheck Threat Index (DTI) framework via official scan calibration.
+    *   **DTI Threat Score:** **31 / 96** (Bracket 2 Core / Precon — Apex Ceiling).
+    *   **Telemetry:** Velocity: 13/48, Suppression: 12/40, Threat Onset: Turn 7 ($P1: B$), Engine Ready: Turn 4 ($A2: A$), Opponent Response Cycles: 2 ($P2: B$).
+    *   **Gatekeepers:** All 4 gates passed safely; serves as the empirical Anchor 5 baseline representing the absolute ceiling of Bracket 2 (16–31 band).
 *   **2026-02-27:** Initial deck creation.
 
 ## Plain Text Copy/Paste

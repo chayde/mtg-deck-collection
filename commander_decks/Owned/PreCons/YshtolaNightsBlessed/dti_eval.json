@@ -1,0 +1,251 @@
+{
+  "deck_name": "YshtolaNightsBlessed",
+  "thematic_restriction": false,
+  "grades": {
+    "r1": "B",
+    "r2": "A",
+    "a1": "B",
+    "a2": "A",
+    "p1": "B",
+    "p2": "B",
+    "p3": "B",
+    "i1": "A",
+    "i2": "B",
+    "s1": "B",
+    "s2": "A",
+    "s3": "A"
+  },
+  "justifications": {
+    "r1": "Standard 37-land mana base with 2-CMC and 3-CMC mana rocks (Talismans, Signet, Archaeomancer's Map, Coveted Jewel).",
+    "r2": "A-tier card flow powered by Y'shtola's 4-life lost end-step trigger, Archmage Emeritus, Dig Through Time, and Syphon Mind.",
+    "a1": "Solid selection through Dig Through Time, Astrologian's Planisphere, and Hermes, but lacking unconditional tutors.",
+    "a2": "Commander deploys reliably on Turn 4 to begin triggering noncreature spell drain and card draw.",
+    "p1": "Onset manifests around Turn 7 via sustained 3+ MV noncreature spell drain, Fandaniel, and token armies.",
+    "p2": "Requires 2 opponent response cycles to close out games through incremental drain, Exsanguinate, or token combat.",
+    "p3": "Graveyard density and open mana telegraph interaction and recursion lines to the table.",
+    "i1": "Premier Esper control interaction suite (Void Rend, Swords to Plowshares, Snuff Out, Sublime Epiphany, Cleansing Nova, Crux of Fate, Final Judgment).",
+    "i2": "Defensive board-state denial through Propaganda, Authority of the Consuls, and Observed Stasis.",
+    "s1": "Plan shielding provided by Thancred Waters (flash indestructible), Sublime Epiphany countermagic, and pillowfort enchantments.",
+    "s2": "Strong graveyard spell recovery via Emet-Selch of the Third Seat and Torrential Gearhulk.",
+    "s3": "Sub-engines (Archmage Emeritus, G'raha Tia, Hermes, Fandaniel) operate effectively without Y'shtola."
+  },
+  "overview": "This deck is an Esper Spellslinger Control strategy commanded by Y'shtola, Night's Blessed. The game plan revolves around casting noncreature spells with mana value 3 or greater to trigger Y'shtola's 2-damage drain and life gain ability, while drawing cards whenever players lose 4 or more life in a turn. Backed by interactive control spells, board sweepers like Cleansing Nova, and creature token generators such as Hermes, Overseer of Elpis and G'raha Tia, Scion Reborn, the deck maintains a steady flow of resources. Defensive enchantments like Propaganda and Authority of the Consuls suppress aggressive opponents, giving the deck time to build up to massive late-game payoffs such as Fandaniel, Telophoroi Ascian, Exsanguinate, and kicked Rite of Replication. The deck operates smoothly on curve, trading 1-for-1 with threats before overwhelming the table with continuous incremental drain and evasive token armies.",
+  "primer": {
+    "core_strategy": [
+      "Develop mana rocks and land drops on Turns 1 through 3 to prepare for casting your 4-mana commander on curve.",
+      "Deploy Y'shtola, Night's Blessed on Turn 4 and follow up with noncreature spells costing 3 or more mana to trigger drain and end-step card draw.",
+      "Control the board state using efficient removal like Void Rend, sweepers like Crux of Fate, and defensive taxes like Propaganda.",
+      "Close the game around Turn 7 to 9 with sustained drain from Fandaniel, Telophoroi Ascian, wide Hero/Spirit token attacks, or a lethal Exsanguinate."
+    ],
+    "mulligan_priorities": {
+      "keep": [
+        "Hands with 3 lands, at least two colors including white, blue, or black, one 2-mana acceleration piece like Arcane Signet or Talisman of Dominance, and an early interactive spell or 3-mana noncreature payoff."
+      ],
+      "avoid": [
+        "Hands missing mana fixing, hands with five or more lands and no card draw, or hands saturated with 5+ mana curve-toppers without early ramp."
+      ]
+    },
+    "key_tips": [
+      "Trigger Y'shtola, Night's Blessed on opponents' turns using instant-speed removal like Void Rend or flash spells like Observed Stasis to maximize card draw across every turn cycle.",
+      "Use Thancred Waters with flash in response to targeted removal or board wipes to grant indestructible to your most critical legendary engine piece.",
+      "Pair Emet-Selch of the Third Seat with instant or sorcery spells in your graveyard to recast removal and draw spells at a 2-mana discount whenever opponents take damage."
+    ]
+  },
+  "weaknesses": {
+    "critical": [
+      "Heavy reliance on keeping legendary creatures on board leaves the primary drain engine vulnerable to repeated board wipes and exile-based removal."
+    ],
+    "moderate": [
+      "A high density of 3+ mana value spells can lead to awkward sequencing and clunky turns if early ramp is disrupted.",
+      "Lack of unconditional tutors creates variance in finding specific closing cards like Exsanguinate."
+    ],
+    "minor": [
+      "Graveyard hate can reduce the effectiveness of Emet-Selch of the Third Seat, Dig Through Time, and Torrential Gearhulk."
+    ]
+  },
+  "key_cards": [
+    {
+      "card": "Y'shtola, Night's Blessed",
+      "note": "Commander and centerpiece engine that drains opponents, gains life, and provides steady card draw."
+    },
+    {
+      "card": "Fandaniel, Telophoroi Ascian",
+      "note": "Primary late-game life-loss engine that punishes opponents based on the number of spells in your graveyard."
+    },
+    {
+      "card": "Emet-Selch of the Third Seat",
+      "note": "Provides cost reduction and allows recurring instant and sorcery spells from the graveyard when opponents lose life."
+    },
+    {
+      "card": "G'raha Tia, Scion Reborn",
+      "note": "Converts noncreature spell casts into large Hero creature tokens to build board presence and defense."
+    },
+    {
+      "card": "Hermes, Overseer of Elpis",
+      "note": "Generates flying Bird creature tokens whenever you cast noncreature spells and provides scry selection on attack."
+    },
+    {
+      "card": "Thancred Waters",
+      "note": "Flash creature that grants indestructible to key legendary permanents to protect them from removal."
+    },
+    {
+      "card": "Void Rend",
+      "note": "Uncounterable instant-speed removal that deals with any problematic nonland permanent."
+    },
+    {
+      "card": "Sublime Epiphany",
+      "note": "High-impact modal instant that counters spells, bounces permanents, draws cards, and creates token copies."
+    },
+    {
+      "card": "Cleansing Nova",
+      "note": "Flexible 5-mana board wipe that destroys all creatures or all artifacts and enchantments."
+    },
+    {
+      "card": "Propaganda",
+      "note": "Deters wide aggressive combat by taxing opponents 2 mana per attacking creature."
+    },
+    {
+      "card": "Exsanguinate",
+      "note": "Scalable black finisher that drains each opponent while providing a massive life buffer."
+    },
+    {
+      "card": "Dig Through Time",
+      "note": "Delve instant that digs seven cards deep at instant speed to find key answers and win conditions."
+    }
+  ],
+  "card_ledger": {
+    "r1": [
+      { "card": "Arcane Signet", "role": "2-CMC mana rock fixing" },
+      { "card": "Sol Ring", "role": "Fast mana acceleration" },
+      { "card": "Talisman of Dominance", "role": "2-CMC mana rock fixing" },
+      { "card": "Talisman of Hierarchy", "role": "2-CMC mana rock fixing" },
+      { "card": "Talisman of Progress", "role": "2-CMC mana rock fixing" },
+      { "card": "Thought Vessel", "role": "2-CMC mana rock + no max hand size" },
+      { "card": "Archaeomancer's Map", "role": "Catch-up land ramp and Plains fetch" },
+      { "card": "Relic of Legends", "role": "Taps legendary creatures for mana" },
+      { "card": "Tome of Legends", "role": "Mana rock with draw counters" },
+      { "card": "Coveted Jewel", "role": "Burst 3-mana acceleration and draw 3" },
+      { "card": "White Auracite", "role": "Mana rock utility" },
+      { "card": "Arcane Sanctum", "role": "Esper tri-tap land" },
+      { "card": "Ash Barrens", "role": "Basic landcycling fixing" },
+      { "card": "Choked Estuary", "role": "Snarl dual land" },
+      { "card": "Command Tower", "role": "Untapped commander fixing" },
+      { "card": "Contaminated Aquifer", "role": "Fetchable dual land" },
+      { "card": "Darkwater Catacombs", "role": "Filter dual land" },
+      { "card": "Demolition Field", "role": "Utility land fetch and destruction" },
+      { "card": "Desolate Mire", "role": "Filter dual land" },
+      { "card": "Drowned Catacomb", "role": "Check land fixing" },
+      { "card": "Evolving Wilds", "role": "Basic land fetch" },
+      { "card": "Exotic Orchard", "role": "Untapped multi-color fixing" },
+      { "card": "Fetid Heath", "role": "Filter dual land" },
+      { "card": "Glacial Fortress", "role": "Check land fixing" },
+      { "card": "Idyllic Beachfront", "role": "Fetchable dual land" },
+      { "card": "Island", "role": "Basic land mana (3 copies)" },
+      { "card": "Isolated Chapel", "role": "Check land fixing" },
+      { "card": "Path of Ancestry", "role": "Command mana fixing and scry" },
+      { "card": "Plains", "role": "Basic land mana (4 copies)" },
+      { "card": "Port Town", "role": "Snarl dual land" },
+      { "card": "Prairie Stream", "role": "Tango dual land" },
+      { "card": "Scavenger Grounds", "role": "Graveyard hate utility land" },
+      { "card": "Shineshadow Snarl", "role": "Snarl dual land" },
+      { "card": "Skycloud Expanse", "role": "Filter dual land" },
+      { "card": "Sunken Hollow", "role": "Tango dual land" },
+      { "card": "Sunken Ruins", "role": "Filter dual land" },
+      { "card": "Sunlit Marsh", "role": "Fetchable dual land" },
+      { "card": "Swamp", "role": "Basic land mana (4 copies)" },
+      { "card": "Temple of the False God", "role": "2-mana late game land" },
+      { "card": "Underground River", "role": "Untapped pain land" }
+    ],
+    "r2": [
+      { "card": "Y'shtola, Night's Blessed", "role": "Draws a card on each end step if a player lost 4+ life" },
+      { "card": "Archmage Emeritus", "role": "Draws a card on every instant or sorcery cast or copy" },
+      { "card": "Baleful Strix", "role": "Cantrip card draw on ETB with deathtouch" },
+      { "card": "Coveted Jewel", "role": "Draws 3 cards on entry" },
+      { "card": "Dig Through Time", "role": "Delve instant taking 2 cards from top 7" },
+      { "card": "Into the Story", "role": "Instant speed draw 4 cards" },
+      { "card": "Syphon Mind", "role": "Each opponent discards 1, draw 3 cards" },
+      { "card": "Tome of Legends", "role": "Repeatable card draw via page counters" },
+      { "card": "Cut a Deal", "role": "Draws up to 3 cards symmetrically" },
+      { "card": "Lethal Scheme", "role": "Convoke connive up to 4 times to loot" }
+    ],
+    "a1": [
+      { "card": "Astrologian's Planisphere", "role": "Scry selection and card filtering" },
+      { "card": "Hermes, Overseer of Elpis", "role": "Scry 2 on attack" },
+      { "card": "Dig Through Time", "role": "Deep 7-card selection" },
+      { "card": "Archaeomancer's Map", "role": "Basic Plains search" },
+      { "card": "Ash Barrens", "role": "Landcycling search" },
+      { "card": "Evolving Wilds", "role": "Basic land search" },
+      { "card": "Path of Ancestry", "role": "Scry on creature casts" }
+    ],
+    "a2": [
+      { "card": "Y'shtola, Night's Blessed", "role": "Commander deployed on Turn 4 to establish drain engine" },
+      { "card": "Archmage Emeritus", "role": "Spellslinger engine multiplier" },
+      { "card": "G'raha Tia, Scion Reborn", "role": "Converts noncreature casts into Hero tokens" },
+      { "card": "Hermes, Overseer of Elpis", "role": "Converts noncreature casts into flying Bird tokens" },
+      { "card": "Emet-Selch of the Third Seat", "role": "Cost reduction and graveyard spell recursion" },
+      { "card": "Torrential Gearhulk", "role": "Flash instant replay from graveyard" }
+    ],
+    "p1": [
+      { "card": "Y'shtola, Night's Blessed", "role": "Drains each opponent for 2 life on 3+ MV noncreature spells" },
+      { "card": "Fandaniel, Telophoroi Ascian", "role": "Punishes opponents based on graveyard spell density" },
+      { "card": "Exsanguinate", "role": "Direct table life loss finisher" },
+      { "card": "G'raha Tia, Scion Reborn", "role": "Growing board of Hero creature tokens" },
+      { "card": "Hermes, Overseer of Elpis", "role": "Swarm of flying Bird tokens" },
+      { "card": "Ardbert, Warrior of Darkness", "role": "Combat pressure and attacker buffs" },
+      { "card": "Estinien Varlineau", "role": "Aggressive combat threat" },
+      { "card": "Hraesvelgr of the First Brood", "role": "Large flying combat threat" },
+      { "card": "Rite of Replication", "role": "Kicked 5-token creature copy army" },
+      { "card": "Lingering Souls", "role": "1/1 flying Spirit tokens" },
+      { "card": "Bastion of Remembrance", "role": "Drain 1 life on creature deaths" }
+    ],
+    "p2": [
+      { "card": "Exsanguinate", "role": "Direct life drain finisher" },
+      { "card": "Fandaniel, Telophoroi Ascian", "role": "Burst life loss finisher" },
+      { "card": "Rite of Replication", "role": "Massive board state multiplier" },
+      { "card": "Y'shtola, Night's Blessed", "role": "Incremental drain across turns" }
+    ],
+    "p3": [
+      { "card": "Fandaniel, Telophoroi Ascian", "role": "Graveyard spell count is public information" },
+      { "card": "Dig Through Time", "role": "Graveyard size visible to opponents" }
+    ],
+    "i1": [
+      { "card": "Void Rend", "role": "Uncounterable instant nonland permanent destruction" },
+      { "card": "Swords to Plowshares", "role": "1-mana instant creature exile" },
+      { "card": "Snuff Out", "role": "Free instant creature destruction" },
+      { "card": "Sublime Epiphany", "role": "Modular counterspell, bounce, draw, token" },
+      { "card": "Cleansing Nova", "role": "Modular board wipe for creatures or artifacts/enchantments" },
+      { "card": "Crux of Fate", "role": "Modal creature sweeper" },
+      { "card": "Final Judgment", "role": "Exiles all creatures" },
+      { "card": "Vindicate", "role": "Destroys any permanent" },
+      { "card": "Lethal Scheme", "role": "Instant removal with convoke and connive" },
+      { "card": "Murderous Rider // Swift End", "role": "Instant creature/planeswalker destruction" },
+      { "card": "Baleful Strix", "role": "Deathtouch defensive blocker" },
+      { "card": "Demolition Field", "role": "Targeted land destruction" },
+      { "card": "Scavenger Grounds", "role": "Exile all graveyards" }
+    ],
+    "i2": [
+      { "card": "Propaganda", "role": "Taxes opponent attacks by 2 mana per creature" },
+      { "card": "Authority of the Consuls", "role": "Opponent creatures enter tapped and gain life" },
+      { "card": "Observed Stasis", "role": "Flash tapping and stun counters" },
+      { "card": "Final Judgment", "role": "Exile sweeper preventing graveyard triggers" }
+    ],
+    "s1": [
+      { "card": "Thancred Waters", "role": "Flash grants indestructible to legendary permanents" },
+      { "card": "Sublime Epiphany", "role": "Countermagic protection for key spells" },
+      { "card": "Propaganda", "role": "Defensive combat tax" },
+      { "card": "Authority of the Consuls", "role": "Deters hasty attackers" }
+    ],
+    "s2": [
+      { "card": "Emet-Selch of the Third Seat", "role": "Recurs instant and sorcery spells from graveyard on damage" },
+      { "card": "Torrential Gearhulk", "role": "Casts instant from graveyard on ETB" },
+      { "card": "Lingering Souls", "role": "Flashback from graveyard" }
+    ],
+    "s3": [
+      { "card": "Archmage Emeritus", "role": "Autonomous card draw engine" },
+      { "card": "G'raha Tia, Scion Reborn", "role": "Independent token engine" },
+      { "card": "Hermes, Overseer of Elpis", "role": "Independent token generation" },
+      { "card": "Emet-Selch of the Third Seat", "role": "Autonomous value and recursion" },
+      { "card": "Fandaniel, Telophoroi Ascian", "role": "Independent drain finisher" }
+    ]
+  }
+}
