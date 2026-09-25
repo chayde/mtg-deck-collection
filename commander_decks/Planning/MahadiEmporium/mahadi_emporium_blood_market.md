@@ -16,6 +16,7 @@ deck_status: main
 **Mahadi, Emporium Master**
 *   **Archetype:** Rakdos ({B}{R}) Treasure Aristocrats / Sacrifice Control / Spellslinger Burn
 *   **Bracket:** 3 (Upgraded — 1 Game Changer: *Bolas's Citadel*)
+*   **DTI Threat Index:** **23 / 96** (Bracket 3 | Velocity: **13/48** | Suppression: **11/40** | Gates: All Passed | [DTI Report](dti_report.html))
 *   **Core Goal:** Deploy symmetrical edicts, board wipes, and recursive sacrifice fodder. At your end step, Mahadi triggers to award you **1 Treasure token for EVERY creature that died on the battlefield that turn** (yours and opponents'). You then sacrifice those Treasures to trigger artifact-drain pingers and fire off massive late-game X-spells.
 
 ### Three Interlocking Engines

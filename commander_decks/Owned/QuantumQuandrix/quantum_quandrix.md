@@ -16,6 +16,7 @@ deck_status: main
 *   **Archetype:** Simic Counters / Fractal Tokens / Token Doubling
 *   **Origin:** Quantum Quandrix precon (C21 / Strixhaven), significantly upgraded
 *   **Bracket:** 3 (Upgraded — Reclassified from Bracket 2 based on token doubling velocity)
+*   **DTI Threat Index:** **18 / 96** (Bracket 2 | Velocity: **10/48** | Suppression: **6/40** | Gates: All Passed | [DTI Report](dti_report.html))
 *   **Core Goal:** Adrix and Nev sit in the command zone and double every token created — Fractals, Insects, Plants, Beasts, Koma Coils, Blob copies, Scute Swarms — all of it gets doubled automatically. The deck then layers a counters engine and a landfall package on top, each of which feeds the others, producing an exponentially growing board that quickly overwhelms opponents.
 
 ### Three Interlocking Engines

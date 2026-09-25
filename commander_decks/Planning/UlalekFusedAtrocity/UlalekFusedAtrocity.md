@@ -10,6 +10,7 @@ deck_status: main
 **Ulalek, Fused Atrocity** ({C/W}{C/U}{C/B}{C/R}{C/G})
 *   **Archetype:** 5-Color Devoid / Eldrazi Tribal & Stack Duplication Engine
 *   **Bracket:** 3 (0 Game Changers — 100% Pure Synergy & Velocity)
+*   **DTI Threat Index:** **31 / 96** (Bracket 2 | Velocity: **19/48** | Suppression: **10/40** | Gates: All Passed | [DTI Report](dti_report.html))
 *   **Core Goal:** Ramp into huge colorless and devoid Eldrazi spells, then use Ulalek's {C}{C} trigger to copy all spells and abilities on the stack, creating exponential board states, double on-cast triggers, and overwhelming annihilator combat steps.
 
 ### The Stack Multiplier Engine

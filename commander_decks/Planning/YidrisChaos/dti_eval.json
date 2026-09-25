@@ -1,0 +1,99 @@
+{
+  "grades": {
+    "r1": "B",
+    "r2": "A",
+    "a1": "B",
+    "a2": "A",
+    "p1": "B",
+    "p2": "A",
+    "p3": "B",
+    "i1": "A",
+    "i2": "C",
+    "s1": "B",
+    "s2": "B",
+    "s3": "C"
+  },
+  "justifications": {
+    "r1": "4-color mana fixing with green ramp, rituals, and rocks.",
+    "r2": "Cascading spells grant immense free card advantage and storm velocity.",
+    "a1": "Cascade velocity naturally digs deep through library.",
+    "a2": "Connects with Yidris and chains cascade storms on Turns 5–6.",
+    "p1": "Presents massive multi-spell cascade turn on Turns 5–6.",
+    "p2": "1 opponent untap step or immediate same-turn storm kill.",
+    "p3": "Yidris must connect combat damage to trigger cascade.",
+    "i1": "Cyclonic Rift, Jeska's Will, and countermagic.",
+    "i2": "Overwhelming board advantage; no stax.",
+    "s1": "Trample and evasion enablers protect combat connection.",
+    "s2": "Cascading spells rebuild board quickly.",
+    "s3": "Spells can be hardcast without Yidris, but cascade is the centerpiece."
+  },
+  "card_ledger": {
+    "r1": [
+      {
+        "card": "Arcane Signet",
+        "role": "Mana ramp / fixing"
+      },
+      {
+        "card": "Island",
+        "role": "Mana ramp / fixing"
+      },
+      {
+        "card": "Sol Ring",
+        "role": "Mana ramp / fixing"
+      }
+    ],
+    "a2": [],
+    "p1": [],
+    "p2": [],
+    "r2": [
+      {
+        "card": "Sylvan Library",
+        "role": "Card draw / engine replenishment"
+      }
+    ],
+    "a1": [
+      {
+        "card": "Profane Tutor",
+        "role": "Specific tutor / selection"
+      }
+    ],
+    "p3": [],
+    "i1": [
+      {
+        "card": "Beast Within",
+        "role": "Instant-speed reactive removal"
+      },
+      {
+        "card": "Chaos Warp",
+        "role": "Instant-speed reactive removal"
+      },
+      {
+        "card": "Path of Ancestry",
+        "role": "Instant-speed reactive removal"
+      }
+    ],
+    "i2": [],
+    "s1": [
+      {
+        "card": "Felix Five-Boots",
+        "role": "Board / commander protection"
+      },
+      {
+        "card": "Heroic Intervention",
+        "role": "Board / commander protection"
+      },
+      {
+        "card": "Lightning Greaves",
+        "role": "Board / commander protection"
+      },
+      {
+        "card": "Swiftfoot Boots",
+        "role": "Board / commander protection"
+      }
+    ],
+    "s2": [],
+    "s3": []
+  },
+  "deck_name": "YidrisChaos",
+  "thematic_restriction": false
+}

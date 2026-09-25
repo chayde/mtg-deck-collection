@@ -1,0 +1,98 @@
+{
+  "grades": {
+    "r1": "B",
+    "r2": "A",
+    "a1": "B",
+    "a2": "B",
+    "p1": "B",
+    "p2": "B",
+    "p3": "B",
+    "i1": "B",
+    "i2": "B",
+    "s1": "A",
+    "s2": "A",
+    "s3": "C"
+  },
+  "justifications": {
+    "r1": "Standard Grixis mana rocks and treasure generation.",
+    "r2": "Dethrone + aristocrat death draw (Grim Haruspex, Midnight Reaper, River Kelpie) draws cards on every turn.",
+    "a1": "High redundancy of sacrifice outlets, counter placers, and ETB burn creatures.",
+    "a2": "Assembles Marchesa recursive engine on Turns 5–6.",
+    "p1": "Presents persistent board control and drain clock on Turns 6–7.",
+    "p2": "2 opponent untap steps of end-step recursion and combat drain.",
+    "p3": "Aristocrat engine relies on graveyard returns at end of turn.",
+    "i1": "Instant removal and sacrifice edicts (Fleshbag Marauder, Plaguecrafter on loop).",
+    "i2": "Continuous recurring edicts strip opponents of creatures during every turn cycle.",
+    "s1": "Marchesa automatically returns any creature with a +1/+1 counter to the battlefield at end step.",
+    "s2": "Wipe-proof engine: creatures dying to wrath return immediately on end step.",
+    "s3": "Heavily reliant on Marchesa being on the battlefield to enable the recursion loop."
+  },
+  "card_ledger": {
+    "r1": [
+      {
+        "card": "Arcane Signet",
+        "role": "Mana ramp / fixing"
+      },
+      {
+        "card": "Sol Ring",
+        "role": "Mana ramp / fixing"
+      },
+      {
+        "card": "Dimir Signet",
+        "role": "Mana ramp / fixing"
+      },
+      {
+        "card": "Izzet Signet",
+        "role": "Mana ramp / fixing"
+      },
+      {
+        "card": "Rakdos Signet",
+        "role": "Mana ramp / fixing"
+      },
+      {
+        "card": "Talisman of Indulgence",
+        "role": "Mana ramp / fixing"
+      },
+      {
+        "card": "Talisman of Creativity",
+        "role": "Mana ramp / fixing"
+      },
+      {
+        "card": "Talisman of Dominance",
+        "role": "Mana ramp / fixing"
+      },
+      {
+        "card": "Island",
+        "role": "Mana ramp / fixing"
+      }
+    ],
+    "a2": [],
+    "p1": [],
+    "p2": [],
+    "r2": [
+      {
+        "card": "Skullclamp",
+        "role": "Card draw / engine replenishment"
+      }
+    ],
+    "a1": [],
+    "p3": [],
+    "i1": [
+      {
+        "card": "Path of Ancestry",
+        "role": "Instant-speed reactive removal"
+      }
+    ],
+    "i2": [],
+    "s1": [
+      {
+        "card": "Swiftfoot Boots",
+        "role": "Board / commander protection"
+      }
+    ],
+    "s2": [],
+    "s3": []
+  },
+  "deck_name": "MarchesaBlackRose",
+  "thematic_restriction": false
+}

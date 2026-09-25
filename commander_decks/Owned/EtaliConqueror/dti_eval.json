@@ -1,0 +1,93 @@
+{
+  "grades": {
+    "r1": "A",
+    "r2": "A",
+    "a1": "B",
+    "a2": "A",
+    "p1": "B",
+    "p2": "B",
+    "p3": "B",
+    "i1": "C",
+    "i2": "C",
+    "s1": "B",
+    "s2": "B",
+    "s3": "C"
+  },
+  "justifications": {
+    "r1": "Explosive Gruul ramp suite (12+ dorks and 2-CMC ramp) deploying 7-mana Etali by Turn 4–5.",
+    "r2": "Etali cast triggers cast 4 free spells from pods; recurring copy/blink loops generate immense card advantage.",
+    "a1": "Redundancy of clone/blink and haste enablers (Twinflame, Heat Shimmer, Molten Duplication).",
+    "a2": "Casts Etali and triggers initial wave by Turn 4.5–5.",
+    "p1": "Presents massive multi-spell board parity break on Turns 5–6.",
+    "p2": "Requires 2 opponent untaps to close the game via combat or poison flip.",
+    "p3": "Etali is telegraphed in the command zone, but ETB triggers resolve regardless of spot removal.",
+    "i1": "Light reactive interaction; primarily relies on stolen opponent spells.",
+    "i2": "Incidental board disruption via Etali hits; no intentional stax.",
+    "s1": "Moderate protection (Deflecting Swat, Heroic Intervention, Lightning Greaves).",
+    "s2": "Etali ETB restocks board immediately even after mass board wipes.",
+    "s3": "Deck is built entirely around Etali's ETB trigger."
+  },
+  "card_ledger": {
+    "r1": [
+      {
+        "card": "Arcane Signet",
+        "role": "Mana ramp / fixing"
+      },
+      {
+        "card": "Cultivate",
+        "role": "Mana ramp / fixing"
+      },
+      {
+        "card": "Rugged Highlands",
+        "role": "Mana ramp / fixing"
+      },
+      {
+        "card": "Kodama's Reach",
+        "role": "Mana ramp / fixing"
+      },
+      {
+        "card": "Myriad Landscape",
+        "role": "Mana ramp / fixing"
+      },
+      {
+        "card": "Rampant Growth",
+        "role": "Mana ramp / fixing"
+      },
+      {
+        "card": "Sol Ring",
+        "role": "Mana ramp / fixing"
+      },
+      {
+        "card": "Talisman of Impulse",
+        "role": "Mana ramp / fixing"
+      }
+    ],
+    "a2": [],
+    "p1": [],
+    "p2": [],
+    "r2": [],
+    "a1": [],
+    "p3": [],
+    "i1": [
+      {
+        "card": "Beast Within",
+        "role": "Instant-speed reactive removal"
+      },
+      {
+        "card": "Chaos Warp",
+        "role": "Instant-speed reactive removal"
+      }
+    ],
+    "i2": [],
+    "s1": [
+      {
+        "card": "Swiftfoot Boots",
+        "role": "Board / commander protection"
+      }
+    ],
+    "s2": [],
+    "s3": []
+  },
+  "deck_name": "EtaliConqueror",
+  "thematic_restriction": false
+}

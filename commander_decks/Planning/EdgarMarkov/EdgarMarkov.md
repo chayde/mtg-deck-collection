@@ -14,6 +14,7 @@ deck_status: main
 **Edgar Markov** (3RWB)
 *   **Archetype:** Mardu (W/B/R) Vampire Tribal / Go-Wide Aggro-Drain
 *   **Bracket:** 3
+*   **DTI Threat Index:** **24 / 96** (Bracket 3 | Velocity: **10/48** | Suppression: **11/40** | Gates: All Passed | [DTI Report](dti_report.html))
 *   **Core Goal:** Leverage Edgar's Eminence to flood the board with 1/1 Vampire tokens every time you cast a Vampire, then win through combat backed by lord effects, Shared Animosity, and an incidental drain engine (Vito + Exquisite Blood, Sanctum Seeker, Blood Artist). The deck rarely needs to hard-cast Edgar — the 11-mana rate is almost never relevant.
 
 ### Key Notes

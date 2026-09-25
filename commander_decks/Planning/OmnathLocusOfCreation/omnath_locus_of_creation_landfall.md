@@ -14,6 +14,7 @@ deck_status: main
 **Omnath, Locus of Creation**
 *   **Archetype:** 4-Color (WURG) Landfall / Value Engine
 *   **Bracket:** 3 (High-Power)
+*   **DTI Threat Index:** **28 / 96** (Bracket 4 | Velocity: **16/48** | Suppression: **10/40** | Gates: All Passed | [DTI Report](dti_report.html))
 *   **Core Goal:** This deck is a "value engine" that revolves around playing multiple lands per turn to generate overwhelming advantage from Omnath's abilities. The early game is dedicated to ramping and playing cards that let you play extra lands. Once Omnath is on the field, each land drop becomes a huge event: the first gains you 4 life, the second adds four mana, and the third deals 4 damage to each opponent. The goal is to create a snowball effect of value that your opponents will struggle to keep up with.
 
 ### 🌍 Omnath's Abilities Explained

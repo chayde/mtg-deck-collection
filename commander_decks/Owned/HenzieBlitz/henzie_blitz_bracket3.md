@@ -10,6 +10,7 @@ deck_status: main
 **Henzie "Toolbox" Torre**
 *   **Archetype:** Jund ({B}{R}{G}) Blitz / Sacrifice / Value Reanimation Midrange
 *   **Bracket:** 3 (Optimized Power / High Synergy — Winning Turns 6–8)
+*   **DTI Threat Index:** **29 / 96** (Bracket 2 | Velocity: **16/48** | Suppression: **10/40** | Gates: All Passed | [DTI Report](dti_report.html))
 *   **Game Changers (1/3):** [Survival of the Fittest](https://scryfall.com/search?q=!"Survival+of+the+Fittest") *(Note: Runs [Emeritus of Woe // Demonic Tutor](https://scryfall.com/card/sos/80/emeritus-of-woe-demonic-tutor?utm_source=api) as a blitzable creature with adventure tutor to maximize creature synergy while avoiding the Game Changer limit).*
 *   **Core Goal:** Exploit high 1-drop mana dork density to reliably cast Henzie on Turn 2. Beginning on Turn 3, chain discounted Blitz creature spells with haste, immediate attack triggers, and death draws. Feed high-impact threats into continuous sacrifice engines (*Birthing Ritual*, *Greater Good*, *Industrial Advancement*), refueling the hand and filling the graveyard to resolve backbreaking mass reanimation (*Living Death*, *Victimize*, *Phyrexian Delver*) for lethal non-combat damage and overwhelming combat swings.
 

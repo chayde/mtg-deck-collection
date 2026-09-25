@@ -18,6 +18,8 @@ This list was built and presented by Unplayable MTG as a ~$100 budget Grolnok br
 ---
 
 ## Commander Strategy
+*   **DTI Threat Index:** **17 / 96** (Bracket 2 | Velocity: **9/48** | Suppression: **5/40** | Gates: All Passed | [DTI Report](dti_report.html))
+
 **Grolnok, the Omnivore** ({2}{G}{U})
 
 - **Archetype:** Simic Tribal Mill/Value Engine

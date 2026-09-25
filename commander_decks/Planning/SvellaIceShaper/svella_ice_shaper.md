@@ -14,6 +14,7 @@ deck_status: main
 **Svella, Ice Shaper**
 *   **Archetype:** Gruul ({R}{G}) Big Mana / Activated Ability Engine / Snow / Topdeck Stompy
 *   **Bracket:** 3 (Upgraded — 1 Game Changer: *Seedborn Muse*)
+*   **DTI Threat Index:** **24 / 96** (Bracket 3 | Velocity: **13/48** | Suppression: **11/40** | Gates: All Passed | [DTI Report](dti_report.html))
 *   **Core Goal:** Deploy Svella on Turn 2–3, start forging permanent Icy Manaliths on Turn 3–4, and leverage artifact untappers (**Unwinding Clock**, **Sting, the Glinting Dagger**, **Saryth, the Viper's Fang**), ability copiers (**Illusionist's Bracers**, **Battlemage's Bracers**, **Rings of Brighthearth**), and topdeck manipulation (**Cream of the Crop**, **Sylvan Library**) to activate Svella's 8-mana free-cast ability multiple times per turn cycle at instant speed.
 
 ### Three Interlocking Engines

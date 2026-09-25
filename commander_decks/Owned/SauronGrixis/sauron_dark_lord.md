@@ -12,6 +12,7 @@ deck_status: main
 **Sauron, the Dark Lord**
 *   **Archetype:** Grixis Midrange / Amass / Ring Temptation
 *   **Bracket:** 3 (Upgraded)
+*   **DTI Threat Index:** **24 / 96** (Bracket 3 | Velocity: **12/48** | Suppression: **7/40** | Gates: All Passed | [DTI Report](dti_report.html))
 *   **Core Goal:** Utilize the "Ring Tempts You" mechanic to trigger Sauron's discard-draw-4 ability. Build a massive Orc Army and protect your commander with built-in Ward and targeted equipment. This version is optimized with high-power staples like *The One Ring*.
 
 ### 💍 The Ring Mechanic Explained

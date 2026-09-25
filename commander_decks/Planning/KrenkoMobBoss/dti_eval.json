@@ -1,0 +1,75 @@
+{
+  "grades": {
+    "r1": "A",
+    "r2": "B",
+    "a1": "B",
+    "a2": "A",
+    "p1": "A",
+    "p2": "A",
+    "p3": "B",
+    "i1": "C",
+    "i2": "F",
+    "s1": "A",
+    "s2": "C",
+    "s3": "C"
+  },
+  "justifications": {
+    "r1": "Fast mana rocks (Ancient Tomb, Mox Diamond) and explosive Goblin ramp.",
+    "r2": "The One Ring, Skullclamp, and impulse draw keep hands refueled.",
+    "a1": "Goblin Matron, Goblin Recruiter, and imperial tutors.",
+    "a2": "Assembles Krenko + untap loop on Turns 4–5.",
+    "p1": "Presents infinite goblin loops and lethal swarm on Turns 4–5.",
+    "p2": "0–1 opponent untap steps once combo executes with haste.",
+    "p3": "Telegraphed Krenko, but fast stack-based untap activations.",
+    "i1": "Deflecting Swat, Chaos Warp, and burn.",
+    "i2": "Zero stax or denial.",
+    "s1": "Deflecting Swat, Lightning Greaves, and fast haste.",
+    "s2": "Vulnerable to sweepers if Krenko is removed before untap.",
+    "s3": "Deck heavily built around Krenko's doubling tap ability."
+  },
+  "card_ledger": {
+    "r1": [
+      {
+        "card": "Arcane Signet",
+        "role": "Mana ramp / fixing"
+      },
+      {
+        "card": "Sol Ring",
+        "role": "Mana ramp / fixing"
+      }
+    ],
+    "a2": [],
+    "p1": [],
+    "p2": [],
+    "r2": [
+      {
+        "card": "Skullclamp",
+        "role": "Card draw / engine replenishment"
+      }
+    ],
+    "a1": [
+      {
+        "card": "Gamble",
+        "role": "Specific tutor / selection"
+      }
+    ],
+    "p3": [],
+    "i1": [
+      {
+        "card": "Chaos Warp",
+        "role": "Instant-speed reactive removal"
+      }
+    ],
+    "i2": [],
+    "s1": [
+      {
+        "card": "Swiftfoot Boots",
+        "role": "Board / commander protection"
+      }
+    ],
+    "s2": [],
+    "s3": []
+  },
+  "deck_name": "KrenkoMobBoss",
+  "thematic_restriction": false
+}

@@ -10,6 +10,7 @@ deck_status: main
 **Felothar the Steadfast** ({1}{W}{B}{G})
 *   **Archetype:** Abzan ({W}{B}{G}) Defender Beatdown / Toughness Overrun & Fling Reach
 *   **Bracket:** 3 (Upgraded — Casual / Synergy — 0 Game Changers)
+*   **DTI Threat Index:** **19 / 96** (Bracket 2 | Velocity: **10/48** | Suppression: **7/40** | Gates: All Passed | [DTI Report](dti_report.html))
 *   **Core Goal:** Deploy an ultra-resilient, low-cost army of high-toughness defenders and walls that hit like freight trains using their toughness under Felothar. Maintain an impenetrable defensive shield with team vigilance and double-blocking, wipe opponent boards with one-sided power-based sweepers, and close out games through explosive +0/+5 overruns, unblockable skulk attacks, or direct toughness flings straight to the face.
 
 ### The Iron Citadel Engine

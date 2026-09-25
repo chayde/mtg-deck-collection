@@ -1,0 +1,103 @@
+{
+  "grades": {
+    "r1": "B",
+    "r2": "A",
+    "a1": "B",
+    "a2": "B",
+    "p1": "B",
+    "p2": "A",
+    "p3": "B",
+    "i1": "B",
+    "i2": "C",
+    "s1": "A",
+    "s2": "B",
+    "s3": "B"
+  },
+  "justifications": {
+    "r1": "5-color mana base with mana dork slivers (Gemhide, Manaweft) and green ramp.",
+    "r2": "Cascade chains from The First Sliver vomit multiple slivers; Synapse/Dormant draw cards.",
+    "a1": "Homing Sliver (slivercycling) and cascade provide consistent access to key slivers.",
+    "a2": "Cascade engine unleashes on Turn 5.",
+    "p1": "Presents lethal haste/evasion sliver swarm on Turns 6–7.",
+    "p2": "1 opponent untap step or immediate lethal swing with Cloudshredder / Heart Sliver.",
+    "p3": "Cascading into unblockable/flying slivers creates explosive, rapid clock.",
+    "i1": "Harmonic Sliver (repeatable Naturalize) and Necrotic Sliver (Vindicate).",
+    "i2": "Harmonic Sliver systematically eliminates opposing mana rocks and engines.",
+    "s1": "Crystalline Sliver (shroud to all slivers), Hibernation Sliver, and Quick Sliver.",
+    "s2": "Living Death and Patriarch's Bidding mass-reanimate the entire hive.",
+    "s3": "Sliver lords buff each other effectively even without The First Sliver."
+  },
+  "card_ledger": {
+    "r1": [
+      {
+        "card": "Arcane Signet",
+        "role": "Mana ramp / fixing"
+      },
+      {
+        "card": "Cultivate",
+        "role": "Mana ramp / fixing"
+      },
+      {
+        "card": "Island",
+        "role": "Mana ramp / fixing"
+      },
+      {
+        "card": "Kodama's Reach",
+        "role": "Mana ramp / fixing"
+      },
+      {
+        "card": "Sol Ring",
+        "role": "Mana ramp / fixing"
+      }
+    ],
+    "a2": [],
+    "p1": [],
+    "p2": [],
+    "r2": [
+      {
+        "card": "Beast Whisperer",
+        "role": "Card draw / engine replenishment"
+      }
+    ],
+    "a1": [
+      {
+        "card": "Profane Tutor",
+        "role": "Specific tutor / selection"
+      }
+    ],
+    "p3": [],
+    "i1": [
+      {
+        "card": "Beast Within",
+        "role": "Instant-speed reactive removal"
+      },
+      {
+        "card": "Descendants' Path",
+        "role": "Instant-speed reactive removal"
+      },
+      {
+        "card": "Path of Ancestry",
+        "role": "Instant-speed reactive removal"
+      },
+      {
+        "card": "Path to Exile",
+        "role": "Instant-speed reactive removal"
+      },
+      {
+        "card": "Swords to Plowshares",
+        "role": "Instant-speed reactive removal"
+      }
+    ],
+    "i2": [],
+    "s1": [
+      {
+        "card": "Heroic Intervention",
+        "role": "Board / commander protection"
+      }
+    ],
+    "s2": [],
+    "s3": []
+  },
+  "deck_name": "TheHive",
+  "thematic_restriction": false
+}

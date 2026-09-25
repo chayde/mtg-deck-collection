@@ -1,0 +1,68 @@
+{
+  "grades": {
+    "r1": "A",
+    "r2": "A",
+    "a1": "B",
+    "a2": "B",
+    "p1": "B",
+    "p2": "B",
+    "p3": "B",
+    "i1": "B",
+    "i2": "C",
+    "s1": "B",
+    "s2": "B",
+    "s3": "A"
+  },
+  "justifications": {
+    "r1": "Eminence reduces all dragon costs by {1} all game; optimized fetch/shock ramp lands and rocks.",
+    "r2": "Elemental Bond, Garruk's Uprising, The Great Henge, and Dragon draw engines.",
+    "a1": "Dragon tutors (Sarkhan's Triumph, Scion of the Ur-Dragon) and dragon redundancy.",
+    "a2": "Deploys 5-6 CMC dragons ahead of curve on Turns 4–5.",
+    "p1": "Presents lethal flying dragon combat pressure on Turns 6–7.",
+    "p2": "Requires 2 opponent untap steps to eliminate pod through combat.",
+    "p3": "Big flying threats clearly visible on board.",
+    "i1": "Terror of the Peaks ETB burn, Dragon Tempest, and flexible spot removal.",
+    "i2": "Light incidental ETB burn clearing opposing boards.",
+    "s1": "Heroic Intervention, Lightning Greaves, and dragon ward effects.",
+    "s2": "High mana availability enables easy redeployment of dragons post-wipe.",
+    "s3": "Eminence functions continuously from the command zone; Ur-Dragon rarely even needs to be cast."
+  },
+  "card_ledger": {
+    "r1": [
+      {
+        "card": "Arcane Signet",
+        "role": "Mana ramp / fixing"
+      },
+      {
+        "card": "Sol Ring",
+        "role": "Mana ramp / fixing"
+      },
+      {
+        "card": "Island",
+        "role": "Mana ramp / fixing"
+      }
+    ],
+    "a2": [],
+    "p1": [],
+    "p2": [],
+    "r2": [],
+    "a1": [],
+    "p3": [],
+    "i1": [
+      {
+        "card": "Beast Within",
+        "role": "Instant-speed reactive removal"
+      },
+      {
+        "card": "Chaos Warp",
+        "role": "Instant-speed reactive removal"
+      }
+    ],
+    "i2": [],
+    "s1": [],
+    "s2": [],
+    "s3": []
+  },
+  "deck_name": "UrDragonKibler",
+  "thematic_restriction": false
+}

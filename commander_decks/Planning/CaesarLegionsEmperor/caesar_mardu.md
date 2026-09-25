@@ -12,6 +12,7 @@ deck_status: main
 **Caesar, Legion's Emperor** ({1}{R}{W}{B})
 *   **Archetype:** Mardu Tokens / Aristocrats / Aggro-Burn
 *   **Bracket:** 3 (Upgraded) — Verified **1 / 3 Game Changers** (*Teferi's Protection*)
+*   **DTI Threat Index:** **19 / 96** (Bracket 3 | Velocity: **10/48** | Suppression: **7/40** | Gates: All Passed | [DTI Report](dti_report.html))
 *   **Core Goal:** Flood the battlefield with expendable 1/1 tokens, leverage combat and death engines to draw cards and ramp, buff the swarm with anthems, and execute lethal bursts through direct burn (Caesar's 3rd mode, Purphoros, Warleader's Call) or aristocrat drain.
 
 ### Mechanics & Play Patterns

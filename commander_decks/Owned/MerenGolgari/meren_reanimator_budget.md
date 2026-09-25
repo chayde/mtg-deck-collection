@@ -9,6 +9,8 @@ deck_status: main
 ![Meren of Clan Nel Toth](https://cards.scryfall.io/normal/front/5/0/508b1442-bf2c-4ad6-9bcf-bd894e081ab6.jpg?1743207181)
 
 ## Commander Strategy
+*   **DTI Threat Index:** **24 / 96** (Bracket 2 | Velocity: **10/48** | Suppression: **8/40** | Gates: All Passed | [DTI Report](dti_report.html))
+
 **Meren of Clan Nel Toth**
 *   **Role:** The Engine.
 *   **Goal:** Generate "Experience Counters" whenever one of your creatures dies.

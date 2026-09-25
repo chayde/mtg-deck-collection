@@ -112,6 +112,7 @@ Before adding any card, cross-reference the "Game Changers" list in `COMMANDER_D
 
 - **Dynamic Verification (MANDATORY):** Scryfall dynamically tracks all official Game Changers natively on each card object and via `is:gamechanger`. To verify a card, run `python scripts/scryfall_lookup.py "Card Name"` (it automatically prints `[GAME CHANGER]` in the header if designated). To discover all Game Changers within a commander's color identity, run `python scripts/scryfall_lookup.py --search "is:gamechanger id<=<COLORS>"`.
 Exceeding the limit for a deck's bracket is a hard block — do not proceed without flagging it to the user.
+- **DTI Bracket Categorization (MANDATORY):** Whenever assigning, auditing, or categorizing ANY deck to a specific bracket (Brackets 1–5), you MUST run the `dti-auditor` skill via `python scripts/dti_evaluator.py "<deck_dir>"`. A deck cannot be assigned a bracket based purely on Game Changers or opinion; its DTI Threat Score, Velocity and Suppression vectors, and all 4 Gatekeepers must be verified and documented in the main deck file.
 
 ### 5.5 No Unsolicited Scope Creep
 

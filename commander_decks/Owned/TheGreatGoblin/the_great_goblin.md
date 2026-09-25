@@ -14,6 +14,7 @@ deck_status: main
 **The Great Goblin**
 *   **Archetype:** Rakdos ({B}{R}) Goblins / Counter Burn & Aristocrats Impulse Velocity
 *   **Bracket:** 3 (Upgraded — 0 Game Changers)
+*   **DTI Threat Index:** **17 / 96** (Bracket 2 | Velocity: **10/48** | Suppression: **5/40** | Gates: All Passed | [DTI Report](dti_report.html))
 *   **Core Goal:** Exploit The Great Goblin's dual engine: whenever you put one or more counters on a Goblin, Orc, or Army you control, deal 2 damage to target opponent; and whenever another Goblin, Orc, or Army you control dies, exile the top card of your library to play until the end of your next turn. Combine free sacrifice outlets, counter placement (+1/+1, -1/-1, quest counters), and recursive loops to burn out the table while maintaining relentless card velocity.
 
 ### Three Interlocking Engines & Win Conditions

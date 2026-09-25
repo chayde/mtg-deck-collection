@@ -9,6 +9,8 @@ deck_status: main
 ![Captain N'ghathrod](https://cards.scryfall.io/normal/front/5/5/55c02dc8-0743-400c-b334-ca029caf0463.jpg?1728436128)
 
 ## Deck Strategy
+*   **DTI Threat Index:** **16 / 96** (Bracket 2 | Velocity: **8/48** | Suppression: **5/40** | Gates: All Passed | [DTI Report](dti_report.html))
+
 **Archetype:** Dimir (Blue/Black) Horror Tribal / Mill / Theft
 **Focus:** Horror Tribal, Combat Mill, Reanimator
 

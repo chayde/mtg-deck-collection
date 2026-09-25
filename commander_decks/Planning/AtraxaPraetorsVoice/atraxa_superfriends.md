@@ -8,6 +8,7 @@ deck_status: main
 **Atraxa, Praetors' Voice** ({G}{W}{U}{B})
 *   **Archetype:** Non-Red (WUBG) Superfriends / Proliferate Value Engine / Asymmetric Control
 *   **Bracket:** Bracket 3 (Upgraded) — 3 / 3 Game Changers ([Teferi's Protection](https://scryfall.com/search?q=!"Teferi's+Protection"), [Narset, Parter of Veils](https://scryfall.com/search?q=!"Narset,+Parter+of+Veils"), [Farewell](https://scryfall.com/search?q=!"Farewell"))
+*   **DTI Threat Index:** **26 / 96** (Bracket 3 | Velocity: **12/48** | Suppression: **9/40** | Gates: All Passed | [DTI Report](dti_report.html))
 *   **Core Goal:** Deploy Atraxa as an impenetrable 4/4 vigilance/deathtouch/lifelink wall while stacking high-impact planeswalkers behind her. Utilize passive end-step proliferate, counter doublers ([Doubling Season](https://scryfall.com/search?q=!"Doubling+Season"), [Vorinclex, Monstrous Raider](https://scryfall.com/search?q=!"Vorinclex,+Monstrous+Raider")), and asymmetric board wipes to lock down the board and rapidly trigger un-interactable game-winning emblems.
 
 ### The Superfriends & Proliferate Engine

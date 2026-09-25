@@ -12,6 +12,7 @@ deck_status: main
 **The Emperor of Palamecia // The Lord Master of Hell**
 *   **Archetype:** Izzet (Blue/Red) Spellslinger / Graveyard Value / Voltron
 *   **Bracket:** 2-3 (Budget — pending Game Changer verification)
+*   **DTI Threat Index:** **19 / 96** (Bracket 2 | Velocity: **10/48** | Suppression: **7/40** | Gates: All Passed | [DTI Report](dti_report.html))
 *   **Source:** YouTube decklist — initial build, optimization in progress.
 *   **Core Goal:** Cast expensive noncreature spells to grow and transform The Emperor into The Lord Master of Hell. Once transformed, Lord Master attacks to deal damage equal to the number of noncreature, nonland cards in your graveyard to **each opponent simultaneously** — a built-in Fireball that scales with your spell count. Fill the graveyard aggressively through draw-discard, Ancestral Memories, and the self-mill package. **Chandra's Ignition** targeting a large Lord Master is a secondary one-shot win line.
 

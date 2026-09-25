@@ -1,11 +1,11 @@
 ---
 name: dti-auditor
 description: >-
-  Audits Commander decks using the DeckCheck Threat Index (DTI) framework.
-  Use this skill whenever creating, evaluating, or tuning Commander decks to
-  determine objective power level brackets (1-5), calculate Velocity and
-  Suppression threat vectors, verify gatekeepers, assemble card ledgers,
-  and generate visual DTI HTML reports.
+  Audits and categorizes Commander decks into brackets (1-5) using the DeckCheck
+  Threat Index (DTI) framework. MANDATORY whenever creating, categorizing,
+  assigning, or tuning a deck to a specific bracket, calculating Velocity and
+  Suppression threat vectors, verifying gatekeepers, assembling card ledgers,
+  and generating visual DTI HTML reports.
 ---
 
 # DeckCheck Threat Index (DTI) Deck Auditor

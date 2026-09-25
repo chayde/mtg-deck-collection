@@ -1,0 +1,102 @@
+{
+  "grades": {
+    "r1": "B",
+    "r2": "B",
+    "a1": "B",
+    "a2": "B",
+    "p1": "B",
+    "p2": "B",
+    "p3": "B",
+    "i1": "B",
+    "i2": "A",
+    "s1": "B",
+    "s2": "B",
+    "s3": "C"
+  },
+  "justifications": {
+    "r1": "Abzan land ramp and extra land drops per turn.",
+    "r2": "Sacrificing creatures/lands on attack draws cards.",
+    "a1": "Landfall and death trigger redundancy.",
+    "a2": "Deploys commander on Turn 4.",
+    "p1": "Presents combat lock on Turns 6–7.",
+    "p2": "Requires 2 opponent untap steps.",
+    "p3": "Visible board stax.",
+    "i1": "Abzan removal suite (Swords, Path, Assassin's Trophy).",
+    "i2": "Thalia & Gitrog forces all opposing nonbasic lands and creatures to enter the battlefield tapped, heavily delaying opponents.",
+    "s1": "First strike and deathtouch make commander difficult to attack into.",
+    "s2": "Lands can be replayed from graveyard.",
+    "s3": "Stax effect resides on commander."
+  },
+  "card_ledger": {
+    "r1": [
+      {
+        "card": "Arcane Signet",
+        "role": "Mana ramp / fixing"
+      },
+      {
+        "card": "Brushland",
+        "role": "Mana ramp / fixing"
+      },
+      {
+        "card": "Rampaging Baloths",
+        "role": "Mana ramp / fixing"
+      },
+      {
+        "card": "Sol Ring",
+        "role": "Mana ramp / fixing"
+      },
+      {
+        "card": "Talisman of Hierarchy",
+        "role": "Mana ramp / fixing"
+      },
+      {
+        "card": "Talisman of Resilience",
+        "role": "Mana ramp / fixing"
+      },
+      {
+        "card": "Talisman of Unity",
+        "role": "Mana ramp / fixing"
+      },
+      {
+        "card": "Woodland Cemetery",
+        "role": "Mana ramp / fixing"
+      }
+    ],
+    "a2": [],
+    "p1": [],
+    "p2": [],
+    "r2": [],
+    "a1": [
+      {
+        "card": "Demonic Tutor",
+        "role": "Specific tutor / selection"
+      }
+    ],
+    "p3": [],
+    "i1": [
+      {
+        "card": "Path to Exile",
+        "role": "Instant-speed reactive removal"
+      },
+      {
+        "card": "Swords to Plowshares",
+        "role": "Instant-speed reactive removal"
+      }
+    ],
+    "i2": [],
+    "s1": [
+      {
+        "card": "Heroic Intervention",
+        "role": "Board / commander protection"
+      },
+      {
+        "card": "Teferi's Protection",
+        "role": "Board / commander protection"
+      }
+    ],
+    "s2": [],
+    "s3": []
+  },
+  "deck_name": "ThaliaGitrog",
+  "thematic_restriction": false
+}

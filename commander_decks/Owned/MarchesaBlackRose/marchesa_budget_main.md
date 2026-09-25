@@ -12,6 +12,7 @@ deck_status: main
 **Marchesa, the Black Rose**
 *   **Archetype:** Grixis Aristocrats / "Entry-Insured" Loops
 *   **Bracket:** 3 (Upgraded)
+*   **DTI Threat Index:** **26 / 96** (Bracket 2 | Velocity: **12/48** | Suppression: **8/40** | Gates: All Passed | [DTI Report](dti_report.html))
 *   **Core Goal:** Create an immortal board state by ensuring every creature enters the battlefield with a +1/+1 counter. By prioritizing passive enablers (Graft, Undying, Persist), we remove the "window of vulnerability" and make the deck independent of the Combat phase and Dethrone triggers.
 
 ---

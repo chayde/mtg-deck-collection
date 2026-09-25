@@ -12,6 +12,7 @@ deck_status: main
 **The Ur-Dragon**
 *   **Archetype:** 5-Color Dragon Tribal / Midrange
 *   **Bracket:** 3 (Upgraded — Reclassified from Bracket 2 based on fetch/shock mana base and Eminence engine velocity)
+*   **DTI Threat Index:** **27 / 96** (Bracket 2 | Velocity: **13/48** | Suppression: **12/40** | Gates: All Passed | [DTI Report](dti_report.html))
 *   **Core Goal:** Utilize the Ur-Dragon's *Eminence* ability to reduce the cost of massive, high-impact Dragon creatures. This version is optimized with an **Intermediate Mana Base**, using Shock and Fetch lands to ensure green ramp spells provide perfect 5-color fixing.
 
 ---

@@ -12,6 +12,7 @@ deck_status: main
 **Bruce Banner // The Incredible Hulk** ({U} // {2}{R}{R}{G}{G})
 *   **Archetype:** Temur (U/R/G) +1/+1 Counters Midrange / Gamma Tribal
 *   **Bracket:** 3
+*   **DTI Threat Index:** **18 / 96** (Bracket 3 | Velocity: **10/48** | Suppression: **6/40** | Gates: All Passed | [DTI Report](dti_report.html))
 *   **Core Goal:** Deploy Banner turn 1 as a card-advantage engine, build a wide board of counter-hungry Gamma Heroes, and multiply +1/+1 counters until the team swings for lethal trample damage. The flipped Hulk is a resilient 8/8 finisher whose Enrage snowballs counters and — with a self-pinger — chains extra combats.
 
 ### The Two Faces

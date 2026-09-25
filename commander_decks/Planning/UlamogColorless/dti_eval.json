@@ -1,0 +1,60 @@
+{
+  "grades": {
+    "r1": "A",
+    "r2": "B",
+    "a1": "B",
+    "a2": "B",
+    "p1": "B",
+    "p2": "B",
+    "p3": "B",
+    "i1": "B",
+    "i2": "B",
+    "s1": "B",
+    "s2": "B",
+    "s3": "C"
+  },
+  "justifications": {
+    "r1": "Colorless big mana rocks (Thran Dynamo, Gilded Lotus, Urza lands, Forsaken Monument).",
+    "r2": "Colorless draw artifacts (Mind Stone, Hedron Archive, Kozilek).",
+    "a1": "Colorless tutors (Expedition Map, Conduit of Ruin).",
+    "a2": "Reaches 10 mana for Ulamog on Turns 5–6.",
+    "p1": "Presents indestructible 10/10 with mill 20 on attack on Turns 6–7.",
+    "p2": "Requires 2 opponent untap steps to eliminate players.",
+    "p3": "Indestructible titan visible in command zone.",
+    "i1": "Ulamog cast trigger exiles two permanents on cast.",
+    "i2": "Attack trigger exiles top 20 cards of defending player's library.",
+    "s1": "Inherent indestructible on Ulamog.",
+    "s2": "High mana base allows recasting even through commander tax.",
+    "s3": "Other colorless titans act as independent threats."
+  },
+  "card_ledger": {
+    "r1": [
+      {
+        "card": "Arcane Signet",
+        "role": "Mana ramp / fixing"
+      }
+    ],
+    "a2": [],
+    "p1": [],
+    "p2": [],
+    "r2": [],
+    "a1": [],
+    "p3": [],
+    "i1": [],
+    "i2": [],
+    "s1": [
+      {
+        "card": "Swiftfoot Boots",
+        "role": "Board / commander protection"
+      },
+      {
+        "card": "Lightning Greaves",
+        "role": "Board / commander protection"
+      }
+    ],
+    "s2": [],
+    "s3": []
+  },
+  "deck_name": "UlamogColorless",
+  "thematic_restriction": false
+}

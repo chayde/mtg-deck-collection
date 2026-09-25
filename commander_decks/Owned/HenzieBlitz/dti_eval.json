@@ -1,0 +1,65 @@
+{
+  "grades": {
+    "r1": "A",
+    "r2": "A",
+    "a1": "B",
+    "a2": "A",
+    "p1": "B",
+    "p2": "B",
+    "p3": "B",
+    "i1": "B",
+    "i2": "C",
+    "s1": "B",
+    "s2": "A",
+    "s3": "C"
+  },
+  "justifications": {
+    "r1": "8x 1-drop mana dorks guaranteeing Turn 2 Henzie deployment and discounted blitz curves.",
+    "r2": "Blitz provides automatic death card draw on every creature, augmented by Greater Good and Birthing Ritual.",
+    "a1": "Survival of the Fittest and Birthing Ritual provide powerful creature tutoring.",
+    "a2": "Blitz engine runs at full throttle starting Turn 3–4.",
+    "p1": "Presents game-ending creature swarm and non-combat life drain on Turns 6–7.",
+    "p2": "2 opponent untap steps to close through combat, or 1 turn cycle with Living Death burst.",
+    "p3": "Creature attack triggers are telegraphed but carry immediate haste and death draw value.",
+    "i1": "Creature-based spot removal (Druid of Purification, Archon of Cruelty, Assassin's Trophy).",
+    "i2": "Incidental sacrifice edicts (Archon of Cruelty, Massacre Wurm); no hard stax.",
+    "s1": "Blitz creatures sacrifice themselves regardless of opponent interaction.",
+    "s2": "Living Death and graveyard recursion turn board wipes into win conditions.",
+    "s3": "Deck requires Henzie for blitz discounts, but can hardcast 5-drops in late game."
+  },
+  "card_ledger": {
+    "r1": [
+      {
+        "card": "Rampant Rejuvenator",
+        "role": "Mana ramp / fixing"
+      },
+      {
+        "card": "Badlands",
+        "role": "Mana ramp / fixing"
+      }
+    ],
+    "a2": [],
+    "p1": [],
+    "p2": [],
+    "r2": [
+      {
+        "card": "Skullclamp",
+        "role": "Card draw / engine replenishment"
+      }
+    ],
+    "a1": [],
+    "p3": [],
+    "i1": [],
+    "i2": [],
+    "s1": [
+      {
+        "card": "Heroic Intervention",
+        "role": "Board / commander protection"
+      }
+    ],
+    "s2": [],
+    "s3": []
+  },
+  "deck_name": "HenzieBlitz",
+  "thematic_restriction": false
+}

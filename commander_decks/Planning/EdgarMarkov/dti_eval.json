@@ -1,0 +1,74 @@
+{
+  "grades": {
+    "r1": "B",
+    "r2": "B",
+    "a1": "B",
+    "a2": "B",
+    "p1": "B",
+    "p2": "B",
+    "p3": "B",
+    "i1": "B",
+    "i2": "C",
+    "s1": "B",
+    "s2": "B",
+    "s3": "S"
+  },
+  "justifications": {
+    "r1": "Mardu mana rocks and 1-2 drop vampires.",
+    "r2": "Vampire typal draw (Welcoming Vampire, Tocasia's Welcome, Skullclamp).",
+    "a1": "High redundancy of 1-3 CMC aggressive vampires.",
+    "a2": "Eminence generates tokens starting on Turn 1.",
+    "p1": "Presents overwhelming vampire swarm on Turns 6–7.",
+    "p2": "Requires 2 opponent untap steps to swing for lethal.",
+    "p3": "Wide creature swarm visible on table.",
+    "i1": "Mardu spot removal suite.",
+    "i2": "Light incidental life drain; no hard denial.",
+    "s1": "Boros Charm and Flawless Maneuver.",
+    "s2": "Eminence ensures every cast creature creates a free token even after wipes.",
+    "s3": "Eminence operates completely from the command zone; Edgar rarely needs to be cast."
+  },
+  "card_ledger": {
+    "r1": [
+      {
+        "card": "Sol Ring",
+        "role": "Mana ramp / fixing"
+      },
+      {
+        "card": "Taunt from the Rampart",
+        "role": "Mana ramp / fixing"
+      }
+    ],
+    "a2": [],
+    "p1": [],
+    "p2": [],
+    "r2": [
+      {
+        "card": "Skullclamp",
+        "role": "Card draw / engine replenishment"
+      }
+    ],
+    "a1": [
+      {
+        "card": "Vampiric Tutor",
+        "role": "Specific tutor / selection"
+      }
+    ],
+    "p3": [],
+    "i1": [
+      {
+        "card": "Path to Exile",
+        "role": "Instant-speed reactive removal"
+      },
+      {
+        "card": "Swords to Plowshares",
+        "role": "Instant-speed reactive removal"
+      }
+    ],
+    "i2": [],
+    "s1": [],
+    "s2": [],
+    "s3": []
+  },
+  "deck_name": "EdgarMarkov",
+  "thematic_restriction": false
+}

@@ -14,6 +14,7 @@ deck_status: main
 **Rocco, Street Chef**
 *   **Archetype:** Naya ({R}{G}{W}) Impulse Gastronomy / Food Tokens / +1/+1 Counter Burn & Overrun
 *   **Bracket:** 3 (Upgraded — 0 Game Changers)
+*   **DTI Threat Index:** **21 / 96** (Bracket 2 | Velocity: **10/48** | Suppression: **7/40** | Gates: All Passed | [DTI Report](dti_report.html))
 *   **Core Goal:** Utilize Rocco's end-step ability to exile cards for every player. Whenever YOU or your OPPONENTS play a land or cast a spell from exile, Rocco puts a +1/+1 counter on target creature and creates a Food token. You then convert those Foods and counters into massive mana, unblockable attackers, and direct opponent burn!
 
 ### Three Interlocking Engines

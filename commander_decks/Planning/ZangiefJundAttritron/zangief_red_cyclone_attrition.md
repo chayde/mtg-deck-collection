@@ -12,6 +12,7 @@ deck_status: main
 **Zangief, the Red Cyclone**
 *   **Archetype:** Jund Forced-Combat / Attrition
 *   **Bracket:** 2 (Core)
+*   **DTI Threat Index:** **21 / 96** (Bracket 2 | Velocity: **12/48** | Suppression: **7/40** | Gates: All Passed | [DTI Report](dti_report.html))
 *   **Core Goal:** Utilize Zangief's "Indestructible on your turn" and "Excess Damage" triggers to force opponents into losing their nonland permanents. By combining Deathtouch and Trample, we ensure every block results in a sacrifice trigger.
 
 ---

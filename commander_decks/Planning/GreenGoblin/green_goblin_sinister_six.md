@@ -12,6 +12,7 @@ deck_status: main
 **Norman Osborn / Green Goblin**
 *   **Archetype:** Grixis (Blue/Black/Red) Wheels / Discard Madness / Graveyard Value
 *   **Bracket:** 3 (2 Game Changers: Cyclonic Rift, Fierce Guardianship)
+*   **DTI Threat Index:** **23 / 96** (Bracket 3 | Velocity: **10/48** | Suppression: **9/40** | Gates: All Passed | [DTI Report](dti_report.html))
 *   **Core Goal:** Norman Osborn (1/1 {1}{U}) attacks unblocked to connive and fill the graveyard, then transforms into Green Goblin (3/3 flying/menace). Green Goblin's **Goblin Formula** gives every nonland card in your graveyard **Mayhem** — you may cast any card discarded *this turn* from your graveyard for its mana cost, reduced by {2} from Green Goblin's passive. Wheel an entire hand of 6–7 cards with Green Goblin in play, then recast every one of them from the graveyard at a steep discount in the same turn. Every graveyard cast triggers Secrets of the Dead, River Kelpie, Burning Vengeance, and Chainer Nightmare Adept for cascading damage and draws. A premium interaction suite (Mana Drain, Fierce Guardianship, Deflecting Swat, Cyclonic Rift) protects the engine until it goes off.
 
 ### 🧨 The Goblin Formula — Core Engine

@@ -8,6 +8,7 @@ deck_status: main
 **Krenko, Mob Boss**
 *   **Archetype:** Mono-Red Goblin Tribal / Swarm Aggro & Untap Combos
 *   **Bracket:** 3 (Upgraded Casual — 3/3 Game Changers: *Ancient Tomb*, *Mox Diamond*, *The One Ring*)
+*   **DTI Threat Index:** **31 / 96** (Bracket 4 | Velocity: **24/48** | Suppression: **11/40** | Gates: Triggered: Early Finish Gate | [DTI Report](dti_report.html))
 *   **Core Goal:** Rapidly deploy Krenko, grant him haste or untap triggers, and double your Goblin count each turn cycle. Pivot seamlessly between combat overrun with tribal anthems and instant-speed burn kills via infinite untap loops (*Umbral Mantle*, *Staff of Domination*, *Thornbite Staff*).
 
 ### Keystone Geometry & The Commander Subtraction Principle

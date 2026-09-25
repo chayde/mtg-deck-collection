@@ -1,0 +1,106 @@
+{
+  "grades": {
+    "r1": "B",
+    "r2": "B",
+    "a1": "B",
+    "a2": "B",
+    "p1": "B",
+    "p2": "B",
+    "p3": "B",
+    "i1": "B",
+    "i2": "C",
+    "s1": "B",
+    "s2": "C",
+    "s3": "C"
+  },
+  "justifications": {
+    "r1": "Bant ramp with green dorks and landramp.",
+    "r2": "ETB card draw triggers and token generation.",
+    "a1": "Blink targets and token redundancy.",
+    "a2": "Establishes token engine on Turns 5–6.",
+    "p1": "Presents lethal token overrun on Turns 6–7.",
+    "p2": "2 opponent untap steps for combat.",
+    "p3": "Creature-based token board.",
+    "i1": "Bant counterspells and exile removal (Swords, Path, Beast Within).",
+    "i2": "Zero proactive locks.",
+    "s1": "Teferi's Protection and Heroic Intervention.",
+    "s2": "Wraths wipe tokens cleanly.",
+    "s3": "Tokens can function without commander."
+  },
+  "card_ledger": {
+    "r1": [
+      {
+        "card": "Sol Ring",
+        "role": "Mana ramp / fixing"
+      },
+      {
+        "card": "Arcane Signet",
+        "role": "Mana ramp / fixing"
+      },
+      {
+        "card": "Golgari Signet",
+        "role": "Mana ramp / fixing"
+      },
+      {
+        "card": "Orzhov Signet",
+        "role": "Mana ramp / fixing"
+      },
+      {
+        "card": "Selesnya Signet",
+        "role": "Mana ramp / fixing"
+      },
+      {
+        "card": "Brushland",
+        "role": "Mana ramp / fixing"
+      }
+    ],
+    "a2": [],
+    "p1": [],
+    "p2": [],
+    "r2": [
+      {
+        "card": "Crashing Drawbridge",
+        "role": "Card draw / engine replenishment"
+      },
+      {
+        "card": "Mentor of the Meek",
+        "role": "Card draw / engine replenishment"
+      },
+      {
+        "card": "Beast Whisperer",
+        "role": "Card draw / engine replenishment"
+      }
+    ],
+    "a1": [],
+    "p3": [],
+    "i1": [
+      {
+        "card": "Swords to Plowshares",
+        "role": "Instant-speed reactive removal"
+      },
+      {
+        "card": "Path to Exile",
+        "role": "Instant-speed reactive removal"
+      },
+      {
+        "card": "Beast Within",
+        "role": "Instant-speed reactive removal"
+      }
+    ],
+    "i2": [],
+    "s1": [
+      {
+        "card": "Heroic Intervention",
+        "role": "Board / commander protection"
+      },
+      {
+        "card": "Flawless Maneuver",
+        "role": "Board / commander protection"
+      }
+    ],
+    "s2": [],
+    "s3": []
+  },
+  "deck_name": "FelotharSteadfast",
+  "thematic_restriction": false
+}

@@ -12,6 +12,7 @@ deck_status: main
 **Chainer, Dementia Master**
 *   **Archetype:** Mono-Black Reanimator / Value Engine
 *   **Bracket:** 3
+*   **DTI Threat Index:** **24 / 96** (Bracket 2 | Velocity: **10/48** | Suppression: **8/40** | Gates: All Passed | [DTI Report](dti_report.html))
 *   **Core Goal:** Fill your graveyard with powerful creatures through self-mill and discard outlets, then use Chainer's activated ability ({B}{B}{B}, pay 3 life: return any creature from *any* graveyard to the battlefield) to deploy massive threats turn after turn. Chainer's creatures become black Nightmares and he passively gives all Nightmares +1/+1 — if he leaves play they get exiled, so protecting him and managing your life total are the two key pillars of the deck. Vilis, Broker of Blood is the engine centerpiece: every 3-life payment to Chainer draws you 3 cards.
 
 ### The Chainer Engine

@@ -1,0 +1,46 @@
+{
+  "grades": {
+    "r1": "B",
+    "r2": "A",
+    "a1": "B",
+    "a2": "B",
+    "p1": "B",
+    "p2": "B",
+    "p3": "B",
+    "i1": "B",
+    "i2": "B",
+    "s1": "B",
+    "s2": "A",
+    "s3": "C"
+  },
+  "justifications": {
+    "r1": "Mono-black ramp (Crypt Ghast, Cabal Coffers, Jet Medallion).",
+    "r2": "Instant-speed reanimation of any graveyard generates massive card flow.",
+    "a1": "Black tutors (Entomb, Buried Alive, Demonic Tutor) fetch key reanimation targets.",
+    "a2": "Establishes Chainer loop on Turns 5–6.",
+    "p1": "Presents devastating life drain loops (Gary / Kokusho) on Turns 6–7.",
+    "p2": "Requires 1–2 opponent untap steps, or immediate loop with sac outlet.",
+    "p3": "Instant-speed reanimation from any graveyard.",
+    "i1": "Repeatable creature sacrifice removal and black spot removal.",
+    "i2": "Repeated edicts and opponent graveyard theft strip opposing resources.",
+    "s1": "Chainer life payment is an alias for mana; boots protect Chainer.",
+    "s2": "Reanimation engine thrives after wipes.",
+    "s3": "Nightmare exile trigger makes Chainer removal impactful."
+  },
+  "card_ledger": {
+    "r1": [],
+    "a2": [],
+    "p1": [],
+    "p2": [],
+    "r2": [],
+    "a1": [],
+    "p3": [],
+    "i1": [],
+    "i2": [],
+    "s1": [],
+    "s2": [],
+    "s3": []
+  },
+  "deck_name": "ChainerDementiaMaster",
+  "thematic_restriction": false
+}

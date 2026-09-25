@@ -1,0 +1,61 @@
+{
+  "grades": {
+    "r1": "B",
+    "r2": "A",
+    "a1": "B",
+    "a2": "B",
+    "p1": "B",
+    "p2": "B",
+    "p3": "B",
+    "i1": "B",
+    "i2": "C",
+    "s1": "B",
+    "s2": "B",
+    "s3": "C"
+  },
+  "justifications": {
+    "r1": "Esper artifact mana rocks and cost reducers.",
+    "r2": "The One Ring, artifact draw triggers, and token replenishment.",
+    "a1": "Fabricate, Whir of Invention, and artifact tutors.",
+    "a2": "Establishes Ultron drone assembly line on Turns 5–6.",
+    "p1": "Presents swarm of growing artifact drones on Turns 6–7.",
+    "p2": "2 opponent untap steps for combat damage.",
+    "p3": "Artifact drone creation visible on board.",
+    "i1": "Esper counterspells and exile removal.",
+    "i2": "Light incidental taxation; no hard denial.",
+    "s1": "Indestructible artifacts and countermagic.",
+    "s2": "Scrap Trawler and artifact recursion.",
+    "s3": "Artifact drone shell functions moderately well without commander."
+  },
+  "card_ledger": {
+    "r1": [
+      {
+        "card": "Sol Ring",
+        "role": "Mana ramp / fixing"
+      }
+    ],
+    "a2": [],
+    "p1": [],
+    "p2": [],
+    "r2": [
+      {
+        "card": "Skullclamp",
+        "role": "Card draw / engine replenishment"
+      }
+    ],
+    "a1": [],
+    "p3": [],
+    "i1": [],
+    "i2": [],
+    "s1": [
+      {
+        "card": "Lightning Greaves",
+        "role": "Board / commander protection"
+      }
+    ],
+    "s2": [],
+    "s3": []
+  },
+  "deck_name": "UltronArtificialMalevolence",
+  "thematic_restriction": false
+}

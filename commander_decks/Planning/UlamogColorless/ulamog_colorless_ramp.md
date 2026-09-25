@@ -9,6 +9,8 @@ deck_status: main
 ![Ulamog, the Ceaseless Hunger](https://cards.scryfall.io/normal/front/c/7/c74ae706-b3b3-4097-a387-6f6c38a9b603.jpg?1689995438)
 
 ## Commander Strategy
+*   **DTI Threat Index:** **24 / 96** (Bracket 2 | Velocity: **13/48** | Suppression: **11/40** | Gates: All Passed | [DTI Report](dti_report.html))
+
 **Ulamog, the Ceaseless Hunger**
 *   **Role:** The Ultimate Threat.
 *   **Goal:** To ramp aggressively into 10+ mana as quickly as possible to cast Ulamog.

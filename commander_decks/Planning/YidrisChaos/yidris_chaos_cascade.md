@@ -16,6 +16,7 @@ deck_status: main
 **[Yidris, Maelstrom Wielder](https://scryfall.com/card/c16/50/yidris-maelstrom-wielder)** ({U}{B}{R}{G})
 *   **Archetype:** 4-Color ({U}{B}{R}{G}) Combat Cascade / Exile-Cast Storm / Delve Velocity
 *   **Bracket:** 3 (Upgraded — 2 Game Changers: *Cyclonic Rift*, *Jeska's Will*)
+*   **DTI Threat Index:** **30 / 96** (Bracket 3 | Velocity: **16/48** | Suppression: **9/40** | Gates: All Passed | [DTI Report](dti_report.html))
 *   **Core Goal:** Deploy Yidris with haste or unblockable protection to connect for combat damage. Once connected, leverage post-combat main phase cascade triggers to cheat 0-mana suspend jackpots (*Ancestral Vision*, *Profane Tutor*, *Wheel of Fate*, *Lotus Bloom*), discount high-CMC delve spells (*Dig Through Time*, *Treasure Cruise*, *Blasphemous Act*), and incinerate opponents via exile-cast burn engines (*Passionate Archaeologist*, *Ancient Cellarspawn*, *Keeper of Secrets*, *Flaming Tyrannosaurus*).
 
 ### Three Interlocking Engines

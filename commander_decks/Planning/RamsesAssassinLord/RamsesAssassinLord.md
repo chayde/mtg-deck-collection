@@ -12,6 +12,7 @@ deck_status: main
 **Ramses, Assassin Lord** (2UB)
 *   **Archetype:** Dimir (U/B) Assassin Tribal / Alt-Win Condition
 *   **Bracket:** 3
+*   **DTI Threat Index:** **22 / 96** (Bracket 2 | Velocity: **13/48** | Suppression: **7/40** | Gates: All Passed | [DTI Report](dti_report.html))
 *   **Core Goal:** Build a board of evasive, deathtouch-laden Assassins that discourage blocks and threaten opponents every combat. Attack a player to "tag" them with Ramses' win trigger, then close through life drain (Exsanguinate, Torment of Hailfire), combat life-halving (Unstoppable Slasher + Wound Reflection), or accumulated pressure. Ramses immediately wins if a tagged player loses the game by any means that turn.
 
 ### The Kill Trigger

@@ -1,0 +1,101 @@
+{
+  "grades": {
+    "r1": "B",
+    "r2": "A",
+    "a1": "B",
+    "a2": "B",
+    "p1": "B",
+    "p2": "B",
+    "p3": "B",
+    "i1": "B",
+    "i2": "C",
+    "s1": "A",
+    "s2": "B",
+    "s3": "C"
+  },
+  "justifications": {
+    "r1": "Grixis mana rocks and treasure generation deploying 6-mana Sauron on Turn 5.",
+    "r2": "Repeatable wheel/refuel draw whenever the Ring tempts you.",
+    "a1": "High density of Ring tempting triggers and amass cards.",
+    "a2": "Deploys Sauron and establishes amass/wheel engine on Turns 5–6.",
+    "p1": "Presents massive 10+/10+ Orc Army and Ring bearer clock on Turns 6–7.",
+    "p2": "Requires 2 opponent untap steps for combat damage.",
+    "p3": "High ward cost makes Sauron difficult to answer cleanly.",
+    "i1": "Grixis countermagic and destroy removal (Feed the Swarm, Bedevil, Blasphemous Act).",
+    "i2": "Incidental ring tempt triggers; no hard resource locks.",
+    "s1": "Sauron possesses inherent Ward: Sacrifice a legendary creature or artifact.",
+    "s2": "Graveyard reanimation packages rebuild army post-wipe.",
+    "s3": "Sauron is the primary engine center."
+  },
+  "card_ledger": {
+    "r1": [
+      {
+        "card": "Sol Ring",
+        "role": "Mana ramp / fixing"
+      },
+      {
+        "card": "Arcane Signet",
+        "role": "Mana ramp / fixing"
+      },
+      {
+        "card": "Talisman of Dominance",
+        "role": "Mana ramp / fixing"
+      },
+      {
+        "card": "Talisman of Creativity",
+        "role": "Mana ramp / fixing"
+      },
+      {
+        "card": "Talisman of Indulgence",
+        "role": "Mana ramp / fixing"
+      },
+      {
+        "card": "Dimir Signet",
+        "role": "Mana ramp / fixing"
+      },
+      {
+        "card": "Izzet Signet",
+        "role": "Mana ramp / fixing"
+      },
+      {
+        "card": "Rakdos Signet",
+        "role": "Mana ramp / fixing"
+      },
+      {
+        "card": "Island",
+        "role": "Mana ramp / fixing"
+      }
+    ],
+    "a2": [],
+    "p1": [],
+    "p2": [],
+    "r2": [],
+    "a1": [],
+    "p3": [],
+    "i1": [
+      {
+        "card": "Counterspell",
+        "role": "Instant-speed reactive removal"
+      },
+      {
+        "card": "Chaos Warp",
+        "role": "Instant-speed reactive removal"
+      },
+      {
+        "card": "Pongify",
+        "role": "Instant-speed reactive removal"
+      }
+    ],
+    "i2": [],
+    "s1": [
+      {
+        "card": "Lightning Greaves",
+        "role": "Board / commander protection"
+      }
+    ],
+    "s2": [],
+    "s3": []
+  },
+  "deck_name": "SauronGrixis",
+  "thematic_restriction": false
+}

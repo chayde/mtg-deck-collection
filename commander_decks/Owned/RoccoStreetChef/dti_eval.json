@@ -1,0 +1,96 @@
+{
+  "grades": {
+    "r1": "B",
+    "r2": "A",
+    "a1": "B",
+    "a2": "B",
+    "p1": "B",
+    "p2": "B",
+    "p3": "B",
+    "i1": "B",
+    "i2": "C",
+    "s1": "B",
+    "s2": "C",
+    "s3": "C"
+  },
+  "justifications": {
+    "r1": "Naya ramp with 2-CMC dorks and Food token artifact utility.",
+    "r2": "Impulse exile draw on every end step generates continuous card advantage.",
+    "a1": "High density of exile-matters payoffs and counter multipliers.",
+    "a2": "Engine starts churning Food and counters on Turns 4–5.",
+    "p1": "Presents tall/wide modified creature army on Turns 6–7.",
+    "p2": "2 opponent untap steps to execute combat wins.",
+    "p3": "Exiled cards are revealed to the entire table, giving opponents advance warning.",
+    "i1": "Naya instant-speed removal suite (Beast Within, Swords to Plowshares, Chaos Warp).",
+    "i2": "Light group-hug style impulse triggers; no hard denial.",
+    "s1": "Protection spells (Heroic Intervention, Flawless Maneuver).",
+    "s2": "Food tokens remain on board after wipes to regain life, but creatures must be rebuilt.",
+    "s3": "Deck heavily synergizes with Rocco's exile trigger."
+  },
+  "card_ledger": {
+    "r1": [
+      {
+        "card": "Arcane Signet",
+        "role": "Mana ramp / fixing"
+      },
+      {
+        "card": "Brushland",
+        "role": "Mana ramp / fixing"
+      },
+      {
+        "card": "Kodama of the West Tree",
+        "role": "Mana ramp / fixing"
+      },
+      {
+        "card": "Sol Ring",
+        "role": "Mana ramp / fixing"
+      },
+      {
+        "card": "Talisman of Conviction",
+        "role": "Mana ramp / fixing"
+      },
+      {
+        "card": "Talisman of Impulse",
+        "role": "Mana ramp / fixing"
+      },
+      {
+        "card": "Talisman of Unity",
+        "role": "Mana ramp / fixing"
+      }
+    ],
+    "a2": [],
+    "p1": [],
+    "p2": [],
+    "r2": [],
+    "a1": [],
+    "p3": [],
+    "i1": [
+      {
+        "card": "Beast Within",
+        "role": "Instant-speed reactive removal"
+      },
+      {
+        "card": "Chaos Warp",
+        "role": "Instant-speed reactive removal"
+      },
+      {
+        "card": "Path of Ancestry",
+        "role": "Instant-speed reactive removal"
+      },
+      {
+        "card": "Path to Exile",
+        "role": "Instant-speed reactive removal"
+      },
+      {
+        "card": "Swords to Plowshares",
+        "role": "Instant-speed reactive removal"
+      }
+    ],
+    "i2": [],
+    "s1": [],
+    "s2": [],
+    "s3": []
+  },
+  "deck_name": "RoccoStreetChef",
+  "thematic_restriction": false
+}

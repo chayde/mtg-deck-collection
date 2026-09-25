@@ -1,0 +1,92 @@
+{
+  "grades": {
+    "r1": "B",
+    "r2": "B",
+    "a1": "B",
+    "a2": "B",
+    "p1": "B",
+    "p2": "B",
+    "p3": "B",
+    "i1": "B",
+    "i2": "C",
+    "s1": "B",
+    "s2": "C",
+    "s3": "C"
+  },
+  "justifications": {
+    "r1": "Grixis mana rocks and treasure generation.",
+    "r2": "Ring temptation card draw and sacrifice draw spells.",
+    "a1": "Amass redundancy and fling outlets (Fling, Kazuul's Fury, Chandra's Ignition).",
+    "a2": "Amasses 10+/10+ army on Turns 5–6.",
+    "p1": "Presents lethal Fling damage on Turns 6–7.",
+    "p2": "1–2 opponent untap steps to fling army at remaining opponents.",
+    "p3": "Army growth is visible on board.",
+    "i1": "Grixis destroy removal and countermagic.",
+    "i2": "Light incidental sacrifice drain.",
+    "s1": "Sauron inherent Ward: sacrifice legendary creature.",
+    "s2": "Can re-amass a fresh army after a wipe.",
+    "s3": "Fling package requires a large creature."
+  },
+  "card_ledger": {
+    "r1": [
+      {
+        "card": "Island",
+        "role": "Mana ramp / fixing"
+      },
+      {
+        "card": "Arcane Signet",
+        "role": "Mana ramp / fixing"
+      },
+      {
+        "card": "Dimir Signet",
+        "role": "Mana ramp / fixing"
+      },
+      {
+        "card": "Izzet Signet",
+        "role": "Mana ramp / fixing"
+      },
+      {
+        "card": "Rakdos Signet",
+        "role": "Mana ramp / fixing"
+      },
+      {
+        "card": "Sol Ring",
+        "role": "Mana ramp / fixing"
+      },
+      {
+        "card": "Talisman of Creativity",
+        "role": "Mana ramp / fixing"
+      },
+      {
+        "card": "Talisman of Dominance",
+        "role": "Mana ramp / fixing"
+      },
+      {
+        "card": "Talisman of Indulgence",
+        "role": "Mana ramp / fixing"
+      },
+      {
+        "card": "*   Upgraded Land Base: Replaced budget tapped lands with Fetch, Shock, and Bond lands. Added Utility lands (Reliquary Tower, Mount Doom, Channel Lands). Removed all bounce lands (including Izzet Boilerworks) for Shipwreck Marsh. Reduced land count to 38.",
+        "role": "Mana ramp / fixing"
+      }
+    ],
+    "a2": [],
+    "p1": [],
+    "p2": [],
+    "r2": [],
+    "a1": [],
+    "p3": [],
+    "i1": [
+      {
+        "card": "Countersquall",
+        "role": "Instant-speed reactive removal"
+      }
+    ],
+    "i2": [],
+    "s1": [],
+    "s2": [],
+    "s3": []
+  },
+  "deck_name": "SauronArmyFling",
+  "thematic_restriction": false
+}

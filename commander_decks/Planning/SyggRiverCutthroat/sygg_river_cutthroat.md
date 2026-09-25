@@ -14,6 +14,7 @@ deck_status: main
 **Sygg, River Cutthroat**
 *   **Archetype:** Dimir ({U}{B}) Group Slug / Goad & Combat Manipulation / Draw-Go Control
 *   **Bracket:** 3 (Upgraded — 3 Game Changers: *Orcish Bowmasters*, *Rhystic Study*, *Cyclonic Rift*)
+*   **DTI Threat Index:** **28 / 96** (Bracket 4 | Velocity: **12/48** | Suppression: **12/40** | Gates: Triggered: Suppression Gate | [DTI Report](dti_report.html))
 *   **Core Goal:** Deploy Sygg on Turn 2, establish passive life-loss or goad pieces on Turns 3–4 to force 3+ life loss per player turn cycle, and maintain a full grip through Sygg's end-step draw triggers while policing the table with counterspells and instant-speed removal.
 
 ### Three Interlocking Engines

@@ -12,6 +12,7 @@ deck_status: main
 **Thalia and The Gitrog Monster**
 *   **Archetype:** Abzan Midrange / Lands Matter / Hatebears
 *   **Bracket:** 2 (Mid-Power)
+*   **DTI Threat Index:** **23 / 96** (Bracket 4 | Velocity: **10/48** | Suppression: **10/40** | Gates: Triggered: Suppression Gate | [DTI Report](dti_report.html))
 *   **Core Goal:** Control the board with "stax" and "hatebear" effects while generating massive value through landfall and graveyard synergies, ultimately winning through combat or draining opponents. This deck is significantly meaner and faster than a Selesnya version, leveraging Black's superior removal and graveyard recursion.
 
 ### 🌱 Commander Abilities Explained

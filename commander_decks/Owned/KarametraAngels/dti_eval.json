@@ -1,0 +1,115 @@
+{
+  "grades": {
+    "r1": "A",
+    "r2": "B",
+    "a1": "B",
+    "a2": "B",
+    "p1": "B",
+    "p2": "B",
+    "p3": "B",
+    "i1": "B",
+    "i2": "B",
+    "s1": "A",
+    "s2": "B",
+    "s3": "B"
+  },
+  "justifications": {
+    "r1": "Karametra land-fetch triggers on every creature cast ramp 10+ lands ahead of curve, plus Smothering Tithe.",
+    "r2": "Beast Whisperer, The Great Henge, and angel draw triggers maintain hand replenishment.",
+    "a1": "Worldly Tutor, Eladamri's Call, and creature redundancy find key angels.",
+    "a2": "Achieves high-mana Angel deployment by Turns 5–6.",
+    "p1": "Presents flying angel board pressure on Turns 6–7.",
+    "p2": "Requires 2 opponent untap steps to swing for lethal across 3 players.",
+    "p3": "Visible high-flying threats; heavily telegraphed combat wins.",
+    "i1": "Path, Swords, Beast Within, and Generous Gift spot removal suite.",
+    "i2": "Aura Shards repeatedly destroys all opposing artifacts/enchantments on every creature cast.",
+    "s1": "Teferi's Protection, Heroic Intervention, and Avacyn indestructible shielding.",
+    "s2": "Massive land base allows fast re-casting of angels after wipes.",
+    "s3": "Indestructible commander; deck functions well once lands are pulled from library."
+  },
+  "card_ledger": {
+    "r1": [
+      {
+        "card": "Sol Ring",
+        "role": "Mana ramp / fixing"
+      },
+      {
+        "card": "Arcane Signet",
+        "role": "Mana ramp / fixing"
+      },
+      {
+        "card": "Overgrown Farmland",
+        "role": "Mana ramp / fixing"
+      },
+      {
+        "card": "Brushland",
+        "role": "Mana ramp / fixing"
+      },
+      {
+        "card": "Cultivate",
+        "role": "Mana ramp / fixing"
+      },
+      {
+        "card": "Kodama's Reach",
+        "role": "Mana ramp / fixing"
+      },
+      {
+        "card": "Rampant Growth",
+        "role": "Mana ramp / fixing"
+      }
+    ],
+    "a2": [],
+    "p1": [],
+    "p2": [],
+    "r2": [
+      {
+        "card": "Sylvan Library",
+        "role": "Card draw / engine replenishment"
+      }
+    ],
+    "a1": [
+      {
+        "card": "Worldly Tutor",
+        "role": "Specific tutor / selection"
+      }
+    ],
+    "p3": [],
+    "i1": [
+      {
+        "card": "Swords to Plowshares",
+        "role": "Instant-speed reactive removal"
+      },
+      {
+        "card": "Path to Exile",
+        "role": "Instant-speed reactive removal"
+      },
+      {
+        "card": "Beast Within",
+        "role": "Instant-speed reactive removal"
+      }
+    ],
+    "i2": [],
+    "s1": [
+      {
+        "card": "Teferi's Protection",
+        "role": "Board / commander protection"
+      },
+      {
+        "card": "Heroic Intervention",
+        "role": "Board / commander protection"
+      },
+      {
+        "card": "Swiftfoot Boots",
+        "role": "Board / commander protection"
+      },
+      {
+        "card": "Lightning Greaves",
+        "role": "Board / commander protection"
+      }
+    ],
+    "s2": [],
+    "s3": []
+  },
+  "deck_name": "KarametraAngels",
+  "thematic_restriction": false
+}

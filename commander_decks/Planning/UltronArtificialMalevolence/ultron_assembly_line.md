@@ -12,6 +12,7 @@ deck_status: main
 **[Ultron, Artificial Malevolence](https://scryfall.com/card/msh/252/ultron-artificial-malevolence?utm_source=api)** ({3})
 *   **Archetype:** Colorless Artifacts / Token Duplication / Robot Swarm
 *   **Bracket:** 3 (Upgraded) — Verified **1 / 3 Game Changers** (*The One Ring*)
+*   **DTI Threat Index:** **22 / 96** (Bracket 3 | Velocity: **10/48** | Suppression: **7/40** | Gates: All Passed | [DTI Report](dti_report.html))
 *   **Core Goal:** Deploy Ultron early to duplicate every entering nontoken artifact for {2}, converting inanimate mana rocks, equipment, and utility pieces into an aggressive army of 2/2 Robot Villain creatures. Snowball this board through the 7 Fallout Bobbleheads, trigger doublers, untap engines, and infinite KCI recursion loops.
 
 ### Mechanics & Play Patterns

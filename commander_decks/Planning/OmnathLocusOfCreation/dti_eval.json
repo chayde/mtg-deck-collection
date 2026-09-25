@@ -1,0 +1,97 @@
+{
+  "grades": {
+    "r1": "A",
+    "r2": "A",
+    "a1": "B",
+    "a2": "A",
+    "p1": "B",
+    "p2": "B",
+    "p3": "B",
+    "i1": "B",
+    "i2": "C",
+    "s1": "B",
+    "s2": "B",
+    "s3": "C"
+  },
+  "justifications": {
+    "r1": "4-color landfall triggers produce {W}{U}{B}{R} and 4 mana on second land drop.",
+    "r2": "Omnath draws a card on ETB; landfall engines draw cards on every land.",
+    "a1": "Fetchlands, land tutors (Crop Rotation, Scapeshift), and ramp spells.",
+    "a2": "Explosive landfall loops running by Turns 4–5.",
+    "p1": "Presents massive landfall damage and board swarm on Turns 6–7.",
+    "p2": "2 opponent untap steps for combat, or burn damage from Omnath third trigger.",
+    "p3": "Heavily telegraphed land development.",
+    "i1": "Fierce Guardianship, Swords to Plowshares, Beast Within.",
+    "i2": "Light damage pinging; no stax.",
+    "s1": "Heroic Intervention and counterspells.",
+    "s2": "Splendid Reclamation and Ramunap Excavator recur lands from graveyard.",
+    "s3": "Landfall pieces function, but Omnath is the marquee engine."
+  },
+  "card_ledger": {
+    "r1": [
+      {
+        "card": "Arcane Signet",
+        "role": "Mana ramp / fixing"
+      },
+      {
+        "card": "Cultivate",
+        "role": "Mana ramp / fixing"
+      },
+      {
+        "card": "Island",
+        "role": "Mana ramp / fixing"
+      },
+      {
+        "card": "Kodama of the East Tree",
+        "role": "Mana ramp / fixing"
+      },
+      {
+        "card": "Kodama's Reach",
+        "role": "Mana ramp / fixing"
+      },
+      {
+        "card": "Sol Ring",
+        "role": "Mana ramp / fixing"
+      }
+    ],
+    "a2": [],
+    "p1": [],
+    "p2": [],
+    "r2": [],
+    "a1": [],
+    "p3": [],
+    "i1": [
+      {
+        "card": "Beast Within",
+        "role": "Instant-speed reactive removal"
+      },
+      {
+        "card": "Counterspell",
+        "role": "Instant-speed reactive removal"
+      },
+      {
+        "card": "Path to Exile",
+        "role": "Instant-speed reactive removal"
+      },
+      {
+        "card": "Swords to Plowshares",
+        "role": "Instant-speed reactive removal"
+      }
+    ],
+    "i2": [],
+    "s1": [
+      {
+        "card": "Heroic Intervention",
+        "role": "Board / commander protection"
+      },
+      {
+        "card": "Teferi's Protection",
+        "role": "Board / commander protection"
+      }
+    ],
+    "s2": [],
+    "s3": []
+  },
+  "deck_name": "OmnathLocusOfCreation",
+  "thematic_restriction": false
+}

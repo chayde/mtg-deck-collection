@@ -1,0 +1,86 @@
+{
+  "grades": {
+    "r1": "A",
+    "r2": "B",
+    "a1": "B",
+    "a2": "B",
+    "p1": "B",
+    "p2": "B",
+    "p3": "B",
+    "i1": "B",
+    "i2": "B",
+    "s1": "B",
+    "s2": "B",
+    "s3": "C"
+  },
+  "justifications": {
+    "r1": "Svella taps to create Icy Manaliths, producing permanent cumulative mana rocks every turn.",
+    "r2": "Svella's 8-mana ability digs 4 cards deep and casts spells for free.",
+    "a1": "Big mana threats and untapper redundancy.",
+    "a2": "Engine compounds with Seedborn Muse on Turns 5–6.",
+    "p1": "Presents huge Eldrazi / Apex monster threats on Turns 6–7.",
+    "p2": "Requires 2 opponent untap steps for combat.",
+    "p3": "Icy Manaliths accumulate visibly on board.",
+    "i1": "Gruul destroy spells and artifact hate.",
+    "i2": "Seedborn Muse untaps all permanents on every player's turn to activate Svella 4 times per turn cycle.",
+    "s1": "Boots and indestructible artifacts.",
+    "s2": "Icy Manaliths survive creature wipes, ensuring immense mana persists.",
+    "s3": "Deck requires Svella to create the mana rocks."
+  },
+  "card_ledger": {
+    "r1": [
+      {
+        "card": "Arcane Signet",
+        "role": "Mana ramp / fixing"
+      },
+      {
+        "card": "Highland Forest",
+        "role": "Mana ramp / fixing"
+      },
+      {
+        "card": "Sol Ring",
+        "role": "Mana ramp / fixing"
+      }
+    ],
+    "a2": [],
+    "p1": [],
+    "p2": [],
+    "r2": [
+      {
+        "card": "Beast Whisperer",
+        "role": "Card draw / engine replenishment"
+      },
+      {
+        "card": "Sylvan Library",
+        "role": "Card draw / engine replenishment"
+      }
+    ],
+    "a1": [],
+    "p3": [],
+    "i1": [
+      {
+        "card": "Beast Within",
+        "role": "Instant-speed reactive removal"
+      },
+      {
+        "card": "Chaos Warp",
+        "role": "Instant-speed reactive removal"
+      },
+      {
+        "card": "Cragcrown Pathway",
+        "role": "Instant-speed reactive removal"
+      }
+    ],
+    "i2": [],
+    "s1": [
+      {
+        "card": "Heroic Intervention",
+        "role": "Board / commander protection"
+      }
+    ],
+    "s2": [],
+    "s3": []
+  },
+  "deck_name": "SvellaIceShaper",
+  "thematic_restriction": false
+}

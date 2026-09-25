@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DTI Report — TheNecrobloom</title>
+    <style>
+        :root {
+            --bg-base: #0f172a;
+            --bg-card: #1e293b;
+            --bg-hover: #334155;
+            --text-main: #f8fafc;
+            --text-sub: #94a3b8;
+            --border: #334155;
+            --accent: #10b981;
+            --s-color: #8b5cf6;
+            --a-color: #3b82f6;
+            --b-color: #10b981;
+            --c-color: #f59e0b;
+            --f-color: #ef4444;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-base);
+            color: var(--text-main);
+            padding: 24px;
+            line-height: 1.5;
+        }
+        .container { max-width: 1200px; margin: 0 auto; }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid var(--border);
+            padding-bottom: 20px;
+            margin-bottom: 24px;
+        }
+        h1 { font-size: 26px; font-weight: 700; }
+        .header-sub { color: var(--text-sub); font-size: 14px; margin-top: 4px; }
+        .bracket-badge {
+            background-color: var(--accent);
+            color: #0f172a;
+            font-weight: 800;
+            font-size: 20px;
+            padding: 8px 20px;
+            border-radius: 9999px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 16px;
+            margin-bottom: 24px;
+        }
+        .metric-card {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 18px;
+        }
+        .metric-title { font-size: 13px; color: var(--text-sub); text-transform: uppercase; letter-spacing: 0.5px; font-weight: 600; }
+        .metric-value { font-size: 32px; font-weight: 800; margin: 6px 0; }
+        .metric-sub { font-size: 12px; color: var(--text-sub); }
+        .progress-bar {
+            background: #0f172a;
+            height: 8px;
+            border-radius: 4px;
+            overflow: hidden;
+            margin-top: 8px;
+        }
+        .progress-fill {
+            height: 100%;
+            background: var(--accent);
+            border-radius: 4px;
+        }
+        .gates-banner {
+            background: var(--bg-card);
+            border-left: 4px solid var(--accent);
+            border-radius: 8px;
+            padding: 16px;
+            margin-bottom: 24px;
+        }
+        .gate-title { font-weight: 700; margin-bottom: 8px; }
+        .gate-item { font-size: 13px; margin: 4px 0; color: var(--text-sub); }
+        .gate-tag { font-weight: 700; padding: 2px 6px; border-radius: 4px; font-size: 11px; }
+        .tag-triggered { background: #ef4444; color: white; }
+        .tag-passed { background: #10b981; color: white; }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: var(--bg-card);
+            border-radius: 12px;
+            overflow: hidden;
+            margin-bottom: 32px;
+            border: 1px solid var(--border);
+        }
+        th, td { padding: 12px 16px; text-align: left; border-bottom: 1px solid var(--border); }
+        th { background: #1e293b; color: var(--text-sub); font-size: 12px; text-transform: uppercase; letter-spacing: 0.5px; }
+        tr:hover td { background: rgba(255, 255, 255, 0.02); }
+        .code-col { font-weight: 700; color: var(--text-sub); }
+        .tier-badge {
+            display: inline-block;
+            font-weight: 800;
+            font-size: 13px;
+            padding: 2px 10px;
+            border-radius: 6px;
+            text-align: center;
+        }
+        .tier-s { background: var(--s-color); color: white; }
+        .tier-a { background: var(--a-color); color: white; }
+        .tier-b { background: var(--b-color); color: white; }
+        .tier-c { background: var(--c-color); color: #0f172a; }
+        .tier-f { background: var(--f-color); color: white; }
+        .domain-sub { font-size: 11px; color: var(--text-sub); }
+        .just-col { font-size: 13px; color: #cbd5e1; }
+        .score-col { font-weight: 700; font-feature-settings: "tnum"; }
+
+        .ledger-section { margin-top: 32px; }
+        .ledger-group {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 16px;
+            margin-bottom: 16px;
+        }
+        .ledger-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 12px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid var(--border);
+        }
+        .ledger-header h3 { font-size: 16px; font-weight: 700; }
+        .count-tag { font-size: 12px; color: var(--text-sub); }
+        .card-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        .card-chip {
+            background: #0f172a;
+            border: 1px solid var(--border);
+            padding: 6px 12px;
+            border-radius: 8px;
+            font-size: 12px;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            position: relative;
+        }
+        .card-chip a {
+            color: var(--text-main);
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .card-chip a:hover { color: #38bdf8; }
+        .chip-role { font-size: 11px; color: var(--text-sub); }
+
+        /* Card Preview Hover Popup */
+        #card-preview {
+            position: fixed;
+            pointer-events: none;
+            display: none;
+            z-index: 1000;
+            width: 240px;
+            border-radius: 12px;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.5), 0 8px 10px -6px rgba(0, 0, 0, 0.5);
+            border: 2px solid #475569;
+        }
+    </style>
+</head>
+<body>
+    <img id="card-preview" src="" alt="Card Preview" />
+    <div class="container">
+        <header>
+            <div>
+                <h1>TheNecrobloom</h1>
+                <div class="header-sub">DeckCheck Threat Index (DTI) Evaluation Report</div>
+            </div>
+            <div class="bracket-badge">BRACKET 3</div>
+        </header>
+
+        <div class="metrics-grid">
+            <div class="metric-card">
+                <div class="metric-title">Threat Score</div>
+                <div class="metric-value">29 <span style="font-size:16px;color:var(--text-sub);">/ 96</span></div>
+                <div class="metric-sub">Score Floor: Bracket 2</div>
+                <div class="progress-bar"><div class="progress-fill" style="width: 30.208333333333332%;"></div></div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-title">Velocity Vector</div>
+                <div class="metric-value">15 <span style="font-size:16px;color:var(--text-sub);">/ 48</span></div>
+                <div class="metric-sub">Clock & Assembly Speed (Gate at 28)</div>
+                <div class="progress-bar"><div class="progress-fill" style="width: 31.25%;"></div></div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-title">Suppression Vector</div>
+                <div class="metric-value">11 <span style="font-size:16px;color:var(--text-sub);">/ 40</span></div>
+                <div class="metric-sub">Denial, Tax & Stax Impact</div>
+                <div class="progress-bar"><div class="progress-fill" style="width: 27.500000000000004%;"></div></div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-title">Game Changers</div>
+                <div class="metric-value">3 <span style="font-size:16px;color:var(--text-sub);">/ 3</span></div>
+                <div class="metric-sub">WotC Statutory Limit Floor: B3</div>
+                <div class="progress-bar"><div class="progress-fill" style="width: 100.0%;"></div></div>
+            </div>
+        </div>
+
+        <div class="gates-banner">
+            <div class="gate-title">Gatekeeper Audit Results</div>
+            <div class="gate-item">
+                <span class="gate-tag tag-passed">
+                    PASSED
+                </span>
+                <strong>Velocity Gate:</strong> Vector 15/48 (Threshold: &ge; 28 mandates Bracket 4).
+            </div>
+            <div class="gate-item">
+                <span class="gate-tag tag-passed">
+                    PASSED
+                </span>
+                <strong>Early Finish Gate:</strong> Critical Onset P1 is B (Turns 1–5 onset mandates Bracket 4).
+            </div>
+            <div class="gate-item">
+                <span class="gate-tag tag-passed">
+                    PASSED
+                </span>
+                <strong>Suppression Gate:</strong> Proactive Restriction I2 is B (Severe attrition mandates Bracket 4).
+            </div>
+            <div class="gate-item">
+                <span class="gate-tag tag-passed">
+                    PASSED
+                </span>
+                <strong>cEDH Gate:</strong> Format ceiling clock with 0-untap kill (Peak vector: 15).
+            </div>
+        </div>
+
+        <h2 style="margin-bottom: 16px; font-size: 20px;">12 Universal Benchmarks</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th style="width: 50px;">Code</th>
+                    <th style="width: 240px;">Benchmark</th>
+                    <th style="width: 60px;">Tier</th>
+                    <th style="width: 80px;">Points</th>
+                    <th style="width: 60px;">Cards</th>
+                    <th>Contextual Evaluation & Rationale</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+        <tr>
+            <td class="code-col"><strong>R1</strong></td>
+            <td><strong>Mana Velocity & Sufficiency</strong><br><span class="domain-sub">Resources</span></td>
+            <td class="tier-col"><span class="tier-badge tier-a">A</span></td>
+            <td class="score-col">5 / 10</td>
+            <td class="ledger-count-col">2</td>
+            <td class="just-col">Massive landfall landramp (Scapeshift, Splendid Reclamation, Awaken the Woods).</td>
+        </tr>
+        
+        <tr>
+            <td class="code-col"><strong>A2</strong></td>
+            <td><strong>Assembly Velocity</strong><br><span class="domain-sub">Access</span></td>
+            <td class="tier-col"><span class="tier-badge tier-b">B</span></td>
+            <td class="score-col">2 / 10</td>
+            <td class="ledger-count-col">0</td>
+            <td class="just-col">Assembles Field of the Dead zombie spigot on Turns 4–5.</td>
+        </tr>
+        
+        <tr>
+            <td class="code-col"><strong>P1</strong></td>
+            <td><strong>Critical Onset & Lethality</strong><br><span class="domain-sub">Pressure</span></td>
+            <td class="tier-col"><span class="tier-badge tier-b">B</span></td>
+            <td class="score-col">2 / 10</td>
+            <td class="ledger-count-col">0</td>
+            <td class="just-col">Presents massive 20+ zombie swarm on Turns 6–7.</td>
+        </tr>
+        
+        <tr>
+            <td class="code-col"><strong>P2</strong></td>
+            <td><strong>Win Inevitability & Compactness</strong><br><span class="domain-sub">Pressure</span></td>
+            <td class="tier-col"><span class="tier-badge tier-b">B</span></td>
+            <td class="score-col">2 / 10</td>
+            <td class="ledger-count-col">0</td>
+            <td class="just-col">Requires 1–2 opponent untap steps for combat, or Noxious Ghoul one-sided wipe.</td>
+        </tr>
+        
+        <tr>
+            <td class="code-col"><strong>R2</strong></td>
+            <td><strong>Card Flow & Replenishment</strong><br><span class="domain-sub">Resources</span></td>
+            <td class="tier-col"><span class="tier-badge tier-a">A</span></td>
+            <td class="score-col">4 / 8</td>
+            <td class="ledger-count-col">2</td>
+            <td class="just-col">Skullclamp, Idol of Oblivion, Species Specialist, and dredge draw cards on zombie ETB/death.</td>
+        </tr>
+        
+        <tr>
+            <td class="code-col"><strong>A1</strong></td>
+            <td><strong>Selection & Redundancy</strong><br><span class="domain-sub">Access</span></td>
+            <td class="tier-col"><span class="tier-badge tier-b">B</span></td>
+            <td class="score-col">2 / 8</td>
+            <td class="ledger-count-col">0</td>
+            <td class="just-col">Crop Rotation, Scapeshift, and land tutors find Field of the Dead and Dark Depths.</td>
+        </tr>
+        
+        <tr>
+            <td class="code-col"><strong>P3</strong></td>
+            <td><strong>Exposure & Predictability</strong><br><span class="domain-sub">Pressure</span></td>
+            <td class="tier-col"><span class="tier-badge tier-b">B</span></td>
+            <td class="score-col">2 / 8</td>
+            <td class="ledger-count-col">0</td>
+            <td class="just-col">Land drops and zombies are clearly visible on table.</td>
+        </tr>
+        
+        <tr>
+            <td class="code-col"><strong>I1</strong></td>
+            <td><strong>Reactive Disruption</strong><br><span class="domain-sub">Interaction</span></td>
+            <td class="tier-col"><span class="tier-badge tier-b">B</span></td>
+            <td class="score-col">2 / 8</td>
+            <td class="ledger-count-col">3</td>
+            <td class="just-col">Swords to Plowshares, Beast Within, and Noxious Ghoul asymmetrical wipes.</td>
+        </tr>
+        
+        <tr>
+            <td class="code-col"><strong>I2</strong></td>
+            <td><strong>Proactive Denial & Restriction</strong><br><span class="domain-sub">Interaction</span></td>
+            <td class="tier-col"><span class="tier-badge tier-b">B</span></td>
+            <td class="score-col">2 / 8</td>
+            <td class="ledger-count-col">0</td>
+            <td class="just-col">Noxious Ghoul gives all opposing non-Zombies -1/-1 per zombie landfall, wiping opposing boards.</td>
+        </tr>
+        
+        <tr>
+            <td class="code-col"><strong>S1</strong></td>
+            <td><strong>Plan Shielding & Protection</strong><br><span class="domain-sub">Resilience</span></td>
+            <td class="tier-col"><span class="tier-badge tier-a">A</span></td>
+            <td class="score-col">4 / 8</td>
+            <td class="ledger-count-col">2</td>
+            <td class="just-col">Teferi's Protection, Heroic Intervention, and Clever Concealment.</td>
+        </tr>
+        
+        <tr>
+            <td class="code-col"><strong>S2</strong></td>
+            <td><strong>Engine Recovery</strong><br><span class="domain-sub">Resilience</span></td>
+            <td class="tier-col"><span class="tier-badge tier-a">A</span></td>
+            <td class="score-col">2 / 4</td>
+            <td class="ledger-count-col">0</td>
+            <td class="just-col">Splendid Reclamation and Lumra replay all lands from graveyard post-wipe.</td>
+        </tr>
+        
+        <tr>
+            <td class="code-col"><strong>S3</strong></td>
+            <td><strong>Independence & Backup Plans</strong><br><span class="domain-sub">Resilience</span></td>
+            <td class="tier-col"><span class="tier-badge tier-c">C</span></td>
+            <td class="score-col">0 / 4</td>
+            <td class="ledger-count-col">0</td>
+            <td class="just-col">Field of the Dead in the 99 functions independently of commander.</td>
+        </tr>
+        
+            </tbody>
+        </table>
+
+        <div class="ledger-section">
+            <h2 style="margin-bottom: 16px; font-size: 20px;">The Card Ledger</h2>
+            
+        <div class="ledger-group">
+            <div class="ledger-header">
+                <h3>R1: Mana Velocity & Sufficiency <span class="ledger-tier-tag tier-a">A</span></h3>
+                <span class="count-tag">2 cards</span>
+            </div>
+            <div class="card-grid">
+                
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Shifting%20Woodland&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Shifting%20Woodland%22" target="_blank" rel="noopener">Shifting Woodland</a>
+                <span class="chip-role">Mana ramp / fixing</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Sol%20Ring&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Sol%20Ring%22" target="_blank" rel="noopener">Sol Ring</a>
+                <span class="chip-role">Mana ramp / fixing</span>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="ledger-group">
+            <div class="ledger-header">
+                <h3>R2: Card Flow & Replenishment <span class="ledger-tier-tag tier-a">A</span></h3>
+                <span class="count-tag">2 cards</span>
+            </div>
+            <div class="card-grid">
+                
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Skullclamp&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Skullclamp%22" target="_blank" rel="noopener">Skullclamp</a>
+                <span class="chip-role">Card draw / engine replenishment</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Sylvan%20Library&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Sylvan%20Library%22" target="_blank" rel="noopener">Sylvan Library</a>
+                <span class="chip-role">Card draw / engine replenishment</span>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="ledger-group">
+            <div class="ledger-header">
+                <h3>I1: Reactive Disruption <span class="ledger-tier-tag tier-b">B</span></h3>
+                <span class="count-tag">3 cards</span>
+            </div>
+            <div class="card-grid">
+                
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Beast%20Within&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Beast%20Within%22" target="_blank" rel="noopener">Beast Within</a>
+                <span class="chip-role">Instant-speed reactive removal</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Path%20to%20Exile&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Path%20to%20Exile%22" target="_blank" rel="noopener">Path to Exile</a>
+                <span class="chip-role">Instant-speed reactive removal</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Swords%20to%20Plowshares&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Swords%20to%20Plowshares%22" target="_blank" rel="noopener">Swords to Plowshares</a>
+                <span class="chip-role">Instant-speed reactive removal</span>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="ledger-group">
+            <div class="ledger-header">
+                <h3>S1: Plan Shielding & Protection <span class="ledger-tier-tag tier-a">A</span></h3>
+                <span class="count-tag">2 cards</span>
+            </div>
+            <div class="card-grid">
+                
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Heroic%20Intervention&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Heroic%20Intervention%22" target="_blank" rel="noopener">Heroic Intervention</a>
+                <span class="chip-role">Board / commander protection</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Teferi%27s%20Protection&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Teferi%27s%20Protection%22" target="_blank" rel="noopener">Teferi's Protection</a>
+                <span class="chip-role">Board / commander protection</span>
+            </div>
+            
+            </div>
+        </div>
+        
+        </div>
+    </div>
+
+    <script>
+        const preview = document.getElementById('card-preview');
+        document.querySelectorAll('.card-chip').forEach(chip => {
+            chip.addEventListener('mouseenter', e => {
+                const img = chip.getAttribute('data-img');
+                if (img) {
+                    preview.src = img;
+                    preview.style.display = 'block';
+                }
+            });
+            chip.addEventListener('mousemove', e => {
+                preview.style.left = (e.clientX + 15) + 'px';
+                preview.style.top = Math.min(e.clientY - 120, window.innerHeight - 350) + 'px';
+            });
+            chip.addEventListener('mouseleave', () => {
+                preview.style.display = 'none';
+            });
+        });
+    </script>
+</body>
+</html>

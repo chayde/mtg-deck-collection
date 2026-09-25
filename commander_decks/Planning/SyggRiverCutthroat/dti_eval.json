@@ -1,0 +1,85 @@
+{
+  "grades": {
+    "r1": "B",
+    "r2": "A",
+    "a1": "B",
+    "a2": "B",
+    "p1": "B",
+    "p2": "B",
+    "p3": "B",
+    "i1": "A",
+    "i2": "A",
+    "s1": "A",
+    "s2": "C",
+    "s3": "C"
+  },
+  "justifications": {
+    "r1": "Dimir mana rocks and 2-mana commander.",
+    "r2": "Rhystic Study, Sygg end-step draw, and continuous chip damage draw.",
+    "a1": "High density of evasive rogues and disruptive flash creatures.",
+    "a2": "Starts drawing cards on Turn 3.",
+    "p1": "Presents lethal combat damage / drain on Turns 6–7.",
+    "p2": "2 opponent untap steps for attrition combat.",
+    "p3": "Instant-speed flash threats.",
+    "i1": "Cyclonic Rift, Fierce Guardianship, Force of Negation, and premium Dimir interaction.",
+    "i2": "Orcish Bowmasters and Rhystic Study tax and punish opponents on every action.",
+    "s1": "Fierce Guardianship and free countermagic protect key turns.",
+    "s2": "Low resilience to resolved wipes.",
+    "s3": "Tempo shell functions with other card draw engines."
+  },
+  "card_ledger": {
+    "r1": [
+      {
+        "card": "Arcane Signet",
+        "role": "Mana ramp / fixing"
+      },
+      {
+        "card": "Dimir Signet",
+        "role": "Mana ramp / fixing"
+      },
+      {
+        "card": "Island",
+        "role": "Mana ramp / fixing"
+      },
+      {
+        "card": "Sol Ring",
+        "role": "Mana ramp / fixing"
+      },
+      {
+        "card": "Talisman of Dominance",
+        "role": "Mana ramp / fixing"
+      }
+    ],
+    "a2": [],
+    "p1": [],
+    "p2": [],
+    "r2": [
+      {
+        "card": "Rhystic Study",
+        "role": "Card draw / engine replenishment"
+      }
+    ],
+    "a1": [],
+    "p3": [],
+    "i1": [
+      {
+        "card": "Clearwater Pathway",
+        "role": "Instant-speed reactive removal"
+      },
+      {
+        "card": "Counterspell",
+        "role": "Instant-speed reactive removal"
+      },
+      {
+        "card": "Pongify",
+        "role": "Instant-speed reactive removal"
+      }
+    ],
+    "i2": [],
+    "s1": [],
+    "s2": [],
+    "s3": []
+  },
+  "deck_name": "SyggRiverCutthroat",
+  "thematic_restriction": false
+}

@@ -1,0 +1,73 @@
+{
+  "grades": {
+    "r1": "B",
+    "r2": "A",
+    "a1": "B",
+    "a2": "B",
+    "p1": "B",
+    "p2": "B",
+    "p3": "B",
+    "i1": "B",
+    "i2": "B",
+    "s1": "A",
+    "s2": "B",
+    "s3": "B"
+  },
+  "justifications": {
+    "r1": "4-color mana fixing with green ramp and artifacts.",
+    "r2": "Proliferating loyalty on planeswalkers generates compounding card advantage every turn.",
+    "a1": "Planeswalker tutors and high superfriends redundancy.",
+    "a2": "Deploys Atraxa and establishes planeswalker board presence on Turns 5–6.",
+    "p1": "Presents game-winning planeswalker ultimate locks on Turns 6–7.",
+    "p2": "Requires 2 opponent untap steps to tick loyalty to emblem thresholds.",
+    "p3": "Planeswalkers on board clearly display loyalty counts.",
+    "i1": "Widespread removal and Teferi's Protection.",
+    "i2": "Narset, Parter of Veils shuts down opposing card draw.",
+    "s1": "Teferi's Protection and Atraxa vigilance/lifelink body deter attacks.",
+    "s2": "Moderate recovery via mass reanimation (Primevals' Glorious Rebirth).",
+    "s3": "Planeswalkers tick up independently, but Atraxa doubles the clock."
+  },
+  "card_ledger": {
+    "r1": [
+      {
+        "card": "Arcane Signet",
+        "role": "Mana ramp / fixing"
+      },
+      {
+        "card": "Island",
+        "role": "Mana ramp / fixing"
+      },
+      {
+        "card": "Sol Ring",
+        "role": "Mana ramp / fixing"
+      }
+    ],
+    "a2": [],
+    "p1": [],
+    "p2": [],
+    "r2": [],
+    "a1": [],
+    "p3": [],
+    "i1": [
+      {
+        "card": "Path to Exile",
+        "role": "Instant-speed reactive removal"
+      },
+      {
+        "card": "Swords to Plowshares",
+        "role": "Instant-speed reactive removal"
+      }
+    ],
+    "i2": [],
+    "s1": [
+      {
+        "card": "Teferi's Protection",
+        "role": "Board / commander protection"
+      }
+    ],
+    "s2": [],
+    "s3": []
+  },
+  "deck_name": "AtraxaPraetorsVoice",
+  "thematic_restriction": false
+}

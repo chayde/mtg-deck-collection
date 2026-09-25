@@ -1,0 +1,84 @@
+{
+  "grades": {
+    "r1": "B",
+    "r2": "B",
+    "a1": "B",
+    "a2": "B",
+    "p1": "B",
+    "p2": "B",
+    "p3": "B",
+    "i1": "B",
+    "i2": "C",
+    "s1": "A",
+    "s2": "C",
+    "s3": "C"
+  },
+  "justifications": {
+    "r1": "Jund ramp with dorks and rocks.",
+    "r2": "Combat damage draw (Hunter's Insight, Return of the Wildspeaker).",
+    "a1": "Fight spells and lure equipment redundancy.",
+    "a2": "Deploys Zangief with fight gear on Turns 5–6.",
+    "p1": "Presents lethal commander damage / board fight wipes on Turns 6–7.",
+    "p2": "2 opponent untap steps for combat elimination.",
+    "p3": "Voltron combat and fight spells.",
+    "i1": "Fight spells act as creature removal while Zangief takes damage.",
+    "i2": "Forces opposing creatures to block and die in combat.",
+    "s1": "Inherent indestructible on your turn!",
+    "s2": "Moderate recovery via equipment.",
+    "s3": "Voltron strategy centers on Zangief."
+  },
+  "card_ledger": {
+    "r1": [
+      {
+        "card": "Sol Ring",
+        "role": "Mana ramp / fixing"
+      },
+      {
+        "card": "Arcane Signet",
+        "role": "Mana ramp / fixing"
+      },
+      {
+        "card": "Cultivate",
+        "role": "Mana ramp / fixing"
+      },
+      {
+        "card": "Kodama's Reach",
+        "role": "Mana ramp / fixing"
+      },
+      {
+        "card": "Savage Lands",
+        "role": "Mana ramp / fixing"
+      },
+      {
+        "card": "Woodland Cemetery",
+        "role": "Mana ramp / fixing"
+      }
+    ],
+    "a2": [],
+    "p1": [],
+    "p2": [],
+    "r2": [],
+    "a1": [],
+    "p3": [],
+    "i1": [
+      {
+        "card": "Beast Within",
+        "role": "Instant-speed reactive removal"
+      },
+      {
+        "card": "Chaos Warp",
+        "role": "Instant-speed reactive removal"
+      },
+      {
+        "card": "Path of Ancestry",
+        "role": "Instant-speed reactive removal"
+      }
+    ],
+    "i2": [],
+    "s1": [],
+    "s2": [],
+    "s3": []
+  },
+  "deck_name": "ZangiefJundAttritron",
+  "thematic_restriction": false
+}

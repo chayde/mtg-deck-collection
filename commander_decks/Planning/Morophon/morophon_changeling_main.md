@@ -12,6 +12,7 @@ deck_status: main
 **Morophon, the Boundless**
 *   **Archetype:** 5-Color Changeling Tribal / Midrange
 *   **Bracket:** 2–3
+*   **DTI Threat Index:** **20 / 96** (Bracket 2 | Velocity: **10/48** | Suppression: **7/40** | Gates: All Passed | [DTI Report](dti_report.html))
 *   **Core Goal:** Flood the board with changeling creatures — creatures that are simultaneously every creature type — then amplify them with cherry-picked lords from across multiple tribes. Because every changeling is a Zombie, an Elf, a Knight, a Soldier, a Spirit, an Angel, a Goblin, and every other type at once, a single Zombie lord, Elf lord, and Knight lord each independently buff your entire board simultaneously. The result is a creature base that stacks multiple +1/+1 bonuses and multiple keywords (indestructible, hexproof, deathtouch, lifelink, first strike, haste, trample) from a wide variety of sources — all from a creature pool that is inherently resilient, varied, and hard to fully answer.
 
 ### Origin and Intent

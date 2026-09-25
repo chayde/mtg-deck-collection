@@ -1,0 +1,77 @@
+{
+  "grades": {
+    "r1": "A",
+    "r2": "B",
+    "a1": "B",
+    "a2": "B",
+    "p1": "B",
+    "p2": "B",
+    "p3": "B",
+    "i1": "B",
+    "i2": "B",
+    "s1": "B",
+    "s2": "C",
+    "s3": "C"
+  },
+  "justifications": {
+    "r1": "Mahadi creates Treasures for every creature that dies each turn, generating massive burst mana.",
+    "r2": "Bolas's Citadel and aristocrat draw triggers refuel hand.",
+    "a1": "Sacrifice outlet and creature death redundancy.",
+    "a2": "Establishes treasure engine on Turns 5–6.",
+    "p1": "Presents lethal Bolas's Citadel drain on Turns 6–7.",
+    "p2": "1–2 opponent untap steps to close out game.",
+    "p3": "Citadel is telegraphed, but generates immediate win lines.",
+    "i1": "Rakdos creature removal and edicts.",
+    "i2": "Recurring edict attrition loops.",
+    "s1": "Boots and redirect spells.",
+    "s2": "Treasures remain after creature board wipes.",
+    "s3": "Aristocrat engine functions moderately well without Mahadi."
+  },
+  "card_ledger": {
+    "r1": [
+      {
+        "card": "Arcane Signet",
+        "role": "Mana ramp / fixing"
+      },
+      {
+        "card": "Myriad Landscape",
+        "role": "Mana ramp / fixing"
+      },
+      {
+        "card": "Rakdos Signet",
+        "role": "Mana ramp / fixing"
+      },
+      {
+        "card": "Sol Ring",
+        "role": "Mana ramp / fixing"
+      },
+      {
+        "card": "Talisman of Indulgence",
+        "role": "Mana ramp / fixing"
+      }
+    ],
+    "a2": [],
+    "p1": [],
+    "p2": [],
+    "r2": [
+      {
+        "card": "Skullclamp",
+        "role": "Card draw / engine replenishment"
+      }
+    ],
+    "a1": [],
+    "p3": [],
+    "i1": [
+      {
+        "card": "Chaos Warp",
+        "role": "Instant-speed reactive removal"
+      }
+    ],
+    "i2": [],
+    "s1": [],
+    "s2": [],
+    "s3": []
+  },
+  "deck_name": "MahadiEmporium",
+  "thematic_restriction": false
+}

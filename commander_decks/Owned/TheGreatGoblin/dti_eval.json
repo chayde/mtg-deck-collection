@@ -1,0 +1,73 @@
+{
+  "grades": {
+    "r1": "B",
+    "r2": "B",
+    "a1": "B",
+    "a2": "B",
+    "p1": "B",
+    "p2": "B",
+    "p3": "B",
+    "i1": "C",
+    "i2": "F",
+    "s1": "B",
+    "s2": "C",
+    "s3": "C"
+  },
+  "justifications": {
+    "r1": "Rakdos goblin mana dorks (Skirk Prospector) and cheap rocks.",
+    "r2": "Goblin death draw and impulse card advantage.",
+    "a1": "Goblin typal tutors (Goblin Matron, Boggart Harbinger).",
+    "a2": "Assembles goblin army on Turns 5–6.",
+    "p1": "Presents swarm attack on Turns 6–7.",
+    "p2": "2 opponent untap steps to eliminate players.",
+    "p3": "Board-based swarm; vulnerable to sweepers.",
+    "i1": "Targeted burn and creature sacrifice removal.",
+    "i2": "Zero proactive restriction or stax.",
+    "s1": "Standard goblin protection and haste enablers.",
+    "s2": "Rebuilding requires fresh hand of goblins.",
+    "s3": "Functions as a general goblin typal swarm without commander."
+  },
+  "card_ledger": {
+    "r1": [
+      {
+        "card": "Arcane Signet",
+        "role": "Mana ramp / fixing"
+      },
+      {
+        "card": "Sol Ring",
+        "role": "Mana ramp / fixing"
+      },
+      {
+        "card": "Talisman of Indulgence",
+        "role": "Mana ramp / fixing"
+      }
+    ],
+    "a2": [],
+    "p1": [],
+    "p2": [],
+    "r2": [
+      {
+        "card": "Skullclamp",
+        "role": "Card draw / engine replenishment"
+      }
+    ],
+    "a1": [],
+    "p3": [],
+    "i1": [
+      {
+        "card": "Blightstep Pathway",
+        "role": "Instant-speed reactive removal"
+      },
+      {
+        "card": "Path of Ancestry",
+        "role": "Instant-speed reactive removal"
+      }
+    ],
+    "i2": [],
+    "s1": [],
+    "s2": [],
+    "s3": []
+  },
+  "deck_name": "TheGreatGoblin",
+  "thematic_restriction": false
+}

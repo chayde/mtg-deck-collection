@@ -10,6 +10,7 @@ deck_status: main
 **Nekusar, the Mindrazer** ({2}{U}{B}{R})
 *   **Archetype:** Grixis (U/B/R) Damage Multipliers & Forced Draw Slug
 *   **Bracket:** 3 (1 Game Changer: *Orcish Bowmasters*)
+*   **DTI Threat Index:** **27 / 96** (Bracket 4 | Velocity: **13/48** | Suppression: **10/40** | Gates: Triggered: Suppression Gate | [DTI Report](dti_report.html))
 *   **Core Goal:** Force opponents to draw massive quantities of cards while stacking direct damage multipliers (**Ghyrson Starn**, **Solphim, Mayhem Dominus**) and trigger doublers (**Harmonic Prodigy**) to rapidly drain the entire table.
 
 ### Key Win Conditions & Synergies

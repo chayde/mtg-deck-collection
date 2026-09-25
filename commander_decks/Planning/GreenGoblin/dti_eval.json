@@ -1,0 +1,72 @@
+{
+  "grades": {
+    "r1": "B",
+    "r2": "A",
+    "a1": "B",
+    "a2": "B",
+    "p1": "B",
+    "p2": "B",
+    "p3": "B",
+    "i1": "A",
+    "i2": "C",
+    "s1": "B",
+    "s2": "C",
+    "s3": "C"
+  },
+  "justifications": {
+    "r1": "Grixis artifact ramp and treasure generators.",
+    "r2": "Villain card advantage and artifact draw engines.",
+    "a1": "Artifact tutoring and villain redundancy.",
+    "a2": "Deploys Green Goblin and flips on Turns 5–6.",
+    "p1": "Presents lethal artifact burn / pumpkin bomb damage on Turns 6–7.",
+    "p2": "2 opponent untap steps for combat and burn.",
+    "p3": "Artifact and creature triggers.",
+    "i1": "Cyclonic Rift, Fierce Guardianship, and premium Grixis interaction.",
+    "i2": "Light incidental sacrifice drain.",
+    "s1": "Fierce Guardianship and countermagic stack protection.",
+    "s2": "Moderate artifact recursion.",
+    "s3": "Artifact shell operates moderately well without commander."
+  },
+  "card_ledger": {
+    "r1": [
+      {
+        "card": "Arcane Signet",
+        "role": "Mana ramp / fixing"
+      },
+      {
+        "card": "Island",
+        "role": "Mana ramp / fixing"
+      },
+      {
+        "card": "Sol Ring",
+        "role": "Mana ramp / fixing"
+      },
+      {
+        "card": "Talisman of Creativity",
+        "role": "Mana ramp / fixing"
+      },
+      {
+        "card": "Talisman of Indulgence",
+        "role": "Mana ramp / fixing"
+      }
+    ],
+    "a2": [],
+    "p1": [],
+    "p2": [],
+    "r2": [],
+    "a1": [],
+    "p3": [],
+    "i1": [],
+    "i2": [],
+    "s1": [
+      {
+        "card": "Lightning Greaves",
+        "role": "Board / commander protection"
+      }
+    ],
+    "s2": [],
+    "s3": []
+  },
+  "deck_name": "GreenGoblin",
+  "thematic_restriction": false
+}

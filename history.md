@@ -16,7 +16,12 @@
     *   [`DTI_FRAMEWORK.md`](DTI_FRAMEWORK.md): Complete authoritative specification, benchmark ladders, rubric, and Card Ledger rules.
     *   [`scripts/dti_evaluator.py`](scripts/dti_evaluator.py): Deterministic evaluation engine computing scores, vectors, gate checks, WotC compliance, multiplayer goldfish cross-validation, and rendering standalone visual HTML reports (`dti_report.html`) with hoverable Scryfall card chips.
     *   `dti_auditor` Subagent: Dedicated AI agent configured to perform holistic contextual audits and Card Ledger mapping.
-    *   Updated `COMMANDER_DECKBUILDING_RULES.md` and `GEMINI.md` to integrate DTI audits into the standard validation pipeline.
+*   **Repository-Wide Rescan & Synchronization (40 Decks):**
+    *   Executed comprehensive DTI power audits across all **13 Owned decks** and **27 Planning decks**.
+    *   Generated localized `dti_eval.json`, GitHub-formatted audit reports (`dti_audit.md`), and standalone visual interactive dashboards (`dti_report.html`) for every deck.
+    *   Updated the `## Commander Strategy` header in all 40 primary markdown deck files to display the deck's evaluated DTI Threat Score, bracket classification, Velocity and Suppression vectors, gatekeeper statuses, and direct report links.
+    *   *Key Diagnostic Findings:* Detected that high-speed combo decks (e.g. *KrenkoMobBoss*) and heavy stax/denial decks (e.g. *ThaliaGitrog*, *NekusarMindrazer*, *SyggRiverCutthroat*) trigger the Early Finish and Suppression Gates into Bracket 4, while high-synergy combat engines (*HenzieBlitz*, *TheHive*, *UrDragonKibler*, *GisaTheHellraiser*) cleanly fit within Bracket 3 without tripping velocity or lock thresholds.
+    *   Registered `.agents/skills/dti-auditor/` as a permanent native workspace skill and updated `GEMINI.md` to mandate DTI auditing whenever categorizing or assigning any deck to a bracket.
 
 ### 2026-09-24: KrenkoBracket3 — Pragmatic High-Power Swarm, 9-Source Haste Matrix & Infinite Untap Inception (Bracket 3 Validated)
 *   **Deck Inception & Conversion Strategy:** Evaluated the feasibility of converting the physically owned **The Great Goblin** ({1}{B/R}{B/R}) pre-built deck into a dedicated mono-red **Krenko, Mob Boss** ({2}{R}{R}) powerhouse. Rather than purchasing the $2,200+ vintage shell (which runs *Mox Diamond*, *Wheel of Fortune*, *Ancient Tomb*, and *The One Ring*), engineered **KrenkoBracket3**: a pragmatic, tournament-caliber Bracket 3 build that carries over 33 nonbasics and basic Mountains from *The Great Goblin*, saving over $1,700.
