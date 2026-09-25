@@ -11,7 +11,8 @@ deck_status: main
 ## Commander Strategy
 **Karametra, God of Harvests**
 *   **Archetype:** Selesnya (Green/White) Angels & Landfall  
-*   **Bracket:** 4 (Optimized — 4 Game Changers: Smothering Tithe, Aura Shards, Teferi's Protection, Worldly Tutor)
+*   **Bracket:** Bracket 3 (Upgraded Casual) by DTI Physics (Score 32/96) | Bracket 4 by WotC Floor (4 Game Changers: Smothering Tithe, Aura Shards, Teferi's Protection, Worldly Tutor)
+*   **DTI Threat Index:** **32 / 96** (Score Floor: Bracket 3 | Velocity: **18/48** | Suppression: **13/40** | Gates: All Passed | [DTI Report](dti_report.html))
 *   **Goal:** This deck aims to win by assembling a powerful army of Angels. It uses its commander, Karametra, as a powerful ramp engine to cast expensive, high-impact Angel creatures far ahead of the curve.
 *   **How it Plays:** The early game is dedicated to ramping and casting small creatures to trigger Karametra's ability. This thins the deck of lands and ensures you never miss a land drop. Once you have a significant mana advantage, you'll start deploying your powerful Angel threats, which control the board and present a formidable flying army.
 
@@ -79,6 +80,10 @@ deck_status: main
 ---
 
 ## 📜 Deck Changelog
+*   **2026-09-25:** Calibrated against official DeckCheck.co scan.
+    *   **In:** N/A (DTI Telemetry & Calibration)
+    *   **Out:** N/A
+    *   **Reason:** Official scan validated Threat Score at 32 / 96 (Bracket 3 Upgraded Casual floor, identical to Bruce Banner // The Incredible Hulk). Velocity vector calibrated to 18/48, Suppression vector to 13/40, Onset Turn 6 (P1: B), Engine Ready Turn 4 (A2: A), with 2 opponent response cycles (P2: B). All 4 Gatekeepers passed safely. Populated full 100-card ledger and tactical primer.
 *   **2026-02-20:** Updated digital list to match physical 37-land count.
     *   **In:** Ghost Quarter, Mosswort Bridge.
     *   **Out:** Boseiju, Who Endures, Nykthos, Shrine to Nyx.

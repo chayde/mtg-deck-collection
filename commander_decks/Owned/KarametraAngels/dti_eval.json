@@ -1,115 +1,226 @@
 {
+  "deck_name": "KarametraAngels",
+  "thematic_restriction": false,
   "grades": {
     "r1": "A",
     "r2": "B",
     "a1": "B",
-    "a2": "B",
+    "a2": "A",
     "p1": "B",
     "p2": "B",
     "p3": "B",
     "i1": "B",
     "i2": "B",
     "s1": "A",
-    "s2": "B",
-    "s3": "B"
+    "s2": "A",
+    "s3": "A"
   },
   "justifications": {
-    "r1": "Karametra land-fetch triggers on every creature cast ramp 10+ lands ahead of curve, plus Smothering Tithe.",
-    "r2": "Beast Whisperer, The Great Henge, and angel draw triggers maintain hand replenishment.",
-    "a1": "Worldly Tutor, Eladamri's Call, and creature redundancy find key angels.",
-    "a2": "Achieves high-mana Angel deployment by Turns 5–6.",
-    "p1": "Presents flying angel board pressure on Turns 6–7.",
-    "p2": "Requires 2 opponent untap steps to swing for lethal across 3 players.",
-    "p3": "Visible high-flying threats; heavily telegraphed combat wins.",
-    "i1": "Path, Swords, Beast Within, and Generous Gift spot removal suite.",
-    "i2": "Aura Shards repeatedly destroys all opposing artifacts/enchantments on every creature cast.",
-    "s1": "Teferi's Protection, Heroic Intervention, and Avacyn indestructible shielding.",
-    "s2": "Massive land base allows fast re-casting of angels after wipes.",
-    "s3": "Indestructible commander; deck functions well once lands are pulled from library."
+    "r1": "Cheap 1-2 CMC ramp spells (Birds of Paradise, Avacyn's Pilgrim, Sol Ring, Nature's Lore, Three Visits, Farseek, Rampant Growth) deploy Turn 4 Karametra, whose continuous land-fetch triggers on every creature cast generate massive mana acceleration.",
+    "r2": "Solid B-tier card flow powered by The Great Henge, Sylvan Library, Guardian Project, Tribute to the World Tree, Esper Sentinel, and Battle Angels of Tyr.",
+    "a1": "B-tier selection and redundancy anchored by Worldly Tutor and Eladamri's Call finding key Angels and finishers.",
+    "a2": "Reaches engine readiness by Turn 4 via reliable early ramp into Karametra, God of Harvests.",
+    "p1": "Threat onset hits by Turn 6 as high-impact threats (Avenger of Zendikar, Righteous Valkyrie, Lyra Dawnbringer, Elesh Norn) establish massive board presence.",
+    "p2": "Requires 2 opponent response cycles after Turn 6 onset to close out games across the pod via aerial combat and Landfall overruns (Turn 8 kill).",
+    "p3": "High-flying Angel threats and growing Landfall tokens telegraph lethal damage across multiple attack steps.",
+    "i1": "B-tier reactive disruption suite featuring Swords to Plowshares, Path to Exile, Beast Within, Generous Gift, Farewell, and Austere Command.",
+    "i2": "B-tier proactive denial anchored by Aura Shards repeatedly wiping opposing artifacts/enchantments, Linvala shutting down activated abilities, Authority of the Consuls tapping creatures, and Angelic Arbiter / Archangel of Tithes imposing attack taxes.",
+    "s1": "Premier A-tier plan shielding via Teferi's Protection, Heroic Intervention, Avacyn, Angel of Hope, Shalai, Voice of Plenty, Sigarda, Font of Blessings, and Serra's Emissary.",
+    "s2": "A-tier engine recovery powered by Emeria Shepherd recurring nonland permanents on Plains drops, Eternal Witness, Bala Ged Recovery, and resilient indestructible permanents.",
+    "s3": "High independence (A-tier): the 99 functions as an autonomous Angel tribal beatdown and Landfall engine even without Karametra."
   },
+  "overview": "This deck is a Selesnya Midrange strategy combining Angel tribal synergies with Karametra's explosive land-ramp engine. In the early game, cheap ramp spells accelerate Karametra onto the battlefield by Turn 4. Once Karametra is established, every subsequent creature cast fetches a Forest or Plains directly onto the battlefield, creating rapid mana acceleration and thinning the library. In the mid-to-late game, this abundant mana powers out high-impact threats such as Avenger of Zendikar, Righteous Valkyrie, Lyra Dawnbringer, and Elesh Norn, Grand Cenobite. The deck closes games through overwhelming aerial combat, often boosted by Akroma's Will or Landfall counters. Robust protection pieces like Heroic Intervention, Shalai, Voice of Plenty, and Sigarda, Font of Blessings shield the board against opposing interaction.",
+  "primer": {
+    "core_strategy": [
+      "Accelerate early with 1-2 CMC ramp spells like Nature's Lore and Birds of Paradise to cast Karametra, God of Harvests by Turn 4.",
+      "Trigger Karametra repeatedly by casting mid-cost creatures and utility Angels, pulling lands from the library to fuel big-mana plays.",
+      "Deploy board-dominating threats like Avenger of Zendikar, Righteous Valkyrie, or Elesh Norn, Grand Cenobite around Turn 6.",
+      "Overwhelm the table with large flying creatures and finish opponents with an alpha strike backed by Akroma's Will or wide Landfall buffs."
+    ],
+    "mulligan_priorities": {
+      "keep": [
+        "Hands with 3-4 lands and at least one 1-2 CMC ramp spell to guarantee a Turn 4 Karametra, ideally with a cheap creature or draw engine to follow up."
+      ],
+      "avoid": [
+        "Hands heavy with 5+ CMC Angels and no early ramp, or hands lacking basic land access to start the engine."
+      ]
+    },
+    "key_tips": [
+      "Keep Karametra's devotion below seven early if you expect creature exile removal; an indestructible enchantment is much harder for opponents to interact with.",
+      "Hold Heroic Intervention or Akroma's Will open once your aerial engine is assembled to protect your board from sweepers.",
+      "Prioritize fetching Plains cards when Emeria Shepherd is in hand or on the battlefield to trigger direct-to-battlefield reanimation."
+    ]
+  },
+  "weaknesses": {
+    "critical": [
+      "Mass exile effects such as Farewell bypass Karametra's indestructible keyword and remove the deck's board and graveyard in one blow."
+    ],
+    "moderate": [
+      "Lack of stack-based countermagic leaves the deck vulnerable to fast noncreature combo decks and early game-ending spells.",
+      "Reliance on natural draws for noncreature draw engines can cause the deck to run out of gas if early creatures are removed."
+    ],
+    "minor": [
+      "Nonbasic land destruction or search-stax effects like Aven Mindcensor can slow down Karametra's land-fetching triggers."
+    ]
+  },
+  "key_cards": [
+    {
+      "card": "Karametra, God of Harvests",
+      "reason": "Commander and primary engine; turns every creature cast into land ramp and deck thinning."
+    },
+    {
+      "card": "Avenger of Zendikar",
+      "reason": "Primary finisher; floods the board with Plant tokens that grow rapidly from Karametra's Landfall triggers."
+    },
+    {
+      "card": "Righteous Valkyrie",
+      "reason": "Provides massive life gain and a continuous +2/+2 anthem to all creatures once life reaches 47+."
+    },
+    {
+      "card": "Akroma's Will",
+      "reason": "Decisive combat finisher granting double strike, evasion, and full protection to alpha strike the table."
+    },
+    {
+      "card": "Aura Shards",
+      "reason": "Repeatable artifact and enchantment destruction triggered by every creature entering the battlefield."
+    },
+    {
+      "card": "Emeria Shepherd",
+      "reason": "Recurs nonland permanents directly to the battlefield whenever a Plains enters."
+    },
+    {
+      "card": "Elesh Norn, Grand Cenobite",
+      "reason": "Wipes opposing small creatures, suppresses token strategies, and provides an asymmetric +2/+2 buff."
+    },
+    {
+      "card": "Linvala, Keeper of Silence",
+      "reason": "Asymmetric hate piece that completely shuts down activated abilities on opposing creatures."
+    },
+    {
+      "card": "Shalai, Voice of Plenty",
+      "reason": "Grants hexproof to the player and other creatures, protecting the board and blocking targeted interaction."
+    },
+    {
+      "card": "Sigarda, Font of Blessings",
+      "reason": "Protects other permanents with hexproof and provides card advantage by casting Angels from the top of the library."
+    },
+    {
+      "card": "Heroic Intervention",
+      "reason": "Instant-speed protection granting hexproof and indestructible against removal and damage sweepers."
+    },
+    {
+      "card": "Giada, Font of Hope",
+      "reason": "Early ramp piece that permanently buffs incoming Angels with +1/+1 counters."
+    }
+  ],
   "card_ledger": {
     "r1": [
-      {
-        "card": "Sol Ring",
-        "role": "Mana ramp / fixing"
-      },
-      {
-        "card": "Arcane Signet",
-        "role": "Mana ramp / fixing"
-      },
-      {
-        "card": "Overgrown Farmland",
-        "role": "Mana ramp / fixing"
-      },
-      {
-        "card": "Brushland",
-        "role": "Mana ramp / fixing"
-      },
-      {
-        "card": "Cultivate",
-        "role": "Mana ramp / fixing"
-      },
-      {
-        "card": "Kodama's Reach",
-        "role": "Mana ramp / fixing"
-      },
-      {
-        "card": "Rampant Growth",
-        "role": "Mana ramp / fixing"
-      }
+      { "card": "Birds of Paradise", "role": "1 CMC mana dork" },
+      { "card": "Avacyn's Pilgrim", "role": "1 CMC mana dork" },
+      { "card": "Sanctum Weaver", "role": "Enchantment scaling mana dork" },
+      { "card": "Giada, Font of Hope", "role": "Angel mana ramp and counter generator" },
+      { "card": "Lotus Cobra", "role": "Landfall mana acceleration" },
+      { "card": "Tireless Provisioner", "role": "Landfall treasure creation" },
+      { "card": "Starnheim Aspirant", "role": "Angel spell cost reducer" },
+      { "card": "Sol Ring", "role": "Fast colorless mana artifact" },
+      { "card": "Arcane Signet", "role": "2 CMC mana rock" },
+      { "card": "Smothering Tithe", "role": "Opponent card draw treasure taxing" },
+      { "card": "Mirari's Wake", "role": "Mana doubler for lands" },
+      { "card": "Three Visits", "role": "2 CMC untapped forest ramp" },
+      { "card": "Nature's Lore", "role": "2 CMC untapped forest ramp" },
+      { "card": "Farseek", "role": "2 CMC plains search ramp" },
+      { "card": "Rampant Growth", "role": "2 CMC basic land ramp" },
+      { "card": "Cultivate", "role": "3 CMC land search and hand fixing" },
+      { "card": "Kodama's Reach", "role": "3 CMC land search and hand fixing" },
+      { "card": "Selesnya Sanctuary", "role": "Bounce land fixing" },
+      { "card": "Windswept Heath", "role": "Fetchland fixing" },
+      { "card": "Temple Garden", "role": "Fetchable shockland" },
+      { "card": "Bountiful Promenade", "role": "Multiplayer dual land" },
+      { "card": "Overgrown Farmland", "role": "Slow dual land" },
+      { "card": "Canopy Vista", "role": "Fetchable dual land" },
+      { "card": "Brushland", "role": "Pain land fixing" },
+      { "card": "Command Tower", "role": "Commander fixing land" },
+      { "card": "Wooded Bastion", "role": "Filter land fixing" },
+      { "card": "Yavimaya, Cradle of Growth", "role": "Universal green mana fixing" },
+      { "card": "Krosan Verge", "role": "Double land search fetchland" },
+      { "card": "11 Snow-Covered Plains", "role": "Basic lands, fetchable by Karametra" },
+      { "card": "11 Snow-Covered Forest", "role": "Basic lands, fetchable by Karametra" }
     ],
-    "a2": [],
-    "p1": [],
-    "p2": [],
     "r2": [
-      {
-        "card": "Sylvan Library",
-        "role": "Card draw / engine replenishment"
-      }
+      { "card": "The Great Henge", "role": "Continuous card draw on creature ETB" },
+      { "card": "Sylvan Library", "role": "Topdeck manipulation and extra card draw" },
+      { "card": "Esper Sentinel", "role": "Noncreature tax card draw" },
+      { "card": "Guardian Project", "role": "Nontoken creature ETB card draw" },
+      { "card": "Tribute to the World Tree", "role": "Creature ETB card draw and power boost" },
+      { "card": "Battle Angels of Tyr", "role": "Myriad card draw and resource catch-up" },
+      { "card": "Bishop of Wings", "role": "Life gain and spirit token insurance on angel death" },
+      { "card": "Reliquary Tower", "role": "Unlimited hand size utility land" }
     ],
     "a1": [
-      {
-        "card": "Worldly Tutor",
-        "role": "Specific tutor / selection"
-      }
+      { "card": "Worldly Tutor", "role": "Topdeck creature tutor" },
+      { "card": "Eladamri's Call", "role": "Instant speed direct-to-hand creature tutor" }
+    ],
+    "a2": [
+      { "card": "Karametra, God of Harvests", "role": "Commander assembly engine via creature cast land drops" },
+      { "card": "Mosswort Bridge", "role": "Hideaway free spell acceleration" }
+    ],
+    "p1": [
+      { "card": "Avenger of Zendikar", "role": "Mass token army scaled by landfall" },
+      { "card": "Scute Swarm", "role": "Exponential insect and token copy swarm" },
+      { "card": "Righteous Valkyrie", "role": "Massive +2/+2 anthem on high life total" },
+      { "card": "Lyra Dawnbringer", "role": "Angel lord granting +1/+1 and lifelink" },
+      { "card": "Archangel of Thune", "role": "Team-wide +1/+1 counters on lifegain" },
+      { "card": "Resplendent Angel", "role": "Token generator for 4/4 flying angels" },
+      { "card": "Herald of War", "role": "Scaling combat threat and angel cost reducer" },
+      { "card": "Segovian Angel", "role": "Early flying vigilance pressure" },
+      { "card": "Luminarch Aspirant", "role": "Combat phase +1/+1 counter placement" },
+      { "card": "Gavony Township", "role": "Repeatable +1/+1 team counters on land" }
+    ],
+    "p2": [
+      { "card": "Akroma's Will", "role": "Decisive double strike and unblockable combat finisher" }
     ],
     "p3": [],
     "i1": [
-      {
-        "card": "Swords to Plowshares",
-        "role": "Instant-speed reactive removal"
-      },
-      {
-        "card": "Path to Exile",
-        "role": "Instant-speed reactive removal"
-      },
-      {
-        "card": "Beast Within",
-        "role": "Instant-speed reactive removal"
-      }
+      { "card": "Swords to Plowshares", "role": "1 CMC instant creature exile" },
+      { "card": "Path to Exile", "role": "1 CMC instant creature exile" },
+      { "card": "Beast Within", "role": "Universal nonland permanent instant destruction" },
+      { "card": "Generous Gift", "role": "Universal permanent instant destruction" },
+      { "card": "Farewell", "role": "Modal mass exile sweeper" },
+      { "card": "Austere Command", "role": "Modal flexible board wipe" },
+      { "card": "Sunblast Angel", "role": "Destroys all tapped creatures on ETB" },
+      { "card": "Admonition Angel", "role": "Landfall repeatable nonland permanent exile" },
+      { "card": "Ghost Quarter", "role": "Targeted land destruction" }
     ],
-    "i2": [],
+    "i2": [
+      { "card": "Aura Shards", "role": "Repeatable artifact/enchantment destruction on creature ETB" },
+      { "card": "Linvala, Keeper of Silence", "role": "Shuts down activated abilities on opposing creatures" },
+      { "card": "Elesh Norn, Grand Cenobite", "role": "Asymmetrical -2/-2 creature sweeper and suppression" },
+      { "card": "Authority of the Consuls", "role": "Taps incoming opposing creatures and life gain" },
+      { "card": "Archangel of Tithes", "role": "Taxes opponent attacks and blocks" },
+      { "card": "Angelic Arbiter", "role": "Prevents opponents from attacking and casting spells in the same turn" }
+    ],
     "s1": [
-      {
-        "card": "Teferi's Protection",
-        "role": "Board / commander protection"
-      },
-      {
-        "card": "Heroic Intervention",
-        "role": "Board / commander protection"
-      },
-      {
-        "card": "Swiftfoot Boots",
-        "role": "Board / commander protection"
-      },
-      {
-        "card": "Lightning Greaves",
-        "role": "Board / commander protection"
-      }
+      { "card": "Teferi's Protection", "role": "Complete phasing board and life total protection" },
+      { "card": "Heroic Intervention", "role": "Team indestructible and hexproof protection" },
+      { "card": "Avacyn, Angel of Hope", "role": "Universal permanent indestructible protection" },
+      { "card": "Sigarda, Font of Blessings", "role": "Grants hexproof to other permanents" },
+      { "card": "Shalai, Voice of Plenty", "role": "Hexproof for player and other creatures" },
+      { "card": "Serra's Emissary", "role": "Protection from chosen card type" },
+      { "card": "Platinum Angel", "role": "Prevents game loss" },
+      { "card": "Swiftfoot Boots", "role": "Hexproof and haste equipment" },
+      { "card": "Lightning Greaves", "role": "Shroud and haste equipment" }
     ],
-    "s2": [],
-    "s3": []
-  },
-  "deck_name": "KarametraAngels",
-  "thematic_restriction": false
+    "s2": [
+      { "card": "Emeria Shepherd", "role": "Repeatable permanent reanimation on plains landfall" },
+      { "card": "Angel of Serenity", "role": "Recurs 3 creatures from graveyard or exiles opposing threats" },
+      { "card": "Eternal Witness", "role": "Recurs any card from graveyard to hand" },
+      { "card": "Bala Ged Recovery", "role": "MDFC recursion and land drop" }
+    ],
+    "s3": [
+      { "card": "Avenger of Zendikar", "role": "Autonomous win condition without commander" },
+      { "card": "Elesh Norn, Grand Cenobite", "role": "Autonomous board control without commander" },
+      { "card": "Righteous Valkyrie", "role": "Autonomous life gain and anthem engine" },
+      { "card": "The Great Henge", "role": "Autonomous mana and card engine" }
+    ]
+  }
 }
