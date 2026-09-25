@@ -1,60 +1,221 @@
 {
+  "deck_name": "GisaTheHellraiser",
+  "thematic_restriction": false,
   "grades": {
-    "r1": "A",
+    "r1": "B",
     "r2": "A",
     "a1": "B",
     "a2": "A",
     "p1": "B",
     "p2": "B",
     "p3": "B",
-    "i1": "B",
+    "i1": "A",
     "i2": "B",
-    "s1": "A",
-    "s2": "B",
-    "s3": "C"
+    "s1": "B",
+    "s2": "A",
+    "s3": "A"
   },
   "justifications": {
-    "r1": "Mono-black big mana (Cabal Coffers, Urborg, Crypt Ghast, Nykthos, Dark Ritual).",
-    "r2": "Skullclamp, Idol of Oblivion, Yawgmoth, and Staff of Domination provide continuous replenishment.",
-    "a1": "High density of instant-speed repeatable crime enablers (10+ permanents).",
-    "a2": "Deploys Gisa and triggers crimes on every player's turn starting Turn 5.",
-    "p1": "Presents menace Zombie army (up to 8 Zombies / 24 power per turn cycle) on Turns 6–7.",
-    "p2": "1–2 opponent untap steps to swing for lethal with menace swarm, or Gray Merchant drain.",
-    "p3": "Crimes trigger at instant speed; menace makes combat difficult to block.",
-    "i1": "Targeted exile crimes and instant removal.",
-    "i2": "Repeatable graveyard exile (Ghost Vacuum, Relic, Withered Wretch) and Noxious Ghoul board wipes.",
-    "s1": "Inherent Ward: {2}, Pay 2 life, plus Commander's Plate (protection from WURG).",
-    "s2": "Bringer of the Last Gift and mass reanimation rebuild full boards.",
-    "s3": "Crime engines can trigger independently, but Zombies require Gisa."
+    "r1": "B-tier mana velocity: relies on Cabal Coffers, Urborg, Crypt Ghast, Nykthos, and Sol Ring/rocks for mid-to-late acceleration, but lacks green land ramp.",
+    "r2": "A-tier card flow powered by Undead Augur, Species Specialist, Cryptbreaker, Morbid Opportunist, Bolas's Citadel, and The One Ring.",
+    "a1": "B-tier redundancy: dense suite of 10+ repeatable instant-speed crime enablers and tribal lords, with Expedition Map as utility tutor.",
+    "a2": "Reaches engine readiness by Turn 4 via low-cost ramp and crime enablers into Gisa, the Hellraiser.",
+    "p1": "Critical onset hits by Turn 6 as menace Zombie armies, anthem buffs, and unblockable swampwalk pressure life totals.",
+    "p2": "B-tier win compactness: requires 2 opponent response cycles to conclude games across the pod via menace combat swings or Gray Merchant devotion drain.",
+    "p3": "Wide visible zombie tokens and active anthem artifacts heavily telegraph combat lethality.",
+    "i1": "Premier A-tier reactive disruption featuring Snuff Out, Deadly Rollick, Toxic Deluge, Dismember, Infernal Grasp, Go for the Throat, and Withering Torment.",
+    "i2": "B-tier proactive denial: repeatable graveyard exile via Agatha's Soul Cauldron, Unlicensed Hearse, Ghost Vacuum, and Relic of Progenitus, backed by Noxious Ghoul wiping opposing boards.",
+    "s1": "B-tier plan shielding: Gisa has inherent Ward ({2}, pay 2 life), supplemented by Commander's Plate, Eldrazi Monument, and Zombie Master regeneration.",
+    "s2": "A-tier engine recovery: Living Death, Patriarch's Bidding, Bringer of the Last Gift, and Unholy Grotto provide resilient mass resurrection against wipes.",
+    "s3": "A-tier independence: the 99 functions autonomously as a lethal Zombie tribal beatdown and aristocrat engine without Gisa."
   },
+  "overview": "This mono-black deck is led by Gisa, the Hellraiser and focuses on swarming the board with evasive Zombie tokens generated through the crime mechanic. The deck uses cheap, repeatable graveyard exile artifacts like Agatha's Soul Cauldron and Ghost Vacuum alongside low-cost removal spells to trigger Gisa on both your turn and opponents' turns. As tokens multiply, tribal lords such as Undead Warchief and Death Baron amplify their power, while Zombie Master paired with Urborg, Tomb of Yawgmoth grants unblockable swampwalk. Draw engines like Undead Augur and Species Specialist keep resources flowing, and powerful finishers including Gray Merchant of Asphodel, Coat of Arms, and Living Death close out the game.",
+  "primer": {
+    "core_strategy": [
+      "Deploy low-cost mana ramp and repeatable crime enablers such as Ghost Vacuum or Agatha's Soul Cauldron in the early turns.",
+      "Cast Gisa, the Hellraiser on turn 4 or 5 and immediately trigger a crime to create two 3/3 menace Zombie tokens.",
+      "Target opposing graveyards or creatures on each opponent's turn to maximize Gisa's once-per-turn token generation.",
+      "Overwhelm the table with anthem-buffed menace attackers, unblockable swampwalk attacks, or massive devotion drain from Gray Merchant of Asphodel."
+    ],
+    "mulligan_priorities": {
+      "keep": [
+        "Hands containing 3 lands, at least one 2-CMC ramp piece, and a cheap repeatable crime enabler or card draw engine."
+      ],
+      "avoid": [
+        "Hands filled with expensive 5+ mana spells, lacking early black mana sources, or without any proactive crime enablers."
+      ]
+    },
+    "key_tips": [
+      "Activate graveyard exile abilities on opponents' turns to generate additional Zombie tokens outside of your own turn.",
+      "Combine Urborg, Tomb of Yawgmoth with Zombie Master or Zombie Trailblazer to make your entire army unblockable against all players.",
+      "Hold mass reanimation spells like Living Death or Patriarch's Bidding in hand to instantly rebuild your board following an opponent's sweeper."
+    ]
+  },
+  "weaknesses": {
+    "critical": [
+      "Vulnerability to exile-based board wipes like Farewell that bypass graveyard recursion and dismantle wide token boards."
+    ],
+    "moderate": [
+      "Lack of stack interaction leaves the deck unable to disrupt noncreature combo wins.",
+      "High reliance on Gisa, the Hellraiser to achieve format-competitive token generation speed."
+    ],
+    "minor": [
+      "Substantial life payments from card draw engines and removal spells can reduce your life buffer against aggressive strategies."
+    ]
+  },
+  "key_cards": [
+    {
+      "card": "Gisa, the Hellraiser",
+      "reason": "Commander that provides a tribal anthem, grants menace, and creates two Zombie tokens each turn a crime is committed."
+    },
+    {
+      "card": "Agatha's Soul Cauldron",
+      "reason": "Low-cost artifact that exiles cards from graveyards at instant speed to trigger Gisa reliably on every turn."
+    },
+    {
+      "card": "Unlicensed Hearse",
+      "reason": "Repeatedly exiles target cards from opposing graveyards to commit crimes while growing into a formidable creature."
+    },
+    {
+      "card": "Noxious Ghoul",
+      "reason": "Systematically shrinks and eliminates non-Zombie opposing creatures whenever your Zombies enter the battlefield."
+    },
+    {
+      "card": "Gray Merchant of Asphodel",
+      "reason": "Provides massive direct life drain and lifegain scaled to your black devotion to close out games."
+    },
+    {
+      "card": "Living Death",
+      "reason": "Acts as a board clear and mass reanimation effect to turn opposing wipes into a game-winning advantage."
+    },
+    {
+      "card": "Yawgmoth, Thran Physician",
+      "reason": "Sacrifice outlet that draws cards, places -1/-1 counters, commits crimes, and controls opposing boards."
+    },
+    {
+      "card": "Coat of Arms",
+      "reason": "Anthem artifact that massively scales the power and toughness of your Zombie army for a one-turn lethal strike."
+    },
+    {
+      "card": "Cabal Coffers",
+      "reason": "Produces explosive amounts of black mana in the mid-to-late game to fund large spells and commander recasts."
+    },
+    {
+      "card": "Urborg, Tomb of Yawgmoth",
+      "reason": "Turns all lands into Swamps, enabling unblockable swampwalk attacks when paired with Zombie Master."
+    },
+    {
+      "card": "Undead Augur",
+      "reason": "Draws a card whenever any Zombie you control dies, converting board wipes and trades into hand advantage."
+    },
+    {
+      "card": "Bolas's Citadel",
+      "reason": "Allows rapid casting of spells directly from the top of the library and provides a 10-damage sacrifice drain."
+    }
+  ],
   "card_ledger": {
     "r1": [
-      {
-        "card": "Arcane Signet",
-        "role": "Mana ramp / fixing"
-      },
-      {
-        "card": "Sol Ring",
-        "role": "Mana ramp / fixing"
-      }
+      { "card": "Sol Ring", "role": "Fast colorless mana artifact" },
+      { "card": "Arcane Signet", "role": "2 CMC colored mana rock" },
+      { "card": "Jet Medallion", "role": "Black spell cost reducer" },
+      { "card": "Liquimetal Torque", "role": "2 CMC mana rock and crime artifact converter" },
+      { "card": "Wayfarer's Bauble", "role": "Land fetch ramp artifact" },
+      { "card": "Dark Ritual", "role": "Burst black mana ritual" },
+      { "card": "Crypt Ghast", "role": "Swamp mana doubler and extort drain" },
+      { "card": "Throne of Eldraine", "role": "4 CMC mana rock producing {B}{B}{B}{B}" },
+      { "card": "Black Market Connections", "role": "Pre-combat mana, card draw, and shapeshifter tokens" },
+      { "card": "Undead Warchief", "role": "Zombie cost reducer and +2/+1 tribal lord" },
+      { "card": "Cabal Coffers", "role": "Big mana land scaling with Swamps" },
+      { "card": "Cabal Stronghold", "role": "Basic Swamp mana scaling utility land" },
+      { "card": "Deserted Temple", "role": "Untaps Cabal Coffers or Nykthos for double mana" },
+      { "card": "Nykthos, Shrine to Nyx", "role": "Legendary devotion mana land" },
+      { "card": "Phyrexian Tower", "role": "Sacrifice creature land producing {B}{B}" },
+      { "card": "Three Tree City", "role": "Typal devotion mana land" },
+      { "card": "Urborg, Tomb of Yawgmoth", "role": "Universal Swamp mana fixer and swampwalk enabler" },
+      { "card": "22 Swamp", "role": "Basic lands" }
     ],
-    "a2": [],
-    "p1": [],
-    "p2": [],
     "r2": [
-      {
-        "card": "Skullclamp",
-        "role": "Card draw / engine replenishment"
-      }
+      { "card": "Skullclamp", "role": "Turns 1/1 tokens and dying zombies into cards" },
+      { "card": "Undead Augur", "role": "Draws a card on every Zombie death" },
+      { "card": "Species Specialist", "role": "Draws a card on every Zombie death" },
+      { "card": "Cryptbreaker", "role": "Taps untapped Zombies to draw cards and make tokens" },
+      { "card": "Morbid Opportunist", "role": "Draws card once per turn on creature death" },
+      { "card": "Phyrexian Arena", "role": "Continuous extra card on upkeep" },
+      { "card": "The One Ring", "role": "Exponential card draw protection engine" },
+      { "card": "Bolas's Citadel", "role": "Topdeck storm casting and sacrifice drain" },
+      { "card": "Staff of Domination", "role": "Multi-utility untap, tap, lifegain, and card draw" },
+      { "card": "Castle Locthwain", "role": "Card draw utility land" },
+      { "card": "War Room", "role": "1-life card draw utility land in mono-color" }
     ],
-    "a1": [],
+    "a1": [
+      { "card": "Expedition Map", "role": "Tutors Cabal Coffers or Urborg directly to hand" }
+    ],
+    "a2": [
+      { "card": "Gisa, the Hellraiser", "role": "Commander generating 2 menace Zombies per crime" },
+      { "card": "Forsaken Miner", "role": "Recurs from graveyard on committing crimes" },
+      { "card": "Headless Rider", "role": "Creates Zombie tokens on nontoken Zombie deaths" },
+      { "card": "Diregraf Colossus", "role": "Enters with counters and creates Zombies on Zombie casts" }
+    ],
+    "p1": [
+      { "card": "Death Baron", "role": "Tribal lord granting +1/+1 and deathtouch" },
+      { "card": "Lord of the Accursed", "role": "Tribal lord granting +1/+1 and menace activation" },
+      { "card": "Lord of the Undead", "role": "Tribal lord granting +1/+1 and graveyard retrieval" },
+      { "card": "Cemetery Reaper", "role": "Tribal lord granting +1/+1 and graveyard exile tokens" },
+      { "card": "Zombie Master", "role": "Grants swampwalk and regeneration to all Zombies" },
+      { "card": "Zombie Trailblazer", "role": "Turns lands into Swamps or grants swampwalk" },
+      { "card": "Coat of Arms", "role": "Massive exponential tribal anthem" },
+      { "card": "Banner of Kinship", "role": "Scaling team anthem based on Zombie count" },
+      { "card": "Grave Titan", "role": "Enters with and attacks with 2/2 Zombie tokens" },
+      { "card": "Ghoulcaller Gisa", "role": "Sacrifices large creatures to create hordes of Zombies" },
+      { "card": "Army of the Damned", "role": "Creates 13 tapped 2/2 Zombie tokens" },
+      { "card": "Field of the Dead", "role": "Creates 2/2 Zombie tokens on land drops" },
+      { "card": "Ayara, First of Locthwain", "role": "Drains 1 life on black creature entry" }
+    ],
+    "p2": [
+      { "card": "Gray Merchant of Asphodel", "role": "Massive devotion life drain finisher" }
+    ],
     "p3": [],
-    "i1": [],
-    "i2": [],
-    "s1": [],
-    "s2": [],
-    "s3": []
-  },
-  "deck_name": "GisaTheHellraiser",
-  "thematic_restriction": false
+    "i1": [
+      { "card": "Snuff Out", "role": "Free instant creature destruction" },
+      { "card": "Deadly Rollick", "role": "Free instant creature exile with commander" },
+      { "card": "Toxic Deluge", "role": "Flexible low-cost -X/-X creature sweeper" },
+      { "card": "Dismember", "role": "1-mana instant -5/-5 removal committing a crime" },
+      { "card": "Defile", "role": "1-mana scaling -X/-X instant removal based on Swamps" },
+      { "card": "Infernal Grasp", "role": "2 CMC unconditional instant creature destruction" },
+      { "card": "Go for the Throat", "role": "2 CMC instant nonartifact creature destruction" },
+      { "card": "Hero's Downfall", "role": "Instant creature or planeswalker destruction" },
+      { "card": "Bitter Triumph", "role": "Instant creature or planeswalker removal" },
+      { "card": "Tragic Slip", "role": "-13/-13 instant removal with morbid" },
+      { "card": "Feed the Swarm", "role": "Enchantment or creature targeted removal" },
+      { "card": "Withering Torment", "role": "Instant enchantment or creature destruction" },
+      { "card": "Bojuka Bog", "role": "ETB targeted player graveyard exile land" }
+    ],
+    "i2": [
+      { "card": "Agatha's Soul Cauldron", "role": "Instant-speed graveyard exile and +1/+1 counter placement" },
+      { "card": "Unlicensed Hearse", "role": "Repeatable graveyard exile crime engine" },
+      { "card": "Ghost Vacuum", "role": "1 CMC repeatable graveyard exile committing crimes" },
+      { "card": "Relic of Progenitus", "role": "Instant graveyard exile and cycling draw" },
+      { "card": "Withered Wretch", "role": "Repeatable 1-mana graveyard exile crime engine" },
+      { "card": "Noxious Ghoul", "role": "Asymmetrical -1/-1 wipe to non-Zombies on Zombie entry" },
+      { "card": "Scavenger Grounds", "role": "Mass graveyard exile land" }
+    ],
+    "s1": [
+      { "card": "Commander's Plate", "role": "Grants protection from WURG to mono-black commander" },
+      { "card": "Eldrazi Monument", "role": "Grants flying and indestructible to all creatures" },
+      { "card": "Mikaeus, the Unhallowed", "role": "Grants Undying to all non-Human creatures" }
+    ],
+    "s2": [
+      { "card": "Living Death", "role": "Mass creature sweeper and full graveyard reanimation" },
+      { "card": "Patriarch's Bidding", "role": "Mass tribal graveyard reanimation" },
+      { "card": "Bringer of the Last Gift", "role": "Creature-based mass Living Death on cast" },
+      { "card": "Unholy Grotto", "role": "Puts Zombie from graveyard on top of library" },
+      { "card": "Witch's Cottage", "role": "Puts creature from graveyard on top of library" },
+      { "card": "Takenuma, Abandoned Mire", "role": "Channel land returning creature to hand" }
+    ],
+    "s3": [
+      { "card": "Yawgmoth, Thran Physician", "role": "Autonomous card draw and creature control engine" },
+      { "card": "Coat of Arms", "role": "Autonomous combat win condition" },
+      { "card": "Gray Merchant of Asphodel", "role": "Autonomous devotion drain finisher" }
+    ]
+  }
 }

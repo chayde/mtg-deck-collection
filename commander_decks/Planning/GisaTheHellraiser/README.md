@@ -6,6 +6,7 @@
 *   **Archetype:** Mono-Black ({B}) Zombie Horde Apocalypse & Instant-Speed Crime Swarm Engine
 *   **Bracket:** 3 (Upgraded Casual / High Synergy — Target Engine Turn 6–8)
 *   **Game Changers (3/3):** [The One Ring](https://scryfall.com/search?q=!"The+One+Ring") ({4}), [Bolas's Citadel](https://scryfall.com/search?q=!"Bolas's+Citadel") ({3}{B}{B}{B}), [Field of the Dead](https://scryfall.com/search?q=!"Field+of+the+Dead") (Land)
+*   **DTI Threat Index:** **31 / 96** (Score Floor: Bracket 2 | WotC Floor: Bracket 3 via 3 Game Changers | Velocity: **13/48** | Suppression: **12/40** | Gates: All Passed | [DTI Report](dti_report.html))
 *   **Deck Status:** Planning (`deck_status: main`)
 *   **Main Deck Guide:** [`gisa_the_hellraiser.md`](gisa_the_hellraiser.md)
 *   **Moxfield Import:** [`moxfield_import.txt`](moxfield_import.txt)

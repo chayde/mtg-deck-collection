@@ -8,6 +8,12 @@ deck_status: main
 
 ## 🧟 Commander Strategy
 
+*   **Commander:** [Gisa, the Hellraiser](https://scryfall.com/search?q=!"Gisa,+the+Hellraiser") ({3}{B}{B})
+*   **Archetype:** Mono-Black ({B}) Zombie Typal / Crime Swarm Engine
+*   **Bracket:** 3 (Upgraded Casual — 3 Game Changers: Bolas's Citadel, Field of the Dead, The One Ring)
+*   **DTI Threat Index:** **31 / 96** (Score Floor: Bracket 2 | WotC Floor: Bracket 3 via 3 Game Changers | Velocity: **13/48** | Suppression: **12/40** | Gates: All Passed | [DTI Report](dti_report.html))
+*   **Core Goal:** Deploy cheap repeatable crime engines (Ghost Vacuum, Agatha's Soul Cauldron, Zombie Trailblazer, Withered Wretch) to trigger Gisa on opponents' turns, spawning up to 8 menacing 3/3 Zombies per round rotation. Scale the horde with typal anthems (Death Baron, Undead Warchief, Coat of Arms) or execute asymmetric wipeouts (Noxious Ghoul, Bringer of the Last Gift) and unblockable swampwalk (Zombie Master + Urborg).
+
 **Gisa, the Hellraiser** ({3}{B}{B}) is an overwhelming 4/4 Zombie Warlock powerhouse that solves the single biggest bottleneck of casual Zombie typal decks: **relying on slow, clunky token generators that require untapping or expensive mana sinks.**
 
 Gisa combines three elite abilities into a single commander:
@@ -189,6 +195,10 @@ Rather than relying purely on reactive removal spells that empty your hand, this
 ---
 
 ## 📜 Deck Changelog
+- **[2026-09-25]:** Calibrated against official DeckCheck.co scan.
+    - **In:** N/A (DTI Telemetry & Calibration)
+    - **Out:** N/A
+    - **Reason:** Official scan validated Threat Score at 31 / 96 (Bracket 3 Upgraded Casual via 3 Game Changers). Velocity vector calibrated to 13/48, Suppression vector to 12/40, Onset Turn 6 (P1: B), Engine Ready Turn 4 (A2: A), with 2 opponent response cycles (P2: B) before lethal finish on Turn 8. Confirms the statutory WotC Game Changer Floor: while its raw clock/engine places it at 31/96 (the exact Bracket 2 apex ceiling alongside Y'shtola), running Bolas's Citadel, Field of the Dead, and The One Ring establishes a hard statutory floor of Bracket 3. All 4 Gatekeepers passed safely. Populated full 100-card ledger and tactical primer.
 - **[2026-09-22]:** Replace win-more/dead-draw enchantment with versatile big-mana sink, life stabilization, and instant crime engine
     - **In:** Staff of Domination
     - **Out:** Endless Ranks of the Dead

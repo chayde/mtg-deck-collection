@@ -206,6 +206,14 @@ Use these calibrated decks to ground every future evaluation:
 *   **Benchmarks:** $R1: A, R2: S, A1: A, A2: A, P1: B, P2: A, P3: B, I1: B, I2: B, S1: B, S2: A, S3: A$.
 *   **Calibration Principle:** Demonstrates the power of S-tier card flow ($R2: S$) coupled with 1-cycle compactness ($P2: A$): continuous impulse draw off dying Goblins combined with the Putrid Goblin infinite persist loop lifts it cleanly to 41/96 in mid-Bracket 3.
 
+### Anchor 11: Gisa the Hellraiser (Mono-Black Zombie Crimes) — Bracket 3 Game Changer Floor
+*   **Threat Score:** **31 / 96** (Score Floor: Bracket 2 [16–31], Promoted to Bracket 3 via 3 Game Changers)
+*   **Vectors:** Velocity: **13 / 48** | Suppression: **12 / 40**
+*   **Clock:** Onset Turn 6 ($P1: B$), Ready Turn 4 ($A2: A$), Response Cycles: 2 ($P2: B$) $\rightarrow$ Turn 8 kill.
+*   **Benchmarks:** $R1: B, R2: A, A1: B, A2: A, P1: B, P2: B, P3: B, I1: A, I2: B, S1: B, S2: A, S3: A$.
+*   **Calibration Principle:** Crucial empirical discovery confirming the statutory WotC Game Changer Floor ($DTI \ge \text{WotC Floor}$): while its physical clock and engine threat score is 31/96 (identical to Y'shtola at the apex ceiling of Bracket 2), running 3 official Game Changers (*Bolas's Citadel*, *Field of the Dead*, *The One Ring*) establishes a hard statutory floor of Bracket 3 (Upgraded Casual).
+
+
 
 
 
