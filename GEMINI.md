@@ -45,6 +45,7 @@ This is a **documentation-only repository** — no build system, no tests. All c
 ├── README.md                        ← Project index of all active and planned decks
 ├── API_REFERENCE.md                 ← Authoritative API rules for Scryfall & Manapool — READ BEFORE any card lookup or pricing task
 ├── GOLDFISH.md                      ← Full goldfish simulation protocol and log format — READ BEFORE running any simulation
+├── .agents/skills/dti-auditor/      ← Workspace skill runbook for DTI power & bracket audits
 ├── commander_decks/
 │   ├── Owned/       ← Physically built decks (TheHive, Karametra, Sauron, UrDragon, Marchesa...)
 │   ├── Planning/    ← Decks under development (Omnath, ThaliaGitrog, Yidris, Zangief, Chainer...)
@@ -351,7 +352,7 @@ Whenever a deck is modified, you must update all three locations in a single "tr
 
 ### Phase 4: Validation & Sync
 *   **Goldfish Simulation:** After major overhauls (5+ card changes), run a 20-game simulation using `scripts/multiplayer_goldfish.py`.
-*   **DTI Threat Audit & Bracket Verification:** Run `python scripts/dti_evaluator.py "<path/to/deck>"` to audit the deck against the 12 universal benchmarks, calculate Velocity and Suppression vectors, check all 4 Gatekeepers (Velocity >= 28, Early Finish, Suppression, cEDH), and generate `<deck>/dti_report.html`. Confirm the deck does not accidentally violate its target bracket ceiling.
+*   **DTI Threat Audit & Bracket Verification:** Use the `dti-auditor` skill (running `python scripts/dti_evaluator.py "<path/to/deck>"`) to audit the deck against the 12 universal benchmarks, calculate Velocity and Suppression vectors, check all 4 Gatekeepers (Velocity >= 28, Early Finish, Suppression, cEDH), and generate `<deck>/dti_report.html`. Confirm the deck does not accidentally violate its target bracket ceiling.
 *   **Changelog:** Log all changes in the deck's `## Deck Changelog` using the [YYYY-MM-DD] format.
 *   **Commit & Push:** Ensure all changes are committed and pushed to GitHub to keep the environment synchronized.
 
