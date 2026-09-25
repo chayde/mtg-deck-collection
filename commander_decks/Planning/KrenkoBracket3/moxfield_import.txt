@@ -2,12 +2,12 @@ COMMANDER:
 1 Krenko, Mob Boss
 
 DECK:
+1 Abrade
 1 Arcane Signet
 1 Arena of Glory
 1 Ashnod's Altar
 1 Banner of Kinship
 1 Battle Hymn
-1 Torbran, Thane of Red Fell
 1 Brightstone Ritual
 1 Castle Embereth
 1 Chaos Warp

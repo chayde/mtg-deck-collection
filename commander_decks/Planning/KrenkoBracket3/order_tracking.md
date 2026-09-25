@@ -52,6 +52,7 @@ The following 33 nonbasic singles + basic Mountains are physically in-hand and i
 - [x] **Skullclamp** ({1}) — Premier draw engine (draw 2 cards per 1/1 token)
 - [x] **Vandalblast** ({R}) — One-sided artifact board wipe
 - [x] **Gempalm Incinerator** ({1}{R}) — Uncounterable cycling creature removal
+- [x] **Abrade** ({1}{R}) — Flexible instant-speed removal (owned in collection)
 
 ---
 

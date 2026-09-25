@@ -121,10 +121,11 @@ deck_status: main
 *   **[Legion Loyalist](https://scryfall.com/search?q=!"Legion+Loyalist") ({R}):** Battalion 1-drop granting first strike, trample, and unblockable by creature tokens.
 *   **[Siege-Gang Commander](https://scryfall.com/search?q=!"Siege-Gang+Commander") ({3}{R}{R}):** Enters with three 1/1 Goblins and provides a mana-activated direct damage fling engine.
 
-### 🛡️ Interaction & Stack Protection (5 Cards)
+### 🛡️ Interaction & Stack Protection (6 Cards)
 *   **[Deflecting Swat](https://scryfall.com/search?q=!"Deflecting+Swat") ({2}{R}):** Free {0}-mana redirect protection for Krenko against targeted removal or counterspells.
 *   **[Return the Favor](https://scryfall.com/search?q=!"Return+the+Favor") ({R}{R}):** Spree instant redirecting targeted removal or copying high-impact spells and abilities.
 *   **[Untimely Malfunction](https://scryfall.com/search?q=!"Untimely+Malfunction") ({1}{R}):** Modal instant destroying an artifact, redirecting a spell/ability, or preventing two creatures from blocking.
+*   **[Abrade](https://scryfall.com/search?q=!"Abrade") ({1}{R}):** Flexible instant-speed removal dealing 3 damage to target creature or destroying target artifact.
 *   **[Chaos Warp](https://scryfall.com/search?q=!"Chaos+Warp") ({2}{R}):** Universal instant-speed removal answering any permanent type.
 *   **[Vandalblast](https://scryfall.com/search?q=!"Vandalblast") ({R}):** One-sided artifact board wipe for {4}{R} overload or targeted removal for {R}.
 
@@ -150,10 +151,10 @@ deck_status: main
 ---
 
 ## 📜 Deck Changelog
-- **[2026-09-25]:** Cut Mass Land Denial (Blood Moon) to achieve WotC Bracket 3 compliance; amplify token and burn damage
-    - **In:** Torbran, Thane of Red Fell
+- **[2026-09-25]:** Cut Mass Land Denial (Blood Moon) to achieve WotC Bracket 3 compliance; add flexible interaction (Abrade); Torbran confirmed in main 99
+    - **In:** Abrade
     - **Out:** Blood Moon
-    - **Reason:** Cut Mass Land Denial (Blood Moon) to achieve WotC Bracket 3 compliance; amplify token and burn damage
+    - **Reason:** Cut Mass Land Denial (Blood Moon) to achieve 100% compliance with WotC Bracket 3 rules and restore official Bracket 3 (Upgraded Casual) placement on DeckCheck.co. Torbran, Thane of Red Fell confirmed already active in the main 99 as primary damage amplifier; added physically owned Abrade for instant-speed creature/artifact interaction.
 - **[2026-09-25]:** Calibrated against official DeckCheck.co scan.
     - **In:** N/A (DTI Telemetry & Calibration)
     - **Out:** N/A
@@ -174,12 +175,12 @@ COMMANDER:
 1 Krenko, Mob Boss  
 
 DECK:  
+1 Abrade  
 1 Arcane Signet  
 1 Arena of Glory  
 1 Ashnod's Altar  
 1 Banner of Kinship  
 1 Battle Hymn  
-1 Torbran, Thane of Red Fell  
 1 Brightstone Ritual  
 1 Castle Embereth  
 1 Chaos Warp  
