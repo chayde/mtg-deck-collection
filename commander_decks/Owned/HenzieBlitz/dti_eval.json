@@ -1,65 +1,245 @@
 {
+  "deck_name": "HenzieBlitz",
+  "thematic_restriction": false,
+  "archetype": "Jund Blitz Reanimator",
+  "threat_onset": "turn 4",
+  "engine_ready": "turn 3",
+  "response_cycles": 2,
+  "overview": "This deck is a high-powered Jund blitz reanimator strategy helmed by Henzie \"Toolbox\" Torre. The primary game plan uses dense one-mana acceleration to cast Henzie on Turn 2, enabling high-mana-value creatures to enter with haste, discount, and on-death card draw on Turn 3. The deck transitions quickly into overwhelming mid-game pressure by blitzing disruptive heavy hitters like Archon of Cruelty, Massacre Wurm, and Terror of the Peaks. These creatures attack immediately, generate massive enter-the-battlefield value, and fill the graveyard upon dying at the end step. The deck converts this graveyard setup into a decisive win using mass reanimation spells like Living Death and Bringer of the Last Gift, or repeated burst damage via Moraug, Fury of Akoum. Free interaction like Deflecting Swat and Deadly Rollick safeguards the engine during critical development turns.",
+  "primer": {
+    "core_strategy": [
+      "Deploy a 1-CMC mana accelerator on Turn 1 to ensure a consistent Turn 2 cast of Henzie \"Toolbox\" Torre.",
+      "Blitz 4-drop and 5-drop ramp or value creatures on Turn 3 to accelerate mana, apply early combat damage, and draw replacement cards upon sacrifice.",
+      "Chain high-CMC threat creatures like Archon of Cruelty, Terror of the Peaks, and Maha, Its Feathers Night to dismantle opposing boards and hand sizes.",
+      "Cast Living Death or Bringer of the Last Gift to return all sacrificed blitz threats to the battlefield simultaneously and close out the table."
+    ],
+    "mulligan_priorities": {
+      "keep": "Hands containing 2 to 3 lands with balanced Jund colors, at least one 1-CMC mana dork, and a castable 4-to-5 CMC blitz payoff creature.",
+      "avoid": "Hands without green mana, hands lacking 1-CMC ramp, or opening hands clogged exclusively with 6+ CMC creatures."
+    },
+    "key_tips": [
+      "Embrace sacrificing blitzed creatures; dying triggers card draw and stocks your graveyard for powerful mass reanimation spells.",
+      "Combine Maha, Its Feathers Night with Massacre Wurm or Balefire Dragon to wipe all opposing creatures regardless of their size.",
+      "Save Deflecting Swat or Heroic Intervention to protect key mass reanimation spells or Henzie during pivotal setup turns."
+    ]
+  },
+  "weaknesses": {
+    "critical": [
+      "Static graveyard hate such as Rest in Peace or Leyline of the Void stops reanimation payoffs and severely diminishes card recursion value.",
+      "Repeated early removal targeting Henzie \"Toolbox\" Torre stalls blitz cost reduction and delays creature deployment."
+    ],
+    "moderate": [
+      "Rule of Law and spell-limiting stax pieces restrict chaining blitz spells with reanimation or interaction in the same turn.",
+      "Instant-speed countermagic targeting key sorcery-speed mass reanimation spells like Living Death."
+    ],
+    "minor": [
+      "Incremental life loss from pain lands, fetchlands, and reanimation effects like Reanimate and Phyrexian Delver."
+    ]
+  },
+  "key_cards": [
+    {
+      "card": "Henzie \"Toolbox\" Torre",
+      "note": "Commander and core engine that grants blitz and cumulative mana discounts to all creatures with mana value 4 or greater."
+    },
+    {
+      "card": "Archon of Cruelty",
+      "note": "High-impact blitz target that forces sacrifice and discard while dealing damage, gaining life, and drawing cards."
+    },
+    {
+      "card": "Terror of the Peaks",
+      "note": "Converts creature deployments and mass reanimation turns into decisive direct damage across opposing boards and life totals."
+    },
+    {
+      "card": "Living Death",
+      "note": "Primary mass reanimation finisher that clears opposing boards while returning all accumulated blitz creatures from the graveyard."
+    },
+    {
+      "card": "Bringer of the Last Gift",
+      "note": "Castable creature-based board wipe and mass reanimation effect that provides an alternate finisher."
+    },
+    {
+      "card": "Maha, Its Feathers Night",
+      "note": "Reduces all opposing creature toughness to 1, enabling one-sided board wipes with damage and -X/-X effects."
+    },
+    {
+      "card": "Massacre Wurm",
+      "note": "Asymmetric creature board wipe that drains opponents for massive damage as their creatures die."
+    },
+    {
+      "card": "Moraug, Fury of Akoum",
+      "note": "Generates multiple extra combat steps with landfall triggers to multiply blitz combat damage in a single turn."
+    },
+    {
+      "card": "Greater Good",
+      "note": "Sacrifice outlet that converts large blitz creatures into massive burst card draw before the end step sacrifice trigger."
+    },
+    {
+      "card": "Rampant Rejuvenator",
+      "note": "Turn 3 blitz creature that attacks and fetches two basic lands onto the battlefield upon dying."
+    },
+    {
+      "card": "Kardur, Doomscourge",
+      "note": "Goads all opposing boards to force combat away from you while draining opponents as attacking creatures die."
+    },
+    {
+      "card": "Deflecting Swat",
+      "note": "Free protective interaction that redirects removal and counterspells while Henzie is on the battlefield."
+    }
+  ],
   "grades": {
     "r1": "A",
-    "r2": "A",
-    "a1": "B",
-    "a2": "A",
-    "p1": "B",
+    "r2": "S",
+    "a1": "A",
+    "a2": "S",
+    "p1": "A",
     "p2": "B",
-    "p3": "B",
-    "i1": "B",
-    "i2": "C",
+    "p3": "A",
+    "i1": "A",
+    "i2": "A",
     "s1": "B",
     "s2": "A",
-    "s3": "C"
+    "s3": "A"
   },
   "justifications": {
-    "r1": "8x 1-drop mana dorks guaranteeing Turn 2 Henzie deployment and discounted blitz curves.",
-    "r2": "Blitz provides automatic death card draw on every creature, augmented by Greater Good and Birthing Ritual.",
-    "a1": "Survival of the Fittest and Birthing Ritual provide powerful creature tutoring.",
-    "a2": "Blitz engine runs at full throttle starting Turn 3–4.",
-    "p1": "Presents game-ending creature swarm and non-combat life drain on Turns 6–7.",
-    "p2": "2 opponent untap steps to close through combat, or 1 turn cycle with Living Death burst.",
-    "p3": "Creature attack triggers are telegraphed but carry immediate haste and death draw value.",
-    "i1": "Creature-based spot removal (Druid of Purification, Archon of Cruelty, Assassin's Trophy).",
-    "i2": "Incidental sacrifice edicts (Archon of Cruelty, Massacre Wurm); no hard stax.",
-    "s1": "Blitz creatures sacrifice themselves regardless of opponent interaction.",
-    "s2": "Living Death and graveyard recursion turn board wipes into win conditions.",
-    "s3": "Deck requires Henzie for blitz discounts, but can hardcast 5-drops in late game."
+    "r1": "Dense suite of eight 1-CMC dorks guarantees Turn 2 Henzie deployment followed by compounding land-ramp creatures.",
+    "r2": "Every blitzed creature automatically replaces itself upon death, augmented by Greater Good, Skullclamp, and Vaultborn Tyrant.",
+    "a1": "Birthing Ritual, Timeless Witness, and dense redundancy of interchangeable ETB/death creatures eliminate variance.",
+    "a2": "The primary engine is ready and active on Turn 3, deploying discounted haste threats ahead of curve.",
+    "p1": "Presents overwhelming must-answer lethal combat and ETB pressure starting on Turn 4.",
+    "p2": "Requires 2 opponent response cycles to conclude the game via repeated combat and reanimation burst.",
+    "p3": "Haste dramatically compresses interaction windows; blitz creatures extract full value even if answered.",
+    "i1": "Free interaction (Deflecting Swat, Deadly Rollick) alongside creature ETB removal (Druid of Purification, Necron Deathmark, Tear Asunder).",
+    "i2": "Maha + Massacre Wurm, Balefire Dragon, Archon of Cruelty, and Kardur systematically dismantle opposing boards and lock out attacks.",
+    "s1": "Heroic Intervention, Deflecting Swat, and Delighted Halfling protect the engine; blitz creatures bypass spot removal by dying profitably.",
+    "s2": "Living Death, Bringer of the Last Gift, and Victimize turn board wipes directly into instant-win states.",
+    "s3": "High-CMC threats can be hardcast independently; mass reanimation operates effectively even without Henzie on the field."
   },
   "card_ledger": {
     "r1": [
-      {
-        "card": "Rampant Rejuvenator",
-        "role": "Mana ramp / fixing"
-      },
-      {
-        "card": "Badlands",
-        "role": "Mana ramp / fixing"
-      }
+      {"card": "Birds of Paradise", "role": "1-CMC multi-color mana dork for Turn 2 Henzie"},
+      {"card": "Delighted Halfling", "role": "1-CMC dork that makes legendary spells uncounterable"},
+      {"card": "Ignoble Hierarch", "role": "1-CMC Jund mana dork with exalted"},
+      {"card": "Elves of Deep Shadow", "role": "1-CMC green dork producing black mana"},
+      {"card": "Llanowar Elves", "role": "1-CMC green mana dork"},
+      {"card": "Fyndhorn Elves", "role": "1-CMC green mana dork"},
+      {"card": "Elvish Mystic", "role": "1-CMC green mana dork"},
+      {"card": "Utopia Sprawl", "role": "1-CMC land enchantment ramp"},
+      {"card": "Bloom Tender", "role": "2-mana dork tapping for up to 3 mana with Henzie"},
+      {"card": "Rampant Rejuvenator", "role": "Blitz ramp fetching 2+ basic lands on death"},
+      {"card": "Primeval Herald", "role": "Blitz ramp fetching basic lands on attack and death"},
+      {"card": "Sowing Mycospawn", "role": "Fetches any land on cast, including utility lands"},
+      {"card": "Seedguide Ash", "role": "Fetches three Forest lands onto battlefield upon death"},
+      {"card": "Flare of Cultivation", "role": "Free ramp sacrificing early mana dorks"},
+      {"card": "Farseek", "role": "2-CMC ramp fetching shocklands and triomes"},
+      {"card": "Nature's Lore", "role": "Untapped Forest ramp"},
+      {"card": "Three Visits", "role": "Untapped Forest ramp"},
+      {"card": "Phyrexian Tower", "role": "Sacrifice outlet land producing BB burst mana"},
+      {"card": "High Market", "role": "Colorless sacrifice land"},
+      {"card": "Wooded Foothills", "role": "Fetchland mana fixing"},
+      {"card": "Bloodstained Mire", "role": "Fetchland mana fixing"},
+      {"card": "Verdant Catacombs", "role": "Fetchland mana fixing"},
+      {"card": "Windswept Heath", "role": "Fetchland mana fixing"},
+      {"card": "Polluted Delta", "role": "Fetchland mana fixing"},
+      {"card": "Arid Mesa", "role": "Fetchland mana fixing"},
+      {"card": "Marsh Flats", "role": "Fetchland mana fixing"},
+      {"card": "Overgrown Tomb", "role": "Golgari shockland"},
+      {"card": "Stomping Ground", "role": "Gruul shockland"},
+      {"card": "Blood Crypt", "role": "Rakdos shockland"},
+      {"card": "Badlands", "role": "Original dual land"},
+      {"card": "Bayou", "role": "Original dual land"},
+      {"card": "Taiga", "role": "Original dual land"},
+      {"card": "Underground Mortuary", "role": "Surveil dual land"},
+      {"card": "Commercial District", "role": "Surveil dual land"},
+      {"card": "Ziatora's Proving Ground", "role": "Jund triome"},
+      {"card": "Command Tower", "role": "5-color command land"},
+      {"card": "Mana Confluence", "role": "5-color rainbow land"},
+      {"card": "City of Brass", "role": "5-color rainbow land"}
     ],
-    "a2": [],
-    "p1": [],
-    "p2": [],
     "r2": [
-      {
-        "card": "Skullclamp",
-        "role": "Card draw / engine replenishment"
-      }
+      {"card": "Henzie \"Toolbox\" Torre", "role": "Grants death card draw trigger to all blitzed creatures"},
+      {"card": "Greater Good", "role": "Burst card draw sacrifice outlet for large blitz creatures"},
+      {"card": "Vaultborn Tyrant", "role": "Draws on entry, combat damage, and creates death tokens"},
+      {"card": "Skullclamp", "role": "Turns dorks and dying tokens into card advantage"},
+      {"card": "Industrial Advancement", "role": "Exiles down into new creature threats on end step sacrifice"},
+      {"card": "Archon of Cruelty", "role": "ETB and attack trigger draws cards"},
+      {"card": "Junji, the Midnight Sky", "role": "Graveyard reanimation and discard advantage"},
+      {"card": "Ojer Kaslem, Deepest Growth", "role": "Digs into creatures and lands upon combat damage"}
     ],
-    "a1": [],
-    "p3": [],
-    "i1": [],
-    "i2": [],
+    "a1": [
+      {"card": "Birthing Ritual", "role": "End-step creature selection digging 7 cards deep"},
+      {"card": "Timeless Witness", "role": "Targeted recursion of any card from graveyard"},
+      {"card": "Grave Researcher", "role": "Creature selection and graveyard stocking"},
+      {"card": "Archon of Cruelty", "role": "Redundant high-CMC top-end finisher"},
+      {"card": "Massacre Wurm", "role": "Redundant board-clearing threat"},
+      {"card": "Terror of the Peaks", "role": "Redundant damage-multiplier threat"}
+    ],
+    "a2": [
+      {"card": "Birds of Paradise", "role": "Enables Turn 2 commander deployment"},
+      {"card": "Delighted Halfling", "role": "Enables Turn 2 commander deployment"},
+      {"card": "Ignoble Hierarch", "role": "Enables Turn 2 commander deployment"},
+      {"card": "Elves of Deep Shadow", "role": "Enables Turn 2 commander deployment"},
+      {"card": "Llanowar Elves", "role": "Enables Turn 2 commander deployment"},
+      {"card": "Fyndhorn Elves", "role": "Enables Turn 2 commander deployment"},
+      {"card": "Elvish Mystic", "role": "Enables Turn 2 commander deployment"},
+      {"card": "Utopia Sprawl", "role": "Enables Turn 2 commander deployment"},
+      {"card": "Henzie \"Toolbox\" Torre", "role": "Assembles immediate haste and discounted blitz on Turn 3"}
+    ],
+    "p1": [
+      {"card": "Archon of Cruelty", "role": "Immediate 6-point life swing, sacrifice, and card draw on Turn 4"},
+      {"card": "Terror of the Peaks", "role": "Immediate direct burn to opposing targets on entry"},
+      {"card": "Massacre Wurm", "role": "Turn 4-5 lethal life drain against wide boards"},
+      {"card": "Moraug, Fury of Akoum", "role": "Multiple extra combat phases multiplying blitz power"},
+      {"card": "Balefire Dragon", "role": "Lethal one-sided creature sweeper on connection"},
+      {"card": "Gwenom, Remorseless", "role": "Aggressive scaling attacker that drains and recycles"}
+    ],
+    "p2": [
+      {"card": "Living Death", "role": "Mass reanimation of all accumulated blitz threats for sudden win"},
+      {"card": "Bringer of the Last Gift", "role": "Creature-based mass reanimation closing the game within 2 cycles"},
+      {"card": "Moraug, Fury of Akoum", "role": "Closes out tables within 1-2 combat steps"},
+      {"card": "Kokusho, the Evening Star", "role": "Drains 15 life from opponents upon death trigger"}
+    ],
+    "p3": [
+      {"card": "Henzie \"Toolbox\" Torre", "role": "Inherent haste removes summoning sickness vulnerability window"},
+      {"card": "Mikaeus, the Unhallowed", "role": "Grants undying to bypass single-removal answers"}
+    ],
+    "i1": [
+      {"card": "Deflecting Swat", "role": "Free spell redirection interaction"},
+      {"card": "Deadly Rollick", "role": "Free creature exile interaction"},
+      {"card": "Assassin's Trophy", "role": "Universal cheap instant permanent removal"},
+      {"card": "Tear Asunder", "role": "Exile removal for artifacts, enchantments, or any permanent"},
+      {"card": "Windgrace's Judgment", "role": "Multi-target instant-speed permanent removal"},
+      {"card": "Necron Deathmark", "role": "Flash creature removal and self-mill"}
+    ],
+    "i2": [
+      {"card": "Maha, Its Feathers Night", "role": "Reduces all opposing creature toughness to 1 permanently"},
+      {"card": "Massacre Wurm", "role": "Asymmetrical wipe clearing opposing small creatures and life totals"},
+      {"card": "Archon of Cruelty", "role": "Systematic sacrifice and discard pressure on opponents"},
+      {"card": "Balefire Dragon", "role": "Repeatedly clears opposing boards upon combat damage"},
+      {"card": "Kardur, Doomscourge", "role": "Goads all opposing creatures, completely denying attacks against you"},
+      {"card": "Myojin of Night's Reach", "role": "Forces opponents to discard entire hands"},
+      {"card": "Druid of Purification", "role": "Destroys up to four opposing artifacts or enchantments"},
+      {"card": "Bane of Progress", "role": "Mass one-sided wipe of opposing artifacts and enchantments"},
+      {"card": "Toxic Deluge", "role": "Cheap adjustable sweeper breaking through indestructible"}
+    ],
     "s1": [
-      {
-        "card": "Heroic Intervention",
-        "role": "Board / commander protection"
-      }
+      {"card": "Heroic Intervention", "role": "Grants blanket indestructible and hexproof"},
+      {"card": "Deflecting Swat", "role": "Redirects removal targeting Henzie or reanimation spells"},
+      {"card": "Delighted Halfling", "role": "Prevents Henzie from being countered"},
+      {"card": "Malakir Rebirth", "role": "Saves critical creature from removal"}
     ],
-    "s2": [],
-    "s3": []
-  },
-  "deck_name": "HenzieBlitz",
-  "thematic_restriction": false
+    "s2": [
+      {"card": "Living Death", "role": "Returns entire graveyard to the battlefield after wipe"},
+      {"card": "Bringer of the Last Gift", "role": "Rebuilds entire board presence from the graveyard"},
+      {"card": "Victimize", "role": "Reanimates two creatures from graveyard for 3 mana"},
+      {"card": "Animate Dead", "role": "Cheap single-target reanimation"},
+      {"card": "Phyrexian Delver", "role": "Creature-based reanimation on entry"},
+      {"card": "Chainer, Nightmare Adept", "role": "Casts creatures directly from graveyard with haste"}
+    ],
+    "s3": [
+      {"card": "Bringer of the Last Gift", "role": "Hardcast mass reanimation finisher without commander"},
+      {"card": "Living Death", "role": "Graveyard reanimation functions without Henzie"},
+      {"card": "Vaultborn Tyrant", "role": "Self-contained card engine and high-power threat"},
+      {"card": "Archon of Cruelty", "role": "Dominant threat castable with late-game mana"}
+    ]
+  }
 }
