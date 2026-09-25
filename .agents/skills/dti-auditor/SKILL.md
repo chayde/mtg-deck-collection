@@ -119,7 +119,7 @@ python scripts/dti_evaluator.py "<deck_dir>"
 Check the output report to ensure no gatekeeper was unintentionally tripped:
 1. **Velocity Gate ($\text{Velocity} = R1 + A2 + P1 + P2 + S1 \ge 28$):** Mandates **Bracket 4** regardless of total score.
 2. **Early Finish Gate (Zero-Untap Override / Table Elimination by Turn 5):** Triggered when $P1 = S$, or $P1/A2 \in \{S, A\}$ with $P2 = S$ (zero untap steps) $\rightarrow$ Mandates **Bracket 4**. Decks with onset on Turn 5 that afford 1+ untap cycles ($P2 \in \{A, B\}$) eliminate the table on Turn 6+ and remain in Bracket 3.
-3. **Suppression Gate ($I2 \in \{S, A\}$):** Deploys severe asymmetric denial/attrition by Turn 6 $\rightarrow$ Mandates **Bracket 4**.
+3. **Suppression Gate ($I2 = S$):** Deploys hard asymmetric locks / stax (*Winter Orb*, *Static Orb*, *Stasis*) $\rightarrow$ Mandates **Bracket 4**. Note: High-attrition decks ($I2: A$, such as *Maha* + sweepers) remain in Bracket 3 if overall score is $\le 51/96$.
 4. **cEDH Gate (Peak Vector $\ge 40$, $P1 \in \{S, A\}$, $P2 = S$):** Mandates **Bracket 5**.
 5. **WotC Floor:** Game Changers count (0 for B1–2, $\le 3$ for B3, unlimited for B4–5). *Remember: DTI only pushes UP, never down.*
 
@@ -145,10 +145,10 @@ Use these calibrated decks to ground every future evaluation:
 
 ### Anchor 2: HenzieBlitz (Jund Blitz Reanimator) — Bracket 3 Apex (Ceiling)
 *   **Threat Score:** **50 / 96** (Apex Ceiling of Bracket 3, 32–51 band)
-*   **Vectors:** Velocity: **24 / 48** | Suppression: **18 / 40**
+*   **Vectors:** Velocity: **24 / 48** | Suppression: **20 / 40**
 *   **Clock:** Onset Turn 4 ($P1: A$), Ready Turn 3 ($A2: S$), Response Cycles: 2 ($P2: B$).
-*   **Benchmarks:** $R1: A, R2: S, A1: A, A2: S, P1: A, P2: B, P3: A, I1: A, I2: B, S1: B, S2: A, S3: A$.
-*   **Calibration Principle:** Empirically proves the exact 50/52 boundary between Bracket 3 and Bracket 4. With Myojin of Night's Reach (mass hand discard), the deck scored 52/96 and tripped the Suppression Gate into Bracket 4. Replacing Myojin with Gruff Triplets dropped Proactive Denial to $I2: B$, bringing the Threat Score to 50/96 and clearing the Suppression Gate straight into solid Bracket 3 alongside *TheHive*.
+*   **Benchmarks:** $R1: A, R2: S, A1: A, A2: S, P1: A, P2: B, P3: B, I1: A, I2: A, S1: B, S2: A, S3: A$.
+*   **Calibration Principle:** Empirically proves the exact 50/52 boundary between Bracket 3 and Bracket 4. With Myojin of Night's Reach (mass hand discard), the deck scored 52/96 ($P3: A$) landing on the B4 floor. Replacing Myojin with Gruff Triplets shifted Exposure to $P3: B$ (combat window with blockers/removal), dropping the Threat Score to 50/96 into solid Bracket 3 alongside *TheHive*. Crucially demonstrates that Tier A Proactive Denial ($I2: A$, Suppression 20/40 via Maha, Massacre Wurm, and Archon) is 100% legal in Bracket 3 and does not trip the Suppression Gate.
 
 ### Anchor 3: RoccoStreetChef (Naya Food & Exile Midrange) — Bracket 3 Solid Engine
 *   **Threat Score:** **46 / 96** (Solid Bracket 3, 32–51 band)

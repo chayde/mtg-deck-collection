@@ -97,9 +97,9 @@
     "a2": "S",
     "p1": "A",
     "p2": "B",
-    "p3": "A",
+    "p3": "B",
     "i1": "A",
-    "i2": "B",
+    "i2": "A",
     "s1": "B",
     "s2": "A",
     "s3": "A"
@@ -111,9 +111,9 @@
     "a2": "The primary engine is ready and active on Turn 3, deploying discounted haste threats ahead of curve.",
     "p1": "Presents overwhelming must-answer lethal combat and ETB pressure starting on Turn 4.",
     "p2": "Requires 2 opponent response cycles to conclude the game via repeated combat and reanimation burst.",
-    "p3": "Haste dramatically compresses interaction windows; blitz creatures extract full value even if answered.",
+    "p3": "Telegraphs attacks via creature deployments; passing priority into combat gives opponents standard interaction windows (blocking, instant-speed removal, fogs) to respond.",
     "i1": "Free interaction (Deflecting Swat, Deadly Rollick) alongside creature ETB removal (Druid of Purification, Necron Deathmark, Tear Asunder).",
-    "i2": "Maha + Massacre Wurm, Balefire Dragon, Archon of Cruelty, and Kardur provide powerful creature removal and attack restriction without hard stax or mass hand wipes.",
+    "i2": "Maha + Massacre Wurm, Balefire Dragon, Archon of Cruelty, Kardur, Druid of Purification, Bane of Progress, and Toxic Deluge provide devastating repeatable asymmetric wipes and combat denial.",
     "s1": "Heroic Intervention, Deflecting Swat, and Delighted Halfling protect the engine; blitz creatures bypass spot removal by dying profitably.",
     "s2": "Living Death, Bringer of the Last Gift, and Victimize turn board wipes directly into instant-win states.",
     "s3": "High-CMC threats can be hardcast independently; mass reanimation operates effectively even without Henzie on the field."

@@ -1,6 +1,6 @@
 # DTI Power & Threat Evaluation: HenzieBlitz
 
-> **Evaluated Bracket: Bracket 3** | **Threat Score: 50 / 96** | **Velocity: 24 / 48** | **Suppression: 18 / 40**
+> **Evaluated Bracket: Bracket 3** | **Threat Score: 50 / 96** | **Velocity: 24 / 48** | **Suppression: 20 / 40**
 > **Archetype:** Jund Blitz Reanimator · **Threat Onset:** turn 4 · **Engine Ready:** turn 3 · **Response Cycles:** 2
 
 ---
@@ -10,7 +10,7 @@
 * **Final Placement:** **Bracket 3**
 * **DTI Threat Index:** `50 / 96` (Score Floor: Bracket 3)
 * **Clock Speed (Velocity Vector):** `24 / 48`
-* **Opponent Stifle (Suppression Vector):** `18 / 40`
+* **Opponent Stifle (Suppression Vector):** `20 / 40`
 * **WotC Statutory Compliance:** 0 / 3 Game Changers (Floor: Bracket 2)
 
 ### Tactical Overview
@@ -80,9 +80,9 @@ This deck is a high-powered Jund blitz reanimator strategy helmed by Henzie "Too
 | **P2** | Win Inevitability & Compactness | Pressure | `B` | **2/10** | Requires 2 opponent response cycles to conclude the game via repeated combat and reanimation burst. |
 | **R2** | Card Flow & Replenishment | Resources | `S` | **8/8** | Every blitzed creature automatically replaces itself upon death, augmented by Greater Good, Skullclamp, and Vaultborn Tyrant. |
 | **A1** | Selection & Redundancy | Access | `A` | **4/8** | Birthing Ritual, Timeless Witness, and dense redundancy of interchangeable ETB/death creatures eliminate variance. |
-| **P3** | Exposure & Predictability | Pressure | `A` | **4/8** | Haste dramatically compresses interaction windows; blitz creatures extract full value even if answered. |
+| **P3** | Exposure & Predictability | Pressure | `B` | **2/8** | Telegraphs attacks via creature deployments; passing priority into combat gives opponents standard interaction windows (blocking, instant-speed removal, fogs) to respond. |
 | **I1** | Reactive Disruption | Interaction | `A` | **4/8** | Free interaction (Deflecting Swat, Deadly Rollick) alongside creature ETB removal (Druid of Purification, Necron Deathmark, Tear Asunder). |
-| **I2** | Proactive Denial & Restriction | Interaction | `B` | **2/8** | Maha + Massacre Wurm, Balefire Dragon, Archon of Cruelty, and Kardur provide powerful creature removal and attack restriction without hard stax or mass hand wipes. |
+| **I2** | Proactive Denial & Restriction | Interaction | `A` | **4/8** | Maha + Massacre Wurm, Balefire Dragon, Archon of Cruelty, Kardur, Druid of Purification, Bane of Progress, and Toxic Deluge provide devastating repeatable asymmetric wipes and combat denial. |
 | **S1** | Plan Shielding & Protection | Resilience | `B` | **2/8** | Heroic Intervention, Deflecting Swat, and Delighted Halfling protect the engine; blitz creatures bypass spot removal by dying profitably. |
 | **S2** | Engine Recovery | Resilience | `A` | **2/4** | Living Death, Bringer of the Last Gift, and Victimize turn board wipes directly into instant-win states. |
 | **S3** | Independence & Backup Plans | Resilience | `A` | **2/4** | High-CMC threats can be hardcast independently; mass reanimation operates effectively even without Henzie on the field. |
@@ -177,7 +177,7 @@ Every card in the deck mapped to the specific benchmarks it supports:
 - **Massacre Wurm**: Redundant board-clearing threat
 - **Terror of the Peaks**: Redundant damage-multiplier threat
 
-### P3: Exposure & Predictability (Tier `A`) — 2 Cards
+### P3: Exposure & Predictability (Tier `B`) — 2 Cards
 - **Henzie "Toolbox" Torre**: Inherent haste removes summoning sickness vulnerability window
 - **Mikaeus, the Unhallowed**: Grants undying to bypass single-removal answers
 
@@ -189,7 +189,7 @@ Every card in the deck mapped to the specific benchmarks it supports:
 - **Windgrace's Judgment**: Multi-target instant-speed permanent removal
 - **Necron Deathmark**: Flash creature removal and self-mill
 
-### I2: Proactive Denial & Restriction (Tier `B`) — 8 Cards
+### I2: Proactive Denial & Restriction (Tier `A`) — 8 Cards
 - **Maha, Its Feathers Night**: Reduces all opposing creature toughness to 1 permanently
 - **Massacre Wurm**: Asymmetrical wipe clearing opposing small creatures and life totals
 - **Archon of Cruelty**: Systematic sacrifice and discard pressure on opponents

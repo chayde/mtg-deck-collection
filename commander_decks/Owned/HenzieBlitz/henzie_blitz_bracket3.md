@@ -10,8 +10,8 @@ deck_status: main
 **Henzie "Toolbox" Torre**
 *   **Archetype:** Jund ({B}{R}{G}) Blitz / Sacrifice / Value Reanimation Midrange
 *   **Bracket:** 3 (Upgraded Casual · Apex Combat & Value Reanimator)
-*   **DTI Threat Index:** **50 / 96** (Bracket 3 [32–51] · Solid Upgraded Casual | Velocity: **24/48** | Suppression: **18/40** | Gates: All Passed | [DTI Report](dti_report.html))
-*   **Game Changers (1/3):** [Survival of the Fittest](https://scryfall.com/search?q=!"Survival+of+the+Fittest") *(Note: Runs [Emeritus of Woe // Demonic Tutor](https://scryfall.com/card/sos/80/emeritus-of-woe-demonic-tutor?utm_source=api) as a blitzable creature with adventure tutor to maximize creature synergy while avoiding the Game Changer limit).*
+*   **DTI Threat Index:** **50 / 96** (Bracket 3 [32–51] · Solid Upgraded Casual | Velocity: **24/48** | Suppression: **20/40** | Gates: All Passed | [DTI Report](dti_report.html))
+*   **Game Changers (0/3):** None *(Runs [Emeritus of Woe](https://scryfall.com/search?q=!%22Emeritus%20of%20Woe%22) and [Grave Researcher](https://scryfall.com/search?q=!%22Grave%20Researcher%22) as blitzable adventure creatures to maximize creature synergy while remaining at 0/3 Game Changers).*
 *   **Core Goal:** Exploit high 1-drop mana dork density to reliably cast Henzie on Turn 2. Beginning on Turn 3, chain discounted Blitz creature spells with haste, immediate attack triggers, and death draws. Feed high-impact threats into continuous sacrifice engines (*Birthing Ritual*, *Greater Good*, *Industrial Advancement*), refueling the hand and filling the graveyard to resolve backbreaking mass reanimation (*Living Death*, *Victimize*, *Phyrexian Delver*) for lethal non-combat damage and overwhelming combat swings.
 
 ### 🏎️ Piloting the Engine

@@ -319,12 +319,12 @@ class DTIEvaluation:
                 "reason": f"Reliably eliminates opponents or establishes lockout by Turn 5 (Zero-Untap Override: P1:{self.grades['p1']}, P2:{self.grades['p2']}). Belongs in Bracket 4."
             })
 
-        # Gate 3: Suppression Gate (I2 S/A severe denial -> Bracket 4)
-        if self.grades["i2"] in ("S", "A"):
+        # Gate 3: Suppression Gate (I2 S severe lockouts / hard stax -> Bracket 4)
+        if self.grades["i2"] == "S":
             self.gates_triggered.append({
                 "name": "Suppression Gate",
                 "bracket": 4,
-                "reason": f"Proactive restriction I2 is {self.grades['i2']}. Asymmetrical locks/attrition require Bracket 4."
+                "reason": f"Proactive restriction I2 is {self.grades['i2']}. Hard lockouts and oppressive stax mandate Bracket 4."
             })
 
         # Gate 4: cEDH Gate (Vector >= 40, P1 S/A, P2 S -> Bracket 5)
