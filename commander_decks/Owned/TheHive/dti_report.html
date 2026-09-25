@@ -171,6 +171,55 @@
             box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.5), 0 8px 10px -6px rgba(0, 0, 0, 0.5);
             border: 2px solid #475569;
         }
+
+        .deck-telemetry-banner {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 10px 16px;
+            margin-bottom: 20px;
+            font-size: 13px;
+            color: var(--text-sub);
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+        .deck-telemetry-banner strong { color: var(--text-main); }
+        .info-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 24px;
+        }
+        .info-card h3 {
+            font-size: 16px;
+            margin-bottom: 12px;
+            color: var(--text-main);
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 8px;
+        }
+        .primer-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        @media (max-width: 768px) {
+            .primer-grid { grid-template-columns: 1fr; }
+        }
+        .weakness-card {
+            background: #0f172a;
+            border-radius: 8px;
+            padding: 14px;
+            border-top: 3px solid #64748b;
+        }
+        .weakness-critical { border-top-color: #ef4444; }
+        .weakness-moderate { border-top-color: #f59e0b; }
+        .weakness-minor { border-top-color: #3b82f6; }
+        .weakness-list { list-style: none; margin-top: 8px; }
+        .weakness-list li { font-size: 13px; margin: 6px 0; color: #cbd5e1; }
+        .step-list { padding-left: 20px; font-size: 13px; color: #cbd5e1; line-height: 1.6; }
+        .step-list li { margin-bottom: 6px; }
     </style>
 </head>
 <body>
@@ -183,6 +232,8 @@
             </div>
             <div class="bracket-badge">BRACKET 3</div>
         </header>
+
+        <div class='deck-telemetry-banner'><span>Archetype: <strong>Sliver Tribal Aggro-Cascade</strong></span> · <span>Threat Onset: <strong>turn 5</strong></span> · <span>Engine Ready: <strong>turn 4</strong></span> · <span>Opponent Response Cycles: <strong>1</strong></span></div>
 
         <div class="metrics-grid">
             <div class="metric-card">
@@ -238,6 +289,120 @@
                 <strong>cEDH Gate:</strong> Format ceiling clock with 0-untap kill (Peak vector: 24).
             </div>
         </div>
+
+        
+        <div class="info-card">
+            <h3>Tactical Overview</h3>
+            <p style="font-size: 14px; line-height: 1.6; color: #cbd5e1;">This deck is a high-velocity five-color tribal list centered on The First Sliver. It focuses on rapid mana fixing and acceleration during the first three turns to cast the commander by turn 4. Once The First Sliver is on the battlefield, every subsequent Sliver spell triggers a cascade chain, rapidly filling the board with synergistic creatures at zero additional mana cost. The deck leverages redundant keywords—combining haste from Cloudshredder Sliver, evasion from Shifting Sliver, and double strike from Bonescythe Sliver—to create an overwhelming combat clock by turn 5. Defensively, the list protects its wide boards with Crystalline Sliver, Sliver Hivelord, and Heroic Intervention, while mass recursion spells like Patriarch's Bidding ensure fast recovery after sweepers. It consistently threatens lethal table damage by turn 6.</p>
+        </div>
+        
+        
+        <div class="info-card">
+            <h3>Operational Primer & Strategy</h3>
+            <div class="primer-grid">
+                <div>
+                    <h4 style="font-size: 13px; text-transform: uppercase; color: var(--text-sub); margin-bottom: 8px;">Core Turn Strategy</h4>
+                    <ol class="step-list">
+                        <li>Deploy turn 1-2 ramp spells and mana dorks to secure all five colors.</li><li>Cast The First Sliver on turn 4 to start cascading into mid-curve Slivers.</li><li>Chain low-cost Slivers on turn 5 to assemble haste, evasion, and damage doublers.</li><li>Attack across turns 5 and 6 to eliminate opponents with unblockable combat damage.</li>
+                    </ol>
+                </div>
+                <div>
+                    <h4 style="font-size: 13px; text-transform: uppercase; color: var(--text-sub); margin-bottom: 8px;">Mulligan Priorities</h4>
+                    <div style="font-size: 13px; color: #cbd5e1; margin-bottom: 14px; line-height: 1.5;">
+                        <p style='margin-bottom: 6px;'><strong>Keep:</strong> Hands with 3 lands, at least two green sources, 1-2 cheap ramp spells, and access to 3+ colors.</p><p><strong>Avoid:</strong> Hands missing green mana, hands loaded with expensive 5-mana Slivers, or hands with zero ramp.</p>
+                    </div>
+                    <h4 style="font-size: 13px; text-transform: uppercase; color: var(--text-sub); margin-bottom: 8px;">Tactical Tips</h4><ul class="step-list" style="list-style: disc;"><li>Order your cascade triggers carefully; lower-cost Slivers resolve before the spell that triggered them.</li><li>Tutor or cascade into Hibernation Sliver or Crystalline Sliver early to protect against spot removal and exile wipes.</li><li>Use Necrotic Sliver and Harmonic Sliver to clear opposing blockers and problematic stax pieces before combat.</li></ul>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="info-card">
+            <h3>Strategic Weaknesses & Interaction Exploits</h3>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px;">
+                <div class="weakness-card weakness-critical">
+                    <h4 style="font-size: 13px; color: #ef4444; text-transform: uppercase;">Critical Vulnerabilities</h4>
+                    <ul class="weakness-list"><li>Exile sweepers like Farewell and bounce wipes like Cyclonic Rift bypass indestructible and shroud.</li><li>Early color screw or heavy land denial can delay casting the commander.</li></ul>
+                </div>
+                <div class="weakness-card weakness-moderate">
+                    <h4 style="font-size: 13px; color: #f59e0b; text-transform: uppercase;">Moderate Friction Points</h4>
+                    <ul class="weakness-list"><li>Rule of Law effects and anti-cascade stax pieces restrict the deck to casting only one spell per turn.</li><li>Targeted removal on early mana dorks can slow the commander cast by a turn.</li></ul>
+                </div>
+                <div class="weakness-card weakness-minor">
+                    <h4 style="font-size: 13px; color: #3b82f6; text-transform: uppercase;">Minor Weaknesses</h4>
+                    <ul class="weakness-list"><li>Graveyard hate weakens Patriarch's Bidding and Dregscape Sliver recovery lines.</li><li>Opposing pillowfort effects like Ghostly Prison can tax wide attacks.</li></ul>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="info-card">
+            <h3>Key Engine Anchors</h3>
+            <div class="card-grid">
+                
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=The%20First%20Sliver&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22The%20First%20Sliver%22" target="_blank" rel="noopener">The First Sliver</a>
+                <span class="chip-role">Commander and primary engine that gives all Sliver spells cascade.</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Sliver%20Overlord&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Sliver%20Overlord%22" target="_blank" rel="noopener">Sliver Overlord</a>
+                <span class="chip-role">Repeatable tutor engine to fetch specific answer or finisher Slivers.</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Cloudshredder%20Sliver&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Cloudshredder%20Sliver%22" target="_blank" rel="noopener">Cloudshredder Sliver</a>
+                <span class="chip-role">Provides immediate haste and flying to the entire board.</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Bonescythe%20Sliver&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Bonescythe%20Sliver%22" target="_blank" rel="noopener">Bonescythe Sliver</a>
+                <span class="chip-role">Doubles the entire combat damage output with double strike.</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Shifting%20Sliver&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Shifting%20Sliver%22" target="_blank" rel="noopener">Shifting Sliver</a>
+                <span class="chip-role">Grants complete unblockability against non-Sliver decks.</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Crystalline%20Sliver&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Crystalline%20Sliver%22" target="_blank" rel="noopener">Crystalline Sliver</a>
+                <span class="chip-role">Protects the board from all targeted removal by giving shroud.</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Sliver%20Hivelord&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Sliver%20Hivelord%22" target="_blank" rel="noopener">Sliver Hivelord</a>
+                <span class="chip-role">Grants indestructible to safeguard the board against damage and destroy wipes.</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Hibernation%20Sliver&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Hibernation%20Sliver%22" target="_blank" rel="noopener">Hibernation Sliver</a>
+                <span class="chip-role">Allows bouncing Slivers to hand for 2 life to dodge exile and bounce sweepers.</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Harmonic%20Sliver&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Harmonic%20Sliver%22" target="_blank" rel="noopener">Harmonic Sliver</a>
+                <span class="chip-role">Turns every entering Sliver into artifact and enchantment removal.</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Necrotic%20Sliver&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Necrotic%20Sliver%22" target="_blank" rel="noopener">Necrotic Sliver</a>
+                <span class="chip-role">Turns every Sliver into universal permanent removal.</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Manaweft%20Sliver&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Manaweft%20Sliver%22" target="_blank" rel="noopener">Manaweft Sliver</a>
+                <span class="chip-role">Fixes all five colors and accelerates mana velocity across all creatures.</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Patriarch%27s%20Bidding&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Patriarch%27s%20Bidding%22" target="_blank" rel="noopener">Patriarch's Bidding</a>
+                <span class="chip-role">Mass reanimation spell that fully rebuilds the board after a sweeper.</span>
+            </div>
+            
+            </div>
+        </div>
+        
 
         <h2 style="margin-bottom: 16px; font-size: 20px;">12 Universal Benchmarks</h2>
         <table>

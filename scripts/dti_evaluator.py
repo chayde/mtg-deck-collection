@@ -215,11 +215,27 @@ def parse_goldfish_telemetry(deck_dir: Path) -> Optional[Dict[str, Any]]:
 class DTIEvaluation:
     def __init__(self, grades: Dict[str, str], justifications: Dict[str, str],
                  card_ledger: Dict[str, List[Dict[str, str]]], thematic_restriction: bool = False,
-                 deck_name: str = "Commander Deck"):
+                 deck_name: str = "Commander Deck",
+                 overview: Optional[str] = None,
+                 primer: Optional[Dict[str, Any]] = None,
+                 weaknesses: Optional[Dict[str, Any]] = None,
+                 key_cards: Optional[List[Dict[str, str]]] = None,
+                 archetype: Optional[str] = None,
+                 threat_onset: Optional[str] = None,
+                 engine_ready: Optional[str] = None,
+                 response_cycles: Optional[int] = None):
         self.deck_name = deck_name
         self.thematic_restriction = thematic_restriction
         self.justifications = justifications or {}
         self.card_ledger = card_ledger or {}
+        self.overview = overview
+        self.primer = primer or {}
+        self.weaknesses = weaknesses or {}
+        self.key_cards = key_cards or []
+        self.archetype = archetype
+        self.threat_onset = threat_onset
+        self.engine_ready = engine_ready
+        self.response_cycles = response_cycles
 
         # Normalize grades to uppercase
         self.grades = {}
@@ -410,6 +426,10 @@ def render_ascii_dashboard(eval_obj: DTIEvaluation, telemetry: Optional[Dict[str
     lines = []
     lines.append("=" * 76)
     lines.append(f"  DECKCHECK THREAT INDEX (DTI) REPORT: {eval_obj.deck_name}")
+    if eval_obj.archetype:
+        lines.append(f"  Archetype:       {eval_obj.archetype}")
+    if eval_obj.threat_onset:
+        lines.append(f"  Clock Telemetry: Onset: {eval_obj.threat_onset} | Ready: {eval_obj.engine_ready or 'N/A'} | Cycles: {eval_obj.response_cycles or 'N/A'}")
     lines.append("=" * 76)
 
     # Top summary metrics
@@ -467,10 +487,21 @@ def render_markdown_audit(eval_obj: DTIEvaluation, telemetry: Optional[Dict[str,
     md.append(f"# DTI Power & Threat Evaluation: {eval_obj.deck_name}")
     md.append("")
     md.append(f"> **Evaluated Bracket: Bracket {eval_obj.final_bracket}** | **Threat Score: {eval_obj.threat_score} / 96** | **Velocity: {eval_obj.velocity_vector} / 48** | **Suppression: {eval_obj.suppression_vector} / 40**")
+    if eval_obj.archetype or eval_obj.threat_onset:
+        meta_items = []
+        if eval_obj.archetype:
+            meta_items.append(f"**Archetype:** {eval_obj.archetype}")
+        if eval_obj.threat_onset:
+            meta_items.append(f"**Threat Onset:** {eval_obj.threat_onset}")
+        if eval_obj.engine_ready:
+            meta_items.append(f"**Engine Ready:** {eval_obj.engine_ready}")
+        if eval_obj.response_cycles is not None:
+            meta_items.append(f"**Response Cycles:** {eval_obj.response_cycles}")
+        md.append(f"> {' · '.join(meta_items)}")
     md.append("")
     md.append("---")
     md.append("")
-    md.append("## 1. Executive Summary")
+    md.append("## 1. Executive Summary & Tactical Overview")
     md.append("")
     md.append(f"* **Final Placement:** **Bracket {eval_obj.final_bracket}**")
     md.append(f"* **DTI Threat Index:** `{eval_obj.threat_score} / 96` (Score Floor: Bracket {eval_obj.score_bracket})")
@@ -481,16 +512,87 @@ def render_markdown_audit(eval_obj: DTIEvaluation, telemetry: Optional[Dict[str,
         md.append(f"  * *Game Changers detected:* {', '.join(eval_obj.game_changers_list)}")
     md.append("")
 
+    if eval_obj.overview:
+        md.append("### Tactical Overview")
+        md.append(f"{eval_obj.overview}")
+        md.append("")
+
     if eval_obj.gates_triggered:
         md.append("### ⚠️ Active Gatekeeper Triggers")
         for g in eval_obj.gates_triggered:
             md.append(f"- **{g['name']} (Mandates Bracket {g['bracket']}):** {g['reason']}")
         md.append("")
 
+    sec_idx = 2
+
+    if eval_obj.primer:
+        md.append("---")
+        md.append("")
+        md.append(f"## {sec_idx}. Operational Primer & Strategy")
+        md.append("")
+        sec_idx += 1
+        if "core_strategy" in eval_obj.primer and eval_obj.primer["core_strategy"]:
+            md.append("### Core Strategy")
+            for idx, step in enumerate(eval_obj.primer["core_strategy"], 1):
+                md.append(f"{idx}. {step}")
+            md.append("")
+        if "mulligan_priorities" in eval_obj.primer:
+            md.append("### Mulligan Priorities")
+            mull = eval_obj.primer["mulligan_priorities"]
+            if isinstance(mull, dict):
+                if "keep" in mull:
+                    md.append(f"* **Keep:** {mull['keep']}")
+                if "avoid" in mull:
+                    md.append(f"* **Avoid:** {mull['avoid']}")
+            else:
+                md.append(f"{mull}")
+            md.append("")
+        if "key_tips" in eval_obj.primer and eval_obj.primer["key_tips"]:
+            md.append("### Tactical Tips")
+            for tip in eval_obj.primer["key_tips"]:
+                md.append(f"- {tip}")
+            md.append("")
+
+    if eval_obj.weaknesses:
+        md.append("---")
+        md.append("")
+        md.append(f"## {sec_idx}. Strategic Weaknesses & Exploits")
+        md.append("")
+        sec_idx += 1
+        if "critical" in eval_obj.weaknesses and eval_obj.weaknesses["critical"]:
+            md.append("### Critical Vulnerabilities")
+            for w in eval_obj.weaknesses["critical"]:
+                md.append(f"- 🔴 {w}")
+            md.append("")
+        if "moderate" in eval_obj.weaknesses and eval_obj.weaknesses["moderate"]:
+            md.append("### Moderate Friction Points")
+            for w in eval_obj.weaknesses["moderate"]:
+                md.append(f"- 🟡 {w}")
+            md.append("")
+        if "minor" in eval_obj.weaknesses and eval_obj.weaknesses["minor"]:
+            md.append("### Minor Exploits")
+            for w in eval_obj.weaknesses["minor"]:
+                md.append(f"- ⚪ {w}")
+            md.append("")
+
+    if eval_obj.key_cards:
+        md.append("---")
+        md.append("")
+        md.append(f"## {sec_idx}. Key Engine Anchors")
+        md.append("")
+        sec_idx += 1
+        for kc in eval_obj.key_cards:
+            c = kc.get("card", "")
+            n = kc.get("note", "")
+            scry_url = f"https://scryfall.com/search?q=!%22{urllib.parse.quote(c)}%22"
+            md.append(f"- **[{c}]({scry_url}):** {n}")
+        md.append("")
+
     md.append("---")
     md.append("")
-    md.append("## 2. Benchmark Breakdown & Justifications")
+    md.append(f"## {sec_idx}. Benchmark Breakdown & Justifications")
     md.append("")
+    sec_idx += 1
     md.append("| Code | Benchmark | Domain | Tier | Points | Contextual Rationale |")
     md.append("|---|---|---|:---:|:---:|---|")
     for code, meta in BENCHMARK_META.items():
@@ -504,8 +606,9 @@ def render_markdown_audit(eval_obj: DTIEvaluation, telemetry: Optional[Dict[str,
     if telemetry:
         md.append("---")
         md.append("")
-        md.append("## 3. Goldfish Telemetry Cross-Validation")
+        md.append(f"## {sec_idx}. Goldfish Telemetry Cross-Validation")
         md.append("")
+        sec_idx += 1
         md.append("| Metric | Simulated Result | Benchmark Alignment |")
         md.append("|---|---|---|")
         if "commander_avg_turn" in telemetry:
@@ -518,7 +621,7 @@ def render_markdown_audit(eval_obj: DTIEvaluation, telemetry: Optional[Dict[str,
 
     md.append("---")
     md.append("")
-    md.append("## 4. The Card Ledger")
+    md.append(f"## {sec_idx}. The Card Ledger")
     md.append("")
     md.append("Every card in the deck mapped to the specific benchmarks it supports:")
     md.append("")
@@ -614,6 +717,116 @@ def generate_html_report(eval_obj: DTIEvaluation, output_file: Path, telemetry: 
         </div>
         """
         ledger_sections.append(sec)
+
+    # Generate Overview HTML
+    overview_html = ""
+    if eval_obj.overview:
+        overview_html = f"""
+        <div class="info-card">
+            <h3>Tactical Overview</h3>
+            <p style="font-size: 14px; line-height: 1.6; color: #cbd5e1;">{eval_obj.overview}</p>
+        </div>
+        """
+
+    # Generate Primer HTML
+    primer_html = ""
+    if eval_obj.primer:
+        strat_items = "".join([f"<li>{s}</li>" for s in eval_obj.primer.get("core_strategy", [])])
+        tips_items = "".join([f"<li>{t}</li>" for t in eval_obj.primer.get("key_tips", [])])
+        mull = eval_obj.primer.get("mulligan_priorities", {})
+        mull_html = ""
+        if isinstance(mull, dict):
+            if "keep" in mull:
+                mull_html += f"<p style='margin-bottom: 6px;'><strong>Keep:</strong> {mull['keep']}</p>"
+            if "avoid" in mull:
+                mull_html += f"<p><strong>Avoid:</strong> {mull['avoid']}</p>"
+        else:
+            mull_html = f"<p>{mull}</p>"
+
+        primer_html = f"""
+        <div class="info-card">
+            <h3>Operational Primer & Strategy</h3>
+            <div class="primer-grid">
+                <div>
+                    <h4 style="font-size: 13px; text-transform: uppercase; color: var(--text-sub); margin-bottom: 8px;">Core Turn Strategy</h4>
+                    <ol class="step-list">
+                        {strat_items}
+                    </ol>
+                </div>
+                <div>
+                    <h4 style="font-size: 13px; text-transform: uppercase; color: var(--text-sub); margin-bottom: 8px;">Mulligan Priorities</h4>
+                    <div style="font-size: 13px; color: #cbd5e1; margin-bottom: 14px; line-height: 1.5;">
+                        {mull_html}
+                    </div>
+                    {f'<h4 style="font-size: 13px; text-transform: uppercase; color: var(--text-sub); margin-bottom: 8px;">Tactical Tips</h4><ul class="step-list" style="list-style: disc;">{tips_items}</ul>' if tips_items else ''}
+                </div>
+            </div>
+        </div>
+        """
+
+    # Generate Weaknesses HTML
+    weaknesses_html = ""
+    if eval_obj.weaknesses:
+        crit_items = "".join([f"<li>{w}</li>" for w in eval_obj.weaknesses.get("critical", [])])
+        mod_items = "".join([f"<li>{w}</li>" for w in eval_obj.weaknesses.get("moderate", [])])
+        min_items = "".join([f"<li>{w}</li>" for w in eval_obj.weaknesses.get("minor", [])])
+        weaknesses_html = f"""
+        <div class="info-card">
+            <h3>Strategic Weaknesses & Interaction Exploits</h3>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px;">
+                <div class="weakness-card weakness-critical">
+                    <h4 style="font-size: 13px; color: #ef4444; text-transform: uppercase;">Critical Vulnerabilities</h4>
+                    <ul class="weakness-list">{crit_items or '<li>None documented</li>'}</ul>
+                </div>
+                <div class="weakness-card weakness-moderate">
+                    <h4 style="font-size: 13px; color: #f59e0b; text-transform: uppercase;">Moderate Friction Points</h4>
+                    <ul class="weakness-list">{mod_items or '<li>None documented</li>'}</ul>
+                </div>
+                <div class="weakness-card weakness-minor">
+                    <h4 style="font-size: 13px; color: #3b82f6; text-transform: uppercase;">Minor Weaknesses</h4>
+                    <ul class="weakness-list">{min_items or '<li>None documented</li>'}</ul>
+                </div>
+            </div>
+        </div>
+        """
+
+    # Generate Key Cards HTML
+    key_cards_html = ""
+    if eval_obj.key_cards:
+        kc_chips = []
+        for kc in eval_obj.key_cards:
+            c = kc.get("card", "")
+            n = kc.get("note", "")
+            img_url = f"https://api.scryfall.com/cards/named?exact={urllib.parse.quote(c)}&format=image&version=normal"
+            scry_url = f"https://scryfall.com/search?q=!%22{urllib.parse.quote(c)}%22"
+            kc_chips.append(f"""
+            <div class="card-chip" data-img="{img_url}">
+                <a href="{scry_url}" target="_blank" rel="noopener">{c}</a>
+                {f'<span class="chip-role">{n}</span>' if n else ''}
+            </div>
+            """)
+        key_cards_html = f"""
+        <div class="info-card">
+            <h3>Key Engine Anchors</h3>
+            <div class="card-grid">
+                {''.join(kc_chips)}
+            </div>
+        </div>
+        """
+
+    # Telemetry banner HTML
+    telemetry_banner_html = ""
+    if eval_obj.archetype or eval_obj.threat_onset:
+        t_parts = []
+        if eval_obj.archetype:
+            t_parts.append(f"<span>Archetype: <strong>{eval_obj.archetype}</strong></span>")
+        if eval_obj.threat_onset:
+            t_parts.append(f"<span>Threat Onset: <strong>{eval_obj.threat_onset}</strong></span>")
+        if eval_obj.engine_ready:
+            t_parts.append(f"<span>Engine Ready: <strong>{eval_obj.engine_ready}</strong></span>")
+        if eval_obj.response_cycles is not None:
+            t_parts.append(f"<span>Opponent Response Cycles: <strong>{eval_obj.response_cycles}</strong></span>")
+        telemetry_banner_html = f"<div class='deck-telemetry-banner'>{' · '.join(t_parts)}</div>"
 
     html = f"""<!DOCTYPE html>
 <html lang="en">
@@ -788,6 +1001,55 @@ def generate_html_report(eval_obj: DTIEvaluation, output_file: Path, telemetry: 
             box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.5), 0 8px 10px -6px rgba(0, 0, 0, 0.5);
             border: 2px solid #475569;
         }}
+
+        .deck-telemetry-banner {{
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 10px 16px;
+            margin-bottom: 20px;
+            font-size: 13px;
+            color: var(--text-sub);
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
+        }}
+        .deck-telemetry-banner strong {{ color: var(--text-main); }}
+        .info-card {{
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 24px;
+        }}
+        .info-card h3 {{
+            font-size: 16px;
+            margin-bottom: 12px;
+            color: var(--text-main);
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 8px;
+        }}
+        .primer-grid {{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }}
+        @media (max-width: 768px) {{
+            .primer-grid {{ grid-template-columns: 1fr; }}
+        }}
+        .weakness-card {{
+            background: #0f172a;
+            border-radius: 8px;
+            padding: 14px;
+            border-top: 3px solid #64748b;
+        }}
+        .weakness-critical {{ border-top-color: #ef4444; }}
+        .weakness-moderate {{ border-top-color: #f59e0b; }}
+        .weakness-minor {{ border-top-color: #3b82f6; }}
+        .weakness-list {{ list-style: none; margin-top: 8px; }}
+        .weakness-list li {{ font-size: 13px; margin: 6px 0; color: #cbd5e1; }}
+        .step-list {{ padding-left: 20px; font-size: 13px; color: #cbd5e1; line-height: 1.6; }}
+        .step-list li {{ margin-bottom: 6px; }}
     </style>
 </head>
 <body>
@@ -800,6 +1062,8 @@ def generate_html_report(eval_obj: DTIEvaluation, output_file: Path, telemetry: 
             </div>
             <div class="bracket-badge">BRACKET {eval_obj.final_bracket}</div>
         </header>
+
+        {telemetry_banner_html}
 
         <div class="metrics-grid">
             <div class="metric-card">
@@ -855,6 +1119,11 @@ def generate_html_report(eval_obj: DTIEvaluation, output_file: Path, telemetry: 
                 <strong>cEDH Gate:</strong> Format ceiling clock with 0-untap kill (Peak vector: {max(eval_obj.velocity_vector, eval_obj.suppression_vector)}).
             </div>
         </div>
+
+        {overview_html}
+        {primer_html}
+        {weaknesses_html}
+        {key_cards_html}
 
         <h2 style="margin-bottom: 16px; font-size: 20px;">12 Universal Benchmarks</h2>
         <table>
@@ -962,7 +1231,15 @@ def main():
         justifications=eval_data.get("justifications", {}),
         card_ledger=eval_data.get("card_ledger", {}),
         thematic_restriction=eval_data.get("thematic_restriction", False),
-        deck_name=eval_data.get("deck_name", deck_name)
+        deck_name=eval_data.get("deck_name", deck_name),
+        overview=eval_data.get("overview"),
+        primer=eval_data.get("primer"),
+        weaknesses=eval_data.get("weaknesses"),
+        key_cards=eval_data.get("key_cards"),
+        archetype=eval_data.get("archetype"),
+        threat_onset=eval_data.get("threat_onset"),
+        engine_ready=eval_data.get("engine_ready"),
+        response_cycles=eval_data.get("response_cycles")
     )
 
     # Apply WotC rules & Game Changers

@@ -1,10 +1,11 @@
 # DTI Power & Threat Evaluation: TheHive
 
 > **Evaluated Bracket: Bracket 3** | **Threat Score: 50 / 96** | **Velocity: 24 / 48** | **Suppression: 16 / 40**
+> **Archetype:** Sliver Tribal Aggro-Cascade · **Threat Onset:** turn 5 · **Engine Ready:** turn 4 · **Response Cycles:** 1
 
 ---
 
-## 1. Executive Summary
+## 1. Executive Summary & Tactical Overview
 
 * **Final Placement:** **Bracket 3**
 * **DTI Threat Index:** `50 / 96` (Score Floor: Bracket 3)
@@ -12,9 +13,64 @@
 * **Opponent Stifle (Suppression Vector):** `16 / 40`
 * **WotC Statutory Compliance:** 0 / 3 Game Changers (Floor: Bracket 2)
 
+### Tactical Overview
+This deck is a high-velocity five-color tribal list centered on The First Sliver. It focuses on rapid mana fixing and acceleration during the first three turns to cast the commander by turn 4. Once The First Sliver is on the battlefield, every subsequent Sliver spell triggers a cascade chain, rapidly filling the board with synergistic creatures at zero additional mana cost. The deck leverages redundant keywords—combining haste from Cloudshredder Sliver, evasion from Shifting Sliver, and double strike from Bonescythe Sliver—to create an overwhelming combat clock by turn 5. Defensively, the list protects its wide boards with Crystalline Sliver, Sliver Hivelord, and Heroic Intervention, while mass recursion spells like Patriarch's Bidding ensure fast recovery after sweepers. It consistently threatens lethal table damage by turn 6.
+
 ---
 
-## 2. Benchmark Breakdown & Justifications
+## 2. Operational Primer & Strategy
+
+### Core Strategy
+1. Deploy turn 1-2 ramp spells and mana dorks to secure all five colors.
+2. Cast The First Sliver on turn 4 to start cascading into mid-curve Slivers.
+3. Chain low-cost Slivers on turn 5 to assemble haste, evasion, and damage doublers.
+4. Attack across turns 5 and 6 to eliminate opponents with unblockable combat damage.
+
+### Mulligan Priorities
+* **Keep:** Hands with 3 lands, at least two green sources, 1-2 cheap ramp spells, and access to 3+ colors.
+* **Avoid:** Hands missing green mana, hands loaded with expensive 5-mana Slivers, or hands with zero ramp.
+
+### Tactical Tips
+- Order your cascade triggers carefully; lower-cost Slivers resolve before the spell that triggered them.
+- Tutor or cascade into Hibernation Sliver or Crystalline Sliver early to protect against spot removal and exile wipes.
+- Use Necrotic Sliver and Harmonic Sliver to clear opposing blockers and problematic stax pieces before combat.
+
+---
+
+## 3. Strategic Weaknesses & Exploits
+
+### Critical Vulnerabilities
+- 🔴 Exile sweepers like Farewell and bounce wipes like Cyclonic Rift bypass indestructible and shroud.
+- 🔴 Early color screw or heavy land denial can delay casting the commander.
+
+### Moderate Friction Points
+- 🟡 Rule of Law effects and anti-cascade stax pieces restrict the deck to casting only one spell per turn.
+- 🟡 Targeted removal on early mana dorks can slow the commander cast by a turn.
+
+### Minor Exploits
+- ⚪ Graveyard hate weakens Patriarch's Bidding and Dregscape Sliver recovery lines.
+- ⚪ Opposing pillowfort effects like Ghostly Prison can tax wide attacks.
+
+---
+
+## 4. Key Engine Anchors
+
+- **[The First Sliver](https://scryfall.com/search?q=!%22The%20First%20Sliver%22):** Commander and primary engine that gives all Sliver spells cascade.
+- **[Sliver Overlord](https://scryfall.com/search?q=!%22Sliver%20Overlord%22):** Repeatable tutor engine to fetch specific answer or finisher Slivers.
+- **[Cloudshredder Sliver](https://scryfall.com/search?q=!%22Cloudshredder%20Sliver%22):** Provides immediate haste and flying to the entire board.
+- **[Bonescythe Sliver](https://scryfall.com/search?q=!%22Bonescythe%20Sliver%22):** Doubles the entire combat damage output with double strike.
+- **[Shifting Sliver](https://scryfall.com/search?q=!%22Shifting%20Sliver%22):** Grants complete unblockability against non-Sliver decks.
+- **[Crystalline Sliver](https://scryfall.com/search?q=!%22Crystalline%20Sliver%22):** Protects the board from all targeted removal by giving shroud.
+- **[Sliver Hivelord](https://scryfall.com/search?q=!%22Sliver%20Hivelord%22):** Grants indestructible to safeguard the board against damage and destroy wipes.
+- **[Hibernation Sliver](https://scryfall.com/search?q=!%22Hibernation%20Sliver%22):** Allows bouncing Slivers to hand for 2 life to dodge exile and bounce sweepers.
+- **[Harmonic Sliver](https://scryfall.com/search?q=!%22Harmonic%20Sliver%22):** Turns every entering Sliver into artifact and enchantment removal.
+- **[Necrotic Sliver](https://scryfall.com/search?q=!%22Necrotic%20Sliver%22):** Turns every Sliver into universal permanent removal.
+- **[Manaweft Sliver](https://scryfall.com/search?q=!%22Manaweft%20Sliver%22):** Fixes all five colors and accelerates mana velocity across all creatures.
+- **[Patriarch's Bidding](https://scryfall.com/search?q=!%22Patriarch%27s%20Bidding%22):** Mass reanimation spell that fully rebuilds the board after a sweeper.
+
+---
+
+## 5. Benchmark Breakdown & Justifications
 
 | Code | Benchmark | Domain | Tier | Points | Contextual Rationale |
 |---|---|---|:---:|:---:|---|
@@ -33,7 +89,7 @@
 
 ---
 
-## 4. The Card Ledger
+## 6. The Card Ledger
 
 Every card in the deck mapped to the specific benchmarks it supports:
 

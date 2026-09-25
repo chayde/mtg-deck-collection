@@ -2,9 +2,91 @@
   "deck_name": "TheHive",
   "thematic_restriction": false,
   "archetype": "Sliver Tribal Aggro-Cascade",
-  "threat_onset": "Turn 5",
-  "engine_ready": "Turn 4",
+  "threat_onset": "turn 5",
+  "engine_ready": "turn 4",
   "response_cycles": 1,
+  "overview": "This deck is a high-velocity five-color tribal list centered on The First Sliver. It focuses on rapid mana fixing and acceleration during the first three turns to cast the commander by turn 4. Once The First Sliver is on the battlefield, every subsequent Sliver spell triggers a cascade chain, rapidly filling the board with synergistic creatures at zero additional mana cost. The deck leverages redundant keywords—combining haste from Cloudshredder Sliver, evasion from Shifting Sliver, and double strike from Bonescythe Sliver—to create an overwhelming combat clock by turn 5. Defensively, the list protects its wide boards with Crystalline Sliver, Sliver Hivelord, and Heroic Intervention, while mass recursion spells like Patriarch's Bidding ensure fast recovery after sweepers. It consistently threatens lethal table damage by turn 6.",
+  "primer": {
+    "core_strategy": [
+      "Deploy turn 1-2 ramp spells and mana dorks to secure all five colors.",
+      "Cast The First Sliver on turn 4 to start cascading into mid-curve Slivers.",
+      "Chain low-cost Slivers on turn 5 to assemble haste, evasion, and damage doublers.",
+      "Attack across turns 5 and 6 to eliminate opponents with unblockable combat damage."
+    ],
+    "mulligan_priorities": {
+      "keep": "Hands with 3 lands, at least two green sources, 1-2 cheap ramp spells, and access to 3+ colors.",
+      "avoid": "Hands missing green mana, hands loaded with expensive 5-mana Slivers, or hands with zero ramp."
+    },
+    "key_tips": [
+      "Order your cascade triggers carefully; lower-cost Slivers resolve before the spell that triggered them.",
+      "Tutor or cascade into Hibernation Sliver or Crystalline Sliver early to protect against spot removal and exile wipes.",
+      "Use Necrotic Sliver and Harmonic Sliver to clear opposing blockers and problematic stax pieces before combat."
+    ]
+  },
+  "weaknesses": {
+    "critical": [
+      "Exile sweepers like Farewell and bounce wipes like Cyclonic Rift bypass indestructible and shroud.",
+      "Early color screw or heavy land denial can delay casting the commander."
+    ],
+    "moderate": [
+      "Rule of Law effects and anti-cascade stax pieces restrict the deck to casting only one spell per turn.",
+      "Targeted removal on early mana dorks can slow the commander cast by a turn."
+    ],
+    "minor": [
+      "Graveyard hate weakens Patriarch's Bidding and Dregscape Sliver recovery lines.",
+      "Opposing pillowfort effects like Ghostly Prison can tax wide attacks."
+    ]
+  },
+  "key_cards": [
+    {
+      "card": "The First Sliver",
+      "note": "Commander and primary engine that gives all Sliver spells cascade."
+    },
+    {
+      "card": "Sliver Overlord",
+      "note": "Repeatable tutor engine to fetch specific answer or finisher Slivers."
+    },
+    {
+      "card": "Cloudshredder Sliver",
+      "note": "Provides immediate haste and flying to the entire board."
+    },
+    {
+      "card": "Bonescythe Sliver",
+      "note": "Doubles the entire combat damage output with double strike."
+    },
+    {
+      "card": "Shifting Sliver",
+      "note": "Grants complete unblockability against non-Sliver decks."
+    },
+    {
+      "card": "Crystalline Sliver",
+      "note": "Protects the board from all targeted removal by giving shroud."
+    },
+    {
+      "card": "Sliver Hivelord",
+      "note": "Grants indestructible to safeguard the board against damage and destroy wipes."
+    },
+    {
+      "card": "Hibernation Sliver",
+      "note": "Allows bouncing Slivers to hand for 2 life to dodge exile and bounce sweepers."
+    },
+    {
+      "card": "Harmonic Sliver",
+      "note": "Turns every entering Sliver into artifact and enchantment removal."
+    },
+    {
+      "card": "Necrotic Sliver",
+      "note": "Turns every Sliver into universal permanent removal."
+    },
+    {
+      "card": "Manaweft Sliver",
+      "note": "Fixes all five colors and accelerates mana velocity across all creatures."
+    },
+    {
+      "card": "Patriarch's Bidding",
+      "note": "Mass reanimation spell that fully rebuilds the board after a sweeper."
+    }
+  ],
   "grades": {
     "r1": "A",
     "r2": "S",
