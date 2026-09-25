@@ -12,7 +12,7 @@
             --text-main: #f8fafc;
             --text-sub: #94a3b8;
             --border: #334155;
-            --accent: #3b82f6;
+            --accent: #10b981;
             --s-color: #8b5cf6;
             --a-color: #3b82f6;
             --b-color: #10b981;
@@ -171,6 +171,55 @@
             box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.5), 0 8px 10px -6px rgba(0, 0, 0, 0.5);
             border: 2px solid #475569;
         }
+
+        .deck-telemetry-banner {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 10px 16px;
+            margin-bottom: 20px;
+            font-size: 13px;
+            color: var(--text-sub);
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+        .deck-telemetry-banner strong { color: var(--text-main); }
+        .info-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 24px;
+        }
+        .info-card h3 {
+            font-size: 16px;
+            margin-bottom: 12px;
+            color: var(--text-main);
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 8px;
+        }
+        .primer-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        @media (max-width: 768px) {
+            .primer-grid { grid-template-columns: 1fr; }
+        }
+        .weakness-card {
+            background: #0f172a;
+            border-radius: 8px;
+            padding: 14px;
+            border-top: 3px solid #64748b;
+        }
+        .weakness-critical { border-top-color: #ef4444; }
+        .weakness-moderate { border-top-color: #f59e0b; }
+        .weakness-minor { border-top-color: #3b82f6; }
+        .weakness-list { list-style: none; margin-top: 8px; }
+        .weakness-list li { font-size: 13px; margin: 6px 0; color: #cbd5e1; }
+        .step-list { padding-left: 20px; font-size: 13px; color: #cbd5e1; line-height: 1.6; }
+        .step-list li { margin-bottom: 6px; }
     </style>
 </head>
 <body>
@@ -181,27 +230,29 @@
                 <h1>MarchesaBlackRose</h1>
                 <div class="header-sub">DeckCheck Threat Index (DTI) Evaluation Report</div>
             </div>
-            <div class="bracket-badge">BRACKET 2</div>
+            <div class="bracket-badge">BRACKET 3</div>
         </header>
+
+        
 
         <div class="metrics-grid">
             <div class="metric-card">
                 <div class="metric-title">Threat Score</div>
-                <div class="metric-value">26 <span style="font-size:16px;color:var(--text-sub);">/ 96</span></div>
-                <div class="metric-sub">Score Floor: Bracket 2</div>
-                <div class="progress-bar"><div class="progress-fill" style="width: 27.083333333333332%;"></div></div>
+                <div class="metric-value">37 <span style="font-size:16px;color:var(--text-sub);">/ 96</span></div>
+                <div class="metric-sub">Score Floor: Bracket 3</div>
+                <div class="progress-bar"><div class="progress-fill" style="width: 38.54166666666667%;"></div></div>
             </div>
             <div class="metric-card">
                 <div class="metric-title">Velocity Vector</div>
-                <div class="metric-value">12 <span style="font-size:16px;color:var(--text-sub);">/ 48</span></div>
+                <div class="metric-value">19 <span style="font-size:16px;color:var(--text-sub);">/ 48</span></div>
                 <div class="metric-sub">Clock & Assembly Speed (Gate at 28)</div>
-                <div class="progress-bar"><div class="progress-fill" style="width: 25.0%;"></div></div>
+                <div class="progress-bar"><div class="progress-fill" style="width: 39.58333333333333%;"></div></div>
             </div>
             <div class="metric-card">
                 <div class="metric-title">Suppression Vector</div>
-                <div class="metric-value">8 <span style="font-size:16px;color:var(--text-sub);">/ 40</span></div>
+                <div class="metric-value">13 <span style="font-size:16px;color:var(--text-sub);">/ 40</span></div>
                 <div class="metric-sub">Denial, Tax & Stax Impact</div>
-                <div class="progress-bar"><div class="progress-fill" style="width: 20.0%;"></div></div>
+                <div class="progress-bar"><div class="progress-fill" style="width: 32.5%;"></div></div>
             </div>
             <div class="metric-card">
                 <div class="metric-title">Game Changers</div>
@@ -217,13 +268,13 @@
                 <span class="gate-tag tag-passed">
                     PASSED
                 </span>
-                <strong>Velocity Gate:</strong> Vector 12/48 (Threshold: &ge; 28 mandates Bracket 4).
+                <strong>Velocity Gate:</strong> Vector 19/48 (Threshold: &ge; 28 mandates Bracket 4).
             </div>
             <div class="gate-item">
                 <span class="gate-tag tag-passed">
                     PASSED
                 </span>
-                <strong>Early Finish Gate:</strong> Critical Onset P1 is B (Turns 1–5 onset mandates Bracket 4).
+                <strong>Early Finish Gate:</strong> Onset B, Completion A (Zero-untap or T1-5 table elimination mandates Bracket 4).
             </div>
             <div class="gate-item">
                 <span class="gate-tag tag-passed">
@@ -235,9 +286,133 @@
                 <span class="gate-tag tag-passed">
                     PASSED
                 </span>
-                <strong>cEDH Gate:</strong> Format ceiling clock with 0-untap kill (Peak vector: 12).
+                <strong>cEDH Gate:</strong> Format ceiling clock with 0-untap kill (Peak vector: 19).
             </div>
         </div>
+
+        
+        <div class="info-card">
+            <h3>Tactical Overview</h3>
+            <p style="font-size: 14px; line-height: 1.6; color: #cbd5e1;">This deck is a high-synergy Grixis Aristocrats build commanded by Marchesa, the Black Rose. Its strategy revolves around utilizing the dethrone mechanic and +1/+1 counter synergies to establish an unyielding reanimation loop. By ensuring creatures have +1/+1 counters via dethrone attacks, Unspeakable Symbol, or Thran Vigil, Marchesa returns them from the graveyard at the beginning of each end step whenever they die. Free sacrifice outlets like Viscera Seer, Carrion Feeder, and Goblin Bombardment allow the deck to trigger powerful enters-the-battlefield and death abilities across every player's turn. High-impact payoffs like Gray Merchant of Asphodel, Flayer of the Hatebound, Massacre Wurm, and Kardur, Doomscourge drain life totals, wipe opposing boards, and lock opponents out of attacking. Additionally, the deck can execute infinite damage combos using Murderous Redcap alongside +1/+1 counter buffers. While vulnerable to graveyard hate and exile removal, the deck boasts resilient recovery and compounding resource advantage.</p>
+        </div>
+        
+        
+        <div class="info-card">
+            <h3>Operational Primer & Strategy</h3>
+            <div class="primer-grid">
+                <div>
+                    <h4 style="font-size: 13px; text-transform: uppercase; color: var(--text-sub); margin-bottom: 8px;">Core Turn Strategy</h4>
+                    <ol class="step-list">
+                        <li>Accelerate in the early turns using 2-mana rocks, establishing a free sacrifice outlet like Viscera Seer or Carrion Feeder and a value creature.</li><li>Deploy Marchesa, the Black Rose and place +1/+1 counters on your creatures via dethrone combat, Unspeakable Symbol, or Madame Null, Power Broker.</li><li>Sacrifice your modified creatures on each player's turn to trigger death and enters-the-battlefield abilities, returning them at every end step.</li><li>Close the game by looping drain engines like Gray Merchant of Asphodel and Flayer of the Hatebound, or assembling a Murderous Redcap persist loop.</li>
+                    </ol>
+                </div>
+                <div>
+                    <h4 style="font-size: 13px; text-transform: uppercase; color: var(--text-sub); margin-bottom: 8px;">Mulligan Priorities</h4>
+                    <div style="font-size: 13px; color: #cbd5e1; margin-bottom: 14px; line-height: 1.5;">
+                        <p style='margin-bottom: 6px;'><strong>Keep:</strong> ['Hands with 3 lands, at least one 2-mana ramp piece, a cheap sacrifice outlet, and an early card advantage or counter-enabling creature.']</p><p><strong>Avoid:</strong> ['Hands with only high-CMC payoffs (5+ mana), missing black/blue/red color fixing, or hands with no sacrifice outlets and no card draw.']</p>
+                    </div>
+                    <h4 style="font-size: 13px; text-transform: uppercase; color: var(--text-sub); margin-bottom: 8px;">Tactical Tips</h4><ul class="step-list" style="list-style: disc;"><li>Manage your life total carefully; you often want to remain below the highest life total opponent to guarantee dethrone triggers on attack.</li><li>Cast Threaten spells like Mark of Mutiny or Zealous Conscripts, put a +1/+1 counter on the stolen creature, and sacrifice it so it returns permanently under your control.</li><li>Use Unspeakable Symbol at instant speed to put +1/+1 counters on creatures in response to removal or sweepers, ensuring they recur at the next end step.</li></ul>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="info-card">
+            <h3>Strategic Weaknesses & Interaction Exploits</h3>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px;">
+                <div class="weakness-card weakness-critical">
+                    <h4 style="font-size: 13px; color: #ef4444; text-transform: uppercase;">Critical Vulnerabilities</h4>
+                    <ul class="weakness-list"><li>Graveyard hate (such as Rest in Peace or Leyline of the Void) permanently disables Marchesa's reanimation trigger and aristocrat payoffs.</li><li>Exile-based board wipes (such as Farewell) bypass death triggers entirely, stripping all board presence without recursion.</li></ul>
+                </div>
+                <div class="weakness-card weakness-moderate">
+                    <h4 style="font-size: 13px; color: #f59e0b; text-transform: uppercase;">Moderate Friction Points</h4>
+                    <ul class="weakness-list"><li>Removal targeting Marchesa, the Black Rose immediately upon entry before she gains a +1/+1 counter delays the entire engine.</li><li>Thin stack interaction makes the deck vulnerable to fast instant-speed noncreature combo wins.</li></ul>
+                </div>
+                <div class="weakness-card weakness-minor">
+                    <h4 style="font-size: 13px; color: #3b82f6; text-transform: uppercase;">Minor Weaknesses</h4>
+                    <ul class="weakness-list"><li>Life-loss costs from Unspeakable Symbol, pain lands, and Talismans can become dangerous if opponents apply aggressive combat pressure.</li></ul>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="info-card">
+            <h3>Key Engine Anchors</h3>
+            <div class="card-grid">
+                
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Marchesa%2C%20the%20Black%20Rose&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Marchesa%2C%20the%20Black%20Rose%22" target="_blank" rel="noopener">Marchesa, the Black Rose</a>
+                
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Unspeakable%20Symbol&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Unspeakable%20Symbol%22" target="_blank" rel="noopener">Unspeakable Symbol</a>
+                
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Goblin%20Bombardment&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Goblin%20Bombardment%22" target="_blank" rel="noopener">Goblin Bombardment</a>
+                
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Viscera%20Seer&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Viscera%20Seer%22" target="_blank" rel="noopener">Viscera Seer</a>
+                
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Flayer%20of%20the%20Hatebound&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Flayer%20of%20the%20Hatebound%22" target="_blank" rel="noopener">Flayer of the Hatebound</a>
+                
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Gray%20Merchant%20of%20Asphodel&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Gray%20Merchant%20of%20Asphodel%22" target="_blank" rel="noopener">Gray Merchant of Asphodel</a>
+                
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Kardur%2C%20Doomscourge&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Kardur%2C%20Doomscourge%22" target="_blank" rel="noopener">Kardur, Doomscourge</a>
+                
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Murderous%20Redcap&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Murderous%20Redcap%22" target="_blank" rel="noopener">Murderous Redcap</a>
+                
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Metallic%20Mimic&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Metallic%20Mimic%22" target="_blank" rel="noopener">Metallic Mimic</a>
+                
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Grim%20Haruspex&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Grim%20Haruspex%22" target="_blank" rel="noopener">Grim Haruspex</a>
+                
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Mark%20of%20Mutiny&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Mark%20of%20Mutiny%22" target="_blank" rel="noopener">Mark of Mutiny</a>
+                
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Skullclamp&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Skullclamp%22" target="_blank" rel="noopener">Skullclamp</a>
+                
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Toxic%20Deluge&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Toxic%20Deluge%22" target="_blank" rel="noopener">Toxic Deluge</a>
+                
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Thran%20Vigil&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Thran%20Vigil%22" target="_blank" rel="noopener">Thran Vigil</a>
+                
+            </div>
+            
+            </div>
+        </div>
+        
 
         <h2 style="margin-bottom: 16px; font-size: 20px;">12 Universal Benchmarks</h2>
         <table>
@@ -256,19 +431,19 @@
         <tr>
             <td class="code-col"><strong>R1</strong></td>
             <td><strong>Mana Velocity & Sufficiency</strong><br><span class="domain-sub">Resources</span></td>
-            <td class="tier-col"><span class="tier-badge tier-b">B</span></td>
-            <td class="score-col">2 / 10</td>
-            <td class="ledger-count-col">9</td>
-            <td class="just-col">Standard Grixis mana rocks and treasure generation.</td>
+            <td class="tier-col"><span class="tier-badge tier-a">A</span></td>
+            <td class="score-col">5 / 10</td>
+            <td class="ledger-count-col">36</td>
+            <td class="just-col">10 cheap two-mana mana rocks and talismans plus Sol Ring accelerate Marchesa onto the battlefield consistently by Turn 3.</td>
         </tr>
         
         <tr>
             <td class="code-col"><strong>A2</strong></td>
             <td><strong>Assembly Velocity</strong><br><span class="domain-sub">Access</span></td>
-            <td class="tier-col"><span class="tier-badge tier-b">B</span></td>
-            <td class="score-col">2 / 10</td>
-            <td class="ledger-count-col">0</td>
-            <td class="just-col">Assembles Marchesa recursive engine on Turns 5–6.</td>
+            <td class="tier-col"><span class="tier-badge tier-a">A</span></td>
+            <td class="score-col">5 / 10</td>
+            <td class="ledger-count-col">10</td>
+            <td class="just-col">Achieves engine readiness by Turn 4 via fast mana into Marchesa and immediate +1/+1 counter deployment.</td>
         </tr>
         
         <tr>
@@ -276,17 +451,17 @@
             <td><strong>Critical Onset & Lethality</strong><br><span class="domain-sub">Pressure</span></td>
             <td class="tier-col"><span class="tier-badge tier-b">B</span></td>
             <td class="score-col">2 / 10</td>
-            <td class="ledger-count-col">0</td>
-            <td class="just-col">Presents persistent board control and drain clock on Turns 6–7.</td>
+            <td class="ledger-count-col">9</td>
+            <td class="just-col">Critical onset hits by Turn 6 as recurring drain engines (Gray Merchant of Asphodel, Flayer of the Hatebound) or persist loops start threatening lethal life totals.</td>
         </tr>
         
         <tr>
             <td class="code-col"><strong>P2</strong></td>
             <td><strong>Win Inevitability & Compactness</strong><br><span class="domain-sub">Pressure</span></td>
-            <td class="tier-col"><span class="tier-badge tier-b">B</span></td>
-            <td class="score-col">2 / 10</td>
-            <td class="ledger-count-col">0</td>
-            <td class="just-col">2 opponent untap steps of end-step recursion and combat drain.</td>
+            <td class="tier-col"><span class="tier-badge tier-a">A</span></td>
+            <td class="score-col">5 / 10</td>
+            <td class="ledger-count-col">1</td>
+            <td class="just-col">A-tier win compactness: closing the game takes just 1 opponent response cycle after onset due to high-damage Gray Merchant loops, Flayer burst damage, and Murderous Redcap infinite combos.</td>
         </tr>
         
         <tr>
@@ -294,17 +469,17 @@
             <td><strong>Card Flow & Replenishment</strong><br><span class="domain-sub">Resources</span></td>
             <td class="tier-col"><span class="tier-badge tier-a">A</span></td>
             <td class="score-col">4 / 8</td>
-            <td class="ledger-count-col">1</td>
-            <td class="just-col">Dethrone + aristocrat death draw (Grim Haruspex, Midnight Reaper, River Kelpie) draws cards on every turn.</td>
+            <td class="ledger-count-col">7</td>
+            <td class="just-col">A-tier card flow powered by Skullclamp, Grim Haruspex, Mulldrifter (looped on end steps), Baleful Strix, Deadly Dispute, and Scorn-Blade Berserker.</td>
         </tr>
         
         <tr>
             <td class="code-col"><strong>A1</strong></td>
             <td><strong>Selection & Redundancy</strong><br><span class="domain-sub">Access</span></td>
-            <td class="tier-col"><span class="tier-badge tier-b">B</span></td>
-            <td class="score-col">2 / 8</td>
-            <td class="ledger-count-col">0</td>
-            <td class="just-col">High redundancy of sacrifice outlets, counter placers, and ETB burn creatures.</td>
+            <td class="tier-col"><span class="tier-badge tier-a">A</span></td>
+            <td class="score-col">4 / 8</td>
+            <td class="ledger-count-col">7</td>
+            <td class="just-col">Premier A-tier redundancy with 8 free sacrifice outlets, 7 aristocrat drain engines, and deep +1/+1 counter enablers forming resilient loops.</td>
         </tr>
         
         <tr>
@@ -313,7 +488,7 @@
             <td class="tier-col"><span class="tier-badge tier-b">B</span></td>
             <td class="score-col">2 / 8</td>
             <td class="ledger-count-col">0</td>
-            <td class="just-col">Aristocrat engine relies on graveyard returns at end of turn.</td>
+            <td class="just-col">Modified creatures with counters and open sacrifice outlets on the battlefield clearly telegraph end-step reanimation loops.</td>
         </tr>
         
         <tr>
@@ -321,8 +496,8 @@
             <td><strong>Reactive Disruption</strong><br><span class="domain-sub">Interaction</span></td>
             <td class="tier-col"><span class="tier-badge tier-b">B</span></td>
             <td class="score-col">2 / 8</td>
-            <td class="ledger-count-col">1</td>
-            <td class="just-col">Instant removal and sacrifice edicts (Fleshbag Marauder, Plaguecrafter on loop).</td>
+            <td class="ledger-count-col">10</td>
+            <td class="just-col">B-tier reactive disruption suite featuring Toxic Deluge, Blasphemous Act, Terminate, Bedevil, Feed the Swarm, An Offer You Can't Refuse, and Arcane Denial.</td>
         </tr>
         
         <tr>
@@ -330,17 +505,17 @@
             <td><strong>Proactive Denial & Restriction</strong><br><span class="domain-sub">Interaction</span></td>
             <td class="tier-col"><span class="tier-badge tier-b">B</span></td>
             <td class="score-col">2 / 8</td>
-            <td class="ledger-count-col">0</td>
-            <td class="just-col">Continuous recurring edicts strip opponents of creatures during every turn cycle.</td>
+            <td class="ledger-count-col">5</td>
+            <td class="just-col">B-tier proactive denial anchored by looped Kardur, Doomscourge goad locks, Massacre Wurm sweeping opposing boards, and repeated Puppeteer Clique / Zealous Conscripts theft.</td>
         </tr>
         
         <tr>
             <td class="code-col"><strong>S1</strong></td>
             <td><strong>Plan Shielding & Protection</strong><br><span class="domain-sub">Resilience</span></td>
-            <td class="tier-col"><span class="tier-badge tier-a">A</span></td>
-            <td class="score-col">4 / 8</td>
-            <td class="ledger-count-col">1</td>
-            <td class="just-col">Marchesa automatically returns any creature with a +1/+1 counter to the battlefield at end step.</td>
+            <td class="tier-col"><span class="tier-badge tier-b">B</span></td>
+            <td class="score-col">2 / 8</td>
+            <td class="ledger-count-col">3</td>
+            <td class="just-col">B-tier plan shielding: Marchesa returns dying creatures with +1/+1 counters at end of turn, backed by Swiftfoot Boots, but vulnerable to exile and pre-counter removal.</td>
         </tr>
         
         <tr>
@@ -348,17 +523,17 @@
             <td><strong>Engine Recovery</strong><br><span class="domain-sub">Resilience</span></td>
             <td class="tier-col"><span class="tier-badge tier-a">A</span></td>
             <td class="score-col">2 / 4</td>
-            <td class="ledger-count-col">0</td>
-            <td class="just-col">Wipe-proof engine: creatures dying to wrath return immediately on end step.</td>
+            <td class="ledger-count-col">2</td>
+            <td class="just-col">A-tier engine recovery: non-exile sweepers simply trigger end-step returns for all modified creatures, while Living Death provides mass resurrection.</td>
         </tr>
         
         <tr>
             <td class="code-col"><strong>S3</strong></td>
             <td><strong>Independence & Backup Plans</strong><br><span class="domain-sub">Resilience</span></td>
-            <td class="tier-col"><span class="tier-badge tier-c">C</span></td>
-            <td class="score-col">0 / 4</td>
-            <td class="ledger-count-col">0</td>
-            <td class="just-col">Heavily reliant on Marchesa being on the battlefield to enable the recursion loop.</td>
+            <td class="tier-col"><span class="tier-badge tier-a">A</span></td>
+            <td class="score-col">2 / 4</td>
+            <td class="ledger-count-col">3</td>
+            <td class="just-col">A-tier independence: the 99 functions autonomously as a threat-stealing Grixis aristocrat beatdown and persist combo engine even without Marchesa.</td>
         </tr>
         
             </tbody>
@@ -369,54 +544,319 @@
             
         <div class="ledger-group">
             <div class="ledger-header">
-                <h3>R1: Mana Velocity & Sufficiency <span class="ledger-tier-tag tier-b">B</span></h3>
-                <span class="count-tag">9 cards</span>
+                <h3>R1: Mana Velocity & Sufficiency <span class="ledger-tier-tag tier-a">A</span></h3>
+                <span class="count-tag">36 cards</span>
             </div>
             <div class="card-grid">
                 
-            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Arcane%20Signet&format=image&version=normal">
-                <a href="https://scryfall.com/search?q=!%22Arcane%20Signet%22" target="_blank" rel="noopener">Arcane Signet</a>
-                <span class="chip-role">Mana ramp / fixing</span>
-            </div>
-            
             <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Sol%20Ring&format=image&version=normal">
                 <a href="https://scryfall.com/search?q=!%22Sol%20Ring%22" target="_blank" rel="noopener">Sol Ring</a>
-                <span class="chip-role">Mana ramp / fixing</span>
+                <span class="chip-role">Fast colorless mana artifact</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Arcane%20Signet&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Arcane%20Signet%22" target="_blank" rel="noopener">Arcane Signet</a>
+                <span class="chip-role">2 CMC colored mana rock</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Mind%20Stone&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Mind%20Stone%22" target="_blank" rel="noopener">Mind Stone</a>
+                <span class="chip-role">2 CMC mana rock with draw utility</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Fellwar%20Stone&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Fellwar%20Stone%22" target="_blank" rel="noopener">Fellwar Stone</a>
+                <span class="chip-role">2 CMC mana rock</span>
             </div>
             
             <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Dimir%20Signet&format=image&version=normal">
                 <a href="https://scryfall.com/search?q=!%22Dimir%20Signet%22" target="_blank" rel="noopener">Dimir Signet</a>
-                <span class="chip-role">Mana ramp / fixing</span>
+                <span class="chip-role">2 CMC guild signet</span>
             </div>
             
             <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Izzet%20Signet&format=image&version=normal">
                 <a href="https://scryfall.com/search?q=!%22Izzet%20Signet%22" target="_blank" rel="noopener">Izzet Signet</a>
-                <span class="chip-role">Mana ramp / fixing</span>
+                <span class="chip-role">2 CMC guild signet</span>
             </div>
             
             <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Rakdos%20Signet&format=image&version=normal">
                 <a href="https://scryfall.com/search?q=!%22Rakdos%20Signet%22" target="_blank" rel="noopener">Rakdos Signet</a>
-                <span class="chip-role">Mana ramp / fixing</span>
+                <span class="chip-role">2 CMC guild signet</span>
             </div>
             
             <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Talisman%20of%20Indulgence&format=image&version=normal">
                 <a href="https://scryfall.com/search?q=!%22Talisman%20of%20Indulgence%22" target="_blank" rel="noopener">Talisman of Indulgence</a>
-                <span class="chip-role">Mana ramp / fixing</span>
+                <span class="chip-role">2 CMC colored talisman</span>
             </div>
             
             <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Talisman%20of%20Creativity&format=image&version=normal">
                 <a href="https://scryfall.com/search?q=!%22Talisman%20of%20Creativity%22" target="_blank" rel="noopener">Talisman of Creativity</a>
-                <span class="chip-role">Mana ramp / fixing</span>
+                <span class="chip-role">2 CMC colored talisman</span>
             </div>
             
             <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Talisman%20of%20Dominance&format=image&version=normal">
                 <a href="https://scryfall.com/search?q=!%22Talisman%20of%20Dominance%22" target="_blank" rel="noopener">Talisman of Dominance</a>
-                <span class="chip-role">Mana ramp / fixing</span>
+                <span class="chip-role">2 CMC colored talisman</span>
             </div>
             
-            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Island&format=image&version=normal">
-                <a href="https://scryfall.com/search?q=!%22Island%22" target="_blank" rel="noopener">Island</a>
-                <span class="chip-role">Mana ramp / fixing</span>
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Solemn%20Simulacrum&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Solemn%20Simulacrum%22" target="_blank" rel="noopener">Solemn Simulacrum</a>
+                <span class="chip-role">Land fetch ramp and death draw</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Goblin%20Assault&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Goblin%20Assault%22" target="_blank" rel="noopener">Goblin Assault</a>
+                <span class="chip-role">Turn-by-turn goblin token fodder</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Ophiomancer&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Ophiomancer%22" target="_blank" rel="noopener">Ophiomancer</a>
+                <span class="chip-role">Upkeep 1/1 deathtouch snake fodder</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Canyon%20Slough&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Canyon%20Slough%22" target="_blank" rel="noopener">Canyon Slough</a>
+                <span class="chip-role">Dual cycling land</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Choked%20Estuary&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Choked%20Estuary%22" target="_blank" rel="noopener">Choked Estuary</a>
+                <span class="chip-role">Shadow dual land</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Crumbling%20Necropolis&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Crumbling%20Necropolis%22" target="_blank" rel="noopener">Crumbling Necropolis</a>
+                <span class="chip-role">Tri-color land</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Dragonskull%20Summit&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Dragonskull%20Summit%22" target="_blank" rel="noopener">Dragonskull Summit</a>
+                <span class="chip-role">Check dual land</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Dismal%20Backwater&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Dismal%20Backwater%22" target="_blank" rel="noopener">Dismal Backwater</a>
+                <span class="chip-role">Gainland dual land</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Drowned%20Catacomb&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Drowned%20Catacomb%22" target="_blank" rel="noopener">Drowned Catacomb</a>
+                <span class="chip-role">Check dual land</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Evolving%20Wilds&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Evolving%20Wilds%22" target="_blank" rel="noopener">Evolving Wilds</a>
+                <span class="chip-role">Fetchland basic search</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Exotic%20Orchard&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Exotic%20Orchard%22" target="_blank" rel="noopener">Exotic Orchard</a>
+                <span class="chip-role">Multiplayer rainbow land</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Fetid%20Pools&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Fetid%20Pools%22" target="_blank" rel="noopener">Fetid Pools</a>
+                <span class="chip-role">Dual cycling land</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Foreboding%20Ruins&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Foreboding%20Ruins%22" target="_blank" rel="noopener">Foreboding Ruins</a>
+                <span class="chip-role">Shadow dual land</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Path%20of%20Ancestry&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Path%20of%20Ancestry%22" target="_blank" rel="noopener">Path of Ancestry</a>
+                <span class="chip-role">Tribal rainbow land with scry</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Command%20Tower&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Command%20Tower%22" target="_blank" rel="noopener">Command Tower</a>
+                <span class="chip-role">Rainbow commander land</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Shivan%20Reef&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Shivan%20Reef%22" target="_blank" rel="noopener">Shivan Reef</a>
+                <span class="chip-role">Pain dual land</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Smoldering%20Marsh&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Smoldering%20Marsh%22" target="_blank" rel="noopener">Smoldering Marsh</a>
+                <span class="chip-role">Dual land</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Sulfur%20Falls&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Sulfur%20Falls%22" target="_blank" rel="noopener">Sulfur Falls</a>
+                <span class="chip-role">Check dual land</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Sulfurous%20Springs&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Sulfurous%20Springs%22" target="_blank" rel="noopener">Sulfurous Springs</a>
+                <span class="chip-role">Pain dual land</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Sunken%20Hollow&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Sunken%20Hollow%22" target="_blank" rel="noopener">Sunken Hollow</a>
+                <span class="chip-role">Dual land</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Temple%20of%20Deceit&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Temple%20of%20Deceit%22" target="_blank" rel="noopener">Temple of Deceit</a>
+                <span class="chip-role">Scry dual land</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Temple%20of%20Epiphany&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Temple%20of%20Epiphany%22" target="_blank" rel="noopener">Temple of Epiphany</a>
+                <span class="chip-role">Scry dual land</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Underground%20River&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Underground%20River%22" target="_blank" rel="noopener">Underground River</a>
+                <span class="chip-role">Pain dual land</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=6%20Swamp&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%226%20Swamp%22" target="_blank" rel="noopener">6 Swamp</a>
+                <span class="chip-role">Basic lands</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=4%20Mountain&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%224%20Mountain%22" target="_blank" rel="noopener">4 Mountain</a>
+                <span class="chip-role">Basic lands</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=3%20Island&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%223%20Island%22" target="_blank" rel="noopener">3 Island</a>
+                <span class="chip-role">Basic lands</span>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="ledger-group">
+            <div class="ledger-header">
+                <h3>A2: Assembly Velocity <span class="ledger-tier-tag tier-a">A</span></h3>
+                <span class="count-tag">10 cards</span>
+            </div>
+            <div class="card-grid">
+                
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Marchesa%2C%20the%20Black%20Rose&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Marchesa%2C%20the%20Black%20Rose%22" target="_blank" rel="noopener">Marchesa, the Black Rose</a>
+                <span class="chip-role">Commander assembly engine and end-step reanimation</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Unspeakable%20Symbol&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Unspeakable%20Symbol%22" target="_blank" rel="noopener">Unspeakable Symbol</a>
+                <span class="chip-role">Instant-speed +1/+1 counter placement at the cost of life</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Thran%20Vigil&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Thran%20Vigil%22" target="_blank" rel="noopener">Thran Vigil</a>
+                <span class="chip-role">Passive +1/+1 counter placement on reanimation</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Metallic%20Mimic&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Metallic%20Mimic%22" target="_blank" rel="noopener">Metallic Mimic</a>
+                <span class="chip-role">Automatic +1/+1 counter placement on chosen creature type</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Madame%20Null%2C%20Power%20Broker&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Madame%20Null%2C%20Power%20Broker%22" target="_blank" rel="noopener">Madame Null, Power Broker</a>
+                <span class="chip-role">Passive +1/+1 counter placement on entering creatures</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Vigean%20Graftmage&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Vigean%20Graftmage%22" target="_blank" rel="noopener">Vigean Graftmage</a>
+                <span class="chip-role">Graft counter distribution on creature entry</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Forge%20of%20Heroes&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Forge%20of%20Heroes%22" target="_blank" rel="noopener">Forge of Heroes</a>
+                <span class="chip-role">Utility land granting +1/+1 counter to commander</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Guildmages%27%20Forum&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Guildmages%27%20Forum%22" target="_blank" rel="noopener">Guildmages' Forum</a>
+                <span class="chip-role">Utility land entering creatures with +1/+1 counters</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=High%20Market&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22High%20Market%22" target="_blank" rel="noopener">High Market</a>
+                <span class="chip-role">Land-based free sacrifice outlet</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Opal%20Palace&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Opal%20Palace%22" target="_blank" rel="noopener">Opal Palace</a>
+                <span class="chip-role">Utility land granting commander counters on cast</span>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="ledger-group">
+            <div class="ledger-header">
+                <h3>P1: Critical Onset & Lethality <span class="ledger-tier-tag tier-b">B</span></h3>
+                <span class="count-tag">9 cards</span>
+            </div>
+            <div class="card-grid">
+                
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Flayer%20of%20the%20Hatebound&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Flayer%20of%20the%20Hatebound%22" target="_blank" rel="noopener">Flayer of the Hatebound</a>
+                <span class="chip-role">High-damage finisher on reanimation ETB</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Gray%20Merchant%20of%20Asphodel&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Gray%20Merchant%20of%20Asphodel%22" target="_blank" rel="noopener">Gray Merchant of Asphodel</a>
+                <span class="chip-role">Mass life drain finisher looped across end steps</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Massacre%20Wurm&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Massacre%20Wurm%22" target="_blank" rel="noopener">Massacre Wurm</a>
+                <span class="chip-role">One-sided creature wipe and life loss burn</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Juri%2C%20Master%20of%20the%20Revue&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Juri%2C%20Master%20of%20the%20Revue%22" target="_blank" rel="noopener">Juri, Master of the Revue</a>
+                <span class="chip-role">Scales power rapidly on sacs and deals burst damage</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Thundering%20Raiju&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Thundering%20Raiju%22" target="_blank" rel="noopener">Thundering Raiju</a>
+                <span class="chip-role">Modified creature damage burn on combat attack</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Exava%2C%20Rakdos%20Blood%20Witch&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Exava%2C%20Rakdos%20Blood%20Witch%22" target="_blank" rel="noopener">Exava, Rakdos Blood Witch</a>
+                <span class="chip-role">Grants haste to all modified creatures</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Uncivil%20Unrest&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Uncivil%20Unrest%22" target="_blank" rel="noopener">Uncivil Unrest</a>
+                <span class="chip-role">Doubles damage dealt by creatures with +1/+1 counters</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Tainted%20Adversary&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Tainted%20Adversary%22" target="_blank" rel="noopener">Tainted Adversary</a>
+                <span class="chip-role">Deathtouch threat that creates decayed zombie army</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Syr%20Konrad%2C%20the%20Grim&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Syr%20Konrad%2C%20the%20Grim%22" target="_blank" rel="noopener">Syr Konrad, the Grim</a>
+                <span class="chip-role">Passive life drain on creature deaths and graveyard movement</span>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="ledger-group">
+            <div class="ledger-header">
+                <h3>P2: Win Inevitability & Compactness <span class="ledger-tier-tag tier-a">A</span></h3>
+                <span class="count-tag">1 cards</span>
+            </div>
+            <div class="card-grid">
+                
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Murderous%20Redcap&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Murderous%20Redcap%22" target="_blank" rel="noopener">Murderous Redcap</a>
+                <span class="chip-role">Persist creature enabling infinite damage loops</span>
             </div>
             
             </div>
@@ -425,13 +865,88 @@
         <div class="ledger-group">
             <div class="ledger-header">
                 <h3>R2: Card Flow & Replenishment <span class="ledger-tier-tag tier-a">A</span></h3>
-                <span class="count-tag">1 cards</span>
+                <span class="count-tag">7 cards</span>
             </div>
             <div class="card-grid">
                 
             <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Skullclamp&format=image&version=normal">
                 <a href="https://scryfall.com/search?q=!%22Skullclamp%22" target="_blank" rel="noopener">Skullclamp</a>
-                <span class="chip-role">Card draw / engine replenishment</span>
+                <span class="chip-role">Massive burst draw engine on creature death</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Grim%20Haruspex&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Grim%20Haruspex%22" target="_blank" rel="noopener">Grim Haruspex</a>
+                <span class="chip-role">Continuous card draw on nontoken creature deaths</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Mulldrifter&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Mulldrifter%22" target="_blank" rel="noopener">Mulldrifter</a>
+                <span class="chip-role">ETB 2-card draw engine looped on end steps</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Baleful%20Strix&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Baleful%20Strix%22" target="_blank" rel="noopener">Baleful Strix</a>
+                <span class="chip-role">Cantrip deathtouch blocker looped on end steps</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Deadly%20Dispute&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Deadly%20Dispute%22" target="_blank" rel="noopener">Deadly Dispute</a>
+                <span class="chip-role">Instant sacrifice draw and treasure generation</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Scorn-Blade%20Berserker&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Scorn-Blade%20Berserker%22" target="_blank" rel="noopener">Scorn-Blade Berserker</a>
+                <span class="chip-role">Backup sacrifice outlet and card draw</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Reliquary%20Tower&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Reliquary%20Tower%22" target="_blank" rel="noopener">Reliquary Tower</a>
+                <span class="chip-role">No maximum hand size utility land</span>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="ledger-group">
+            <div class="ledger-header">
+                <h3>A1: Selection & Redundancy <span class="ledger-tier-tag tier-a">A</span></h3>
+                <span class="count-tag">7 cards</span>
+            </div>
+            <div class="card-grid">
+                
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Viscera%20Seer&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Viscera%20Seer%22" target="_blank" rel="noopener">Viscera Seer</a>
+                <span class="chip-role">1 CMC free sacrifice outlet and scry filtering</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Carrion%20Feeder&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Carrion%20Feeder%22" target="_blank" rel="noopener">Carrion Feeder</a>
+                <span class="chip-role">1 CMC free sacrifice outlet with scaling counters</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Woe%20Strider&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Woe%20Strider%22" target="_blank" rel="noopener">Woe Strider</a>
+                <span class="chip-role">Free sacrifice outlet with Goat token and scry filtering</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Goblin%20Bombardment&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Goblin%20Bombardment%22" target="_blank" rel="noopener">Goblin Bombardment</a>
+                <span class="chip-role">Free sacrifice outlet with direct damage output</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Blood%20Artist&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Blood%20Artist%22" target="_blank" rel="noopener">Blood Artist</a>
+                <span class="chip-role">Drain engine on creature deaths</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Zulaport%20Cutthroat&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Zulaport%20Cutthroat%22" target="_blank" rel="noopener">Zulaport Cutthroat</a>
+                <span class="chip-role">Drain engine on creature deaths</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Bastion%20of%20Remembrance&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Bastion%20of%20Remembrance%22" target="_blank" rel="noopener">Bastion of Remembrance</a>
+                <span class="chip-role">Enchantment drain engine on creature deaths</span>
             </div>
             
             </div>
@@ -440,13 +955,58 @@
         <div class="ledger-group">
             <div class="ledger-header">
                 <h3>I1: Reactive Disruption <span class="ledger-tier-tag tier-b">B</span></h3>
-                <span class="count-tag">1 cards</span>
+                <span class="count-tag">10 cards</span>
             </div>
             <div class="card-grid">
                 
-            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Path%20of%20Ancestry&format=image&version=normal">
-                <a href="https://scryfall.com/search?q=!%22Path%20of%20Ancestry%22" target="_blank" rel="noopener">Path of Ancestry</a>
-                <span class="chip-role">Instant-speed reactive removal</span>
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Toxic%20Deluge&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Toxic%20Deluge%22" target="_blank" rel="noopener">Toxic Deluge</a>
+                <span class="chip-role">Modal low-cost -X/-X creature sweeper</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Blasphemous%20Act&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Blasphemous%20Act%22" target="_blank" rel="noopener">Blasphemous Act</a>
+                <span class="chip-role">Cheap high-damage creature sweeper</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Terminate&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Terminate%22" target="_blank" rel="noopener">Terminate</a>
+                <span class="chip-role">Instant creature destruction without regeneration</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Bedevil&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Bedevil%22" target="_blank" rel="noopener">Bedevil</a>
+                <span class="chip-role">Instant destruction of artifact, creature, or planeswalker</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Feed%20the%20Swarm&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Feed%20the%20Swarm%22" target="_blank" rel="noopener">Feed the Swarm</a>
+                <span class="chip-role">Enchantment or creature targeted removal</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Imprisoned%20in%20the%20Moon&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Imprisoned%20in%20the%20Moon%22" target="_blank" rel="noopener">Imprisoned in the Moon</a>
+                <span class="chip-role">Permanent neutralizer transforming commander to land</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=An%20Offer%20You%20Can%27t%20Refuse&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22An%20Offer%20You%20Can%27t%20Refuse%22" target="_blank" rel="noopener">An Offer You Can't Refuse</a>
+                <span class="chip-role">1 CMC instant noncreature counterspell</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Arcane%20Denial&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Arcane%20Denial%22" target="_blank" rel="noopener">Arcane Denial</a>
+                <span class="chip-role">2 CMC flexible universal counterspell</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Ravenous%20Chupacabra&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Ravenous%20Chupacabra%22" target="_blank" rel="noopener">Ravenous Chupacabra</a>
+                <span class="chip-role">Targeted creature destruction on ETB</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Mayhem%20Devil&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Mayhem%20Devil%22" target="_blank" rel="noopener">Mayhem Devil</a>
+                <span class="chip-role">Direct damage trigger on any player sacrifice</span>
             </div>
             
             </div>
@@ -454,14 +1014,104 @@
         
         <div class="ledger-group">
             <div class="ledger-header">
-                <h3>S1: Plan Shielding & Protection <span class="ledger-tier-tag tier-a">A</span></h3>
-                <span class="count-tag">1 cards</span>
+                <h3>I2: Proactive Denial & Restriction <span class="ledger-tier-tag tier-b">B</span></h3>
+                <span class="count-tag">5 cards</span>
+            </div>
+            <div class="card-grid">
+                
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Kardur%2C%20Doomscourge&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Kardur%2C%20Doomscourge%22" target="_blank" rel="noopener">Kardur, Doomscourge</a>
+                <span class="chip-role">Goads all opposing creatures on ETB preventing attacks</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Puppeteer%20Clique&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Puppeteer%20Clique%22" target="_blank" rel="noopener">Puppeteer Clique</a>
+                <span class="chip-role">Steals opposing creatures with haste and persist</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Zealous%20Conscripts&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Zealous%20Conscripts%22" target="_blank" rel="noopener">Zealous Conscripts</a>
+                <span class="chip-role">Steals any opposing permanent on ETB</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Mark%20of%20Mutiny&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Mark%20of%20Mutiny%22" target="_blank" rel="noopener">Mark of Mutiny</a>
+                <span class="chip-role">Steals creature with +1/+1 counter for permanent Marchesa reanimation</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Mass%20Mutiny&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Mass%20Mutiny%22" target="_blank" rel="noopener">Mass Mutiny</a>
+                <span class="chip-role">Steals one creature from each opponent with haste</span>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="ledger-group">
+            <div class="ledger-header">
+                <h3>S1: Plan Shielding & Protection <span class="ledger-tier-tag tier-b">B</span></h3>
+                <span class="count-tag">3 cards</span>
             </div>
             <div class="card-grid">
                 
             <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Swiftfoot%20Boots&format=image&version=normal">
                 <a href="https://scryfall.com/search?q=!%22Swiftfoot%20Boots%22" target="_blank" rel="noopener">Swiftfoot Boots</a>
-                <span class="chip-role">Board / commander protection</span>
+                <span class="chip-role">Hexproof and haste equipment protection</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Yahenni%2C%20Undying%20Partisan&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Yahenni%2C%20Undying%20Partisan%22" target="_blank" rel="noopener">Yahenni, Undying Partisan</a>
+                <span class="chip-role">Free sac outlet with self-indestructible protection</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Immersturm%20Predator&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Immersturm%20Predator%22" target="_blank" rel="noopener">Immersturm Predator</a>
+                <span class="chip-role">Free sac outlet with self-indestructible and graveyard exile</span>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="ledger-group">
+            <div class="ledger-header">
+                <h3>S2: Engine Recovery <span class="ledger-tier-tag tier-a">A</span></h3>
+                <span class="count-tag">2 cards</span>
+            </div>
+            <div class="card-grid">
+                
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Living%20Death&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Living%20Death%22" target="_blank" rel="noopener">Living Death</a>
+                <span class="chip-role">Mass graveyard resurrection and opposing board wipe</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Cormela%2C%20Glamour%20Thief&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Cormela%2C%20Glamour%20Thief%22" target="_blank" rel="noopener">Cormela, Glamour Thief</a>
+                <span class="chip-role">Recurs instant or sorcery on death</span>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="ledger-group">
+            <div class="ledger-header">
+                <h3>S3: Independence & Backup Plans <span class="ledger-tier-tag tier-a">A</span></h3>
+                <span class="count-tag">3 cards</span>
+            </div>
+            <div class="card-grid">
+                
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Murderous%20Redcap&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Murderous%20Redcap%22" target="_blank" rel="noopener">Murderous Redcap</a>
+                <span class="chip-role">Autonomous infinite combo win condition</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Gray%20Merchant%20of%20Asphodel&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Gray%20Merchant%20of%20Asphodel%22" target="_blank" rel="noopener">Gray Merchant of Asphodel</a>
+                <span class="chip-role">Autonomous life drain win condition</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Kardur%2C%20Doomscourge&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Kardur%2C%20Doomscourge%22" target="_blank" rel="noopener">Kardur, Doomscourge</a>
+                <span class="chip-role">Autonomous combat redirection and board survival</span>
             </div>
             
             </div>

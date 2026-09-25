@@ -1,98 +1,243 @@
 {
+  "deck_name": "MarchesaBlackRose",
+  "thematic_restriction": false,
   "grades": {
-    "r1": "B",
+    "r1": "A",
     "r2": "A",
-    "a1": "B",
-    "a2": "B",
+    "a1": "A",
+    "a2": "A",
     "p1": "B",
-    "p2": "B",
+    "p2": "A",
     "p3": "B",
     "i1": "B",
     "i2": "B",
-    "s1": "A",
+    "s1": "B",
     "s2": "A",
-    "s3": "C"
+    "s3": "A"
   },
   "justifications": {
-    "r1": "Standard Grixis mana rocks and treasure generation.",
-    "r2": "Dethrone + aristocrat death draw (Grim Haruspex, Midnight Reaper, River Kelpie) draws cards on every turn.",
-    "a1": "High redundancy of sacrifice outlets, counter placers, and ETB burn creatures.",
-    "a2": "Assembles Marchesa recursive engine on Turns 5–6.",
-    "p1": "Presents persistent board control and drain clock on Turns 6–7.",
-    "p2": "2 opponent untap steps of end-step recursion and combat drain.",
-    "p3": "Aristocrat engine relies on graveyard returns at end of turn.",
-    "i1": "Instant removal and sacrifice edicts (Fleshbag Marauder, Plaguecrafter on loop).",
-    "i2": "Continuous recurring edicts strip opponents of creatures during every turn cycle.",
-    "s1": "Marchesa automatically returns any creature with a +1/+1 counter to the battlefield at end step.",
-    "s2": "Wipe-proof engine: creatures dying to wrath return immediately on end step.",
-    "s3": "Heavily reliant on Marchesa being on the battlefield to enable the recursion loop."
+    "r1": "10 cheap two-mana mana rocks and talismans plus Sol Ring accelerate Marchesa onto the battlefield consistently by Turn 3.",
+    "r2": "A-tier card flow powered by Skullclamp, Grim Haruspex, Mulldrifter (looped on end steps), Baleful Strix, Deadly Dispute, and Scorn-Blade Berserker.",
+    "a1": "Premier A-tier redundancy with 8 free sacrifice outlets, 7 aristocrat drain engines, and deep +1/+1 counter enablers forming resilient loops.",
+    "a2": "Achieves engine readiness by Turn 4 via fast mana into Marchesa and immediate +1/+1 counter deployment.",
+    "p1": "Critical onset hits by Turn 6 as recurring drain engines (Gray Merchant of Asphodel, Flayer of the Hatebound) or persist loops start threatening lethal life totals.",
+    "p2": "A-tier win compactness: closing the game takes just 1 opponent response cycle after onset due to high-damage Gray Merchant loops, Flayer burst damage, and Murderous Redcap infinite combos.",
+    "p3": "Modified creatures with counters and open sacrifice outlets on the battlefield clearly telegraph end-step reanimation loops.",
+    "i1": "B-tier reactive disruption suite featuring Toxic Deluge, Blasphemous Act, Terminate, Bedevil, Feed the Swarm, An Offer You Can't Refuse, and Arcane Denial.",
+    "i2": "B-tier proactive denial anchored by looped Kardur, Doomscourge goad locks, Massacre Wurm sweeping opposing boards, and repeated Puppeteer Clique / Zealous Conscripts theft.",
+    "s1": "B-tier plan shielding: Marchesa returns dying creatures with +1/+1 counters at end of turn, backed by Swiftfoot Boots, but vulnerable to exile and pre-counter removal.",
+    "s2": "A-tier engine recovery: non-exile sweepers simply trigger end-step returns for all modified creatures, while Living Death provides mass resurrection.",
+    "s3": "A-tier independence: the 99 functions autonomously as a threat-stealing Grixis aristocrat beatdown and persist combo engine even without Marchesa."
   },
+  "overview": "This deck is a high-synergy Grixis Aristocrats build commanded by Marchesa, the Black Rose. Its strategy revolves around utilizing the dethrone mechanic and +1/+1 counter synergies to establish an unyielding reanimation loop. By ensuring creatures have +1/+1 counters via dethrone attacks, Unspeakable Symbol, or Thran Vigil, Marchesa returns them from the graveyard at the beginning of each end step whenever they die. Free sacrifice outlets like Viscera Seer, Carrion Feeder, and Goblin Bombardment allow the deck to trigger powerful enters-the-battlefield and death abilities across every player's turn. High-impact payoffs like Gray Merchant of Asphodel, Flayer of the Hatebound, Massacre Wurm, and Kardur, Doomscourge drain life totals, wipe opposing boards, and lock opponents out of attacking. Additionally, the deck can execute infinite damage combos using Murderous Redcap alongside +1/+1 counter buffers. While vulnerable to graveyard hate and exile removal, the deck boasts resilient recovery and compounding resource advantage.",
+  "primer": {
+    "core_strategy": [
+      "Accelerate in the early turns using 2-mana rocks, establishing a free sacrifice outlet like Viscera Seer or Carrion Feeder and a value creature.",
+      "Deploy Marchesa, the Black Rose and place +1/+1 counters on your creatures via dethrone combat, Unspeakable Symbol, or Madame Null, Power Broker.",
+      "Sacrifice your modified creatures on each player's turn to trigger death and enters-the-battlefield abilities, returning them at every end step.",
+      "Close the game by looping drain engines like Gray Merchant of Asphodel and Flayer of the Hatebound, or assembling a Murderous Redcap persist loop."
+    ],
+    "mulligan_priorities": {
+      "keep": [
+        "Hands with 3 lands, at least one 2-mana ramp piece, a cheap sacrifice outlet, and an early card advantage or counter-enabling creature."
+      ],
+      "avoid": [
+        "Hands with only high-CMC payoffs (5+ mana), missing black/blue/red color fixing, or hands with no sacrifice outlets and no card draw."
+      ]
+    },
+    "key_tips": [
+      "Manage your life total carefully; you often want to remain below the highest life total opponent to guarantee dethrone triggers on attack.",
+      "Cast Threaten spells like Mark of Mutiny or Zealous Conscripts, put a +1/+1 counter on the stolen creature, and sacrifice it so it returns permanently under your control.",
+      "Use Unspeakable Symbol at instant speed to put +1/+1 counters on creatures in response to removal or sweepers, ensuring they recur at the next end step."
+    ]
+  },
+  "weaknesses": {
+    "critical": [
+      "Graveyard hate (such as Rest in Peace or Leyline of the Void) permanently disables Marchesa's reanimation trigger and aristocrat payoffs.",
+      "Exile-based board wipes (such as Farewell) bypass death triggers entirely, stripping all board presence without recursion."
+    ],
+    "moderate": [
+      "Removal targeting Marchesa, the Black Rose immediately upon entry before she gains a +1/+1 counter delays the entire engine.",
+      "Thin stack interaction makes the deck vulnerable to fast instant-speed noncreature combo wins."
+    ],
+    "minor": [
+      "Life-loss costs from Unspeakable Symbol, pain lands, and Talismans can become dangerous if opponents apply aggressive combat pressure."
+    ]
+  },
+  "key_cards": [
+    {
+      "card": "Marchesa, the Black Rose",
+      "reason": "Commander and core engine that reanimates any creature dying with a +1/+1 counter at the next end step."
+    },
+    {
+      "card": "Unspeakable Symbol",
+      "reason": "Provides instant-speed +1/+1 counters on demand to protect creatures from removal and ensure Marchesa recursion."
+    },
+    {
+      "card": "Goblin Bombardment",
+      "reason": "Free sacrifice outlet that turns recurring creatures into repeatable direct damage and board control."
+    },
+    {
+      "card": "Viscera Seer",
+      "reason": "One-mana sacrifice outlet that provides extensive deck filtering via repeated scry triggers."
+    },
+    {
+      "card": "Flayer of the Hatebound",
+      "reason": "Primary damage win condition that triggers whenever it or other creatures enter from the graveyard."
+    },
+    {
+      "card": "Gray Merchant of Asphodel",
+      "reason": "Massive life drain ETB creature that closes games rapidly when looped across end steps."
+    },
+    {
+      "card": "Kardur, Doomscourge",
+      "reason": "Goads all opposing creatures on entry to prevent attacks against you and force opponents to whittle each other down."
+    },
+    {
+      "card": "Murderous Redcap",
+      "reason": "Persist creature that forms instant-kill loops when paired with +1/+1 counter enablers and a sacrifice outlet."
+    },
+    {
+      "card": "Metallic Mimic",
+      "reason": "Enters as a Goblin to cancel -1/-1 counters on Murderous Redcap upon entry, enabling infinite damage loops."
+    },
+    {
+      "card": "Grim Haruspex",
+      "reason": "Draws cards whenever nontoken creatures die, refueling your hand through Marchesa sacrifice loops."
+    },
+    {
+      "card": "Mark of Mutiny",
+      "reason": "Steals an opponent's creature and grants a +1/+1 counter, allowing Marchesa to reanimate it permanently on sacrifice."
+    },
+    {
+      "card": "Skullclamp",
+      "reason": "Turns 1/1 tokens and recurring utility creatures into massive burst card advantage."
+    },
+    {
+      "card": "Toxic Deluge",
+      "reason": "Flexible, low-cost board wipe that bypasses indestructible while helping lower your life total for dethrone."
+    },
+    {
+      "card": "Thran Vigil",
+      "reason": "Puts +1/+1 counters on creatures when cards leave the graveyard, naturally synergizing with persist loops and Marchesa."
+    }
+  ],
   "card_ledger": {
     "r1": [
-      {
-        "card": "Arcane Signet",
-        "role": "Mana ramp / fixing"
-      },
-      {
-        "card": "Sol Ring",
-        "role": "Mana ramp / fixing"
-      },
-      {
-        "card": "Dimir Signet",
-        "role": "Mana ramp / fixing"
-      },
-      {
-        "card": "Izzet Signet",
-        "role": "Mana ramp / fixing"
-      },
-      {
-        "card": "Rakdos Signet",
-        "role": "Mana ramp / fixing"
-      },
-      {
-        "card": "Talisman of Indulgence",
-        "role": "Mana ramp / fixing"
-      },
-      {
-        "card": "Talisman of Creativity",
-        "role": "Mana ramp / fixing"
-      },
-      {
-        "card": "Talisman of Dominance",
-        "role": "Mana ramp / fixing"
-      },
-      {
-        "card": "Island",
-        "role": "Mana ramp / fixing"
-      }
+      { "card": "Sol Ring", "role": "Fast colorless mana artifact" },
+      { "card": "Arcane Signet", "role": "2 CMC colored mana rock" },
+      { "card": "Mind Stone", "role": "2 CMC mana rock with draw utility" },
+      { "card": "Fellwar Stone", "role": "2 CMC mana rock" },
+      { "card": "Dimir Signet", "role": "2 CMC guild signet" },
+      { "card": "Izzet Signet", "role": "2 CMC guild signet" },
+      { "card": "Rakdos Signet", "role": "2 CMC guild signet" },
+      { "card": "Talisman of Indulgence", "role": "2 CMC colored talisman" },
+      { "card": "Talisman of Creativity", "role": "2 CMC colored talisman" },
+      { "card": "Talisman of Dominance", "role": "2 CMC colored talisman" },
+      { "card": "Solemn Simulacrum", "role": "Land fetch ramp and death draw" },
+      { "card": "Goblin Assault", "role": "Turn-by-turn goblin token fodder" },
+      { "card": "Ophiomancer", "role": "Upkeep 1/1 deathtouch snake fodder" },
+      { "card": "Canyon Slough", "role": "Dual cycling land" },
+      { "card": "Choked Estuary", "role": "Shadow dual land" },
+      { "card": "Crumbling Necropolis", "role": "Tri-color land" },
+      { "card": "Dragonskull Summit", "role": "Check dual land" },
+      { "card": "Dismal Backwater", "role": "Gainland dual land" },
+      { "card": "Drowned Catacomb", "role": "Check dual land" },
+      { "card": "Evolving Wilds", "role": "Fetchland basic search" },
+      { "card": "Exotic Orchard", "role": "Multiplayer rainbow land" },
+      { "card": "Fetid Pools", "role": "Dual cycling land" },
+      { "card": "Foreboding Ruins", "role": "Shadow dual land" },
+      { "card": "Path of Ancestry", "role": "Tribal rainbow land with scry" },
+      { "card": "Command Tower", "role": "Rainbow commander land" },
+      { "card": "Shivan Reef", "role": "Pain dual land" },
+      { "card": "Smoldering Marsh", "role": "Dual land" },
+      { "card": "Sulfur Falls", "role": "Check dual land" },
+      { "card": "Sulfurous Springs", "role": "Pain dual land" },
+      { "card": "Sunken Hollow", "role": "Dual land" },
+      { "card": "Temple of Deceit", "role": "Scry dual land" },
+      { "card": "Temple of Epiphany", "role": "Scry dual land" },
+      { "card": "Underground River", "role": "Pain dual land" },
+      { "card": "6 Swamp", "role": "Basic lands" },
+      { "card": "4 Mountain", "role": "Basic lands" },
+      { "card": "3 Island", "role": "Basic lands" }
     ],
-    "a2": [],
-    "p1": [],
-    "p2": [],
     "r2": [
-      {
-        "card": "Skullclamp",
-        "role": "Card draw / engine replenishment"
-      }
+      { "card": "Skullclamp", "role": "Massive burst draw engine on creature death" },
+      { "card": "Grim Haruspex", "role": "Continuous card draw on nontoken creature deaths" },
+      { "card": "Mulldrifter", "role": "ETB 2-card draw engine looped on end steps" },
+      { "card": "Baleful Strix", "role": "Cantrip deathtouch blocker looped on end steps" },
+      { "card": "Deadly Dispute", "role": "Instant sacrifice draw and treasure generation" },
+      { "card": "Scorn-Blade Berserker", "role": "Backup sacrifice outlet and card draw" },
+      { "card": "Reliquary Tower", "role": "No maximum hand size utility land" }
     ],
-    "a1": [],
+    "a1": [
+      { "card": "Viscera Seer", "role": "1 CMC free sacrifice outlet and scry filtering" },
+      { "card": "Carrion Feeder", "role": "1 CMC free sacrifice outlet with scaling counters" },
+      { "card": "Woe Strider", "role": "Free sacrifice outlet with Goat token and scry filtering" },
+      { "card": "Goblin Bombardment", "role": "Free sacrifice outlet with direct damage output" },
+      { "card": "Blood Artist", "role": "Drain engine on creature deaths" },
+      { "card": "Zulaport Cutthroat", "role": "Drain engine on creature deaths" },
+      { "card": "Bastion of Remembrance", "role": "Enchantment drain engine on creature deaths" }
+    ],
+    "a2": [
+      { "card": "Marchesa, the Black Rose", "role": "Commander assembly engine and end-step reanimation" },
+      { "card": "Unspeakable Symbol", "role": "Instant-speed +1/+1 counter placement at the cost of life" },
+      { "card": "Thran Vigil", "role": "Passive +1/+1 counter placement on reanimation" },
+      { "card": "Metallic Mimic", "role": "Automatic +1/+1 counter placement on chosen creature type" },
+      { "card": "Madame Null, Power Broker", "role": "Passive +1/+1 counter placement on entering creatures" },
+      { "card": "Vigean Graftmage", "role": "Graft counter distribution on creature entry" },
+      { "card": "Forge of Heroes", "role": "Utility land granting +1/+1 counter to commander" },
+      { "card": "Guildmages' Forum", "role": "Utility land entering creatures with +1/+1 counters" },
+      { "card": "High Market", "role": "Land-based free sacrifice outlet" },
+      { "card": "Opal Palace", "role": "Utility land granting commander counters on cast" }
+    ],
+    "p1": [
+      { "card": "Flayer of the Hatebound", "role": "High-damage finisher on reanimation ETB" },
+      { "card": "Gray Merchant of Asphodel", "role": "Mass life drain finisher looped across end steps" },
+      { "card": "Massacre Wurm", "role": "One-sided creature wipe and life loss burn" },
+      { "card": "Juri, Master of the Revue", "role": "Scales power rapidly on sacs and deals burst damage" },
+      { "card": "Thundering Raiju", "role": "Modified creature damage burn on combat attack" },
+      { "card": "Exava, Rakdos Blood Witch", "role": "Grants haste to all modified creatures" },
+      { "card": "Uncivil Unrest", "role": "Doubles damage dealt by creatures with +1/+1 counters" },
+      { "card": "Tainted Adversary", "role": "Deathtouch threat that creates decayed zombie army" },
+      { "card": "Syr Konrad, the Grim", "role": "Passive life drain on creature deaths and graveyard movement" }
+    ],
+    "p2": [
+      { "card": "Murderous Redcap", "role": "Persist creature enabling infinite damage loops" }
+    ],
     "p3": [],
     "i1": [
-      {
-        "card": "Path of Ancestry",
-        "role": "Instant-speed reactive removal"
-      }
+      { "card": "Toxic Deluge", "role": "Modal low-cost -X/-X creature sweeper" },
+      { "card": "Blasphemous Act", "role": "Cheap high-damage creature sweeper" },
+      { "card": "Terminate", "role": "Instant creature destruction without regeneration" },
+      { "card": "Bedevil", "role": "Instant destruction of artifact, creature, or planeswalker" },
+      { "card": "Feed the Swarm", "role": "Enchantment or creature targeted removal" },
+      { "card": "Imprisoned in the Moon", "role": "Permanent neutralizer transforming commander to land" },
+      { "card": "An Offer You Can't Refuse", "role": "1 CMC instant noncreature counterspell" },
+      { "card": "Arcane Denial", "role": "2 CMC flexible universal counterspell" },
+      { "card": "Ravenous Chupacabra", "role": "Targeted creature destruction on ETB" },
+      { "card": "Mayhem Devil", "role": "Direct damage trigger on any player sacrifice" }
     ],
-    "i2": [],
+    "i2": [
+      { "card": "Kardur, Doomscourge", "role": "Goads all opposing creatures on ETB preventing attacks" },
+      { "card": "Puppeteer Clique", "role": "Steals opposing creatures with haste and persist" },
+      { "card": "Zealous Conscripts", "role": "Steals any opposing permanent on ETB" },
+      { "card": "Mark of Mutiny", "role": "Steals creature with +1/+1 counter for permanent Marchesa reanimation" },
+      { "card": "Mass Mutiny", "role": "Steals one creature from each opponent with haste" }
+    ],
     "s1": [
-      {
-        "card": "Swiftfoot Boots",
-        "role": "Board / commander protection"
-      }
+      { "card": "Swiftfoot Boots", "role": "Hexproof and haste equipment protection" },
+      { "card": "Yahenni, Undying Partisan", "role": "Free sac outlet with self-indestructible protection" },
+      { "card": "Immersturm Predator", "role": "Free sac outlet with self-indestructible and graveyard exile" }
     ],
-    "s2": [],
-    "s3": []
-  },
-  "deck_name": "MarchesaBlackRose",
-  "thematic_restriction": false
+    "s2": [
+      { "card": "Living Death", "role": "Mass graveyard resurrection and opposing board wipe" },
+      { "card": "Cormela, Glamour Thief", "role": "Recurs instant or sorcery on death" }
+    ],
+    "s3": [
+      { "card": "Murderous Redcap", "role": "Autonomous infinite combo win condition" },
+      { "card": "Gray Merchant of Asphodel", "role": "Autonomous life drain win condition" },
+      { "card": "Kardur, Doomscourge", "role": "Autonomous combat redirection and board survival" }
+    ]
+  }
 }

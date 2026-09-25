@@ -36,8 +36,6 @@ Deck
 1 Metallic Mimic
 1 Madame Null, Power Broker
 1 Tainted Adversary
-1 Mikaeus, the Unhallowed
-1 Yawgmoth, Thran Physician
 1 Uncivil Unrest
 1 Swiftfoot Boots
 1 Arcane Signet
@@ -58,9 +56,11 @@ Deck
 1 Toxic Deluge
 1 Blasphemous Act
 1 Living Death
-1 Reassembling Skeleton
-1 Sage of Fables
+1 An Offer You Can't Refuse
+1 Arcane Denial
 1 Cormela, Glamour Thief
+1 Mark of Mutiny
+1 Mass Mutiny
 1 Skullclamp
 1 Deadly Dispute
 1 Canyon Slough

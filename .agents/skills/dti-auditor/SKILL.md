@@ -192,6 +192,14 @@ Use these calibrated decks to ground every future evaluation:
 *   **Benchmarks:** $R1: A, R2: B, A1: B, A2: A, P1: B, P2: B, P3: B, I1: B, I2: B, S1: A, S2: A, S3: A$.
 *   **Calibration Principle:** Re-confirms the exact 32/96 floor of Bracket 3 alongside Hulk: despite running 4 Game Changers and Aura Shards denial ($I2: B$), its Turn 4 engine, Turn 6 onset ($P1: B$), and 2 untap cycles anchor it firmly at 32/96.
 
+### Anchor 9: Marchesa (Grixis Aristocrats & Loops) — Bracket 3 Solid
+*   **Threat Score:** **37 / 96** (Bracket 3, 32–51 band)
+*   **Vectors:** Velocity: **19 / 48** | Suppression: **13 / 40**
+*   **Clock:** Onset Turn 6 ($P1: B$), Ready Turn 4 ($A2: A$), Response Cycles: 1 ($P2: A$) $\rightarrow$ Turn 7 kill.
+*   **Benchmarks:** $R1: A, R2: A, A1: A, A2: A, P1: B, P2: A, P3: B, I1: B, I2: B, S1: B, S2: A, S3: A$.
+*   **Calibration Principle:** Illustrates the impact of high compactness and redundancy: with 10 fast rocks ($R1: A$), high redundancy ($A1: A$), and infinite persist loops ($P2: A$), it finishes in 1 response cycle and lands squarely at 37/96 in mid-Bracket 3.
+
+
 
 
 

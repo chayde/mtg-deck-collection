@@ -11,8 +11,8 @@ deck_status: main
 ## Commander Strategy
 **Marchesa, the Black Rose**
 *   **Archetype:** Grixis Aristocrats / "Entry-Insured" Loops
-*   **Bracket:** 3 (Upgraded)
-*   **DTI Threat Index:** **26 / 96** (Bracket 2 | Velocity: **12/48** | Suppression: **8/40** | Gates: All Passed | [DTI Report](dti_report.html))
+*   **Bracket:** 3 (Upgraded Casual)
+*   **DTI Threat Index:** **37 / 96** (Bracket 3 | Velocity: **19/48** | Suppression: **13/40** | Gates: All Passed | [DTI Report](dti_report.html))
 *   **Core Goal:** Create an immortal board state by ensuring every creature enters the battlefield with a +1/+1 counter. By prioritizing passive enablers (Graft, Undying, Persist), we remove the "window of vulnerability" and make the deck independent of the Combat phase and Dethrone triggers.
 
 ---
@@ -114,6 +114,10 @@ deck_status: main
 ---
 
 ## 📜 Deck Changelog
+*   **2026-09-25:** Calibrated against official DeckCheck.co scan.
+    *   **In:** N/A (DTI Telemetry & Calibration)
+    *   **Out:** N/A
+    *   **Reason:** Official scan validated Threat Score at 37 / 96 (Bracket 3 Upgraded Casual). Velocity vector calibrated to 19/48, Suppression vector to 13/40, Onset Turn 6 (P1: B), Engine Ready Turn 4 (A2: A), with 1 opponent response cycle (P2: A) due to Murderous Redcap infinite persist loops and Gray Merchant/Flayer drain. All 4 Gatekeepers passed safely. Populated full 100-card ledger and tactical primer.
 *   **2026-04-15:** Replaced counterspells with creatures.
     *   **In:** Reassembling Skeleton; Sage of Fables
     *   **Out:** An Offer You Can't Refuse; Arcane Denial
@@ -216,11 +220,11 @@ DECK:
 1 Toxic Deluge  
 1 Blasphemous Act  
 1 Living Death  
-1 Reassembling Skeleton  
-1 Sage of Fables  
+1 An Offer You Can't Refuse  
+1 Arcane Denial  
 1 Cormela, Glamour Thief  
-1 Mikaeus, the Unhallowed  
-1 Yawgmoth, Thran Physician  
+1 Mark of Mutiny  
+1 Mass Mutiny  
 1 Skullclamp  
 1 Deadly Dispute  
 1 Canyon Slough  
