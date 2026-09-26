@@ -136,6 +136,10 @@ python scripts/scryfall_lookup.py --search "is:gamechanger"
 | `t:shapeshifter` | Creature type is Shapeshifter |
 | `t:elf t:warrior` | Creature type includes both Elf and Warrior |
 | `game:paper` | Paper printings only (excludes MTGO/Arena exclusive cards) |
+| `game:arena` / `in:arena` | Cards available/playable on MTG Arena |
+| `-game:arena` / `-in:arena` | Exclude cards on MTG Arena (paper/MTGO only) |
+| `f:brawl` | Legal in MTG Arena 100-card Brawl |
+| `f:timeless` | Legal in MTG Arena Timeless |
 | `!"Card Name"` | Exact card name match (use with `--unique prints` for all printings) |
 | `is:changeling` | Cards with the changeling keyword |
 | `o:"changeling"` | Cards with "changeling" in oracle text |
