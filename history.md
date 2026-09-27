@@ -2,6 +2,12 @@
 
 ## 🗓️ September 2026: Varina Zombie Apocalypse Inception, Henzie Blitz Refinement & Playtesting
 
+### 2026-09-26: MTG Arena Brawl Adaptation & Thalia and The Gitrog Monster Deck Inception
+*   **Repository-Wide MTG Arena Brawl Audit:** Audited all 42 decks across `Owned/` and `Planning/` against MTG Arena card availability and Brawl legality. Identified that 27 commanders are legal in Brawl on Arena, with *UlamogColorless* (1 swap) and *ThaliaGitrog* (12 swaps) being the top candidates requiring $\le 15$ swaps.
+*   **Thalia and The Gitrog Monster Brawl Build (`arena_decks/ThaliaGitrogBrawl`):**
+    *   Constructed a 100% MTG Arena Brawl-legal 100-card decklist in `arena_decks/ThaliaGitrogBrawl/thalia_gitrog_brawl.md` and `moxfield_import.txt`.
+    *   *Key Upgrades & Swaps:* Replaced *Avenger of Zendikar* with *Lumra, Bellow of the Woods*; replaced *Ob Nixilis, the Fallen* with *The Necrobloom*; replaced color-illegal *Anger* with *Lavaspur Boots* (*Concordant Crossroads* verified absent from Arena); replaced banned *Demonic Tutor* with *Grim Tutor*; replaced paper stax *Collector Ouphe* with *Dauntless Dismantler*; replaced paper duals with *Underground Mortuary*, *Deathcap Glade*, and *Shattered Sanctum*; added *Springheart Nantuko* and *Bristly Bill, Spine Sower* to complete 100 cards.
+
 ### 2026-09-24: DeckCheck Threat Index (DTI) Framework Inception, Engine Tooling & Subagent Integration
 *   **System Inception & Retiring Distance-from-cEDH:** Integrated the DeckCheck Threat Index (DTI) framework (analyzed from DeckCheck's architectural deep-dives) to replace traditional distance-from-cEDH power level estimation with an objective framework rooted in the Physics of Magic:
     *   *3 Foundational Axioms:* (1) Cards are contextual to the deck's specific plan, (2) Zones and life totals are resource aliases, (3) The turn clock is a multiplier (contracting own clock vs. dilating table clock).

@@ -77,6 +77,7 @@ Optimized lists for MTG Arena formats (Standard, Brawl, Timeless).
 *   **Dimir Midrange:** Current Tier 1 Standard engine.
 *   **The First Sliver:** Various Brawl and Combo builds.
 *   **Glarb Brawl:** Sultai value.
+*   **Thalia and The Gitrog Monster:** Abzan Landfall, Stax & Graveyard Midrange Brawl.
 *   **Omniscience Combo:** Simic and Temur variations.
 *   **Golgari Foundations & Jeskai Artifacts:** Synergy-focused builds.
 
