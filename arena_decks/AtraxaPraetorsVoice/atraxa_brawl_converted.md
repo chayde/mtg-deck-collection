@@ -113,99 +113,99 @@
 ## Copy/Paste Decklist (MTG Arena Format)
 
 Commander
-1 Atraxa, Praetors' Voice  
+1 Atraxa, Praetors' Voice (MUL) 98  
 
 Deck
-1 Arcane Signet  
-1 Astral Cornucopia  
-1 Birds of Paradise  
-1 Bloated Contaminator  
-1 Bloom Tender  
-1 Breeding Pool  
-1 Brokers Ascendancy  
-1 Cankerbloom  
-1 Carth the Lion  
-1 Chromatic Lantern  
-1 City of Brass  
-1 Command Tower  
-1 Contagion Engine  
-1 Counterspell  
-1 Cyclonic Rift  
-1 Delighted Halfling  
-1 Demonic Tutor  
-1 Doubling Season  
-1 Dreamtide Whale  
-1 Enlightened Tutor  
-1 Esper Sentinel  
-1 Everflowing Chalice  
-1 Evolution Sage  
-1 Exotic Orchard  
-1 Ezuri, Stalker of Spheres  
-1 Farewell  
-1 Farseek  
-1 Fellwar Stone  
-1 Flooded Strand  
-1 Flux Channeler  
-3 Forest  
-1 Godless Shrine  
-1 Hallowed Fountain  
-1 Ichormoon Gauntlet  
-1 Indatha Triome  
-1 Inexorable Tide  
-1 Infectious Inquiry  
-3 Island  
-1 Ixhel, Scion of Atraxa  
-1 Karn's Bastion  
-1 Lightning Greaves  
-1 Mana Confluence  
-1 Marsh Flats  
-1 Misty Rainforest  
-1 Narset, Parter of Veils  
-1 Oath of Teferi  
-1 Overgrown Tomb  
-1 Path to Exile  
-1 Phyresis Outbreak  
-2 Plains  
-1 Polluted Delta  
-1 Prologue to Phyresis  
-1 Raffine's Tower  
-1 Reflecting Pool  
-1 Rhystic Study  
-1 Skithiryx, the Blight Dragon  
-1 Skrelv, Defector Mite  
-1 Smothering Tithe  
-1 Spara's Headquarters  
-2 Swamp  
-1 Swords to Plowshares  
-1 Tamiyo, Field Researcher  
-1 Teferi, Hero of Dominaria  
-1 Teferi, Master of Time  
-1 Tekuthal, Inquiry Dominus  
-1 Temple Garden  
-1 Tezzeret's Gambit  
-1 Three Visits  
-1 Thrummingbird  
-1 Ugin, the Spirit Dragon  
-1 Venerated Rotpriest  
-1 Verdant Catacombs  
-1 Vorinclex, Monstrous Raider  
-1 Vraska's Fall  
-1 Vraska, Betrayal's Sting  
-1 Watery Grave  
-1 Windswept Heath  
-1 Zagoth Triome  
-1 The Wandering Emperor  
-1 Mind Stone  
-1 Fynn, the Fangbearer  
-1 Branchloft Pathway  
-1 Kami of Whispered Hopes  
-1 Dovin's Veto  
-1 Grateful Apparition  
-1 Syncopate  
-1 Growth Spiral  
-1 Archon of Absolution  
-1 Clearwater Pathway  
-1 Hengegate Pathway  
-1 Settle the Wreckage  
-1 Darkbore Pathway  
-1 Profane Tutor  
+1 Arcane Signet (ANB) 117  
+1 Astral Cornucopia (BRR) 5  
+1 Birds of Paradise (BLC) 81  
+1 Bloated Contaminator (ONE) 159  
+1 Bloom Tender (SPG) 0  
+1 Breeding Pool (RNA) 246  
+1 Brokers Ascendancy (SNC) 170  
+1 Cankerbloom (ONE) 161  
+1 Chromatic Lantern (GRN) 233  
+1 Command Tower (ANB) 118  
+1 Contagion Engine (OTP) 61  
+1 Counterspell (FCA) 4  
+1 Cyclonic Rift (RTR) 35  
+1 Delighted Halfling (LTR) 158  
+1 Assassin's Trophy (MKM) 187  
+1 Doubling Season (FDN) 216  
+1 Dreamtide Whale (MH3) 59  
+1 Enlightened Tutor (MIR) 14  
+1 Esper Sentinel (MH2) 12  
+1 Evolution Sage (WAR) 159  
+1 Ezuri, Stalker of Spheres (ONE) 201  
+1 Farewell (NEO) 13  
+1 Farseek (FCA) 45  
+1 Flooded Strand (KTK) 233  
+1 Flux Channeler (WAR) 52  
+3 Forest (THB) 254  
+1 Godless Shrine (RNA) 248  
+1 Hallowed Fountain (RNA) 251  
+1 Ichormoon Gauntlet (ONE) 56  
+1 Indatha Triome (IKO) 248  
+1 Inexorable Tide (SOM) 35  
+1 Infectious Inquiry (ONE) 97  
+3 Island (THB) 251  
+1 Karn's Bastion (WAR) 248  
+1 Lightning Greaves (MRD) 199  
+1 Mana Confluence (JOU) 163  
+1 Marsh Flats (MH2) 248  
+1 Misty Rainforest (MH2) 250  
+1 Narset, Parter of Veils (WAR) 61  
+1 Oath of Teferi (DAR) 200  
+1 Overgrown Tomb (GRN) 253  
+1 Path to Exile (OMB) 4  
+2 Plains (THB) 250  
+1 Polluted Delta (KTK) 239  
+1 Prologue to Phyresis (ONE) 65  
+1 Raffine's Tower (SNC) 254  
+1 Reflecting Pool (EOS) 36  
+1 Rhystic Study (WOT) 25  
+1 Skithiryx, the Blight Dragon (MUL) 82  
+1 Skrelv, Defector Mite (ONE) 33  
+1 Smothering Tithe (RNA) 22  
+1 Spara's Headquarters (SNC) 257  
+2 Swamp (THB) 252  
+1 Swords to Plowshares (SPG) 54  
+1 Tamiyo, Field Researcher (SIR) 245  
+1 Teferi, Hero of Dominaria (DAR) 207  
+1 Teferi, Master of Time (M21) 75  
+1 Tekuthal, Inquiry Dominus (ONE) 71  
+1 Temple Garden (GRN) 258  
+1 Tezzeret's Gambit (STA) 21  
+1 Thrummingbird (ONE) 72  
+1 Sunfall (MOM) 40  
+1 Venerated Rotpriest (ONE) 192  
+1 Verdant Catacombs (MH2) 260  
+1 Vorinclex, Monstrous Raider (KHM) 199  
+1 Vraska's Fall (ONE) 116  
+1 Vraska, Betrayal's Sting (ONE) 115  
+1 Watery Grave (GRN) 259  
+1 Windswept Heath (MH3) 235  
+1 Zagoth Triome (IKO) 259  
+1 The Wandering Emperor (NEO) 42  
+1 Mind Stone (FIC) 353  
+1 Fynn, the Fangbearer (KHM) 170  
+1 Branchloft Pathway (ZNR) 258  
+1 Kami of Whispered Hopes (MOM) 196  
+1 Dovin's Veto (WAR) 193  
+1 Grateful Apparition (WAR) 17  
+1 Syncopate (FIN) 80  
+1 Growth Spiral (RNA) 178  
+1 Archon of Absolution (ELD) 3  
+1 Clearwater Pathway (ZNR) 260  
+1 Hengegate Pathway (KHM) 260  
+1 Settle the Wreckage (XLN) 34  
+1 Darkbore Pathway (KHM) 254  
+1 Ajani, the Greathearted (WAR) 184  
+1 Plaza of Heroes (DMU) 252  
+1 Staff of Compleation (ONE) 242  
+1 Cavern of Souls (LCI) 269  
+1 Coldsteel Heart (CSP) 136  
+1 Ajani, Sleeper Agent (DMU) 192  
+1 White Sun's Twilight (ONE) 38  
+1 Incubation Druid (FIC) 309  
+1 Assemble the Team (Y23) 17  
