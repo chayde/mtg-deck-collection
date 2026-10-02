@@ -1,0 +1,76 @@
+COMMANDER:
+1 Smaug the Impenetrable
+
+DECK:
+1 Abrade
+1 Arcane Signet
+1 Blasphemous Act
+1 Blazing Firesinger // Seething Song
+1 Blazing Sunsteel
+1 Blood Crypt
+1 Bolt Bend
+1 Broadside Bombardiers
+1 Chain Lightning
+1 Chain Reaction
+1 Command Tower
+1 Cut Propulsion
+1 Dark Fortress
+1 Dark Ritual
+1 Deadly Dispute
+1 Descent into Avernus
+1 Dictate of the Twin Gods
+1 Disciple of the Vault
+1 Dragon-Cursed Halls
+1 Dragonskull Summit
+1 Exsanguinate
+1 Faithless Looting
+1 Feed the Swarm
+1 Fellwar Stone
+1 Fire Covenant
+1 Flame Slash
+1 Geosurge
+1 Ghostfire Slice
+1 Goldspan Dragon
+1 Haunted Ridge
+1 Hellish Rebuke
+1 Jaya's Immolating Inferno
+1 Jeska's Will
+1 Juri, Master of the Revue
+1 Lightning Bolt
+1 Luxury Suite
+1 Magda, Brazen Outlaw
+1 Mana Geyser
+1 Marionette Apprentice
+1 Marionette Master
+1 Mayhem Devil
+1 Mirkwood Bats
+1 Molten Gatekeeper
+15 Mountain
+1 Nadier's Nightblade
+1 Orcish Bowmasters
+1 Pain for All
+1 Pariah's Shield
+1 Pirate's Pillage
+1 Professional Face-Breaker
+1 Pyrohemia
+1 Rakdos Signet
+1 Reckless Fireweaver
+1 Red Elemental Blast
+1 Return the Favor
+1 Ricochet Trap
+1 Rivaz of the Claw
+1 Seize the Spoils
+1 Smaug the Magnificent
+1 Smoldering Marsh
+1 Sol Ring
+1 Star of Extinction
+1 Storm-Kiln Artist
+14 Swamp
+1 Tainted Peak
+1 Talisman of Indulgence
+1 The Last Agni Kai
+1 The Sackville-Bagginses
+1 There and Back Again
+1 Thran Dynamo
+1 Unexpected Windfall
+1 Withering Torment

@@ -1,5 +1,21 @@
 # Project History: MTG Deck Collection
 
+## 🗓️ October 2026: Smaug the Impenetrable LGS Acquisition & Inception
+
+### 2026-10-02: Smaug the Impenetrable — LGS Deck Purchase, Inventory Reconciliation & Harness Inception
+*   **Deck Acquisition & Inception:** User purchased a pre-built Commander deck built around **Smaug the Impenetrable** ({5}{B}{R}) [The Hobbit Eternal #9] from their local game store (LGS).
+*   **Inventory Reconciliation & 100-Card Baseline Resolution:**
+    *   Archived the store-delivered decklist in `commander_decks/Owned/SmaugTheImpenetrable/advertised_decklist.md`.
+    *   *Discrepancy Detected:* The store delivered 99 cards total (1 Commander + 98 cards in the main deck: 37 lands, 61 nonlands).
+    *   *Baseline Resolution:* Reinforced the mana base with +1 basic Swamp (bringing basic Swamps to 14 and total lands to 38, matching the standard Commander ratio) to establish a legal 100-card singleton baseline.
+*   **Documentation & Tooling Harness:**
+    *   Created full deck guide in `commander_decks/Owned/SmaugTheImpenetrable/smaug_the_impenetrable.md` following standard format with functional categorization (Self-Damage Masochism Triggers, Hardware, Artifact Aristocrats Payoffs, Outlets, Ramp, Tutors, Card Flow, Interaction, and Lands) and plain text export with 2 trailing spaces.
+    *   Created `moxfield_import.txt` and `order_tracking.md`.
+    *   Executed automatic MTG Forge synchronization (`SmaugTheImpenetrable.dck` in `%APPDATA%/Forge/decks/commander/`).
+*   **DTI Threat Index Power Audit:**
+    *   Audited deck via `scripts/dti_evaluator.py`: Threat Score **19 / 96** (Bracket 2 score floor, promoted to Bracket 3 statutory floor via Game Changer *Orcish Bowmasters*), Velocity Vector **10 / 48**, Suppression Vector **7 / 40**, All 4 Gatekeepers Passed (Safe). Generated visual interactive dashboard (`dti_report.html`) and audit markdown (`dti_audit.md`).
+*   **Player Preference Audit:** Flagged *Rakdos Signet* as a priority swap to adhere to player guidelines against filter rocks. Registered deck in root `README.md`.
+
 ## 🗓️ September 2026: Varina Zombie Apocalypse Inception, Henzie Blitz Refinement & Playtesting
 
 ### 2026-09-26: MTG Arena Brawl Adaptation & Thalia and The Gitrog Monster Deck Inception

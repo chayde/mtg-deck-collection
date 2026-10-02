@@ -41,6 +41,7 @@ Decks physically built and ready for play.
 *   **Henzie Blitz:** Jund Blitz & Value Reanimation Engine (Henzie "Toolbox" Torre). Bracket 3.
 *   **Rocco, Street Chef:** Naya Impulse Gastronomy & Food Tokens ("The Street Chef's Kitchen"). Bracket 3.
 *   **The Great Goblin:** Rakdos Goblins / +1/+1 Counters & Aristocrats Burn ("The Goblin King's Court").
+*   **Smaug the Impenetrable:** Rakdos Dragon Masochism / Self-Damage Treasures & Artifact Aristocrats ("The Golden Hoard"). Bracket 3.
 *   **Preconstructed Decks:** Original and modified PreCons (Ashling, Bello, Disa, Ulalek, etc.).
 
 #### 📁 `/External`
