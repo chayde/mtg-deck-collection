@@ -1,0 +1,224 @@
+{
+  "deck_name": "SmaugTheImpenetrable",
+  "archetype": "Rakdos Self-Damage Treasures / Aristocrat Burn",
+  "threat_onset": "turn 5",
+  "engine_ready": "turn 5",
+  "response_cycles": 1,
+  "thematic_restriction": false,
+  "grades": {
+    "r1": "A",
+    "r2": "B",
+    "a1": "A",
+    "a2": "A",
+    "p1": "A",
+    "p2": "A",
+    "p3": "A",
+    "i1": "B",
+    "i2": "B",
+    "s1": "B",
+    "s2": "A",
+    "s3": "B"
+  },
+  "justifications": {
+    "r1": "Explosive mana acceleration via Dark Ritual, Geosurge, Jeska's Will, Mana Geyser, Blazing Firesinger // Seething Song, 2-CMC rocks (Sol Ring, Arcane Signet, Talisman of Indulgence, Fellwar Stone), and treasure looting reliably deploys Smaug on Turns 4–5.",
+    "r2": "Steady card replenishment via Deadly Dispute, Faithless Looting, Pirate's Pillage, Seize the Spoils, Unexpected Windfall, and Professional Face-Breaker converting excess Treasures into continuous impulsive draw.",
+    "a1": "High functional redundancy across self-damage triggers (Cut Propulsion, Blasphemous Act, Star of Extinction, Flame Slash, Pyrohemia) and aristocrat drain engines (Mirkwood Bats, Marionette Master, Disciple of the Vault, Mayhem Devil), augmented by Magda tutoring artifacts/dragons.",
+    "a2": "Achieves engine readiness by Turn 5: casting Smaug the Impenetrable ({5}{B}{R}) and retaining mana or treasures to cast a noncombat damage spell in the same window.",
+    "p1": "Critical onset hits on Turn 5 as 13–20+ Treasures are generated in a single action via Blasphemous Act, Star of Extinction, or Cut Propulsion, immediately threatening lethal table damage.",
+    "p2": "Closing the game requires only 1 opponent response cycle after onset due to instant-speed aristocrat drain triggers (Mirkwood Bats, Marionette Master), the Blazing Sunsteel damage reflection loop, or massive Exsanguinate finishes.",
+    "p3": "Massive noncombat damage bursts and instant-speed drain triggers can convert into game wins in an instant window, though heavily telegraphed by visible commander deployment and board drain pieces.",
+    "i1": "Fair reactive disruption suite featuring Abrade, Lightning Bolt, Feed the Swarm, Withering Torment, Hellish Rebuke, Red Elemental Blast, Bolt Bend, Return the Favor, and Ricochet Trap.",
+    "i2": "Incidental board wipe sweepers (Blasphemous Act, Star of Extinction, Chain Reaction, Pyrohemia) repeatedly clear opposing creature boards while Orcish Bowmasters punishes card draw.",
+    "s1": "Smaug's inherent indestructible keyword shields against lethal combat and destroy sweepers, while Bolt Bend, Return the Favor, and Ricochet Trap redirect single-target exile and bounce spells.",
+    "s2": "Deep treasure reserves and Rivaz of the Claw allow rapid re-casting of Smaug and immediate re-triggering of the engine even through commander removal.",
+    "s3": "Secondary win conditions exist through Smaug the Magnificent, There and Back Again (creating the 14-Treasure Smaug token), Mayhem Devil, and Juri fling even without Smaug the Impenetrable."
+  },
+  "overview": "This deck is a high-synergy Rakdos combo-attrition deck built around Smaug the Impenetrable. Because Smaug possesses indestructible, flying, and haste alongside a triggered ability that creates Treasure tokens equal to any noncombat damage dealt to him, the deck transforms symmetric and self-inflicted damage spells into massive mana bursts. Accelerating into Smaug on Turns 4–5 through mana rocks, rituals, and treasure looting, the deck immediately targets Smaug with high-damage spells such as Cut Propulsion, Blasphemous Act, or Star of Extinction to generate 13 to 20 Treasures in a single action. It converts this enormous burst of artifacts and mana into lethal damage across all opponents using aristocrat drain pieces like Mirkwood Bats and Marionette Master, repeating ping loops with Blazing Sunsteel and Pyrohemia, or closing out the game with lethal X-spells like Exsanguinate. Inherent resilience from indestructible shields the commander against standard board wipes, while low-cost redirection spells defend against exile removal.",
+  "primer": {
+    "core_strategy": [
+      "Accelerate mana during early turns using 2-CMC rocks, rituals like Dark Ritual or Geosurge, and discard-to-draw treasure spells.",
+      "Deploy Smaug the Impenetrable on Turn 4 or 5 and retain mana or treasures for instant/sorcery noncombat damage spells.",
+      "Cast high-yield damage spells like Cut Propulsion (16 damage), Blasphemous Act (13 damage), or Star of Extinction (20 damage) targeting Smaug to produce a massive wave of Treasure tokens.",
+      "Funnel generated Treasures into aristocrat drain triggers from Mirkwood Bats and Marionette Master, or cast a game-ending Exsanguinate or Jaya's Immolating Inferno."
+    ],
+    "mulligan_priorities": {
+      "keep": [
+        "Hands with 2–3 lands, at least two early ramp pieces or rituals (Sol Ring, Arcane Signet, Talisman of Indulgence, Deadly Dispute), and at least one noncombat damage trigger or payoff spell."
+      ],
+      "avoid": [
+        "Hands that lack early ramp, hands saturated with expensive 5+ CMC payoffs without acceleration, or hands with no colored mana fixing."
+      ]
+    },
+    "key_tips": [
+      "Leverage Bolt Bend, Ricochet Trap, and Return the Favor to redirect single-target exile spells like Swords to Plowshares away from Smaug.",
+      "Remember that Blasphemous Act and Star of Extinction wipe opposing creatures while fueling your Treasure generation simultaneously.",
+      "Use Professional Face-Breaker or Deadly Dispute to dig deep into your library once Smaug produces 10+ Treasures."
+    ]
+  },
+  "weaknesses": {
+    "critical": [
+      "Single-target exile and bounce effects (Swords to Plowshares, Cyclonic Rift, Farewell) that bypass Smaug's indestructible keyword.",
+      "Heavy commander tax if Smaug is countered or removed before generating his first batch of Treasures."
+    ],
+    "moderate": [
+      "Artifact and token hate pieces like Collector Ouphe, Null Rod, or Karn, the Great Creator that shut down Treasure activations.",
+      "Enchantment-based removal or aura curses, as Rakdos has narrow enchantment removal."
+    ],
+    "minor": [
+      "Graveyard hate against incidental unearth or recursion (Rivaz of the Claw, Molten Gatekeeper).",
+      "Aggressive early combat pressure while spending turns deploying ramp and high-cost spells."
+    ]
+  },
+  "key_cards": [
+    {
+      "card": "Smaug the Impenetrable",
+      "reason": "Commander and primary engine; indestructible dragon that converts noncombat damage into equal numbers of Treasure tokens."
+    },
+    {
+      "card": "Cut Propulsion",
+      "reason": "Instant that forces Smaug to deal twice his power to himself due to flying, instantly creating 16 Treasure tokens for 3 mana."
+    },
+    {
+      "card": "Blasphemous Act",
+      "reason": "Asymmetric board wipe that deals 13 damage to Smaug to generate 13 Treasures while clearing all opposing creatures."
+    },
+    {
+      "card": "Star of Extinction",
+      "reason": "Sweeper that deals 20 damage to Smaug to generate 20 Treasures and wipe all opposing creatures and planeswalkers."
+    },
+    {
+      "card": "Blazing Sunsteel",
+      "reason": "Equipment that triggers on damage to Smaug, allowing damage reflection loops to generate infinite Treasures and damage."
+    },
+    {
+      "card": "Pyrohemia",
+      "reason": "Repeatable red mana sink that deals 1 damage to Smaug, creating a Treasure that pays for subsequent activations."
+    },
+    {
+      "card": "Mirkwood Bats",
+      "reason": "Primary aristocrat finisher that drains each opponent for 1 life whenever a Treasure is created or sacrificed."
+    },
+    {
+      "card": "Marionette Master",
+      "reason": "High-impact win condition that drains target opponent for 4 life whenever an artifact token is sacrificed."
+    },
+    {
+      "card": "Exsanguinate",
+      "reason": "Big-mana finisher that drains all opponents for lethal life totals when funded by Smaug's Treasure hoard."
+    },
+    {
+      "card": "Bolt Bend",
+      "reason": "One-mana protection spell enabled by Smaug's 8 power to redirect targeted exile and bounce removal."
+    },
+    {
+      "card": "Jeska's Will",
+      "reason": "Explosive ritual and impulse draw spell that accelerates Smaug's deployment and finds win conditions."
+    },
+    {
+      "card": "Professional Face-Breaker",
+      "reason": "Turns excess Treasures generated by Smaug into continuous impulse card advantage."
+    }
+  ],
+  "card_ledger": {
+    "r1": [
+      { "card": "Sol Ring", "role": "Fast colorless mana artifact" },
+      { "card": "Arcane Signet", "role": "2 CMC colored mana rock" },
+      { "card": "Fellwar Stone", "role": "2 CMC mana rock" },
+      { "card": "Rakdos Signet", "role": "2 CMC filter mana rock" },
+      { "card": "Talisman of Indulgence", "role": "2 CMC pain talisman" },
+      { "card": "Thran Dynamo", "role": "Big mana rock tapping for 3 colorless" },
+      { "card": "Dark Ritual", "role": "1 CMC burst mana adding 3 black" },
+      { "card": "Geosurge", "role": "4 CMC ritual adding 7 red for creatures/artifacts" },
+      { "card": "Jeska's Will", "role": "Explosive red mana ritual and impulse velocity" },
+      { "card": "Mana Geyser", "role": "Late game burst ritual tapping opponents' lands" },
+      { "card": "Blazing Firesinger // Seething Song", "role": "Dual utility creature and 5 red ritual" },
+      { "card": "Goldspan Dragon", "role": "Doubles treasure mana output and generates treasures" },
+      { "card": "Storm-Kiln Artist", "role": "Magecraft treasure generation engine" },
+      { "card": "Blood Crypt", "role": "Fetchable shock dual land" },
+      { "card": "Command Tower", "role": "Commander rainbow land" },
+      { "card": "Dark Fortress", "role": "Dual utility land" },
+      { "card": "Dragon-Cursed Halls", "role": "Combat treasure granting utility land" },
+      { "card": "Dragonskull Summit", "role": "Check dual land" },
+      { "card": "Haunted Ridge", "role": "Slow dual land" },
+      { "card": "Luxury Suite", "role": "Crowd dual land" },
+      { "card": "Smoldering Marsh", "role": "Tango dual land" },
+      { "card": "Tainted Peak", "role": "Swamp-conditional dual land" },
+      { "card": "15 Mountain", "role": "Basic lands" },
+      { "card": "14 Swamp", "role": "Basic lands" }
+    ],
+    "r2": [
+      { "card": "Deadly Dispute", "role": "Instant sacrifice draw 2 and treasure creation" },
+      { "card": "Faithless Looting", "role": "1 CMC card filtering with flashback" },
+      { "card": "Pirate's Pillage", "role": "Rummage draw 2 and creates 2 treasures" },
+      { "card": "Seize the Spoils", "role": "Rummage draw 2 and creates a treasure" },
+      { "card": "Unexpected Windfall", "role": "Instant rummage draw 2 and creates 2 treasures" },
+      { "card": "Professional Face-Breaker", "role": "Impulsive card advantage off treasure sacrifices" },
+      { "card": "The Sackville-Bagginses", "role": "Sacrifice draw and treasure generation" }
+    ],
+    "a1": [
+      { "card": "Magda, Brazen Outlaw", "role": "Tutors dragons or artifacts directly to battlefield for 5 treasures" },
+      { "card": "There and Back Again", "role": "Tutors Mountain land, tempts Ring, creates Smaug token" },
+      { "card": "Rivaz of the Claw", "role": "Graveyard dragon casting recursion and mana" }
+    ],
+    "a2": [
+      { "card": "Smaug the Impenetrable", "role": "Commander and central noncombat damage-to-treasure engine" },
+      { "card": "Cut Propulsion", "role": "3 CMC instant dealing 16 self-damage to Smaug for 16 treasures" },
+      { "card": "Flame Slash", "role": "1 CMC sorcery dealing 4 damage to Smaug for 4 treasures" },
+      { "card": "Chain Lightning", "role": "1 CMC sorcery dealing 3 damage to Smaug for 3 treasures" },
+      { "card": "Ghostfire Slice", "role": "Discounted burn dealing 4 damage to Smaug for 4 treasures" }
+    ],
+    "p1": [
+      { "card": "Blasphemous Act", "role": "1 CMC sweeper dealing 13 damage to Smaug for 13 treasures" },
+      { "card": "Star of Extinction", "role": "Nuclear sweeper dealing 20 damage to Smaug for 20 treasures" },
+      { "card": "Chain Reaction", "role": "Scalable creature board wipe fueling massive treasures" },
+      { "card": "Pyrohemia", "role": "Repeatable red mana burn engine machine-gunning Smaug and board" },
+      { "card": "Fire Covenant", "role": "Life-to-damage instant sweeper converting life to treasures" },
+      { "card": "The Last Agni Kai", "role": "Fight spell generating excess red mana and Smaug damage" }
+    ],
+    "p2": [
+      { "card": "Blazing Sunsteel", "role": "Damage reflection equipment enabling infinite damage and treasure loop" },
+      { "card": "Marionette Master", "role": "Drains target opponent for 4 life per treasure cracked" },
+      { "card": "Mirkwood Bats", "role": "Drains each opponent 1 life on token creation and sacrifice" },
+      { "card": "Exsanguinate", "role": "Lethal big-mana drain finisher funded by treasures" },
+      { "card": "Jaya's Immolating Inferno", "role": "Triple-target lethal X-spell burn finisher" },
+      { "card": "Mayhem Devil", "role": "Pings any target on permanent sacrifices" },
+      { "card": "Disciple of the Vault", "role": "Drains target opponent on artifact deaths" },
+      { "card": "Marionette Apprentice", "role": "Drains each opponent on artifact or creature deaths" },
+      { "card": "Nadier's Nightblade", "role": "Drains each opponent on token departures" },
+      { "card": "Reckless Fireweaver", "role": "Pings each opponent on artifact entry" },
+      { "card": "Molten Gatekeeper", "role": "Pings each opponent on creature entry with unearth" },
+      { "card": "Juri, Master of the Revue", "role": "Scales +1/+1 counters on sacrifices with lethal death fling" },
+      { "card": "Smaug the Magnificent", "role": "Attacks and burns any target equal to treasure count" },
+      { "card": "Broadside Bombardiers", "role": "Boasts sacrifice to fling damage to any target" },
+      { "card": "Pain for All", "role": "Deals Smaug power on entry and reflects all damage to opponents" }
+    ],
+    "p3": [
+      { "card": "Dictate of the Twin Gods", "role": "Flash damage doubler accelerating lethal burst" },
+      { "card": "Descent into Avernus", "role": "Accelerates global damage and treasures every upkeep" }
+    ],
+    "i1": [
+      { "card": "Abrade", "role": "Instant creature damage or artifact destruction" },
+      { "card": "Lightning Bolt", "role": "1 CMC 3 damage burn to any target or Smaug" },
+      { "card": "Feed the Swarm", "role": "Creature or enchantment removal" },
+      { "card": "Withering Torment", "role": "Instant enchantment or creature removal" },
+      { "card": "Hellish Rebuke", "role": "Combat trap punishing attackers with permanent sacrifice" },
+      { "card": "Red Elemental Blast", "role": "1 CMC counter or destruction against blue" }
+    ],
+    "i2": [
+      { "card": "Orcish Bowmasters", "role": "Game Changer punishing opponent card draws with pings and Army tokens" }
+    ],
+    "s1": [
+      { "card": "Bolt Bend", "role": "1 CMC redirection spell enabled by Smaug's 8 power" },
+      { "card": "Return the Favor", "role": "Spree spell copying triggers or redirecting removal" },
+      { "card": "Ricochet Trap", "role": "Single-target removal redirection trap" },
+      { "card": "Pariah's Shield", "role": "Redirects all damage to player onto indestructible Smaug" }
+    ],
+    "s2": [
+      { "card": "Rivaz of the Claw", "role": "Recasts Dragon creature spells directly from the graveyard" }
+    ],
+    "s3": [
+      { "card": "Smaug the Magnificent", "role": "Autonomous dragon threat and treasure burn engine" },
+      { "card": "There and Back Again", "role": "Self-contained saga creating 14-treasure 6/6 dragon token" }
+    ]
+  }
+}

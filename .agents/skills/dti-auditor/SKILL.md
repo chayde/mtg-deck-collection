@@ -220,6 +220,13 @@ Use these calibrated decks to ground every future evaluation:
 *   **Benchmarks:** $R1: A, R2: A, A1: A, A2: A, P1: A, P2: A, P3: B, I1: B, I2: B, S1: A, S2: A, S3: A$.
 *   **Calibration Principle:** Crucial empirical discovery confirming DeckCheck's strict enforcement of WotC Mass Land Denial (MLD) rules: despite scoring 42/96 (solid Bracket 3) and running zero Game Changers (0/3) and zero 2-card combos, running Blood Moon (classified as Mass Land Denial) triggers a hard statutory floor of Bracket 4 (MLD not allowed in Bracket 3). Removing Blood Moon immediately returns the deck to Bracket 3 (Upgraded Casual).
 
+### Anchor 13: Smaug the Impenetrable (Rakdos Dragon Masochism) — Bracket 3 Solid Engine
+*   **Threat Score:** **39 / 96** (Solid Bracket 3, 32–51 band)
+*   **Vectors:** Velocity: **22 / 48** | Suppression: **15 / 40**
+*   **Clock:** Onset Turn 5 ($P1: A$), Ready Turn 5 ($A2: A$), Response Cycles: 1 ($P2: A$) $\rightarrow$ Turn 6 kill.
+*   **Benchmarks:** $R1: A, R2: B, A1: A, A2: A, P1: A, P2: A, P3: A, I1: B, I2: B, S1: B, S2: A, S3: B$.
+*   **Calibration Principle:** Empirically demonstrates how an explosive 7-CMC masochism engine commander with self-damage triggers, 16–20 Treasure bursts, and 1-cycle win compactness lands at 39/96 in solid Bracket 3 without tripping Bracket 4 gates. Fast rituals and looting accelerate Smaug to Turn 5, where noncombat damage triggers (Cut Propulsion, Blasphemous Act) convert into lethal aristocrat drain within 1 response cycle.
+
 
 
 

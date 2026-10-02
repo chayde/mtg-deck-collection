@@ -12,10 +12,28 @@ deck_status: main
 
 ## Commander Strategy
 **Smaug the Impenetrable**
-*   **Archetype:** Rakdos ({B}{R}) Dragon Masochism / Self-Damage Treasures & Artifact Aristocrats
+*   **Archetype:** Rakdos ({B}{R}) Self-Damage Treasures / Aristocrat Burn & Dragon Masochism
 *   **Bracket:** 3 (Upgraded Casual — 1 Game Changer: *Orcish Bowmasters*)
-*   **DTI Threat Index:** **19 / 96** (Bracket 3 Floor | Velocity: **10/48** | Suppression: **7/40** | Gates: All Passed | [DTI Report](dti_report.html))
-*   **Core Goal:** Exploit Smaug's unique combination of 8/7 stats, flying, haste, indestructible, and masochistic trigger: *"Whenever Smaug is dealt noncombat damage, create that many Treasure tokens."* Turn symmetrical sweepers (**Blasphemous Act**, **Star of Extinction**, **Chain Reaction**), cheap burn (**Flame Slash**, **Cut Propulsion**), and damage-reflecting hardware (**Blazing Sunsteel**, **Pariah's Shield**) into volcanic bursts of 10–20+ Treasure tokens without harming Smaug, then convert that hoard into instant-kill drain triggers (**Mirkwood Bats**, **Marionette Master**, **Mayhem Devil**) or massive lethal finishers (**Exsanguinate**, **Jaya's Immolating Inferno**).
+*   **DTI Threat Index:** **39 / 96** (Solid Bracket 3 | Velocity: **22/48** | Suppression: **15/40** | Clock: Onset Turn 5, Ready Turn 5, 1 Response Cycle | Gates: All Passed | [DTI Report](dti_report.html))
+*   **Core Goal:** Exploit Smaug's unique combination of 8/7 stats, flying, haste, indestructible, and masochistic trigger: *"Whenever Smaug is dealt noncombat damage, create that many Treasure tokens."* Turn symmetrical sweepers (**Blasphemous Act**, **Star of Extinction**, **Chain Reaction**), cheap burn (**Flame Slash**, **Cut Propulsion**), and damage-reflecting hardware (**Blazing Sunsteel**, **Pariah's Shield**) into volcanic bursts of 13–20+ Treasure tokens without harming Smaug, then convert that hoard into instant-kill drain triggers (**Mirkwood Bats**, **Marionette Master**, **Mayhem Devil**) or massive lethal finishers (**Exsanguinate**, **Jaya's Immolating Inferno**).
+
+### Official DeckCheck Operational Primer
+*   **Turn 1–3 (Acceleration):** Accelerate mana using 2-CMC rocks (**Arcane Signet**, **Talisman of Indulgence**, **Fellwar Stone**), rituals (**Dark Ritual**, **Geosurge**), and discard-to-draw treasure spells (**Deadly Dispute**, **Faithless Looting**).
+*   **Turn 4–5 (Deployment):** Deploy Smaug the Impenetrable on Turn 4 or 5 and retain mana or treasures for instant/sorcery noncombat damage spells in the same window.
+*   **Turn 5 (Mass Conversion):** Cast high-yield damage spells like **Cut Propulsion** (16 damage), **Blasphemous Act** (13 damage), or **Star of Extinction** (20 damage) targeting Smaug to produce a massive wave of 13 to 20 Treasure tokens.
+*   **Turn 5–6 (Game Conversion):** Funnel generated Treasures into aristocrat drain triggers from **Mirkwood Bats** and **Marionette Master**, loop damage reflection via **Blazing Sunsteel**, or cast a game-ending **Exsanguinate** or **Jaya's Immolating Inferno**.
+
+### Mulligan Priorities & Tactical Tips
+*   **Keep:** Hands with 2–3 lands, at least two early ramp pieces or rituals (**Sol Ring**, **Arcane Signet**, **Talisman of Indulgence**, **Deadly Dispute**), and at least one noncombat damage trigger or payoff spell.
+*   **Avoid:** Hands that lack early ramp, hands saturated with expensive 5+ CMC payoffs without acceleration, or hands with no colored mana fixing.
+*   **Protection Priority:** Leverage **Bolt Bend**, **Ricochet Trap**, and **Return the Favor** to redirect single-target exile spells like *Swords to Plowshares* or *Chaos Warp* away from Smaug.
+*   **Asymmetric Wipes:** Remember that **Blasphemous Act** and **Star of Extinction** wipe opposing creatures while fueling your Treasure generation simultaneously.
+*   **Card Flow:** Use **Professional Face-Breaker** or **Deadly Dispute** to dig deep into your library once Smaug produces 10+ Treasures.
+
+### Strategic Weaknesses & Failure Modes
+*   **Critical:** Single-target exile and bounce effects (*Swords to Plowshares*, *Cyclonic Rift*, *Farewell*) that bypass Smaug's indestructible keyword; heavy commander tax if Smaug is countered or removed before generating his first batch of Treasures.
+*   **Moderate:** Artifact and token hate pieces like *Collector Ouphe*, *Null Rod*, or *Karn, the Great Creator* that shut down Treasure activations; narrow enchantment removal in Rakdos.
+*   **Minor:** Graveyard hate against incidental recursion (**Rivaz of the Claw**, **Molten Gatekeeper**); early aggressive combat pressure while spending turns deploying ramp and high-cost spells.
 
 ### Three Interlocking Engines & Win Conditions
 1.  **The Masochism Treasure Geyser:** Because Smaug is indestructible, damage does not destroy him. Casting **Blasphemous Act** ({8}{R}) for 1 mana wipes the opponents' boards while dealing 13 damage to Smaug, creating 13 Treasure tokens on the spot. Casting **Star of Extinction** ({5}{R}{R}) creates 20 Treasures. Resolving **Cut Propulsion** ({2}{R}) forces Smaug (8 power, flying) to deal 16 damage to himself, netting 16 Treasures for just 3 mana.
@@ -138,9 +156,12 @@ deck_status: main
 ---
 
 ## 📜 Deck Changelog
+*   **2026-10-02:** Live DeckCheck official web scan calibration (Threat Score 39/96, Bracket 3, Velocity 22/48, Suppression 15/40, Onset Turn 5, Ready Turn 5, 1 Response Cycle).
+    *   **Telemetry:** R1:A (5), R2:B (2), A1:A (4), A2:A (5), P1:A (5), P2:A (5), P3:A (4), I1:B (2), I2:B (2), S1:B (2), S2:A (2), S3:B (1). All 4 Gatekeepers Passed (Safe).
+    *   **Documentation:** Updated operational primer, strategic failure modes, `dti_eval.json`, `dti_audit.md`, and `dti_report.html`.
 *   **2026-10-02:** Initial deck inception from local game store (LGS) pre-built purchase.
     *   **In:** Store decklist (98 cards in the 99) + 1 basic Swamp (bringing lands to 38 and establishing legal 100-card singleton baseline).
-    *   **Reason:** Reconciled store delivery, verified on Scryfall, categorized all cards, synchronized into MTG Forge, and audited with DTI Evaluator (Threat Score 19/96, Bracket 3).
+    *   **Reason:** Reconciled store delivery, verified on Scryfall, categorized all cards, synchronized into MTG Forge, and established tournament-legal baseline.
 
 ---
 

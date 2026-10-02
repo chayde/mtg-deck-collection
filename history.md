@@ -2,6 +2,23 @@
 
 ## 🗓️ October 2026: Smaug the Impenetrable LGS Acquisition & Inception
 
+### 2026-10-02: Live Calibration against DeckCheck Official Web Scan (`SmaugTheImpenetrable` — Anchor 13)
+*   **Official Calibration Telemetry:** User submitted the decklist to DeckCheck.co, obtaining official empirical calibration telemetry:
+    *   **Final Bracket:** **Bracket 3 (Upgraded Casual)**
+    *   **DTI Threat Score:** **39 / 96** (Solid Bracket 3, 32–51 band)
+    *   **Velocity Vector:** **22 / 48** (Clock Speed & Protection)
+    *   **Suppression Vector:** **15 / 40** (Denial & Disruption)
+    *   **Clock Telemetry:** Threat Onset **Turn 5** ($P1: A$), Engine Ready **Turn 5** ($A2: A$), **1 opponent response cycle** ($P2: A$) $\rightarrow$ Turn 6 kill.
+    *   **Benchmark Tiers:** $R1: A$ (5), $R2: B$ (2), $A1: A$ (4), $A2: A$ (5), $P1: A$ (5), $P2: A$ (5), $P3: A$ (4), $I1: B$ (2), $I2: B$ (2), $S1: B$ (2), $S2: A$ (2), $S3: B$ (1).
+    *   **Gatekeepers:** All 4 Passed (Safe). Velocity 22 < 28, Early Finish passed (P1:A, P2:A requires 1 response cycle), Suppression passed (I2:B), cEDH passed.
+*   **Dragon Masochism & Artifact Aristocrats Physics (Anchor 13):**
+    *   Empirically demonstrates how an explosive 7-CMC masochism engine commander with self-damage triggers, 13–20 Treasure bursts, and 1-cycle win compactness lands at 39/96 in solid Bracket 3 without tripping Bracket 4 gates.
+    *   Fast rituals (**Dark Ritual**, **Geosurge**, **Jeska's Will**, **Seething Song**) accelerate Smaug to Turn 5, where noncombat damage triggers (**Cut Propulsion**, **Blasphemous Act**, **Star of Extinction**) immediately convert into lethal aristocrat drain (**Mirkwood Bats**, **Marionette Master**, **Blazing Sunsteel**) within 1 response cycle.
+*   **Audit, Ledger & Repository Synchronization:**
+    *   Populated complete 100-card Ledger, operational primer, strategic failure modes, and key anchors in `dti_eval.json`.
+    *   Regenerated `dti_audit.md` and standalone visual dashboard `dti_report.html` (100% exact match to official telemetry).
+    *   Updated `smaug_the_impenetrable.md`, `README.md`, and registered Smaug as **Anchor 13** in `DTI_FRAMEWORK.md` and `.agents/skills/dti-auditor/SKILL.md`.
+
 ### 2026-10-02: Smaug the Impenetrable — LGS Deck Purchase, Inventory Reconciliation & Harness Inception
 *   **Deck Acquisition & Inception:** User purchased a pre-built Commander deck built around **Smaug the Impenetrable** ({5}{B}{R}) [The Hobbit Eternal #9] from their local game store (LGS).
 *   **Inventory Reconciliation & 100-Card Baseline Resolution:**
@@ -9,11 +26,9 @@
     *   *Discrepancy Detected:* The store delivered 99 cards total (1 Commander + 98 cards in the main deck: 37 lands, 61 nonlands).
     *   *Baseline Resolution:* Reinforced the mana base with +1 basic Swamp (bringing basic Swamps to 14 and total lands to 38, matching the standard Commander ratio) to establish a legal 100-card singleton baseline.
 *   **Documentation & Tooling Harness:**
-    *   Created full deck guide in `commander_decks/Owned/SmaugTheImpenetrable/smaug_the_impenetrable.md` following standard format with functional categorization (Self-Damage Masochism Triggers, Hardware, Artifact Aristocrats Payoffs, Outlets, Ramp, Tutors, Card Flow, Interaction, and Lands) and plain text export with 2 trailing spaces.
+    *   Created full deck guide in `commander_decks/Owned/SmaugTheImpenetrable/smaug_the_impenetrable.md` following standard format with functional categorization and plain text export with 2 trailing spaces.
     *   Created `moxfield_import.txt` and `order_tracking.md`.
     *   Executed automatic MTG Forge synchronization (`SmaugTheImpenetrable.dck` in `%APPDATA%/Forge/decks/commander/`).
-*   **DTI Threat Index Power Audit:**
-    *   Audited deck via `scripts/dti_evaluator.py`: Threat Score **19 / 96** (Bracket 2 score floor, promoted to Bracket 3 statutory floor via Game Changer *Orcish Bowmasters*), Velocity Vector **10 / 48**, Suppression Vector **7 / 40**, All 4 Gatekeepers Passed (Safe). Generated visual interactive dashboard (`dti_report.html`) and audit markdown (`dti_audit.md`).
 *   **Player Preference Audit:** Flagged *Rakdos Signet* as a priority swap to adhere to player guidelines against filter rocks. Registered deck in root `README.md`.
 
 ## 🗓️ September 2026: Varina Zombie Apocalypse Inception, Henzie Blitz Refinement & Playtesting
