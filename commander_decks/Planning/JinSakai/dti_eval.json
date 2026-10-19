@@ -1,0 +1,216 @@
+{
+  "deck_name": "JinSakai",
+  "thematic_restriction": false,
+  "archetype": "Esper Three-Front Saboteur Control & Double-Strike Value Engine",
+  "threat_onset": "turn 6",
+  "engine_ready": "turn 5",
+  "response_cycles": 2,
+  "overview": "Jin Sakai, Ghost of Tsushima operates as a Shape 2 (Amplifier) and Shape 4 (Pillar-Shifted Card Advantage) engine. By exploiting Jin Sakai's per-player solo attack trigger across all 3 opponents simultaneously, the deck grants up to three Saboteur creatures per combat either Unblockable (Ghost) to guarantee their combat-damage triggers or Double Strike (Standoff) to fire their triggers twice. Deliberately built with 0 Game Changers and a budget-conscious Esper mana base to anchor squarely in Low Bracket 3.",
+  "primer": {
+    "core_strategy": [
+      "Turns 1-3 (Setup & Saboteur Deployment): Develop a 2-CMC mana rock (Talisman cycle, Arcane Signet, Fellwar Stone) or catch-up ramp body (Loyal Warhound) alongside a high-value 2-3 mana Saboteur (Malcolm, Daxos, Thief of Sanity, Cephalid Constable, Virtus the Veiled, Tymna, Breena).",
+      "Turn 4-5 (The Three-Front Standoff): Cast Jin Sakai, Ghost of Tsushima. Immediately attack up to three different opponents with one solo attacker each. Jin Sakai triggers immediately for each solo attacker without needing haste himself—choose Ghost (Unblockable) against opponents with blockers, or Standoff (Double Strike) against open opponents to double all combat-damage triggers.",
+      "Turns 6-8 (Life-Halving & First-Strike Ninjutsu Conversion): Use Double Strike attackers to deal First Strike combat damage (triggering abilities), then optionally Ninjutsu in Fallen Shinobi, Yuriko, or Mist-Syndicate Naga before the Regular Combat Damage step to double-dip triggers. Close the game by halving life totals via Virtus the Veiled and Quietus Spike, or overwhelming the board with True Conviction, Odric, Akroma's Will, and Vorpal Sword."
+    ],
+    "mulligan_priorities": {
+      "keep": "Hands with 3 lands (covering at least 2 of W/U/B), 1 two-mana ramp piece (Talisman, Signet, Sol Ring, Bauble, Loyal Warhound), and 1-2 early Saboteur or protection creatures (Mother of Runes, Pippin, Malcolm, Baleful Strix, Tymna).",
+      "avoid": "Hands with multiple top-end payoffs, missing Blue/Black mana, or lacking early creatures to trigger Jin Sakai on Turn 4."
+    },
+    "key_tips": [
+      "The 3-Player Solo Attack Rule: Jin Sakai checks 'if no other creatures are attacking THAT player.' In a 4-player pod, attacking Opponent A with Creature 1, Opponent B with Creature 2, and Opponent C with Creature 3 triggers Jin Sakai three separate times!",
+      "The First-Strike Ninjutsu Double-Dip: When Jin Sakai grants an unblocked attacker Standoff (Double Strike), let it deal First Strike combat damage and resolve its saboteur trigger first. Then, still inside combat before the Regular Combat Damage step, activate Ninjutsu (Yuriko, Fallen Shinobi, Mist-Syndicate Naga)—the Ninja enters tapped and attacking and deals Regular Combat Damage in the exact same combat!",
+      "Protection = Double Strike: Mother of Runes, Giver of Runes, and Pippin, Guard of the Citadel don't just protect Jin Sakai from removal—tapping them to give an attacker protection from an opponent's blocker color (or 'creatures' with Pippin) makes your attacker unblockable so Jin Sakai is free to choose Standoff (Double Strike)!"
+    ]
+  },
+  "weaknesses": {
+    "critical": [
+      "Combat-step prevention and fog/pillowfort locks (Constant Mists, Glacial Chasm, Ghostly Prison, Propaganda, Ensnaring Bridge) shut down combat-damage triggers until removed via Anguished Unmaking, Void Rend, or Despark."
+    ],
+    "moderate": [
+      "Repeated creature board wipes delay the Saboteur critical mass, as the deck relies on maintaining 2-3 creatures on the battlefield to maximize split-combat value.",
+      "Budget Esper mana base runs Check, Reveal, Battle, and Tainted lands rather than fetch-shock-dual packages, occasionally introducing a tapped land on Turns 1-3."
+    ],
+    "minor": [
+      "Incremental life loss from Talismans, Pain lands, Tymna the Weaver, and Gix, Yawgmoth Praetor (mitigated by Daxos, Tymna lifelink, True Conviction, and Akroma's Will)."
+    ]
+  },
+  "key_cards": [
+    {"card": "Jin Sakai, Ghost of Tsushima", "note": "Command-zone card draw engine and 3-player split-combat amplifier granting Unblockable (Ghost) or Double Strike (Standoff)."},
+    {"card": "Cephalid Constable", "note": "Bounces permanents (including lands) equal to combat damage dealt; unblockable or double strike from Jin Sakai turns it into a one-sided board wipe."},
+    {"card": "Virtus the Veiled", "note": "3-mana Assassin that cuts defending player's life in half on combat damage (quarters their life from 40 to 10 with Standoff Double Strike)."},
+    {"card": "Tymna the Weaver", "note": "Draws 3 cards every postcombat main phase alongside Jin Sakai's natural 3-opponent split attack pattern."},
+    {"card": "Grim Hireling", "note": "Generates 2 Treasures per combat damage step per player—up to 12 Treasures per turn when three Double Strike creatures connect."},
+    {"card": "Spark Double", "note": "Creates a non-legendary copy of Jin Sakai so every solo attacker receives BOTH Ghost (Unblockable) and Standoff (Double Strike) simultaneously."},
+    {"card": "Fallen Shinobi", "note": "Premier Ninjutsu threat that exiles 2 cards per hit (4 cards with Double Strike) and casts them for free."},
+    {"card": "Vorpal Sword", "note": "Cheap deathtouch equipment whose {5}{B}{B}{B} activated ability pairs with Jin Sakai's Ghost mode for an unblockable one-hit player elimination."},
+    {"card": "Pippin, Guard of the Citadel", "note": "Protects Jin Sakai from spot removal or grants protection from creatures so a solo attacker can safely take Standoff Double Strike."},
+    {"card": "Kamiz, Obscura Oculus", "note": "Redundant command-zone lieutenant in the 99 that grants unblockable + Connive and Double Strike on attack."},
+    {"card": "Reconnaissance Mission", "note": "Draws a card on every combat damage hit—triggers twice per Double Strike creature across up to 3 opponents."},
+    {"card": "Akroma's Will", "note": "Decisive finisher granting the entire team Double Strike, Flying, Lifelink, Indestructible, and Protection from all colors."}
+  ],
+  "grades": {
+    "r1": "A",
+    "r2": "A",
+    "a1": "B",
+    "a2": "A",
+    "p1": "B",
+    "p2": "B",
+    "p3": "B",
+    "i1": "A",
+    "i2": "B",
+    "s1": "B",
+    "s2": "B",
+    "s3": "A"
+  },
+  "justifications": {
+    "r1": "Pragmatic Low-Bracket-3 Esper mana base (38 lands with zero fetches/crowd lands) supported by 11 non-Signet ramp sources (Sol Ring, Talismans, Arcane Signet, Fellwar Stone, Loyal Warhound, Sword of the Animist) and explosive combat Treasure bursts (Grim Hireling, Lotho, Rev).",
+    "r2": "Compounding card flow: Jin Sakai draws 1-2 cards per swing in the command zone and doubles the combat-damage draw triggers of Tymna the Weaver, Gix, Breena, Reconnaissance Mission, Bident of Thassa, Enduring Curiosity, Malcolm, and Dimir Cutpurse.",
+    "a1": "Zero tutors and 0 Game Changers; relies on deep functional redundancy across 17 Saboteurs/Ninjas and redundant combat amplifiers (Kamiz, Raffine, Duelist's Heritage, Spark Double).",
+    "a2": "Deploys 2-3 mana Saboteurs on Turns 2-3 and casts Jin Sakai on Turn 4, immediately triggering Ghost/Standoff for already-deployed attackers on the same turn without waiting for Jin Sakai to untap.",
+    "p1": "Goldfish engine readiness averages Turn 5.3, presenting critical board pressure on Turns 5-6 through unblockable life-halvers (Virtus, Quietus Spike), permanent bounce (Cephalid Constable), and free spell theft (Fallen Shinobi, Gonti, Rev).",
+    "p2": "Affords opponents 2 response cycles after Turn 5-6 threat onset to convert life-halving triggers and combat multipliers (True Conviction, Akroma's Will, Odric, Vorpal Sword) into full 4-player table elimination around Turns 7-8.",
+    "p3": "Combat-centric execution requires declaring solo attackers and connecting in the Combat Damage step, providing opponents clear, fair interaction windows.",
+    "i1": "Strong Esper instant-speed disruption package (Swords to Plowshares, Path to Exile, Counterspell, Dovin's Veto, Drown in the Loch, Despark, Anguished Unmaking, Void Rend) plus 3 efficient sweepers (Toxic Deluge, Damn, Time Wipe).",
+    "i2": "Repeatable combat-damage resource denial via Cephalid Constable (permanent bounce), Dimir Cutpurse, Grim Hireling creature removal, and Boromir, Warden of the Tower (anti-free-spell lock), with zero hard stax locks.",
+    "s1": "Dedicated creature-based protection engine (Mother of Runes, Giver of Runes, Pippin, Guard of the Citadel, Boromir, Swiftfoot Boots) backed by blue countermagic.",
+    "s2": "Moderate resilience to board wipes via Time Wipe (bouncing Jin Sakai), Boromir (team indestructible), Enduring Curiosity (returning as an enchantment), and continuous card draw.",
+    "s3": "High commander independence: Kamiz, Raffine, Tymna, Yuriko, Duelist's Heritage, Odric, and True Conviction independently provide evasion, Double Strike, and card draw even if Jin Sakai is removed."
+  },
+  "card_ledger": {
+    "r1": [
+      {"card": "Sol Ring", "role": "Fast mana rock"},
+      {"card": "Wayfarer's Bauble", "role": "Turn 1-2 basic land ramp"},
+      {"card": "Arcane Signet", "role": "2-CMC rainbow mana rock"},
+      {"card": "Fellwar Stone", "role": "2-CMC mana rock"},
+      {"card": "Talisman of Dominance", "role": "2-CMC U/B mana rock"},
+      {"card": "Talisman of Progress", "role": "2-CMC W/U mana rock"},
+      {"card": "Talisman of Hierarchy", "role": "2-CMC W/B mana rock"},
+      {"card": "Ornithopter of Paradise", "role": "2-CMC flying mana dork and emergency attacker"},
+      {"card": "Lotho, Corrupt Shirriff", "role": "Treasure generator on second spells"},
+      {"card": "Loyal Warhound", "role": "Catch-up Plains ramp and vigilance attacker"},
+      {"card": "Sword of the Animist", "role": "Repeatable basic land ramp on attack"},
+      {"card": "Grim Hireling", "role": "Generates up to 6-12 Treasures per combat"},
+      {"card": "Rev, Tithe Extractor", "role": "Combat damage Treasure and card theft engine"},
+      {"card": "Command Tower", "role": "Untapped Esper fixing"},
+      {"card": "Exotic Orchard", "role": "Untapped Esper fixing"},
+      {"card": "Adarkar Wastes", "role": "Untapped W/U pain land"},
+      {"card": "Caves of Koilos", "role": "Untapped W/B pain land"},
+      {"card": "Underground River", "role": "Untapped U/B pain land"},
+      {"card": "Glacial Fortress", "role": "W/U check land"},
+      {"card": "Isolated Chapel", "role": "W/B check land"},
+      {"card": "Drowned Catacomb", "role": "U/B check land"},
+      {"card": "Deserted Beach", "role": "W/U slow land"},
+      {"card": "Shattered Sanctum", "role": "W/B slow land"},
+      {"card": "Shipwreck Marsh", "role": "U/B slow land"},
+      {"card": "Hengegate Pathway // Mistgate Pathway", "role": "Untapped W/U pathway"},
+      {"card": "Brightclimb Pathway // Grimclimb Pathway", "role": "Untapped W/B pathway"},
+      {"card": "Clearwater Pathway // Murkwater Pathway", "role": "Untapped U/B pathway"},
+      {"card": "Prairie Stream", "role": "Fetchable W/U tango land"},
+      {"card": "Sunken Hollow", "role": "Fetchable U/B tango land"},
+      {"card": "Choked Estuary", "role": "U/B reveal land"},
+      {"card": "Port Town", "role": "W/U reveal land"},
+      {"card": "Shineshadow Snarl", "role": "W/B reveal land"},
+      {"card": "Tainted Field", "role": "Untapped W/B land with Swamp"},
+      {"card": "Tainted Isle", "role": "Untapped U/B land with Swamp"},
+      {"card": "Raffine's Tower", "role": "Esper triome with cycling"},
+      {"card": "Arcane Sanctum", "role": "Esper tri-land"},
+      {"card": "Path of Ancestry", "role": "Esper tri-land with scry"},
+      {"card": "Island", "role": "Basic Island (5)"},
+      {"card": "Swamp", "role": "Basic Swamp (4)"},
+      {"card": "Plains", "role": "Basic Plains (3)"}
+    ],
+    "r2": [
+      {"card": "Jin Sakai, Ghost of Tsushima", "role": "Command-zone combat damage draw + Double Strike multiplier"},
+      {"card": "Tymna the Weaver", "role": "Draws up to 3 cards postcombat off split attacks"},
+      {"card": "Breena, the Demagogue", "role": "Attack draw engine and +1/+1 counter scaler"},
+      {"card": "Gix, Yawgmoth Praetor", "role": "Combat damage draw engine"},
+      {"card": "Reconnaissance Mission", "role": "Mass combat damage draw enchantment"},
+      {"card": "Bident of Thassa", "role": "Mass combat damage draw and forced opponent attack"},
+      {"card": "Enduring Curiosity", "role": "Flash resilient combat damage draw engine"},
+      {"card": "Baleful Strix", "role": "ETB cantrip and flying deathtouch body"},
+      {"card": "Satoru, the Infiltrator", "role": "Draws on every Ninjutsu arrival"},
+      {"card": "Malcolm, Alluring Scoundrel", "role": "Flash flying looter and free-spell engine"},
+      {"card": "Dimir Cutpurse", "role": "Saboteur draw + opponent discard"},
+      {"card": "Yuriko, the Tiger's Shadow", "role": "Ninja combat damage reveal draw and life drain"},
+      {"card": "Dragonlord Ojutai", "role": "Digs 3-6 cards deep on combat damage"},
+      {"card": "Daxos of Meletis", "role": "Exiles and casts top cards of opponents' libraries"},
+      {"card": "Thief of Sanity", "role": "Steals best spell from top 3 of opponent's library"},
+      {"card": "Gonti, Night Minister", "role": "Exiles cards from opponents' libraries on combat damage"},
+      {"card": "Nashi, Moon Sage's Scion", "role": "Exiles top card of all 4 libraries on hit"},
+      {"card": "Fallen Shinobi", "role": "Exiles and casts 2-4 opponent cards for free"},
+      {"card": "Kaito, Bane of Nightmares", "role": "Surveil + multi-card draw planeswalker"},
+      {"card": "Reliquary Tower", "role": "Unlimited hand size utility land"}
+    ],
+    "a1": [
+      {"card": "Raffine, Scheming Seer", "role": "Connive card selection and redundant evasion/pump"},
+      {"card": "Kamiz, Obscura Oculus", "role": "Redundant command-zone unblockable + Double Strike engine"},
+      {"card": "Dragonlord Ojutai", "role": "Top-3 card selection on hit"},
+      {"card": "Malcolm, Alluring Scoundrel", "role": "Combat damage looting"},
+      {"card": "Kaito, Bane of Nightmares", "role": "Surveil 2 + draw selection"},
+      {"card": "Spark Double", "role": "Clones Jin Sakai or best Saboteur"}
+    ],
+    "a2": [
+      {"card": "Jin Sakai, Ghost of Tsushima", "role": "Grants immediate Unblockable or Double Strike on the turn he enters"},
+      {"card": "Thousand-Faced Shadow", "role": "1-drop flyer and Ninjutsu attacker clone"},
+      {"card": "Swiftfoot Boots", "role": "Grants haste and hexproof"}
+    ],
+    "p1": [
+      {"card": "Virtus the Veiled", "role": "Halves opponent life on hit (quarters life with Double Strike)"},
+      {"card": "Quietus Spike", "role": "Deathtouch + halves opponent life on combat damage"},
+      {"card": "Fallen Shinobi", "role": "5/4 Ninja casting 2-4 stolen spells for free"},
+      {"card": "Drana, Liberator of Malakir", "role": "First-strike team +1/+1 counter scaling before regular damage"},
+      {"card": "Mist-Syndicate Naga", "role": "Exponential self-cloning Ninja on Double Strike hits"}
+    ],
+    "p2": [
+      {"card": "Vorpal Sword", "role": "Instant player elimination on unblockable combat damage"},
+      {"card": "Akroma's Will", "role": "Team-wide Double Strike, Flying, Lifelink, and Protection finisher"},
+      {"card": "True Conviction", "role": "Permanent team-wide Double Strike and Lifelink"},
+      {"card": "Odric, Lunarch Marshal", "role": "Broadcasts Double Strike, Flying, and Deathtouch to all attackers"},
+      {"card": "Duelist's Heritage", "role": "Grants Double Strike alongside Jin Sakai's Ghost unblockable mode"},
+      {"card": "Yuriko, the Tiger's Shadow", "role": "Table-wide life drain on Ninja combat damage"}
+    ],
+    "p3": [
+      {"card": "Jin Sakai, Ghost of Tsushima", "role": "Ghost mode bypasses opponent creature blockers"},
+      {"card": "Pippin, Guard of the Citadel", "role": "Protection from creatures bypasses blockers"},
+      {"card": "Mother of Runes", "role": "Color protection bypasses blockers"},
+      {"card": "Giver of Runes", "role": "Color/colorless protection bypasses blockers"}
+    ],
+    "i1": [
+      {"card": "Swords to Plowshares", "role": "1-mana instant creature exile"},
+      {"card": "Path to Exile", "role": "1-mana instant creature exile"},
+      {"card": "Counterspell", "role": "2-mana hard counterspell"},
+      {"card": "Dovin's Veto", "role": "2-mana uncounterable noncreature counterspell"},
+      {"card": "Drown in the Loch", "role": "Modal counterspell or creature removal"},
+      {"card": "Despark", "role": "2-mana instant exile for MV >= 4 permanents"},
+      {"card": "Anguished Unmaking", "role": "3-mana instant catch-all nonland exile"},
+      {"card": "Void Rend", "role": "3-mana uncounterable instant nonland destruction"},
+      {"card": "Toxic Deluge", "role": "3-mana scalable board wipe"},
+      {"card": "Damn", "role": "Spot removal or 4-mana board wipe"},
+      {"card": "Time Wipe", "role": "Bounces Jin Sakai before wiping all creatures"}
+    ],
+    "i2": [
+      {"card": "Cephalid Constable", "role": "Bounces 2-6+ opponent permanents/lands per Double Strike hit"},
+      {"card": "Dimir Cutpurse", "role": "Repeatable opponent hand discard on hit"},
+      {"card": "Boromir, Warden of the Tower", "role": "Counters opponents' 0-mana / free spells"},
+      {"card": "Bojuka Bog", "role": "ETB graveyard exile land"}
+    ],
+    "s1": [
+      {"card": "Mother of Runes", "role": "Repeatable tap color protection"},
+      {"card": "Giver of Runes", "role": "Repeatable tap color/colorless protection"},
+      {"card": "Pippin, Guard of the Citadel", "role": "Repeatable tap card-type protection and Ward {1}"},
+      {"card": "Boromir, Warden of the Tower", "role": "Sacrifices to grant team-wide Indestructible"},
+      {"card": "Swiftfoot Boots", "role": "Hexproof and Haste equipment"}
+    ],
+    "s2": [
+      {"card": "Enduring Curiosity", "role": "Returns as an enchantment after dying"},
+      {"card": "Time Wipe", "role": "Saves commander or key Saboteur to hand before wiping"}
+    ],
+    "s3": [
+      {"card": "Kamiz, Obscura Oculus", "role": "Standalone Esper unblockable + Double Strike commander in the 99"},
+      {"card": "Raffine, Scheming Seer", "role": "Standalone Esper connive scaling engine"},
+      {"card": "Tymna the Weaver", "role": "Standalone postcombat draw engine"},
+      {"card": "Yuriko, the Tiger's Shadow", "role": "Standalone Ninja draw and drain engine"},
+      {"card": "True Conviction", "role": "Standalone team-wide Double Strike and Lifelink anthem"}
+    ]
+  }
+}

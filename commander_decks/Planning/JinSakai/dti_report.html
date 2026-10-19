@@ -1,0 +1,1233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DTI Report — JinSakai</title>
+    <style>
+        :root {
+            --bg-base: #0f172a;
+            --bg-card: #1e293b;
+            --bg-hover: #334155;
+            --text-main: #f8fafc;
+            --text-sub: #94a3b8;
+            --border: #334155;
+            --accent: #10b981;
+            --s-color: #8b5cf6;
+            --a-color: #3b82f6;
+            --b-color: #10b981;
+            --c-color: #f59e0b;
+            --f-color: #ef4444;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-base);
+            color: var(--text-main);
+            padding: 24px;
+            line-height: 1.5;
+        }
+        .container { max-width: 1200px; margin: 0 auto; }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid var(--border);
+            padding-bottom: 20px;
+            margin-bottom: 24px;
+        }
+        h1 { font-size: 26px; font-weight: 700; }
+        .header-sub { color: var(--text-sub); font-size: 14px; margin-top: 4px; }
+        .bracket-badge {
+            background-color: var(--accent);
+            color: #0f172a;
+            font-weight: 800;
+            font-size: 20px;
+            padding: 8px 20px;
+            border-radius: 9999px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 16px;
+            margin-bottom: 24px;
+        }
+        .metric-card {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 18px;
+        }
+        .metric-title { font-size: 13px; color: var(--text-sub); text-transform: uppercase; letter-spacing: 0.5px; font-weight: 600; }
+        .metric-value { font-size: 32px; font-weight: 800; margin: 6px 0; }
+        .metric-sub { font-size: 12px; color: var(--text-sub); }
+        .progress-bar {
+            background: #0f172a;
+            height: 8px;
+            border-radius: 4px;
+            overflow: hidden;
+            margin-top: 8px;
+        }
+        .progress-fill {
+            height: 100%;
+            background: var(--accent);
+            border-radius: 4px;
+        }
+        .gates-banner {
+            background: var(--bg-card);
+            border-left: 4px solid var(--accent);
+            border-radius: 8px;
+            padding: 16px;
+            margin-bottom: 24px;
+        }
+        .gate-title { font-weight: 700; margin-bottom: 8px; }
+        .gate-item { font-size: 13px; margin: 4px 0; color: var(--text-sub); }
+        .gate-tag { font-weight: 700; padding: 2px 6px; border-radius: 4px; font-size: 11px; }
+        .tag-triggered { background: #ef4444; color: white; }
+        .tag-passed { background: #10b981; color: white; }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: var(--bg-card);
+            border-radius: 12px;
+            overflow: hidden;
+            margin-bottom: 32px;
+            border: 1px solid var(--border);
+        }
+        th, td { padding: 12px 16px; text-align: left; border-bottom: 1px solid var(--border); }
+        th { background: #1e293b; color: var(--text-sub); font-size: 12px; text-transform: uppercase; letter-spacing: 0.5px; }
+        tr:hover td { background: rgba(255, 255, 255, 0.02); }
+        .code-col { font-weight: 700; color: var(--text-sub); }
+        .tier-badge {
+            display: inline-block;
+            font-weight: 800;
+            font-size: 13px;
+            padding: 2px 10px;
+            border-radius: 6px;
+            text-align: center;
+        }
+        .tier-s { background: var(--s-color); color: white; }
+        .tier-a { background: var(--a-color); color: white; }
+        .tier-b { background: var(--b-color); color: white; }
+        .tier-c { background: var(--c-color); color: #0f172a; }
+        .tier-f { background: var(--f-color); color: white; }
+        .domain-sub { font-size: 11px; color: var(--text-sub); }
+        .just-col { font-size: 13px; color: #cbd5e1; }
+        .score-col { font-weight: 700; font-feature-settings: "tnum"; }
+
+        .ledger-section { margin-top: 32px; }
+        .ledger-group {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 16px;
+            margin-bottom: 16px;
+        }
+        .ledger-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 12px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid var(--border);
+        }
+        .ledger-header h3 { font-size: 16px; font-weight: 700; }
+        .count-tag { font-size: 12px; color: var(--text-sub); }
+        .card-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        .card-chip {
+            background: #0f172a;
+            border: 1px solid var(--border);
+            padding: 6px 12px;
+            border-radius: 8px;
+            font-size: 12px;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            position: relative;
+        }
+        .card-chip a {
+            color: var(--text-main);
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .card-chip a:hover { color: #38bdf8; }
+        .chip-role { font-size: 11px; color: var(--text-sub); }
+
+        /* Card Preview Hover Popup */
+        #card-preview {
+            position: fixed;
+            pointer-events: none;
+            display: none;
+            z-index: 1000;
+            width: 240px;
+            border-radius: 12px;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.5), 0 8px 10px -6px rgba(0, 0, 0, 0.5);
+            border: 2px solid #475569;
+        }
+
+        .deck-telemetry-banner {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 10px 16px;
+            margin-bottom: 20px;
+            font-size: 13px;
+            color: var(--text-sub);
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+        .deck-telemetry-banner strong { color: var(--text-main); }
+        .info-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 24px;
+        }
+        .info-card h3 {
+            font-size: 16px;
+            margin-bottom: 12px;
+            color: var(--text-main);
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 8px;
+        }
+        .primer-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        @media (max-width: 768px) {
+            .primer-grid { grid-template-columns: 1fr; }
+        }
+        .weakness-card {
+            background: #0f172a;
+            border-radius: 8px;
+            padding: 14px;
+            border-top: 3px solid #64748b;
+        }
+        .weakness-critical { border-top-color: #ef4444; }
+        .weakness-moderate { border-top-color: #f59e0b; }
+        .weakness-minor { border-top-color: #3b82f6; }
+        .weakness-list { list-style: none; margin-top: 8px; }
+        .weakness-list li { font-size: 13px; margin: 6px 0; color: #cbd5e1; }
+        .step-list { padding-left: 20px; font-size: 13px; color: #cbd5e1; line-height: 1.6; }
+        .step-list li { margin-bottom: 6px; }
+    </style>
+</head>
+<body>
+    <img id="card-preview" src="" alt="Card Preview" />
+    <div class="container">
+        <header>
+            <div>
+                <h1>JinSakai</h1>
+                <div class="header-sub">DeckCheck Threat Index (DTI) Evaluation Report</div>
+            </div>
+            <div class="bracket-badge">BRACKET 3</div>
+        </header>
+
+        <div class='deck-telemetry-banner'><span>Archetype: <strong>Esper Three-Front Saboteur Control & Double-Strike Value Engine</strong></span> · <span>Threat Onset: <strong>turn 6</strong></span> · <span>Engine Ready: <strong>turn 5</strong></span> · <span>Opponent Response Cycles: <strong>2</strong></span></div>
+
+        <div class="metrics-grid">
+            <div class="metric-card">
+                <div class="metric-title">Threat Score</div>
+                <div class="metric-value">33 <span style="font-size:16px;color:var(--text-sub);">/ 96</span></div>
+                <div class="metric-sub">Score Floor: Bracket 3</div>
+                <div class="progress-bar"><div class="progress-fill" style="width: 34.375%;"></div></div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-title">Velocity Vector</div>
+                <div class="metric-value">16 <span style="font-size:16px;color:var(--text-sub);">/ 48</span></div>
+                <div class="metric-sub">Clock & Assembly Speed (Gate at 28)</div>
+                <div class="progress-bar"><div class="progress-fill" style="width: 33.33333333333333%;"></div></div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-title">Suppression Vector</div>
+                <div class="metric-value">15 <span style="font-size:16px;color:var(--text-sub);">/ 40</span></div>
+                <div class="metric-sub">Denial, Tax & Stax Impact</div>
+                <div class="progress-bar"><div class="progress-fill" style="width: 37.5%;"></div></div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-title">Game Changers</div>
+                <div class="metric-value">0 <span style="font-size:16px;color:var(--text-sub);">/ 3</span></div>
+                <div class="metric-sub">WotC Statutory Limit Floor: B2</div>
+                <div class="progress-bar"><div class="progress-fill" style="width: 0.0%;"></div></div>
+            </div>
+        </div>
+
+        <div class="gates-banner">
+            <div class="gate-title">Gatekeeper Audit Results</div>
+            <div class="gate-item">
+                <span class="gate-tag tag-passed">
+                    PASSED
+                </span>
+                <strong>Velocity Gate:</strong> Vector 16/48 (Threshold: &ge; 28 mandates Bracket 4).
+            </div>
+            <div class="gate-item">
+                <span class="gate-tag tag-passed">
+                    PASSED
+                </span>
+                <strong>Early Finish Gate:</strong> Onset B, Completion B (Zero-untap or T1-5 table elimination mandates Bracket 4).
+            </div>
+            <div class="gate-item">
+                <span class="gate-tag tag-passed">
+                    PASSED
+                </span>
+                <strong>Suppression Gate:</strong> Proactive Restriction I2 is B (Severe attrition mandates Bracket 4).
+            </div>
+            <div class="gate-item">
+                <span class="gate-tag tag-passed">
+                    PASSED
+                </span>
+                <strong>cEDH Gate:</strong> Format ceiling clock with 0-untap kill (Peak vector: 16).
+            </div>
+        </div>
+
+        
+        <div class="info-card">
+            <h3>Tactical Overview</h3>
+            <p style="font-size: 14px; line-height: 1.6; color: #cbd5e1;">Jin Sakai, Ghost of Tsushima operates as a Shape 2 (Amplifier) and Shape 4 (Pillar-Shifted Card Advantage) engine. By exploiting Jin Sakai's per-player solo attack trigger across all 3 opponents simultaneously, the deck grants up to three Saboteur creatures per combat either Unblockable (Ghost) to guarantee their combat-damage triggers or Double Strike (Standoff) to fire their triggers twice. Deliberately built with 0 Game Changers and a budget-conscious Esper mana base to anchor squarely in Low Bracket 3.</p>
+        </div>
+        
+        
+        <div class="info-card">
+            <h3>Operational Primer & Strategy</h3>
+            <div class="primer-grid">
+                <div>
+                    <h4 style="font-size: 13px; text-transform: uppercase; color: var(--text-sub); margin-bottom: 8px;">Core Turn Strategy</h4>
+                    <ol class="step-list">
+                        <li>Turns 1-3 (Setup & Saboteur Deployment): Develop a 2-CMC mana rock (Talisman cycle, Arcane Signet, Fellwar Stone) or catch-up ramp body (Loyal Warhound) alongside a high-value 2-3 mana Saboteur (Malcolm, Daxos, Thief of Sanity, Cephalid Constable, Virtus the Veiled, Tymna, Breena).</li><li>Turn 4-5 (The Three-Front Standoff): Cast Jin Sakai, Ghost of Tsushima. Immediately attack up to three different opponents with one solo attacker each. Jin Sakai triggers immediately for each solo attacker without needing haste himself—choose Ghost (Unblockable) against opponents with blockers, or Standoff (Double Strike) against open opponents to double all combat-damage triggers.</li><li>Turns 6-8 (Life-Halving & First-Strike Ninjutsu Conversion): Use Double Strike attackers to deal First Strike combat damage (triggering abilities), then optionally Ninjutsu in Fallen Shinobi, Yuriko, or Mist-Syndicate Naga before the Regular Combat Damage step to double-dip triggers. Close the game by halving life totals via Virtus the Veiled and Quietus Spike, or overwhelming the board with True Conviction, Odric, Akroma's Will, and Vorpal Sword.</li>
+                    </ol>
+                </div>
+                <div>
+                    <h4 style="font-size: 13px; text-transform: uppercase; color: var(--text-sub); margin-bottom: 8px;">Mulligan Priorities</h4>
+                    <div style="font-size: 13px; color: #cbd5e1; margin-bottom: 14px; line-height: 1.5;">
+                        <p style='margin-bottom: 6px;'><strong>Keep:</strong> Hands with 3 lands (covering at least 2 of W/U/B), 1 two-mana ramp piece (Talisman, Signet, Sol Ring, Bauble, Loyal Warhound), and 1-2 early Saboteur or protection creatures (Mother of Runes, Pippin, Malcolm, Baleful Strix, Tymna).</p><p><strong>Avoid:</strong> Hands with multiple top-end payoffs, missing Blue/Black mana, or lacking early creatures to trigger Jin Sakai on Turn 4.</p>
+                    </div>
+                    <h4 style="font-size: 13px; text-transform: uppercase; color: var(--text-sub); margin-bottom: 8px;">Tactical Tips</h4><ul class="step-list" style="list-style: disc;"><li>The 3-Player Solo Attack Rule: Jin Sakai checks 'if no other creatures are attacking THAT player.' In a 4-player pod, attacking Opponent A with Creature 1, Opponent B with Creature 2, and Opponent C with Creature 3 triggers Jin Sakai three separate times!</li><li>The First-Strike Ninjutsu Double-Dip: When Jin Sakai grants an unblocked attacker Standoff (Double Strike), let it deal First Strike combat damage and resolve its saboteur trigger first. Then, still inside combat before the Regular Combat Damage step, activate Ninjutsu (Yuriko, Fallen Shinobi, Mist-Syndicate Naga)—the Ninja enters tapped and attacking and deals Regular Combat Damage in the exact same combat!</li><li>Protection = Double Strike: Mother of Runes, Giver of Runes, and Pippin, Guard of the Citadel don't just protect Jin Sakai from removal—tapping them to give an attacker protection from an opponent's blocker color (or 'creatures' with Pippin) makes your attacker unblockable so Jin Sakai is free to choose Standoff (Double Strike)!</li></ul>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="info-card">
+            <h3>Strategic Weaknesses & Interaction Exploits</h3>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px;">
+                <div class="weakness-card weakness-critical">
+                    <h4 style="font-size: 13px; color: #ef4444; text-transform: uppercase;">Critical Vulnerabilities</h4>
+                    <ul class="weakness-list"><li>Combat-step prevention and fog/pillowfort locks (Constant Mists, Glacial Chasm, Ghostly Prison, Propaganda, Ensnaring Bridge) shut down combat-damage triggers until removed via Anguished Unmaking, Void Rend, or Despark.</li></ul>
+                </div>
+                <div class="weakness-card weakness-moderate">
+                    <h4 style="font-size: 13px; color: #f59e0b; text-transform: uppercase;">Moderate Friction Points</h4>
+                    <ul class="weakness-list"><li>Repeated creature board wipes delay the Saboteur critical mass, as the deck relies on maintaining 2-3 creatures on the battlefield to maximize split-combat value.</li><li>Budget Esper mana base runs Check, Reveal, Battle, and Tainted lands rather than fetch-shock-dual packages, occasionally introducing a tapped land on Turns 1-3.</li></ul>
+                </div>
+                <div class="weakness-card weakness-minor">
+                    <h4 style="font-size: 13px; color: #3b82f6; text-transform: uppercase;">Minor Weaknesses</h4>
+                    <ul class="weakness-list"><li>Incremental life loss from Talismans, Pain lands, Tymna the Weaver, and Gix, Yawgmoth Praetor (mitigated by Daxos, Tymna lifelink, True Conviction, and Akroma's Will).</li></ul>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="info-card">
+            <h3>Key Engine Anchors</h3>
+            <div class="card-grid">
+                
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Jin%20Sakai%2C%20Ghost%20of%20Tsushima&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Jin%20Sakai%2C%20Ghost%20of%20Tsushima%22" target="_blank" rel="noopener">Jin Sakai, Ghost of Tsushima</a>
+                <span class="chip-role">Command-zone card draw engine and 3-player split-combat amplifier granting Unblockable (Ghost) or Double Strike (Standoff).</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Cephalid%20Constable&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Cephalid%20Constable%22" target="_blank" rel="noopener">Cephalid Constable</a>
+                <span class="chip-role">Bounces permanents (including lands) equal to combat damage dealt; unblockable or double strike from Jin Sakai turns it into a one-sided board wipe.</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Virtus%20the%20Veiled&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Virtus%20the%20Veiled%22" target="_blank" rel="noopener">Virtus the Veiled</a>
+                <span class="chip-role">3-mana Assassin that cuts defending player's life in half on combat damage (quarters their life from 40 to 10 with Standoff Double Strike).</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Tymna%20the%20Weaver&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Tymna%20the%20Weaver%22" target="_blank" rel="noopener">Tymna the Weaver</a>
+                <span class="chip-role">Draws 3 cards every postcombat main phase alongside Jin Sakai's natural 3-opponent split attack pattern.</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Grim%20Hireling&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Grim%20Hireling%22" target="_blank" rel="noopener">Grim Hireling</a>
+                <span class="chip-role">Generates 2 Treasures per combat damage step per player—up to 12 Treasures per turn when three Double Strike creatures connect.</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Spark%20Double&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Spark%20Double%22" target="_blank" rel="noopener">Spark Double</a>
+                <span class="chip-role">Creates a non-legendary copy of Jin Sakai so every solo attacker receives BOTH Ghost (Unblockable) and Standoff (Double Strike) simultaneously.</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Fallen%20Shinobi&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Fallen%20Shinobi%22" target="_blank" rel="noopener">Fallen Shinobi</a>
+                <span class="chip-role">Premier Ninjutsu threat that exiles 2 cards per hit (4 cards with Double Strike) and casts them for free.</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Vorpal%20Sword&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Vorpal%20Sword%22" target="_blank" rel="noopener">Vorpal Sword</a>
+                <span class="chip-role">Cheap deathtouch equipment whose {5}{B}{B}{B} activated ability pairs with Jin Sakai's Ghost mode for an unblockable one-hit player elimination.</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Pippin%2C%20Guard%20of%20the%20Citadel&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Pippin%2C%20Guard%20of%20the%20Citadel%22" target="_blank" rel="noopener">Pippin, Guard of the Citadel</a>
+                <span class="chip-role">Protects Jin Sakai from spot removal or grants protection from creatures so a solo attacker can safely take Standoff Double Strike.</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Kamiz%2C%20Obscura%20Oculus&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Kamiz%2C%20Obscura%20Oculus%22" target="_blank" rel="noopener">Kamiz, Obscura Oculus</a>
+                <span class="chip-role">Redundant command-zone lieutenant in the 99 that grants unblockable + Connive and Double Strike on attack.</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Reconnaissance%20Mission&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Reconnaissance%20Mission%22" target="_blank" rel="noopener">Reconnaissance Mission</a>
+                <span class="chip-role">Draws a card on every combat damage hit—triggers twice per Double Strike creature across up to 3 opponents.</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Akroma%27s%20Will&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Akroma%27s%20Will%22" target="_blank" rel="noopener">Akroma's Will</a>
+                <span class="chip-role">Decisive finisher granting the entire team Double Strike, Flying, Lifelink, Indestructible, and Protection from all colors.</span>
+            </div>
+            
+            </div>
+        </div>
+        
+
+        <h2 style="margin-bottom: 16px; font-size: 20px;">12 Universal Benchmarks</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th style="width: 50px;">Code</th>
+                    <th style="width: 240px;">Benchmark</th>
+                    <th style="width: 60px;">Tier</th>
+                    <th style="width: 80px;">Points</th>
+                    <th style="width: 60px;">Cards</th>
+                    <th>Contextual Evaluation & Rationale</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+        <tr>
+            <td class="code-col"><strong>R1</strong></td>
+            <td><strong>Mana Velocity & Sufficiency</strong><br><span class="domain-sub">Resources</span></td>
+            <td class="tier-col"><span class="tier-badge tier-a">A</span></td>
+            <td class="score-col">5 / 10</td>
+            <td class="ledger-count-col">40</td>
+            <td class="just-col">Pragmatic Low-Bracket-3 Esper mana base (38 lands with zero fetches/crowd lands) supported by 11 non-Signet ramp sources (Sol Ring, Talismans, Arcane Signet, Fellwar Stone, Loyal Warhound, Sword of the Animist) and explosive combat Treasure bursts (Grim Hireling, Lotho, Rev).</td>
+        </tr>
+        
+        <tr>
+            <td class="code-col"><strong>A2</strong></td>
+            <td><strong>Assembly Velocity</strong><br><span class="domain-sub">Access</span></td>
+            <td class="tier-col"><span class="tier-badge tier-a">A</span></td>
+            <td class="score-col">5 / 10</td>
+            <td class="ledger-count-col">3</td>
+            <td class="just-col">Deploys 2-3 mana Saboteurs on Turns 2-3 and casts Jin Sakai on Turn 4, immediately triggering Ghost/Standoff for already-deployed attackers on the same turn without waiting for Jin Sakai to untap.</td>
+        </tr>
+        
+        <tr>
+            <td class="code-col"><strong>P1</strong></td>
+            <td><strong>Critical Onset & Lethality</strong><br><span class="domain-sub">Pressure</span></td>
+            <td class="tier-col"><span class="tier-badge tier-b">B</span></td>
+            <td class="score-col">2 / 10</td>
+            <td class="ledger-count-col">5</td>
+            <td class="just-col">Goldfish engine readiness averages Turn 5.3, presenting critical board pressure on Turns 5-6 through unblockable life-halvers (Virtus, Quietus Spike), permanent bounce (Cephalid Constable), and free spell theft (Fallen Shinobi, Gonti, Rev).</td>
+        </tr>
+        
+        <tr>
+            <td class="code-col"><strong>P2</strong></td>
+            <td><strong>Win Inevitability & Compactness</strong><br><span class="domain-sub">Pressure</span></td>
+            <td class="tier-col"><span class="tier-badge tier-b">B</span></td>
+            <td class="score-col">2 / 10</td>
+            <td class="ledger-count-col">6</td>
+            <td class="just-col">Affords opponents 2 response cycles after Turn 5-6 threat onset to convert life-halving triggers and combat multipliers (True Conviction, Akroma's Will, Odric, Vorpal Sword) into full 4-player table elimination around Turns 7-8.</td>
+        </tr>
+        
+        <tr>
+            <td class="code-col"><strong>R2</strong></td>
+            <td><strong>Card Flow & Replenishment</strong><br><span class="domain-sub">Resources</span></td>
+            <td class="tier-col"><span class="tier-badge tier-a">A</span></td>
+            <td class="score-col">4 / 8</td>
+            <td class="ledger-count-col">20</td>
+            <td class="just-col">Compounding card flow: Jin Sakai draws 1-2 cards per swing in the command zone and doubles the combat-damage draw triggers of Tymna the Weaver, Gix, Breena, Reconnaissance Mission, Bident of Thassa, Enduring Curiosity, Malcolm, and Dimir Cutpurse.</td>
+        </tr>
+        
+        <tr>
+            <td class="code-col"><strong>A1</strong></td>
+            <td><strong>Selection & Redundancy</strong><br><span class="domain-sub">Access</span></td>
+            <td class="tier-col"><span class="tier-badge tier-b">B</span></td>
+            <td class="score-col">2 / 8</td>
+            <td class="ledger-count-col">6</td>
+            <td class="just-col">Zero tutors and 0 Game Changers; relies on deep functional redundancy across 17 Saboteurs/Ninjas and redundant combat amplifiers (Kamiz, Raffine, Duelist's Heritage, Spark Double).</td>
+        </tr>
+        
+        <tr>
+            <td class="code-col"><strong>P3</strong></td>
+            <td><strong>Exposure & Predictability</strong><br><span class="domain-sub">Pressure</span></td>
+            <td class="tier-col"><span class="tier-badge tier-b">B</span></td>
+            <td class="score-col">2 / 8</td>
+            <td class="ledger-count-col">4</td>
+            <td class="just-col">Combat-centric execution requires declaring solo attackers and connecting in the Combat Damage step, providing opponents clear, fair interaction windows.</td>
+        </tr>
+        
+        <tr>
+            <td class="code-col"><strong>I1</strong></td>
+            <td><strong>Reactive Disruption</strong><br><span class="domain-sub">Interaction</span></td>
+            <td class="tier-col"><span class="tier-badge tier-a">A</span></td>
+            <td class="score-col">4 / 8</td>
+            <td class="ledger-count-col">11</td>
+            <td class="just-col">Strong Esper instant-speed disruption package (Swords to Plowshares, Path to Exile, Counterspell, Dovin's Veto, Drown in the Loch, Despark, Anguished Unmaking, Void Rend) plus 3 efficient sweepers (Toxic Deluge, Damn, Time Wipe).</td>
+        </tr>
+        
+        <tr>
+            <td class="code-col"><strong>I2</strong></td>
+            <td><strong>Proactive Denial & Restriction</strong><br><span class="domain-sub">Interaction</span></td>
+            <td class="tier-col"><span class="tier-badge tier-b">B</span></td>
+            <td class="score-col">2 / 8</td>
+            <td class="ledger-count-col">4</td>
+            <td class="just-col">Repeatable combat-damage resource denial via Cephalid Constable (permanent bounce), Dimir Cutpurse, Grim Hireling creature removal, and Boromir, Warden of the Tower (anti-free-spell lock), with zero hard stax locks.</td>
+        </tr>
+        
+        <tr>
+            <td class="code-col"><strong>S1</strong></td>
+            <td><strong>Plan Shielding & Protection</strong><br><span class="domain-sub">Resilience</span></td>
+            <td class="tier-col"><span class="tier-badge tier-b">B</span></td>
+            <td class="score-col">2 / 8</td>
+            <td class="ledger-count-col">5</td>
+            <td class="just-col">Dedicated creature-based protection engine (Mother of Runes, Giver of Runes, Pippin, Guard of the Citadel, Boromir, Swiftfoot Boots) backed by blue countermagic.</td>
+        </tr>
+        
+        <tr>
+            <td class="code-col"><strong>S2</strong></td>
+            <td><strong>Engine Recovery</strong><br><span class="domain-sub">Resilience</span></td>
+            <td class="tier-col"><span class="tier-badge tier-b">B</span></td>
+            <td class="score-col">1 / 4</td>
+            <td class="ledger-count-col">2</td>
+            <td class="just-col">Moderate resilience to board wipes via Time Wipe (bouncing Jin Sakai), Boromir (team indestructible), Enduring Curiosity (returning as an enchantment), and continuous card draw.</td>
+        </tr>
+        
+        <tr>
+            <td class="code-col"><strong>S3</strong></td>
+            <td><strong>Independence & Backup Plans</strong><br><span class="domain-sub">Resilience</span></td>
+            <td class="tier-col"><span class="tier-badge tier-a">A</span></td>
+            <td class="score-col">2 / 4</td>
+            <td class="ledger-count-col">5</td>
+            <td class="just-col">High commander independence: Kamiz, Raffine, Tymna, Yuriko, Duelist's Heritage, Odric, and True Conviction independently provide evasion, Double Strike, and card draw even if Jin Sakai is removed.</td>
+        </tr>
+        
+            </tbody>
+        </table>
+
+        <div class="ledger-section">
+            <h2 style="margin-bottom: 16px; font-size: 20px;">The Card Ledger</h2>
+            
+        <div class="ledger-group">
+            <div class="ledger-header">
+                <h3>R1: Mana Velocity & Sufficiency <span class="ledger-tier-tag tier-a">A</span></h3>
+                <span class="count-tag">40 cards</span>
+            </div>
+            <div class="card-grid">
+                
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Sol%20Ring&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Sol%20Ring%22" target="_blank" rel="noopener">Sol Ring</a>
+                <span class="chip-role">Fast mana rock</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Wayfarer%27s%20Bauble&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Wayfarer%27s%20Bauble%22" target="_blank" rel="noopener">Wayfarer's Bauble</a>
+                <span class="chip-role">Turn 1-2 basic land ramp</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Arcane%20Signet&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Arcane%20Signet%22" target="_blank" rel="noopener">Arcane Signet</a>
+                <span class="chip-role">2-CMC rainbow mana rock</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Fellwar%20Stone&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Fellwar%20Stone%22" target="_blank" rel="noopener">Fellwar Stone</a>
+                <span class="chip-role">2-CMC mana rock</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Talisman%20of%20Dominance&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Talisman%20of%20Dominance%22" target="_blank" rel="noopener">Talisman of Dominance</a>
+                <span class="chip-role">2-CMC U/B mana rock</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Talisman%20of%20Progress&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Talisman%20of%20Progress%22" target="_blank" rel="noopener">Talisman of Progress</a>
+                <span class="chip-role">2-CMC W/U mana rock</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Talisman%20of%20Hierarchy&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Talisman%20of%20Hierarchy%22" target="_blank" rel="noopener">Talisman of Hierarchy</a>
+                <span class="chip-role">2-CMC W/B mana rock</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Ornithopter%20of%20Paradise&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Ornithopter%20of%20Paradise%22" target="_blank" rel="noopener">Ornithopter of Paradise</a>
+                <span class="chip-role">2-CMC flying mana dork and emergency attacker</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Lotho%2C%20Corrupt%20Shirriff&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Lotho%2C%20Corrupt%20Shirriff%22" target="_blank" rel="noopener">Lotho, Corrupt Shirriff</a>
+                <span class="chip-role">Treasure generator on second spells</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Loyal%20Warhound&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Loyal%20Warhound%22" target="_blank" rel="noopener">Loyal Warhound</a>
+                <span class="chip-role">Catch-up Plains ramp and vigilance attacker</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Sword%20of%20the%20Animist&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Sword%20of%20the%20Animist%22" target="_blank" rel="noopener">Sword of the Animist</a>
+                <span class="chip-role">Repeatable basic land ramp on attack</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Grim%20Hireling&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Grim%20Hireling%22" target="_blank" rel="noopener">Grim Hireling</a>
+                <span class="chip-role">Generates up to 6-12 Treasures per combat</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Rev%2C%20Tithe%20Extractor&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Rev%2C%20Tithe%20Extractor%22" target="_blank" rel="noopener">Rev, Tithe Extractor</a>
+                <span class="chip-role">Combat damage Treasure and card theft engine</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Command%20Tower&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Command%20Tower%22" target="_blank" rel="noopener">Command Tower</a>
+                <span class="chip-role">Untapped Esper fixing</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Exotic%20Orchard&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Exotic%20Orchard%22" target="_blank" rel="noopener">Exotic Orchard</a>
+                <span class="chip-role">Untapped Esper fixing</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Adarkar%20Wastes&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Adarkar%20Wastes%22" target="_blank" rel="noopener">Adarkar Wastes</a>
+                <span class="chip-role">Untapped W/U pain land</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Caves%20of%20Koilos&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Caves%20of%20Koilos%22" target="_blank" rel="noopener">Caves of Koilos</a>
+                <span class="chip-role">Untapped W/B pain land</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Underground%20River&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Underground%20River%22" target="_blank" rel="noopener">Underground River</a>
+                <span class="chip-role">Untapped U/B pain land</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Glacial%20Fortress&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Glacial%20Fortress%22" target="_blank" rel="noopener">Glacial Fortress</a>
+                <span class="chip-role">W/U check land</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Isolated%20Chapel&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Isolated%20Chapel%22" target="_blank" rel="noopener">Isolated Chapel</a>
+                <span class="chip-role">W/B check land</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Drowned%20Catacomb&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Drowned%20Catacomb%22" target="_blank" rel="noopener">Drowned Catacomb</a>
+                <span class="chip-role">U/B check land</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Deserted%20Beach&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Deserted%20Beach%22" target="_blank" rel="noopener">Deserted Beach</a>
+                <span class="chip-role">W/U slow land</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Shattered%20Sanctum&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Shattered%20Sanctum%22" target="_blank" rel="noopener">Shattered Sanctum</a>
+                <span class="chip-role">W/B slow land</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Shipwreck%20Marsh&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Shipwreck%20Marsh%22" target="_blank" rel="noopener">Shipwreck Marsh</a>
+                <span class="chip-role">U/B slow land</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Hengegate%20Pathway%20//%20Mistgate%20Pathway&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Hengegate%20Pathway%20//%20Mistgate%20Pathway%22" target="_blank" rel="noopener">Hengegate Pathway // Mistgate Pathway</a>
+                <span class="chip-role">Untapped W/U pathway</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Brightclimb%20Pathway%20//%20Grimclimb%20Pathway&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Brightclimb%20Pathway%20//%20Grimclimb%20Pathway%22" target="_blank" rel="noopener">Brightclimb Pathway // Grimclimb Pathway</a>
+                <span class="chip-role">Untapped W/B pathway</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Clearwater%20Pathway%20//%20Murkwater%20Pathway&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Clearwater%20Pathway%20//%20Murkwater%20Pathway%22" target="_blank" rel="noopener">Clearwater Pathway // Murkwater Pathway</a>
+                <span class="chip-role">Untapped U/B pathway</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Prairie%20Stream&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Prairie%20Stream%22" target="_blank" rel="noopener">Prairie Stream</a>
+                <span class="chip-role">Fetchable W/U tango land</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Sunken%20Hollow&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Sunken%20Hollow%22" target="_blank" rel="noopener">Sunken Hollow</a>
+                <span class="chip-role">Fetchable U/B tango land</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Choked%20Estuary&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Choked%20Estuary%22" target="_blank" rel="noopener">Choked Estuary</a>
+                <span class="chip-role">U/B reveal land</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Port%20Town&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Port%20Town%22" target="_blank" rel="noopener">Port Town</a>
+                <span class="chip-role">W/U reveal land</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Shineshadow%20Snarl&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Shineshadow%20Snarl%22" target="_blank" rel="noopener">Shineshadow Snarl</a>
+                <span class="chip-role">W/B reveal land</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Tainted%20Field&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Tainted%20Field%22" target="_blank" rel="noopener">Tainted Field</a>
+                <span class="chip-role">Untapped W/B land with Swamp</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Tainted%20Isle&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Tainted%20Isle%22" target="_blank" rel="noopener">Tainted Isle</a>
+                <span class="chip-role">Untapped U/B land with Swamp</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Raffine%27s%20Tower&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Raffine%27s%20Tower%22" target="_blank" rel="noopener">Raffine's Tower</a>
+                <span class="chip-role">Esper triome with cycling</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Arcane%20Sanctum&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Arcane%20Sanctum%22" target="_blank" rel="noopener">Arcane Sanctum</a>
+                <span class="chip-role">Esper tri-land</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Path%20of%20Ancestry&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Path%20of%20Ancestry%22" target="_blank" rel="noopener">Path of Ancestry</a>
+                <span class="chip-role">Esper tri-land with scry</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Island&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Island%22" target="_blank" rel="noopener">Island</a>
+                <span class="chip-role">Basic Island (5)</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Swamp&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Swamp%22" target="_blank" rel="noopener">Swamp</a>
+                <span class="chip-role">Basic Swamp (4)</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Plains&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Plains%22" target="_blank" rel="noopener">Plains</a>
+                <span class="chip-role">Basic Plains (3)</span>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="ledger-group">
+            <div class="ledger-header">
+                <h3>A2: Assembly Velocity <span class="ledger-tier-tag tier-a">A</span></h3>
+                <span class="count-tag">3 cards</span>
+            </div>
+            <div class="card-grid">
+                
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Jin%20Sakai%2C%20Ghost%20of%20Tsushima&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Jin%20Sakai%2C%20Ghost%20of%20Tsushima%22" target="_blank" rel="noopener">Jin Sakai, Ghost of Tsushima</a>
+                <span class="chip-role">Grants immediate Unblockable or Double Strike on the turn he enters</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Thousand-Faced%20Shadow&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Thousand-Faced%20Shadow%22" target="_blank" rel="noopener">Thousand-Faced Shadow</a>
+                <span class="chip-role">1-drop flyer and Ninjutsu attacker clone</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Swiftfoot%20Boots&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Swiftfoot%20Boots%22" target="_blank" rel="noopener">Swiftfoot Boots</a>
+                <span class="chip-role">Grants haste and hexproof</span>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="ledger-group">
+            <div class="ledger-header">
+                <h3>P1: Critical Onset & Lethality <span class="ledger-tier-tag tier-b">B</span></h3>
+                <span class="count-tag">5 cards</span>
+            </div>
+            <div class="card-grid">
+                
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Virtus%20the%20Veiled&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Virtus%20the%20Veiled%22" target="_blank" rel="noopener">Virtus the Veiled</a>
+                <span class="chip-role">Halves opponent life on hit (quarters life with Double Strike)</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Quietus%20Spike&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Quietus%20Spike%22" target="_blank" rel="noopener">Quietus Spike</a>
+                <span class="chip-role">Deathtouch + halves opponent life on combat damage</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Fallen%20Shinobi&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Fallen%20Shinobi%22" target="_blank" rel="noopener">Fallen Shinobi</a>
+                <span class="chip-role">5/4 Ninja casting 2-4 stolen spells for free</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Drana%2C%20Liberator%20of%20Malakir&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Drana%2C%20Liberator%20of%20Malakir%22" target="_blank" rel="noopener">Drana, Liberator of Malakir</a>
+                <span class="chip-role">First-strike team +1/+1 counter scaling before regular damage</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Mist-Syndicate%20Naga&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Mist-Syndicate%20Naga%22" target="_blank" rel="noopener">Mist-Syndicate Naga</a>
+                <span class="chip-role">Exponential self-cloning Ninja on Double Strike hits</span>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="ledger-group">
+            <div class="ledger-header">
+                <h3>P2: Win Inevitability & Compactness <span class="ledger-tier-tag tier-b">B</span></h3>
+                <span class="count-tag">6 cards</span>
+            </div>
+            <div class="card-grid">
+                
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Vorpal%20Sword&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Vorpal%20Sword%22" target="_blank" rel="noopener">Vorpal Sword</a>
+                <span class="chip-role">Instant player elimination on unblockable combat damage</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Akroma%27s%20Will&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Akroma%27s%20Will%22" target="_blank" rel="noopener">Akroma's Will</a>
+                <span class="chip-role">Team-wide Double Strike, Flying, Lifelink, and Protection finisher</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=True%20Conviction&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22True%20Conviction%22" target="_blank" rel="noopener">True Conviction</a>
+                <span class="chip-role">Permanent team-wide Double Strike and Lifelink</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Odric%2C%20Lunarch%20Marshal&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Odric%2C%20Lunarch%20Marshal%22" target="_blank" rel="noopener">Odric, Lunarch Marshal</a>
+                <span class="chip-role">Broadcasts Double Strike, Flying, and Deathtouch to all attackers</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Duelist%27s%20Heritage&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Duelist%27s%20Heritage%22" target="_blank" rel="noopener">Duelist's Heritage</a>
+                <span class="chip-role">Grants Double Strike alongside Jin Sakai's Ghost unblockable mode</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Yuriko%2C%20the%20Tiger%27s%20Shadow&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Yuriko%2C%20the%20Tiger%27s%20Shadow%22" target="_blank" rel="noopener">Yuriko, the Tiger's Shadow</a>
+                <span class="chip-role">Table-wide life drain on Ninja combat damage</span>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="ledger-group">
+            <div class="ledger-header">
+                <h3>R2: Card Flow & Replenishment <span class="ledger-tier-tag tier-a">A</span></h3>
+                <span class="count-tag">20 cards</span>
+            </div>
+            <div class="card-grid">
+                
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Jin%20Sakai%2C%20Ghost%20of%20Tsushima&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Jin%20Sakai%2C%20Ghost%20of%20Tsushima%22" target="_blank" rel="noopener">Jin Sakai, Ghost of Tsushima</a>
+                <span class="chip-role">Command-zone combat damage draw + Double Strike multiplier</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Tymna%20the%20Weaver&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Tymna%20the%20Weaver%22" target="_blank" rel="noopener">Tymna the Weaver</a>
+                <span class="chip-role">Draws up to 3 cards postcombat off split attacks</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Breena%2C%20the%20Demagogue&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Breena%2C%20the%20Demagogue%22" target="_blank" rel="noopener">Breena, the Demagogue</a>
+                <span class="chip-role">Attack draw engine and +1/+1 counter scaler</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Gix%2C%20Yawgmoth%20Praetor&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Gix%2C%20Yawgmoth%20Praetor%22" target="_blank" rel="noopener">Gix, Yawgmoth Praetor</a>
+                <span class="chip-role">Combat damage draw engine</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Reconnaissance%20Mission&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Reconnaissance%20Mission%22" target="_blank" rel="noopener">Reconnaissance Mission</a>
+                <span class="chip-role">Mass combat damage draw enchantment</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Bident%20of%20Thassa&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Bident%20of%20Thassa%22" target="_blank" rel="noopener">Bident of Thassa</a>
+                <span class="chip-role">Mass combat damage draw and forced opponent attack</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Enduring%20Curiosity&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Enduring%20Curiosity%22" target="_blank" rel="noopener">Enduring Curiosity</a>
+                <span class="chip-role">Flash resilient combat damage draw engine</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Baleful%20Strix&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Baleful%20Strix%22" target="_blank" rel="noopener">Baleful Strix</a>
+                <span class="chip-role">ETB cantrip and flying deathtouch body</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Satoru%2C%20the%20Infiltrator&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Satoru%2C%20the%20Infiltrator%22" target="_blank" rel="noopener">Satoru, the Infiltrator</a>
+                <span class="chip-role">Draws on every Ninjutsu arrival</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Malcolm%2C%20Alluring%20Scoundrel&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Malcolm%2C%20Alluring%20Scoundrel%22" target="_blank" rel="noopener">Malcolm, Alluring Scoundrel</a>
+                <span class="chip-role">Flash flying looter and free-spell engine</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Dimir%20Cutpurse&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Dimir%20Cutpurse%22" target="_blank" rel="noopener">Dimir Cutpurse</a>
+                <span class="chip-role">Saboteur draw + opponent discard</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Yuriko%2C%20the%20Tiger%27s%20Shadow&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Yuriko%2C%20the%20Tiger%27s%20Shadow%22" target="_blank" rel="noopener">Yuriko, the Tiger's Shadow</a>
+                <span class="chip-role">Ninja combat damage reveal draw and life drain</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Dragonlord%20Ojutai&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Dragonlord%20Ojutai%22" target="_blank" rel="noopener">Dragonlord Ojutai</a>
+                <span class="chip-role">Digs 3-6 cards deep on combat damage</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Daxos%20of%20Meletis&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Daxos%20of%20Meletis%22" target="_blank" rel="noopener">Daxos of Meletis</a>
+                <span class="chip-role">Exiles and casts top cards of opponents' libraries</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Thief%20of%20Sanity&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Thief%20of%20Sanity%22" target="_blank" rel="noopener">Thief of Sanity</a>
+                <span class="chip-role">Steals best spell from top 3 of opponent's library</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Gonti%2C%20Night%20Minister&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Gonti%2C%20Night%20Minister%22" target="_blank" rel="noopener">Gonti, Night Minister</a>
+                <span class="chip-role">Exiles cards from opponents' libraries on combat damage</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Nashi%2C%20Moon%20Sage%27s%20Scion&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Nashi%2C%20Moon%20Sage%27s%20Scion%22" target="_blank" rel="noopener">Nashi, Moon Sage's Scion</a>
+                <span class="chip-role">Exiles top card of all 4 libraries on hit</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Fallen%20Shinobi&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Fallen%20Shinobi%22" target="_blank" rel="noopener">Fallen Shinobi</a>
+                <span class="chip-role">Exiles and casts 2-4 opponent cards for free</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Kaito%2C%20Bane%20of%20Nightmares&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Kaito%2C%20Bane%20of%20Nightmares%22" target="_blank" rel="noopener">Kaito, Bane of Nightmares</a>
+                <span class="chip-role">Surveil + multi-card draw planeswalker</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Reliquary%20Tower&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Reliquary%20Tower%22" target="_blank" rel="noopener">Reliquary Tower</a>
+                <span class="chip-role">Unlimited hand size utility land</span>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="ledger-group">
+            <div class="ledger-header">
+                <h3>A1: Selection & Redundancy <span class="ledger-tier-tag tier-b">B</span></h3>
+                <span class="count-tag">6 cards</span>
+            </div>
+            <div class="card-grid">
+                
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Raffine%2C%20Scheming%20Seer&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Raffine%2C%20Scheming%20Seer%22" target="_blank" rel="noopener">Raffine, Scheming Seer</a>
+                <span class="chip-role">Connive card selection and redundant evasion/pump</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Kamiz%2C%20Obscura%20Oculus&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Kamiz%2C%20Obscura%20Oculus%22" target="_blank" rel="noopener">Kamiz, Obscura Oculus</a>
+                <span class="chip-role">Redundant command-zone unblockable + Double Strike engine</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Dragonlord%20Ojutai&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Dragonlord%20Ojutai%22" target="_blank" rel="noopener">Dragonlord Ojutai</a>
+                <span class="chip-role">Top-3 card selection on hit</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Malcolm%2C%20Alluring%20Scoundrel&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Malcolm%2C%20Alluring%20Scoundrel%22" target="_blank" rel="noopener">Malcolm, Alluring Scoundrel</a>
+                <span class="chip-role">Combat damage looting</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Kaito%2C%20Bane%20of%20Nightmares&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Kaito%2C%20Bane%20of%20Nightmares%22" target="_blank" rel="noopener">Kaito, Bane of Nightmares</a>
+                <span class="chip-role">Surveil 2 + draw selection</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Spark%20Double&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Spark%20Double%22" target="_blank" rel="noopener">Spark Double</a>
+                <span class="chip-role">Clones Jin Sakai or best Saboteur</span>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="ledger-group">
+            <div class="ledger-header">
+                <h3>P3: Exposure & Predictability <span class="ledger-tier-tag tier-b">B</span></h3>
+                <span class="count-tag">4 cards</span>
+            </div>
+            <div class="card-grid">
+                
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Jin%20Sakai%2C%20Ghost%20of%20Tsushima&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Jin%20Sakai%2C%20Ghost%20of%20Tsushima%22" target="_blank" rel="noopener">Jin Sakai, Ghost of Tsushima</a>
+                <span class="chip-role">Ghost mode bypasses opponent creature blockers</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Pippin%2C%20Guard%20of%20the%20Citadel&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Pippin%2C%20Guard%20of%20the%20Citadel%22" target="_blank" rel="noopener">Pippin, Guard of the Citadel</a>
+                <span class="chip-role">Protection from creatures bypasses blockers</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Mother%20of%20Runes&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Mother%20of%20Runes%22" target="_blank" rel="noopener">Mother of Runes</a>
+                <span class="chip-role">Color protection bypasses blockers</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Giver%20of%20Runes&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Giver%20of%20Runes%22" target="_blank" rel="noopener">Giver of Runes</a>
+                <span class="chip-role">Color/colorless protection bypasses blockers</span>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="ledger-group">
+            <div class="ledger-header">
+                <h3>I1: Reactive Disruption <span class="ledger-tier-tag tier-a">A</span></h3>
+                <span class="count-tag">11 cards</span>
+            </div>
+            <div class="card-grid">
+                
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Swords%20to%20Plowshares&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Swords%20to%20Plowshares%22" target="_blank" rel="noopener">Swords to Plowshares</a>
+                <span class="chip-role">1-mana instant creature exile</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Path%20to%20Exile&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Path%20to%20Exile%22" target="_blank" rel="noopener">Path to Exile</a>
+                <span class="chip-role">1-mana instant creature exile</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Counterspell&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Counterspell%22" target="_blank" rel="noopener">Counterspell</a>
+                <span class="chip-role">2-mana hard counterspell</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Dovin%27s%20Veto&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Dovin%27s%20Veto%22" target="_blank" rel="noopener">Dovin's Veto</a>
+                <span class="chip-role">2-mana uncounterable noncreature counterspell</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Drown%20in%20the%20Loch&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Drown%20in%20the%20Loch%22" target="_blank" rel="noopener">Drown in the Loch</a>
+                <span class="chip-role">Modal counterspell or creature removal</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Despark&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Despark%22" target="_blank" rel="noopener">Despark</a>
+                <span class="chip-role">2-mana instant exile for MV >= 4 permanents</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Anguished%20Unmaking&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Anguished%20Unmaking%22" target="_blank" rel="noopener">Anguished Unmaking</a>
+                <span class="chip-role">3-mana instant catch-all nonland exile</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Void%20Rend&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Void%20Rend%22" target="_blank" rel="noopener">Void Rend</a>
+                <span class="chip-role">3-mana uncounterable instant nonland destruction</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Toxic%20Deluge&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Toxic%20Deluge%22" target="_blank" rel="noopener">Toxic Deluge</a>
+                <span class="chip-role">3-mana scalable board wipe</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Damn&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Damn%22" target="_blank" rel="noopener">Damn</a>
+                <span class="chip-role">Spot removal or 4-mana board wipe</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Time%20Wipe&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Time%20Wipe%22" target="_blank" rel="noopener">Time Wipe</a>
+                <span class="chip-role">Bounces Jin Sakai before wiping all creatures</span>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="ledger-group">
+            <div class="ledger-header">
+                <h3>I2: Proactive Denial & Restriction <span class="ledger-tier-tag tier-b">B</span></h3>
+                <span class="count-tag">4 cards</span>
+            </div>
+            <div class="card-grid">
+                
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Cephalid%20Constable&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Cephalid%20Constable%22" target="_blank" rel="noopener">Cephalid Constable</a>
+                <span class="chip-role">Bounces 2-6+ opponent permanents/lands per Double Strike hit</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Dimir%20Cutpurse&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Dimir%20Cutpurse%22" target="_blank" rel="noopener">Dimir Cutpurse</a>
+                <span class="chip-role">Repeatable opponent hand discard on hit</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Boromir%2C%20Warden%20of%20the%20Tower&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Boromir%2C%20Warden%20of%20the%20Tower%22" target="_blank" rel="noopener">Boromir, Warden of the Tower</a>
+                <span class="chip-role">Counters opponents' 0-mana / free spells</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Bojuka%20Bog&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Bojuka%20Bog%22" target="_blank" rel="noopener">Bojuka Bog</a>
+                <span class="chip-role">ETB graveyard exile land</span>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="ledger-group">
+            <div class="ledger-header">
+                <h3>S1: Plan Shielding & Protection <span class="ledger-tier-tag tier-b">B</span></h3>
+                <span class="count-tag">5 cards</span>
+            </div>
+            <div class="card-grid">
+                
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Mother%20of%20Runes&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Mother%20of%20Runes%22" target="_blank" rel="noopener">Mother of Runes</a>
+                <span class="chip-role">Repeatable tap color protection</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Giver%20of%20Runes&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Giver%20of%20Runes%22" target="_blank" rel="noopener">Giver of Runes</a>
+                <span class="chip-role">Repeatable tap color/colorless protection</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Pippin%2C%20Guard%20of%20the%20Citadel&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Pippin%2C%20Guard%20of%20the%20Citadel%22" target="_blank" rel="noopener">Pippin, Guard of the Citadel</a>
+                <span class="chip-role">Repeatable tap card-type protection and Ward {1}</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Boromir%2C%20Warden%20of%20the%20Tower&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Boromir%2C%20Warden%20of%20the%20Tower%22" target="_blank" rel="noopener">Boromir, Warden of the Tower</a>
+                <span class="chip-role">Sacrifices to grant team-wide Indestructible</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Swiftfoot%20Boots&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Swiftfoot%20Boots%22" target="_blank" rel="noopener">Swiftfoot Boots</a>
+                <span class="chip-role">Hexproof and Haste equipment</span>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="ledger-group">
+            <div class="ledger-header">
+                <h3>S2: Engine Recovery <span class="ledger-tier-tag tier-b">B</span></h3>
+                <span class="count-tag">2 cards</span>
+            </div>
+            <div class="card-grid">
+                
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Enduring%20Curiosity&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Enduring%20Curiosity%22" target="_blank" rel="noopener">Enduring Curiosity</a>
+                <span class="chip-role">Returns as an enchantment after dying</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Time%20Wipe&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Time%20Wipe%22" target="_blank" rel="noopener">Time Wipe</a>
+                <span class="chip-role">Saves commander or key Saboteur to hand before wiping</span>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="ledger-group">
+            <div class="ledger-header">
+                <h3>S3: Independence & Backup Plans <span class="ledger-tier-tag tier-a">A</span></h3>
+                <span class="count-tag">5 cards</span>
+            </div>
+            <div class="card-grid">
+                
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Kamiz%2C%20Obscura%20Oculus&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Kamiz%2C%20Obscura%20Oculus%22" target="_blank" rel="noopener">Kamiz, Obscura Oculus</a>
+                <span class="chip-role">Standalone Esper unblockable + Double Strike commander in the 99</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Raffine%2C%20Scheming%20Seer&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Raffine%2C%20Scheming%20Seer%22" target="_blank" rel="noopener">Raffine, Scheming Seer</a>
+                <span class="chip-role">Standalone Esper connive scaling engine</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Tymna%20the%20Weaver&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Tymna%20the%20Weaver%22" target="_blank" rel="noopener">Tymna the Weaver</a>
+                <span class="chip-role">Standalone postcombat draw engine</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Yuriko%2C%20the%20Tiger%27s%20Shadow&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Yuriko%2C%20the%20Tiger%27s%20Shadow%22" target="_blank" rel="noopener">Yuriko, the Tiger's Shadow</a>
+                <span class="chip-role">Standalone Ninja draw and drain engine</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=True%20Conviction&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22True%20Conviction%22" target="_blank" rel="noopener">True Conviction</a>
+                <span class="chip-role">Standalone team-wide Double Strike and Lifelink anthem</span>
+            </div>
+            
+            </div>
+        </div>
+        
+        </div>
+    </div>
+
+    <script>
+        const preview = document.getElementById('card-preview');
+        document.querySelectorAll('.card-chip').forEach(chip => {
+            chip.addEventListener('mouseenter', e => {
+                const img = chip.getAttribute('data-img');
+                if (img) {
+                    preview.src = img;
+                    preview.style.display = 'block';
+                }
+            });
+            chip.addEventListener('mousemove', e => {
+                preview.style.left = (e.clientX + 15) + 'px';
+                preview.style.top = Math.min(e.clientY - 120, window.innerHeight - 350) + 'px';
+            });
+            chip.addEventListener('mouseleave', () => {
+                preview.style.display = 'none';
+            });
+        });
+    </script>
+</body>
+</html>
