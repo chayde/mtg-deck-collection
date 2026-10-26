@@ -1,0 +1,1288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DTI Report — ObekaSplitterOfSeconds</title>
+    <style>
+        :root {
+            --bg-base: #0f172a;
+            --bg-card: #1e293b;
+            --bg-hover: #334155;
+            --text-main: #f8fafc;
+            --text-sub: #94a3b8;
+            --border: #334155;
+            --accent: #10b981;
+            --s-color: #8b5cf6;
+            --a-color: #3b82f6;
+            --b-color: #10b981;
+            --c-color: #f59e0b;
+            --f-color: #ef4444;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-base);
+            color: var(--text-main);
+            padding: 24px;
+            line-height: 1.5;
+        }
+        .container { max-width: 1200px; margin: 0 auto; }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid var(--border);
+            padding-bottom: 20px;
+            margin-bottom: 24px;
+        }
+        h1 { font-size: 26px; font-weight: 700; }
+        .header-sub { color: var(--text-sub); font-size: 14px; margin-top: 4px; }
+        .bracket-badge {
+            background-color: var(--accent);
+            color: #0f172a;
+            font-weight: 800;
+            font-size: 20px;
+            padding: 8px 20px;
+            border-radius: 9999px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 16px;
+            margin-bottom: 24px;
+        }
+        .metric-card {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 18px;
+        }
+        .metric-title { font-size: 13px; color: var(--text-sub); text-transform: uppercase; letter-spacing: 0.5px; font-weight: 600; }
+        .metric-value { font-size: 32px; font-weight: 800; margin: 6px 0; }
+        .metric-sub { font-size: 12px; color: var(--text-sub); }
+        .progress-bar {
+            background: #0f172a;
+            height: 8px;
+            border-radius: 4px;
+            overflow: hidden;
+            margin-top: 8px;
+        }
+        .progress-fill {
+            height: 100%;
+            background: var(--accent);
+            border-radius: 4px;
+        }
+        .gates-banner {
+            background: var(--bg-card);
+            border-left: 4px solid var(--accent);
+            border-radius: 8px;
+            padding: 16px;
+            margin-bottom: 24px;
+        }
+        .gate-title { font-weight: 700; margin-bottom: 8px; }
+        .gate-item { font-size: 13px; margin: 4px 0; color: var(--text-sub); }
+        .gate-tag { font-weight: 700; padding: 2px 6px; border-radius: 4px; font-size: 11px; }
+        .tag-triggered { background: #ef4444; color: white; }
+        .tag-passed { background: #10b981; color: white; }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: var(--bg-card);
+            border-radius: 12px;
+            overflow: hidden;
+            margin-bottom: 32px;
+            border: 1px solid var(--border);
+        }
+        th, td { padding: 12px 16px; text-align: left; border-bottom: 1px solid var(--border); }
+        th { background: #1e293b; color: var(--text-sub); font-size: 12px; text-transform: uppercase; letter-spacing: 0.5px; }
+        tr:hover td { background: rgba(255, 255, 255, 0.02); }
+        .code-col { font-weight: 700; color: var(--text-sub); }
+        .tier-badge {
+            display: inline-block;
+            font-weight: 800;
+            font-size: 13px;
+            padding: 2px 10px;
+            border-radius: 6px;
+            text-align: center;
+        }
+        .tier-s { background: var(--s-color); color: white; }
+        .tier-a { background: var(--a-color); color: white; }
+        .tier-b { background: var(--b-color); color: white; }
+        .tier-c { background: var(--c-color); color: #0f172a; }
+        .tier-f { background: var(--f-color); color: white; }
+        .domain-sub { font-size: 11px; color: var(--text-sub); }
+        .just-col { font-size: 13px; color: #cbd5e1; }
+        .score-col { font-weight: 700; font-feature-settings: "tnum"; }
+
+        .ledger-section { margin-top: 32px; }
+        .ledger-group {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 16px;
+            margin-bottom: 16px;
+        }
+        .ledger-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 12px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid var(--border);
+        }
+        .ledger-header h3 { font-size: 16px; font-weight: 700; }
+        .count-tag { font-size: 12px; color: var(--text-sub); }
+        .card-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        .card-chip {
+            background: #0f172a;
+            border: 1px solid var(--border);
+            padding: 6px 12px;
+            border-radius: 8px;
+            font-size: 12px;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            position: relative;
+        }
+        .card-chip a {
+            color: var(--text-main);
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .card-chip a:hover { color: #38bdf8; }
+        .chip-role { font-size: 11px; color: var(--text-sub); }
+
+        /* Card Preview Hover Popup */
+        #card-preview {
+            position: fixed;
+            pointer-events: none;
+            display: none;
+            z-index: 1000;
+            width: 240px;
+            border-radius: 12px;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.5), 0 8px 10px -6px rgba(0, 0, 0, 0.5);
+            border: 2px solid #475569;
+        }
+
+        .deck-telemetry-banner {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 10px 16px;
+            margin-bottom: 20px;
+            font-size: 13px;
+            color: var(--text-sub);
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+        .deck-telemetry-banner strong { color: var(--text-main); }
+        .info-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 24px;
+        }
+        .info-card h3 {
+            font-size: 16px;
+            margin-bottom: 12px;
+            color: var(--text-main);
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 8px;
+        }
+        .primer-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        @media (max-width: 768px) {
+            .primer-grid { grid-template-columns: 1fr; }
+        }
+        .weakness-card {
+            background: #0f172a;
+            border-radius: 8px;
+            padding: 14px;
+            border-top: 3px solid #64748b;
+        }
+        .weakness-critical { border-top-color: #ef4444; }
+        .weakness-moderate { border-top-color: #f59e0b; }
+        .weakness-minor { border-top-color: #3b82f6; }
+        .weakness-list { list-style: none; margin-top: 8px; }
+        .weakness-list li { font-size: 13px; margin: 6px 0; color: #cbd5e1; }
+        .step-list { padding-left: 20px; font-size: 13px; color: #cbd5e1; line-height: 1.6; }
+        .step-list li { margin-bottom: 6px; }
+    </style>
+</head>
+<body>
+    <img id="card-preview" src="" alt="Card Preview" />
+    <div class="container">
+        <header>
+            <div>
+                <h1>ObekaSplitterOfSeconds</h1>
+                <div class="header-sub">DeckCheck Threat Index (DTI) Evaluation Report</div>
+            </div>
+            <div class="bracket-badge">BRACKET 3</div>
+        </header>
+
+        <div class='deck-telemetry-banner'><span>Archetype: <strong>Grixis Combat-Triggered Upkeep Multiplier, Monarch Courts & Initiative Value Engine</strong></span> · <span>Threat Onset: <strong>turn 6</strong></span> · <span>Engine Ready: <strong>turn 5</strong></span> · <span>Opponent Response Cycles: <strong>1</strong></span></div>
+
+        <div class="metrics-grid">
+            <div class="metric-card">
+                <div class="metric-title">Threat Score</div>
+                <div class="metric-value">40 <span style="font-size:16px;color:var(--text-sub);">/ 96</span></div>
+                <div class="metric-sub">Score Floor: Bracket 3</div>
+                <div class="progress-bar"><div class="progress-fill" style="width: 41.66666666666667%;"></div></div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-title">Velocity Vector</div>
+                <div class="metric-value">21 <span style="font-size:16px;color:var(--text-sub);">/ 48</span></div>
+                <div class="metric-sub">Clock & Assembly Speed (Gate at 28)</div>
+                <div class="progress-bar"><div class="progress-fill" style="width: 43.75%;"></div></div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-title">Suppression Vector</div>
+                <div class="metric-value">15 <span style="font-size:16px;color:var(--text-sub);">/ 40</span></div>
+                <div class="metric-sub">Denial, Tax & Stax Impact</div>
+                <div class="progress-bar"><div class="progress-fill" style="width: 37.5%;"></div></div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-title">Game Changers</div>
+                <div class="metric-value">1 <span style="font-size:16px;color:var(--text-sub);">/ 3</span></div>
+                <div class="metric-sub">WotC Statutory Limit Floor: B3</div>
+                <div class="progress-bar"><div class="progress-fill" style="width: 33.33333333333333%;"></div></div>
+            </div>
+        </div>
+
+        <div class="gates-banner">
+            <div class="gate-title">Gatekeeper Audit Results</div>
+            <div class="gate-item">
+                <span class="gate-tag tag-passed">
+                    PASSED
+                </span>
+                <strong>Velocity Gate:</strong> Vector 21/48 (Threshold: &ge; 28 mandates Bracket 4).
+            </div>
+            <div class="gate-item">
+                <span class="gate-tag tag-passed">
+                    PASSED
+                </span>
+                <strong>Early Finish Gate:</strong> Onset B, Completion A (Zero-untap or T1-5 table elimination mandates Bracket 4).
+            </div>
+            <div class="gate-item">
+                <span class="gate-tag tag-passed">
+                    PASSED
+                </span>
+                <strong>Suppression Gate:</strong> Proactive Restriction I2 is B (Severe attrition mandates Bracket 4).
+            </div>
+            <div class="gate-item">
+                <span class="gate-tag tag-passed">
+                    PASSED
+                </span>
+                <strong>cEDH Gate:</strong> Format ceiling clock with 0-untap kill (Peak vector: 21).
+            </div>
+        </div>
+
+        
+        <div class="info-card">
+            <h3>Tactical Overview</h3>
+            <p style="font-size: 14px; line-height: 1.6; color: #cbd5e1;">A Grixis (UBR) Inverted-Triangle upkeep-multiplier deck built around Obeka, Splitter of Seconds. The deck pairs unblockable/haste/double-strike combat enablers (Brotherhood Regalia, Winged Boots, Silent Arbiter, Lizard Blades, and the M13 Upkeep Ring trio) with 26 upkeep and time-counter payoffs (all 6 Grixis Monarch Courts, Rilsa Rael's Initiative/Undercity engine, Extravagant Replication, Mechanized Production, Bonehoard Dracosaur, Twilight Prophet, and Plargg and Nassari). Once Obeka connects in combat around Turn 5-6, she generates 2 to 8+ additional upkeep steps immediately after combat, compounding card advantage, life drain, and token production to close the game within 1 opponent response cycle.</p>
+        </div>
+        
+        
+        <div class="info-card">
+            <h3>Operational Primer & Strategy</h3>
+            <div class="primer-grid">
+                <div>
+                    <h4 style="font-size: 13px; text-transform: uppercase; color: var(--text-sub); margin-bottom: 8px;">Core Turn Strategy</h4>
+                    <ol class="step-list">
+                        <li>Turns 1-3 (Mana, Haste & Evasion Setup): Deploy 2-mana rocks (Sol Ring, Arcane Signet, Talismans, Nightscape Familiar) and pre-drop a haste or unblockable equipment/aura (Swiftfoot Boots, Lightning Greaves, Ring of Valkas, Brotherhood Regalia, Winged Boots, or Trailblazer's Boots) or suspend early spells (Ancestral Vision, Profane Tutor).</li><li>Turns 4-5 (Commander Deployment & First Upkeep Burst): Cast Obeka, Splitter of Seconds with haste or protection backup (Fierce Guardianship, Deflecting Swat, Slip Out the Back) alongside a premier upkeep engine (Rilsa Rael, Kingpin, a Monarch Court, As Foretold, or Bonehoard Dracosaur).</li><li>Turns 6-7 (Post-Combat Upkeep Avalanche): Connect with an unblockable or double-striking Obeka to trigger 3-8 additional upkeep steps immediately after combat—completing the entire Undercity dungeon in one turn, draining the table for 18+ life via Court of Ambition / Court of Ire / Creeping Bloodsucker / Twilight Prophet, or reaching 8 artifacts with Mechanized Production.</li>
+                    </ol>
+                </div>
+                <div>
+                    <h4 style="font-size: 13px; text-transform: uppercase; color: var(--text-sub); margin-bottom: 8px;">Mulligan Priorities</h4>
+                    <div style="font-size: 13px; color: #cbd5e1; margin-bottom: 14px; line-height: 1.5;">
+                        <p style='margin-bottom: 6px;'><strong>Keep:</strong> Hands with 3+ lands covering {U}{B}{R}, at least 1 two-mana ramp piece, and 1 haste/evasion enabler or low-curve upkeep engine.</p><p><strong>Avoid:</strong> 2-land hands without a 2-mana rock (the 35-land baseline can stall on Turn 4 land drops) or top-heavy hands overloaded with 5-7 CMC upkeep payoffs and no evasion for Obeka.</p>
+                    </div>
+                    <h4 style="font-size: 13px; text-transform: uppercase; color: var(--text-sub); margin-bottom: 8px;">Tactical Tips</h4><ul class="step-list" style="list-style: disc;"><li>Silent Arbiter makes Obeka 100% unblockable because Obeka has native Menace (cannot be blocked except by 2+ creatures) while Silent Arbiter limits blockers to at most 1 creature.</li><li>Sequence your M13 Rings (Ring of Valkas, Ring of Xathrid, Ring of Evos Isle) before attaching Shroud equipment (Lightning Greaves or Whispersilk Cloak); Obeka is all three colors (UBR), so every Ring puts a +1/+1 counter on her during every post-combat upkeep.</li><li>Alexios, Deimos of Kosmos triggers on EVERY player's upkeep—meaning after Alexios and Obeka attack on your turn, your post-combat extra upkeeps untap Alexios and stack multiple +1/+1 counters on him before passing to the next opponent.</li></ul>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="info-card">
+            <h3>Strategic Weaknesses & Interaction Exploits</h3>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px;">
+                <div class="weakness-card weakness-critical">
+                    <h4 style="font-size: 13px; color: #ef4444; text-transform: uppercase;">Critical Vulnerabilities</h4>
+                    <ul class="weakness-list"><li>Commander Removal Prior to Combat Damage: Nearly all explosive turns require Obeka to deal combat damage to a player; instant-speed removal or edicts before the combat damage step cut off the extra upkeep chain.</li><li>35-Land Baseline Bottleneck & Filter Signet Friction: Running 35 lands with a 4-CMC 3-color commander and equipment equip costs creates occasional Turn 4-5 mana/color stalls (18.8% of seats delayed past Turn 5 in Goldfish testing).</li></ul>
+                </div>
+                <div class="weakness-card weakness-moderate">
+                    <h4 style="font-size: 13px; color: #f59e0b; text-transform: uppercase;">Moderate Friction Points</h4>
+                    <ul class="weakness-list"><li>Shroud Self-Targeting Conflict: Attaching Whispersilk Cloak or Lightning Greaves prevents you from equipping additional Rings, Lizard Blades, or Aqueous Form onto Obeka unless a second creature is available to temporarily hold the Shroud equipment.</li><li>Fog / Maze of Ith Effects: Preventing Obeka's combat damage (without destroying her) neutralizes her upkeep trigger for the turn.</li></ul>
+                </div>
+                <div class="weakness-card weakness-minor">
+                    <h4 style="font-size: 13px; color: #3b82f6; text-transform: uppercase;">Minor Weaknesses</h4>
+                    <ul class="weakness-list"><li>Monarch / Initiative Theft by Flying Swarm Decks: If Silent Arbiter is not on the battlefield, evasive token decks can steal the Monarch or Initiative crown before your turn, halving the output of your Courts.</li></ul>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="info-card">
+            <h3>Key Engine Anchors</h3>
+            <div class="card-grid">
+                
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Obeka%2C%20Splitter%20of%20Seconds&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Obeka%2C%20Splitter%20of%20Seconds%22" target="_blank" rel="noopener">Obeka, Splitter of Seconds</a>
+                <span class="chip-role">Command-zone upkeep multiplier; grants X additional upkeep steps immediately after combat equal to combat damage dealt.</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Rilsa%20Rael%2C%20Kingpin&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Rilsa%20Rael%2C%20Kingpin%22" target="_blank" rel="noopener">Rilsa Rael, Kingpin</a>
+                <span class="chip-role">Introduces the Initiative (Undercity ventures on every upkeep); 4 upkeeps complete the entire Undercity in one combat, then Rilsa grants Obeka +5/+0, first strike, menace, and deathtouch.</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Silent%20Arbiter&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Silent%20Arbiter%22" target="_blank" rel="noopener">Silent Arbiter</a>
+                <span class="chip-role">Combines with Obeka's native Menace to make Obeka 100% unblockable while preventing opponents from attacking with more than 1 creature to steal Monarch/Initiative.</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Lizard%20Blades&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Lizard%20Blades%22" target="_blank" rel="noopener">Lizard Blades</a>
+                <span class="chip-role">Grants Double Strike, splitting Obeka's damage across First Strike and Regular Combat Damage steps to double her post-combat upkeep triggers.</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Ring%20of%20Valkas&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Ring%20of%20Valkas%22" target="_blank" rel="noopener">Ring of Valkas</a>
+                <span class="chip-role">Grants Haste and puts a +1/+1 counter on Obeka at the start of every upkeep step, compounding her power mid-turn.</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Court%20of%20Vantress&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Court%20of%20Vantress%22" target="_blank" rel="noopener">Court of Vantress</a>
+                <span class="chip-role">Introduces Monarch and creates token copies of your best artifacts or enchantments (Paradox Haze, other Courts, or Rings) on every upkeep.</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Court%20of%20Ambition&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Court%20of%20Ambition%22" target="_blank" rel="noopener">Court of Ambition</a>
+                <span class="chip-role">Forces each opponent to discard 2 cards or lose 6 life on every upkeep while you are the Monarch.</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Bonehoard%20Dracosaur&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Bonehoard%20Dracosaur%22" target="_blank" rel="noopener">Bonehoard Dracosaur</a>
+                <span class="chip-role">Exiles 2 cards per upkeep to play and generates 3/1 Dinosaurs and Treasure tokens across every post-combat upkeep.</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Fierce%20Guardianship&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Fierce%20Guardianship%22" target="_blank" rel="noopener">Fierce Guardianship</a>
+                <span class="chip-role">Sole Game Changer (1/3); free counterspell to protect Obeka during the critical combat step.</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Deflecting%20Swat&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Deflecting%20Swat%22" target="_blank" rel="noopener">Deflecting Swat</a>
+                <span class="chip-role">Free redirection shield to turn opposing targeted removal away from Obeka.</span>
+            </div>
+            
+            </div>
+        </div>
+        
+
+        <h2 style="margin-bottom: 16px; font-size: 20px;">12 Universal Benchmarks</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th style="width: 50px;">Code</th>
+                    <th style="width: 240px;">Benchmark</th>
+                    <th style="width: 60px;">Tier</th>
+                    <th style="width: 80px;">Points</th>
+                    <th style="width: 60px;">Cards</th>
+                    <th>Contextual Evaluation & Rationale</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+        <tr>
+            <td class="code-col"><strong>R1</strong></td>
+            <td><strong>Mana Velocity & Sufficiency</strong><br><span class="domain-sub">Resources</span></td>
+            <td class="tier-col"><span class="tier-badge tier-a">A</span></td>
+            <td class="score-col">5 / 10</td>
+            <td class="ledger-count-col">39</td>
+            <td class="just-col">Runs 10 early mana accelerators (Sol Ring, Arcane Signet, 3 Talismans, 3 Signets, Nightscape Familiar, Replicating Ring) plus explosive upkeep mana engines (As Foretold, Bonehoard Dracosaur, Generous Plunderer, Rousing Refrain). Achieves a Turn 4.7 average commander cast across 80 goldfish seats, slightly tempered by a 35-land baseline.</td>
+        </tr>
+        
+        <tr>
+            <td class="code-col"><strong>A2</strong></td>
+            <td><strong>Assembly Velocity</strong><br><span class="domain-sub">Access</span></td>
+            <td class="tier-col"><span class="tier-badge tier-a">A</span></td>
+            <td class="score-col">5 / 10</td>
+            <td class="ledger-count-col">6</td>
+            <td class="just-col">86% of goldfish seats reach full Bracket 3 Engine Readiness by Turn <=7 with an average Engine Readiness of Turn 5.1 (37 of 80 seats ready by Turn 3-4).</td>
+        </tr>
+        
+        <tr>
+            <td class="code-col"><strong>P1</strong></td>
+            <td><strong>Critical Onset & Lethality</strong><br><span class="domain-sub">Pressure</span></td>
+            <td class="tier-col"><span class="tier-badge tier-b">B</span></td>
+            <td class="score-col">2 / 10</td>
+            <td class="ledger-count-col">10</td>
+            <td class="just-col">Critical threat onset occurs on Turn 6 (Tier B): after deploying a rock/enabler on Turns 2-3, Obeka on Turn 4, and a 4-6 CMC payoff (Court, Dracosaur, Rilsa Rael, Extravagant Replication) on Turn 5, the first decisive multi-upkeep combat burst hits on Turn 5-6.</td>
+        </tr>
+        
+        <tr>
+            <td class="code-col"><strong>P2</strong></td>
+            <td><strong>Win Inevitability & Compactness</strong><br><span class="domain-sub">Pressure</span></td>
+            <td class="tier-col"><span class="tier-badge tier-a">A</span></td>
+            <td class="score-col">5 / 10</td>
+            <td class="ledger-count-col">6</td>
+            <td class="just-col">High win compactness (1 opponent response cycle, Tier A): a single unblocked or double-striking combat hit with Obeka + a Court/Initiative/Ring engine generates 4-8 upkeeps in one post-combat phase, overwhelming or eliminating the table on the following turn.</td>
+        </tr>
+        
+        <tr>
+            <td class="code-col"><strong>R2</strong></td>
+            <td><strong>Card Flow & Replenishment</strong><br><span class="domain-sub">Resources</span></td>
+            <td class="tier-col"><span class="tier-badge tier-a">A</span></td>
+            <td class="score-col">4 / 8</td>
+            <td class="ledger-count-col">15</td>
+            <td class="just-col">Massive compounding card flow once Obeka or the Monarch Courts stick: Bonehoard Dracosaur, Twilight Prophet, Plargg and Nassari, Phyrexian Arena, Indulgent Tormentor, Scrawling Crawler, Ancestral Vision, Inspiring Refrain, and 6 Monarch Courts generate 4-8+ cards per combat connection.</td>
+        </tr>
+        
+        <tr>
+            <td class="code-col"><strong>A1</strong></td>
+            <td><strong>Selection & Redundancy</strong><br><span class="domain-sub">Access</span></td>
+            <td class="tier-col"><span class="tier-badge tier-a">A</span></td>
+            <td class="score-col">4 / 8</td>
+            <td class="ledger-count-col">6</td>
+            <td class="just-col">High functional redundancy across both core pillars: 12 evasion/haste enablers and 26 upkeep/time-counter payoffs ensure consistent pairing, supported by Profane Tutor (which resolves immediately after combat when Obeka generates 2+ upkeeps).</td>
+        </tr>
+        
+        <tr>
+            <td class="code-col"><strong>P3</strong></td>
+            <td><strong>Exposure & Predictability</strong><br><span class="domain-sub">Pressure</span></td>
+            <td class="tier-col"><span class="tier-badge tier-b">B</span></td>
+            <td class="score-col">2 / 8</td>
+            <td class="ledger-count-col">8</td>
+            <td class="just-col">Requires Obeka to attack and deal combat damage to a player (Tier B), telegraphing the engine on the battlefield and giving opponents a combat window to interact.</td>
+        </tr>
+        
+        <tr>
+            <td class="code-col"><strong>I1</strong></td>
+            <td><strong>Reactive Disruption</strong><br><span class="domain-sub">Interaction</span></td>
+            <td class="tier-col"><span class="tier-badge tier-a">A</span></td>
+            <td class="score-col">4 / 8</td>
+            <td class="ledger-count-col">11</td>
+            <td class="just-col">Strong Grixis reactive suite featuring free commander stack shields (Fierce Guardianship, Deflecting Swat), efficient 1-2 mana countermagic (An Offer You Can't Refuse, Counterspell, Arcane Denial, Slip Out the Back), spot removal (Terminate, Chaos Warp, Feed the Swarm, Suspended Sentence), and premier sweepers (Toxic Deluge, Blasphemous Act).</td>
+        </tr>
+        
+        <tr>
+            <td class="code-col"><strong>I2</strong></td>
+            <td><strong>Proactive Denial & Restriction</strong><br><span class="domain-sub">Interaction</span></td>
+            <td class="tier-col"><span class="tier-badge tier-b">B</span></td>
+            <td class="score-col">2 / 8</td>
+            <td class="ledger-count-col">5</td>
+            <td class="just-col">Deploys Silent Arbiter to lock combat down to 1 creature per side alongside discard/life-tax punisher engines (Court of Ambition, Indulgent Tormentor, Scrawling Crawler), with zero hard stax locks or Mass Land Denial.</td>
+        </tr>
+        
+        <tr>
+            <td class="code-col"><strong>S1</strong></td>
+            <td><strong>Plan Shielding & Protection</strong><br><span class="domain-sub">Resilience</span></td>
+            <td class="tier-col"><span class="tier-badge tier-a">A</span></td>
+            <td class="score-col">4 / 8</td>
+            <td class="ledger-count-col">10</td>
+            <td class="just-col">Comprehensive multi-layered commander protection: Fierce Guardianship, Deflecting Swat, Slip Out the Back, Winged Boots (Ward 4), Brotherhood Regalia (Ward 2), Swiftfoot Boots (Hexproof), Lightning Greaves (Shroud), Whispersilk Cloak (Shroud), Ring of Evos Isle (Hexproof), and Ring of Xathrid (Regenerate).</td>
+        </tr>
+        
+        <tr>
+            <td class="code-col"><strong>S2</strong></td>
+            <td><strong>Engine Recovery</strong><br><span class="domain-sub">Resilience</span></td>
+            <td class="tier-col"><span class="tier-badge tier-b">B</span></td>
+            <td class="score-col">1 / 4</td>
+            <td class="ledger-count-col">2</td>
+            <td class="just-col">Palace Siege (Khans mode) returns creatures from graveyard to hand on every upkeep and noncreature Courts/Rings persist through creature wipes, though the deck lacks mass reanimation.</td>
+        </tr>
+        
+        <tr>
+            <td class="code-col"><strong>S3</strong></td>
+            <td><strong>Independence & Backup Plans</strong><br><span class="domain-sub">Resilience</span></td>
+            <td class="tier-col"><span class="tier-badge tier-a">A</span></td>
+            <td class="score-col">2 / 4</td>
+            <td class="ledger-count-col">6</td>
+            <td class="just-col">Six Monarch Courts, Paradox Haze, Extravagant Replication, Bonehoard Dracosaur, Skyline Despot, Twilight Prophet, Plargg and Nassari, and Alexios, Deimos of Kosmos accrue compounding value on natural upkeeps even if Obeka is taxed out of the game.</td>
+        </tr>
+        
+            </tbody>
+        </table>
+
+        <div class="ledger-section">
+            <h2 style="margin-bottom: 16px; font-size: 20px;">The Card Ledger</h2>
+            
+        <div class="ledger-group">
+            <div class="ledger-header">
+                <h3>R1: Mana Velocity & Sufficiency <span class="ledger-tier-tag tier-a">A</span></h3>
+                <span class="count-tag">39 cards</span>
+            </div>
+            <div class="card-grid">
+                
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Sol%20Ring&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Sol%20Ring%22" target="_blank" rel="noopener">Sol Ring</a>
+                <span class="chip-role">Turn 1 fast mana rock (+2 colorless)</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Arcane%20Signet&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Arcane%20Signet%22" target="_blank" rel="noopener">Arcane Signet</a>
+                <span class="chip-role">2-CMC untapped rainbow mana rock</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Talisman%20of%20Dominance&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Talisman%20of%20Dominance%22" target="_blank" rel="noopener">Talisman of Dominance</a>
+                <span class="chip-role">2-CMC untapped {U}/{B} mana rock</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Talisman%20of%20Indulgence&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Talisman%20of%20Indulgence%22" target="_blank" rel="noopener">Talisman of Indulgence</a>
+                <span class="chip-role">2-CMC untapped {B}/{R} mana rock</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Talisman%20of%20Creativity&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Talisman%20of%20Creativity%22" target="_blank" rel="noopener">Talisman of Creativity</a>
+                <span class="chip-role">2-CMC untapped {U}/{R} mana rock</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Dimir%20Signet&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Dimir%20Signet%22" target="_blank" rel="noopener">Dimir Signet</a>
+                <span class="chip-role">2-CMC filter mana rock (flagged for upgrade)</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Izzet%20Signet&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Izzet%20Signet%22" target="_blank" rel="noopener">Izzet Signet</a>
+                <span class="chip-role">2-CMC filter mana rock (flagged for upgrade)</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Rakdos%20Signet&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Rakdos%20Signet%22" target="_blank" rel="noopener">Rakdos Signet</a>
+                <span class="chip-role">2-CMC filter mana rock (flagged for upgrade)</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Nightscape%20Familiar&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Nightscape%20Familiar%22" target="_blank" rel="noopener">Nightscape Familiar</a>
+                <span class="chip-role">Reduces Blue and Red spells (including Obeka) by {1}</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Replicating%20Ring&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Replicating%20Ring%22" target="_blank" rel="noopener">Replicating Ring</a>
+                <span class="chip-role">3-CMC rainbow rock that bursts into 8 mana rocks after 8 upkeeps</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=As%20Foretold&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22As%20Foretold%22" target="_blank" rel="noopener">As Foretold</a>
+                <span class="chip-role">Scales time counters on every upkeep to cast spells for {0}</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Generous%20Plunderer&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Generous%20Plunderer%22" target="_blank" rel="noopener">Generous Plunderer</a>
+                <span class="chip-role">Generates a Treasure token on every upkeep step</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Rousing%20Refrain&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Rousing%20Refrain%22" target="_blank" rel="noopener">Rousing Refrain</a>
+                <span class="chip-role">Repeatable Suspend ritual adding {R} equal to an opponent's hand size every 3 upkeeps</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Bonehoard%20Dracosaur&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Bonehoard%20Dracosaur%22" target="_blank" rel="noopener">Bonehoard Dracosaur</a>
+                <span class="chip-role">Generates Treasure tokens on every upkeep when exiling nonland cards</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Watery%20Grave&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Watery%20Grave%22" target="_blank" rel="noopener">Watery Grave</a>
+                <span class="chip-role">Fetchable untapped UB shockland</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Steam%20Vents&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Steam%20Vents%22" target="_blank" rel="noopener">Steam Vents</a>
+                <span class="chip-role">Fetchable untapped UR shockland</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Blood%20Crypt&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Blood%20Crypt%22" target="_blank" rel="noopener">Blood Crypt</a>
+                <span class="chip-role">Fetchable untapped BR shockland</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Polluted%20Delta&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Polluted%20Delta%22" target="_blank" rel="noopener">Polluted Delta</a>
+                <span class="chip-role">UB fetchland fixing all 3 colors via shocklands/triome</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Bloodstained%20Mire&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Bloodstained%20Mire%22" target="_blank" rel="noopener">Bloodstained Mire</a>
+                <span class="chip-role">BR fetchland fixing all 3 colors via shocklands/triome</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Morphic%20Pool&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Morphic%20Pool%22" target="_blank" rel="noopener">Morphic Pool</a>
+                <span class="chip-role">Untapped multiplayer UB crowd land</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Training%20Center&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Training%20Center%22" target="_blank" rel="noopener">Training Center</a>
+                <span class="chip-role">Untapped multiplayer UR crowd land</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Luxury%20Suite&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Luxury%20Suite%22" target="_blank" rel="noopener">Luxury Suite</a>
+                <span class="chip-role">Untapped multiplayer BR crowd land</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Command%20Tower&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Command%20Tower%22" target="_blank" rel="noopener">Command Tower</a>
+                <span class="chip-role">Untapped Grixis rainbow land</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Exotic%20Orchard&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Exotic%20Orchard%22" target="_blank" rel="noopener">Exotic Orchard</a>
+                <span class="chip-role">Untapped multiplayer rainbow land</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Xander%27s%20Lounge&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Xander%27s%20Lounge%22" target="_blank" rel="noopener">Xander's Lounge</a>
+                <span class="chip-role">Fetchable Grixis cycling triome</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Shivan%20Reef&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Shivan%20Reef%22" target="_blank" rel="noopener">Shivan Reef</a>
+                <span class="chip-role">Untapped UR painland</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Sulfurous%20Springs&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Sulfurous%20Springs%22" target="_blank" rel="noopener">Sulfurous Springs</a>
+                <span class="chip-role">Untapped BR painland</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Shipwreck%20Marsh&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Shipwreck%20Marsh%22" target="_blank" rel="noopener">Shipwreck Marsh</a>
+                <span class="chip-role">UB slowland</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Stormcarved%20Coast&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Stormcarved%20Coast%22" target="_blank" rel="noopener">Stormcarved Coast</a>
+                <span class="chip-role">UR slowland</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Drowned%20Catacomb&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Drowned%20Catacomb%22" target="_blank" rel="noopener">Drowned Catacomb</a>
+                <span class="chip-role">UB checkland</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Sulfur%20Falls&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Sulfur%20Falls%22" target="_blank" rel="noopener">Sulfur Falls</a>
+                <span class="chip-role">UR checkland</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Dragonskull%20Summit&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Dragonskull%20Summit%22" target="_blank" rel="noopener">Dragonskull Summit</a>
+                <span class="chip-role">BR checkland</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Sunken%20Hollow&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Sunken%20Hollow%22" target="_blank" rel="noopener">Sunken Hollow</a>
+                <span class="chip-role">Fetchable UB tango land</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Crumbling%20Necropolis&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Crumbling%20Necropolis%22" target="_blank" rel="noopener">Crumbling Necropolis</a>
+                <span class="chip-role">Tapped Grixis tri-land</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Reliquary%20Tower&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Reliquary%20Tower%22" target="_blank" rel="noopener">Reliquary Tower</a>
+                <span class="chip-role">Unlimited hand size utility land</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Rogue%27s%20Passage&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Rogue%27s%20Passage%22" target="_blank" rel="noopener">Rogue's Passage</a>
+                <span class="chip-role">Unblockable utility land</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Island&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Island%22" target="_blank" rel="noopener">Island</a>
+                <span class="chip-role">Basic Island (5x)</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Swamp&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Swamp%22" target="_blank" rel="noopener">Swamp</a>
+                <span class="chip-role">Basic Swamp (4x)</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Mountain&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Mountain%22" target="_blank" rel="noopener">Mountain</a>
+                <span class="chip-role">Basic Mountain (4x)</span>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="ledger-group">
+            <div class="ledger-header">
+                <h3>A2: Assembly Velocity <span class="ledger-tier-tag tier-a">A</span></h3>
+                <span class="count-tag">6 cards</span>
+            </div>
+            <div class="card-grid">
+                
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Obeka%2C%20Splitter%20of%20Seconds&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Obeka%2C%20Splitter%20of%20Seconds%22" target="_blank" rel="noopener">Obeka, Splitter of Seconds</a>
+                <span class="chip-role">4-CMC command-zone engine converting combat damage into immediate post-combat upkeeps</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Ring%20of%20Valkas&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Ring%20of%20Valkas%22" target="_blank" rel="noopener">Ring of Valkas</a>
+                <span class="chip-role">Grants Haste and scales Obeka's power by +1/+1 each upkeep</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Swiftfoot%20Boots&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Swiftfoot%20Boots%22" target="_blank" rel="noopener">Swiftfoot Boots</a>
+                <span class="chip-role">Grants Haste and Hexproof for immediate Turn 4-5 Obeka swings</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Lightning%20Greaves&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Lightning%20Greaves%22" target="_blank" rel="noopener">Lightning Greaves</a>
+                <span class="chip-role">0-equip Haste and Shroud enabler</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Jhoira%20of%20the%20Ghitu&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Jhoira%20of%20the%20Ghitu%22" target="_blank" rel="noopener">Jhoira of the Ghitu</a>
+                <span class="chip-role">Suspends high-CMC payoffs for {2} so Obeka's upkeeps cast them for free</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=As%20Foretold&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22As%20Foretold%22" target="_blank" rel="noopener">As Foretold</a>
+                <span class="chip-role">Rapidly reaches 4-6 time counters in a single Obeka combat to cast spells for {0}</span>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="ledger-group">
+            <div class="ledger-header">
+                <h3>P1: Critical Onset & Lethality <span class="ledger-tier-tag tier-b">B</span></h3>
+                <span class="count-tag">10 cards</span>
+            </div>
+            <div class="card-grid">
+                
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Obeka%2C%20Splitter%20of%20Seconds&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Obeka%2C%20Splitter%20of%20Seconds%22" target="_blank" rel="noopener">Obeka, Splitter of Seconds</a>
+                <span class="chip-role">Primary combat catalyst triggering 2-8+ additional upkeeps per hit</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Lizard%20Blades&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Lizard%20Blades%22" target="_blank" rel="noopener">Lizard Blades</a>
+                <span class="chip-role">Double strike doubles Obeka's damage and triggers two separate batches of extra upkeeps</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Rilsa%20Rael%2C%20Kingpin&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Rilsa%20Rael%2C%20Kingpin%22" target="_blank" rel="noopener">Rilsa Rael, Kingpin</a>
+                <span class="chip-role">Completes Undercity in 1 combat and buffs Obeka by +5/+0 with first strike</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Court%20of%20Embereth&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Court%20of%20Embereth%22" target="_blank" rel="noopener">Court of Embereth</a>
+                <span class="chip-role">Creates 3/1 Knights and deals X damage to each opponent every upkeep</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Court%20of%20Ambition&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Court%20of%20Ambition%22" target="_blank" rel="noopener">Court of Ambition</a>
+                <span class="chip-role">Drains each opponent for 6 life (or 2 discards) every upkeep</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Court%20of%20Ire&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Court%20of%20Ire%22" target="_blank" rel="noopener">Court of Ire</a>
+                <span class="chip-role">Deals 7 damage to any target every upkeep while Monarch</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Twilight%20Prophet&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Twilight%20Prophet%22" target="_blank" rel="noopener">Twilight Prophet</a>
+                <span class="chip-role">Drains each opponent for revealed card's mana value every upkeep</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Creeping%20Bloodsucker&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Creeping%20Bloodsucker%22" target="_blank" rel="noopener">Creeping Bloodsucker</a>
+                <span class="chip-role">Drains each opponent for 1 and gains 3 life on every upkeep</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Palace%20Siege&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Palace%20Siege%22" target="_blank" rel="noopener">Palace Siege</a>
+                <span class="chip-role">Drains each opponent for 2 life on every upkeep (Dragons mode)</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Alexios%2C%20Deimos%20of%20Kosmos&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Alexios%2C%20Deimos%20of%20Kosmos%22" target="_blank" rel="noopener">Alexios, Deimos of Kosmos</a>
+                <span class="chip-role">Untaps and grows by +1/+1 on every post-combat upkeep before attacking every opponent's turn</span>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="ledger-group">
+            <div class="ledger-header">
+                <h3>P2: Win Inevitability & Compactness <span class="ledger-tier-tag tier-a">A</span></h3>
+                <span class="count-tag">6 cards</span>
+            </div>
+            <div class="card-grid">
+                
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Mechanized%20Production&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Mechanized%20Production%22" target="_blank" rel="noopener">Mechanized Production</a>
+                <span class="chip-role">Clones an artifact every upkeep and wins the game outright at 8 identical artifacts (e.g. Treasures or Replicated Rings)</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Extravagant%20Replication&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Extravagant%20Replication%22" target="_blank" rel="noopener">Extravagant Replication</a>
+                <span class="chip-role">Compounds Courts, Paradox Haze, or Bonehoard Dracosaur every upkeep</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Skyline%20Despot&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Skyline%20Despot%22" target="_blank" rel="noopener">Skyline Despot</a>
+                <span class="chip-role">Creates a 5/5 flying Dragon token on every upkeep while Monarch</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Dragonmaster%20Outcast&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Dragonmaster%20Outcast%22" target="_blank" rel="noopener">Dragonmaster Outcast</a>
+                <span class="chip-role">Creates a 5/5 flying Dragon token on every upkeep at 6+ lands</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Ring%20of%20Xathrid&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Ring%20of%20Xathrid%22" target="_blank" rel="noopener">Ring of Xathrid</a>
+                <span class="chip-role">Scales Obeka by +1/+1 on every upkeep</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Ring%20of%20Evos%20Isle&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Ring%20of%20Evos%20Isle%22" target="_blank" rel="noopener">Ring of Evos Isle</a>
+                <span class="chip-role">Scales Obeka by +1/+1 on every upkeep</span>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="ledger-group">
+            <div class="ledger-header">
+                <h3>R2: Card Flow & Replenishment <span class="ledger-tier-tag tier-a">A</span></h3>
+                <span class="count-tag">15 cards</span>
+            </div>
+            <div class="card-grid">
+                
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Bonehoard%20Dracosaur&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Bonehoard%20Dracosaur%22" target="_blank" rel="noopener">Bonehoard Dracosaur</a>
+                <span class="chip-role">Exiles 2 playable cards per upkeep step</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Twilight%20Prophet&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Twilight%20Prophet%22" target="_blank" rel="noopener">Twilight Prophet</a>
+                <span class="chip-role">Reveals and draws a card per upkeep with Ascend while draining table</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Plargg%20and%20Nassari&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Plargg%20and%20Nassari%22" target="_blank" rel="noopener">Plargg and Nassari</a>
+                <span class="chip-role">Exiles and casts up to 2 free nonland spells per upkeep</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Phyrexian%20Arena&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Phyrexian%20Arena%22" target="_blank" rel="noopener">Phyrexian Arena</a>
+                <span class="chip-role">Draws 1 card for 1 life on every upkeep step</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Scrawling%20Crawler&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Scrawling%20Crawler%22" target="_blank" rel="noopener">Scrawling Crawler</a>
+                <span class="chip-role">Draws 1 card per upkeep while pinging opponents</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Indulgent%20Tormentor&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Indulgent%20Tormentor%22" target="_blank" rel="noopener">Indulgent Tormentor</a>
+                <span class="chip-role">Draws 1 card per upkeep unless opponent sacrifices a creature or pays 3 life</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Ancestral%20Vision&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Ancestral%20Vision%22" target="_blank" rel="noopener">Ancestral Vision</a>
+                <span class="chip-role">Suspend 4—{U} draw 3 cards; resolves in 1 combat hit with Obeka</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Inspiring%20Refrain&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Inspiring%20Refrain%22" target="_blank" rel="noopener">Inspiring Refrain</a>
+                <span class="chip-role">Repeatable Suspend 3 draw-2 engine that re-suspends itself forever</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Court%20of%20Locthwain&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Court%20of%20Locthwain%22" target="_blank" rel="noopener">Court of Locthwain</a>
+                <span class="chip-role">Introduces Monarch and exiles/casts opponents' cards for free every upkeep</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Court%20of%20Vantress&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Court%20of%20Vantress%22" target="_blank" rel="noopener">Court of Vantress</a>
+                <span class="chip-role">Introduces Monarch and clones draw/upkeep artifacts & enchantments</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Court%20of%20Ambition&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Court%20of%20Ambition%22" target="_blank" rel="noopener">Court of Ambition</a>
+                <span class="chip-role">Introduces Monarch end-step draw</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Court%20of%20Embereth&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Court%20of%20Embereth%22" target="_blank" rel="noopener">Court of Embereth</a>
+                <span class="chip-role">Introduces Monarch end-step draw</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Court%20of%20Ire&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Court%20of%20Ire%22" target="_blank" rel="noopener">Court of Ire</a>
+                <span class="chip-role">Introduces Monarch end-step draw</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Court%20of%20Cunning&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Court%20of%20Cunning%22" target="_blank" rel="noopener">Court of Cunning</a>
+                <span class="chip-role">Introduces Monarch end-step draw</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Skyline%20Despot&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Skyline%20Despot%22" target="_blank" rel="noopener">Skyline Despot</a>
+                <span class="chip-role">Introduces Monarch end-step draw</span>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="ledger-group">
+            <div class="ledger-header">
+                <h3>A1: Selection & Redundancy <span class="ledger-tier-tag tier-a">A</span></h3>
+                <span class="count-tag">6 cards</span>
+            </div>
+            <div class="card-grid">
+                
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Profane%20Tutor&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Profane%20Tutor%22" target="_blank" rel="noopener">Profane Tutor</a>
+                <span class="chip-role">Suspend 2 unconditional tutor; resolves immediately post-combat when Obeka hits for 2+</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Thassa%2C%20God%20of%20the%20Sea&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Thassa%2C%20God%20of%20the%20Sea%22" target="_blank" rel="noopener">Thassa, God of the Sea</a>
+                <span class="chip-role">Scries 1 on every upkeep and grants unblockable for {1}{U}</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Aqueous%20Form&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Aqueous%20Form%22" target="_blank" rel="noopener">Aqueous Form</a>
+                <span class="chip-role">Grants unblockable and scries 1 on attack</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Rilsa%20Rael%2C%20Kingpin&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Rilsa%20Rael%2C%20Kingpin%22" target="_blank" rel="noopener">Rilsa Rael, Kingpin</a>
+                <span class="chip-role">Ventures into Undercity (basic land tutor, scry 2, Throne top-10 creature cheat) on every upkeep</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Paradox%20Haze&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Paradox%20Haze%22" target="_blank" rel="noopener">Paradox Haze</a>
+                <span class="chip-role">Doubles initial upkeep and can be cloned by Court of Vantress / Extravagant Replication</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Extravagant%20Replication&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Extravagant%20Replication%22" target="_blank" rel="noopener">Extravagant Replication</a>
+                <span class="chip-role">Creates a token copy of your best nonland permanent on every upkeep</span>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="ledger-group">
+            <div class="ledger-header">
+                <h3>P3: Exposure & Predictability <span class="ledger-tier-tag tier-b">B</span></h3>
+                <span class="count-tag">8 cards</span>
+            </div>
+            <div class="card-grid">
+                
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Brotherhood%20Regalia&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Brotherhood%20Regalia%22" target="_blank" rel="noopener">Brotherhood Regalia</a>
+                <span class="chip-role">Makes Obeka unblockable with Ward {2} for {1} equip</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Winged%20Boots&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Winged%20Boots%22" target="_blank" rel="noopener">Winged Boots</a>
+                <span class="chip-role">Grants Flying and Ward {4} for {1} equip</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Trailblazer%27s%20Boots&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Trailblazer%27s%20Boots%22" target="_blank" rel="noopener">Trailblazer's Boots</a>
+                <span class="chip-role">Grants virtually guaranteed nonbasic landwalk</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Whispersilk%20Cloak&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Whispersilk%20Cloak%22" target="_blank" rel="noopener">Whispersilk Cloak</a>
+                <span class="chip-role">Grants unblockable and Shroud</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Aqueous%20Form&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Aqueous%20Form%22" target="_blank" rel="noopener">Aqueous Form</a>
+                <span class="chip-role">1-mana unblockable aura</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Thassa%2C%20God%20of%20the%20Sea&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Thassa%2C%20God%20of%20the%20Sea%22" target="_blank" rel="noopener">Thassa, God of the Sea</a>
+                <span class="chip-role">Indestructible unblockable activator</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Silent%20Arbiter&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Silent%20Arbiter%22" target="_blank" rel="noopener">Silent Arbiter</a>
+                <span class="chip-role">Makes Menace creatures 100% unblockable</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Rogue%27s%20Passage&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Rogue%27s%20Passage%22" target="_blank" rel="noopener">Rogue's Passage</a>
+                <span class="chip-role">Land-based unblockability</span>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="ledger-group">
+            <div class="ledger-header">
+                <h3>I1: Reactive Disruption <span class="ledger-tier-tag tier-a">A</span></h3>
+                <span class="count-tag">11 cards</span>
+            </div>
+            <div class="card-grid">
+                
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Fierce%20Guardianship&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Fierce%20Guardianship%22" target="_blank" rel="noopener">Fierce Guardianship</a>
+                <span class="chip-role">Free noncreature counterspell while controlling Obeka [GAME CHANGER]</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Deflecting%20Swat&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Deflecting%20Swat%22" target="_blank" rel="noopener">Deflecting Swat</a>
+                <span class="chip-role">Free target redirection while controlling Obeka</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=An%20Offer%20You%20Can%27t%20Refuse&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22An%20Offer%20You%20Can%27t%20Refuse%22" target="_blank" rel="noopener">An Offer You Can't Refuse</a>
+                <span class="chip-role">1-mana noncreature counterspell</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Counterspell&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Counterspell%22" target="_blank" rel="noopener">Counterspell</a>
+                <span class="chip-role">2-mana unconditional counterspell</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Arcane%20Denial&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Arcane%20Denial%22" target="_blank" rel="noopener">Arcane Denial</a>
+                <span class="chip-role">2-mana unconditional counterspell with upkeep draw</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Terminate&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Terminate%22" target="_blank" rel="noopener">Terminate</a>
+                <span class="chip-role">2-mana instant creature destruction</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Chaos%20Warp&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Chaos%20Warp%22" target="_blank" rel="noopener">Chaos Warp</a>
+                <span class="chip-role">3-mana instant removal for any permanent</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Feed%20the%20Swarm&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Feed%20the%20Swarm%22" target="_blank" rel="noopener">Feed the Swarm</a>
+                <span class="chip-role">2-mana creature or enchantment destruction</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Suspended%20Sentence&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Suspended%20Sentence%22" target="_blank" rel="noopener">Suspended Sentence</a>
+                <span class="chip-role">Repeatable Suspend 3 creature destruction + 3 life loss</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Toxic%20Deluge&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Toxic%20Deluge%22" target="_blank" rel="noopener">Toxic Deluge</a>
+                <span class="chip-role">3-mana scalable -X/-X board wipe (can spare Obeka's 5 toughness)</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Blasphemous%20Act&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Blasphemous%20Act%22" target="_blank" rel="noopener">Blasphemous Act</a>
+                <span class="chip-role">1-mana emergency 13-damage board reset</span>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="ledger-group">
+            <div class="ledger-header">
+                <h3>I2: Proactive Denial & Restriction <span class="ledger-tier-tag tier-b">B</span></h3>
+                <span class="count-tag">5 cards</span>
+            </div>
+            <div class="card-grid">
+                
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Silent%20Arbiter&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Silent%20Arbiter%22" target="_blank" rel="noopener">Silent Arbiter</a>
+                <span class="chip-role">Restricts combat to 1 attacker and 1 blocker per combat</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Court%20of%20Ambition&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Court%20of%20Ambition%22" target="_blank" rel="noopener">Court of Ambition</a>
+                <span class="chip-role">Shreds opponents' hands via repeatable upkeep discard</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Indulgent%20Tormentor&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Indulgent%20Tormentor%22" target="_blank" rel="noopener">Indulgent Tormentor</a>
+                <span class="chip-role">Repeatable upkeep edict / life tax</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Scrawling%20Crawler&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Scrawling%20Crawler%22" target="_blank" rel="noopener">Scrawling Crawler</a>
+                <span class="chip-role">Punishes all opponent card draws with 1 life loss</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Court%20of%20Cunning&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Court%20of%20Cunning%22" target="_blank" rel="noopener">Court of Cunning</a>
+                <span class="chip-role">Repeatable upkeep mill pressure</span>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="ledger-group">
+            <div class="ledger-header">
+                <h3>S1: Plan Shielding & Protection <span class="ledger-tier-tag tier-a">A</span></h3>
+                <span class="count-tag">10 cards</span>
+            </div>
+            <div class="card-grid">
+                
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Fierce%20Guardianship&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Fierce%20Guardianship%22" target="_blank" rel="noopener">Fierce Guardianship</a>
+                <span class="chip-role">0-mana stack protection</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Deflecting%20Swat&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Deflecting%20Swat%22" target="_blank" rel="noopener">Deflecting Swat</a>
+                <span class="chip-role">0-mana target redirection</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Slip%20Out%20the%20Back&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Slip%20Out%20the%20Back%22" target="_blank" rel="noopener">Slip Out the Back</a>
+                <span class="chip-role">1-mana phasing protection + +1/+1 counter</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Winged%20Boots&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Winged%20Boots%22" target="_blank" rel="noopener">Winged Boots</a>
+                <span class="chip-role">Ward {4} equipment shield</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Brotherhood%20Regalia&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Brotherhood%20Regalia%22" target="_blank" rel="noopener">Brotherhood Regalia</a>
+                <span class="chip-role">Ward {2} equipment shield</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Swiftfoot%20Boots&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Swiftfoot%20Boots%22" target="_blank" rel="noopener">Swiftfoot Boots</a>
+                <span class="chip-role">Hexproof equipment shield</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Lightning%20Greaves&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Lightning%20Greaves%22" target="_blank" rel="noopener">Lightning Greaves</a>
+                <span class="chip-role">Shroud equipment shield</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Whispersilk%20Cloak&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Whispersilk%20Cloak%22" target="_blank" rel="noopener">Whispersilk Cloak</a>
+                <span class="chip-role">Shroud equipment shield</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Ring%20of%20Evos%20Isle&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Ring%20of%20Evos%20Isle%22" target="_blank" rel="noopener">Ring of Evos Isle</a>
+                <span class="chip-role">{2} instant-speed Hexproof activation</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Ring%20of%20Xathrid&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Ring%20of%20Xathrid%22" target="_blank" rel="noopener">Ring of Xathrid</a>
+                <span class="chip-role">{2} instant-speed Regeneration shield</span>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="ledger-group">
+            <div class="ledger-header">
+                <h3>S2: Engine Recovery <span class="ledger-tier-tag tier-b">B</span></h3>
+                <span class="count-tag">2 cards</span>
+            </div>
+            <div class="card-grid">
+                
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Palace%20Siege&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Palace%20Siege%22" target="_blank" rel="noopener">Palace Siege</a>
+                <span class="chip-role">Khans mode returns a creature from graveyard to hand on every upkeep</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Venser%27s%20Journal&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Venser%27s%20Journal%22" target="_blank" rel="noopener">Venser's Journal</a>
+                <span class="chip-role">Gains life equal to hand size on every upkeep to buffer life total</span>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="ledger-group">
+            <div class="ledger-header">
+                <h3>S3: Independence & Backup Plans <span class="ledger-tier-tag tier-a">A</span></h3>
+                <span class="count-tag">6 cards</span>
+            </div>
+            <div class="card-grid">
+                
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Paradox%20Haze&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Paradox%20Haze%22" target="_blank" rel="noopener">Paradox Haze</a>
+                <span class="chip-role">Generates an extra upkeep every turn even without Obeka</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Extravagant%20Replication&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Extravagant%20Replication%22" target="_blank" rel="noopener">Extravagant Replication</a>
+                <span class="chip-role">Clones nonland permanents every turn independently of Obeka</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Bonehoard%20Dracosaur&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Bonehoard%20Dracosaur%22" target="_blank" rel="noopener">Bonehoard Dracosaur</a>
+                <span class="chip-role">Standalone 5/5 flying first-strike card/token engine</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Plargg%20and%20Nassari&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Plargg%20and%20Nassari%22" target="_blank" rel="noopener">Plargg and Nassari</a>
+                <span class="chip-role">Standalone upkeep free-spell thief engine</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Skyline%20Despot&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Skyline%20Despot%22" target="_blank" rel="noopener">Skyline Despot</a>
+                <span class="chip-role">Standalone Monarch & 5/5 Dragon generator</span>
+            </div>
+            
+            <div class="card-chip" data-img="https://api.scryfall.com/cards/named?exact=Alexios%2C%20Deimos%20of%20Kosmos&format=image&version=normal">
+                <a href="https://scryfall.com/search?q=!%22Alexios%2C%20Deimos%20of%20Kosmos%22" target="_blank" rel="noopener">Alexios, Deimos of Kosmos</a>
+                <span class="chip-role">Standalone scaling trampler that attacks on every player's turn</span>
+            </div>
+            
+            </div>
+        </div>
+        
+        </div>
+    </div>
+
+    <script>
+        const preview = document.getElementById('card-preview');
+        document.querySelectorAll('.card-chip').forEach(chip => {
+            chip.addEventListener('mouseenter', e => {
+                const img = chip.getAttribute('data-img');
+                if (img) {
+                    preview.src = img;
+                    preview.style.display = 'block';
+                }
+            });
+            chip.addEventListener('mousemove', e => {
+                preview.style.left = (e.clientX + 15) + 'px';
+                preview.style.top = Math.min(e.clientY - 120, window.innerHeight - 350) + 'px';
+            });
+            chip.addEventListener('mouseleave', () => {
+                preview.style.display = 'none';
+            });
+        });
+    </script>
+</body>
+</html>

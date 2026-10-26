@@ -72,6 +72,7 @@ Decks under development, research, or being optimized.
 *   **Krenko, Mob Boss:** Mono-Red Goblin Tribal / Swarm Aggro & Untap Combos ("Exponential Swarm & Untap Combos"). Bracket 3.
 *   **Krenko Bracket 3:** Mono-Red Goblin Tribal / Swarm Aggro, Infinite Untap Combos & Stack Protection ("Pragmatic High-Power Swarm & Untap Combos"). Bracket 3.
 *   **Jin Sakai, Ghost of Tsushima:** Esper Three-Front Saboteur Control & Double-Strike Value Engine ("The Three-Front Standoff"). Low Bracket 3 (33/96 DTI, 0 Game Changers).
+*   **Obeka, Splitter of Seconds:** Grixis Combat-Triggered Upkeep Multiplier, Monarch Courts & Initiative Value Engine ("The Chronomancer's Courts"). Bracket 3 (40/96 DTI, 1/3 Game Changers).
 
 
 ### 🎮 `/arena_decks`

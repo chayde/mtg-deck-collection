@@ -1,0 +1,228 @@
+{
+  "deck_name": "ObekaSplitterOfSeconds",
+  "thematic_restriction": false,
+  "archetype": "Grixis Combat-Triggered Upkeep Multiplier, Monarch Courts & Initiative Value Engine",
+  "threat_onset": "turn 6",
+  "engine_ready": "turn 5",
+  "response_cycles": 1,
+  "overview": "A Grixis (UBR) Inverted-Triangle upkeep-multiplier deck built around Obeka, Splitter of Seconds. The deck pairs unblockable/haste/double-strike combat enablers (Brotherhood Regalia, Winged Boots, Silent Arbiter, Lizard Blades, and the M13 Upkeep Ring trio) with 26 upkeep and time-counter payoffs (all 6 Grixis Monarch Courts, Rilsa Rael's Initiative/Undercity engine, Extravagant Replication, Mechanized Production, Bonehoard Dracosaur, Twilight Prophet, and Plargg and Nassari). Once Obeka connects in combat around Turn 5-6, she generates 2 to 8+ additional upkeep steps immediately after combat, compounding card advantage, life drain, and token production to close the game within 1 opponent response cycle.",
+  "primer": {
+    "core_strategy": [
+      "Turns 1-3 (Mana, Haste & Evasion Setup): Deploy 2-mana rocks (Sol Ring, Arcane Signet, Talismans, Nightscape Familiar) and pre-drop a haste or unblockable equipment/aura (Swiftfoot Boots, Lightning Greaves, Ring of Valkas, Brotherhood Regalia, Winged Boots, or Trailblazer's Boots) or suspend early spells (Ancestral Vision, Profane Tutor).",
+      "Turns 4-5 (Commander Deployment & First Upkeep Burst): Cast Obeka, Splitter of Seconds with haste or protection backup (Fierce Guardianship, Deflecting Swat, Slip Out the Back) alongside a premier upkeep engine (Rilsa Rael, Kingpin, a Monarch Court, As Foretold, or Bonehoard Dracosaur).",
+      "Turns 6-7 (Post-Combat Upkeep Avalanche): Connect with an unblockable or double-striking Obeka to trigger 3-8 additional upkeep steps immediately after combat—completing the entire Undercity dungeon in one turn, draining the table for 18+ life via Court of Ambition / Court of Ire / Creeping Bloodsucker / Twilight Prophet, or reaching 8 artifacts with Mechanized Production."
+    ],
+    "mulligan_priorities": {
+      "keep": "Hands with 3+ lands covering {U}{B}{R}, at least 1 two-mana ramp piece, and 1 haste/evasion enabler or low-curve upkeep engine.",
+      "avoid": "2-land hands without a 2-mana rock (the 35-land baseline can stall on Turn 4 land drops) or top-heavy hands overloaded with 5-7 CMC upkeep payoffs and no evasion for Obeka."
+    },
+    "key_tips": [
+      "Silent Arbiter makes Obeka 100% unblockable because Obeka has native Menace (cannot be blocked except by 2+ creatures) while Silent Arbiter limits blockers to at most 1 creature.",
+      "Sequence your M13 Rings (Ring of Valkas, Ring of Xathrid, Ring of Evos Isle) before attaching Shroud equipment (Lightning Greaves or Whispersilk Cloak); Obeka is all three colors (UBR), so every Ring puts a +1/+1 counter on her during every post-combat upkeep.",
+      "Alexios, Deimos of Kosmos triggers on EVERY player's upkeep—meaning after Alexios and Obeka attack on your turn, your post-combat extra upkeeps untap Alexios and stack multiple +1/+1 counters on him before passing to the next opponent."
+    ]
+  },
+  "weaknesses": {
+    "critical": [
+      "Commander Removal Prior to Combat Damage: Nearly all explosive turns require Obeka to deal combat damage to a player; instant-speed removal or edicts before the combat damage step cut off the extra upkeep chain.",
+      "35-Land Baseline Bottleneck & Filter Signet Friction: Running 35 lands with a 4-CMC 3-color commander and equipment equip costs creates occasional Turn 4-5 mana/color stalls (18.8% of seats delayed past Turn 5 in Goldfish testing)."
+    ],
+    "moderate": [
+      "Shroud Self-Targeting Conflict: Attaching Whispersilk Cloak or Lightning Greaves prevents you from equipping additional Rings, Lizard Blades, or Aqueous Form onto Obeka unless a second creature is available to temporarily hold the Shroud equipment.",
+      "Fog / Maze of Ith Effects: Preventing Obeka's combat damage (without destroying her) neutralizes her upkeep trigger for the turn."
+    ],
+    "minor": [
+      "Monarch / Initiative Theft by Flying Swarm Decks: If Silent Arbiter is not on the battlefield, evasive token decks can steal the Monarch or Initiative crown before your turn, halving the output of your Courts."
+    ]
+  },
+  "key_cards": [
+    {"card": "Obeka, Splitter of Seconds", "note": "Command-zone upkeep multiplier; grants X additional upkeep steps immediately after combat equal to combat damage dealt."},
+    {"card": "Rilsa Rael, Kingpin", "note": "Introduces the Initiative (Undercity ventures on every upkeep); 4 upkeeps complete the entire Undercity in one combat, then Rilsa grants Obeka +5/+0, first strike, menace, and deathtouch."},
+    {"card": "Silent Arbiter", "note": "Combines with Obeka's native Menace to make Obeka 100% unblockable while preventing opponents from attacking with more than 1 creature to steal Monarch/Initiative."},
+    {"card": "Lizard Blades", "note": "Grants Double Strike, splitting Obeka's damage across First Strike and Regular Combat Damage steps to double her post-combat upkeep triggers."},
+    {"card": "Ring of Valkas", "note": "Grants Haste and puts a +1/+1 counter on Obeka at the start of every upkeep step, compounding her power mid-turn."},
+    {"card": "Court of Vantress", "note": "Introduces Monarch and creates token copies of your best artifacts or enchantments (Paradox Haze, other Courts, or Rings) on every upkeep."},
+    {"card": "Court of Ambition", "note": "Forces each opponent to discard 2 cards or lose 6 life on every upkeep while you are the Monarch."},
+    {"card": "Bonehoard Dracosaur", "note": "Exiles 2 cards per upkeep to play and generates 3/1 Dinosaurs and Treasure tokens across every post-combat upkeep."},
+    {"card": "Fierce Guardianship", "note": "Sole Game Changer (1/3); free counterspell to protect Obeka during the critical combat step."},
+    {"card": "Deflecting Swat", "note": "Free redirection shield to turn opposing targeted removal away from Obeka."}
+  ],
+  "grades": {
+    "r1": "A",
+    "r2": "A",
+    "a1": "A",
+    "a2": "A",
+    "p1": "B",
+    "p2": "A",
+    "p3": "B",
+    "i1": "A",
+    "i2": "B",
+    "s1": "A",
+    "s2": "B",
+    "s3": "A"
+  },
+  "justifications": {
+    "r1": "Runs 10 early mana accelerators (Sol Ring, Arcane Signet, 3 Talismans, 3 Signets, Nightscape Familiar, Replicating Ring) plus explosive upkeep mana engines (As Foretold, Bonehoard Dracosaur, Generous Plunderer, Rousing Refrain). Achieves a Turn 4.7 average commander cast across 80 goldfish seats, slightly tempered by a 35-land baseline.",
+    "r2": "Massive compounding card flow once Obeka or the Monarch Courts stick: Bonehoard Dracosaur, Twilight Prophet, Plargg and Nassari, Phyrexian Arena, Indulgent Tormentor, Scrawling Crawler, Ancestral Vision, Inspiring Refrain, and 6 Monarch Courts generate 4-8+ cards per combat connection.",
+    "a1": "High functional redundancy across both core pillars: 12 evasion/haste enablers and 26 upkeep/time-counter payoffs ensure consistent pairing, supported by Profane Tutor (which resolves immediately after combat when Obeka generates 2+ upkeeps).",
+    "a2": "86% of goldfish seats reach full Bracket 3 Engine Readiness by Turn <=7 with an average Engine Readiness of Turn 5.1 (37 of 80 seats ready by Turn 3-4).",
+    "p1": "Critical threat onset occurs on Turn 6 (Tier B): after deploying a rock/enabler on Turns 2-3, Obeka on Turn 4, and a 4-6 CMC payoff (Court, Dracosaur, Rilsa Rael, Extravagant Replication) on Turn 5, the first decisive multi-upkeep combat burst hits on Turn 5-6.",
+    "p2": "High win compactness (1 opponent response cycle, Tier A): a single unblocked or double-striking combat hit with Obeka + a Court/Initiative/Ring engine generates 4-8 upkeeps in one post-combat phase, overwhelming or eliminating the table on the following turn.",
+    "p3": "Requires Obeka to attack and deal combat damage to a player (Tier B), telegraphing the engine on the battlefield and giving opponents a combat window to interact.",
+    "i1": "Strong Grixis reactive suite featuring free commander stack shields (Fierce Guardianship, Deflecting Swat), efficient 1-2 mana countermagic (An Offer You Can't Refuse, Counterspell, Arcane Denial, Slip Out the Back), spot removal (Terminate, Chaos Warp, Feed the Swarm, Suspended Sentence), and premier sweepers (Toxic Deluge, Blasphemous Act).",
+    "i2": "Deploys Silent Arbiter to lock combat down to 1 creature per side alongside discard/life-tax punisher engines (Court of Ambition, Indulgent Tormentor, Scrawling Crawler), with zero hard stax locks or Mass Land Denial.",
+    "s1": "Comprehensive multi-layered commander protection: Fierce Guardianship, Deflecting Swat, Slip Out the Back, Winged Boots (Ward 4), Brotherhood Regalia (Ward 2), Swiftfoot Boots (Hexproof), Lightning Greaves (Shroud), Whispersilk Cloak (Shroud), Ring of Evos Isle (Hexproof), and Ring of Xathrid (Regenerate).",
+    "s2": "Palace Siege (Khans mode) returns creatures from graveyard to hand on every upkeep and noncreature Courts/Rings persist through creature wipes, though the deck lacks mass reanimation.",
+    "s3": "Six Monarch Courts, Paradox Haze, Extravagant Replication, Bonehoard Dracosaur, Skyline Despot, Twilight Prophet, Plargg and Nassari, and Alexios, Deimos of Kosmos accrue compounding value on natural upkeeps even if Obeka is taxed out of the game."
+  },
+  "card_ledger": {
+    "r1": [
+      {"card": "Sol Ring", "role": "Turn 1 fast mana rock (+2 colorless)"},
+      {"card": "Arcane Signet", "role": "2-CMC untapped rainbow mana rock"},
+      {"card": "Talisman of Dominance", "role": "2-CMC untapped {U}/{B} mana rock"},
+      {"card": "Talisman of Indulgence", "role": "2-CMC untapped {B}/{R} mana rock"},
+      {"card": "Talisman of Creativity", "role": "2-CMC untapped {U}/{R} mana rock"},
+      {"card": "Dimir Signet", "role": "2-CMC filter mana rock (flagged for upgrade)"},
+      {"card": "Izzet Signet", "role": "2-CMC filter mana rock (flagged for upgrade)"},
+      {"card": "Rakdos Signet", "role": "2-CMC filter mana rock (flagged for upgrade)"},
+      {"card": "Nightscape Familiar", "role": "Reduces Blue and Red spells (including Obeka) by {1}"},
+      {"card": "Replicating Ring", "role": "3-CMC rainbow rock that bursts into 8 mana rocks after 8 upkeeps"},
+      {"card": "As Foretold", "role": "Scales time counters on every upkeep to cast spells for {0}"},
+      {"card": "Generous Plunderer", "role": "Generates a Treasure token on every upkeep step"},
+      {"card": "Rousing Refrain", "role": "Repeatable Suspend ritual adding {R} equal to an opponent's hand size every 3 upkeeps"},
+      {"card": "Bonehoard Dracosaur", "role": "Generates Treasure tokens on every upkeep when exiling nonland cards"},
+      {"card": "Watery Grave", "role": "Fetchable untapped UB shockland"},
+      {"card": "Steam Vents", "role": "Fetchable untapped UR shockland"},
+      {"card": "Blood Crypt", "role": "Fetchable untapped BR shockland"},
+      {"card": "Polluted Delta", "role": "UB fetchland fixing all 3 colors via shocklands/triome"},
+      {"card": "Bloodstained Mire", "role": "BR fetchland fixing all 3 colors via shocklands/triome"},
+      {"card": "Morphic Pool", "role": "Untapped multiplayer UB crowd land"},
+      {"card": "Training Center", "role": "Untapped multiplayer UR crowd land"},
+      {"card": "Luxury Suite", "role": "Untapped multiplayer BR crowd land"},
+      {"card": "Command Tower", "role": "Untapped Grixis rainbow land"},
+      {"card": "Exotic Orchard", "role": "Untapped multiplayer rainbow land"},
+      {"card": "Xander's Lounge", "role": "Fetchable Grixis cycling triome"},
+      {"card": "Shivan Reef", "role": "Untapped UR painland"},
+      {"card": "Sulfurous Springs", "role": "Untapped BR painland"},
+      {"card": "Shipwreck Marsh", "role": "UB slowland"},
+      {"card": "Stormcarved Coast", "role": "UR slowland"},
+      {"card": "Drowned Catacomb", "role": "UB checkland"},
+      {"card": "Sulfur Falls", "role": "UR checkland"},
+      {"card": "Dragonskull Summit", "role": "BR checkland"},
+      {"card": "Sunken Hollow", "role": "Fetchable UB tango land"},
+      {"card": "Crumbling Necropolis", "role": "Tapped Grixis tri-land"},
+      {"card": "Reliquary Tower", "role": "Unlimited hand size utility land"},
+      {"card": "Rogue's Passage", "role": "Unblockable utility land"},
+      {"card": "Island", "role": "Basic Island (5x)"},
+      {"card": "Swamp", "role": "Basic Swamp (4x)"},
+      {"card": "Mountain", "role": "Basic Mountain (4x)"}
+    ],
+    "r2": [
+      {"card": "Bonehoard Dracosaur", "role": "Exiles 2 playable cards per upkeep step"},
+      {"card": "Twilight Prophet", "role": "Reveals and draws a card per upkeep with Ascend while draining table"},
+      {"card": "Plargg and Nassari", "role": "Exiles and casts up to 2 free nonland spells per upkeep"},
+      {"card": "Phyrexian Arena", "role": "Draws 1 card for 1 life on every upkeep step"},
+      {"card": "Scrawling Crawler", "role": "Draws 1 card per upkeep while pinging opponents"},
+      {"card": "Indulgent Tormentor", "role": "Draws 1 card per upkeep unless opponent sacrifices a creature or pays 3 life"},
+      {"card": "Ancestral Vision", "role": "Suspend 4—{U} draw 3 cards; resolves in 1 combat hit with Obeka"},
+      {"card": "Inspiring Refrain", "role": "Repeatable Suspend 3 draw-2 engine that re-suspends itself forever"},
+      {"card": "Court of Locthwain", "role": "Introduces Monarch and exiles/casts opponents' cards for free every upkeep"},
+      {"card": "Court of Vantress", "role": "Introduces Monarch and clones draw/upkeep artifacts & enchantments"},
+      {"card": "Court of Ambition", "role": "Introduces Monarch end-step draw"},
+      {"card": "Court of Embereth", "role": "Introduces Monarch end-step draw"},
+      {"card": "Court of Ire", "role": "Introduces Monarch end-step draw"},
+      {"card": "Court of Cunning", "role": "Introduces Monarch end-step draw"},
+      {"card": "Skyline Despot", "role": "Introduces Monarch end-step draw"}
+    ],
+    "a1": [
+      {"card": "Profane Tutor", "role": "Suspend 2 unconditional tutor; resolves immediately post-combat when Obeka hits for 2+"},
+      {"card": "Thassa, God of the Sea", "role": "Scries 1 on every upkeep and grants unblockable for {1}{U}"},
+      {"card": "Aqueous Form", "role": "Grants unblockable and scries 1 on attack"},
+      {"card": "Rilsa Rael, Kingpin", "role": "Ventures into Undercity (basic land tutor, scry 2, Throne top-10 creature cheat) on every upkeep"},
+      {"card": "Paradox Haze", "role": "Doubles initial upkeep and can be cloned by Court of Vantress / Extravagant Replication"},
+      {"card": "Extravagant Replication", "role": "Creates a token copy of your best nonland permanent on every upkeep"}
+    ],
+    "a2": [
+      {"card": "Obeka, Splitter of Seconds", "role": "4-CMC command-zone engine converting combat damage into immediate post-combat upkeeps"},
+      {"card": "Ring of Valkas", "role": "Grants Haste and scales Obeka's power by +1/+1 each upkeep"},
+      {"card": "Swiftfoot Boots", "role": "Grants Haste and Hexproof for immediate Turn 4-5 Obeka swings"},
+      {"card": "Lightning Greaves", "role": "0-equip Haste and Shroud enabler"},
+      {"card": "Jhoira of the Ghitu", "role": "Suspends high-CMC payoffs for {2} so Obeka's upkeeps cast them for free"},
+      {"card": "As Foretold", "role": "Rapidly reaches 4-6 time counters in a single Obeka combat to cast spells for {0}"}
+    ],
+    "p1": [
+      {"card": "Obeka, Splitter of Seconds", "role": "Primary combat catalyst triggering 2-8+ additional upkeeps per hit"},
+      {"card": "Lizard Blades", "role": "Double strike doubles Obeka's damage and triggers two separate batches of extra upkeeps"},
+      {"card": "Rilsa Rael, Kingpin", "role": "Completes Undercity in 1 combat and buffs Obeka by +5/+0 with first strike"},
+      {"card": "Court of Embereth", "role": "Creates 3/1 Knights and deals X damage to each opponent every upkeep"},
+      {"card": "Court of Ambition", "role": "Drains each opponent for 6 life (or 2 discards) every upkeep"},
+      {"card": "Court of Ire", "role": "Deals 7 damage to any target every upkeep while Monarch"},
+      {"card": "Twilight Prophet", "role": "Drains each opponent for revealed card's mana value every upkeep"},
+      {"card": "Creeping Bloodsucker", "role": "Drains each opponent for 1 and gains 3 life on every upkeep"},
+      {"card": "Palace Siege", "role": "Drains each opponent for 2 life on every upkeep (Dragons mode)"},
+      {"card": "Alexios, Deimos of Kosmos", "role": "Untaps and grows by +1/+1 on every post-combat upkeep before attacking every opponent's turn"}
+    ],
+    "p2": [
+      {"card": "Mechanized Production", "role": "Clones an artifact every upkeep and wins the game outright at 8 identical artifacts (e.g. Treasures or Replicated Rings)"},
+      {"card": "Extravagant Replication", "role": "Compounds Courts, Paradox Haze, or Bonehoard Dracosaur every upkeep"},
+      {"card": "Skyline Despot", "role": "Creates a 5/5 flying Dragon token on every upkeep while Monarch"},
+      {"card": "Dragonmaster Outcast", "role": "Creates a 5/5 flying Dragon token on every upkeep at 6+ lands"},
+      {"card": "Ring of Xathrid", "role": "Scales Obeka by +1/+1 on every upkeep"},
+      {"card": "Ring of Evos Isle", "role": "Scales Obeka by +1/+1 on every upkeep"}
+    ],
+    "p3": [
+      {"card": "Brotherhood Regalia", "role": "Makes Obeka unblockable with Ward {2} for {1} equip"},
+      {"card": "Winged Boots", "role": "Grants Flying and Ward {4} for {1} equip"},
+      {"card": "Trailblazer's Boots", "role": "Grants virtually guaranteed nonbasic landwalk"},
+      {"card": "Whispersilk Cloak", "role": "Grants unblockable and Shroud"},
+      {"card": "Aqueous Form", "role": "1-mana unblockable aura"},
+      {"card": "Thassa, God of the Sea", "role": "Indestructible unblockable activator"},
+      {"card": "Silent Arbiter", "role": "Makes Menace creatures 100% unblockable"},
+      {"card": "Rogue's Passage", "role": "Land-based unblockability"}
+    ],
+    "i1": [
+      {"card": "Fierce Guardianship", "role": "Free noncreature counterspell while controlling Obeka [GAME CHANGER]"},
+      {"card": "Deflecting Swat", "role": "Free target redirection while controlling Obeka"},
+      {"card": "An Offer You Can't Refuse", "role": "1-mana noncreature counterspell"},
+      {"card": "Counterspell", "role": "2-mana unconditional counterspell"},
+      {"card": "Arcane Denial", "role": "2-mana unconditional counterspell with upkeep draw"},
+      {"card": "Terminate", "role": "2-mana instant creature destruction"},
+      {"card": "Chaos Warp", "role": "3-mana instant removal for any permanent"},
+      {"card": "Feed the Swarm", "role": "2-mana creature or enchantment destruction"},
+      {"card": "Suspended Sentence", "role": "Repeatable Suspend 3 creature destruction + 3 life loss"},
+      {"card": "Toxic Deluge", "role": "3-mana scalable -X/-X board wipe (can spare Obeka's 5 toughness)"},
+      {"card": "Blasphemous Act", "role": "1-mana emergency 13-damage board reset"}
+    ],
+    "i2": [
+      {"card": "Silent Arbiter", "role": "Restricts combat to 1 attacker and 1 blocker per combat"},
+      {"card": "Court of Ambition", "role": "Shreds opponents' hands via repeatable upkeep discard"},
+      {"card": "Indulgent Tormentor", "role": "Repeatable upkeep edict / life tax"},
+      {"card": "Scrawling Crawler", "role": "Punishes all opponent card draws with 1 life loss"},
+      {"card": "Court of Cunning", "role": "Repeatable upkeep mill pressure"}
+    ],
+    "s1": [
+      {"card": "Fierce Guardianship", "role": "0-mana stack protection"},
+      {"card": "Deflecting Swat", "role": "0-mana target redirection"},
+      {"card": "Slip Out the Back", "role": "1-mana phasing protection + +1/+1 counter"},
+      {"card": "Winged Boots", "role": "Ward {4} equipment shield"},
+      {"card": "Brotherhood Regalia", "role": "Ward {2} equipment shield"},
+      {"card": "Swiftfoot Boots", "role": "Hexproof equipment shield"},
+      {"card": "Lightning Greaves", "role": "Shroud equipment shield"},
+      {"card": "Whispersilk Cloak", "role": "Shroud equipment shield"},
+      {"card": "Ring of Evos Isle", "role": "{2} instant-speed Hexproof activation"},
+      {"card": "Ring of Xathrid", "role": "{2} instant-speed Regeneration shield"}
+    ],
+    "s2": [
+      {"card": "Palace Siege", "role": "Khans mode returns a creature from graveyard to hand on every upkeep"},
+      {"card": "Venser's Journal", "role": "Gains life equal to hand size on every upkeep to buffer life total"}
+    ],
+    "s3": [
+      {"card": "Paradox Haze", "role": "Generates an extra upkeep every turn even without Obeka"},
+      {"card": "Extravagant Replication", "role": "Clones nonland permanents every turn independently of Obeka"},
+      {"card": "Bonehoard Dracosaur", "role": "Standalone 5/5 flying first-strike card/token engine"},
+      {"card": "Plargg and Nassari", "role": "Standalone upkeep free-spell thief engine"},
+      {"card": "Skyline Despot", "role": "Standalone Monarch & 5/5 Dragon generator"},
+      {"card": "Alexios, Deimos of Kosmos", "role": "Standalone scaling trampler that attacks on every player's turn"}
+    ]
+  }
+}
