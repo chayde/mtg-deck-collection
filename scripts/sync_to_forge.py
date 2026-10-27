@@ -99,16 +99,14 @@ def get_default_forge_commander_dir() -> Optional[Path]:
 
     # Windows AppData
     appdata = os.environ.get("APPDATA")
-    if appdata:
-        p = Path(appdata) / "Forge" / "decks" / "commander"
-        if p.exists() or (Path(appdata) / "Forge").exists():
-            return p
+    if appdata and Path(appdata).exists():
+        return Path(appdata) / "Forge" / "decks" / "commander"
 
     # User Home fallback
     home = Path.home()
-    user_forge = home / "AppData" / "Roaming" / "Forge" / "decks" / "commander"
-    if user_forge.exists():
-        return user_forge
+    roaming = home / "AppData" / "Roaming"
+    if roaming.exists():
+        return roaming / "Forge" / "decks" / "commander"
 
     # Linux / macOS fallback
     dot_forge = home / ".forge" / "decks" / "commander"
@@ -153,7 +151,8 @@ _FORGE_CARD_CACHE: Optional[Tuple[Set[str], Dict[str, str]]] = None
 
 
 def strip_accents(s: str) -> str:
-    """Removes diacritics/accents from a string (e.g. 'Andúril' -> 'Anduril')."""
+    """Removes diacritics/accents and normalizes smart quotes from a string."""
+    s = s.replace("\u2019", "'").replace("\u2018", "'").replace("\u201c", '"').replace("\u201d", '"')
     return ''.join(c for c in unicodedata.normalize('NFD', s) if unicodedata.category(c) != 'Mn')
 
 
@@ -217,6 +216,12 @@ def get_forge_card_db() -> Tuple[Set[str], Dict[str, str]]:
         except Exception:
             pass
 
+    # Common spelling/Universes Within aliases for Forge
+    if "Bonders' Enclave" in exact_names:
+        lookup["bonder's enclave"] = "Bonders' Enclave"
+    if "Mind Flayer, the Shadow" in exact_names:
+        lookup["arvinox, the mind flail"] = "Mind Flayer, the Shadow"
+
     _FORGE_CARD_CACHE = (exact_names, lookup)
     return _FORGE_CARD_CACHE
 
@@ -232,6 +237,9 @@ def sanitize_card_for_forge(
     Returns (None, None) if the card should be skipped (e.g. tokens, emblems).
     """
     cleaned_line = re.sub(r'\s*\*[A-Za-z0-9_-]+\*', '', raw_card_line).strip()
+    cleaned_line = cleaned_line.replace("\u2019", "'").replace("\u2018", "'")
+    if cleaned_line.startswith("---") or cleaned_line.startswith("* "):
+        return None, None
     m = re.match(r'^(\d+\s+)?(.*)$', cleaned_line)
     if not m:
         return None, None
@@ -336,6 +344,8 @@ def parse_deck_list(
                 mainboard.append(formatted)
 
         if commanders or mainboard:
+            if not commanders and mainboard:
+                commanders.append(mainboard.pop(0))
             return commanders, mainboard, warnings
 
     # Fallback to Markdown Plain Text Copy/Paste section
