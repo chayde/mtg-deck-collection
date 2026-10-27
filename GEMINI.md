@@ -46,6 +46,7 @@ This is a **documentation-only repository** — no build system, no tests. All c
 ├── API_REFERENCE.md                 ← Authoritative API rules for Scryfall & Manapool — READ BEFORE any card lookup or pricing task
 ├── GOLDFISH.md                      ← Full goldfish simulation protocol and log format — READ BEFORE running any simulation
 ├── .agents/skills/dti-auditor/      ← Workspace skill runbook for DTI power & bracket audits
+├── .agents/skills/elephant-minnow/  ← Workspace skill runbook for Elephant-Minnow (EMM) spec-driven deck design & cold subagent review
 ├── commander_decks/
 │   ├── Owned/       ← Physically built decks (TheHive, Karametra, Sauron, UrDragon, Marchesa...)
 │   ├── Planning/    ← Decks under development (Omnath, ThaliaGitrog, Yidris, Zangief, Chainer...)
@@ -352,8 +353,10 @@ Whenever a deck is modified, you must update all three locations in a single "tr
 4.  **MTG Forge Sync:** Ensure the deck's `.dck` file is updated in `%APPDATA%/Forge/decks/commander/` (handled automatically when running `swap_matrix.py ... --apply`, or via `python scripts/sync_to_forge.py "<path/to/deck>"`).
 
 ### Phase 4: Validation & Sync
+*   **Elephant-Minnow Cold Review (`elephant-minnow` skill):** For any new deck build or major overhaul (5+ card changes), run `python scripts/minnow_prep.py "<path/to/deck>" --pack` and dispatch the zero-context Minnow subagent swarm (`emm-comprehension`, `emm-zoom-out`, `emm-design-critic`, `emm-codebase-details`, `emm-readiness`) to verify Cold Comprehension of the 3-Step Keystone, catch mechanical nonbos, and arbitrate findings (`PROPOSE FIX`, `CONTEST`, `ESCALATE`, `DECLINE`) into `<deck>/minnow_report.html`.
 *   **Goldfish Simulation:** After major overhauls (5+ card changes), run a 20-game simulation using `scripts/multiplayer_goldfish.py`.
 *   **DTI Threat Audit & Bracket Verification:** Use the `dti-auditor` skill (running `python scripts/dti_evaluator.py "<path/to/deck>"`) to audit the deck against the 12 universal benchmarks, calculate Velocity and Suppression vectors, check all 4 Gatekeepers (Velocity >= 28, Early Finish, Suppression, cEDH), and generate `<deck>/dti_report.html`. Confirm the deck does not accidentally violate its target bracket ceiling.
+*   **Cross-File Drift Check:** Run `python scripts/minnow_prep.py "<path/to/deck>" --drift` to verify zero drift across `moxfield_import.txt`, `Plain Text Copy/Paste` (2-space endings), `Card Explanations` prose, `dti_eval.json`, and MTG Forge `.dck`.
 *   **Changelog:** Log all changes in the deck's `## Deck Changelog` using the [YYYY-MM-DD] format.
 *   **Commit & Push:** Ensure all changes are committed and pushed to GitHub to keep the environment synchronized.
 
@@ -584,6 +587,27 @@ python scripts/sync_to_forge.py --all
 # Preview sync actions without writing files:
 python scripts/sync_to_forge.py "commander_decks/Owned/TheHive" --dry-run
 python scripts/sync_to_forge.py --all --dry-run
+```
+
+---
+
+### `scripts/minnow_prep.py` — Elephant-Minnow (EMM) Blind Spec Packer, Drift Detector & Report Renderer
+**What it does:** Powers the deterministic layer of the **Elephant-Minnow Model (`elephant-minnow` skill)**:
+1. `--pack`: Generates `<deck_dir>/minnow_blind_spec.txt` — a strictly prose-stripped 100-card Scryfall Oracle dossier so zero-context Minnow subagents evaluate the raw cards without narrative bias.
+2. `--drift`: Executes `emm-drift-report` on a deck folder (or `--all`), checking for divergence across `moxfield_import.txt`, `Plain Text Copy/Paste` (including 2-trailing-space GFM verification), `Card Explanations` prose (detecting ghost cards left behind after swaps), `dti_eval.json`, and MTG Forge `.dck` files.
+3. `--render`: Compiles `<deck_dir>/minnow_eval.json` into `<deck_dir>/minnow_review_report.md` and an interactive dark-mode dashboard `<deck_dir>/minnow_report.html`.
+
+**Usage:**
+```bash
+# Generate prose-free blind spec for zero-context Minnow subagents:
+python scripts/minnow_prep.py "commander_decks/Planning/ObekaSplitterOfSeconds" --pack
+
+# Audit a single deck or all decks for documentation/list drift:
+python scripts/minnow_prep.py "commander_decks/Planning/ObekaSplitterOfSeconds" --drift
+python scripts/minnow_prep.py --drift --all
+
+# Render minnow_eval.json into minnow_review_report.md and minnow_report.html:
+python scripts/minnow_prep.py "commander_decks/Planning/ObekaSplitterOfSeconds" --render
 ```
 
 ---

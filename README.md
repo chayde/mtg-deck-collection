@@ -137,8 +137,9 @@ Each search overwrites `cache/recommend_session.json` with the current candidate
 | Script | Role | Status |
 |--------|------|--------|
 | `scripts/scryfall_lookup.py` | Named lookups, oracle text verification, batch lookups | **Unchanged — still primary** |
-| `scripts/swap_matrix.py` | Visual swap matrix, delta math, rules watchdog & atomic apply (with auto Forge sync) | **New — primary for deck swaps** |
-| `scripts/sync_to_forge.py` | Direct MTG Forge `.dck` export & automated synchronization | **New — primary for Forge testing** |
+| `scripts/swap_matrix.py` | Visual swap matrix, delta math, rules watchdog & atomic apply (with auto Forge sync) | **Primary for deck swaps** |
+| `scripts/sync_to_forge.py` | Direct MTG Forge `.dck` export & automated synchronization | **Primary for Forge testing** |
+| `scripts/minnow_prep.py` | Elephant-Minnow (EMM) blind spec packer, cross-file drift detector & `minnow_report.html` renderer | **New — primary for EMM cold reviews** |
 | `scripts/scryfall_recommend.py` | Card discovery via ID-based search | **Optional experiment** |
 | `scripts/manapool_price_deck.py` | Deck pricing via Manapool | **Unchanged** |
 

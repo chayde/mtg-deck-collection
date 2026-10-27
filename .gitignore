@@ -5,3 +5,4 @@ logs/
 .claude/
 *.dck
 __pycache__/
+minnow_blind_spec.txt

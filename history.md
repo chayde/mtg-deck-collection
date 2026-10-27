@@ -1,6 +1,19 @@
 # Project History: MTG Deck Collection
 
-## 🗓️ October 2026: Jin Sakai Low Bracket 3 Inception & Smaug the Impenetrable LGS Acquisition
+## 🗓️ October 2026: Elephant-Minnow Model (EMM) Inception, Obeka Baseline, Jin Sakai & Smaug
+
+### 2026-10-26: Elephant-Minnow Model (EMM) — Spec-Driven Deck Engineering & Zero-Context Subagent Review Inception (`.agents/skills/elephant-minnow/`)
+*   **System Inception (Adapted from Google's `elephant-goldfish-model`):** Engineered an MTG-tailored implementation of Google's open-source **Elephant-Goldfish Model (EGM)**, named **Elephant-Minnow (EMM)** to avoid terminology overlap with MTG "Goldfishing" (`scripts/multiplayer_goldfish.py`):
+    *   **The Elephant (Long-Memory Architect):** Maintains project history, player preferences, Deck Shape geometry, and DTI constraints; enforces anti-sycophancy ("No Glazing" / "Critique First"), open-ended Socratic drilling before list generation, and "Owner Decides Architecture" gates.
+    *   **The Minnows (Stateless Zero-Context Subagents):** Ephemeral, read-only subagents operating across an **Information Firewall**—evaluating only the prose-stripped 100-card Scryfall Oracle dossier (`minnow_blind_spec.txt`) with zero narrative bias.
+*   **5 Workflows & 6 Polymorphic Minnow Personas:**
+    *   Implemented `.agents/skills/elephant-minnow/SKILL.md` covering `emm-brainstorm`, `emm-draft`, `emm-review`, `emm-resolve` (`PROPOSE FIX` | `CONTEST` | `ESCALATE` | `DECLINE`), and `emm-drift-report`.
+    *   Created the 6 dual-mode (`BRAINSTORM` / `REVIEW`) Minnow persona definitions in `.agents/skills/elephant-minnow/agents/`: `zoom_out.md` (`emm-zoom-out`), `comprehension.md` (`emm-comprehension`), `design_critic.md` (`emm-design-critic`), `codebase_details.md` (`emm-codebase-details`), `readiness.md` (`emm-readiness`), and `synthesizer.md` (`emm-synthesizer`).
+*   **Deterministic Tooling (`scripts/minnow_prep.py`):**
+    *   `--pack`: Generates `<deck_dir>/minnow_blind_spec.txt` (raw 100 cards + Scryfall Oracle text + mathematical summary, stripped of `.md` prose).
+    *   `--drift`: Cross-checks `moxfield_import.txt`, `.md` `Plain Text Copy/Paste` (including 2-trailing-space GFM verification), `Card Explanations` bullets (detecting ghost cards), `dti_eval.json`, and MTG Forge `.dck` files.
+    *   `--render`: Compiles `<deck_dir>/minnow_eval.json` into `<deck_dir>/minnow_review_report.md` and the interactive dark-mode dashboard `<deck_dir>/minnow_report.html`.
+*   **Template & Documentation Integration:** Added `### 🚫 Architectural Non-Goals & Rejected Tech` to `DECK_TEMPLATE.md` and registered the `elephant-minnow` skill and `scripts/minnow_prep.py` in `GEMINI.md` and `README.md`.
 
 ### 2026-10-26: Obeka, Splitter of Seconds — 100-Card Candidate Baseline Inception, Audit & Goldfish/DTI Validation (`ObekaSplitterOfSeconds`)
 *   **Baseline Deck Inception ("The Chronomancer's Courts"):** Established the 100-card candidate baseline for **Obeka, Splitter of Seconds** ({1}{U}{B}{R}) [Outlaws of Thunder Junction #222] in `commander_decks/Planning/ObekaSplitterOfSeconds/obeka_splitter_of_seconds.md`, `moxfield_import.txt`, and `order_tracking.md`, and synced 100 cards to `%APPDATA%\Forge\decks\commander\ObekaSplitterOfSeconds.dck`.

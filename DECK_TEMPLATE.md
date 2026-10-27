@@ -36,6 +36,12 @@
 | :--- | :--- | :--- | :--- |
 | [Card Name] | [Card Name] | [Category] | [Pending/Ordered/Received] |
 
+### 🚫 Architectural Non-Goals & Rejected Tech
+*Document cards, sub-packages, or combo lines explicitly excluded during Elephant-Minnow design/review so future sessions do not re-introduce them.*
+
+*   **Non-Goal — [Excluded Strategy / Sub-Theme]:** [Why this direction is out of scope, e.g., dilutes the 3-Step Keystone or violates Bracket 3 velocity gates.]
+*   **Rejected — [Card Name] ([Mana Cost]):** [Why this card was cut or rejected, e.g., Shroud self-nonbo, filter rock ban, or MLD statutory violation.]
+
 ---
 
 ## 📜 Deck Changelog
