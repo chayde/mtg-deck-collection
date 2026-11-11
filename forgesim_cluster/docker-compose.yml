@@ -1,0 +1,37 @@
+services:
+  forgesim:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: ghcr.io/${GITHUB_OWNER:-chayde}/${GITHUB_REPO_IMAGE:-forgesim}:latest
+    container_name: forgesim-server
+    restart: unless-stopped
+    ports:
+      - "${PORT:-8080}:8080"
+    environment:
+      - PORT=8080
+      - WORKERS=${WORKERS:-10}
+      - WORKER_HEAP_MB=${WORKER_HEAP_MB:-1536}
+      - FORGE_DIR=/opt/forge
+      - GITHUB_OWNER=${GITHUB_OWNER:-chayde}
+      - GITHUB_REPO=${GITHUB_REPO:-mtg-deck-collection}
+      - GITHUB_BRANCH=${GITHUB_BRANCH:-master}
+      - GITHUB_PAT=${GITHUB_PAT:-}
+      - WATCHTOWER_HTTP_API_URL=http://watchtower:8080/v1/update
+      - WATCHTOWER_HTTP_API_TOKEN=${WATCHTOWER_HTTP_API_TOKEN:-watchtower-secret-token-123}
+    volumes:
+      - forgesim-data:/app/build
+
+  watchtower:
+    image: containrrr/watchtower
+    container_name: forgesim-watchtower
+    restart: unless-stopped
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - ~/.docker/config.json:/config.json:ro
+    environment:
+      - DOCKER_API_VERSION=1.40
+    command: --interval 86400 --http-api-update --http-api-token ${WATCHTOWER_HTTP_API_TOKEN:-watchtower-secret-token-123} forgesim-server
+
+volumes:
+  forgesim-data:

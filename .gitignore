@@ -6,3 +6,4 @@ logs/
 *.dck
 __pycache__/
 minnow_blind_spec.txt
+cache/forge_bridge/

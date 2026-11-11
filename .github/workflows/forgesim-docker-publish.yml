@@ -1,0 +1,48 @@
+name: Build and Publish ForgeSim Cluster Image (GHCR)
+
+on:
+  push:
+    branches: [ "master", "main" ]
+    paths:
+      - "forgesim_cluster/**"
+      - "scripts/ForgePodRunner.java"
+      - ".github/workflows/forgesim-docker-publish.yml"
+  workflow_dispatch:
+
+env:
+  REGISTRY: ghcr.io
+  IMAGE_NAME: chayde/forgesim
+
+jobs:
+  build-and-push:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Sync latest ForgePodRunner.java into build context
+        run: cp scripts/ForgePodRunner.java forgesim_cluster/ForgePodRunner.java
+
+      - name: Record Git Commit SHA
+        run: git rev-parse HEAD > forgesim_cluster/commit.txt
+
+      - name: Log in to GitHub Container Registry
+        uses: docker/login-action@v3
+        with:
+          registry: ${{ env.REGISTRY }}
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Build and push Docker image
+        uses: docker/build-push-action@v5
+        with:
+          context: ./forgesim_cluster
+          file: ./forgesim_cluster/Dockerfile
+          push: true
+          tags: |
+            ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:latest
+            ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:${{ github.sha }}

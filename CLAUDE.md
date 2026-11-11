@@ -45,6 +45,7 @@ This is a **documentation-only repository** — no build system, no tests. All c
 ├── README.md                        ← Project index of all active and planned decks
 ├── API_REFERENCE.md                 ← Authoritative API rules for Scryfall & Manapool — READ BEFORE any card lookup or pricing task
 ├── GOLDFISH.md                      ← Full goldfish simulation protocol and log format — READ BEFORE running any simulation
+├── forgesim_cluster/                ← Headless MTG Forge 4-AI Pod Simulation Cluster (`forgesim.chayde.lab`) & `version.json` manifest
 ├── commander_decks/
 │   ├── Owned/       ← Physically built decks (TheHive, Karametra, Sauron, UrDragon, Marchesa...)
 │   ├── Planning/    ← Decks under development (Omnath, ThaliaGitrog, Yidris, Zangief, Chainer...)
@@ -140,6 +141,16 @@ Exceeding the limit for a deck's bracket is a hard block — do not proceed with
   4. The standalone visual report at `<deck_dir>/swap_matrix.html` with 240px card artwork and hover zoom.
 - **Review Before Modifying:** Present the matrix to the user and await agreement.
 - **Atomic Application:** Once approved, re-run with `--apply` to update the main markdown file, plain text section, `moxfield_import.txt`, deck changelog, and automatically synchronize the `.dck` file into MTG Forge in one atomic transaction.
+
+### 5.8 ForgeSim Cluster Versioning & Manifest Rule (`forgesim_cluster/version.json`) — CRITICAL
+
+- **Source of Truth:** This repository (`chayde/mtg-deck-collection`) is the authoritative source of truth for the headless MTG Forge 4-AI Pod Simulation Cluster (`forgesim.chayde.lab`, running in `forgesim_cluster/`).
+- **MANDATORY VERSION BUMP:** Whenever **ANY** change is made to the ForgeSim application files — specifically `forgesim_cluster/forgesim_server.py`, `scripts/ForgePodRunner.java`, `forgesim_cluster/ForgePodRunner.java`, or `forgesim_cluster/Dockerfile` — you **MUST** update [`forgesim_cluster/version.json`](forgesim_cluster/version.json) in the same commit:
+  1. Increment `"version"` (e.g., `"1.1.0"` $\rightarrow$ `"1.1.1"` or `"1.2.0"`) and update `SERVICE_VERSION` in `forgesim_cluster/forgesim_server.py` to match.
+  2. Update `"released"` to today's date (`YYYY-MM-DD`).
+  3. Update `"changelog"` with a concise summary of the application change.
+  4. Copy `scripts/ForgePodRunner.java` to `forgesim_cluster/ForgePodRunner.java` so both paths stay byte-for-byte identical.
+- **Why this is non-negotiable:** The homelab cluster (`http://forgesim.chayde.lab`) checks `forgesim_cluster/version.json` on GitHub `master` (not raw commit SHAs, since deck/skill commits happen constantly) to determine whether an application update is available. If `forgesim_cluster/version.json` is not bumped, `forgesim.chayde.lab` will not detect or pull the update.
 
 ---
 

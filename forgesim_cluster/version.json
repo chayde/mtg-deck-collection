@@ -1,0 +1,11 @@
+{
+  "version": "1.1.0",
+  "released": "2026-11-11",
+  "forge_version": "2.0.15",
+  "changelog": "Use version.json manifest in chayde/mtg-deck-collection for deterministic update checks and hot-reloading of ForgePodRunner.java and forgesim_server.py.",
+  "files": {
+    "manifest": "forgesim_cluster/version.json",
+    "server": "forgesim_cluster/forgesim_server.py",
+    "bridge": "scripts/ForgePodRunner.java"
+  }
+}
