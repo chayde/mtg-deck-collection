@@ -41,7 +41,7 @@ from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 from typing import Any, Dict, List, Optional, Tuple
 
-SERVICE_VERSION = "1.3.0"
+SERVICE_VERSION = "1.3.1"
 START_TIME = time.time()
 
 
@@ -1136,10 +1136,12 @@ async function refreshStatus() {
 
     const tb = document.getElementById('jobs-tbody');
     if (d.recent_jobs && d.recent_jobs.length > 0) {
-      tb.innerHTML = d.recent_jobs.map((j, idx) => `
-        <tr style="cursor:pointer;" onclick="toggleBatchDetail(${idx})">
+      tb.innerHTML = d.recent_jobs.map((j) => {
+        const isExp = expandedBatches.has(j.batch_id);
+        return `
+        <tr style="cursor:pointer;" onclick="toggleBatchDetail('${j.batch_id}')">
           <td>${j.timestamp}</td>
-          <td><code>${j.batch_id}</code> ▾</td>
+          <td><code>${j.batch_id}</code> <span id="batch-arr-${j.batch_id}">${isExp ? '▲' : '▼'}</span></td>
           <td><strong>${j.hero_deck}</strong></td>
           <td>${(j.opponents || []).join(', ')}</td>
           <td>${j.games}</td>
@@ -1147,7 +1149,7 @@ async function refreshStatus() {
           <td><strong>${j.wall_sec}s</strong></td>
           <td>${j.avg_sec_per_game}s/game</td>
         </tr>
-        <tr id="batch-det-${idx}" style="display:none; background:#0d1522;">
+        <tr id="batch-det-${j.batch_id}" style="display:${isExp ? 'table-row' : 'none'}; background:#0d1522;">
           <td colspan="8" style="padding:14px 20px;">
             <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(200px, 1fr)); gap:12px; font-size:0.83rem;">
               <div><strong>Batch ID:</strong> <code>${j.batch_id}</code></div>
@@ -1158,7 +1160,8 @@ async function refreshStatus() {
             </div>
           </td>
         </tr>
-      `).join('');
+        `;
+      }).join('');
     }
   } catch (e) {
     console.error(e);
@@ -1227,10 +1230,22 @@ async function cancelActiveBatch() {
   refreshStatus();
 }
 
-function toggleBatchDetail(idx) {
-  const row = document.getElementById(`batch-det-${idx}`);
+const expandedBatches = new Set();
+
+function toggleBatchDetail(batchId) {
+  if (expandedBatches.has(batchId)) {
+    expandedBatches.delete(batchId);
+  } else {
+    expandedBatches.add(batchId);
+  }
+  const row = document.getElementById(`batch-det-${batchId}`);
+  const arr = document.getElementById(`batch-arr-${batchId}`);
+  const isOpen = expandedBatches.has(batchId);
   if (row) {
-    row.style.display = (row.style.display === 'none' ? 'table-row' : 'none');
+    row.style.display = isOpen ? 'table-row' : 'none';
+  }
+  if (arr) {
+    arr.innerText = isOpen ? '▲' : '▼';
   }
 }
 
