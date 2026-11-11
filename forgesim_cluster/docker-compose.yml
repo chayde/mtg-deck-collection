@@ -10,7 +10,7 @@ services:
       - "${PORT:-8080}:8080"
     environment:
       - PORT=8080
-      - WORKERS=${WORKERS:-10}
+      - WORKERS=${WORKERS:-16}
       - WORKER_HEAP_MB=${WORKER_HEAP_MB:-1536}
       - FORGE_DIR=/opt/forge
       - GITHUB_OWNER=${GITHUB_OWNER:-chayde}

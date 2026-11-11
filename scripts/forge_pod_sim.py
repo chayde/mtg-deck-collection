@@ -1265,7 +1265,7 @@ def main():
     )
     parser.add_argument("--games", "-n", type=int, default=4, help="Total number of full games to simulate (default: 4)")
     parser.add_argument("--workers", "-w", type=int, default=2, help="Parallel local JVM worker processes (default: 2)")
-    parser.add_argument("--timeout", "-c", type=int, default=90, help="Per-game clock timeout in seconds (default: 90)")
+    parser.add_argument("--timeout", "-c", type=int, default=150, help="Per-game clock timeout in seconds (default: 150)")
     parser.add_argument("--ai-timeout", type=int, default=2, help="Per-decision AI combat timeout in seconds (default: 2)")
     parser.add_argument("--bracket", "-b", type=int, default=3, choices=[1, 2, 3, 4, 5], help="Target Commander Bracket 1-5 (default: 3)")
     parser.add_argument("--seed", "-s", type=int, default=None, help="Optional base RNG seed for reproducibility")

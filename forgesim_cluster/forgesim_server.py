@@ -41,7 +41,7 @@ from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 from typing import Any, Dict, List, Optional, Tuple
 
-SERVICE_VERSION = "1.2.0"
+SERVICE_VERSION = "1.3.0"
 START_TIME = time.time()
 
 
@@ -538,7 +538,7 @@ class ForgeSimClusterCoordinator:
             raise ValueError("Request must include at least 2 decks in 'decks' array.")
 
         num_games = max(1, min(200, int(req_data.get("games", 4))))
-        timeout_sec = max(15, min(600, int(req_data.get("timeout", 90))))
+        timeout_sec = max(15, min(600, int(req_data.get("timeout", 150))))
         ai_timeout_sec = max(1, min(30, int(req_data.get("ai_timeout", 2))))
         smart_mulligan = bool(req_data.get("smart_mulligan", False))
         base_seed = req_data.get("seed")
@@ -547,6 +547,12 @@ class ForgeSimClusterCoordinator:
 
         batch_id = str(uuid.uuid4())[:8]
         results: List[Optional[Dict[str, Any]]] = [None] * num_games
+
+        # Task queue for auto-requeue on timeout/skip (max 2 retries per game slot)
+        task_q: "queue.Queue[Dict[str, Any]]" = queue.Queue()
+        for i in range(1, num_games + 1):
+            seed_val = (int(base_seed) + i - 1) if base_seed is not None else int(time.time_ns() + i * 100003)
+            task_q.put({"slot": i, "attempt": 1, "seed": seed_val})
 
         with self.pool_lock:
             self.cancel_batch_requested = False
@@ -558,6 +564,7 @@ class ForgeSimClusterCoordinator:
                 "games_completed": 0,
                 "hero_wins": 0,
                 "timeouts": 0,
+                "requeued_games": 0,
                 "timeout_sec": timeout_sec,
                 "started_at": t0,
             }
@@ -566,48 +573,72 @@ class ForgeSimClusterCoordinator:
             w.start()
             self.idle_workers.put(w)
 
-        def _run_game_idx(g_idx: int):
-            if self.cancel_batch_requested:
-                return
-            worker = self.idle_workers.get()
-            try:
+        def _worker_consumer():
+            while True:
                 if self.cancel_batch_requested:
-                    return
-                seed_val = (int(base_seed) + g_idx - 1) if base_seed is not None else int(time.time_ns() + g_idx * 100003)
-                job_payload = {
-                    "job_id": f"{batch_id}-g{g_idx}",
-                    "hero_name": hero_name,
-                    "decks": decks,
-                    "num_games": 1,
-                    "game_index_start": g_idx,
-                    "timeout_sec": timeout_sec,
-                    "ai_timeout_sec": ai_timeout_sec,
-                    "base_seed": seed_val,
-                    "smart_mulligan": smart_mulligan,
-                }
-                telem = worker.run_single_game_job(job_payload, hard_timeout_sec=timeout_sec + 20)
-                telem["game_index"] = g_idx
-                telem["worker_id"] = worker.worker_id
-                results[g_idx - 1] = telem
-                with self.pool_lock:
-                    if self.active_batch:
-                        self.active_batch["games_completed"] += 1
-                        if telem.get("winner_seat") == 1:
-                            self.active_batch["hero_wins"] += 1
-                        if telem.get("timed_out"):
-                            self.active_batch["timeouts"] += 1
-            finally:
-                # CRITICAL: Never return a killed/timed-out worker to idle_workers before re-warming finishes!
-                if worker.needs_rewarm or worker.status != "IDLE":
-                    threading.Thread(target=_rewarm_and_return, args=(worker,), daemon=True).start()
-                else:
-                    self.idle_workers.put(worker)
+                    break
+                try:
+                    task = task_q.get_nowait()
+                except queue.Empty:
+                    break
 
-        threads = [threading.Thread(target=_run_game_idx, args=(i,), daemon=True) for i in range(1, num_games + 1)]
-        for t in threads:
-            t.start()
-        for t in threads:
-            t.join()
+                slot = task["slot"]
+                attempt = task["attempt"]
+                seed_val = task["seed"]
+
+                worker = self.idle_workers.get()
+                try:
+                    if self.cancel_batch_requested:
+                        task_q.task_done()
+                        break
+
+                    job_payload = {
+                        "job_id": f"{batch_id}-g{slot}-a{attempt}",
+                        "hero_name": hero_name,
+                        "decks": decks,
+                        "num_games": 1,
+                        "game_index_start": slot,
+                        "timeout_sec": timeout_sec,
+                        "ai_timeout_sec": ai_timeout_sec,
+                        "base_seed": seed_val,
+                        "smart_mulligan": smart_mulligan,
+                    }
+                    telem = worker.run_single_game_job(job_payload, hard_timeout_sec=timeout_sec + 20)
+                    telem["game_index"] = slot
+                    telem["worker_id"] = worker.worker_id
+
+                    # Check if game timed out or was skipped and qualifies for re-queue (max 2 retries)
+                    if (telem.get("timed_out") or telem.get("exception_occurred")) and attempt < 3 and not self.cancel_batch_requested:
+                        new_seed = int(time.time_ns() ^ (slot * 104729) ^ (attempt * 7919))
+                        print(f"[*] Game #{slot} timed out/skipped (attempt {attempt}). Auto-requeuing with new seed {new_seed}...")
+                        with self.pool_lock:
+                            if self.active_batch:
+                                self.active_batch["timeouts"] += 1
+                                self.active_batch["requeued_games"] += 1
+                        task_q.put({"slot": slot, "attempt": attempt + 1, "seed": new_seed})
+                    else:
+                        # Completed definitively (or exhausted 2 retries)
+                        results[slot - 1] = telem
+                        with self.pool_lock:
+                            if self.active_batch:
+                                self.active_batch["games_completed"] += 1
+                                if telem.get("winner_seat") == 1:
+                                    self.active_batch["hero_wins"] += 1
+                                if telem.get("timed_out"):
+                                    self.active_batch["timeouts"] += 1
+                finally:
+                    task_q.task_done()
+                    if worker.needs_rewarm or worker.status != "IDLE":
+                        threading.Thread(target=_rewarm_and_return, args=(worker,), daemon=True).start()
+                    else:
+                        self.idle_workers.put(worker)
+
+        consumer_threads = [threading.Thread(target=_worker_consumer, daemon=True) for _ in range(len(self.workers))]
+        for ct in consumer_threads:
+            ct.start()
+        task_q.join()
+        for ct in consumer_threads:
+            ct.join()
 
         wall_sec = round(time.time() - t0, 2)
         clean_games = [r for r in results if r is not None]
@@ -618,6 +649,7 @@ class ForgeSimClusterCoordinator:
             self.cancel_batch_requested = False
             self.total_batches_run += 1
             self.total_games_run += len(clean_games)
+            timeouts_count = sum(1 for g in clean_games if g.get("timed_out"))
             self.job_history.insert(0, {
                 "batch_id": batch_id,
                 "timestamp": time.strftime("%Y-%m-%d %H:%M:%S"),
@@ -626,6 +658,8 @@ class ForgeSimClusterCoordinator:
                 "games": len(clean_games),
                 "hero_wins": wins,
                 "win_rate_pct": round(wins / max(1, len(clean_games)) * 100, 1),
+                "timeouts": timeouts_count,
+                "requeued_games": getattr(self, "_last_requeued", 0),
                 "wall_sec": wall_sec,
                 "avg_sec_per_game": round(wall_sec / max(1, len(clean_games)), 2),
             })
@@ -1036,7 +1070,7 @@ DASHBOARD_HTML = """<!DOCTYPE html>
   <h2>Pre-Warmed JVM Worker Pool</h2>
   <div class="worker-grid" id="worker-grid"></div>
 
-  <h2>Recent 4-Player Pod Simulation Batches</h2>
+  <h2>Recent 4-Player Pod Simulation Batches (Click row to expand details)</h2>
   <table>
     <thead>
       <tr><th>Time</th><th>Batch ID</th><th>Hero Deck (Seat 1)</th><th>Gauntlet Opponents</th><th>Games</th><th>Hero Win Rate</th><th>Wall Clock</th><th>Effective / Game</th></tr>
@@ -1102,16 +1136,27 @@ async function refreshStatus() {
 
     const tb = document.getElementById('jobs-tbody');
     if (d.recent_jobs && d.recent_jobs.length > 0) {
-      tb.innerHTML = d.recent_jobs.map(j => `
-        <tr>
+      tb.innerHTML = d.recent_jobs.map((j, idx) => `
+        <tr style="cursor:pointer;" onclick="toggleBatchDetail(${idx})">
           <td>${j.timestamp}</td>
-          <td><code>${j.batch_id}</code></td>
+          <td><code>${j.batch_id}</code> ▾</td>
           <td><strong>${j.hero_deck}</strong></td>
           <td>${(j.opponents || []).join(', ')}</td>
           <td>${j.games}</td>
-          <td><strong>${j.win_rate_pct}%</strong> (${j.hero_wins}/${j.games})</td>
+          <td><strong style="color:${j.hero_wins > 0 ? '#4ade80' : '#f87171'};">${j.win_rate_pct}%</strong> (${j.hero_wins}/${j.games})</td>
           <td><strong>${j.wall_sec}s</strong></td>
           <td>${j.avg_sec_per_game}s/game</td>
+        </tr>
+        <tr id="batch-det-${idx}" style="display:none; background:#0d1522;">
+          <td colspan="8" style="padding:14px 20px;">
+            <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(200px, 1fr)); gap:12px; font-size:0.83rem;">
+              <div><strong>Batch ID:</strong> <code>${j.batch_id}</code></div>
+              <div><strong>Hero Wins:</strong> ${j.hero_wins} / ${j.games} (${j.win_rate_pct}%)</div>
+              <div><strong>Timeouts / Retries:</strong> ${j.timeouts || 0} (${j.requeued_games || 0} auto-requeued)</div>
+              <div><strong>Avg Game Duration:</strong> ${j.avg_sec_per_game}s</div>
+              <div><strong>Opponent Pod:</strong> ${(j.opponents || []).join(', ')}</div>
+            </div>
+          </td>
         </tr>
       `).join('');
     }
@@ -1180,6 +1225,13 @@ async function cancelActiveBatch() {
   const d = await r.json();
   showBanner(d.message || JSON.stringify(d));
   refreshStatus();
+}
+
+function toggleBatchDetail(idx) {
+  const row = document.getElementById(`batch-det-${idx}`);
+  if (row) {
+    row.style.display = (row.style.display === 'none' ? 'table-row' : 'none');
+  }
 }
 
 refreshStatus();
@@ -1347,7 +1399,7 @@ def main():
     global COORDINATOR
     parser = argparse.ArgumentParser(description="MTG Forge 4-AI Pod Simulation Cluster Daemon")
     parser.add_argument("--port", type=int, default=int(os.environ.get("PORT", "8080")), help="HTTP listen port (default: 8080)")
-    parser.add_argument("--workers", type=int, default=int(os.environ.get("WORKERS", "10")), help="Number of Pre-Warmed JVM Workers (default: 10)")
+    parser.add_argument("--workers", type=int, default=int(os.environ.get("WORKERS", "16")), help="Number of Pre-Warmed JVM Workers (default: 10)")
     parser.add_argument("--heap-mb", type=int, default=int(os.environ.get("WORKER_HEAP_MB", "1536")), help="Max heap MB per JVM worker (default: 1536)")
     parser.add_argument("--forge-dir", type=str, default=os.environ.get("FORGE_DIR"), help="Path to MTG Forge directory")
     parser.add_argument("--java-source", type=str, default=None, help="Path to ForgePodRunner.java")
