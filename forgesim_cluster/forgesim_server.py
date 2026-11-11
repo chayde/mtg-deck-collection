@@ -41,7 +41,7 @@ from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 from typing import Any, Dict, List, Optional, Tuple
 
-SERVICE_VERSION = "1.1.0"
+SERVICE_VERSION = "1.2.0"
 START_TIME = time.time()
 
 
@@ -110,71 +110,99 @@ class WarmJvmWorker:
 
         self.proc: Optional[subprocess.Popen] = None
         self.lock = threading.Lock()
+        self.start_lock = threading.Lock()
         self.status: str = "STOPPED"  # STOPPED, WARMING, IDLE, BUSY, ERROR
         self.games_completed: int = 0
         self.total_game_ms: int = 0
         self.current_job: Optional[str] = None
+        self.job_started_at: Optional[float] = None
+        self.aborted_by_user: bool = False
+        self.abort_reason: Optional[str] = None
+        self.needs_rewarm: bool = False
         self.last_active: float = time.time()
         self.booted_at: Optional[float] = None
         self.last_error: Optional[str] = None
 
     def start(self) -> bool:
-        """Starts the JVM subprocess and waits until FORGE_DAEMON_READY is emitted."""
-        with self.lock:
-            self._kill_locked()
-            self.status = "WARMING"
-            self.last_error = None
-            cp_sep = ";" if os.name == "nt" else ":"
-            classpath = f"{self.bridge_dir}{cp_sep}{self.forge_jar}"
-            cmd = [
-                self.java_bin,
-                f"-Xmx{self.heap_mb}m",
-                "-Djava.awt.headless=true",
-                "-Dsun.java2d.d3d=false",
-                "-cp",
-                classpath,
-                "ForgePodRunner",
-                "-daemon",
-            ]
-            try:
-                self.proc = subprocess.Popen(
-                    cmd,
-                    cwd=str(self.forge_dir),
-                    stdin=subprocess.PIPE,
-                    stdout=subprocess.PIPE,
-                    stderr=subprocess.STDOUT,
-                    text=True,
-                    encoding="utf-8",
-                    errors="replace",
-                    bufsize=1,
-                )
-            except Exception as e:
-                self.status = "ERROR"
-                self.last_error = f"Spawn failed: {e}"
-                return False
+        """Starts the JVM subprocess and waits until FORGE_DAEMON_READY is emitted (thread-safe & timeout-bounded)."""
+        with self.start_lock:
+            with self.lock:
+                self._kill_locked()
+                self.status = "WARMING"
+                self.current_job = None
+                self.job_started_at = None
+                self.aborted_by_user = False
+                self.abort_reason = None
+                self.needs_rewarm = False
+                self.last_error = None
+                cp_sep = ";" if os.name == "nt" else ":"
+                classpath = f"{self.bridge_dir}{cp_sep}{self.forge_jar}"
+                cmd = [
+                    self.java_bin,
+                    f"-Xmx{self.heap_mb}m",
+                    "-Djava.awt.headless=true",
+                    "-Dsun.java2d.d3d=false",
+                    "-cp",
+                    classpath,
+                    "ForgePodRunner",
+                    "-daemon",
+                ]
+                try:
+                    self.proc = subprocess.Popen(
+                        cmd,
+                        cwd=str(self.forge_dir),
+                        stdin=subprocess.PIPE,
+                        stdout=subprocess.PIPE,
+                        stderr=subprocess.STDOUT,
+                        text=True,
+                        encoding="utf-8",
+                        errors="replace",
+                        bufsize=1,
+                    )
+                    proc_ref = self.proc
+                except Exception as e:
+                    self.status = "ERROR"
+                    self.last_error = f"Spawn failed: {e}"
+                    return False
 
-        # Wait for FORGE_DAEMON_READY outside the lock so status queries don't block
-        t0 = time.time()
-        while time.time() - t0 < 60:
-            if self.proc.poll() is not None:
-                self.status = "ERROR"
-                self.last_error = f"JVM exited during warmup with code {self.proc.returncode}"
-                return False
-            line = self.proc.stdout.readline()
-            if not line:
-                time.sleep(0.05)
-                continue
-            if "FORGE_DAEMON_READY" in line:
+            ready_event = threading.Event()
+            warmup_state: Dict[str, Any] = {"ok": False, "err": None}
+
+            def _wait_ready():
+                try:
+                    while True:
+                        if proc_ref.poll() is not None:
+                            warmup_state["err"] = f"JVM exited during warmup with code {proc_ref.returncode}"
+                            break
+                        line = proc_ref.stdout.readline()
+                        if not line:
+                            warmup_state["err"] = "EOF waiting for FORGE_DAEMON_READY"
+                            break
+                        if "FORGE_DAEMON_READY" in line:
+                            warmup_state["ok"] = True
+                            break
+                except Exception as ex:
+                    warmup_state["err"] = str(ex)
+                finally:
+                    ready_event.set()
+
+            threading.Thread(target=_wait_ready, daemon=True).start()
+            ready_event.wait(timeout=60)
+
+            if warmup_state["ok"]:
                 with self.lock:
                     self.status = "IDLE"
+                    self.current_job = None
+                    self.job_started_at = None
                     self.booted_at = time.time()
                     self.last_active = time.time()
                 return True
-        with self.lock:
-            self._kill_locked()
-            self.status = "ERROR"
-            self.last_error = "Timed out waiting for FORGE_DAEMON_READY"
-            return False
+
+            with self.lock:
+                self._kill_locked()
+                self.status = "ERROR"
+                self.last_error = warmup_state["err"] or "Timed out waiting for FORGE_DAEMON_READY"
+                return False
 
     def _kill_locked(self):
         if self.proc is not None:
@@ -185,23 +213,42 @@ class WarmJvmWorker:
                 pass
             self.proc = None
         self.status = "STOPPED"
+        self.current_job = None
+        self.job_started_at = None
 
     def stop(self):
         with self.lock:
             self._kill_locked()
 
+    def abort_current_job(self, reason: str = "Skipped via Web UI") -> Dict[str, Any]:
+        """Immediately aborts the currently running game on this worker and triggers a re-warm."""
+        with self.lock:
+            was_busy = (self.status == "BUSY")
+            prev_job = self.current_job
+            self.aborted_by_user = True
+            self.abort_reason = reason
+            self.needs_rewarm = True
+            self._kill_locked()
+            self.last_error = f"{reason} ({prev_job or 'worker reset'})"
+        if not was_busy:
+            threading.Thread(target=self.start, daemon=True).start()
+        return {
+            "success": True,
+            "worker_id": self.worker_id,
+            "was_busy": was_busy,
+            "aborted_job": prev_job,
+            "message": f"Worker #{self.worker_id} {'aborted ' + str(prev_job) + ' and is re-warming' if was_busy else 'is restarting'}.",
+        }
+
     def run_single_game_job(self, job_payload: Dict[str, Any], hard_timeout_sec: int) -> Dict[str, Any]:
         """Sends a 1-game job JSON line to the warm JVM and reads TELEMETRY_GAME_JSON."""
-        with self.lock:
-            if self.proc is None or self.proc.poll() is not None or self.status != "IDLE":
-                # Re-warm on demand if died
-                pass
-
         if self.proc is None or self.proc.poll() is not None or self.status != "IDLE":
             ok = self.start()
             if not ok:
+                self.needs_rewarm = True
                 return {
                     "game_index": job_payload.get("game_index_start", 1),
+                    "seed": job_payload.get("base_seed", 0),
                     "timed_out": False,
                     "exception_occurred": True,
                     "error_message": self.last_error or "Worker failed to start",
@@ -209,8 +256,13 @@ class WarmJvmWorker:
 
         with self.lock:
             self.status = "BUSY"
+            self.aborted_by_user = False
+            self.abort_reason = None
+            self.needs_rewarm = False
             self.current_job = f"Game #{job_payload.get('game_index_start', 1)} ({job_payload.get('hero_name', 'Pod')})"
+            self.job_started_at = time.time()
             self.last_active = time.time()
+            proc_ref = self.proc
 
         result_holder: Dict[str, Any] = {}
         done_event = threading.Event()
@@ -219,11 +271,11 @@ class WarmJvmWorker:
             game_json: Optional[Dict[str, Any]] = None
             try:
                 line_str = json.dumps(job_payload) + "\n"
-                self.proc.stdin.write(line_str)
-                self.proc.stdin.flush()
+                proc_ref.stdin.write(line_str)
+                proc_ref.stdin.flush()
 
                 while True:
-                    line = self.proc.stdout.readline()
+                    line = proc_ref.stdout.readline()
                     if not line:
                         result_holder["error"] = "Worker EOF during simulation"
                         break
@@ -248,14 +300,38 @@ class WarmJvmWorker:
         reader_thread.start()
 
         finished = done_event.wait(timeout=hard_timeout_sec)
-        if not finished:
-            # Hard hang inside Forge engine — kill and respawn this worker in background
+        elapsed_ms = int((time.time() - (self.job_started_at or time.time())) * 1000)
+
+        if self.aborted_by_user:
+            reason = self.abort_reason or "Manually skipped via Web UI"
             with self.lock:
                 self._kill_locked()
-                self.last_error = f"Hard timeout ({hard_timeout_sec}s) exceeded; recycling worker"
-            threading.Thread(target=self.start, daemon=True).start()
+                self.needs_rewarm = True
+                self.last_error = reason
             return {
                 "game_index": job_payload.get("game_index_start", 1),
+                "seed": job_payload.get("base_seed", 0),
+                "duration_ms": elapsed_ms,
+                "timed_out": True,
+                "exception_occurred": False,
+                "error_message": reason,
+                "winner_player": "DRAW (Skipped via Web UI)",
+                "winner_deck": "DRAW (Skipped via Web UI)",
+                "winner_seat": 0,
+                "win_reason": reason,
+                "hero_deck": job_payload.get("hero_name", "Hero"),
+                "seats": [],
+            }
+
+        if not finished:
+            # Hard hang inside Forge engine — kill and mark for re-warm before returning to pool
+            with self.lock:
+                self._kill_locked()
+                self.needs_rewarm = True
+                self.last_error = f"Hard timeout ({hard_timeout_sec}s) exceeded; recycling worker"
+            return {
+                "game_index": job_payload.get("game_index_start", 1),
+                "seed": job_payload.get("base_seed", 0),
                 "duration_ms": hard_timeout_sec * 1000,
                 "timed_out": True,
                 "exception_occurred": False,
@@ -273,19 +349,22 @@ class WarmJvmWorker:
             with self.lock:
                 self.status = "IDLE"
                 self.current_job = None
+                self.job_started_at = None
                 self.games_completed += 1
                 self.total_game_ms += int(telem.get("duration_ms", 0))
                 self.last_active = time.time()
             return telem
 
-        # If error occurred without telemetry, recycle worker
+        # If error occurred without telemetry, mark for re-warm before returning to pool
         err_msg = result_holder.get("error", "Unknown worker error")
         with self.lock:
             self._kill_locked()
+            self.needs_rewarm = True
             self.last_error = err_msg
-        threading.Thread(target=self.start, daemon=True).start()
         return {
             "game_index": job_payload.get("game_index_start", 1),
+            "seed": job_payload.get("base_seed", 0),
+            "duration_ms": elapsed_ms,
             "timed_out": False,
             "exception_occurred": True,
             "error_message": err_msg,
@@ -300,13 +379,15 @@ class WarmJvmWorker:
     def snapshot(self) -> Dict[str, Any]:
         avg_ms = round(self.total_game_ms / self.games_completed) if self.games_completed > 0 else 0
         uptime_s = round(time.time() - self.booted_at) if self.booted_at and self.status in ("IDLE", "BUSY") else 0
+        job_elapsed_s = round(time.time() - self.job_started_at) if (self.status == "BUSY" and self.job_started_at) else 0
         return {
             "worker_id": self.worker_id,
             "pid": self.proc.pid if (self.proc and self.proc.poll() is None) else None,
             "status": self.status,
             "games_completed": self.games_completed,
             "avg_game_ms": avg_ms,
-            "current_job": self.current_job,
+            "current_job": self.current_job if self.status == "BUSY" else None,
+            "job_elapsed_sec": job_elapsed_s,
             "uptime_sec": uptime_s,
             "last_error": self.last_error,
         }
@@ -336,6 +417,8 @@ class ForgeSimClusterCoordinator:
         self.pool_lock = threading.Lock()
         self.idle_workers: "queue.Queue[WarmJvmWorker]" = queue.Queue()
         self.job_history: List[Dict[str, Any]] = []
+        self.active_batch: Optional[Dict[str, Any]] = None
+        self.cancel_batch_requested: bool = False
         self.total_batches_run = 0
         self.total_games_run = 0
 
@@ -412,6 +495,30 @@ class ForgeSimClusterCoordinator:
         ready_count = sum(1 for w in self.workers if w.status == "IDLE")
         return {"success": True, "workers_ready": ready_count, "total_workers": len(self.workers)}
 
+    def kill_worker_job(self, worker_id: int, reason: str = "Skipped via Web UI") -> Dict[str, Any]:
+        """Aborts a stuck/slow game on a specific worker (1-indexed) and re-warms that worker."""
+        target = next((w for w in self.workers if w.worker_id == worker_id), None)
+        if not target:
+            return {"success": False, "message": f"Worker #{worker_id} not found."}
+        return target.abort_current_job(reason=reason)
+
+    def cancel_active_batch(self) -> Dict[str, Any]:
+        """Cancels any remaining queued games in the active batch and aborts currently running games."""
+        with self.pool_lock:
+            if not self.active_batch:
+                return {"success": False, "message": "No simulation batch is currently running."}
+            self.cancel_batch_requested = True
+            b_id = self.active_batch.get("batch_id", "?")
+        aborted = 0
+        for w in self.workers:
+            if w.status == "BUSY":
+                w.abort_current_job(reason="Batch cancelled via Web UI")
+                aborted += 1
+        return {
+            "success": True,
+            "message": f"Cancelled active batch {b_id} and aborted {aborted} in-flight worker games.",
+        }
+
     def run_pod_simulation(self, req_data: Dict[str, Any]) -> Dict[str, Any]:
         """
         Fans out `games` simulations across the warm JVM worker pool in parallel.
@@ -436,13 +543,36 @@ class ForgeSimClusterCoordinator:
         smart_mulligan = bool(req_data.get("smart_mulligan", False))
         base_seed = req_data.get("seed")
         hero_name = decks[0].get("name", "Hero")
+        opp_names = [d.get("name", "?") for d in decks[1:]]
 
         batch_id = str(uuid.uuid4())[:8]
         results: List[Optional[Dict[str, Any]]] = [None] * num_games
 
+        with self.pool_lock:
+            self.cancel_batch_requested = False
+            self.active_batch = {
+                "batch_id": batch_id,
+                "hero_deck": hero_name,
+                "opponents": opp_names,
+                "games_total": num_games,
+                "games_completed": 0,
+                "hero_wins": 0,
+                "timeouts": 0,
+                "timeout_sec": timeout_sec,
+                "started_at": t0,
+            }
+
+        def _rewarm_and_return(w: WarmJvmWorker):
+            w.start()
+            self.idle_workers.put(w)
+
         def _run_game_idx(g_idx: int):
+            if self.cancel_batch_requested:
+                return
             worker = self.idle_workers.get()
             try:
+                if self.cancel_batch_requested:
+                    return
                 seed_val = (int(base_seed) + g_idx - 1) if base_seed is not None else int(time.time_ns() + g_idx * 100003)
                 job_payload = {
                     "job_id": f"{batch_id}-g{g_idx}",
@@ -459,8 +589,19 @@ class ForgeSimClusterCoordinator:
                 telem["game_index"] = g_idx
                 telem["worker_id"] = worker.worker_id
                 results[g_idx - 1] = telem
+                with self.pool_lock:
+                    if self.active_batch:
+                        self.active_batch["games_completed"] += 1
+                        if telem.get("winner_seat") == 1:
+                            self.active_batch["hero_wins"] += 1
+                        if telem.get("timed_out"):
+                            self.active_batch["timeouts"] += 1
             finally:
-                self.idle_workers.put(worker)
+                # CRITICAL: Never return a killed/timed-out worker to idle_workers before re-warming finishes!
+                if worker.needs_rewarm or worker.status != "IDLE":
+                    threading.Thread(target=_rewarm_and_return, args=(worker,), daemon=True).start()
+                else:
+                    self.idle_workers.put(worker)
 
         threads = [threading.Thread(target=_run_game_idx, args=(i,), daemon=True) for i in range(1, num_games + 1)]
         for t in threads:
@@ -473,13 +614,15 @@ class ForgeSimClusterCoordinator:
         wins = sum(1 for g in clean_games if g.get("winner_seat") == 1)
 
         with self.pool_lock:
+            self.active_batch = None
+            self.cancel_batch_requested = False
             self.total_batches_run += 1
             self.total_games_run += len(clean_games)
             self.job_history.insert(0, {
                 "batch_id": batch_id,
                 "timestamp": time.strftime("%Y-%m-%d %H:%M:%S"),
                 "hero_deck": hero_name,
-                "opponents": [d.get("name", "?") for d in decks[1:]],
+                "opponents": opp_names,
                 "games": len(clean_games),
                 "hero_wins": wins,
                 "win_rate_pct": round(wins / max(1, len(clean_games)) * 100, 1),
@@ -548,6 +691,17 @@ class ForgeSimClusterCoordinator:
         busy_c = sum(1 for w in worker_snaps if w["status"] == "BUSY")
         warming_c = sum(1 for w in worker_snaps if w["status"] == "WARMING")
         ver = self.get_version_info()
+        active_b = None
+        with self.pool_lock:
+            if self.active_batch:
+                elapsed_s = round(time.time() - self.active_batch["started_at"], 1)
+                gt = max(1, self.active_batch["games_total"])
+                gc = self.active_batch["games_completed"]
+                active_b = {
+                    **self.active_batch,
+                    "elapsed_sec": elapsed_s,
+                    "pct_complete": round(100.0 * gc / gt, 1),
+                }
         return {
             **ver,
             "workers_total": len(self.workers),
@@ -556,6 +710,7 @@ class ForgeSimClusterCoordinator:
             "workers_warming": warming_c,
             "total_batches_run": self.total_batches_run,
             "total_games_run": self.total_games_run,
+            "active_batch": active_b,
             "workers": worker_snaps,
             "recent_jobs": self.job_history[:10],
         }
@@ -802,6 +957,25 @@ DASHBOARD_HTML = """<!DOCTYPE html>
     background: #172554; border: 1px solid #3b82f6; border-radius: 8px;
     padding: 12px 16px; margin-bottom: 20px; display: none; justify-content: space-between; align-items: center;
   }
+  .batch-progress-card {
+    background: #111827; border: 1px solid #38bdf8; border-radius: 10px;
+    padding: 14px 18px; margin-bottom: 22px; display: none;
+  }
+  .progress-track {
+    width: 100%; height: 10px; background: #1e293b; border-radius: 6px; overflow: hidden; margin-top: 10px;
+  }
+  .progress-fill {
+    height: 100%; background: linear-gradient(90deg, #0284c7, #22c55e); width: 0%; transition: width 0.3s ease;
+  }
+  button.btn-mini {
+    padding: 4px 9px; font-size: 0.74rem; border-radius: 5px; margin-top: 6px;
+  }
+  button.btn-warn {
+    background: rgba(239,68,68,0.18); border-color: #ef4444; color: #fca5a5;
+  }
+  button.btn-warn:hover {
+    background: #dc2626; color: #fff;
+  }
   h2 { font-size: 1.15rem; margin: 22px 0 12px 0; color: #f8fafc; }
   .worker-grid {
     display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 12px;
@@ -839,6 +1013,17 @@ DASHBOARD_HTML = """<!DOCTYPE html>
   <div class="banner" id="status-banner">
     <span id="banner-text"></span>
     <button onclick="document.getElementById('status-banner').style.display='none'">Dismiss</button>
+  </div>
+
+  <div class="batch-progress-card" id="active-batch-card">
+    <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px;">
+      <div>
+        <strong style="color:#38bdf8; font-size:0.95rem;" id="ab-title">Active Batch Running...</strong>
+        <div style="color:#94a3b8; font-size:0.82rem; margin-top:3px;" id="ab-sub">-</div>
+      </div>
+      <button class="btn-warn" onclick="cancelActiveBatch()">🛑 Stop Batch Early</button>
+    </div>
+    <div class="progress-track"><div class="progress-fill" id="ab-bar"></div></div>
   </div>
 
   <div class="kpi-grid">
@@ -880,8 +1065,26 @@ async function refreshStatus() {
     const mins = Math.floor(d.uptime_sec / 60);
     document.getElementById('k-uptime').innerText = mins > 60 ? `${(mins/60).toFixed(1)}h` : `${mins}m ${d.uptime_sec%60}s`;
 
+    const abCard = document.getElementById('active-batch-card');
+    if (d.active_batch) {
+      const ab = d.active_batch;
+      abCard.style.display = 'block';
+      document.getElementById('ab-title').innerText = `⚡ Batch ${ab.batch_id} in Progress: ${ab.hero_deck} vs. ${(ab.opponents || []).join(', ')}`;
+      document.getElementById('ab-sub').innerText = `${ab.games_completed} / ${ab.games_total} games completed (${ab.pct_complete}%) • Hero Wins: ${ab.hero_wins} • Timeouts/Skips: ${ab.timeouts} • Elapsed: ${ab.elapsed_sec}s (Cap: ${ab.timeout_sec}s/game)`;
+      document.getElementById('ab-bar').style.width = `${ab.pct_complete}%`;
+    } else {
+      abCard.style.display = 'none';
+    }
+
     const wg = document.getElementById('worker-grid');
-    wg.innerHTML = d.workers.map(w => `
+    wg.innerHTML = d.workers.map(w => {
+      const elapsedTag = (w.status === 'BUSY' && w.job_elapsed_sec !== undefined)
+        ? ` <strong style="color:${w.job_elapsed_sec > 75 ? '#f87171' : '#38bdf8'};">(${w.job_elapsed_sec}s)</strong>`
+        : '';
+      const actionBtn = (w.status === 'BUSY')
+        ? `<button class="btn-mini btn-warn" onclick="killWorker(${w.worker_id}, true)">⏭️ Skip / Kill Game</button>`
+        : `<button class="btn-mini" onclick="killWorker(${w.worker_id}, false)">🔄 Restart Worker</button>`;
+      return `
       <div class="worker-card">
         <div class="w-head">
           <strong>Worker #${w.worker_id}</strong>
@@ -890,10 +1093,12 @@ async function refreshStatus() {
         <div style="font-size:0.8rem;color:#94a3b8;">
           PID: <code style="color:#e2e8f0;">${w.pid || '-'}</code> &bull; Games: <strong style="color:#e2e8f0;">${w.games_completed}</strong><br>
           Avg Game: <strong>${w.avg_game_ms ? (w.avg_game_ms/1000).toFixed(1)+'s' : '-'}</strong><br>
-          ${w.current_job ? `<span style="color:#fbbf24;">▶ ${w.current_job}</span>` : (w.last_error ? `<span style="color:#f87171;">${w.last_error}</span>` : 'Ready for instant dispatch')}
+          ${w.current_job ? `<span style="color:#fbbf24;">▶ ${w.current_job}${elapsedTag}</span>` : (w.last_error ? `<span style="color:#f87171;">${w.last_error}</span>` : 'Ready for instant dispatch')}<br>
+          ${actionBtn}
         </div>
       </div>
-    `).join('');
+      `;
+    }).join('');
 
     const tb = document.getElementById('jobs-tbody');
     if (d.recent_jobs && d.recent_jobs.length > 0) {
@@ -953,6 +1158,27 @@ async function recyclePool() {
   const r = await fetch('/api/v1/recycle', {method: 'POST'});
   const d = await r.json();
   showBanner(`Worker pool recycled: ${d.workers_ready}/${d.total_workers} workers IDLE.`);
+  refreshStatus();
+}
+
+async function killWorker(workerId, isBusy) {
+  const actionLabel = isBusy ? `Skipping current game on Worker #${workerId} and re-warming...` : `Restarting Worker #${workerId}...`;
+  showBanner(actionLabel);
+  const r = await fetch('/api/v1/kill-worker', {
+    method: 'POST',
+    headers: {'Content-Type': 'application/json'},
+    body: JSON.stringify({worker_id: workerId})
+  });
+  const d = await r.json();
+  showBanner(d.message || JSON.stringify(d));
+  refreshStatus();
+}
+
+async function cancelActiveBatch() {
+  showBanner('Stopping active batch and aborting in-flight games...');
+  const r = await fetch('/api/v1/cancel-batch', {method: 'POST'});
+  const d = await r.json();
+  showBanner(d.message || JSON.stringify(d));
   refreshStatus();
 }
 
@@ -1037,6 +1263,18 @@ class ForgeSimHttpHandler(BaseHTTPRequestHandler):
 
         if self.path in ("/api/v1/recycle", "/api/recycle"):
             res = COORDINATOR.recycle_workers()
+            self._send_json(200, res)
+            return
+
+        if self.path in ("/api/v1/kill-worker", "/api/kill-worker"):
+            body = self._read_json_body()
+            w_id = int(body.get("worker_id", 0))
+            res = COORDINATOR.kill_worker_job(w_id, reason=body.get("reason", "Skipped via Web UI"))
+            self._send_json(200 if res.get("success") else 400, res)
+            return
+
+        if self.path in ("/api/v1/cancel-batch", "/api/cancel-batch"):
+            res = COORDINATOR.cancel_active_batch()
             self._send_json(200, res)
             return
 

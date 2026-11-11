@@ -1,8 +1,8 @@
 {
-  "version": "1.1.0",
+  "version": "1.2.0",
   "released": "2026-11-11",
   "forge_version": "2.0.15",
-  "changelog": "Use version.json manifest in chayde/mtg-deck-collection for deterministic update checks and hot-reloading of ForgePodRunner.java and forgesim_server.py.",
+  "changelog": "Fix worker respawn race condition on timeout, add live Active Batch progress bar, and add per-worker Skip/Kill Game and Stop Batch buttons to the Web UI.",
   "files": {
     "manifest": "forgesim_cluster/version.json",
     "server": "forgesim_cluster/forgesim_server.py",

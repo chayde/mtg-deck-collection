@@ -456,8 +456,8 @@ def enrich_and_aggregate(
     target_turn = gf.BRACKET_TARGET_TURNS.get(bracket, 7)
     bracket_label = gf.BRACKET_NAMES.get(bracket, f"Bracket {bracket}")
 
-    # Sort games deterministically by seed/index
-    games.sort(key=lambda g: g.get("seed", 0))
+    # Sort games deterministically by game_index / seed
+    games.sort(key=lambda g: (g.get("game_index", 999999), g.get("seed", 0)))
     for idx, g in enumerate(games, start=1):
         g["game_index"] = idx
 
@@ -592,21 +592,23 @@ def enrich_and_aggregate(
             turn_order_wins[hero_to] += 1
 
     num_games = max(1, len(games))
-    hero_deck_name = games[0].get("hero_deck", dck_files[0]) if games else dck_files[0]
-    hero_commander = games[0].get("hero_commander", "Unknown") if games else "Unknown"
+    ref_game = next((g for g in games if g.get("seats")), games[0] if games else {})
+    hero_deck_name = ref_game.get("hero_deck", dck_files[0]) if games else dck_files[0]
+    hero_commander = ref_game.get("hero_commander", "Unknown") if games else "Unknown"
 
     # Seat summary table
     pod_seats_summary = []
-    if games and games[0].get("seats"):
-        for s_idx in range(len(games[0]["seats"])):
+    if ref_game and ref_game.get("seats"):
+        valid_seat_games = max(1, sum(1 for g in games if g.get("seats")))
+        for s_idx in range(len(ref_game["seats"])):
             seat_num = s_idx + 1
-            s_deck = games[0]["seats"][s_idx]["deck"]
-            s_cmd = games[0]["seats"][s_idx]["commander"]
+            s_deck = ref_game["seats"][s_idx]["deck"]
+            s_cmd = ref_game["seats"][s_idx]["commander"]
             wins = seat_wins[seat_num]
-            avg_spells = sum(g["seats"][s_idx]["spells_cast"] for g in games if len(g.get("seats", [])) > s_idx) / num_games
-            avg_cmd_casts = sum(g["seats"][s_idx]["commander_casts"] for g in games if len(g.get("seats", [])) > s_idx) / num_games
-            avg_peak_power = sum(g["seats"][s_idx]["peak_power_in_play"] for g in games if len(g.get("seats", [])) > s_idx) / num_games
-            avg_mulls = sum(g["seats"][s_idx]["mulligans"] for g in games if len(g.get("seats", [])) > s_idx) / num_games
+            avg_spells = sum(g["seats"][s_idx]["spells_cast"] for g in games if len(g.get("seats", [])) > s_idx) / valid_seat_games
+            avg_cmd_casts = sum(g["seats"][s_idx]["commander_casts"] for g in games if len(g.get("seats", [])) > s_idx) / valid_seat_games
+            avg_peak_power = sum(g["seats"][s_idx]["peak_power_in_play"] for g in games if len(g.get("seats", [])) > s_idx) / valid_seat_games
+            avg_mulls = sum(g["seats"][s_idx]["mulligans"] for g in games if len(g.get("seats", [])) > s_idx) / valid_seat_games
             pod_seats_summary.append({
                 "seat": seat_num,
                 "deck": s_deck,
