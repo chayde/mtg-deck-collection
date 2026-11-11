@@ -1,8 +1,8 @@
 {
-  "version": "1.3.1",
+  "version": "1.3.2",
   "released": "2026-11-11",
   "forge_version": "2.0.15",
-  "changelog": "Fix dashboard batch history table auto-closing on 2.5s poll; persist expanded state across DOM refreshes.",
+  "changelog": "Add Cache-Control: no-cache to dashboard; differential DOM rendering for batch history so rows never re-render or close during 2.5s polling.",
   "files": {
     "manifest": "forgesim_cluster/version.json",
     "server": "forgesim_cluster/forgesim_server.py",

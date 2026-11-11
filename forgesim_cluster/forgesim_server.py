@@ -41,7 +41,7 @@ from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 from typing import Any, Dict, List, Optional, Tuple
 
-SERVICE_VERSION = "1.3.1"
+SERVICE_VERSION = "1.3.2"
 START_TIME = time.time()
 
 
@@ -1134,34 +1134,10 @@ async function refreshStatus() {
       `;
     }).join('');
 
-    const tb = document.getElementById('jobs-tbody');
-    if (d.recent_jobs && d.recent_jobs.length > 0) {
-      tb.innerHTML = d.recent_jobs.map((j) => {
-        const isExp = expandedBatches.has(j.batch_id);
-        return `
-        <tr style="cursor:pointer;" onclick="toggleBatchDetail('${j.batch_id}')">
-          <td>${j.timestamp}</td>
-          <td><code>${j.batch_id}</code> <span id="batch-arr-${j.batch_id}">${isExp ? '▲' : '▼'}</span></td>
-          <td><strong>${j.hero_deck}</strong></td>
-          <td>${(j.opponents || []).join(', ')}</td>
-          <td>${j.games}</td>
-          <td><strong style="color:${j.hero_wins > 0 ? '#4ade80' : '#f87171'};">${j.win_rate_pct}%</strong> (${j.hero_wins}/${j.games})</td>
-          <td><strong>${j.wall_sec}s</strong></td>
-          <td>${j.avg_sec_per_game}s/game</td>
-        </tr>
-        <tr id="batch-det-${j.batch_id}" style="display:${isExp ? 'table-row' : 'none'}; background:#0d1522;">
-          <td colspan="8" style="padding:14px 20px;">
-            <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(200px, 1fr)); gap:12px; font-size:0.83rem;">
-              <div><strong>Batch ID:</strong> <code>${j.batch_id}</code></div>
-              <div><strong>Hero Wins:</strong> ${j.hero_wins} / ${j.games} (${j.win_rate_pct}%)</div>
-              <div><strong>Timeouts / Retries:</strong> ${j.timeouts || 0} (${j.requeued_games || 0} auto-requeued)</div>
-              <div><strong>Avg Game Duration:</strong> ${j.avg_sec_per_game}s</div>
-              <div><strong>Opponent Pod:</strong> ${(j.opponents || []).join(', ')}</div>
-            </div>
-          </td>
-        </tr>
-        `;
-      }).join('');
+    const currentJobsJson = JSON.stringify(d.recent_jobs || []);
+    if (currentJobsJson !== lastJobsJson) {
+      lastJobsJson = currentJobsJson;
+      renderJobs(d.recent_jobs);
     }
   } catch (e) {
     console.error(e);
@@ -1230,22 +1206,56 @@ async function cancelActiveBatch() {
   refreshStatus();
 }
 
+let lastJobsJson = '';
 const expandedBatches = new Set();
 
-function toggleBatchDetail(batchId) {
-  if (expandedBatches.has(batchId)) {
-    expandedBatches.delete(batchId);
-  } else {
-    expandedBatches.add(batchId);
+function renderJobs(jobs) {
+  const tb = document.getElementById('jobs-tbody');
+  if (!tb) return;
+  if (!jobs || jobs.length === 0) {
+    tb.innerHTML = '<tr><td colspan="8" style="color:#94a3b8;">No simulation batches run since boot.</td></tr>';
+    return;
   }
+  tb.innerHTML = jobs.map((j) => {
+    const isExp = expandedBatches.has(j.batch_id);
+    return `
+    <tr style="cursor:pointer;" onclick="toggleBatchDetail('${j.batch_id}')">
+      <td>${j.timestamp}</td>
+      <td><code>${j.batch_id}</code> <span id="batch-arr-${j.batch_id}">${isExp ? '▲' : '▼'}</span></td>
+      <td><strong>${j.hero_deck}</strong></td>
+      <td>${(j.opponents || []).join(', ')}</td>
+      <td>${j.games}</td>
+      <td><strong style="color:${j.hero_wins > 0 ? '#4ade80' : '#f87171'};">${j.win_rate_pct}%</strong> (${j.hero_wins}/${j.games})</td>
+      <td><strong>${j.wall_sec}s</strong></td>
+      <td>${j.avg_sec_per_game}s/game</td>
+    </tr>
+    <tr id="batch-det-${j.batch_id}" style="display:${isExp ? 'table-row' : 'none'}; background:#0d1522;">
+      <td colspan="8" style="padding:14px 20px;">
+        <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(200px, 1fr)); gap:12px; font-size:0.83rem;">
+          <div><strong>Batch ID:</strong> <code>${j.batch_id}</code></div>
+          <div><strong>Hero Wins:</strong> ${j.hero_wins} / ${j.games} (${j.win_rate_pct}%)</div>
+          <div><strong>Timeouts / Retries:</strong> ${j.timeouts || 0} (${j.requeued_games || 0} auto-requeued)</div>
+          <div><strong>Avg Game Duration:</strong> ${j.avg_sec_per_game}s</div>
+          <div><strong>Opponent Pod:</strong> ${(j.opponents || []).join(', ')}</div>
+        </div>
+      </td>
+    </tr>
+    `;
+  }).join('');
+}
+
+function toggleBatchDetail(batchId) {
   const row = document.getElementById(`batch-det-${batchId}`);
   const arr = document.getElementById(`batch-arr-${batchId}`);
-  const isOpen = expandedBatches.has(batchId);
-  if (row) {
-    row.style.display = isOpen ? 'table-row' : 'none';
-  }
-  if (arr) {
-    arr.innerText = isOpen ? '▲' : '▼';
+  if (!row) return;
+  const isCurrentlyOpen = (row.style.display !== 'none');
+  const willBeOpen = !isCurrentlyOpen;
+  row.style.display = willBeOpen ? 'table-row' : 'none';
+  if (arr) arr.innerText = willBeOpen ? '▲' : '▼';
+  if (willBeOpen) {
+    expandedBatches.add(batchId);
+  } else {
+    expandedBatches.delete(batchId);
   }
 }
 
@@ -1289,6 +1299,9 @@ class ForgeSimHttpHandler(BaseHTTPRequestHandler):
             self.send_response(200)
             self.send_header("Content-Type", "text/html; charset=utf-8")
             self.send_header("Content-Length", str(len(raw)))
+            self.send_header("Cache-Control", "no-cache, no-store, must-revalidate")
+            self.send_header("Pragma", "no-cache")
+            self.send_header("Expires", "0")
             self.end_headers()
             self.wfile.write(raw)
             return
