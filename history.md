@@ -1,5 +1,30 @@
 # Project History: MTG Deck Collection
 
+## 🗓️ November 2026: Headless MTG Forge 4-AI Pod Simulation Cluster (`forgesim.chayde.lab`) & 100-Game Pod Gauntlets
+
+### 2026-11-11: ForgeSim 4-AI Pod Simulation Cluster (`v1.0.0` $\rightarrow$ `v1.3.2`) & 100-Game Gauntlet Experiments
+*   **Headless 4-AI Commander Pod Testing Platform (`scripts/ForgePodRunner.java` & `scripts/forge_pod_sim.py`):**
+    *   Engineered a custom Java telemetry bridge (`ForgePodRunner.java`) wrapping MTG Forge v2.0.15 (`forge-gui-desktop-2.0.15-jar-with-dependencies.jar`) with `HeroLobbyPlayerAi` / `HeroControllerAi` and `PodTelemetryVisitor` (`IGameEventVisitor`) to capture Seat 1's hidden zone data (exact rejected mulligan hands, London Mulligan bottomed cards, final kept hand, turn-by-turn card draws from `Library -> Hand`, land drops, spell casts, targeted interaction, combat/commander damage, and board progression snapshots).
+    *   Added `-daemon` mode to keep Forge's 32,578 card scripts warm in RAM across games with `0.0s` startup latency.
+*   **Homelab Cluster Deployment & Scaling on `pve06` (`forgesim.chayde.lab`, `v1.0.0` $\rightarrow$ `v1.3.2`):**
+    *   Deployed `forgesim_cluster/` (`forgesim_server.py` + `ForgePodRunner.java` + Watchtower) to Proxmox LXC `CT 201` (`172.17.0.60`, proxied via Caddy at `http://forgesim.chayde.lab`) on `pve06` (`192.168.1.40` — Dual Xeon E5-2697 v2, 48 threads, 128 GB RAM).
+    *   Scaled `CT 201` to **32 vCPUs, 36 GB RAM, 8 GB swap** running **16 Pre-Warmed JVM Workers** (`WORKERS=16`).
+    *   Established the mandatory `forgesim_cluster/version.json` manifest versioning rule (`Rule 5.8` in `GEMINI.md`) and LAN hot-push self-update (`--update-remote push`).
+    *   Implemented a dynamic work-stealing task queue with automatic seed regeneration and auto-requeue (up to 2 retries) on timeout or manual skip (`v1.3.0`), and fixed Web UI expandable batch history row persistence with differential DOM rendering and `Cache-Control: no-cache` headers (`v1.3.1`–`v1.3.2`).
+*   **Timeout Calibration (`90s` $\rightarrow$ `150s`):**
+    *   Initial 100-game stress runs on `HenzieBlitz` revealed an 89% timeout rate at the `90s` per-game cap because 4-player Commander board states peak in complexity around Turns 8–10 just before lethal combat breakthroughs.
+    *   Calibrated the default per-game timeout cap to **150 seconds**, reducing timeout rates from 89% down to **0%–1%** on standard Bracket 3 pods.
+*   **100-Game Bracket 3 Pod Simulation Experiments:**
+    *   **Experiment 1 — `EtaliConqueror` (`Etali.dck` vs. `Chainer`, `Caesar`, `Ramses-Assassins`, 100 Games):**
+        *   **Win Rate:** **55.0% (55/100 wins)** vs. `Ramses-Assassins` (21%), `Chainer` (15%), `Caesar` (8%), with only **1/100 timeouts** (99% natural resolution).
+        *   **Telemetry:** **93.0% Commander Cast Rate** (Avg Turn `6.52`, removed `1.01x`/game), **66% Gold / 34% Silver / 0% Desperation** opening hands, `43.6` avg combat damage (`15.2` commander damage), led by `Etali` (172x), `Electroduplicate` (38x), and `Rampant Growth` (35x).
+    *   **Experiment 2 — `SmaugTheImpenetrable` (`SmaugTheImpenetrable.dck` vs. `MarchesaBlackRose`, `Rocco`, `Captain America`, 100 Games):**
+        *   **Win Rate:** **36.0% (36/100 wins)** vs. `Captain America` (26%), `Marchesa` (25%), `Rocco` (12%), with **0/100 timeouts** (`889.8s` wall-clock = `8.9s`/game effective throughput).
+        *   **Telemetry:** Built-in Ward kept Smaug removal down to **`0.24x`/game**; **23.0 of 31.2 avg combat damage was Commander Damage**; **65% Gold / 34% Silver / 1% Desperation** hands, led by `Smaug` (115x), `Orcish Bowmasters` (32x), `Abrade` (29x), and `The Sackville-Bagginses` (25x).
+    *   **Experiment 3 — `TheHive` (`TheHive.dck` vs. `Sauron`, `UrDragon`, `Karametra`, 100 Games):**
+        *   **Win Rate:** **4.0% (4/100 wins)** vs. `UrDragon` (21%, `37.3` avg peak power), `Karametra` (16%, `24.6` avg peak power), `Sauron` (4%), with **55/100 board-stall timeouts** (`256` total game executions across `2373s`).
+        *   **Diagnostic Takeaway:** Go-wide Sliver boards (15+ Slivers with flying/deathtouch/vigilance) stalled on Turns 9–11 against giant flying Dragons and indestructible Karametra boards that went over the top in raw per-creature statlines (`37.3` vs `17.7` peak power).
+
 ## 🗓️ October 2026: Elephant-Minnow Model (EMM) Inception, Obeka Baseline, Jin Sakai & Smaug
 
 ### 2026-10-26: Elephant-Minnow Model (EMM) — Spec-Driven Deck Engineering & Zero-Context Subagent Review Inception (`.agents/skills/elephant-minnow/`)
