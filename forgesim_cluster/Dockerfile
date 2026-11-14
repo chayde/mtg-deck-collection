@@ -4,7 +4,7 @@
 FROM eclipse-temurin:17-jdk-jammy
 
 ENV DEBIAN_FRONTEND=noninteractive
-ARG FORGE_VERSION=2.0.15
+ARG FORGE_VERSION=2.0.16
 
 # Install Python 3, curl, bzip2, git, and headless AWT font dependencies required by Forge
 RUN apt-get update && apt-get install -y --no-install-recommends \

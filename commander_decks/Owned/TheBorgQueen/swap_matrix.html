@@ -1,0 +1,910 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Swap Matrix: TheBorgQueen</title>
+<style>
+  :root {
+    --bg-main: #0d1117;
+    --bg-card: #161b22;
+    --border-color: #30363d;
+    --text-main: #c9d1d9;
+    --text-muted: #8b949e;
+    --out-red: #f85149;
+    --out-bg: rgba(248, 81, 73, 0.1);
+    --in-green: #3fb950;
+    --in-bg: rgba(63, 185, 80, 0.1);
+    --gold: #d29922;
+    --blue: #58a6ff;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background-color: var(--bg-main);
+    color: var(--text-main);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    padding: 24px;
+    line-height: 1.5;
+  }
+  .container { max-width: 1200px; margin: 0 auto; }
+  header {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 24px;
+  }
+  h1 { font-size: 24px; color: #fff; margin-bottom: 8px; }
+  .sub-header { color: var(--text-muted); font-size: 14px; margin-bottom: 16px; }
+  
+  /* Delta Dashboard Grid */
+  .dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 16px;
+    margin-top: 16px;
+  }
+  .metric-card {
+    background: #21262d;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    padding: 14px;
+  }
+  .metric-title { font-size: 12px; text-transform: uppercase; color: var(--text-muted); font-weight: 600; }
+  .metric-value { font-size: 20px; font-weight: bold; margin: 4px 0; }
+  .metric-sub { font-size: 12px; }
+  
+  .positive { color: var(--in-green); }
+  .negative { color: var(--out-red); }
+  .critical { color: var(--out-red); font-weight: bold; }
+  .neutral { color: var(--text-muted); }
+
+  /* Curve Section */
+  .curve-section {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 24px;
+  }
+  .curve-chart {
+    display: flex;
+    align-items: flex-end;
+    gap: 20px;
+    height: 140px;
+    padding-top: 20px;
+    border-bottom: 1px solid var(--border-color);
+  }
+  .curve-col {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+  }
+  .curve-bars-pair {
+    display: flex;
+    align-items: flex-end;
+    gap: 4px;
+    width: 36px;
+    height: 100px;
+  }
+  .bar { width: 16px; border-radius: 3px 3px 0 0; }
+  .bar-pre { background: #8b949e; opacity: 0.6; }
+  .bar-post { background: var(--blue); }
+  .curve-label { font-size: 12px; font-weight: 600; margin-top: 6px; }
+  .curve-counts { font-size: 10px; color: var(--text-muted); }
+
+  /* Rules Watchdog */
+  .rules-section {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 24px;
+  }
+  .rules-title { font-size: 16px; font-weight: bold; margin-bottom: 12px; display: flex; align-items: center; gap: 8px; }
+  .rule-item {
+    padding: 10px 14px;
+    border-radius: 6px;
+    margin-bottom: 8px;
+    font-size: 13px;
+    border: 1px solid transparent;
+  }
+  .rule-item.critical { background: rgba(248, 81, 73, 0.15); border-color: var(--out-red); }
+  .rule-item.warning { background: rgba(210, 153, 34, 0.15); border-color: var(--gold); }
+  .rule-item.info { background: rgba(88, 166, 255, 0.1); border-color: var(--blue); }
+  .rule-badge {
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-right: 6px;
+  }
+  .rule-badge.critical { background: var(--out-red); color: #fff; }
+  .rule-badge.warning { background: var(--gold); color: #000; }
+  .rule-badge.info { background: var(--blue); color: #000; }
+
+  /* Swap Rows */
+  .swap-row {
+    display: flex;
+    align-items: stretch;
+    gap: 16px;
+    margin-bottom: 20px;
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 16px;
+  }
+  .card-column { flex: 1; display: flex; flex-direction: column; }
+  .col-header {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    padding: 4px 8px;
+    border-radius: 4px;
+    margin-bottom: 12px;
+    display: inline-block;
+    align-self: flex-start;
+  }
+  .badge-out { background: var(--out-bg); color: var(--out-red); border: 1px solid var(--out-red); }
+  .badge-in { background: var(--in-bg); color: var(--in-green); border: 1px solid var(--in-green); }
+  
+  .card-card {
+    display: flex;
+    gap: 16px;
+    flex: 1;
+  }
+  .img-wrap {
+    width: 140px;
+    flex-shrink: 0;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+    transition: transform 0.2s ease;
+  }
+  .img-wrap:hover {
+    transform: scale(1.08);
+    z-index: 10;
+  }
+  .img-wrap img { width: 100%; display: block; border-radius: 6px; }
+  .card-info { flex: 1; }
+  .card-title {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .card-title a { color: #fff; text-decoration: none; }
+  .card-title a:hover { text-decoration: underline; color: var(--blue); }
+  .mana-cost { font-family: monospace; font-size: 14px; color: var(--gold); }
+  .type-line { font-size: 12px; color: var(--text-muted); margin-bottom: 8px; }
+  .oracle-box {
+    background: #0d1117;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    padding: 8px 10px;
+    font-size: 12px;
+    color: #e6edf3;
+    max-height: 110px;
+    overflow-y: auto;
+  }
+  .rationale-tag {
+    margin-top: 8px;
+    font-size: 12px;
+    background: rgba(88, 166, 255, 0.1);
+    border-left: 3px solid var(--blue);
+    padding: 6px 8px;
+    border-radius: 0 4px 4px 0;
+  }
+  .swap-arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    color: var(--text-muted);
+    padding: 0 8px;
+  }
+
+  @media (max-width: 850px) {
+    .swap-row { flex-direction: column; }
+    .swap-arrow { transform: rotate(90deg); margin: 8px 0; }
+    .card-card { flex-direction: column; }
+    .img-wrap { width: 180px; margin: 0 auto; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <h1>Visual Swap Matrix — TheBorgQueen</h1>
+    <div class="sub-header">
+      Commander: <strong>The Borg Queen</strong> | Target Bracket: <strong>Bracket 3</strong> | 
+      Generated: <strong>2026-11-14 10:25:58</strong>
+    </div>
+    <div class="rationale-tag"><strong>Proposal Logic:</strong> Phase 1 Bracket 3 Overhaul (15 Swaps): Synthesize Borg swarm, artifact anthems, flying/double strike finishers, and Command Zone Unwinding Clock / velocity upgrades</div>
+
+    <div class="dashboard-grid">
+      <div class="metric-card">
+        <div class="metric-title">Average CMC (Nonland)</div>
+        <div class="metric-value neutral">3.28 ➔ 3.25</div>
+        <div class="metric-sub">Delta: -0.03</div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-title">Game Changers (Bracket 3)</div>
+        <div class="metric-value positive">0 / 3</div>
+        <div class="metric-sub">Status: PASS (Pre: 0)</div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-title">Deck Size & Balance</div>
+        <div class="metric-value">99 Cards</div>
+        <div class="metric-sub">Creatures: 19➔22 | Lands: 38</div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-title">Est. Market Value Impact</div>
+        <div class="metric-value">$233.01</div>
+        <div class="metric-sub">Delta: +$71.78</div>
+      </div>
+    </div>
+  </header>
+
+  <div class="rules-section">
+    <div class="rules-title">🛡️ Rules & Synergy Watchdog</div>
+    <div class='rule-item positive'>All clear! No rules traps or preference violations detected.</div>
+  </div>
+
+  <div class="curve-section">
+    <div class="rules-title">📊 Mana Curve Shift (Grey = Pre, Blue = Post)</div>
+    <div class="curve-chart">
+      
+        <div class="curve-col">
+            <div class="curve-bars-pair">
+                <div class="bar bar-pre" style="height: 41%;" title="Pre: 7"></div>
+                <div class="bar bar-post" style="height: 47%;" title="Post: 8"></div>
+            </div>
+            <div class="curve-label">0-1</div>
+            <div class="curve-counts">7➔8</div>
+        </div>
+        
+        <div class="curve-col">
+            <div class="curve-bars-pair">
+                <div class="bar bar-pre" style="height: 64%;" title="Pre: 11"></div>
+                <div class="bar bar-post" style="height: 82%;" title="Post: 14"></div>
+            </div>
+            <div class="curve-label">2</div>
+            <div class="curve-counts">11➔14</div>
+        </div>
+        
+        <div class="curve-col">
+            <div class="curve-bars-pair">
+                <div class="bar bar-pre" style="height: 100%;" title="Pre: 17"></div>
+                <div class="bar bar-post" style="height: 88%;" title="Post: 15"></div>
+            </div>
+            <div class="curve-label">3</div>
+            <div class="curve-counts">17➔15</div>
+        </div>
+        
+        <div class="curve-col">
+            <div class="curve-bars-pair">
+                <div class="bar bar-pre" style="height: 82%;" title="Pre: 14"></div>
+                <div class="bar bar-post" style="height: 70%;" title="Post: 12"></div>
+            </div>
+            <div class="curve-label">4</div>
+            <div class="curve-counts">14➔12</div>
+        </div>
+        
+        <div class="curve-col">
+            <div class="curve-bars-pair">
+                <div class="bar bar-pre" style="height: 47%;" title="Pre: 8"></div>
+                <div class="bar bar-post" style="height: 41%;" title="Post: 7"></div>
+            </div>
+            <div class="curve-label">5</div>
+            <div class="curve-counts">8➔7</div>
+        </div>
+        
+        <div class="curve-col">
+            <div class="curve-bars-pair">
+                <div class="bar bar-pre" style="height: 23%;" title="Pre: 4"></div>
+                <div class="bar bar-post" style="height: 29%;" title="Post: 5"></div>
+            </div>
+            <div class="curve-label">6+</div>
+            <div class="curve-counts">4➔5</div>
+        </div>
+        
+    </div>
+  </div>
+
+  <div class="swaps-container">
+    
+        <div class="swap-row">
+            <div class="card-column out-col">
+                <div class="col-header badge-out">OUT #1 — CUT</div>
+                <div class="card-card">
+                    <div class="img-wrap">
+                        <img src="https://cards.scryfall.io/normal/front/0/3/03f8c846-d80c-49a4-a562-e817cd0c6096.jpg?1783906004" alt="Skycloud Expanse" loading="lazy" />
+                    </div>
+                    <div class="card-info">
+                        <div class="card-title">
+                            <a href="https://scryfall.com/card/eoc/181/skycloud-expanse?utm_source=api" target="_blank">Skycloud Expanse</a>
+                            <span class="mana-cost"></span>
+                        </div>
+                        <div class="type-line">Land — CMC 0</div>
+                        <div class="oracle-box">{1}, {T}: Add {W}{U}.</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swap-arrow">➔</div>
+
+            <div class="card-column in-col">
+                <div class="col-header badge-in">IN #1 — ADD</div>
+                <div class="card-card">
+                    <div class="img-wrap">
+                        <img src="https://cards.scryfall.io/normal/front/d/4/d4fb722f-40af-4bd1-b660-e8186b98f233.jpg?1783922655" alt="Sea of Clouds" loading="lazy" />
+                    </div>
+                    <div class="card-info">
+                        <div class="card-title">
+                            <a href="https://scryfall.com/card/clb/360/sea-of-clouds?utm_source=api" target="_blank">Sea of Clouds</a>
+                            <span class="mana-cost"></span>
+                        </div>
+                        <div class="type-line">Land — CMC 0</div>
+                        <div class="oracle-box">This land enters tapped unless you have two or more opponents.<br>{T}: Add {W} or {U}.</div>
+                        <div class="rationale-tag"><strong>Role / Reason:</strong> Untapped multiplayer Azorius dual replacing filter land</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="swap-row">
+            <div class="card-column out-col">
+                <div class="col-header badge-out">OUT #2 — CUT</div>
+                <div class="card-card">
+                    <div class="img-wrap">
+                        <img src="https://cards.scryfall.io/normal/front/8/c/8c99e6e1-3b88-4d2f-bc5d-70439585a063.jpg?1783922664" alt="Stonespeaker Crystal" loading="lazy" />
+                    </div>
+                    <div class="card-info">
+                        <div class="card-title">
+                            <a href="https://scryfall.com/card/clb/338/stonespeaker-crystal?utm_source=api" target="_blank">Stonespeaker Crystal</a>
+                            <span class="mana-cost">{4}</span>
+                        </div>
+                        <div class="type-line">Artifact — CMC 4</div>
+                        <div class="oracle-box">{T}: Add {C}{C}.<br>{2}, {T}, Sacrifice this artifact: Exile any number of target players' graveyards. Draw a card.</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swap-arrow">➔</div>
+
+            <div class="card-column in-col">
+                <div class="col-header badge-in">IN #2 — ADD</div>
+                <div class="card-card">
+                    <div class="img-wrap">
+                        <img src="https://cards.scryfall.io/normal/front/3/e/3ef87948-0ad9-4757-a692-2262c8e24367.jpg?1785759354" alt="Fellwar Stone" loading="lazy" />
+                    </div>
+                    <div class="card-info">
+                        <div class="card-title">
+                            <a href="https://scryfall.com/card/mbc/74/fellwar-stone?utm_source=api" target="_blank">Fellwar Stone</a>
+                            <span class="mana-cost">{2}</span>
+                        </div>
+                        <div class="type-line">Artifact — CMC 2</div>
+                        <div class="oracle-box">{T}: Add one mana of any color that a land an opponent controls could produce.</div>
+                        <div class="rationale-tag"><strong>Role / Reason:</strong> 2-CMC colored rock smoothing early velocity (Command Zone & DeckTechs pick)</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="swap-row">
+            <div class="card-column out-col">
+                <div class="col-header badge-out">OUT #3 — CUT</div>
+                <div class="card-card">
+                    <div class="img-wrap">
+                        <img src="https://cards.scryfall.io/normal/front/0/d/0d62b5d1-b22c-4919-8b3e-19aa3b42e521.jpg?1793021038" alt="Reconnaissance Partition" loading="lazy" />
+                    </div>
+                    <div class="card-info">
+                        <div class="card-title">
+                            <a href="https://scryfall.com/card/trc/119/reconnaissance-partition?utm_source=api" target="_blank">Reconnaissance Partition</a>
+                            <span class="mana-cost">{4}</span>
+                        </div>
+                        <div class="type-line">Artifact Creature — Borg — CMC 4</div>
+                        <div class="oracle-box">This creature enters with two charge counters on it.<br>{T}, Remove a counter from this creature: Choose one —<br>• Search your library for a basic land card, put it onto the battlefield tapped, then shuffle.<br>• Draw a card.</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swap-arrow">➔</div>
+
+            <div class="card-column in-col">
+                <div class="col-header badge-in">IN #3 — ADD</div>
+                <div class="card-card">
+                    <div class="img-wrap">
+                        <img src="https://cards.scryfall.io/normal/front/b/0/b0556f20-1ea8-4ab5-9a09-dec9959f017b.jpg?1783906043" alt="Etherium Sculptor" loading="lazy" />
+                    </div>
+                    <div class="card-info">
+                        <div class="card-title">
+                            <a href="https://scryfall.com/card/eoc/72/etherium-sculptor?utm_source=api" target="_blank">Etherium Sculptor</a>
+                            <span class="mana-cost">{1}{U}</span>
+                        </div>
+                        <div class="type-line">Artifact Creature — Vedalken Artificer — CMC 2</div>
+                        <div class="oracle-box">Artifact spells you cast cost {1} less to cast.</div>
+                        <div class="rationale-tag"><strong>Role / Reason:</strong> 2-CMC artifact creature reducing all artifact casts by {1}</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="swap-row">
+            <div class="card-column out-col">
+                <div class="col-header badge-out">OUT #4 — CUT</div>
+                <div class="card-card">
+                    <div class="img-wrap">
+                        <img src="https://cards.scryfall.io/normal/front/1/d/1d0d80c7-87b5-47cc-b2fd-7defd281e1a2.jpg?1783903221" alt="Door of Destinies" loading="lazy" />
+                    </div>
+                    <div class="card-info">
+                        <div class="card-title">
+                            <a href="https://scryfall.com/card/msc/198/door-of-destinies?utm_source=api" target="_blank">Door of Destinies</a>
+                            <span class="mana-cost">{4}</span>
+                        </div>
+                        <div class="type-line">Artifact — CMC 4</div>
+                        <div class="oracle-box">As this artifact enters, choose a creature type.<br>Whenever you cast a spell of the chosen type, put a charge counter on this artifact.<br>Creatures you control of the chosen type get +1/+1 for each charge counter on this artifact.</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swap-arrow">➔</div>
+
+            <div class="card-column in-col">
+                <div class="col-header badge-in">IN #4 — ADD</div>
+                <div class="card-card">
+                    <div class="img-wrap">
+                        <img src="https://cards.scryfall.io/normal/front/7/b/7b7a348a-51f7-4dc5-8fe7-1c70fea5e050.jpg?1783915686" alt="Urza, Lord High Artificer" loading="lazy" />
+                    </div>
+                    <div class="card-info">
+                        <div class="card-title">
+                            <a href="https://scryfall.com/card/cmm/130/urza-lord-high-artificer?utm_source=api" target="_blank">Urza, Lord High Artificer</a>
+                            <span class="mana-cost">{2}{U}{U}</span>
+                        </div>
+                        <div class="type-line">Legendary Creature — Human Artificer — CMC 4</div>
+                        <div class="oracle-box">When Urza enters, create a 0/0 colorless Construct artifact creature token with "This token gets +1/+1 for each artifact you control."<br>Tap an untapped artifact you control: Add {U}.<br>{5}: Shuffle your library, then exile the top card. Until end of turn, you may play that card without paying its mana cost.</div>
+                        <div class="rationale-tag"><strong>Role / Reason:</strong> Turns every Borg token and artifact into a {U} mana rock with Unwinding Clock (Command Zone pick)</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="swap-row">
+            <div class="card-column out-col">
+                <div class="col-header badge-out">OUT #5 — CUT</div>
+                <div class="card-card">
+                    <div class="img-wrap">
+                        <img src="https://cards.scryfall.io/normal/front/3/f/3fb0d788-8e6a-4109-bd0a-d245866a6dcb.jpg?1793020988" alt="The Best of Both Worlds" loading="lazy" />
+                    </div>
+                    <div class="card-info">
+                        <div class="card-title">
+                            <a href="https://scryfall.com/card/trc/83/the-best-of-both-worlds?utm_source=api" target="_blank">The Best of Both Worlds</a>
+                            <span class="mana-cost">{4}{W}{U}</span>
+                        </div>
+                        <div class="type-line">Enchantment — Saga — CMC 6</div>
+                        <div class="oracle-box">(As this Saga enters and after your draw step, add a lore counter. Sacrifice after III.)<br>I — Assimilate target nonartifact creature an opponent controls. (Gain control of it and put a +1/+1 counter on it. It's a Borg artifact creature and loses all other creature types.)<br>II — Artifact creatures you control get +2/+2 until end of turn.<br>III — Exile the Borg assimilated with this Saga, then return it to the battlefield under its owner's control.</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swap-arrow">➔</div>
+
+            <div class="card-column in-col">
+                <div class="col-header badge-in">IN #5 — ADD</div>
+                <div class="card-card">
+                    <div class="img-wrap">
+                        <img src="https://cards.scryfall.io/normal/front/b/9/b94a582c-11bb-4463-a826-bd0c79366752.jpg?1792753859" alt="Primary Unimatrix Adjunct" loading="lazy" />
+                    </div>
+                    <div class="card-info">
+                        <div class="card-title">
+                            <a href="https://scryfall.com/card/trk/30/primary-unimatrix-adjunct?utm_source=api" target="_blank">Primary Unimatrix Adjunct</a>
+                            <span class="mana-cost">{3}{W}</span>
+                        </div>
+                        <div class="type-line">Artifact Creature — Borg — CMC 4</div>
+                        <div class="oracle-box">Artifact creatures you control have double strike.</div>
+                        <div class="rationale-tag"><strong>Role / Reason:</strong> In-set Borg lord granting team-wide double strike (Jurassic, DeckTechs & Short pick)</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="swap-row">
+            <div class="card-column out-col">
+                <div class="col-header badge-out">OUT #6 — CUT</div>
+                <div class="card-card">
+                    <div class="img-wrap">
+                        <img src="https://cards.scryfall.io/normal/front/7/5/7589eda0-0a0b-4372-9cee-ea379d6a6f61.jpg?1793020918" alt="Gift of Perfection" loading="lazy" />
+                    </div>
+                    <div class="card-info">
+                        <div class="card-title">
+                            <a href="https://scryfall.com/card/trc/44/gift-of-perfection?utm_source=api" target="_blank">Gift of Perfection</a>
+                            <span class="mana-cost">{4}{U}</span>
+                        </div>
+                        <div class="type-line">Sorcery — CMC 5</div>
+                        <div class="oracle-box">Each opponent reveals cards from the top of their library until they reveal a creature card. Assimilate one of the creature cards revealed this way. Then each opponent puts the other cards they revealed this way on the bottom of their library in a random order. (To assimilate a card, put it onto the battlefield under your control with a +1/+1 counter. It's a Borg artifact creature and loses all other creature types.)</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swap-arrow">➔</div>
+
+            <div class="card-column in-col">
+                <div class="col-header badge-in">IN #6 — ADD</div>
+                <div class="card-card">
+                    <div class="img-wrap">
+                        <img src="https://cards.scryfall.io/normal/front/6/3/63918e59-0c03-4d98-9216-e58ee157b7ea.jpg?1792668297" alt="Antagonist Incorporator" loading="lazy" />
+                    </div>
+                    <div class="card-info">
+                        <div class="card-title">
+                            <a href="https://scryfall.com/card/trk/3/antagonist-incorporator?utm_source=api" target="_blank">Antagonist Incorporator</a>
+                            <span class="mana-cost">{1}{W}</span>
+                        </div>
+                        <div class="type-line">Artifact Creature — Borg — CMC 2</div>
+                        <div class="oracle-box">Artifact creatures you control have "Whenever this creature deals combat damage to a player, you may pay {1}. If you do, create a 1/1 colorless Borg artifact creature token."</div>
+                        <div class="rationale-tag"><strong>Role / Reason:</strong> 2-CMC Borg giving all artifact creatures a second Locutus token trigger (Jurassic & Short pick)</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="swap-row">
+            <div class="card-column out-col">
+                <div class="col-header badge-out">OUT #7 — CUT</div>
+                <div class="card-card">
+                    <div class="img-wrap">
+                        <img src="https://cards.scryfall.io/normal/front/1/6/16cb0526-7623-4d02-97d4-b87021d5efc4.jpg?1793020952" alt="Assimilate the Wounded" loading="lazy" />
+                    </div>
+                    <div class="card-info">
+                        <div class="card-title">
+                            <a href="https://scryfall.com/card/trc/55/assimilate-the-wounded?utm_source=api" target="_blank">Assimilate the Wounded</a>
+                            <span class="mana-cost">{2}{B}</span>
+                        </div>
+                        <div class="type-line">Instant — CMC 3</div>
+                        <div class="oracle-box">For each opponent, assimilate up to one target creature card from that player's graveyard that was put there from the battlefield this turn. (Put it onto the battlefield under your control with a +1/+1 counter. It's a Borg artifact creature and loses all other creature types.)</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swap-arrow">➔</div>
+
+            <div class="card-column in-col">
+                <div class="col-header badge-in">IN #7 — ADD</div>
+                <div class="card-card">
+                    <div class="img-wrap">
+                        <img src="https://cards.scryfall.io/normal/front/1/9/19bf6b74-b236-42eb-8c88-d715cece6357.jpg?1783906045" alt="Cyberdrive Awakener" loading="lazy" />
+                    </div>
+                    <div class="card-info">
+                        <div class="card-title">
+                            <a href="https://scryfall.com/card/eoc/69/cyberdrive-awakener?utm_source=api" target="_blank">Cyberdrive Awakener</a>
+                            <span class="mana-cost">{5}{U}</span>
+                        </div>
+                        <div class="type-line">Artifact Creature — Construct — CMC 6</div>
+                        <div class="oracle-box">Flying<br>Other artifact creatures you control have flying.<br>When this creature enters, each noncreature artifact you control becomes a 4/4 artifact creature until end of turn.</div>
+                        <div class="rationale-tag"><strong>Role / Reason:</strong> Grants all artifact creatures flying and animates noncreature artifacts into 4/4 flyers</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="swap-row">
+            <div class="card-column out-col">
+                <div class="col-header badge-out">OUT #8 — CUT</div>
+                <div class="card-card">
+                    <div class="img-wrap">
+                        <img src="https://cards.scryfall.io/normal/front/6/0/60bcc801-7c0a-449f-a06d-d8b96c1cb42f.jpg?1793020943" alt="Transwarp Hub" loading="lazy" />
+                    </div>
+                    <div class="card-info">
+                        <div class="card-title">
+                            <a href="https://scryfall.com/card/trc/52/transwarp-hub?utm_source=api" target="_blank">Transwarp Hub</a>
+                            <span class="mana-cost">{2}{U}</span>
+                        </div>
+                        <div class="type-line">Artifact — Spacecraft — CMC 3</div>
+                        <div class="oracle-box">When this Spacecraft enters, mill five cards. You may put up to two artifact cards from among them into your hand.<br>Station (Tap another creature you control: Put charge counters equal to its power on this Spacecraft. Station only as a sorcery.)<br>3+ | {T}: Target creature can't be blocked this turn.</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swap-arrow">➔</div>
+
+            <div class="card-column in-col">
+                <div class="col-header badge-in">IN #8 — ADD</div>
+                <div class="card-card">
+                    <div class="img-wrap">
+                        <img src="https://cards.scryfall.io/normal/front/3/0/30e02cc7-8ea9-468b-ba61-a1e00fefea22.jpg?1783913934" alt="Illustrious Wanderglyph" loading="lazy" />
+                    </div>
+                    <div class="card-info">
+                        <div class="card-title">
+                            <a href="https://scryfall.com/card/lcc/9/illustrious-wanderglyph?utm_source=api" target="_blank">Illustrious Wanderglyph</a>
+                            <span class="mana-cost">{4}{W}</span>
+                        </div>
+                        <div class="type-line">Artifact Creature — Golem — CMC 5</div>
+                        <div class="oracle-box">Ascend (If you control ten or more permanents, you get the city's blessing for the rest of the game.)<br>Other artifact creatures you control get +2/+2 as long as you have the city's blessing.<br>At the beginning of each upkeep, create a 1/1 colorless Gnome artifact creature token.</div>
+                        <div class="rationale-tag"><strong>Role / Reason:</strong> +2/+2 artifact creature anthem that creates a 1/1 Gnome on every player's upkeep</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="swap-row">
+            <div class="card-column out-col">
+                <div class="col-header badge-out">OUT #9 — CUT</div>
+                <div class="card-card">
+                    <div class="img-wrap">
+                        <img src="https://cards.scryfall.io/normal/front/0/d/0d1f1428-a912-4c42-a0bc-4e4cb5bdd1b1.jpg?1793020958" alt="Assimilation Assessor" loading="lazy" />
+                    </div>
+                    <div class="card-info">
+                        <div class="card-title">
+                            <a href="https://scryfall.com/card/trc/56/assimilation-assessor?utm_source=api" target="_blank">Assimilation Assessor</a>
+                            <span class="mana-cost">{4}{B}</span>
+                        </div>
+                        <div class="type-line">Artifact Creature — Borg — CMC 5</div>
+                        <div class="oracle-box">When this creature enters, exile target opponent's graveyard.<br>Whenever this creature attacks, assimilate a creature card exiled with it. (Put it onto the battlefield under your control with a +1/+1 counter. It's a Borg artifact creature and loses all other creature types.)</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swap-arrow">➔</div>
+
+            <div class="card-column in-col">
+                <div class="col-header badge-in">IN #9 — ADD</div>
+                <div class="card-card">
+                    <div class="img-wrap">
+                        <img src="https://cards.scryfall.io/normal/front/6/0/608cdbdb-6f7e-438a-bab0-0e7782435f0f.jpg?1783913897" alt="Akroma's Will" loading="lazy" />
+                    </div>
+                    <div class="card-info">
+                        <div class="card-title">
+                            <a href="https://scryfall.com/card/lcc/125/akromas-will?utm_source=api" target="_blank">Akroma's Will</a>
+                            <span class="mana-cost">{3}{W}</span>
+                        </div>
+                        <div class="type-line">Instant — CMC 4</div>
+                        <div class="oracle-box">Choose one. If you control a commander as you cast this spell, you may choose both instead.<br>• Creatures you control gain flying, vigilance, and double strike until end of turn.<br>• Creatures you control gain lifelink, indestructible, and protection from each color until end of turn.</div>
+                        <div class="rationale-tag"><strong>Role / Reason:</strong> Instant team flying, double strike, lifelink, indestructible, and protection finisher</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="swap-row">
+            <div class="card-column out-col">
+                <div class="col-header badge-out">OUT #10 — CUT</div>
+                <div class="card-card">
+                    <div class="img-wrap">
+                        <img src="https://cards.scryfall.io/normal/front/3/8/382e4d2f-7cc9-4229-9147-2d3e4af9063f.jpg?1792507962" alt="Join the Collective" loading="lazy" />
+                    </div>
+                    <div class="card-info">
+                        <div class="card-title">
+                            <a href="https://scryfall.com/card/trc/20/join-the-collective?utm_source=api" target="_blank">Join the Collective</a>
+                            <span class="mana-cost">{5}{W}{W}</span>
+                        </div>
+                        <div class="type-line">Sorcery — CMC 7</div>
+                        <div class="oracle-box">Destroy all creatures. Create X 1/1 colorless Borg artifact creature tokens, where X is the number of nonartifact creatures destroyed this way.</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swap-arrow">➔</div>
+
+            <div class="card-column in-col">
+                <div class="col-header badge-in">IN #10 — ADD</div>
+                <div class="card-card">
+                    <div class="img-wrap">
+                        <img src="https://cards.scryfall.io/normal/front/d/a/daaa7b7e-76fc-47a0-a58d-1169be1aa335.jpg?1783906046" alt="Organic Extinction" loading="lazy" />
+                    </div>
+                    <div class="card-info">
+                        <div class="card-title">
+                            <a href="https://scryfall.com/card/eoc/66/organic-extinction?utm_source=api" target="_blank">Organic Extinction</a>
+                            <span class="mana-cost">{8}{W}{W}</span>
+                        </div>
+                        <div class="type-line">Sorcery — CMC 10</div>
+                        <div class="oracle-box">Improvise (Your artifacts can help cast this spell. Each artifact you tap after you're done activating mana abilities pays for {1}.)<br>Destroy all nonartifact creatures.</div>
+                        <div class="rationale-tag"><strong>Role / Reason:</strong> Improvise one-sided wrath destroying only nonartifact creatures (Command Zone & Jurassic pick)</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="swap-row">
+            <div class="card-column out-col">
+                <div class="col-header badge-out">OUT #11 — CUT</div>
+                <div class="card-card">
+                    <div class="img-wrap">
+                        <img src="https://cards.scryfall.io/normal/front/e/3/e3fb0104-3a31-41fd-be98-af4656b43f8c.jpg?1793021143" alt="Darksteel Plate" loading="lazy" />
+                    </div>
+                    <div class="card-info">
+                        <div class="card-title">
+                            <a href="https://scryfall.com/card/trc/488/darksteel-plate?utm_source=api" target="_blank">Darksteel Plate</a>
+                            <span class="mana-cost">{3}</span>
+                        </div>
+                        <div class="type-line">Artifact — Equipment — CMC 3</div>
+                        <div class="oracle-box">Indestructible<br>Equipped creature has indestructible.<br>Equip {2}</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swap-arrow">➔</div>
+
+            <div class="card-column in-col">
+                <div class="col-header badge-in">IN #11 — ADD</div>
+                <div class="card-card">
+                    <div class="img-wrap">
+                        <img src="https://cards.scryfall.io/normal/front/c/3/c31e6768-bcab-43c4-bfc1-76e961689ae9.jpg?1783920018" alt="Liberator, Urza's Battlethopter" loading="lazy" />
+                    </div>
+                    <div class="card-info">
+                        <div class="card-title">
+                            <a href="https://scryfall.com/card/bro/237/liberator-urzas-battlethopter?utm_source=api" target="_blank">Liberator, Urza's Battlethopter</a>
+                            <span class="mana-cost">{3}</span>
+                        </div>
+                        <div class="type-line">Legendary Artifact Creature — Thopter — CMC 3</div>
+                        <div class="oracle-box">Flash<br>Flying<br>You may cast colorless spells and artifact spells as though they had flash.<br>Whenever you cast a spell, if the amount of mana spent to cast that spell is greater than Liberator's power, put a +1/+1 counter on Liberator.</div>
+                        <div class="rationale-tag"><strong>Role / Reason:</strong> Gives all artifact spells and The Borg Queen flash to spend Unwinding Clock mana on end steps (Command Zone pick)</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="swap-row">
+            <div class="card-column out-col">
+                <div class="col-header badge-out">OUT #12 — CUT</div>
+                <div class="card-card">
+                    <div class="img-wrap">
+                        <img src="https://cards.scryfall.io/normal/front/e/b/eb2c613d-2159-4c41-b6f7-0e102fc1a5c5.jpg?1793020858" alt="Korok, Liberated Rage" loading="lazy" />
+                    </div>
+                    <div class="card-info">
+                        <div class="card-title">
+                            <a href="https://scryfall.com/card/trc/22/korok-liberated-rage?utm_source=api" target="_blank">Korok, Liberated Rage</a>
+                            <span class="mana-cost">{3}{W}</span>
+                        </div>
+                        <div class="type-line">Legendary Artifact Creature — Klingon Borg — CMC 4</div>
+                        <div class="oracle-box">Battlefront — Whenever Korok attacks, creatures you control get +X/+X until end of turn, where X is the number of opponents you attacked this turn.</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swap-arrow">➔</div>
+
+            <div class="card-column in-col">
+                <div class="col-header badge-in">IN #12 — ADD</div>
+                <div class="card-card">
+                    <div class="img-wrap">
+                        <img src="https://cards.scryfall.io/normal/front/c/3/c382d8ee-6640-4db2-b618-73d315e43526.jpg?1783920851" alt="The Flesh Is Weak" loading="lazy" />
+                    </div>
+                    <div class="card-info">
+                        <div class="card-title">
+                            <a href="https://scryfall.com/card/40k/122/the-flesh-is-weak?utm_source=api" target="_blank">The Flesh Is Weak</a>
+                            <span class="mana-cost">{2}{W}{U}{B}</span>
+                        </div>
+                        <div class="type-line">Enchantment — CMC 5</div>
+                        <div class="oracle-box">When this enchantment enters, put a +1/+1 counter on each creature you control.<br>Creatures you control with +1/+1 counters on them are artifacts in addition to their other types.<br>Nonartifact creatures get -1/-1.</div>
+                        <div class="rationale-tag"><strong>Role / Reason:</strong> Puts +1/+1 counters on team (turning Urza & Sai into artifact creatures) and gives opposing nonartifact creatures -1/-1 (Command Zone pick)</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="swap-row">
+            <div class="card-column out-col">
+                <div class="col-header badge-out">OUT #13 — CUT</div>
+                <div class="card-card">
+                    <div class="img-wrap">
+                        <img src="https://cards.scryfall.io/normal/front/a/4/a4734c59-ff41-47ac-bbb4-c8c3bf052fe6.jpg?1785981497" alt="Hive Mind Coprocessor" loading="lazy" />
+                    </div>
+                    <div class="card-info">
+                        <div class="card-title">
+                            <a href="https://scryfall.com/card/trk/115/hive-mind-coprocessor?utm_source=api" target="_blank">Hive Mind Coprocessor</a>
+                            <span class="mana-cost">{4}{B}</span>
+                        </div>
+                        <div class="type-line">Artifact Creature — Borg — CMC 5</div>
+                        <div class="oracle-box">Artifact creatures you control have "Whenever this creature deals combat damage to a player, you may pay 1 life. If you do, draw a card."</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swap-arrow">➔</div>
+
+            <div class="card-column in-col">
+                <div class="col-header badge-in">IN #13 — ADD</div>
+                <div class="card-card">
+                    <div class="img-wrap">
+                        <img src="https://cards.scryfall.io/normal/front/4/b/4ba835da-0247-4716-9079-1b605297f6d5.jpg?1783907851" alt="Voyage Home" loading="lazy" />
+                    </div>
+                    <div class="card-info">
+                        <div class="card-title">
+                            <a href="https://scryfall.com/card/dft/227/voyage-home?utm_source=api" target="_blank">Voyage Home</a>
+                            <span class="mana-cost">{5}{W}{U}</span>
+                        </div>
+                        <div class="type-line">Sorcery — CMC 7</div>
+                        <div class="oracle-box">Affinity for artifacts (This spell costs {1} less to cast for each artifact you control.)<br>You draw three cards and gain 3 life.</div>
+                        <div class="rationale-tag"><strong>Role / Reason:</strong> Affinity for artifacts unconditional draw-3 + gain 3 life for {W}{U} (Command Zone pick)</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="swap-row">
+            <div class="card-column out-col">
+                <div class="col-header badge-out">OUT #14 — CUT</div>
+                <div class="card-card">
+                    <div class="img-wrap">
+                        <img src="https://cards.scryfall.io/normal/front/9/8/981128b4-acc5-408c-b21b-7133b6c60cc6.jpg?1793020872" alt="Stratagem Emulator" loading="lazy" />
+                    </div>
+                    <div class="card-info">
+                        <div class="card-title">
+                            <a href="https://scryfall.com/card/trc/30/stratagem-emulator?utm_source=api" target="_blank">Stratagem Emulator</a>
+                            <span class="mana-cost">{2}{W}</span>
+                        </div>
+                        <div class="type-line">Artifact Creature — Borg — CMC 3</div>
+                        <div class="oracle-box">When this creature dies, create X 1/1 colorless Borg artifact creature tokens, where X is its power.</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swap-arrow">➔</div>
+
+            <div class="card-column in-col">
+                <div class="col-header badge-in">IN #14 — ADD</div>
+                <div class="card-card">
+                    <div class="img-wrap">
+                        <img src="https://cards.scryfall.io/normal/front/a/1/a1091e0e-a179-4241-8be0-ea92d86f4c08.jpg?1783908851" alt="Sai, Master Thopterist" loading="lazy" />
+                    </div>
+                    <div class="card-info">
+                        <div class="card-title">
+                            <a href="https://scryfall.com/card/j25/63/sai-master-thopterist?utm_source=api" target="_blank">Sai, Master Thopterist</a>
+                            <span class="mana-cost">{2}{U}</span>
+                        </div>
+                        <div class="type-line">Legendary Creature — Human Artificer — CMC 3</div>
+                        <div class="oracle-box">Whenever you cast an artifact spell, create a 1/1 colorless Thopter artifact creature token with flying.<br>{1}{U}, Sacrifice two artifacts: Draw a card.</div>
+                        <div class="rationale-tag"><strong>Role / Reason:</strong> Creates 1/1 flying Thopter artifact creatures on every artifact cast and sacrifices artifacts to draw (Command Zone & DeckTechs pick)</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="swap-row">
+            <div class="card-column out-col">
+                <div class="col-header badge-out">OUT #15 — CUT</div>
+                <div class="card-card">
+                    <div class="img-wrap">
+                        <img src="https://cards.scryfall.io/normal/front/3/e/3e8e99f7-749f-4270-8732-2bc27f27f339.jpg?1793021056" alt="Return to Dust" loading="lazy" />
+                    </div>
+                    <div class="card-info">
+                        <div class="card-title">
+                            <a href="https://scryfall.com/card/trc/427/return-to-dust?utm_source=api" target="_blank">Return to Dust</a>
+                            <span class="mana-cost">{2}{W}{W}</span>
+                        </div>
+                        <div class="type-line">Instant — CMC 4</div>
+                        <div class="oracle-box">Exile target artifact or enchantment. If you cast this spell during your main phase, you may exile up to one other target artifact or enchantment.</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swap-arrow">➔</div>
+
+            <div class="card-column in-col">
+                <div class="col-header badge-in">IN #15 — ADD</div>
+                <div class="card-card">
+                    <div class="img-wrap">
+                        <img src="https://cards.scryfall.io/normal/front/9/5/95ca89ea-1200-4bb4-ae4b-af35d3ccd35b.jpg?1783903242" alt="Path to Exile" loading="lazy" />
+                    </div>
+                    <div class="card-info">
+                        <div class="card-title">
+                            <a href="https://scryfall.com/card/msc/141/path-to-exile?utm_source=api" target="_blank">Path to Exile</a>
+                            <span class="mana-cost">{W}</span>
+                        </div>
+                        <div class="type-line">Instant — CMC 1</div>
+                        <div class="oracle-box">Exile target creature. Its controller may search their library for a basic land card, put that card onto the battlefield tapped, then shuffle.</div>
+                        <div class="rationale-tag"><strong>Role / Reason:</strong> 1-CMC instant exile removal that can also ramp your own 1/1 Borg token into a 7th land for The Borg Queen (Command Zone pick)</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+  </div>
+</div>
+</body>
+</html>

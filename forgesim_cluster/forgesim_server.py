@@ -41,7 +41,8 @@ from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 from typing import Any, Dict, List, Optional, Tuple
 
-SERVICE_VERSION = "1.3.2"
+SERVICE_VERSION = "1.4.0"
+TARGET_FORGE_VERSION = "2.0.16"
 START_TIME = time.time()
 
 
@@ -70,19 +71,37 @@ def find_java_binaries() -> Tuple[str, str]:
     return java_cmd, javac_cmd
 
 
-def find_forge_install() -> Tuple[Path, Path]:
-    """Locates the MTG Forge installation directory and desktop jar."""
-    env_dir = os.environ.get("FORGE_DIR")
-    candidates = []
-    if env_dir:
-        candidates.append(Path(env_dir))
-    candidates.extend([
-        Path("/opt/forge"),
-        Path("/app/forge"),
-        Path(r"C:\forge-mtg"),
-    ])
+def find_forge_install(override_dir: Optional[str] = None) -> Tuple[Path, Path]:
+    """Locates the MTG Forge installation directory and desktop jar, upgrading container installs to TARGET_FORGE_VERSION."""
+    if override_dir:
+        candidates = [Path(override_dir)]
+    else:
+        env_dir = os.environ.get("FORGE_DIR")
+        candidates = []
+        if env_dir:
+            candidates.append(Path(env_dir))
+        candidates.extend([
+            Path("/opt/forge"),
+            Path("/app/forge"),
+            Path(r"C:\forge-mtg"),
+            Path(r"C:\forge"),
+        ])
     for d in candidates:
         if d.exists():
+            target_jar = d / f"forge-gui-desktop-{TARGET_FORGE_VERSION}-jar-with-dependencies.jar"
+            if os.name != "nt" and not target_jar.exists():
+                print(f"[*] Upgrading MTG Forge in {d} to v{TARGET_FORGE_VERSION}...")
+                tar_url = f"https://github.com/Card-Forge/forge/releases/download/forge-{TARGET_FORGE_VERSION}/forge-installer-{TARGET_FORGE_VERSION}.tar.bz2"
+                tmp_tar = Path("/tmp/forge_upgrade.tar.bz2")
+                try:
+                    subprocess.run(["curl", "-fSL", tar_url, "-o", str(tmp_tar)], check=True, timeout=180)
+                    for old_jar in d.glob("forge-gui-desktop-*-jar-with-dependencies.jar"):
+                        old_jar.unlink(missing_ok=True)
+                    subprocess.run(["tar", "-xjf", str(tmp_tar), "-C", str(d)], check=True, timeout=120)
+                    tmp_tar.unlink(missing_ok=True)
+                    print(f"[OK] Upgraded MTG Forge in {d} to v{TARGET_FORGE_VERSION}.")
+                except Exception as up_err:
+                    print(f"[ERROR] Failed to auto-upgrade MTG Forge to v{TARGET_FORGE_VERSION}: {up_err}", file=sys.stderr)
             jars = sorted(d.glob("forge-gui-desktop-*-jar-with-dependencies.jar"))
             if jars:
                 return d, jars[-1]
@@ -1433,14 +1452,7 @@ def main():
     parser.add_argument("--java-source", type=str, default=None, help="Path to ForgePodRunner.java")
     args = parser.parse_args()
 
-    if args.forge_dir:
-        forge_dir = Path(args.forge_dir)
-        jars = sorted(forge_dir.glob("forge-gui-desktop-*-jar-with-dependencies.jar"))
-        if not jars:
-            raise FileNotFoundError(f"No forge-gui-desktop jar found in {forge_dir}")
-        forge_jar = jars[-1]
-    else:
-        forge_dir, forge_jar = find_forge_install()
+    forge_dir, forge_jar = find_forge_install(args.forge_dir)
 
     here = Path(__file__).resolve().parent
     if args.java_source:

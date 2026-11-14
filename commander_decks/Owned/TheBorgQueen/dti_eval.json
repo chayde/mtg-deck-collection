@@ -1,0 +1,228 @@
+{
+  "deck_name": "The Borg Queen (Phase 1 Bracket 3 Upgrade)",
+  "thematic_restriction": false,
+  "archetype": "Esper ({W}{U}{B}) Artifact Creature Swarm, Double Strike & Assimilate Midrange",
+  "threat_onset": "turn 6",
+  "engine_ready": "turn 5",
+  "response_cycles": 1,
+  "grades": {
+    "r1": "A",
+    "r2": "A",
+    "a1": "B",
+    "a2": "A",
+    "p1": "B",
+    "p2": "A",
+    "p3": "B",
+    "i1": "A",
+    "i2": "B",
+    "s1": "A",
+    "s2": "B",
+    "s3": "A"
+  },
+  "justifications": {
+    "r1": "Strong 38-land base (replacing Skycloud Expanse with untapped Sea of Clouds) backed by 16 ramp/cost-reduction/untap pieces including Sol Ring, Arcane Signet, all three Talismans, Fellwar Stone, Etherium Sculptor, Wayfarer's Bauble, Everflowing Chalice, Astral Cornucopia, Commander's Sphere, Queen's Diamond, Urza, Lord High Artificer, Type-03 Borg Vessel, Võx, Child of the Collective, and Unwinding Clock — enabling Turn 3–6 Borg Queen lines (60% T<=7 readiness in Bracket 3 goldfish).",
+    "r2": "High-velocity artifact draw engine featuring Skullclamp, Thoughtcast, Voyage Home, Thirst for Knowledge, Co-Option Adjutant, Sai, Master Thopterist, Seven of Nine, Tertiary Adjunct, Reclamation Specialist, The Immortal Sun, Collective Override, and Urza, Lord High Artificer's repeatable {5} library impulse.",
+    "a1": "Tight functional redundancy across Borg and artifact-token generators (Locutus of Borg, Antagonist Incorporator, Illustrious Wanderglyph, Sai, Master Thopterist, Conquest Mission, Maturation Chamber, Class-4 Tactical Cube) paired with multiple +2/+2 lords and keyword finishers (Tempered Steel, Primary Unimatrix Adjunct, One, Borg Evolved, Akroma's Will).",
+    "a2": "Deploys 2-CMC mana rocks, Etherium Sculptor, Antagonist Incorporator, and Maturation Chamber on Turns 2–3, establishing Urza, Sai, Conquest Mission, or Liberator flash velocity by Turns 4–5.",
+    "p1": "Critical threat onset shifts up to Turn 6 when Illustrious Wanderglyph (+2/+2), Primary Unimatrix Adjunct (double strike), Cyberdrive Awakener (flying + 4/4 rocks), Akroma's Will, or The Borg Queen converts wide artifact armies into lethal multi-player combat pressure.",
+    "p2": "Compact 1-response-cycle closing power through Cyberdrive Awakener mass rock animation, Primary Unimatrix Adjunct double strike, Akroma's Will (choosing both modes with The Borg Queen out), and One, Borg Evolved.",
+    "p3": "Combat damage still funnels through the combat step and visible board buildup, though Liberator, Urza's Battlethopter grants flash deployment speed on opponents' end steps to shrink opponent response windows.",
+    "i1": "Upgraded Esper interaction package pairing Path to Exile, Dispatch, Bitter Triumph, Anguished Unmaking, Disallow, and Deliver from Chaos with three scalable sweepers (Toxic Deluge, Battle of Wolf 359, Organic Extinction).",
+    "i2": "Asymmetrical suppression led by Organic Extinction (Improvise wipe sparing all artifact creatures), Battle of Wolf 359, The Flesh Is Weak (continuous -1/-1 against nonartifact creatures), and The Immortal Sun.",
+    "s1": "Premier instant-speed shielding across Akroma's Will (indestructible + protection from all colors), Emergency Regeneration (team hexproof + indestructible), Borg Incursion, Swiftfoot Boots, One, Borg Evolved (ward {2}), and Liberator flash timing.",
+    "s2": "Steady post-wipe recovery via Academy Ruins, Illustrious Wanderglyph creating a Gnome every upkeep (4 per table cycle), Sai, Master Thopterist rebuilding flying Thopters on artifact casts, and Voyage Home refilling three cards.",
+    "s3": "Resilient commander-independent win paths via Urza, Lord High Artificer, Illustrious Wanderglyph, Cyberdrive Awakener, Primary Unimatrix Adjunct, Locutus of Borg, and One, Borg Evolved even when The Borg Queen is taxed out."
+  },
+  "overview": "Phase 1 Bracket 3 upgrade of The Borg Queen ({4}{W}{U}{B}) Esper Artifact Creature Swarm deck (0 / 3 Game Changers). Retaining The Borg Queen's +2/+2 anthem and Assimilate engine alongside Queen's Diamond and Locutus of Borg, this 15-card overhaul cuts Skycloud Expanse, sluggish 4-CMC rocks, and off-plan nonbos to inject untapped Battlebond fixing (Sea of Clouds), 2-CMC velocity (Fellwar Stone, Etherium Sculptor, Antagonist Incorporator), flash speed (Liberator, Urza's Battlethopter), artifact token multipliers (Sai, Master Thopterist, Illustrious Wanderglyph, Urza, Lord High Artificer), asymmetrical Improvise removal (Organic Extinction, Path to Exile, The Flesh Is Weak), and decisive flying/double-strike finishers (Primary Unimatrix Adjunct, Cyberdrive Awakener, Akroma's Will).",
+  "primer": {
+    "core_strategy": [
+      "Turns 1–3: Curve out with untapped duals (Sea of Clouds, Morphic Pool, Spire of Industry), 2-CMC rocks (Talismans, Arcane Signet, Fellwar Stone), Etherium Sculptor, Wayfarer's Bauble, and early Borg/draw pieces (Antagonist Incorporator, Command Subadjunct, Extraction Integrant, Maturation Chamber, Skullclamp).",
+      "Turns 4–5: Establish token and mana engines with Urza, Lord High Artificer, Sai, Master Thopterist, Illustrious Wanderglyph, Locutus of Borg, Co-Option Adjutant, Type-03 Borg Vessel, or Liberator, Urza's Battlethopter (allowing end-step artifact deployment).",
+      "Turns 5–6: Cast The Borg Queen ({4}{W}{U}{B}) via Urza mana or a charged Queen's Diamond to grant +2/+2 across all artifact creatures and assimilate opponents' top-deck threats on ETB and attack.",
+      "Close-Out: Break board stalls cleanly via Organic Extinction or Battle of Wolf 359, then end the game in one combat step with Cyberdrive Awakener, Primary Unimatrix Adjunct, One, Borg Evolved, or Akroma's Will."
+    ],
+    "mulligan_priorities": {
+      "keep": [
+        "Hands with 3+ lands (preferring untapped sources like Sea of Clouds, Command Tower, or Morphic Pool), at least one 1–2 CMC ramp/discount piece (Sol Ring, Talismans, Arcane Signet, Fellwar Stone, Etherium Sculptor), and an early draw or token piece (Skullclamp, Voyage Home, Antagonist Incorporator, Maturation Chamber)."
+      ],
+      "avoid": [
+        "All-tapped land openers lacking 2-CMC acceleration, or clunky 6–7 CMC hands without Urza, Queen's Diamond, or draw velocity."
+      ]
+    },
+    "key_tips": [
+      "Urza, Lord High Artificer turns every summoning-sick Borg token, Thopter, Gnome, and Clue/Spacecraft into {U} on the turn it enters, accelerating 7-CMC The Borg Queen as early as Turn 3–5.",
+      "With Liberator, Urza's Battlethopter on board, hold up interaction (Akroma's Will, Emergency Regeneration, Disallow, Path to Exile) and flash in Illustrious Wanderglyph or Cyberdrive Awakener on the last opponent's end step.",
+      "Pair Antagonist Incorporator and Locutus of Borg with Primary Unimatrix Adjunct or Akroma's Will: double strike triggers combat-damage token generation and Co-Option Adjutant card draw twice per creature.",
+      "The Flesh Is Weak puts a +1/+1 counter on nonartifact creatures like Sai, Master Thopterist and Urza, Lord High Artificer—converting them into artifacts so they benefit from The Borg Queen, Tempered Steel, and survive Organic Extinction and Battle of Wolf 359."
+    ]
+  },
+  "weaknesses": {
+    "critical": [
+      "7-CMC commander cost paired with 12 remaining precon taplands (cycling duals, Evolving Wilds, Terramorphic Expanse, Arcane Sanctum, Path of Ancestry) still yields a Turn 6.9 average deployment (60% T<=7 Bracket 3 readiness) until Phase 2 fetch/shock/bond land upgrades.",
+      "Broad artifact exile sweepers (Farewell, Austere Command) still hit artifact creatures and noncreature rocks simultaneously unless shielded by Emergency Regeneration or Akroma's Will."
+    ],
+    "moderate": [
+      "Zero instant/sorcery tutors for noncreature finishers keeps Akroma's Will and Tempered Steel dependent on draw velocity (Voyage Home, Co-Option Adjutant, Skullclamp).",
+      "Anthem stacking (+2/+2 from The Borg Queen, Tempered Steel, Illustrious Wanderglyph) turns off Skullclamp's effortless 1-toughness token sacrifice outlet late game (use Sai, Master Thopterist or Reclamation Specialist instead)."
+    ],
+    "minor": [
+      "Reliance on combat phase makes Propaganda/Ghostly Prison effects mildly annoying until answered by Anguished Unmaking or overwhelmed with Urza mana."
+    ]
+  },
+  "key_cards": [
+    {
+      "card": "The Borg Queen",
+      "reason": "7-CMC Esper commander granting +2/+2 across your artifact swarm and assimilating opponents' top-library creatures on ETB and attack."
+    },
+    {
+      "card": "Urza, Lord High Artificer",
+      "reason": "Turns every 1/1 Borg, Thopter, and Gnome token into a Blue mana dork while adding a scaling Construct and a {5} mana sink."
+    },
+    {
+      "card": "Illustrious Wanderglyph",
+      "reason": "Creates four 1/1 Gnome artifact tokens per table cycle and grants +2/+2 to all other artifact creatures with the city's blessing."
+    },
+    {
+      "card": "Akroma's Will",
+      "reason": "Dual-mode win condition and sweeper shield granting flying, vigilance, double strike, lifelink, indestructible, and pro-all colors when The Borg Queen is out."
+    },
+    {
+      "card": "Cyberdrive Awakener",
+      "reason": "Grants team flying and animates every noncreature mana rock, Spacecraft, and Utility artifact into a 4/4 flyer for sudden lethal swings."
+    },
+    {
+      "card": "Primary Unimatrix Adjunct",
+      "reason": "4-CMC Borg granting double strike to all artifact creatures, doubling combat damage alongside Locutus of Borg and Co-Option Adjutant."
+    },
+    {
+      "card": "Organic Extinction",
+      "reason": "Asymmetrical Improvise wrath easily castable for {W}{W} that sweeps all nonartifact creatures while leaving your board unscathed."
+    },
+    {
+      "card": "Locutus of Borg",
+      "reason": "Multiplies every unblocked artifact creature combat hit into another 1/1 Borg token—scaling quadratically with flying and double strike."
+    }
+  ],
+  "card_ledger": {
+    "r1": [
+      {"card": "Sol Ring", "role": "Fast positive mana rock"},
+      {"card": "Arcane Signet", "role": "2-CMC 3-color Esper mana rock"},
+      {"card": "Fellwar Stone", "role": "Untapped 2-CMC rainbow mana rock"},
+      {"card": "Talisman of Dominance", "role": "2-CMC Dimir mana rock"},
+      {"card": "Talisman of Hierarchy", "role": "2-CMC Orzhov mana rock"},
+      {"card": "Talisman of Progress", "role": "2-CMC Azorius mana rock"},
+      {"card": "Etherium Sculptor", "role": "2-CMC artifact spell {1} cost reducer"},
+      {"card": "Wayfarer's Bauble", "role": "1-CMC land ramp artifact"},
+      {"card": "Everflowing Chalice", "role": "Scalable multikicker charge-counter mana rock"},
+      {"card": "Astral Cornucopia", "role": "Scalable colored charge-counter mana rock"},
+      {"card": "Commander's Sphere", "role": "3-CMC colored rock with emergency draw"},
+      {"card": "Queen's Diamond", "role": "4-CMC Spacecraft commander-mana rock"},
+      {"card": "Urza, Lord High Artificer", "role": "Turns every untapped artifact and token into {U} mana"},
+      {"card": "Ambulatory Reactor", "role": "Turns all artifact creatures into {C} artifact mana dorks"},
+      {"card": "Type-03 Borg Vessel", "role": "Reduces artifact spell costs by {1}"},
+      {"card": "Võx, Child of the Collective", "role": "Grants undaunted cost reduction to artifact creatures and Spacecraft"},
+      {"card": "Unwinding Clock", "role": "Untaps artifact rocks and artifact creatures every opponent turn"},
+      {"card": "Forsaken Monument", "role": "Doubles colorless mana production from rocks and utility lands"},
+      {"card": "The Immortal Sun", "role": "Reduces all spell costs by {1}"},
+      {"card": "Sea of Clouds", "role": "Untapped Battlebond Azorius dual smoothing early Esper curves"}
+    ],
+    "r2": [
+      {"card": "Skullclamp", "role": "Converts 1/1 Borg tokens into two cards per {1}"},
+      {"card": "Thoughtcast", "role": "Affinity for artifacts draw-two sorcery"},
+      {"card": "Voyage Home", "role": "Affinity for artifacts draw-three plus 3 life"},
+      {"card": "Thirst for Knowledge", "role": "Instant draw-three discarding an artifact"},
+      {"card": "Co-Option Adjutant", "role": "Draws a card on every artifact creature combat hit"},
+      {"card": "Sai, Master Thopterist", "role": "Sacrifices two spare artifacts for {1}{U} to draw a card"},
+      {"card": "Seven of Nine, Tertiary Adjunct", "role": "Tap looter adding charge counters to artifacts"},
+      {"card": "Reclamation Specialist", "role": "Sacrifices spare artifact creatures for {1} to draw"},
+      {"card": "Urza, Lord High Artificer", "role": "{5} mana sink casting exiled top-library cards for free"},
+      {"card": "Borg Scout Sphere", "role": "Cantrips on ETB"},
+      {"card": "Collective Override", "role": "Draws a card for each attacking creature"},
+      {"card": "The Immortal Sun", "role": "Draws an extra card every draw step"}
+    ],
+    "a1": [
+      {"card": "Locutus of Borg", "role": "Combat-damage Borg token generator"},
+      {"card": "Antagonist Incorporator", "role": "Backup 2-CMC combat-damage Borg token generator"},
+      {"card": "Illustrious Wanderglyph", "role": "Creates 1/1 Gnome tokens on every single player's upkeep"},
+      {"card": "Sai, Master Thopterist", "role": "Creates a 1/1 flying Thopter token on every artifact cast"},
+      {"card": "Conquest Mission", "role": "Nontoken artifact ETB Borg token generator"},
+      {"card": "Maturation Chamber", "role": "Charge-counter Borg token factory"},
+      {"card": "Class-4 Tactical Cube", "role": "Token generator and +1/+1 Spacecraft anthem"},
+      {"card": "Jurati, Cordial Queen", "role": "Copies artifact tokens on artifact creature combat damage"},
+      {"card": "Hugh, First of Many", "role": "Grants replicate {2}{U} to artifact spells"},
+      {"card": "Optimization Annex", "role": "Increases charge counters placed on artifacts by 1"}
+    ],
+    "a2": [
+      {"card": "Etherium Sculptor", "role": "Accelerates Turn 2–4 artifact chains and commander deployment"},
+      {"card": "Liberator, Urza's Battlethopter", "role": "Grants flash to all artifact and colorless spells"},
+      {"card": "Sai, Master Thopterist", "role": "Turn 3 engine turning every subsequent rock into a flyer"},
+      {"card": "Antagonist Incorporator", "role": "Turn 2 combat-trigger engine scaling with token width"},
+      {"card": "Type-03 Borg Vessel", "role": "Turn 4 cost reducer and spell-triggered token engine"},
+      {"card": "Võx, Child of the Collective", "role": "Accelerates deployment of expensive artifact creatures and Spacecraft"},
+      {"card": "Maturation Chamber", "role": "Early 2-CMC engine piece scaling with every artifact cast"},
+      {"card": "Conquest Mission", "role": "3-CMC engine scaling off nontoken artifact drops"}
+    ],
+    "p1": [
+      {"card": "The Borg Queen", "role": "+2/+2 team anthem and top-deck Assimilate engine"},
+      {"card": "Tempered Steel", "role": "+2/+2 anthem for all artifact creatures"},
+      {"card": "Illustrious Wanderglyph", "role": "Ascend +2/+2 lord turning all tokens into 3/3+ threats"},
+      {"card": "Primary Unimatrix Adjunct", "role": "Grants double strike to all artifact creatures"},
+      {"card": "Cyberdrive Awakener", "role": "Animates all noncreature artifacts into 4/4 flyers on ETB"},
+      {"card": "Akroma's Will", "role": "Modal alpha-strike finisher granting double strike, flying, and protection"},
+      {"card": "The Flesh Is Weak", "role": "Grants +1/+1 counters across board and turns nonartifact creatures into artifacts"},
+      {"card": "Forsaken Monument", "role": "+2/+2 anthem for colorless Borg and Thopter/Gnome tokens"},
+      {"card": "One, Borg Evolved", "role": "Grants six combat keywords including flying and double strike"},
+      {"card": "Supplementation Node", "role": "Stacks permanent +1/+1 counters on combat hits"},
+      {"card": "Urza, Lord High Artificer", "role": "Generates an oversized Construct scaling with total artifact count"}
+    ],
+    "p2": [
+      {"card": "Cyberdrive Awakener", "role": "Turns wide mana rocks and tokens into immediate 4/4 flying lethal"},
+      {"card": "Akroma's Will", "role": "Zero-response flying, double strike, protection-from-all-colors combat kill"},
+      {"card": "Primary Unimatrix Adjunct", "role": "Halves lethal clock via team-wide double strike"},
+      {"card": "Borg Scout Sphere", "role": "Grants team flying once stationed at 6+"},
+      {"card": "Extraction Integrant", "role": "Grants team menace and -1/-1 blocker punishment"},
+      {"card": "Rogue's Passage", "role": "Forces unblockable lethal commander or Construct hits"}
+    ],
+    "p3": [
+      {"card": "Liberator, Urza's Battlethopter", "role": "Enables opponent end-step deployment to ambush blockers/sweepers"},
+      {"card": "Command Subadjunct", "role": "Grants vigilance so attackers stay up on defense"},
+      {"card": "Locutus, the One Who Speaks", "role": "Early 2-CMC +1/+1 Borg lord"}
+    ],
+    "i1": [
+      {"card": "Path to Exile", "role": "1-mana instant creature exile"},
+      {"card": "Dispatch", "role": "1-mana instant exile with Metalcraft"},
+      {"card": "Bitter Triumph", "role": "2-mana instant creature/planeswalker removal"},
+      {"card": "Anguished Unmaking", "role": "3-mana instant exile for any nonland permanent"},
+      {"card": "Disallow", "role": "Flexible counterspell and stifle effect"},
+      {"card": "Deliver from Chaos", "role": "Exile removal converting mana value into Borg tokens"},
+      {"card": "Toxic Deluge", "role": "Efficient scalable creature sweeper"}
+    ],
+    "i2": [
+      {"card": "Organic Extinction", "role": "Improvise asymmetrical board wipe destroying all nonartifact creatures"},
+      {"card": "Battle of Wolf 359", "role": "Asymmetrical -X/-X wipe sparing artifact creatures"},
+      {"card": "The Flesh Is Weak", "role": "Static -1/-1 suppression shutting down opposing X/1 tokens and mana dorks"},
+      {"card": "The Immortal Sun", "role": "Shuts off all opponent planeswalker loyalty activations"}
+    ],
+    "s1": [
+      {"card": "Akroma's Will", "role": "Instant-speed indestructible and protection from every color"},
+      {"card": "Emergency Regeneration", "role": "2-mana instant granting hexproof and indestructible to all artifacts"},
+      {"card": "Borg Incursion", "role": "Instant protection from chosen color plus two Borg tokens"},
+      {"card": "Swiftfoot Boots", "role": "Hexproof and haste equipment"},
+      {"card": "Liberator, Urza's Battlethopter", "role": "Flash deployment shields threats from sorcery-speed removal"},
+      {"card": "One, Borg Evolved", "role": "Grants ward {2} to all artifact creatures"}
+    ],
+    "s2": [
+      {"card": "Academy Ruins", "role": "Repeatable top-deck artifact recursion"},
+      {"card": "Illustrious Wanderglyph", "role": "Automatically rebuilds a wide Gnome board every turn cycle"},
+      {"card": "Sai, Master Thopterist", "role": "Rebuilds flying bodies immediately on post-wipe rock casts"},
+      {"card": "Voyage Home", "role": "Cheap 3-card hand refill to recover after attrition"}
+    ],
+    "s3": [
+      {"card": "Urza, Lord High Artificer", "role": "Self-contained Construct threat, mana engine, and library outlet"},
+      {"card": "Illustrious Wanderglyph", "role": "Commander-independent +2/+2 lord and token factory"},
+      {"card": "Cyberdrive Awakener", "role": "Wins using noncreature mana rocks even after creature wipes"},
+      {"card": "Primary Unimatrix Adjunct", "role": "Converts any surviving Borg or Thopter pack into lethal double strikers"},
+      {"card": "Hugh, First of Many", "role": "Independent artifact replication engine"}
+    ]
+  }
+}

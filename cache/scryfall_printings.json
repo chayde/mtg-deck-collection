@@ -8580,5 +8580,90 @@
       "3d4255a0-d445-4c00-b936-bbf07851e1c8"
     ],
     "cached_at": 1789871775.8604574
+  },
+  "urza, lord high artificer": {
+    "ids": [
+      "f531402e-681f-4439-837c-4e184efd5a49",
+      "3e286a7c-9643-492f-8ce9-255499dfd1a7",
+      "86d744cd-225c-4279-898a-858dc316cf7f",
+      "98294441-b5a1-4b59-9325-80d0ff913ebd",
+      "a88c6f09-a0b2-46c9-a291-59408dfa52b0",
+      "45ab9672-8d85-41f6-9016-20c2988b037c",
+      "f0e626cc-b01a-4e20-9414-8ba6347041f0",
+      "7b7a348a-51f7-4dc5-8fe7-1c70fea5e050",
+      "18b26e53-1fc2-4d07-a56f-9000ed25580d",
+      "81329329-0154-4f89-a476-a54112dfa0b7",
+      "9e7fb3c0-5159-4d1f-8490-ce4c9a60f567"
+    ],
+    "cached_at": 1794669920.0062287
+  },
+  "primary unimatrix adjunct": {
+    "ids": [
+      "ba15432e-64a4-49fe-9f89-86129d332bcc",
+      "59ce5cdb-3e08-4de1-9335-aafeddfd1829",
+      "b94a582c-11bb-4463-a826-bd0c79366752"
+    ],
+    "cached_at": 1794669920.9854062
+  },
+  "antagonist incorporator": {
+    "ids": [
+      "baeaac4a-a004-4a6d-842a-596cb148574b",
+      "63918e59-0c03-4d98-9216-e58ee157b7ea"
+    ],
+    "cached_at": 1794669921.9998417
+  },
+  "cyberdrive awakener": {
+    "ids": [
+      "2a2c0a2f-07fb-4cc0-9b99-e5ff4303028d",
+      "38520f20-a581-439f-9df2-ea4f482af327",
+      "9319c91c-fad3-4840-b3ca-5d3d94eb7ddf",
+      "19bf6b74-b236-42eb-8c88-d715cece6357"
+    ],
+    "cached_at": 1794669923.8129303
+  },
+  "illustrious wanderglyph": {
+    "ids": [
+      "30e02cc7-8ea9-468b-ba61-a1e00fefea22",
+      "c4536a7c-8373-4b4a-bba9-c4f9568423db"
+    ],
+    "cached_at": 1794669925.2753093
+  },
+  "organic extinction": {
+    "ids": [
+      "1f8761b6-784f-4b64-bbb2-6062f289cf6c",
+      "fea0f8be-c242-49dd-bae3-0b306107ac0b",
+      "900b713f-82f7-4e4a-804d-6bb38436aa9d",
+      "daaa7b7e-76fc-47a0-a58d-1169be1aa335"
+    ],
+    "cached_at": 1794669926.2714422
+  },
+  "the flesh is weak": {
+    "ids": [
+      "4161834d-54ca-4e84-a7c7-bb9c42047e90",
+      "c382d8ee-6640-4db2-b618-73d315e43526"
+    ],
+    "cached_at": 1794669927.2645893
+  },
+  "voyage home": {
+    "ids": [
+      "4ba835da-0247-4716-9079-1b605297f6d5",
+      "30789c9b-7b4b-43e7-a161-aa6595ea9dee"
+    ],
+    "cached_at": 1794669928.2662299
+  },
+  "sai, master thopterist": {
+    "ids": [
+      "a79c2725-afd6-480d-bd6b-3dc30f76248d",
+      "ef888704-0b29-48c5-955c-356c0caf6516",
+      "35dfaec6-a1b0-43a4-a5cf-ff1f6ee7b3b1",
+      "5650587a-27a5-4d68-97e2-5745627bd094",
+      "8d8e0685-ee2f-4b27-a1b3-6e6183bdf229",
+      "19316cbb-d1af-4ab7-b588-78637503e986",
+      "ad0b5c09-5075-408e-84c5-1095354ac53e",
+      "2beffa94-862d-4cf1-9272-7fe0425a60e7",
+      "a1091e0e-a179-4241-8be0-ea92d86f4c08",
+      "dea200c8-6da5-4938-8b76-cc693e03de29"
+    ],
+    "cached_at": 1794669929.7754436
   }
 }

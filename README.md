@@ -42,6 +42,7 @@ Decks physically built and ready for play.
 *   **Rocco, Street Chef:** Naya Impulse Gastronomy & Food Tokens ("The Street Chef's Kitchen"). Bracket 3.
 *   **The Great Goblin:** Rakdos Goblins / +1/+1 Counters & Aristocrats Burn ("The Goblin King's Court").
 *   **Smaug the Impenetrable:** Rakdos Dragon Masochism / Self-Damage Treasures & Artifact Aristocrats ("The Golden Hoard"). Bracket 3.
+*   **The Borg Queen:** Esper ({W}{U}{B}) Artifact Creature Swarm, Double Strike & Assimilate Midrange ("Phase 1 Bracket 3 Upgrade"). Bracket 3 (38/96 DTI · 44.0% 100-Game ForgeSim Pod Win Rate).
 *   **Preconstructed Decks:** Original and modified PreCons (Ashling, Bello, Disa, Ulalek, etc.).
 
 #### 📁 `/External`
