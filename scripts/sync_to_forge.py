@@ -71,7 +71,7 @@ KNOWN_FORGE_ALIASES: Dict[str, str] = {
     "ZangiefJundAttritron": "Zangief",
     "YidrisChaos": "YidrisCascade",
     "EdgarMarkov": "Vampires",
-    "IncredibleHulk": "Gamma Smash",
+    "IncredibleHulk": "Incredible Hulk",
     "CaptainAmerica": "Captain America",
     "QuantumQuandrix": "Quantum Quandrix",
     "ChainerDementiaMaster": "Chainer",

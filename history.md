@@ -2,6 +2,12 @@
 
 ## 🗓️ November 2026: Headless MTG Forge 4-AI Pod Simulation Cluster (`forgesim.chayde.lab`) & 100-Game Pod Gauntlets
 
+### 2026-11-18: Incredible Hulk — Forge Synchronization & Alias Fix (`Incredible Hulk.dck`)
+*   **Forge Deck Alias Resolution:**
+    *   Diagnosed why *Bruce Banner // The Incredible Hulk* was missing in Forge: `scripts/sync_to_forge.py` had mapped `"IncredibleHulk"` to `"Gamma Smash"`, causing the deck to be exported exclusively as `Gamma Smash.dck` under "G" in the deck selection interface.
+    *   Updated `KNOWN_FORGE_ALIASES` in `scripts/sync_to_forge.py` to map `"IncredibleHulk": "Incredible Hulk"`.
+    *   Re-synchronized `commander_decks/Owned/IncredibleHulk` to `%APPDATA%\Forge\decks\commander\Incredible Hulk.dck` (and generated `The Incredible Hulk.dck` mirror) with all 100 cards verified 100% compatible against Forge's `cardsfolder.zip` database.
+
 ### 2026-11-14: The Borg Queen — 15-Card Phase 1 Bracket 3 Overhaul, ForgeSim `v1.4.0` (`Forge 2.0.16`) & 100-Game Pod Validation (`TheBorgQueen`)
 *   **ForgeSim Cluster Upgraded to `v1.4.0` (`MTG Forge 2.0.16`):**
     *   Upgraded both local `C:\forge` and `forgesim_cluster/` (`Dockerfile`, `version.json`, `forgesim_server.py`) to **MTG Forge `2.0.16`** (`34,930` card scripts) so all *Star Trek* (`TRC`/`TRK`) cards — including **The Borg Queen**, **Queen's Diamond**, **Locutus of Borg**, **Primary Unimatrix Adjunct**, **Antagonist Incorporator**, and **Võx, Child of the Collective** — run natively in headless 4-AI pods.
