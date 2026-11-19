@@ -147,12 +147,30 @@ deck_status: main
 
 ### 🛒 Active Acquisition List (Priority Swaps)
 
-| **New Card (In)** | **Card to Remove (Out)** | **Category** | **Status** |
-| :--- | :--- | :--- | :--- |
-| *Pending Phase 1 Upgrade* | [Graven Cairns](https://scryfall.com/card/dsc/278/graven-cairns?utm_source=api) | Land (Filter) | Pending |
-| *Pending Phase 1 Upgrade* | [Shadowblood Ridge](https://scryfall.com/card/dsc/298/shadowblood-ridge?utm_source=api) | Land (Filter) | Pending |
-| *Pending Phase 1 Upgrade* | [Rakdos Signet](https://scryfall.com/card/dsc/252/rakdos-signet?utm_source=api) | Ramp (Filter Rock) | Pending |
-| *Pending Phase 1 Upgrade* | [Temple of the False God](https://scryfall.com/card/dsc/307/temple-of-the-false-god?utm_source=api) | Land (Dead Land) | Pending |
+| **New Card (In)** | **Card to Remove (Out)** | **Category** | **Live Manapool Price** | **Status** |
+| :--- | :--- | :--- | :--- | :--- |
+| [Sheoldred, the Apocalypse](https://scryfall.com/card/dmu/107/sheoldred-the-apocalypse?utm_source=api) | Graven Cairns | Creature (Draw Punishment) | $67.80 (NM) | ⏳ Pending Acquisition |
+| [Orcish Bowmasters](https://scryfall.com/card/ltr/103/orcish-bowmasters?utm_source=api) | Shadowblood Ridge | Creature (Draw Punishment) | $34.20 (LP) | ⏳ Pending Acquisition |
+| [Bloodthirsty Conqueror](https://scryfall.com/card/fdn/58/bloodthirsty-conqueror?utm_source=api) | Rakdos Signet | Creature (Life Gain / Beater) | $34.69 (LP) | ⏳ Pending Acquisition |
+| [Ob Nixilis, the Hate-Twisted](https://scryfall.com/card/war/100/ob-nixilis-the-hate-twisted?utm_source=api) | Bloodfell Caves | Planeswalker (Draw Pinger) | $0.15 (LP) | ⏳ Pending Acquisition |
+| [Solphim, Mayhem Dominus](https://scryfall.com/card/one/150/solphim-mayhem-dominus?utm_source=api) | Geothermal Bog | Creature (Damage Doubler) | $26.64 (LP) | ⏳ Pending Acquisition |
+| [Ojer Axonil, Deepest Might](https://scryfall.com/card/lci/158/ojer-axonil-deepest-might-temple-of-power?utm_source=api) | Temple of the False God | Creature (Ping Multiplier) | $20.79 (NM) | ⏳ Pending Acquisition |
+| [Sunspine Lynx](https://scryfall.com/card/blb/155/sunspine-lynx?utm_source=api) | Séance Board | Creature (Nonbasic Burn) | $0.97 (LP) | ⏳ Pending Acquisition |
+| [Roiling Vortex](https://scryfall.com/card/znr/156/roiling-vortex?utm_source=api) | Blood Artist | Enchantment (Upkeep Damage) | $0.68 (LP) | ⏳ Pending Acquisition |
+| [Razorkin Needlehead](https://scryfall.com/card/dsk/153/razorkin-needlehead?utm_source=api) | Falkenrath Noble | Creature (Draw Pinger) | $4.89 (NM) | ⏳ Pending Acquisition |
+| [Underworld Dreams](https://scryfall.com/card/thb/121/underworld-dreams?utm_source=api) | Bastion of Remembrance | Enchantment (Draw Pinger) | $1.82 (NM) | ⏳ Pending Acquisition |
+| [Manabarbs](https://scryfall.com/card/m12/150/manabarbs?utm_source=api) | Syr Konrad, the Grim | Enchantment (Land Tap Tax) | $2.74 (MP) | ⏳ Pending Acquisition |
+| [Spellshock](https://scryfall.com/card/exo/104/spellshock?utm_source=api) | Morbid Opportunist | Enchantment (Spell Tax) | $0.74 (LP) | ⏳ Pending Acquisition |
+| [Ankh of Mishra](https://scryfall.com/card/vma/263/ankh-of-mishra?utm_source=api) | Persistent Constrictor | Artifact (Landfall Tax) | $5.25 (MP) | ⏳ Pending Acquisition |
+| [Zo-Zu the Punisher](https://scryfall.com/card/dds/37/zo-zu-the-punisher?utm_source=api) | Decree of Pain | Creature (Landfall Tax) | $2.31 (LP) | ⏳ Pending Acquisition |
+| [Bloodchief Ascension](https://scryfall.com/card/cmm/139/bloodchief-ascension?utm_source=api) | Combustible Gearhulk | Enchantment (Drain Sustain) | $16.39 (NM) | ⏳ Pending Acquisition |
+| [Crawlspace](https://scryfall.com/card/dmr/217/crawlspace?utm_source=api) | Kaervek the Merciless | Artifact (Pillowfort Defense) | $7.24 (LP) | ⏳ Pending Acquisition |
+| [Bolt Bend](https://scryfall.com/card/war/115/bolt-bend?utm_source=api) | Massacre Girl | Instant (Redirection) | $2.94 (LP) | ⏳ Pending Acquisition |
+| [Fell the Profane](https://scryfall.com/card/mh3/244/fell-the-profane-fell-mire?utm_source=api) | Massacre Wurm | MDFC Land / Removal | $4.60 (NM) | ⏳ Pending Acquisition |
+| [Malakir Rebirth](https://scryfall.com/card/znr/111/malakir-rebirth-malakir-mire?utm_source=api) | Enchanter's Bane | MDFC Land / Protection | $9.99 (NM) | ⏳ Pending Acquisition |
+| [Blood Crypt](https://scryfall.com/card/rtr/238/blood-crypt?utm_source=api) | Sadistic Shell Game | Land (Untapped Shockland) | $5.74 (NM Foil) | ⏳ Pending Acquisition |
+
+**Total In-Stock Manapool Cost (20 Cards):** **$250.57**
 
 ### 🚫 Architectural Non-Goals & Rejected Tech
 *   **Non-Goal — Linear Symmetrical Burn Without Payoff:** Avoid pure burn cards like *Havoc Festival* or *Sulfuric Vortex* that draw massive table hate without advancing your own game plan. All life-loss effects must be cheap, continuous, or generate asymmetric advantage.
@@ -161,6 +179,10 @@ deck_status: main
 ---
 
 ## 📜 Deck Changelog
+- **[2026-11-18]:** Comprehensive Bracket 3 overhaul: purge precon aristocrats and taplands for Panzer-style action-tax slug, damage multipliers, and premier sustain
+    - **In:** Sheoldred, the Apocalypse, Orcish Bowmasters, Bloodthirsty Conqueror, Ob Nixilis, the Hate-Twisted, Solphim, Mayhem Dominus, Ojer Axonil, Deepest Might // Temple of Power, Sunspine Lynx, Roiling Vortex, Razorkin Needlehead, Underworld Dreams, Manabarbs, Spellshock, Ankh of Mishra, Zo-Zu the Punisher, Bloodchief Ascension, Crawlspace, Bolt Bend, Fell the Profane // Fell Mire, Malakir Rebirth // Malakir Mire, Blood Crypt
+    - **Out:** Graven Cairns, Shadowblood Ridge, Rakdos Signet, Bloodfell Caves, Geothermal Bog, Temple of the False God, Séance Board, Blood Artist, Falkenrath Noble, Bastion of Remembrance, Syr Konrad, the Grim, Morbid Opportunist, Persistent Constrictor, Decree of Pain, Combustible Gearhulk, Kaervek the Merciless, Massacre Girl, Massacre Wurm, Enchanter's Bane, Sadistic Shell Game
+    - **Reason:** Comprehensive Bracket 3 overhaul: purge precon aristocrats and taplands for Panzer-style action-tax slug, damage multipliers, and premier sustain
 *   **2026-11-18:** Inception of the standard deck harness from the physical *Endless Punishment* Preconstructed Deck (`DSC`).
     *   **In:** 100-card base preconstructed deck list.
     *   **Out:** None (Precon Baseline).
@@ -174,43 +196,43 @@ COMMANDER:
 
 DECK:  
 1 Barbflare Gremlin  
-1 Blood Artist  
+1 Roiling Vortex  
 1 Blood Seeker  
 1 Braids, Arisen Nightmare  
 1 Brash Taunter  
-1 Combustible Gearhulk  
-1 Falkenrath Noble  
+1 Bloodchief Ascension  
+1 Razorkin Needlehead  
 1 Fate Unraveler  
 1 Fear of Burning Alive  
 1 Florian, Voldaren Scion  
 1 Gleeful Arsonist  
 1 Gray Merchant of Asphodel  
 1 Harsh Mentor  
-1 Kaervek the Merciless  
+1 Crawlspace  
 1 Kardur, Doomscourge  
 1 Kederekt Parasite  
-1 Massacre Girl  
-1 Massacre Wurm  
+1 Bolt Bend  
+1 Fell the Profane // Fell Mire  
 1 Mayhem Devil  
 1 Mogis, God of Slaughter  
-1 Morbid Opportunist  
+1 Spellshock  
 1 Nightshade Harvester  
-1 Persistent Constrictor  
+1 Ankh of Mishra  
 1 Rakdos, Lord of Riots  
 1 Rampaging Ferocidon  
 1 Solemn Simulacrum  
 1 Star Athlete  
 1 Stormfist Crusader  
-1 Syr Konrad, the Grim  
+1 Manabarbs  
 1 Tectonic Giant  
 1 The Lord of Pain  
 1 Vial Smasher the Fierce  
 1 Blasphemous Act  
-1 Decree of Pain  
+1 Zo-Zu the Punisher  
 1 Feed the Swarm  
 1 Grab the Prize  
 1 Light Up the Stage  
-1 Sadistic Shell Game  
+1 Blood Crypt  
 1 Sign in Blood  
 1 Bedevil  
 1 Blood Pact  
@@ -224,30 +246,30 @@ DECK:
 1 Lightning Greaves  
 1 Mask of Griselbrand  
 1 Mind Stone  
-1 Rakdos Signet  
-1 Séance Board  
+1 Bloodthirsty Conqueror  
+1 Sunspine Lynx  
 1 Sol Ring  
 1 Talisman of Indulgence  
 1 Thought Vessel  
-1 Bastion of Remembrance  
-1 Enchanter's Bane  
+1 Underworld Dreams  
+1 Malakir Rebirth // Malakir Mire  
 1 Spiked Corridor // Torture Pit  
 1 Spiteful Visions  
 1 Theater of Horrors  
 1 Ash Barrens  
 1 Blackcleave Cliffs  
-1 Bloodfell Caves  
+1 Ob Nixilis, the Hate-Twisted  
 1 Canyon Slough  
 1 Command Tower  
 1 Dragonskull Summit  
 1 Evolving Wilds  
 1 Exotic Orchard  
 1 Foreboding Ruins  
-1 Geothermal Bog  
-1 Graven Cairns  
+1 Solphim, Mayhem Dominus  
+1 Sheoldred, the Apocalypse  
 1 Leechridden Swamp  
 8 Mountain  
-1 Shadowblood Ridge  
+1 Orcish Bowmasters  
 1 Shivan Gorge  
 1 Smoldering Marsh  
 1 Spinerock Knoll  
@@ -255,6 +277,6 @@ DECK:
 8 Swamp  
 1 Tainted Peak  
 1 Temple of Malice  
-1 Temple of the False God  
+1 Ojer Axonil, Deepest Might // Temple of Power  
 1 Terramorphic Expanse  
 1 Witch's Clinic  

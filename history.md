@@ -2,6 +2,15 @@
 
 ## 🗓️ November 2026: Headless MTG Forge 4-AI Pod Simulation Cluster (`forgesim.chayde.lab`) & 100-Game Pod Gauntlets
 
+### 2026-11-18: Valgavoth, Harrower of Souls — 20-Card Phase 1 Bracket 3 Overhaul & Manapool Pricing (`$250.57`)
+*   **Comprehensive 20-Card Upgrade Applied:**
+    *   **Applied via `scripts/swap_matrix.py ... --apply`:** Atomically executed the Triple Update across `valgavoth_endless_punishment.md`, `moxfield_import.txt`, and synchronized `Valgavoth.dck` to `%APPDATA%\Forge\decks\commander\`.
+    *   **Out (20 Precon Cuts):** *Graven Cairns*, *Shadowblood Ridge*, *Rakdos Signet*, *Bloodfell Caves*, *Geothermal Bog*, *Temple of the False God*, *Séance Board*, *Blood Artist*, *Falkenrath Noble*, *Bastion of Remembrance*, *Syr Konrad, the Grim*, *Morbid Opportunist*, *Persistent Constrictor*, *Decree of Pain*, *Combustible Gearhulk*, *Kaervek the Merciless*, *Massacre Girl*, *Massacre Wurm*, *Enchanter's Bane*, *Sadistic Shell Game*.
+    *   **In (20 High-Synergy Inclusions):** **Sheoldred, the Apocalypse**, **Orcish Bowmasters** (1/3 Game Changers), **Bloodthirsty Conqueror**, **Ob Nixilis, the Hate-Twisted**, **Solphim, Mayhem Dominus**, **Ojer Axonil, Deepest Might**, **Sunspine Lynx**, **Roiling Vortex**, **Razorkin Needlehead**, **Underworld Dreams**, **Manabarbs**, **Spellshock**, **Ankh of Mishra**, **Zo-Zu the Punisher**, **Bloodchief Ascension**, **Crawlspace**, **Bolt Bend**, **Fell the Profane**, **Malakir Rebirth**, **Blood Crypt**.
+    *   **Preserved Core Staples:** Retained **Mogis, God of Slaughter**, **The Lord of Pain**, **Kardur, Doomscourge**, and **Rampaging Ferocidon** in the 99.
+    *   **Live Manapool Pricing Audit:** Queried live Manapool inventory using `scripts/manapool_price_deck.py`; all 20 cards confirmed in stock for a combined order total of **`$250.57`**. Created physical checklist tracking in [`order_tracking.md`](commander_decks/Owned/ValgavothEndlessPunishment/order_tracking.md).
+    *   **DTI Threat Re-Evaluation:** Re-audited at **Bracket 3 (Upgraded Casual — 1 / 3 Game Changers)** with all 4 Gatekeepers passed safely (`dti_audit.md` & `dti_report.html`).
+
 ### 2026-11-18: Valgavoth, Harrower of Souls — *Endless Punishment* (`DSC`) Precon Baseline Harness (`ValgavothEndlessPunishment`)
 *   **Owned Deck Inception:** Created `commander_decks/Owned/ValgavothEndlessPunishment/` for the physically owned *Duskmourn: House of Horror Commander* (`DSC`) preconstructed deck led by **Valgavoth, Harrower of Souls** ({2}{B}{R}).
 *   **Standard Harness Initialization & Forge Synchronization:**

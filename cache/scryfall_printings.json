@@ -8665,5 +8665,125 @@
       "dea200c8-6da5-4938-8b76-cc693e03de29"
     ],
     "cached_at": 1794669929.7754436
+  },
+  "bloodthirsty conqueror": {
+    "ids": [
+      "926074a7-a01d-43bb-a257-0d95394773a0",
+      "9b10ba4e-4e6a-4127-a8a3-d9728e8d5f8b",
+      "feb45b34-a1e7-4861-b0fe-b701aa5e894a",
+      "c3051049-cf58-4ff3-bd36-79e6b43c183d",
+      "3c340ba8-9287-4072-937a-438251b5ff1d",
+      "cbd05eaa-7c0d-45f0-b085-87dc1d610c34",
+      "ce860ed4-a5bd-4347-9eab-dd716ea84db1",
+      "940b3aa3-0f57-4b44-8ccb-60229c8cc72d"
+    ],
+    "cached_at": 1795060591.071935
+  },
+  "ojer axonil, deepest might": {
+    "ids": [
+      "50f8e2b6-98c7-4f28-bb39-e1fbe841f1ee",
+      "5140d5d0-15ad-45b2-8ae8-aa53b1cd8132"
+    ],
+    "cached_at": 1795060592.0741277
+  },
+  "sunspine lynx": {
+    "ids": [
+      "ab808e60-562f-4842-9ca5-d7c6c60ed14a",
+      "f1c414b4-3374-44e4-98b4-03193e701eb1",
+      "dab90821-d6c0-4131-9349-d8bbfd9fd9ba",
+      "8995ceaf-b7e0-423c-8f3e-25212d522502"
+    ],
+    "cached_at": 1795060593.5040119
+  },
+  "roiling vortex": {
+    "ids": [
+      "1dec49b2-2306-4a72-b375-ff87c944d509",
+      "5e7315b9-5212-43d6-8011-ed40d1f09a45",
+      "3b76bdd5-8614-4e6d-91ac-90b7bc4a1d2a",
+      "b64940bb-c92f-4c2f-aef6-927cdc070b13",
+      "0b057eb7-8439-4d26-89df-c345ab2773e1"
+    ],
+    "cached_at": 1795060594.5284312
+  },
+  "manabarbs": {
+    "ids": [
+      "7c01cae0-4d61-4bf7-a145-82d9bb11d816",
+      "3c424086-8122-404d-8c3a-f36d455271a7",
+      "8b16d8b7-3ff8-4481-bd4a-aa283b78bead",
+      "5ece0539-9a96-4e45-ba3f-42e0e09b5378",
+      "7499cb21-a8ec-4938-884b-7085946af8f8",
+      "ffb4f505-bc05-44ac-9190-60101f813c65",
+      "009b1aff-a8c7-4032-ab29-a77c94c5af59",
+      "adf081d5-e644-4f46-8bc8-a754b089acb4",
+      "f55a2d1d-0964-44a9-9f32-09804f2c7445",
+      "bd4942f9-c3ec-4cb1-9300-9f6ed9e7caa9",
+      "ed0de166-bd56-4557-b417-1229554cd193",
+      "6121f72f-680f-4bb4-ae4d-37ee4ebed4d8",
+      "5cc31e3d-c9c0-458b-a971-e5bc9b9d6d51"
+    ],
+    "cached_at": 1795060595.6190984
+  },
+  "spellshock": {
+    "ids": [
+      "52db2a78-e1c5-4732-a4ee-04b4c540edbe",
+      "4ee1059d-a7bc-4494-999e-788817f7b12c"
+    ],
+    "cached_at": 1795060596.5931654
+  },
+  "ankh of mishra": {
+    "ids": [
+      "a0367e54-eb07-475a-b06b-f869a046a86c",
+      "808cad10-69d5-4e14-9834-476c53ec97e4",
+      "214ec172-bd8a-42ec-9fb0-282e8f7b1cc2",
+      "af74a582-a808-439a-a21f-da67c375d2eb",
+      "e2d917dd-243e-4df2-9a44-1c2eae6ff859",
+      "44135b17-69e7-4002-a6e0-d76f4c0c423b",
+      "617599f1-69d9-4767-9656-982739728df0",
+      "c07903f1-defc-4ec7-accb-724b0219acd8",
+      "3e226943-312b-4128-a9fd-c49e3a65a0f5",
+      "f594b7aa-d44e-47c4-989b-565f881e25f1"
+    ],
+    "cached_at": 1795060597.597324
+  },
+  "zo-zu the punisher": {
+    "ids": [
+      "09d43f17-cec1-4a2e-96d7-34e67f2d5fde",
+      "e7c927d6-911d-4a37-89a2-6c500edf4dd7",
+      "fa4666b6-76f2-4c25-989e-d6a0e50be94d",
+      "c9a27fc2-f9d4-4645-8d50-98a2bf2db1ef"
+    ],
+    "cached_at": 1795060598.9831622
+  },
+  "bloodchief ascension": {
+    "ids": [
+      "34dd3973-d029-4ec9-b52d-c26f1e7333ad",
+      "2ab9c69f-cb12-4095-af83-89319f00a3fa",
+      "aa213dbb-c52a-4084-92aa-d0b5d97a97d9",
+      "d56d1535-d9de-459f-bc31-0923f621e0e9",
+      "4f5e236a-b3ad-4174-995b-3cbeaaaa0e98",
+      "be16ae8f-e337-4a76-a0fb-8f5c6e3c52df"
+    ],
+    "cached_at": 1795060600.407002
+  },
+  "crawlspace": {
+    "ids": [
+      "97c8e1ed-b3ab-4a08-9336-e513f23d45b3",
+      "4913a54f-f4d0-483a-a181-716007f65658",
+      "5b8e092a-610d-4cea-bb92-65e01954b5c4",
+      "202c628d-ae86-4a87-94bb-d06574cda9ce"
+    ],
+    "cached_at": 1795060601.8088653
+  },
+  "fell the profane": {
+    "ids": [
+      "a3cb782d-c459-468d-9779-9b5669abc337"
+    ],
+    "cached_at": 1795060603.230036
+  },
+  "malakir rebirth": {
+    "ids": [
+      "609d3ecf-f88d-4268-a8d3-4bf2bcf5df60"
+    ],
+    "cached_at": 1795060604.63022
   }
 }

@@ -1,16 +1,17 @@
 # DTI Power & Threat Evaluation: ValgavothEndlessPunishment
 
-> **Evaluated Bracket: Bracket 2** | **Threat Score: 19 / 96** | **Velocity: 10 / 48** | **Suppression: 7 / 40**
+> **Evaluated Bracket: Bracket 3** | **Threat Score: 19 / 96** | **Velocity: 10 / 48** | **Suppression: 7 / 40**
 
 ---
 
 ## 1. Executive Summary & Tactical Overview
 
-* **Final Placement:** **Bracket 2**
+* **Final Placement:** **Bracket 3**
 * **DTI Threat Index:** `19 / 96` (Score Floor: Bracket 2)
 * **Clock Speed (Velocity Vector):** `10 / 48`
 * **Opponent Stifle (Suppression Vector):** `7 / 40`
-* **WotC Statutory Compliance:** 0 / 3 Game Changers (Floor: Bracket 2)
+* **WotC Statutory Compliance:** 1 / 3 Game Changers (Floor: Bracket 3)
+  * *Game Changers detected:* Orcish Bowmasters
 
 ---
 
