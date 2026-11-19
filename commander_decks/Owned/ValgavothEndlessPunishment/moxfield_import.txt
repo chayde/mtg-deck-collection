@@ -10,7 +10,7 @@ DECK:
 1 Bloodchief Ascension
 1 Razorkin Needlehead
 1 Fate Unraveler
-1 Fear of Burning Alive
+1 Mountain
 1 Florian, Voldaren Scion
 1 Gleeful Arsonist
 1 Gray Merchant of Asphodel
@@ -19,7 +19,7 @@ DECK:
 1 Kardur, Doomscourge
 1 Kederekt Parasite
 1 Bolt Bend
-1 Fell the Profane // Fell Mire
+1 Luxury Suite
 1 Mayhem Devil
 1 Mogis, God of Slaughter
 1 Spellshock
@@ -28,7 +28,7 @@ DECK:
 1 Rakdos, Lord of Riots
 1 Rampaging Ferocidon
 1 Solemn Simulacrum
-1 Star Athlete
+1 Magebane Lizard
 1 Stormfist Crusader
 1 Manabarbs
 1 Tectonic Giant
@@ -59,7 +59,7 @@ DECK:
 1 Talisman of Indulgence
 1 Thought Vessel
 1 Underworld Dreams
-1 Malakir Rebirth // Malakir Mire
+1 Blightstep Pathway // Searstep Pathway
 1 Spiked Corridor // Torture Pit
 1 Spiteful Visions
 1 Theater of Horrors

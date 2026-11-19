@@ -166,11 +166,14 @@ deck_status: main
 | [Bloodchief Ascension](https://scryfall.com/card/cmm/139/bloodchief-ascension?utm_source=api) | Combustible Gearhulk | Enchantment (Drain Sustain) | $16.39 (NM) | ⏳ Pending Acquisition |
 | [Crawlspace](https://scryfall.com/card/dmr/217/crawlspace?utm_source=api) | Kaervek the Merciless | Artifact (Pillowfort Defense) | $7.24 (LP) | ⏳ Pending Acquisition |
 | [Bolt Bend](https://scryfall.com/card/war/115/bolt-bend?utm_source=api) | Massacre Girl | Instant (Redirection) | $2.94 (LP) | ⏳ Pending Acquisition |
-| [Fell the Profane](https://scryfall.com/card/mh3/244/fell-the-profane-fell-mire?utm_source=api) | Massacre Wurm | MDFC Land / Removal | $4.60 (NM) | ⏳ Pending Acquisition |
-| [Malakir Rebirth](https://scryfall.com/card/znr/111/malakir-rebirth-malakir-mire?utm_source=api) | Enchanter's Bane | MDFC Land / Protection | $9.99 (NM) | ⏳ Pending Acquisition |
+| [Luxury Suite](https://scryfall.com/card/msc/252/luxury-suite?utm_source=api) | Massacre Wurm | Land (Untapped Dual) | $9.54 (NM) | ⏳ Pending Acquisition |
+| [Blightstep Pathway](https://scryfall.com/card/khm/252/blightstep-pathway-searstep-pathway?utm_source=api) | Enchanter's Bane | Land (Untapped Modal Dual) | $4.99 (NM) | ⏳ Pending Acquisition |
 | [Blood Crypt](https://scryfall.com/card/rtr/238/blood-crypt?utm_source=api) | Sadistic Shell Game | Land (Untapped Shockland) | $5.74 (NM Foil) | ⏳ Pending Acquisition |
+| [Magebane Lizard](https://scryfall.com/card/otj/134/magebane-lizard?utm_source=api) | Star Athlete | Creature (Noncreature Spell Tax) | $0.47 (NM) | ⏳ Pending Acquisition |
 
-**Total In-Stock Manapool Cost (20 Cards):** **$250.57**
+*(Note: [Mountain](https://scryfall.com/card/trk/323/mountain?utm_source=api) replaces **Fear of Burning Alive** using a spare basic from your collection)*
+
+**Total In-Stock Manapool Cost (21 Cards):** **$250.98**
 
 ### 🚫 Architectural Non-Goals & Rejected Tech
 *   **Non-Goal — Linear Symmetrical Burn Without Payoff:** Avoid pure burn cards like *Havoc Festival* or *Sulfuric Vortex* that draw massive table hate without advancing your own game plan. All life-loss effects must be cheap, continuous, or generate asymmetric advantage.
@@ -179,6 +182,10 @@ deck_status: main
 ---
 
 ## 📜 Deck Changelog
+- **[2026-11-18]:** Replace 2 MDFCs with Luxury Suite and Blightstep Pathway; replace Fear of Burning Alive with 9th Mountain; replace Star Athlete with Magebane Lizard
+    - **In:** Luxury Suite, Blightstep Pathway // Searstep Pathway, Mountain, Magebane Lizard
+    - **Out:** Fell the Profane // Fell Mire, Malakir Rebirth // Malakir Mire, Fear of Burning Alive, Star Athlete
+    - **Reason:** Replace 2 MDFCs with Luxury Suite and Blightstep Pathway; replace Fear of Burning Alive with 9th Mountain; replace Star Athlete with Magebane Lizard
 - **[2026-11-18]:** Comprehensive Bracket 3 overhaul: purge precon aristocrats and taplands for Panzer-style action-tax slug, damage multipliers, and premier sustain
     - **In:** Sheoldred, the Apocalypse, Orcish Bowmasters, Bloodthirsty Conqueror, Ob Nixilis, the Hate-Twisted, Solphim, Mayhem Dominus, Ojer Axonil, Deepest Might // Temple of Power, Sunspine Lynx, Roiling Vortex, Razorkin Needlehead, Underworld Dreams, Manabarbs, Spellshock, Ankh of Mishra, Zo-Zu the Punisher, Bloodchief Ascension, Crawlspace, Bolt Bend, Fell the Profane // Fell Mire, Malakir Rebirth // Malakir Mire, Blood Crypt
     - **Out:** Graven Cairns, Shadowblood Ridge, Rakdos Signet, Bloodfell Caves, Geothermal Bog, Temple of the False God, Séance Board, Blood Artist, Falkenrath Noble, Bastion of Remembrance, Syr Konrad, the Grim, Morbid Opportunist, Persistent Constrictor, Decree of Pain, Combustible Gearhulk, Kaervek the Merciless, Massacre Girl, Massacre Wurm, Enchanter's Bane, Sadistic Shell Game
@@ -203,7 +210,7 @@ DECK:
 1 Bloodchief Ascension  
 1 Razorkin Needlehead  
 1 Fate Unraveler  
-1 Fear of Burning Alive  
+1 Mountain  
 1 Florian, Voldaren Scion  
 1 Gleeful Arsonist  
 1 Gray Merchant of Asphodel  
@@ -212,7 +219,7 @@ DECK:
 1 Kardur, Doomscourge  
 1 Kederekt Parasite  
 1 Bolt Bend  
-1 Fell the Profane // Fell Mire  
+1 Luxury Suite  
 1 Mayhem Devil  
 1 Mogis, God of Slaughter  
 1 Spellshock  
@@ -221,7 +228,7 @@ DECK:
 1 Rakdos, Lord of Riots  
 1 Rampaging Ferocidon  
 1 Solemn Simulacrum  
-1 Star Athlete  
+1 Magebane Lizard  
 1 Stormfist Crusader  
 1 Manabarbs  
 1 Tectonic Giant  
@@ -252,7 +259,7 @@ DECK:
 1 Talisman of Indulgence  
 1 Thought Vessel  
 1 Underworld Dreams  
-1 Malakir Rebirth // Malakir Mire  
+1 Blightstep Pathway // Searstep Pathway  
 1 Spiked Corridor // Torture Pit  
 1 Spiteful Visions  
 1 Theater of Horrors  
