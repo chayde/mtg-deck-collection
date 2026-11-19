@@ -4,7 +4,7 @@ Legend: `- [x]` in hand / received · `- [ ]` ordered / pending acquisition
 
 **Deck Origin:** *Duskmourn: House of Horror Commander* Preconstructed Deck (`DSC`)  
 **Acquisition Date:** 2026-11-18  
-**Deck Status:** 🛒 **PHASE 1 UPGRADE CHECKLIST ACTIVE (21 Cards to Acquire — $258.95 Manapool Total)** — Precon physically in hand; 38 pure lands / 7 ramp rocks tuned; 21 upgrade cards priced and verified in stock on Manapool.
+**Deck Status:** 🛒 **PHASE 1 UPGRADE CHECKLIST ACTIVE (21 Phase 1 Cards + 3 toodeepMTG Tech Cards On Order — $273.67 Manapool Total)** — Precon physically in hand; 38 pure lands / 7 ramp rocks tuned; 24 upgrade cards tracked.
 
 ---
 
@@ -42,6 +42,16 @@ Legend: `- [x]` in hand / received · `- [ ]` ordered / pending acquisition
 *(Note: [Mountain](https://scryfall.com/card/trk/323/mountain?utm_source=api) replaces **Fear of Burning Alive** using a spare basic from your collection)*
 
 **Total Order Cost (21 Cards):** **$258.95** *(All in stock on Manapool)*
+
+---
+
+## 📦 Incoming toodeepMTG Tech Upgrades (3 Cards Ordered — $14.72 Total)
+
+> Additional tech pieces ordered from the toodeepMTG Bracket 3 deck tech analysis. Swap targets to be determined upon physical arrival.
+
+- [ ] **Chandra, Awakened Inferno** ({4}{R}{R}) — **$8.26** (MP) / ~$10.60 (NM) · [Manapool Listing](https://manapool.com/card/cmm/875/chandra-awakened-inferno) · *Role:* Uncounterable, permanent +2 emblem upkeep ping for unremovable Valgavoth trigger · *Swap Target:* TBD on arrival
+- [ ] **Witch's Clinic** (Land) — **$5.22** (NM) · [Manapool Listing](https://manapool.com/card/fdc/318/witchs-clinic) · *Role:* Repeatable lifelink on big Valgavoth swings via utility land slot · *Swap Target:* TBD on arrival (e.g. basic Swamp/Mountain or Tainted Peak)
+- [ ] **Withering Torment** ({2}{B}) — **$1.24** (NM) · [Manapool Listing](https://manapool.com/card/dsk/124/withering-torment) · *Role:* Instant-speed creature/enchantment removal in black · *Swap Target:* TBD on arrival (e.g. Feed the Swarm or Bedevil)
 
 ---
 

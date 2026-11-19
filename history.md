@@ -2,6 +2,14 @@
 
 ## 🗓️ November 2026: Headless MTG Forge 4-AI Pod Simulation Cluster (`forgesim.chayde.lab`) & 100-Game Pod Gauntlets
 
+### 2026-11-19: Valgavoth, Harrower of Souls — toodeepMTG Tech Acquisition Order (`$14.72`)
+*   **Deck Tech Cross-Examination & Comparative Audit:**
+    *   Evaluated toodeepMTG's Bracket 3 build (`SWXRikEd0EKhsIWorPMi3Q`) against the user's active Phase 1 deck and Panzer MTG's turbo-slug list.
+    *   Confirmed toodeepMTG's strategic strengths: healthy 39-land base, clean lifegain synergy without nonbos, and avoidance of feel-bad 2-card infinites for genuine Bracket 3 pod acceptance.
+*   **Acquisition Order Placed (3 Tech Upgrades):**
+    *   Added **Chandra, Awakened Inferno** ({4}{R}{R}) ($8.26 MP), **Witch's Clinic** (Land) ($5.22 NM), and **Withering Torment** ({2}{B}) ($1.24 NM) to [`order_tracking.md`](commander_decks/Owned/ValgavothEndlessPunishment/order_tracking.md) (`$14.72` Manapool subtotal).
+    *   Physical swap targets to be evaluated upon physical arrival.
+
 ### 2026-11-18: Valgavoth, Harrower of Souls — 20-Card Phase 1 Bracket 3 Overhaul & Manapool Pricing (`$250.57`)
 *   **Comprehensive 20-Card Upgrade Applied:**
     *   **Applied via `scripts/swap_matrix.py ... --apply`:** Atomically executed the Triple Update across `valgavoth_endless_punishment.md`, `moxfield_import.txt`, and synchronized `Valgavoth.dck` to `%APPDATA%\Forge\decks\commander\`.

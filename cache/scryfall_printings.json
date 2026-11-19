@@ -8785,5 +8785,38 @@
       "609d3ecf-f88d-4268-a8d3-4bf2bcf5df60"
     ],
     "cached_at": 1795060604.63022
+  },
+  "valgavoth, harrower of souls": {
+    "ids": [
+      "8d7c1f6c-af45-4449-8cf8-e13830b3df8a"
+    ],
+    "cached_at": 1795095681.3770077
+  },
+  "chandra, awakened inferno": {
+    "ids": [
+      "9082a94f-f9b8-4f2b-9666-9210079398c8",
+      "f87822af-9529-486d-a47f-ae1a033a2a3d",
+      "49d2a680-4f3b-4bfa-b77b-d2dfaced9f23",
+      "0d4fb926-fe8c-4640-ac8d-ef418b8945d5"
+    ],
+    "cached_at": 1795095682.391988
+  },
+  "witch's clinic": {
+    "ids": [
+      "af47131d-4cc8-4c62-9643-462207351e47",
+      "d2422e3e-a923-4516-b87c-cac748354dca",
+      "fe17b08f-4790-4885-8b2b-b22f00b52d4e",
+      "60461a4f-a337-46b0-908f-fbd7479c235a"
+    ],
+    "cached_at": 1795095683.3786805
+  },
+  "withering torment": {
+    "ids": [
+      "38048d14-3463-4157-951f-1d68ec78a64e",
+      "87e03d07-c491-4ea1-a2f7-49c022005059",
+      "0868f94e-235d-4f65-a7af-8aacd58dd61e",
+      "06d44ada-f98e-405f-89d3-ac1002bfb854"
+    ],
+    "cached_at": 1795095684.4186912
   }
 }
