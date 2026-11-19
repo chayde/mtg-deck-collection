@@ -28,7 +28,7 @@ DECK:
 1 Rakdos, Lord of Riots
 1 Rampaging Ferocidon
 1 Solemn Simulacrum
-1 Magebane Lizard
+1 Scrawling Crawler
 1 Stormfist Crusader
 1 Manabarbs
 1 Tectonic Giant

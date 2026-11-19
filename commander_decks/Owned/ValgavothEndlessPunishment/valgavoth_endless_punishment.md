@@ -169,11 +169,11 @@ deck_status: main
 | [Luxury Suite](https://scryfall.com/card/msc/252/luxury-suite?utm_source=api) | Massacre Wurm | Land (Untapped Dual) | $9.54 (NM) | ⏳ Pending Acquisition |
 | [Blightstep Pathway](https://scryfall.com/card/khm/252/blightstep-pathway-searstep-pathway?utm_source=api) | Enchanter's Bane | Land (Untapped Modal Dual) | $4.99 (NM) | ⏳ Pending Acquisition |
 | [Blood Crypt](https://scryfall.com/card/rtr/238/blood-crypt?utm_source=api) | Sadistic Shell Game | Land (Untapped Shockland) | $5.74 (NM Foil) | ⏳ Pending Acquisition |
-| [Magebane Lizard](https://scryfall.com/card/otj/134/magebane-lizard?utm_source=api) | Star Athlete | Creature (Noncreature Spell Tax) | $0.47 (NM) | ⏳ Pending Acquisition |
+| [Scrawling Crawler](https://scryfall.com/card/fdn/132/scrawling-crawler?utm_source=api) | Star Athlete | Artifact Creature (Draw Step Damage) | $8.44 (NM) | ⏳ Pending Acquisition |
 
 *(Note: [Mountain](https://scryfall.com/card/trk/323/mountain?utm_source=api) replaces **Fear of Burning Alive** using a spare basic from your collection)*
 
-**Total In-Stock Manapool Cost (21 Cards):** **$250.98**
+**Total In-Stock Manapool Cost (21 Cards):** **$258.95**
 
 ### 🚫 Architectural Non-Goals & Rejected Tech
 *   **Non-Goal — Linear Symmetrical Burn Without Payoff:** Avoid pure burn cards like *Havoc Festival* or *Sulfuric Vortex* that draw massive table hate without advancing your own game plan. All life-loss effects must be cheap, continuous, or generate asymmetric advantage.
@@ -182,6 +182,10 @@ deck_status: main
 ---
 
 ## 📜 Deck Changelog
+- **[2026-11-18]:** Upgrade Magebane Lizard to Scrawling Crawler for guaranteed unconditional draw-step life loss and Valgavoth card draw
+    - **In:** Scrawling Crawler
+    - **Out:** Magebane Lizard
+    - **Reason:** Upgrade Magebane Lizard to Scrawling Crawler for guaranteed unconditional draw-step life loss and Valgavoth card draw
 - **[2026-11-18]:** Replace 2 MDFCs with Luxury Suite and Blightstep Pathway; replace Fear of Burning Alive with 9th Mountain; replace Star Athlete with Magebane Lizard
     - **In:** Luxury Suite, Blightstep Pathway // Searstep Pathway, Mountain, Magebane Lizard
     - **Out:** Fell the Profane // Fell Mire, Malakir Rebirth // Malakir Mire, Fear of Burning Alive, Star Athlete
@@ -228,7 +232,7 @@ DECK:
 1 Rakdos, Lord of Riots  
 1 Rampaging Ferocidon  
 1 Solemn Simulacrum  
-1 Magebane Lizard  
+1 Scrawling Crawler  
 1 Stormfist Crusader  
 1 Manabarbs  
 1 Tectonic Giant  

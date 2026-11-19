@@ -4,11 +4,11 @@ Legend: `- [x]` in hand / received · `- [ ]` ordered / pending acquisition
 
 **Deck Origin:** *Duskmourn: House of Horror Commander* Preconstructed Deck (`DSC`)  
 **Acquisition Date:** 2026-11-18  
-**Deck Status:** 🛒 **PHASE 1 UPGRADE CHECKLIST ACTIVE (21 Cards to Acquire — $250.98 Manapool Total)** — Precon physically in hand; 38 pure lands / 7 ramp rocks tuned; 21 upgrade cards priced and verified in stock on Manapool.
+**Deck Status:** 🛒 **PHASE 1 UPGRADE CHECKLIST ACTIVE (21 Cards to Acquire — $258.95 Manapool Total)** — Precon physically in hand; 38 pure lands / 7 ramp rocks tuned; 21 upgrade cards priced and verified in stock on Manapool.
 
 ---
 
-## 🛒 Phase 1 Acquisition Checklist (21 Cards to Buy — $250.98 Total)
+## 🛒 Phase 1 Acquisition Checklist (21 Cards to Buy — $258.95 Total)
 
 > Check off `- [x]` as each card is ordered or received. Once received, swap it into the physical deck in place of the card listed under **Replaces**.
 
@@ -29,7 +29,7 @@ Legend: `- [x]` in hand / received · `- [ ]` ordered / pending acquisition
 - [ ] **Underworld Dreams** ({B}{B}{B}) — **$1.82** (NM) · [Manapool Listing](https://manapool.com/card/thb/121/underworld-dreams) · *Replaces:* **Bastion of Remembrance** *(Aristocrat)*
 - [ ] **Spellshock** ({2}{R}) — **$0.74** (LP) · [Manapool Listing](https://manapool.com/card/plst/exo-104/spellshock) · *Replaces:* **Morbid Opportunist** *(Aristocrat)*
 - [ ] **Roiling Vortex** ({1}{R}) — **$0.68** (LP) · [Manapool Listing](https://manapool.com/card/znr/156/roiling-vortex) · *Replaces:* **Blood Artist** *(Aristocrat)*
-- [ ] **Magebane Lizard** ({1}{R}) — **$0.47** (NM) · [Manapool Listing](https://manapool.com/card/otj/134/magebane-lizard) · *Replaces:* **Star Athlete** *(Conditional 3-drop)*
+- [ ] **Scrawling Crawler** ({3}) — **$8.44** (NM) · [Manapool Listing](https://manapool.com/card/fdn/132/scrawling-crawler) · *Replaces:* **Star Athlete** *(Conditional 3-drop)*
 - [ ] **Ob Nixilis, the Hate-Twisted** ({3}{B}{B}) — **$0.15** (LP) · [Manapool Listing](https://manapool.com/card/war/100/ob-nixilis-the-hate-twisted) · *Replaces:* **Bloodfell Caves** *(Tapland)*
 
 ### 🛡️ Defense, Protection & Pure Dual Lands (5 Cards · $26.86)
@@ -41,7 +41,7 @@ Legend: `- [x]` in hand / received · `- [ ]` ordered / pending acquisition
 
 *(Note: [Mountain](https://scryfall.com/card/trk/323/mountain?utm_source=api) replaces **Fear of Burning Alive** using a spare basic from your collection)*
 
-**Total Order Cost (21 Cards):** **$250.98** *(All in stock on Manapool)*
+**Total Order Cost (21 Cards):** **$258.95** *(All in stock on Manapool)*
 
 ---
 
