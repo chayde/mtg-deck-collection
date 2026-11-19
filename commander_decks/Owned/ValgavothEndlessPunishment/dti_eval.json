@@ -1,0 +1,82 @@
+{
+  "deck_name": "ValgavothEndlessPunishment",
+  "thematic_restriction": false,
+  "grades": {
+    "r1": "B",
+    "r2": "B",
+    "a1": "B",
+    "a2": "B",
+    "p1": "B",
+    "p2": "B",
+    "p3": "B",
+    "i1": "B",
+    "i2": "C",
+    "s1": "B",
+    "s2": "C",
+    "s3": "C"
+  },
+  "justifications": {
+    "r1": "Standard on-curve ramp and land base; plays at regular tempo.",
+    "r2": "Reliable draw package keeping hands stocked without explosive burst.",
+    "a1": "Functional redundancy and moderate selection to assemble synergy pieces.",
+    "a2": "Assembles primary synergy engine on Turns 6–7.",
+    "p1": "Presents must-answer board state on Turns 6–7.",
+    "p2": "Requires 2 opponent untap steps to convert a lethal board state into a win.",
+    "p3": "Board-based game plan with standard interaction windows.",
+    "i1": "Fair instant-speed spot removal suite with 2–3 board wipes.",
+    "i2": "Light incidental taxation or soft denial; no asymmetric locks.",
+    "s1": "Moderate protection suite for commander and key permanents.",
+    "s2": "Can rebuild board presence over 2 turn cycles following a wipe.",
+    "s3": "Commander is primary engine centerpiece; functions at reduced efficiency without it."
+  },
+  "card_ledger": {
+    "r1": [
+      {
+        "card": "Rampaging Ferocidon",
+        "role": "Mana ramp / fixing"
+      },
+      {
+        "card": "Arcane Signet",
+        "role": "Mana ramp / fixing"
+      },
+      {
+        "card": "Rakdos Signet",
+        "role": "Mana ramp / fixing"
+      },
+      {
+        "card": "Sol Ring",
+        "role": "Mana ramp / fixing"
+      },
+      {
+        "card": "Talisman of Indulgence",
+        "role": "Mana ramp / fixing"
+      }
+    ],
+    "a2": [],
+    "p1": [],
+    "p2": [],
+    "r2": [
+      {
+        "card": "Harsh Mentor",
+        "role": "Card draw / engine replenishment"
+      }
+    ],
+    "a1": [],
+    "p3": [],
+    "i1": [
+      {
+        "card": "Chaos Warp",
+        "role": "Instant-speed reactive removal"
+      }
+    ],
+    "i2": [],
+    "s1": [
+      {
+        "card": "Lightning Greaves",
+        "role": "Board / commander protection"
+      }
+    ],
+    "s2": [],
+    "s3": []
+  }
+}

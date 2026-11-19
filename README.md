@@ -43,6 +43,7 @@ Decks physically built and ready for play.
 *   **The Great Goblin:** Rakdos Goblins / +1/+1 Counters & Aristocrats Burn ("The Goblin King's Court").
 *   **Smaug the Impenetrable:** Rakdos Dragon Masochism / Self-Damage Treasures & Artifact Aristocrats ("The Golden Hoard"). Bracket 3.
 *   **The Borg Queen:** Esper ({W}{U}{B}) Artifact Creature Swarm, Double Strike & Assimilate Midrange ("Phase 1 Bracket 3 Upgrade"). Bracket 3 (38/96 DTI · 44.0% 100-Game ForgeSim Pod Win Rate).
+*   **Valgavoth, Harrower of Souls:** Rakdos ({B}{R}) Group Slug, Triggered Life Loss & Card Advantage Engine ("Endless Punishment"). Bracket 2 Precon Baseline.
 *   **Preconstructed Decks:** Original and modified PreCons (Ashling, Bello, Disa, Ulalek, etc.).
 
 #### 📁 `/External`

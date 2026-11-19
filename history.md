@@ -2,6 +2,17 @@
 
 ## 🗓️ November 2026: Headless MTG Forge 4-AI Pod Simulation Cluster (`forgesim.chayde.lab`) & 100-Game Pod Gauntlets
 
+### 2026-11-18: Valgavoth, Harrower of Souls — *Endless Punishment* (`DSC`) Precon Baseline Harness (`ValgavothEndlessPunishment`)
+*   **Owned Deck Inception:** Created `commander_decks/Owned/ValgavothEndlessPunishment/` for the physically owned *Duskmourn: House of Horror Commander* (`DSC`) preconstructed deck led by **Valgavoth, Harrower of Souls** ({2}{B}{R}).
+*   **Standard Harness Initialization & Forge Synchronization:**
+    *   Verified all 100 cards (1 Commander + 61 Nonlands + 38 Lands; 0 Game Changers) via Scryfall against official WotC precon archives.
+    *   Created `valgavoth_endless_punishment.md`, `moxfield_import.txt`, and `order_tracking.md` (flagged 100% physically in hand).
+    *   Updated `KNOWN_FORGE_ALIASES` in `scripts/sync_to_forge.py` to map `"ValgavothEndlessPunishment": "Valgavoth"` and exported `Valgavoth.dck` (and `Endless Punishment.dck` mirror) into `%APPDATA%\Forge\decks\commander\`.
+*   **Baseline Validation (DTI & Goldfish):**
+    *   **DTI Threat Audit:** Baseline evaluated at **19 / 96 (Bracket 2 — Core / Precon)**, **Velocity 10 / 48**, **Suppression 7 / 40**, **0 Game Changers**, with **All 4 Gatekeepers Passed (Safe)** (`dti_audit.md` & `dti_report.html`).
+    *   **20-Game Bracket 2 Goldfish Simulation (80 seats):** **100% Commander Cast Rate (80/80 seats, Avg Turn 3.9, Fastest T2 via Sol Ring)**, **35% Gold / 65% Silver / 0% Desperation Keeps** (6.97 avg hand size), and **98% Bracket 2 Readiness (Avg Engine T4.6)** logged to `GOLDFISH_LOG.md`.
+    *   **Initial Upgrade Targets Identified:** Flagged user-preference violations (*Graven Cairns*, *Shadowblood Ridge*, *Rakdos Signet*) and tempo-drag taplands (*Bloodfell Caves*, *Geothermal Bog*, *Temple of the False God*) for Phase 1 replacement.
+
 ### 2026-11-18: Incredible Hulk — Forge Synchronization & Alias Fix (`Incredible Hulk.dck`)
 *   **Forge Deck Alias Resolution:**
     *   Diagnosed why *Bruce Banner // The Incredible Hulk* was missing in Forge: `scripts/sync_to_forge.py` had mapped `"IncredibleHulk"` to `"Gamma Smash"`, causing the deck to be exported exclusively as `Gamma Smash.dck` under "G" in the deck selection interface.
