@@ -4,7 +4,7 @@ Legend: `- [x]` in hand / received · `- [ ]` ordered / pending acquisition
 
 **Deck Origin:** *Star Trek Commander* Preconstructed Deck (`TRC #1`)  
 **Acquisition Date:** 2026-11-13  
-**Deck Status:** 🚚 **PHASE 1 ORDER PLACED ON 2026-11-14 (15/15 Cards Ordered across 4 Packages — `$102.62` Total, Pending Delivery)** — 100-card Bracket 3 upgraded list verified (`moxfield_import.txt`, `moxfield_import_printings.txt`, Forge `.dck`, 20-game Bracket 3 Goldfish, 100-game ForgeSim pod gauntlet, and DTI `38/96` audit). **0** spare copies in `collection.csv`.
+**Deck Status:** 🚚 **PHASE 1 ORDER PARTIALLY RECEIVED (8/15 Cards Received across 2/4 Packages — 7 Cards Pending)** — 100-card Bracket 3 upgraded list verified (`moxfield_import.txt`, `moxfield_import_printings.txt`, Forge `.dck`, 20-game Bracket 3 Goldfish, 100-game ForgeSim pod gauntlet, and DTI `38/96` audit). **0** spare copies in `collection.csv`.
 
 ---
 
@@ -18,17 +18,17 @@ Legend: `- [x]` in hand / received · `- [ ]` ordered / pending acquisition
 - [ ] **Voyage Home** ({5}{W}{U}) `[DFT #421]` (Lightly Played, Non-Foil, **$0.99**) · *Replaces:* **Hive Mind Coprocessor** `[TRK #115]`
 - [ ] **The Flesh Is Weak** ({2}{W}{U}{B}) `[40K #122]` (Lightly Played, Non-Foil, **$0.49**) · *Replaces:* **Korok, Liberated Rage** `[TRC #22]`
 
-### Package `#2736083` — Seller: `GemCityCollectibles` (3 Cards · `$18.78`)
-- [ ] **Sea of Clouds** (`0`, Land) `[TRC #399]` (Near Mint, Non-Foil, **$16.84**) · *Replaces:* **Skycloud Expanse** `[TRC #559]`
-- [ ] **Primary Unimatrix Adjunct** ({3}{W}) `[TRK #368]` (Near Mint, Non-Foil, **$1.09**) · *Replaces:* **The Best of Both Worlds** `[TRC #83]`
-- [ ] **Antagonist Incorporator** ({1}{W}) `[TRK #446]` (Near Mint, Non-Foil, **$0.85**) · *Replaces:* **Gift of Perfection** `[TRC #44]`
+### Package `#2736083` — Seller: `GemCityCollectibles` (3 Cards · `$18.78`) — ✅ Received 2026-11-21
+- [x] **Sea of Clouds** (`0`, Land) `[TRC #399]` (Near Mint, Non-Foil, **$16.84**) · *Replaces:* **Skycloud Expanse** `[TRC #559]`
+- [x] **Primary Unimatrix Adjunct** ({3}{W}) `[TRK #368]` (Near Mint, Non-Foil, **$1.09**) · *Replaces:* **The Best of Both Worlds** `[TRC #83]`
+- [x] **Antagonist Incorporator** ({1}{W}) `[TRK #446]` (Near Mint, Non-Foil, **$0.85**) · *Replaces:* **Gift of Perfection** `[TRC #44]`
 
-### Package `#2736084` — Seller: `Warren Wonders` (5 Cards · `$5.34`)
-- [ ] **Cyberdrive Awakener** ({5}{U}) `[EOC #69]` (Near Mint, Non-Foil, **$2.86**) · *Replaces:* **Assimilate the Wounded** `[TRC #55]`
-- [ ] **Path to Exile** ({W}) `[FIC #248]` (Near Mint, Non-Foil, **$1.23**) · *Replaces:* **Return to Dust** `[TRC #427]`
-- [ ] **Etherium Sculptor** ({1}{U}) `[EOC #72]` (Near Mint, Non-Foil, **$0.67**) · *Replaces:* **Reconnaissance Partition** `[TRC #119]`
-- [ ] **Organic Extinction** ({8}{W}{W}) `[EOC #66]` (Near Mint, Non-Foil, **$0.38**) · *Replaces:* **Join the Collective** `[TRC #20]`
-- [ ] **Sai, Master Thopterist** ({2}{U}) `[DRC #82]` (Near Mint, Non-Foil, **$0.20**) · *Replaces:* **Stratagem Emulator** `[TRC #30]`
+### Package `#2736084` — Seller: `Warren Wonders` (5 Cards · `$5.34`) — ✅ Received 2026-11-21
+- [x] **Cyberdrive Awakener** ({5}{U}) `[EOC #69]` (Near Mint, Non-Foil, **$2.86**) · *Replaces:* **Assimilate the Wounded** `[TRC #55]`
+- [x] **Path to Exile** ({W}) `[FIC #248]` (Near Mint, Non-Foil, **$1.23**) · *Replaces:* **Return to Dust** `[TRC #427]`
+- [x] **Etherium Sculptor** ({1}{U}) `[EOC #72]` (Near Mint, Non-Foil, **$0.67**) · *Replaces:* **Reconnaissance Partition** `[TRC #119]`
+- [x] **Organic Extinction** ({8}{W}{W}) `[EOC #66]` (Near Mint, Non-Foil, **$0.38**) · *Replaces:* **Join the Collective** `[TRC #20]`
+- [x] **Sai, Master Thopterist** ({2}{U}) `[DRC #82]` (Near Mint, Non-Foil, **$0.20**) · *Replaces:* **Stratagem Emulator** `[TRC #30]`
 
 ### Package `#2736085` — Seller: `CityofTraders` (3 Cards · `$31.44`)
 - [ ] **Urza, Lord High Artificer** ({2}{U}{U}) `[CMM #674]` (Lightly Played, Non-Foil, **$19.41**) · *Replaces:* **Door of Destinies** `[TRC #489]`
