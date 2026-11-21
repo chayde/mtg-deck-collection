@@ -9,7 +9,7 @@
     *   **Out (11 Cards):** *Stormfist Crusader*, *Vial Smasher the Fierce*, *Harsh Mentor*, *Grab the Prize*, *Tectonic Giant*, *Suspended Sentence*, *Infernal Grasp*, *Theater of Horrors*, *Light Up the Stage*, *Florian, Voldaren Scion*, and 1 basic *Mountain*.
     *   **Preserved Staples:** Kept **Mask of Griselbrand** and **Gray Merchant of Asphodel** in the active 99.
     *   **Triple-Update & Forge Sync:** Atomically updated `valgavoth_endless_punishment.md`, `moxfield_import.txt`, and synchronized `Valgavoth.dck` to `%APPDATA%\Forge\decks\commander\`.
-    *   **Order Tracking Updated:** Logged 18 LGS cards in hand, 3 tech cards on order (`$14.72`), and 13 new online purchase items (`$184.22`) in [`order_tracking.md`](commander_decks/Owned/ValgavothEndlessPunishment/order_tracking.md).
+    *   **Order Placed (Manapool Order #802297):** Placed 13-card order across 2 packages (UnholySavior Gaming `$40.00` & Spellfinder `$189.80` — **`$229.80`** total), securing all remaining upgrades including borderless/extended printings of **Deflecting Swat**, **Deadly Rollick**, **Mithril Coat**, **No Mercy**, **Champion's Helm**, **Plaza of Heroes**, and **Bloodthirsty Conqueror** in [`order_tracking.md`](commander_decks/Owned/ValgavothEndlessPunishment/order_tracking.md).
 
 ### 2026-11-19: Valgavoth, Harrower of Souls — toodeepMTG Tech Acquisition Order (`$14.72`)
 *   **Deck Tech Cross-Examination & Comparative Audit:**

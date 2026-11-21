@@ -1,10 +1,10 @@
 # Order & Inventory Tracking — Valgavoth, Harrower of Souls (Endless Punishment)
 
-Legend: `- [x]` in hand / acquired · `- [ ]` ordered / pending acquisition  
+Legend: `- [x]` in hand / acquired · `- [ ]` ordered / pending delivery  
 
 **Deck Origin:** *Duskmourn: House of Horror Commander* Preconstructed Deck (`DSC`)  
 **Acquisition Date:** 2026-11-18  
-**Deck Status:** 🛡️ **HIGH-POWER BRACKET 3 TUNED (1/3 Game Changers)** — 18 Phase 1 upgrades acquired via LGS; 3 tech cards on order; 13 cards pending new online order.
+**Deck Status:** 🛡️ **ALL 34 UPGRADE CARDS SECURED (18 In Hand via LGS · 16 On Order Across 2 Manapool Orders)** — 100% of planned upgrades sourced! 0 unpurchased cards remaining.
 
 ---
 
@@ -45,39 +45,33 @@ Legend: `- [x]` in hand / acquired · `- [ ]` ordered / pending acquisition
 
 ---
 
-## 🚚 Section 2: Already On Order (3 Cards · $14.72 Subtotal)
+## 🚚 Section 2: On Order — toodeepMTG Tech Wave (3 Cards · $14.72)
 
-> Ordered from previous toodeepMTG tech review. Pending delivery.
+> Ordered 2026-11-19. Pending delivery.
 
-- [ ] **Chandra, Awakened Inferno** ({4}{R}{R}) — **$8.26** (MP) / ~$10.60 (NM) · [Manapool Listing](https://manapool.com/card/cmm/875/chandra-awakened-inferno) · *Role:* Uncounterable, permanent +2 emblem upkeep ping for unremovable Valgavoth triggers
+- [ ] **Chandra, Awakened Inferno** ({4}{R}{R}) — **$8.26** (MP) · [Manapool Listing](https://manapool.com/card/cmm/875/chandra-awakened-inferno) · *Role:* Uncounterable, permanent +2 emblem upkeep ping for unremovable Valgavoth triggers
 - [ ] **Witch's Clinic** (Land) — **$5.22** (NM) · [Manapool Listing](https://manapool.com/card/fdc/318/witchs-clinic) · *Role:* Repeatable lifelink on big Valgavoth swings via utility land slot
 - [ ] **Withering Torment** ({2}{B}) — **$1.24** (NM) · [Manapool Listing](https://manapool.com/card/dsk/124/withering-torment) · *Role:* Instant-speed creature/enchantment removal in black
 
 ---
 
-## 🛒 Section 3: New Cards to Order Now (13 Cards Total · ~$184.22 Subtotal)
+## 📦 Section 3: On Order — Manapool Order #802297 (13 Cards · $229.80 Total)
 
-> Verified live inventory and pricing via Manapool.
+> Ordered 2026-11-21 across 2 packages. Tracking numbers pending shipment.
 
-### 🛡️ Commander Protection & Free Blowouts (5 Cards · $100.04)
-- [ ] **Deflecting Swat** ({2}{R}) — **$72.75** (NM) · [Manapool Listing](https://manapool.com/card/cmm/214/deflecting-swat) · *Role:* Free instant spell redirection
-- [ ] **Mithril Coat** ({3}) — **$20.50** (NM) · [Manapool Listing](https://manapool.com/card/ltr/245/mithril-coat) · *Role:* Flash indestructible instant auto-attach equipment
-- [ ] **Untimely Malfunction** ({1}{R}) — **$7.18** (LP) · [Manapool Listing](https://manapool.com/card/dsk/161/untimely-malfunction) · *Role:* Modal instant spell redirect or artifact destruction
-- [ ] **Kaya's Ghostform** ({B}) — **$1.04** (LP) · [Manapool Listing](https://manapool.com/card/war/94/kayas-ghostform) · *Role:* 1-mana aura insurance against destroy AND exile
-- [ ] **Champion's Helm** ({3}) — **$0.60** (LP) · [Manapool Listing](https://manapool.com/card/pip/228/champions-helm) · *Role:* Legendary Hexproof & +2/+2 (Equips for {1})
+### 🛍️ Package #802297-2807635 — UnholySavior Gaming ($40.00)
+- [ ] **Bloodthirsty Conqueror** ({3}{B}{B}) — **$40.00** · [FDN #460] NM Extended Art · [Listing](https://manapool.com/card/fdn/460/bloodthirsty-conqueror)
 
-### ⚔️ Free / Instant Interaction Upgrades (2 Cards · $22.40)
-- [ ] **Deadly Rollick** ({3}{B}) — **$22.25** (MP) · [Manapool Listing](https://manapool.com/card/cmm/147/deadly-rollick) · *Role:* Free instant creature exile
-- [ ] **Terminate** ({B}{R}) — **$0.15** (NM) · [Manapool Listing](https://manapool.com/card/acr/98/terminate) · *Role:* Instant creature destroy with zero self-damage
-
-### 🩸 Attack Deterrence & Board Lock (2 Cards · $13.80)
-- [ ] **No Mercy** ({2}{B}{B}) — **$13.65** (LP) · [Manapool Listing](https://manapool.com/card/mar/68/no-mercy) · *Role:* Destroys any creature that deals damage to you
-- [ ] **Revenge of Ravens** ({3}{B}) — **$0.15** (NM) · [Manapool Listing](https://manapool.com/card/eld/104/revenge-of-ravens) · *Role:* 1 damage & +1 life per attacking creature; triggers Valgavoth on attack
-
-### 🏰 Free Protection Land (1 Card · $3.65)
-- [ ] **Plaza of Heroes** (Land) — **$3.65** (NM) · [Manapool Listing](https://manapool.com/card/msc/255/plaza-of-heroes) · *Role:* Mana fixing & instant Hexproof/Indestructible on a land slot
-
-### 📦 Sourced from Online (3 Cards Missed at LGS · $42.25)
-- [ ] **Bloodthirsty Conqueror** ({3}{B}{B}) — **$34.69** (LP) · [Manapool Listing](https://manapool.com/card/fdn/58/bloodthirsty-conqueror) · *Role:* Massive lifegain cushion (Exquisite Blood on a stick)
-- [ ] **Ankh of Mishra** ({2}) — **$5.25** (MP) · [Manapool Listing](https://manapool.com/card/4ed/294/ankh-of-mishra) · *Role:* 2 damage per land entering under opponent control
-- [ ] **Zo-Zu the Punisher** ({1}{R}{R}) — **$2.31** (LP) · [Manapool Listing](https://manapool.com/card/chk/200/zo-zu-the-punisher) · *Role:* 2 damage per land entering under opponent control
+### 🛍️ Package #802297-2807636 — Spellfinder ($189.80)
+- [ ] **Deflecting Swat** ({2}{R}) — **$76.49** · [C20 #50] MP · [Listing](https://manapool.com/card/c20/50/deflecting-swat)
+- [ ] **Deadly Rollick** ({3}{B}) — **$31.31** · [CMM #695] Foil MP Borderless · [Listing](https://manapool.com/card/cmm/695/deadly-rollick)
+- [ ] **Mithril Coat** ({3}) — **$23.12** · [LTR #379] LP Extended Art · [Listing](https://manapool.com/card/ltr/379/mithril-coat)
+- [ ] **No Mercy** ({2}{B}{B}) — **$22.01** · [DMR #427] Foil NM Borderless · [Listing](https://manapool.com/card/dmr/427/no-mercy)
+- [ ] **Plaza of Heroes** (Land) — **$8.69** · [DMU #421] NM Extended Art · [Listing](https://manapool.com/card/dmu/421/plaza-of-heroes)
+- [ ] **Untimely Malfunction** ({1}{R}) — **$8.39** · [DSK #161] NM · [Listing](https://manapool.com/card/dsk/161/untimely-malfunction)
+- [ ] **Ankh of Mishra** ({2}) — **$6.41** · [4ED #294] MP · [Listing](https://manapool.com/card/4ed/294/ankh-of-mishra)
+- [ ] **Champion's Helm** ({3}) — **$5.47** · [CMM #654] NM Borderless · [Listing](https://manapool.com/card/cmm/654/champions-helm)
+- [ ] **Zo-Zu the Punisher** ({1}{R}{R}) — **$4.63** · [SLC #26] LP Borderless Secret Lair · [Listing](https://manapool.com/card/slc/26/zo-zu-the-punisher)
+- [ ] **Kaya's Ghostform** ({B}) — **$2.27** · [WAR #94] MP · [Listing](https://manapool.com/card/war/94/kayas-ghostform)
+- [ ] **Revenge of Ravens** ({3}{B}) — **$0.51** · [ELD #104] NM · [Listing](https://manapool.com/card/eld/104/revenge-of-ravens)
+- [ ] **Terminate** ({B}{R}) — **$0.50** · [DMC #172] LP · [Listing](https://manapool.com/card/dmc/172/terminate)
