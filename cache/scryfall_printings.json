@@ -1359,17 +1359,17 @@
   "plaza of heroes": {
     "ids": [
       "d87b5888-554a-4940-ac3b-a675cfa0bb6f",
-      "5a5e0599-62b0-4063-9872-33d5add06754",
       "740eae1a-bfe0-4f3c-81e3-3fef962fa02d",
-      "2375d88b-b49f-43b2-a4cd-bfa2c9faa879",
-      "ae90d5e6-d0a1-4174-9f30-87bab0067796",
-      "a2cfcf67-f83c-43af-9e2d-5513fcdde835",
-      "ea9fc6ee-2205-4f77-8e14-313bfbe68c1e",
-      "c5653373-d4ed-4211-9393-c7839d2d0a73",
+      "5a5e0599-62b0-4063-9872-33d5add06754",
       "c85ce746-a0df-4146-9c0e-562bac5164bf",
+      "c5653373-d4ed-4211-9393-c7839d2d0a73",
+      "ea9fc6ee-2205-4f77-8e14-313bfbe68c1e",
+      "ae90d5e6-d0a1-4174-9f30-87bab0067796",
+      "2375d88b-b49f-43b2-a4cd-bfa2c9faa879",
+      "a2cfcf67-f83c-43af-9e2d-5513fcdde835",
       "96fe4b9b-d766-463b-a6df-345ebebfc17c"
     ],
-    "cached_at": 1783188364.8186991
+    "cached_at": 1795299501.160499
   },
   "fabled passage": {
     "ids": [
@@ -8818,5 +8818,56 @@
       "06d44ada-f98e-405f-89d3-ac1002bfb854"
     ],
     "cached_at": 1795095684.4186912
+  },
+  "champion's helm": {
+    "ids": [
+      "7c71065f-6242-4c1b-a2d4-e940d6d4fad7",
+      "0b0a1005-0ba0-4903-b9a8-e9d7e4aa830a",
+      "147b0d7d-3657-4521-b370-3a4f3a419313",
+      "ae5758df-adf9-4d78-8fae-d300a20a49a6",
+      "062fe8d7-c0d4-4460-9613-27c6c0555a14",
+      "dcad6846-0b35-4193-b647-16e597357f9b",
+      "77aa98c5-0f8a-45b2-904d-29afeeb491bc",
+      "c6548a30-577a-47e7-aa6e-8f6db1f7b78e",
+      "b0509384-6db1-4dca-8ddf-b2a03a56c310",
+      "26f5d866-4ee9-4054-8d48-82da0a2d1170",
+      "a207957a-16e4-4830-a101-39bcd4a46e61",
+      "284f705e-01a3-4fc0-a7c0-7f13d8b3f98a"
+    ],
+    "cached_at": 1795299495.7308533
+  },
+  "untimely malfunction": {
+    "ids": [
+      "857bfb0e-17dc-4dda-bc37-3df927a9eae6",
+      "08fb96c5-ad31-4918-a08f-932f33208dd8"
+    ],
+    "cached_at": 1795299497.1073318
+  },
+  "kaya's ghostform": {
+    "ids": [
+      "98f3be88-24e2-433f-9138-f0cb59d09a0f",
+      "8cae3159-b321-4ce5-900d-5b2371e1fedb"
+    ],
+    "cached_at": 1795299498.1071575
+  },
+  "no mercy": {
+    "ids": [
+      "96af17e0-91fa-4b99-8313-9dabea8685ea",
+      "4133fcbc-de7b-4270-b6c5-8246f290c8cf",
+      "4e2fc29c-0223-4b03-864f-eb9149abc921",
+      "63c5e1dd-2fe6-4734-8406-7bcdf17aa60c",
+      "7295eb82-8785-4a5f-ba64-0a0b5cb77d3f",
+      "c2598da4-0764-440a-9e9d-0161e68667fb",
+      "8a37de6b-3a92-4a32-a940-e0f303e316c1"
+    ],
+    "cached_at": 1795299499.1245172
+  },
+  "revenge of ravens": {
+    "ids": [
+      "8418f1ed-e4b8-436b-8859-c4df51c29f60",
+      "3474289a-193e-452d-b248-e53ee99e22c0",
+      "22379f55-dc70-4452-8efe-99fd05c4f6a2"
+    ],
+    "cached_at": 1795299500.1351202
   }
 }

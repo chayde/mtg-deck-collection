@@ -2,6 +2,15 @@
 
 ## 🗓️ November 2026: Headless MTG Forge 4-AI Pod Simulation Cluster (`forgesim.chayde.lab`) & 100-Game Pod Gauntlets
 
+### 2026-11-21: Valgavoth, Harrower of Souls — 11-Card Elite Protection & Deterrence Upgrade
+*   **Protection & Anti-Targeting Overhaul:**
+    *   Applied an 11-card transaction via `scripts/swap_matrix.py ... --apply` to address commander removal targeting and table crackback damage.
+    *   **In (11 Cards):** **Deflecting Swat** ({2}{R}/{0}), **Mithril Coat** ({3}), **Champion's Helm** ({3}), **Untimely Malfunction** ({1}{R}), **Kaya's Ghostform** ({B}), **Deadly Rollick** ({3}{B}/{0}), **Terminate** ({B}{R}), **No Mercy** ({2}{B}{B}), **Revenge of Ravens** ({3}{B}), **Plaza of Heroes** (Land), and restored **Massacre Wurm** ({3}{B}{B}{B}).
+    *   **Out (11 Cards):** *Stormfist Crusader*, *Vial Smasher the Fierce*, *Harsh Mentor*, *Grab the Prize*, *Tectonic Giant*, *Suspended Sentence*, *Infernal Grasp*, *Theater of Horrors*, *Light Up the Stage*, *Florian, Voldaren Scion*, and 1 basic *Mountain*.
+    *   **Preserved Staples:** Kept **Mask of Griselbrand** and **Gray Merchant of Asphodel** in the active 99.
+    *   **Triple-Update & Forge Sync:** Atomically updated `valgavoth_endless_punishment.md`, `moxfield_import.txt`, and synchronized `Valgavoth.dck` to `%APPDATA%\Forge\decks\commander\`.
+    *   **Order Tracking Updated:** Logged 18 LGS cards in hand, 3 tech cards on order (`$14.72`), and 13 new online purchase items (`$184.22`) in [`order_tracking.md`](commander_decks/Owned/ValgavothEndlessPunishment/order_tracking.md).
+
 ### 2026-11-19: Valgavoth, Harrower of Souls — toodeepMTG Tech Acquisition Order (`$14.72`)
 *   **Deck Tech Cross-Examination & Comparative Audit:**
     *   Evaluated toodeepMTG's Bracket 3 build (`SWXRikEd0EKhsIWorPMi3Q`) against the user's active Phase 1 deck and Panzer MTG's turbo-slug list.
