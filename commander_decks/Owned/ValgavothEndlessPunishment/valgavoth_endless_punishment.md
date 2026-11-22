@@ -182,6 +182,10 @@ deck_status: main
 ---
 
 ## 📜 Deck Changelog
+- **[2026-11-21]:** Integrate Chandra and Withering Torment to finalize 100 percent of acquired and ordered tech upgrades
+    - **In:** Chandra, Awakened Inferno, Withering Torment
+    - **Out:** Nightshade Harvester, Bedevil
+    - **Reason:** Integrate Chandra and Withering Torment to finalize 100 percent of acquired and ordered tech upgrades
 - **[2026-11-21]:** Add elite commander protection, free interaction, attack deterrence, and restore Massacre Wurm
     - **In:** Champion's Helm, Deflecting Swat, Mithril Coat, Untimely Malfunction, Kaya's Ghostform, Deadly Rollick, Terminate, No Mercy, Revenge of Ravens, Plaza of Heroes, Massacre Wurm
     - **Out:** Stormfist Crusader, Vial Smasher the Fierce, Harsh Mentor, Grab the Prize, Tectonic Giant, Suspended Sentence, Infernal Grasp, Theater of Horrors, Light Up the Stage, Mountain, Florian, Voldaren Scion
@@ -231,7 +235,7 @@ DECK:
 1 Mayhem Devil  
 1 Mogis, God of Slaughter  
 1 Spellshock  
-1 Nightshade Harvester  
+1 Chandra, Awakened Inferno  
 1 Ankh of Mishra  
 1 Rakdos, Lord of Riots  
 1 Rampaging Ferocidon  
@@ -249,7 +253,7 @@ DECK:
 1 Revenge of Ravens  
 1 Blood Crypt  
 1 Sign in Blood  
-1 Bedevil  
+1 Withering Torment  
 1 Blood Pact  
 1 Chaos Warp  
 1 Terminate  

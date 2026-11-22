@@ -2,6 +2,13 @@
 
 ## 🗓️ November 2026: Headless MTG Forge 4-AI Pod Simulation Cluster (`forgesim.chayde.lab`) & 100-Game Pod Gauntlets
 
+### 2026-11-21: Valgavoth, Harrower of Souls — Complete Deck Architecture Finalized with Chandra & Withering Torment
+*   **Final Upgrade Integration Applied:**
+    *   Executed 2-card transaction via `scripts/swap_matrix.py ... --apply` to integrate all acquired and ordered tech into the active 100-card deck list.
+    *   **In (2 Cards):** **Chandra, Awakened Inferno** ({4}{R}{R}) (Uncounterable permanent emblem upkeep ping engine) and **Withering Torment** ({2}{B}) (Instant-speed creature/enchantment removal).
+    *   **Out (2 Precon Cuts):** *Nightshade Harvester* ({3}{B}) and *Bedevil* ({B}{B}{R}).
+    *   **Status:** 100% of all purchased and ordered cards are now formally locked into the active deck structure, Moxfield export, and `%APPDATA%\Forge\decks\commander\Valgavoth.dck`. All 4 Gatekeepers safe, 1/3 Game Changers ([Orcish Bowmasters](https://scryfall.com/search?q=!"Orcish+Bowmasters")), Bracket 3 compliant.
+
 ### 2026-11-21: Valgavoth, Harrower of Souls — 11-Card Elite Protection & Deterrence Upgrade
 *   **Protection & Anti-Targeting Overhaul:**
     *   Applied an 11-card transaction via `scripts/swap_matrix.py ... --apply` to address commander removal targeting and table crackback damage.
