@@ -68,7 +68,7 @@ Run through this at the start of every working session:
 - [ ] Identify the deck(s) being worked on and locate their directory
 - [ ] Check `order_tracking.md` in that deck's directory if physical card acquisition is relevant
 - [ ] Note the deck's current Bracket — it constrains which cards can be added
-- [ ] For Claude Code sessions: confirm that Scryfall web lookup is available before any card work
+- [ ] Confirm that the `mtg-commander` MCP server (`C:\Antigravity\mtg-mcp\mtg-mcp.exe`) and `scripts/scryfall_lookup.py` are available before any card work
 
 ---
 
@@ -79,7 +79,10 @@ Run through this at the start of every working session:
 > **Before performing any card lookup or pricing task, read `API_REFERENCE.md`.** It is the authoritative source for all Scryfall and Manapool API rules, rate limits, cache behavior, query syntax, and error handling. The rules below are a summary only.
 
 - **NEVER guess or assume** any card's name, mana cost, abilities, color identity, legality, or existence.
-- **MANDATORY:** Verify all card data via the permanent scripts — `scripts/scryfall_lookup.py` for card lookups, `scripts/manapool_price_deck.py` for pricing. Do not write inline Python or call APIs directly.
+- **MANDATORY:** Verify all card data via the permanent scripts (`scripts/scryfall_lookup.py` for card lookups, `scripts/manapool_price_deck.py` for Manapool pricing) or the **`mtg-commander` MCP server** (`C:\Antigravity\mtg-mcp\mtg-mcp.exe`). Do not write inline Python or call APIs directly.
+  - Use **`mtg-commander`** for EDHREC meta/synergy/combos (`get_edhrec_recommendations`, `get_edhrec_combos`, `get_edhrec_set_cards`), external reference decks (`get_moxfield_deck`, `search_moxfield_decks`, `get_archidekt_deck`, `search_archidekt_decks`), WotC Comprehensive Rules & rulings (`get_rule`, `search_rules`, `get_glossary_term`, `get_card_rulings`), and fast batched 100-card validation (`validate_deck`).
+  - Use **`scripts/scryfall_lookup.py`** when you need repo-cached lookups (`cache/scryfall_cards.json`), `is:gamechanger` tag verification, or verified `Scryfall:` / `Image:` URIs for chat and HTML reports.
+  - Use **`scripts/manapool_price_deck.py`** for live Manapool vendor inventory and USD purchase pricing.
 - **When you must look up a card:** Any time you are unsure of oracle text, mana cost, color identity, card type, legality, or a complex rules interaction — look it up. Do not rely on memory or assumption. The lookup takes 500ms; an incorrect assumption can invalidate an entire recommendation.
 - **Ambiguity Protocol:** If a card name is uncertain, a search result is ambiguous, or you cannot confirm a card exists, **STOP and ask the user** before proceeding. Do not make a best-guess substitution.
 - **Scryfall Link & Image Accuracy:** NEVER manually construct `/card/<set>/<number>/...` URLs from memory. Scryfall routes exclusively by `<set>/<collector_number>` and ignores card name slugs, causing links to resolve to completely different cards if the number is wrong. Always use the verified `Scryfall:` URI and `Image:` URL returned by `scripts/scryfall_lookup.py`, or use the canonical search URL format `https://scryfall.com/search?q=!"Card+Name"`.
@@ -100,7 +103,7 @@ Whenever a deck's card list changes, you **MUST** update **all three** of these 
 
 - Every Commander deck must be exactly 100 cards: 1 Commander + 99 cards.
 - Cards must comply with the commander's **color identity** (not just casting cost).
-- After any change, count the deck to confirm it is exactly 100 cards before finalizing.
+- After any change, count the deck to confirm it is exactly 100 cards before finalizing. Use `validate_deck` (`mtg-commander` MCP) for a fast batched Scryfall check of count, Rule 903.3 commander eligibility, singleton, color identity, and ban list compliance.
 
 ### 5.4 Bracket Compliance
 
@@ -340,12 +343,13 @@ Examples:
 
 ### Phase 1: Research & Verification (CRITICAL)
 *   **Check History:** ALWAYS read `history.md` before proposing changes to understand recent decisions and match results.
-*   **Verify Cards:** NEVER assume a card's abilities, mana cost, or legality. You MUST verify every card using Scryfall, Manapool, or integrated search tools before adding it to a list.
+*   **Meta & Reference Research (`mtg-commander` MCP):** When brainstorming upgrades, auditing a precon, or benchmarking against community builds, use `get_edhrec_recommendations` (with `theme`/`price_tier`), `get_edhrec_combos`, `get_moxfield_deck` / `search_moxfield_decks`, and `get_archidekt_deck` / `search_archidekt_decks` (with `lands_only: true` for landbase comparisons).
+*   **Verify Cards:** NEVER assume a card's abilities, mana cost, or legality. You MUST verify every card using `scripts/scryfall_lookup.py`, `scripts/manapool_price_deck.py`, or `mtg-commander` MCP tools before adding it to a list.
 *   **Ambiguity Protocol:** If a card name is ambiguous or tool output is unclear, you MUST stop and ask the user for clarification. Do not guess.
 
 ### Phase 2: Strategy & Reasoning
 *   **Expert Agency:** While `COMMANDER_TEMPLATE.md` provides base ratios, you are encouraged to deviate if the deck's strategy demands it (e.g., more creatures for a Tribal deck). You must explicitly justify these deviations in your strategy summary.
-*   **Bracket Compliance:** Check "Game Changers" in `COMMANDER_DECKBUILDING_RULES.md` to ensure the deck remains within its target Bracket (1-5).
+*   **Rules & Bracket Compliance:** Check "Game Changers" in `COMMANDER_DECKBUILDING_RULES.md` to ensure the deck remains within its target Bracket (1-5). For complex timing, replacement, or layer interactions, verify with `get_rule`, `search_rules`, or `get_card_rulings` (`mtg-commander` MCP) before proposing swaps.
 
 ### Phase 2.5: Visual Swap Matrix & Mechanics Pre-Check (MANDATORY for Swaps)
 Whenever recommending or discussing card swaps:

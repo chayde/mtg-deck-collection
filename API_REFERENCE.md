@@ -324,6 +324,24 @@ The `id<=` filter enforces color identity. Always include `commander:legal` to e
 
 ---
 
+## MCP Server (`mtg-commander`)
+
+In addition to the Python scripts above, the local `mtg-commander` MCP server (`C:\Antigravity\mtg-mcp\mtg-mcp.exe`, built from `nathanmartins/mtg-mcp`) is available for live Commander meta, external deck ingestion, Comprehensive Rules, and batched deck validation.
+
+### Tool-Routing Matrix
+
+| Task | Authoritative Tool | Notes |
+|---|---|---|
+| **EDHREC synergy, themes, salt scores, combos, set staples** | `mtg-commander` (`get_edhrec_recommendations`, `get_edhrec_combos`, `get_edhrec_set_cards`) | Supports `theme` slugs and `price_tier` (`budget`/`expensive`). |
+| **Fetch/search Moxfield or Archidekt decks** | `mtg-commander` (`get_moxfield_deck`, `search_moxfield_decks`, `get_archidekt_deck`, `search_archidekt_decks`) | Read-only. Use `lands_only: true` on `get_archidekt_deck` for landbase comparisons. |
+| **Comprehensive Rules & official WotC card rulings** | `mtg-commander` (`get_rule`, `search_rules`, `get_glossary_term`, `get_card_rulings`) | Backed by WotC's official CR document. |
+| **Fast 100-card legality & color-identity check** | `mtg-commander` (`validate_deck`) | Batches 75 cards per Scryfall `/cards/collection` request (2 requests per deck). |
+| **Repo-cached card lookup, `[GAME CHANGER]` tag, verified `Image:` / `Scryfall:` URIs** | `scripts/scryfall_lookup.py` | Required for chat/HTML card image links and `cache/scryfall_cards.json` sharing. |
+| **Live Manapool vendor pricing & stock** | `scripts/manapool_price_deck.py` | `mtg-commander` only reports Scryfall USD/EUR/BRL, not Manapool inventory. |
+| **Deck edits, Triple-Update, Swap Matrix HTML & Forge `.dck` sync** | `scripts/swap_matrix.py` | All deck modifications must still go through `swap_matrix.py`. |
+
+---
+
 ## When Agents Must Look Up a Card
 
 Any agent performing a task in this repository must look up a card using `scripts/scryfall_lookup.py` if any of the following are true:

@@ -38,9 +38,9 @@
 * **Keep `scripts/swap_matrix.py`** for all deck edits, Triple-Update synchronization, Rules Watchdog checks, and Forge `.dck` export.
 
 ### Implementation Checklist
-- [ ] **1.1 Install Go & Build `mtg-mcp.exe`:** Install Go (`winget install GoLang.Go`, `1.27.3+`), clone `nathanmartins/mtg-mcp` to `C:\Antigravity\mtg-mcp` (keeping all AI projects under `C:\Antigravity`), and run `go build -o mtg-mcp.exe ./cmd/mtg-mcp`.
-- [ ] **1.2 Register MCP Server:** Add `mtg-commander` to Antigravity's MCP configuration pointing to `C:\\Antigravity\\mtg-mcp\\mtg-mcp.exe`.
-- [ ] **1.3 Update Working Documentation & Instructions:**
+- [x] **1.1 Install Go & Build `mtg-mcp.exe`:** Install Go (`winget install GoLang.Go`, `1.27.3+`), clone `nathanmartins/mtg-mcp` to `C:\Antigravity\mtg-mcp` (keeping all AI projects under `C:\Antigravity`), and run `go build -o mtg-mcp.exe ./cmd/mtg-mcp`.
+- [x] **1.2 Register MCP Server:** Add `mtg-commander` to Antigravity's MCP configuration pointing to `C:\\Antigravity\\mtg-mcp\\mtg-mcp.exe`.
+- [x] **1.3 Update Working Documentation & Instructions:**
   - **`GEMINI.md`:** Update Sections 3 (`Repository Map`), 4 (`Session Startup Checklist`), 5.1 (`Card Verification`), 5.3–5.4 (`100-Card Singleton` & `Bracket Compliance`), and 12 (`Mandatory Agentic Workflows`) so every session knows `mtg-commander` is available and when to call it.
   - **`API_REFERENCE.md`:** Add an **"MCP Server (`mtg-commander`)"** section defining the tool-routing matrix alongside `scripts/scryfall_lookup.py`, `scripts/manapool_price_deck.py`, and `scripts/swap_matrix.py`.
 - [ ] **1.4 Smoke Test (`ValgavothEndlessPunishment`):** Run `validate_deck` on `commander_decks/Owned/ValgavothEndlessPunishment/moxfield_import.txt`, `get_edhrec_recommendations` for **Valgavoth, Harrower of Souls**, a reference deck lookup (`get_moxfield_deck` / `get_archidekt_deck`), and `get_rule` (e.g., `302.6` / `903.3`).
