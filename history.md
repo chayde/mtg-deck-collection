@@ -2,6 +2,15 @@
 
 ## 🗓️ November 2026: Headless MTG Forge 4-AI Pod Simulation Cluster (`forgesim.chayde.lab`) & 100-Game Pod Gauntlets
 
+### 2026-11-23: Valgavoth, Harrower of Souls — Phase 1 Physical Integration Complete (20 Cards Sleeved In)
+*   **Physical Assembly & Mana Base Lock:**
+*   Sleeved in all 20 upgrade cards sourced locally from *Thanks For Playing* (LGS) into the physical *Endless Punishment* (`DSC`) deck.
+*   **In Hand / Sleeved In (20 Cards):** *Sheoldred, the Apocalypse*, *Orcish Bowmasters*, *Solphim, Mayhem Dominus*, *Ojer Axonil, Deepest Might*, *Bloodchief Ascension*, *Sunspine Lynx*, *Roiling Vortex*, *Razorkin Needlehead*, *Underworld Dreams*, *Manabarbs*, *Zo-Zu the Punisher*, *Scrawling Crawler*, *Ob Nixilis, the Hate-Twisted*, *Crawlspace*, *Luxury Suite*, *Blood Crypt*, *Blightstep Pathway*, *Bolt Bend*, *Chandra, Awakened Inferno*, *Withering Torment*.
+*   **Physical Cuts (20 Precon Cards):** *Graven Cairns*, *Shadowblood Ridge*, *Bloodfell Caves*, *Blood Artist*, *Falkenrath Noble*, *Bastion of Remembrance*, *Syr Konrad, the Grim*, *Morbid Opportunist*, *Decree of Pain*, *Combustible Gearhulk*, *Kaervek the Merciless*, *Massacre Girl*, *Fear of Burning Alive*, *Star Athlete*, *Rakdos Signet*, *Séance Board*, *Nightshade Harvester*, *Bedevil*, *Tectonic Giant*, *Florian, Voldaren Scion*.
+*   **38-Land Mana Base Preservation:** Retained *Geothermal Bog* and *Temple of the False God* in the physical 99 to ensure the mana base remains at exactly 38 lands (8 Mountain, 8 Swamp, 22 nonbasics) until *Plaza of Heroes* arrives from Manapool Order #802297.
+*   **Tracking & Inbound Swap Plan:** Updated [`order_tracking.md`](commander_decks/Owned/ValgavothEndlessPunishment/order_tracking.md) to record all 20 LGS acquisitions, flagged *Spellshock* as an open online search, and mapped the exact 12 card-for-card swaps to be executed once Manapool Order #802297 arrives.
+*   **Triple-Update & Forge Sync:** Synchronized `valgavoth_endless_punishment.md`, `moxfield_import.txt`, and `%APPDATA%\Forge\decks\commander\Valgavoth.dck`.
+
 ### 2026-11-21: Valgavoth, Harrower of Souls — Complete Deck Architecture Finalized with Chandra & Withering Torment
 *   **Final Upgrade Integration Applied:**
     *   Executed 2-card transaction via `scripts/swap_matrix.py ... --apply` to integrate all acquired and ordered tech into the active 100-card deck list.
