@@ -127,6 +127,10 @@ deck_status: main
 
 ## 🚀 Future Roadmap: Upgrades & Considerations
 
+### 📚 External Reference Archives
+*   **[Guys That Magic — $100 → $300 Precon Upgrade](Archive/guys_that_magic.md):** Blink/Clone/Theft ETB pivot ([`$100` Video](https://www.youtube.com/watch?v=2eJ2simHQ0Q) · [`$300` Video](https://www.youtube.com/watch?v=z6t76q6wGEo)).
+*   **[SpaceFreely — *Get Borg or Die Trying, Girl* ($1,610.84, Bracket 3)](Archive/spacefreely.md):** High-budget Esper artifact/blink/Time Sieve benchmark (`47/100` shared; tied at `44.0%` ForgeSim pod win rate).
+
 ### 🔍 Phase 2 Diagnostic Audit (Post-Phase 1 Telemetry)
 1.  **Filter Land Removed:** *Skycloud Expanse* has been eliminated in favor of **Sea of Clouds**, leaving 0 filter lands and 0 Signet filter rocks in the 100.
 2.  **Remaining 12 Precon Taplands (Phase 2 Mana Base Priority):** While Phase 1 pushed earliest **The Borg Queen** deployment to Turn 3 and `T<=7` readiness from 53.8% to 60.0%, 12 remaining tapped/conditional lands (*Arcane Sanctum*, *Evolving Wilds*, *Terramorphic Expanse*, *Fetid Pools*, *Irrigated Farmland*, *Umbral Expanse*, *Path of Ancestry*, *Shore Leave Planet*, *Contaminated Landscape*, and *Reveal Snarls*) keep Goldfish `[BRACKET COMPLIANCE CHECK]` at `NOTICE (T6.9 avg)`. Phase 2 should replace those with *Vault of Champions*, *Hallowed Fountain*, *Watery Grave*, *Godless Shrine*, Esper Fetchlands (*Polluted Delta*, *Flooded Strand*, *Marsh Flats*), and artifact lands (*Ancient Den*, *Seat of the Synod*, *Vault of Whispers*, *Urza's Saga*).
