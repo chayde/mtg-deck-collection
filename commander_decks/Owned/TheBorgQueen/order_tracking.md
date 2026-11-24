@@ -4,7 +4,7 @@ Legend: `- [x]` in hand / received · `- [ ]` ordered / pending acquisition
 
 **Deck Origin:** *Star Trek Commander* Preconstructed Deck (`TRC #1`)  
 **Acquisition Date:** 2026-11-13  
-**Deck Status:** 🚚 **PHASE 1 ORDER PARTIALLY RECEIVED (8/15 Cards Received across 2/4 Packages — 7 Cards Pending)** — 100-card Bracket 3 upgraded list verified (`moxfield_import.txt`, `moxfield_import_printings.txt`, Forge `.dck`, 20-game Bracket 3 Goldfish, 100-game ForgeSim pod gauntlet, and DTI `38/96` audit). **0** spare copies in `collection.csv`.
+**Deck Status:** ✅ **PHASE 1 ORDER COMPLETE (15/15 Cards Received across 4/4 Packages)** — 100-card Bracket 3 upgraded list verified (`moxfield_import.txt`, `moxfield_import_printings.txt`, Forge `.dck`, 20-game Bracket 3 Goldfish, 100-game ForgeSim pod gauntlet, and DTI `38/96` audit). **0** spare copies in `collection.csv`.
 
 ---
 
@@ -12,11 +12,11 @@ Legend: `- [x]` in hand / received · `- [ ]` ordered / pending acquisition
 
 > Check off `- [x]` as each package arrives and swap out the paired precon card listed under **Replaces**. *(All 15 cards ordered in English, Non-Foil; subtotal before shipping/tax: **`$102.62`**.)*
 
-### Package `#2736082` — Seller: `TOAMagic` (4 Cards · `$47.06`)
-- [ ] **Akroma's Will** ({3}{W}) `[CMR #615]` (Lightly Played, Non-Foil, **$25.79**) · *Replaces:* **Assimilation Assessor** `[TRC #56]`
-- [ ] **Illustrious Wanderglyph** ({4}{W}) `[LCC #21]` (Lightly Played, Non-Foil, **$19.79**) · *Replaces:* **Transwarp Hub** `[TRC #52]`
-- [ ] **Voyage Home** ({5}{W}{U}) `[DFT #421]` (Lightly Played, Non-Foil, **$0.99**) · *Replaces:* **Hive Mind Coprocessor** `[TRK #115]`
-- [ ] **The Flesh Is Weak** ({2}{W}{U}{B}) `[40K #122]` (Lightly Played, Non-Foil, **$0.49**) · *Replaces:* **Korok, Liberated Rage** `[TRC #22]`
+### Package `#2736082` — Seller: `TOAMagic` (4 Cards · `$47.06`) — ✅ Received 2026-11-24
+- [x] **Akroma's Will** ({3}{W}) `[CMR #615]` (Lightly Played, Non-Foil, **$25.79**) · *Replaces:* **Assimilation Assessor** `[TRC #56]`
+- [x] **Illustrious Wanderglyph** ({4}{W}) `[LCC #21]` (Lightly Played, Non-Foil, **$19.79**) · *Replaces:* **Transwarp Hub** `[TRC #52]`
+- [x] **Voyage Home** ({5}{W}{U}) `[DFT #421]` (Lightly Played, Non-Foil, **$0.99**) · *Replaces:* **Hive Mind Coprocessor** `[TRK #115]`
+- [x] **The Flesh Is Weak** ({2}{W}{U}{B}) `[40K #122]` (Lightly Played, Non-Foil, **$0.49**) · *Replaces:* **Korok, Liberated Rage** `[TRC #22]`
 
 ### Package `#2736083` — Seller: `GemCityCollectibles` (3 Cards · `$18.78`) — ✅ Received 2026-11-21
 - [x] **Sea of Clouds** (`0`, Land) `[TRC #399]` (Near Mint, Non-Foil, **$16.84**) · *Replaces:* **Skycloud Expanse** `[TRC #559]`
@@ -30,10 +30,10 @@ Legend: `- [x]` in hand / received · `- [ ]` ordered / pending acquisition
 - [x] **Organic Extinction** ({8}{W}{W}) `[EOC #66]` (Near Mint, Non-Foil, **$0.38**) · *Replaces:* **Join the Collective** `[TRC #20]`
 - [x] **Sai, Master Thopterist** ({2}{U}) `[DRC #82]` (Near Mint, Non-Foil, **$0.20**) · *Replaces:* **Stratagem Emulator** `[TRC #30]`
 
-### Package `#2736085` — Seller: `CityofTraders` (3 Cards · `$31.44`)
-- [ ] **Urza, Lord High Artificer** ({2}{U}{U}) `[CMM #674]` (Lightly Played, Non-Foil, **$19.41**) · *Replaces:* **Door of Destinies** `[TRC #489]`
-- [ ] **Liberator, Urza's Battlethopter** ({3}) `[BRO #364]` (Lightly Played, Non-Foil, **$8.51**) · *Replaces:* **Darksteel Plate** `[TRC #488]`
-- [ ] **Fellwar Stone** ({2}) `[CMM #657]` (Lightly Played, Non-Foil, **$3.52**) · *Replaces:* **Stonespeaker Crystal** `[TRC #500]`
+### Package `#2736085` — Seller: `CityofTraders` (3 Cards · `$31.44`) — ✅ Received 2026-11-24
+- [x] **Urza, Lord High Artificer** ({2}{U}{U}) `[CMM #674]` (Lightly Played, Non-Foil, **$19.41**) · *Replaces:* **Door of Destinies** `[TRC #489]`
+- [x] **Liberator, Urza's Battlethopter** ({3}) `[BRO #364]` (Lightly Played, Non-Foil, **$8.51**) · *Replaces:* **Darksteel Plate** `[TRC #488]`
+- [x] **Fellwar Stone** ({2}) `[CMM #657]` (Lightly Played, Non-Foil, **$3.52**) · *Replaces:* **Stonespeaker Crystal** `[TRC #500]`
 
 **Order Subtotal (15 Cards, 4 Packages):** **`$102.62`**
 
