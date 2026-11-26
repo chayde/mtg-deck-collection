@@ -27,7 +27,7 @@ Deck
 1 Dragonspeaker Shaman
 1 Terror of the Peaks
 1 Elemental Bond
-1 Escape to the Wilds
+1 Mox Jasper
 1 Garruk's Uprising
 1 Generous Gift
 1 Guardian Project

@@ -45,7 +45,7 @@ deck_status: main
 *   **[Elemental Bond](https://scryfall.com/search?q=!%22Elemental+Bond%22) / [Garruk's Uprising](https://scryfall.com/search?q=!%22Garruk%27s+Uprising%22) / [Temur Ascendancy](https://scryfall.com/search?q=!%22Temur+Ascendancy%22):** Rewards you for playing large creatures.
 *   **[Rishkar's Expertise](https://scryfall.com/search?q=!%22Rishkar%27s+Expertise%22) / [Return of the Wildspeaker](https://scryfall.com/search?q=!%22Return+of+the+Wildspeaker%22):** Burst draw based on your largest dragon.
 *   **[Up the Beanstalk](https://scryfall.com/search?q=!%22Up+the+Beanstalk%22):** Consistent value for casting your high-CMC threats.
-*   **[Escape to the Wilds](https://scryfall.com/search?q=!%22Escape+to+the+Wilds%22):** Impulse draw and extra land drop.
+*   **[Mox Jasper](https://scryfall.com/card/tdm/246/mox-jasper?utm_source=api) ({0}):** 0-CMC Dragon-Conditional 5-Color Mox
 *   **[Guardian Project](https://scryfall.com/search?q=!%22Guardian+Project%22):** High-value draw for each non-token creature entry.
 
 ### 💎 Ramp & Acceleration (11 Cards)
@@ -91,6 +91,10 @@ All ordered upgrades have been received and integrated. Mana base overhaul compl
 ---
 
 ## 📜 Deck Changelog
+- **[2026-11-26]:** Replaces clunky 5-CMC impulse draw (which risks exiling uncastable high-CMC Dragons) with a 0-CMC 5-color Mox gifted by your wife that accelerates mid-game double-spell turns once a Dragon lands.
+    - **In:** Mox Jasper
+    - **Out:** Escape to the Wilds
+    - **Reason:** Replaces clunky 5-CMC impulse draw (which risks exiling uncastable high-CMC Dragons) with a 0-CMC 5-color Mox gifted by your wife that accelerates mid-game double-spell turns once a Dragon lands.
 *   **2026-08-20:** Reclassified target Bracket from Bracket 2 to Bracket 3 (Upgraded).
     *   **In:** N/A (Metadata / Power Level audit)
     *   **Out:** N/A
@@ -145,7 +149,7 @@ DECK:
 1 Dragonspeaker Shaman  
 1 Terror of the Peaks  
 1 Elemental Bond  
-1 Escape to the Wilds  
+1 Mox Jasper  
 1 Garruk's Uprising  
 1 Generous Gift  
 1 Guardian Project  
