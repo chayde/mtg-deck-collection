@@ -177,6 +177,10 @@ deck_status: main
 ---
 
 ## 📜 Deck Changelog
+- **[2026-11-27]:** Upgrade stack interaction to Mana Drain ({U}{U}) to counter threats and convert opponent mana values into {C} bursts for 7-CMC The Borg Queen
+    - **In:** Mana Drain
+    - **Out:** An Offer You Can't Refuse
+    - **Reason:** Upgrade stack interaction to Mana Drain ({U}{U}) to counter threats and convert opponent mana values into {C} bursts for 7-CMC The Borg Queen
 - **[2026-11-27]:** Phase 2 Bracket 3 overhaul: eliminate 12 precon taplands/snarls, cut stranded top-end & slow charge-counter subtheme, and inject Affinity, 2-CMC cost reducers, ETB/blink multipliers, and high-impact EDHREC Bracket 3 staples
     - **In:** Vault of Champions, Hallowed Fountain, Watery Grave, Godless Shrine, Polluted Delta, Flooded Strand, Marsh Flats, Ancient Den, Seat of the Synod, Vault of Whispers, Urza's Saga, Uthros, Titanic Godcore, The Unicomplex, Inventors' Fair, Sink into Stupor // Soporific Springs, The Mind Stone, Shuri, Wakandan Inventor, Foundry Inspector, Krang, Utrom Warlord, Borg Cube, An Offer You Can't Refuse, Ephemerate, Teferi's Protection, Thought Monitor, Uthros Research Craft, Esper Sentinel, Simulacrum Synthesizer, Panharmonicon, Displacer Kitten, Urza, Chief Artificer
     - **Out:** Arcane Sanctum, Evolving Wilds, Terramorphic Expanse, Contaminated Landscape, Fetid Pools, Irrigated Farmland, Umbral Expanse, Path of Ancestry, Shore Leave Planet, Choked Estuary, Port Town, Shineshadow Snarl, Island, Plains, Swamp, Commander's Sphere, Võx, Child of the Collective, Astral Cornucopia, The Immortal Sun, Class-4 Tactical Cube, Disallow, Deliver from Chaos, Borg Incursion, Thirst for Knowledge, Borg Scout Sphere, Reclamation Specialist, Maturation Chamber, Optimization Annex, Seven of Nine, Tertiary Adjunct, Collective Override
@@ -220,7 +224,7 @@ DECK:
 1 Godless Shrine  
 1 Cyberdrive Awakener  
 1 Ephemerate  
-1 An Offer You Can't Refuse  
+1 Mana Drain  
 1 Dispatch  
 1 Drowned Catacomb  
 1 Eclipsed Steppe  
