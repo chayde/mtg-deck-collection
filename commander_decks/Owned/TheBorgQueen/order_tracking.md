@@ -39,12 +39,9 @@ Legend: `- [x]` in hand / received · `- [ ]` ordered / pending acquisition
 
 ---
 
-## 🛒 Phase 2 Buy List — 2026-11-27 (27/29 LGS Bought at *Thanks For Playing* + 1 Owned · 2 Pending)
+## 🛒 Phase 2 Buy List — 2026-11-27 (27/30 LGS Bought at *Thanks For Playing* · 3 Pending)
 
-> **Physical Assembly Note (`2026-11-27`):** Purchased 27/29 cards in-store at **Thanks For Playing** (LGS) and pulled **An Offer You Can't Refuse** from `collection.csv` (28/30 Phase 2 swaps sleeved in). Temporarily retaining **The Immortal Sun** (for **Krang, Utrom Warlord**) and **Collective Override** (for **Urza, Chief Artificer**) in the physical 99 until the final 2 cards are sourced.
-
-### Already Owned in `collection.csv` (1 Card — Pulled from Extra Cards)
-- [x] **An Offer You Can't Refuse** ({U}) `[FIC #267]` (Near Mint, Non-Foil, `$2.68`) · *Replaces:* **Disallow** `[TRC #436]`
+> **Physical Assembly Note (`2026-11-27`):** Purchased 27 cards in-store at **Thanks For Playing** (LGS). **An Offer You Can't Refuse** was not available in physical extra cards, so **42 total swaps** (15 Phase 1 Manapool + 27 Phase 2 LGS) are sleeved into the physical precon, while **The Immortal Sun** (for **Krang, Utrom Warlord**), **Collective Override** (for **Urza, Chief Artificer**), and **Disallow** (for **An Offer You Can't Refuse**) remain temporarily in the physical 99 until those 3 cards are sourced.
 
 ### Acquired at *Thanks For Playing* (LGS) — 2026-11-27 (27 Cards)
 - [x] **Esper Sentinel** ({W}) — *Replaces:* **Reclamation Specialist**
@@ -75,8 +72,9 @@ Legend: `- [x]` in hand / received · `- [ ]` ordered / pending acquisition
 - [x] **Shuri, Wakandan Inventor** ({1}{U}) — *Replaces:* **Võx, Child of the Collective**
 - [x] **Foundry Inspector** ({3}) — *Replaces:* **Astral Cornucopia**
 
-### Pending Acquisition — Manapool / Online (2 Cards · `$22.55` Live Manapool)
+### Pending Acquisition — Manapool / Online (3 Cards)
 - [ ] **Krang, Utrom Warlord** ({9}) — `$22.00` (`NM`, [Manapool](https://manapool.com/card/tmt/175/krang-utrom-warlord)) · *Replaces:* **The Immortal Sun** *(temporarily retained in physical 99)*
+- [ ] **An Offer You Can't Refuse** ({U}) — *Replaces:* **Disallow** *(temporarily retained in physical 99)*
 - [ ] **Urza, Chief Artificer** ({3}{W}{U}{B}) — `$0.55` (`NM`, [Manapool](https://manapool.com/card/brc/40/urza-chief-artificer)) · *Replaces:* **Collective Override** *(temporarily retained in physical 99)*
 
 ---
