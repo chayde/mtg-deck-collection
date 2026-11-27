@@ -52,6 +52,12 @@ Legend: `- [x]` in hand / acquired · `- [ ]` ordered / pending delivery
 - [x] **Geothermal Bog** & **Temple of the False God** *(Retained in active 38-land mana base)*
 - [x] Complete Precon mana rocks, base lands, and core interaction
 
+### 📬 Received — Manapool Order #784281 (Package #784281-2749237 — hamsammiches, Received 2026-11-27)
+> Placed 2026-11-15 · Shipped 2026-11-16 · [Order #784281](https://manapool.com/settings/orders/f4d7459d-06aa-4139-9b6c-02f536098e16)
+
+- [x] **4x Mountain** — **$0.36** · [DSK #275] LP · [Listing](https://manapool.com/card/dsk/275/mountain)
+- [x] **6x Swamp** — **$0.50** · [DSK #274] LP · [Listing](https://manapool.com/card/dsk/274/swamp)
+
 ---
 
 ## 📦 Section 2: On Order — Manapool Order #802297 (13 Cards · $229.80 Total)
