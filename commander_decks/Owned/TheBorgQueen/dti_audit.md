@@ -11,7 +11,8 @@
 * **DTI Threat Index:** `38 / 96` (Score Floor: Bracket 3)
 * **Clock Speed (Velocity Vector):** `21 / 48`
 * **Opponent Stifle (Suppression Vector):** `15 / 40`
-* **WotC Statutory Compliance:** 0 / 3 Game Changers (Floor: Bracket 2)
+* **WotC Statutory Compliance:** 1 / 3 Game Changers (Floor: Bracket 3)
+  * *Game Changers detected:* Teferi's Protection
 
 ### Tactical Overview
 Phase 1 Bracket 3 upgrade of The Borg Queen ({4}{W}{U}{B}) Esper Artifact Creature Swarm deck (0 / 3 Game Changers). Retaining The Borg Queen's +2/+2 anthem and Assimilate engine alongside Queen's Diamond and Locutus of Borg, this 15-card overhaul cuts Skycloud Expanse, sluggish 4-CMC rocks, and off-plan nonbos to inject untapped Battlebond fixing (Sea of Clouds), 2-CMC velocity (Fellwar Stone, Etherium Sculptor, Antagonist Incorporator), flash speed (Liberator, Urza's Battlethopter), artifact token multipliers (Sai, Master Thopterist, Illustrious Wanderglyph, Urza, Lord High Artificer), asymmetrical Improvise removal (Organic Extinction, Path to Exile, The Flesh Is Weak), and decisive flying/double-strike finishers (Primary Unimatrix Adjunct, Cyberdrive Awakener, Akroma's Will).

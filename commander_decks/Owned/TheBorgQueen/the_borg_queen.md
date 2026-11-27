@@ -177,6 +177,10 @@ deck_status: main
 ---
 
 ## 📜 Deck Changelog
+- **[2026-11-27]:** Phase 2 Bracket 3 overhaul: eliminate 12 precon taplands/snarls, cut stranded top-end & slow charge-counter subtheme, and inject Affinity, 2-CMC cost reducers, ETB/blink multipliers, and high-impact EDHREC Bracket 3 staples
+    - **In:** Vault of Champions, Hallowed Fountain, Watery Grave, Godless Shrine, Polluted Delta, Flooded Strand, Marsh Flats, Ancient Den, Seat of the Synod, Vault of Whispers, Urza's Saga, Uthros, Titanic Godcore, The Unicomplex, Inventors' Fair, Sink into Stupor // Soporific Springs, The Mind Stone, Shuri, Wakandan Inventor, Foundry Inspector, Krang, Utrom Warlord, Borg Cube, An Offer You Can't Refuse, Ephemerate, Teferi's Protection, Thought Monitor, Uthros Research Craft, Esper Sentinel, Simulacrum Synthesizer, Panharmonicon, Displacer Kitten, Urza, Chief Artificer
+    - **Out:** Arcane Sanctum, Evolving Wilds, Terramorphic Expanse, Contaminated Landscape, Fetid Pools, Irrigated Farmland, Umbral Expanse, Path of Ancestry, Shore Leave Planet, Choked Estuary, Port Town, Shineshadow Snarl, Island, Plains, Swamp, Commander's Sphere, Võx, Child of the Collective, Astral Cornucopia, The Immortal Sun, Class-4 Tactical Cube, Disallow, Deliver from Chaos, Borg Incursion, Thirst for Knowledge, Borg Scout Sphere, Reclamation Specialist, Maturation Chamber, Optimization Annex, Seven of Nine, Tertiary Adjunct, Collective Override
+    - **Reason:** Phase 2 Bracket 3 overhaul: eliminate 12 precon taplands/snarls, cut stranded top-end & slow charge-counter subtheme, and inject Affinity, 2-CMC cost reducers, ETB/blink multipliers, and high-impact EDHREC Bracket 3 staples
 *   **[2026-11-14]:** Executed 15-card Phase 1 Bracket 3 swarm/double-strike/velocity overhaul (0 / 3 Game Changers, DTI **38/96 Bracket 3**).
     *   **In:** **Sea of Clouds**, **Fellwar Stone**, **Etherium Sculptor**, **Urza, Lord High Artificer**, **Primary Unimatrix Adjunct**, **Antagonist Incorporator**, **Cyberdrive Awakener**, **Illustrious Wanderglyph**, **Akroma's Will**, **Organic Extinction**, **Liberator, Urza's Battlethopter**, **The Flesh Is Weak**, **Voyage Home**, **Sai, Master Thopterist**, **Path to Exile**
     *   **Out:** *Skycloud Expanse*, *Stonespeaker Crystal*, *Reconnaissance Partition*, *Door of Destinies*, *The Best of Both Worlds*, *Gift of Perfection*, *Assimilate the Wounded*, *Transwarp Hub*, *Assimilation Assessor*, *Join the Collective*, *Darksteel Plate*, *Korok, Liberated Rage*, *Hive Mind Coprocessor*, *Stratagem Emulator*, *Return to Dust*
@@ -198,88 +202,91 @@ DECK:
 1 Ambulatory Reactor  
 1 Anguished Unmaking  
 1 Antagonist Incorporator  
-1 Arcane Sanctum  
+1 Vault of Champions  
 1 Arcane Signet  
-1 Astral Cornucopia  
+1 Foundry Inspector  
 1 Battle of Wolf 359  
 1 Bitter Triumph  
-1 Borg Incursion  
-1 Borg Scout Sphere  
-1 Choked Estuary  
-1 Class-4 Tactical Cube  
+1 Teferi's Protection  
+1 Uthros Research Craft  
+1 Vault of Whispers  
+1 Borg Cube  
 1 Co-Option Adjutant  
-1 Collective Override  
+1 Urza, Chief Artificer  
 1 Command Subadjunct  
 1 Command Tower  
-1 Commander's Sphere  
+1 The Mind Stone  
 1 Conquest Mission  
-1 Contaminated Landscape  
+1 Godless Shrine  
 1 Cyberdrive Awakener  
-1 Deliver from Chaos  
-1 Disallow  
+1 Ephemerate  
+1 An Offer You Can't Refuse  
 1 Dispatch  
 1 Drowned Catacomb  
 1 Eclipsed Steppe  
 1 Emergency Regeneration  
 1 Etherium Sculptor  
 1 Everflowing Chalice  
-1 Evolving Wilds  
+1 Hallowed Fountain  
 1 Exotic Orchard  
 1 Extraction Integrant  
 1 Fellwar Stone  
-1 Fetid Pools  
+1 Polluted Delta  
 1 Forsaken Monument  
 1 Glacial Fortress  
 1 Hugh, First of Many  
 1 Illustrious Wanderglyph  
-1 Irrigated Farmland  
-4 Island  
+1 Flooded Strand  
+3 Island  
+1 The Unicomplex  
 1 Isolated Chapel  
 1 Jurati, Cordial Queen  
 1 Liberator, Urza's Battlethopter  
 1 Locutus of Borg  
 1 Locutus, the One Who Speaks  
-1 Maturation Chamber  
+1 Simulacrum Synthesizer  
 1 Morphic Pool  
 1 One, Borg Evolved  
-1 Optimization Annex  
+1 Panharmonicon  
 1 Organic Extinction  
-1 Path of Ancestry  
+1 Ancient Den  
 1 Path to Exile  
-4 Plains  
-1 Port Town  
+3 Plains  
+1 Inventors' Fair  
+1 Urza's Saga  
 1 Prairie Stream  
 1 Primary Unimatrix Adjunct  
 1 Queen's Diamond  
-1 Reclamation Specialist  
+1 Esper Sentinel  
 1 Rogue's Passage  
 1 Sai, Master Thopterist  
 1 Sea of Clouds  
-1 Seven of Nine, Tertiary Adjunct  
-1 Shineshadow Snarl  
-1 Shore Leave Planet  
+1 Displacer Kitten  
+1 Uthros, Titanic Godcore  
+1 Seat of the Synod  
 1 Skullclamp  
 1 Sol Ring  
 1 Spire of Industry  
 1 Sunken Hollow  
 1 Supplementation Node  
-4 Swamp  
+3 Swamp  
+1 Sink into Stupor  
 1 Swiftfoot Boots  
 1 Talisman of Dominance  
 1 Talisman of Hierarchy  
 1 Talisman of Progress  
 1 Tempered Steel  
-1 Terramorphic Expanse  
+1 Watery Grave  
 1 The Flesh Is Weak  
-1 The Immortal Sun  
-1 Thirst for Knowledge  
+1 Krang, Utrom Warlord  
+1 Thought Monitor  
 1 Thoughtcast  
 1 Toxic Deluge  
 1 Type-03 Borg Vessel  
-1 Umbral Expanse  
+1 Marsh Flats  
 1 Underground River  
 1 Unwinding Clock  
 1 Urza, Lord High Artificer  
 1 Voyage Home  
-1 Võx, Child of the Collective  
+1 Shuri, Wakandan Inventor  
 1 Wayfarer's Bauble  

@@ -39,6 +39,44 @@ Legend: `- [x]` in hand / received · `- [ ]` ordered / pending acquisition
 
 ---
 
+## 🛒 Phase 2 Buy List — 2026-11-27 (29 Cards to Source · `$416.92` Manapool + 1 Owned in `collection.csv`)
+
+### Already Owned in `collection.csv` (1 Card — Pull from Extra Cards)
+- [x] **An Offer You Can't Refuse** ({U}) `[FIC #267]` (Near Mint, Non-Foil, `$2.68`) · *Replaces:* **Disallow** `[TRC #436]`
+
+### To Buy — Manapool or Thanks For Playing (29 Cards · `$416.92` Live Manapool)
+- [ ] **Esper Sentinel** ({W}) — `$49.37` (`LP Foil`, [Manapool](https://manapool.com/card/sld/2123/esper-sentinel)) · *Replaces:* **Reclamation Specialist**
+- [ ] **The Mind Stone** ({1}{W}) — `$47.99` (`NM`, [Manapool](https://manapool.com/card/msh/21/the-mind-stone)) · *Replaces:* **Commander's Sphere**
+- [ ] **Teferi's Protection** ({2}{W}) — `$38.57` (`NM`, [Manapool](https://manapool.com/card/mar/51/teferis-protection)) · *Replaces:* **Borg Incursion**
+- [ ] **Urza's Saga** (Land) — `$33.00` (`LP`, [Manapool](https://manapool.com/card/mb2/114/urzas-saga)) · *Replaces:* **Port Town**
+- [ ] **Displacer Kitten** ({3}{U}) — `$30.42` (`MP`, [Manapool](https://manapool.com/card/clb/63/displacer-kitten)) · *Replaces:* **Seven of Nine, Tertiary Adjunct**
+- [ ] **Marsh Flats** (Land) — `$30.00` (`MP`, [Manapool](https://manapool.com/card/zen/219/marsh-flats)) · *Replaces:* **Umbral Expanse**
+- [ ] **Borg Cube** ({5}{W}{B}) — `$28.05` (`NM`, [Manapool](https://manapool.com/card/trk/227/borg-cube)) · *Replaces:* **Class-4 Tactical Cube**
+- [ ] **Krang, Utrom Warlord** ({9}) — `$22.00` (`NM`, [Manapool](https://manapool.com/card/tmt/175/krang-utrom-warlord)) · *Replaces:* **The Immortal Sun**
+- [ ] **Simulacrum Synthesizer** ({2}{U}) — `$20.00` (`LP`, [Manapool](https://manapool.com/card/mar/61/simulacrum-synthesizer)) · *Replaces:* **Maturation Chamber**
+- [ ] **Polluted Delta** (Land) — `$18.66` (`LP`, [Manapool](https://manapool.com/card/ktk/239/polluted-delta)) · *Replaces:* **Fetid Pools**
+- [ ] **Flooded Strand** (Land) — `$14.99` (`NM`, [Manapool](https://manapool.com/card/mh3/220/flooded-strand)) · *Replaces:* **Irrigated Farmland**
+- [ ] **Uthros, Titanic Godcore** (Land) — `$14.85` (`NM`, [Manapool](https://manapool.com/card/eoe/285/uthros-titanic-godcore)) · *Replaces:* **Shineshadow Snarl**
+- [ ] **Inventors' Fair** (Land) — `$12.40` (`LP`, [Manapool](https://manapool.com/card/kld/247/inventors-fair)) · *Replaces:* **1x Plains**
+- [ ] **Vault of Champions** (Land) — `$11.15` (`NM`, [Manapool](https://manapool.com/card/cmr/360/vault-of-champions)) · *Replaces:* **Arcane Sanctum**
+- [ ] **Watery Grave** (Land) — `$7.37` (`NM`, [Manapool](https://manapool.com/card/trk/306/watery-grave)) · *Replaces:* **Terramorphic Expanse**
+- [ ] **Sink into Stupor** ({1}{U}{U}) — `$7.25` (`LP`, [Manapool](https://manapool.com/card/mh3/241/sink-into-stupor-soporific-springs)) · *Replaces:* **1x Swamp**
+- [ ] **Godless Shrine** (Land) — `$6.50` (`NM`, [Manapool](https://manapool.com/card/trk/285/godless-shrine)) · *Replaces:* **Contaminated Landscape**
+- [ ] **Hallowed Fountain** (Land) — `$6.43` (`NM`, [Manapool](https://manapool.com/card/ecl/265/hallowed-fountain)) · *Replaces:* **Evolving Wilds**
+- [ ] **Ephemerate** ({W}) — `$4.84` (`LP`, [Manapool](https://manapool.com/card/mh1/7/ephemerate)) · *Replaces:* **Deliver from Chaos**
+- [ ] **Panharmonicon** ({4}) — `$4.00` (`LP`, [Manapool](https://manapool.com/card/kld/226/panharmonicon)) · *Replaces:* **Optimization Annex**
+- [ ] **Vault of Whispers** (Land) — `$2.84` (`LP`, [Manapool](https://manapool.com/card/dsc/322/vault-of-whispers)) · *Replaces:* **Choked Estuary**
+- [ ] **Uthros Research Craft** ({2}{U}) — `$1.70` (`LP`, [Manapool](https://manapool.com/card/eoc/7/uthros-research-craft)) · *Replaces:* **Borg Scout Sphere**
+- [ ] **Ancient Den** (Land) — `$1.45` (`MP`, [Manapool](https://manapool.com/card/mrd/278/ancient-den)) · *Replaces:* **Path of Ancestry**
+- [ ] **The Unicomplex** (Land) — `$1.24` (`NM`, [Manapool](https://manapool.com/card/trk/304/the-unicomplex)) · *Replaces:* **1x Island**
+- [ ] **Seat of the Synod** (Land) — `$0.75` (`MP`, [Manapool](https://manapool.com/card/mrd/283/seat-of-the-synod)) · *Replaces:* **Shore Leave Planet**
+- [ ] **Urza, Chief Artificer** ({3}{W}{U}{B}) — `$0.55` (`NM`, [Manapool](https://manapool.com/card/brc/40/urza-chief-artificer)) · *Replaces:* **Collective Override**
+- [ ] **Thought Monitor** ({6}{U}) — `$0.25` (`NM`, [Manapool](https://manapool.com/card/mkc/121/thought-monitor)) · *Replaces:* **Thirst for Knowledge**
+- [ ] **Shuri, Wakandan Inventor** ({1}{U}) — `$0.15` (`NM`, [Manapool](https://manapool.com/card/msh/75/shuri-wakandan-inventor)) · *Replaces:* **Võx, Child of the Collective**
+- [ ] **Foundry Inspector** ({3}) — `$0.15` (`LP`, [Manapool](https://manapool.com/card/kld/215/foundry-inspector)) · *Replaces:* **Astral Cornucopia**
+
+---
+
 ## 🏬 Physical Precon Inventory (In-Hand Baseline — 100 Cards)
 
 ### Commander (1 Card)

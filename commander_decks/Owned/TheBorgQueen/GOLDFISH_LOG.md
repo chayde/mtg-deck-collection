@@ -114,3 +114,57 @@ BRACKET READINESS (Bracket 3 (Upgraded) — Target T7)
     *   **Remaining Diagnostic Bottleneck (Phase 2 Target):** The simulator still flags `[BRACKET COMPLIANCE CHECK] Status: NOTICE (Slow Engine Setup)` because **The Borg Queen** costs 7 mana ({4}{W}{U}{B}) and 12 conditional/enters-tapped lands remain from the precon mana base (e.g., *Arcane Sanctum*, *Evolving Wilds*, *Terramorphic Expanse*, *Contaminated Landscape*, *Fetid Pools*, *Irrigated Farmland*, *Shore Leave Planet*, *Umbral Expanse*, *Snarls*). Phase 2 land upgrades (Fetches, Shocks, remaining Battlebond/Slow lands) will push T≤7 deployment well past 70%.
 *   **Report:** Interactive breakdown generated at [`goldfish_report.html`](goldfish_report.html).
 
+---
+
+## [2026-11-27] — Phase 2 Bracket 3 Overhaul Validation (20 sims, T10 turns, Bracket 3)
+
+**Command:**
+```bash
+python scripts/multiplayer_goldfish.py "commander_decks/Owned/TheBorgQueen/moxfield_import.txt" --sims 20 --turns 10 --bracket 3 --html "commander_decks/Owned/TheBorgQueen/goldfish_report.html"
+```
+
+**Results:**
+```text
+--------------------------------------------------------------------
+AGGREGATE DEPLOYMENT & MULLIGAN PROFILE
+--------------------------------------------------------------------
+  Commander cast rate: 70/80 (88%)
+  Commander Cast Range: T5 - T10
+  Commander Cast Avg:   T7.2
+  Commander Cast Distribution:
+    T 5: ######### (9)
+    T 6: ################# (17)
+    T 7: ################ (16)
+    T 8: ############# (13)
+    T 9: ######### (9)
+    T10: ###### (6)
+
+  Opening Hand Quality Breakdown (80 hands evaluated):
+    Gold Keep (Mana + Ramp + Enabler):   35/80 (44%)
+    Silver Keep (Mana + Curve):          44/80 (55%)
+    Desperation Keep (Mulligan to <=5):   1/80 (1%)
+    Average Starting Hand Size:          6.94 cards
+
+--------------------------------------------------------------------
+BRACKET READINESS (Bracket 3 (Upgraded) — Target T7)
+--------------------------------------------------------------------
+  Target Window Readiness Rate (T<=7): 42/80 (52%)
+  Engine Readiness Avg:  T7.2
+  Engine Readiness Distribution:
+    T 5: ######### (9)
+    T 6: ################# (17)
+    T 7: ################ (16)
+    T 8: ############# (13)
+    T 9: ######### (9)
+    T10: ###### (6)
+
+  [BRACKET COMPLIANCE CHECK] Status: NOTICE (Slow Engine Setup)
+  Deck deploys its engine by T7.2 (behind schedule for a T7+ win target). Consider adding more low-CMC ramp or enablers.
+```
+
+**Notes:**
+*   **Opening Hand & Commander Reliability Improved:** Gold Keeps rose from **39% ➔ 44%** (Desperation dropped to **1%**, avg hand size **6.94**), and 10-turn Commander cast rate rose from **84% (67/80) ➔ 88% (70/80)**.
+*   **Why Goldfish Avg Cast Turn Shifted (`T6.9 ➔ T7.2`):** The goldfish heuristic only measures how fast 7-CMC **The Borg Queen** is cast. Swapping **Astral Cornucopia** & **Commander's Sphere** out for **Shuri, Wakandan Inventor** & **Foundry Inspector** replaces generic mana rocks with artifact-only cost reducers (which accelerate the 99 but don't discount the non-artifact Commander), and **Sink into Stupor** is played as a spell rather than an untapped land in the simulator.
+*   **Next Validation:** Run a ForgeSim 4-AI pod gauntlet (`forgesim.chayde.lab`) to measure actual pod win rate with **Simulacrum Synthesizer**, **Panharmonicon**, **Displacer Kitten**, **Urza, Chief Artificer**, and **Krang, Utrom Warlord** in live combat.
+*   **Report:** Interactive breakdown generated at [`goldfish_report.html`](goldfish_report.html).
+

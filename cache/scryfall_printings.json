@@ -8869,5 +8869,168 @@
       "22379f55-dc70-4452-8efe-99fd05c4f6a2"
     ],
     "cached_at": 1795299500.1351202
+  },
+  "ancient den": {
+    "ids": [
+      "bd07ecf4-c06f-493f-a31e-f4241bf128d2",
+      "d1f4c301-6015-456a-8989-e0055402809e",
+      "0a508907-a127-45cd-898a-e936bc08391f",
+      "cddf6c54-d928-42f7-b2b6-7ee58be58148",
+      "bc74f956-3bef-46bc-a180-6b1773ee4ca6",
+      "6bcb504c-d066-496b-9556-b2e75a1eff91",
+      "cc857fbd-8e0f-4bff-8f14-561c9925c484",
+      "d9a7b0f6-97f9-4937-865c-e25c142c3ed7",
+      "e22e5250-5285-4d7f-931b-545b73f5187f"
+    ],
+    "cached_at": 1795756787.2268333
+  },
+  "seat of the synod": {
+    "ids": [
+      "ea58393a-7d69-4f99-90b7-ef6f31e4c80b",
+      "50f0c34d-2106-446e-96fe-a50d124fff5a",
+      "4277ebca-1c8d-4066-969a-28adf6445b3e",
+      "0633d38e-de0b-4f14-abbb-ac9260887c4d",
+      "ccd300af-057e-4ea2-8132-7e33c8f34e08",
+      "4d252d63-c1e8-4749-9264-47459c83ff2a",
+      "57a194b3-2899-4dee-977a-c77df0b94dfe",
+      "12ad9074-3f5b-412c-b55d-4b0eedaf32f2",
+      "f0cff35c-de07-4465-b3da-efe4a78eb6d0",
+      "27b10829-fd16-4bef-8aa7-d47acdb3f53f",
+      "5da5587d-6b6c-4645-8cc9-2866d1e6911b",
+      "1fedc183-2d95-471c-ba78-2169e4df13f8"
+    ],
+    "cached_at": 1795756788.6115377
+  },
+  "vault of whispers": {
+    "ids": [
+      "2320e6f4-ff1f-4c07-86b7-ee0e7904a573",
+      "b68c731c-16ef-4051-b324-8b9d110dff2c",
+      "fd36dbf1-cde7-43d8-b554-40b750b016f7",
+      "62d35729-de2c-44d8-b274-3eb2394563f3",
+      "4dca7b45-164d-4181-9585-5d0f3b6a6927",
+      "e85e4098-f872-4aa4-a71a-208b6090be28",
+      "69e50871-bde7-4109-8811-a1c1bf70d3ae",
+      "73866487-33f4-4f64-b100-2c4ddadcd74e",
+      "f482fe5c-1ff5-46f8-befa-b84deaa29f45"
+    ],
+    "cached_at": 1795756790.0071645
+  },
+  "uthros, titanic godcore": {
+    "ids": [
+      "634bccd9-ab66-4620-a7b1-b9c984641558",
+      "b569ee93-20b6-4bc1-bec4-211762a80d82",
+      "11da39d6-cfa6-498d-91b1-11454cc7e5a3",
+      "a76ecc4f-5e77-4d96-9df7-fe703bbc39df",
+      "73b30f74-061c-4e64-be5c-bcfb9f0650c3"
+    ],
+    "cached_at": 1795756791.3885128
+  },
+  "the unicomplex": {
+    "ids": [
+      "751eedef-1d14-44cf-bb52-99f8ada888b9",
+      "4c881efb-d55b-45fe-9e5a-8a61aec6fbbb"
+    ],
+    "cached_at": 1795756792.3816798
+  },
+  "sink into stupor": {
+    "ids": [
+      "5358b87a-1a29-426d-b165-40c97da2c14d"
+    ],
+    "cached_at": 1795756793.3796394
+  },
+  "the mind stone": {
+    "ids": [
+      "0e6f8149-61e4-4d7f-840d-a832d83a284e",
+      "87f1e69a-6d74-4982-afda-82613637799a",
+      "c023ab8d-7f9e-427f-9dcf-699bb65aba5c"
+    ],
+    "cached_at": 1795756794.370238
+  },
+  "shuri, wakandan inventor": {
+    "ids": [
+      "423623dd-b80a-49ac-a65d-af8ed0045a46",
+      "65005522-555e-4479-939c-be16e0262f6f"
+    ],
+    "cached_at": 1795756795.7402885
+  },
+  "krang, utrom warlord": {
+    "ids": [
+      "a1eb7fd4-2aec-45dd-8d0a-925581131e70",
+      "51409265-aa99-423e-be34-f62e122dbac3",
+      "9b8a9315-893d-4eee-a0a8-44f2372202a8",
+      "88d36c32-d6f9-46e4-9cc8-08e6c0ff05d2"
+    ],
+    "cached_at": 1795756797.1085205
+  },
+  "borg cube": {
+    "ids": [
+      "953e0763-3788-4a97-8e2f-394cc2649e43",
+      "99f2ef04-7134-446a-b1d1-5e54d76adcb8",
+      "e58f7310-3fd5-48d5-b6b7-a5d3e1808bbc"
+    ],
+    "cached_at": 1795756798.5701306
+  },
+  "ephemerate": {
+    "ids": [
+      "f704397a-c180-44ae-9e4e-90180556b87b",
+      "05578e28-2258-492d-9637-4f1ab7091247",
+      "f48ab69d-8a01-4dcb-af70-31e2c62278df",
+      "7be5092f-cd24-4aea-824e-67b9767019b2",
+      "954fbf3c-7cc2-4f5e-ba96-e3033a20ce61",
+      "d562bd6e-6e13-4309-bf80-3c10570741bf",
+      "621e3239-b527-4154-bce6-b51241809fc5",
+      "9fa28859-376b-4d02-ba64-28a9bd73cd44",
+      "2da5f3f8-5eef-498f-ba2c-2f3fbc3745aa"
+    ],
+    "cached_at": 1795756799.622015
+  },
+  "thought monitor": {
+    "ids": [
+      "c5b53f25-25e7-47db-b356-65e93e3b0059",
+      "01179c70-a87a-46aa-a95d-3269889e87ff",
+      "996c1952-8d10-4296-8960-ff8993833649",
+      "55c98ef7-be05-4bcf-be4b-62a437297330",
+      "e3a7560e-9e75-4abd-a45c-c2c9686ee4b0",
+      "18a6ea89-417c-4ee0-a410-8a0067b92967",
+      "03fd75f3-e545-4a07-ab1d-9b51612a1463",
+      "9849f1c7-6e2a-464e-bca7-dfdc4c21146d"
+    ],
+    "cached_at": 1795756800.6799603
+  },
+  "uthros research craft": {
+    "ids": [
+      "2063f688-ab86-4c7c-9237-bdb47f56a618",
+      "6ade097b-349f-4876-bdc8-7bcd051e9952"
+    ],
+    "cached_at": 1795756802.0710104
+  },
+  "esper sentinel": {
+    "ids": [
+      "e61ae0e2-8170-453e-93dd-f8ee82290677",
+      "9415defa-ea35-454e-993b-3afd5776b7db",
+      "f8b6c532-b837-42b6-9ed2-0231d0779626",
+      "676758ee-dac8-4c97-8a62-fff25bcbb6df",
+      "8b5a916f-a6f2-4e89-b38f-7e5bc0c2e032",
+      "f3537373-ef54-4578-9d05-6216420ee349"
+    ],
+    "cached_at": 1795756803.4726338
+  },
+  "simulacrum synthesizer": {
+    "ids": [
+      "28a11489-11c5-4018-aab8-c9d036638414",
+      "f0e003f9-2fad-48b4-8e5b-4cda8612ecd2",
+      "aaa05ad1-5cda-4edd-b6bf-562ae3e5011a",
+      "d55b6a43-8961-4bbb-bd4a-c6c7d29f7234",
+      "c201946b-0746-4f8b-bd7b-84dc0fa60395"
+    ],
+    "cached_at": 1795756804.9228992
+  },
+  "urza, chief artificer": {
+    "ids": [
+      "30f27d74-2a46-478e-950b-5d3883be555a",
+      "ea409050-4296-4b76-a6cd-2896ce1b88e4",
+      "cde0dec9-cc8d-43d2-8787-3fabc8c24521"
+    ],
+    "cached_at": 1795756806.3599615
   }
 }
