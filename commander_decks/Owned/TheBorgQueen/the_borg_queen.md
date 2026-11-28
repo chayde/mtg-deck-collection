@@ -177,6 +177,10 @@ deck_status: main
 ---
 
 ## 📜 Deck Changelog
+- **[2026-11-27]:** Align active decklist, Moxfield export, and Forge .dck with current physical paper state (42/45 swaps sleeved; 3 pending cards held until in hand)
+    - **In:** The Immortal Sun, Disallow, Collective Override
+    - **Out:** Krang, Utrom Warlord, Mana Drain, Urza, Chief Artificer
+    - **Reason:** Align active decklist, Moxfield export, and Forge .dck with current physical paper state (42/45 swaps sleeved; 3 pending cards held until in hand)
 - **[2026-11-27]:** Upgrade stack interaction to Mana Drain ({U}{U}) to counter threats and convert opponent mana values into {C} bursts for 7-CMC The Borg Queen
     - **In:** Mana Drain
     - **Out:** An Offer You Can't Refuse
@@ -216,7 +220,7 @@ DECK:
 1 Vault of Whispers  
 1 Borg Cube  
 1 Co-Option Adjutant  
-1 Urza, Chief Artificer  
+1 Collective Override  
 1 Command Subadjunct  
 1 Command Tower  
 1 The Mind Stone  
@@ -224,7 +228,7 @@ DECK:
 1 Godless Shrine  
 1 Cyberdrive Awakener  
 1 Ephemerate  
-1 Mana Drain  
+1 Disallow  
 1 Dispatch  
 1 Drowned Catacomb  
 1 Eclipsed Steppe  
@@ -282,7 +286,7 @@ DECK:
 1 Tempered Steel  
 1 Watery Grave  
 1 The Flesh Is Weak  
-1 Krang, Utrom Warlord  
+1 The Immortal Sun  
 1 Thought Monitor  
 1 Thoughtcast  
 1 Toxic Deluge  

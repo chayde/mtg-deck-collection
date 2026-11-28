@@ -69,3 +69,39 @@
 
 - **Most Stranded Non-Land Cards at Game End:** **Toxic Deluge** (24x), **Teferi's Protection** (22x), **Dispatch** (21x), **Cyberdrive Awakener** (20x), **Organic Extinction** (14x), **Emergency Regeneration** (11x)
 - **Most Frequently Cast Hero Spells:** **The Borg Queen** (134x), **Thought Monitor** (37x), **Anguished Unmaking** (31x), **Command Subadjunct** (27x), **Supplementation Node** (25x), **Ephemerate** (25x), **Path to Exile** (24x), **Skullclamp** (24x)
+
+---
+
+## [2026-11-27] — Headless Forge 4-AI Pod Simulation (100 games, Bracket 3 (Upgraded))
+
+- **Hero Deck (Seat 1):** `TheBorgQueen` (**The Borg Queen**)
+- **Execution Time:** `920.63s` wall-clock (`84.59s` avg CPU/game across 100 games)
+- **Pod Win Rate:** **34.0%** (34 / 100 wins vs. 25.0% 4-seat baseline)
+- **Opening Hand Quality:** **45.0% Gold** | **53.0% Silver** | **1.0% Desperation** (Avg Hand Size: `6.94`, Avg Mulligans: `0.29`, Synergy Traps Mulled: `0`)
+- **Commander & Engine Velocity:** Commander Cast Rate **83.0%** (Avg Turn: `7.37`, Avg Total Casts: `1.35`, Removed: `0.8`/game) | Engine Readiness: **82.0%** (Avg Turn: `7.37`, On-Time $\le$ T7: **49.0%**)
+- **Combat & Interaction:** Avg Combat Damage Dealt: `74.9` (Cmdr: `5.4`), Non-Combat Damage: `0.0` | Targeted Removal Fired by Hero: `0.82`/game, Fired at Hero: `0.94`/game
+
+### 4-Seat Pod Standings
+| Seat | Deck | Commander | Wins | Win Rate | Avg Mulls | Avg Cmd Casts | Avg Spells Cast | Avg Peak Power |
+| :---: | :--- | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
+| 1 | **TheBorgQueen** | The Borg Queen | 34/100 | **34.0%** | 0.29 | 1.35 | 11.8 | 59.9 |
+| 2 | **Karametra** | Karametra, God of Harvests | 30/100 | **30.0%** | 0.29 | 1.49 | 14.5 | 47.6 |
+| 3 | **Sauron** | Sauron, the Dark Lord | 11/100 | **11.0%** | 0.34 | 1.42 | 11.2 | 22.4 |
+| 4 | **MerenReanimator** | Meren of Clan Nel Toth | 25/100 | **25.0%** | 0.28 | 1.97 | 14.7 | 29.3 |
+
+### Seat 1 (Hero) Turn-by-Turn Progression
+| Turn | Games Alive | Avg Lands | Avg Ready Mana | Avg Creatures | Avg Board Power | Avg Hand Size | Avg Life |
+| :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| **T1** | 100/100 | 1.0 | **1.06** | 0.07 | **0.1** | 6.67 | 40.0 |
+| **T2** | 100/100 | 2.03 | **2.38** | 0.39 | **0.6** | 5.94 | 39.7 |
+| **T3** | 100/100 | 3.04 | **3.53** | 0.77 | **1.5** | 5.13 | 39.0 |
+| **T4** | 100/100 | 3.82 | **4.57** | 1.17 | **2.4** | 4.4 | 38.2 |
+| **T5** | 100/100 | 4.56 | **5.55** | 2.25 | **6.2** | 3.89 | 37.0 |
+| **T6** | 100/100 | 5.29 | **6.56** | 3.23 | **11.9** | 3.52 | 34.5 |
+| **T7** | 96/100 | 5.84 | **7.16** | 4.11 | **18.2** | 3.42 | 32.7 |
+| **T8** | 91/100 | 6.31 | **7.8** | 5.14 | **26.2** | 3.12 | 34.9 |
+| **T9** | 83/100 | 6.88 | **8.47** | 7.07 | **38.0** | 3.13 | 39.1 |
+| **T10** | 62/100 | 7.24 | **8.73** | 7.68 | **45.9** | 3.13 | 39.8 |
+
+- **Most Stranded Non-Land Cards at Game End:** **Dispatch** (29x), **Toxic Deluge** (26x), **Teferi's Protection** (22x), **Organic Extinction** (12x), **Cyberdrive Awakener** (12x), **Battle of Wolf 359** (8x)
+- **Most Frequently Cast Hero Spells:** **The Borg Queen** (135x), **Illustrious Wanderglyph** (31x), **Antagonist Incorporator** (30x), **Command Subadjunct** (30x), **Talisman of Dominance** (27x), **Extraction Integrant** (26x), **Talisman of Progress** (25x), **Thought Monitor** (24x)
